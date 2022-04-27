@@ -12,6 +12,7 @@ class Exhibition(BaseModel):
     date: str = None
     address: str = None
     figure: str = None
+    source_url: str = None
 
 
 class StorageInit(metaclass=ABCMeta):
