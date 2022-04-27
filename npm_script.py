@@ -1,6 +1,6 @@
-from worker_helper import RequestsWorker
-from clean_helper import RequestsClean
-from storage_helper import PySonDBStorage, Exhibition
+from helper.worker_helper import RequestsWorker
+from helper.clean_helper import RequestsClean
+from helper.storage_helper import PySonDBStorage, Exhibition
 
 TARGET_URL = "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1"
 TARGET_DOMAIN = "https://www.npm.gov.tw/"
@@ -42,3 +42,4 @@ for item in datasets_col:
         figure=figure
     )
     pysondb_storage.create_data(exhibition.dict())
+
