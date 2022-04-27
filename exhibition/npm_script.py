@@ -1,10 +1,12 @@
 from helper.worker_helper import RequestsWorker
 from helper.clean_helper import RequestsClean
 from helper.storage_helper import PySonDBStorage, Exhibition
+from pathlib import Path
 
+ROOT_DIR = Path(__file__).resolve(strict=True).parent
 TARGET_URL = "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1"
 TARGET_DOMAIN = "https://www.npm.gov.tw/"
-TARGET_STORAGE = "npm_exhibition.json"
+TARGET_STORAGE = str(ROOT_DIR / "npm_exhibition.json")
 TARGET_SYSTEMATICS = "npm[故宮]"
 
 requests_worker = RequestsWorker(TARGET_URL)
@@ -42,4 +44,3 @@ for item in datasets_col:
         figure=figure
     )
     pysondb_storage.create_data(exhibition.dict())
-
