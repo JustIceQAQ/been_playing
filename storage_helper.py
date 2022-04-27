@@ -1,7 +1,17 @@
 import os
 from abc import ABCMeta, abstractmethod
+from typing import Dict
+from pydantic import BaseModel
 
 from pysondb import db
+
+
+class Exhibition(BaseModel):
+    systematics: str
+    title: str
+    date: str = None
+    address: str = None
+    figure: str = None
 
 
 class StorageInit(metaclass=ABCMeta):
