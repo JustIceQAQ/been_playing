@@ -22,12 +22,14 @@ for item in datasets_row:
     _date = RequestsClean.clean_string(item.find("div", {"class": "exhibition-list-date"}).get_text())
     address = RequestsClean.clean_string(item.find("div", {"class": "card-content-bottom"}).get_text())
     figure = "{}{}".format(TARGET_DOMAIN, item.select_one("figure.card-image img")["data-src"])
+    source_url = "{}{}".format(TARGET_DOMAIN,RequestsClean.clean_string(item.select_one("a.card")["href"]))
     exhibition = Exhibition(
         systematics=TARGET_SYSTEMATICS,
         title=title,
         date=_date,
         address=address,
-        figure=figure
+        figure=figure,
+        source_url=source_url
     )
     pysondb_storage.create_data(exhibition.dict())
 
@@ -36,11 +38,13 @@ for item in datasets_col:
     _date = RequestsClean.clean_string("-")
     address = RequestsClean.clean_string(item.find("div", {"class": "card-content-bottom"}).get_text())
     figure = "{}{}".format(TARGET_DOMAIN, item.select_one("figure.card-image img")["data-src"])
+    source_url = "{}{}".format(TARGET_DOMAIN,RequestsClean.clean_string(item.select_one("a.card")["href"]))
     exhibition = Exhibition(
         systematics=TARGET_SYSTEMATICS,
         title=title,
         date=_date,
         address=address,
-        figure=figure
+        figure=figure,
+        source_url=source_url
     )
     pysondb_storage.create_data(exhibition.dict())
