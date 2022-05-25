@@ -1,9 +1,16 @@
+import json
 import os
 from abc import ABCMeta, abstractmethod
 from typing import Dict
-from pydantic import BaseModel
+from uuid import uuid4
 
+from pydantic import BaseModel, Field
+from pathlib import Path
 from pysondb import db
+
+
+def hex_uuid4() -> str:
+    return uuid4().hex
 
 
 class Exhibition(BaseModel):
@@ -13,6 +20,7 @@ class Exhibition(BaseModel):
     address: str = None
     figure: str = None
     source_url: str = None
+    UUID: str = Field(default_factory=hex_uuid4)
 
 
 class StorageInit(metaclass=ABCMeta):
