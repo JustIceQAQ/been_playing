@@ -1,11 +1,11 @@
 import json
 import os
 from abc import ABCMeta, abstractmethod
+from pathlib import Path
 from typing import Dict
 from uuid import uuid4
 
 from pydantic import BaseModel, Field
-from pathlib import Path
 from pysondb import db
 
 
@@ -24,7 +24,6 @@ class Exhibition(BaseModel):
 
 
 class StorageInit(metaclass=ABCMeta):
-
     @abstractmethod
     def create_data(self, *args, **kwargs):
         raise NotImplementedError

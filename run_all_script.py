@@ -8,16 +8,14 @@ from exhibition.npm_script import npm_script
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     py_scripts = {
         cksmh_script,
         huashan1914_script,
         mocataipei_script,
         npm_script,
     }
-    runners = [
-        threading.Thread(target=py_script) for py_script in py_scripts
-    ]
+    runners = [threading.Thread(target=py_script) for py_script in py_scripts]
     for runner in runners:
         runner.start()
     for runner in runners:

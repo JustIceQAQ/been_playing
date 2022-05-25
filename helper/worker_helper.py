@@ -17,6 +17,7 @@ class WorkerInit(metaclass=ABCMeta):
     def fetch(self, *args, **kwargs):
         raise NotImplementedError
 
+
 class RequestsWorker(WorkerInit):
     def __init__(self, url: str):
         self.url = url

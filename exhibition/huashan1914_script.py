@@ -1,7 +1,8 @@
+from pathlib import Path
+
 from helper.clean_helper import RequestsClean
 from helper.parse_helper import HuaShan1914Parse
 from helper.storage_helper import Exhibition, JustJsonStorage
-from pathlib import Path
 from helper.worker_helper import RequestsWorker
 
 
@@ -29,16 +30,20 @@ def huashan1914_script():
 
     for dataset in datasets:
         for item in dataset:
-            huashan1914_data = HuaShan1914Parse(item).parsed(target_domain=TARGET_DOMAIN)
-            huashan1914_clean_data = {key: RequestsClean.clean_string(value) for key, value in huashan1914_data.items()}
+            huashan1914_data = HuaShan1914Parse(item).parsed(
+                target_domain=TARGET_DOMAIN
+            )
+            huashan1914_clean_data = {
+                key: RequestsClean.clean_string(value)
+                for key, value in huashan1914_data.items()
+            }
 
             exhibition = Exhibition(
-                systematics=TARGET_SYSTEMATICS,
-                **huashan1914_clean_data
+                systematics=TARGET_SYSTEMATICS, **huashan1914_clean_data
             )
             storage.create_data(exhibition.dict())
     storage.commit()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     huashan1914_script()

@@ -1,8 +1,8 @@
+from pathlib import Path
+
 from helper.clean_helper import RequestsClean
 from helper.parse_helper import CKSMHParse
 from helper.storage_helper import Exhibition, JustJsonStorage
-from pathlib import Path
-
 from helper.worker_helper import RequestsWorker
 
 
@@ -21,14 +21,13 @@ def cksmh_script():
 
     for item in dataset:
         cksmh_data = CKSMHParse(item).parsed()
-        cksmh_clean_data = {key: RequestsClean.clean_string(value) for key, value in cksmh_data.items()}
-        exhibition = Exhibition(
-            systematics=TARGET_SYSTEMATICS,
-            **cksmh_clean_data
-        )
+        cksmh_clean_data = {
+            key: RequestsClean.clean_string(value) for key, value in cksmh_data.items()
+        }
+        exhibition = Exhibition(systematics=TARGET_SYSTEMATICS, **cksmh_clean_data)
         storage.create_data(exhibition.dict())
     storage.commit()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     cksmh_script()

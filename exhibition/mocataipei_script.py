@@ -1,9 +1,10 @@
-from helper.clean_helper import RequestsClean
-from helper.parse_helper import MocaTaipeiParse
-from helper.storage_helper import PySonDBStorage, Exhibition, JustJsonStorage
 from pathlib import Path
 
+from helper.clean_helper import RequestsClean
+from helper.parse_helper import MocaTaipeiParse
+from helper.storage_helper import Exhibition, JustJsonStorage
 from helper.worker_helper import RequestsWorker
+
 
 def mocataipei_script():
     ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent
@@ -21,14 +22,15 @@ def mocataipei_script():
 
     for item in dataset:
         mocataipei_data = MocaTaipeiParse(item).parsed(target_domain=TARGET_DOMAIN)
-        mocataipei_clean_data = {key: RequestsClean.clean_string(value) for key, value in mocataipei_data.items()}
+        mocataipei_clean_data = {
+            key: RequestsClean.clean_string(value)
+            for key, value in mocataipei_data.items()
+        }
 
-        exhibition = Exhibition(
-            systematics=TARGET_SYSTEMATICS,
-            **mocataipei_clean_data
-        )
+        exhibition = Exhibition(systematics=TARGET_SYSTEMATICS, **mocataipei_clean_data)
         storage.create_data(exhibition.dict())
     storage.commit()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     mocataipei_script()

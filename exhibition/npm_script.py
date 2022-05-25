@@ -1,8 +1,9 @@
-from helper.parse_helper import NpmRowParse, NpmColParse
-from helper.worker_helper import RequestsWorker
-from helper.clean_helper import RequestsClean
-from helper.storage_helper import Exhibition, JustJsonStorage
 from pathlib import Path
+
+from helper.clean_helper import RequestsClean
+from helper.parse_helper import NpmColParse, NpmRowParse
+from helper.storage_helper import Exhibition, JustJsonStorage
+from helper.worker_helper import RequestsWorker
 
 
 def npm_script():
@@ -21,26 +22,28 @@ def npm_script():
     datasets_col = bs4_object.select("ul.mt-10 li.mb-8")
 
     for item in datasets_row:
-        npm_row_data = NpmRowParse(item).parsed(target_domain=TARGET_DOMAIN,
-                                                used_this_to_clean=RequestsClean.clean_string)
-        npm_row_clean_data = {key: RequestsClean.clean_string(value) for key, value in npm_row_data.items()}
-        exhibition = Exhibition(
-            systematics=TARGET_SYSTEMATICS,
-            **npm_row_clean_data
+        npm_row_data = NpmRowParse(item).parsed(
+            target_domain=TARGET_DOMAIN, used_this_to_clean=RequestsClean.clean_string
         )
+        npm_row_clean_data = {
+            key: RequestsClean.clean_string(value)
+            for key, value in npm_row_data.items()
+        }
+        exhibition = Exhibition(systematics=TARGET_SYSTEMATICS, **npm_row_clean_data)
         storage.create_data(exhibition.dict())
 
     for item in datasets_col:
-        npm_col_data = NpmColParse(item).parsed(target_domain=TARGET_DOMAIN,
-                                                used_this_to_clean=RequestsClean.clean_string)
-        npm_col_clean_data = {key: RequestsClean.clean_string(value) for key, value in npm_col_data.items()}
-        exhibition = Exhibition(
-            systematics=TARGET_SYSTEMATICS,
-            **npm_col_clean_data
+        npm_col_data = NpmColParse(item).parsed(
+            target_domain=TARGET_DOMAIN, used_this_to_clean=RequestsClean.clean_string
         )
+        npm_col_clean_data = {
+            key: RequestsClean.clean_string(value)
+            for key, value in npm_col_data.items()
+        }
+        exhibition = Exhibition(systematics=TARGET_SYSTEMATICS, **npm_col_clean_data)
         storage.create_data(exhibition.dict())
     storage.commit()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     npm_script()

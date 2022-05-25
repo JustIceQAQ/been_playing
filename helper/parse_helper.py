@@ -28,8 +28,9 @@ class ParseInit(metaclass=ABCMeta):
 
     def parsed(self, *args, **kwargs):
         methods = [
-            method for method in inspect.getmembers(self, predicate=inspect.ismethod)
-            if method[0].startswith('get_')
+            method
+            for method in inspect.getmembers(self, predicate=inspect.ismethod)
+            if method[0].startswith("get_")
         ]
         return {
             def_name.split("get_")[-1]: method(*args, **kwargs)
@@ -54,7 +55,9 @@ class MocaTaipeiParse(ParseInit):
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
-        return "{}{}".format(target_domain, self.item.select_one("figure.imgFrame img")["data-src"])
+        return "{}{}".format(
+            target_domain, self.item.select_one("figure.imgFrame img")["data-src"]
+        )
 
     def get_source_url(self, *args, **kwargs):
         return self.item.select_one("a.textFrame")["href"]
@@ -77,7 +80,9 @@ class NpmRowParse(ParseInit):
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
-        return "{}{}".format(target_domain, self.item.select_one("figure.card-image img")["data-src"])
+        return "{}{}".format(
+            target_domain, self.item.select_one("figure.card-image img")["data-src"]
+        )
 
     def get_source_url(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
@@ -88,7 +93,10 @@ class NpmRowParse(ParseInit):
         if used_this_to_clean is None:
             return "{}{}".format(target_domain, self.item.select_one("a.card")["href"])
         else:
-            return "{}{}".format(target_domain, used_this_to_clean(self.item.select_one("a.card")["href"]))
+            return "{}{}".format(
+                target_domain,
+                used_this_to_clean(self.item.select_one("a.card")["href"]),
+            )
 
 
 class NpmColParse(ParseInit):
@@ -108,7 +116,9 @@ class NpmColParse(ParseInit):
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
-        return "{}{}".format(target_domain, self.item.select_one("figure.card-image img")["data-src"])
+        return "{}{}".format(
+            target_domain, self.item.select_one("figure.card-image img")["data-src"]
+        )
 
     def get_source_url(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
@@ -119,7 +129,10 @@ class NpmColParse(ParseInit):
         if used_this_to_clean is None:
             return "{}{}".format(target_domain, self.item.select_one("a.card")["href"])
         else:
-            return "{}{}".format(target_domain, used_this_to_clean(self.item.select_one("a.card")["href"]))
+            return "{}{}".format(
+                target_domain,
+                used_this_to_clean(self.item.select_one("a.card")["href"]),
+            )
 
 
 class CKSMHParse(ParseInit):
@@ -147,20 +160,30 @@ class HuaShan1914Parse(ParseInit):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str:
-        return self.item.select_one("li > a > div > div > div.card-text > div.card-text-name").get_text()
+        return self.item.select_one(
+            "li > a > div > div > div.card-text > div.card-text-name"
+        ).get_text()
 
     def get_date(self, *args, **kwargs) -> str:
-        return self.item.select_one("li > a > div > div > div.card-text > div.event-date").get_text()
+        return self.item.select_one(
+            "li > a > div > div > div.card-text > div.event-date"
+        ).get_text()
 
     def get_address(self, *args, **kwargs) -> str:
         return "-"
 
     def get_figure(self, *args, **kwargs) -> str:
         # event-ul > li:nth-child(1) > a > div > div > div.card-img.wide
-        dev_style = self.item.select_one("li > a > div > div > div.card-img.wide")['style']
+        dev_style = self.item.select_one("li > a > div > div > div.card-img.wide")[
+            "style"
+        ]
         style = cssutils.parseStyle(dev_style)
 
-        return url.replace('url(', '')[:-1].replace('"', '') if (url := style['background-image']) else "-"
+        return (
+            url.replace("url(", "")[:-1].replace('"', "")
+            if (url := style["background-image"])
+            else "-"
+        )
 
     def get_source_url(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
