@@ -2,6 +2,7 @@ import inspect
 from abc import ABCMeta, abstractmethod
 
 import bs4
+import cssutils
 
 
 class ParseInit(metaclass=ABCMeta):
@@ -139,3 +140,30 @@ class CKSMHParse(ParseInit):
 
     def get_source_url(self, *args, **kwargs) -> str:
         return self.item.select_one("dt > a")["href"]
+
+
+class HuaShan1914Parse(ParseInit):
+    def __init__(self, item: bs4.element.Tag):
+        self.item = item
+
+    def get_title(self, *args, **kwargs) -> str:
+        return self.item.select_one("li > a > div > div > div.card-text > div.card-text-name").get_text()
+
+    def get_date(self, *args, **kwargs) -> str:
+        return self.item.select_one("li > a > div > div > div.card-text > div.event-date").get_text()
+
+    def get_address(self, *args, **kwargs) -> str:
+        return "-"
+
+    def get_figure(self, *args, **kwargs) -> str:
+        # event-ul > li:nth-child(1) > a > div > div > div.card-img.wide
+        dev_style = self.item.select_one("li > a > div > div > div.card-img.wide")['style']
+        style = cssutils.parseStyle(dev_style)
+
+        return url.replace('url(', '')[:-1].replace('"', '') if (url := style['background-image']) else "-"
+
+    def get_source_url(self, *args, **kwargs) -> str:
+        target_domain = kwargs.get("target_domain", None)
+        if target_domain is None:
+            raise ValueError("請提供 TARGET_DOMAIN")
+        return "{}{}".format(target_domain, self.item.select_one("li > a")["href"])
