@@ -30,6 +30,33 @@ class StorageInit(metaclass=ABCMeta):
         raise NotImplementedError
 
 
+class JustJsonStorage(StorageInit):
+    def __init__(self, db_path: str):
+        self.db_path = db_path
+        self.db = Path(db_path)
+        new_db_name = f"{str(self.db.name)}"
+        self.db_path = self.db_path.replace(self.db.name, new_db_name)
+        self.temp_data = []
+
+    def create_data(self, data=None):
+        self.temp_data.append(data)
+
+    def commit(self):
+        self.fd = open(self.db_path, "w", encoding="utf-8")
+        json_object = json.dumps({"data": self.temp_data}, indent=4)
+        self.fd.write(json_object)
+        self.fd.close()
+
+    def read_data(self, *args, **kwargs):
+        pass
+
+    def truncate_table(self, *args, **kwargs):
+        if os.path.isfile(self.db_path):
+            os.remove(self.db_path)
+        self.fd = open(self.db_path, "a", encoding="utf-8")
+        self.fd.close()
+
+
 class PySonDBStorage(StorageInit):
     def __init__(self, db_path: str):
         self.db_path = db_path
