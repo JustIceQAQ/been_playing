@@ -1,3 +1,4 @@
+from helper.parse_helper import NpmRowParse, NpmColParse
 from helper.worker_helper import RequestsWorker
 from helper.clean_helper import RequestsClean
 from helper.storage_helper import PySonDBStorage, Exhibition
@@ -18,33 +19,21 @@ datasets_row = bs4_object.select("ul.mt-4 li.mb-8")
 datasets_col = bs4_object.select("ul.mt-10 li.mb-8")
 
 for item in datasets_row:
-    title = RequestsClean.clean_string(item.find("h3", {"class": "font-medium"}).get_text())
-    _date = RequestsClean.clean_string(item.find("div", {"class": "exhibition-list-date"}).get_text())
-    address = RequestsClean.clean_string(item.find("div", {"class": "card-content-bottom"}).get_text())
-    figure = "{}{}".format(TARGET_DOMAIN, item.select_one("figure.card-image img")["data-src"])
-    source_url = "{}{}".format(TARGET_DOMAIN,RequestsClean.clean_string(item.select_one("a.card")["href"]))
+    npm_row_data = NpmRowParse(item).parsed(target_domain=TARGET_DOMAIN,
+                                            used_this_to_clean=RequestsClean.clean_string)
+    npm_row_clean_data = {key: RequestsClean.clean_string(value) for key, value in npm_row_data.items()}
     exhibition = Exhibition(
         systematics=TARGET_SYSTEMATICS,
-        title=title,
-        date=_date,
-        address=address,
-        figure=figure,
-        source_url=source_url
+        **npm_row_clean_data
     )
     pysondb_storage.create_data(exhibition.dict())
 
 for item in datasets_col:
-    title = RequestsClean.clean_string(item.find("h3", {"class": "card-title-underline"}).get_text())
-    _date = RequestsClean.clean_string("-")
-    address = RequestsClean.clean_string(item.find("div", {"class": "card-content-bottom"}).get_text())
-    figure = "{}{}".format(TARGET_DOMAIN, item.select_one("figure.card-image img")["data-src"])
-    source_url = "{}{}".format(TARGET_DOMAIN,RequestsClean.clean_string(item.select_one("a.card")["href"]))
+    npm_col_data = NpmColParse(item).parsed(target_domain=TARGET_DOMAIN,
+                                            used_this_to_clean=RequestsClean.clean_string)
+    npm_col_clean_data = {key: RequestsClean.clean_string(value) for key, value in npm_col_data.items()}
     exhibition = Exhibition(
         systematics=TARGET_SYSTEMATICS,
-        title=title,
-        date=_date,
-        address=address,
-        figure=figure,
-        source_url=source_url
+        **npm_col_clean_data
     )
     pysondb_storage.create_data(exhibition.dict())

@@ -1,4 +1,5 @@
 from helper.clean_helper import RequestsClean
+from helper.parse_helper import MocaTaipeiParse
 from helper.storage_helper import PySonDBStorage, Exhibition
 from pathlib import Path
 
@@ -18,17 +19,11 @@ pysondb_storage.truncate_table()
 dataset = bs4_object.select("div.listFrameBox div.list")
 
 for item in dataset:
-    title = RequestsClean.clean_string(item.find("h3", {"class": "imgTitle"}).get_text())
-    _date = RequestsClean.clean_string(item.find("div", {"class": "dateBox"}).get_text())
-    address = RequestsClean.clean_string("-")
-    figure = "{}{}".format(TARGET_DOMAIN, item.select_one("figure.imgFrame img")["data-src"])
-    source_url = RequestsClean.clean_string(item.select_one("a.textFrame")["href"])
+    mocataipei_data = MocaTaipeiParse(item).parsed(target_domain=TARGET_DOMAIN)
+    mocataipei_clean_data = {key: RequestsClean.clean_string(value) for key, value in mocataipei_data.items()}
+
     exhibition = Exhibition(
         systematics=TARGET_SYSTEMATICS,
-        title=title,
-        date=_date,
-        address=address,
-        figure=figure,
-        source_url=source_url
+        **mocataipei_clean_data
     )
     pysondb_storage.create_data(exhibition.dict())
