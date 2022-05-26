@@ -9,7 +9,17 @@ from pydantic import BaseModel
 from pysondb import db
 
 
-def hex_uuid5(systematics, value) -> str:
+def hex_uuid5(systematics: str, value: str) -> str:
+    """
+    > It takes a string, and returns a string
+
+    :param systematics: str
+    :type systematics: str
+    :param value: The value to be hashed
+    :type value: str
+    :return: A hexadecimal string.
+    """
+
     this_o_uuid = uuid.uuid5(
         uuid.UUID("00000000-0000-0000-0000-000000000000"), systematics
     )
