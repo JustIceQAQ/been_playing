@@ -1,5 +1,6 @@
 from pathlib import Path
 
+from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
 from helper.parse_helper import NpmColParse, NpmRowParse
 from helper.storage_helper import Exhibition, JustJsonStorage
@@ -7,15 +8,15 @@ from helper.worker_helper import RequestsWorker
 
 
 def npm_script():
-    ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent
-    TARGET_URL = "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1"
-    TARGET_DOMAIN = "https://www.npm.gov.tw/"
-    TARGET_STORAGE = str(ROOT_DIR / "data" / "npm_exhibition.json")
-    TARGET_SYSTEMATICS = "npm[故宮]"
+    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    target_url = "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1"
+    target_domain = "https://www.npm.gov.tw/"
+    target_storage = str(root_dir / "data" / "npm_exhibition.json")
+    target_systematics = ExhibitionEnum.npm
 
-    requests_worker = RequestsWorker(TARGET_URL)
+    requests_worker = RequestsWorker(target_url)
     bs4_object = requests_worker.fetch()
-    storage = JustJsonStorage(TARGET_STORAGE)
+    storage = JustJsonStorage(target_storage)
     storage.truncate_table()
 
     datasets_row = bs4_object.select("ul.mt-4 li.mb-8")
@@ -23,24 +24,24 @@ def npm_script():
 
     for item in datasets_row:
         npm_row_data = NpmRowParse(item).parsed(
-            target_domain=TARGET_DOMAIN, used_this_to_clean=RequestsClean.clean_string
+            target_domain=target_domain, used_this_to_clean=RequestsClean.clean_string
         )
         npm_row_clean_data = {
             key: RequestsClean.clean_string(value)
             for key, value in npm_row_data.items()
         }
-        exhibition = Exhibition(systematics=TARGET_SYSTEMATICS, **npm_row_clean_data)
+        exhibition = Exhibition(systematics=target_systematics, **npm_row_clean_data)
         storage.create_data(exhibition.dict())
 
     for item in datasets_col:
         npm_col_data = NpmColParse(item).parsed(
-            target_domain=TARGET_DOMAIN, used_this_to_clean=RequestsClean.clean_string
+            target_domain=target_domain, used_this_to_clean=RequestsClean.clean_string
         )
         npm_col_clean_data = {
             key: RequestsClean.clean_string(value)
             for key, value in npm_col_data.items()
         }
-        exhibition = Exhibition(systematics=TARGET_SYSTEMATICS, **npm_col_clean_data)
+        exhibition = Exhibition(systematics=target_systematics, **npm_col_clean_data)
         storage.create_data(exhibition.dict())
     storage.commit()
 

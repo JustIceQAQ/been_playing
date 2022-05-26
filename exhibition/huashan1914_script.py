@@ -1,5 +1,6 @@
 from pathlib import Path
 
+from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
 from helper.parse_helper import HuaShan1914Parse
 from helper.storage_helper import Exhibition, JustJsonStorage
@@ -7,19 +8,19 @@ from helper.worker_helper import RequestsWorker
 
 
 def huashan1914_script():
-    ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent
-    TARGET_URL = "https://www.huashan1914.com/w/huashan1914/exhibition"
-    TARGET_DOMAIN = "https://www.huashan1914.com"
-    TARGET_STORAGE = str(ROOT_DIR / "data" / "huashan1914_exhibition.json")
-    TARGET_SYSTEMATICS = "huashan1914[華山1914]"
+    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    target_url = "https://www.huashan1914.com/w/huashan1914/exhibition"
+    target_domain = "https://www.huashan1914.com"
+    target_storage = str(root_dir / "data" / "huashan1914_exhibition.json")
+    target_systematics = ExhibitionEnum.huashan1914
 
-    storage = JustJsonStorage(TARGET_STORAGE)
+    storage = JustJsonStorage(target_storage)
     storage.truncate_table()
 
     index = 1
     datasets = []
     while True:
-        requests_worker = RequestsWorker(f"{TARGET_URL}?index={index}")
+        requests_worker = RequestsWorker(f"{target_url}?index={index}")
         bs4_object = requests_worker.fetch()
         dataset = bs4_object.select("ul#event-ul li")
         if dataset:
@@ -31,7 +32,7 @@ def huashan1914_script():
     for dataset in datasets:
         for item in dataset:
             huashan1914_data = HuaShan1914Parse(item).parsed(
-                target_domain=TARGET_DOMAIN
+                target_domain=target_domain
             )
             huashan1914_clean_data = {
                 key: RequestsClean.clean_string(value)
@@ -39,7 +40,7 @@ def huashan1914_script():
             }
 
             exhibition = Exhibition(
-                systematics=TARGET_SYSTEMATICS, **huashan1914_clean_data
+                systematics=target_systematics, **huashan1914_clean_data
             )
             storage.create_data(exhibition.dict())
     storage.commit()
