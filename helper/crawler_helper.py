@@ -4,10 +4,10 @@ from io import BytesIO
 import certifi
 import pycurl
 import requests
+from simplejson import JSONDecodeError
+
 
 # 實作各種類型爬蟲
-
-
 class CrawlerInit(metaclass=ABCMeta):
     @abstractmethod
     def get_page(self, *args, **kwargs):
@@ -18,16 +18,20 @@ class RequestsCrawler(CrawlerInit):
     def __init__(self, url: str):
         self.url = url
 
-    def get_page(self) -> str:
-        response = requests.get(self.url)
-        return response.text
+    def get_page(self, method="GET", *args, **kwargs) -> str:
+        response = requests.request(method, self.url, *args, **kwargs)
+        try:
+            return response.json()
+        except JSONDecodeError:
+            return response.text
 
 
 class PyCurlCrawler(CrawlerInit):
     def __init__(self, url: str):
         self.url = url
 
-    def get_page(self) -> str:
+    def get_page(self, *args, **kwargs) -> str:
+        # TODO: 補實作 POST
         buffer = BytesIO()
         py_curl = pycurl.Curl()
         py_curl.setopt(py_curl.URL, self.url)
