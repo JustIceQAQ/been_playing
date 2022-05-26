@@ -14,11 +14,11 @@ def cksmh_script():
     target_systematics = ExhibitionEnum.cksmh
 
     requests_worker = RequestsBeautifulSoupInstantiation(target_url)
-    bs4_object = requests_worker.fetch()
+    target_object = requests_worker.fetch()
     storage = JustJsonStorage(target_storage)
     storage.truncate_table()
 
-    dataset = bs4_object.select("ul.exhibition-list li dl")
+    dataset = target_object.select("ul.exhibition-list li dl")
 
     for item in dataset:
         cksmh_data = CKSMHParse(item).parsed()

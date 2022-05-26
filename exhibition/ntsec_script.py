@@ -15,11 +15,11 @@ def ntsec_script():
     target_systematics = ExhibitionEnum.ntsec
 
     requests_worker = RequestsBeautifulSoupInstantiation(target_url)
-    bs4_object = requests_worker.fetch()
+    target_object = requests_worker.fetch()
     storage = JustJsonStorage(target_storage)
     storage.truncate_table()
 
-    dataset = bs4_object.select("#ctl00_artContent > ul > li")
+    dataset = target_object.select("#ctl00_artContent > ul > li")
     for item in dataset:
         ntsec_data = NTSECParse(item).parsed(target_domain=target_domain)
         ntsec_clean_data = {

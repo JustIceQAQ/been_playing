@@ -17,8 +17,8 @@ def songshanculturalpark_script():
     storage = JustJsonStorage(target_storage)
     storage.truncate_table()
     requests_worker = RequestsBeautifulSoupInstantiation(target_url)
-    bs4_object = requests_worker.fetch()
-    dataset = bs4_object.select("div#exhibition > div.rows")
+    target_object = requests_worker.fetch()
+    dataset = target_object.select("div#exhibition > div.rows")
     for item in dataset:
         songshanculturalpark_data = SongShanCulturalParkParse(item).parsed(
             target_domain=target_domain

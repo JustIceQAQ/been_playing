@@ -15,11 +15,11 @@ def mocataipei_script():
     target_systematics = ExhibitionEnum.mocataipei
 
     requests_worker = RequestsBeautifulSoupInstantiation(target_url)
-    bs4_object = requests_worker.fetch()
+    target_object = requests_worker.fetch()
     storage = JustJsonStorage(target_storage)
     storage.truncate_table()
 
-    dataset = bs4_object.select("div.listFrameBox div.list")
+    dataset = target_object.select("div.listFrameBox div.list")
 
     for item in dataset:
         mocataipei_data = MocaTaipeiParse(item).parsed(target_domain=target_domain)

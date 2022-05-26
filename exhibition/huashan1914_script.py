@@ -23,8 +23,8 @@ def huashan1914_script():
         requests_worker = RequestsBeautifulSoupInstantiation(
             f"{target_url}?index={index}"
         )
-        bs4_object = requests_worker.fetch()
-        dataset = bs4_object.select("ul#event-ul li")
+        target_object = requests_worker.fetch()
+        dataset = target_object.select("ul#event-ul li")
         if dataset:
             datasets.append(dataset)
             index = index + 1

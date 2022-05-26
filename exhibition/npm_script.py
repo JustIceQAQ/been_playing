@@ -15,12 +15,12 @@ def npm_script():
     target_systematics = ExhibitionEnum.npm
 
     requests_worker = RequestsBeautifulSoupInstantiation(target_url)
-    bs4_object = requests_worker.fetch()
+    target_object = requests_worker.fetch()
     storage = JustJsonStorage(target_storage)
     storage.truncate_table()
 
-    datasets_row = bs4_object.select("ul.mt-4 li.mb-8")
-    datasets_col = bs4_object.select("ul.mt-10 li.mb-8")
+    datasets_row = target_object.select("ul.mt-4 li.mb-8")
+    datasets_col = target_object.select("ul.mt-10 li.mb-8")
 
     for item in datasets_row:
         npm_row_data = NpmRowParse(item).parsed(
