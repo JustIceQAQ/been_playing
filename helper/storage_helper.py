@@ -1,26 +1,33 @@
 import json
 import os
+import uuid
 from abc import ABCMeta, abstractmethod
 from pathlib import Path
 from typing import Dict
-from uuid import uuid4
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from pysondb import db
 
 
-def hex_uuid4() -> str:
-    return uuid4().hex
+def hex_uuid5(systematics, value) -> str:
+    this_o_uuid = uuid.uuid5(
+        uuid.UUID("00000000-0000-0000-0000-000000000000"), systematics
+    )
+    return uuid.uuid5(this_o_uuid, value).hex
 
 
 class Exhibition(BaseModel):
-    systematics: str
-    title: str
+    systematics: str = None
+    title: str = None
     date: str = None
     address: str = None
     figure: str = None
     source_url: str = None
-    UUID: str = Field(default_factory=hex_uuid4)
+    UUID: str = None
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.UUID = hex_uuid5(self.systematics, self.source_url)
 
 
 class StorageInit(metaclass=ABCMeta):
