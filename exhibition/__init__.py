@@ -8,3 +8,4 @@ class ExhibitionEnum(str, enum.Enum):
     npm = "npm[故宮]"
     songshanculturalpark = "songshanculturalpark[松山文創園區]"
     ntsec = "ntsec[國立台灣科學教育館]"
+    tfam = "tfam[臺北市立美術館]"
