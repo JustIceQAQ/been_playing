@@ -1,4 +1,5 @@
 from abc import ABCMeta, abstractmethod
+from typing import Dict
 
 from bs4 import BeautifulSoup
 
@@ -15,3 +16,8 @@ class BeautifulSoupTranslation(TranslationInit):
     def format_to_object(self, text: str, format_encoding="html5lib") -> BeautifulSoup:
         formatted_object = BeautifulSoup(text, format_encoding)
         return formatted_object
+
+
+class JsonTranslation(TranslationInit):
+    def format_to_object(self, json_context) -> Dict:
+        return json_context
