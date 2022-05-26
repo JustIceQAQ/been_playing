@@ -190,3 +190,33 @@ class HuaShan1914Parse(ParseInit):
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
         return "{}{}".format(target_domain, self.item.select_one("li > a")["href"])
+
+
+class SongShanCulturalParkParse(ParseInit):
+    def __init__(self, item: bs4.element.Tag):
+        self.item = item
+
+    def get_title(self, *args, **kwargs):
+        return self.item.select_one("span.row_rt > p.lv_h2").get_text()
+
+    def get_date(self, *args, **kwargs):
+        return self.item.select_one("span.row_rt > p.date.montsrt").get_text()
+
+    def get_address(self, *args, **kwargs):
+        return ""
+
+    def get_figure(self, *args, **kwargs):
+        target_domain = kwargs.get("target_domain", None)
+        if target_domain is None:
+            raise ValueError("請提供 TARGET_DOMAIN")
+        return "{}{}".format(
+            target_domain, self.item.select_one("span.row_lt > img")["src"]
+        )
+
+    def get_source_url(self, *args, **kwargs):
+        target_domain = kwargs.get("target_domain", None)
+        if target_domain is None:
+            raise ValueError("請提供 TARGET_DOMAIN")
+        return "{}{}".format(
+            target_domain, self.item.select_one("span.row_rt > a")["href"]
+        )

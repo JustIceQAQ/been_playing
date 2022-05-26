@@ -6,3 +6,4 @@ class ExhibitionEnum(str, enum.Enum):
     cksmh = "cksmh[中正紀念堂]"
     mocataipei = "mocataipei[台北當代藝術館]"
     npm = "npm[故宮]"
+    songshanculturalpark = "songshanculturalpark[松山文創園區]"
