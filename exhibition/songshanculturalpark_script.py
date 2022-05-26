@@ -2,9 +2,9 @@ from pathlib import Path
 
 from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
+from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
 from helper.parse_helper import SongShanCulturalParkParse
 from helper.storage_helper import Exhibition, JustJsonStorage
-from helper.worker_helper import RequestsWorker
 
 
 def songshanculturalpark_script():
@@ -16,7 +16,7 @@ def songshanculturalpark_script():
 
     storage = JustJsonStorage(target_storage)
     storage.truncate_table()
-    requests_worker = RequestsWorker(target_url)
+    requests_worker = RequestsBeautifulSoupInstantiation(target_url)
     bs4_object = requests_worker.fetch()
     dataset = bs4_object.select("div#exhibition > div.rows")
     for item in dataset:

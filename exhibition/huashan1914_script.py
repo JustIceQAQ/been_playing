@@ -2,9 +2,9 @@ from pathlib import Path
 
 from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
+from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
 from helper.parse_helper import HuaShan1914Parse
 from helper.storage_helper import Exhibition, JustJsonStorage
-from helper.worker_helper import RequestsWorker
 
 
 def huashan1914_script():
@@ -20,7 +20,9 @@ def huashan1914_script():
     index = 1
     datasets = []
     while True:
-        requests_worker = RequestsWorker(f"{target_url}?index={index}")
+        requests_worker = RequestsBeautifulSoupInstantiation(
+            f"{target_url}?index={index}"
+        )
         bs4_object = requests_worker.fetch()
         dataset = bs4_object.select("ul#event-ul li")
         if dataset:

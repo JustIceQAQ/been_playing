@@ -2,9 +2,9 @@ from pathlib import Path
 
 from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
+from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
 from helper.parse_helper import MocaTaipeiParse
 from helper.storage_helper import Exhibition, JustJsonStorage
-from helper.worker_helper import RequestsWorker
 
 
 def mocataipei_script():
@@ -14,7 +14,7 @@ def mocataipei_script():
     target_storage = str(root_dir / "data" / "mocataipei_exhibition.json")
     target_systematics = ExhibitionEnum.mocataipei
 
-    requests_worker = RequestsWorker(target_url)
+    requests_worker = RequestsBeautifulSoupInstantiation(target_url)
     bs4_object = requests_worker.fetch()
     storage = JustJsonStorage(target_storage)
     storage.truncate_table()
