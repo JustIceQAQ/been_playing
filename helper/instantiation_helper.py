@@ -18,8 +18,8 @@ class InstantiationInit(metaclass=ABCMeta):
 class RequestsBeautifulSoupInstantiation(
     InstantiationInit, RequestsCrawler, BeautifulSoupTranslation
 ):
-    def fetch(self) -> BeautifulSoup:
-        context = self.get_page()
+    def fetch(self, *args, **kwargs) -> BeautifulSoup:
+        context = self.get_page(*args, **kwargs)
         translation_object = self.format_to_object(context)
         return translation_object
 

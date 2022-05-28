@@ -10,3 +10,4 @@ class ExhibitionEnum(str, enum.Enum):
     ntsec = "ntsec[國立台灣科學教育館]"
     tfam = "tfam[臺北市立美術館]"
     tickets_udnfunlife = "tickets_udnfunlife[udn售票網]"
+    tickets_books = "tickets_books[博客來售票網]"

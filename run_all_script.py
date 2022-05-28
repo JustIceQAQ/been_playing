@@ -8,6 +8,7 @@ from exhibition.npm_script import npm_script
 from exhibition.ntsec_script import ntsec_script
 from exhibition.songshanculturalpark_script import songshanculturalpark_script
 from exhibition.tfam_script import tfam_script
+from exhibition.tickets_books_script import tickets_books_script
 from exhibition.tickets_udnfunlife_script import tickets_udnfunlife_script
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent
@@ -22,6 +23,7 @@ if __name__ == "__main__":
         ntsec_script,
         tfam_script,
         tickets_udnfunlife_script,
+        tickets_books_script,
     }
     runners = [threading.Thread(target=py_script) for py_script in py_scripts]
     for runner in runners:

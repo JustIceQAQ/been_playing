@@ -1,3 +1,4 @@
+import secrets
 from abc import ABCMeta, abstractmethod
 
 USER_AGENT = (
@@ -33,4 +34,14 @@ class TFAMLifeHeader(HeaderInit):
             "Content-Type": "application/json; charset=UTF-8",
             "Host": "www.tfam.museum",
             "X-Requested-With": "XMLHttpRequest",
+        }
+
+
+class TicketsBooksHeader(HeaderInit):
+    def get_header(self):
+        return {
+            "User-Agent": USER_AGENT,
+            "Host": "tickets.books.com.tw",
+            "Content-Type": "Content-Type: text/html; charset=BIG5",
+            "Cookie": f"bid={secrets.token_hex(5)}; ssid={secrets.token_hex(5)}; bt={secrets.token_hex(5)}",
         }

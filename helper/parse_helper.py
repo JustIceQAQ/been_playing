@@ -317,3 +317,23 @@ class TicketsUdnFunLifeParse(ParseInit):
 
     def get_source_url(self, *args, **kwargs):
         return self.item.select_one("div.inner > a")["href"]
+
+
+class TicketsBooksParse(ParseInit):
+    def __init__(self, item: bs4.element.Tag):
+        self.item = item
+
+    def get_title(self, *args, **kwargs):
+        return self.item.select_one("div.info > div > h4 > span > a").get_text()
+
+    def get_date(self, *args, **kwargs):
+        return "-"
+
+    def get_address(self, *args, **kwargs):
+        return "-"
+
+    def get_figure(self, *args, **kwargs):
+        return self.item.select_one("div.covbg > div > div > p > a > img")["src"]
+
+    def get_source_url(self, *args, **kwargs):
+        return self.item.select_one("div.covbg > div > div > p > a")["href"]
