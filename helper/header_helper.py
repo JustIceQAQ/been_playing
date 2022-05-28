@@ -1,0 +1,36 @@
+from abc import ABCMeta, abstractmethod
+
+USER_AGENT = (
+    "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/102.0.5005.61 Safari/537.36"
+)
+
+
+class HeaderInit(metaclass=ABCMeta):
+    @abstractmethod
+    def get_header(self):
+        raise NotImplementedError
+
+
+class TicketsUdnFunLifeHeader(HeaderInit):
+    def get_header(self):
+        return {
+            "User-Agent": USER_AGENT,
+            "Host": "tickets.udnfunlife.com",
+            "Origin": "https://tickets.udnfunlife.com",
+            "Referer": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx",
+            "Content-Type": "application/json; charset=UTF-8",
+            "X-Requested-With": "XMLHttpRequest",
+        }
+
+
+class TFAMLifeHeader(HeaderInit):
+    def get_header(self):
+        return {
+            "user-agent": USER_AGENT,
+            "Referer": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw",
+            "Content-Type": "application/json; charset=UTF-8",
+            "Host": "www.tfam.museum",
+            "X-Requested-With": "XMLHttpRequest",
+        }

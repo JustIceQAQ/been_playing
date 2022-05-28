@@ -3,6 +3,7 @@ from pathlib import Path
 
 from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
+from helper.header_helper import TFAMLifeHeader
 from helper.instantiation_helper import RequestsJsonInstantiation
 from helper.parse_helper import TFAMParse
 from helper.storage_helper import Exhibition, JustJsonStorage
@@ -16,18 +17,8 @@ def tfam_script():
     target_domain = "https://www.tfam.museum"
 
     requests_worker = RequestsJsonInstantiation(target_url)
-    user_agent = (
-        "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/102.0.5005.61 Safari/537.36"
-    )
-    headers = {
-        "user-agent": user_agent,
-        "Referer": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw",
-        "Content-Type": "application/json; charset=UTF-8",
-        "Host": "www.tfam.museum",
-        "X-Requested-With": "XMLHttpRequest",
-    }
+
+    headers = TFAMLifeHeader().get_header()
 
     dataset = requests_worker.fetch(
         method="POST",

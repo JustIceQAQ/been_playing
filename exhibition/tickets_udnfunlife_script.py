@@ -3,6 +3,7 @@ from pathlib import Path
 
 from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
+from helper.header_helper import TicketsUdnFunLifeHeader
 from helper.instantiation_helper import RequestsJsonInstantiation
 from helper.parse_helper import TicketsUdnFunLifeParse
 from helper.storage_helper import Exhibition, JustJsonStorage
@@ -18,19 +19,7 @@ def tickets_udnfunlife_script():
     target_systematics = ExhibitionEnum.tickets_udnfunlife
 
     requests_worker = RequestsJsonInstantiation(target_url)
-    user_agent = (
-        "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/102.0.5005.61 Safari/537.36"
-    )
-    headers = {
-        "User-Agent": user_agent,
-        "Host": "tickets.udnfunlife.com",
-        "Origin": "https://tickets.udnfunlife.com",
-        "Referer": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx",
-        "Content-Type": "application/json; charset=UTF-8",
-        "X-Requested-With": "XMLHttpRequest",
-    }
+    headers = TicketsUdnFunLifeHeader().get_header()
     response = requests_worker.fetch(
         method="POST",
         headers=headers,
