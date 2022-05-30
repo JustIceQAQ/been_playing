@@ -33,11 +33,11 @@ class Exhibition(BaseModel):
     address: Optional[str] = None
     figure: Optional[str] = None
     source_url: str
-    UUID: str
+    UUID: Optional[str] = None
 
     def __init__(self, **kwargs) -> None:
         super().__init__(**kwargs)
-        self.UUID: str = hex_uuid5(self.systematics, self.source_url)
+        self.UUID: Optional[str] = hex_uuid5(self.systematics, self.source_url)
 
 
 class StorageInit(metaclass=ABCMeta):
