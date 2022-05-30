@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import Final
 
 from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
@@ -8,11 +9,11 @@ from helper.parse_helper import TicketsBooksParse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
-def tickets_books_script():
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
-    target_url = "https://tickets.books.com.tw/leisure/"
-    target_storage = str(root_dir / "data" / "books_exhibition.json")
-    target_systematics = ExhibitionEnum.tickets_books
+def tickets_books_script() -> None:
+    root_dir: Final = Path(__file__).resolve(strict=True).parent.parent
+    target_url: Final = "https://tickets.books.com.tw/leisure/"
+    target_storage: Final = str(root_dir / "data" / "books_exhibition.json")
+    target_systematics: Final = ExhibitionEnum.tickets_books
 
     requests_worker = RequestsBeautifulSoupInstantiation(target_url)
     headers = TicketsBooksHeader().get_header()

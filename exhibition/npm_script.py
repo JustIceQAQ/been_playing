@@ -7,7 +7,7 @@ from helper.parse_helper import NpmColParse, NpmRowParse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
-def npm_script():
+def npm_script() -> None:
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1"
     target_domain = "https://www.npm.gov.tw/"

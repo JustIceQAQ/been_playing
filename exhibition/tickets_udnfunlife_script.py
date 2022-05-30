@@ -10,7 +10,7 @@ from helper.storage_helper import Exhibition, JustJsonStorage
 from helper.translation_helper import BeautifulSoupTranslation
 
 
-def tickets_udnfunlife_script():
+def tickets_udnfunlife_script() -> None:
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = (
         "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
@@ -27,11 +27,13 @@ def tickets_udnfunlife_script():
     )
     storage = JustJsonStorage(target_storage)
     storage.truncate_table()
-    dataset = (
-        BeautifulSoupTranslation()
-        .format_to_object(response["d"]["ReturnData"]["script"])
-        .select("div.inner")
+
+    rawdata = BeautifulSoupTranslation().format_to_object(
+        response["d"]["ReturnData"]["script"]
     )
+
+    dataset = rawdata.select("div.inner")
+
     for item in dataset:
         udnfunlife_data = TicketsUdnFunLifeParse(item).parsed()
         udnfunlife_clean_data = {

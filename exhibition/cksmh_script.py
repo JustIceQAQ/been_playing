@@ -7,7 +7,7 @@ from helper.parse_helper import CKSMHParse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
-def cksmh_script():
+def cksmh_script() -> None:
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.cksmh.gov.tw/activitysoonlist_369.html"
     target_storage = str(root_dir / "data" / "cksmh_exhibition.json")

@@ -1,6 +1,6 @@
 import inspect
 from abc import ABCMeta, abstractmethod
-from typing import Dict
+from typing import Any, Dict
 
 import bs4
 import cssutils
@@ -8,26 +8,26 @@ import cssutils
 
 class ParseInit(metaclass=ABCMeta):
     @abstractmethod
-    def get_title(self, *args, **kwargs):
+    def get_title(self, *args, **kwargs) -> str:
         raise NotImplementedError
 
     @abstractmethod
-    def get_date(self, *args, **kwargs):
+    def get_date(self, *args, **kwargs) -> str:
         raise NotImplementedError
 
     @abstractmethod
-    def get_address(self, *args, **kwargs):
+    def get_address(self, *args, **kwargs) -> str:
         raise NotImplementedError
 
     @abstractmethod
-    def get_figure(self, *args, **kwargs):
+    def get_figure(self, *args, **kwargs) -> str:
         raise NotImplementedError
 
     @abstractmethod
-    def get_source_url(self, *args, **kwargs):
+    def get_source_url(self, *args, **kwargs) -> str:
         raise NotImplementedError
 
-    def parsed(self, *args, **kwargs):
+    def parsed(self, *args, **kwargs) -> Dict[str, Any]:
         methods = [
             method
             for method in inspect.getmembers(self, predicate=inspect.ismethod)
@@ -46,13 +46,13 @@ class MocaTaipeiParse(ParseInit):
     def get_title(self, *args, **kwargs) -> str:
         return self.item.find("h3", {"class": "imgTitle"}).get_text()
 
-    def get_date(self, *args, **kwargs):
+    def get_date(self, *args, **kwargs) -> str:
         return self.item.find("div", {"class": "dateBox"}).get_text()
 
-    def get_address(self, *args, **kwargs):
+    def get_address(self, *args, **kwargs) -> str:
         return "-"
 
-    def get_figure(self, *args, **kwargs):
+    def get_figure(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
@@ -60,7 +60,7 @@ class MocaTaipeiParse(ParseInit):
             target_domain, self.item.select_one("figure.imgFrame img")["data-src"]
         )
 
-    def get_source_url(self, *args, **kwargs):
+    def get_source_url(self, *args, **kwargs) -> str:
         return self.item.select_one("a.textFrame")["href"]
 
 
@@ -157,7 +157,7 @@ class CKSMHParse(ParseInit):
 
 
 class HuaShan1914Parse(ParseInit):
-    def __init__(self, item: bs4.element.Tag):
+    def __init__(self, item: bs4.element.Tag) -> None:
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str:
@@ -197,16 +197,16 @@ class SongShanCulturalParkParse(ParseInit):
     def __init__(self, item: bs4.element.Tag):
         self.item = item
 
-    def get_title(self, *args, **kwargs):
+    def get_title(self, *args, **kwargs) -> str:
         return self.item.select_one("span.row_rt > p.lv_h2").get_text()
 
-    def get_date(self, *args, **kwargs):
+    def get_date(self, *args, **kwargs) -> str:
         return self.item.select_one("span.row_rt > p.date.montsrt").get_text()
 
-    def get_address(self, *args, **kwargs):
+    def get_address(self, *args, **kwargs) -> str:
         return "-"
 
-    def get_figure(self, *args, **kwargs):
+    def get_figure(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
@@ -214,7 +214,7 @@ class SongShanCulturalParkParse(ParseInit):
             target_domain, self.item.select_one("span.row_lt > img")["src"]
         )
 
-    def get_source_url(self, *args, **kwargs):
+    def get_source_url(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
@@ -227,16 +227,16 @@ class NTSECParse(ParseInit):
     def __init__(self, item: bs4.element.Tag):
         self.item = item
 
-    def get_title(self, *args, **kwargs):
+    def get_title(self, *args, **kwargs) -> str:
         return self.item.select_one("div.message > h3").get_text()
 
-    def get_date(self, *args, **kwargs):
+    def get_date(self, *args, **kwargs) -> str:
         return "-"
 
-    def get_address(self, *args, **kwargs):
+    def get_address(self, *args, **kwargs) -> str:
         return "-"
 
-    def get_figure(self, *args, **kwargs):
+    def get_figure(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
@@ -245,7 +245,7 @@ class NTSECParse(ParseInit):
             self.item.select_one("div.photo > img")["src"].replace("../", "/"),
         )
 
-    def get_source_url(self, *args, **kwargs):
+    def get_source_url(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
@@ -258,18 +258,18 @@ class TFAMParse(ParseInit):
     def __init__(self, item: Dict):
         self.item = item
 
-    def get_title(self, *args, **kwargs):
-        return self.item.get("ExName", None)
+    def get_title(self, *args, **kwargs) -> str:
+        return str(self.item.get("ExName", "-"))
 
-    def get_date(self, *args, **kwargs):
+    def get_date(self, *args, **kwargs) -> str:
         begin_date = self.item.get("BeginDate", None)
         end_date = self.item.get("EndDate", None)
         return f"{begin_date} - {end_date}"
 
-    def get_address(self, *args, **kwargs):
+    def get_address(self, *args, **kwargs) -> str:
         return self.item.get("Area", "-")
 
-    def get_figure(self, *args, **kwargs):
+    def get_figure(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
@@ -277,7 +277,7 @@ class TFAMParse(ParseInit):
 
         return "{}/File/{}".format(target_domain, now_play_img.replace("\\", "/"))
 
-    def get_source_url(self, *args, **kwargs):
+    def get_source_url(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
@@ -291,10 +291,10 @@ class TicketsUdnFunLifeParse(ParseInit):
     def __init__(self, item: bs4.element.Tag):
         self.item = item
 
-    def get_title(self, *args, **kwargs):
+    def get_title(self, *args, **kwargs) -> str:
         return self.item.find("h5", {"class": "yd_card-title"}).get_text()
 
-    def get_date(self, *args, **kwargs):
+    def get_date(self, *args, **kwargs) -> str:
         icon_texts = self.item.findAll("div", {"class": "yd_card-iconText"})
         date_value = ""
         for icon_text in icon_texts:
@@ -303,7 +303,7 @@ class TicketsUdnFunLifeParse(ParseInit):
                 break
         return date_value
 
-    def get_address(self, *args, **kwargs):
+    def get_address(self, *args, **kwargs) -> str:
         icon_texts = self.item.findAll("div", {"class": "yd_card-iconText"})
         date_value = "-"
         for icon_text in icon_texts:
@@ -312,10 +312,10 @@ class TicketsUdnFunLifeParse(ParseInit):
                 break
         return date_value
 
-    def get_figure(self, *args, **kwargs):
+    def get_figure(self, *args, **kwargs) -> str:
         return self.item.select_one("div.yd_card-thumbnail > img")["src"]
 
-    def get_source_url(self, *args, **kwargs):
+    def get_source_url(self, *args, **kwargs) -> str:
         return self.item.select_one("div.inner > a")["href"]
 
 
@@ -323,17 +323,17 @@ class TicketsBooksParse(ParseInit):
     def __init__(self, item: bs4.element.Tag):
         self.item = item
 
-    def get_title(self, *args, **kwargs):
+    def get_title(self, *args, **kwargs) -> str:
         return self.item.select_one("div.info > div > h4 > span > a").get_text()
 
-    def get_date(self, *args, **kwargs):
+    def get_date(self, *args, **kwargs) -> str:
         return "-"
 
-    def get_address(self, *args, **kwargs):
+    def get_address(self, *args, **kwargs) -> str:
         return "-"
 
-    def get_figure(self, *args, **kwargs):
+    def get_figure(self, *args, **kwargs) -> str:
         return self.item.select_one("div.covbg > div > div > p > a > img")["src"]
 
-    def get_source_url(self, *args, **kwargs):
+    def get_source_url(self, *args, **kwargs) -> str:
         return self.item.select_one("div.covbg > div > div > p > a")["href"]

@@ -7,7 +7,7 @@ from helper.parse_helper import MocaTaipeiParse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
-def mocataipei_script():
+def mocataipei_script() -> None:
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent"
     target_domain = "https://www.mocataipei.org.tw"

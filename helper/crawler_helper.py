@@ -1,5 +1,6 @@
 from abc import ABCMeta, abstractmethod
 from io import BytesIO
+from typing import Any, Dict, Union
 
 import certifi
 import pycurl
@@ -18,7 +19,7 @@ class RequestsCrawler(CrawlerInit):
     def __init__(self, url: str):
         self.url = url
 
-    def get_page(self, method="GET", *args, **kwargs) -> str:
+    def get_page(self, method="GET", *args, **kwargs) -> Union[Dict[Any, Any], str]:
         response = requests.request(method, self.url, *args, **kwargs)
         try:
             return response.json()

@@ -7,7 +7,7 @@ from helper.parse_helper import HuaShan1914Parse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
-def huashan1914_script():
+def huashan1914_script() -> None:
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.huashan1914.com/w/huashan1914/exhibition"
     target_domain = "https://www.huashan1914.com"

@@ -3,7 +3,7 @@ from abc import ABCMeta
 
 class CleanInit(metaclass=ABCMeta):
     @staticmethod
-    def clean_string(raw_string):
+    def clean_string(raw_string) -> str:
         raise NotImplementedError
 
 

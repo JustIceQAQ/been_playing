@@ -9,7 +9,7 @@ from helper.parse_helper import TFAMParse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
-def tfam_script():
+def tfam_script() -> None:
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.tfam.museum/ashx/Exhibition.ashx?ddlLang=zh-tw"
     target_storage = str(root_dir / "data" / "tfam_exhibition.json")

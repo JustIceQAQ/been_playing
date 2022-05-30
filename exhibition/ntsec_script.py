@@ -7,7 +7,7 @@ from helper.parse_helper import NTSECParse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
-def ntsec_script():
+def ntsec_script() -> None:
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.ntsec.gov.tw/User/Exhibitions.aspx?a=44"
     target_domain = "https://www.ntsec.gov.tw"

@@ -1,5 +1,6 @@
 import secrets
 from abc import ABCMeta, abstractmethod
+from typing import Dict, Optional
 
 USER_AGENT = (
     "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -10,12 +11,12 @@ USER_AGENT = (
 
 class HeaderInit(metaclass=ABCMeta):
     @abstractmethod
-    def get_header(self):
+    def get_header(self) -> Optional[Dict[str, str]]:
         raise NotImplementedError
 
 
 class TicketsUdnFunLifeHeader(HeaderInit):
-    def get_header(self):
+    def get_header(self) -> Dict[str, str]:
         return {
             "User-Agent": USER_AGENT,
             "Host": "tickets.udnfunlife.com",
@@ -27,7 +28,7 @@ class TicketsUdnFunLifeHeader(HeaderInit):
 
 
 class TFAMLifeHeader(HeaderInit):
-    def get_header(self):
+    def get_header(self) -> Dict[str, str]:
         return {
             "user-agent": USER_AGENT,
             "Referer": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw",
@@ -38,7 +39,7 @@ class TFAMLifeHeader(HeaderInit):
 
 
 class TicketsBooksHeader(HeaderInit):
-    def get_header(self):
+    def get_header(self) -> Dict[str, str]:
         return {
             "User-Agent": USER_AGENT,
             "Host": "tickets.books.com.tw",
