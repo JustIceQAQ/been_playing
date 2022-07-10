@@ -3,7 +3,7 @@ from typing import Any, Dict, List, Union
 
 from bs4 import BeautifulSoup
 
-from helper.crawler_helper import PyCurlCrawler, RequestsCrawler
+from helper.crawler_helper import RequestsCrawler  # PyCurlCrawler
 from helper.translation_helper import BeautifulSoupTranslation, JsonTranslation
 
 # 爬蟲 + 轉譯器 組合
@@ -33,10 +33,10 @@ class RequestsJsonInstantiation(InstantiationInit, RequestsCrawler, JsonTranslat
         return translation_object
 
 
-class PyCurlBeautifulSoupInstantiation(
-    InstantiationInit, PyCurlCrawler, BeautifulSoupTranslation
-):
-    def fetch(self, *args, **kwargs) -> BeautifulSoup:
-        context = self.get_page()
-        translation_object = self.format_to_object(context)
-        return translation_object
+# class PyCurlBeautifulSoupInstantiation(
+#     InstantiationInit, PyCurlCrawler, BeautifulSoupTranslation
+# ):
+#     def fetch(self, *args, **kwargs) -> BeautifulSoup:
+#         context = self.get_page()
+#         translation_object = self.format_to_object(context)
+#         return translation_object
