@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: checkout repo content
         uses: actions/checkout@v2
+        with:
+          ref: 'develop'
         
       - name: setup python
         uses: actions/setup-python@v2
