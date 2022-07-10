@@ -1,6 +1,8 @@
 name: run-script
 
-permissions: write-all
+permissions:
+  contents: write
+  pull-requests: write
 
 on:
   schedule:
