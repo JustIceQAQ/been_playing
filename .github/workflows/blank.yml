@@ -1,5 +1,7 @@
 name: run-script
 
+permissions: write-all
+
 on:
   schedule:
     - cron: '*/5 * * * *'
