@@ -1,3 +1,4 @@
+import datetime
 import json
 import os
 import uuid
@@ -5,6 +6,7 @@ from abc import ABCMeta, abstractmethod
 from pathlib import Path
 from typing import IO, Any, Dict, List, Optional
 
+import pytz
 from pydantic import BaseModel
 from pysondb import db
 
@@ -53,6 +55,9 @@ class StorageInit(metaclass=ABCMeta):
     def truncate_table(self, *args, **kwargs) -> None:
         raise NotImplementedError
 
+    def get_last_update_time(self) -> str:
+        return datetime.datetime.now(pytz.timezone("Asia/Taipei")).isoformat()
+
 
 class JustJsonStorage(StorageInit):
     def __init__(self, db_path: str):
@@ -68,7 +73,10 @@ class JustJsonStorage(StorageInit):
 
     def commit(self) -> None:
         self.fd = open(self.db_path, "w", encoding="utf-8")
-        json_object = json.dumps({"data": self.temp_data}, indent=4)
+        json_object = json.dumps(
+            {"data": self.temp_data, "last_update": self.get_last_update_time()},
+            indent=4,
+        )
         self.fd.write(json_object)
         self.fd.close()
 
