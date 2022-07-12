@@ -8,7 +8,7 @@ permissions:
 on:
   workflow_dispatch:
   schedule:
-    - cron: '* 4 * * *'
+    - cron: '0 4 * * *'
   pull_request:
     branches:
       - "develop" 
@@ -46,7 +46,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git config --local --unset-all "http.https://github.com/.extraheader"
           git add -A
-          git commit -m "update data" -a
+          git commit -m "update data/*.json" -a
       
       - name: push changes
         uses: ad-m/github-push-action@master
