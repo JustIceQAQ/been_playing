@@ -2,15 +2,6 @@
     "data": [
         {
             "systematics": "huashan1914[\u83ef\u5c711914]",
-            "title": "\u300c\u539f\u5b50GO \u63a2\u96aa\u8da3\u300d\u539f\u5b50\u80fd\u79d1\u6280\u79d1\u666e\u5c55",
-            "date": "2022.07.15 - 07.18",
-            "address": "-",
-            "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/2022%e5%8e%9f%e5%ad%90%e8%83%bd%e8%a6%96%e8%a6%ba-%e6%a9%ab%e5%bc%8fQ_%e5%b7%a5%e4%bd%9c%e5%8d%80%e5%9f%9f%201.jpg",
-            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22071317390819931",
-            "UUID": "feba73eb3cc45fddb8f009b6b72eff11"
-        },
-        {
-            "systematics": "huashan1914[\u83ef\u5c711914]",
             "title": "\u300c\u60c5\u7cfb\u9577\u57ce\u00b7\u76f8\u7d04\u6cb3\u5317\u300d\u9577\u57ce\u6587\u5316\u5c55",
             "date": "2022.07.05 - 07.20",
             "address": "-",
@@ -35,15 +26,6 @@
             "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/5.%20%e8%8f%af%e5%b1%b1%e5%9c%92%e5%8d%80%e6%9b%9d%e5%85%89%e5%bd%a2%e8%b1%a12_1920%20x%201080.jpeg",
             "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22060113483204171",
             "UUID": "40a132683077586d9cd2826b54db91a5"
-        },
-        {
-            "systematics": "huashan1914[\u83ef\u5c711914]",
-            "title": "\u4eae\u6676\u6676\u53f2\u840a\u59c6",
-            "date": "2022.07.23",
-            "address": "-",
-            "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/IMG_5147_22061415060877256.jpg",
-            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22061414522345911",
-            "UUID": "e572dc94afb7532eb95f808fcf55c672"
         },
         {
             "systematics": "huashan1914[\u83ef\u5c711914]",
@@ -110,6 +92,15 @@
         },
         {
             "systematics": "huashan1914[\u83ef\u5c711914]",
+            "title": "\u8fd1\u9435\u96fb\u8eca \u590f\u65e5\u5feb\u9583\u65e5\u672c\u9435\u9053\u904a",
+            "date": "2022.06.25 - 08.14",
+            "address": "-",
+            "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e8%bf%91%e9%90%b5_22062210362597332.jpeg",
+            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22062210322465871",
+            "UUID": "b9ac82d151d2566893e15570373ccbf3"
+        },
+        {
+            "systematics": "huashan1914[\u83ef\u5c711914]",
             "title": "\u300a\u6211\u548c\u6211\u7684\u5c71\u6797\u597d\u670b\u53cb\u300b\u54c1\u724c\u5feb\u9583\u5e97",
             "date": "2022.06.22 - 08.14",
             "address": "-",
@@ -125,15 +116,6 @@
             "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/BANNER-1920x1080_22060220173941334.jpg",
             "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22060220203793754",
             "UUID": "d86c418272a555419d4e5f91122186bd"
-        },
-        {
-            "systematics": "huashan1914[\u83ef\u5c711914]",
-            "title": "\u8fd1\u9435\u96fb\u8eca \u590f\u65e5\u5feb\u9583\u65e5\u672c\u9435\u9053\u904a",
-            "date": "2022.06.25 - 08.14",
-            "address": "-",
-            "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e8%bf%91%e9%90%b5_22062210362597332.jpeg",
-            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22062210322465871",
-            "UUID": "b9ac82d151d2566893e15570373ccbf3"
         },
         {
             "systematics": "huashan1914[\u83ef\u5c711914]",
@@ -370,5 +352,5 @@
             "UUID": "3302605e00e45ebd97aecd536a8d3349"
         }
     ],
-    "last_update": "2022-07-18T12:44:17.953668+08:00"
+    "last_update": "2022-07-19T13:06:03.572935+08:00"
 }
