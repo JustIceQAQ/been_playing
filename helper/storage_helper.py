@@ -74,7 +74,11 @@ class JustJsonStorage(StorageInit):
     def commit(self) -> None:
         self.fd = open(self.db_path, "w", encoding="utf-8")
         json_object = json.dumps(
-            {"data": self.temp_data, "last_update": self.get_last_update_time()},
+            {
+                "data": self.temp_data,
+                "counts": len(self.temp_data),
+                "last_update": self.get_last_update_time(),
+            },
             indent=4,
         )
         self.fd.write(json_object)

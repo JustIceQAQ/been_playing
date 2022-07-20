@@ -5,6 +5,7 @@ from exhibition.cksmh_script import cksmh_script
 from exhibition.huashan1914_script import huashan1914_script
 from exhibition.mocataipei_script import mocataipei_script
 from exhibition.npm_script import npm_script
+from exhibition.ntm_script import ntm_script
 from exhibition.ntsec_script import ntsec_script
 from exhibition.songshanculturalpark_script import songshanculturalpark_script
 from exhibition.tfam_script import tfam_script
@@ -24,6 +25,7 @@ if __name__ == "__main__":
         tfam_script,
         tickets_udnfunlife_script,
         tickets_books_script,
+        ntm_script,
     }
     runners = [threading.Thread(target=py_script) for py_script in py_scripts]
     for runner in runners:
