@@ -2,15 +2,6 @@
     "data": [
         {
             "systematics": "huashan1914[\u83ef\u5c711914]",
-            "title": "\u300c\u60c5\u7cfb\u9577\u57ce\u00b7\u76f8\u7d04\u6cb3\u5317\u300d\u9577\u57ce\u6587\u5316\u5c55",
-            "date": "2022.07.05 - 07.20",
-            "address": "-",
-            "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e7%b4%85%e9%a4%a8%e5%ae%98%e7%b6%b2_22070416454802256.jpg",
-            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22070416454803871",
-            "UUID": "51478b0cda85533e8ffcf067dea0b75b"
-        },
-        {
-            "systematics": "huashan1914[\u83ef\u5c711914]",
             "title": "\u672a\u4f86\u5e02 - \u6700Chill\u7684Lifestyle\uff1a\u81ea\u7136\u91ce\u9910",
             "date": "2022.06.17 - 07.21",
             "address": "-",
@@ -71,6 +62,15 @@
             "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e9%ba%b5%e5%8c%85%e5%b0%8f%e5%81%b7-%e5%a5%97%e6%9b%b8-%e8%8f%af%e9%ba%97%e5%b3%b6BN%201920X1080_22070618285766350.jpg",
             "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22070618260237926",
             "UUID": "872c1cd1ec17520aad707245b9f4a866"
+        },
+        {
+            "systematics": "huashan1914[\u83ef\u5c711914]",
+            "title": "SEGA 2022 FANTASTIC TOUR",
+            "date": "2022.07.30 - 07.31",
+            "address": "-",
+            "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/fantastic-tour-%e8%8f%af%e5%b1%b1FB%e8%87%89%e6%9b%b8A%e6%ac%be%e6%a0%bc%e5%bc%8f1920x1080_22072018405093858.jpeg",
+            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22072018382858944",
+            "UUID": "8e1ae5e42a525311b1f5e88be901fd06"
         },
         {
             "systematics": "huashan1914[\u83ef\u5c711914]",
@@ -352,5 +352,6 @@
             "UUID": "3302605e00e45ebd97aecd536a8d3349"
         }
     ],
-    "last_update": "2022-07-19T13:06:03.572935+08:00"
+    "counts": 39,
+    "last_update": "2022-07-20T23:57:17.215171+08:00"
 }
