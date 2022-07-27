@@ -2,6 +2,15 @@
     "data": [
         {
             "systematics": "npm[\u6545\u5bae]",
+            "title": "\u53e4\u756b\u52d5\u6f2b\u2014\u767e\u99ff\u5716",
+            "date": "2022-07-26~2022-09-25",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 102",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013041/34054655.jpg&w=720&h=500",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013041&l=1&type=&cat=",
+            "UUID": "0c7102243e0b500389d827785e818e17"
+        },
+        {
+            "systematics": "npm[\u6545\u5bae]",
             "title": "\u7b46\u58a8\u898b\u771f\u7ae0\u2014\u6545\u5bae\u66f8\u6cd5\u5c0e\u8cde",
             "date": "2022-07-09~2022-09-28",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 204,206",
@@ -53,15 +62,6 @@
             "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04012992/34054508.jpg&w=720&h=500",
             "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04012992&l=1&type=&cat=",
             "UUID": "e24abe58989051b3966a50a1ecfef8e6"
-        },
-        {
-            "systematics": "npm[\u6545\u5bae]",
-            "title": "\u53e4\u756b\u52d5\u6f2b\u2014\u6e05\u9662\u672c\u6e05\u660e\u4e0a\u6cb3\u5716",
-            "date": "2022-03-29~2022-07-24",
-            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 102",
-            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04012942/34054377.jpg&w=720&h=500",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04012942&l=1&type=&cat=",
-            "UUID": "0a595acb71695fa69ba54ad6d7872748"
         },
         {
             "systematics": "npm[\u6545\u5bae]",
@@ -191,5 +191,5 @@
         }
     ],
     "counts": 21,
-    "last_update": "2022-07-20T23:57:13.884799+08:00"
+    "last_update": "2022-07-27T12:43:00.509790+08:00"
 }

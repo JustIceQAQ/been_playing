@@ -29,12 +29,12 @@
         },
         {
             "systematics": "cksmh[\u4e2d\u6b63\u7d00\u5ff5\u5802]",
-            "title": "\u516d\u7f8e\uff0e\u7d55\u8272\u2015\u84b2\u7389\u84d3\u3001\u9673\u79cb\u7389\u3001\u90ed\u8276\u96c5\u3001\u674e\u6615\u3001\u674e\u9e97\u7389\u3001\u9ad8\u723e\u6b23\u5275\u4f5c\u5c55\uff08\u514d\u8cbb\u53c3\u89c0\uff09",
-            "date": "2022/07/06 ~ 2022/07/24 09:00~18:00",
-            "address": "\u5730\u9ede\uff1a\u4e00\u6a13\u85dd\u5eca",
-            "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/20548/20548.jpg",
-            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20548",
-            "UUID": "ff344130d77058a2bd03df8c492c9c80"
+            "title": "\u9f8d\u57ce\u4e7e\u5764(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2022/07/15 ~ 2022/08/02 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a2\u5c55\u5ef3",
+            "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/20552/20552.jpg",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20552",
+            "UUID": "b8621305843f5daabdd94f8a5660c366"
         },
         {
             "systematics": "cksmh[\u4e2d\u6b63\u7d00\u5ff5\u5802]",
@@ -44,15 +44,6 @@
             "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/20566/20566.jpg",
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20566",
             "UUID": "b7d11bf979775745a199ad1739d422b0"
-        },
-        {
-            "systematics": "cksmh[\u4e2d\u6b63\u7d00\u5ff5\u5802]",
-            "title": "\u9f8d\u57ce\u4e7e\u5764(\u514d\u8cbb\u53c3\u89c0)",
-            "date": "2022/07/15 ~ 2022/08/02 09:00~18:00",
-            "address": "\u5730\u9ede\uff1a2\u5c55\u5ef3",
-            "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/20552/20552.jpg",
-            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20552",
-            "UUID": "b8621305843f5daabdd94f8a5660c366"
         },
         {
             "systematics": "cksmh[\u4e2d\u6b63\u7d00\u5ff5\u5802]",
@@ -74,14 +65,23 @@
         },
         {
             "systematics": "cksmh[\u4e2d\u6b63\u7d00\u5ff5\u5802]",
-            "title": "\u767e\u798f\u5de8\u7af9\u57162.0(\u514d\u8cbb\u53c3\u89c0)",
-            "date": "2022/08/06 ~ 2022/08/15 09:00~18:00",
-            "address": "\u5730\u9ede\uff1a1\u5c55\u5ef3",
-            "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/20578/20578.jpg",
-            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20578",
-            "UUID": "40685eb423d0570494ac24266c53ec2f"
+            "title": "\u300c#Me Too\u5148\u884c\u8005\u300d\u7279\u5c55\uff08\u514d\u8cbb\u53c3\u89c0\uff09",
+            "date": "2022/07/27 ~ 2022/09/25 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a\u4e09\u6a13\u85dd\u5eca",
+            "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/20595/20595.jpg",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20595",
+            "UUID": "fb750e7b79c657388194d9dd2a55c59a"
+        },
+        {
+            "systematics": "cksmh[\u4e2d\u6b63\u7d00\u5ff5\u5802]",
+            "title": "\u8907\u8a9e\u2014\u7530\u540d\u748b\u651d\u5f71\u5275\u4f5c\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2022/08/05 ~ 2022/08/23 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a4\u5c55\u5ef3",
+            "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/20596/20596.jpg",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20596",
+            "UUID": "b4cb3ee8bb0d5020b0de16bef5e230dd"
         }
     ],
     "counts": 9,
-    "last_update": "2022-07-20T23:57:14.432632+08:00"
+    "last_update": "2022-07-27T12:43:00.340077+08:00"
 }

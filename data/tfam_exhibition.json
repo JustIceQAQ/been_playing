@@ -20,33 +20,6 @@
         },
         {
             "systematics": "tfam[\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928]",
-            "title": "\u5c0f\u4e2d\u73fe\u5927\uff1a\u856d\u9e97\u8679\u7684\u81fa\u7063\u7576\u4ee3\u85dd\u8853\u6536\u85cf",
-            "date": "2022/04/16 - 2022/07/24",
-            "address": "\u4e09\u6a133A",
-            "figure": "https://www.tfam.museum/File/Exhibition/Main/703/20220523152750073861.jpg",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=703",
-            "UUID": "79421a707984529c81a5f46bd7e8effb"
-        },
-        {
-            "systematics": "tfam[\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928]",
-            "title": "\u788e\u5316\u7684\u53f2\u89c0\u2014\u6c5f\u51f1\u7fa4\u500b\u5c55",
-            "date": "2022/04/23 - 2022/07/24",
-            "address": "\u4e09\u6a133B",
-            "figure": "https://www.tfam.museum/File/Exhibition/Main/705/20220526141835467792.jpg",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=705",
-            "UUID": "43ae6262dbdb5c21b5911fe676dbb27b"
-        },
-        {
-            "systematics": "tfam[\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928]",
-            "title": "\u7a7a\u9593\u8ff7\u5411\u2014\u4f55\u5b5f\u5a1f\u500b\u5c55",
-            "date": "2022/04/23 - 2022/07/24",
-            "address": "\u4e09\u6a133B",
-            "figure": "https://www.tfam.museum/File/Exhibition/Main/704/20220525165503050038.jpg",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=704",
-            "UUID": "3e227c8be50e5e39bd01969eb2c102ac"
-        },
-        {
-            "systematics": "tfam[\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928]",
             "title": "\u7b2c59\u5c46\u5a01\u5c3c\u65af\u570b\u969b\u7f8e\u8853\u96d9\u5e74\u5c55\u53f0\u7063\u9928 \u4e0d\u53ef\u80fd\u7684\u5922",
             "date": "2022/04/23 - 2022/11/27",
             "address": "\u7fa9\u5927\u5229\u5a01\u5c3c\u65af\u666e\u91cc\u5947\u6b50\u5c3c\u5bae",
@@ -73,6 +46,6 @@
             "UUID": "744414ac901f50d2a43eb0021c320938"
         }
     ],
-    "counts": 8,
-    "last_update": "2022-07-20T23:57:13.189096+08:00"
+    "counts": 5,
+    "last_update": "2022-07-27T12:42:59.818938+08:00"
 }
