@@ -2,33 +2,6 @@
     "data": [
         {
             "systematics": "huashan1914[\u83ef\u5c711914]",
-            "title": "\u83ef\u9e97\u5cf6X\u91c7\u5be6\u6587\u5316\u6545\u4e8b\u6642\u9593",
-            "date": "2022.07.31",
-            "address": "-",
-            "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e9%ba%b5%e5%8c%85%e5%b0%8f%e5%81%b7-%e5%a5%97%e6%9b%b8-%e8%8f%af%e9%ba%97%e5%b3%b6BN%201920X1080_22070618285766350.jpg",
-            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22070618260237926",
-            "UUID": "872c1cd1ec17520aad707245b9f4a866"
-        },
-        {
-            "systematics": "huashan1914[\u83ef\u5c711914]",
-            "title": "SEGA 2022 FANTASTIC TOUR",
-            "date": "2022.07.30 - 07.31",
-            "address": "-",
-            "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/fantastic-tour-%e8%8f%af%e5%b1%b1FB%e8%87%89%e6%9b%b8A%e6%ac%be%e6%a0%bc%e5%bc%8f1920x1080_22072018405093858.jpeg",
-            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22072018382858944",
-            "UUID": "8e1ae5e42a525311b1f5e88be901fd06"
-        },
-        {
-            "systematics": "huashan1914[\u83ef\u5c711914]",
-            "title": "2022\u6a02\u4e8b\u7f8e\u5473\u91e3\u9b5a\u6a5f\u5168\u53f0\u5de1\u8ff4\u6d3b\u52d5",
-            "date": "2022.07.30 - 07.31",
-            "address": "-",
-            "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/1920x1080_22072914262752832.jpg",
-            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22072914330820310",
-            "UUID": "0ac01fa397775e65a26ae74f3319f26e"
-        },
-        {
-            "systematics": "huashan1914[\u83ef\u5c711914]",
             "title": "\u7d79\u5370\u852c\u679c\u5e06\u5e03\u888b",
             "date": "2022.08.07",
             "address": "-",
@@ -272,15 +245,6 @@
         },
         {
             "systematics": "huashan1914[\u83ef\u5c711914]",
-            "title": "\u3010\u83ef\u5c71\u89aa\u5b50\u8868\u85dd\u7bc0\u3011\u4eba\u5c39\u5408\u4f5c\u793e \u5bf6\u5bf6\u5287\u5834\u300a\u99ac\u9ebb\uff0c\u6211\u4ec0\u9ebc\u6642\u5019\u53ef\u4ee5\u9577\u5927\uff1f\u300b\u7cfb\u5217\u6d3b\u52d5",
-            "date": "2022.07.29 - 07.31",
-            "address": "-",
-            "figure": "https://media.huashan1914.com/WebUPD/umaytheater/performance/%e3%80%8a%e9%a6%ac%e9%ba%bb%ef%bc%8c%e6%88%91%e5%80%91%e4%bb%80%e9%ba%bc%e6%99%82%e5%80%99%e5%8f%af%e4%bb%a5%e9%95%b7%e5%a4%a7%e3%80%8b%e8%8f%af%e5%b1%b1AD_02%2016%ef%bc%9a9%ef%bc%88W1920xH1080px%ef%bc%89.png",
-            "source_url": "https://www.huashan1914.com/w/umaytheater/performance_22042615231915588",
-            "UUID": "98bc0e1fc14156379cd4b5261f271f67"
-        },
-        {
-            "systematics": "huashan1914[\u83ef\u5c711914]",
             "title": "\u3010\u83ef\u5c71\u89aa\u5b50\u8868\u85dd\u7bc0\u3011\u593e\u8173\u62d6\u5287\u5718\u300a \u570b\u738b\u8207\u570b\u738b \u300b\u7cfb\u5217\u6d3b\u52d5",
             "date": "2022.08.05 - 08.07",
             "address": "-",
@@ -325,6 +289,6 @@
             "UUID": "3302605e00e45ebd97aecd536a8d3349"
         }
     ],
-    "counts": 36,
-    "last_update": "2022-07-31T12:26:15.894769+08:00"
+    "counts": 32,
+    "last_update": "2022-08-01T13:07:57.805256+08:00"
 }
