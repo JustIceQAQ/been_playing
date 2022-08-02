@@ -1,6 +1,7 @@
 import threading
 from pathlib import Path
 
+from exhibition import tmc_script
 from exhibition.cksmh_script import cksmh_script
 from exhibition.huashan1914_script import huashan1914_script
 from exhibition.mocataipei_script import mocataipei_script
@@ -26,6 +27,7 @@ if __name__ == "__main__":
         tickets_udnfunlife_script,
         tickets_books_script,
         ntm_script,
+        tmc_script,
     }
     runners = [threading.Thread(target=py_script) for py_script in py_scripts]
     for runner in runners:
