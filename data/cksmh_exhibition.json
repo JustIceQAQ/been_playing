@@ -29,24 +29,6 @@
         },
         {
             "systematics": "cksmh[\u4e2d\u6b63\u7d00\u5ff5\u5802]",
-            "title": "\u9f8d\u57ce\u4e7e\u5764(\u514d\u8cbb\u53c3\u89c0)",
-            "date": "2022/07/15 ~ 2022/08/02 09:00~18:00",
-            "address": "\u5730\u9ede\uff1a2\u5c55\u5ef3",
-            "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/20552/20552.jpg",
-            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20552",
-            "UUID": "b8621305843f5daabdd94f8a5660c366"
-        },
-        {
-            "systematics": "cksmh[\u4e2d\u6b63\u7d00\u5ff5\u5802]",
-            "title": "\u5b89\u8a00\u838a\u8a9e\u2014\u5b89\u862d\u838a\u66f8\u6cd5\u7d00\u5ff5\u5c55(\u514d\u8cbb\u53c3\u89c0)",
-            "date": "2022/07/15 ~ 2022/08/02 09:00~18:00",
-            "address": "\u5730\u9ede\uff1a4\u5c55\u5ef3",
-            "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/20566/20566.jpg",
-            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20566",
-            "UUID": "b7d11bf979775745a199ad1739d422b0"
-        },
-        {
-            "systematics": "cksmh[\u4e2d\u6b63\u7d00\u5ff5\u5802]",
             "title": "NIKKI\u500b\u4eba\u4f5c\u54c1\u5c55- Soul in your Eyes \u6211\u627e\u5230\u4f60\u4e86",
             "date": "2022/07/22 ~ 2022/08/07 09:00~18:00",
             "address": "\u5730\u9ede\uff1a3\u5c55\u5ef3",
@@ -80,8 +62,26 @@
             "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/20596/20596.jpg",
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20596",
             "UUID": "b4cb3ee8bb0d5020b0de16bef5e230dd"
+        },
+        {
+            "systematics": "cksmh[\u4e2d\u6b63\u7d00\u5ff5\u5802]",
+            "title": "\u767e\u798f\u5de8\u7af9\u57162.0(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2022/08/06 ~ 2022/08/15 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a1\u5c55\u5ef3",
+            "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/20578/20578.jpg",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20578",
+            "UUID": "40685eb423d0570494ac24266c53ec2f"
+        },
+        {
+            "systematics": "cksmh[\u4e2d\u6b63\u7d00\u5ff5\u5802]",
+            "title": "\u8d85\u611b\u756b \u4e00\u5718\u91d1\u5c6c\u4eba \u5927\u76f8\u672a\u4f86\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2022/08/06 ~ 2022/08/23 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a2\u5c55\u5ef3",
+            "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/20581/20581.jpg",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20581",
+            "UUID": "f7aecd2d8cc6506aba75bc4f3d980d77"
         }
     ],
     "counts": 9,
-    "last_update": "2022-08-02T13:02:09.951419+08:00"
+    "last_update": "2022-08-03T12:55:39.135682+08:00"
 }
