@@ -20,6 +20,15 @@
         },
         {
             "systematics": "tickets_udnfunlife[udn\u552e\u7968\u7db2]",
+            "title": "\u5916\u767e\u8001\u532f\u97f3\u6a02\u5287\u300a\u5922\u5e7b\u611b\u7a0b\u300b",
+            "date": "2022/09/23 ~ 2022/10/30",
+            "address": "\u677e\u5c71\u6587\u5275\u5712\u53402\u6a13\u591a\u529f\u80fd\u5c55\u6f14\u5ef3",
+            "figure": "https://imgs.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/N1SW8QA9_Product.JPG",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N1SW8QA9&kdid=featured",
+            "UUID": "7b67d0838348512c899f0ad15fcdfa9c"
+        },
+        {
+            "systematics": "tickets_udnfunlife[udn\u552e\u7968\u7db2]",
             "title": "\u5409\u535c\u529b\u52d5\u756b\u5927\u5e2b\u2014\u9ad8\u7551\u52f2\u5c55",
             "date": "2022/06/18 ~ 2022/09/25",
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3 \u6587\u5316\u9928\u4e8c\u6a13 \u7279\u5c55\u5ef3",
@@ -173,15 +182,6 @@
         },
         {
             "systematics": "tickets_udnfunlife[udn\u552e\u7968\u7db2]",
-            "title": "\u5916\u767e\u8001\u532f\u97f3\u6a02\u5287\u300a\u5922\u5e7b\u611b\u7a0b\u300b",
-            "date": "2022/09/23 ~ 2022/10/30",
-            "address": "\u677e\u5c71\u6587\u5275\u5712\u53402\u6a13\u591a\u529f\u80fd\u5c55\u6f14\u5ef3",
-            "figure": "https://imgs.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/N1SW8QA9_Product.JPG",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N1SW8QA9&kdid=featured",
-            "UUID": "7b67d0838348512c899f0ad15fcdfa9c"
-        },
-        {
-            "systematics": "tickets_udnfunlife[udn\u552e\u7968\u7db2]",
             "title": "\u6c92\u6709\u4eba\u60f3\u4ea4\u4f5c\u696d \u5357\u6751\u8b80\u5287Round 2",
             "date": "2022/08/10 ~ 2022/09/04",
             "address": "PLAYground \u5357\u6751\u5287\u5834",
@@ -227,5 +227,5 @@
         }
     ],
     "counts": 25,
-    "last_update": "2022-08-03T12:55:39.073463+08:00"
+    "last_update": "2022-08-04T12:34:42.599221+08:00"
 }
