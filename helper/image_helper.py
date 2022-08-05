@@ -11,7 +11,6 @@ from typing import Dict
 
 from dotenv import load_dotenv
 from imgurpython import ImgurClient
-from imgurpython.helpers.error import ImgurClientRateLimitError
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent
 runtime_logging = logging.getLogger("runtime_logging")
@@ -51,7 +50,7 @@ class ImgurImage(ImageInit):
     def upload(self, image_url, config=None, anon=True):
         runtime_url = image_url
         hash_url = hashlib.md5(image_url.encode("utf-8")).hexdigest()
-        print(hash_url, runtime_url)
+        # print(hash_url, runtime_url)
         runtime_logging.debug(
             f"{threading.current_thread().name}: will be upload {hash_url} {runtime_url}"
         )
@@ -79,7 +78,7 @@ class ImgurImage(ImageInit):
                     f"{threading.current_thread().name}: {hash_url} is   "
                 )
                 runtime_url = self.cache_data.get(hash_url)
-        except ImgurClientRateLimitError:
+        except Exception:
             pass
         return runtime_url
 
@@ -99,7 +98,7 @@ class ImgurImage(ImageInit):
 
 
 if __name__ == "__main__":
-    print(ROOT_DIR)
+    # print(ROOT_DIR)
     imgur_image = ImgurImage()
     imgur_image.load_cache_file()
 
@@ -110,15 +109,14 @@ if __name__ == "__main__":
     CLIENT_SECRET = os.getenv("IMGUR_API_CLIENT_SECRET", False)
 
     if CLIENT_ID and CLIENT_SECRET:
-        print(os.getenv("IMGUR_API_CLIENT_ID"), os.getenv("IMGUR_API_CLIENT_SECRET"))
         imgur_image = ImgurImage()
         imgur_image.login(CLIENT_ID, CLIENT_SECRET)
 
         credits = imgur_image.client.get_credits()
 
-        print(credits)
+        # print(credits)
 
         image_url = ".png"
         datas = imgur_image.upload(image_url)
-        print(datas)
+        # print(datas)
     imgur_image.save_cache_file()

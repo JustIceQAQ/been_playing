@@ -18,7 +18,7 @@ class RequestsCrawler(CrawlerInit):
 
     def get_page(self, method="GET", *args, **kwargs) -> Union[Dict[Any, Any], str]:
         response = requests.request(method, self.url, *args, **kwargs)
-        print(response)
+        # print(response)
         try:
             return response.json()
         except JSONDecodeError:

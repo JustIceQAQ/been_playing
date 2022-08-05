@@ -5,7 +5,6 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from exhibition import tmc_script
 from exhibition.cksmh_script import cksmh_script
 from exhibition.huashan1914_script import huashan1914_script
 from exhibition.mocataipei_script import mocataipei_script
@@ -16,6 +15,7 @@ from exhibition.songshanculturalpark_script import songshanculturalpark_script
 from exhibition.tfam_script import tfam_script
 from exhibition.tickets_books_script import tickets_books_script
 from exhibition.tickets_udnfunlife_script import tickets_udnfunlife_script
+from exhibition.tmc_script import tmc_script
 from helper.image_helper import ImgurImage
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent
