@@ -51,6 +51,7 @@ class ImgurImage(ImageInit):
     def upload(self, image_url, config=None, anon=True):
         runtime_url = image_url
         hash_url = hashlib.md5(image_url.encode("utf-8")).hexdigest()
+        print(hash_url, runtime_url)
         runtime_logging.debug(
             f"{threading.current_thread().name}: will be upload {hash_url} {runtime_url}"
         )
@@ -117,7 +118,7 @@ if __name__ == "__main__":
 
         print(credits)
 
-        image_url = "<img urls>"
+        image_url = ".png"
         datas = imgur_image.upload(image_url)
         print(datas)
     imgur_image.save_cache_file()

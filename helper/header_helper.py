@@ -1,4 +1,3 @@
-import secrets
 from abc import ABCMeta, abstractmethod
 from typing import Dict, Optional
 
@@ -43,6 +42,4 @@ class TicketsBooksHeader(HeaderInit):
         return {
             "User-Agent": USER_AGENT,
             "Host": "tickets.books.com.tw",
-            "Content-Type": "Content-Type: text/html; charset=BIG5",
-            "Cookie": f"bid={secrets.token_hex(5)}; ssid={secrets.token_hex(5)}; bt={secrets.token_hex(5)}",
         }

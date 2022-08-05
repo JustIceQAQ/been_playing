@@ -1,3 +1,4 @@
+import logging
 from pathlib import Path
 from typing import Final
 
@@ -7,6 +8,8 @@ from helper.header_helper import TicketsBooksHeader
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
 from helper.parse_helper import TicketsBooksParse
 from helper.storage_helper import Exhibition, JustJsonStorage
+
+runtime_logging = logging.getLogger("runtime_logging")
 
 
 def tickets_books_script() -> None:
@@ -20,7 +23,6 @@ def tickets_books_script() -> None:
     response = requests_worker.fetch("GET", headers=headers)
     storage = JustJsonStorage(target_storage)
     storage.truncate_table()
-
     dataset = response.select("ul.prd > li")
 
     for item in dataset:

@@ -1,7 +1,8 @@
 import inspect
 import json
 from abc import ABCMeta, abstractmethod
-from typing import Any, Dict
+from typing import Any, AnyStr, Dict, List
+from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 
 import bs4
 import cssutils
@@ -118,9 +119,20 @@ class NpmColParse(ParseInit):
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
-        return "{}{}".format(
+
+        figure_url = "{}{}".format(
             target_domain, self.item.select_one("figure.card-image img")["data-src"]
         )
+
+        return self.clean_figure_url(figure_url)
+
+    def clean_figure_url(self, o_url):
+        u = urlparse(o_url)
+        query = parse_qs(u.query, keep_blank_values=True)
+        for word in {"w", "h"}:
+            query.pop(word, None)
+        u = u._replace(query=urlencode(query, True))
+        return urlunparse(u)
 
     def get_source_url(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
@@ -334,7 +346,18 @@ class TicketsBooksParse(ParseInit):
         return "-"
 
     def get_figure(self, *args, **kwargs) -> str:
-        return self.item.select_one("div.covbg > div > div > p > a > img")["src"]
+        return self.clean_figure_url(
+            self.item.select_one("div.covbg > div > div > p > a > img")["src"]
+        )
+
+    def clean_figure_url(self, o_url) -> str:
+        u = urlparse(o_url)
+        query: Dict[AnyStr, List[AnyStr]] = parse_qs(u.query, keep_blank_values=True)
+        runtime_url = o_url
+        query_i: List[str] = query.get("i")
+        if query_i and (get_url := query_i[0]):
+            runtime_url = get_url
+        return runtime_url
 
     def get_source_url(self, *args, **kwargs) -> str:
         return self.item.select_one("div.covbg > div > div > p > a")["href"]

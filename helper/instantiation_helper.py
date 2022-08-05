@@ -23,6 +23,7 @@ class RequestsBeautifulSoupInstantiation(
     def fetch(self, *args, **kwargs) -> BeautifulSoup:
         context = self.get_page(*args, **kwargs)
         translation_object = self.format_to_object(context)
+        # print(translation_object)
         return translation_object
 
 
