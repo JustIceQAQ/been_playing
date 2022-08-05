@@ -39,6 +39,9 @@ jobs:
           
       - name: execute py script
         run: python run_all_script.py
+        env:
+          IMGUR_API_CLIENT_ID: ${{ secrets.IMGUR_API_CLIENT_ID }}
+          IMGUR_API_CLIENT_SECRET: ${{ secrets.IMGUR_API_CLIENT_SECRET }}
         
       - name: commit files
         run: |
