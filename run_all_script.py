@@ -1,5 +1,9 @@
+import logging
+import os
 import threading
 from pathlib import Path
+
+from dotenv import load_dotenv
 
 from exhibition import tmc_script
 from exhibition.cksmh_script import cksmh_script
@@ -12,10 +16,17 @@ from exhibition.songshanculturalpark_script import songshanculturalpark_script
 from exhibition.tfam_script import tfam_script
 from exhibition.tickets_books_script import tickets_books_script
 from exhibition.tickets_udnfunlife_script import tickets_udnfunlife_script
+from helper.image_helper import ImgurImage
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent
 
 if __name__ == "__main__":
+    logging.basicConfig(
+        level=logging.DEBUG,
+        format="%(asctime)s %(levelname)s %(message)s",
+        datefmt="%Y-%m-%d %H:%M",
+    )
+    runtime_logging = logging.getLogger("runtime_logging")
     py_scripts = {
         cksmh_script,
         huashan1914_script,
@@ -29,8 +40,32 @@ if __name__ == "__main__":
         ntm_script,
         tmc_script,
     }
+    ROOT_DIR = Path(__file__).resolve(strict=True).parent
+    runtime_logging.debug(ROOT_DIR)
+
+    file_path = ROOT_DIR / "data" / "cache_file.json"
+    runtime_logging.debug(file_path)
+    imgur_image = ImgurImage()
+    imgur_image.load_cache_file(file_path)
+
+    this_env = ROOT_DIR / ".env"
+    if this_env.exists():
+        runtime_logging.debug(this_env)
+        load_dotenv(this_env)
+
+    CLIENT_ID = os.getenv("IMGUR_API_CLIENT_ID", False)
+    CLIENT_SECRET = os.getenv("IMGUR_API_CLIENT_SECRET", False)
+
+    if CLIENT_ID and CLIENT_SECRET:
+        imgur_image.login(CLIENT_ID, CLIENT_SECRET)
+        runtime_logging.debug("imgur api is logined")
+
     runners = [threading.Thread(target=py_script) for py_script in py_scripts]
     for runner in runners:
         runner.start()
+    runtime_logging.debug("py_scripts threading is start")
     for runner in runners:
         runner.join()
+    imgur_image.save_cache_file()
+
+    runtime_logging.debug("all py_scripts threading is done")

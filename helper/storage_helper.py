@@ -7,8 +7,13 @@ from pathlib import Path
 from typing import IO, Any, Dict, List, Optional
 
 import pytz
+from dotenv import load_dotenv
 from pydantic import BaseModel
 from pysondb import db
+
+from helper.image_helper import ImgurImage
+
+ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent
 
 
 def hex_uuid5(systematics: str, value: str) -> str:
@@ -67,8 +72,17 @@ class JustJsonStorage(StorageInit):
         new_db_name = f"{str(self.db.name)}"
         self.db_path = self.db_path.replace(self.db.name, new_db_name)
         self.temp_data: List[Dict[str, str]] = []
+        self.ImgurImage = ImgurImage()
+        this_env = ROOT_DIR / ".env"
+        load_dotenv(this_env)
+        client_id = os.getenv("IMGUR_API_CLIENT_ID", False)
+        client_secret = os.getenv("IMGUR_API_CLIENT_SECRET", False)
+        self.ImgurImage.login(client_id, client_secret)
 
     def create_data(self, data: Dict[str, str], *args, **kwargs) -> None:
+        image_url = data.pop("figure")
+        image_url_formated = self.ImgurImage.upload(image_url)
+        data["figure"] = image_url_formated
         self.temp_data.append(data)
 
     def commit(self) -> None:
