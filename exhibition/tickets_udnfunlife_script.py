@@ -25,7 +25,7 @@ def tickets_udnfunlife_script() -> None:
         headers=headers,
         data=json.dumps({"pageNo": "1", "pageSize": "100"}),
     )
-    storage = JustJsonStorage(target_storage)
+    storage = JustJsonStorage(target_storage, target_systematics)
     storage.truncate_table()
 
     rawdata = BeautifulSoupTranslation().format_to_object(

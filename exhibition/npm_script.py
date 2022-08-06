@@ -16,7 +16,7 @@ def npm_script() -> None:
 
     requests_worker = RequestsBeautifulSoupInstantiation(target_url)
     target_object = requests_worker.fetch()
-    storage = JustJsonStorage(target_storage)
+    storage = JustJsonStorage(target_storage, target_systematics)
     storage.truncate_table()
 
     datasets_row = target_object.select("ul.mt-4 li.mb-8")

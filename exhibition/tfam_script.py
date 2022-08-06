@@ -25,7 +25,7 @@ def tfam_script() -> None:
         headers=headers,
         data=json.dumps({"JJMethod": "GetEx", "Type": "1"}),
     )
-    storage = JustJsonStorage(target_storage)
+    storage = JustJsonStorage(target_storage, target_systematics)
     storage.truncate_table()
 
     for item in dataset.get("Data"):

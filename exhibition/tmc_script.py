@@ -13,7 +13,7 @@ def tmc_script() -> None:
     target_storage = str(root_dir / "data" / "tmc_exhibition.json")
     target_systematics = ExhibitionEnum.tmc
 
-    storage = JustJsonStorage(target_storage)
+    storage = JustJsonStorage(target_storage, target_systematics)
     storage.truncate_table()
 
     items = []

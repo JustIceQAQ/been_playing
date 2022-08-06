@@ -16,7 +16,7 @@ def ntsec_script() -> None:
 
     requests_worker = RequestsBeautifulSoupInstantiation(target_url)
     target_object = requests_worker.fetch()
-    storage = JustJsonStorage(target_storage)
+    storage = JustJsonStorage(target_storage, target_systematics)
     storage.truncate_table()
 
     dataset = target_object.select("#ctl00_artContent > ul > li")

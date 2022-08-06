@@ -21,7 +21,7 @@ def tickets_books_script() -> None:
     requests_worker = RequestsBeautifulSoupInstantiation(target_url)
     headers = TicketsBooksHeader().get_header()
     response = requests_worker.fetch("GET", headers=headers)
-    storage = JustJsonStorage(target_storage)
+    storage = JustJsonStorage(target_storage, target_systematics)
     storage.truncate_table()
     dataset = response.select("ul.prd > li")
 

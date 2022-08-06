@@ -14,7 +14,7 @@ def songshanculturalpark_script() -> None:
     target_storage = str(root_dir / "data" / "songshanculturalpark_exhibition.json")
     target_systematics = ExhibitionEnum.songshanculturalpark
 
-    storage = JustJsonStorage(target_storage)
+    storage = JustJsonStorage(target_storage, target_systematics)
     storage.truncate_table()
     requests_worker = RequestsBeautifulSoupInstantiation(target_url)
     target_object = requests_worker.fetch()

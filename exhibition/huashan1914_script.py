@@ -14,7 +14,7 @@ def huashan1914_script() -> None:
     target_storage = str(root_dir / "data" / "huashan1914_exhibition.json")
     target_systematics = ExhibitionEnum.huashan1914
 
-    storage = JustJsonStorage(target_storage)
+    storage = JustJsonStorage(target_storage, target_systematics)
     storage.truncate_table()
 
     index = 1
