@@ -98,7 +98,7 @@ class ImgurImage(ImageInit):
 
     def save_cache_file(self):
         with open(self.cache_file_path, "w", encoding="utf-8") as file:
-            json.dump(self.cache_data, file)
+            json.dump(self.cache_data, file, indent=4)
 
 
 if __name__ == "__main__":
