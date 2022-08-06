@@ -60,7 +60,10 @@ if __name__ == "__main__":
         imgur_image.login(CLIENT_ID, CLIENT_SECRET)
         runtime_logging.debug("imgur api is logined")
 
-    runners = [threading.Thread(target=py_script) for py_script in py_scripts]
+    runners = [
+        threading.Thread(target=py_script, name=py_script.__name__)
+        for py_script in py_scripts
+    ]
     for runner in runners:
         runner.start()
     runtime_logging.debug("py_scripts threading is start")
