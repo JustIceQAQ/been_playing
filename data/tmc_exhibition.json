@@ -1,141 +1,136 @@
 {
+    "information": {
+        "fullname": "\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
+        "code_name": "tmc"
+    },
+    "counts": 14,
+    "last_update": "2022-08-07T00:07:42.556334+08:00",
     "data": [
         {
-            "systematics": "tmc[\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3]",
+            "systematics": "tmc",
             "title": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3\u3010\u5531 \u6211\u5011\u7684\u6b4c \u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55 MUSIC, ISLAND, STORIES: Pop Music in Taiwan\u3011",
             "date": "2021.09.18(\u516d) \u2014 2026.09.20(\u65e5)",
             "address": "\u6587\u5316\u9928",
             "source_url": "https://tmc.taipei/blog/show/music-island-stories/?session=2222",
-            "UUID": "134013043fd654848ce88f6b0feaf19b",
+            "UUID": "54c6a2e5fcbf55f8b3b1fce4bcf7b4a6",
             "figure": "https://i.imgur.com/dbtOqUB.webp"
         },
         {
-            "systematics": "tmc[\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3]",
+            "systematics": "tmc",
             "title": "\u5409\u535c\u529b\u52d5\u756b\u5927\u5e2b\u2014\u9ad8\u7551\u52f2\u5c55",
             "date": "2022.06.18(\u516d) \u2014 2022.09.25(\u65e5)",
             "address": "\u6587\u5316\u9928",
             "source_url": "https://tmc.taipei/blog/show/ghibli-takahata-exhibition2022/?session=2673",
-            "UUID": "a596b00ff719521ab56c5f1b41f44b3f",
+            "UUID": "4e587a05a14f5c639a67fbe6ff6b2217",
             "figure": "https://i.imgur.com/LdawSGa.webp"
         },
         {
-            "systematics": "tmc[\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3]",
-            "title": "\u912d\u5b9c\u8fb2\u300c\u65b0\u4e16\u7d00\u7684\u5973\u5152 \u6f14\u5531\u6703\u300d",
-            "date": "2022.08.06(\u516d)",
-            "address": "\u8868\u6f14\u5ef3",
-            "source_url": "https://tmc.taipei/blog/show/ennocheng-new-century-concert-08061930/",
-            "UUID": "9ef8661b6da45e66b1ded0adbc79b37d",
-            "figure": "https://i.imgur.com/klycEf1.webp"
-        },
-        {
-            "systematics": "tmc[\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3]",
+            "systematics": "tmc",
             "title": "2022\u300a\u597d\u597d\u611b\u6211 \u9752\u6625\u8ffd\u5922\u4eba \u6821\u5712\u6b4c\u5589\u8b9a\u300b\u97f3\u6a02\u5287 \u5ef6\u671f",
             "date": "2022.08.13(\u516d) \u2014 2022.08.14(\u65e5)",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/dream-catcher-high-school-musical2022/?session=2823",
-            "UUID": "1c1e76d0fdf05c03ac20e3c6cbc33d78",
+            "UUID": "3e1abb875b115ababc87ec445fdef8e9",
             "figure": "https://i.imgur.com/IL6ovHp.webp"
         },
         {
-            "systematics": "tmc[\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3]",
+            "systematics": "tmc",
             "title": "2022 \u7f85\u6642\u8c50D.L \u56de\u6b78\u6b63YA\u5de1\u8ff4\u6f14\u5531\u6703",
             "date": "2022.08.20(\u516d)",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/2022_daniello-dl-ya-intro/",
-            "UUID": "14c085dd172556778d854704339e044e",
+            "UUID": "61c69cd83bb952839d9a80a66dddd613",
             "figure": "https://i.imgur.com/OmAKbuu.webp"
         },
         {
-            "systematics": "tmc[\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3]",
+            "systematics": "tmc",
             "title": "\u8d99\u50b3 \u4eba\u751f\u5927\u5922\u6f14\u5531\u6703",
             "date": "2022.08.27(\u516d)",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/chief2022/",
-            "UUID": "70f9d6b1bd915fe981d665aa8f2a6fcf",
+            "UUID": "c192e2155f6d5228a056fda44aafe3ce",
             "figure": "https://i.imgur.com/cSHSxYs.webp"
         },
         {
-            "systematics": "tmc[\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3]",
+            "systematics": "tmc",
             "title": "\u7f8e\u79c0\u96c6\u5718\u3010Amazing Show\u3011\u540c\u540d\u6f14\u5531\u6703",
             "date": "2022.09.03(\u516d)",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/amazing-show-live2022/",
-            "UUID": "5463791355455b9d85f786f951d61b69",
+            "UUID": "f148535700fd5526a06cfc6e20713069",
             "figure": "https://i.imgur.com/uWLHAz8.webp"
         },
         {
-            "systematics": "tmc[\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3]",
+            "systematics": "tmc",
             "title": "\u300a\u9435\u9054\u5c3c\u865f\u300b \u96fb\u5f71\u97f3\u6a02\u6703",
             "date": "2022.09.09(\u4e94)",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/titanic-live-concert2022/",
-            "UUID": "8719621956c85b85992b0ec8974282a0",
+            "UUID": "b5006b138f8c593aa696dce77b4b5b45",
             "figure": "https://i.imgur.com/qouEjBT.webp"
         },
         {
-            "systematics": "tmc[\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3]",
+            "systematics": "tmc",
             "title": "BBC\u5730\u7403\u8108\u52d52 \u5f71\u50cf\u97f3\u6a02\u6703",
             "date": "2022.09.10(\u516d)",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/bbc-earth-pulse-2-video-concert/",
-            "UUID": "4f9ea8778be65ec0a7f9a090d28295c7",
+            "UUID": "2c806a9de1765bcbbe47d1145a11869a",
             "figure": "https://i.imgur.com/BDQ0OnS.webp"
         },
         {
-            "systematics": "tmc[\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3]",
+            "systematics": "tmc",
             "title": "2022 \u674e\u7396\u54f2\u3016\u4eca\u5929\u661f\u671f\u5e7e\u3017\u6f14\u5531\u6703",
             "date": "2022.09.24(\u516d)",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/2022-nicky-lee-live/",
-            "UUID": "490fcaf61d4f5c82b9db94c30586867e",
+            "UUID": "1adde55f22c65600bca470d083efedd4",
             "figure": "https://i.imgur.com/dFXpr88.webp"
         },
         {
-            "systematics": "tmc[\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3]",
+            "systematics": "tmc",
             "title": "The Moment! \u5b87\u5b99\u4eba\u7406\u60f3\u72c0\u614b\u6f14\u5531\u6703 \u53f0\u5317\u5834",
             "date": "2022.10.09(\u65e5)",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/cosmospeoplelive-2022/",
-            "UUID": "41007b59623753ee98cef3e650c7d4b2",
+            "UUID": "929850efd22258f081142e48369c1b60",
             "figure": "https://i.imgur.com/X4fybR7.webp"
         },
         {
-            "systematics": "tmc[\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3]",
+            "systematics": "tmc",
             "title": "2022 \u694a\u4e43\u6587 \u7e46\u65afMUSE\u6f14\u5531\u6703",
             "date": "2022.10.22(\u516d)",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/2022-faith-muse-live/",
-            "UUID": "8ad84234789a53feae675ee0c8a16e8d",
+            "UUID": "a7d03e4ee6915d6b988d6448ed2ec80e",
             "figure": "https://tmc.taipei/wp-content/uploads/2022/08/\u694a\u4e43\u6587 \u7e46\u65afMUSE\u6f14\u5531\u6703.jpg"
         },
         {
-            "systematics": "tmc[\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3]",
+            "systematics": "tmc",
             "title": "\u54c1\u51a0\u300a\u4e0d\u5982\u6211\u5011\u4eca\u5929\u898b\u300b\u5de1\u8ff4\u6f14\u5531\u6703-\u53f0\u5317\u5834",
             "date": "2022.12.03(\u516d)",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/letseeyou-today0528/",
-            "UUID": "fe1f9d2796a451208348a7eae4bf86ef",
+            "UUID": "ce96bbf73bef5d2fbc8c960aba47caa8",
             "figure": "https://i.imgur.com/XrsF2hW.webp"
         },
         {
-            "systematics": "tmc[\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3]",
+            "systematics": "tmc",
             "title": "\u300a\u6210\u529f\u4e4b\u8def\uff1aHow to Be a Rock Star\u300b\u6416\u6efe\u6b4c\u5287",
             "date": "2023.02.03(\u4e94) \u2014 2023.02.12(\u65e5)",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/success-rockopera2022/?session=2580",
-            "UUID": "3ea7d789ea595ae490b296ac017d9849",
+            "UUID": "013413597f815f4f923857a3c8a63e20",
             "figure": "https://i.imgur.com/O92dwqC.webp"
         },
         {
-            "systematics": "tmc[\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3]",
+            "systematics": "tmc",
             "title": "\u300a\u6f22\u65af\u5b63\u9ed8\uff1a\u597d\u840a\u5862\u738b\u8005\u4e4b\u97f3\u300b",
             "date": "2023.09.28(\u56db) \u2014 2023.10.01(\u65e5)",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/theworldofmanszimmer/?session=2035",
-            "UUID": "c7add2b9c9af516ea92f5d16ae145e77",
+            "UUID": "0b3279e7f3d75756a48eee928fe2bcff",
             "figure": "https://i.imgur.com/2muSKNP.webp"
         }
-    ],
-    "counts": 15,
-    "last_update": "2022-08-06T23:03:29.172114+08:00"
+    ]
 }
