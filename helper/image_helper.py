@@ -57,9 +57,11 @@ class ImgurImage(ImageInit):
         try:
             if hash_url not in self.cache_data.keys():
                 with self._lock:
+
                     runtime_logging.debug(
                         f"{threading.current_thread().name}: get authority now upload {hash_url}"
                     )
+
                     response = self.client.upload_from_url(
                         runtime_url, config=config, anon=anon
                     )
@@ -67,8 +69,10 @@ class ImgurImage(ImageInit):
                         runtime_logging.debug(
                             f"{threading.current_thread().name}: upload {hash_url} is success"
                         )
+
                         runtime_url = self.webp_format(image_id)
                         self.commit_data({hash_url: runtime_url})
+
                         runtime_logging.debug(
                             f"{threading.current_thread().name}: commit uploaded {hash_url} data is success"
                         )
@@ -78,8 +82,8 @@ class ImgurImage(ImageInit):
                     f"{threading.current_thread().name}: {hash_url} is   "
                 )
                 runtime_url = self.cache_data.get(hash_url)
-        except Exception:
-            pass
+        except Exception as ex:
+            runtime_logging.debug(f"{threading.current_thread().name}: {ex}")
         return runtime_url
 
     def load_cache_file(self, path: Path = None):
