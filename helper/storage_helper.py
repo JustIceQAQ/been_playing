@@ -1,3 +1,4 @@
+import dataclasses
 import datetime
 import json
 import os
@@ -11,6 +12,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel
 from pysondb import db
 
+from exhibition import ExhibitionInformation
 from helper.image_helper import ImgurImage
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent
@@ -43,7 +45,9 @@ class Exhibition(BaseModel):
     UUID: Optional[str] = None
 
     def __init__(self, **kwargs) -> None:
-        super().__init__(**kwargs)
+        runtime_kwargs = kwargs
+        runtime_kwargs["systematics"] = kwargs.get("systematics").code_name
+        super().__init__(**runtime_kwargs)
         self.UUID: Optional[str] = hex_uuid5(self.systematics, self.source_url)
 
 
@@ -65,7 +69,7 @@ class StorageInit(metaclass=ABCMeta):
 
 
 class JustJsonStorage(StorageInit):
-    def __init__(self, db_path: str):
+    def __init__(self, db_path: str, exhibition_information: ExhibitionInformation):
         self.fd: Optional[IO] = None
         self.db_path = db_path
         self.db: Path = Path(db_path)
@@ -78,6 +82,7 @@ class JustJsonStorage(StorageInit):
         client_id = os.getenv("IMGUR_API_CLIENT_ID", False)
         client_secret = os.getenv("IMGUR_API_CLIENT_SECRET", False)
         self.ImgurImage.login(client_id, client_secret)
+        self.exhibition_information = exhibition_information
 
     def create_data(self, data: Dict[str, str], *args, **kwargs) -> None:
         image_url = data.pop("figure")
@@ -89,9 +94,10 @@ class JustJsonStorage(StorageInit):
         self.fd = open(self.db_path, "w", encoding="utf-8")
         json_object = json.dumps(
             {
-                "data": self.temp_data,
+                "information": dataclasses.asdict(self.exhibition_information),
                 "counts": len(self.temp_data),
                 "last_update": self.get_last_update_time(),
+                "data": self.temp_data,
             },
             indent=4,
         )
