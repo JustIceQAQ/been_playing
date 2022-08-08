@@ -28,6 +28,8 @@ if __name__ == "__main__":
     )
     runtime_logging = logging.getLogger("runtime_logging")
     py_scripts = {
+        tickets_udnfunlife_script,
+        tickets_books_script,
         cksmh_script,
         huashan1914_script,
         mocataipei_script,
@@ -35,8 +37,6 @@ if __name__ == "__main__":
         songshanculturalpark_script,
         ntsec_script,
         tfam_script,
-        tickets_udnfunlife_script,
-        tickets_books_script,
         ntm_script,
         tmc_script,
     }
