@@ -4,7 +4,7 @@
         "code_name": "cksmh"
     },
     "counts": 9,
-    "last_update": "2022-08-07T12:17:01.841017+08:00",
+    "last_update": "2022-08-08T12:28:06.634007+08:00",
     "data": [
         {
             "systematics": "cksmh",
@@ -32,24 +32,6 @@
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20258",
             "UUID": "90beb405ab805fe0809aaf9a2c02c687",
             "figure": "https://i.imgur.com/jFP01HO.webp"
-        },
-        {
-            "systematics": "cksmh",
-            "title": "NIKKI\u500b\u4eba\u4f5c\u54c1\u5c55- Soul in your Eyes \u6211\u627e\u5230\u4f60\u4e86",
-            "date": "2022/07/22 ~ 2022/08/07 09:00~18:00",
-            "address": "\u5730\u9ede\uff1a3\u5c55\u5ef3",
-            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20551",
-            "UUID": "831e7927173a54dba1191f11c31c9fad",
-            "figure": "https://i.imgur.com/K12GD7t.webp"
-        },
-        {
-            "systematics": "cksmh",
-            "title": "\u5149\u4e4b\u529b\u2015\u6797\u5409\u88d5\u3001\u90ed\u8276\u96c5\u3001\u6797\u671d\u5c09\u3001\u6e6f\u528d\u53f0 \u5275\u4f5c\u5c55(\u514d\u8cbb\u53c3\u89c0)",
-            "date": "2022/07/27 ~ 2022/08/07 09:00~18:00",
-            "address": "\u5730\u9ede\uff1a\u4e00\u6a13\u85dd\u5eca",
-            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20576",
-            "UUID": "911931dd494a5fc485f46d079738ef03",
-            "figure": "https://i.imgur.com/G9ZeoTR.webp"
         },
         {
             "systematics": "cksmh",
@@ -86,6 +68,24 @@
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20581",
             "UUID": "5ce20fb708db5f1c92b4afbef23db533",
             "figure": "https://i.imgur.com/Whoi4xy.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u53f0\u65e5\u7f8e\u8853\u5354\u6703-\u7b2c48\u5c46\u53f0\uff0e\u65e5\u7f8e\u8853\u4ea4\u6d41\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2022/08/10 ~ 2022/08/21 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a\u4e00\u6a13\u85dd\u5eca",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20597",
+            "UUID": "fb80ab33d4575847adead54929ffead5",
+            "figure": "https://i.imgur.com/VMXCbh1.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u9673\u6301\u5e73\u4e2d\u570b\u8a69\u8a5e\u5b57\u756b\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2022/08/24 ~ 2022/09/04 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a\u4e00\u6a13\u85dd\u5eca",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20599",
+            "UUID": "c114a0f92db8548d83803bb2a5a0424c",
+            "figure": "https://i.imgur.com/T8lCfYp.webp"
         }
     ]
 }
