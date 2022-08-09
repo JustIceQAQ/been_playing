@@ -17,8 +17,13 @@ class RequestsCrawler(CrawlerInit):
         self.url = url
 
     def get_page(self, method="GET", *args, **kwargs) -> Union[Dict[Any, Any], str]:
+        # , verify=False, timeout=10
+        if "verify" not in kwargs.keys():
+            kwargs["verify"] = False
+        if "timeout" not in kwargs.keys():
+            kwargs["timeout"] = 60
+
         response = requests.request(method, self.url, *args, **kwargs)
-        # print(response)
         try:
             return response.json()
         except JSONDecodeError:
