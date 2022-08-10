@@ -22,7 +22,7 @@ ROOT_DIR = Path(__file__).resolve(strict=True).parent
 
 if __name__ == "__main__":
     logging.basicConfig(
-        level=logging.DEBUG,
+        level=logging.WARNING,
         format="%(asctime)s %(levelname)s %(message)s",
         datefmt="%Y-%m-%d %H:%M",
     )

@@ -4,6 +4,8 @@ from typing import Any, Dict, Union
 import requests
 from simplejson import JSONDecodeError
 
+requests.adapters.DEFAULT_RETRIES = 5
+
 
 # 實作各種類型爬蟲
 class CrawlerInit(metaclass=ABCMeta):
@@ -15,15 +17,15 @@ class CrawlerInit(metaclass=ABCMeta):
 class RequestsCrawler(CrawlerInit):
     def __init__(self, url: str):
         self.url = url
+        self.rs = requests.session()
+        self.rs.keep_alive = False
+        self.rs.proxies = {"http": "106.107.205.112:80"}
 
     def get_page(self, method="GET", *args, **kwargs) -> Union[Dict[Any, Any], str]:
-        # , verify=False, timeout=10
-        if "verify" not in kwargs.keys():
-            kwargs["verify"] = False
         if "timeout" not in kwargs.keys():
             kwargs["timeout"] = 60
 
-        response = requests.request(method, self.url, *args, **kwargs)
+        response = self.rs.request(method, self.url, *args, **kwargs)
         try:
             return response.json()
         except JSONDecodeError:
