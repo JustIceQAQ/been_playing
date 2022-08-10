@@ -19,7 +19,7 @@ class RequestsCrawler(CrawlerInit):
         self.url = url
         self.rs = requests.session()
         self.rs.keep_alive = False
-        self.rs.proxies = {"http": "106.107.205.112:80"}
+        self.rs.proxies = {"http": "106.107.203.151:80"}
 
     def get_page(self, method="GET", *args, **kwargs) -> Union[Dict[Any, Any], str]:
         if "timeout" not in kwargs.keys():

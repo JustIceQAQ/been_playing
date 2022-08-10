@@ -4,7 +4,8 @@ from typing import Dict, Optional
 USER_AGENT = (
     "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/102.0.5005.61 Safari/537.36"
+    "Chrome/102.0.5005.61 "
+    "Safari/537.36"
 )
 
 
@@ -42,4 +43,6 @@ class TicketsBooksHeader(HeaderInit):
         return {
             "User-Agent": USER_AGENT,
             "Host": "tickets.books.com.tw",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
         }
