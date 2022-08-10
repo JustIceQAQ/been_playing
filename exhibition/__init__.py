@@ -53,3 +53,7 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "台北流行音樂中心",
         "tmc",
     )
+    nmh = (
+        "國立歷史博物館",
+        "nmh",
+    )

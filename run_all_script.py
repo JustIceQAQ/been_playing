@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from exhibition.cksmh_script import cksmh_script
 from exhibition.huashan1914_script import huashan1914_script
 from exhibition.mocataipei_script import mocataipei_script
+from exhibition.nmh_script import NMHScript
 from exhibition.npm_script import npm_script
 from exhibition.ntm_script import ntm_script
 from exhibition.ntsec_script import ntsec_script
@@ -39,6 +40,7 @@ if __name__ == "__main__":
         tfam_script,
         ntm_script,
         tmc_script,
+        NMHScript().run,
     }
     ROOT_DIR = Path(__file__).resolve(strict=True).parent
     runtime_logging.debug(ROOT_DIR)

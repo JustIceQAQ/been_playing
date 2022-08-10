@@ -419,3 +419,23 @@ class TMCParse(ParseInit):
             data_session_json = json.loads(data_session)
             link = data_session_json[-1].get("link")
         return link
+
+
+class NMHParse(ParseInit):
+    def __init__(self, item: bs4.element.Tag):
+        self.item = item
+
+    def get_title(self, *args, **kwargs) -> str:
+        return self.item.find("p", {"class": "tit"}).get_text()
+
+    def get_date(self, *args, **kwargs) -> str:
+        return self.item.find("p", {"class": "time"}).get_text()
+
+    def get_address(self, *args, **kwargs) -> str:
+        return self.item.find("p", {"class": "address"}).get_text()
+
+    def get_figure(self, *args, **kwargs) -> str:
+        return self.item.find("img").get("src", None)
+
+    def get_source_url(self, *args, **kwargs) -> str:
+        return self.item.find("a").get("href", None)
