@@ -21,13 +21,16 @@ from helper.image_helper import ImgurImage
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent
 
-if __name__ == "__main__":
+
+def main():
     logging.basicConfig(
         level=logging.WARNING,
         format="%(asctime)s %(levelname)s %(message)s",
         datefmt="%Y-%m-%d %H:%M",
     )
+
     runtime_logging = logging.getLogger("runtime_logging")
+
     py_scripts = {
         tickets_udnfunlife_script,
         tickets_books_script,
@@ -42,6 +45,7 @@ if __name__ == "__main__":
         tmc_script,
         NMHScript().run,
     }
+    py_class_script = {NMHScript}
     ROOT_DIR = Path(__file__).resolve(strict=True).parent
     runtime_logging.debug(ROOT_DIR)
 
@@ -54,7 +58,6 @@ if __name__ == "__main__":
     if this_env.exists():
         runtime_logging.debug(this_env)
         load_dotenv(this_env)
-
     CLIENT_ID = os.getenv("IMGUR_API_CLIENT_ID", False)
     CLIENT_SECRET = os.getenv("IMGUR_API_CLIENT_SECRET", False)
 
@@ -62,15 +65,30 @@ if __name__ == "__main__":
         imgur_image.login(CLIENT_ID, CLIENT_SECRET)
         runtime_logging.debug("imgur api is logined")
 
-    runners = [
+    all_script_runners = []
+
+    def_script_runners = [
         threading.Thread(target=py_script, name=py_script.__name__)
         for py_script in py_scripts
     ]
-    for runner in runners:
+
+    class_script_runners = [
+        threading.Thread(target=py_class().run, name=py_class.__name__)
+        for py_class in py_class_script
+    ]
+    all_script_runners.extend(def_script_runners)
+    all_script_runners.extend(class_script_runners)
+
+    for runner in all_script_runners:
         runner.start()
-    runtime_logging.debug("py_scripts threading is start")
-    for runner in runners:
+    runtime_logging.debug("All Script Runners Threading Is Start")
+
+    for runner in all_script_runners:
         runner.join()
     imgur_image.save_cache_file()
+    runtime_logging.debug("All Script Runners Threading Is Done")
 
-    runtime_logging.debug("all py_scripts threading is done")
+
+if __name__ == "__main__":
+    # main()
+    print(NMHScript.__name__)

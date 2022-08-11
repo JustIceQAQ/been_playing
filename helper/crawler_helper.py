@@ -2,6 +2,7 @@ from abc import ABCMeta, abstractmethod
 from typing import Any, Dict, Union
 
 import requests
+from retry import retry
 from simplejson import JSONDecodeError
 
 requests.adapters.DEFAULT_RETRIES = 5
@@ -21,6 +22,9 @@ class RequestsCrawler(CrawlerInit):
         self.rs.keep_alive = False
         self.rs.proxies = {"http": "106.107.203.151:80"}
 
+    @retry(
+        requests.exceptions.ConnectionError, tries=5, delay=5, backoff=2, max_delay=60
+    )
     def get_page(self, method="GET", *args, **kwargs) -> Union[Dict[Any, Any], str]:
         if "timeout" not in kwargs.keys():
             kwargs["timeout"] = 60
