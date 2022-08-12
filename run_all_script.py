@@ -90,5 +90,5 @@ def main():
 
 
 if __name__ == "__main__":
-    # main()
-    print(NMHScript.__name__)
+    main()
+    # print(NMHScript.__name__)
