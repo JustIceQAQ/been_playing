@@ -4,8 +4,8 @@
         "code_name": "tickets_udnfunlife",
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
-    "counts": 25,
-    "last_update": "2022-08-13T14:17:56.345921+08:00",
+    "counts": 26,
+    "last_update": "2022-08-14T02:17:10.234398+08:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -109,7 +109,7 @@
         {
             "systematics": "tickets_udnfunlife",
             "title": "\u300a\u52d5\u7269\u72c2\u6b61\u7bc0\u300bTASO\u4e92\u52d5\u5f0f\u89aa\u5b50\u97f3\u6a02\u6703",
-            "date": "2022/08/13 ~ 2022/09/02",
+            "date": "2022/09/02 ~ 2022/09/02",
             "address": "\u65b0\u7af9\u5e02\u6587\u5316\u5c40\u6f14\u85dd\u5ef3,\u81fa\u4e2d\u5e02\u4e2d\u5c71\u5802,\u885b\u6b66\u71df\u570b\u5bb6\u85dd\u8853\u6587\u5316\u4e2d\u5fc3 \u97f3\u6a02\u5ef3,\u96f2\u6797 \u8868\u6f14\u5ef3,\u81fa\u5357\u6587\u5316\u4e2d\u5fc3 \u6f14\u85dd\u5ef3",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N1U9VMG9&kdid=featured",
             "UUID": "c0ca7b421a2c5da09ebcadc67794af68",
@@ -190,7 +190,7 @@
         {
             "systematics": "tickets_udnfunlife",
             "title": "\u6c92\u6709\u4eba\u60f3\u4ea4\u4f5c\u696d \u5357\u6751\u8b80\u5287Round 2",
-            "date": "2022/08/13 ~ 2022/09/04",
+            "date": "2022/08/14 ~ 2022/09/04",
             "address": "PLAYground \u5357\u6751\u5287\u5834",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N1X1XDYC&kdid=featured",
             "UUID": "bbdaf817349455579800845c024a211a",
@@ -231,6 +231,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N1ZKYT98&kdid=featured",
             "UUID": "4558303a2276565cba2fa2d2820bc0e5",
             "figure": "https://i.imgur.com/nUeNxGw.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u300aPerfashion \u300b\u6253\u626e\u5f97\u525b\u525b\u597d",
+            "date": "2022/10/08 ~ 2022/10/09",
+            "address": "PLAYground \u5357\u6751\u5287\u5834",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N22V9PRY&kdid=featured",
+            "UUID": "ef4a1ec7e493548b8e2f0c304786a98a",
+            "figure": "https://i.imgur.com/B3vxhLZ.webp"
         }
     ]
 }
