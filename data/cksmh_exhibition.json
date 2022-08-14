@@ -5,7 +5,7 @@
         "external_link": "https://www.cksmh.gov.tw/activitysoonlist_369.html"
     },
     "counts": 9,
-    "last_update": "2022-08-14T14:18:19.023738+08:00",
+    "last_update": "2022-08-15T02:17:07.859664+08:00",
     "data": [
         {
             "systematics": "cksmh",
@@ -15,15 +15,6 @@
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=04758",
             "UUID": "229f5b7b6e45577692a8722cc5f8f07e",
             "figure": "https://i.imgur.com/Y4ooaFT.webp"
-        },
-        {
-            "systematics": "cksmh",
-            "title": "\u300c\u9017\u9663\u904a\u81fa\u7063Amazing Taiwan\u300d3D\u85dd\u8853\u5c55(\u514d\u8cbb\u53c3\u89c0)",
-            "date": "2021/12/29 ~ 2022/08/14 09:00~18:00",
-            "address": "\u5730\u9ede\uff1a\u4e2d\u592e\u901a\u5eca",
-            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=10569",
-            "UUID": "30eb67cbf4df56dabebdf42e42d14a42",
-            "figure": "https://i.imgur.com/tU9vbbL.webp"
         },
         {
             "systematics": "cksmh",
@@ -87,6 +78,15 @@
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20599",
             "UUID": "c114a0f92db8548d83803bb2a5a0424c",
             "figure": "https://i.imgur.com/T8lCfYp.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u9673\u79cb\u7389\u6cb9\u756b\u5c55-\u96c6\u8c61\u4e3b\u7fa9\u3001\u5927\u5bcc\u5927\u8cb4(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2022/08/26 ~ 2022/09/05 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a2\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20333",
+            "UUID": "6cfbbc82d85f5743b3fb20d491c642d3",
+            "figure": "https://i.imgur.com/NP0Rl9P.webp"
         }
     ]
 }
