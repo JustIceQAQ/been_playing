@@ -23,7 +23,7 @@ class RequestsCrawler(CrawlerInit):
         self.rs.proxies = {"http": "106.107.203.151:80"}
 
     @retry(
-        requests.exceptions.ConnectionError, tries=5, delay=5, backoff=2, max_delay=60
+        requests.exceptions.ConnectionError, tries=5, delay=10, backoff=2, max_delay=320
     )
     def get_page(self, method="GET", *args, **kwargs) -> Union[Dict[Any, Any], str]:
         if "timeout" not in kwargs.keys():
