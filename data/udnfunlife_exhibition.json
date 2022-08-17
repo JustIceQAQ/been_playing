@@ -4,8 +4,8 @@
         "code_name": "tickets_udnfunlife",
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
-    "counts": 26,
-    "last_update": "2022-08-17T02:21:01.165829+08:00",
+    "counts": 27,
+    "last_update": "2022-08-17T14:20:06.442446+08:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -240,6 +240,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N22V9PRY&kdid=featured",
             "UUID": "ef4a1ec7e493548b8e2f0c304786a98a",
             "figure": "https://i.imgur.com/B3vxhLZ.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "Let's TAKE 6 \u5927\u5e2b\u5de5\u4f5c\u574a",
+            "date": "2022/09/04 ~ 2022/09/04",
+            "address": "\u81fa\u5927\u85dd\u6587\u4e2d\u5fc3 \u96c5\u980c\u574a",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N247D1XE&kdid=featured",
+            "UUID": "9c5e92876f505669b746645852007b34",
+            "figure": "https://i.imgur.com/fb3Ymyk.webp"
         }
     ]
 }
