@@ -5,7 +5,7 @@
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
     "counts": 27,
-    "last_update": "2022-08-17T14:20:06.442446+08:00",
+    "last_update": "2022-08-18T02:18:36.039129+08:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -190,20 +190,11 @@
         {
             "systematics": "tickets_udnfunlife",
             "title": "\u6c92\u6709\u4eba\u60f3\u4ea4\u4f5c\u696d \u5357\u6751\u8b80\u5287Round 2",
-            "date": "2022/08/17 ~ 2022/09/04",
+            "date": "2022/08/18 ~ 2022/09/04",
             "address": "PLAYground \u5357\u6751\u5287\u5834",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N1X1XDYC&kdid=featured",
             "UUID": "bbdaf817349455579800845c024a211a",
             "figure": "https://i.imgur.com/O7WvwOg.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
-            "title": "TAA\u570b\u969bHi-End\u97f3\u97ff\u5927\u5c55",
-            "date": "2022/08/18 ~ 2022/08/21",
-            "address": "\u53f0\u5317\u5713\u5c71\u5927\u98ef\u5e97",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N1X9N1MX&kdid=featured",
-            "UUID": "c6172860ffaa525e9fa8179023f70ce1",
-            "figure": "https://i.imgur.com/ZiYs6nB.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -249,6 +240,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N247D1XE&kdid=featured",
             "UUID": "9c5e92876f505669b746645852007b34",
             "figure": "https://i.imgur.com/fb3Ymyk.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u63d0\u59c6\u6ce2\u9813\u7570\u60f3\u4e16\u754c\u5c55",
+            "date": "2022/10/20 ~ 2023/03/05",
+            "address": "\u570b\u7acb\u4e2d\u6b63\u7d00\u5ff5\u5802 1\u5c55\u5ef3",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N22YLYNM&kdid=featured",
+            "UUID": "bd5f5928883454b29ae6994f03ea14e6",
+            "figure": "https://i.imgur.com/uskdnQ6.webp"
         }
     ]
 }
