@@ -4,8 +4,8 @@
         "code_name": "tickets_udnfunlife",
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
-    "counts": 27,
-    "last_update": "2022-08-18T02:18:36.039129+08:00",
+    "counts": 28,
+    "last_update": "2022-08-18T14:19:39.575938+08:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -51,6 +51,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N0BAK22N&kdid=featured",
             "UUID": "e0784940b0cd516a99112a9b69c238c8",
             "figure": "https://i.imgur.com/UXyFLFN.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u6ce2\u54e5\u96f7\u91cc\u5947\u92fc\u7434\u7368\u594f\u6703",
+            "date": "2023/01/03 ~ 2023/01/04",
+            "address": "\u570b\u5bb6\u97f3\u6a02\u5ef3,\u885b\u6b66\u71df\u570b\u5bb6\u85dd\u8853\u6587\u5316\u4e2d\u5fc3 \u97f3\u6a02\u5ef3",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N0LLN969&kdid=featured",
+            "UUID": "adbe76875b4c5fa2b43ef87ab499ac12",
+            "figure": "https://i.imgur.com/ezIZBgd.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -114,6 +123,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N1U9VMG9&kdid=featured",
             "UUID": "c0ca7b421a2c5da09ebcadc67794af68",
             "figure": "https://i.imgur.com/cltuDGd.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "Let's TAKE 6 \u5927\u5e2b\u5de5\u4f5c\u574a",
+            "date": "2022/09/04 ~ 2022/09/04",
+            "address": "\u81fa\u5927\u85dd\u6587\u4e2d\u5fc3 \u96c5\u980c\u574a",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N247D1XE&kdid=featured",
+            "UUID": "9c5e92876f505669b746645852007b34",
+            "figure": "https://i.imgur.com/fb3Ymyk.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -225,21 +243,12 @@
         },
         {
             "systematics": "tickets_udnfunlife",
-            "title": "\u300aPerfashion \u300b\u6253\u626e\u5f97\u525b\u525b\u597d",
+            "title": "\u300aPerfashion\u300b\u6253\u626e\u5f97\u525b\u525b\u597d",
             "date": "2022/10/08 ~ 2022/10/09",
             "address": "PLAYground \u5357\u6751\u5287\u5834",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N22V9PRY&kdid=featured",
             "UUID": "ef4a1ec7e493548b8e2f0c304786a98a",
             "figure": "https://i.imgur.com/B3vxhLZ.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
-            "title": "Let's TAKE 6 \u5927\u5e2b\u5de5\u4f5c\u574a",
-            "date": "2022/09/04 ~ 2022/09/04",
-            "address": "\u81fa\u5927\u85dd\u6587\u4e2d\u5fc3 \u96c5\u980c\u574a",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N247D1XE&kdid=featured",
-            "UUID": "9c5e92876f505669b746645852007b34",
-            "figure": "https://i.imgur.com/fb3Ymyk.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
