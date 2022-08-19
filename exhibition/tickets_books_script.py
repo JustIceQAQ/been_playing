@@ -22,7 +22,7 @@ def tickets_books_script() -> None:
     headers = TicketsBooksHeader().get_header()
     response = requests_worker.fetch("GET", headers=headers)
     storage = JustJsonStorage(target_storage, target_systematics)
-    storage.truncate_table()
+
     dataset = response.select("ul.prd > li")
 
     for item in dataset:
@@ -35,7 +35,10 @@ def tickets_books_script() -> None:
             systematics=target_systematics, **tickets_books_clean_data
         )
         storage.create_data(exhibition.dict())
-    storage.commit()
+
+    if storage.is_have_created_data():
+        storage.truncate_table()
+        storage.commit()
 
 
 if __name__ == "__main__":

@@ -104,6 +104,9 @@ class JustJsonStorage(StorageInit):
         self.fd.write(json_object)
         self.fd.close()
 
+    def is_have_created_data(self) -> bool:
+        return bool(self.temp_data)
+
     def read_data(self, *args, **kwargs) -> None:
         pass
 

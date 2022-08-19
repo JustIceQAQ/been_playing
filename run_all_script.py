@@ -31,7 +31,7 @@ def main():
 
     runtime_logging = logging.getLogger("runtime_logging")
 
-    py_scripts = {
+    py_def_scripts = {
         tickets_udnfunlife_script,
         tickets_books_script,
         cksmh_script,
@@ -43,7 +43,6 @@ def main():
         tfam_script,
         ntm_script,
         tmc_script,
-        NMHScript().run,
     }
     py_class_script = {NMHScript}
     ROOT_DIR = Path(__file__).resolve(strict=True).parent
@@ -67,17 +66,19 @@ def main():
 
     all_script_runners = []
 
-    def_script_runners = [
-        threading.Thread(target=py_script, name=py_script.__name__)
-        for py_script in py_scripts
-    ]
+    all_script_runners.extend(
+        [
+            threading.Thread(target=py_def, name=py_def.__name__)
+            for py_def in py_def_scripts
+        ]
+    )
 
-    class_script_runners = [
-        threading.Thread(target=py_class().run, name=py_class.__name__)
-        for py_class in py_class_script
-    ]
-    all_script_runners.extend(def_script_runners)
-    all_script_runners.extend(class_script_runners)
+    all_script_runners.extend(
+        [
+            threading.Thread(target=py_class().run, name=py_class.__name__)
+            for py_class in py_class_script
+        ]
+    )
 
     for runner in all_script_runners:
         runner.start()
