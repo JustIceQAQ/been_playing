@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2022-08-23T14:28:14.768483+08:00",
+    "last_update": "2022-08-24T02:18:19.781396+08:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -117,15 +117,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "Sports Innovation Talk Series \u904b\u52d5\u5275\u65b0\u7cfb\u5217\u8b1b\u5ea7",
-            "date": "2022-07-02 - 2022-08-23",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/640b7fab-f68f-40e4-a98d-d17136f8367b",
-            "UUID": "34f8c5977de351e18e8e5ae91a5d4ba3",
-            "figure": "https://i.imgur.com/cLJEbM2.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "\u300a\u6e90\u4f86\u5982\u6b64\uff01\u5927\u535a\u7269\u5c55THE GRAND MUSEUMS\u300b",
             "date": "2022-07-12 - 2022-11-06",
             "address": "-",
@@ -141,6 +132,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/5dbe7330-ceae-4976-a1f5-f61fe18bc12c",
             "UUID": "377a0ecef96e5c0f9b486a9af8e69e70",
             "figure": "https://i.imgur.com/X7WTpZv.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u3010\u9ec3\u963f\u746a\u51b0\u83d3\u5ba4\u3011\u671f\u9593\u9650\u5b9a\u5e97",
+            "date": "2022-07-01 - 2022-10-10",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/5028008b-3111-4928-93d5-17ecd6c72530",
+            "UUID": "c6e2128ce0dd562c898930703daeae70",
+            "figure": "https://i.imgur.com/un8DcAY.webp"
         }
     ]
 }

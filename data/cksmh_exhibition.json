@@ -4,8 +4,8 @@
         "code_name": "cksmh",
         "external_link": "https://www.cksmh.gov.tw/activitysoonlist_369.html"
     },
-    "counts": 9,
-    "last_update": "2022-08-23T14:28:16.021837+08:00",
+    "counts": 8,
+    "last_update": "2022-08-24T02:18:33.209748+08:00",
     "data": [
         {
             "systematics": "cksmh",
@@ -33,24 +33,6 @@
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20595",
             "UUID": "9eb051f1f15c5fa79e108fc4103a061c",
             "figure": "https://i.imgur.com/kmyFXID.webp"
-        },
-        {
-            "systematics": "cksmh",
-            "title": "\u8907\u8a9e\u2014\u7530\u540d\u748b\u651d\u5f71\u5275\u4f5c\u5c55(\u514d\u8cbb\u53c3\u89c0)",
-            "date": "2022/08/05 ~ 2022/08/23 09:00~18:00",
-            "address": "\u5730\u9ede\uff1a4\u5c55\u5ef3",
-            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20596",
-            "UUID": "d72fcf6d92ea5919b41df0ee10b06268",
-            "figure": "https://i.imgur.com/GbQiLPH.webp"
-        },
-        {
-            "systematics": "cksmh",
-            "title": "\u8d85\u611b\u756b \u4e00\u5718\u91d1\u5c6c\u4eba \u5927\u76f8\u672a\u4f86\u5c55(\u514d\u8cbb\u53c3\u89c0)",
-            "date": "2022/08/06 ~ 2022/08/23 09:00~18:00",
-            "address": "\u5730\u9ede\uff1a2\u5c55\u5ef3",
-            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20581",
-            "UUID": "5ce20fb708db5f1c92b4afbef23db533",
-            "figure": "https://i.imgur.com/Whoi4xy.webp"
         },
         {
             "systematics": "cksmh",
@@ -87,6 +69,15 @@
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20603",
             "UUID": "5abbfe1d934e5d8dae09009103b3a013",
             "figure": "https://i.imgur.com/rE4jlpA.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u91d1\u79cb\u7f8e\u85dd\u529b-\u53f8\u99ac\u7279\u85dd\u8853\u7a7a\u9593\u5275\u4f5c\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2022/09/07 ~ 2022/09/20 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a\u4e00\u6a13\u85dd\u5eca",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20609",
+            "UUID": "b571e41ccdbd565780a20b12324ef566",
+            "figure": "https://i.imgur.com/qdheSR2.webp"
         }
     ]
 }
