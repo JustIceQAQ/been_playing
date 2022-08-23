@@ -70,3 +70,8 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "nmh",
         "https://www.nmh.gov.tw/activitysoonlist_66.html",
     )
+    twtc = (
+        "台北世貿中心",
+        "twtc",
+        "https://twtc.com.tw/exhibition?p=home",
+    )

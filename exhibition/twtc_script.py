@@ -2,23 +2,23 @@ from pathlib import Path
 
 from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
-from helper.header_helper import NMHHeader
+from helper.header_helper import TWTCHeader
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.parse_helper import NMHParse
+from helper.parse_helper import TWTCParse
 from helper.runner_helper import RunnerInit
 
 
-class NMHRunner(RunnerInit):
+class TWTCRunner(RunnerInit):
     root_dir = Path(__file__).resolve(strict=True).parent.parent
-    target_url = "https://www.nmh.gov.tw/activitysoonlist_66.html"
+    target_url = "https://twtc.com.tw/exhibition?p=home"
     use_method = "GET"
-    target_storage = str(root_dir / "data" / "nmh_exhibition.json")
-    target_systematics = ExhibitionEnum.nmh
+    target_storage = str(root_dir / "data" / "twtc_exhibition.json")
+    target_systematics = ExhibitionEnum.twtc
     instantiation = RequestsBeautifulSoupInstantiation
-    use_header = NMHHeader
-    use_parse = NMHParse
+    use_header = TWTCHeader
+    use_parse = TWTCParse
 
-    def get_response(self):
+    def get_response(self, *args, **kwargs):
         requests_worker = self.instantiation(self.target_url)
         headers = (
             self.use_header().get_header() if self.use_header is not None else None
@@ -26,7 +26,7 @@ class NMHRunner(RunnerInit):
         return requests_worker.fetch(self.use_method, headers=headers)
 
     def get_items(self, response):
-        return response.select("ul.lists > li.item")
+        return response.select("#home > div > table > tbody > tr")
 
     def get_parsed(self, items):
         for item in items:
@@ -41,4 +41,5 @@ class NMHRunner(RunnerInit):
 
 
 if __name__ == "__main__":
-    NMHRunner().run()
+    t = TWTCRunner()
+    t.run()

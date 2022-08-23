@@ -55,3 +55,12 @@ class NMHHeader(HeaderInit):
             "Host": "www.nmh.gov.tw",
             "Referer": "https://www.nmh.gov.tw/activitysoonlist_66.html",
         }
+
+
+class TWTCHeader(HeaderInit):
+    def get_header(self) -> Dict[str, str]:
+        return {
+            "User-Agent": USER_AGENT,
+            "Host": "twtc.com.tw",
+            "Pragma": "no-cache",
+        }

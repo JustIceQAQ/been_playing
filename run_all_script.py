@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 from exhibition.cksmh_script import cksmh_script
 from exhibition.huashan1914_script import huashan1914_script
 from exhibition.mocataipei_script import mocataipei_script
-from exhibition.nmh_script import NMHScript
+from exhibition.nmh_script import NMHRunner
 from exhibition.npm_script import npm_script
 from exhibition.ntm_script import ntm_script
 from exhibition.ntsec_script import ntsec_script
@@ -17,6 +17,7 @@ from exhibition.tfam_script import tfam_script
 from exhibition.tickets_books_script import tickets_books_script
 from exhibition.tickets_udnfunlife_script import tickets_udnfunlife_script
 from exhibition.tmc_script import tmc_script
+from exhibition.twtc_script import TWTCRunner
 from helper.image_helper import ImgurImage
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent
@@ -44,7 +45,7 @@ def main():
         ntm_script,
         tmc_script,
     }
-    py_class_script = {NMHScript}
+    py_class_script = {NMHRunner, TWTCRunner}
     ROOT_DIR = Path(__file__).resolve(strict=True).parent
     runtime_logging.debug(ROOT_DIR)
 
