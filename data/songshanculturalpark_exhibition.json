@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2022-08-25T14:29:36.813890+08:00",
+    "last_update": "2022-08-26T02:17:43.678609+08:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -60,15 +60,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/315be724-ec40-47a3-aa07-492bfec48b3f",
             "UUID": "456c8603f4035453ba7145a19fdb4454",
             "figure": "https://i.imgur.com/ey7Hv2t.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "2022\u65b0\u4e00\u4ee3\u7279\u8abf\u5c55",
-            "date": "2022-08-02 - 2022-08-25",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/4d77f55b-adbf-455f-ba65-c5bffe48c2c5",
-            "UUID": "a0c629c1a8f55d1882f2fd6fad58cb1f",
-            "figure": "https://i.imgur.com/xOakkpx.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -141,6 +132,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/5028008b-3111-4928-93d5-17ecd6c72530",
             "UUID": "c6e2128ce0dd562c898930703daeae70",
             "figure": "https://i.imgur.com/un8DcAY.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u300a\u6311\u6230\u2014\u5b89\u85e4\u5fe0\u96c4\u5c55\u300bTADAO ANDO: ENDEAVORS",
+            "date": "2022-06-03 - 2022-09-13",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/eea112b0-2446-4175-9d59-ac583fd85842",
+            "UUID": "d3da57429129561d91103cc1a1b803fa",
+            "figure": "https://i.imgur.com/WmeKAyy.webp"
         }
     ]
 }

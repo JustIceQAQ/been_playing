@@ -5,7 +5,7 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 43,
-    "last_update": "2022-08-25T14:30:00.502644+08:00",
+    "last_update": "2022-08-26T02:17:47.599325+08:00",
     "data": [
         {
             "systematics": "twtc",
@@ -201,8 +201,8 @@
             "title": "2022\u53f0\u5317\u570b\u969b\u81ea\u52d5\u5316\u5de5\u696d\u5927\u5c55/2022\u81fa\u7063\u6a5f\u5668\u4eba\u8207\u667a\u6167\u81ea\u52d5\u5316\u5c55/2022\u53f0\u5317\u570b\u969b\u6d41\u9ad4\u50b3\u52d5\u667a\u80fd\u63a7\u5236\u5c55/2022\u53f0\u5317\u570b\u969b\u6a5f\u68b0\u8981\u7d20\u5c55",
             "date": "08/24 ~ 08/27",
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "http://www.autotaiwan.com.tw",
-            "UUID": "0dc30e9a11575087a9df756f05a06b7b",
+            "source_url": "https://www.chanchao.com.tw/expoDetail.asp?id=DAUI2022",
+            "UUID": "7cd865a09f915bec9d8c6f5902e55139",
             "figure": ""
         },
         {
@@ -288,20 +288,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u7b2c\u4e09\u5c46\u53f0\u5317\u570b\u969b\u7167\u9867\u79d1\u6280\u61c9\u7528\u5c55",
-            "date": "09/15 ~ 09/17",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "http://www.ankecareexpo.com",
-            "UUID": "c03e510c05a550c9a8883611da222ef2",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "TIGAX \u53f0\u5317\u570b\u969b\u5370\u5237\u6a5f\u6750\u5c55",
             "date": "09/15 ~ 09/18",
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "https://www.tigax.com.tw/",
             "UUID": "973edc09bff45fd7878d0fbced294175",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c\u4e09\u5c46\u53f0\u5317\u570b\u969b\u7167\u9867\u79d1\u6280\u61c9\u7528\u5c55",
+            "date": "09/15 ~ 09/17",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.ankecareexpo.com",
+            "UUID": "c03e510c05a550c9a8883611da222ef2",
             "figure": ""
         },
         {
