@@ -97,12 +97,22 @@ class JustJsonStorage(StorageInit):
                 "information": dataclasses.asdict(self.exhibition_information),
                 "counts": len(self.temp_data),
                 "last_update": self.get_last_update_time(),
-                "data": self.temp_data,
+                "data": list(
+                    self.deduplication_but_maintain_sort(key=lambda d: d["UUID"])
+                ),
             },
             indent=4,
         )
         self.fd.write(json_object)
         self.fd.close()
+
+    def deduplication_but_maintain_sort(self, key=None):
+        seen = set()
+        for item in self.temp_data:
+            val = item if key is None else key(item)
+            if val not in seen:
+                yield item
+                seen.add(val)
 
     def is_have_created_data(self) -> bool:
         return bool(self.temp_data)
