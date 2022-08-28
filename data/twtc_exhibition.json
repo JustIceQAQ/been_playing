@@ -5,7 +5,7 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 43,
-    "last_update": "2022-08-28T14:18:12.741355+08:00",
+    "last_update": "2022-08-29T02:18:08.211281+08:00",
     "data": [
         {
             "systematics": "twtc",
@@ -27,20 +27,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u53f0\u5317\u9032\u53e3\u5167\u92b7\u5bb6\u5177\u5927\u5c55",
-            "date": "07/15 ~ 07/18",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "https://lihi1.com/3HQyW",
-            "UUID": "6bc84cdf04415858813efe60c1ef0a93",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u7b2c\u4e03\u5c46\u53f0\u5317\u570b\u969b\u590f\u5b63\u65c5\u5c55/\u53f0\u7063\u4f34\u624b\u79ae\u89c0\u5149\u7279\u7522\u5c55/2022\u7b2c\u5341\u516b\u5c46\u53f0\u5317\u570b\u969b\u5065\u5eb7\u7d20\u98df\u66a8\u8336\u85dd\u5c55",
             "date": "07/15 ~ 07/18",
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "http://www.kje.com.tw",
             "UUID": "c0a631e78d1f57a99917df4c5d94af9e",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u5317\u9032\u53e3\u5167\u92b7\u5bb6\u5177\u5927\u5c55",
+            "date": "07/15 ~ 07/18",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://lihi1.com/3HQyW",
+            "UUID": "6bc84cdf04415858813efe60c1ef0a93",
             "figure": ""
         },
         {
@@ -216,6 +216,15 @@
         },
         {
             "systematics": "twtc",
+            "title": "2022\u53f0\u5317\u570b\u969b\u9023\u9396\u52a0\u76df\u5927\u5c55\uff0d\u79cb\u5b63\u5c55",
+            "date": "09/23 ~ 09/26",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=12746",
+            "UUID": "8c729845f64b5108b18c22116b027f24",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
             "title": "2022\u7b2c32\u5c46\u79cb\u51ac\u570b\u969b\u7f8e\u5bb9\u5316\u599d\u54c1\u5c55\u30012022\u7f8e\u7532\u7f8e\u776b\u535a\u89bd\u6703",
             "date": "09/23 ~ 09/26",
             "address": "\u4e16\u8cbf\u4e00\u9928",
@@ -230,15 +239,6 @@
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "http://www.snackfair.com.tw",
             "UUID": "b1b248f7346a55499ad8b4e425d24622",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "2022\u53f0\u5317\u570b\u969b\u9023\u9396\u52a0\u76df\u5927\u5c55\uff0d\u79cb\u5b63\u5c55",
-            "date": "09/23 ~ 09/26",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=12746",
-            "UUID": "8c729845f64b5108b18c22116b027f24",
             "figure": ""
         },
         {
