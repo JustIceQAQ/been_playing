@@ -1,4 +1,8 @@
+import datetime
+import re
 from pathlib import Path
+
+import pytz
 
 from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
@@ -29,11 +33,21 @@ class TWTCRunner(RunnerInit):
         return response.select("#home > div > table > tbody > tr")
 
     def get_parsed(self, items):
+        runtime_now = datetime.datetime.now(pytz.timezone("Asia/Taipei")).date()
         for item in items:
             data = self.use_parse(item).parsed()
             clean_data = {
                 key: RequestsClean.clean_string(value) for key, value in data.items()
             }
+
+            date_list = re.findall(r"(\d{2}\/\d{2})", clean_data["date"])
+            if date_list:
+                end_date = datetime.datetime.strptime(
+                    f"{runtime_now.year}/{date_list[-1]} +0800", "%Y/%m/%d %z"
+                ).date()
+                if runtime_now > end_date:
+                    continue
+
             exhibition = self.exhibition_model(
                 systematics=self.target_systematics, **clean_data
             )
