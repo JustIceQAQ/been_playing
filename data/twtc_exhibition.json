@@ -4,22 +4,13 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 19,
-    "last_update": "2022-08-29T14:46:06.682224+08:00",
+    "counts": 17,
+    "last_update": "2022-08-30T02:19:13.625974+08:00",
     "data": [
         {
             "systematics": "twtc",
-            "title": "\u53f0\u5317\u570b\u969b\u5a66\u5b30\u7528\u54c1\u5c55",
-            "date": "08/26 ~ 08/29",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "https://babymama.cheng-sing.com/",
-            "UUID": "b64be2971b655fd591d79dc72dd7bf59",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "\u7b2c15\u5c46\u53f0\u5317\u570b\u969b\u4f5b\u4e8b\u7528\u54c1\u5de5\u85dd\u54c1\u5c55\u3001\u7b2c13\u5c46\u53f0\u5317\u570b\u969b\u8336\u6587\u5316\u9676\u74f7\u5c55\u3001\u7b2c15\u5c46\u53f0\u5317\u570b\u969b\u7d20\u98df\u990a\u751f\u5c55\uff08\u79cb\u5b63\u5c55\uff09\u3001\u7b2c15\u5c46\u53f0\u5317\u570b\u969b\u6a02\u9f61\u5065\u5eb7\u66a8\u4fdd\u5065\u54c1\u5c55",
-            "date": "08/26 ~ 08/29",
+            "title": "2022\u4e0a\u806f\u53f0\u5317\u5bf5\u7269\u7528\u54c1\u535a\u89bd\u6703(\u79cb\u5b63\u5c55)",
+            "date": "09/02 ~ 09/05",
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "http://www.top-link.com.tw",
             "UUID": "08ecca6fe2d151488a2066c6a3f7225c",
@@ -81,15 +72,6 @@
         },
         {
             "systematics": "twtc",
-            "title": "2022\u53f0\u5317\u570b\u969b\u9023\u9396\u52a0\u76df\u5927\u5c55\uff0d\u79cb\u5b63\u5c55",
-            "date": "09/23 ~ 09/26",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=12746",
-            "UUID": "8c729845f64b5108b18c22116b027f24",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "2022\u7b2c32\u5c46\u79cb\u51ac\u570b\u969b\u7f8e\u5bb9\u5316\u599d\u54c1\u5c55\u30012022\u7f8e\u7532\u7f8e\u776b\u535a\u89bd\u6703",
             "date": "09/23 ~ 09/26",
             "address": "\u4e16\u8cbf\u4e00\u9928",
@@ -104,6 +86,15 @@
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "http://www.snackfair.com.tw",
             "UUID": "b1b248f7346a55499ad8b4e425d24622",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2022\u53f0\u5317\u570b\u969b\u9023\u9396\u52a0\u76df\u5927\u5c55\uff0d\u79cb\u5b63\u5c55",
+            "date": "09/23 ~ 09/26",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=12746",
+            "UUID": "8c729845f64b5108b18c22116b027f24",
             "figure": ""
         },
         {
