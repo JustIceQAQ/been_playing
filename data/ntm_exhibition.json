@@ -5,7 +5,7 @@
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
     "counts": 21,
-    "last_update": "2022-08-27T14:19:54.576959+08:00",
+    "last_update": "2022-08-29T02:18:14.323673+08:00",
     "data": [
         {
             "systematics": "ntm",
@@ -90,30 +90,12 @@
         },
         {
             "systematics": "ntm",
-            "title": "\u81fa\u535a\u6578\u4f4d\u5c0e\u89bdAPP",
-            "date": "2021/07/27~ 2022/12/31",
-            "address": "\u5c55\u89bd\u5730\u9ede\uff1a\u53e4\u751f\u7269\u9928",
-            "source_url": "https://event.culture.tw/NTM/portal/Registration/C0103MAction?actId=12199",
-            "UUID": "15d0217a94c958608f84590d47316d99",
-            "figure": "https://i.imgur.com/54r1MrY.webp"
-        },
-        {
-            "systematics": "ntm",
             "title": "\u571f\u5730\u9280\u884c\u884c\u53f2\u5c55",
             "date": "2019/11/05~ 2022/12/31",
             "address": "\u5c55\u89bd\u5730\u9ede\uff1a\u53e4\u751f\u7269\u9928",
             "source_url": "https://event.culture.tw/NTM/portal/Registration/C0103MAction?actId=90082",
             "UUID": "7a296226a59f5bd9b541d750be30ef29",
             "figure": "https://i.imgur.com/2U8C2il.webp"
-        },
-        {
-            "systematics": "ntm",
-            "title": "\u81fa\u535a\u6578\u4f4d\u5c0e\u89bdAPP",
-            "date": "2021/07/27~ 2022/12/31",
-            "address": "\u5c55\u89bd\u5730\u9ede\uff1a\u5357\u9580\u9928",
-            "source_url": "https://event.culture.tw/NTM/portal/Registration/C0103MAction?actId=12199",
-            "UUID": "15d0217a94c958608f84590d47316d99",
-            "figure": "https://i.imgur.com/54r1MrY.webp"
         },
         {
             "systematics": "ntm",
@@ -141,15 +123,6 @@
             "source_url": "https://event.culture.tw/NTM/portal/Registration/C0103MAction?actId=12217",
             "UUID": "a391520593d25bddb0fccfc0ac5d28ca",
             "figure": "https://i.imgur.com/wgvwFl5.webp"
-        },
-        {
-            "systematics": "ntm",
-            "title": "\u81fa\u535a\u6578\u4f4d\u5c0e\u89bdAPP",
-            "date": "2021/07/27~ 2022/12/31",
-            "address": "\u5c55\u89bd\u5730\u9ede\uff1a\u9435\u9053\u90e8\u5712\u5340",
-            "source_url": "https://event.culture.tw/NTM/portal/Registration/C0103MAction?actId=12199",
-            "UUID": "15d0217a94c958608f84590d47316d99",
-            "figure": "https://i.imgur.com/54r1MrY.webp"
         },
         {
             "systematics": "ntm",
@@ -186,15 +159,6 @@
             "source_url": "https://event.culture.tw/NTM/portal/Registration/C0103MAction?actId=12243",
             "UUID": "9c51f011ba0c5ac6b5bb44aebd672df0",
             "figure": "https://i.imgur.com/7EA1st9.webp"
-        },
-        {
-            "systematics": "ntm",
-            "title": "\u75ab\u89f8\u5373\u767c\uff0d\u767e\u5e74\u5cf6\u5dbc\u6230\u75ab\u7279\u5225\u5c55",
-            "date": "2021/09/28~ 2022/11/06",
-            "address": "\u5c55\u89bd\u5730\u9ede\uff1a\u9435\u9053\u90e8\u5712\u5340",
-            "source_url": "https://event.culture.tw/NTM/portal/Registration/C0103MAction?actId=12217",
-            "UUID": "a391520593d25bddb0fccfc0ac5d28ca",
-            "figure": "https://i.imgur.com/wgvwFl5.webp"
         }
     ]
 }
