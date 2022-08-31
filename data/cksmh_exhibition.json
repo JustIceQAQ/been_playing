@@ -5,7 +5,7 @@
         "external_link": "https://www.cksmh.gov.tw/activitysoonlist_369.html"
     },
     "counts": 9,
-    "last_update": "2022-08-31T14:54:00.693984+08:00",
+    "last_update": "2022-09-01T02:19:30.676267+08:00",
     "data": [
         {
             "systematics": "cksmh",
@@ -63,6 +63,15 @@
         },
         {
             "systematics": "cksmh",
+            "title": "2022\u5510\u734e\u7b2c\u4e94\u5c46\u69ae\u8000\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2022/09/01 ~ 2022/10/30 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20624",
+            "UUID": "e267fb1e248456de86a8569bcc382c40",
+            "figure": "https://i.imgur.com/MZf1Lu1.webp"
+        },
+        {
+            "systematics": "cksmh",
             "title": "\u6797\u88d5\u6df385\u56de\u9867\u5c55(\u514d\u8cbb\u53c3\u89c0)",
             "date": "2022/09/02 ~ 2022/09/19 09:00~18:00",
             "address": "\u5730\u9ede\uff1a3\u5c55\u5ef3",
@@ -78,15 +87,6 @@
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20609",
             "UUID": "b571e41ccdbd565780a20b12324ef566",
             "figure": "https://i.imgur.com/qdheSR2.webp"
-        },
-        {
-            "systematics": "cksmh",
-            "title": "\u300c\u767e\u5e74\u98a8\u83ef\u300d\u4e2d\u83ef\u6c11\u570b\u756b\u5b78\u6703\u91d1\u7235\u734e\u66a8\u6703\u54e1\u806f\u5c55(\u514d\u8cbb\u53c3\u89c0)",
-            "date": "2022/09/08 ~ 2022/09/19 09:00~18:00",
-            "address": "\u5730\u9ede\uff1a1\u5c55\u5ef3",
-            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=20610",
-            "UUID": "6ef7927b20ca5dac8d487df59416b991",
-            "figure": "https://i.imgur.com/ll5kJZ6.webp"
         }
     ]
 }
