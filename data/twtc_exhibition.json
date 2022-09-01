@@ -5,7 +5,7 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 17,
-    "last_update": "2022-09-01T02:19:35.801415+08:00",
+    "last_update": "2022-09-01T14:26:55.667663+08:00",
     "data": [
         {
             "systematics": "twtc",
@@ -93,17 +93,8 @@
             "title": "\u53f0\u5317\u570b\u969b\u8461\u8404\u9152\u5c55",
             "date": "09/23 ~ 09/26",
             "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "http://www.snackfair.com.tw",
-            "UUID": "b1b248f7346a55499ad8b4e425d24622",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "\u53f0\u5317\u570b\u969b\u5851\u6a61\u81a0\u5de5\u696d\u5c55",
-            "date": "09/27 ~ 10/01",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "http://www.taipeiplas.com.tw",
-            "UUID": "bb30288193ce53569717c8fbf9bd7fcf",
+            "source_url": "http://www.winegourmettaipei.com",
+            "UUID": "b13a26b61f78550691eeddd16e9a75de",
             "figure": ""
         },
         {
@@ -113,6 +104,15 @@
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.shoetech.com.tw",
             "UUID": "463e7fb200a9570b9b513c2e82068238",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u5317\u570b\u969b\u5851\u6a61\u81a0\u5de5\u696d\u5c55",
+            "date": "09/27 ~ 10/01",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.taipeiplas.com.tw",
+            "UUID": "bb30288193ce53569717c8fbf9bd7fcf",
             "figure": ""
         },
         {
