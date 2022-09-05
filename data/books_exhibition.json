@@ -4,9 +4,18 @@
         "code_name": "tickets_books",
         "external_link": "https://tickets.books.com.tw/leisure/"
     },
-    "counts": 35,
-    "last_update": "2022-09-05T02:25:28.315142+08:00",
+    "counts": 36,
+    "last_update": "2022-09-05T14:44:35.156401+08:00",
     "data": [
+        {
+            "systematics": "tickets_books",
+            "title": "\u3010The World of Tim Burton\u63d0\u59c6\u6ce2\u9813\u7570\u60f3\u4e16\u754c\u5c55\u3011",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010201246097",
+            "UUID": "76e94c303fe65851ba32e15088be2ea7",
+            "figure": "https://i.imgur.com/yd1aSXd.webp"
+        },
         {
             "systematics": "tickets_books",
             "title": "\u300aWeWORD \u5b57\u6211\u8a02\u9020\uff1a\u6d41\u884c\u6b4c\u8a5e\u53ca\u5176\u5275\u9020\u7684\u300b\u65b0\u5a92\u9ad4\u5c55",
