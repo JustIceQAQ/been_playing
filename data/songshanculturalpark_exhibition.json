@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2022-09-05T14:43:52.597897+08:00",
+    "last_update": "2022-09-06T02:20:02.496274+08:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -24,6 +24,33 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/e94a2fee-6cef-4fbc-8a15-d7eb15ab1ba2",
             "UUID": "f80a73b7944b5938be7b818eb7fa9575",
             "figure": "https://i.imgur.com/Owl9I4u.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u300c2022\u6fb3\u6d32\u6559\u80b2\u5c55\u300d",
+            "date": "2022-09-24 - 2022-09-25",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/fcec410c-27a7-4a34-a970-72ea5cebb958",
+            "UUID": "5e6ff21ba85c5e37bcc00d5488ea26bc",
+            "figure": "https://i.imgur.com/xhbGAfN.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "iF \u8da8\u52e2\u9ede\u8a55 | \u6253\u9020\u7f8e\u597d\u5bb6\u5c45\u751f\u6d3b",
+            "date": "2022-09-13 - 2022-09-13",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/5182b4a9-efd9-42e4-8cb8-9437f513f4e2",
+            "UUID": "88a2f81e90715d8b81b5a193dfa3c767",
+            "figure": "https://i.imgur.com/E68JjnN.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "iF \u7f8e\u611f\u5730\u5716 | 2022\u5e74 iF \u8a2d\u8a08\u734e\u7372\u734e\u4f5c\u54c1\u5c55 (II)",
+            "date": "2022-08-22 - 2022-09-10",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/0a62eeb9-9a5b-4606-bb93-7ac3003753d7",
+            "UUID": "572763c009ed5c2db5a7227fbfda8a62",
+            "figure": "https://i.imgur.com/gsViSNO.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -114,33 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/5028008b-3111-4928-93d5-17ecd6c72530",
             "UUID": "c6e2128ce0dd562c898930703daeae70",
             "figure": "https://i.imgur.com/un8DcAY.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u300a\u6311\u6230\u2014\u5b89\u85e4\u5fe0\u96c4\u5c55\u300bTADAO ANDO: ENDEAVORS",
-            "date": "2022-06-03 - 2022-09-13",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/eea112b0-2446-4175-9d59-ac583fd85842",
-            "UUID": "d3da57429129561d91103cc1a1b803fa",
-            "figure": "https://i.imgur.com/WmeKAyy.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u7480\u74a8\u5e74\u4ee3 \u514b\u6797\u59c6\u85dd\u8853\u6c89\u6d78\u7279\u5c55\uff08KLIMT Experience\uff09",
-            "date": "2022-06-24 - 2022-09-11",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/ad7c559e-73ed-4261-9809-e0d80d75d268",
-            "UUID": "330655e3b7715335afc690ef14a194a4",
-            "figure": "https://i.imgur.com/PQtmn7N.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u6551\u63f4\u5c0f\u82f1\u96c4\u6ce2\u529b\u4e92\u52d5\u7279\u5c55\uff0d\u53f0\u5317\u7ad9",
-            "date": "2022-06-25 - 2022-09-11",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/88ff0454-76bf-4a95-9415-1c90d2dea980",
-            "UUID": "caa93cb89a32565cba573357a15150cb",
-            "figure": "https://i.imgur.com/I7bQRae.webp"
         }
     ]
 }
