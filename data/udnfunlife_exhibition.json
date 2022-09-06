@@ -5,7 +5,7 @@
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
     "counts": 27,
-    "last_update": "2022-09-06T14:57:14.360861+08:00",
+    "last_update": "2022-09-07T02:19:20.219570+08:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -15,15 +15,6 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N20T3KZZ&kdid=featured",
             "UUID": "b50bd3ae946452ff8146913d81b1942d",
             "figure": "https://i.imgur.com/p6D4Zcs.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
-            "title": "\u963f\u5361\u8c9d\u62c9\u8d85\u7d1a\u5929\u5718\uff0dTake 6",
-            "date": "2022/09/06 ~ 2022/09/06",
-            "address": "\u570b\u5bb6\u97f3\u6a02\u5ef3,\u81fa\u4e2d\u570b\u5bb6\u6b4c\u5287\u9662 \u5927\u5287\u9662,\u885b\u6b66\u71df\u570b\u5bb6\u85dd\u8853\u6587\u5316\u4e2d\u5fc3 \u97f3\u6a02\u5ef3",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N1L9IBGI&kdid=featured",
-            "UUID": "18048c3a0aaa57b49f46d50914c6f3d2",
-            "figure": "https://i.imgur.com/d4FafyT.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -249,6 +240,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N23SE92T&kdid=featured",
             "UUID": "3050b601e161530ea819b75dccf95d20",
             "figure": "https://i.imgur.com/u3jfiu0.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "2022\u5c55\u662d\u4e16\u754c\u8c93\u54aa\u535a\u89bd\u6703",
+            "date": "2022/10/13 ~ 2022/10/16",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u9928 \u4e00\u9928",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N252BHMZ&kdid=featured",
+            "UUID": "ea0382eae5d6586cac1a2d1846273615",
+            "figure": "https://i.imgur.com/rvA5SPw.webp"
         }
     ]
 }
