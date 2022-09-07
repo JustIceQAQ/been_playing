@@ -10,8 +10,12 @@ class RunnerInit(metaclass=ABCMeta):
     use_storage = JustJsonStorage
     exhibition_model = Exhibition
 
-    def init_storage(self, need_init=True):
-        if hasattr(self, "use_storage") and need_init:
+    def __init__(self, need_init=True):
+        super().__init__()
+        self.need_init = need_init
+
+    def init_storage(self):
+        if hasattr(self, "use_storage") and self.need_init:
             self.storage = self.use_storage(
                 self.target_storage, self.target_systematics
             )
@@ -42,6 +46,7 @@ class RunnerInit(metaclass=ABCMeta):
         response = self.get_response()
         items = self.get_items(response)
         exhibitions = self.get_parsed(items)
+
         for exhibition in exhibitions:
             self.write_storage(exhibition.dict())
         self.commit_storage()

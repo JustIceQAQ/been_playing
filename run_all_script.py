@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from exhibition.cksmh_script import cksmh_script
 from exhibition.huashan1914_script import huashan1914_script
 from exhibition.mocataipei_script import mocataipei_script
+from exhibition.mwr_script import MWRRunner
 from exhibition.nmh_script import NMHRunner
 from exhibition.npm_script import npm_script
 from exhibition.ntm_script import ntm_script
@@ -45,7 +46,7 @@ def main():
         ntm_script,
         tmc_script,
     }
-    py_class_script = {NMHRunner, TWTCRunner}
+    py_class_script = {NMHRunner, TWTCRunner, MWRRunner}
     ROOT_DIR = Path(__file__).resolve(strict=True).parent
     runtime_logging.debug(ROOT_DIR)
 

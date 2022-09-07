@@ -75,3 +75,8 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "twtc",
         "https://twtc.com.tw/exhibition?p=home",
     )
+    mwr = (
+        "世界宗教博物館",
+        "mwr",
+        "https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070",
+    )

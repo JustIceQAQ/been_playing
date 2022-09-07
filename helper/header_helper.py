@@ -64,3 +64,11 @@ class TWTCHeader(HeaderInit):
             "Host": "twtc.com.tw",
             "Pragma": "no-cache",
         }
+
+
+class MWRHeader(HeaderInit):
+    def get_header(self) -> Dict[str, str]:
+        return {
+            "User-Agent": USER_AGENT,
+            "referer": "https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070",
+        }
