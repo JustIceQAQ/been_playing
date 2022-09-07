@@ -1,0 +1,38 @@
+{
+    "information": {
+        "fullname": "\u4e16\u754c\u5b97\u6559\u535a\u7269\u9928",
+        "code_name": "mwr",
+        "external_link": "https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070"
+    },
+    "counts": 3,
+    "last_update": "2022-09-08T02:20:48.549914+08:00",
+    "data": [
+        {
+            "systematics": "mwr",
+            "title": "\u751f\u6b7b\u665d\u591c\uff1a\u65bc\u6b7b\u4ea1\u4e2d\u524d\u884c",
+            "date": "2022-06-21~2023-02-05",
+            "address": "-",
+            "source_url": "https://www.mwr.org.tw//xcspecexhi/cont?xsmsid=0H305741810776620070&sid=0M166389505731365110",
+            "UUID": "e3f295c570f151999aadc20277826aeb",
+            "figure": "https://i.imgur.com/HDuU0Ch.webp"
+        },
+        {
+            "systematics": "mwr",
+            "title": "\u300a\u5b88\u8b77\u300b\u6c88\u6d78\u5f0f\u7dda\u4e0a\u4e92\u52d5\u5c55",
+            "date": "2022-06-10~",
+            "address": "-",
+            "source_url": "https://www.mwr.org.tw/https://www.mwr.org.tw/2022guardian",
+            "UUID": "63d570b772145ebeb7dbd020eac58127",
+            "figure": "https://i.imgur.com/WrkUESY.webp"
+        },
+        {
+            "systematics": "mwr",
+            "title": "\u5b97\u6559\u5730\u666f\uff20\u65b0\u838a",
+            "date": "2022-09-01~2022-10-30",
+            "address": "-",
+            "source_url": "https://www.mwr.org.tw//xcspecexhi/cont?xsmsid=0H305741810776620070&sid=0M241565914032222778",
+            "UUID": "fa69e5b4a06c50af8caecc03eca92920",
+            "figure": "https://i.imgur.com/MyTdFD5.webp"
+        }
+    ]
+}
