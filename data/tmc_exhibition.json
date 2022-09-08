@@ -5,7 +5,7 @@
         "external_link": "https://tmc.taipei/show/event/"
     },
     "counts": 19,
-    "last_update": "2022-09-08T14:43:53.519246+08:00",
+    "last_update": "2022-09-09T02:18:50.249358+08:00",
     "data": [
         {
             "systematics": "tmc",
@@ -81,6 +81,15 @@
         },
         {
             "systematics": "tmc",
+            "title": "2022 \u7b2c\u56db\u5c46\u611b\u4e4b\u65e5\u5e38\u97f3\u6a02\u7bc0",
+            "date": "2022.10.15(\u516d)",
+            "address": "\u6236\u5916\u5ee3\u5834",
+            "source_url": "https://tmc.taipei/blog/show/2022-apluslovemusicfestival-4th/",
+            "UUID": "9c59490278c950d1b202e3b04132e00d",
+            "figure": "https://i.imgur.com/kaNn8Ui.webp"
+        },
+        {
+            "systematics": "tmc",
             "title": "2022 \u694a\u4e43\u6587 \u7e46\u65afMUSE\u6f14\u5531\u6703",
             "date": "2022.10.22(\u516d)",
             "address": "\u8868\u6f14\u5ef3",
@@ -123,15 +132,6 @@
             "source_url": "https://tmc.taipei/blog/show/xiao-bing-chin-x-live/",
             "UUID": "1a24df8db8fa5b84be3a76d7f710290f",
             "figure": "https://i.imgur.com/yT4j1Qa.webp"
-        },
-        {
-            "systematics": "tmc",
-            "title": "2022 \u7b2c\u56db\u5c46\u611b\u4e4b\u65e5\u5e38\u97f3\u6a02\u7bc0",
-            "date": "2022.12.15(\u56db) \u2014 2022.12.15(\u56db)",
-            "address": "\u8868\u6f14\u5ef3",
-            "source_url": "https://tmc.taipei/blog/show/2022-apluslovemusicfestival-4th/?session=3008",
-            "UUID": "309d0f32b9915e61ac75f967c66edede",
-            "figure": "https://i.imgur.com/kaNn8Ui.webp"
         },
         {
             "systematics": "tmc",
