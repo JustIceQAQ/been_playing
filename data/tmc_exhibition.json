@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 15,
-    "last_update": "2022-09-08T02:21:01.290489+08:00",
+    "counts": 19,
+    "last_update": "2022-09-08T14:43:53.519246+08:00",
     "data": [
         {
             "systematics": "tmc",
@@ -24,6 +24,15 @@
             "source_url": "https://tmc.taipei/blog/show/ghibli-takahata-exhibition2022/?session=2673",
             "UUID": "4e587a05a14f5c639a67fbe6ff6b2217",
             "figure": "https://i.imgur.com/LdawSGa.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u6fc0\u7701\u767e\u5143\u770b\u5c55\u65b9\u6848",
+            "date": "2022.09.06(\u4e8c) \u2014 2023.01.31(\u4e8c)",
+            "address": "\u6587\u5316\u9928",
+            "source_url": "https://tmc.taipei/blog/show/one-hundred-exhibition-plan2022/?session=3003",
+            "UUID": "53c1dae448305814a2dd8b0a086d23b4",
+            "figure": "https://i.imgur.com/MivaiL1.webp"
         },
         {
             "systematics": "tmc",
@@ -114,6 +123,33 @@
             "source_url": "https://tmc.taipei/blog/show/xiao-bing-chin-x-live/",
             "UUID": "1a24df8db8fa5b84be3a76d7f710290f",
             "figure": "https://i.imgur.com/yT4j1Qa.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "2022 \u7b2c\u56db\u5c46\u611b\u4e4b\u65e5\u5e38\u97f3\u6a02\u7bc0",
+            "date": "2022.12.15(\u56db) \u2014 2022.12.15(\u56db)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/2022-apluslovemusicfestival-4th/?session=3008",
+            "UUID": "309d0f32b9915e61ac75f967c66edede",
+            "figure": "https://i.imgur.com/kaNn8Ui.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "2020\u5e74\u611b\u4e4b\u65e5\u5e38\u97f3\u6a02\u7bc0\u3010\u611b\u7121\u8ddd \u5fc3\u52c7\u6c23\u3011",
+            "date": "2020.11.28(\u516d) \u2014 2020.11.28(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/2020%e5%b9%b4%e6%84%9b%e4%b9%8b%e6%97%a5%e5%b8%b8%e9%9f%b3%e6%a8%82%e7%af%80%e3%80%90%e6%84%9b%e7%84%a1%e8%b7%9d-%e5%bf%83%e5%8b%87%e6%b0%a3%e3%80%91/?session=1600",
+            "UUID": "851142e22d9c5039baac2118062d235f",
+            "figure": "https://i.imgur.com/8a3kCuy.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u300aBBC\u85cd\u8272\u661f\u7403II\u300b\u53f0\u905450\u5f71\u50cf\u97f3\u6a02\u6703",
+            "date": "2022.12.15(\u56db)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/bbcdelta50/",
+            "UUID": "5b95ee4ca2ed5d50bbd5ddd43b5fa7c6",
+            "figure": "https://i.imgur.com/MLgrWgi.webp"
         },
         {
             "systematics": "tmc",
