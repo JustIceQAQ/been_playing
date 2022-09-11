@@ -4,8 +4,8 @@
         "code_name": "tickets_books",
         "external_link": "https://tickets.books.com.tw/leisure/"
     },
-    "counts": 37,
-    "last_update": "2022-09-11T14:21:30.599776+08:00",
+    "counts": 30,
+    "last_update": "2022-09-12T02:19:30.024388+08:00",
     "data": [
         {
             "systematics": "tickets_books",
@@ -60,15 +60,6 @@
             "source_url": "https://tickets.books.com.tw/progshow/08010901889123",
             "UUID": "411217958e6f5cfa87e2d4b41192e72a",
             "figure": "https://i.imgur.com/fTPR1sH.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u7480\u74a8\u5e74\u4ee3 \u514b\u6797\u59c6\u85dd\u8853\u6c89\u6d78\u7279\u5c55",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010901663675",
-            "UUID": "99a71ac1a7b153aa9c75fb1fee723ea0",
-            "figure": "https://i.imgur.com/qh0Iflm.webp"
         },
         {
             "systematics": "tickets_books",
@@ -141,60 +132,6 @@
             "source_url": "https://tickets.books.com.tw/progshow/08010901407219",
             "UUID": "e9e797e6e0d65484a6ba513674274073",
             "figure": "https://i.imgur.com/Dvwh6rE.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u6c11\u96c4\u9b3c\u5c4b\u5be6\u5883\u9ad4\u9a57\u7279\u5c55",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010801767052",
-            "UUID": "d6c7bcdcd8e550c2bc2eea7e62176d3c",
-            "figure": "https://i.imgur.com/iBrcCL9.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u4f8f\u7f85\u7d00\uff38\u6050\u9f8d3.0 \u53f0\u4e2d\u7ad9",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201478838",
-            "UUID": "1af4748c926c5e2d95382777fc8d3093",
-            "figure": "https://i.imgur.com/DpMtrF0.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u641e\u7b11\u8afe\u8c9d\u723e\u734e\u4e16\u754c\u5c55",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010901592673",
-            "UUID": "264c89f11a7d51b2bcea56dcbdd123e0",
-            "figure": "https://i.imgur.com/QLGE5GT.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u89d2\u843d\u5c0f\u5925\u4f3410\u9031\u5e74\u5c55\u223c\u5168\u54e1\u7aa9\u8d77\u4f86",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201918564",
-            "UUID": "188b96df62f85a249014b256278a20a2",
-            "figure": "https://i.imgur.com/Fa56WQd.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "NAKED URANAI TAIPEI AI\u5360\u535c\u5c55",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010801173482",
-            "UUID": "e0859c47e1495cce9b8e23fe9ca17495",
-            "figure": "https://i.imgur.com/8p2rlfB.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u6551\u63f4\u5c0f\u82f1\u96c4\u6ce2\u529b\u4e92\u52d5\u7279\u5c55 \u53f0\u5317\u7ad9",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201192289",
-            "UUID": "c54634f13d015c2788155aa064ce73f0",
-            "figure": "https://i.imgur.com/6xl32IT.webp"
         },
         {
             "systematics": "tickets_books",
