@@ -5,7 +5,7 @@
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
     "counts": 25,
-    "last_update": "2022-09-12T14:53:13.760034+08:00",
+    "last_update": "2022-09-13T02:20:50.783945+08:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -105,6 +105,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N22YLYNM&kdid=featured",
             "UUID": "bd5f5928883454b29ae6994f03ea14e6",
             "figure": "https://i.imgur.com/uskdnQ6.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u60f3\u4f60\u5230\u6708\u7403-\u5f35\u96e8\u751f\u7279\u5c55",
+            "date": "2022/11/12 ~ 2023/02/28",
+            "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3 \u6587\u5316\u9928\u4e8c\u6a13 \u7279\u5c55\u5ef3",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N24V1XD0&kdid=featured",
+            "UUID": "4ae1bfea9cc755279fc4c72ac28c5562",
+            "figure": "https://i.imgur.com/AZhIJM9.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -222,15 +231,6 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N23SE92T&kdid=featured",
             "UUID": "3050b601e161530ea819b75dccf95d20",
             "figure": "https://i.imgur.com/u3jfiu0.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
-            "title": "\u60f3\u4f60\u5230\u6708\u7403-\u5f35\u96e8\u751f\u7279\u5c55",
-            "date": "2022/11/12 ~ 2023/02/28",
-            "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3 \u6587\u5316\u9928\u4e8c\u6a13 \u7279\u5c55\u5ef3",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N24V1XD0&kdid=featured",
-            "UUID": "4ae1bfea9cc755279fc4c72ac28c5562",
-            "figure": "https://i.imgur.com/AZhIJM9.webp"
         }
     ]
 }
