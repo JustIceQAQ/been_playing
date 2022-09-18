@@ -43,7 +43,7 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
     tfam = (
         "臺北市立美術館",
         "tfam",
-        "https://www.tfam.museum/ashx/Exhibition.ashx?ddlLang=zh-tw",
+        "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw",
     )
     tickets_udnfunlife = (
         "udn售票網",

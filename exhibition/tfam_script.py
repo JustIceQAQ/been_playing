@@ -16,19 +16,29 @@ def tfam_script() -> None:
     target_systematics = ExhibitionEnum.tfam
     target_domain = "https://www.tfam.museum"
 
+    storage = JustJsonStorage(target_storage, target_systematics)
+    storage.truncate_table()
+
     requests_worker = RequestsJsonInstantiation(target_url)
 
     headers = TFAMLifeHeader().get_header()
 
-    dataset = requests_worker.fetch(
+    dataset_1 = requests_worker.fetch(
         method="POST",
         headers=headers,
         data=json.dumps({"JJMethod": "GetEx", "Type": "1"}),
     )
-    storage = JustJsonStorage(target_storage, target_systematics)
-    storage.truncate_table()
+    dataset_2 = requests_worker.fetch(
+        method="POST",
+        headers=headers,
+        data=json.dumps({"JJMethod": "GetEx", "Type": "2"}),
+    )
 
-    for item in dataset.get("Data"):
+    dataset_list = []
+    dataset_list.extend(dataset_1.get("Data", []))
+    dataset_list.extend(dataset_2.get("Data", []))
+
+    for item in dataset_list:
         tfam_data = TFAMParse(item).parsed(target_domain=target_domain)
         tfam_clean_data = {
             key: RequestsClean.clean_string(value) for key, value in tfam_data.items()
