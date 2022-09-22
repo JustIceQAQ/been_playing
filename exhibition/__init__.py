@@ -80,3 +80,8 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "mwr",
         "https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070",
     )
+    museum_post = (
+        "郵政博物館",
+        "museum_post",
+        "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage=1",
+    )
