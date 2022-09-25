@@ -4,8 +4,8 @@
         "code_name": "tickets_books",
         "external_link": "https://tickets.books.com.tw/leisure/"
     },
-    "counts": 25,
-    "last_update": "2022-09-25T16:11:36.729629+08:00",
+    "counts": 23,
+    "last_update": "2022-09-26T00:09:18.199668+08:00",
     "data": [
         {
             "systematics": "tickets_books",
@@ -69,24 +69,6 @@
             "source_url": "https://tickets.books.com.tw/progshow/08010901193495",
             "UUID": "5b2dd7e38d615e78863d83c39764afb2",
             "figure": "https://i.imgur.com/TzKCphz.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u5409\u535c\u529b\u52d5\u756b\u5927\u5e2b\u2013\u9ad8\u7551\u52f2\u5c55",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010901561042",
-            "UUID": "59ddb8d6c4fe5cba87bba5a20e5cee1d",
-            "figure": "https://i.imgur.com/0ZjKWnF.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u666e\u7acb\u8332\u65b0\u805e\u651d\u5f71\u734e80\u9031\u5e74\u5c55",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010901984384",
-            "UUID": "5db661a66f3356fb8443282364c412cb",
-            "figure": "https://i.imgur.com/1r1ZElt.webp"
         },
         {
             "systematics": "tickets_books",
