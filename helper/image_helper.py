@@ -50,14 +50,12 @@ class ImgurImage(ImageInit):
     def upload(self, image_url, config=None, anon=True):
         runtime_url = image_url
         hash_url = hashlib.md5(image_url.encode("utf-8")).hexdigest()
-        # print(hash_url, runtime_url)
         runtime_logging.debug(
             f"{threading.current_thread().name}: will be upload {hash_url} {runtime_url}"
         )
         try:
             if hash_url not in self.cache_data.keys():
                 with self._lock:
-
                     runtime_logging.debug(
                         f"{threading.current_thread().name}: get authority now upload {hash_url}"
                     )
