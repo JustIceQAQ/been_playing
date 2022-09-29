@@ -2,7 +2,6 @@ from pathlib import Path
 
 from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
-from helper.image_helper import ImgurImage
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
 from helper.parse_helper import MocaTaipeiParse
 from helper.storage_helper import Exhibition, JustJsonStorage
@@ -35,8 +34,4 @@ def mocataipei_script() -> None:
 
 
 if __name__ == "__main__":
-    i_i = ImgurImage()
-
     mocataipei_script()
-
-    i_i.save_cache_file()
