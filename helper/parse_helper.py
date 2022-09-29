@@ -332,7 +332,7 @@ class TFAMParse(ParseInit):
     def get_date(self, *args, **kwargs) -> str:
         begin_date = self.item.get("BeginDate", None)
         end_date = self.item.get("EndDate", None)
-        return f"{begin_date} - {end_date}"
+        return f"{begin_date} ~ {end_date}".replace("/", "-")
 
     def get_address(self, *args, **kwargs) -> str:
         return self.item.get("Area", "-")
