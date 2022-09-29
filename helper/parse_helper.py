@@ -1,5 +1,7 @@
+import datetime
 import inspect
 import json
+import re
 from abc import ABCMeta, abstractmethod
 from typing import Any, AnyStr, Dict, List
 from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
@@ -179,9 +181,46 @@ class HuaShan1914Parse(ParseInit):
         ).get_text()
 
     def get_date(self, *args, **kwargs) -> str:
-        return self.item.select_one(
+        raw_string = self.item.select_one(
             "li > a > div > div > div.card-text > div.event-date"
         ).get_text()
+        if "-" in raw_string:
+            row_start_date, row_end_date = raw_string.split(" - ")
+            regulated_start_date = re.search(
+                r"((?P<year>\d{4})\.(?P<month>\d{2})\.(?P<day>\d{2}))", row_start_date
+            )
+            start_date = datetime.date(
+                int(regulated_start_date.group("year")),
+                int(regulated_start_date.group("month")),
+                int(regulated_start_date.group("day")),
+            )
+            regulated_end_date = re.search(
+                r"((?P<year>\d{4})?\.?(?P<month>\d{2})\.(?P<day>\d{2}))", row_end_date
+            )
+            end_date = datetime.date(
+                int(
+                    year
+                    if (year := regulated_end_date.group("year"))
+                    else start_date.year
+                ),
+                int(regulated_end_date.group("month")),
+                int(regulated_end_date.group("day")),
+            )
+
+            cooked_string = f"{start_date.isoformat()} ~ {end_date.isoformat()}"
+        else:
+            # one day case
+            regulated = re.search(
+                r"((?P<year>\d{4})\.(?P<month>\d{2})\.(?P<day>\d{2}))", raw_string
+            )
+            start_date = datetime.date(
+                int(regulated.group("year")),
+                int(regulated.group("month")),
+                int(regulated.group("day")),
+            ).isoformat()
+            end_date = start_date
+            cooked_string = f"{start_date} ~ {end_date}"
+        return cooked_string
 
     def get_address(self, *args, **kwargs) -> str:
         return "-"

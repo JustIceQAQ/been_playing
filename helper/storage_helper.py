@@ -84,10 +84,12 @@ class JustJsonStorage(StorageInit):
         self.ImgurImage.login(client_id, client_secret)
         self.exhibition_information = exhibition_information
 
-    def create_data(self, data: Dict[str, str], *args, **kwargs) -> None:
-        image_url = data.pop("figure")
-        image_url_formated = self.ImgurImage.upload(image_url)
-        data["figure"] = image_url_formated
+    def create_data(self, data: Dict[str, str], pickled=True, *args, **kwargs) -> None:
+        data["figure"] = (
+            self.ImgurImage.upload(data.pop("figure"))
+            if pickled
+            else data.pop("figure")
+        )
         self.temp_data.append(data)
 
     def commit(self) -> None:
