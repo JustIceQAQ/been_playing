@@ -431,7 +431,7 @@ class NTMParse(ParseInit):
                 label.get_text().strip()
                 for label in self.item.select("dd > ul > li:nth-child(1) > label")
             ]
-        )
+        ).replace("/", "-")
 
     def get_address(self, *args, **kwargs) -> str:
         return self.item.select_one("dd > ul > li:nth-child(2)").get_text()
