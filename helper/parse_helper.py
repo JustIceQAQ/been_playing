@@ -175,7 +175,7 @@ class CKSMHParse(ParseInit):
         return self.item.select_one("dt > a > div.h3").get_text()
 
     def get_date(self, *args, **kwargs) -> str:
-        return self.item.select_one("dd > span.date").get_text()
+        return self.item.select_one("dd > span.date").get_text().replace("/", "-")
 
     def get_address(self, *args, **kwargs) -> str:
         return self.item.select_one("dd > span.location").get_text()
