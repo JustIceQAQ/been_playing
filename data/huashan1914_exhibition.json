@@ -4,36 +4,9 @@
         "code_name": "huashan1914",
         "external_link": "https://www.huashan1914.com/w/huashan1914/exhibition"
     },
-    "counts": 26,
-    "last_update": "2022-09-30T16:17:35.797453+08:00",
+    "counts": 24,
+    "last_update": "2022-10-01T00:15:32.890861+08:00",
     "data": [
-        {
-            "systematics": "huashan1914",
-            "title": "ABSENCE THERAPY \u65e5\u5e38\u7684\u7642\u7652 \u83ef\u5c71\u671f\u9593\u9650\u5b9a\u5e97",
-            "date": "2022-04-20 ~ 2022-09-30",
-            "address": "-",
-            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22021820302212803",
-            "UUID": "bcf8b5226c2a58ca8da574a7c4395dde",
-            "figure": "https://i.imgur.com/U8V4C3H.webp"
-        },
-        {
-            "systematics": "huashan1914",
-            "title": "iNAKATA\u83ef\u5c71\u5be6\u9ad4\u9650\u5b9a\u5e97",
-            "date": "2022-04-01 ~ 2022-09-30",
-            "address": "-",
-            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22031514422935352",
-            "UUID": "ad5cf68587735c2594f6b3c066c2cd5b",
-            "figure": "https://i.imgur.com/00uC9sl.webp"
-        },
-        {
-            "systematics": "huashan1914",
-            "title": "Absence Therapy X \u6c81\u6dbc\u590f\u65e5\u8abf\u9999\u9ad4\u9a57\u6d3b\u52d5",
-            "date": "2022-06-20 ~ 2022-09-30",
-            "address": "-",
-            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22062010423466107",
-            "UUID": "4f86375e9024536fbac0e34898b20697",
-            "figure": "https://i.imgur.com/1rMSAuz.webp"
-        },
         {
             "systematics": "huashan1914",
             "title": "\u5c0f\u8239\u8a08\u756b\u300a\u6708\u4eae\u4e0d\u898b\u4e86\u300b\u89aa\u5b50\u6bcd\u8a9e\u5287\u5834",
@@ -99,6 +72,15 @@
         },
         {
             "systematics": "huashan1914",
+            "title": "n.max.n \u590f\u5b63\u671f\u9593\u9650\u5b9a\u83ef\u5c71\u5e97",
+            "date": "2022-08-16 ~ 2022-10-17",
+            "address": "-",
+            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22081217361205155",
+            "UUID": "f4d980d95e515af79ac5354cdb374d4e",
+            "figure": "https://i.imgur.com/hRqkY2T.webp"
+        },
+        {
+            "systematics": "huashan1914",
             "title": "\u8c4a\u6cca\u8377\u00b7\u6625\u82b1 Le bonheur Design",
             "date": "2022-08-16 ~ 2022-10-17",
             "address": "-",
@@ -114,15 +96,6 @@
             "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22082320073992431",
             "UUID": "4bba95767ef25f45a020dbac6c1728d8",
             "figure": "https://i.imgur.com/qCvwpbu.webp"
-        },
-        {
-            "systematics": "huashan1914",
-            "title": "n.max.n \u590f\u5b63\u671f\u9593\u9650\u5b9a\u83ef\u5c71\u5e97",
-            "date": "2022-08-16 ~ 2022-10-17",
-            "address": "-",
-            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22081217361205155",
-            "UUID": "f4d980d95e515af79ac5354cdb374d4e",
-            "figure": "https://i.imgur.com/hRqkY2T.webp"
         },
         {
             "systematics": "huashan1914",
@@ -240,6 +213,15 @@
             "source_url": "https://www.huashan1914.com/w/umaytheater/performance_22092209471475466",
             "UUID": "8fea2b732caf5a4a9cfdbff6986e2133",
             "figure": "https://i.imgur.com/SdPXhBD.webp"
+        },
+        {
+            "systematics": "huashan1914",
+            "title": "2022\u5609\u7fa9\u65b0\u821e\u98a8\u300a\u96d9\u884c\u300b",
+            "date": "2022-11-26 ~ 2022-11-27",
+            "address": "-",
+            "source_url": "https://www.huashan1914.com/w/umaytheater/performance_22093017490585783",
+            "UUID": "c1fd261ab88057218e9cabba62a153db",
+            "figure": "https://i.imgur.com/CTvXrKr.webp"
         }
     ]
 }

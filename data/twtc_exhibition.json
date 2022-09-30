@@ -4,62 +4,7 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 6,
-    "last_update": "2022-09-30T16:17:20.588966+08:00",
-    "data": [
-        {
-            "systematics": "twtc",
-            "title": "\u53f0\u5317\u570b\u969b\u5851\u6a61\u81a0\u5de5\u696d\u5c55",
-            "date": "09/27 ~ 10/01",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "http://www.taipeiplas.com.tw",
-            "UUID": "bb30288193ce53569717c8fbf9bd7fcf",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "\u53f0\u5317\u570b\u969b\u88fd\u978b\u6a5f\u68b0\u5c55",
-            "date": "09/27 ~ 10/01",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "http://www.shoetech.com.tw",
-            "UUID": "463e7fb200a9570b9b513c2e82068238",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "\u81fa\u7063\u667a\u6167\u8fb2\u696d\u9031/\u81fa\u7063\u570b\u969b\u6f01\u696d\u5c55",
-            "date": "09/29 ~ 10/01",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "https://www.taiwanagriweek.com/zh-tw/index.html",
-            "UUID": "d3017895d8565163b4ba6193e8eb6f2f",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "\u53f0\u5317\u7d50\u5a5a\u63a1\u8cfc\u7bc0(\u53f0\u5317\u7d50\u5a5a\u535a\u89bd\u6703)\u3001\u53f0\u5317\u570b\u969b\u73e0\u5bf6\u7389\u77f3\u7cbe\u54c1\u5c55",
-            "date": "09/30 ~ 10/02",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=10723",
-            "UUID": "e6d8a35eb76c5373b606b3edebf5db1a",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "\u7b2c23\u5c46\u65b0\u4e16\u7d00\u5bb6\u5177\u7cbe\u54c1\u5927\u5c55",
-            "date": "09/30 ~ 10/03",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "http://www.ifpr.com.tw",
-            "UUID": "6de9e92576b650e8a33a7acbabbd0600",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "\u7b2c\u4e09\u5c46\u53f0\u5317\u570b\u969b\u79cb\u5b63\u65c5\u5c55\u3001\u53f0\u7063\u4f34\u624b\u79ae\u66a8\u89c0\u5149\u7279\u7522\u5c55",
-            "date": "09/30 ~ 10/03",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "http://www.kje.com.tw/",
-            "UUID": "38b859e033c155bb921a6e6ce7cb559f",
-            "figure": ""
-        }
-    ]
+    "counts": 0,
+    "last_update": "2022-10-01T00:15:08.889901+08:00",
+    "data": []
 }
