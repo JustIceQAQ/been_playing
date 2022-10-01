@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2022-10-01T16:10:19.545055+08:00",
+    "last_update": "2022-10-02T00:09:31.406950+08:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -117,15 +117,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "2022\u81fa\u7063\u6c23\u5019\u884c\u52d5\u7cfb\u5217\u5c08\u984c\u6f14\u8b1b",
-            "date": "2022-07-16 - 2022-10-01",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/8af4347c-685f-4c8e-86c4-af31e6129814",
-            "UUID": "16a11c1702765aecaecbaece27391d39",
-            "figure": "https://i.imgur.com/se47Kq1.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "\u3010\u9ec3\u963f\u746a\u51b0\u83d3\u5ba4\u3011\u671f\u9593\u9650\u5b9a\u5e97",
             "date": "2022-07-01 - 2022-10-10",
             "address": "-",
@@ -141,6 +132,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/5182b4a9-efd9-42e4-8cb8-9437f513f4e2",
             "UUID": "88a2f81e90715d8b81b5a193dfa3c767",
             "figure": "https://i.imgur.com/WDVKTkL.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u300a\u6e90\u4f86\u5982\u6b64\uff01\u5927\u535a\u7269\u5c55THE GRAND MUSEUMS\u300b",
+            "date": "2022-07-12 - 2022-11-06",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/a0ce1133-6a19-4d39-8ccd-2756da46fb29",
+            "UUID": "5a02bd5259bd51b787248505b11814a5",
+            "figure": "https://i.imgur.com/jylZZU8.webp"
         }
     ]
 }
