@@ -4,7 +4,62 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 0,
-    "last_update": "2022-10-03T00:09:27.872321+08:00",
-    "data": []
+    "counts": 6,
+    "last_update": "2022-10-03T08:43:39.197333+08:00",
+    "data": [
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u570b\u969b\u6c34\u9031",
+            "date": "10/13 ~ 10/15",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.taiwanintlwaterweek.com",
+            "UUID": "b738c1639de350cd9e7aa121ac1ea2da",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u5275\u65b0\u6280\u8853\u535a\u89bd\u6703",
+            "date": "10/13 ~ 10/15",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.inventaipei.com.tw",
+            "UUID": "9d8cc339ee7554c1b35686bd6630d1a8",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u570b\u969b\u667a\u6167\u80fd\u6e90\u9031",
+            "date": "10/19 ~ 10/21",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.energytaiwan.com.tw",
+            "UUID": "f1894230d80657ac9f9e8fdafe1a4123",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u5317\u570b\u969b\u96fb\u5b50\u7522\u696d\u79d1\u6280\u5c55\u3001\u53f0\u7063\u570b\u969b\u4eba\u5de5\u667a\u6167\u66a8\u7269\u806f\u7db2\u5c55",
+            "date": "10/26 ~ 10/28",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.taitronics.tw",
+            "UUID": "2205c55f3cc5568dbe7299f91bc7f219",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c34\u5c46\u53f0\u5317\u570b\u969b\u5efa\u7bc9\u5efa\u6750\u66a8\u7522\u54c1\u5c55",
+            "date": "12/08 ~ 12/11",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "https://www.taipeibex.com.tw/TBS/zh_TW/",
+            "UUID": "a44046502dc05ee4b6219cfe7f6bf59f",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c\u5341\u4e09\u5c46\u53f0\u5317\u570b\u969b\u51ac\u5b63\u65c5\u5c55\u3001\u53f0\u7063\u4f34\u624b\u79ae\u89c0\u5149\u7279\u7522\u5c55\u30012022\u7b2c\u5341\u4e5d\u5c46\u53f0\u5317\u570b\u969b\u7d20\u98df\u8336\u85dd\u5c55\u30012022\u7b2c\u5341\u4e5d\u5c46\u53f0\u5317\u570b\u969b\u5065\u5eb7\u4fc3\u9032\u990a\u751f\u7167\u8b77\u66a8\u8f14\u5177\u5c55\u30012022\u7b2c\u5341\u4e5d\u5c46\u4f5b\u6559\u6587\u7269\u3001\u4f5b\u6559\u96d5\u523b\u85dd\u54c1\u3001\u53f0\u5317\u570b\u969b\u73e0\u5bf6\u7389\u77f3\u7cbe\u54c1\u5c55",
+            "date": "12/16 ~ 12/19",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.kje.com.tw",
+            "UUID": "c0a631e78d1f57a99917df4c5d94af9e",
+            "figure": ""
+        }
+    ]
 }
