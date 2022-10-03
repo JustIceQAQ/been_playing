@@ -4,9 +4,36 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 6,
-    "last_update": "2022-10-03T16:12:39.643972+08:00",
+    "counts": 18,
+    "last_update": "2022-10-04T00:16:24.660465+08:00",
     "data": [
+        {
+            "systematics": "twtc",
+            "title": "2022\u5e74\u53f0\u5317\u7d21\u7e54\u5c55",
+            "date": "10/12 ~ 10/14",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.titas.tw",
+            "UUID": "2edc1694288259e191a5a3c0761b98a1",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2022\u53f0\u5317\u570b\u969b\u651d\u5f71\u5668\u6750\u66a8\u5f71\u50cf\u61c9\u7528\u5927\u5c55\u30012022\u53f0\u7063\u6236\u5916\u7528\u54c1\u5c55",
+            "date": "10/13 ~ 10/16",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.chanchao.com.tw/digital/",
+            "UUID": "220f5735595b51a5afc278cc21dcf328",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2022\u5c55\u662d\u4e16\u754c\u8c93\u54aa\u535a\u89bd\u6703",
+            "date": "10/13 ~ 10/16",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.chanchao.com.tw",
+            "UUID": "9f323bab2dc55c9385a0a38b774f1364",
+            "figure": ""
+        },
         {
             "systematics": "twtc",
             "title": "\u53f0\u7063\u570b\u969b\u6c34\u9031",
@@ -41,6 +68,60 @@
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.taitronics.tw",
             "UUID": "2205c55f3cc5568dbe7299f91bc7f219",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u96fb\u8def\u677f\u7522\u696d\u570b\u969b\u5c55\u89bd\u6703(\u53f0\u7063\u96fb\u5b50\u7d44\u88dd\u570b\u969b\u5c55\u89bd\u6703\u3001\u53f0\u7063\u7da0\u8272\u79d1\u6280\u570b\u969b\u5c55\u89bd\u6703\u3001\u53f0\u7063\u71b1\u7ba1\u7406\u6280\u8853\u570b\u969b\u5c55\u89bd\u6703\u3001\u53f0\u7063\u69cb\u88dd\u570b\u969b\u5c55\u89bd\u6703)",
+            "date": "10/26 ~ 10/28",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.tpcashow.com",
+            "UUID": "5329f6ea155e5f6eb885ba5ba5dedd75",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u570b\u969b\u5149\u96fb\u5927\u5c55\u66a8\u7cbe\u5bc6\u5149\u5b78\u5c55",
+            "date": "10/26 ~ 10/28",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.optotaiwan.com",
+            "UUID": "81e61e20220d5c3e825c0827a56383c2",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2022\u53f0\u5317\u570b\u969b\u65c5\u5c55",
+            "date": "11/04 ~ 11/07",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.taipeiitf.org.tw/",
+            "UUID": "171ca48e43dc5830b4cb6eab553d5eb2",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u4e9e\u592a\u5340\u8fb2\u696d\u6280\u8853\u5c55\u89bd\u66a8\u6703\u8b70\u3001\u81fa\u7063\u755c\u7267\u66a8\u990a\u6b96\u6f01\u696d\u5c55\u89bd\u66a8\u6703\u8b70",
+            "date": "11/10 ~ 11/12",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.agritechtaiwan.com",
+            "UUID": "e7a0593413ef5ff0a09f545b163e019c",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2022\u4e0a\u806f\u53f0\u5317\u570b\u969b\u5bf5\u7269\u7528\u54c1\u535a\u89bd\u6703(\u51ac\u5b63\u5c55)\u30012022\u53f0\u5317\u8c93\u5c55",
+            "date": "11/18 ~ 11/21",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
+            "source_url": "http://www.top-link.com.tw",
+            "UUID": "08ecca6fe2d151488a2066c6a3f7225c",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2022\u53f0\u7063\u91ab\u7642\u79d1\u6280\u5c55",
+            "date": "12/01 ~ 12/04",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=9691",
+            "UUID": "8d1977ff8e985247b73acaca60e4f5b7",
             "figure": ""
         },
         {
