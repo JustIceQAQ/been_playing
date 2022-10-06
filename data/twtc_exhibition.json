@@ -4,8 +4,8 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 17,
-    "last_update": "2022-10-06T00:27:40.850036+08:00",
+    "counts": 18,
+    "last_update": "2022-10-06T08:46:37.821824+08:00",
     "data": [
         {
             "systematics": "twtc",
@@ -14,6 +14,24 @@
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.titas.tw",
             "UUID": "2edc1694288259e191a5a3c0761b98a1",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u570b\u969b\u6c34\u9031",
+            "date": "10/13 ~ 10/15",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.taiwanintlwaterweek.com",
+            "UUID": "b738c1639de350cd9e7aa121ac1ea2da",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u5275\u65b0\u6280\u8853\u535a\u89bd\u6703",
+            "date": "10/13 ~ 10/15",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://www.inventaipei.com.tw/",
+            "UUID": "7a88bdd3bd68549c84bcca06663696fa",
             "figure": ""
         },
         {
@@ -32,15 +50,6 @@
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.chanchao.com.tw",
             "UUID": "9f323bab2dc55c9385a0a38b774f1364",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "\u53f0\u7063\u570b\u969b\u6c34\u9031",
-            "date": "10/13 ~ 10/15",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "http://www.taiwanintlwaterweek.com",
-            "UUID": "b738c1639de350cd9e7aa121ac1ea2da",
             "figure": ""
         },
         {
