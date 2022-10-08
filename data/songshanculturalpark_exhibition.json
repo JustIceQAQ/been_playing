@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2022-10-08T16:10:18.320253+08:00",
+    "last_update": "2022-10-09T00:09:37.244554+08:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -108,15 +108,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "iF \u5ba4\u5167\u98a8\u5c1a | 2022\u5e74 iF \u8a2d\u8a08\u734e\u7372\u734e\u4f5c\u54c1\u5c55 (III)",
-            "date": "2022-09-19 - 2022-10-08",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/1b85be80-cecd-4e97-848c-1d85dd75f29d",
-            "UUID": "75b312ed400d5a688dd504bf57d59a2f",
-            "figure": "https://i.imgur.com/op5sykQ.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "2022 We Battle\u8857\u821e\u5927\u8cfd",
             "date": "2022-10-02 - 2022-10-02",
             "address": "-",
@@ -141,6 +132,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/4eb39388-1736-42f7-8626-5853e60949de",
             "UUID": "0f9ea9f913285c8b8684990ea17978b0",
             "figure": "https://i.imgur.com/LJmCAQk.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u5916\u767e\u8001\u532f\u97f3\u6a02\u5287\u300aTHE FANTASTICKS \u5922\u5e7b\u611b\u7a0b\u300b",
+            "date": "2022-09-23 - 2022-11-13",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/72ebbe86-bcba-42e9-aba5-e1afe7fd2114",
+            "UUID": "733e8c91d26e50fdbcdfa6cd006179f1",
+            "figure": "https://i.imgur.com/k5Hd1Ub.webp"
         }
     ]
 }
