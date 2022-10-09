@@ -65,7 +65,8 @@ class StorageInit(metaclass=ABCMeta):
         raise NotImplementedError
 
     def get_last_update_time(self) -> str:
-        return datetime.datetime.now(pytz.timezone("Asia/Taipei")).isoformat()
+        # 直接使用UTC
+        return datetime.datetime.now(pytz.timezone("UTC")).isoformat()
 
 
 class JustJsonStorage(StorageInit):
