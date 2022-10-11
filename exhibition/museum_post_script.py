@@ -62,6 +62,9 @@ class MuseumPostRunner(RunnerInit):
             )
             yield exhibition
 
+    def get_visit(self, *args, **kwargs):
+        pass
+
 
 if __name__ == "__main__":
-    MuseumPostRunner().run()
+    MuseumPostRunner().run(use_pickled=False)

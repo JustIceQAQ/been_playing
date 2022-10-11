@@ -40,6 +40,9 @@ class MWRRunner(RunnerInit):
             )
             yield exhibition
 
+    def get_visit(self, *args, **kwargs):
+        pass
+
 
 if __name__ == "__main__":
-    MWRRunner().run()
+    MWRRunner().run(use_pickled=False)

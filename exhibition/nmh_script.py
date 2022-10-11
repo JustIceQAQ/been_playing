@@ -17,6 +17,7 @@ class NMHRunner(RunnerInit):
     instantiation = RequestsBeautifulSoupInstantiation
     use_header = NMHHeader
     use_parse = NMHParse
+    target_visit_url = "https://www.nmh.gov.tw/qa_146_3275_1.html"
 
     def get_response(self):
         requests_worker = self.instantiation(self.target_url)
@@ -39,6 +40,15 @@ class NMHRunner(RunnerInit):
             )
             yield exhibition
 
+    def get_visit(self, *args, **kwargs):
+        requests_worker = self.instantiation(self.target_visit_url)
+        headers = (
+            self.use_header().get_header() if self.use_header is not None else None
+        )
+        response = requests_worker.fetch(self.use_method, headers=headers)
+        opening = response.select_one("li.qa-item:nth-child(1) > div > div > p")
+        return opening
+
 
 if __name__ == "__main__":
-    NMHRunner().run()
+    NMHRunner().run(use_pickled=False)
