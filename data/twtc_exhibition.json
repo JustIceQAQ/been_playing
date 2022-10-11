@@ -5,7 +5,7 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 18,
-    "last_update": "2022-10-11T00:44:26.103804+00:00",
+    "last_update": "2022-10-11T16:14:37.641159+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -142,5 +142,8 @@
             "UUID": "c0a631e78d1f57a99917df4c5d94af9e",
             "figure": ""
         }
-    ]
+    ],
+    "visit": {
+        "opening": ""
+    }
 }

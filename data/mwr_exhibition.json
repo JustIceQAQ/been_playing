@@ -5,7 +5,7 @@
         "external_link": "https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070"
     },
     "counts": 3,
-    "last_update": "2022-10-11T00:44:24.243010+00:00",
+    "last_update": "2022-10-11T16:14:01.567570+00:00",
     "data": [
         {
             "systematics": "mwr",
@@ -34,5 +34,8 @@
             "UUID": "fa69e5b4a06c50af8caecc03eca92920",
             "figure": "https://i.imgur.com/MyTdFD5.webp"
         }
-    ]
+    ],
+    "visit": {
+        "opening": "\u958b\u9928\u6642\u9593\uff5c\u9031\u4e8c\u81f3\u9031\u65e5 10: 00 - 17: 00 \u9031\u4e00\u4f11\u9928\uff0c\u9022\u9023\u5047\u7167\u5e38\u958b\u9928\uff0c\u9806\u5ef6\u81f3\u6b21\u65e5\u4f11\u9928"
+    }
 }

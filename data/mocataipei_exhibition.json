@@ -5,17 +5,8 @@
         "external_link": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent"
     },
     "counts": 4,
-    "last_update": "2022-10-11T00:44:24.931818+00:00",
+    "last_update": "2022-10-11T16:14:11.098054+00:00",
     "data": [
-        {
-            "systematics": "mocataipei",
-            "title": "\u87a2\u5e55\u4e0a\u7684\u8ff7\u4f60\u500b\u5c55\u2014\u5b6b\u77e5\u884c\u500b\u5c55",
-            "date": "2022-10-08 ~ 2022-12-04",
-            "address": "-",
-            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u87a2\u5e55\u4e0a\u7684\u8ff7\u4f60\u500b\u5c55\u2014\u5b6b\u77e5\u884c\u500b\u5c55",
-            "UUID": "de204eac59825ba2adefc76f110f1a85",
-            "figure": "https://i.imgur.com/wVpGK87.webp"
-        },
         {
             "systematics": "mocataipei",
             "title": "\u8f49\u63a5\u5668",
@@ -36,6 +27,15 @@
         },
         {
             "systematics": "mocataipei",
+            "title": "\u87a2\u5e55\u4e0a\u7684\u8ff7\u4f60\u500b\u5c55\u2014\u5b6b\u77e5\u884c\u500b\u5c55",
+            "date": "2022-10-08 ~ 2022-12-04",
+            "address": "-",
+            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u87a2\u5e55\u4e0a\u7684\u8ff7\u4f60\u500b\u5c55\u2014\u5b6b\u77e5\u884c\u500b\u5c55",
+            "UUID": "de204eac59825ba2adefc76f110f1a85",
+            "figure": "https://i.imgur.com/wVpGK87.webp"
+        },
+        {
+            "systematics": "mocataipei",
             "title": "\u5c0b\u627e\u6211\u5011\u539f\u672c\u7684\u4eae\u5149",
             "date": "2022-09-24 ~ 2022-11-13",
             "address": "-",
@@ -43,5 +43,8 @@
             "UUID": "17dba29c72a555789296ba78153c6340",
             "figure": "https://i.imgur.com/00ohgmD.webp"
         }
-    ]
+    ],
+    "visit": {
+        "opening": "\u6bcf\u5468\u4e00\u4f11\u9928\uff0c\u6bcf\u5468\u4e8c\u81f3\u5468\u65e5\u958b\u653e\u6642\u9593\u70ba10:00 - 18:00\uff0c\u4e14\u552e\u7968\u65bc\u7576\u65e517:30\u505c\u6b62\u670d\u52d9\u3002"
+    }
 }
