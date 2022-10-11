@@ -29,7 +29,7 @@ def mocataipei_script() -> None:
             for key, value in mocataipei_data.items()
         }
         exhibition = Exhibition(systematics=target_systematics, **mocataipei_clean_data)
-        storage.create_data(exhibition.dict(), pickled=False)
+        storage.create_data(exhibition.dict())
 
     requests_visit = RequestsBeautifulSoupInstantiation(target_visit_url)
     targe_visit_object = requests_visit.fetch()
