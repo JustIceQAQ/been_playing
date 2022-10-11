@@ -4,7 +4,10 @@ from pathlib import Path
 from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
 from helper.header_helper import TFAMLifeHeader
-from helper.instantiation_helper import RequestsJsonInstantiation
+from helper.instantiation_helper import (
+    RequestsBeautifulSoupInstantiation,
+    RequestsJsonInstantiation,
+)
 from helper.parse_helper import TFAMParse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
@@ -15,6 +18,7 @@ def tfam_script(use_pickled=False) -> None:
     target_storage = str(root_dir / "data" / "tfam_exhibition.json")
     target_systematics = ExhibitionEnum.tfam
     target_domain = "https://www.tfam.museum"
+    target_visit_url = "https://www.tfam.museum/Common/editor.aspx?id=230&ddlLang=zh-tw"
 
     storage = JustJsonStorage(target_storage, target_systematics)
     storage.truncate_table()
@@ -45,6 +49,11 @@ def tfam_script(use_pickled=False) -> None:
         }
         exhibition = Exhibition(systematics=target_systematics, **tfam_clean_data)
         storage.create_data(exhibition.dict(), pickled=use_pickled)
+
+    requests_visit = RequestsBeautifulSoupInstantiation(target_visit_url)
+    targe_visit_object = requests_visit.fetch()
+    visit = targe_visit_object.select_one("div.spacingB-20 > .table1")
+    storage.set_visit({"opening": str(visit)})
     storage.commit()
 
 
