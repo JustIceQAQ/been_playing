@@ -41,7 +41,7 @@ class MWRRunner(RunnerInit):
             yield exhibition
 
     def get_visit(self, *args, **kwargs):
-        pass
+        return ""
 
 
 if __name__ == "__main__":
