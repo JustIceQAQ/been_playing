@@ -13,6 +13,7 @@ def npm_script() -> None:
     target_domain = "https://www.npm.gov.tw/"
     target_storage = str(root_dir / "data" / "npm_exhibition.json")
     target_systematics = ExhibitionEnum.npm
+    target_visit_url = "https://www.npm.gov.tw/Articles.aspx?sno=02007001"
 
     requests_worker = RequestsBeautifulSoupInstantiation(target_url)
     target_object = requests_worker.fetch()
@@ -43,6 +44,21 @@ def npm_script() -> None:
         }
         exhibition = Exhibition(systematics=target_systematics, **npm_col_clean_data)
         storage.create_data(exhibition.dict())
+
+    requests_visit = RequestsBeautifulSoupInstantiation(target_visit_url)
+    targe_visit_object = requests_visit.fetch()
+    visit = targe_visit_object.select_one("div.visit-content > p")
+    visit_info = "\n".join(
+        [
+            info_string
+            for info in targe_visit_object.select(
+                "ul.visit-list > li:nth-child(1) > div.visit-content > ul > li > small"
+            )
+            if (info_string := info.get_text())
+        ]
+    )
+    storage.set_visit({"opening": visit.get_text() + "\n" + visit_info})
+
     storage.commit()
 
 
