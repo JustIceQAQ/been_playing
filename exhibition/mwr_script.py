@@ -18,6 +18,7 @@ class MWRRunner(RunnerInit):
     instantiation = RequestsBeautifulSoupInstantiation
     use_header = MWRHeader
     use_parse = MWRParse
+    target_visit_url = "https://www.mwr.org.tw/xmdoc/cont?xsmsid=0H305737466544602901"
 
     def get_response(self):
         requests_worker = self.instantiation(self.target_url)
@@ -41,7 +42,15 @@ class MWRRunner(RunnerInit):
             yield exhibition
 
     def get_visit(self, *args, **kwargs):
-        return ""
+        requests_worker = self.instantiation(self.target_visit_url)
+        headers = (
+            self.use_header().get_header() if self.use_header is not None else None
+        )
+        response = requests_worker.fetch(self.use_method, headers=headers)
+        opening = response.select_one(
+            "#MainForm > div.editable_content.content.dev-xew-block > div:nth-child(1) > p:nth-child(4)"
+        )
+        return opening.get_text().replace("\u3000", "")
 
 
 if __name__ == "__main__":
