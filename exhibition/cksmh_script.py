@@ -12,6 +12,7 @@ def cksmh_script() -> None:
     target_url = "https://www.cksmh.gov.tw/activitysoonlist_369_{}.html"
     target_storage = str(root_dir / "data" / "cksmh_exhibition.json")
     target_systematics = ExhibitionEnum.cksmh
+    target_visit_url = "https://www.cksmh.gov.tw/content_78.html"
 
     storage = JustJsonStorage(target_storage, target_systematics)
     storage.truncate_table()
@@ -37,6 +38,12 @@ def cksmh_script() -> None:
         }
         exhibition = Exhibition(systematics=target_systematics, **cksmh_clean_data)
         storage.create_data(exhibition.dict())
+
+    requests_visit = RequestsBeautifulSoupInstantiation(target_visit_url)
+    targe_visit_object = requests_visit.fetch()
+    visit = targe_visit_object.select_one("div.zhanjian > div.cont_info > p")
+    storage.set_visit({"opening": visit.get_text()})
+
     storage.commit()
 
 
