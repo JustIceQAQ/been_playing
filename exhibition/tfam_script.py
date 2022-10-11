@@ -9,7 +9,7 @@ from helper.parse_helper import TFAMParse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
-def tfam_script() -> None:
+def tfam_script(use_pickled=False) -> None:
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.tfam.museum/ashx/Exhibition.ashx?ddlLang=zh-tw"
     target_storage = str(root_dir / "data" / "tfam_exhibition.json")
@@ -44,9 +44,9 @@ def tfam_script() -> None:
             key: RequestsClean.clean_string(value) for key, value in tfam_data.items()
         }
         exhibition = Exhibition(systematics=target_systematics, **tfam_clean_data)
-        storage.create_data(exhibition.dict())
+        storage.create_data(exhibition.dict(), pickled=use_pickled)
     storage.commit()
 
 
 if __name__ == "__main__":
-    tfam_script()
+    tfam_script(use_pickled=False)

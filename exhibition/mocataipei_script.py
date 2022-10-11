@@ -7,7 +7,7 @@ from helper.parse_helper import MocaTaipeiParse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
-def mocataipei_script() -> None:
+def mocataipei_script(use_pickled=False) -> None:
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent"
     target_domain = "https://www.mocataipei.org.tw"
@@ -29,7 +29,7 @@ def mocataipei_script() -> None:
             for key, value in mocataipei_data.items()
         }
         exhibition = Exhibition(systematics=target_systematics, **mocataipei_clean_data)
-        storage.create_data(exhibition.dict())
+        storage.create_data(exhibition.dict(), pickled=use_pickled)
 
     requests_visit = RequestsBeautifulSoupInstantiation(target_visit_url)
     targe_visit_object = requests_visit.fetch()
@@ -39,4 +39,4 @@ def mocataipei_script() -> None:
 
 
 if __name__ == "__main__":
-    mocataipei_script()
+    mocataipei_script(use_pickled=False)

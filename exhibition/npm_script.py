@@ -7,7 +7,7 @@ from helper.parse_helper import NpmColParse, NpmRowParse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
-def npm_script() -> None:
+def npm_script(use_pickled=False) -> None:
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1"
     target_domain = "https://www.npm.gov.tw/"
@@ -43,7 +43,7 @@ def npm_script() -> None:
             for key, value in npm_col_data.items()
         }
         exhibition = Exhibition(systematics=target_systematics, **npm_col_clean_data)
-        storage.create_data(exhibition.dict())
+        storage.create_data(exhibition.dict(), pickled=use_pickled)
 
     requests_visit = RequestsBeautifulSoupInstantiation(target_visit_url)
     targe_visit_object = requests_visit.fetch()
@@ -63,4 +63,4 @@ def npm_script() -> None:
 
 
 if __name__ == "__main__":
-    npm_script()
+    npm_script(use_pickled=False)

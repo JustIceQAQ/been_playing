@@ -12,7 +12,7 @@ from helper.storage_helper import Exhibition, JustJsonStorage
 runtime_logging = logging.getLogger("runtime_logging")
 
 
-def tickets_books_script() -> None:
+def tickets_books_script(use_pickled=False) -> None:
     root_dir: Final = Path(__file__).resolve(strict=True).parent.parent
     target_url: Final = "https://tickets.books.com.tw/leisure/"
     target_storage: Final = str(root_dir / "data" / "books_exhibition.json")
@@ -34,7 +34,7 @@ def tickets_books_script() -> None:
         exhibition = Exhibition(
             systematics=target_systematics, **tickets_books_clean_data
         )
-        storage.create_data(exhibition.dict())
+        storage.create_data(exhibition.dict(), pickled=use_pickled)
 
     if storage.is_have_created_data():
         storage.truncate_table()
@@ -42,4 +42,4 @@ def tickets_books_script() -> None:
 
 
 if __name__ == "__main__":
-    tickets_books_script()
+    tickets_books_script(use_pickled=False)

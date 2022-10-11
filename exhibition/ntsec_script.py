@@ -7,7 +7,7 @@ from helper.parse_helper import NTSECParse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
-def ntsec_script() -> None:
+def ntsec_script(use_pickled=False) -> None:
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.ntsec.gov.tw/User/Exhibitions.aspx?a=44"
     target_domain = "https://www.ntsec.gov.tw"
@@ -26,9 +26,9 @@ def ntsec_script() -> None:
             key: RequestsClean.clean_string(value) for key, value in ntsec_data.items()
         }
         exhibition = Exhibition(systematics=target_systematics, **ntsec_clean_data)
-        storage.create_data(exhibition.dict())
+        storage.create_data(exhibition.dict(), pickled=use_pickled)
     storage.commit()
 
 
 if __name__ == "__main__":
-    ntsec_script()
+    ntsec_script(use_pickled=False)

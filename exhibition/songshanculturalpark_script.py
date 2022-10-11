@@ -7,7 +7,7 @@ from helper.parse_helper import SongShanCulturalParkParse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
-def songshanculturalpark_script() -> None:
+def songshanculturalpark_script(use_pickled=False) -> None:
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.songshanculturalpark.org/exhibition"
     target_domain = "https://www.songshanculturalpark.org"
@@ -31,9 +31,9 @@ def songshanculturalpark_script() -> None:
         exhibition = Exhibition(
             systematics=target_systematics, **songshanculturalpark_clean_data
         )
-        storage.create_data(exhibition.dict())
+        storage.create_data(exhibition.dict(), pickled=use_pickled)
     storage.commit()
 
 
 if __name__ == "__main__":
-    songshanculturalpark_script()
+    songshanculturalpark_script(use_pickled=False)

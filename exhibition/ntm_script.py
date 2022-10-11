@@ -8,7 +8,7 @@ from helper.parse_helper import NTMParse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
-def ntm_script() -> None:
+def ntm_script(use_pickled=False) -> None:
     target_domain = "https://www.ntm.gov.tw"
     urls_format = "{}/exhibitionlist_{}.html?Type={}"
 
@@ -46,9 +46,9 @@ def ntm_script() -> None:
             key: RequestsClean.clean_string(value) for key, value in ntsec_data.items()
         }
         exhibition = Exhibition(systematics=target_systematics, **ntsec_clean_data)
-        storage.create_data(exhibition.dict())
+        storage.create_data(exhibition.dict(), pickled=use_pickled)
     storage.commit()
 
 
 if __name__ == "__main__":
-    ntm_script()
+    ntm_script(use_pickled=False)

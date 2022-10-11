@@ -7,7 +7,7 @@ from helper.parse_helper import TMCParse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
-def tmc_script() -> None:
+def tmc_script(use_pickled=False) -> None:
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://tmc.taipei/show/event/"
     target_storage = str(root_dir / "data" / "tmc_exhibition.json")
@@ -39,9 +39,9 @@ def tmc_script() -> None:
             key: RequestsClean.clean_string(value) for key, value in tcm_data.items()
         }
         exhibition = Exhibition(systematics=target_systematics, **tcm_clean_data)
-        storage.create_data(exhibition.dict())
+        storage.create_data(exhibition.dict(), pickled=use_pickled)
     storage.commit()
 
 
 if __name__ == "__main__":
-    tmc_script()
+    tmc_script(use_pickled=False)

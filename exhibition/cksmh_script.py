@@ -7,7 +7,7 @@ from helper.parse_helper import CKSMHParse
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
-def cksmh_script() -> None:
+def cksmh_script(use_pickled=False) -> None:
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.cksmh.gov.tw/activitysoonlist_369_{}.html"
     target_storage = str(root_dir / "data" / "cksmh_exhibition.json")
@@ -37,7 +37,7 @@ def cksmh_script() -> None:
             key: RequestsClean.clean_string(value) for key, value in cksmh_data.items()
         }
         exhibition = Exhibition(systematics=target_systematics, **cksmh_clean_data)
-        storage.create_data(exhibition.dict())
+        storage.create_data(exhibition.dict(), pickled=use_pickled)
 
     requests_visit = RequestsBeautifulSoupInstantiation(target_visit_url)
     targe_visit_object = requests_visit.fetch()
@@ -48,4 +48,4 @@ def cksmh_script() -> None:
 
 
 if __name__ == "__main__":
-    cksmh_script()
+    cksmh_script(use_pickled=False)

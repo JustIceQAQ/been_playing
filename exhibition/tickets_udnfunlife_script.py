@@ -10,7 +10,7 @@ from helper.storage_helper import Exhibition, JustJsonStorage
 from helper.translation_helper import BeautifulSoupTranslation
 
 
-def tickets_udnfunlife_script() -> None:
+def tickets_udnfunlife_script(use_pickled=False) -> None:
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = (
         "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
@@ -42,9 +42,9 @@ def tickets_udnfunlife_script() -> None:
         }
 
         exhibition = Exhibition(systematics=target_systematics, **udnfunlife_clean_data)
-        storage.create_data(exhibition.dict())
+        storage.create_data(exhibition.dict(), pickled=use_pickled)
     storage.commit()
 
 
 if __name__ == "__main__":
-    tickets_udnfunlife_script()
+    tickets_udnfunlife_script(use_pickled=False)

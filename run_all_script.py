@@ -62,6 +62,7 @@ def main():
         load_dotenv(this_env)
     CLIENT_ID = os.getenv("IMGUR_API_CLIENT_ID", False)
     CLIENT_SECRET = os.getenv("IMGUR_API_CLIENT_SECRET", False)
+    USE_PICKLED = os.getenv("USE_PICKLED", True)
 
     if CLIENT_ID and CLIENT_SECRET:
         imgur_image.login(CLIENT_ID, CLIENT_SECRET)
@@ -71,7 +72,9 @@ def main():
 
     all_script_runners.extend(
         [
-            threading.Thread(target=py_def, name=py_def.__name__)
+            threading.Thread(
+                target=py_def, name=py_def.__name__, kwargs={"use_pickled": USE_PICKLED}
+            )
             for py_def in py_def_scripts
         ]
     )
