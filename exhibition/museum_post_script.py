@@ -21,6 +21,9 @@ class MuseumPostRunner(RunnerInit):
     instantiation = RequestsBeautifulSoupInstantiation
     use_header = MuseumPostHeader
     use_parse = MuseumPostParse
+    target_visit_url = (
+        "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=141"
+    )
 
     def get_response_check(self, url):
         requests_worker = self.instantiation(url)
@@ -63,7 +66,24 @@ class MuseumPostRunner(RunnerInit):
             yield exhibition
 
     def get_visit(self, *args, **kwargs):
-        return ""
+        requests_worker = self.instantiation(self.target_visit_url)
+        headers = (
+            self.use_header().get_header() if self.use_header is not None else None
+        )
+        response = requests_worker.fetch(self.use_method, headers=headers)
+        opening = response.select_one("ul.article-2")
+
+        return "\n".join(
+            [
+                opening.select_one("li:nth-child(1) > span.txt").get_text(),
+                ";".join(
+                    [
+                        item.get_text()
+                        for item in opening.select(".article-2_item > li > .txt")
+                    ]
+                ),
+            ]
+        )
 
 
 if __name__ == "__main__":
