@@ -84,6 +84,8 @@ class JustJsonStorage(StorageInit):
         client_secret = os.getenv("IMGUR_API_CLIENT_SECRET", False)
         self.ImgurImage.login(client_id, client_secret)
         self.exhibition_information = exhibition_information
+        self.json_object = {}
+        self.visit = {}
 
     def create_data(self, data: Dict[str, str], pickled=True, *args, **kwargs) -> None:
         data["figure"] = (
@@ -93,20 +95,24 @@ class JustJsonStorage(StorageInit):
         )
         self.temp_data.append(data)
 
+    def set_visit(self, _dict: Dict):
+        self.visit.update(_dict)
+
     def commit(self) -> None:
         self.fd = open(self.db_path, "w", encoding="utf-8")
-        json_object = json.dumps(
-            {
-                "information": dataclasses.asdict(self.exhibition_information),
-                "counts": len(self.temp_data),
-                "last_update": self.get_last_update_time(),
-                "data": list(
-                    self.deduplication_but_maintain_sort(key=lambda d: d["UUID"])
-                ),
-            },
+
+        self.json_object = {
+            "information": dataclasses.asdict(self.exhibition_information),
+            "counts": len(self.temp_data),
+            "last_update": self.get_last_update_time(),
+            "data": list(self.deduplication_but_maintain_sort(key=lambda d: d["UUID"])),
+            "visit": self.visit,
+        }
+        runtime_json_object = json.dumps(
+            self.json_object,
             indent=4,
         )
-        self.fd.write(json_object)
+        self.fd.write(runtime_json_object)
         self.fd.close()
 
     def deduplication_but_maintain_sort(self, key=None):
