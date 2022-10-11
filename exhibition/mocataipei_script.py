@@ -13,6 +13,7 @@ def mocataipei_script() -> None:
     target_domain = "https://www.mocataipei.org.tw"
     target_storage = str(root_dir / "data" / "mocataipei_exhibition.json")
     target_systematics = ExhibitionEnum.mocataipei
+    target_visit_url = "https://www.mocataipei.org.tw/tw/Visit/%E6%99%82%E9%96%93%E8%88%87%E7%A5%A8%E5%83%B9"
 
     requests_worker = RequestsBeautifulSoupInstantiation(target_url)
     target_object = requests_worker.fetch()
@@ -27,9 +28,13 @@ def mocataipei_script() -> None:
             key: RequestsClean.clean_string(value)
             for key, value in mocataipei_data.items()
         }
-
         exhibition = Exhibition(systematics=target_systematics, **mocataipei_clean_data)
-        storage.create_data(exhibition.dict())
+        storage.create_data(exhibition.dict(), pickled=False)
+
+    requests_visit = RequestsBeautifulSoupInstantiation(target_visit_url)
+    targe_visit_object = requests_visit.fetch()
+    visit = targe_visit_object.select_one("section.category > .secBox > p.normal")
+    storage.set_visit({"opening": visit.get_text()})
     storage.commit()
 
 
