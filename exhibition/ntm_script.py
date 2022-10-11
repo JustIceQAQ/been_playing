@@ -11,6 +11,7 @@ from helper.storage_helper import Exhibition, JustJsonStorage
 def ntm_script(use_pickled=False) -> None:
     target_domain = "https://www.ntm.gov.tw"
     urls_format = "{}/exhibitionlist_{}.html?Type={}"
+    target_visit_url = "https://www.ntm.gov.tw/content_158.html"
 
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     product_data = product(
@@ -40,13 +41,17 @@ def ntm_script(use_pickled=False) -> None:
         for target_object in target_objects
     )
     for item in list(dataset):
-
         ntsec_data = NTMParse(item).parsed()
         ntsec_clean_data = {
             key: RequestsClean.clean_string(value) for key, value in ntsec_data.items()
         }
         exhibition = Exhibition(systematics=target_systematics, **ntsec_clean_data)
         storage.create_data(exhibition.dict(), pickled=use_pickled)
+
+    requests_visit = RequestsBeautifulSoupInstantiation(target_visit_url)
+    targe_visit_object = requests_visit.fetch()
+    visit = targe_visit_object.select_one("#visit > .info > p")
+    storage.set_visit({"opening": visit.get_text().replace("＊", "\n＊")})
     storage.commit()
 
 
