@@ -81,7 +81,11 @@ def main():
 
     all_script_runners.extend(
         [
-            threading.Thread(target=py_class().run, name=py_class.__name__)
+            threading.Thread(
+                target=py_class().run,
+                name=py_class.__name__,
+                kwargs={"use_pickled": USE_PICKLED},
+            )
             for py_class in py_class_script
         ]
     )
