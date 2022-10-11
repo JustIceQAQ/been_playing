@@ -21,9 +21,9 @@ class RunnerInit(metaclass=ABCMeta):
             )
             self.storage.truncate_table()
 
-    def write_storage(self, data):
+    def write_storage(self, data, use_pickled):
         if self.storage is not None:
-            self.storage.create_data(data)
+            self.storage.create_data(data, pickled=use_pickled)
 
     def commit_storage(self):
         if self.storage is not None:
@@ -41,12 +41,20 @@ class RunnerInit(metaclass=ABCMeta):
     def get_parsed(self, *args, **kwargs):
         raise NotImplementedError
 
-    def run(self):
+    @abstractmethod
+    def get_visit(self, *args, **kwargs):
+        raise NotImplementedError
+
+    def run(self, use_pickled=True):
         self.init_storage()
         response = self.get_response()
         items = self.get_items(response)
         exhibitions = self.get_parsed(items)
 
         for exhibition in exhibitions:
-            self.write_storage(exhibition.dict())
+            self.write_storage(exhibition.dict(), use_pickled)
+
+        if self.storage is not None:
+            self.storage.set_visit({"opening": self.get_visit()})
+
         self.commit_storage()
