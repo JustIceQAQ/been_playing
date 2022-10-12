@@ -5,7 +5,7 @@
         "external_link": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw"
     },
     "counts": 9,
-    "last_update": "2022-10-12T12:40:16.302314+00:00",
+    "last_update": "2022-10-12T13:06:29.334640+00:00",
     "data": [
         {
             "systematics": "tfam",
@@ -90,6 +90,6 @@
         }
     ],
     "visit": {
-        "opening": "<table class=\"table1\" role=\"table\">\n\t<thead role=\"thead\">\n\t\t<tr role=\"row\" style=\"bgcolor: #f6f6f6;\">\n\t\t\t<th role=\"cell\" style=\"text-align: center;\" width=\"14%\"><strong>\u9031\u4e00</strong></th>\n\t\t\t<th role=\"cell\" style=\"text-align: center;\" width=\"14%\"><span style=\"text-align: center; font-weight: bold;\">\u9031\u4e8c</span></th>\n\t\t\t<th role=\"cell\" style=\"text-align: center;\" width=\"14%\"><span style=\"text-align: center; font-weight: bold;\">\u9031\u4e09</span></th>\n\t\t\t<th role=\"cell\" style=\"text-align: center;\" width=\"14%\"><span style=\"text-align: center; font-weight: bold;\">\u9031\u56db</span></th>\n\t\t\t<th role=\"cell\" style=\"text-align: center;\" width=\"14%\"><span style=\"text-align: center; font-weight: bold;\">\u9031\u4e94</span></th>\n\t\t\t<th role=\"cell\" style=\"text-align: center;\" width=\"14%\"><span style=\"text-align: center; font-weight: bold;\">\u9031\u516d</span></th>\n\t\t\t<th role=\"cell\" style=\"text-align: center;\" width=\"14%\"><span style=\"text-align: center; font-weight: bold;\">\u9031\u65e5</span></th>\n\t\t</tr>\n\t</thead>\n\t<tbody role=\"tbody\">\n\t\t<tr role=\"row\">\n\t\t\t<td class=\"center\" role=\"cell\">\u4f11\u9928</td>\n\t\t\t<td class=\"left\" role=\"cell\">09:30 - 17:30</td>\n\t\t\t<td class=\"left\" role=\"cell\">09:30 - 17:30</td>\n\t\t\t<td class=\"left\" role=\"cell\">09:30 - 17:30</td>\n\t\t\t<td class=\"left\" role=\"cell\">09:30 - 17:30</td>\n\t\t\t<td class=\"left\" role=\"cell\">09:30 - <span style=\"color: rgb(0, 0, 0);\">20:30</span></td>\n\t\t\t<td class=\"left\" role=\"cell\">09:30 - 17:30</td>\n\t\t</tr>\n\t</tbody>\n</table>"
+        "opening": "\u9031\u4e00: \u4f11\u9928\n\u9031\u4e8c: 09:30 - 17:30\n\u9031\u4e09: 09:30 - 17:30\n\u9031\u56db: 09:30 - 17:30\n\u9031\u4e94: 09:30 - 17:30\n\u9031\u516d: 09:30 - 20:30\n\u9031\u65e5: 09:30 - 17:30"
     }
 }
