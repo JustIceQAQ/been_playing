@@ -53,7 +53,16 @@ def tfam_script(use_pickled=False) -> None:
     requests_visit = RequestsBeautifulSoupInstantiation(target_visit_url)
     targe_visit_object = requests_visit.fetch()
     visit = targe_visit_object.select_one("div.spacingB-20 > .table1")
-    storage.set_visit({"opening": str(visit)})
+    days, openings = [th.get_text() for th in visit.select("th")], [
+        td.get_text() for td in visit.select("td")
+    ]
+    storage.set_visit(
+        {
+            "opening": "\n".join(
+                [f"{day}: {opening}" for day, opening in zip(days, openings)]
+            )
+        }
+    )
     storage.commit()
 
 
