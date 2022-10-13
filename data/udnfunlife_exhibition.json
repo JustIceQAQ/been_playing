@@ -4,8 +4,8 @@
         "code_name": "tickets_udnfunlife",
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
-    "counts": 25,
-    "last_update": "2022-10-13T08:20:09.160789+00:00",
+    "counts": 24,
+    "last_update": "2022-10-13T16:23:04.631774+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -64,7 +64,7 @@
         {
             "systematics": "tickets_udnfunlife",
             "title": "\u5916\u767e\u8001\u532f\u97f3\u6a02\u5287\u300a\u5922\u5e7b\u611b\u7a0b\u300b",
-            "date": "2022/10/13 ~ 2022/11/13",
+            "date": "2022/10/14 ~ 2022/11/13",
             "address": "\u677e\u5c71\u6587\u5275\u5712\u53402\u6a13\u591a\u529f\u80fd\u5c55\u6f14\u5ef3",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N1SW8QA9&kdid=featured",
             "UUID": "bc0660829eaa5163a9bbb30ba5d7009c",
@@ -135,15 +135,6 @@
         },
         {
             "systematics": "tickets_udnfunlife",
-            "title": "2022\u4e16\u754c\u97f3\u6a02\u7bc0@\u81fa\u7063",
-            "date": "2022/10/14 ~ 2022/10/16",
-            "address": "\u53f0\u5317\u5e02\u5927\u4f73\u6cb3\u6ff1\u516c\u5712 8~9 \u865f\u6c34\u9580",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N21UWBH5&kdid=featured",
-            "UUID": "69b83047cd015c91b5b4d61142c7336f",
-            "figure": "https://i.imgur.com/TROKclD.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
             "title": "\u6f22\u65af\u5b63\u9ed8\uff1a\u597d\u840a\u5862\u738b\u8005\u4e4b\u97f3",
             "date": "2023/09/28 ~ 2023/10/01",
             "address": "\u81fa\u5317\u5c0f\u5de8\u86cb,\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
@@ -172,7 +163,7 @@
         {
             "systematics": "tickets_udnfunlife",
             "title": "\u827e\u745e\uff0e\u5361\u723e\u597d\u597d\u4e94\u91cd\u594f\u89aa\u5b50\u4e92\u52d5\u5c55\uff08\u65b0\u7af9\u5834\uff09",
-            "date": "2022/10/13 ~ 2022/10/24",
+            "date": "2022/10/14 ~ 2022/10/24",
             "address": "SOGO\u767e\u8ca8\u65b0\u7af9\u5e97 3\u6a13\u6d3b\u52d5\u6703\u9928",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N240C0I3&kdid=featured",
             "UUID": "e77508e54c4d58ee9d9e50730fbc3dda",
