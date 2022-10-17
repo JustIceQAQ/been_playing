@@ -85,3 +85,8 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "museum_post",
         "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage=1",
     )
+    jam = (
+        "忠泰美術館",
+        "jam",
+        "http://jam.jutfoundation.org.tw/online-exhibition",
+    )

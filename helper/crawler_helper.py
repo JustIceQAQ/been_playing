@@ -20,7 +20,7 @@ class RequestsCrawler(CrawlerInit):
         self.url = url
         self.rs = requests.session()
         self.rs.keep_alive = False
-        self.rs.proxies = {"http": "106.107.203.151:80"}
+        # self.rs.proxies = {"http": "106.107.203.151:80"}
 
     @retry(
         requests.exceptions.ConnectionError, tries=5, delay=30, backoff=2, max_delay=500
@@ -40,14 +40,13 @@ class RequestsCrawler(CrawlerInit):
     def observed_step(self, response, use_this=False) -> None:
         if use_this:
             if "tickets.books" in response.url:
-                print(response.cookies)
                 if response.status_code in {403}:
                     raise requests.exceptions.ConnectionError()
 
     def reload_session(self):
         self.rs = requests.session()
         self.rs.keep_alive = False
-        self.rs.proxies = {"http": "106.107.203.151:80"}
+        # self.rs.proxies = {"http": "106.107.203.151:80"}
 
 
 # class PyCurlCrawler(CrawlerInit):

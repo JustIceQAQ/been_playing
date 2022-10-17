@@ -95,3 +95,12 @@ class MuseumPostHeader(HeaderInit):
             "Cookie": f"JSESSIONID={secrets.token_hex(16).upper()}; fwchk={secrets.token_hex(15)}+",
             "Connection": "close",
         }
+
+
+class JamHeader(HeaderInit):
+    def get_header(self) -> Optional[Dict[str, str]]:
+        return {
+            "User-Agent": random.choice(USER_AGENT_LIST),
+            "Host": "jam.jutfoundation.org.tw",
+            "Referer": "http://jam.jutfoundation.org.tw",
+        }
