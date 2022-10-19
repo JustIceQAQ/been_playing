@@ -12,7 +12,7 @@ from exhibition.mocataipei_script import MocaTaipeiRunner
 from exhibition.museum_post_script import MuseumPostRunner
 from exhibition.mwr_script import MWRRunner
 from exhibition.nmh_script import NMHRunner
-from exhibition.npm_script import npm_script
+from exhibition.npm_script import NPMRunner
 from exhibition.ntm_script import ntm_script
 from exhibition.ntsec_script import ntsec_script
 from exhibition.songshanculturalpark_script import songshanculturalpark_script
@@ -38,7 +38,6 @@ def main():
     py_def_scripts = {
         tickets_udnfunlife_script,
         tickets_books_script,
-        npm_script,
         songshanculturalpark_script,
         ntsec_script,
         tfam_script,
@@ -46,6 +45,7 @@ def main():
         tmc_script,
     }
     py_class_script = {
+        NPMRunner,
         MocaTaipeiRunner,
         HuaShan1914Runner,
         CksmhRunner,
