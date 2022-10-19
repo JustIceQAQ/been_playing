@@ -1,4 +1,3 @@
-import logging
 from pathlib import Path
 from typing import Final
 
@@ -7,39 +6,40 @@ from helper.clean_helper import RequestsClean
 from helper.header_helper import TicketsBooksHeader
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
 from helper.parse_helper import TicketsBooksParse
-from helper.storage_helper import Exhibition, JustJsonStorage
-
-runtime_logging = logging.getLogger("runtime_logging")
+from helper.runner_helper import RunnerInit
 
 
-def tickets_books_script(use_pickled=False) -> None:
+class TicketsBooksRunner(RunnerInit):
     root_dir: Final = Path(__file__).resolve(strict=True).parent.parent
     target_url: Final = "https://tickets.books.com.tw/leisure/"
+    use_method = "GET"
     target_storage: Final = str(root_dir / "data" / "books_exhibition.json")
     target_systematics: Final = ExhibitionEnum.tickets_books
+    instantiation = RequestsBeautifulSoupInstantiation
+    use_header = TicketsBooksHeader
+    use_parse = TicketsBooksParse
 
-    requests_worker = RequestsBeautifulSoupInstantiation(target_url)
-    headers = TicketsBooksHeader().get_header()
-    response = requests_worker.fetch("GET", headers=headers)
-    storage = JustJsonStorage(target_storage, target_systematics)
-
-    dataset = response.select("ul.prd > li")
-
-    for item in dataset:
-        tickets_books_data = TicketsBooksParse(item).parsed()
-        tickets_books_clean_data = {
-            key: RequestsClean.clean_string(value)
-            for key, value in tickets_books_data.items()
-        }
-        exhibition = Exhibition(
-            systematics=target_systematics, **tickets_books_clean_data
+    def get_response(self):
+        requests_worker = self.instantiation(self.target_url)
+        headers = (
+            self.use_header().get_header() if self.use_header is not None else None
         )
-        storage.create_data(exhibition.dict(), pickled=use_pickled)
+        return requests_worker.fetch(self.use_method, headers=headers)
 
-    if storage.is_have_created_data():
-        storage.truncate_table()
-        storage.commit()
+    def get_items(self, response):
+        return response.select("ul.prd > li")
+
+    def get_parsed(self, items):
+        for item in items:
+            data = self.use_parse(item).parsed()
+            clean_data = {
+                key: RequestsClean.clean_string(value) for key, value in data.items()
+            }
+            exhibition = self.exhibition_model(
+                systematics=self.target_systematics, **clean_data
+            )
+            yield exhibition
 
 
 if __name__ == "__main__":
-    tickets_books_script(use_pickled=False)
+    TicketsBooksRunner().run(use_pickled=False)
