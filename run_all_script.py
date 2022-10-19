@@ -16,7 +16,7 @@ from exhibition.npm_script import NPMRunner
 from exhibition.ntm_script import ntm_script
 from exhibition.ntsec_script import NTSECRunner
 from exhibition.songshanculturalpark_script import SongShanCulturalParkRunner
-from exhibition.tfam_script import tfam_script
+from exhibition.tfam_script import TFAMRunner
 from exhibition.tickets_books_script import tickets_books_script
 from exhibition.tickets_udnfunlife_script import tickets_udnfunlife_script
 from exhibition.tmc_script import tmc_script
@@ -38,11 +38,11 @@ def main():
     py_def_scripts = {
         tickets_udnfunlife_script,
         tickets_books_script,
-        tfam_script,
         ntm_script,
         tmc_script,
     }
     py_class_script = {
+        TFAMRunner,
         NTSECRunner,
         CksmhRunner,
         HuaShan1914Runner,

@@ -9,62 +9,64 @@ from helper.instantiation_helper import (
     RequestsJsonInstantiation,
 )
 from helper.parse_helper import TFAMParse
-from helper.storage_helper import Exhibition, JustJsonStorage
+from helper.runner_helper import RunnerInit
 
 
-def tfam_script(use_pickled=False) -> None:
+class TFAMRunner(RunnerInit):
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.tfam.museum/ashx/Exhibition.ashx?ddlLang=zh-tw"
     target_storage = str(root_dir / "data" / "tfam_exhibition.json")
     target_systematics = ExhibitionEnum.tfam
     target_domain = "https://www.tfam.museum"
     target_visit_url = "https://www.tfam.museum/Common/editor.aspx?id=230&ddlLang=zh-tw"
+    instantiation = RequestsJsonInstantiation
+    use_header = TFAMLifeHeader
+    use_parse = TFAMParse
 
-    storage = JustJsonStorage(target_storage, target_systematics)
-    storage.truncate_table()
+    def get_response(self):
+        requests_worker = self.instantiation(self.target_url)
+        headers = (
+            self.use_header().get_header() if self.use_header is not None else None
+        )
+        dataset_1 = requests_worker.fetch(
+            method="POST",
+            headers=headers,
+            data=json.dumps({"JJMethod": "GetEx", "Type": "1"}),
+        )
+        dataset_2 = requests_worker.fetch(
+            method="POST",
+            headers=headers,
+            data=json.dumps({"JJMethod": "GetEx", "Type": "2"}),
+        )
+        dataset_list = []
+        dataset_list.extend(dataset_1.get("Data", []))
+        dataset_list.extend(dataset_2.get("Data", []))
+        return dataset_list
 
-    requests_worker = RequestsJsonInstantiation(target_url)
+    def get_items(self, response):
+        return response
 
-    headers = TFAMLifeHeader().get_header()
-
-    dataset_1 = requests_worker.fetch(
-        method="POST",
-        headers=headers,
-        data=json.dumps({"JJMethod": "GetEx", "Type": "1"}),
-    )
-    dataset_2 = requests_worker.fetch(
-        method="POST",
-        headers=headers,
-        data=json.dumps({"JJMethod": "GetEx", "Type": "2"}),
-    )
-
-    dataset_list = []
-    dataset_list.extend(dataset_1.get("Data", []))
-    dataset_list.extend(dataset_2.get("Data", []))
-
-    for item in dataset_list:
-        tfam_data = TFAMParse(item).parsed(target_domain=target_domain)
-        tfam_clean_data = {
-            key: RequestsClean.clean_string(value) for key, value in tfam_data.items()
-        }
-        exhibition = Exhibition(systematics=target_systematics, **tfam_clean_data)
-        storage.create_data(exhibition.dict(), pickled=use_pickled)
-
-    requests_visit = RequestsBeautifulSoupInstantiation(target_visit_url)
-    targe_visit_object = requests_visit.fetch()
-    visit = targe_visit_object.select_one("div.spacingB-20 > .table1")
-    days, openings = [th.get_text() for th in visit.select("th")], [
-        td.get_text() for td in visit.select("td")
-    ]
-    storage.set_visit(
-        {
-            "opening": "\n".join(
-                [f"{day}: {opening}" for day, opening in zip(days, openings)]
+    def get_parsed(self, items):
+        for item in items:
+            tfam_data = self.use_parse(item).parsed(target_domain=self.target_domain)
+            tfam_clean_data = {
+                key: RequestsClean.clean_string(value)
+                for key, value in tfam_data.items()
+            }
+            exhibition = self.exhibition_model(
+                systematics=self.target_systematics, **tfam_clean_data
             )
-        }
-    )
-    storage.commit()
+            yield exhibition
+
+    def get_visit(self, *args, **kwargs):
+        requests_visit = RequestsBeautifulSoupInstantiation(self.target_visit_url)
+        targe_visit_object = requests_visit.fetch()
+        visit = targe_visit_object.select_one("div.spacingB-20 > .table1")
+        days, openings = [th.get_text() for th in visit.select("th")], [
+            td.get_text() for td in visit.select("td")
+        ]
+        return "\n".join([f"{day}: {opening}" for day, opening in zip(days, openings)])
 
 
 if __name__ == "__main__":
-    tfam_script(use_pickled=False)
+    TFAMRunner().run(use_pickled=False)
