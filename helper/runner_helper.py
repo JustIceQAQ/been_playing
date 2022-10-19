@@ -41,9 +41,8 @@ class RunnerInit(metaclass=ABCMeta):
     def get_parsed(self, *args, **kwargs):
         raise NotImplementedError
 
-    @abstractmethod
     def get_visit(self, *args, **kwargs):
-        raise NotImplementedError
+        pass
 
     def run(self, use_pickled=True):
         self.init_storage()
