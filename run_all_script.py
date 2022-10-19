@@ -18,12 +18,10 @@ from exhibition.ntsec_script import NTSECRunner
 from exhibition.songshanculturalpark_script import SongShanCulturalParkRunner
 from exhibition.tfam_script import TFAMRunner
 from exhibition.tickets_books_script import TicketsBooksRunner
-from exhibition.tickets_udnfunlife_script import tickets_udnfunlife_script
+from exhibition.tickets_udnfunlife_script import TicketsUdnFunLifeRunner
 from exhibition.tmc_script import TMCRunner
 from exhibition.twtc_script import TWTCRunner
 from helper.image_helper import ImgurImage
-
-ROOT_DIR = Path(__file__).resolve(strict=True).parent
 
 
 def main():
@@ -35,15 +33,7 @@ def main():
 
     runtime_logging = logging.getLogger("runtime_logging")
 
-    py_def_scripts = {
-        tickets_udnfunlife_script,
-    }
     py_class_script = {
-        TicketsBooksRunner,
-        TMCRunner,
-        NTMRunner,
-        TFAMRunner,
-        NTSECRunner,
         CksmhRunner,
         HuaShan1914Runner,
         JamRunner,
@@ -52,8 +42,14 @@ def main():
         MuseumPostRunner,
         NMHRunner,
         NPMRunner,
+        NTMRunner,
+        NTSECRunner,
         SongShanCulturalParkRunner,
+        TFAMRunner,
+        TMCRunner,
         TWTCRunner,
+        TicketsBooksRunner,
+        TicketsUdnFunLifeRunner,
     }
     ROOT_DIR = Path(__file__).resolve(strict=True).parent
     runtime_logging.debug(ROOT_DIR)
@@ -76,15 +72,6 @@ def main():
         runtime_logging.debug("imgur api is logined")
 
     all_script_runners = []
-
-    all_script_runners.extend(
-        [
-            threading.Thread(
-                target=py_def, name=py_def.__name__, kwargs={"use_pickled": USE_PICKLED}
-            )
-            for py_def in py_def_scripts
-        ]
-    )
 
     all_script_runners.extend(
         [
