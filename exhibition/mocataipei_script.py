@@ -4,39 +4,51 @@ from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
 from helper.parse_helper import MocaTaipeiParse
-from helper.storage_helper import Exhibition, JustJsonStorage
+from helper.runner_helper import RunnerInit
 
 
-def mocataipei_script(use_pickled=False) -> None:
+class MocaTaipeiRunner(RunnerInit):
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent"
+    use_method = "GET"
     target_domain = "https://www.mocataipei.org.tw"
     target_storage = str(root_dir / "data" / "mocataipei_exhibition.json")
     target_systematics = ExhibitionEnum.mocataipei
     target_visit_url = "https://www.mocataipei.org.tw/tw/Visit/%E6%99%82%E9%96%93%E8%88%87%E7%A5%A8%E5%83%B9"
+    instantiation = RequestsBeautifulSoupInstantiation
+    use_header = None
+    use_parse = MocaTaipeiParse
 
-    requests_worker = RequestsBeautifulSoupInstantiation(target_url)
-    target_object = requests_worker.fetch()
-    storage = JustJsonStorage(target_storage, target_systematics)
-    storage.truncate_table()
+    def get_response(self):
+        requests_worker = self.instantiation(self.target_url)
+        headers = (
+            self.use_header().get_header() if self.use_header is not None else None
+        )
+        return requests_worker.fetch(self.use_method, headers=headers)
 
-    dataset = target_object.select("div.listFrameBox div.list")
+    def get_items(self, response):
+        return response.select("div.listFrameBox div.list")
 
-    for item in dataset:
-        mocataipei_data = MocaTaipeiParse(item).parsed(target_domain=target_domain)
-        mocataipei_clean_data = {
-            key: RequestsClean.clean_string(value)
-            for key, value in mocataipei_data.items()
-        }
-        exhibition = Exhibition(systematics=target_systematics, **mocataipei_clean_data)
-        storage.create_data(exhibition.dict(), pickled=use_pickled)
+    def get_parsed(self, items):
+        for item in items:
+            data = self.use_parse(item).parsed(target_domain=self.target_domain)
+            clean_data = {
+                key: RequestsClean.clean_string(value) for key, value in data.items()
+            }
+            exhibition = self.exhibition_model(
+                systematics=self.target_systematics, **clean_data
+            )
+            yield exhibition
 
-    requests_visit = RequestsBeautifulSoupInstantiation(target_visit_url)
-    targe_visit_object = requests_visit.fetch()
-    visit = targe_visit_object.select_one("section.category > .secBox > p.normal")
-    storage.set_visit({"opening": visit.get_text()})
-    storage.commit()
+    def get_visit(self, *args, **kwargs):
+        requests_worker = self.instantiation(self.target_visit_url)
+        headers = (
+            self.use_header().get_header() if self.use_header is not None else None
+        )
+        response = requests_worker.fetch(self.use_method, headers=headers)
+        opening = response.select_one("section.category > .secBox > p.normal")
+        return opening.get_text()
 
 
 if __name__ == "__main__":
-    mocataipei_script(use_pickled=False)
+    MocaTaipeiRunner().run(use_pickled=False)

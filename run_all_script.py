@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 from exhibition.cksmh_script import CksmhRunner
 from exhibition.huashan1914_script import HuaShan1914Runner
 from exhibition.jam_script import JamRunner
-from exhibition.mocataipei_script import mocataipei_script
+from exhibition.mocataipei_script import MocaTaipeiRunner
 from exhibition.museum_post_script import MuseumPostRunner
 from exhibition.mwr_script import MWRRunner
 from exhibition.nmh_script import NMHRunner
@@ -38,7 +38,6 @@ def main():
     py_def_scripts = {
         tickets_udnfunlife_script,
         tickets_books_script,
-        mocataipei_script,
         npm_script,
         songshanculturalpark_script,
         ntsec_script,
@@ -47,6 +46,7 @@ def main():
         tmc_script,
     }
     py_class_script = {
+        MocaTaipeiRunner,
         HuaShan1914Runner,
         CksmhRunner,
         NMHRunner,
