@@ -4,36 +4,44 @@ from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
 from helper.parse_helper import SongShanCulturalParkParse
-from helper.storage_helper import Exhibition, JustJsonStorage
+from helper.runner_helper import RunnerInit
 
 
-def songshanculturalpark_script(use_pickled=False) -> None:
+class SongShanCulturalParkRunner(RunnerInit):
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.songshanculturalpark.org/exhibition"
+    use_method = "GET"
     target_domain = "https://www.songshanculturalpark.org"
     target_storage = str(root_dir / "data" / "songshanculturalpark_exhibition.json")
     target_systematics = ExhibitionEnum.songshanculturalpark
+    instantiation = RequestsBeautifulSoupInstantiation
+    use_header = None
+    use_parse = SongShanCulturalParkParse
 
-    storage = JustJsonStorage(target_storage, target_systematics)
-    storage.truncate_table()
-    requests_worker = RequestsBeautifulSoupInstantiation(target_url)
-    target_object = requests_worker.fetch()
-    dataset = target_object.select("div#exhibition > div.rows")
-    for item in dataset:
-        songshanculturalpark_data = SongShanCulturalParkParse(item).parsed(
-            target_domain=target_domain
+    def get_response(self):
+        requests_worker = self.instantiation(self.target_url)
+        headers = (
+            self.use_header().get_header() if self.use_header is not None else None
         )
-        songshanculturalpark_clean_data = {
-            key: RequestsClean.clean_string(value)
-            for key, value in songshanculturalpark_data.items()
-        }
+        return requests_worker.fetch(self.use_method, headers=headers)
 
-        exhibition = Exhibition(
-            systematics=target_systematics, **songshanculturalpark_clean_data
-        )
-        storage.create_data(exhibition.dict(), pickled=use_pickled)
-    storage.commit()
+    def get_items(self, response):
+        return response.select("div#exhibition > div.rows")
+
+    def get_parsed(self, items):
+        for item in items:
+            data = self.use_parse(item).parsed(target_domain=self.target_domain)
+            clean_data = {
+                key: RequestsClean.clean_string(value) for key, value in data.items()
+            }
+            exhibition = self.exhibition_model(
+                systematics=self.target_systematics, **clean_data
+            )
+            yield exhibition
+
+    def get_visit(self, *args, **kwargs):
+        pass
 
 
 if __name__ == "__main__":
-    songshanculturalpark_script(use_pickled=False)
+    SongShanCulturalParkRunner().run(use_pickled=False)
