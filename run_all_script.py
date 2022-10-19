@@ -14,7 +14,7 @@ from exhibition.mwr_script import MWRRunner
 from exhibition.nmh_script import NMHRunner
 from exhibition.npm_script import NPMRunner
 from exhibition.ntm_script import ntm_script
-from exhibition.ntsec_script import ntsec_script
+from exhibition.ntsec_script import NTSECRunner
 from exhibition.songshanculturalpark_script import SongShanCulturalParkRunner
 from exhibition.tfam_script import tfam_script
 from exhibition.tickets_books_script import tickets_books_script
@@ -38,22 +38,22 @@ def main():
     py_def_scripts = {
         tickets_udnfunlife_script,
         tickets_books_script,
-        ntsec_script,
         tfam_script,
         ntm_script,
         tmc_script,
     }
     py_class_script = {
-        SongShanCulturalParkRunner,
-        NPMRunner,
-        MocaTaipeiRunner,
-        HuaShan1914Runner,
+        NTSECRunner,
         CksmhRunner,
-        NMHRunner,
-        TWTCRunner,
-        MWRRunner,
-        MuseumPostRunner,
+        HuaShan1914Runner,
         JamRunner,
+        MWRRunner,
+        MocaTaipeiRunner,
+        MuseumPostRunner,
+        NMHRunner,
+        NPMRunner,
+        SongShanCulturalParkRunner,
+        TWTCRunner,
     }
     ROOT_DIR = Path(__file__).resolve(strict=True).parent
     runtime_logging.debug(ROOT_DIR)
@@ -109,4 +109,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # print(NMHScript.__name__)
