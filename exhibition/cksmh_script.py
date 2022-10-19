@@ -7,12 +7,14 @@ from helper.parse_helper import CKSMHParse
 from helper.runner_helper import RunnerInit
 
 
-class CksmhRunner(RunnerInit):
+class CKSMHRunner(RunnerInit):
+    """中正紀念堂"""
+
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.cksmh.gov.tw/activitysoonlist_369_{}.html"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "cksmh_exhibition.json")
-    target_systematics = ExhibitionEnum.cksmh
+    target_systematics = ExhibitionEnum.CKSMH
     target_visit_url = "https://www.cksmh.gov.tw/content_78.html"
     instantiation = RequestsBeautifulSoupInstantiation
     use_parse = CKSMHParse
@@ -62,4 +64,4 @@ class CksmhRunner(RunnerInit):
 
 
 if __name__ == "__main__":
-    CksmhRunner().run(use_pickled=False)
+    CKSMHRunner().run(use_pickled=False)

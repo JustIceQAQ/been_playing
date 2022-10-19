@@ -8,12 +8,14 @@ from helper.runner_helper import RunnerInit
 
 
 class SongShanCulturalParkRunner(RunnerInit):
+    """松山文創園區"""
+
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.songshanculturalpark.org/exhibition"
     use_method = "GET"
     target_domain = "https://www.songshanculturalpark.org"
     target_storage = str(root_dir / "data" / "songshanculturalpark_exhibition.json")
-    target_systematics = ExhibitionEnum.songshanculturalpark
+    target_systematics = ExhibitionEnum.SongShanCulturalPark
     instantiation = RequestsBeautifulSoupInstantiation
     use_header = None
     use_parse = SongShanCulturalParkParse

@@ -9,13 +9,15 @@ from helper.runner_helper import RunnerInit
 
 
 class NTMRunner(RunnerInit):
+    """國立臺灣博物館"""
+
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_domain = "https://www.ntm.gov.tw"
     urls_format = "{}/exhibitionlist_{}.html?Type={}"
     target_visit_url = "https://www.ntm.gov.tw/content_158.html"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "ntm_exhibition.json")
-    target_systematics = ExhibitionEnum.ntm
+    target_systematics = ExhibitionEnum.NTM
     instantiation = RequestsBeautifulSoupInstantiation
     use_header = None
     use_parse = NTMParse

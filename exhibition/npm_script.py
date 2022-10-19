@@ -9,12 +9,14 @@ from helper.runner_helper import RunnerInit
 
 
 class NPMRunner(RunnerInit):
+    """國立故宮博物院"""
+
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1"
     use_method = "GET"
     target_domain = "https://www.npm.gov.tw/"
     target_storage = str(root_dir / "data" / "npm_exhibition.json")
-    target_systematics = ExhibitionEnum.npm
+    target_systematics = ExhibitionEnum.NPM
     target_visit_url = "https://www.npm.gov.tw/Articles.aspx?sno=02007001"
     instantiation = RequestsBeautifulSoupInstantiation
     use_header = None

@@ -8,11 +8,13 @@ from helper.runner_helper import RunnerInit
 
 
 class TMCRunner(RunnerInit):
+    """台北流行音樂中心"""
+
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://tmc.taipei/show/event/"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "tmc_exhibition.json")
-    target_systematics = ExhibitionEnum.tmc
+    target_systematics = ExhibitionEnum.TMC
     instantiation = RequestsBeautifulSoupInstantiation
     use_header = None
     use_parse = TMCParse

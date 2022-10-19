@@ -9,12 +9,14 @@ from helper.runner_helper import RunnerInit
 
 
 class MWRRunner(RunnerInit):
+    """世界宗教博物館"""
+
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     xsmsid = "0H305741810776620070"
     target_url = f"https://www.mwr.org.tw/xcspecexhi?xsmsid={xsmsid}"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "mwr_exhibition.json")
-    target_systematics = ExhibitionEnum.mwr
+    target_systematics = ExhibitionEnum.MWR
     instantiation = RequestsBeautifulSoupInstantiation
     use_header = MWRHeader
     use_parse = MWRParse

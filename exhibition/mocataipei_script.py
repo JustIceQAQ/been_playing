@@ -8,12 +8,14 @@ from helper.runner_helper import RunnerInit
 
 
 class MocaTaipeiRunner(RunnerInit):
+    """台北當代藝術館"""
+
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent"
     use_method = "GET"
     target_domain = "https://www.mocataipei.org.tw"
     target_storage = str(root_dir / "data" / "mocataipei_exhibition.json")
-    target_systematics = ExhibitionEnum.mocataipei
+    target_systematics = ExhibitionEnum.MocaTaipei
     target_visit_url = "https://www.mocataipei.org.tw/tw/Visit/%E6%99%82%E9%96%93%E8%88%87%E7%A5%A8%E5%83%B9"
     instantiation = RequestsBeautifulSoupInstantiation
     use_header = None

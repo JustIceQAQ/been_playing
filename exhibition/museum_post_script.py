@@ -10,14 +10,14 @@ from helper.runner_helper import RunnerInit
 
 
 class MuseumPostRunner(RunnerInit):
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    """郵政博物館"""
 
-    # current exhibition
+    root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage={}"
     permanent_exhibition = "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=136&topage={}"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "museum_post_exhibition.json")
-    target_systematics = ExhibitionEnum.museum_post
+    target_systematics = ExhibitionEnum.MuseumPost
     instantiation = RequestsBeautifulSoupInstantiation
     use_header = MuseumPostHeader
     use_parse = MuseumPostParse

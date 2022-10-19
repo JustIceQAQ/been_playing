@@ -13,11 +13,13 @@ from helper.runner_helper import RunnerInit
 
 
 class TWTCRunner(RunnerInit):
+    """台北世貿中心"""
+
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://twtc.com.tw/exhibition?p=home"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "twtc_exhibition.json")
-    target_systematics = ExhibitionEnum.twtc
+    target_systematics = ExhibitionEnum.TWTC
     instantiation = RequestsBeautifulSoupInstantiation
     use_header = TWTCHeader
     use_parse = TWTCParse

@@ -11,12 +11,14 @@ from helper.translation_helper import BeautifulSoupTranslation
 
 
 class TicketsUdnFunLifeRunner(RunnerInit):
+    """udn售票網"""
+
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = (
         "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     )
     target_storage = str(root_dir / "data" / "udnfunlife_exhibition.json")
-    target_systematics = ExhibitionEnum.tickets_udnfunlife
+    target_systematics = ExhibitionEnum.TicketsUdnFunLife
     instantiation = RequestsJsonInstantiation
     use_header = TicketsUdnFunLifeHeader
     use_parse = TicketsUdnFunLifeParse

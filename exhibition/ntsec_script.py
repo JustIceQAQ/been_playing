@@ -8,12 +8,14 @@ from helper.runner_helper import RunnerInit
 
 
 class NTSECRunner(RunnerInit):
+    """國立臺灣科學教育館"""
+
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.ntsec.gov.tw/User/Exhibitions.aspx?a=44"
     use_method = "GET"
     target_domain = "https://www.ntsec.gov.tw"
     target_storage = str(root_dir / "data" / "ntsec_exhibition.json")
-    target_systematics = ExhibitionEnum.ntsec
+    target_systematics = ExhibitionEnum.NTSEC
     instantiation = RequestsBeautifulSoupInstantiation
     use_header = None
     use_parse = NTSECParse

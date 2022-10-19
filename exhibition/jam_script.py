@@ -9,11 +9,13 @@ from helper.runner_helper import RunnerInit
 
 
 class JamRunner(RunnerInit):
+    """忠泰美術館"""
+
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "http://jam.jutfoundation.org.tw/online-exhibition"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "jam_exhibition.json")
-    target_systematics = ExhibitionEnum.jam
+    target_systematics = ExhibitionEnum.Jam
     instantiation = RequestsBeautifulSoupInstantiation
     use_header = JamHeader
     use_parse = JamParse

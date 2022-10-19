@@ -5,7 +5,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from exhibition.cksmh_script import CksmhRunner
+from exhibition.cksmh_script import CKSMHRunner
 from exhibition.huashan1914_script import HuaShan1914Runner
 from exhibition.jam_script import JamRunner
 from exhibition.mocataipei_script import MocaTaipeiRunner
@@ -34,7 +34,7 @@ def main():
     runtime_logging = logging.getLogger("runtime_logging")
 
     py_class_script = {
-        CksmhRunner,
+        CKSMHRunner,
         HuaShan1914Runner,
         JamRunner,
         MWRRunner,

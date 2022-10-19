@@ -13,10 +13,12 @@ from helper.runner_helper import RunnerInit
 
 
 class TFAMRunner(RunnerInit):
+    """臺北市立美術館"""
+
     root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_url = "https://www.tfam.museum/ashx/Exhibition.ashx?ddlLang=zh-tw"
     target_storage = str(root_dir / "data" / "tfam_exhibition.json")
-    target_systematics = ExhibitionEnum.tfam
+    target_systematics = ExhibitionEnum.TFAM
     target_domain = "https://www.tfam.museum"
     target_visit_url = "https://www.tfam.museum/Common/editor.aspx?id=230&ddlLang=zh-tw"
     instantiation = RequestsJsonInstantiation
