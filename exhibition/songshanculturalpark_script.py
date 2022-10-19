@@ -39,9 +39,6 @@ class SongShanCulturalParkRunner(RunnerInit):
             )
             yield exhibition
 
-    def get_visit(self, *args, **kwargs):
-        pass
-
 
 if __name__ == "__main__":
     SongShanCulturalParkRunner().run(use_pickled=False)

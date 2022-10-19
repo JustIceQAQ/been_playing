@@ -46,9 +46,6 @@ class HuaShan1914Runner(RunnerInit):
             )
             yield exhibition
 
-    def get_visit(self, *args, **kwargs):
-        pass
-
 
 if __name__ == "__main__":
     HuaShan1914Runner().run(use_pickled=False)

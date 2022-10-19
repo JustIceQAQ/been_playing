@@ -53,9 +53,6 @@ class TWTCRunner(RunnerInit):
             )
             yield exhibition
 
-    def get_visit(self, *args, **kwargs):
-        return ""
-
 
 if __name__ == "__main__":
     t = TWTCRunner()
