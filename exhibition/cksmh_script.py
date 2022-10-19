@@ -25,6 +25,10 @@ class CksmhRunner(RunnerInit):
         target_object = requests_worker.fetch()
         dataset_list.extend(target_object.select(item_css_selector))
 
+        self.get_more_range_with_url(dataset_list, item_css_selector)
+        return dataset_list
+
+    def get_more_range_with_url(self, dataset_list, item_css_selector):
         for n in range(2, 5):
             requests_worker = self.instantiation(self.target_url.format(n))
             target_object = requests_worker.fetch()
@@ -32,7 +36,6 @@ class CksmhRunner(RunnerInit):
                 dataset_list.extend(dataset)
             else:
                 break
-        return dataset_list
 
     def get_items(self, response):
         return response
