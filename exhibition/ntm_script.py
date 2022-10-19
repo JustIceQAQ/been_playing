@@ -5,55 +5,74 @@ from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
 from helper.parse_helper import NTMParse
-from helper.storage_helper import Exhibition, JustJsonStorage
+from helper.runner_helper import RunnerInit
 
 
-def ntm_script(use_pickled=False) -> None:
+class NTMRunner(RunnerInit):
+    root_dir = Path(__file__).resolve(strict=True).parent.parent
     target_domain = "https://www.ntm.gov.tw"
     urls_format = "{}/exhibitionlist_{}.html?Type={}"
     target_visit_url = "https://www.ntm.gov.tw/content_158.html"
-
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
-    product_data = product(
-        ("179", "182", "185", "383", "380"),
-        (
-            "PE1",
-            "SP1",
-        ),
-    )
-    target_urls = list(
-        urls_format.format(target_domain, *item) for item in product_data
-    )
+    use_method = "GET"
     target_storage = str(root_dir / "data" / "ntm_exhibition.json")
     target_systematics = ExhibitionEnum.ntm
+    instantiation = RequestsBeautifulSoupInstantiation
+    use_header = None
+    use_parse = NTMParse
 
-    requests_workers = list(
-        RequestsBeautifulSoupInstantiation(target_url) for target_url in target_urls
-    )
-    target_objects = list(
-        requests_worker.fetch() for requests_worker in requests_workers
-    )
-    storage = JustJsonStorage(target_storage, target_systematics)
-    storage.truncate_table()
+    def get_response(self):
+        product_data = product(
+            (
+                "179",
+                "182",
+                "185",
+                "383",
+                "380",
+            ),
+            (
+                "PE1",
+                "SP1",
+            ),
+        )
+        target_urls = list(
+            self.urls_format.format(self.target_domain, *item) for item in product_data
+        )
 
-    dataset = chain.from_iterable(
-        target_object.select("#exhibition-list > dl")
-        for target_object in target_objects
-    )
-    for item in list(dataset):
-        ntsec_data = NTMParse(item).parsed()
-        ntsec_clean_data = {
-            key: RequestsClean.clean_string(value) for key, value in ntsec_data.items()
-        }
-        exhibition = Exhibition(systematics=target_systematics, **ntsec_clean_data)
-        storage.create_data(exhibition.dict(), pickled=use_pickled)
+        requests_workers = list(
+            self.instantiation(target_url) for target_url in target_urls
+        )
+        target_objects = list(
+            requests_worker.fetch() for requests_worker in requests_workers
+        )
+        return target_objects
 
-    requests_visit = RequestsBeautifulSoupInstantiation(target_visit_url)
-    targe_visit_object = requests_visit.fetch()
-    visit = targe_visit_object.select_one("#visit > .info > p")
-    storage.set_visit({"opening": visit.get_text().replace("＊", "\n＊")})
-    storage.commit()
+    def get_items(self, responses):
+        return list(
+            chain.from_iterable(
+                response.select("#exhibition-list > dl") for response in responses
+            )
+        )
+
+    def get_parsed(self, items):
+        for item in items:
+            data = self.use_parse(item).parsed()
+            clean_data = {
+                key: RequestsClean.clean_string(value) for key, value in data.items()
+            }
+            exhibition = self.exhibition_model(
+                systematics=self.target_systematics, **clean_data
+            )
+            yield exhibition
+
+    def get_visit(self, *args, **kwargs):
+        requests_worker = self.instantiation(self.target_visit_url)
+        headers = (
+            self.use_header().get_header() if self.use_header is not None else None
+        )
+        response = requests_worker.fetch(self.use_method, headers=headers)
+        opening = response.select_one("#visit > .info > p")
+        return opening.get_text().replace("＊", "\n＊")
 
 
 if __name__ == "__main__":
-    ntm_script(use_pickled=False)
+    NTMRunner().run(use_pickled=False)
