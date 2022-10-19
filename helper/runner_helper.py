@@ -55,6 +55,7 @@ class RunnerInit(metaclass=ABCMeta):
             self.write_storage(exhibition.dict(), use_pickled)
 
         if self.storage is not None:
-            self.storage.set_visit({"opening": self.get_visit()})
+            if opening := self.get_visit():
+                self.storage.set_visit({"opening": opening})
 
         self.commit_storage()
