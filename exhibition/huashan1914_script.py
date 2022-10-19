@@ -5,7 +5,6 @@ from helper.clean_helper import RequestsClean
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
 from helper.parse_helper import HuaShan1914Parse
 from helper.runner_helper import RunnerInit
-from helper.storage_helper import Exhibition
 
 
 class HuaShan1914Runner(RunnerInit):
@@ -42,7 +41,9 @@ class HuaShan1914Runner(RunnerInit):
                 key: RequestsClean.clean_string(value) for key, value in data.items()
             }
 
-            exhibition = Exhibition(systematics=self.target_systematics, **clean_data)
+            exhibition = self.exhibition_model(
+                systematics=self.target_systematics, **clean_data
+            )
             yield exhibition
 
     def get_visit(self, *args, **kwargs):
