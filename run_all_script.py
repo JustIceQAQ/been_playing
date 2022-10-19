@@ -19,7 +19,7 @@ from exhibition.songshanculturalpark_script import SongShanCulturalParkRunner
 from exhibition.tfam_script import TFAMRunner
 from exhibition.tickets_books_script import tickets_books_script
 from exhibition.tickets_udnfunlife_script import tickets_udnfunlife_script
-from exhibition.tmc_script import tmc_script
+from exhibition.tmc_script import TMCRunner
 from exhibition.twtc_script import TWTCRunner
 from helper.image_helper import ImgurImage
 
@@ -38,9 +38,9 @@ def main():
     py_def_scripts = {
         tickets_udnfunlife_script,
         tickets_books_script,
-        tmc_script,
     }
     py_class_script = {
+        TMCRunner,
         NTMRunner,
         TFAMRunner,
         NTSECRunner,
