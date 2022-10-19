@@ -5,7 +5,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from exhibition.cksmh_script import cksmh_script
+from exhibition.cksmh_script import CksmhRunner
 from exhibition.huashan1914_script import huashan1914_script
 from exhibition.jam_script import JamRunner
 from exhibition.mocataipei_script import mocataipei_script
@@ -38,7 +38,6 @@ def main():
     py_def_scripts = {
         tickets_udnfunlife_script,
         tickets_books_script,
-        cksmh_script,
         huashan1914_script,
         mocataipei_script,
         npm_script,
@@ -48,7 +47,14 @@ def main():
         ntm_script,
         tmc_script,
     }
-    py_class_script = {NMHRunner, TWTCRunner, MWRRunner, MuseumPostRunner, JamRunner}
+    py_class_script = {
+        CksmhRunner,
+        NMHRunner,
+        TWTCRunner,
+        MWRRunner,
+        MuseumPostRunner,
+        JamRunner,
+    }
     ROOT_DIR = Path(__file__).resolve(strict=True).parent
     runtime_logging.debug(ROOT_DIR)
 
