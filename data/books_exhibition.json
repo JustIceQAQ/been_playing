@@ -4,8 +4,8 @@
         "code_name": "tickets_books",
         "external_link": "https://tickets.books.com.tw/leisure/"
     },
-    "counts": 20,
-    "last_update": "2022-10-20T01:20:26.280452+00:00",
+    "counts": 18,
+    "last_update": "2022-10-20T08:27:52.827356+00:00",
     "data": [
         {
             "systematics": "tickets_books",
@@ -24,24 +24,6 @@
             "source_url": "https://tickets.books.com.tw/progshow/08010901741268",
             "UUID": "fc97a5ffc8235545b71b219a367b11cb",
             "figure": "https://i.imgur.com/8NDL6V5.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u9177\u96ea\u4f8f\u7f85\u7d00-\u9996\u90e8\u66f2\u300c\u86cb\u300d\u751f",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201598705",
-            "UUID": "80ce20c6ff3e5843a6f15de300f11e44",
-            "figure": "https://i.imgur.com/3nCTM1d.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u3010The World of Tim Burton\u63d0\u59c6\u6ce2\u9813\u7570\u60f3\u4e16\u754c\u5c55\u3011",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201246097",
-            "UUID": "76e94c303fe65851ba32e15088be2ea7",
-            "figure": "https://i.imgur.com/yd1aSXd.webp"
         },
         {
             "systematics": "tickets_books",
