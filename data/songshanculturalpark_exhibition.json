@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2022-10-21T08:21:05.653645+00:00",
+    "last_update": "2022-10-21T16:26:51.434473+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -117,15 +117,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "2022 We Battle\u8857\u821e\u5927\u8cfd",
-            "date": "2022-10-02 - 2022-10-02",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/e8ab9f8c-c05d-42c1-bf6f-3457a0989a90",
-            "UUID": "d2c44c0f53fc5fe4b1da2c64165e78a1",
-            "figure": "https://i.imgur.com/G5O3bMk.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "Inkception \u58a8\u5883\u63a2\u7d22",
             "date": "2022-09-23 - 2022-10-30",
             "address": "-",
@@ -141,6 +132,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/72ebbe86-bcba-42e9-aba5-e1afe7fd2114",
             "UUID": "733e8c91d26e50fdbcdfa6cd006179f1",
             "figure": "https://i.imgur.com/k5Hd1Ub.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u300a\u6e90\u4f86\u5982\u6b64\uff01\u5927\u535a\u7269\u5c55THE GRAND MUSEUMS\u300b",
+            "date": "2022-07-12 - 2022-11-06",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/a0ce1133-6a19-4d39-8ccd-2756da46fb29",
+            "UUID": "5a02bd5259bd51b787248505b11814a5",
+            "figure": "https://i.imgur.com/jylZZU8.webp"
         }
     ],
     "visit": {}
