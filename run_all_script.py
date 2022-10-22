@@ -11,6 +11,7 @@ from exhibition.jam_script import JamRunner
 from exhibition.mocataipei_script import MocaTaipeiRunner
 from exhibition.museum_post_script import MuseumPostRunner
 from exhibition.mwr_script import MWRRunner
+from exhibition.ncpi_script import NCPIRunner
 from exhibition.nmh_script import NMHRunner
 from exhibition.npm_script import NPMRunner
 from exhibition.ntm_script import NTMRunner
@@ -40,6 +41,7 @@ def main():
         MWRRunner,
         MocaTaipeiRunner,
         MuseumPostRunner,
+        NCPIRunner,
         NMHRunner,
         NPMRunner,
         NTMRunner,

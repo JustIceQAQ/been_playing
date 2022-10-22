@@ -20,7 +20,7 @@ class RequestsCrawler(CrawlerInit):
         self.url = url
         self.rs = requests.session()
         self.rs.keep_alive = False
-        # self.rs.proxies = {"http": "106.107.203.151:80"}
+        # self.rs.proxies = {"http": "50.204.219.231:80"}
 
     @retry(
         requests.exceptions.ConnectionError, tries=5, delay=30, backoff=2, max_delay=500
@@ -29,7 +29,6 @@ class RequestsCrawler(CrawlerInit):
         if "timeout" not in kwargs.keys():
             kwargs["timeout"] = 60
         self.reload_session()
-
         response = self.rs.request(method, self.url, *args, **kwargs)
         self.observed_step(response, use_this=True)
         try:
@@ -44,9 +43,10 @@ class RequestsCrawler(CrawlerInit):
                     raise requests.exceptions.ConnectionError()
 
     def reload_session(self):
-        self.rs = requests.session()
+        self.rs.cookies.clear()
+        self.rs.headers.clear()
         self.rs.keep_alive = False
-        # self.rs.proxies = {"http": "106.107.203.151:80"}
+        # self.rs.proxies = {"http": "50.204.219.231:80"}
 
 
 # class PyCurlCrawler(CrawlerInit):

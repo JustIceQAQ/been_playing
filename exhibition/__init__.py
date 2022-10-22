@@ -90,3 +90,8 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "jam",
         "http://jam.jutfoundation.org.tw/online-exhibition",
     )
+    NCPI = (
+        "國家攝影文化中心",
+        "ncpi",
+        "https://ncpiexhibition.ntmofa.gov.tw/tw/Exhibition/ListCur",
+    )
