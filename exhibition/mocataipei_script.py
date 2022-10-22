@@ -11,7 +11,10 @@ class MocaTaipeiRunner(RunnerInit):
     """台北當代藝術館"""
 
     root_dir = Path(__file__).resolve(strict=True).parent.parent
-    target_url = "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent"
+    target_url = [
+        "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent",
+        "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Exhibitions/Upcoming",
+    ]
     use_method = "GET"
     target_domain = "https://www.mocataipei.org.tw"
     target_storage = str(root_dir / "data" / "mocataipei_exhibition.json")
@@ -22,14 +25,22 @@ class MocaTaipeiRunner(RunnerInit):
     use_parse = MocaTaipeiParse
 
     def get_response(self):
-        requests_worker = self.instantiation(self.target_url)
-        headers = (
-            self.use_header().get_header() if self.use_header is not None else None
-        )
-        return requests_worker.fetch(self.use_method, headers=headers)
+        response_dataset = []
+        for url in self.target_url:
+            requests_worker = self.instantiation(url)
+            headers = (
+                self.use_header().get_header() if self.use_header is not None else None
+            )
+            response = requests_worker.fetch(self.use_method, headers=headers)
+            response_dataset.append(response)
+        return response_dataset
 
-    def get_items(self, response):
-        return response.select("div.listFrameBox div.list")
+    def get_items(self, responses):
+        items_dataset = []
+        for response in responses:
+            if runtime_element := response.select("div.listFrameBox div.list"):
+                items_dataset.extend(runtime_element)
+        return items_dataset
 
     def get_parsed(self, items):
         for item in items:
