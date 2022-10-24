@@ -5,7 +5,7 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 26,
-    "last_update": "2022-10-23T16:20:54.853792+00:00",
+    "last_update": "2022-10-24T01:43:57.433901+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -45,20 +45,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "2022\u53f0\u5317\u570b\u969b\u5a5a\u7d17\u5c55\u30012022\u53f0\u5317\u570b\u969b\u73e0\u5bf6\u7389\u77f3\u5c55",
-            "date": "10/28 ~ 10/30",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "http://www.top-link.com.tw",
-            "UUID": "08ecca6fe2d151488a2066c6a3f7225c",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u7b2c\u5341\u4e94\u5c46\u53f0\u5317\u570b\u969b\u5100\u5668\u5c55",
             "date": "10/28 ~ 10/31",
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "http://www.instrument.org.tw",
             "UUID": "df7a62c474d1554984d2e820e2447bee",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2022\u53f0\u5317\u570b\u969b\u5a5a\u7d17\u5c55\u30012022\u53f0\u5317\u570b\u969b\u73e0\u5bf6\u7389\u77f3\u5c55",
+            "date": "10/28 ~ 10/30",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.top-link.com.tw",
+            "UUID": "08ecca6fe2d151488a2066c6a3f7225c",
             "figure": ""
         },
         {
@@ -99,6 +99,15 @@
         },
         {
             "systematics": "twtc",
+            "title": "111\u8cc7\u8a0a\u6708",
+            "date": "11/10 ~ 11/13",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://newict.itmonth.org.tw/",
+            "UUID": "fc80343e9954519daea49f72ada87a41",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
             "title": "2022\u81fa\u7063\u6559\u80b2\u79d1\u6280\u5c55",
             "date": "11/10 ~ 11/13",
             "address": "\u4e16\u8cbf\u4e00\u9928",
@@ -113,15 +122,6 @@
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.agritechtaiwan.com",
             "UUID": "e7a0593413ef5ff0a09f545b163e019c",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "111\u8cc7\u8a0a\u6708",
-            "date": "11/10 ~ 11/13",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "https://newict.itmonth.org.tw/",
-            "UUID": "fc80343e9954519daea49f72ada87a41",
             "figure": ""
         },
         {
