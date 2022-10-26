@@ -4,8 +4,8 @@
         "code_name": "tfam",
         "external_link": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw"
     },
-    "counts": 9,
-    "last_update": "2022-10-26T01:15:49.642021+00:00",
+    "counts": 10,
+    "last_update": "2022-10-26T08:18:12.796678+00:00",
     "data": [
         {
             "systematics": "tfam",
@@ -87,6 +87,15 @@
             "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=706",
             "UUID": "c476834e1b25534c8776c780c3bf54c6",
             "figure": "https://i.imgur.com/6FIXd4Q.webp"
+        },
+        {
+            "systematics": "tfam",
+            "title": "\u5c45\u5bb6\u5a1b\u6a02\u2015\u694a\u767b\u68cb\uff08\u767b\u66fc\u6ce2\uff09\u500b\u5c55",
+            "date": "2022-11-19 ~ 2023-02-12",
+            "address": "\u5730\u4e0b\u6a13E\u3001F\u5c55\u89bd\u5ba4",
+            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=717",
+            "UUID": "153e6aa5c0a659ecbc5e8d708b1a54cb",
+            "figure": "https://i.imgur.com/MHz0Toe.webp"
         }
     ],
     "visit": {
