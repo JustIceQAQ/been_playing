@@ -4,9 +4,27 @@
         "code_name": "ntsec",
         "external_link": "https://www.ntsec.gov.tw/User/Exhibitions.aspx?a=44"
     },
-    "counts": 1,
-    "last_update": "2022-10-27T01:14:56.254345+00:00",
+    "counts": 3,
+    "last_update": "2022-10-27T08:18:48.194094+00:00",
     "data": [
+        {
+            "systematics": "ntsec",
+            "title": "\u74b0\u904a\u4e16\u754c\u73a9\u6578\u5b78\u5de1\u8ff4\u5c55",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://www.ntsec.gov.tw/User/Article.aspx?a=4212",
+            "UUID": "e1fe5852e1ad5f57876a17505bd214ff",
+            "figure": "https://i.imgur.com/q22ncGg.webp"
+        },
+        {
+            "systematics": "ntsec",
+            "title": "\u6578\u611f\u5df4\u58eb\uff0d\u4f86\u79d1\u6559\u9928\u73a9\u6578\u5b78\u5427\uff01",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://www.ntsec.gov.tw/User/Article.aspx?a=4188",
+            "UUID": "6df231c4d5e45dc581484de67629ca52",
+            "figure": "https://i.imgur.com/ZMMHuzG.webp"
+        },
         {
             "systematics": "ntsec",
             "title": "\u8a2d\u8a08\u6211\u5011\u7684\u4e16\u754c-\u79d1\u6280\u6027\u5225\u5316\u5275\u65b0",
