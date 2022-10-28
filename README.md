@@ -1,5 +1,7 @@
 # been_playing
 
+[![update-proxy](https://github.com/JustIceQAQ/been_playing/actions/workflows/update_proxy.yml/badge.svg)](https://github.com/JustIceQAQ/been_playing/actions/workflows/update_proxy.yml)[![update-exhibition](https://github.com/JustIceQAQ/been_playing/actions/workflows/update_exhibition.yml/badge.svg)](https://github.com/JustIceQAQ/been_playing/actions/workflows/update_exhibition.yml)
+
 - Northern Taiwan Exhibition Crawlers
 
 ## Target Including But Not Limited to
