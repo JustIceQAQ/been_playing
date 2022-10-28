@@ -2,6 +2,7 @@ import abc
 import asyncio
 import base64
 import dataclasses
+import datetime
 import secrets
 
 import dill
@@ -90,7 +91,8 @@ class freeProxySource(SourceInit):
         clean_available_ip = [ip for ip in available_ip if ip]
 
         with open(self.filename, "wb") as f:
-            dill.dump(clean_available_ip, f)
+            timestamp = datetime.datetime.now().timestamp()
+            dill.dump({"timestamp": timestamp, "available_ip": clean_available_ip}, f)
 
 
 if __name__ == "__main__":
