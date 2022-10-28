@@ -37,7 +37,8 @@ class FreeProxy(ProxyInit):
         proxy_path = Path(path)
         if proxy_path.is_file():
             with open(proxy_path, "rb") as f:
-                self.proxy_pool: List[Proxy] = dill.load(f)
+                data = dill.load(f)
+                self.proxy_pool: List[Proxy] = data.get("available_ip")
         else:
             raise FileNotFoundError("Not Find proxy.pkl")
 

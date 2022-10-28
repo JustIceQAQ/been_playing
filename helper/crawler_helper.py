@@ -5,7 +5,7 @@ import requests
 from retry import retry
 from simplejson import JSONDecodeError
 
-from helper.proxy_helper import NoneProxy, ProxyInit
+from helper.proxy_helper import FreeProxy, NoneProxy, ProxyInit
 
 requests.adapters.DEFAULT_RETRIES = 5
 
@@ -20,6 +20,8 @@ class CrawlerInit(metaclass=ABCMeta):
 
 
 class RequestsCrawler(CrawlerInit):
+    use_proxy = FreeProxy
+
     def __init__(self, url: str):
         self.url = url
         self.rs = requests.session()
