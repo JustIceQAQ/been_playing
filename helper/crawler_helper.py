@@ -5,11 +5,15 @@ import requests
 from retry import retry
 from simplejson import JSONDecodeError
 
+from helper.proxy_helper import NoneProxy, ProxyInit
+
 requests.adapters.DEFAULT_RETRIES = 5
 
 
 # 實作各種類型爬蟲
 class CrawlerInit(metaclass=ABCMeta):
+    use_proxy: ProxyInit = NoneProxy
+
     @abstractmethod
     def get_page(self, *args, **kwargs):
         raise NotImplementedError
@@ -20,7 +24,10 @@ class RequestsCrawler(CrawlerInit):
         self.url = url
         self.rs = requests.session()
         self.rs.keep_alive = False
-        # self.rs.proxies = {"http": "50.204.219.231:80"}
+        self.proxy = self.use_proxy()
+        self.proxy.load_source()
+
+        self.rs.proxies = self.proxy.get_random_proxy()
 
     @retry(
         requests.exceptions.ConnectionError, tries=5, delay=30, backoff=2, max_delay=500
@@ -46,7 +53,7 @@ class RequestsCrawler(CrawlerInit):
         self.rs.cookies.clear()
         self.rs.headers.clear()
         self.rs.keep_alive = False
-        # self.rs.proxies = {"http": "50.204.219.231:80"}
+        self.rs.proxies = self.proxy.get_random_proxy()
 
 
 # class PyCurlCrawler(CrawlerInit):
