@@ -9,3 +9,5 @@ pytz
 imgurpython
 python-dotenv
 retry
+httpx
+dill
