@@ -44,6 +44,9 @@ class RunnerInit(metaclass=ABCMeta):
     def get_visit(self, *args, **kwargs):
         pass
 
+    def get_cookie(self, *args, **kwargs):
+        pass
+
     def run(self, use_pickled=True):
         self.init_storage()
         response = self.get_response()

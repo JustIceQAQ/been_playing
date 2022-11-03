@@ -30,7 +30,7 @@ class HeaderInit(metaclass=ABCMeta):
 class TicketsUdnFunLifeHeader(HeaderInit):
     def get_header(self) -> Dict[str, str]:
         return {
-            "User-Agent": USER_AGENT,
+            "User-Agent": random.choice(USER_AGENT_LIST),
             "Host": "tickets.udnfunlife.com",
             "Origin": "https://tickets.udnfunlife.com",
             "Referer": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx",
@@ -39,10 +39,23 @@ class TicketsUdnFunLifeHeader(HeaderInit):
         }
 
 
+class TicketsUdnFunLifeCookieHeader(HeaderInit):
+    def get_header(self) -> Dict[str, str]:
+        return {
+            "User-Agent": random.choice(USER_AGENT_LIST),
+            "Host": "tickets.udnfunlife.com",
+            "upgrade-insecure-requests": "1",
+            "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "accept-encoding": "gzip, deflate, br",
+            "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+            "Connection": "keep-alive",
+        }
+
+
 class TFAMLifeHeader(HeaderInit):
     def get_header(self) -> Dict[str, str]:
         return {
-            "user-agent": USER_AGENT,
+            "user-agent": random.choice(USER_AGENT_LIST),
             "Referer": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw",
             "Content-Type": "application/json; charset=UTF-8",
             "Host": "www.tfam.museum",
@@ -53,7 +66,7 @@ class TFAMLifeHeader(HeaderInit):
 class TicketsBooksHeader(HeaderInit):
     def get_header(self) -> Dict[str, str]:
         return {
-            "User-Agent": USER_AGENT,
+            "User-Agent": random.choice(USER_AGENT_LIST),
             "Host": "tickets.books.com.tw",
             "Pragma": "no-cache",
             "Cache-Control": "no-cache",
@@ -63,7 +76,7 @@ class TicketsBooksHeader(HeaderInit):
 class NMHHeader(HeaderInit):
     def get_header(self) -> Dict[str, str]:
         return {
-            "User-Agent": USER_AGENT,
+            "User-Agent": random.choice(USER_AGENT_LIST),
             "Host": "www.nmh.gov.tw",
             "Referer": "https://www.nmh.gov.tw/activitysoonlist_66.html",
         }
@@ -72,7 +85,7 @@ class NMHHeader(HeaderInit):
 class TWTCHeader(HeaderInit):
     def get_header(self) -> Dict[str, str]:
         return {
-            "User-Agent": USER_AGENT,
+            "User-Agent": random.choice(USER_AGENT_LIST),
             "Host": "twtc.com.tw",
             "Pragma": "no-cache",
         }
@@ -81,7 +94,7 @@ class TWTCHeader(HeaderInit):
 class MWRHeader(HeaderInit):
     def get_header(self) -> Dict[str, str]:
         return {
-            "User-Agent": USER_AGENT,
+            "User-Agent": random.choice(USER_AGENT_LIST),
             "referer": "https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070",
         }
 

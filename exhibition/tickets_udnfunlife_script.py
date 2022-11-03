@@ -3,8 +3,8 @@ from pathlib import Path
 
 from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
-from helper.header_helper import TicketsUdnFunLifeHeader
-from helper.instantiation_helper import RequestsJsonInstantiation
+from helper.header_helper import TicketsUdnFunLifeCookieHeader, TicketsUdnFunLifeHeader
+from helper.instantiation_helper import RequestsCrawler, RequestsJsonInstantiation
 from helper.parse_helper import TicketsUdnFunLifeParse
 from helper.runner_helper import RunnerInit
 from helper.translation_helper import BeautifulSoupTranslation
@@ -23,15 +23,32 @@ class TicketsUdnFunLifeRunner(RunnerInit):
     use_header = TicketsUdnFunLifeHeader
     use_parse = TicketsUdnFunLifeParse
 
+    def get_cookie(self):
+        headers = (
+            TicketsUdnFunLifeCookieHeader().get_header()
+            if self.use_header is not None
+            else None
+        )
+        rc = RequestsCrawler(
+            "https://tickets.udnfunlife.com/application/utk01/utk0101_.aspx"
+        )
+        cookies = rc.get_cookies(headers=headers)
+        return cookies
+
     def get_response(self):
-        requests_worker = self.instantiation(self.target_url)
+        runtime_cookies = self.get_cookie()
+
         headers = (
             self.use_header().get_header() if self.use_header is not None else None
         )
+
+        requests_worker = self.instantiation(self.target_url)
+
         return requests_worker.fetch(
             method="POST",
             headers=headers,
-            data=json.dumps({"pageNo": "1", "pageSize": "100"}),
+            data=json.dumps({"pageNo": "1", "pageSize": "50"}),
+            cookies=runtime_cookies,
         )
 
     def get_items(self, response):

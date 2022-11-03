@@ -31,14 +31,22 @@ class RequestsCrawler(CrawlerInit):
 
         self.rs.proxies = self.proxy.get_random_proxy()
 
+    def get_cookies(self, method="GET", *args, **kwargs):
+        response = self.rs.request(method, self.url, *args, **kwargs)
+        return response.cookies
+
     @retry(
         requests.exceptions.ConnectionError, tries=5, delay=30, backoff=2, max_delay=500
     )
-    def get_page(self, method="GET", *args, **kwargs) -> Union[Dict[Any, Any], str]:
+    def get_page(
+        self, method="GET", reload_session=True, *args, **kwargs
+    ) -> Union[Dict[Any, Any], str]:
         if "timeout" not in kwargs.keys():
             kwargs["timeout"] = 60
-        self.reload_session()
+        if reload_session:
+            self.reload_session()
         response = self.rs.request(method, self.url, *args, **kwargs)
+
         self.observed_step(response, use_this=True)
         try:
             return response.json()

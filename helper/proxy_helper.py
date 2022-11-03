@@ -26,8 +26,19 @@ class Proxy:
     protocol: str
 
 
+class NoneProxy(ProxyInit):
+    def get_random_proxy(self):
+        return self.proxy_pool
+
+    def load_source(self):
+        return None
+
+
 class FreeProxy(ProxyInit):
     def get_random_proxy(self):
+        if self.proxy_pool is None:
+            return self.proxy_pool
+
         runtime_proxy = random.choice(self.proxy_pool)
         return {
             runtime_proxy.protocol.lower(): f"{runtime_proxy.ip}:{runtime_proxy.port}"
@@ -40,16 +51,9 @@ class FreeProxy(ProxyInit):
                 data = dill.load(f)
                 self.proxy_pool: List[Proxy] = data.get("available_ip")
         else:
-            # pass
-            raise FileNotFoundError("Not Find proxy.pkl")
-
-
-class NoneProxy(ProxyInit):
-    def get_random_proxy(self):
-        return self.proxy_pool
-
-    def load_source(self):
-        return None
+            print("Not Find proxy.pkl. using NoneProxy")
+            np = NoneProxy()
+            self.proxy_pool = np.load_source()
 
 
 if __name__ == "__main__":
