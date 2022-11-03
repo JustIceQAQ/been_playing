@@ -95,3 +95,9 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "ncpi",
         "https://ncpiexhibition.ntmofa.gov.tw/tw/Exhibition/ListCur",
     )
+
+    OpenTix = (
+        "OPENTIX兩廳院生活文化",
+        "opentix",
+        "https://www.opentix.life/search/%20/ABOUT_TO_BEGIN?category=%E5%B1%95%E8%A6%BDAll",
+    )

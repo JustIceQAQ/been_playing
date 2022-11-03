@@ -40,6 +40,7 @@ class FreeProxy(ProxyInit):
                 data = dill.load(f)
                 self.proxy_pool: List[Proxy] = data.get("available_ip")
         else:
+            # pass
             raise FileNotFoundError("Not Find proxy.pkl")
 
 
