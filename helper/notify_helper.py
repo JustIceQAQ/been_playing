@@ -12,6 +12,14 @@ class NotifyInit(abc.ABC):
         raise NotImplementedError
 
 
+class NoneNotify(NotifyInit):
+    def __init__(self):
+        pass
+
+    def send_message(self, message):
+        pass
+
+
 class LineNotify(NotifyInit):
     def __init__(self, token: str):
         self.service_path = "https://notify-api.line.me/api/notify"
