@@ -50,7 +50,6 @@ class OpenTixRunner(RunnerInit):
             exhibition = self.exhibition_model(
                 systematics=self.target_systematics, **clean_data
             )
-            print(exhibition)
             yield exhibition
 
 
