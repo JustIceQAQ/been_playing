@@ -50,6 +50,7 @@ jobs:
         env:
           IMGUR_API_CLIENT_ID: ${{ secrets.IMGUR_API_CLIENT_ID }}
           IMGUR_API_CLIENT_SECRET: ${{ secrets.IMGUR_API_CLIENT_SECRET }}
+          LINE_NOTIFY_API: ${{ secrets.LINE_NOTIFY_API }}
         
       - name: commit files
         run: |
