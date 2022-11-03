@@ -1,6 +1,5 @@
 import logging
 import os
-import threading
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -24,6 +23,8 @@ from exhibition.tickets_udnfunlife_script import TicketsUdnFunLifeRunner
 from exhibition.tmc_script import TMCRunner
 from exhibition.twtc_script import TWTCRunner
 from helper.image_helper import ImgurImage
+from helper.notify_helper import LineNotify, NoneNotify
+from helper.thread_helper import RuntimeThread
 
 
 def main():
@@ -70,16 +71,21 @@ def main():
     CLIENT_ID = os.getenv("IMGUR_API_CLIENT_ID", False)
     CLIENT_SECRET = os.getenv("IMGUR_API_CLIENT_SECRET", False)
     USE_PICKLED = os.getenv("USE_PICKLED", True)
+    LINE_NOTIFY_API = os.getenv("LINE_NOTIFY_API", False)
 
     if CLIENT_ID and CLIENT_SECRET:
         imgur_image.login(CLIENT_ID, CLIENT_SECRET)
         runtime_logging.debug("imgur api is logined")
+    runtime_notify = NoneNotify()
+    if LINE_NOTIFY_API:
+        runtime_notify = LineNotify(LINE_NOTIFY_API)
 
     all_script_runners = []
 
     all_script_runners.extend(
         [
-            threading.Thread(
+            RuntimeThread(
+                use_notify=runtime_notify,
                 target=py_class().run,
                 name=py_class.__name__,
                 kwargs={"use_pickled": USE_PICKLED},
