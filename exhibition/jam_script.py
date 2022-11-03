@@ -50,7 +50,10 @@ class JamRunner(RunnerInit):
         )
         response = requests_worker.fetch(self.use_method, headers=headers)
         opening = response.select_one("div.bu-time")
-        info = "\n".join([i.get_text() for i in opening.find_all("div")[:2]])
+        opening_div = opening.find_all("div")
+        info = ""
+        if opening_div is not None:
+            info += "\n".join([i.get_text() for i in opening_div[:2]])
 
         opening = response.select_one(
             "div.field.field-name-body.field-type-text-with-summary.field-label-hidden.view-mode-full > div > div"
