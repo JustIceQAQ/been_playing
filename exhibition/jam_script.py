@@ -50,17 +50,21 @@ class JamRunner(RunnerInit):
         )
         response = requests_worker.fetch(self.use_method, headers=headers)
         opening = response.select_one("div.bu-time")
-        opening_div = opening.find_all("div")
-        info = ""
-        if opening_div is not None:
-            info += "\n".join([i.get_text() for i in opening_div[:2]])
 
-        opening = response.select_one(
-            "div.field.field-name-body.field-type-text-with-summary.field-label-hidden.view-mode-full > div > div"
-        )
-        info2 = opening.find("strong").parent.next_sibling.next_sibling.get_text()
+        opening_str = ""
+        if opening:
+            opening_div = opening.find_all("div")
+            info = ""
+            if opening_div is not None:
+                info += "\n".join([i.get_text() for i in opening_div[:2]])
 
-        return info + "\n" + info2
+            opening = response.select_one(
+                "div.field.field-name-body.field-type-text-with-summary.field-label-hidden.view-mode-full > div > div"
+            )
+            info2 = opening.find("strong").parent.next_sibling.next_sibling.get_text()
+            opening_str = info + "\n" + info2
+
+        return opening_str
 
 
 if __name__ == "__main__":
