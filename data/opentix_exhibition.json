@@ -4,8 +4,8 @@
         "code_name": "opentix",
         "external_link": "https://www.opentix.life/search/%20/ABOUT_TO_BEGIN?category=%E5%B1%95%E8%A6%BDAll"
     },
-    "counts": 10,
-    "last_update": "2022-11-06T08:16:12.158084+00:00",
+    "counts": 11,
+    "last_update": "2022-11-06T16:17:41.391935+00:00",
     "data": [
         {
             "systematics": "opentix",
@@ -96,6 +96,15 @@
             "source_url": "https://www.opentix.life/event/1583017206399123465",
             "UUID": "32bf99a77bc756f6b51b4b8e32680e3b",
             "figure": "https://i.imgur.com/A2gsM3I.webp"
+        },
+        {
+            "systematics": "opentix",
+            "title": "2222-\u672a\u4f86\u9078\u64c7\u5730",
+            "date": "2023-01-06 ~ 2023-04-05",
+            "address": "\u81fa\u5317",
+            "source_url": "https://www.opentix.life/event/1588382171926642691",
+            "UUID": "98bd4c4fc1d4523cabfe35674ff09118",
+            "figure": "https://i.imgur.com/mf4GKrJ.webp"
         }
     ],
     "visit": {}

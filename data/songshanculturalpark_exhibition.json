@@ -4,8 +4,8 @@
         "code_name": "songshanculturalpark",
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
-    "counts": 14,
-    "last_update": "2022-11-06T08:16:12.412634+00:00",
+    "counts": 10,
+    "last_update": "2022-11-06T16:17:32.318475+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -42,15 +42,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/59c6f820-1c1c-4a96-a84b-a5fbd397076e",
             "UUID": "95599ce08b315b779c2e1958b46712de",
             "figure": "https://i.imgur.com/Jb30UDx.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u7f8e\u696d\u6587\u9752\u6f6e\u5e02\u96c6\u300e\u7b2c\u56db\u7ae0\u300f",
-            "date": "2022-11-05 - 2022-11-06",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/d2813b2c-5554-443b-99c6-92d85746cd5a",
-            "UUID": "33168a8eac8a571896aa4757b494e96a",
-            "figure": "https://i.imgur.com/zwKDTeF.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -99,39 +90,12 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "\u70ba\u6539\u8b8a\u800c\u8d70\u2014\u81fa\u7063\u540c\u5fd7\u904a\u884c20\u9031\u5e74\u56de\u9867\u5c55",
-            "date": "2022-10-01 - 2022-11-06",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/8168ad8d-f113-4033-af27-c70d3855f5ea",
-            "UUID": "068a49c59bc7557a8c4acf70f0844951",
-            "figure": "https://i.imgur.com/BAiPmFM.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u864e\u5c3e\u6f6e\u97cc\u6027\u6c34\u5cb8\u7e2b\u5408\u570b\u969b\u7af6\u5716\u6210\u679c\u5c55",
-            "date": "2022-09-30 - 2022-11-06",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/930a995a-4f2f-4259-a5ca-2a906ac14b51",
-            "UUID": "152a045786b85d8eb73c5cc4847fe6d9",
-            "figure": "https://i.imgur.com/SfRghTc.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "\u5916\u767e\u8001\u532f\u97f3\u6a02\u5287\u300aTHE FANTASTICKS \u5922\u5e7b\u611b\u7a0b\u300b",
             "date": "2022-09-23 - 2022-11-13",
             "address": "-",
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/72ebbe86-bcba-42e9-aba5-e1afe7fd2114",
             "UUID": "733e8c91d26e50fdbcdfa6cd006179f1",
             "figure": "https://i.imgur.com/k5Hd1Ub.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u300a\u6e90\u4f86\u5982\u6b64\uff01\u5927\u535a\u7269\u5c55THE GRAND MUSEUMS\u300b",
-            "date": "2022-07-12 - 2022-11-06",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/a0ce1133-6a19-4d39-8ccd-2756da46fb29",
-            "UUID": "5a02bd5259bd51b787248505b11814a5",
-            "figure": "https://i.imgur.com/jylZZU8.webp"
         }
     ],
     "visit": {}
