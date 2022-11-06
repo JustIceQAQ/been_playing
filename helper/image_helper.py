@@ -11,6 +11,7 @@ from typing import Dict
 
 from dotenv import load_dotenv
 from imgurpython import ImgurClient
+from imgurpython.helpers.error import ImgurClientError
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent
 runtime_logging = logging.getLogger("runtime_logging")
@@ -45,7 +46,11 @@ class ImgurImage(ImageInit):
         return f"https://i.imgur.com/{image_id}.webp"
 
     def login(self, client_id, client_secret):
-        self.client = ImgurClient(client_id, client_secret)
+        try:
+            self.client = ImgurClient(client_id, client_secret)
+        except ImgurClientError:
+            self.client = None
+            runtime_logging.debug("ImgurClient Login Error")
 
     def upload(self, image_url, config=None, anon=True):
         runtime_url = image_url
@@ -55,6 +60,8 @@ class ImgurImage(ImageInit):
         )
         try:
             if hash_url not in self.cache_data.keys():
+                if self.client is None:
+                    raise RuntimeError("ImgurClient Login Error")
                 with self._lock:
                     runtime_logging.debug(
                         f"{threading.current_thread().name}: get authority now upload {hash_url}"
