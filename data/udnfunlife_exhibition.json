@@ -5,7 +5,7 @@
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
     "counts": 26,
-    "last_update": "2022-11-08T01:08:53.768597+00:00",
+    "last_update": "2022-11-08T08:20:10.892005+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -24,15 +24,6 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N27ZY1UV&kdid=featured",
             "UUID": "35b2fbd8b0bc5ac1916d078c28e950ad",
             "figure": "https://i.imgur.com/kjzL65A.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
-            "title": "\u5492\u8853\u8ff4\u6230\u5c55 \u5957\u7968\u7d44\u5408",
-            "date": "2022/12/30 ~ 2023/04/05",
-            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712A\u3001\u67712B",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N28069QL&kdid=featured",
-            "UUID": "1ea6e5bf782c53c190c7b2dd11df1a0d",
-            "figure": "https://i.imgur.com/w39BCfY.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -213,6 +204,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N27Q0Q76&kdid=featured",
             "UUID": "7b451352b6c95aecbf90958143b0b228",
             "figure": "https://i.imgur.com/4whA6g9.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u5492\u8853\u8ff4\u6230\u5c55 \u5957\u7968\u7d44\u5408",
+            "date": "2022/12/30 ~ 2023/04/05",
+            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712A\u3001\u67712B",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N28069QL&kdid=featured",
+            "UUID": "1ea6e5bf782c53c190c7b2dd11df1a0d",
+            "figure": "https://i.imgur.com/w39BCfY.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
