@@ -101,3 +101,8 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "opentix",
         "https://www.opentix.life/search/%20/ABOUT_TO_BEGIN?category=%E5%B1%95%E8%A6%BDAll",
     )
+    BUG = (
+        "BUG",
+        "BUG",
+        "BUG",
+    )
