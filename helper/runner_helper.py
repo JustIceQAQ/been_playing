@@ -1,5 +1,8 @@
 from abc import ABCMeta, abstractmethod
 
+from requests.exceptions import ProxyError
+from urllib3.exceptions import ConnectTimeoutError, NewConnectionError
+
 from exhibition import ExhibitionEnum
 from helper.storage_helper import Exhibition, JustJsonStorage
 
@@ -61,7 +64,7 @@ class RunnerInit(metaclass=ABCMeta):
             if self.storage is not None:
                 if opening := self.get_visit():
                     self.storage.set_visit({"opening": opening})
-        except ConnectionError:
+        except (ConnectionError, NewConnectionError, ConnectTimeoutError, ProxyError):
             self.write_storage(
                 Exhibition(systematics=ExhibitionEnum.BUG, source_url="BUG").dict(),
                 use_pickled,

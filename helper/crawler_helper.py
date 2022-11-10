@@ -35,7 +35,7 @@ class RequestsCrawler(CrawlerInit):
         response = self.rs.request(method, self.url, *args, **kwargs)
         return response.cookies
 
-    @retry(ConnectionError, tries=5, delay=20, backoff=2, max_delay=500)
+    @retry(tries=5, delay=20, backoff=2, max_delay=500)
     def get_page(
         self, method="GET", reload_session=True, *args, **kwargs
     ) -> Union[Dict[Any, Any], str]:
