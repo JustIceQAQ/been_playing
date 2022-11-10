@@ -54,7 +54,10 @@ class ImgurImage(ImageInit):
 
     def upload(self, image_url, config=None, anon=True):
         runtime_url = image_url
-        hash_url = hashlib.md5(image_url.encode("utf-8")).hexdigest()
+        if runtime_url is None:
+            return runtime_url
+
+        hash_url = hashlib.md5(runtime_url.encode("utf-8")).hexdigest()
         runtime_logging.debug(
             f"{threading.current_thread().name}: will be upload {hash_url} {runtime_url}"
         )
