@@ -9,7 +9,7 @@ from typing import IO, Any, Dict, List, Optional
 
 import pytz
 from dotenv import load_dotenv
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from pysondb import db
 
 from exhibition import ExhibitionInformation
@@ -51,6 +51,14 @@ class Exhibition(BaseModel):
         self.UUID: Optional[str] = hex_uuid5(self.systematics, self.source_url)
 
 
+class ExhibitionStorage(BaseModel):
+    information: Optional[Dict] = Field(default_factory=dict)
+    counts: int = 0
+    last_update: Optional[str] = None
+    data: Optional[List[Dict[str, str]]] = Field(default_factory=list)
+    visit: Optional[Dict[str, str]] = Field(default_factory=dict)
+
+
 class StorageInit(metaclass=ABCMeta):
     @abstractmethod
     def create_data(self, data, *args, **kwargs) -> None:
@@ -84,8 +92,9 @@ class JustJsonStorage(StorageInit):
         client_secret = os.getenv("IMGUR_API_CLIENT_SECRET", False)
         self.ImgurImage.login(client_id, client_secret)
         self.exhibition_information = exhibition_information
-        self.json_object = {}
+        self.json_object = ExhibitionStorage()
         self.visit = {}
+        self.json_object.information = dataclasses.asdict(self.exhibition_information)
 
     def create_data(self, data: Dict[str, str], pickled=True, *args, **kwargs) -> None:
         data["figure"] = (
@@ -93,6 +102,7 @@ class JustJsonStorage(StorageInit):
             if pickled
             else data.pop("figure")
         )
+
         self.temp_data.append(data)
 
     def set_visit(self, _dict: Dict):
@@ -100,16 +110,15 @@ class JustJsonStorage(StorageInit):
 
     def commit(self) -> None:
         self.fd = open(self.db_path, "w", encoding="utf-8")
+        self.json_object.last_update = self.get_last_update_time()
+        self.json_object.counts = len(self.temp_data)
+        self.json_object.data = list(
+            self.deduplication_but_maintain_sort(key=lambda d: d["UUID"])
+        )
+        self.json_object.visit = self.visit
 
-        self.json_object = {
-            "information": dataclasses.asdict(self.exhibition_information),
-            "counts": len(self.temp_data),
-            "last_update": self.get_last_update_time(),
-            "data": list(self.deduplication_but_maintain_sort(key=lambda d: d["UUID"])),
-            "visit": self.visit,
-        }
         runtime_json_object = json.dumps(
-            self.json_object,
+            self.json_object.dict(),
             indent=4,
         )
         self.fd.write(runtime_json_object)
