@@ -5,7 +5,7 @@
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
     "counts": 26,
-    "last_update": "2022-11-10T12:18:03.437333+00:00",
+    "last_update": "2022-11-10T16:18:24.786959+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -171,15 +171,6 @@
         },
         {
             "systematics": "tickets_udnfunlife",
-            "title": "2022 \u611b\u624b\u5275\u570b\u969b\u624b\u4f5c\u8a2d\u8a08\u7bc0",
-            "date": "2022/11/11 ~ 2022/11/13",
-            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u6771\u4e8c\u9928\u56db\u9023\u68df",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N25D099D&kdid=featured",
-            "UUID": "fa02f42a9cef573cb915b4ccf1c70420",
-            "figure": "https://i.imgur.com/38N6fPq.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
             "title": "\u7b2c\u4e94\u5c46\u53f0\u5317\u77ed\u5287\u7bc0",
             "date": "2022/11/11 ~ 2022/11/20",
             "address": "PLAYground \u5357\u6751\u5287\u5834",
@@ -240,6 +231,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P00215X6&kdid=featured",
             "UUID": "7826be48a43b517f8ae00d41e600a51b",
             "figure": "https://i.imgur.com/3fxmKls.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "2022 \u611b\u624b\u5275\u570b\u969b\u624b\u4f5c\u8a2d\u8a08\u7bc0",
+            "date": "2022/11/11 ~ 2022/11/13",
+            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u6771\u4e8c\u9928\u56db\u9023\u68df",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N25D099D&kdid=featured",
+            "UUID": "fa02f42a9cef573cb915b4ccf1c70420",
+            "figure": "https://i.imgur.com/38N6fPq.webp"
         }
     ],
     "visit": {}
