@@ -1,5 +1,6 @@
 from abc import ABCMeta, abstractmethod
 
+from exhibition import ExhibitionEnum
 from helper.storage_helper import Exhibition, JustJsonStorage
 
 
@@ -49,15 +50,23 @@ class RunnerInit(metaclass=ABCMeta):
 
     def run(self, use_pickled=True):
         self.init_storage()
-        response = self.get_response()
-        items = self.get_items(response)
-        exhibitions = self.get_parsed(items)
+        try:
+            response = self.get_response()
+            items = self.get_items(response)
+            exhibitions = self.get_parsed(items)
 
-        for exhibition in exhibitions:
-            self.write_storage(exhibition.dict(), use_pickled)
+            for exhibition in exhibitions:
+                self.write_storage(exhibition.dict(), use_pickled)
 
-        if self.storage is not None:
-            if opening := self.get_visit():
-                self.storage.set_visit({"opening": opening})
-
-        self.commit_storage()
+            if self.storage is not None:
+                if opening := self.get_visit():
+                    self.storage.set_visit({"opening": opening})
+        except ConnectionError:
+            self.write_storage(
+                Exhibition(systematics=ExhibitionEnum.BUG, source_url="BUG").dict(),
+                use_pickled,
+            )
+        except Exception as e:
+            raise e
+        finally:
+            self.commit_storage()
