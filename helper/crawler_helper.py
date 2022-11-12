@@ -1,8 +1,11 @@
+import os
 from abc import ABCMeta, abstractmethod
 from enum import Enum
+from pathlib import Path
 from typing import Any, Dict, Union
 
 import requests
+from dotenv import load_dotenv
 from retry import retry
 
 from helper.proxy_helper import NoneProxy
@@ -70,19 +73,30 @@ class RequestsCrawler(CrawlerInit):
         self.rs.proxies = self.proxy.get_random_proxy()
 
 
-# class PyCurlCrawler(CrawlerInit):
-#     def __init__(self, url: str):
-#         self.url = url
-#
-#     def get_page(self, *args, **kwargs) -> str:
-#         # TODO: 補實作 POST
-#         buffer = BytesIO()
-#         py_curl = pycurl.Curl()
-#         py_curl.setopt(py_curl.URL, self.url)
-#         py_curl.setopt(py_curl.WRITEDATA, buffer)
-#         py_curl.setopt(py_curl.CAINFO, certifi.where())
-#         py_curl.perform()
-#         py_curl.close()
-#
-#         body = buffer.getvalue()
-#         return body.decode("iso-8859-1")
+class ScraperApiCrawler(CrawlerInit):
+    def __init__(self, api_key=None, api_path="http://api.scraperapi.com"):
+        self.api_key = self.__set_api_key(api_key)
+        self.rs = requests.session()
+        self.api_path = api_path
+
+    def __set_api_key(self, api_key):
+        if api_key is None:
+            raise ValueError
+        return api_key
+
+    def get_page(self, url, render=True):
+        payload = {"api_key": self.api_key, "url": url, "render": render}
+        return self.rs.get(self.api_path, params=payload)
+
+
+if __name__ == "__main__":
+    ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent
+    this_env = ROOT_DIR / ".env"
+    if this_env.exists():
+        load_dotenv(this_env)
+    SCRAPER_API_KEY = os.getenv("SCRAPER_API_KEY", None)
+    sac = ScraperApiCrawler(api_key=SCRAPER_API_KEY)
+    target_url = "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/?page=1"
+    response = sac.get_page(target_url, render=True)
+    print(response.status_code)
+    print(response.text)
