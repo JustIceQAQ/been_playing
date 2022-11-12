@@ -29,15 +29,6 @@ class RequestsBeautifulSoupInstantiation(
 
 class RequestsJsonInstantiation(InstantiationInit, RequestsCrawler, JsonTranslation):
     def fetch(self, *args, **kwargs) -> Union[Dict[str, Any], List[Dict[str, Any]]]:
-        context = self.get_page(*args, **kwargs)
+        context = self.get_page(formatted=self.Formatted.json, *args, **kwargs)
         translation_object = self.format_to_object(context)
         return translation_object
-
-
-# class PyCurlBeautifulSoupInstantiation(
-#     InstantiationInit, PyCurlCrawler, BeautifulSoupTranslation
-# ):
-#     def fetch(self, *args, **kwargs) -> BeautifulSoup:
-#         context = self.get_page()
-#         translation_object = self.format_to_object(context)
-#         return translation_object
