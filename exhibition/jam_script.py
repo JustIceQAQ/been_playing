@@ -2,10 +2,13 @@ from pathlib import Path
 
 from exhibition import ExhibitionEnum
 from helper.clean_helper import RequestsClean
+from helper.crawler_helper import RequestsCrawler
 from helper.header_helper import JamHeader
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
 from helper.parse_helper import JamParse
+from helper.proxy_helper import NoneProxy
 from helper.runner_helper import RunnerInit
+from helper.translation_helper import BeautifulSoupTranslation
 
 
 class JamRunner(RunnerInit):
@@ -17,17 +20,23 @@ class JamRunner(RunnerInit):
     target_storage = str(root_dir / "data" / "jam_exhibition.json")
     target_systematics = ExhibitionEnum.Jam
     instantiation = RequestsBeautifulSoupInstantiation
+    use_crawler = RequestsCrawler
+    use_translation = BeautifulSoupTranslation
     use_header = JamHeader
     use_parse = JamParse
+    use_proxy = NoneProxy
     target_visit_url = "http://jam.jutfoundation.org.tw/visit/info"
 
     def get_response(self):
-        requests_worker = self.instantiation(self.target_url)
+        requests_worker = self.use_crawler(self.target_url, module_proxy=self.use_proxy)
         headers = (
             self.use_header().get_header() if self.use_header is not None else None
         )
-        qq = requests_worker.fetch(self.use_method, headers=headers)
-        return qq
+        response = requests_worker.get_page(
+            self.use_method, headers=headers, formatted=requests_worker.Formatted.text
+        )
+        transitioned = self.use_translation().format_to_object(response)
+        return transitioned
 
     def get_items(self, response):
         return response.select("div.view-content > div.views-row")
