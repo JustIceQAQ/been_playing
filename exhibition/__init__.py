@@ -101,6 +101,11 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "opentix",
         "https://www.opentix.life/search/%20/ABOUT_TO_BEGIN?category=%E5%B1%95%E8%A6%BDAll",
     )
+    KLook = (
+        "KLOOK客路",
+        "klook",
+        "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/",
+    )
     BUG = (
         "BUG",
         "BUG",

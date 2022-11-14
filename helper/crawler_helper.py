@@ -1,4 +1,6 @@
+import logging
 import os
+import time
 from abc import ABCMeta, abstractmethod
 from enum import Enum
 from pathlib import Path
@@ -11,6 +13,8 @@ from retry import retry
 from helper.proxy_helper import NoneProxy
 
 requests.adapters.DEFAULT_RETRIES = 5
+
+logging.basicConfig(level=logging.DEBUG)
 
 
 # 實作各種類型爬蟲
@@ -89,14 +93,71 @@ class ScraperApiCrawler(CrawlerInit):
         return self.rs.get(self.api_path, params=payload)
 
 
+class ScraperAsyncApiCrawler(CrawlerInit):
+    def __init__(self, api_key=None, api_path="https://async.scraperapi.com/jobs"):
+        self.api_key = self.__set_api_key(api_key)
+        self.rs = requests.session()
+        self.api_path = api_path
+        self.job_status_url = None
+        self.job_status = False
+
+        self.runtime_status = False
+        self.runtime_response = None
+
+    class JobStatus(str, Enum):
+        Running = "running"
+        Finished = "finished"
+
+    def __set_api_key(self, api_key):
+        if api_key is None:
+            raise ValueError
+        return api_key
+
+    def get_page(self, url, render=True):
+        payload = {
+            "apiKey": self.api_key,
+            "url": url,
+            "render": render,
+            "session_number": "88889",
+        }
+        created = self.rs.post(self.api_path, json=payload).json()
+        self.job_status = created.get("status")
+        self.job_status_url = created.get("statusUrl")
+
+        return self
+
+    def get_status(self):
+        if not self.runtime_status:
+            job_response = self.rs.get(self.job_status_url).json()
+            self.job_status = job_response.get("status")
+
+            if self.job_status == self.JobStatus.Finished:
+                self.runtime_status = True
+                self.runtime_response = job_response.get("response").get("body")
+
+        return self.runtime_status, self.runtime_response
+
+
 if __name__ == "__main__":
     ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent
     this_env = ROOT_DIR / ".env"
     if this_env.exists():
         load_dotenv(this_env)
     SCRAPER_API_KEY = os.getenv("SCRAPER_API_KEY", None)
-    sac = ScraperApiCrawler(api_key=SCRAPER_API_KEY)
-    target_url = "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/?page=1"
-    response = sac.get_page(target_url, render=True)
-    print(response.status_code)
-    print(response.text)
+
+    tasks = [
+        ScraperAsyncApiCrawler(api_key=SCRAPER_API_KEY).get_page(
+            f"https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/?page={n}",
+            render=True,
+        )
+        for n in range(1, 5)
+    ]
+    while True:
+        runtime_tasks = [job.get_status() for job in tasks]
+        if all(runtime_status := [n[0] for n in runtime_tasks]):
+            break
+        else:
+            print(runtime_status)
+            time.sleep(20)
+
+    print(runtime_tasks)
