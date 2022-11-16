@@ -45,6 +45,8 @@ jobs:
           
       - name: execute py script
         run: python reload_proxy_pool.py
+        env:
+          SENTRY_SDK_DNS: ${{ secrets.SENTRY_SDK_DNS }}
         
       - name: commit files
         run: |
