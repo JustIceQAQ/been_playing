@@ -49,7 +49,8 @@ class NMHRunner(RunnerInit):
         )
         response = requests_worker.fetch(self.use_method, headers=headers)
         opening = response.select_one("li.qa-item:nth-child(1) > div > div > p")
-        return opening.get_text()
+
+        return None if opening is None else opening.get_text()
 
 
 if __name__ == "__main__":
