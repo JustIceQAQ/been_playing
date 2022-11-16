@@ -11,3 +11,4 @@ python-dotenv
 retry
 httpx
 dill
+sentry-sdk

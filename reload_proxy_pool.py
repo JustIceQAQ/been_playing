@@ -3,11 +3,15 @@ import asyncio
 import base64
 import dataclasses
 import datetime
+import os
 import secrets
+from pathlib import Path
 
 import dill
 import httpx
+import sentry_sdk
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 
 httpx_client = httpx.AsyncClient()
 
@@ -96,5 +100,15 @@ class freeProxySource(SourceInit):
 
 
 if __name__ == "__main__":
+    # load local env file
+    ROOT_DIR = Path(__file__).resolve(strict=True).parent
+    this_env = ROOT_DIR / ".env"
+    if this_env.exists():
+        load_dotenv(this_env)
+
+    # set sentry
+    SENTRY_SDK_DNS = os.getenv("SENTRY_SDK_DNS", None)
+    sentry_sdk.init(dsn=SENTRY_SDK_DNS, traces_sample_rate=1.0)
+
     loop = asyncio.get_event_loop()
     loop.run_until_complete(freeProxySource().run())

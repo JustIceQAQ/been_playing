@@ -2,6 +2,7 @@ import logging
 import os
 from pathlib import Path
 
+import sentry_sdk
 from dotenv import load_dotenv
 
 from exhibition.cksmh_script import CKSMHRunner
@@ -28,12 +29,6 @@ from helper.thread_helper import RuntimeThread
 
 
 def main():
-    # load local env file
-    ROOT_DIR = Path(__file__).resolve(strict=True).parent
-    this_env = ROOT_DIR / ".env"
-    if this_env.exists():
-        load_dotenv(this_env)
-
     # check env values
     IS_DEBUG = os.getenv("IS_DEBUG", False)
     CLIENT_ID = os.getenv("IMGUR_API_CLIENT_ID", False)
@@ -120,4 +115,14 @@ def main():
 
 
 if __name__ == "__main__":
+    # load local env file
+    ROOT_DIR = Path(__file__).resolve(strict=True).parent
+    this_env = ROOT_DIR / ".env"
+    if this_env.exists():
+        load_dotenv(this_env)
+
+    # set sentry
+    SENTRY_SDK_DNS = os.getenv("SENTRY_SDK_DNS", None)
+    sentry_sdk.init(dsn=SENTRY_SDK_DNS, traces_sample_rate=1.0)
+
     main()
