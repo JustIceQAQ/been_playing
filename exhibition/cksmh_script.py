@@ -60,7 +60,7 @@ class CKSMHRunner(RunnerInit):
         )
         response = requests_worker.fetch(self.use_method, headers=headers)
         opening = response.select_one("div.zhanjian > div.cont_info > p")
-        return opening.get_text()
+        return None if opening is None else opening.get_text()
 
 
 if __name__ == "__main__":
