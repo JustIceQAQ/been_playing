@@ -113,12 +113,12 @@ class ScraperAsyncApiCrawler(CrawlerInit):
             raise ValueError
         return api_key
 
-    def get_page(self, url, render=True):
+    def get_page(self, url, render=True, headers=None):
         payload = {
             "apiKey": self.api_key,
             "url": url,
             "render": render,
-            "session_number": "88889",
+            "headers": headers,
         }
         created = self.rs.post(self.api_path, json=payload).json()
         self.job_status = created.get("status")

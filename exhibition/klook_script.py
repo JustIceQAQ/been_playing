@@ -28,10 +28,43 @@ class KLookRunner(RunnerInit):
 
     def get_response(self):
         dataset_list = []
+        headers = {
+            "referer": "https://www.klook.com/zh-TW/event/19-taipei/",
+        }
         pre_tasks = self.use_crawler(
             api_key=os.getenv("SCRAPER_API_KEY", None)
-        ).get_page(self.target_url)
+        ).get_page(self.target_url, headers=headers)
 
+        pagination = self.get_first_page(dataset_list, pre_tasks)
+
+        tasks = []
+        for runtime_url, referer_url in zip(pagination[1:], pagination):
+            tasks.append(
+                self.use_crawler(api_key=os.getenv("SCRAPER_API_KEY", None)).get_page(
+                    runtime_url,
+                    render=True,
+                    headers={
+                        "referer": referer_url,
+                    },
+                )
+            )
+
+        return self.get_pagination_page(dataset_list, tasks)
+
+    def get_pagination_page(self, dataset_list, tasks):
+        while True:
+            runtime_tasks = [job.get_status() for job in tasks]
+            if all([n[0] for n in runtime_tasks]):
+                for runtime_data in runtime_tasks:
+                    dataset_list.append(
+                        self.use_translation().format_to_object(runtime_data[1])
+                    )
+                break
+            else:
+                time.sleep(self.while_sleep)
+        return dataset_list
+
+    def get_first_page(self, dataset_list, pre_tasks):
         while True:
             pre_tasks_runtime_result = pre_tasks.get_status()
             if pre_tasks_runtime_result[0]:
@@ -46,32 +79,14 @@ class KLookRunner(RunnerInit):
                 break
             else:
                 time.sleep(self.while_sleep)
-
-        tasks = [
-            self.use_crawler(api_key=os.getenv("SCRAPER_API_KEY", None)).get_page(
-                url, render=True
-            )
-            for url in pagination[1:]
-        ]
-
-        while True:
-            runtime_tasks = [job.get_status() for job in tasks]
-            if all([n[0] for n in runtime_tasks]):
-                for runtime_data in runtime_tasks:
-                    dataset_list.append(
-                        self.use_translation().format_to_object(runtime_data[1])
-                    )
-                break
-            else:
-                time.sleep(self.while_sleep)
-
-        return dataset_list
+        return pagination
 
     def get_items(self, response):
         items = []
         for r in response:
             layout_list = r.select("a.layout_list")
             items.extend(layout_list)
+
         return items
 
     def get_parsed(self, items):
