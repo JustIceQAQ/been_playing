@@ -5,8 +5,17 @@
         "external_link": "https://tickets.books.com.tw/leisure/"
     },
     "counts": 26,
-    "last_update": "2022-11-16T01:06:58.240322+00:00",
+    "last_update": "2022-11-18T08:16:28.391977+00:00",
     "data": [
+        {
+            "systematics": "tickets_books",
+            "title": "NAKED OCEAN IN TAIPEI \u5149\u4e4b\u5f71\u6d77\u6d0b\u5c55",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010901615581",
+            "UUID": "50766a639faf5a99a566acdf65bc588f",
+            "figure": "https://i.imgur.com/SVGr3MJ.webp"
+        },
         {
             "systematics": "tickets_books",
             "title": "\u3010\u9032\u64ca\u7684\u5de8\u4eba\u5c55FINAL\u3011\u9ad8\u96c4\u5834",
@@ -105,15 +114,6 @@
             "source_url": "https://tickets.books.com.tw/progshow/08010901741268",
             "UUID": "fc97a5ffc8235545b71b219a367b11cb",
             "figure": "https://i.imgur.com/8NDL6V5.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\uff08\u96fb\u5b50\u7968\uff09\u5973\u4eba\u8ff7 | 2022\u7b2c\u516d\u5c46\u5168\u7403\u5973\u6027\u5f71\u97ff\u529b\u8ad6\u58c7",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005633427",
-            "UUID": "820534cbc709524e8705ce8058c1c00f",
-            "figure": "https://i.imgur.com/bd03lhs.webp"
         },
         {
             "systematics": "tickets_books",

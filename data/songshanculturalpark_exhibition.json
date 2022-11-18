@@ -4,8 +4,8 @@
         "code_name": "songshanculturalpark",
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
-    "counts": 14,
-    "last_update": "2022-11-16T01:06:58.512502+00:00",
+    "counts": 15,
+    "last_update": "2022-11-18T08:16:07.310940+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -36,7 +36,34 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "\u9b5a\u5cf6\u6709\u6c5d",
+            "title": "2022 Pinkoi Design Fest \u98a8\u683c\u8a2d\u8a08\u7bc0\u30fb\u53f0\u5317\u7ad9",
+            "date": "2022-12-02 - 2022-12-04",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/23f1cacb-1c02-469b-ba0a-4af715e9a979",
+            "UUID": "126b8d41708e5436b6762727283f34bb",
+            "figure": "https://i.imgur.com/lrVgzgL.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u300c\u6d77\u63da\u8d77\u7684\u601d\u5ff5\u2013\u9b5a\u9b06\u6536\u5230\u6c92\uff1f\u300d\u5287\u60c5\u9577\u7247\u9996\u6620\u767c\u8868\u6703",
+            "date": "2022-11-27 - 2022-11-27",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c8e66e5f-6490-4b25-a843-49cd9aafba4e",
+            "UUID": "ffb8fb18b0a55b4dbbb82734f6331f13",
+            "figure": "https://i.imgur.com/Pz7LA5A.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u4f60\u624d\u8001\uff01\u4f60\u5168\u5bb6\u90fd\u8001\uff01\uff01\u719f\u9f61\u4e5f\u80fd\u7576\u7db2\u7d05",
+            "date": "2022-11-18 - 2022-11-20",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/a3dbf7ce-e212-4359-b4ba-0d36e930177b",
+            "UUID": "b67b8cd23e8b5e4f8794b3ef99014205",
+            "figure": "https://i.imgur.com/SxSsHqc.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u30102022 \u9b5a\u5cf6\u6709\u6c5d \u6587\u5275\u5c55\u3011",
             "date": "2022-11-15 - 2022-11-28",
             "address": "-",
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/a2edce49-d181-4da0-8204-14b250045a5a",
@@ -81,15 +108,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "\u9673\u9298\u653f-\u5f62\u6eaf\u571f\u5851\u500b\u5c55",
-            "date": "2022-11-08 - 2022-11-16",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/4cd07e6a-cbcf-4320-aa76-68b9d66c5d4c",
-            "UUID": "68373df393b95ade84243b7d2e80c070",
-            "figure": "https://i.imgur.com/Uu5ELeJ.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "2022\u7d19\u4e0a\u8e8d\u8e8d\u7136 \u2027 \u5178\u7f8e\u63d2\u756b\u5927\u8cde \u300a\u8f49\u52d5\u5e0c\u671b\u7684\u66d9\u5149\u300b",
             "date": "2022-11-19 - 2022-11-27",
             "address": "-",
@@ -123,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/aa20100c-d535-4d92-9532-32dcf1b9375a",
             "UUID": "7a74557e88f65197bf18153b83ddf5e0",
             "figure": "https://i.imgur.com/8YIQt59.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "2022 Pop Up Asia \u4e9e\u6d32\u624b\u5275\u5c55",
-            "date": "2022-11-17 - 2022-11-20",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/d2400cf8-f9cc-4e76-a836-822c2eea107c",
-            "UUID": "ecffaee0b54b5dd4ba64b7852b351b76",
-            "figure": "https://i.imgur.com/ZQ0DcG1.webp"
         }
     ],
     "visit": {}
