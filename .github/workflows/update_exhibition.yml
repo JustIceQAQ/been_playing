@@ -52,6 +52,7 @@ jobs:
           IMGUR_API_CLIENT_SECRET: ${{ secrets.IMGUR_API_CLIENT_SECRET }}
           LINE_NOTIFY_API: ${{ secrets.LINE_NOTIFY_API }}
           SENTRY_SDK_DNS: ${{ secrets.SENTRY_SDK_DNS }}
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
         
       - name: commit files
         run: |
