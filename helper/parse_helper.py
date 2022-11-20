@@ -671,7 +671,6 @@ class KLookParse(ParseInit):
         self.item = item
 
     def title_address_filter(self, text: str) -> (str, str):
-        runtime_title = None
         runtime_address = "-"
         titles = text.strip().split("｜")
 
@@ -679,11 +678,19 @@ class KLookParse(ParseInit):
             runtime_title = titles[-1]
 
         elif len(titles) == 2:
-            runtime_title = titles[0] if titles[1] in {"展覽"} else " - ".join(titles)
+            if ("預售" in titles[0]) and ("優惠" in titles[0]) and ("折" in titles[0]):
+                runtime_title = titles[1]
+            else:
+                runtime_title = titles[0] if titles[1] in {"展覽"} else " - ".join(titles)
 
         elif len(titles) == 3:
             runtime_address = titles[-1]
             runtime_title = titles[0] if titles[1] in {"展覽"} else " - ".join(titles[:2])
+        elif len(titles) == 5:
+            runtime_title = titles[3]
+            runtime_address = titles[2]
+        else:
+            runtime_title = text.strip()
 
         return runtime_title, runtime_address
 
