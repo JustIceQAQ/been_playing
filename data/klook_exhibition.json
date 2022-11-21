@@ -5,8 +5,17 @@
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
     "counts": 24,
-    "last_update": "2022-11-21T08:18:38.542871+00:00",
+    "last_update": "2022-11-21T16:18:07.986055+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u5177\u8c61\u8a69 - \u5b8b\u66c9\u660e\u500b\u5c55",
+            "date": "2022\u5e7411\u670826\u65e5(\u9031\u516d) - 2023\u5e741\u67088\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011654-2022-concrete-poetry/",
+            "UUID": "26f8e145e75557b1ad51ae28d3cbcd94",
+            "figure": "https://i.imgur.com/3yDjzgQ.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u63d0\u59c6\u6ce2\u9813\u7570\u60f3\u4e16\u754c\u5c55 The World of Tim Burton - \u4e2d\u6b63\u7d00\u5ff5\u5802",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101011493-2022-cruising-alone-painting/",
             "UUID": "f6dc099323535975acdb7c98f191404c",
-            "figure": "https://i.imgur.com/MQTF0TX.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -212,15 +221,6 @@
             "address": "\u83ef\u5c71\u6587\u5275",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101011398-2022-telling-stories/",
             "UUID": "dbd7d54bbb1951269fe429db26e2a24b",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u72c2\u516b\u3007\uff1a\u8de8\u9818\u57df\u9748\u5149\u51fa\u73fe\u7684\u6642\u4ee3",
-            "date": "2022\u5e7412\u67083\u65e5(\u9031\u516d) - 2023\u5e742\u670826\u65e5(\u9031\u65e5)",
-            "address": "\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101011390-2022-the-wild-eighties/",
-            "UUID": "41cabe37e8c05eb3b4e49d24214d5afa",
             "figure": "-"
         }
     ],
