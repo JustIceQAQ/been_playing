@@ -4,27 +4,9 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 12,
-    "last_update": "2022-11-20T08:15:22.674304+00:00",
+    "counts": 9,
+    "last_update": "2022-11-22T01:08:07.823684+00:00",
     "data": [
-        {
-            "systematics": "twtc",
-            "title": "2022\u4e0a\u806f\u53f0\u5317\u570b\u969b\u5bf5\u7269\u7528\u54c1\u535a\u89bd\u6703(\u51ac\u5b63\u5c55)\u30012022\u53f0\u5317\u8c93\u5c55",
-            "date": "11/18 ~ 11/21",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
-            "source_url": "http://www.top-link.com.tw",
-            "UUID": "08ecca6fe2d151488a2066c6a3f7225c",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "2022\u53f0\u7063\u570b\u969b\u5496\u5561\u5c55",
-            "date": "11/18 ~ 11/21",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "http://www.chanchao.com.tw",
-            "UUID": "9f323bab2dc55c9385a0a38b774f1364",
-            "figure": ""
-        },
         {
             "systematics": "twtc",
             "title": "\u53f0\u5317\u5a5a\u7d17\u651d\u5f71\u3001\u7d50\u5a5a\u9ad4\u9a57\u65e5",
@@ -50,6 +32,15 @@
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=20509",
             "UUID": "f9a7dd8fd4c35a98acf5a776b164d06f",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "TBME-\u7b2c24\u5c46\u53f0\u5317\u570b\u969b\u5b30\u5152\u8207\u5b55\u5abd\u54aa\u7528\u54c1\u5c55(\u590f\u5b63\u5c55)\u30012022\u4e0a\u806f\u53f0\u5317\u5b55\u5a66\u5e7c\u5152\u7528\u54c1\u5c55",
+            "date": "12/02 ~ 12/05",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
+            "source_url": "http://www.top-link.com.tw",
+            "UUID": "08ecca6fe2d151488a2066c6a3f7225c",
             "figure": ""
         },
         {
