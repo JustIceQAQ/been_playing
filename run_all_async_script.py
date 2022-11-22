@@ -7,6 +7,7 @@ import sentry_sdk
 from dotenv import load_dotenv
 
 from exhibition.cksmh_async_script import CKSMHRunnerAsync
+from exhibition.jam_async_script import JamRunnerAsync
 from helper.image_helper import ImgurImage
 from helper.notify_helper import LogNotify  # LineNotify , NoneNotify
 
@@ -45,7 +46,10 @@ async def main():
         imgur_image.login(CLIENT_ID, CLIENT_SECRET)
         log_notify.send_message("imgur api is login", log_notify.LogLevel.INFO)
 
-    all_async_script_runners = [CKSMHRunnerAsync().run(use_pickled=USE_PICKLED)]
+    all_async_script_runners = [
+        CKSMHRunnerAsync().run(use_pickled=USE_PICKLED),
+        JamRunnerAsync().run(use_pickled=USE_PICKLED),
+    ]
     await asyncio.gather(*all_async_script_runners)
 
 
