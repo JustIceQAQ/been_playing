@@ -5,8 +5,26 @@
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
     "counts": 24,
-    "last_update": "2022-11-23T01:02:41.922411+00:00",
+    "last_update": "2022-11-23T08:18:08.505591+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "Soul Mate - Diren Lee Solo Exhibition",
+            "date": "11\u670830\u65e5(\u9031\u4e09) - 12\u670817\u65e5(\u9031\u516d)",
+            "address": "\u5c55\u89bd",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011723-2022-soul-mate-diren-lee/",
+            "UUID": "8c71e86a6f46538889e5d34e26f59fd5",
+            "figure": "https://i.imgur.com/kC6glna.webp"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u53f0\u7063\u7f8e\u8853\u7684\u958b\u5275\u5e74\u4ee3 - \u694a\u4e09\u90ce\u7279\u5c55",
+            "date": "12\u67083\u65e5(\u9031\u516d) - 12\u670824\u65e5(\u9031\u516d)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011722-2022-poineering-era-taiwan-art/",
+            "UUID": "29e5e8fd2a7756c688f296e1a812e1ce",
+            "figure": "https://i.imgur.com/p5hq5Hs.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u5177\u8c61\u8a69 - \u5b8b\u66c9\u660e\u500b\u5c55",
@@ -77,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101011533-2022-hakka-sonata-exhibition/",
             "UUID": "f0e3a4d7d78155fc88c1803fc10b3527",
-            "figure": "https://i.imgur.com/iNzkCIg.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -86,7 +104,7 @@
             "address": "\u525d\u76ae\u5bee\u6b77\u53f2\u8857\u5340",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101011500-2022-bopiliao-exhibition/",
             "UUID": "54bc0656189652658bfef2ca175f73f3",
-            "figure": "https://i.imgur.com/nkFBSAs.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -203,24 +221,6 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101011411-2022-as-you-sleep-worry-free/",
             "UUID": "7cf325f1a655506292640123b2043128",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u91d1\u98a8\u53e4\u97fb - \u8af8\u8ce2\u6a21\u500b\u5c55",
-            "date": "11\u670815\u65e5(\u9031\u4e8c) - 12\u67081\u65e5(\u9031\u56db)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101011402-2022-ancient-energy/",
-            "UUID": "1c454d912a67541089364bfce55761a0",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u8001\u5730\u65b9 - \u5468\u653f\u7def\u500b\u5c55",
-            "date": "2022\u5e7412\u67087\u65e5(\u9031\u4e09) - 2023\u5e741\u67088\u65e5(\u9031\u65e5)",
-            "address": "\u83ef\u5c71\u6587\u5275",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101011398-2022-telling-stories/",
-            "UUID": "dbd7d54bbb1951269fe429db26e2a24b",
             "figure": "-"
         }
     ],
