@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 48,
-    "last_update": "2022-11-25T01:01:24.669489+00:00",
+    "counts": 72,
+    "last_update": "2022-11-25T08:17:53.058838+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u8377 - \u6731\u82e5\u8335\u500b\u5c55",
+            "date": "2022\u5e7412\u670820\u65e5(\u9031\u4e8c) - 2023\u5e741\u670810\u65e5(\u9031\u4e8c)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011829-2022-lotus-joyin-chu/",
+            "UUID": "f87b5f9e08b25191b406ab560663ef44",
+            "figure": "https://i.imgur.com/Wp5rjGu.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u98a8\u5439\u904e\u7684\u5929\u7a7a\uff0c\u96e8\u843d\u4e0b\u7684\u571f\u5730\u3002 - \u9ec3\u5c0f\u71d5\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101011722-2022-poineering-era-taiwan-art/",
             "UUID": "29e5e8fd2a7756c688f296e1a812e1ce",
-            "figure": "https://i.imgur.com/p5hq5Hs.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,223 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/79233-jojo-bizarre-adventure-heart-of-gold-animation-10th-anniversary-special-exhibition-taipei/",
             "UUID": "5c9e446fef8256e79d78774c66af3ffb",
+            "figure": "https://i.imgur.com/ero4MxS.webp"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u5492\u8853\u8ff4\u6230\u5c55",
+            "date": "2022\u5e7412\u670830\u65e5(\u9031\u4e94) - 2023\u5e744\u67085\u65e5(\u9031\u4e09)",
+            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340",
+            "source_url": "https://www.klook.com/zh-TW/activity/78853-taipei-jujutsu-kaisen-exhibition/",
+            "UUID": "6a11e8394034528181625cf451307234",
+            "figure": "https://i.imgur.com/9RQ4oYG.webp"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u53f0\u5317 - \u83ef\u5c71\u6587\u5275\u5712\u5340",
+            "date": "2022\u5e7412\u670831\u65e5(\u9031\u516d) - 2023\u5e744\u67085\u65e5(\u9031\u4e09)",
+            "address": "BABY SHARK \u653e\u96fb\u8db4",
+            "source_url": "https://www.klook.com/zh-TW/activity/71514-2022-baby-shark-exhibition-taipei/",
+            "UUID": "77ed77c8b80a5afc93a193338cfe9e1b",
+            "figure": "https://i.imgur.com/saibO07.webp"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u611b\u60c5\u6709(\u7121)\u9032\u5c55",
+            "date": "2022\u5e7412\u670824\u65e5(\u9031\u516d) - 2023\u5e743\u670826\u65e5(\u9031\u65e5)",
+            "address": "\u677e\u5c71\u6587\u5275\u5712\u5340",
+            "source_url": "https://www.klook.com/zh-TW/activity/78756-taipei-love-yes-no-progress-exhibition-tickets/",
+            "UUID": "b90fc5ac5e93548aa65dc3044053cd0e",
+            "figure": "https://i.imgur.com/BcoAy67.webp"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u795e\u8b33 - \u4eac\u68ee\u5eb7\u5e73 Kohei KYOMORI \u500b\u5c55",
+            "date": "2022\u5e7412\u670824\u65e5(\u9031\u516d) - 2023\u5e742\u670818\u65e5(\u9031\u516d)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011433-2022-kohei-kyomori-exhibition/",
+            "UUID": "7e423f5b0a865c13a039126e79803175",
+            "figure": "https://i.imgur.com/6wA3dms.webp"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u79cb\u6536\u51ac\u85cf - \u7402\u6a02\u5802\u8de8\u5e74\u7cbe\u54c1\u5c55",
+            "date": "2022\u5e7411\u670810\u65e5(\u9031\u56db) - 2023\u5e741\u67088\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011456-2022-autumn-leaves-snow-falls/",
+            "UUID": "971bc79db8435fb9a6607aca40b37937",
+            "figure": "https://i.imgur.com/c6sH9qG.webp"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u300a\u53ef\u898b \u4e0d\u53ef\u898b Unseen the Seen\u300b\u5c55\u89bd",
+            "date": "2022\u5e7411\u670819\u65e5(\u9031\u516d) - 2023\u5e741\u670829\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011423-2022-unseen-the-seen/",
+            "UUID": "17a8dcec914352e8bf2faacf6f4c0bea",
+            "figure": "https://i.imgur.com/2D0qy2d.webp"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u9ad8\u6795\u7121\u6182\u7684\u4f60 - \u9ee8\u82e5\u6d2a\u500b\u5c55",
+            "date": "11\u670812\u65e5(\u9031\u516d) - 12\u670824\u65e5(\u9031\u516d)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011411-2022-as-you-sleep-worry-free/",
+            "UUID": "7cf325f1a655506292640123b2043128",
+            "figure": "https://i.imgur.com/o5Wfbhs.webp"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u91d1\u98a8\u53e4\u97fb - \u8af8\u8ce2\u6a21\u500b\u5c55",
+            "date": "11\u670815\u65e5(\u9031\u4e8c) - 12\u67081\u65e5(\u9031\u56db)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011402-2022-ancient-energy/",
+            "UUID": "1c454d912a67541089364bfce55761a0",
+            "figure": "https://i.imgur.com/X6dqrTS.webp"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u8001\u5730\u65b9 - \u5468\u653f\u7def\u500b\u5c55",
+            "date": "2022\u5e7412\u67087\u65e5(\u9031\u4e09) - 2023\u5e741\u67088\u65e5(\u9031\u65e5)",
+            "address": "\u83ef\u5c71\u6587\u5275",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011398-2022-telling-stories/",
+            "UUID": "dbd7d54bbb1951269fe429db26e2a24b",
             "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u72c2\u516b\u3007\uff1a\u8de8\u9818\u57df\u9748\u5149\u51fa\u73fe\u7684\u6642\u4ee3",
+            "date": "2022\u5e7412\u67083\u65e5(\u9031\u516d) - 2023\u5e742\u670826\u65e5(\u9031\u65e5)",
+            "address": "\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011390-2022-the-wild-eighties/",
+            "UUID": "41cabe37e8c05eb3b4e49d24214d5afa",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "About Love \u807d\u30fb\u8aaa\u611b\u60c5\u5c55 ft.\u8086\u4e00 - \u83ef\u5c71\u6587\u5275",
+            "date": "2022\u5e7412\u670825\u65e5(\u9031\u65e5) - 2023\u5e744\u67089\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011378-2022-about-love-exhibition/",
+            "UUID": "7f0d6b5840695288b7f362381025dd78",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u5b50\u53f2\u7e31\u6a6b \u58ec\u5bc5\u9673\u660e\u8cb4\u66f8\u756b\u5c55",
+            "date": "12\u670816\u65e5(\u9031\u4e94) - 12\u670831\u65e5(\u9031\u516d)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011340-2022-drawing-exhibition/",
+            "UUID": "13cd4e0c06de5d83bfeec40d34f52ce5",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u85dd\u8853\u98a8\u83ef\u516d\u4eba\u5c55 \u5ed6\u6b66\u9f8d \u9ec3\u7f8e\u6708 \u8449\u5fd7\u9326 \u8449\u5fd7\u656c \u99f1\u4fca\u9298 \u9673\u5149\u70a4",
+            "date": "11\u670817\u65e5(\u9031\u56db) - 11\u670827\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011339-2022-art-exhibition/",
+            "UUID": "9e44b682b40352a2add6e28e3738459e",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u738b\u73ab\u73b2\u500b\u5c55",
+            "date": "11\u67085\u65e5(\u9031\u516d) - 11\u670826\u65e5(\u9031\u516d)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011232-2022-mei-ling-wang-exhibition/",
+            "UUID": "e5a6d4a6c6e3586c99fbd89510046012",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u82b1\u8a9e\u30fb\u65b0\u8aaa\uff1a\u7dbb\u653e\u5ba2\u5bb6\u7d93\u5178 - 2022\u53f0\u5317\u7576\u4ee3\u5ba2\u5bb6\u5fb5\u4ef6\u5c55",
+            "date": "2022\u5e7410\u670815\u65e5(\u9031\u516d) - 2023\u5e742\u670828\u65e5(\u9031\u4e8c)",
+            "address": "\u81fa\u5317\u5e02\u5ba2\u5bb6\u6587\u5316\u4e3b\u984c\u516c\u5712",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011214-2022-hakka-park-exhibition/",
+            "UUID": "eafbfde8f44f5b9b88ab2ef79cfc21db",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u9077\u5f99\u4e4b\u82b1 - 2022\u53f0\u5317\u7576\u4ee3\u5ba2\u5bb6\u5fb5\u4ef6\u5c55",
+            "date": "2022\u5e7410\u670815\u65e5(\u9031\u516d) - 2023\u5e742\u670828\u65e5(\u9031\u4e8c)",
+            "address": "\u81fa\u5317\u5e02\u5ba2\u5bb6\u6587\u5316\u4e3b\u984c\u516c\u5712",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011213-2022-flowers-of-migration/",
+            "UUID": "de892096ef2e58f99e41506c350118d8",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u4e16\u754c\u4e4b\u5916\u7684\u5730\u65b9.obj",
+            "date": "11\u67084\u65e5(\u9031\u4e94) - 12\u670830\u65e5(\u9031\u4e94)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011205-2022-beyond-the-world/",
+            "UUID": "78993033fee65f1a8131bedca6763f0d",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u5341\u865f\u5167\u7684\u79d8\u5bc6 - \u7b2c\u4e00\u5c46\u8896\u73cd\u5c55",
+            "date": "11\u670812\u65e5(\u9031\u516d) - 12\u670811\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011204-2022-petit-secret-de-dix/",
+            "UUID": "44972687f0275c5caeb997f942e21fe4",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u6563\u6b65\u65e5\u5e38 - \u5f35\u5a77\u96c5\u500b\u5c55",
+            "date": "10\u670829\u65e5(\u9031\u516d) - 12\u67084\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011151-2022-flaneur-flaneuse/",
+            "UUID": "8c446926d4145d3b90fcaaa0c8ba8fbe",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u6642\u5149\u4e0d\u8a9e - \u98ef\u7530\u6850\u5b50 IIDA Kiriko \u500b\u5c55",
+            "date": "11\u67085\u65e5(\u9031\u516d) - 12\u670824\u65e5(\u9031\u516d)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011150-2022-time-is-silent/",
+            "UUID": "f638ec483d9955c5949a469a432d6f82",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u6728\u8cea\u7a7a\u9593\u6558\u4e8b - \u570b\u7acb\u81fa\u7063\u85dd\u8853\u5927\u5b78\u6728\u96d5\u5de5\u574a\u806f\u5c55",
+            "date": "11\u670810\u65e5(\u9031\u56db) - 12\u67086\u65e5(\u9031\u4e8c)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011141-2022-maison-acme-exhibition/",
+            "UUID": "af1a1e35f654543bbfa6c8fabc80eda6",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u5171\u8b58\u89ba",
+            "date": "2022\u5e7411\u67085\u65e5(\u9031\u516d) - 2023\u5e741\u670829\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011127-2022-co-consciousness/",
+            "UUID": "a3abdfad7c3c573a8d0b73182919290e",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u4e3b\u984c\u6a02\u5712\u5e7b\u60f3\u5de5\u7a0b\u6311\u6230\u8cfd",
+            "date": "2022\u5e7411\u67085\u65e5(\u9031\u516d) - 2023\u5e741\u670829\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101011132-2022-making-worlds/",
+            "UUID": "d91f28978d70529ab1fb11fd16fd3d01",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u4f5c\u70ba\u9177\u5152\u2014\u5fb7\u570b\u9177\u5152\u767c\u5c55\u53f2",
+            "date": "10\u670822\u65e5(\u9031\u516d) - 12\u670825\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101010638-2022-queerasgermanfolk/",
+            "UUID": "46faec32f4b850aeb5771cd94c1df1e7",
+            "figure": "https://i.imgur.com/dDm9ThD.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +527,7 @@
             "address": "\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101010321-2022-tellingastorywithyou/",
             "UUID": "596bcd4fcb8c5ee08f58187800b1e313",
-            "figure": "https://i.imgur.com/fl687v9.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -428,15 +653,6 @@
             "address": "\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101008695-2022-walking-the-crack/",
             "UUID": "3337c771f569573a81d8164a5b478936",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "2022\u53f0\u5317\u6a02\u5668\u5927\u5c55 - \u53f0\u5317\u4e16\u8cbf\u4e00\u9928",
-            "date": "12\u670823\u65e5(\u9031\u4e94) - 12\u670826\u65e5(\u9031\u4e00)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101007357-2022-musical-instruments-fair/",
-            "UUID": "2ae96c7e00a85363866b53c86031cce6",
             "figure": "-"
         }
     ],
