@@ -5,7 +5,7 @@
         "external_link": "https://www.cksmh.gov.tw/activitysoonlist_369.html"
     },
     "counts": 6,
-    "last_update": "2022-11-27T16:15:03.001472+00:00",
+    "last_update": "2022-11-28T01:00:02.301894+00:00",
     "data": [
         {
             "systematics": "cksmh",
@@ -62,7 +62,5 @@
             "figure": "https://i.imgur.com/GY8CrTj.webp"
         }
     ],
-    "visit": {
-        "opening": "\u7d00\u5ff5\u5802\u958b\u653e\u6642\u9593\u70ba\u6bcf\u65e59:00AM-6:00PM(\u4f11\u9928\u65e5\u53e6\u884c\u516c\u544a\uff0c\u4f8b\u5982\uff1a\u8fb2\u66c6\u9664\u5915\u3001\u6625\u7bc0\u521d\u4e00\u3001228\u548c\u5e73\u7d00\u5ff5\u65e5\u3001\u5e74\u5ea6\u6a5f\u96fb\u4fdd\u990a\u65e5\u3001\u5929\u7136\u707d\u5bb3\u81fa\u5317\u5e02\u505c\u6b62\u4e0a\u73ed\u7b49)\u7d00\u5ff5\u516c\u5712\u958b\u653e\u6642\u9593\u70ba\u6bcf\u65e55:00AM-12:00AM"
-    }
+    "visit": {}
 }
