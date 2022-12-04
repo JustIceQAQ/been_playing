@@ -5,7 +5,7 @@
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
     "counts": 23,
-    "last_update": "2022-12-04T08:13:43.348981+00:00",
+    "last_update": "2022-12-04T16:14:25.746067+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -27,21 +27,21 @@
         },
         {
             "systematics": "tickets_udnfunlife",
-            "title": "\u7c73\u5947\u85dd\u8853\u5c55\u5168\u7403\u5de1\u5c55\u2014\u53f0\u5317\u7ad9",
-            "date": "2022/12/31 ~ 2023/04/05",
-            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u4e2d\u56dbB\u9928",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P006W76B&kdid=featured",
-            "UUID": "0738e810329a5216862f25748e081c9e",
-            "figure": "https://i.imgur.com/1rk8K1k.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
             "title": "\u6b4c\u4ed4\u6232\u300a\u5609\u6176\u541b\u904a\u81fa\u7063\u300b\u901a\u9ad4\u8212\u66a2\u821e\u81fa\u5287\u7248",
             "date": "2023/02/25 ~ 2023/02/26",
             "address": "\u570b\u7acb\u570b\u7236\u7d00\u5ff5\u9928 \u5927\u6703\u5802",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P00A75LH&kdid=featured",
             "UUID": "eea6ccf3ef425b6dada702f3b80cf87c",
             "figure": "https://i.imgur.com/U38PGuZ.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u7c73\u5947\u85dd\u8853\u5c55\u5168\u7403\u5de1\u5c55\u2014\u53f0\u5317\u7ad9",
+            "date": "2022/12/31 ~ 2023/04/05",
+            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u4e2d\u56dbB\u9928",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P006W76B&kdid=featured",
+            "UUID": "0738e810329a5216862f25748e081c9e",
+            "figure": "https://i.imgur.com/1rk8K1k.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
