@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 51,
-    "last_update": "2022-12-07T01:02:46.396606+00:00",
+    "counts": 24,
+    "last_update": "2022-12-07T08:16:11.121560+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "2022\u58eb\u6797\u5b98\u90b8\u83ca\u5c55",
+            "date": "11\u670825\u65e5(\u9031\u4e94) - 12\u670811\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101012241-2022-shilin-chrysanthemum/",
+            "UUID": "5fe82f7f8be25825beda2937564e1d1f",
+            "figure": "https://i.imgur.com/pk4yApa.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u7ae5\u8a71\u5e7b\u5922\u7de8\u5e74\u9ad4 - \u674e\u6dd1\u745c\u5275\u4f5c\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/79388-112-miffy-creative-show-in-taiwan/",
             "UUID": "265a58a02ae15b5a94d8ddf4f2197301",
-            "figure": "https://i.imgur.com/HVcI3wd.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -213,258 +222,6 @@
             "source_url": "https://www.klook.com/zh-TW/event-detail/101011990-2022-calligraphy-exhibition/",
             "UUID": "42f21b68ca115fc08095ee046a475d02",
             "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "2022\u81fa\u5317\u7f8e\u8853\u734e",
-            "date": "2022\u5e7412\u670810\u65e5(\u9031\u516d) - 2023\u5e742\u670819\u65e5(\u9031\u65e5)",
-            "address": "\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101011985-2022-taipei-art-awards/",
-            "UUID": "698d9ae049665faead77d40407bf86b5",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u525b\u67d4\u4ff1\u73fe - \u674e\u518d\u9210\u92fc\u96d5 x \u5f90\u6c38\u65ed\u9676\u69ca\u806f\u5408\u5c55\u89bd",
-            "date": "10\u670829\u65e5(\u9031\u516d) - 12\u670818\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101010889-2022-lee-zai-qian-hsu-yung-hsu/",
-            "UUID": "9f10da66359a585bb4b77d295b07f4be",
-            "figure": "https://i.imgur.com/OodxUnv.webp"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u6f2b\u6b65\u6797\u9593: \u7d22\u83f2\u666e\uff0e\u76ae\u5947\u500b\u5c55",
-            "date": "2022\u5e7411\u67085\u65e5(\u9031\u516d) - 2023\u5e741\u67087\u65e5(\u9031\u516d)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101010879-2022-walkingthewoods/",
-            "UUID": "9d9f1632e0f15d75baafbb89afd097ee",
-            "figure": "https://i.imgur.com/Czfoilf.webp"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u690d\u89ba Intuition - \u738b\u570b\u4ec1",
-            "date": "10\u67087\u65e5(\u9031\u4e94) - 12\u670825\u65e5(\u9031\u65e5)",
-            "address": "\u5c55\u89bd",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101010877-2022-intuition-exhibition/",
-            "UUID": "1e31aca88a4c51a093e664eaa834d27f",
-            "figure": "https://i.imgur.com/dm6cXtv.webp"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u9059\u9060\u7684\u5c71\u6797 - \u5289\u4fe1\u7fa9\u500b\u5c55",
-            "date": "11\u670812\u65e5(\u9031\u516d) - 12\u670831\u65e5(\u9031\u516d)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101010875-2022-distantforest/",
-            "UUID": "124b3f23aa765f7e95f2402ddd0d870d",
-            "figure": "https://i.imgur.com/NcMUiKy.webp"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u4e00\u978b\u5165\u9b42\uff01\u502b\u6566\u8a2d\u8a08\u535a\u7269\u9928 \u6f6e\u978b\u7279\u5c55",
-            "date": "2022\u5e7412\u670822\u65e5(\u9031\u56db) - 2023\u5e744\u67089\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/activity/78560-london-design-museum-fashion-shoes-special-exhibition/",
-            "UUID": "d0b89248dd895141ab65028384d2a5a0",
-            "figure": "https://i.imgur.com/mFnLqDj.webp"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u300c\u30b2\u30b2\u30b2\u306e\u9b3c\u592a\u90ce \u5996\u602a100\u7269\u8a9e\u300d\u7279\u5c55",
-            "date": "2022\u5e7412\u670831\u65e5(\u9031\u516d) - 2023\u5e744\u67085\u65e5(\u9031\u4e09)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/activity/78718-kitaro-100-ghost-stories-special-exhibition/",
-            "UUID": "88f65bac1b73529eb75c52ee400a4fc6",
-            "figure": "https://i.imgur.com/ZsoZuia.webp"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u9cf3\u9cf460\u6350\u8d08\u5c55",
-            "date": "2022\u5e7411\u67081\u65e5(\u9031\u4e8c) - 2023\u5e741\u67086\u65e5(\u9031\u4e94)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101010778-2022-hwakangmuseum/",
-            "UUID": "57b8ba5585b95ab9bedc7d4b99838af7",
-            "figure": "https://i.imgur.com/Mk6zrEB.webp"
-        },
-        {
-            "systematics": "klook",
-            "title": "NAKED OCEAN IN TAIPEI \u5149\u4e4b\u5f71\u6d77\u6d0b\u5c55",
-            "date": "2022\u5e7412\u670823\u65e5(\u9031\u4e94) - 2023\u5e743\u67085\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101010651-2022-nakedoceanintaipei/",
-            "UUID": "d2b3478179ac51fc961fc49ea96c9cb8",
-            "figure": "https://i.imgur.com/jA2lkAl.webp"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u4f5c\u70ba\u9177\u5152\u2014\u5fb7\u570b\u9177\u5152\u767c\u5c55\u53f2",
-            "date": "10\u670822\u65e5(\u9031\u516d) - 12\u670825\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101010638-2022-queerasgermanfolk/",
-            "UUID": "46faec32f4b850aeb5771cd94c1df1e7",
-            "figure": "https://i.imgur.com/dDm9ThD.webp"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u8283 - \u65e5\u672c\u7576\u4ee3\u651d\u5f71\u5c55",
-            "date": "10\u670815\u65e5(\u9031\u516d) - 12\u670815\u65e5(\u9031\u56db)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101010486-2022-howlushtheworldis/",
-            "UUID": "e7d4dcadc588532193f49fc678221b3b",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u6295\u6620\u5373\u666fScreen - \u5317\u6295\u751f\u6d3b\u8857\u666f\u5c55\uff1a\u8857\u666f\u8207\u8857\u8072",
-            "date": "2022\u5e7410\u670815\u65e5(\u9031\u516d) - 2023\u5e7410\u67081\u65e5(\u9031\u65e5)",
-            "address": "\u5317\u6295\u6885\u5ead",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101010410-2022-screen-beitouplumgarden/",
-            "UUID": "e07b19d0e62c531eaca952149c874071",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u7e2b\u5408 Sew Up - \u5361\u91cc\uff0e\u5b89\u59ae\uff0e\u8d6b\u52d2\u4f2f\u683c\uff0e\u5df4\u8d6b\u91ccKari Anne Helleberg Bahri \u4e9e\u6d32\u9996\u500b\u5c55",
-            "date": "10\u67088\u65e5(\u9031\u516d) - 12\u670811\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101010403-2022-sewup-exhibition/",
-            "UUID": "5a02853d2c3755c6afcbafbe083231ab",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "Y\u54aa\uff1a\u751f\u65e5\u5feb\u6a02\u20142022\u4e2d\u5c71\u7f8e\u667a\u7e6a\u672c\u5c55",
-            "date": "11\u670826\u65e5(\u9031\u516d) - 12\u670818\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101010378-2022-meichih-illustration/",
-            "UUID": "881d66a1a38752f18519aae2ba79ead0",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u5e38\u7121\u969c - \u50b3\u4e16\u8207\u6b77\u4ee3\u9999\u7210\u7279\u5c55",
-            "date": "10\u670814\u65e5(\u9031\u4e94) - 12\u670825\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101010348-2022-mindcurlupwards/",
-            "UUID": "faaa8864699a5ebaa399d37bb208e7ad",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u8ddf\u4f60\u8aaa\u500b\u6545\u4e8b : \u96f2\u6735\u4e0d\u898b\u4e86",
-            "date": "2022\u5e7410\u67081\u65e5(\u9031\u516d) - 2023\u5e742\u67085\u65e5(\u9031\u65e5)",
-            "address": "\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101010321-2022-tellingastorywithyou/",
-            "UUID": "596bcd4fcb8c5ee08f58187800b1e313",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "ONE ART Taipei 2023 \u85dd\u8853\u53f0\u5317",
-            "date": "2023\u5e741\u670813\u65e5(\u9031\u4e94) - 1\u670815\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/activity/77617-one-art-taipei-2023/",
-            "UUID": "60d5c1cca6575e96b324d60ff2b92acb",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u5fe0\u6cf0\u7f8e\u8853\u9928\u3010\u611f\u77e5\u73fe\u5834\u2500\u5efa\u7bc9\u00d7\u85dd\u8853\u8de8\u754c\u5c55\u3011",
-            "date": "12\u67087\u65e5(\u9031\u4e09) - 12\u670821\u65e5(\u9031\u4e09)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/activity/77387-taipei-zhongtai-art-museum-perception-scene-architecture-art-crossover-exhibition/",
-            "UUID": "bab1c30c01bc54f5915e361b55d6ad4a",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u300a\u8d70\u9032\u5927\u5e2b\u7684\u8166\u5167\uff1a\u674e\u5967\u7d0d\u591a\u00b7\u9054\u6587\u897f-\u5149\u5f71\u9ad4\u9a57\u5c55\u300b",
-            "date": "2022\u5e7412\u67087\u65e5(\u9031\u4e09) - 2023\u5e741\u670829\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/activity/77288-da-vincis-light-and-shadow-art-exhibition-inside-the-masters-mind/",
-            "UUID": "2750ac1748a95b13ad275caf93317de9",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "Klook\u7368\u5bb683\u6298\u89aa\u5b50\u7968\uff5c\u53f0\u5317\u5c55\u89bd\uff5c\u9177\u96ea\u4f8f\u7f85\u7d00-\u9996\u90e8\u66f2\u300c\u86cb\u300d\u751f\uff5c\u542b\u5152\u7ae5\u65b0\u6a02\u5712\u5165\u5712\u9580\u7968",
-            "date": "2022\u5e7412\u67087\u65e5(\u9031\u4e09) - 2023\u5e743\u670812\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/activity/77004-cool-snow-jurassic-the-first-song-egg-is-born-tpipei/",
-            "UUID": "cf23e2446304518996987f05492a6c21",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u6069\u5178\u4e4b\u8a69 - \u838a\u9053\u660e\u500b\u5c55",
-            "date": "10\u67087\u65e5(\u9031\u4e94) - 12\u67087\u65e5(\u9031\u4e09)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101009803-2022-thegrace-daomingchuang/",
-            "UUID": "09bbad43d52c57d0bdd76497eac2615f",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "1932 - \u8cc8\u6069\u5361\u6d1b\u00b7\u6771\u8afe\u5c3c\u500b\u5c55",
-            "date": "2022\u5e7410\u670811\u65e5(\u9031\u4e8c) - 2023\u5e742\u67088\u65e5(\u9031\u4e09)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101009605-2022-1932-giancarlotognoni/",
-            "UUID": "7db389cbc5135104a02bd0cb3aed3704",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u8de8\u2027\u4ea4\u2027\u901a\uff1a\u5f9e\u300c\u5927\u962a\u5546\u8239\u682a\u5f0f\u6703\u793e\u81fa\u5317\u652f\u5e97\u300d\u5230\u300c\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3\u81fa\u5317\u9928\u300d - \u5e38\u8a2d\u5c55\u51fa",
-            "date": "2021\u5e743\u67085\u65e5(\u9031\u4e94) - 2022\u5e7412\u670831\u65e5(\u9031\u516d)",
-            "address": "\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101009551-2022-trans-communication/",
-            "UUID": "e4e842f083515a8895442ae7d5ada5df",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u5728\u593e\u7e2b\u4e2d\u884c\u8d70",
-            "date": "2022\u5e749\u67088\u65e5(\u9031\u56db) - 2023\u5e741\u67088\u65e5(\u9031\u65e5)",
-            "address": "\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101008695-2022-walking-the-crack/",
-            "UUID": "3337c771f569573a81d8164a5b478936",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "2022\u53f0\u5317\u6a02\u5668\u5927\u5c55 - \u53f0\u5317\u4e16\u8cbf\u4e00\u9928",
-            "date": "12\u670823\u65e5(\u9031\u4e94) - 12\u670826\u65e5(\u9031\u4e00)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101007357-2022-musical-instruments-fair/",
-            "UUID": "2ae96c7e00a85363866b53c86031cce6",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u7d19\u966a\u4f60 | \u6587\u6676\u7469\u5f8cMeToo\u7cfb\u5217\u500b\u5c55",
-            "date": "6\u670811\u65e5(\u9031\u516d) - 12\u670810\u65e5(\u9031\u516d)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101006785-2022-paperwithyou/",
-            "UUID": "5402eeec371b59fcbad976ca764b7dc1",
-            "figure": "https://i.imgur.com/XcGM3Sx.webp"
-        },
-        {
-            "systematics": "klook",
-            "title": "Gaki Hip \u81fa\u7063\u9996\u5ea7IG\u7f8e\u8853\u9928",
-            "date": "2023\u5e741\u670822\u65e5(\u9031\u65e5) - 5\u670812\u65e5(\u9031\u4e94)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/activity/67380-gaki-hip-taipei-igexhibition/",
-            "UUID": "614e4d8e573f51ee9600078aea5567bd",
-            "figure": "https://i.imgur.com/Inwa4WH.webp"
-        },
-        {
-            "systematics": "klook",
-            "title": "2022\u53f0\u5317\u63d2\u756b\u85dd\u8853\u7bc0",
-            "date": "12\u670816\u65e5(\u9031\u4e94) - 12\u670818\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/activity/65492-2021-4th-taipei-illustration-fair-tickets/",
-            "UUID": "5174df9152c356b4ae5ff9cf0aa28f5e",
-            "figure": "https://i.imgur.com/yWBQrN6.webp"
         }
     ],
     "visit": {}
