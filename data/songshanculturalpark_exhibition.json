@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2022-12-08T00:56:06.210585+00:00",
+    "last_update": "2022-12-08T08:15:01.424243+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -42,6 +42,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c0607239-4d13-41d5-8fd0-643248265ff7",
             "UUID": "97359d5b22bf54459dfff2d2183d51b1",
             "figure": "https://i.imgur.com/BHtcbTC.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "KINGJUN X UGLYMART",
+            "date": "2022-11-30 - 2023-03-27",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/2a26cd12-3629-4b97-8dfb-a747ca9d17e2",
+            "UUID": "b705fa4915b05041bd9cd1c85f0a2d56",
+            "figure": "https://i.imgur.com/HJmwysF.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/adfc53a0-22ee-45ca-908b-5a180e394c84",
             "UUID": "3c4d88c9115b5e68a3e61be3b9a5d2aa",
             "figure": "https://i.imgur.com/zADUiKy.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "Garena \u50b3\u8aaa\u5c0d\u6c7a 2022 S10 \u57ce\u5e02\u8cfd - \u71b1\u70c8\u5831\u540d\u4e2d",
-            "date": "2022-12-17 - 2022-12-17",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/8e81a535-a6bd-4bb0-a120-38871f36d8b3",
-            "UUID": "2a2c68c0ad725737b3684156b3ac04fc",
-            "figure": "https://i.imgur.com/9qoB73F.webp"
         }
     ],
     "visit": {}
