@@ -5,8 +5,17 @@
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
     "counts": 48,
-    "last_update": "2022-12-09T00:58:40.878601+00:00",
+    "last_update": "2022-12-09T08:15:39.333892+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u51dd-\u524e\u90a3\u8207\u6c38\u6046 - \u4e03\u6236\u512a\u500b\u5c55",
+            "date": "2022\u5e7412\u670816\u65e5(\u9031\u4e94) - 2023\u5e741\u670814\u65e5(\u9031\u516d)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101012319-2022-stillness-moment-eternity/",
+            "UUID": "e4b3bf35476854b6b422b6296e1c538d",
+            "figure": "https://i.imgur.com/GdHYEk7.webp"
+        },
         {
             "systematics": "klook",
             "title": "Nothing Else \u9664\u4e86\u611b\u5c31\u6c92\u6709\u5225\u7684\u4e86 by Mr.Triangle \u694a\u4f73\u52f3",
@@ -86,7 +95,7 @@
             "address": "\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101012151-2022-accumulation-embodiment/",
             "UUID": "8bd3c0a024285e16af05c97725fc01b7",
-            "figure": "https://i.imgur.com/y8ly1Rs.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101011829-2022-lotus-joyin-chu/",
             "UUID": "f87b5f9e08b25191b406ab560663ef44",
-            "figure": "-"
+            "figure": "https://i.imgur.com/Wp5rjGu.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101011722-2022-poineering-era-taiwan-art/",
             "UUID": "29e5e8fd2a7756c688f296e1a812e1ce",
-            "figure": "https://i.imgur.com/p5hq5Hs.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -428,15 +437,6 @@
             "address": "BABY SHARK \u653e\u96fb\u8db4",
             "source_url": "https://www.klook.com/zh-TW/activity/71514-2022-baby-shark-exhibition-taipei/",
             "UUID": "77ed77c8b80a5afc93a193338cfe9e1b",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u611b\u60c5\u6709(\u7121)\u9032\u5c55",
-            "date": "2022\u5e7412\u670824\u65e5(\u9031\u516d) - 2023\u5e743\u670826\u65e5(\u9031\u65e5)",
-            "address": "\u677e\u5c71\u6587\u5275\u5712\u5340",
-            "source_url": "https://www.klook.com/zh-TW/activity/78756-taipei-love-yes-no-progress-exhibition-tickets/",
-            "UUID": "b90fc5ac5e93548aa65dc3044053cd0e",
             "figure": "-"
         }
     ],
