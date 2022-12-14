@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 24,
-    "last_update": "2022-12-14T08:15:50.517530+00:00",
+    "counts": 25,
+    "last_update": "2022-12-14T16:16:31.035819+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -14,7 +14,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101012445-2022-always-for-you/",
             "UUID": "4c65866009d05e7593b26d57d6642d91",
-            "figure": "https://i.imgur.com/y0SDM66.webp"
+            "figure": "https://i.imgur.com/J2SOAPn.webp"
         },
         {
             "systematics": "klook",
@@ -222,6 +222,15 @@
             "source_url": "https://www.klook.com/zh-TW/activity/79852-naruto-animation-20th-anniversary-special-exhibition-taipei/",
             "UUID": "46bf2892ea385d148318eb797681c8bd",
             "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "2022\u53f0\u5317\u63d2\u756b\u85dd\u8853\u7bc0",
+            "date": "12\u670816\u65e5(\u9031\u4e94) - 12\u670818\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/activity/65492-2021-4th-taipei-illustration-fair-tickets/",
+            "UUID": "5174df9152c356b4ae5ff9cf0aa28f5e",
+            "figure": "https://i.imgur.com/yWBQrN6.webp"
         }
     ],
     "visit": {}
