@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 49,
-    "last_update": "2022-12-18T08:14:09.700686+00:00",
+    "counts": 48,
+    "last_update": "2022-12-18T16:14:23.024175+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -225,15 +225,6 @@
         },
         {
             "systematics": "klook",
-            "title": "2222-\u672a\u4f86\u9078\u64c7\u5730",
-            "date": "2023\u5e741\u67086\u65e5(\u9031\u4e94) - 4\u67085\u65e5(\u9031\u4e09)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/activity/79309-2022-future-choice-place-taipei-exhibition/",
-            "UUID": "75ae5dea12285e57ba4814ddc9685e58",
-            "figure": "https://i.imgur.com/9YONevn.webp"
-        },
-        {
-            "systematics": "klook",
             "title": "JOJO\u7684\u5947\u5999\u5192\u96aa-\u300a\u9ec3\u91d1\u4e4b\u5fc3\u300b\u52d5\u756b\u5341\u9031\u5e74\u7279\u5c55",
             "date": "2022\u5e7412\u670823\u65e5(\u9031\u4e94) - 2023\u5e743\u67085\u65e5(\u9031\u65e5)",
             "address": "-",
@@ -311,7 +302,7 @@
             "address": "\u83ef\u5c71\u6587\u5275",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101011398-2022-telling-stories/",
             "UUID": "dbd7d54bbb1951269fe429db26e2a24b",
-            "figure": "-"
+            "figure": "https://i.imgur.com/IHSuRHr.webp"
         },
         {
             "systematics": "klook",
@@ -423,15 +414,6 @@
         },
         {
             "systematics": "klook",
-            "title": "THE UNDERGROUND SPIRITUAL BLUE - \u5c71\u53e3\u6b77\u500b\u5c55",
-            "date": "10\u670829\u65e5(\u9031\u516d) - 12\u670818\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101010952-2022-undergroundspiritualblue/",
-            "UUID": "c053db2a948b5534ac8db5d2b79da5f7",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
             "title": "NEXT - \u53f0\u65b0\u85dd\u8853\u734e20\u9031\u5e74\u5927\u5c55",
             "date": "2022\u5e7410\u670829\u65e5(\u9031\u516d) - 2023\u5e741\u670815\u65e5(\u9031\u65e5)",
             "address": "\u5317\u5e2b\u7f8e\u8853\u9928",
@@ -441,12 +423,21 @@
         },
         {
             "systematics": "klook",
-            "title": "2022\u53f0\u5317\u63d2\u756b\u85dd\u8853\u7bc0",
-            "date": "12\u670818\u65e5(\u9031\u65e5)",
+            "title": "\u7269\u6027 - \u674e\u653f\u52f3\u5275\u4f5c\u500b\u5c55",
+            "date": "2022\u5e7411\u670818\u65e5(\u9031\u4e94) - 2023\u5e741\u67087\u65e5(\u9031\u516d)",
             "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/activity/65492-2021-4th-taipei-illustration-fair-tickets/",
-            "UUID": "5174df9152c356b4ae5ff9cf0aa28f5e",
-            "figure": "https://i.imgur.com/yWBQrN6.webp"
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101010911-2022-properties-lichenghsun/",
+            "UUID": "841bd4de828f5871bb683d0866f313b2",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u6f2b\u6b65\u6797\u9593: \u7d22\u83f2\u666e\uff0e\u76ae\u5947\u500b\u5c55",
+            "date": "2022\u5e7411\u67085\u65e5(\u9031\u516d) - 2023\u5e741\u67087\u65e5(\u9031\u516d)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101010879-2022-walkingthewoods/",
+            "UUID": "9d9f1632e0f15d75baafbb89afd097ee",
+            "figure": "-"
         }
     ],
     "visit": {}
