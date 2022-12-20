@@ -5,7 +5,7 @@
         "external_link": "https://tickets.books.com.tw/leisure/"
     },
     "counts": 31,
-    "last_update": "2022-12-20T00:56:58.859866+00:00",
+    "last_update": "2022-12-20T08:14:08.454727+00:00",
     "data": [
         {
             "systematics": "tickets_books",
@@ -36,15 +36,6 @@
         },
         {
             "systematics": "tickets_books",
-            "title": "\u6bad",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010901124597",
-            "UUID": "e98fa0db4b745f5ab116651252f64f55",
-            "figure": "https://i.imgur.com/ZDQJouY.webp"
-        },
-        {
-            "systematics": "tickets_books",
             "title": "NAKED OCEAN IN TAIPEI \u5149\u4e4b\u5f71\u6d77\u6d0b\u5c55",
             "date": "-",
             "address": "-",
@@ -60,15 +51,6 @@
             "source_url": "https://tickets.books.com.tw/progshow/08010201612709",
             "UUID": "c09d6303c5855823b0ad46d69a1d9b51",
             "figure": "https://i.imgur.com/buD0sTm.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u5b89\u5f92\u751f\u7ae5\u8a71\uff0d\u5c0f\u7f8e\u4eba\u9b5a\u7279\u5c55",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201081200",
-            "UUID": "deb7a963d336505daa32caa68a18feaf",
-            "figure": "https://i.imgur.com/FHBCxCr.webp"
         },
         {
             "systematics": "tickets_books",
@@ -159,6 +141,24 @@
             "source_url": "https://tickets.books.com.tw/progshow/08010901741268",
             "UUID": "fc97a5ffc8235545b71b219a367b11cb",
             "figure": "https://i.imgur.com/8NDL6V5.webp"
+        },
+        {
+            "systematics": "tickets_books",
+            "title": "\u5b89\u5f92\u751f\u7ae5\u8a71\uff0d\u5c0f\u7f8e\u4eba\u9b5a\u7279\u5c55",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010201081200",
+            "UUID": "deb7a963d336505daa32caa68a18feaf",
+            "figure": "https://i.imgur.com/FHBCxCr.webp"
+        },
+        {
+            "systematics": "tickets_books",
+            "title": "\u6bad",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010901124597",
+            "UUID": "e98fa0db4b745f5ab116651252f64f55",
+            "figure": "https://i.imgur.com/ZDQJouY.webp"
         },
         {
             "systematics": "tickets_books",
