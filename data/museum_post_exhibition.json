@@ -4,9 +4,18 @@
         "code_name": "museum_post",
         "external_link": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage=1"
     },
-    "counts": 7,
-    "last_update": "2022-12-22T08:14:33.751322+00:00",
+    "counts": 8,
+    "last_update": "2022-12-22T16:15:29.081493+00:00",
     "data": [
+        {
+            "systematics": "museum_post",
+            "title": "Nice \u5154 Meet U - \u751f\u8096\u90f5\u7968|\u5238\u5e63|\u85dd\u6587\u806f\u5c55",
+            "date": "2022/12/23 ~ 2023/03/19",
+            "address": "\u90f5\u653f\u535a\u7269\u99286\u6a13\u7279\u5c55\u5ba4",
+            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&control_type=page&MA_Id=8C55AF2B-02BF-4681-A25B-9A1B356E24FA",
+            "UUID": "d739f647999759cda8afed047b9ba73b",
+            "figure": "https://museum.post.gov.tw/post/FileCenter/Postal_Museum/Museum_Activities/8C55AF2B-02BF-4681-A25B-9A1B356E24FA.jpg"
+        },
         {
             "systematics": "museum_post",
             "title": "\u771f\u5584\u7f8e-\u5973\u6027\u591a\u5143\u5f62\u8c61\u7279\u5c55",
