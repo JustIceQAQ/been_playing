@@ -4,8 +4,8 @@
         "code_name": "tickets_udnfunlife",
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
-    "counts": 21,
-    "last_update": "2022-12-24T08:13:17.739780+00:00",
+    "counts": 20,
+    "last_update": "2022-12-24T16:13:41.163840+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -100,7 +100,7 @@
         {
             "systematics": "tickets_udnfunlife",
             "title": "\u300a\u660e\u661f\u990a\u8001\u9662\u300b",
-            "date": "2022/12/24 ~ 2022/12/25",
+            "date": "2022/12/25 ~ 2022/12/25",
             "address": "\u570b\u7acb\u570b\u7236\u7d00\u5ff5\u9928 \u5927\u6703\u5802",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N24SPT35&kdid=featured",
             "UUID": "a4f153d27eb55e1eb559cbf8e95f815a",
@@ -171,30 +171,21 @@
         },
         {
             "systematics": "tickets_udnfunlife",
-            "title": "About Love \u807d\u30fb\u8aaa\u611b\u60c5\u5c55 ft",
-            "date": "2022/12/25 ~ 2023/04/09",
-            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712D",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N28FQKQP&kdid=featured",
-            "UUID": "94ba8bece2d35451a59859adf76dc384",
-            "figure": "https://i.imgur.com/vRWThWV.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
-            "title": "\u5169\u500b\u4eba\u8b5c\u672a\u4f86\u5957\u7968",
-            "date": "2022/12/25 ~ 2023/04/09",
-            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712D",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P00215X6&kdid=featured",
-            "UUID": "7826be48a43b517f8ae00d41e600a51b",
-            "figure": "https://i.imgur.com/3fxmKls.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
             "title": "\u4e00\u978b\u5165\u9b42\uff01\u502b\u6566\u8a2d\u8a08\u535a\u7269\u9928 \u6f6e\u978b\u7279\u5c55 \u5957\u7968",
             "date": "2022/12/22 ~ 2023/03/05",
             "address": "\u570b\u7acb\u4e2d\u6b63\u7d00\u5ff5\u5802 \u4e8c\u3001\u4e09\u5c55\u5ef3",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N2800EL2&kdid=featured",
             "UUID": "c745ad07d9c852f997318d38c0d0fd71",
             "figure": "https://i.imgur.com/hQjDDd8.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "About Love \u807d\u30fb\u8aaa\u611b\u60c5\u5c55 ft",
+            "date": "2022/12/25 ~ 2023/04/09",
+            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712D",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N28FQKQP&kdid=featured",
+            "UUID": "94ba8bece2d35451a59859adf76dc384",
+            "figure": "https://i.imgur.com/vRWThWV.webp"
         }
     ],
     "visit": {}
