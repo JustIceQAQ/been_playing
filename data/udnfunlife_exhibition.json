@@ -4,8 +4,8 @@
         "code_name": "tickets_udnfunlife",
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
-    "counts": 19,
-    "last_update": "2022-12-29T08:14:02.117497+00:00",
+    "counts": 18,
+    "last_update": "2022-12-29T16:14:35.100082+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -135,24 +135,6 @@
         },
         {
             "systematics": "tickets_udnfunlife",
-            "title": "\u5492\u8853\u8ff4\u6230\u5c55",
-            "date": "2022/12/30 ~ 2023/04/05",
-            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712A\u3001\u67712B",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N27ZY1UV&kdid=featured",
-            "UUID": "35b2fbd8b0bc5ac1916d078c28e950ad",
-            "figure": "https://i.imgur.com/kjzL65A.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
-            "title": "\u5492\u8853\u8ff4\u6230\u5c55 \u5957\u7968\u7d44\u5408",
-            "date": "2022/12/30 ~ 2023/04/05",
-            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712A\u3001\u67712B",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N28069QL&kdid=featured",
-            "UUID": "1ea6e5bf782c53c190c7b2dd11df1a0d",
-            "figure": "https://i.imgur.com/w39BCfY.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
             "title": "\u9b3c\u6ec5\u4e4b\u5203\u5168\u96c6\u4e2d\u5c55\u5c4f\u6771\u7ad9",
             "date": "2022/10/22 ~ 2023/01/02",
             "address": "\u5c4f\u83f81936\u6587\u5316\u57fa\u5730 10\u865f\u5009\u5eab",
@@ -177,6 +159,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N28FQKQP&kdid=featured",
             "UUID": "94ba8bece2d35451a59859adf76dc384",
             "figure": "https://i.imgur.com/vRWThWV.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u5492\u8853\u8ff4\u6230\u5c55",
+            "date": "2022/12/30 ~ 2023/04/05",
+            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712A\u3001\u67712B",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N27ZY1UV&kdid=featured",
+            "UUID": "35b2fbd8b0bc5ac1916d078c28e950ad",
+            "figure": "https://i.imgur.com/kjzL65A.webp"
         }
     ],
     "visit": {}
