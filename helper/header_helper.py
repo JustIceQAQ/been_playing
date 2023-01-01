@@ -1,4 +1,3 @@
-import random
 from abc import ABCMeta, abstractmethod
 from typing import Dict, Optional
 
@@ -24,12 +23,3 @@ class HeaderInit(metaclass=ABCMeta):
     @abstractmethod
     def get_header(self) -> Optional[Dict[str, str]]:
         raise NotImplementedError
-
-
-class TWTCHeader(HeaderInit):
-    def get_header(self) -> Dict[str, str]:
-        return {
-            "User-Agent": random.choice(USER_AGENT_LIST),
-            "Host": "twtc.com.tw",
-            "Pragma": "no-cache",
-        }

@@ -24,7 +24,7 @@ from exhibition.tfam.script import TFAMRunner
 from exhibition.tickets_books.script import TicketsBooksRunner
 from exhibition.tickets_udnfunlife.script import TicketsUdnFunLifeRunner
 from exhibition.tmc.script import TMCRunner
-from exhibition.twtc_script import TWTCRunner
+from exhibition.twtc.script import TWTCRunner
 from helper.image_helper import ImgurImage
 from helper.notify_helper import LineNotify, LogNotify, NoneNotify
 from helper.thread_helper import RuntimeThread
