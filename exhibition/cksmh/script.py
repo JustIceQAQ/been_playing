@@ -1,9 +1,9 @@
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
+from exhibition.cksmh.parse import CKSMHParse
 from helper.clean_helper import RequestsClean
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.parse_helper import CKSMHParse
 from helper.runner_helper import RunnerInit
 
 

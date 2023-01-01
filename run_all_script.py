@@ -5,7 +5,7 @@ from pathlib import Path
 import sentry_sdk
 from dotenv import load_dotenv
 
-from exhibition.cksmh_script import CKSMHRunner
+from exhibition.cksmh.script import CKSMHRunner
 from exhibition.huashan1914_script import HuaShan1914Runner
 from exhibition.jam_script import JamRunner
 from exhibition.kktix.script import KKTixRunner

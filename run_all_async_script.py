@@ -6,7 +6,7 @@ from pathlib import Path
 import sentry_sdk
 from dotenv import load_dotenv
 
-from exhibition.cksmh_async_script import CKSMHRunnerAsync
+from exhibition.cksmh.async_script import CKSMHRunnerAsync
 from exhibition.jam_async_script import JamRunnerAsync
 from helper.image_helper import ImgurImage
 from helper.notify_helper import LogNotify  # LineNotify , NoneNotify
