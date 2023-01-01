@@ -1,16 +1,16 @@
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
+from exhibition.mocataipei.parse import MocaTaipeiParse
 from helper.clean_helper import RequestsClean
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.parse_helper import MocaTaipeiParse
 from helper.runner_helper import RunnerInit
 
 
 class MocaTaipeiRunner(RunnerInit):
     """台北當代藝術館"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = [
         "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent",
         "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Exhibitions/Upcoming",
