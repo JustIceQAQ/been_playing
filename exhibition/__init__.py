@@ -119,6 +119,12 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "https://tour.ibon.com.tw/home/search?category=exhibition",
     )
 
+    KKDay = (
+        "KKDay",
+        "KKDay",
+        "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1",
+    )
+
     BUG = (
         "BUG",
         "BUG",

@@ -1,5 +1,6 @@
 import logging
 import os
+import random
 import time
 from abc import ABCMeta, abstractmethod
 from enum import Enum
@@ -10,6 +11,7 @@ import requests
 from dotenv import load_dotenv
 from retry import retry
 
+from helper.header_helper import USER_AGENT_LIST
 from helper.proxy_helper import NoneProxy
 
 requests.adapters.DEFAULT_RETRIES = 5
@@ -58,6 +60,7 @@ class RequestsCrawler(CrawlerInit):
             self.reload_session()
 
         response = self.rs.request(method, self.url, *args, **kwargs)
+        print(response.text)
 
         self.observed_step(response, use_this=True)
 
@@ -145,12 +148,30 @@ if __name__ == "__main__":
         load_dotenv(this_env)
     SCRAPER_API_KEY = os.getenv("SCRAPER_API_KEY", None)
 
+    header = {
+        "User-Agent": random.choice(USER_AGENT_LIST),
+        "host": "www.kkday.com",
+        "Referer": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?cat=TAG_3&sort=prec&page=1",
+    }
+
+    target_url = (
+        "https://www.kkday.com/zh-tw/product/ajax_productlist/A01-001?"
+        "city=&"
+        "row=50&"
+        "glang=&"
+        "cat=TAG_3&"
+        "availstartdate=&"
+        "availenddate=&"
+        "fprice=&"
+        "eprice=&"
+        "sort=prec&"
+        "page=1"
+    )
+
     tasks = [
         ScraperAsyncApiCrawler(api_key=SCRAPER_API_KEY).get_page(
-            f"https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/?page={n}",
-            render=True,
+            target_url, render=True, headers=header
         )
-        for n in range(1, 5)
     ]
     while True:
         runtime_tasks = [job.get_status() for job in tasks]
