@@ -1,17 +1,17 @@
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
+from exhibition.ncpi.header import NCPIHeader, NCPIVisitHeader
+from exhibition.ncpi.parse import NCPIParse
 from helper.clean_helper import RequestsClean
-from helper.header_helper import NCPIHeader, NCPIVisitHeader
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.parse_helper import NCPIParse
 from helper.runner_helper import RunnerInit
 
 
 class NCPIRunner(RunnerInit):
     """國家攝影文化中心"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = "https://ncpiexhibition.ntmofa.gov.tw/tw/Exhibition/ListCur"
     use_method = "GET"
     target_domain = "https://ncpiexhibition.ntmofa.gov.tw/"

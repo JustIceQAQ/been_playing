@@ -11,7 +11,7 @@ from helper.runner_helper import RunnerInit
 class MWRRunner(RunnerInit):
     """世界宗教博物館"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     xsmsid = "0H305741810776620070"
     target_url = f"https://www.mwr.org.tw/xcspecexhi?xsmsid={xsmsid}"
     use_method = "GET"

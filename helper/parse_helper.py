@@ -6,7 +6,6 @@ from typing import Any, AnyStr, Dict, List
 from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 
 import bs4
-import cssutils
 
 
 class ParseInit(metaclass=ABCMeta):
@@ -387,36 +386,6 @@ class TWTCParse(ParseInit):
             return nth_child_a[0].get("href", None)
         else:
             return "https://twtc.com.tw/" + nth_child_a[0].get("href", None)
-
-
-class NCPIParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag):
-        self.item = item
-
-    def get_title(self, *args, **kwargs) -> str:
-        return self.item.get("title")
-
-    def get_date(self, *args, **kwargs) -> str:
-        return self.item.select_one("div.info-box > div.date").get_text()
-
-    def get_address(self, *args, **kwargs) -> str:
-        return self.item.select_one("div.info-box > div.location").get_text()
-
-    def get_figure(self, *args, **kwargs) -> str:
-        dev_style = self.item.find("div", {"class": "img"}).get("style")
-        style = cssutils.parseStyle(dev_style)
-
-        return (
-            url.replace("url(", "")[:-1].replace('"', "")
-            if (url := style["background-image"])
-            else "-"
-        )
-
-    def get_source_url(self, *args, **kwargs) -> str:
-        target_domain = kwargs.get("target_domain", None)
-        if target_domain is None:
-            raise ValueError("請提供 TARGET_DOMAIN")
-        return "{}{}".format(target_domain, self.item.get("href"))
 
 
 class OpenTixParse(ParseInit):

@@ -13,7 +13,7 @@ from exhibition.klook.klook import KLookRunner
 from exhibition.mocataipei.script import MocaTaipeiRunner
 from exhibition.museum_post.script import MuseumPostRunner
 from exhibition.mwr.script import MWRRunner
-from exhibition.ncpi_script import NCPIRunner
+from exhibition.ncpi.script import NCPIRunner
 from exhibition.nmh_script import NMHRunner
 from exhibition.npm_script import NPMRunner
 from exhibition.ntm_script import NTMRunner
