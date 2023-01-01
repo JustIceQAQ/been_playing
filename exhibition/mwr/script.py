@@ -1,10 +1,10 @@
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
+from exhibition.mwr.header import MWRHeader
+from exhibition.mwr.parse import MWRParse
 from helper.clean_helper import RequestsClean
-from helper.header_helper import MWRHeader
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.parse_helper import MWRParse
 from helper.runner_helper import RunnerInit
 
 
