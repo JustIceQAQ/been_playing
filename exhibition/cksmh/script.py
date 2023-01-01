@@ -10,7 +10,7 @@ from helper.runner_helper import RunnerInit
 class CKSMHRunner(RunnerInit):
     """中正紀念堂"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = "https://www.cksmh.gov.tw/activitysoonlist_369_{}.html"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "cksmh_exhibition.json")

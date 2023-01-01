@@ -15,7 +15,7 @@ from helper.runner_helper import RunnerInit
 class TFAMRunner(RunnerInit):
     """臺北市立美術館"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = "https://www.tfam.museum/ashx/Exhibition.ashx?ddlLang=zh-tw"
     target_storage = str(root_dir / "data" / "tfam_exhibition.json")
     target_systematics = ExhibitionEnum.TFAM

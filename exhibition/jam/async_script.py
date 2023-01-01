@@ -15,7 +15,7 @@ from helper.translation_helper import BeautifulSoupTranslation
 class JamRunnerAsync(RunerAsyncInit):
     """忠泰美術館"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = "http://jam.jutfoundation.org.tw/online-exhibition"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "jam_exhibition.json")

@@ -2,8 +2,6 @@ import os
 import time
 from pathlib import Path
 
-from dotenv import load_dotenv
-
 from exhibition import ExhibitionEnum
 from exhibition.klook.parse import KLookParse
 from helper.clean_helper import RequestsClean
@@ -99,11 +97,3 @@ class KLookRunner(RunnerInit):
                 systematics=self.target_systematics, **clean_data
             )
             yield exhibition
-
-
-if __name__ == "__main__":
-    ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent
-    this_env = ROOT_DIR / ".env"
-    if this_env.exists():
-        load_dotenv(this_env)
-    KLookRunner().run(use_pickled=False)
