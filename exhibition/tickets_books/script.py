@@ -2,10 +2,10 @@ from pathlib import Path
 from typing import Final
 
 from exhibition import ExhibitionEnum
+from exhibition.tickets_books.header import TicketsBooksHeader
+from exhibition.tickets_books.parse import TicketsBooksParse
 from helper.clean_helper import RequestsClean
-from helper.header_helper import TicketsBooksHeader
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.parse_helper import TicketsBooksParse
 from helper.runner_helper import RunnerInit
 
 

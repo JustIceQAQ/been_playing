@@ -51,16 +51,6 @@ class TicketsUdnFunLifeCookieHeader(HeaderInit):
         }
 
 
-class TicketsBooksHeader(HeaderInit):
-    def get_header(self) -> Dict[str, str]:
-        return {
-            "User-Agent": random.choice(USER_AGENT_LIST),
-            "Host": "tickets.books.com.tw",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-        }
-
-
 class TWTCHeader(HeaderInit):
     def get_header(self) -> Dict[str, str]:
         return {
