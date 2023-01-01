@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 from exhibition.cksmh.script import CKSMHRunner
 from exhibition.huashan1914.script import HuaShan1914Runner
-from exhibition.jam_script import JamRunner
+from exhibition.jam.script import JamRunner
 from exhibition.kktix.script import KKTixRunner
 from exhibition.klook_script import KLookRunner
 from exhibition.mocataipei_script import MocaTaipeiRunner

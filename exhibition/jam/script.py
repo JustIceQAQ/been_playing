@@ -1,21 +1,20 @@
-import asyncio
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
+from exhibition.jam.header import JamHeader
+from exhibition.jam.parse import JamParse
 from helper.clean_helper import RequestsClean
 from helper.crawler_helper import RequestsCrawler
-from helper.header_helper import JamHeader
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.parse_helper import JamParse
 from helper.proxy_helper import NoneProxy
-from helper.runner_helper import RunerAsyncInit
+from helper.runner_helper import RunnerInit
 from helper.translation_helper import BeautifulSoupTranslation
 
 
-class JamRunnerAsync(RunerAsyncInit):
+class JamRunner(RunnerInit):
     """忠泰美術館"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = "http://jam.jutfoundation.org.tw/online-exhibition"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "jam_exhibition.json")
@@ -28,7 +27,7 @@ class JamRunnerAsync(RunerAsyncInit):
     use_proxy = NoneProxy
     target_visit_url = "http://jam.jutfoundation.org.tw/visit/info"
 
-    async def get_response(self):
+    def get_response(self):
         requests_worker = self.use_crawler(self.target_url, module_proxy=self.use_proxy)
         headers = (
             self.use_header().get_header() if self.use_header is not None else None
@@ -39,7 +38,7 @@ class JamRunnerAsync(RunerAsyncInit):
         transitioned = self.use_translation().format_to_object(response)
         return transitioned
 
-    async def get_items(self, response):
+    def get_items(self, response):
         return response.select("div.view-content > div.views-row")
 
     def get_parsed(self, items):
@@ -53,7 +52,7 @@ class JamRunnerAsync(RunerAsyncInit):
             )
             yield exhibition
 
-    async def get_visit(self, *args, **kwargs):
+    def get_visit(self, *args, **kwargs):
         requests_worker = self.instantiation(self.target_visit_url)
         headers = (
             self.use_header().get_header() if self.use_header is not None else None
@@ -78,4 +77,4 @@ class JamRunnerAsync(RunerAsyncInit):
 
 
 if __name__ == "__main__":
-    asyncio.run(JamRunnerAsync().run(use_pickled=False))
+    JamRunner().run(use_pickled=False)
