@@ -11,7 +11,7 @@ from exhibition.jam.script import JamRunner
 from exhibition.kktix.script import KKTixRunner
 from exhibition.klook.klook import KLookRunner
 from exhibition.mocataipei.script import MocaTaipeiRunner
-from exhibition.museum_post_script import MuseumPostRunner
+from exhibition.museum_post.script import MuseumPostRunner
 from exhibition.mwr_script import MWRRunner
 from exhibition.ncpi_script import NCPIRunner
 from exhibition.nmh_script import NMHRunner

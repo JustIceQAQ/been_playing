@@ -2,17 +2,17 @@ import time
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
+from exhibition.museum_post.header import MuseumPostHeader
+from exhibition.museum_post.parse import MuseumPostParse
 from helper.clean_helper import RequestsClean
-from helper.header_helper import MuseumPostHeader
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.parse_helper import MuseumPostParse
 from helper.runner_helper import RunnerInit
 
 
 class MuseumPostRunner(RunnerInit):
     """郵政博物館"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage={}"
     permanent_exhibition = "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=136&topage={}"
     use_method = "GET"
