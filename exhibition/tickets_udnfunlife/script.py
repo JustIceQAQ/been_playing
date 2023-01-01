@@ -2,10 +2,13 @@ import json
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
+from exhibition.tickets_udnfunlife.header import (
+    TicketsUdnFunLifeCookieHeader,
+    TicketsUdnFunLifeHeader,
+)
+from exhibition.tickets_udnfunlife.parse import TicketsUdnFunLifeParse
 from helper.clean_helper import RequestsClean
-from helper.header_helper import TicketsUdnFunLifeCookieHeader, TicketsUdnFunLifeHeader
 from helper.instantiation_helper import RequestsCrawler, RequestsJsonInstantiation
-from helper.parse_helper import TicketsUdnFunLifeParse
 from helper.runner_helper import RunnerInit
 from helper.translation_helper import BeautifulSoupTranslation
 
@@ -13,7 +16,7 @@ from helper.translation_helper import BeautifulSoupTranslation
 class TicketsUdnFunLifeRunner(RunnerInit):
     """udn售票網"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = (
         "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     )
