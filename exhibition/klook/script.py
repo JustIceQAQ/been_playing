@@ -5,9 +5,9 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 from exhibition import ExhibitionEnum
+from exhibition.klook.parse import KLookParse
 from helper.clean_helper import RequestsClean
 from helper.crawler_helper import ScraperAsyncApiCrawler
-from helper.parse_helper import KLookParse
 from helper.runner_helper import RunnerInit
 from helper.translation_helper import BeautifulSoupTranslation
 
@@ -15,7 +15,7 @@ from helper.translation_helper import BeautifulSoupTranslation
 class KLookRunner(RunnerInit):
     """KLOOK客路"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     target_domain = "https://www.klook.com/"
     target_storage = str(root_dir / "data" / "klook_exhibition.json")
