@@ -2,13 +2,13 @@ import json
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
+from exhibition.tfam.header import TFAMLifeHeader
+from exhibition.tfam.parse import TFAMParse
 from helper.clean_helper import RequestsClean
-from helper.header_helper import TFAMLifeHeader
 from helper.instantiation_helper import (
     RequestsBeautifulSoupInstantiation,
     RequestsJsonInstantiation,
 )
-from helper.parse_helper import TFAMParse
 from helper.runner_helper import RunnerInit
 
 
