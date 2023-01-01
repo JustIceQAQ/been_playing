@@ -113,6 +113,12 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "https://kktix.com/events?category_id=11",
     )
 
+    IBon = (
+        "ibon售票",
+        "ibon",
+        "https://tour.ibon.com.tw/home/search?category=exhibition",
+    )
+
     BUG = (
         "BUG",
         "BUG",
