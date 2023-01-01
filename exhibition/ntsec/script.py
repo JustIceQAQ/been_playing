@@ -1,16 +1,16 @@
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
+from exhibition.ntsec.parse import NTSECParse
 from helper.clean_helper import RequestsClean
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.parse_helper import NTSECParse
 from helper.runner_helper import RunnerInit
 
 
 class NTSECRunner(RunnerInit):
     """國立臺灣科學教育館"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = "https://www.ntsec.gov.tw/User/Exhibitions.aspx?a=44"
     use_method = "GET"
     target_domain = "https://www.ntsec.gov.tw"
