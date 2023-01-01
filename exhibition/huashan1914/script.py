@@ -1,16 +1,16 @@
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
+from exhibition.huashan1914.parse import HuaShan1914Parse
 from helper.clean_helper import RequestsClean
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.parse_helper import HuaShan1914Parse
 from helper.runner_helper import RunnerInit
 
 
 class HuaShan1914Runner(RunnerInit):
     """華山1914文化創意產業園區"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = "https://www.huashan1914.com/w/huashan1914/exhibition"
     target_domain = "https://www.huashan1914.com"
     target_storage = str(root_dir / "data" / "huashan1914_exhibition.json")
