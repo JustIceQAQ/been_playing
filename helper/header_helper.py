@@ -79,12 +79,3 @@ class TWTCHeader(HeaderInit):
             "Host": "twtc.com.tw",
             "Pragma": "no-cache",
         }
-
-
-class OpenTixHeader(HeaderInit):
-    def get_header(self) -> Optional[Dict[str, str]]:
-        return {
-            "User-Agent": random.choice(USER_AGENT_LIST),
-            "origin": "https://www.opentix.life",
-            "referer": "https://www.opentix.life/",
-        }

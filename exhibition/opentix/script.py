@@ -1,17 +1,17 @@
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
+from exhibition.opentix.header import OpenTixHeader
+from exhibition.opentix.parse import OpenTixParse
 from helper.clean_helper import RequestsClean
-from helper.header_helper import OpenTixHeader
 from helper.instantiation_helper import RequestsJsonInstantiation
-from helper.parse_helper import OpenTixParse
 from helper.runner_helper import RunnerInit
 
 
 class OpenTixRunner(RunnerInit):
     """OPENTIX兩廳院生活文化"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = "https://search.opentix.life/search"
     target_domain = "https://www.opentix.life/event/"
     use_method = "POST"
