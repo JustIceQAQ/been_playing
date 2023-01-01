@@ -106,6 +106,13 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "klook",
         "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/",
     )
+
+    KKTix = (
+        "KKTix",
+        "KKTix",
+        "https://kktix.com/events?category_id=11",
+    )
+
     BUG = (
         "BUG",
         "BUG",

@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from exhibition.cksmh_script import CKSMHRunner
 from exhibition.huashan1914_script import HuaShan1914Runner
 from exhibition.jam_script import JamRunner
+from exhibition.kktix.script import KKTixRunner
 from exhibition.klook_script import KLookRunner
 from exhibition.mocataipei_script import MocaTaipeiRunner
 from exhibition.museum_post_script import MuseumPostRunner
@@ -83,6 +84,7 @@ def main():
         TicketsBooksRunner,
         TicketsUdnFunLifeRunner,
         KLookRunner,
+        KKTixRunner,
     }
 
     log_notify.send_message(ROOT_DIR, log_notify.LogLevel.INFO)
