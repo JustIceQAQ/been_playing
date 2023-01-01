@@ -1,16 +1,16 @@
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
+from exhibition.tmc.parse import TMCParse
 from helper.clean_helper import RequestsClean
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.parse_helper import TMCParse
 from helper.runner_helper import RunnerInit
 
 
 class TMCRunner(RunnerInit):
     """台北流行音樂中心"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = "https://tmc.taipei/show/event/"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "tmc_exhibition.json")
