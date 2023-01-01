@@ -2,16 +2,16 @@ from itertools import chain, product
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
+from exhibition.ntm.parse import NTMParse
 from helper.clean_helper import RequestsClean
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.parse_helper import NTMParse
 from helper.runner_helper import RunnerInit
 
 
 class NTMRunner(RunnerInit):
     """國立臺灣博物館"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_domain = "https://www.ntm.gov.tw"
     urls_format = "{}/exhibitionlist_{}.html?Type={}"
     target_visit_url = "https://www.ntm.gov.tw/content_158.html"
