@@ -19,7 +19,7 @@ from exhibition.npm.script import NPMRunner
 from exhibition.ntm.script import NTMRunner
 from exhibition.ntsec.script import NTSECRunner
 from exhibition.opentix.script import OpenTixRunner
-from exhibition.songshanculturalpark_script import SongShanCulturalParkRunner
+from exhibition.songshanculturalpark.script import SongShanCulturalParkRunner
 from exhibition.tfam_script import TFAMRunner
 from exhibition.tickets_books_script import TicketsBooksRunner
 from exhibition.tickets_udnfunlife_script import TicketsUdnFunLifeRunner

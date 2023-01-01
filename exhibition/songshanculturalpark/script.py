@@ -1,16 +1,16 @@
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
+from exhibition.songshanculturalpark.parse import SongShanCulturalParkParse
 from helper.clean_helper import RequestsClean
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.parse_helper import SongShanCulturalParkParse
 from helper.runner_helper import RunnerInit
 
 
 class SongShanCulturalParkRunner(RunnerInit):
     """松山文創園區"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = "https://www.songshanculturalpark.org/exhibition"
     use_method = "GET"
     target_domain = "https://www.songshanculturalpark.org"
