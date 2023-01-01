@@ -15,7 +15,7 @@ from exhibition.museum_post.script import MuseumPostRunner
 from exhibition.mwr.script import MWRRunner
 from exhibition.ncpi.script import NCPIRunner
 from exhibition.nmh.script import NMHRunner
-from exhibition.npm_script import NPMRunner
+from exhibition.npm.script import NPMRunner
 from exhibition.ntm_script import NTMRunner
 from exhibition.ntsec_script import NTSECRunner
 from exhibition.opentix_script import OpenTixRunner

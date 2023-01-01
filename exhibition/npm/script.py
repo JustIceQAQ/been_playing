@@ -2,16 +2,16 @@ from pathlib import Path
 from typing import Dict
 
 from exhibition import ExhibitionEnum
+from exhibition.npm.parse import NpmColParse, NpmRowParse
 from helper.clean_helper import RequestsClean
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.parse_helper import NpmColParse, NpmRowParse
 from helper.runner_helper import RunnerInit
 
 
 class NPMRunner(RunnerInit):
     """國立故宮博物院"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1"
     use_method = "GET"
     target_domain = "https://www.npm.gov.tw/"
