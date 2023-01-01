@@ -9,7 +9,7 @@ from exhibition.cksmh.script import CKSMHRunner
 from exhibition.huashan1914.script import HuaShan1914Runner
 from exhibition.jam.script import JamRunner
 from exhibition.kktix.script import KKTixRunner
-from exhibition.klook.klook import KLookRunner
+from exhibition.klook.script import KLookRunner
 from exhibition.mocataipei.script import MocaTaipeiRunner
 from exhibition.museum_post.script import MuseumPostRunner
 from exhibition.mwr.script import MWRRunner
