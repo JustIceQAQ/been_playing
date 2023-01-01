@@ -1,17 +1,17 @@
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
+from exhibition.nmh.header import NMHHeader
+from exhibition.nmh.parse import NMHParse
 from helper.clean_helper import RequestsClean
-from helper.header_helper import NMHHeader
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.parse_helper import NMHParse
 from helper.runner_helper import RunnerInit
 
 
 class NMHRunner(RunnerInit):
     """國立歷史博物館"""
 
-    root_dir = Path(__file__).resolve(strict=True).parent.parent
+    root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = "https://www.nmh.gov.tw/activitysoonlist_66.html"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "nmh_exhibition.json")
