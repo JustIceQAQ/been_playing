@@ -1,3 +1,4 @@
+import dataclasses
 import logging
 import os
 import random
@@ -60,7 +61,6 @@ class RequestsCrawler(CrawlerInit):
             self.reload_session()
 
         response = self.rs.request(method, self.url, *args, **kwargs)
-        print(response.text)
 
         self.observed_step(response, use_this=True)
 
@@ -111,6 +111,11 @@ class ScraperAsyncApiCrawler(CrawlerInit):
         Running = "running"
         Finished = "finished"
 
+    @dataclasses.dataclass
+    class JobTask:
+        status: bool
+        response: Any
+
     def __set_api_key(self, api_key):
         if api_key is None:
             raise ValueError
@@ -129,7 +134,7 @@ class ScraperAsyncApiCrawler(CrawlerInit):
 
         return self
 
-    def get_status(self):
+    def get_status(self) -> JobTask:
         if not self.runtime_status:
             job_response = self.rs.get(self.job_status_url).json()
             self.job_status = job_response.get("status")
@@ -138,7 +143,18 @@ class ScraperAsyncApiCrawler(CrawlerInit):
                 self.runtime_status = True
                 self.runtime_response = job_response.get("response").get("body")
 
-        return self.runtime_status, self.runtime_response
+        return self.JobTask(status=self.runtime_status, response=self.runtime_response)
+
+    def get_response(self):
+        while True:
+            runtime_tasks = self.get_status()
+            if runtime_tasks.status:
+                break
+            else:
+                print(runtime_tasks.status)
+                time.sleep(20)
+
+        return runtime_tasks.response
 
 
 if __name__ == "__main__":
@@ -152,6 +168,9 @@ if __name__ == "__main__":
         "User-Agent": random.choice(USER_AGENT_LIST),
         "host": "www.kkday.com",
         "Referer": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?cat=TAG_3&sort=prec&page=1",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
     }
 
     target_url = (
@@ -168,17 +187,19 @@ if __name__ == "__main__":
         "page=1"
     )
 
-    tasks = [
-        ScraperAsyncApiCrawler(api_key=SCRAPER_API_KEY).get_page(
-            target_url, render=True, headers=header
-        )
-    ]
-    while True:
-        runtime_tasks = [job.get_status() for job in tasks]
-        if all(runtime_status := [n[0] for n in runtime_tasks]):
-            break
-        else:
-            print(runtime_status)
-            time.sleep(20)
+    print(requests.get(target_url, headers=header).text)
 
-    print(runtime_tasks)
+    # tasks = [
+    #     ScraperAsyncApiCrawler(api_key=SCRAPER_API_KEY).get_page(
+    #         target_url, render=True, headers=header
+    #     )
+    # ]
+    # while True:
+    #     runtime_tasks = [job.get_status() for job in tasks]
+    #     if all(runtime_status := [n[0] for n in runtime_tasks]):
+    #         break
+    #     else:
+    #         print(runtime_status)
+    #         time.sleep(20)
+    #
+    # print(runtime_tasks)
