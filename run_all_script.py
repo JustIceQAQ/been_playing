@@ -9,6 +9,7 @@ from exhibition.cksmh.script import CKSMHRunner
 from exhibition.huashan1914.script import HuaShan1914Runner
 from exhibition.ibon.script import IBonRunner
 from exhibition.jam.script import JamRunner
+from exhibition.kkday.script import KKDayRunner
 from exhibition.kktix.script import KKTixRunner
 from exhibition.klook.script import KLookRunner
 from exhibition.mocataipei.script import MocaTaipeiRunner
@@ -87,6 +88,7 @@ def main():
         KLookRunner,
         KKTixRunner,
         IBonRunner,
+        KKDayRunner,
     }
 
     log_notify.send_message(ROOT_DIR, log_notify.LogLevel.INFO)
