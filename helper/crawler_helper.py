@@ -1,7 +1,6 @@
 import dataclasses
 import logging
 import os
-import random
 import time
 from abc import ABCMeta, abstractmethod
 from enum import Enum
@@ -12,7 +11,6 @@ import requests
 from dotenv import load_dotenv
 from retry import retry
 
-from helper.header_helper import USER_AGENT_LIST
 from helper.proxy_helper import NoneProxy
 
 requests.adapters.DEFAULT_RETRIES = 5
@@ -163,43 +161,3 @@ if __name__ == "__main__":
     if this_env.exists():
         load_dotenv(this_env)
     SCRAPER_API_KEY = os.getenv("SCRAPER_API_KEY", None)
-
-    header = {
-        "User-Agent": random.choice(USER_AGENT_LIST),
-        "host": "www.kkday.com",
-        "Referer": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?cat=TAG_3&sort=prec&page=1",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
-    }
-
-    target_url = (
-        "https://www.kkday.com/zh-tw/product/ajax_productlist/A01-001?"
-        "city=&"
-        "row=50&"
-        "glang=&"
-        "cat=TAG_3&"
-        "availstartdate=&"
-        "availenddate=&"
-        "fprice=&"
-        "eprice=&"
-        "sort=prec&"
-        "page=1"
-    )
-
-    print(requests.get(target_url, headers=header).text)
-
-    # tasks = [
-    #     ScraperAsyncApiCrawler(api_key=SCRAPER_API_KEY).get_page(
-    #         target_url, render=True, headers=header
-    #     )
-    # ]
-    # while True:
-    #     runtime_tasks = [job.get_status() for job in tasks]
-    #     if all(runtime_status := [n[0] for n in runtime_tasks]):
-    #         break
-    #     else:
-    #         print(runtime_status)
-    #         time.sleep(20)
-    #
-    # print(runtime_tasks)
