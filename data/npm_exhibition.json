@@ -4,18 +4,9 @@
         "code_name": "npm",
         "external_link": "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1"
     },
-    "counts": 16,
-    "last_update": "2023-01-03T00:54:42.143408+00:00",
+    "counts": 17,
+    "last_update": "2023-01-03T08:14:14.411609+00:00",
     "data": [
-        {
-            "systematics": "npm",
-            "title": "\u570b\u7acb\u6545\u5bae\u535a\u7269\u96622023\u5e74\u5c55\u89bd\u4e00\u89bd\u8868",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04012788&l=1&type=&cat=",
-            "UUID": "288becb1668f54488c477d930d0a6c8c",
-            "figure": "https://i.imgur.com/vXM3IPG.webp"
-        },
         {
             "systematics": "npm",
             "title": "\u5beb\u76e1\u7e41\u83ef\uff0d\u665a\u660e\u6587\u5316\u4eba\u738b\u4e16\u8c9e\u8207\u4ed6\u7684\u5fd7\u696d",
@@ -78,6 +69,24 @@
             "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011058&l=1&type=&cat=",
             "UUID": "900de77cd59959f78e16eb2ef06a8f54",
             "figure": "https://i.imgur.com/AK2KUq7.webp"
+        },
+        {
+            "systematics": "npm",
+            "title": "\u9451\u53e4\u2014\u4e7e\u9686\u671d\u7684\u5bae\u5ef7\u9285\u5668\u6536\u85cf",
+            "date": "2020-12-01~",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 304",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011128&l=1&type=&cat=",
+            "UUID": "3857c785b7e25e39a815f57f40166306",
+            "figure": "https://i.imgur.com/gYGV8sY.webp"
+        },
+        {
+            "systematics": "npm",
+            "title": "\u58eb\u62ff\u4e4e\u2014\u6e05\u5bae\u9f3b\u7159\u58fa\u7684\u6642\u5c1a\u98a8\u6f6e",
+            "date": "2020-07-31~",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 303",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011127&l=1&type=&cat=",
+            "UUID": "78051346c33556a397c7e89208420a76",
+            "figure": "https://i.imgur.com/umsrSNx.webp"
         },
         {
             "systematics": "npm",
