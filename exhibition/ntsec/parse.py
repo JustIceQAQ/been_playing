@@ -8,7 +8,7 @@ class NTSECParse(ParseInit):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str:
-        return self.item.select_one("div.message > h3").get_text()
+        return self.item.find("div", {"class": "newsMessage-content"}).get_text()
 
     def get_date(self, *args, **kwargs) -> str:
         return "-"
@@ -17,18 +17,7 @@ class NTSECParse(ParseInit):
         return "-"
 
     def get_figure(self, *args, **kwargs) -> str:
-        target_domain = kwargs.get("target_domain", None)
-        if target_domain is None:
-            raise ValueError("請提供 TARGET_DOMAIN")
-        return "{}{}".format(
-            target_domain,
-            self.item.select_one("div.photo > img")["src"].replace("../", "/"),
-        )
+        return has_img.get("src") if (has_img := self.item.find("img")) else "-"
 
     def get_source_url(self, *args, **kwargs) -> str:
-        target_domain = kwargs.get("target_domain", None)
-        if target_domain is None:
-            raise ValueError("請提供 TARGET_DOMAIN")
-        return "{}/User/{}".format(
-            target_domain, self.item.select_one("li > a")["href"]
-        )
+        return self.item.get("href")
