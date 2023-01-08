@@ -38,6 +38,7 @@ class KKDayRunner(RunnerInit):
         return requests_worker.fetch(self.use_method, headers=headers)
 
     def get_items(self, response):
+        print(response)
         return response.get("data")
 
     def get_parsed(self, items):
