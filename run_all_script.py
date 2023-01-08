@@ -85,7 +85,7 @@ if __name__ == "__main__":
 
     # set sentry
     SENTRY_SDK_DNS = (
-        os.getenv("SENTRY_SDK_DNS", None) if not os.getenv("IS_DEBUG", False) else None
+        None if os.getenv("IS_DEBUG", False) else os.getenv("SENTRY_SDK_DNS", None)
     )
 
     sentry_sdk.init(dsn=SENTRY_SDK_DNS, traces_sample_rate=1.0)
