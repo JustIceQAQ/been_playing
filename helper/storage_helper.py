@@ -139,6 +139,7 @@ class JustJsonStorage(StorageInit):
         pass
 
     def truncate_table(self, *args, **kwargs) -> None:
+        print(self.db_path)
         if os.path.isfile(self.db_path):
             os.remove(self.db_path)
         self.fd = open(self.db_path, "a", encoding="utf-8")
