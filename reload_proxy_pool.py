@@ -108,7 +108,7 @@ if __name__ == "__main__":
 
     # set sentry
     IS_DEBUG = os.getenv("IS_DEBUG", False)
-    SENTRY_SDK_DNS = os.getenv("SENTRY_SDK_DNS", None) if not IS_DEBUG else None
+    SENTRY_SDK_DNS = None if IS_DEBUG else os.getenv("SENTRY_SDK_DNS", None)
     sentry_sdk.init(dsn=SENTRY_SDK_DNS, traces_sample_rate=1.0)
 
     loop = asyncio.get_event_loop()
