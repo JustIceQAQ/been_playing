@@ -1,5 +1,7 @@
 from pathlib import Path
 
+from prettytable import PrettyTable
+
 from exhibition import ExhibitionEnum
 from exhibition.ntsec.header import NTSECHeader
 from exhibition.ntsec.parse import NTSECParse
@@ -55,28 +57,35 @@ class NTSECRunner(RunnerInit):
         title_obj = newsin_text.find("h2")
         title = title_obj.get_text().strip()
         newsin_text_table = newsin_text.find("table", {"class": "newsin-text-table"})
-        openings = "\n".join(
+
+        pt = PrettyTable()
+        pt.field_names = [
+            th.get_text().strip() for th in newsin_text_table.select("thead > tr > th")
+        ]
+        pt.add_rows(
             [
-                " | ".join([td.get_text().strip() for td in tr.find_all("td")])
+                [td.get_text().strip() for td in tr.find_all("td")]
                 for tr in newsin_text_table.select("tbody > tr")
             ]
         )
+
         suffix_info = (
             has_suffix_info.get_text().strip()
             if (has_suffix_info := newsin_text_table.next_sibling.next_sibling)
             else ""
         )
 
-        openings_list = [
-            title,
-            title_obj.next_sibling.get_text().strip(),
-            openings,
-            suffix_info,
-        ]
-
-        return "\n".join(openings_list)
+        return "\n".join(
+            [
+                title,
+                title_obj.next_sibling.get_text().strip(),
+                "",
+                pt.get_string(),
+                "",
+                suffix_info,
+            ]
+        )
 
 
 if __name__ == "__main__":
     NTSECRunner().run(use_pickled=False)
-    # NTSECRunner().get_visit()
