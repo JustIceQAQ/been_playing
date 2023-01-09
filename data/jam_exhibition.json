@@ -4,8 +4,29 @@
         "code_name": "jam",
         "external_link": "http://jam.jutfoundation.org.tw/online-exhibition"
     },
-    "counts": 0,
-    "last_update": "2023-01-09T01:01:41.226575+00:00",
-    "data": [],
-    "visit": {}
+    "counts": 2,
+    "last_update": "2023-01-09T08:14:59.919333+00:00",
+    "data": [
+        {
+            "systematics": "jam",
+            "title": "\u73fe\u5f62\u8a18\u2500\u9ad8\u5fb7\u4eae\u5275\u4f5c\u5c55",
+            "date": "2022/10/15-2023/10/15",
+            "address": "-",
+            "source_url": "http://jam.jutfoundation.org.tw/exhibition/3728",
+            "UUID": "602f1ced92d35503a1818d5e1c0d3b2d",
+            "figure": "https://i.imgur.com/lxphGQ5.webp"
+        },
+        {
+            "systematics": "jam",
+            "title": "\u611f\u77e5\u73fe\u5834\u2500\u5efa\u7bc9\u00d7\u85dd\u8853\u8de8\u754c\u5c55",
+            "date": "2022/10/15-2023/02/12",
+            "address": "-",
+            "source_url": "http://jam.jutfoundation.org.tw/exhibition/3726",
+            "UUID": "49790aaa03ed5e22a1676a509225404c",
+            "figure": "https://i.imgur.com/rNtHArN.webp"
+        }
+    ],
+    "visit": {
+        "opening": "\u9031\u4e8c\u81f3\u9031\u65e5 10:00-18:00\n\u9031\u4e00\u56fa\u5b9a\u4f11\u9928\n\u300a\u611f\u77e5\u73fe\u5834\u300b\u9031\u4e8c\u81f3\u9031\u65e510:00-18:00\uff08\u9031\u4e00\u4f11\u9928\uff09"
+    }
 }
