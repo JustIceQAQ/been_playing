@@ -4,9 +4,27 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 89,
-    "last_update": "2023-01-11T08:17:36.766328+00:00",
+    "counts": 91,
+    "last_update": "2023-01-11T16:22:44.331756+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "MoCA Video\u300c\u5b87\u5b99\u5bae\u2014\u9ec3\u8fe6\u500b\u5c55\u300d",
+            "date": "2022\u5e7412\u670817\u65e5(\u9031\u516d) - 2023\u5e742\u670812\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101013155-2023-cosmos-shrine/",
+            "UUID": "77063f9821115e8dbe86c1d3a1533a7e",
+            "figure": "https://i.imgur.com/TwVObAL.webp"
+        },
+        {
+            "systematics": "klook",
+            "title": "MoCA Studio\u300c\u6d41\uff0e\u611f - \u738b\u4ef2\u5803\u500b\u5c55\u300d",
+            "date": "2022\u5e7412\u670831\u65e5(\u9031\u516d) - 2023\u5e743\u67085\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101013153-2023-sensational-flow/",
+            "UUID": "57197ac852345d2d8d0c199a1a5fc8fc",
+            "figure": "https://i.imgur.com/QhbfFtH.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u591a\u7d0d\u85dd\u8853\u5c55\u51fa - ONE ART TAIPEI 2023",
@@ -77,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101013038-2023-rabbit-jumps/",
             "UUID": "51a46e1b06c65927abf733f0983007d4",
-            "figure": "https://i.imgur.com/kepiGJC.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -86,7 +104,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/80992-zhang-yusheng-special-exhibition-taipei/",
             "UUID": "93a03b92036b519f89487f0150e59c5f",
-            "figure": "https://i.imgur.com/GRouXh6.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -212,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101012829-2023-en-bourdonnement/",
             "UUID": "3dc40fe28beb5595b05c93c09c639e70",
-            "figure": "-"
+            "figure": "https://i.imgur.com/Pz9YQlG.webp"
         },
         {
             "systematics": "klook",
@@ -221,7 +239,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101012799-2023-on-the-way-exhibition/",
             "UUID": "e8c89c2cc3a6540696d418d1e959f722",
-            "figure": "-"
+            "figure": "https://i.imgur.com/7e2SeQ2.webp"
         },
         {
             "systematics": "klook",
@@ -293,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101012631-2023-exhibition/",
             "UUID": "8a27b77c03ca53d79c0c24ff5d6ec74e",
-            "figure": "https://i.imgur.com/Yn5vGXG.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -302,7 +320,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/81305-guinness-world-records-mystery-art-exhibition-taipei/",
             "UUID": "233e695930d05aa3ac96a03b6a184f6c",
-            "figure": "https://i.imgur.com/ngJxSDs.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -428,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101012161-2022-counting-the-days-in-sky/",
             "UUID": "2122feb7482d5c8cba3ec74920744a3f",
-            "figure": "-"
+            "figure": "https://i.imgur.com/FULiYuZ.webp"
         },
         {
             "systematics": "klook",
@@ -437,7 +455,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101012160-2022-xu-beihong-exhibition/",
             "UUID": "b261e016e4d35053a88df63e4086cc50",
-            "figure": "-"
+            "figure": "https://i.imgur.com/jccnbWw.webp"
         },
         {
             "systematics": "klook",
@@ -509,7 +527,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/79852-naruto-animation-20th-anniversary-special-exhibition-taipei/",
             "UUID": "46bf2892ea385d148318eb797681c8bd",
-            "figure": "https://i.imgur.com/xAeYKRi.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -518,7 +536,7 @@
             "address": "\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101011985-2022-taipei-art-awards/",
             "UUID": "698d9ae049665faead77d40407bf86b5",
-            "figure": "https://i.imgur.com/Ty6O8qY.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -644,7 +662,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101011378-2022-about-love-exhibition/",
             "UUID": "7f0d6b5840695288b7f362381025dd78",
-            "figure": "-"
+            "figure": "https://i.imgur.com/nsOFpgv.webp"
         },
         {
             "systematics": "klook",
@@ -653,7 +671,7 @@
             "address": "\u81fa\u5317\u5e02\u5ba2\u5bb6\u6587\u5316\u4e3b\u984c\u516c\u5712",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101011214-2022-hakka-park-exhibition/",
             "UUID": "eafbfde8f44f5b9b88ab2ef79cfc21db",
-            "figure": "-"
+            "figure": "https://i.imgur.com/aGL9Q2t.webp"
         },
         {
             "systematics": "klook",
@@ -725,7 +743,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101010651-2022-nakedoceanintaipei/",
             "UUID": "d2b3478179ac51fc961fc49ea96c9cb8",
-            "figure": "https://i.imgur.com/jA2lkAl.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -734,7 +752,7 @@
             "address": "\u5317\u6295\u6885\u5ead",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101010410-2022-screen-beitouplumgarden/",
             "UUID": "e07b19d0e62c531eaca952149c874071",
-            "figure": "https://i.imgur.com/Vd8trSz.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
