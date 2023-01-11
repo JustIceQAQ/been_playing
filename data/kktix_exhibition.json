@@ -5,7 +5,7 @@
         "external_link": "https://kktix.com/events?category_id=11"
     },
     "counts": 11,
-    "last_update": "2023-01-11T00:57:03.083361+00:00",
+    "last_update": "2023-01-11T08:14:59.407166+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -72,21 +72,21 @@
         },
         {
             "systematics": "KKTix",
-            "title": "2023\u53f0\u5317\u570b\u969b\u96fb\u73a9\u5c55Taipei Game Show\u9810\u8cfc\u7968",
-            "date": "2023/2/2(\u56db)",
-            "address": "",
-            "source_url": "https://taipeigameshow.kktix.cc/events/2023tgspresale",
-            "UUID": "468c067d28975b0f86946c3653808ec5",
-            "figure": "https://i.imgur.com/YOFMoJG.webp"
-        },
-        {
-            "systematics": "KKTix",
             "title": "2023\u53f0\u5317\u570b\u969b\u96fb\u73a9\u5c55Taipei Game Show\u4e00\u65e5\u53c3\u89c0\u52b5ONE-DAY PASS",
             "date": "2023/2/2(\u56db)",
             "address": "",
             "source_url": "https://taipeigameshow.kktix.cc/events/2023tgsonedaypass",
             "UUID": "ad077f979d3752c8815c074ad38de3bc",
             "figure": "https://i.imgur.com/B5QoAPC.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "2023\u53f0\u5317\u570b\u969b\u96fb\u73a9\u5c55Taipei Game Show\u9810\u8cfc\u7968",
+            "date": "2023/2/2(\u56db)",
+            "address": "",
+            "source_url": "https://taipeigameshow.kktix.cc/events/2023tgspresale",
+            "UUID": "468c067d28975b0f86946c3653808ec5",
+            "figure": "https://i.imgur.com/YOFMoJG.webp"
         },
         {
             "systematics": "KKTix",
