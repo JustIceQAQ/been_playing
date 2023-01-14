@@ -1,10 +1,11 @@
+import os
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
 from exhibition.kkday.header import KKDayHeader
 from exhibition.kkday.parse import KKDayParse
 from helper.clean_helper import RequestsClean
-from helper.instantiation_helper import RequestsJsonInstantiation
+from helper.crawler_helper import ScraperAsyncApiCrawler
 from helper.runner_helper import RunnerInit
 
 
@@ -26,19 +27,15 @@ class KKDayRunner(RunnerInit):
     use_method = "GET"
     target_storage = str(root_dir / "data" / "kkday_exhibition.json")
     target_systematics = ExhibitionEnum.KKDay
-    instantiation = RequestsJsonInstantiation
+    use_crawler = ScraperAsyncApiCrawler
     use_header = KKDayHeader
     use_parse = KKDayParse
 
     def get_response(self):
-        requests_worker = self.instantiation(self.target_url)
-        headers = (
-            self.use_header().get_header() if self.use_header is not None else None
-        )
-        return requests_worker.fetch(self.use_method, headers=headers)
+        requests_worker = self.use_crawler(api_key=os.getenv("SCRAPER_API_KEY", None))
+        return requests_worker.get_page(self.target_url).get_response(sleep_secs=60)
 
     def get_items(self, response):
-        print("QAQ FIX KKDayRunner.get_items: ", response)
         return response.get("data")
 
     def get_parsed(self, items):

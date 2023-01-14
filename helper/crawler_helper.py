@@ -124,9 +124,13 @@ class ScraperAsyncApiCrawler(CrawlerInit):
             "apiKey": self.api_key,
             "url": url,
             "render": render,
-            "headers": headers,
+            "method": "GET",
         }
-        created = self.rs.post(self.api_path, json=payload).json()
+        if headers is not None:
+            payload["headers"] = headers
+
+        qaq = self.rs.post(self.api_path, json=payload)
+        created = qaq.json()
         self.job_status = created.get("status")
         self.job_status_url = created.get("statusUrl")
 
@@ -143,14 +147,14 @@ class ScraperAsyncApiCrawler(CrawlerInit):
 
         return self.JobTask(status=self.runtime_status, response=self.runtime_response)
 
-    def get_response(self):
+    def get_response(self, sleep_secs=20):
         while True:
             runtime_tasks = self.get_status()
             if runtime_tasks.status:
                 break
             else:
-                print(runtime_tasks.status)
-                time.sleep(20)
+                print(f"{runtime_tasks.status =} wait {sleep_secs}...")
+                time.sleep(sleep_secs)
 
         return runtime_tasks.response
 
@@ -161,3 +165,20 @@ if __name__ == "__main__":
     if this_env.exists():
         load_dotenv(this_env)
     SCRAPER_API_KEY = os.getenv("SCRAPER_API_KEY", None)
+
+    asc = ScraperAsyncApiCrawler(api_key=SCRAPER_API_KEY)
+    target_url = (
+        "https://www.kkday.com/zh-tw/product/ajax_productlist/A01-001?"
+        "city=&"
+        "row=50&"
+        "glang=&"
+        "cat=TAG_3&"
+        "availstartdate=&"
+        "availenddate=&"
+        "fprice=&"
+        "eprice=&"
+        "sort=prec&"
+        "page=1"
+    )
+    r = asc.get_page(target_url).get_response()
+    print(r)
