@@ -142,7 +142,7 @@ class JustJsonStorage(StorageInit):
         print("QAQ FIX JustJsonStorage: ", self.db_path)
         if os.path.isfile(self.db_path):
             os.remove(self.db_path)
-        self.fd = open(self.db_path, "a", encoding="utf-8")
+        self.fd = open(self.db_path, "w", encoding="utf-8")
         self.fd.close()
 
 
