@@ -147,16 +147,23 @@ class ScraperAsyncApiCrawler(CrawlerInit):
 
         return self.JobTask(status=self.runtime_status, response=self.runtime_response)
 
-    def get_response(self, sleep_secs=20):
+    def get_response(self, sleep_secs=20, tries_flag=5):
+        runtime_flag = 0
         while True:
-            runtime_tasks = self.get_status()
-            if runtime_tasks.status:
-                break
+            if runtime_flag != tries_flag:
+                runtime_tasks = self.get_status()
+                if runtime_tasks.status:
+                    runtime_return = runtime_tasks.response
+                    break
+                else:
+                    runtime_flag += 1
+                    print(f"{runtime_tasks.status =} wait {sleep_secs}...")
+                    time.sleep(sleep_secs)
             else:
-                print(f"{runtime_tasks.status =} wait {sleep_secs}...")
-                time.sleep(sleep_secs)
+                runtime_return = []
+                break
 
-        return runtime_tasks.response
+        return runtime_return
 
 
 if __name__ == "__main__":
