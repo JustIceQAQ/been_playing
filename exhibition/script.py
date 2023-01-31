@@ -4,7 +4,6 @@ from exhibition.ibon.script import IBonRunner
 from exhibition.jam.script import JamRunner
 from exhibition.kkday.script import KKDayRunner
 from exhibition.kktix.script import KKTixRunner
-from exhibition.klook.script import KLookRunner
 from exhibition.mocataipei.script import MocaTaipeiRunner
 from exhibition.museum_post.script import MuseumPostRunner
 from exhibition.mwr.script import MWRRunner
@@ -21,6 +20,7 @@ from exhibition.tickets_udnfunlife.script import TicketsUdnFunLifeRunner
 from exhibition.tmc.script import TMCRunner
 from exhibition.twtc.script import TWTCRunner
 
+# from exhibition.klook.script import KLookRunner
 PY_CLASS_SCRIPT = {
     CKSMHRunner,
     HuaShan1914Runner,
@@ -40,7 +40,7 @@ PY_CLASS_SCRIPT = {
     TWTCRunner,
     TicketsBooksRunner,
     TicketsUdnFunLifeRunner,
-    KLookRunner,
+    # KLookRunner,
     KKTixRunner,
     IBonRunner,
     KKDayRunner,
