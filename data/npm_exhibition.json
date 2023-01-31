@@ -4,26 +4,26 @@
         "code_name": "npm",
         "external_link": "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1"
     },
-    "counts": 17,
-    "last_update": "2023-01-01T08:13:30.548663+00:00",
+    "counts": 18,
+    "last_update": "2023-01-31T16:43:01.241261+00:00",
     "data": [
         {
             "systematics": "npm",
-            "title": "\u570b\u7acb\u6545\u5bae\u535a\u7269\u96622023\u5e74\u5c55\u89bd\u4e00\u89bd\u8868",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04012788&l=1&type=&cat=",
-            "UUID": "288becb1668f54488c477d930d0a6c8c",
-            "figure": "https://i.imgur.com/vXM3IPG.webp"
+            "title": "\u53e4\u756b\u52d5\u6f2b\u2014\u660e\u6587\u5fb5\u660e\u4eff\u8d99\u4f2f\u9a4c\u5f8c\u8d64\u58c1\u5716",
+            "date": "2023-01-17~2023-03-26",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 102",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013219&l=1&type=&cat=",
+            "UUID": "5b2680add5fc5da1a2573454d2d542e6",
+            "figure": "https://i.imgur.com/0YGDAjS.webp"
         },
         {
             "systematics": "npm",
             "title": "\u570b\u5bf6\u805a\u7126",
-            "date": "2022-10-05~2023-01-02",
+            "date": "2023-01-05~2023-03-26",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 208",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013100&l=1&type=&cat=",
-            "UUID": "ab02b0af00e65853bd089b13c5e94017",
-            "figure": "https://i.imgur.com/2b2VnI7.webp"
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013171&l=1&type=&cat=",
+            "UUID": "b104dcaf72185e27bae1ca3cec6c0937",
+            "figure": "https://i.imgur.com/38AX0T6.webp"
         },
         {
             "systematics": "npm",
@@ -33,15 +33,6 @@
             "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013066&l=1&type=&cat=",
             "UUID": "471f455696b95c9bbe8c1393f0939401",
             "figure": "https://i.imgur.com/hHypgMQ.webp"
-        },
-        {
-            "systematics": "npm",
-            "title": "\u53e4\u756b\u52d5\u6f2b\u66f8\u6cd5\u7bc7\u2014\u82b1\u6c23\u85b0\u4eba\u5e16",
-            "date": "2022-09-27~2023-01-15",
-            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 102",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013101&l=1&type=&cat=",
-            "UUID": "559120c8ca2c578ba4ea4504d1aa06d0",
-            "figure": "https://i.imgur.com/nz7TDV6.webp"
         },
         {
             "systematics": "npm",
@@ -87,6 +78,24 @@
             "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011058&l=1&type=&cat=",
             "UUID": "900de77cd59959f78e16eb2ef06a8f54",
             "figure": "https://i.imgur.com/AK2KUq7.webp"
+        },
+        {
+            "systematics": "npm",
+            "title": "\u9451\u53e4\u2014\u4e7e\u9686\u671d\u7684\u5bae\u5ef7\u9285\u5668\u6536\u85cf",
+            "date": "2020-12-01~",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 304",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011128&l=1&type=&cat=",
+            "UUID": "3857c785b7e25e39a815f57f40166306",
+            "figure": "https://i.imgur.com/gYGV8sY.webp"
+        },
+        {
+            "systematics": "npm",
+            "title": "\u58eb\u62ff\u4e4e\u2014\u6e05\u5bae\u9f3b\u7159\u58fa\u7684\u6642\u5c1a\u98a8\u6f6e",
+            "date": "2020-07-31~",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 303",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011127&l=1&type=&cat=",
+            "UUID": "78051346c33556a397c7e89208420a76",
+            "figure": "https://i.imgur.com/umsrSNx.webp"
         },
         {
             "systematics": "npm",

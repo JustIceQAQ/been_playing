@@ -5,7 +5,7 @@
         "external_link": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw"
     },
     "counts": 6,
-    "last_update": "2023-01-01T08:13:27.718867+00:00",
+    "last_update": "2023-01-31T16:39:55.316871+00:00",
     "data": [
         {
             "systematics": "tfam",
@@ -18,12 +18,12 @@
         },
         {
             "systematics": "tfam",
-            "title": "\u5728\u593e\u7e2b\u4e2d\u884c\u8d70",
-            "date": "2022-09-08 ~ 2023-01-08",
-            "address": "\u4e8c\u6a132A~2B",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=714",
-            "UUID": "ce8122cdfec65471afa4241dc05b1491",
-            "figure": "https://i.imgur.com/sFI54Nt.webp"
+            "title": "2022\u81fa\u5317\u7f8e\u8853\u734e",
+            "date": "2022-12-10 ~ 2023-02-19",
+            "address": "\u4e09\u6a133A~3B",
+            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=720",
+            "UUID": "58d38f2fc813546a9b5aed3a7f060443",
+            "figure": "https://i.imgur.com/iEMRTDx.webp"
         },
         {
             "systematics": "tfam",
@@ -36,17 +36,8 @@
         },
         {
             "systematics": "tfam",
-            "title": "2022\u81fa\u5317\u7f8e\u8853\u734e",
-            "date": "2022-12-10 ~ 2023-02-19",
-            "address": "\u4e09\u6a133A~3B",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=720",
-            "UUID": "58d38f2fc813546a9b5aed3a7f060443",
-            "figure": "https://i.imgur.com/iEMRTDx.webp"
-        },
-        {
-            "systematics": "tfam",
             "title": "\u5d0e",
-            "date": "2022-09-17 ~ 2024-02-25",
+            "date": "2022-09-17 ~ 2023-11-26",
             "address": "\u4e09\u6a133C\u8ff4\u5eca",
             "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=715",
             "UUID": "d9c73eae74c05aa58fac0ddc3d993f76",
@@ -60,6 +51,15 @@
             "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=716",
             "UUID": "b8ce0e88291d5fbaa791859bd5d5c1b5",
             "figure": "https://i.imgur.com/SP5ghCD.webp"
+        },
+        {
+            "systematics": "tfam",
+            "title": "\u672a\u4f86\u8eab\u9ad4\uff1a\u8d85\u81ea\u7136\u96d5\u5851",
+            "date": "2023-02-18 ~ 2023-06-04",
+            "address": "\u4e8c\u6a132A~2B",
+            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=722",
+            "UUID": "e0d2eb15806e5c219e32163adf658774",
+            "figure": "https://i.imgur.com/Kupz3zY.webp"
         }
     ],
     "visit": {

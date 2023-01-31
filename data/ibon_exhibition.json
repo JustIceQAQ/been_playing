@@ -4,9 +4,36 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 85,
-    "last_update": "2023-01-02T10:13:07.246722+00:00",
+    "counts": 64,
+    "last_update": "2023-01-31T16:48:53.000084+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "CWT\uff0d63\u53f0\u7063\u540c\u4eba\u8a8c\u8ca9\u552e\u6703\uff0e\u53f0\u5317\u5834\uff0e\u4e8c\u65e5\u7968",
+            "date": "2023-01-28 ~ 2023-01-29",
+            "address": "\u570b\u7acb\u81fa\u7063\u5927\u5b78\u7d9c\u5408\u9ad4\u80b2\u9928B1\uff061F\uff063F\uff064F",
+            "source_url": "https://tour.ibon.com.tw/event/63bfce17a19f082b945c01fc",
+            "UUID": "438d19e1e66e5524aac2fd21ea0cc56e",
+            "figure": "https://i.imgur.com/CJ14d9U.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "CWT\uff0d63\u53f0\u7063\u540c\u4eba\u8a8c\u8ca9\u552e\u6703\uff0e\u53f0\u5317\u5834\uff0e\u55ae\u65e5\u7968",
+            "date": "2023-01-28 ~ 2023-01-29",
+            "address": "\u570b\u7acb\u81fa\u7063\u5927\u5b78\u7d9c\u5408\u9ad4\u80b2\u9928B1\uff061F\uff063F\uff064F",
+            "source_url": "https://tour.ibon.com.tw/event/63bfcce5a19f082b945c016d",
+            "UUID": "3328296fe5e05bf0814e1081e5ef5262",
+            "figure": "https://i.imgur.com/WF5ZQGy.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u53f0\u5357\uff0e\u81fa\u5357\u5e02\u7f8e\u8853\u9928",
+            "date": "2023-01-01 ~ 2023-12-31",
+            "address": "\u81fa\u5357\u5e02\u7f8e\u8853\u9928 1\u9928\uff062\u9928",
+            "source_url": "https://tour.ibon.com.tw/event/63bfbe90a19f082b945bfcdf",
+            "UUID": "9c8bcceb36b8546b8ca69cff15a1248d",
+            "figure": "https://i.imgur.com/OVxr3ME.webp"
+        },
         {
             "systematics": "ibon",
             "title": "\u53f0\u5357\uff0e\u5357\u701b\u5929\u6587\u9928\u5c55\u793a\u9928",
@@ -14,7 +41,7 @@
             "address": "\u5357\u701b\u5929\u6587\u9928\u5c55\u793a\u9928",
             "source_url": "https://tour.ibon.com.tw/event/63a01d8cf9287d21c6b1973a",
             "UUID": "7331a1d3c367561aa677df0a75716478",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/131cd95e-2620-4339-a267-0a2ddbb35a45.jpg"
+            "figure": "https://i.imgur.com/V6681HP.webp"
         },
         {
             "systematics": "ibon",
@@ -23,7 +50,7 @@
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3\u6587\u5316\u99282F\u7279\u5c55\u5ef3",
             "source_url": "https://tour.ibon.com.tw/event/639ab0e04a35b55f2a19b4df",
             "UUID": "e91ecf5a70785ffdb7447762e29062c3",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/de54bda7-1698-4d3a-a500-9e76715085a8.jpg"
+            "figure": "https://i.imgur.com/ZfcH5nk.webp"
         },
         {
             "systematics": "ibon",
@@ -77,25 +104,16 @@
             "address": "\u65b0\u5149\u4e09\u8d8a \u53f0\u5357\u65b0\u5929\u5730\uff0dGF\u897f\u9580\u5ee3\u5834",
             "source_url": "https://tour.ibon.com.tw/event/638d7efa4977d83d496fccef",
             "UUID": "0ab1ee740213572fadac0ea7dfdf2caf",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/5b631b6f-250a-4724-a4b1-5e280e1b4a58.jpg"
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/d987dbb4-9e78-4137-b7ff-c8ed7600be35.jpg"
         },
         {
             "systematics": "ibon",
             "title": "\u9054\u6587\u897f\u5149\u5f71\u85dd\u8853\u7279\u5c55",
-            "date": "2022-12-02 ~ 2023-01-29",
+            "date": "2022-12-02 ~ 2023-02-28",
             "address": "\u53f0\u5317101 5F AMBI SPACE ONE \u53c8\u53c8\u878d\u57df",
             "source_url": "https://tour.ibon.com.tw/event/637db23a4928a41c86b8921f",
             "UUID": "e42c0477d176500daaba0a6e52d883bf",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/f90e0da2-0278-4fe6-ad86-ec0e538325fd.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u610f\u8c61\u7dad\u7d0d\u65af Takeru Amano \u53f0\u5317\u5c55\u89bd",
-            "date": "2022-12-22 ~ 2023-01-02",
-            "address": "\u74f6\u84cb\u5de5\u5ee0\u53f0\u5317\u88fd\u9020\u6240 M\u68df",
-            "source_url": "https://tour.ibon.com.tw/event/637d8efd4928a41c86b88982",
-            "UUID": "acf4cd416ac355ac87b94209911a48dc",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/ab0b58bb-9be0-4b2a-9dad-17cfbfe39382.jpg"
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/f029a756-25f9-40f1-90d5-610cdd482678.jpg"
         },
         {
             "systematics": "ibon",
@@ -150,51 +168,6 @@
             "source_url": "https://tour.ibon.com.tw/event/636b4487de48e22af93732c3",
             "UUID": "627b86b4b0bf51abab45bf1736fe99a6",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/56a44bf7-bc51-4b57-94d4-584f4a5e50d9.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "1\u6708\uff3fX\u4eba\u7a31\u2014\u9ec3\u5fc3\u5065\u7684\u5143\u5b87\u5b99\u5287\u5834\uff0d\u3010\u9ad8\u7a7a\u3011",
-            "date": "2022-10-08 ~ 2023-03-05",
-            "address": "\u9ad8\u96c4\u5e02\u9f13\u5c71\u5340\u7f8e\u8853\u9928\u8def80\u865f",
-            "source_url": "https://tour.ibon.com.tw/event/6369f3b5ab05a45d498beb11",
-            "UUID": "5db9796080ed56cd9288cdb1d7d7b3f8",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/ae22d94f-19a3-419d-ba86-54b23cb967d9.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "1\u6708\uff3fX\u4eba\u7a31\u2014\u9ec3\u5fc3\u5065\u7684\u5143\u5b87\u5b99\u5287\u5834\uff0d\u3010\u5931\u8eab\u8a18\u3011",
-            "date": "2022-10-08 ~ 2023-03-05",
-            "address": "\u9ad8\u96c4\u5e02\u9f13\u5c71\u5340\u7f8e\u8853\u9928\u8def80\u865f",
-            "source_url": "https://tour.ibon.com.tw/event/6369f3a3ab05a45d498beb09",
-            "UUID": "a047e1d657f05cde8fd426c2e17458f9",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/a9158873-4c66-40bf-8c88-9703f87a4dfa.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "1\u6708\uff3fX\u4eba\u7a31\u2014\u9ec3\u5fc3\u5065\u7684\u5143\u5b87\u5b99\u5287\u5834\uff0d\u3010\u6c99\u4e2d\u623f\u9593\u3011",
-            "date": "2022-10-08 ~ 2023-03-05",
-            "address": "\u9ad8\u96c4\u5e02\u9f13\u5c71\u5340\u7f8e\u8853\u9928\u8def80\u865f",
-            "source_url": "https://tour.ibon.com.tw/event/6369f38aab05a45d498beb06",
-            "UUID": "3b73ecc117e15a41b8dde9f319810348",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/04de242b-64bf-4333-b688-1a477ed12ff6.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "1\u6708\uff3fX\u4eba\u7a31\u2014\u9ec3\u5fc3\u5065\u7684\u5143\u5b87\u5b99\u5287\u5834\uff0d\u3010\u8f2a\u8ff4\u3011",
-            "date": "2022-10-08 ~ 2023-03-05",
-            "address": "\u9ad8\u96c4\u5e02\u9f13\u5c71\u5340\u7f8e\u8853\u9928\u8def80\u865f",
-            "source_url": "https://tour.ibon.com.tw/event/6369f36cab05a45d498beb03",
-            "UUID": "c567bfb30e755518b855b36f1f751a7b",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/c713d6a5-6395-43ed-a291-9453e6b530f5.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "1\u6708\uff3fX\u4eba\u7a31\u2014\u9ec3\u5fc3\u5065\u7684\u5143\u5b87\u5b99\u5287\u5834\uff0d\u3010\u767b\u6708\u3011",
-            "date": "2022-10-08 ~ 2023-03-05",
-            "address": "\u9ad8\u96c4\u5e02\u9f13\u5c71\u5340\u7f8e\u8853\u9928\u8def80\u865f",
-            "source_url": "https://tour.ibon.com.tw/event/6369f30bab05a45d498beae3",
-            "UUID": "a3a44fd944435d50a102a4ef272988fb",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/518adc39-cd62-4038-aa7d-0ddd08c81dd0.jpg"
         },
         {
             "systematics": "ibon",
@@ -311,7 +284,7 @@
             "address": "\u677e\u5c71\u6587\u5275\u5712\u5340 \u5357\u5411\u88fd\u83f8\u5de5\u5ee0",
             "source_url": "https://tour.ibon.com.tw/event/6352550c38589e29893d3bed",
             "UUID": "4b09480385b856d3992c0ed4c5b380a8",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/c424887d-83bc-40ed-9386-da233ee6e973.jpg"
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/10e2125d-b576-45aa-b278-d4312c80c96c.jpg"
         },
         {
             "systematics": "ibon",
@@ -339,24 +312,6 @@
             "source_url": "https://tour.ibon.com.tw/event/634ca7a638589e29893c7dbf",
             "UUID": "ea941ae6e80a598ab518b0d78a3604cf",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/804ac481-c6e3-4339-98ce-f5d548b121b2.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u53f0\u5317\uff0e\u576a\u9802\u53e4\u5733\uff5c\u767e\u5e74\u8001\u6c34\u5733 \u8d70\u5165\u5c71\u6797\u79d8\u5883",
-            "date": "2022-09-01 ~ 2023-07-21",
-            "address": "\u58eb\u6797\u5340\u5e73\u83c1\u885786\u865f",
-            "source_url": "https://tour.ibon.com.tw/event/6336b2dc7a043d1a47084346",
-            "UUID": "95724c2031be5689a96e364954c7ff3f",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/03d6c2f3-ab17-4d86-abe0-e9dcf3675082.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u53f0\u5317\uff0e\u767e\u5e74\u975c\u5fc3\u82d1\uff5c\u6563\u6b65\u9435\u9053\u7e31\u8cab\u7dda\uff0c\u548c\u98a8\u8001\u5b85\u7d93\u7d61\u8212\u58d3\u5b78",
-            "date": "2022-09-01 ~ 2023-07-14",
-            "address": "\u53f0\u5317\u5e02\u5357\u6e2f\u5340\u6606\u967d\u8857164\u865f",
-            "source_url": "https://tour.ibon.com.tw/event/6336a7797a043d1a47083fed",
-            "UUID": "fbcc0fc7a37d5ca8a3c7ab4470bb26ea",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/6c725686-85ea-4110-abb3-14ce094c64f2.jpg"
         },
         {
             "systematics": "ibon",
@@ -393,15 +348,6 @@
             "source_url": "https://tour.ibon.com.tw/event/632d64145713c56123a24d3a",
             "UUID": "d9d2cb45065c5910be504c0eeac845ee",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/7bf9364c-9a97-4ddd-868f-879406b38576.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u9b3c\u6ec5\u4e4b\u5203\u5168\u96c6\u4e2d\u5c55\u5c4f\u6771\u7ad9",
-            "date": "2022-10-22 ~ 2023-01-02",
-            "address": "\u5c4f\u83f81936\u6587\u5316\u57fa\u573010\u865f\u5009\u5eab",
-            "source_url": "https://tour.ibon.com.tw/event/632adba0ceeba21c2e17b438",
-            "UUID": "2203c17a79e9580aa35c630e40da6732",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/3495eed2-d9e2-4c35-a4fd-363c7bba75a3.jpg"
         },
         {
             "systematics": "ibon",
@@ -513,15 +459,6 @@
         },
         {
             "systematics": "ibon",
-            "title": "\u53f0\u5317\uff0e\u6696\u5fc3\u5eda\u623f\u624b\u4f5c\u6599\u7406\u8ab2\u7a0b",
-            "date": "2022-07-22 ~ 2022-12-31",
-            "address": "\u53f0\u5317\u5e02\u5927\u5b89\u5340\u5149\u5fa9\u5357\u8def290\u5df75\u865f2\u6a13",
-            "source_url": "https://tour.ibon.com.tw/event/62da4707cd84dd6b2ad46941",
-            "UUID": "e17b839d42e05493b683e6ac689f16d6",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/0954e7d4-a304-4a12-8b6b-c6ef7bc073ec.jpg%20\u7684\u526f\u672c"
-        },
-        {
-            "systematics": "ibon",
             "title": "\u65b0\u7af9\uff0e\u300a\u5317\u57d4\u8001\u8857\uff0d\u76f8\u7247\u7684\u56de\u61b6\u300b\u65b0\u7af9\u8001\u8857\u5be6\u5883\u89e3\u8b0e\u4e09\u90e8\u66f2",
             "date": "2022-07-15 ~ 2023-12-31",
             "address": "\u65b0\u7af9\u7e23\u5317\u57d4\u8001\u8857",
@@ -576,24 +513,6 @@
         },
         {
             "systematics": "ibon",
-            "title": "\u3010\u53f0\u5317\u3011\u6731\u9298\u7f8e\u8853\u9928",
-            "date": "2022-07-15 ~ 2022-12-31",
-            "address": "\u65b0\u5317\u5e02\u91d1\u5c71\u5340\u897f\u52e2\u6e562\u865f",
-            "source_url": "https://tour.ibon.com.tw/event/62cfc76e0d19d803987cd2f8",
-            "UUID": "cfa22344e87a57a8a95061399fcc6b30",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/98de91a7-7d72-46d8-b00e-33f6a9b638bf.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u5996\u679c\u5c0f\u5b78\u9650\u91cf\u7d93\u5178NFT\u795e\u79d8\u76d2",
-            "date": "2022-07-13 ~ 2022-12-31",
-            "address": null,
-            "source_url": "https://tour.ibon.com.tw/event/62c533ac7b66f849bceb54e6",
-            "UUID": "3a15942c285654c5b284f2bd26281d9c",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/202b1610-562a-4766-a156-52dff97dbf6d.jpg"
-        },
-        {
-            "systematics": "ibon",
             "title": "\u5947\u7f8e\u535a\u7269\u9928\u5e38\u8a2d\u5c55",
             "date": "2022-07-01 ~ 2023-12-27",
             "address": "\u5947\u7f8e\u535a\u7269\u9928",
@@ -612,39 +531,12 @@
         },
         {
             "systematics": "ibon",
-            "title": "2022\u8c93\u982d\u9df9\u63a2\u7d22\u9ad4\u9a57\u71df\uff1a\u751f\u614b\u89c0\u5bdf x \u6a39\u7247\u76f8\u6846DIY",
-            "date": "2022-07-02 ~ 2022-12-31",
-            "address": "\u829d\u5c71\u6587\u5316\u751f\u614b\u7da0\u5712",
-            "source_url": "https://tour.ibon.com.tw/event/6299e25875f4484c4daf5576",
-            "UUID": "2670812070ab5abaa04b475dd53b33ea",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/2c8ab803-c43c-4bd7-abbe-3223fba332a0.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u9ed1\u91d1\u50b3\u5947\uff5c\u5c71\u7a1c\u4e2d\u7684\u8c93\u6751\uff0c\u7334\u7850\u7684\u7926\u5de5\u8a18\u61b6",
-            "date": "2022-05-29 ~ 2022-12-31",
-            "address": "\u53f0\u7063\u65b0\u5317\u5e02\u745e\u82b3\u5340\u67f4\u5bee\u8def55\u865f",
-            "source_url": "https://tour.ibon.com.tw/event/627dcec8ff09151253ca92df",
-            "UUID": "ce86e157a3a65755b2f2f474b565681f",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/ce392b4e-d8dd-492f-960a-7ca8a79d0c56.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u53f0\u5317\u89c0\u5df4\uff5c\u611b\u73a9\u7368\u5bb6\u8def\u7dda\uff0c\u8f15\u9b06\u73a9\u904d\u53f0\u5317\u5fc5\u53bb\u666f\u9ede",
-            "date": "2022-05-29 ~ 2022-12-31",
-            "address": "\u53f0\u7063\u53f0\u5317\u5e02\u53f0\u5317\u89c0\u5149\u5df4\u58eb\u7ad9\u724c",
-            "source_url": "https://tour.ibon.com.tw/event/627b157c13b884454274e815",
-            "UUID": "978800c8ced058a7b4b0491ea542aa62",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/39ea5611-32b9-4e8d-8f48-cf9570232d9f.jpg"
-        },
-        {
-            "systematics": "ibon",
             "title": "BABY SHARK \u653e\u96fb\u8db4",
             "date": "2022-12-31 ~ 2023-04-05",
             "address": "\u83ef\u5c71 1914 \u6587\u5275\u5712\u5340\u6771 2C",
             "source_url": "https://tour.ibon.com.tw/event/626211f9056c7a6eb082b79d",
             "UUID": "c95061c8ab5c5bbdbfbf2eae17e6070b",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/4068a967-9ea3-425a-b46d-f02e2142414f.jpg"
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/0f0092cb-cb3c-4467-838e-e47c198ebb9a.jpg"
         },
         {
             "systematics": "ibon",
@@ -666,33 +558,6 @@
         },
         {
             "systematics": "ibon",
-            "title": "\u53f0\u5317\u57ce\u5317\u8d70\u8b80\uff5e\u5713\u5c71\u6f2b\u6b65\u30fb\u5c0b\u627e\u795e\u79d8\u6c34\u795e\u793e\u53ca\u6d88\u5931\u7684\u53e4\u6a4b",
-            "date": "2021-11-01 ~ 2022-12-31",
-            "address": "111\u53f0\u5317\u5e02\u58eb\u6797\u5340\u4e2d\u5c71\u5317\u8def\u4e94\u6bb565\u865f",
-            "source_url": "https://tour.ibon.com.tw/event/617a5559bdd80e436bd68626",
-            "UUID": "9dc9c0e004ca51108744c1caade94df7",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/0b9aa98e-aabd-4d87-ac23-5f84d935be87.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u57ce\u4e2d\u8d70\u8b80(\u591c\u9593\u9650\u5b9a\u5834)\uff0d\u53f0\u5317\u591c\u672a\u7720\uff5e\u591c\u904a\u53f0\u5317\u57ce",
-            "date": "2021-10-01 ~ 2022-12-31",
-            "address": "100\u53f0\u5317\u5e02\u4e2d\u6b63\u5340\u5fe0\u5b5d\u897f\u8def\u4e00\u6bb5",
-            "source_url": "https://tour.ibon.com.tw/event/6156e4ab05bc6f1f6865f6a4",
-            "UUID": "c02df0a14d205bbab3a990aaae20a0ea",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/c3996bdf-97b0-4275-992c-3145ea17e9dc.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u6a39\u5c64\u7e69\u6500\u8da3 \u967d\u660e\u5c71\u6236\u5916\u65b0\u73a9\u6cd5\u6500\u6a39\u9ad4\u9a57",
-            "date": "2021-09-03 ~ 2022-12-31",
-            "address": "\u83c1\u5c71\u904a\u61a9\u5340",
-            "source_url": "https://tour.ibon.com.tw/event/61318ddd0bfa970d505e218f",
-            "UUID": "6a8dce3df04b5e0088200b38e6a4fc45",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/40943188-5d79-4085-a946-6538c3f7bba1.jpg"
-        },
-        {
-            "systematics": "ibon",
             "title": "\u570b\u7acb\u79d1\u5b78\u5de5\u85dd\u535a\u7269\u9928",
             "date": "2022-02-18 ~ 2023-12-31",
             "address": "\u570b\u7acb\u79d1\u5b78\u5de5\u85dd\u535a\u7269\u9928",
@@ -702,39 +567,12 @@
         },
         {
             "systematics": "ibon",
-            "title": "\u53f0\u5317\u57ce\u5357\u8d70\u8b80-\u57ce\u5357\u751f\u6d3b\u5708\u53ca\u5c08\u8ce3\u6b77\u53f2",
-            "date": "2021-09-01 ~ 2022-12-31",
-            "address": "\u6377\u904b\u53e4\u4ead\u7ad98\u865f\u51fa\u53e3\u2192\u5357\u660c\u516c\u5712\u2192 \u5bb6\u5177\u8857 \u2192 \u5b6b\u7acb\u4eba\u5c07\u8ecd\u90b8\u2192\u53f0\u7063\u535a\u7269\u9928\u5357\u9580\u5712\u5340 \u2192 \u53f0\u7063\u83f8\u9152\u516c\u8ce3\u5c40\u2192 \u6377\u904b\u4e2d\u6b63\u7d00\u5ff5\u5802\u7ad9\u89e3\u6563",
-            "source_url": "https://tour.ibon.com.tw/event/61302de10bfa970d505db57e",
-            "UUID": "7563bf9d3e2757e884a2621505a593b2",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/aa79738b-343f-4953-9e98-bf7a29eb4773.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u81fa\u5357\u5e02\u7f8e\u8853\u9928",
-            "date": "2021-09-01 ~ 2022-12-31",
-            "address": "\u81fa\u5357\u5e02\u4e2d\u897f\u5340",
-            "source_url": "https://tour.ibon.com.tw/event/611e095847b58a2e225bdf13",
-            "UUID": "e31f72c49b4653588d32fd3a956c1420",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/af6e5da6-5786-46e7-a8d1-608656f9cad1.jpg"
-        },
-        {
-            "systematics": "ibon",
             "title": "\u57fa\u9686\uff0e\u570b\u7acb\u6d77\u6d0b\u79d1\u6280\u535a\u7269\u9928",
-            "date": "2022-03-17 ~ 2022-12-31",
+            "date": "2022-03-17 ~ 2023-12-31",
             "address": "\u570b\u7acb\u6d77\u6d0b\u79d1\u6280\u535a\u7269\u9928",
             "source_url": "https://tour.ibon.com.tw/event/610c8f1d6ed7ca151a91060c",
             "UUID": "4f5c787bced05161b83fa55f106cc233",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/8a06710f-61de-4323-b035-1a326b14d886.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u53f0\u5317\u597d\u6c34\u5bc6\u63a2 \u8d70\u8b80\u767e\u5e74\u5730\u4e0b\u6c34\u5bae\u6bbf",
-            "date": "2021-07-23 ~ 2022-12-31",
-            "address": "\u81ea\u4f86\u6c34\u535a\u7269\u9928",
-            "source_url": "https://tour.ibon.com.tw/event/60fa70ccd7904d185e2db293",
-            "UUID": "4362435cbe6f5a83b88d4fcc910dca30",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/c482d971-f746-4429-98ae-a73465a229b7.jpg"
         },
         {
             "systematics": "ibon",
@@ -744,33 +582,6 @@
             "source_url": "https://tour.ibon.com.tw/event/60ed2418fd46eb44b7fa0b46",
             "UUID": "f380de0d40fb5c01b6246e32c393a856",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/d1597df3-fde7-4c98-9c0d-75a633deceec.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u3010\u6f8e\u6e56\u3011\u6f8e\u6e56\u6c34\u65cf\u9928",
-            "date": "2021-07-12 ~ 2022-12-31",
-            "address": "\u53f0\u7063\u6f8e\u6e56\u7e23\u767d\u6c99\u9109\u5c90\u982d\u675158\u865f",
-            "source_url": "https://tour.ibon.com.tw/event/60e7eba970ac361a8b386593",
-            "UUID": "250f4cba04d75b7aa5afa4a7d3c9b9f3",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/4fa046df-1d12-4d30-9d78-8d745df7af1d.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u53f0\u5317\u597d\u6c34\u5bc6\u63a2 \u4e9e\u6d32\u7b2c\u4e00\u85cd\u5bf6\u77f3\u6cc9",
-            "date": "2021-07-05 ~ 2022-12-31",
-            "address": "\u967d\u660e\u5c71\u5929\u4e3b\u5802\u4e3b\u5f92\u6703\u7e3d\u6703\u9662",
-            "source_url": "https://tour.ibon.com.tw/event/60e2852306dcfa19288c7ec9",
-            "UUID": "ac56e1a6378853d5bc94f938be474034",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/4d89f030-1add-42f5-b661-4d949138aba6.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u5b9c\u862d\uff0e\u8a08\u7a0b\u8eca\u535a\u7269\u9928",
-            "date": "2021-05-31 ~ 2022-12-31",
-            "address": "\u5b9c\u862d\u7e23\u8607\u6fb3\u93ae\u4e2d\u5c71\u8def\u4e8c\u6bb5162\u5df72\u865f",
-            "source_url": "https://tour.ibon.com.tw/event/60b090a76aa79f56b21641d4",
-            "UUID": "ab30a493362b5eb692fcc63787280087",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/ca1f16d2-c66a-4ddf-86e3-5757538ea959.jpg"
         }
     ],
     "visit": {}

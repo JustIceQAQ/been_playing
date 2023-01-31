@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 8,
-    "last_update": "2023-01-01T08:13:26.730379+00:00",
+    "counts": 9,
+    "last_update": "2023-01-31T16:45:12.311783+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -18,30 +18,12 @@
         },
         {
             "systematics": "tmc",
-            "title": "\u6fc0\u7701\u767e\u5143\u770b\u5c55\u65b9\u6848",
-            "date": "2022.09.06(\u4e8c)",
-            "address": "\u6587\u5316\u9928",
-            "source_url": "https://tmc.taipei/blog/show/one-hundred-exhibition-plan2022/",
-            "UUID": "db76c365b39753339d4b43b3967938e3",
-            "figure": "https://i.imgur.com/MivaiL1.webp"
-        },
-        {
-            "systematics": "tmc",
             "title": "\u60f3\u4f60\u5230\u6708\u7403\uff5c\u5f35\u96e8\u751f\u7279\u5c55 FLY ME TO THE MOON & BACK",
             "date": "2022.11.12(\u516d)",
             "address": "\u6587\u5316\u9928",
             "source_url": "https://tmc.taipei/blog/show/fly-me-to-the-moon-back/",
             "UUID": "20fa715a23335460b95b47423f6b5e02",
             "figure": "https://i.imgur.com/qUrGd6B.webp"
-        },
-        {
-            "systematics": "tmc",
-            "title": "\u300a\u53f0\u7063\u597d\u97f3\u6a02\u2014\u7375\u4eba\u805a\u6f14\u5531\u6703\u300b",
-            "date": "2023.01.15(\u65e5)",
-            "address": "\u8868\u6f14\u5ef3",
-            "source_url": "https://tmc.taipei/blog/show/hunter-concert/",
-            "UUID": "4c649a9dcfc65c2c910bf2e118135fe5",
-            "figure": "https://i.imgur.com/0eS4yht.webp"
         },
         {
             "systematics": "tmc",
@@ -60,6 +42,33 @@
             "source_url": "https://tmc.taipei/blog/show/romeo-et-juliette/?session=3114",
             "UUID": "341f019714bb58ef9c782b55336a3827",
             "figure": "https://i.imgur.com/WUPPvSD.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u90b1\u92d2\u6fa4DEEP AWAKENING \u5de1\u8ff4\u6f14\u5531\u6703 \u53f0\u5317\u7ad9",
+            "date": "2023.02.25(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/fengze-deep-awakening-tmc/",
+            "UUID": "d5bfb93e416d5196ad1effdbf0ddcd29",
+            "figure": "https://i.imgur.com/YV3d0Cc.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u300a\u6211\u671f\u5f85 \u5f35\u96e8\u751f\u6f14\u5531\u6703 \u81f4\u656c25\u300b",
+            "date": "2023.03.11(\u516d) \u2014 2023.03.12(\u65e5)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/im-lookingforward-tomchang-tribute25/?session=3336",
+            "UUID": "f977870dc94c51bebdec22037b4638c5",
+            "figure": "https://i.imgur.com/AeF9oo6.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u9ec3\u91d1\u6b72\u6708\u6f14\u5531\u6703",
+            "date": "2023.04.22(\u516d) \u2014 2023.04.23(\u65e5)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/golden-age-concert/?session=3344",
+            "UUID": "b24175ee7acd5d79835f415057c98b9e",
+            "figure": "https://i.imgur.com/02UXjcL.webp"
         },
         {
             "systematics": "tmc",
