@@ -36,7 +36,7 @@ class KKDayRunner(RunnerInit):
         return requests_worker.get_page(self.target_url).get_response(sleep_secs=60)
 
     def get_items(self, response):
-        return response.get("data")
+        return response.get("data", [])
 
     def get_parsed(self, items):
         for item in items:
