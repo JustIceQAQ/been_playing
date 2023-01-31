@@ -160,7 +160,7 @@ class ScraperAsyncApiCrawler(CrawlerInit):
                     print(f"{runtime_tasks.status =} wait {sleep_secs}...")
                     time.sleep(sleep_secs)
             else:
-                runtime_return = []
+                runtime_return = {}
                 break
 
         return runtime_return
