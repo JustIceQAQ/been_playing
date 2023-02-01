@@ -4,9 +4,18 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 11,
-    "last_update": "2023-02-01T08:14:17.228701+00:00",
+    "counts": 9,
+    "last_update": "2023-02-01T16:13:54.113603+00:00",
     "data": [
+        {
+            "systematics": "KKTix",
+            "title": "2023 APGS\u4e9e\u592a\u904a\u6232\u9ad8\u5cf0\u6703 ASIA PACIFIC GAME SUMMIT",
+            "date": "2023/2/1(\u4e09)",
+            "address": "",
+            "source_url": "https://taipeigameshow.kktix.cc/events/apgs2023",
+            "UUID": "90fa54463d5f5573a08103f4722962b8",
+            "figure": "https://i.imgur.com/1aJlKDU.webp"
+        },
         {
             "systematics": "KKTix",
             "title": "\u8d70\u9032\u5927\u5e2b\u7684\u8166\u5167\uff1a\u674e\u5967\u7d0d\u591a\u00b7\u9054\u6587\u897f\uff0d\u5149\u5f71\u9ad4\u9a57\u5c55",
@@ -69,33 +78,6 @@
             "source_url": "https://kpmc.kktix.cc/events/poppoppop",
             "UUID": "2753092823855d20b12fbb3f6977690c",
             "figure": "https://i.imgur.com/76TL3BV.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "2023 APGS\u4e9e\u592a\u904a\u6232\u9ad8\u5cf0\u6703 ASIA PACIFIC GAME SUMMIT",
-            "date": "2023/2/1(\u4e09)",
-            "address": "",
-            "source_url": "https://taipeigameshow.kktix.cc/events/apgs2023",
-            "UUID": "90fa54463d5f5573a08103f4722962b8",
-            "figure": "https://i.imgur.com/1aJlKDU.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "2023\u53f0\u5317\u570b\u969b\u96fb\u73a9\u5c55Taipei Game Show\u9810\u8cfc\u7968",
-            "date": "2023/2/2(\u56db)",
-            "address": "",
-            "source_url": "https://taipeigameshow.kktix.cc/events/2023tgspresale",
-            "UUID": "468c067d28975b0f86946c3653808ec5",
-            "figure": "https://i.imgur.com/VbuLxhg.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "2023\u53f0\u5317\u570b\u969b\u96fb\u73a9\u5c55Taipei Game Show\u4e00\u65e5\u53c3\u89c0\u52b5ONE-DAY PASS",
-            "date": "2023/2/2(\u56db)",
-            "address": "",
-            "source_url": "https://taipeigameshow.kktix.cc/events/2023tgsonedaypass",
-            "UUID": "ad077f979d3752c8815c074ad38de3bc",
-            "figure": "https://i.imgur.com/fPLdfmm.webp"
         },
         {
             "systematics": "KKTix",
