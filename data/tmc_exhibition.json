@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 10,
-    "last_update": "2023-02-02T08:14:17.944176+00:00",
+    "counts": 11,
+    "last_update": "2023-02-02T16:15:33.693652+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -51,6 +51,15 @@
             "source_url": "https://tmc.taipei/blog/show/fengze-deep-awakening-tmc/",
             "UUID": "d5bfb93e416d5196ad1effdbf0ddcd29",
             "figure": "https://i.imgur.com/YV3d0Cc.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u00d8ZI: ADICA (Live in Taipei)",
+            "date": "2023.03.04(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/ozi-adica-live-in-taipei/",
+            "UUID": "dfd6fd7a6aa35216b3d1cb8300cbd633",
+            "figure": "https://i.imgur.com/vAWo9g9.webp"
         },
         {
             "systematics": "tmc",
