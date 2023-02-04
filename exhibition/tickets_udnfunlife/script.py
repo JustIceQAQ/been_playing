@@ -8,7 +8,8 @@ from exhibition.tickets_udnfunlife.header import (
 )
 from exhibition.tickets_udnfunlife.parse import TicketsUdnFunLifeParse
 from helper.clean_helper import RequestsClean
-from helper.instantiation_helper import RequestsCrawler, RequestsJsonInstantiation
+from helper.crawler.requests_ import RequestsCrawler
+from helper.instantiation_helper import RequestsJsonInstantiation
 from helper.runner_helper import RunnerInit
 from helper.translation_helper import BeautifulSoupTranslation
 

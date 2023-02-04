@@ -5,7 +5,7 @@ from exhibition import ExhibitionEnum
 from exhibition.jam.header import JamHeader
 from exhibition.jam.parse import JamParse
 from helper.clean_helper import RequestsClean
-from helper.crawler_helper import RequestsCrawler
+from helper.crawler.requests_ import RequestsCrawler
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
 from helper.proxy_helper import NoneProxy
 from helper.runner_helper import RunerAsyncInit

@@ -3,7 +3,7 @@ from typing import Any, Dict, List, Union
 
 from bs4 import BeautifulSoup
 
-from helper.crawler_helper import RequestsCrawler  # PyCurlCrawler
+from helper.crawler.requests_ import RequestsCrawler
 from helper.translation_helper import BeautifulSoupTranslation, JsonTranslation
 
 # 爬蟲 + 轉譯器 組合
