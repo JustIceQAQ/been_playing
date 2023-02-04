@@ -12,7 +12,7 @@ from helper.runner_helper import RunnerInit
 class TicketsBooksRunner(RunnerInit):
     """博客來售票網"""
 
-    root_dir: Final = Path(__file__).resolve(strict=True).parent.parent
+    root_dir: Final = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url: Final = "https://tickets.books.com.tw/leisure/"
     use_method = "GET"
     target_storage: Final = str(root_dir / "data" / "books_exhibition.json")
