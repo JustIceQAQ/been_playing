@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 9,
-    "last_update": "2023-01-31T16:45:12.311783+00:00",
+    "counts": 11,
+    "last_update": "2023-02-04T08:13:13.601770+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -54,6 +54,15 @@
         },
         {
             "systematics": "tmc",
+            "title": "\u00d8ZI: ADICA (Live in Taipei)",
+            "date": "2023.03.04(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/ozi-adica-live-in-taipei/",
+            "UUID": "dfd6fd7a6aa35216b3d1cb8300cbd633",
+            "figure": "https://i.imgur.com/vAWo9g9.webp"
+        },
+        {
+            "systematics": "tmc",
             "title": "\u300a\u6211\u671f\u5f85 \u5f35\u96e8\u751f\u6f14\u5531\u6703 \u81f4\u656c25\u300b",
             "date": "2023.03.11(\u516d) \u2014 2023.03.12(\u65e5)",
             "address": "\u8868\u6f14\u5ef3",
@@ -69,6 +78,15 @@
             "source_url": "https://tmc.taipei/blog/show/golden-age-concert/?session=3344",
             "UUID": "b24175ee7acd5d79835f415057c98b9e",
             "figure": "https://i.imgur.com/02UXjcL.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u7406\u60f3\u6df7\u86cb2023\u3010\u5947\u7570\u9edeBESTRANGE\u3011\u6f14\u5531\u6703",
+            "date": "2023.08.19(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/bestards2023%e3%80%90bestrange%e3%80%91live/",
+            "UUID": "fdb62a01b9f05263b3da6a55246d8389",
+            "figure": "https://i.imgur.com/yWDKzA5.webp"
         },
         {
             "systematics": "tmc",
