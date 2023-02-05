@@ -5,7 +5,7 @@ from exhibition import ExhibitionEnum
 from exhibition.kkday.header import KKDayHeader
 from exhibition.kkday.parse import KKDayParse
 from helper.clean_helper import RequestsClean
-from helper.crawler_helper import ScraperAsyncApiCrawler
+from helper.crawler.scraper import ScraperAsyncApiCrawler
 from helper.runner_helper import RunnerInit
 
 

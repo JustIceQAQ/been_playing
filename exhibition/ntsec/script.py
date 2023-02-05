@@ -80,7 +80,7 @@ class NTSECRunner(RunnerInit):
                 title,
                 title_obj.next_sibling.get_text().strip(),
                 "",
-                pt.get_html_string(),
+                pt.get_html_string().replace("\n", ""),
                 "",
                 suffix_info,
             ]

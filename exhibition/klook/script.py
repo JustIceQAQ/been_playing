@@ -6,7 +6,7 @@ from typing import List
 from exhibition import ExhibitionEnum
 from exhibition.klook.parse import KLookParse
 from helper.clean_helper import RequestsClean
-from helper.crawler_helper import ScraperAsyncApiCrawler
+from helper.crawler.scraper import ScraperAsyncApiCrawler
 from helper.runner_helper import RunnerInit
 from helper.translation_helper import BeautifulSoupTranslation
 
