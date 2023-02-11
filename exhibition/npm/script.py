@@ -4,8 +4,11 @@ from typing import Dict
 from exhibition import ExhibitionEnum
 from exhibition.npm.parse import NpmColParse, NpmRowParse
 from helper.clean_helper import RequestsClean
+from helper.crawler.requests_ import RequestsCrawler
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
+from helper.proxy_helper import FreeProxy
 from helper.runner_helper import RunnerInit
+from helper.translation_helper import BeautifulSoupTranslation
 
 
 class NPMRunner(RunnerInit):
@@ -19,15 +22,19 @@ class NPMRunner(RunnerInit):
     target_systematics = ExhibitionEnum.NPM
     target_visit_url = "https://www.npm.gov.tw/Articles.aspx?sno=02007001"
     instantiation = RequestsBeautifulSoupInstantiation
+    use_crawler = RequestsCrawler
+    use_translation = BeautifulSoupTranslation
     use_header = None
     use_parse = {"row": NpmRowParse, "col": NpmColParse}
 
     def get_response(self):
-        requests_worker = self.instantiation(self.target_url)
+        crawler = self.use_crawler(self.target_url, module_proxy=FreeProxy)
         headers = (
             self.use_header().get_header() if self.use_header is not None else None
         )
-        return requests_worker.fetch(self.use_method, headers=headers)
+        context = crawler.get_page(self.use_method, headers=headers)
+
+        return self.use_translation().format_to_object(context)
 
     def get_items(self, response) -> Dict:
         datasets_row = response.select("ul.mt-4 li.mb-8")
