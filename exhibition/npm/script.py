@@ -32,7 +32,7 @@ class NPMRunner(RunnerInit):
         headers = (
             self.use_header().get_header() if self.use_header is not None else None
         )
-        context = crawler.get_page(self.use_method, headers=headers)
+        context = crawler.get_page(self.use_method, headers=headers, verify=False)
 
         return self.use_translation().format_to_object(context)
 
