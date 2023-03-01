@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-03-01T08:15:42.932960+00:00",
+    "last_update": "2023-03-01T16:16:16.978032+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -60,15 +60,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c005544b-366a-4ff8-aab8-e9c415caeca3",
             "UUID": "099fcb2b4e1e56aaa311e2388315699e",
             "figure": "https://www.songshanculturalpark.org/gallery/1677071416_ed0a57599662b4b201f6.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u300a\u6953\u4e4b\u8c37M\u300b\u53f2\u8a69\u5287\u60c5\u201d\u6953\u8449\u82f1\u96c4\u201d\u63a8\u51fa \u300c\u6953\u8449\u5192\u96aa\u4e4b\u65c5\u300d\u53f0\u5317\u5834\u6d3b\u52d5\u5373\u5c07\u5c55\u958b",
-            "date": "2023-02-23 - 2023-03-01",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/9819f48b-328d-4463-a072-0c970286e3b8",
-            "UUID": "e02f68fc62f1589d8aa9e5fa3890ec6e",
-            "figure": "https://i.imgur.com/0qT5Nhz.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -141,6 +132,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/bde200cf-d7bd-4dd5-93c8-fdcaaad4be4d",
             "UUID": "b5ff0166c77e58259caec3f9cbe3b410",
             "figure": "https://i.imgur.com/iEEZdnx.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u672a\u4f86\u4ea4\u6613\u6240 Change For Future",
+            "date": "2022-11-30 - 2023-03-19",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/adfc53a0-22ee-45ca-908b-5a180e394c84",
+            "UUID": "3c4d88c9115b5e68a3e61be3b9a5d2aa",
+            "figure": "https://i.imgur.com/zADUiKy.webp"
         }
     ],
     "visit": {}
