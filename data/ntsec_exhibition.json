@@ -4,9 +4,18 @@
         "code_name": "ntsec",
         "external_link": "https://www.ntsec.gov.tw/User/Exhibitions.aspx?a=44"
     },
-    "counts": 2,
-    "last_update": "2023-03-03T08:14:59.383126+00:00",
+    "counts": 3,
+    "last_update": "2023-03-03T16:15:14.973763+00:00",
     "data": [
+        {
+            "systematics": "ntsec",
+            "title": "\u6280\u8077\u6559\u80b2X\u8077\u696d\u63a2\u7d22-\u667a\u6167\u5922\u5de5\u5ee0",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=155",
+            "UUID": "f52424d985705f02822ba0da8ad6ffc0",
+            "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/155_2.jpg"
+        },
         {
             "systematics": "ntsec",
             "title": "NAKED OCEAN IN TAIPEI \u5149\u4e4b\u5f71\u6d77\u6d0b\u5c55",
