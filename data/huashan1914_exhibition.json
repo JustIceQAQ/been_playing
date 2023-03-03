@@ -4,8 +4,8 @@
         "code_name": "huashan1914",
         "external_link": "https://www.huashan1914.com/w/huashan1914/exhibition"
     },
-    "counts": 22,
-    "last_update": "2023-03-03T02:51:29.320147+00:00",
+    "counts": 23,
+    "last_update": "2023-03-03T08:15:07.126132+00:00",
     "data": [
         {
             "systematics": "huashan1914",
@@ -37,11 +37,11 @@
         {
             "systematics": "huashan1914",
             "title": "FUBEES Art Toy\u5feb\u9583\u5e97",
-            "date": "2022-12-22 ~ 2023-03-07",
+            "date": "2022-12-22 ~ 2023-03-12",
             "address": "-",
             "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_22121610202804976",
             "UUID": "5ef0a344d4b656bea668cae7836c0603",
-            "figure": "https://i.imgur.com/5VkShYC.webp"
+            "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/1920_1080-2.jpg"
         },
         {
             "systematics": "huashan1914",
@@ -162,6 +162,15 @@
         },
         {
             "systematics": "huashan1914",
+            "title": "AI EXPO Taiwan 2023",
+            "date": "2023-04-19 ~ 2023-04-21",
+            "address": "-",
+            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_23030312073644718",
+            "UUID": "a5d227889d655a96b480d2f1cf151f4a",
+            "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/1920x1080_23030312085130403.jpg"
+        },
+        {
+            "systematics": "huashan1914",
             "title": "\u5f80\u5c71\u88e1\u8d70 x \u83ef\u5c71\u54c1\u724c\u5feb\u9583\uff5c\u68ee\u6797\u88e1\u7684\u5be7\u975c\u7f8e\u8853\u9928",
             "date": "2023-02-09 ~ 2023-04-26",
             "address": "-",
@@ -189,21 +198,21 @@
         },
         {
             "systematics": "huashan1914",
-            "title": "\u300c\u6f6e\u6c50\u9593\uff0c\u66d6\u6627\u300d\u7b2c\u2f00\u5c46\u6c38\u7e8c\u6559\u80b2\u66a8\u85dd\u8853\u6027\u7b56\u5c55",
-            "date": "2023-03-02 ~ 2023-03-05",
-            "address": "-",
-            "source_url": "https://www.huashan1914.com/w/umaytheater/performance_23021310343284402",
-            "UUID": "2f68cb94e82e54ebb6707f1d1daef6f1",
-            "figure": "https://i.imgur.com/Oh7TLDX.webp"
-        },
-        {
-            "systematics": "huashan1914",
             "title": "\u81fa\u5317\u57ce\u5e02\u79d1\u5927\u6f14\u85dd\u4e8b\u696d\u7cfb\u7b2c\u516b\u5c46\u7562\u696d\u88fd\u4f5c\u300a\u7063\u311f\u61a8\u5409\u300b",
             "date": "2023-03-03 ~ 2023-03-05",
             "address": "-",
             "source_url": "https://www.huashan1914.com/w/umaytheater/performance_23022114552339832",
             "UUID": "d1fe2a6b4c5c5bb0a0fb478ee0d52f40",
             "figure": "https://media.huashan1914.com/WebUPD/umaytheater/performance/IMG_5713_23022115064320025.jpeg"
+        },
+        {
+            "systematics": "huashan1914",
+            "title": "\u300c\u6f6e\u6c50\u9593\uff0c\u66d6\u6627\u300d\u7b2c\u2f00\u5c46\u6c38\u7e8c\u6559\u80b2\u66a8\u85dd\u8853\u6027\u7b56\u5c55",
+            "date": "2023-03-02 ~ 2023-03-05",
+            "address": "-",
+            "source_url": "https://www.huashan1914.com/w/umaytheater/performance_23021310343284402",
+            "UUID": "2f68cb94e82e54ebb6707f1d1daef6f1",
+            "figure": "https://i.imgur.com/Oh7TLDX.webp"
         }
     ],
     "visit": {}
