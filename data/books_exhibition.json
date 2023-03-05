@@ -4,8 +4,8 @@
         "code_name": "tickets_books",
         "external_link": "https://tickets.books.com.tw/leisure/"
     },
-    "counts": 14,
-    "last_update": "2023-03-05T08:13:36.791625+00:00",
+    "counts": 9,
+    "last_update": "2023-03-05T16:14:11.957914+00:00",
     "data": [
         {
             "systematics": "tickets_books",
@@ -36,15 +36,6 @@
         },
         {
             "systematics": "tickets_books",
-            "title": "JOJO\u7684\u5947\u5999\u5192\u96aa\u300a\u9ec3\u91d1\u4e4b\u5fc3\u300b\u52d5\u756b",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201035982",
-            "UUID": "83efb71726825b6bbe8b95176f05a6b0",
-            "figure": "https://i.imgur.com/PxtaJrX.webp"
-        },
-        {
-            "systematics": "tickets_books",
             "title": "2222\uff0d\u672a\u4f86\u9078\u64c7\u5730",
             "date": "-",
             "address": "-",
@@ -72,30 +63,12 @@
         },
         {
             "systematics": "tickets_books",
-            "title": "\u4e00\u978b\u5165\u9b42\uff01\u502b\u6566\u8a2d\u8a08\u535a\u7269\u9928 \u6f6e\u978b",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010901781071",
-            "UUID": "80ef174e11f756c8bc2d9953b1a54695",
-            "figure": "https://i.imgur.com/NHA7nQb.webp"
-        },
-        {
-            "systematics": "tickets_books",
             "title": "\u300c\u30f4\u30f4\u30f4\u30bd\u9b3c\u592a\u90ce\u5996\u602a100\u7269\u8a9e\u300d",
             "date": "-",
             "address": "-",
             "source_url": "https://tickets.books.com.tw/progshow/08010201913055",
             "UUID": "2a0937984d4e586e9d88c72bfd964e81",
             "figure": "https://i.imgur.com/FUIJcRz.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "The World of Tim Burton\u63d0\u59c6\u6ce2",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201246097",
-            "UUID": "76e94c303fe65851ba32e15088be2ea7",
-            "figure": "https://i.imgur.com/yd1aSXd.webp"
         },
         {
             "systematics": "tickets_books",
@@ -114,24 +87,6 @@
             "source_url": "https://tickets.books.com.tw/progshow/02050005633427",
             "UUID": "820534cbc709524e8705ce8058c1c00f",
             "figure": "https://i.imgur.com/bd03lhs.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "NAKED OCEAN IN TAIPEI \u5149\u4e4b\u5f71\u6d77\u6d0b\u5c55",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010901615581",
-            "UUID": "50766a639faf5a99a566acdf65bc588f",
-            "figure": "https://i.imgur.com/SVGr3MJ.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u5b89\u5f92\u751f\u7ae5\u8a71\uff0d\u5c0f\u7f8e\u4eba\u9b5a\u7279\u5c55",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201081200",
-            "UUID": "deb7a963d336505daa32caa68a18feaf",
-            "figure": "https://i.imgur.com/FHBCxCr.webp"
         }
     ],
     "visit": {}
