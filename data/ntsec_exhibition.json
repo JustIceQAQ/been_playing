@@ -4,8 +4,8 @@
         "code_name": "ntsec",
         "external_link": "https://www.ntsec.gov.tw/User/Exhibitions.aspx?a=44"
     },
-    "counts": 3,
-    "last_update": "2023-03-06T08:15:45.985485+00:00",
+    "counts": 1,
+    "last_update": "2023-03-06T16:15:44.751797+00:00",
     "data": [
         {
             "systematics": "ntsec",
@@ -15,24 +15,6 @@
             "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=155",
             "UUID": "f52424d985705f02822ba0da8ad6ffc0",
             "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/155_2.jpg"
-        },
-        {
-            "systematics": "ntsec",
-            "title": "NAKED OCEAN IN TAIPEI \u5149\u4e4b\u5f71\u6d77\u6d0b\u5c55",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=467",
-            "UUID": "308efc42e4ff5d48b6138fa35d59e0fc",
-            "figure": "https://i.imgur.com/lvVtxfA.webp"
-        },
-        {
-            "systematics": "ntsec",
-            "title": "\u5b89\u5f92\u751f\u7ae5\u8a71\uff0d\u5c0f\u7f8e\u4eba\u9b5a\u7279\u5c55 The Little Mermaid",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=468",
-            "UUID": "d49c6f3e50a9538794d0cef1a4b2d656",
-            "figure": "https://i.imgur.com/vSWLJeK.webp"
         }
     ],
     "visit": {
