@@ -5,7 +5,7 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 8,
-    "last_update": "2023-03-09T16:16:26.786085+00:00",
+    "last_update": "2023-03-10T01:02:20.881255+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -36,20 +36,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u53f0\u5317\u570b\u969b\u81ea\u884c\u8eca\u5c55\u89bd\u6703",
-            "date": "03/22 ~ 03/25",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "http://www.taipeicycle.com.tw",
-            "UUID": "72a6325fb458569d9c47d352bc48d176",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u53f0\u7063\u570b\u969b\u904b\u52d5\u53ca\u5065\u8eab\u5c55(\u539f\u53f0\u5317\u570b\u969b\u9ad4\u80b2\u7528\u54c1\u5c55)",
             "date": "03/22 ~ 03/25",
             "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
             "source_url": "http://www.taispo.com.tw",
             "UUID": "758557d18b715d359a5b3fa2b0dbd44f",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u5317\u570b\u969b\u81ea\u884c\u8eca\u5c55\u89bd\u6703",
+            "date": "03/22 ~ 03/25",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.taipeicycle.com.tw",
+            "UUID": "72a6325fb458569d9c47d352bc48d176",
             "figure": ""
         },
         {
