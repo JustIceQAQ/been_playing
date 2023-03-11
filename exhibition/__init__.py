@@ -28,7 +28,7 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
     NPM = (
         "國立故宮博物院",
         "npm",
-        "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1",
+        "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1",
     )
     SongShanCulturalPark = (
         "松山文創園區",

@@ -1,12 +1,12 @@
+import os
 from pathlib import Path
 from typing import Dict
 
 from exhibition import ExhibitionEnum
 from exhibition.npm.parse import NpmColParse, NpmRowParse
 from helper.clean_helper import RequestsClean
-from helper.crawler.requests_ import RequestsCrawler
+from helper.crawler.scrape_do import ScrapeDoCrawler
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
-from helper.proxy_helper import FreeProxy
 from helper.runner_helper import RunnerInit
 from helper.translation_helper import BeautifulSoupTranslation
 
@@ -15,25 +15,23 @@ class NPMRunner(RunnerInit):
     """國立故宮博物院"""
 
     root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
-    target_url = "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1"
+    target_url = (
+        "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1"
+    )
     use_method = "GET"
     target_domain = "https://www.npm.gov.tw/"
     target_storage = str(root_dir / "data" / "npm_exhibition.json")
     target_systematics = ExhibitionEnum.NPM
     target_visit_url = "https://www.npm.gov.tw/Articles.aspx?sno=02007001"
     instantiation = RequestsBeautifulSoupInstantiation
-    use_crawler = RequestsCrawler
+    use_crawler = ScrapeDoCrawler
     use_translation = BeautifulSoupTranslation
     use_header = None
     use_parse = {"row": NpmRowParse, "col": NpmColParse}
 
     def get_response(self):
-        crawler = self.use_crawler(self.target_url, module_proxy=FreeProxy)
-        headers = (
-            self.use_header().get_header() if self.use_header is not None else None
-        )
-        context = crawler.get_page(self.use_method, headers=headers, verify=False)
-
+        crawler = self.use_crawler(token=os.getenv("SCRAPE_DO_API_KEY", None))
+        context = crawler.get_page(self.target_url)
         return self.use_translation().format_to_object(context)
 
     def get_items(self, response) -> Dict:
