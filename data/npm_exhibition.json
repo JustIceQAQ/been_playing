@@ -2,10 +2,10 @@
     "information": {
         "fullname": "\u570b\u7acb\u6545\u5bae\u535a\u7269\u9662",
         "code_name": "npm",
-        "external_link": "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1"
+        "external_link": "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1"
     },
     "counts": 18,
-    "last_update": "2023-03-11T11:32:18.338196+00:00",
+    "last_update": "2023-03-12T13:21:41.983805+00:00",
     "data": [
         {
             "systematics": "npm",
@@ -170,7 +170,5 @@
             "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig%2F04000459%2F34053221.jpg"
         }
     ],
-    "visit": {
-        "opening": "\u9031\u4e8c\u81f3\u9031\u65e5\uff1a09:00~17:00\n\uff5c\u9031\u4e00\u4f11\u9928\n\uff5c\u914d\u5408\u9023\u7e8c\u5047\u65e5\uff0c112\u5e74\u5ea6\u9031\u4e00\u958b\u9928\u65e51/2\u30011/23\u30012/27\u30014/3\u30015/1\u300110/9\u3002"
-    }
+    "visit": {}
 }
