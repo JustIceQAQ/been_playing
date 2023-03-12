@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 6,
-    "last_update": "2023-03-12T08:13:12.018195+00:00",
+    "counts": 7,
+    "last_update": "2023-03-12T16:13:17.820300+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -60,6 +60,15 @@
             "source_url": "https://kpmc.kktix.cc/events/poppoppop",
             "UUID": "2753092823855d20b12fbb3f6977690c",
             "figure": "https://i.imgur.com/76TL3BV.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "2023\u53f0\u5317\u570b\u969b\u9152\u5c55\u2027\u7d14\u9152\u5c55",
+            "date": "2023/4/14(\u4e94)",
+            "address": "",
+            "source_url": "https://chanchaotw.kktix.cc/events/4d3e1c40",
+            "UUID": "99e40f3daad251c8a0c414e6073c436c",
+            "figure": "https://t.kfs.io/upload_images/167365/Kktix_1200x630_medium.jpg"
         }
     ],
     "visit": {}
