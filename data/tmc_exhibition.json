@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 7,
-    "last_update": "2023-03-14T16:18:34.774471+00:00",
+    "counts": 8,
+    "last_update": "2023-03-15T00:58:27.473241+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -33,6 +33,15 @@
             "source_url": "https://tmc.taipei/blog/show/golden-age-concert/?session=3344",
             "UUID": "b24175ee7acd5d79835f415057c98b9e",
             "figure": "https://i.imgur.com/02UXjcL.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "2023\u70cf\u514b\u862d\u806f\u5408\u82ad\u857e\u821e\u5718\u300a\u6230\u6642\u8f13\u6b4c\u300b",
+            "date": "2023.04.29(\u516d) \u2014 2023.04.30(\u65e5)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/2023ukrainian-ballet-wartime-elegy/?session=3473",
+            "UUID": "b782b5d7fe335b1c8c7c26c949cc064f",
+            "figure": "https://tmc.taipei/wp-content/uploads/2023/03/2023030310343529491920x1080_300k.jpg"
         },
         {
             "systematics": "tmc",
@@ -68,7 +77,7 @@
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/theworldofmanszimmer/?session=2035",
             "UUID": "0b3279e7f3d75756a48eee928fe2bcff",
-            "figure": "https://i.imgur.com/2muSKNP.webp"
+            "figure": "https://tmc.taipei/wp-content/uploads/2021/10/1360x680.jpg"
         }
     ],
     "visit": {}
