@@ -4,9 +4,18 @@
         "code_name": "ncpi",
         "external_link": "https://ncpiexhibition.ntmofa.gov.tw/tw/Exhibition/ListCur"
     },
-    "counts": 2,
-    "last_update": "2023-03-17T08:14:25.381200+00:00",
+    "counts": 3,
+    "last_update": "2023-03-17T16:15:23.006893+00:00",
     "data": [
+        {
+            "systematics": "ncpi",
+            "title": "\u67e5\u770b \u62bd\u8c61\u4e4b\u773c",
+            "date": "2023.03.18 - 07.30",
+            "address": "\u81fa\u5317 \u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3\uff0f301 ~ 303\u3001305\u5c55\u89bd\u5ba4",
+            "source_url": "https://ncpiexhibition.ntmofa.gov.tw//tw/Exhibition/Detail/23030219272549673",
+            "UUID": "38431f3b9b075876a598baab7b4428b4",
+            "figure": "https://NCPIExhibition.ntmofa.gov.tw/WebUPD/1Exhibition/1512x1016.png"
+        },
         {
             "systematics": "ncpi",
             "title": "\u67e5\u770b \u9020\u5f71\uff1a\u7576\u4ee3\u865b\u64ec\u6558\u4e8b",
