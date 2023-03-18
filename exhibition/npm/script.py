@@ -73,7 +73,7 @@ class NPMRunner(RunnerInit):
     def get_visit(self, *args, **kwargs):
         crawler = self.use_crawler(token=os.getenv("SCRAPE_DO_API_KEY", None))
         context = crawler.get_page(self.target_visit_url)
-        response = self.use_translation().format_to_object(context.text)
+        response = self.use_translation().format_to_object(context)
         opening = response.select_one("div.visit-content > p")
         visit_info = "\n".join(
             [
