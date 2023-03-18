@@ -71,11 +71,9 @@ class NPMRunner(RunnerInit):
             yield exhibition
 
     def get_visit(self, *args, **kwargs):
-        requests_worker = self.instantiation(self.target_visit_url)
-        headers = (
-            self.use_header().get_header() if self.use_header is not None else None
-        )
-        response = requests_worker.fetch(self.use_method, headers=headers)
+        crawler = self.use_crawler(token=os.getenv("SCRAPE_DO_API_KEY", None))
+        context = crawler.get_page(self.target_visit_url)
+        response = self.use_translation().format_to_object(context)
         opening = response.select_one("div.visit-content > p")
         visit_info = "\n".join(
             [
