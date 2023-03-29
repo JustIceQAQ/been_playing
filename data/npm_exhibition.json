@@ -4,9 +4,27 @@
         "code_name": "npm",
         "external_link": "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1"
     },
-    "counts": 18,
-    "last_update": "2023-03-29T08:14:36.983973+00:00",
+    "counts": 20,
+    "last_update": "2023-03-29T17:38:42.797357+00:00",
     "data": [
+        {
+            "systematics": "npm",
+            "title": "\u7b46\u6b4c\u58a8\u821e\u2014\u6545\u5bae\u7e6a\u756b\u5c0e\u8cde",
+            "date": "2023-03-30~2023-06-25",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 210,212",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013264&l=1&type=1&cat=",
+            "UUID": "39e2e666fa35556f8551bfc64665e6f4",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013264/34055176.jpg&w=720&h=500"
+        },
+        {
+            "systematics": "npm",
+            "title": "\u570b\u5bf6\u805a\u7126",
+            "date": "2023-03-30~2023-06-25",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 208",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013265&l=1&type=1&cat=",
+            "UUID": "02a818142f175491972d89941270bee3",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013265/34055178.jpg&w=720&h=500"
+        },
         {
             "systematics": "npm",
             "title": "\u5de8\u5e45\u540d\u4f5c",
@@ -171,6 +189,6 @@
         }
     ],
     "visit": {
-        "opening": "\u9031\u4e8c\u81f3\u9031\u65e5\uff1a09:00~17:00\n\uff5c\u9031\u4e00\u4f11\u9928\n\uff5c\u914d\u5408\u9023\u7e8c\u5047\u65e5\uff0c112\u5e74\u5ea6\u9031\u4e00\u958b\u9928\u65e51/2\u30011/23\u30012/27\u30014/3\u30015/1\u300110/9\u3002"
+        "opening": "\u9031\u4e8c\u81f3\u9031\u65e5\uff1a09:00~17:00 (16:30\u505c\u6b62\u552e\u7968\u53ca\u7968\u5238\u514c\u63db)\n\uff5c\u9031\u4e00\u4f11\u9928\n\uff5c\u914d\u5408\u9023\u7e8c\u5047\u65e5\uff0c112\u5e74\u5ea6\u9031\u4e00\u958b\u9928\u65e51/2\u30011/23\u30012/27\u30014/3\u30015/1\u300110/9\u3002"
     }
 }
