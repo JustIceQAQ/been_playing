@@ -1,11 +1,13 @@
+import json
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
 from exhibition.ibon.header import IBonHeader
 from exhibition.ibon.parse import IBonParse
 from helper.clean_helper import RequestsClean
-from helper.instantiation_helper import RequestsJsonInstantiation
+from helper.crawler.requests_ import RequestsCrawler
 from helper.runner_helper import RunnerInit
+from helper.translation_helper import BeautifulSoupTranslation
 
 
 class IBonRunner(RunnerInit):
@@ -19,16 +21,20 @@ class IBonRunner(RunnerInit):
     use_method = "GET"
     target_storage = str(root_dir / "data" / "ibon_exhibition.json")
     target_systematics = ExhibitionEnum.IBon
-    instantiation = RequestsJsonInstantiation
+    use_crawler = RequestsCrawler
+    use_translation = BeautifulSoupTranslation
     use_header = IBonHeader
     use_parse = IBonParse
 
     def get_response(self):
-        requests_worker = self.instantiation(self.target_url)
+        requests_worker = self.use_crawler(self.target_url)
         headers = (
             self.use_header().get_header() if self.use_header is not None else None
         )
-        return requests_worker.fetch(self.use_method, headers=headers)
+        response = requests_worker.get_page(
+            self.use_method, headers=headers, formatted=requests_worker.Formatted.text
+        )
+        return json.loads(response)
 
     def get_items(self, response):
         return response.get("list")
