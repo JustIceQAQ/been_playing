@@ -72,6 +72,8 @@ class MuseumPostRunner(RunnerInit):
         )
         response = requests_worker.fetch(self.use_method, headers=headers)
         opening = response.select_one("ul.article-2")
+        if opening is None:
+            return None
 
         return "\n".join(
             [
