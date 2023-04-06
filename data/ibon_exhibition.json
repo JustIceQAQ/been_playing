@@ -4,9 +4,18 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 37,
-    "last_update": "2023-04-06T00:51:15.567071+00:00",
+    "counts": 39,
+    "last_update": "2023-04-06T08:13:29.666541+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55",
+            "date": "2023-06-22 ~ 2023-09-10",
+            "address": "\u65b0\u5149\u4e09\u8d8a\u4fe1\u7fa9\u65b0\u5929\u5730A9\u9928",
+            "source_url": "https://tour.ibon.com.tw/event/6424f59632ba960f5ed4892c",
+            "UUID": "cbdf90465d225ef0b0d3ea3cfa2e1026",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/ca12ff16-c1bd-4a49-8f99-8779743e3a60.jpg"
+        },
         {
             "systematics": "ibon",
             "title": "\u3010\u6625\u805a\u3011\u5f9e\u81ea\u7652\u529b\u8a31\u500b\u512a\u96c5\u7684\u665a\u7f8e\u4eba\u751f",
@@ -33,6 +42,15 @@
             "source_url": "https://tour.ibon.com.tw/event/6419545c617cb072730511eb",
             "UUID": "cadb674aa93d517d9d9b98fad4bc9ece",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/b804bb38-28f4-40c9-915c-2bbb2dd48cd5.jpg"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u53f0\u5317\uff0e\u967d\u660e\u5c71\u516c\u5712\u5728\u5730\u751f\u6d3b\u8207\u6587\u5316\u5c0e\u89bd",
+            "date": "2023-04-01 ~ 2023-12-31",
+            "address": "\u967d\u660e\u5c71\u516c\u5712",
+            "source_url": "https://tour.ibon.com.tw/event/641134c7623f0a3fdb1ae5a1",
+            "UUID": "7e25c99b87315a01a6d83afeaebf5262",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/0eb8fda7-ac56-47a9-b4d0-3f56d222d68b.jpg"
         },
         {
             "systematics": "ibon",
