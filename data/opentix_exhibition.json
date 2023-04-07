@@ -4,8 +4,8 @@
         "code_name": "opentix",
         "external_link": "https://www.opentix.life/search/%20/ABOUT_TO_BEGIN?category=%E5%B1%95%E8%A6%BDAll"
     },
-    "counts": 8,
-    "last_update": "2023-03-30T08:14:16.812911+00:00",
+    "counts": 7,
+    "last_update": "2023-04-07T16:13:15.228585+00:00",
     "data": [
         {
             "systematics": "opentix",
@@ -36,24 +36,6 @@
         },
         {
             "systematics": "opentix",
-            "title": "\u5492\u8853\u8ff4\u6230\u5c55",
-            "date": "2022-12-30 ~ 2023-04-05",
-            "address": "\u81fa\u5317",
-            "source_url": "https://www.opentix.life/event/1584813952341381125",
-            "UUID": "91c525b02cb3541a8a5b993641510039",
-            "figure": "https://i.imgur.com/08L7ySf.webp"
-        },
-        {
-            "systematics": "opentix",
-            "title": "\u300c\u30b2\u30b2\u30b2\u306e\u9b3c\u592a\u90ce \u5996\u602a100\u7269\u8a9e\u300d\u7279\u5c55",
-            "date": "2022-12-31 ~ 2023-04-05",
-            "address": "\u81fa\u5317",
-            "source_url": "https://www.opentix.life/event/1583017206399123465",
-            "UUID": "32bf99a77bc756f6b51b4b8e32680e3b",
-            "figure": "https://i.imgur.com/1w2ycdo.webp"
-        },
-        {
-            "systematics": "opentix",
             "title": "2023\u3010\u5531 \u6211\u5011\u7684\u6b4c \u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55\u3011",
             "date": "2023-01-01 ~ 2026-09-20",
             "address": "\u81fa\u5317",
@@ -63,21 +45,30 @@
         },
         {
             "systematics": "opentix",
-            "title": "2222-\u672a\u4f86\u9078\u64c7\u5730",
-            "date": "2023-01-06 ~ 2023-04-05",
-            "address": "\u81fa\u5317",
-            "source_url": "https://www.opentix.life/event/1599665337652658181",
-            "UUID": "492aa46268df5b02bf3e7e20fd3cd51a",
-            "figure": "https://i.imgur.com/5LxV00Y.webp"
-        },
-        {
-            "systematics": "opentix",
             "title": "\u89e3\u5bc6\u8056\u6bcd\u767e\u82b1\u5927\u6559\u5802",
             "date": "2023-01-10 ~ 2023-04-09",
             "address": "\u81fa\u5357",
             "source_url": "https://www.opentix.life/event/1598594106186432518",
             "UUID": "22ad57a3a7ec58ae801c6ffdb13dd658",
             "figure": "https://i.imgur.com/8L9y78S.webp"
+        },
+        {
+            "systematics": "opentix",
+            "title": "\u5492\u8853\u8ff4\u6230\u5c55_\u9ad8\u96c4\u5834_\u5492\u9ab8\u5a03\u5a03\u5957\u7968",
+            "date": "2023-06-30 ~ 2023-10-10",
+            "address": "\u9ad8\u96c4",
+            "source_url": "https://www.opentix.life/event/1641745844516044801",
+            "UUID": "ad2e336e808254bdbf314982974e7c96",
+            "figure": "https://s3.resource.opentix.life/upload/program/1680256748345HtdKXYkNU2.jpeg"
+        },
+        {
+            "systematics": "opentix",
+            "title": "\u5492\u8853\u8ff4\u6230\u5c55_\u9ad8\u96c4\u5834",
+            "date": "2023-06-30 ~ 2023-10-10",
+            "address": "\u9ad8\u96c4",
+            "source_url": "https://www.opentix.life/event/1641733727108874241",
+            "UUID": "98f7b80b04b458b4b68ab729981edc9e",
+            "figure": "https://s3.resource.opentix.life/upload/program/1680253266244n6UMOu0ciE.jpeg"
         }
     ],
     "visit": {}

@@ -4,8 +4,8 @@
         "code_name": "tickets_books",
         "external_link": "https://tickets.books.com.tw/leisure/"
     },
-    "counts": 11,
-    "last_update": "2023-03-30T08:14:22.729645+00:00",
+    "counts": 5,
+    "last_update": "2023-04-07T16:13:13.677045+00:00",
     "data": [
         {
             "systematics": "tickets_books",
@@ -27,48 +27,12 @@
         },
         {
             "systematics": "tickets_books",
-            "title": "2023\u300cMMI\u6709\u9322\u4eba\u60f3\u7684\u548c\u4f60\u4e0d\u4e00\u6a23\u300d\u4e09\u5929\u5bc6\u96c6\u6539\u9020\u8ab2\u7a0b\uff0d\u53f0\u7063\u5834",
+            "title": "\u4e16\u754c\u767e\u5927\u540d\u756b\u5927\u5c55",
             "date": "-",
             "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005992624",
-            "UUID": "b1e9b6c8023b54c9a1375e2f6c9c00de",
-            "figure": "https://i.imgur.com/enBB10X.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u89e3\u5bc6\u8056\u6bcd\u767e\u82b1\u5927\u6559\u5802",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010901994567",
-            "UUID": "6011f2533eb9579887e0913b6bb27d6c",
-            "figure": "https://i.imgur.com/P22tkru.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u3010\u7c73\u5947\u85dd\u8853\u5c55\u5168\u7403\u5de1\u5c55\u2014\u53f0\u5317\u7ad9\u3011",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201097460",
-            "UUID": "a6b1aa8d1b2359789080eb53e4a9cef0",
-            "figure": "https://i.imgur.com/eNzN8zP.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "2222\uff0d\u672a\u4f86\u9078\u64c7\u5730",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010801235047",
-            "UUID": "35b37b751aad5bc999ebb6c1eddf7902",
-            "figure": "https://i.imgur.com/wUDlqlz.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u3010\u5492\u8853\u8ff4\u6230\u5c55\u3011",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201449862",
-            "UUID": "3c11436aa9165a85b188dd4fe56d575b",
-            "figure": "https://i.imgur.com/HgUx5S2.webp"
+            "source_url": "https://tickets.books.com.tw/progshow/08010901741268",
+            "UUID": "fc97a5ffc8235545b71b219a367b11cb",
+            "figure": "https://i.imgur.com/8NDL6V5.webp"
         },
         {
             "systematics": "tickets_books",
@@ -81,30 +45,12 @@
         },
         {
             "systematics": "tickets_books",
-            "title": "BABY SHARK \u653e\u96fb\u8db4",
+            "title": "\u89e3\u5bc6\u8056\u6bcd\u767e\u82b1\u5927\u6559\u5802",
             "date": "-",
             "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201948433",
-            "UUID": "78a9b2f92a8f5f10bbeb73c6c85918d9",
-            "figure": "https://i.imgur.com/Vg02qDH.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u300c\u30f4\u30f4\u30f4\u30bd\u9b3c\u592a\u90ce\u5996\u602a100\u7269\u8a9e\u300d",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201913055",
-            "UUID": "2a0937984d4e586e9d88c72bfd964e81",
-            "figure": "https://i.imgur.com/FUIJcRz.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u4e16\u754c\u767e\u5927\u540d\u756b\u5927\u5c55",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010901741268",
-            "UUID": "fc97a5ffc8235545b71b219a367b11cb",
-            "figure": "https://i.imgur.com/8NDL6V5.webp"
+            "source_url": "https://tickets.books.com.tw/progshow/08010901994567",
+            "UUID": "6011f2533eb9579887e0913b6bb27d6c",
+            "figure": "https://i.imgur.com/P22tkru.webp"
         }
     ],
     "visit": {}

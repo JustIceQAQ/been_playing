@@ -4,17 +4,17 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 8,
-    "last_update": "2023-03-30T08:14:22.183090+00:00",
+    "counts": 7,
+    "last_update": "2023-04-07T16:13:16.035202+00:00",
     "data": [
         {
             "systematics": "KKTix",
-            "title": "2222-\u672a\u4f86\u9078\u64c7\u5730",
-            "date": "2023/1/6(\u4e94)",
+            "title": "\u611b\u60c5\u6709(\u7121)\u9032\u5c55",
+            "date": "2022/12/24(\u516d)",
             "address": "",
-            "source_url": "https://thenewslens.kktix.cc/events/bfc71b1e",
-            "UUID": "12a3812ea2215816bd19420356af195f",
-            "figure": "https://i.imgur.com/tAk7jup.webp"
+            "source_url": "https://carrier.kktix.cc/events/lovehunt2022",
+            "UUID": "c791b13348c1549291e5737282e03504",
+            "figure": "https://t.kfs.io/upload_images/167730/%E6%84%9B%E6%83%85%E5%B1%95-KKTIX-%E5%B1%95%E6%9C%9F%E5%BB%B6%E9%95%B7-%E5%AE%98%E7%B6%B2-%E4%B9%9D%E5%AE%AE%E6%A0%BC-1200X630-0313_medium.jpg"
         },
         {
             "systematics": "KKTix",
@@ -27,30 +27,12 @@
         },
         {
             "systematics": "KKTix",
-            "title": "\u611b\u60c5\u6709(\u7121)\u9032\u5c55",
-            "date": "2022/12/24(\u516d)",
-            "address": "",
-            "source_url": "https://carrier.kktix.cc/events/lovehunt2022",
-            "UUID": "c791b13348c1549291e5737282e03504",
-            "figure": "https://t.kfs.io/upload_images/167730/%E6%84%9B%E6%83%85%E5%B1%95-KKTIX-%E5%B1%95%E6%9C%9F%E5%BB%B6%E9%95%B7-%E5%AE%98%E7%B6%B2-%E4%B9%9D%E5%AE%AE%E6%A0%BC-1200X630-0313_medium.jpg"
-        },
-        {
-            "systematics": "KKTix",
             "title": "Gaki Hip\u81fa\u7063\u9996\u5ea7IG\u7f8e\u8853\u9928",
             "date": "2023/1/22(\u65e5)",
             "address": "",
             "source_url": "https://gakihip.kktix.cc/events/f42e675d",
             "UUID": "735ab01bf10156ff9b7eabce7a3e8a9c",
             "figure": "https://t.kfs.io/upload_images/167668/%E4%B8%BB%E8%A6%96%E8%A6%BAGH_KKTIX_GRAPHIC01_medium.png"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "\u81fa\u7063\u610f\u8c61-\u5e1d\u570b\u773c\u4e2d\u7684\u81fa\u7063\u98a8\u7269",
-            "date": "2022/9/30(\u4e94)",
-            "address": "",
-            "source_url": "https://thcdchakka.kktix.cc/events/080e7d61",
-            "UUID": "7519d06638b759ec84ef58852ad370bd",
-            "figure": "https://i.imgur.com/rFQSVre.webp"
         },
         {
             "systematics": "KKTix",
@@ -78,6 +60,15 @@
             "source_url": "https://chanchaotw.kktix.cc/events/4d3e1c40",
             "UUID": "99e40f3daad251c8a0c414e6073c436c",
             "figure": "https://t.kfs.io/upload_images/167365/Kktix_1200x630_medium.jpg"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u3010\u611b\u624b\u5275\u65e5\u672c\u624b\u4f5c\u796d \u7b2c\u4e94\u56de ISHANDS x Connect asia \u65e5\u672c\u624b\u3065\u304f\u308a\u796d\u3011 The 5th ISHANDS x Connect-asia Craft Matsuri",
+            "date": "2023/6/9(\u4e94)",
+            "address": "",
+            "source_url": "https://ishands.kktix.cc/events/2023connectasia",
+            "UUID": "54793220a1dc5eeba8a05727e4c0b202",
+            "figure": "https://t.kfs.io/upload_images/168388/%E9%80%9A%E8%B7%AF%E5%BB%A3%E5%91%8A%E5%9C%96-KKTIX_2023%E6%84%9B%E6%89%8B%E5%89%B5%E6%97%A5%E6%9C%AC%E6%89%8B%E4%BD%9C%E7%A5%AD_KKTIX_1200x630px_medium.jpg"
         }
     ],
     "visit": {}
