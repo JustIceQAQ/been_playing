@@ -4,8 +4,8 @@
         "code_name": "opentix",
         "external_link": "https://www.opentix.life/search/%20/ABOUT_TO_BEGIN?category=%E5%B1%95%E8%A6%BDAll"
     },
-    "counts": 5,
-    "last_update": "2023-04-07T00:48:09.113186+00:00",
+    "counts": 7,
+    "last_update": "2023-04-07T08:12:50.062011+00:00",
     "data": [
         {
             "systematics": "opentix",
@@ -51,6 +51,24 @@
             "source_url": "https://www.opentix.life/event/1598594106186432518",
             "UUID": "22ad57a3a7ec58ae801c6ffdb13dd658",
             "figure": "https://i.imgur.com/8L9y78S.webp"
+        },
+        {
+            "systematics": "opentix",
+            "title": "\u5492\u8853\u8ff4\u6230\u5c55_\u9ad8\u96c4\u5834_\u5492\u9ab8\u5a03\u5a03\u5957\u7968",
+            "date": "2023-06-30 ~ 2023-10-10",
+            "address": "\u9ad8\u96c4",
+            "source_url": "https://www.opentix.life/event/1641745844516044801",
+            "UUID": "ad2e336e808254bdbf314982974e7c96",
+            "figure": "https://s3.resource.opentix.life/upload/program/1680256748345HtdKXYkNU2.jpeg"
+        },
+        {
+            "systematics": "opentix",
+            "title": "\u5492\u8853\u8ff4\u6230\u5c55_\u9ad8\u96c4\u5834",
+            "date": "2023-06-30 ~ 2023-10-10",
+            "address": "\u9ad8\u96c4",
+            "source_url": "https://www.opentix.life/event/1641733727108874241",
+            "UUID": "98f7b80b04b458b4b68ab729981edc9e",
+            "figure": "https://s3.resource.opentix.life/upload/program/1680253266244n6UMOu0ciE.jpeg"
         }
     ],
     "visit": {}

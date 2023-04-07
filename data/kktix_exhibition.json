@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 6,
-    "last_update": "2023-04-07T00:48:12.394820+00:00",
+    "counts": 7,
+    "last_update": "2023-04-07T08:12:52.388572+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -60,6 +60,15 @@
             "source_url": "https://chanchaotw.kktix.cc/events/4d3e1c40",
             "UUID": "99e40f3daad251c8a0c414e6073c436c",
             "figure": "https://t.kfs.io/upload_images/167365/Kktix_1200x630_medium.jpg"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u3010\u611b\u624b\u5275\u65e5\u672c\u624b\u4f5c\u796d \u7b2c\u4e94\u56de ISHANDS x Connect asia \u65e5\u672c\u624b\u3065\u304f\u308a\u796d\u3011 The 5th ISHANDS x Connect-asia Craft Matsuri",
+            "date": "2023/6/9(\u4e94)",
+            "address": "",
+            "source_url": "https://ishands.kktix.cc/events/2023connectasia",
+            "UUID": "54793220a1dc5eeba8a05727e4c0b202",
+            "figure": "https://t.kfs.io/upload_images/168388/%E9%80%9A%E8%B7%AF%E5%BB%A3%E5%91%8A%E5%9C%96-KKTIX_2023%E6%84%9B%E6%89%8B%E5%89%B5%E6%97%A5%E6%9C%AC%E6%89%8B%E4%BD%9C%E7%A5%AD_KKTIX_1200x630px_medium.jpg"
         }
     ],
     "visit": {}
