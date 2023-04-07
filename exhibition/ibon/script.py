@@ -34,10 +34,16 @@ class IBonRunner(RunnerInit):
         response = requests_worker.get_page(
             self.use_method, headers=headers, formatted=requests_worker.Formatted.text
         )
-        return json.loads(response)
+
+        try:
+            response_json = json.loads(response)
+        except ValueError:
+            response_json = {}
+
+        return response_json
 
     def get_items(self, response):
-        return response.get("list")
+        return response.get("list", [])
 
     def get_parsed(self, items):
         for item in items:
