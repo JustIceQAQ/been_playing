@@ -75,6 +75,10 @@ class NPMRunner(RunnerInit):
         context = crawler.get_page(self.target_visit_url)
         response = self.use_translation().format_to_object(context)
         opening = response.select_one("div.visit-content > p")
+
+        if opening is None:
+            return None
+
         visit_info = "\n".join(
             [
                 info_string
