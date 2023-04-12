@@ -4,8 +4,8 @@
         "code_name": "cksmh",
         "external_link": "https://www.cksmh.gov.tw/activitysoonlist_369.html"
     },
-    "counts": 7,
-    "last_update": "2023-04-12T00:52:48.541911+00:00",
+    "counts": 8,
+    "last_update": "2023-04-12T08:13:41.055030+00:00",
     "data": [
         {
             "systematics": "cksmh",
@@ -36,7 +36,7 @@
         },
         {
             "systematics": "cksmh",
-            "title": "\u81fa\u7063\u5973\u66f8\u6cd5\u5bb6\u5b78\u6703\u5341\u9031\u5e74\u66a8\u6d77\u5916\u66f8\u6cd5\u5bb6\u4f5c\u54c1\u5927\u5c55",
+            "title": "\u81fa\u7063\u5973\u66f8\u6cd5\u5bb6\u5b78\u6703\u5341\u9031\u5e74\u66a8\u6d77\u5916\u66f8\u6cd5\u5bb6\u4f5c\u54c1\u5927\u5c55(\u514d\u8cbb\u53c3\u89c0)",
             "date": "2023-04-01 ~ 2023-04-12 09:00~18:00",
             "address": "\u5730\u9ede\uff1a1\u5c55\u5ef3",
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=30436",
@@ -60,6 +60,15 @@
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=30446",
             "UUID": "caf182b62d01589db61852e3ec324b66",
             "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/30446/30446.jpg"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u58a8\u5f69\u78c5\u7921\u7684\u8996\u89ba\u76db\u5bb4\uff0d\u6d77\u5cfd\u5169\u5cb8\u85dd\u8853\u540d\u5bb6\u560e\u6a94\u9080\u8acb\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2023-04-20 ~ 2023-05-01 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a3\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=30466",
+            "UUID": "652e5cabae285551bbeb1a8176d680e8",
+            "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/30466/30466.jpg"
         },
         {
             "systematics": "cksmh",
