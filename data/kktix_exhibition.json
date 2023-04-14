@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 5,
-    "last_update": "2023-04-14T08:12:57.799628+00:00",
+    "counts": 6,
+    "last_update": "2023-04-14T16:13:30.134997+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -51,6 +51,15 @@
             "source_url": "https://ishands.kktix.cc/events/2023connectasia",
             "UUID": "54793220a1dc5eeba8a05727e4c0b202",
             "figure": "https://t.kfs.io/upload_images/168388/%E9%80%9A%E8%B7%AF%E5%BB%A3%E5%91%8A%E5%9C%96-KKTIX_2023%E6%84%9B%E6%89%8B%E5%89%B5%E6%97%A5%E6%9C%AC%E6%89%8B%E4%BD%9C%E7%A5%AD_KKTIX_1200x630px_medium.jpg"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55",
+            "date": "2023/6/22(\u56db)",
+            "address": "",
+            "source_url": "https://firenzeculturex.kktix.cc/events/21915ea0",
+            "UUID": "920a07b2fe5253c5910c36f0620b1adf",
+            "figure": "https://t.kfs.io/upload_images/168476/kktix-%E4%B8%BB%E8%A6%96%E8%A6%BA_1200x630_%E4%B8%BB%E8%A6%96%E8%A6%BA_medium.jpg"
         }
     ],
     "visit": {}
