@@ -4,8 +4,8 @@
         "code_name": "mocataipei",
         "external_link": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent"
     },
-    "counts": 3,
-    "last_update": "2023-04-20T00:53:23.036412+00:00",
+    "counts": 5,
+    "last_update": "2023-04-20T08:14:29.928779+00:00",
     "data": [
         {
             "systematics": "mocataipei",
@@ -33,6 +33,24 @@
             "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/ICING\u2014\u9673\u5f65\u6210\u500b\u5c55",
             "UUID": "0bfa0d4f621e56178dc20452628ffe6a",
             "figure": "https://i.imgur.com/DROheNs.webp"
+        },
+        {
+            "systematics": "mocataipei",
+            "title": "NEXUS\u2014\u52a0\u52d2\u6bd4\u6d77\u5730\u5340\u9304\u50cf\u8207\u65b0\u5a92\u9ad4\u85dd\u8853",
+            "date": "2023-05-06 ~ 2023-07-16",
+            "address": "-",
+            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/NEXUS\u2014\u52a0\u52d2\u6bd4\u6d77\u5730\u5340\u9304\u50cf\u8207\u65b0\u5a92\u9ad4\u85dd\u8853",
+            "UUID": "539d1547d0fd5b8b90ba248b01630763",
+            "figure": "https://www.mocataipei.org.tw/upload/2023_04_193/20230419155109n95txs5w13.jpg"
+        },
+        {
+            "systematics": "mocataipei",
+            "title": "\u4e09\u5ef3\u96fb\u5f71\uff0d\u8607\u532f\u5b87\u500b\u5c55",
+            "date": "2023-05-06 ~ 2023-07-16",
+            "address": "-",
+            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u4e09\u5ef3\u96fb\u5f71\uff0d\u8607\u532f\u5b87\u500b\u5c55",
+            "UUID": "7da5864f8b3356ee83ca73482efe068d",
+            "figure": "https://i.imgur.com/NP6dCol.webp"
         }
     ],
     "visit": {
