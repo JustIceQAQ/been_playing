@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-04-21T08:13:23.243492+00:00",
+    "last_update": "2023-04-21T16:13:38.025180+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -42,15 +42,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/018a0713-e07e-42ab-be77-7e1fcbb8bfd8",
             "UUID": "672a1ecbae8d53e98f854c32a37bece3",
             "figure": "https://i.imgur.com/U5SOiCH.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "THE BATH \u5fae\u578b\u5c55",
-            "date": "2023-04-01 - 2023-04-21",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/0d58f6b5-b25b-4420-90cd-57b3f15bd6cf",
-            "UUID": "bfab79438b2557b4930aa619599c1375",
-            "figure": "https://i.imgur.com/lf4wokl.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -141,6 +132,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/3ab08dc1-a443-4dce-9c12-ddcc7a972d48",
             "UUID": "f5e1050ba17f522aadf0237fd9723519",
             "figure": "https://i.imgur.com/OWVeQby.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u65b9\u5305\u4e0d\u898b\u4e86 \u65b9\u662d\u8328\u9676\u85dd\u5275\u4f5c\u500b\u5c55",
+            "date": "2023-05-02 - 2023-05-14",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/fc57a66e-e6d2-460a-8c63-eb0b426206a6",
+            "UUID": "ab677bfd1db15df4a7497a75ea97323a",
+            "figure": "https://i.imgur.com/Mmw5ige.webp"
         }
     ],
     "visit": {}
