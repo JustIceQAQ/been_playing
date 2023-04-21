@@ -5,7 +5,7 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 28,
-    "last_update": "2023-04-20T16:14:43.847788+00:00",
+    "last_update": "2023-04-21T00:53:26.862853+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -18,20 +18,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u53f0\u7063\u570b\u969b\u6728\u5de5\u6a5f\u68b0\u5c55",
-            "date": "04/20 ~ 04/23",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "http://www.woodtaiwan.com",
-            "UUID": "11ee0aeb1f115ef1b0750195d97d6091",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u53f0\u5317\u570b\u969b\u79ae\u54c1\u6587\u5177\u66a8\u6587\u5275\u5c55",
             "date": "04/20 ~ 04/23",
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "http://www.giftionery.net",
             "UUID": "53a35523f2365119b7addc5e4f898359",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u570b\u969b\u6728\u5de5\u6a5f\u68b0\u5c55",
+            "date": "04/20 ~ 04/23",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.woodtaiwan.com",
+            "UUID": "11ee0aeb1f115ef1b0750195d97d6091",
             "figure": ""
         },
         {
@@ -126,20 +126,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u5275\u6295-\u53f0\u5317\u570b\u969b\u96fb\u8166\u5c55",
-            "date": "05/30 ~ 06/02",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
-            "source_url": "http://www.innovex.com.tw",
-            "UUID": "957b988816175976be18b5a814ae7033",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u53f0\u5317\u570b\u969b\u96fb\u8166\u5c55",
             "date": "05/30 ~ 06/02",
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.computextaipei.com.tw",
             "UUID": "129604ba884e546dbf3a1570551c7bc8",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u5275\u6295-\u53f0\u5317\u570b\u969b\u96fb\u8166\u5c55",
+            "date": "05/30 ~ 06/02",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
+            "source_url": "http://www.innovex.com.tw",
+            "UUID": "957b988816175976be18b5a814ae7033",
             "figure": ""
         },
         {
