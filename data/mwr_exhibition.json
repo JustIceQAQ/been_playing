@@ -4,29 +4,8 @@
         "code_name": "mwr",
         "external_link": "https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070"
     },
-    "counts": 2,
-    "last_update": "2023-04-22T08:12:11.507252+00:00",
-    "data": [
-        {
-            "systematics": "mwr",
-            "title": "\u6587\u7269\u958b\u7a97\u7cfb\u5217\u7279\u5c55~\u7a46\u65af\u6797\u66f8\u623f\u4e00\u9685",
-            "date": "2023-04-25~2023-09-10",
-            "address": "-",
-            "source_url": "https://www.mwr.org.tw//xcspecexhi/cont?xsmsid=0H305741810776620070&sid=0N110503238492313184",
-            "UUID": "8e8e1a31241252abb2d621e10ddafe2d",
-            "figure": "https://i.imgur.com/XBUsi26.webp"
-        },
-        {
-            "systematics": "mwr",
-            "title": "\u300a\u5b88\u8b77\u300b\u6c88\u6d78\u5f0f\u7dda\u4e0a\u4e92\u52d5\u5c55",
-            "date": "2022-06-10~",
-            "address": "-",
-            "source_url": "https://www.mwr.org.tw/https://www.mwr.org.tw/2022guardian",
-            "UUID": "63d570b772145ebeb7dbd020eac58127",
-            "figure": "https://i.imgur.com/WrkUESY.webp"
-        }
-    ],
-    "visit": {
-        "opening": "\u00a0"
-    }
+    "counts": 0,
+    "last_update": "2023-04-22T16:23:48.483207+00:00",
+    "data": [],
+    "visit": {}
 }
