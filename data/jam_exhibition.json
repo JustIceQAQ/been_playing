@@ -4,29 +4,8 @@
         "code_name": "jam",
         "external_link": "http://jam.jutfoundation.org.tw/online-exhibition"
     },
-    "counts": 2,
-    "last_update": "2023-04-23T08:12:32.753325+00:00",
-    "data": [
-        {
-            "systematics": "jam",
-            "title": "\u4ebb\u2500 \u751f\u800c\u70ba\u4eba",
-            "date": "2023/04/22-2023/07/30",
-            "address": "-",
-            "source_url": "http://jam.jutfoundation.org.tw/exhibition/4147",
-            "UUID": "d0722bdb682658c99071fb66a34084a4",
-            "figure": "https://i.imgur.com/ajJ6krx.webp"
-        },
-        {
-            "systematics": "jam",
-            "title": "\u73fe\u5f62\u8a18\u2500\u9ad8\u5fb7\u4eae\u5275\u4f5c\u5c55",
-            "date": "2022/10/15-2023/10/15",
-            "address": "-",
-            "source_url": "http://jam.jutfoundation.org.tw/exhibition/3728",
-            "UUID": "602f1ced92d35503a1818d5e1c0d3b2d",
-            "figure": "https://i.imgur.com/lxphGQ5.webp"
-        }
-    ],
-    "visit": {
-        "opening": "\u9031\u4e8c\u81f3\u9031\u65e5 10:00-18:00\n\u9031\u4e00\u56fa\u5b9a\u4f11\u9928\n\n\t2023/02/13\u00a0- 2023/04/21\u00a0\u70ba\u5fe0\u6cf0\u7f8e\u8853\u9928\u5378\u5e03\u5c55\u5de5\u7a0b\u671f\u9593\uff0c\u66ab\u505c\u5c0d\u5916\u958b\u653e\u3002\u200bThe Museum is currently closed from Feb. 13, 2023 through Apr. 21, 2023 due to the installation of the upcoming exhibition.\n"
-    }
+    "counts": 0,
+    "last_update": "2023-04-23T16:18:19.254424+00:00",
+    "data": [],
+    "visit": {}
 }
