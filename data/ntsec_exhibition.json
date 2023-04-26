@@ -4,9 +4,18 @@
         "code_name": "ntsec",
         "external_link": "https://www.ntsec.gov.tw/User/Exhibitions.aspx?a=44"
     },
-    "counts": 2,
-    "last_update": "2023-04-26T00:54:05.350716+00:00",
+    "counts": 3,
+    "last_update": "2023-04-26T08:14:06.504629+00:00",
     "data": [
+        {
+            "systematics": "ntsec",
+            "title": "\u5f8c\u77e5\u5f8c\u89ba\u5f8c Post-perception",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=4109",
+            "UUID": "5a4e1b6347ae58049bdbc0b720cdbb10",
+            "figure": "https://i.imgur.com/8Xesodm.webp"
+        },
         {
             "systematics": "ntsec",
             "title": "\u79d1\u5b78\u5bb6\u7684\u79d8\u5bc6\u57fa\u5730",
