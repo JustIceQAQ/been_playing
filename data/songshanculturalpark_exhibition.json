@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-04-28T00:55:18.792059+00:00",
+    "last_update": "2023-04-28T08:13:06.760728+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -117,6 +117,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "MakeNTU \u81fa\u5927\u96fb\u6a5f\u5275\u5ba2\u677e",
+            "date": "2023-05-06 - 2023-05-07",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/5653cbab-3363-4170-9224-caebc468e581",
+            "UUID": "d49e3021a12352a3a9af58a44265e39d",
+            "figure": "https://i.imgur.com/iNmaTFt.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "ISLAND MIXPOP \u6625 \u7b56\u5c55 \u300c\u5411\u4e16\u754c\u516c\u958b\u53f0\u7063\u53ef\u98df\u82b1\u8349\u300dRoot to table",
             "date": "2023-03-29 - 2023-06-30",
             "address": "-",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/945961c0-83c8-424b-8e54-df6cbcb7f84d",
             "UUID": "26a9370f42ba5bc58306eb1bec1db647",
             "figure": "https://i.imgur.com/uNxY95r.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u677e\u83f8\u5403\u8ca8\u601d\u8def",
-            "date": "2022-10-01",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c0607239-4d13-41d5-8fd0-643248265ff7",
-            "UUID": "97359d5b22bf54459dfff2d2183d51b1",
-            "figure": "https://i.imgur.com/BHtcbTC.webp"
         }
     ],
     "visit": {}
