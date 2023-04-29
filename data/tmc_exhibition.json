@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 7,
-    "last_update": "2023-04-29T00:52:26.762692+00:00",
+    "counts": 8,
+    "last_update": "2023-04-29T08:12:35.333786+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -42,6 +42,15 @@
             "source_url": "https://tmc.taipei/blog/show/kangkangs-taste-of-life-live-2023/",
             "UUID": "caa0746b679f58c993e5239f2d5d1130",
             "figure": "https://i.imgur.com/VXYxs6k.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u5ba2\u5bb6\u88fd\u8b5f",
+            "date": "2023.06.17(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/hakka-make-some-noise/",
+            "UUID": "5a1febfde81f5ae3ad359028f4110015",
+            "figure": "https://i.imgur.com/EpVKMRe.webp"
         },
         {
             "systematics": "tmc",
