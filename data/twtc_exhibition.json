@@ -4,18 +4,9 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 22,
-    "last_update": "2023-05-01T08:13:44.314854+00:00",
+    "counts": 20,
+    "last_update": "2023-05-01T16:13:26.081691+00:00",
     "data": [
-        {
-            "systematics": "twtc",
-            "title": "2023\u53f0\u5317\u98df\u54c1\u66a8\u7279\u8272\u7f8e\u98df\u570b\u969b\u535a\u89bd\u6703",
-            "date": "04/28 ~ 05/01",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "http://www.top-link.com.tw",
-            "UUID": "08ecca6fe2d151488a2066c6a3f7225c",
-            "figure": ""
-        },
         {
             "systematics": "twtc",
             "title": "2023 ATLife \u81fa\u7063\u8f14\u5177\u66a8\u9577\u671f\u7167\u8b77\u5927\u5c55",
@@ -95,6 +86,15 @@
             "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
             "source_url": "http://www.innovex.com.tw",
             "UUID": "957b988816175976be18b5a814ae7033",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "TBME-\u7b2c25\u5c46\u53f0\u5317\u570b\u969b\u5b30\u5152\u8207\u5b55\u5abd\u54aa\u7528\u54c1\u5c55(\u590f\u5b63\u5c55)\u30012023\u4e0a\u806f\u53f0\u5317\u5b55\u5a66\u5e7c\u5152\u7528\u54c1\u5c55",
+            "date": "06/02 ~ 06/05",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.top-link.com.tw",
+            "UUID": "08ecca6fe2d151488a2066c6a3f7225c",
             "figure": ""
         },
         {
