@@ -4,9 +4,18 @@
         "code_name": "nmh",
         "external_link": "https://www.nmh.gov.tw/activitysoonlist_66.html"
     },
-    "counts": 5,
-    "last_update": "2023-05-02T08:13:07.047842+00:00",
+    "counts": 6,
+    "last_update": "2023-05-02T16:13:08.921681+00:00",
     "data": [
+        {
+            "systematics": "nmh",
+            "title": "\u300c\u9326\u7e61\u5e74\u83ef\uff0d\u5ed6\u7f8e\u862d\u81a0\u5f69\u5c55\u300d\u3001\u300c\u6d2a\u6613\u6709\u85dd\u601d\u7279\u5c55\u300d\u65bc\u7acb\u6cd5\u9662\u5c55\u51fa",
+            "date": "2023.05.03 -2023.07.02",
+            "address": null,
+            "source_url": "https://event.culture.tw/NMH/portal/Registration/C0103MAction?actId=30005",
+            "UUID": "f999411b71f050028831e6c1820d538c",
+            "figure": "https://i.imgur.com/YE0ZLa9.webp"
+        },
         {
             "systematics": "nmh",
             "title": "\u9928\u85cf\u501f\u5c55\uff1a\u5bd3\u61f7\u7684\u884c\u677f\u2014\u5289\u751f\u5bb9\u7814\u7a76\u5c55",
