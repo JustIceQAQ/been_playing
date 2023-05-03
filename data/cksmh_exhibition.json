@@ -4,8 +4,8 @@
         "code_name": "cksmh",
         "external_link": "https://www.cksmh.gov.tw/activitysoonlist_369.html"
     },
-    "counts": 10,
-    "last_update": "2023-05-03T00:54:27.290178+00:00",
+    "counts": 12,
+    "last_update": "2023-05-03T08:13:08.304353+00:00",
     "data": [
         {
             "systematics": "cksmh",
@@ -33,6 +33,15 @@
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=30593",
             "UUID": "974a215fbfe557b3b275dd9194d58320",
             "figure": "https://i.imgur.com/emwyipL.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "2023\u81fa\u7063\u7f8e\u8853\u5c55\u66a8\u7f8e\u8853\u734e\u5fb5\u9078\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2023-05-03 ~ 2023-05-14 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a\u4e00\u6a13\u85dd\u5eca",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=30607",
+            "UUID": "76c2ef51bfe854238d4d9dbe6e040871",
+            "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/30607/AD/30607_0_0_539453.jpg"
         },
         {
             "systematics": "cksmh",
@@ -96,6 +105,15 @@
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=30605",
             "UUID": "9c5c779031e1588d9b3501e51b71fbca",
             "figure": "https://i.imgur.com/C9rBCri.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u300c\u756b\u5883 \u85aa\u50b3\u300d\u90b1\u5b9a\u592b\u6559\u6388\u66a8\u6e05\u5e73\u756b\u670345\u5468\u5e74\u7279\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2023-05-31 ~ 2023-06-14 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a\u4e00\u6a13\u85dd\u5eca",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=30606",
+            "UUID": "792e08be56f7534b8a0d229938dfb7fb",
+            "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/CKSMH/JpgFile/01/30606/AD/30606_0_0_396184.jpg"
         }
     ],
     "visit": {

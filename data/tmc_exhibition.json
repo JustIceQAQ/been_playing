@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 7,
-    "last_update": "2023-05-03T00:54:22.342539+00:00",
+    "counts": 8,
+    "last_update": "2023-05-03T08:12:59.603020+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -42,6 +42,15 @@
             "source_url": "https://tmc.taipei/blog/show/hakka-make-some-noise/",
             "UUID": "5a1febfde81f5ae3ad359028f4110015",
             "figure": "https://i.imgur.com/EpVKMRe.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u611b\u723e\u9e97\u96c6\u5718 \u6234\u611b\u73b2\u300a\u6545\u4e8b\u7684\u6545\u4e8b\u300b\u5de1\u8ff4\u6f14\u5531\u6703",
+            "date": "2023.07.15(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/princess-ai-the-story-of-story/",
+            "UUID": "9ef610eafab555b9b95dfd4dfe1b6355",
+            "figure": "https://tmc.taipei/wp-content/uploads/2023/04/\u83ef\u7d0d\u570b\u969b\u97f3\u6a02\uff3f\u6234\u611b\u73b2-\u4e3b\u8996\u89ba\u63da.jpg"
         },
         {
             "systematics": "tmc",
