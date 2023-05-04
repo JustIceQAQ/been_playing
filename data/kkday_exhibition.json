@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 50,
-    "last_update": "2023-05-03T16:13:58.694767+00:00",
+    "last_update": "2023-05-04T00:54:36.312037+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -36,21 +36,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u9810\u552e75\u6298\u3011\u9ad8\u96c4\u5c55\u89bd|\u5492\u8853\u8ff4\u6230\u5c55\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/141673",
-            "UUID": "e982aa5a387c54a0ba7cae58555b256c",
-            "figure": "https://i.imgur.com/FpgDyUp.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010\u7368\u5bb6\u9031\u908a\u3011\u9ad8\u96c4\u5c55\u89bd|\u706b\u5f71\u5fcd\u8005\u52d5\u756b20\u9031\u5e74\u7279\u5c55\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/134243",
             "UUID": "a3bb0befa7a6592e9cd5ee1b9333c3b5",
             "figure": "https://i.imgur.com/B8jO22u.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u9810\u552e75\u6298\u3011\u9ad8\u96c4\u5c55\u89bd|\u5492\u8853\u8ff4\u6230\u5c55\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/141673",
+            "UUID": "e982aa5a387c54a0ba7cae58555b256c",
+            "figure": "https://i.imgur.com/FpgDyUp.webp"
         },
         {
             "systematics": "KKDay",
@@ -72,15 +72,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u65e9\u9ce571\u6298\u3011\u53f0\u5317|\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55|\u5c55\u89bd\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/115138",
-            "UUID": "bf21f8fe10c25cf688af2331002e7be6",
-            "figure": "https://i.imgur.com/4HwBrCz.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u65b0\u5317\u516b\u91cc | \u5341\u4e09\u884c\u535a\u7269\u9928\u9580\u7968",
             "date": "",
             "address": "",
@@ -90,12 +81,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u9810\u552e8\u6298\u3011\u53f0\u5317\u5c55\u89bd| \u8993\u57ce\u30fb\u9f4a\u67cf\u6797\u7a7a\u9593\u5c55\u89bd\u9810\u552e\u9580\u7968",
+            "title": "\u3010\u65e9\u9ce571\u6298\u3011\u53f0\u5317|\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55|\u5c55\u89bd\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/102570",
-            "UUID": "6574ae2dc63b58ae86a37d2ae4278d9a",
-            "figure": "https://i.imgur.com/XEvNKna.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/115138",
+            "UUID": "bf21f8fe10c25cf688af2331002e7be6",
+            "figure": "https://i.imgur.com/4HwBrCz.webp"
         },
         {
             "systematics": "KKDay",
@@ -108,12 +99,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u30102023\u6f8e\u6e56\u82b1\u706b\u7bc0\u3011\u6f8e\u6e56|\u904a\u8247|\u5e06\u8239|\u6563\u5ba2|\u5305\u8239\u51fa\u6d77\u30fb\u56db\u4eba\u5373\u6210\u5718\u30fb\u8fea\u58eb\u5c3c\u82b1\u706b\u9957\u5bb4",
+            "title": "\u3010\u9810\u552e8\u6298\u3011\u53f0\u5317\u5c55\u89bd| \u8993\u57ce\u30fb\u9f4a\u67cf\u6797\u7a7a\u9593\u5c55\u89bd\u9810\u552e\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/139229",
-            "UUID": "3adbf8e37b5559bb98a1fa076a0ef614",
-            "figure": "https://i.imgur.com/Yp892zY.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/102570",
+            "UUID": "6574ae2dc63b58ae86a37d2ae4278d9a",
+            "figure": "https://i.imgur.com/XEvNKna.webp"
         },
         {
             "systematics": "KKDay",
@@ -123,6 +114,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/116304",
             "UUID": "185133ea528959a5af67fdb23d68dc83",
             "figure": "https://i.imgur.com/acLHouC.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u30102023\u6f8e\u6e56\u82b1\u706b\u7bc0\u3011\u6f8e\u6e56|\u904a\u8247|\u5e06\u8239|\u6563\u5ba2|\u5305\u8239\u51fa\u6d77\u30fb\u56db\u4eba\u5373\u6210\u5718\u30fb\u8fea\u58eb\u5c3c\u82b1\u706b\u9957\u5bb4",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/139229",
+            "UUID": "3adbf8e37b5559bb98a1fa076a0ef614",
+            "figure": "https://i.imgur.com/Yp892zY.webp"
         },
         {
             "systematics": "KKDay",
@@ -207,6 +207,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u3010\u9810\u552e75\u6298\u3011\u53f0\u5317\u5c55\u89bd | \u9032\u64ca\u7684\u5de8\u4eba\u5c55FINAL\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/129670",
+            "UUID": "46f7bb69e66852baaf7e6ab60a848a36",
+            "figure": "https://i.imgur.com/s22lHhs.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u611b\u60c5\u6709(\u7121)\u9032\u5c55\u9580\u7968",
             "date": "",
             "address": "",
@@ -225,6 +234,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u301089\u6298\u3011\u53f0\u5317|\u5152\u7ae5\u65b0\u6a02\u5712|\u300aRRR\u65b0\u6a02\u5712x\u6d77\u6d0b\u5b87\u5b99R \u300b|\u6d77\u6d0b\u5b87\u5b99AR\u5217\u8eca&\u6d77\u5e95\u6c23\u588a\u6a02\u5712\u5957\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/130872",
+            "UUID": "20319138df0454a4810f12f5bc4e248a",
+            "figure": "https://i.imgur.com/cb519dk.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u3010\u5373\u8cb7\u5373\u7528\u30112022 ITF\u53f0\u5317\u570b\u969b\u65c5\u5c55\u9580\u7968",
             "date": "",
             "address": "",
@@ -234,12 +252,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5357|\u89e3\u5bc6\u8056\u6bcd\u767e\u82b1\u5927\u6559\u5802\u5c55\u89bd\u9580\u7968",
+            "title": "\u3010KKday\u7368\u5bb6\u30112022 OneOffs NFT \u570b\u969b\u85dd\u8853\u535a\u89bd\u6703",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/136626",
-            "UUID": "7f5b6825431c5766b7ab134949253136",
-            "figure": "https://i.imgur.com/iDUjxPP.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/132525",
+            "UUID": "3df16023cb5854e8976d533bbd679b81",
+            "figure": "https://i.imgur.com/P1JiyR1.webp"
         },
         {
             "systematics": "KKDay",
@@ -252,6 +270,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5357|\u89e3\u5bc6\u8056\u6bcd\u767e\u82b1\u5927\u6559\u5802\u5c55\u89bd\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/136626",
+            "UUID": "7f5b6825431c5766b7ab134949253136",
+            "figure": "https://i.imgur.com/iDUjxPP.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u65b0\u5317\u6de1\u6c34|\u5c07\u6377\u91d1\u9b31\u91d1\u9999\u9152\u5e97|\u8de8\u5e74\u9957\u5bb4\u8fce\u65b0",
             "date": "",
             "address": "",
@@ -261,12 +288,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u9810\u552e75\u6298\u3011\u53f0\u5317\u5c55\u89bd | \u9032\u64ca\u7684\u5de8\u4eba\u5c55FINAL\u9580\u7968",
+            "title": "\u53f0\u5317\u5c55\u89bd | \u5409\u535c\u529b\u52d5\u756b\u5927\u5e2b\u2014\u9ad8\u7551\u52f2\u5c55\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/129670",
-            "UUID": "46f7bb69e66852baaf7e6ab60a848a36",
-            "figure": "https://i.imgur.com/s22lHhs.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/128948",
+            "UUID": "5ad137c665c55c9e9c747d9cb3b64059",
+            "figure": "https://i.imgur.com/9PHftPx.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u52a0\u8cfc\u9ad8\u9435\u512a\u60e0\u96fb\u5b50\u8eca\u7968|\u53f0\u7063\u53f0\u5317|BABY SHARK \u653e\u96fb\u8db4\u9580\u7968|\u53f0\u5317\u7ad9 >> \u8acb\u81f3\u9ad8\u9435\u806f\u7968\u5373\u6642\u8a02\u4f4d\u65b0\u7cfb\u7d71\u8cfc\u8cb7\ud83d\udc47",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/139342",
+            "UUID": "cb3830325ab45cff81e9661974fc21f2",
+            "figure": "https://i.imgur.com/AxSsCWL.webp"
         },
         {
             "systematics": "KKDay",
@@ -279,15 +315,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u301089\u6298\u3011\u53f0\u5317|\u5152\u7ae5\u65b0\u6a02\u5712|\u300aRRR\u65b0\u6a02\u5712x\u6d77\u6d0b\u5b87\u5b99R \u300b|\u6d77\u6d0b\u5b87\u5b99AR\u5217\u8eca&\u6d77\u5e95\u6c23\u588a\u6a02\u5712\u5957\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/130872",
-            "UUID": "20319138df0454a4810f12f5bc4e248a",
-            "figure": "https://i.imgur.com/cb519dk.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5317\u5c55\u89bd|\u6c11\u96c4\u9b3c\u5c4b\u5be6\u5883\u9ad4\u9a57\u7279\u5c55",
             "date": "",
             "address": "",
@@ -297,12 +324,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010KKday\u7368\u5bb6\u30112022 OneOffs NFT \u570b\u969b\u85dd\u8853\u535a\u89bd\u6703",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u63d0\u59c6\u6ce2\u9813\u7570\u60f3\u4e16\u754c\u5c55\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/132525",
-            "UUID": "3df16023cb5854e8976d533bbd679b81",
-            "figure": "https://i.imgur.com/P1JiyR1.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/132834",
+            "UUID": "bd31d5fac3e0515290179cc897370b86",
+            "figure": "https://i.imgur.com/RzSHz8Q.webp"
         },
         {
             "systematics": "KKDay",
@@ -321,24 +348,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/128873",
             "UUID": "4c6d7e52b0da55799a3349f7fc66077e",
             "figure": "https://i.imgur.com/Q9rKzee.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u63d0\u59c6\u6ce2\u9813\u7570\u60f3\u4e16\u754c\u5c55\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/132834",
-            "UUID": "bd31d5fac3e0515290179cc897370b86",
-            "figure": "https://i.imgur.com/RzSHz8Q.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd | \u5409\u535c\u529b\u52d5\u756b\u5927\u5e2b\u2014\u9ad8\u7551\u52f2\u5c55\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/128948",
-            "UUID": "5ad137c665c55c9e9c747d9cb3b64059",
-            "figure": "https://i.imgur.com/9PHftPx.webp"
         },
         {
             "systematics": "KKDay",
@@ -411,15 +420,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/130238",
             "UUID": "94e735147c545330a6601f2756c7f445",
             "figure": "https://i.imgur.com/MZpvWDx.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u52a0\u8cfc\u9ad8\u9435\u512a\u60e0\u96fb\u5b50\u8eca\u7968|\u53f0\u7063\u53f0\u5317|BABY SHARK \u653e\u96fb\u8db4\u9580\u7968|\u53f0\u5317\u7ad9 >> \u8acb\u81f3\u9ad8\u9435\u806f\u7968\u5373\u6642\u8a02\u4f4d\u65b0\u7cfb\u7d71\u8cfc\u8cb7\ud83d\udc47",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/139342",
-            "UUID": "cb3830325ab45cff81e9661974fc21f2",
-            "figure": "https://i.imgur.com/AxSsCWL.webp"
         },
         {
             "systematics": "KKDay",
