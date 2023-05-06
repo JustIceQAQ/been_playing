@@ -4,8 +4,8 @@
         "code_name": "huashan1914",
         "external_link": "https://www.huashan1914.com/w/huashan1914/exhibition"
     },
-    "counts": 32,
-    "last_update": "2023-05-06T08:12:15.186000+00:00",
+    "counts": 31,
+    "last_update": "2023-05-06T16:12:14.958439+00:00",
     "data": [
         {
             "systematics": "huashan1914",
@@ -126,21 +126,21 @@
         },
         {
             "systematics": "huashan1914",
-            "title": "\u30102023\u83ef\u5c71\u7562\u696d\u5b63\u3011\u8f14\u4ec1\u5927\u5b78\u6587\u5275\u7cfb\u7b2c\u5341\u5c46\u7562\u696d\u5c55\u89bd\u300a\u65e5\u62fe\u300b",
-            "date": "2023-05-19 ~ 2023-05-22",
-            "address": "-",
-            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_23041718353149115",
-            "UUID": "36eb3061ee645841917216e91f0032e5",
-            "figure": "https://i.imgur.com/THq2PtZ.webp"
-        },
-        {
-            "systematics": "huashan1914",
             "title": "2023\u83ef\u5c71\u7562\u696d\u5b63",
             "date": "2023-05-18 ~ 2023-05-22",
             "address": "-",
             "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_23041910584380780",
             "UUID": "88a36fd1fe405281a3500b5bcaa2edcc",
             "figure": "https://i.imgur.com/WNnbsTl.webp"
+        },
+        {
+            "systematics": "huashan1914",
+            "title": "\u30102023\u83ef\u5c71\u7562\u696d\u5b63\u3011\u8f14\u4ec1\u5927\u5b78\u6587\u5275\u7cfb\u7b2c\u5341\u5c46\u7562\u696d\u5c55\u89bd\u300a\u65e5\u62fe\u300b",
+            "date": "2023-05-19 ~ 2023-05-22",
+            "address": "-",
+            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_23041718353149115",
+            "UUID": "36eb3061ee645841917216e91f0032e5",
+            "figure": "https://i.imgur.com/THq2PtZ.webp"
         },
         {
             "systematics": "huashan1914",
@@ -285,15 +285,6 @@
             "source_url": "https://www.huashan1914.com/w/umaytheater/performance_23042511162985446",
             "UUID": "bc1588e8f8f0581f9d02de4e9f4dc2b6",
             "figure": "https://i.imgur.com/rGXmhtR.webp"
-        },
-        {
-            "systematics": "huashan1914",
-            "title": "\u4e16\u754c\u2f3f\u98a8\u7434\u2f47\u2fb3\u6a02\u6703",
-            "date": "2023-05-06 ~ 2023-05-06",
-            "address": "-",
-            "source_url": "https://www.huashan1914.com/w/umaytheater/performance_23041017234447434",
-            "UUID": "08c50eaa30de55e1b8d3ac2ee38a7b90",
-            "figure": "https://i.imgur.com/zV94F3p.webp"
         }
     ],
     "visit": {}
