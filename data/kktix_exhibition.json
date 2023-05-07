@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 6,
-    "last_update": "2023-05-07T08:11:59.778839+00:00",
+    "counts": 7,
+    "last_update": "2023-05-07T16:12:23.192308+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -42,6 +42,15 @@
             "source_url": "https://kecc.kktix.cc/events/76131a63-copy-1",
             "UUID": "d98899c1f31956b5a5c5e77e2f359e9d",
             "figure": "https://i.imgur.com/1KKZhXT.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u540c\u4eba\u5275\u4f5c\u5c55\u552e\u6703\u3010CooMIC\u4e8c\u5143\u5275\u5eab\u3011",
+            "date": "2023/6/3(\u516d)",
+            "address": "",
+            "source_url": "https://boogooteam.kktix.cc/events/coomic",
+            "UUID": "0b72923558d750bb949b1e02c3912803",
+            "figure": "https://i.imgur.com/iYhH9SW.webp"
         },
         {
             "systematics": "KKTix",
