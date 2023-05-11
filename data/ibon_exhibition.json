@@ -4,9 +4,18 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 47,
-    "last_update": "2023-05-11T00:53:57.414284+00:00",
+    "counts": 49,
+    "last_update": "2023-05-11T08:14:15.517929+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "\u4f8f\u7f85\u7d00X\u6050\u9f8d\u96ea\u4e16\u754c",
+            "date": "2023-06-14 ~ 2023-10-10",
+            "address": "\u99c1\u4e8c\u85dd\u8853\u7279\u5340P2\u5009\u5eab",
+            "source_url": "https://tour.ibon.com.tw/event/6458666490b5a619b3dfc660",
+            "UUID": "d27c4e12e6cb52dfa408e1844d9c2264",
+            "figure": "https://i.imgur.com/SuaiPoh.webp"
+        },
         {
             "systematics": "ibon",
             "title": "Infinity Japan2023\u65e5\u672c\u7121\u6975\u9650\u7576\u4ee3\u85dd\u535a\u6703",
@@ -24,6 +33,15 @@
             "source_url": "https://tour.ibon.com.tw/event/6453777e7c2fed0ff7c69145",
             "UUID": "e830346418f45a9385ef6d0040ccb3aa",
             "figure": "https://i.imgur.com/RUFsOCh.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "D\u2019FESTA TAIPEI",
+            "date": "2023-07-06 ~ 2023-09-10",
+            "address": "\u677e\u5c71\u6587\u5275\u5712\u5340 4\u865f & 5\u865f\u5009\u5eab",
+            "source_url": "https://tour.ibon.com.tw/event/6453164e7c2fed0ff7c683a1",
+            "UUID": "9286b7b0310c5e9bad2e695bff027850",
+            "figure": "https://i.imgur.com/h8tCBfH.webp"
         },
         {
             "systematics": "ibon",
