@@ -4,8 +4,8 @@
         "code_name": "cksmh",
         "external_link": "https://www.cksmh.gov.tw/activitysoonlist_369.html"
     },
-    "counts": 12,
-    "last_update": "2023-05-12T00:53:58.174732+00:00",
+    "counts": 14,
+    "last_update": "2023-05-12T08:14:22.301164+00:00",
     "data": [
         {
             "systematics": "cksmh",
@@ -81,6 +81,15 @@
         },
         {
             "systematics": "cksmh",
+            "title": "\u7b2c\u4e94\u5c46\u53f0\u7063\u66f8\u756b\u767e\u4eba\u5927\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2023-05-17 ~ 2023-05-28 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a3\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=30620",
+            "UUID": "1efef08a2539551d9b446fd14fcd5ffa",
+            "figure": "https://i.imgur.com/xaAj497.webp"
+        },
+        {
+            "systematics": "cksmh",
             "title": "\u6797\u671d\u5c09\u6cb9\u756b\u5275\u4f5c\u5c55(\u514d\u8cbb\u53c3\u89c0)",
             "date": "2023-05-17 ~ 2023-05-28 09:00~18:00",
             "address": "\u5730\u9ede\uff1a\u4e00\u6a13\u85dd\u5eca",
@@ -114,6 +123,15 @@
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=30610",
             "UUID": "ca8dcd0072a65722aafa2b1900b20a7d",
             "figure": "https://i.imgur.com/VO3zkLx.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u919e\u3002\u8a2d\u8a08 IDEATE\uff0d\u81fa\u5317\u5e02\u7acb\u5927\u5b78\u5b78\u7fd2\u8207\u5a92\u6750\u8a2d\u8a08\u5b78\u7cfb112\u7d1a\u7562\u696d\u5c55(\u514d\u8cbb\u53c3\u89c0 )",
+            "date": "2023-06-03 ~ 2023-06-11 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a\u4e09\u6a13\u85dd\u5eca",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=30619",
+            "UUID": "e7a9862d1cad53e59baa4e2a67cb61f2",
+            "figure": "https://i.imgur.com/1AMIXK4.webp"
         }
     ],
     "visit": {

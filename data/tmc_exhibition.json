@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 9,
-    "last_update": "2023-05-12T00:53:52.457493+00:00",
+    "counts": 11,
+    "last_update": "2023-05-12T08:14:07.763377+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -24,6 +24,15 @@
             "source_url": "https://tmc.taipei/blog/show/roots/",
             "UUID": "6db81daef62b5b21831681dda162a030",
             "figure": "https://i.imgur.com/Soscqu7.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "2023\u5be6\u8e10\u5927\u5b78\u5a92\u9ad4\u50b3\u9054\u8a2d\u8a08\u5b78\u7cfb\u6240 \u7562\u696d\u7368\u7acb\u5c55\u3008\u7378\u3009",
+            "date": "2023.05.19(\u4e94) \u2014 2023.05.22(\u4e00)",
+            "address": "\u6587\u5316\u9928",
+            "source_url": "https://tmc.taipei/blog/show/sccd-grad-exhibition2003-beast/",
+            "UUID": "b0214d415f9a545fafa810e009b6b8a4",
+            "figure": "https://i.imgur.com/og5bNQY.webp"
         },
         {
             "systematics": "tmc",
@@ -60,6 +69,15 @@
             "source_url": "https://tmc.taipei/blog/show/princess-ai-the-story-of-story/",
             "UUID": "9ef610eafab555b9b95dfd4dfe1b6355",
             "figure": "https://i.imgur.com/Vz1P0tJ.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u76db\u958b \u3002\u6211\u7684\u540d\u5b57\u53eb\u674e\u5fc3\u6f54 \u6f14\u5531\u6703",
+            "date": "2023.07.22(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/bloom-my-name-is-sinje-lee-concert/",
+            "UUID": "c7f445ae8d655aaf9d1ba4b17cfffb7e",
+            "figure": "https://i.imgur.com/c8kvjqb.webp"
         },
         {
             "systematics": "tmc",
