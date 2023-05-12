@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 11,
-    "last_update": "2023-05-12T08:14:07.763377+00:00",
+    "counts": 12,
+    "last_update": "2023-05-12T16:13:01.089110+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -60,6 +60,15 @@
             "source_url": "https://tmc.taipei/blog/show/hakka-make-some-noise/",
             "UUID": "5a1febfde81f5ae3ad359028f4110015",
             "figure": "https://i.imgur.com/EpVKMRe.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "IVE THE FIRST FAN CONCERT\u300aThe Prom Queens\u300bin Taipei",
+            "date": "2023.06.24(\u516d) \u2014 2023.06.25(\u65e5)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/ive-first-fan-concert-2023-taipei/",
+            "UUID": "5f0bdf629b3a53dfbfa66a4188e3e80a",
+            "figure": "https://i.imgur.com/Fp8JsZf.webp"
         },
         {
             "systematics": "tmc",

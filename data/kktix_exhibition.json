@@ -4,8 +4,63 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 0,
-    "last_update": "2023-05-12T08:12:36.954018+00:00",
-    "data": [],
+    "counts": 6,
+    "last_update": "2023-05-12T16:12:36.530672+00:00",
+    "data": [
+        {
+            "systematics": "KKTix",
+            "title": "\u548c\u6c34\u4e00\u8d77\u53bb\u65c5\u884c-\u5927\u6eaa\u6c34\u6587\u5316\u7279\u5c55",
+            "date": "2022/10/15(\u516d)",
+            "address": "",
+            "source_url": "https://daixi.kktix.cc/events/5acbf48b",
+            "UUID": "58377357a6ef5c3d97c3721156bdfcae",
+            "figure": "https://i.imgur.com/xuPOcyV.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "POP! POP! POP! \u6d41\u884c\u97f3\u6a02\u4e92\u52d5\u5c55 \uff20 \u9ad8\u96c4\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
+            "date": "2022/3/1(\u4e8c)",
+            "address": "",
+            "source_url": "https://kpmc.kktix.cc/events/poppoppop",
+            "UUID": "2753092823855d20b12fbb3f6977690c",
+            "figure": "https://i.imgur.com/76TL3BV.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "5G AIoT Empower \u96f2\u61c9\u7528XR\u4e3b\u984c\u9928",
+            "date": "2023/5/25(\u56db)",
+            "address": "",
+            "source_url": "https://kecc.kktix.cc/events/76131a63-copy-1",
+            "UUID": "d98899c1f31956b5a5c5e77e2f359e9d",
+            "figure": "https://i.imgur.com/1KKZhXT.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u540c\u4eba\u5275\u4f5c\u5c55\u552e\u6703\u3010CooMIC\u4e8c\u5143\u5275\u5eab\u3011",
+            "date": "2023/6/3(\u516d)",
+            "address": "",
+            "source_url": "https://boogooteam.kktix.cc/events/coomic",
+            "UUID": "0b72923558d750bb949b1e02c3912803",
+            "figure": "https://i.imgur.com/iYhH9SW.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u3010\u611b\u624b\u5275\u65e5\u672c\u624b\u4f5c\u796d \u7b2c\u4e94\u56de ISHANDS x Connect asia \u65e5\u672c\u624b\u3065\u304f\u308a\u796d\u3011 The 5th ISHANDS x Connect-asia Craft Matsuri",
+            "date": "2023/6/9(\u4e94)",
+            "address": "",
+            "source_url": "https://ishands.kktix.cc/events/2023connectasia",
+            "UUID": "54793220a1dc5eeba8a05727e4c0b202",
+            "figure": "https://i.imgur.com/SbBeqMj.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55",
+            "date": "2023/6/22(\u56db)",
+            "address": "",
+            "source_url": "https://firenzeculturex.kktix.cc/events/21915ea0",
+            "UUID": "920a07b2fe5253c5910c36f0620b1adf",
+            "figure": "https://i.imgur.com/5G0MIBv.webp"
+        }
+    ],
     "visit": {}
 }
