@@ -5,7 +5,7 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 15,
-    "last_update": "2023-05-16T16:13:33.618541+00:00",
+    "last_update": "2023-05-24T16:18:05.284504+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -27,20 +27,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u5275\u6295-\u53f0\u5317\u570b\u969b\u96fb\u8166\u5c55",
-            "date": "05/30 ~ 06/02",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
-            "source_url": "http://www.innovex.com.tw",
-            "UUID": "957b988816175976be18b5a814ae7033",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u53f0\u5317\u570b\u969b\u96fb\u8166\u5c55",
             "date": "05/30 ~ 06/02",
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.computextaipei.com.tw",
             "UUID": "129604ba884e546dbf3a1570551c7bc8",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u5275\u6295-\u53f0\u5317\u570b\u969b\u96fb\u8166\u5c55",
+            "date": "05/30 ~ 06/02",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
+            "source_url": "http://www.innovex.com.tw",
+            "UUID": "957b988816175976be18b5a814ae7033",
             "figure": ""
         },
         {
@@ -81,6 +81,15 @@
         },
         {
             "systematics": "twtc",
+            "title": "\u53f0\u5317\u570b\u969b\u5305\u88dd\u5de5\u696d\u5c55",
+            "date": "06/14 ~ 06/17",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.taipeipack.com.tw",
+            "UUID": "acf1717e10e35981a556977924511757",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
             "title": "\u53f0\u5317\u570b\u969b\u98df\u54c1\u52a0\u5de5\u6a5f\u68b0\u5c55&\u81fa\u7063\u570b\u969b\u751f\u6280\u88fd\u85e5\u8a2d\u5099\u5c55",
             "date": "06/14 ~ 06/17",
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
@@ -99,15 +108,6 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u53f0\u5317\u570b\u969b\u5305\u88dd\u5de5\u696d\u5c55",
-            "date": "06/14 ~ 06/17",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "http://www.taipeipack.com.tw",
-            "UUID": "acf1717e10e35981a556977924511757",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u53f0\u7063\u570b\u969b\u98ef\u5e97\u66a8\u9910\u98f2\u8a2d\u5099\u7528\u54c1\u5c55",
             "date": "06/14 ~ 06/17",
             "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
@@ -122,6 +122,15 @@
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "https://money.udn.com/ACT/expo/2023/InteriorDesignExpo/index",
             "UUID": "f805eaf56b3f5b3c8292db99c18cfe3d",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2023\u53f0\u5317\u5275\u610f\u6587\u5177\u5c55",
+            "date": "06/30 ~ 07/03",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://music-fair.top-link.com.tw/home",
+            "UUID": "df4e8f56db745dc29b360f35f41831e6",
             "figure": ""
         }
     ],
