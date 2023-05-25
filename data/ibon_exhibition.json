@@ -4,9 +4,27 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 51,
-    "last_update": "2023-05-25T00:54:59.939388+00:00",
+    "counts": 54,
+    "last_update": "2023-05-25T08:14:53.155093+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "\u53f0\u4e2d\uff0e\u570b\u7acb\u81ea\u7136\u79d1\u5b78\u535a\u7269\u9928(\u672c\u9928)",
+            "date": "2023-05-26 ~ 2024-05-17",
+            "address": "\u570b\u7acb\u81ea\u7136\u79d1\u5b78\u535a\u7269\u9928\uff08\u672c\u9928\uff09",
+            "source_url": "https://tour.ibon.com.tw/event/646d789f90b5a619b3e2827d",
+            "UUID": "acbe10a82c3050abbcd35e1a4765b9fd",
+            "figure": "https://i.imgur.com/b0jBekL.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u5716\u5766\u5361\u9580\uff1a\u51fa\u571f\u767e\u5e74\u7d00\u5ff5\u7279\u5c55",
+            "date": "2023-06-27 ~ 2023-09-03",
+            "address": "\u570b\u7acb\u81fa\u7063\u79d1\u5b78\u6559\u80b2\u99287\u6a13\u5357\u5074",
+            "source_url": "https://tour.ibon.com.tw/event/646b0cd52e309d23d3afff39",
+            "UUID": "bca26ee3dc695724877690b9ac004bb7",
+            "figure": "https://i.imgur.com/O04IkY1.webp"
+        },
         {
             "systematics": "ibon",
             "title": "2023 OPEN\u5716\u66f8\u9928\uff0d\u89aa\u5b50\u5929\u4e0b15\u9031\u5e74\u7279\u5c55",
@@ -42,6 +60,15 @@
             "source_url": "https://tour.ibon.com.tw/event/645de15590b5a619b3e08527",
             "UUID": "f6bb5a32cb6c588b9e175b099f03fcdc",
             "figure": "https://i.imgur.com/jMoKmtl.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "Infinity Japan2023\u65e5\u672c\u7121\u6975\u9650\u7576\u4ee3\u85dd\u535a\u6703",
+            "date": "2023-08-04 ~ 2023-08-06",
+            "address": "\u53f0\u5317\u8001\u723a\u5927\u9152\u5e97 Royal Nikko Taipei",
+            "source_url": "https://tour.ibon.com.tw/event/645cc3d090b5a619b3e0622f",
+            "UUID": "5642b6fca15a5e188e13e45887d4ebae",
+            "figure": "https://i.imgur.com/9rLqzmF.webp"
         },
         {
             "systematics": "ibon",
