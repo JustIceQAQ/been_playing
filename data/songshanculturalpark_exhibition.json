@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-05-26T00:54:11.639123+00:00",
+    "last_update": "2023-05-26T08:12:59.920496+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -72,6 +72,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "beanfun!\u6f6e\u73a9\u7bc0",
+            "date": "2023-05-26 - 2023-06-11",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/d557d978-7f72-49a0-bff9-6e72f9404d5c",
+            "UUID": "b123e7d1b71057678344134c9135de5c",
+            "figure": "https://i.imgur.com/G4rk9xW.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "Open Call\u9812\u734e\u5178\u79ae\u66a8\u79d1\u666e\u6210\u679c\u5c55",
             "date": "2023-05-26 - 2023-05-26",
             "address": "-",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c77ffab7-0370-492a-a84e-e1338cb44001",
             "UUID": "9d300ac4b70b5ac7b502bfc6e032759b",
             "figure": "https://i.imgur.com/yYasreo.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "LET\u2019S PARTY !",
-            "date": "2023-04-26 - 2023-06-26",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/bc635f55-db7e-41cb-b00d-abda229192fe",
-            "UUID": "bb168ba5db315caa8a0968199c341869",
-            "figure": "https://i.imgur.com/Z15AXGn.webp"
         }
     ],
     "visit": {}
