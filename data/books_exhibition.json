@@ -4,9 +4,27 @@
         "code_name": "tickets_books",
         "external_link": "https://tickets.books.com.tw/leisure/"
     },
-    "counts": 14,
-    "last_update": "2023-05-29T00:56:55.988498+00:00",
+    "counts": 16,
+    "last_update": "2023-05-29T08:14:02.566885+00:00",
     "data": [
+        {
+            "systematics": "tickets_books",
+            "title": "\u5716\u5766\u5361\u9580\uff1a\u51fa\u571f\u767e\u5e74\u7d00\u5ff5\u7279\u5c55",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010901844972",
+            "UUID": "3d3b88e3e3a75c2eb7f6353b4521a8f2",
+            "figure": "https://i.imgur.com/75XTy9y.webp"
+        },
+        {
+            "systematics": "tickets_books",
+            "title": "\u5149\u5f71\u9b54\u6cd5\u7f8e\u8853\u9928",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010901606375",
+            "UUID": "064baa63bfcc59a2aef4d013b8a802ee",
+            "figure": "https://i.imgur.com/xtJqGb2.webp"
+        },
         {
             "systematics": "tickets_books",
             "title": "\u3010DETECTIVE CONAN THE MOVIE\u5c55 \u301c\u9280\u5e55\u56de\u9867\u9304\u301c\u3011",
