@@ -4,8 +4,8 @@
         "code_name": "songshanculturalpark",
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
-    "counts": 15,
-    "last_update": "2023-06-04T08:11:51.277942+00:00",
+    "counts": 14,
+    "last_update": "2023-06-04T16:12:49.971106+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -63,15 +63,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "ADVENTURE FESTA 2023",
-            "date": "2023-06-03 - 2023-06-04",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/ec3ceaf8-14fb-44f8-947e-2aaa44086ee0",
-            "UUID": "48ee6d61b6ea53db897a76fc43b9364f",
-            "figure": "https://i.imgur.com/PjwgUDS.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "OLD ZACE MARKET",
             "date": "2023-06-10 - 2023-06-10",
             "address": "-",
@@ -96,15 +87,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/8dcb95a7-6f2f-4eda-bdc7-67dbf5849524",
             "UUID": "f74f11e6fa1d5b4594e57f0ebf3014d8",
             "figure": "https://i.imgur.com/4AqeTBD.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "Root to Table \u5f9e\u571f\u5730\u5230\u9910\u684c \u53ef\u98df\u82b1\u8349\u518d\u767c\u73fe\u3010\u9ad4\u9a57\u5f0f\u8b1b\u5ea7\u3011",
-            "date": "2023-05-20 - 2023-06-04",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c27fb322-c1b0-4687-b389-4bae8eb47265",
-            "UUID": "13596dc9d29757ed89a26d83b4cbdfb6",
-            "figure": "https://i.imgur.com/mUcpi8p.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -141,6 +123,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/945961c0-83c8-424b-8e54-df6cbcb7f84d",
             "UUID": "26a9370f42ba5bc58306eb1bec1db647",
             "figure": "https://i.imgur.com/uNxY95r.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u677e\u83f8\u5403\u8ca8\u601d\u8def",
+            "date": "2022-10-01",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c0607239-4d13-41d5-8fd0-643248265ff7",
+            "UUID": "97359d5b22bf54459dfff2d2183d51b1",
+            "figure": "https://i.imgur.com/BHtcbTC.webp"
         }
     ],
     "visit": {}
