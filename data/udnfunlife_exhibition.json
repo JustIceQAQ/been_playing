@@ -4,8 +4,8 @@
         "code_name": "tickets_udnfunlife",
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
-    "counts": 18,
-    "last_update": "2023-06-05T08:17:13.385671+00:00",
+    "counts": 17,
+    "last_update": "2023-06-05T16:14:07.827186+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -68,7 +68,7 @@
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3 \u6587\u5316\u9928 4~6\u6a13",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N23SE92T&kdid=featured",
             "UUID": "3050b601e161530ea819b75dccf95d20",
-            "figure": "https://i.imgur.com/Qxj74St.webp"
+            "figure": "https://i.imgur.com/cYyVFP5.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -77,7 +77,7 @@
             "address": "PLAYground \u5357\u6751\u5287\u5834",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P03TDF8D&kdid=featured",
             "UUID": "bacfb76281875fd4871a5db309a2eb27",
-            "figure": "https://i.imgur.com/OGH3yHS.webp"
+            "figure": "https://i.imgur.com/1rFuTgy.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -159,15 +159,6 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P065EF5A&kdid=featured",
             "UUID": "407f23e7751d56f0b149b5574702b10c",
             "figure": "https://i.imgur.com/IwBUECe.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
-            "title": "\u6e2c\u8a66\u7bc0\u76ee \u8acb\u52ff\u8cfc\u8cb7",
-            "date": "2023/06/30 ~ 2023/06/30",
-            "address": "\u81fa\u4e2d\u570b\u5bb6\u6b4c\u5287\u9662 \u4e2d\u5287\u9662",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P06TOX07&kdid=featured",
-            "UUID": "f5bbd593f10f5edeaaecc8422a27778b",
-            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/?v=202306011113"
         }
     ],
     "visit": {}
