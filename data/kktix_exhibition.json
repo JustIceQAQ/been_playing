@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 4,
-    "last_update": "2023-06-07T08:13:23.258586+00:00",
+    "counts": 5,
+    "last_update": "2023-06-07T16:13:41.036300+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -42,6 +42,15 @@
             "source_url": "https://firenzeculturex.kktix.cc/events/21915ea0",
             "UUID": "920a07b2fe5253c5910c36f0620b1adf",
             "figure": "https://i.imgur.com/5G0MIBv.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "2023\u840c\u5bf5\u7269\u7528\u54c1\u5c55 \u514d\u8cbb\u7d22\u7968",
+            "date": "2023/10/7(\u516d)",
+            "address": "",
+            "source_url": "https://sheng-dong.kktix.cc/events/mengpet",
+            "UUID": "6d95bb4f3ae856b19b8c4bae55a4fc74",
+            "figure": "https://i.imgur.com/YV7K2op.webp"
         }
     ],
     "visit": {}

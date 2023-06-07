@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 16,
-    "last_update": "2023-06-07T08:14:23.370913+00:00",
+    "counts": 17,
+    "last_update": "2023-06-07T16:13:54.202319+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -87,6 +87,15 @@
             "source_url": "https://tmc.taipei/blog/show/the-1975-at-their-very-best-tour-in-taipei/",
             "UUID": "4108db4db0f1544793021ace982749bf",
             "figure": "https://i.imgur.com/T1cpe3e.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u300a\u5b89\u6ea5\uff0e\u6642\u5bd0\u300b\u5de1\u8ff4\u6f14\u5531\u6703",
+            "date": "2023.08.05(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/an-pu-somnolence-concert/",
+            "UUID": "efba55c375fd591d9698c0fb366f138c",
+            "figure": "https://i.imgur.com/ZuyINXu.webp"
         },
         {
             "systematics": "tmc",
