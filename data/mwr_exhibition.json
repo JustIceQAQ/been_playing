@@ -4,9 +4,18 @@
         "code_name": "mwr",
         "external_link": "https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070"
     },
-    "counts": 2,
-    "last_update": "2023-06-08T01:01:48.101979+00:00",
+    "counts": 3,
+    "last_update": "2023-06-08T08:13:23.921207+00:00",
     "data": [
+        {
+            "systematics": "mwr",
+            "title": "\u5c71\u6d77\u5929\u4eba\u2013\u6211\u5728\u81ea\u7136\u88e1",
+            "date": "2023-06-21~2024-06-23",
+            "address": "-",
+            "source_url": "https://www.mwr.org.tw//xcspecexhi/cont?xsmsid=0H305741810776620070&sid=0N159377853711046420",
+            "UUID": "95abc7f652275d2a9d70f9e7184eacc2",
+            "figure": "https://i.imgur.com/yLeAlrG.webp"
+        },
         {
             "systematics": "mwr",
             "title": "\u6587\u7269\u958b\u7a97\u7cfb\u5217\u7279\u5c55~\u7a46\u65af\u6797\u66f8\u623f\u4e00\u9685",
