@@ -4,9 +4,18 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 6,
-    "last_update": "2023-06-09T08:12:59.952409+00:00",
+    "counts": 5,
+    "last_update": "2023-06-09T16:12:52.452420+00:00",
     "data": [
+        {
+            "systematics": "KKTix",
+            "title": "\u3010\u611b\u624b\u5275\u65e5\u672c\u624b\u4f5c\u796d \u7b2c\u4e94\u56de ISHANDS x Connect asia \u65e5\u672c\u624b\u3065\u304f\u308a\u796d\u3011 The 5th ISHANDS x Connect-asia Craft Matsuri",
+            "date": "2023/6/9(\u4e94)",
+            "address": "",
+            "source_url": "https://ishands.kktix.cc/events/2023connectasia",
+            "UUID": "54793220a1dc5eeba8a05727e4c0b202",
+            "figure": "https://i.imgur.com/SbBeqMj.webp"
+        },
         {
             "systematics": "KKTix",
             "title": "\u548c\u6c34\u4e00\u8d77\u53bb\u65c5\u884c-\u5927\u6eaa\u6c34\u6587\u5316\u7279\u5c55",
@@ -24,24 +33,6 @@
             "source_url": "https://kpmc.kktix.cc/events/poppoppop",
             "UUID": "2753092823855d20b12fbb3f6977690c",
             "figure": "https://i.imgur.com/76TL3BV.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "\u3010\u611b\u624b\u5275\u65e5\u672c\u624b\u4f5c\u796d \u7b2c\u4e94\u56de ISHANDS x Connect asia \u65e5\u672c\u624b\u3065\u304f\u308a\u796d\u3011 The 5th ISHANDS x Connect-asia Craft Matsuri",
-            "date": "2023/6/9(\u4e94)",
-            "address": "",
-            "source_url": "https://ishands.kktix.cc/events/2023connectasia",
-            "UUID": "54793220a1dc5eeba8a05727e4c0b202",
-            "figure": "https://i.imgur.com/SbBeqMj.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "\u6a39\u5fb7\u79d1\u6280\u5927\u5b78\u8868\u6f14\u85dd\u8853\u7cfb \u4e3b\u4fee\u5e55\u5f8c\u5c55\u89bd\u300c\u5e55\u524d\u5148\u9019\u6a23\uff0c\u5e55\u5f8c\u4e0d\u4e00\u6a23\u300d",
-            "date": "2023/6/9(\u4e94)",
-            "address": "",
-            "source_url": "https://studpaparty.kktix.cc/events/a1fc18b7",
-            "UUID": "23877056ef1350d9acdce52e551a693d",
-            "figure": "https://i.imgur.com/hTxg3DP.webp"
         },
         {
             "systematics": "KKTix",
