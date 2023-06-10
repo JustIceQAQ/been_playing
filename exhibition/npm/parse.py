@@ -46,7 +46,7 @@ class NpmColParse(ParseInit):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str:
-        return self.item.find("h3", {"class": "card-title-underline"}).get_text()
+        return self.item.find("h3", {"class": "card-title"}).get_text()
 
     def get_date(self, *args, **kwargs) -> str:
         return "-"
