@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 15,
-    "last_update": "2023-06-21T01:00:19.212326+00:00",
+    "counts": 16,
+    "last_update": "2023-06-21T08:13:51.521276+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -96,6 +96,15 @@
             "source_url": "https://tmc.taipei/blog/show/bestards2023%e3%80%90bestrange%e3%80%91live/",
             "UUID": "fdb62a01b9f05263b3da6a55246d8389",
             "figure": "https://i.imgur.com/yWDKzA5.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u81fa\u760b\u97f3\u6a02\u6703 Crazy for Taiwan Concert",
+            "date": "2023.08.26(\u516d) \u2014 2023.08.27(\u65e5)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/2023-crazy-for-taiwan-concert/",
+            "UUID": "eaf24527440853b3b946d118a8ac1c78",
+            "figure": "https://i.imgur.com/M34Knk0.webp"
         },
         {
             "systematics": "tmc",
