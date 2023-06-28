@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 16,
-    "last_update": "2023-06-28T01:09:52.414164+00:00",
+    "counts": 17,
+    "last_update": "2023-06-28T08:15:14.776231+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -150,6 +150,15 @@
             "source_url": "https://tmc.taipei/blog/show/theworldofmanszimmer/",
             "UUID": "6d41c5db78555aed8080e032c8c846f2",
             "figure": "https://i.imgur.com/r32w9An.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "2023 \u9ad8\u723e\u5ba3 OSN\uff0dCTRL+N\u300c\u65b0\u8996\u754c\u300d\u9996\u5834\u5927\u578b\u6f14\u5531\u6703",
+            "date": "2023.11.11(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/2023-osnctrln/",
+            "UUID": "bf00703d8a0456aab8c6ee482c237c5d",
+            "figure": "https://i.imgur.com/B9DNIQj.webp"
         }
     ],
     "visit": {}
