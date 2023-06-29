@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-06-29T01:05:41.989232+00:00",
+    "last_update": "2023-06-29T08:14:42.898890+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -60,6 +60,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/f62a6c04-6ff0-4a37-8f45-7f0b95737a57",
             "UUID": "f922c2df0d1f5af4858ce93b47463b35",
             "figure": "https://i.imgur.com/HA0QcsG.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "WeWe Futures\uff1a\u6295\u4f60\u7684\u672a\u4f86",
+            "date": "2023-07-01 - 2023-10-22",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/08013c15-07c8-44b8-b2fa-3d773ae7188a",
+            "UUID": "c27e75bcb5365e38a690c945b6897099",
+            "figure": "https://i.imgur.com/dWbcc73.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/d078255c-25c6-4a5a-840d-79771ced06cf",
             "UUID": "a80d9607c7835ec7804f2b4f4b32b669",
             "figure": "https://i.imgur.com/dBllimt.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "ISLAND MIXPOP \u6625 \u7b56\u5c55 \u300c\u5411\u4e16\u754c\u516c\u958b\u53f0\u7063\u53ef\u98df\u82b1\u8349\u300dRoot to table",
-            "date": "2023-03-29 - 2023-06-30",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/7b49b92c-b027-42b7-b418-0106ab9f23d3",
-            "UUID": "a8a58d19df575705bf5ca158b3e28002",
-            "figure": "https://i.imgur.com/jCQZLH9.webp"
         }
     ],
     "visit": {}
