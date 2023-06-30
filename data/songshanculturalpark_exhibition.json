@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-06-30T01:03:55.889741+00:00",
+    "last_update": "2023-06-30T08:15:16.307900+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -81,6 +81,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "2023 \u5e74 iF \u5b78\u751f\u8a2d\u8a08\u734e\u7372\u734e\u4f5c\u54c1\u5c55",
+            "date": "2023-07-03 - 2023-07-24",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/fd3770d5-a6aa-4156-8962-01c60fe8ddce",
+            "UUID": "d4f48878e2bd578b84fc57c8f2a43d80",
+            "figure": "https://i.imgur.com/Aco3WcO.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "D\u2019FESTA TAIPEI",
             "date": "2023-07-06 - 2023-09-10",
             "address": "-",
@@ -108,6 +117,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "\u81fa\u7063\u539f\u5275\u6d41\u884c\u97f3\u6a02\u5927\u734e 20\u5468\u5e74\u97f3\u6a02\u6d3e\u5c0d",
+            "date": "2023-07-22 - 2023-07-22",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/592d024b-262f-42ed-b000-e69682ee4461",
+            "UUID": "c1ae6ace80a050679d08045bb8918046",
+            "figure": "https://i.imgur.com/e6nQDRv.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "\u61b2\u5175\u7279\u5c55",
             "date": "2023-05-24 - 2023-08-20",
             "address": "-",
@@ -123,24 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/ff0022f6-ac9d-4e95-88fb-4d0a96cda092",
             "UUID": "836f946bfe365bb091d2b088adc0c147",
             "figure": "https://i.imgur.com/BHOTqNu.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "2023\u4f0a\u6797\u7480\u74a8\u4e4b\u661f\u7b2c12\u5c46-\u6c7a\u8cfd\u76db\u5178",
-            "date": "2023-08-29 - 2023-08-29",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/5c783ee1-9359-465d-8041-cdfc16fb4eca",
-            "UUID": "7eccca42ce94580380bfbdc7186a4cf8",
-            "figure": "https://i.imgur.com/7ZZ8khO.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "2023TILF\u53f0\u7063\u570b\u969b\u54c1\u9152\u751f\u6d3b\u7bc0",
-            "date": "2023-09-15 - 2023-09-17",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/93cca1c2-5474-4a31-bf9c-c92415e9babb",
-            "UUID": "7f8aa95a61065737a5726e557fee8c7c",
-            "figure": "https://i.imgur.com/2AW717x.webp"
         }
     ],
     "visit": {}

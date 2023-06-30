@@ -5,8 +5,17 @@
         "external_link": "https://www.ntsec.gov.tw/User/Exhibitions.aspx?a=44"
     },
     "counts": 6,
-    "last_update": "2023-06-30T01:03:58.722950+00:00",
+    "last_update": "2023-06-30T08:13:51.366640+00:00",
     "data": [
+        {
+            "systematics": "ntsec",
+            "title": "\u5149\u5f71\u9b54\u6cd5\u7f8e\u8853\u9928 Art in Wonderland",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5070",
+            "UUID": "8817f5c75c5853b49d034942525c7c47",
+            "figure": "https://i.imgur.com/AqSMAuP.webp"
+        },
         {
             "systematics": "ntsec",
             "title": "\u3010\u5716\u5766\u5361\u9580\uff1a\u51fa\u571f\u767e\u5e74\u7d00\u5ff5\u7279\u5c55\u3011",
@@ -24,15 +33,6 @@
             "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5074",
             "UUID": "b5aa9f0d1d7b5a1ca85baa4e2b9c883e",
             "figure": "https://i.imgur.com/xbhMoab.webp"
-        },
-        {
-            "systematics": "ntsec",
-            "title": "\u5149\u5f71\u9b54\u6cd5\u7f8e\u8853\u9928 Art in Wonderland",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5070",
-            "UUID": "8817f5c75c5853b49d034942525c7c47",
-            "figure": "https://i.imgur.com/AqSMAuP.webp"
         },
         {
             "systematics": "ntsec",
