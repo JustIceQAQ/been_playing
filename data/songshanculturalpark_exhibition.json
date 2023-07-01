@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-07-01T01:13:32.535878+00:00",
+    "last_update": "2023-07-01T08:13:20.173485+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -90,6 +90,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "Tiger beer \u8d85\u71b1\u6d3e\u5c0d",
+            "date": "2023-07-08 - 2023-07-09",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/231fd0f6-d114-4d41-b865-b163d6cb8f3d",
+            "UUID": "a34ee61c13be5cb99b53e74a353294b8",
+            "figure": "https://i.imgur.com/Rf5TBTQ.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "2023\u7d42\u8eab\u5b78\u7fd2\u5609\u5e74\u83ef~\u5feb\u6a02\u5b78\u7fd2 \u8c50\u5bcc\u751f\u6d3b",
             "date": "2023-07-08 - 2023-07-09",
             "address": "-",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/ff0022f6-ac9d-4e95-88fb-4d0a96cda092",
             "UUID": "836f946bfe365bb091d2b088adc0c147",
             "figure": "https://i.imgur.com/BHOTqNu.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "2023\u4f0a\u6797\u7480\u74a8\u4e4b\u661f\u7b2c12\u5c46-\u6c7a\u8cfd\u76db\u5178",
-            "date": "2023-08-29 - 2023-08-29",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/5c783ee1-9359-465d-8041-cdfc16fb4eca",
-            "UUID": "7eccca42ce94580380bfbdc7186a4cf8",
-            "figure": "https://i.imgur.com/7ZZ8khO.webp"
         }
     ],
     "visit": {}
