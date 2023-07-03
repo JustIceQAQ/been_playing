@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 50,
-    "last_update": "2023-07-03T08:15:48.995596+00:00",
+    "last_update": "2023-07-03T16:15:28.465692+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -45,21 +45,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5317|\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55|\u5c55\u89bd\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/115138",
-            "UUID": "bf21f8fe10c25cf688af2331002e7be6",
-            "figure": "https://i.imgur.com/8Fzj9B2.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010\u9810\u552e74\u6298\u3011\u53f0\u5317\u5c55\u89bd|\u4f0a\u85e4\u6f64\u4e8c\u6050\u6016\u9ad4\u9a57\u5c55 2 \u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/144016-taipei-exhibition-junji-ito-horror-experience-exhibition-for-2-guests-taiwan",
             "UUID": "d1381475adbc5a98b209b3d62a155390",
             "figure": "https://i.imgur.com/IIYKncR.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5317|\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55|\u5c55\u89bd\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/115138",
+            "UUID": "bf21f8fe10c25cf688af2331002e7be6",
+            "figure": "https://i.imgur.com/8Fzj9B2.webp"
         },
         {
             "systematics": "KKDay",
@@ -81,48 +81,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u9650\u664272\u6298\u3011\u53f0\u5317\u5c55\u89bd|\u6551\u63f4\u5c0f\u82f1\u96c4\u6ce2\u529b\u4e92\u52d5\u7279\u5c55\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/142186-limited-time-22-off-taipei-exhibition-rescue-little-hero-boli-interactive-special-exhibition-tickets-taiwan",
-            "UUID": "4c4c338e4d6d504e8dd4f728e28ca382",
-            "figure": "https://i.imgur.com/KpCV4Uz.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u5531 \u6211\u5011\u7684\u6b4c \u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55 MUSIC, ISLAND, STORIES:POP MUSIC IN TAIWAN \u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/137251",
-            "UUID": "0c93a1f9037353f1b9f1b5c02a2ea899",
-            "figure": "https://i.imgur.com/SIJe7HS.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u7063\u53f0\u5317|\u7121\u5149\u665a\u9910\u4e03\u865f\u83dc\u55ae Dining In The Dark|\u9a5a\u559c\u88fd\u9020",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/145666",
-            "UUID": "b11c45b10c415bb18ce4665af2a940db",
-            "figure": "https://i.imgur.com/EGTd5Ym.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u3010\u7368\u5bb6\u512a\u60e0\u3011\u9ad8\u96c4\u99c1\u4e8c|\u9a5a\u559c\u88fd\u9020\u6c88\u6d78\u5f0f\u9ad4\u9a57\u5c55\u89bd|\u843d\u65e5\u8f49\u904b\u7ad9 - \u5fae\u91ba\u5217\u8eca/FLIGHT\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/134229-kaohsiung-pier-2-immersive-experience-exhibition",
-            "UUID": "b44efc7571225cec8d28d2ce396ccfae",
-            "figure": "https://i.imgur.com/xr6ZYwm.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010\u9810\u552e71\u6298\u3011\u53f0\u5317\u5c55\u89bd|\u7cbd\u90aa\u9a45\u9b54\u6c89\u6d78\u5f0f\u9ad4\u9a57\u5c55\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/143326-zongxie-exorcism-immersive-experience-exhibition-admission-ticket-taipei-taiwan",
             "UUID": "fdb4023d5edc580cad1620c94af8326a",
             "figure": "https://i.imgur.com/xIminiI.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u9650\u664272\u6298\u3011\u53f0\u5317\u5c55\u89bd|\u6551\u63f4\u5c0f\u82f1\u96c4\u6ce2\u529b\u4e92\u52d5\u7279\u5c55\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/142186-limited-time-22-off-taipei-exhibition-rescue-little-hero-boli-interactive-special-exhibition-tickets-taiwan",
+            "UUID": "4c4c338e4d6d504e8dd4f728e28ca382",
+            "figure": "https://i.imgur.com/KpCV4Uz.webp"
         },
         {
             "systematics": "KKDay",
@@ -135,21 +108,21 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u5531 \u6211\u5011\u7684\u6b4c \u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55 MUSIC, ISLAND, STORIES:POP MUSIC IN TAIWAN \u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/137251",
+            "UUID": "0c93a1f9037353f1b9f1b5c02a2ea899",
+            "figure": "https://i.imgur.com/SIJe7HS.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u3010KKday\u7368\u5bb6\u9650\u91cf\u6436\u8cfc\u3011\u53f0\u5317|\u97f3\u6a02\u73a9\u5bb6\u7684\u79d8\u5bc6\u57fa\u5730:\u63a2\u7d22\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/131082",
             "UUID": "ef1e086464ba5d5fa27037377750e08e",
             "figure": "https://i.imgur.com/9rJfZoz.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u65b0\u5317\u516b\u91cc | \u5341\u4e09\u884c\u535a\u7269\u9928\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/128289",
-            "UUID": "39790675a68053bdb7a6b732f7a8cff8",
-            "figure": "https://i.imgur.com/OiqItVw.webp"
         },
         {
             "systematics": "KKDay",
@@ -162,12 +135,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u9810\u552e76\u6298\u3011\u53f0\u4e2d\u5c55\u89bd|PINKFONG BABY SHARK \u653e\u96fb\u8db4 in \u53f0\u4e2d\u9580\u7968",
+            "title": "\u3010\u7368\u5bb6\u512a\u60e0\u3011\u9ad8\u96c4\u99c1\u4e8c|\u9a5a\u559c\u88fd\u9020\u6c88\u6d78\u5f0f\u9ad4\u9a57\u5c55\u89bd|\u843d\u65e5\u8f49\u904b\u7ad9 - \u5fae\u91ba\u5217\u8eca/FLIGHT\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/134831",
-            "UUID": "a22d5bf4a25e523fbb006210afa8f5fa",
-            "figure": "https://i.imgur.com/ydIWsS3.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/134229-kaohsiung-pier-2-immersive-experience-exhibition",
+            "UUID": "b44efc7571225cec8d28d2ce396ccfae",
+            "figure": "https://i.imgur.com/xr6ZYwm.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u7063\u53f0\u5317|\u7121\u5149\u665a\u9910\u4e03\u865f\u83dc\u55ae Dining In The Dark|\u9a5a\u559c\u88fd\u9020",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/145666",
+            "UUID": "b11c45b10c415bb18ce4665af2a940db",
+            "figure": "https://i.imgur.com/EGTd5Ym.webp"
         },
         {
             "systematics": "KKDay",
@@ -177,6 +159,24 @@
             "source_url": "https://www.kkday.com/zh-tw/product/143383-island-of-wonderful-beauty-timelapse-taiwan-video-history-full-immersion-experience-exhibition-ticket-taipei-101-observation-deck-combined-ticket",
             "UUID": "f80c73d93c965e6b8c8f1ce49d9a0c29",
             "figure": "https://i.imgur.com/uNpykc0.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u65b0\u5317\u516b\u91cc | \u5341\u4e09\u884c\u535a\u7269\u9928\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/128289",
+            "UUID": "39790675a68053bdb7a6b732f7a8cff8",
+            "figure": "https://i.imgur.com/OiqItVw.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u9810\u552e76\u6298\u3011\u53f0\u4e2d\u5c55\u89bd|PINKFONG BABY SHARK \u653e\u96fb\u8db4 in \u53f0\u4e2d\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/134831",
+            "UUID": "a22d5bf4a25e523fbb006210afa8f5fa",
+            "figure": "https://i.imgur.com/ydIWsS3.webp"
         },
         {
             "systematics": "KKDay",
@@ -198,21 +198,30 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5317\u5c55\u89bd|\u6c11\u96c4\u9b3c\u5c4b\u5be6\u5883\u9ad4\u9a57\u7279\u5c55",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/129706",
-            "UUID": "07461d1a329a5a52ab3bc0a0f7c48ceb",
-            "figure": "https://i.imgur.com/aOIKJTk.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u5492\u8853\u8ff4\u6230\u5c55\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/135116",
             "UUID": "918a4f1a91735a46addaa8648ea3d899",
             "figure": "https://i.imgur.com/rKC7RoV.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u9b3c\u6ec5\u4e4b\u5203\u5168\u96c6\u4e2d\u5c55\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/129130",
+            "UUID": "6d73dfefcfca5047ab57c0f558313f09",
+            "figure": "https://i.imgur.com/4pvUuCJ.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|About Love \u807d\u30fb\u8aaa\u611b\u60c5\u5c55ft.\u8086\u4e00\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/135286-taipei-exhibition-about-love-siyi-tickets",
+            "UUID": "24bc4d79afbc576a86856ecee1c84898",
+            "figure": "https://i.imgur.com/Y6qMGhv.webp"
         },
         {
             "systematics": "KKDay",
@@ -225,12 +234,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u5c4f\u6771\u5c55\u89bd|\u9b3c\u6ec5\u4e4b\u5203\u5168\u96c6\u4e2d\u5c55\u9580\u7968",
+            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5317\u5c55\u89bd|\u6c11\u96c4\u9b3c\u5c4b\u5be6\u5883\u9ad4\u9a57\u7279\u5c55",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/133337",
-            "UUID": "a91f403de76e5c668b5e2e47bc4d8168",
-            "figure": "https://i.imgur.com/2yDXcpa.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/129706",
+            "UUID": "07461d1a329a5a52ab3bc0a0f7c48ceb",
+            "figure": "https://i.imgur.com/aOIKJTk.webp"
         },
         {
             "systematics": "KKDay",
@@ -252,21 +261,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u9b3c\u6ec5\u4e4b\u5203\u5168\u96c6\u4e2d\u5c55\u9580\u7968",
+            "title": "\u5c4f\u6771\u5c55\u89bd|\u9b3c\u6ec5\u4e4b\u5203\u5168\u96c6\u4e2d\u5c55\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/129130",
-            "UUID": "6d73dfefcfca5047ab57c0f558313f09",
-            "figure": "https://i.imgur.com/4pvUuCJ.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|About Love \u807d\u30fb\u8aaa\u611b\u60c5\u5c55ft.\u8086\u4e00\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/135286-taipei-exhibition-about-love-siyi-tickets",
-            "UUID": "24bc4d79afbc576a86856ecee1c84898",
-            "figure": "https://i.imgur.com/Y6qMGhv.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/133337",
+            "UUID": "a91f403de76e5c668b5e2e47bc4d8168",
+            "figure": "https://i.imgur.com/2yDXcpa.webp"
         },
         {
             "systematics": "KKDay",
