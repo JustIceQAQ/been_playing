@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-07-04T01:08:54.638969+00:00",
+    "last_update": "2023-07-04T08:15:27.303712+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -24,42 +24,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/fd0da87c-16ca-4bd8-b7a3-89751ea31211",
             "UUID": "b810525d13c157ea83f720bb2747d94a",
             "figure": "https://i.imgur.com/cVuLfht.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u6d6a\u6f2b\u53f0\u4e09\u7dda\u85dd\u8853\u5b63\u300cFalabidbog \u82b1\u5566\u55f6\u5575\u300d",
-            "date": "2023-06-20 - 2023-08-27",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/83ca9f62-1c29-4bd8-9621-2c0b31b2a7f9",
-            "UUID": "94df5fd2d8dc5ac5acc3a82a8728de48",
-            "figure": "https://i.imgur.com/dDOtyoU.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u6539\u8b8a\u76841000+1\uff1a\u9019\u500b\u4e5f\u80fd\u8a2d\u8a08",
-            "date": "2023-06-27 - 2023-10-10",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/98b8702c-63a8-46e7-8b64-10141b182f55",
-            "UUID": "b57dd954f7ab57649d01d2fe7988f3b3",
-            "figure": "https://i.imgur.com/OewpaKJ.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u6ce2\u6ce2\u51b0\u72d7\u5ba4",
-            "date": "2023-06-28 - 2023-09-25",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/e96753c3-e6bc-451c-96b9-eda5ec278e88",
-            "UUID": "5f4b348dbbe659b48de9af4c5ef32625",
-            "figure": "https://i.imgur.com/zefFZld.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u4e16\u754c\u662f\u5ea7\u5927\u82b1\u5712 \u7acb\u9ad4\u66f8\u5c55",
-            "date": "2023-06-30 - 2023-07-09",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/f62a6c04-6ff0-4a37-8f45-7f0b95737a57",
-            "UUID": "f922c2df0d1f5af4858ce93b47463b35",
-            "figure": "https://i.imgur.com/HA0QcsG.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -108,6 +72,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "\u8ff7\u8def\u68ee\u6797\u590f\u5b63\u5e02\u96c6-\u5b87\u5b99\u8ff7\u8def\u4e2d",
+            "date": "2023-07-15 - 2023-07-16",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/01b928ad-5d3c-48fb-ad7f-c215683f22e9",
+            "UUID": "9a27f28ced2459edb31e85dafe4d3602",
+            "figure": "https://i.imgur.com/TJZuYeN.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "\u7b2c\u4e03\u5c46Design For Taiwan\u3010 \u770b\u898b\uff33\uff25\uff25\u3011\u793e\u6703\u8a2d\u8a08\u5c55",
             "date": "2023-07-20 - 2023-07-23",
             "address": "-",
@@ -126,21 +99,48 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "\u4e16\u754c\u662f\u5ea7\u5927\u82b1\u5712 \u7acb\u9ad4\u66f8\u5c55",
+            "date": "2023-06-30 - 2023-07-09",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/f62a6c04-6ff0-4a37-8f45-7f0b95737a57",
+            "UUID": "f922c2df0d1f5af4858ce93b47463b35",
+            "figure": "https://i.imgur.com/HA0QcsG.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u6539\u8b8a\u76841000+1\uff1a\u9019\u500b\u4e5f\u80fd\u8a2d\u8a08",
+            "date": "2023-06-27 - 2023-10-10",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/98b8702c-63a8-46e7-8b64-10141b182f55",
+            "UUID": "b57dd954f7ab57649d01d2fe7988f3b3",
+            "figure": "https://i.imgur.com/OewpaKJ.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u6ce2\u6ce2\u51b0\u72d7\u5ba4",
+            "date": "2023-06-28 - 2023-09-25",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/e96753c3-e6bc-451c-96b9-eda5ec278e88",
+            "UUID": "5f4b348dbbe659b48de9af4c5ef32625",
+            "figure": "https://i.imgur.com/zefFZld.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u6d6a\u6f2b\u53f0\u4e09\u7dda\u85dd\u8853\u5b63\u300cFalabidbog \u82b1\u5566\u55f6\u5575\u300d",
+            "date": "2023-06-20 - 2023-08-27",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/83ca9f62-1c29-4bd8-9621-2c0b31b2a7f9",
+            "UUID": "94df5fd2d8dc5ac5acc3a82a8728de48",
+            "figure": "https://i.imgur.com/dDOtyoU.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "\u61b2\u5175\u7279\u5c55",
             "date": "2023-05-24 - 2023-08-20",
             "address": "-",
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/8dcb95a7-6f2f-4eda-bdc7-67dbf5849524",
             "UUID": "f74f11e6fa1d5b4594e57f0ebf3014d8",
             "figure": "https://i.imgur.com/4AqeTBD.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "Hadal Zone \u23bc Light is the Revelation",
-            "date": "2023-08-01 - 2023-08-06",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/ff0022f6-ac9d-4e95-88fb-4d0a96cda092",
-            "UUID": "836f946bfe365bb091d2b088adc0c147",
-            "figure": "https://i.imgur.com/BHOTqNu.webp"
         }
     ],
     "visit": {}
