@@ -4,8 +4,8 @@
         "code_name": "huashan1914",
         "external_link": "https://www.huashan1914.com/w/huashan1914/exhibition"
     },
-    "counts": 31,
-    "last_update": "2023-07-05T08:15:37.237616+00:00",
+    "counts": 33,
+    "last_update": "2023-07-05T16:17:26.131042+00:00",
     "data": [
         {
             "systematics": "huashan1914",
@@ -51,6 +51,15 @@
             "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_23062921342820150",
             "UUID": "f26c7ccfe2465df2abcaf5c27bf02ed4",
             "figure": "https://i.imgur.com/Fa89NJY.webp"
+        },
+        {
+            "systematics": "huashan1914",
+            "title": "\u6c34\u6c34\u590f\u65e5\u796d",
+            "date": "2023-07-07 ~ 2023-07-09",
+            "address": "-",
+            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_23070518135053331",
+            "UUID": "557a8329fbb55d28b8f4b58838501798",
+            "figure": "https://i.imgur.com/HT5v74E.webp"
         },
         {
             "systematics": "huashan1914",
@@ -285,6 +294,15 @@
             "source_url": "https://www.huashan1914.com/w/umaytheater/performance_23042511162985446",
             "UUID": "bc1588e8f8f0581f9d02de4e9f4dc2b6",
             "figure": "https://i.imgur.com/rGXmhtR.webp"
+        },
+        {
+            "systematics": "huashan1914",
+            "title": "\u66f2\u904e\u4e09\u5de1\u7cfb\u5217\u97f3\u6a02\u6703\uff08\u4e00\uff09\u4ef2\u590f\u66f2\u6703",
+            "date": "2023-07-22 ~ 2023-07-22",
+            "address": "-",
+            "source_url": "https://www.huashan1914.com/w/umaytheater/performance_23070517220619721",
+            "UUID": "780187aecce55a469a0735990464867b",
+            "figure": "https://i.imgur.com/DVBb57v.webp"
         }
     ],
     "visit": {}
