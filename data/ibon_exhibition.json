@@ -4,9 +4,18 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 57,
-    "last_update": "2023-07-06T08:16:27.342750+00:00",
+    "counts": 58,
+    "last_update": "2023-07-06T16:16:16.971740+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "City Flow Music Festival",
+            "date": "2023-07-15 ~ 2023-07-16",
+            "address": "\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3 \u5357\u57fa\u5730",
+            "source_url": "https://tour.ibon.com.tw/event/64a4c50521ff7114b5f08f97",
+            "UUID": "1dd9ab9d1c655925985c16a8914a4d81",
+            "figure": "https://i.imgur.com/YGymZQn.webp"
+        },
         {
             "systematics": "ibon",
             "title": "2023\u53f0\u7063\u7f8e\u98df\u5c55",
