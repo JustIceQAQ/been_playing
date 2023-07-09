@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-07-09T08:13:20.540295+00:00",
+    "last_update": "2023-07-09T16:13:23.704501+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -54,24 +54,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "Tiger beer \u8d85\u71b1\u6d3e\u5c0d",
-            "date": "2023-07-08 - 2023-07-09",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/231fd0f6-d114-4d41-b865-b163d6cb8f3d",
-            "UUID": "a34ee61c13be5cb99b53e74a353294b8",
-            "figure": "https://i.imgur.com/Rf5TBTQ.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "2023\u7d42\u8eab\u5b78\u7fd2\u5609\u5e74\u83ef~\u5feb\u6a02\u5b78\u7fd2 \u8c50\u5bcc\u751f\u6d3b",
-            "date": "2023-07-08 - 2023-07-09",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/872f7d6a-a7bc-4010-8a2b-95b2b6256996",
-            "UUID": "011652aa125b5d74a2488c7cecaa1943",
-            "figure": "https://i.imgur.com/b9ksJKO.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "\u8ff7\u8def\u68ee\u6797\u590f\u5b63\u5e02\u96c6-\u5b87\u5b99\u8ff7\u8def\u4e2d",
             "date": "2023-07-15 - 2023-07-16",
             "address": "-",
@@ -96,15 +78,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/592d024b-262f-42ed-b000-e69682ee4461",
             "UUID": "c1ae6ace80a050679d08045bb8918046",
             "figure": "https://i.imgur.com/e6nQDRv.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u4e16\u754c\u662f\u5ea7\u5927\u82b1\u5712 \u7acb\u9ad4\u66f8\u5c55",
-            "date": "2023-06-30 - 2023-07-09",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/f62a6c04-6ff0-4a37-8f45-7f0b95737a57",
-            "UUID": "f922c2df0d1f5af4858ce93b47463b35",
-            "figure": "https://i.imgur.com/HA0QcsG.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -141,6 +114,33 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/8dcb95a7-6f2f-4eda-bdc7-67dbf5849524",
             "UUID": "f74f11e6fa1d5b4594e57f0ebf3014d8",
             "figure": "https://i.imgur.com/4AqeTBD.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "Hadal Zone \u23bc Light is the Revelation",
+            "date": "2023-08-01 - 2023-08-06",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/ff0022f6-ac9d-4e95-88fb-4d0a96cda092",
+            "UUID": "836f946bfe365bb091d2b088adc0c147",
+            "figure": "https://i.imgur.com/BHOTqNu.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "2023TILF\u53f0\u7063\u570b\u969b\u54c1\u9152\u751f\u6d3b\u7bc0",
+            "date": "2023-09-15 - 2023-09-17",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/93cca1c2-5474-4a31-bf9c-c92415e9babb",
+            "UUID": "7f8aa95a61065737a5726e557fee8c7c",
+            "figure": "https://i.imgur.com/2AW717x.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "2023\u840c\u6f6e\u6642\u5c1a\u9031\uff5c\u840c\u5bf5\u7269\u7528\u54c1\u5c55",
+            "date": "2023-10-07 - 2023-10-09",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/d078255c-25c6-4a5a-840d-79771ced06cf",
+            "UUID": "a80d9607c7835ec7804f2b4f4b32b669",
+            "figure": "https://i.imgur.com/dBllimt.webp"
         }
     ],
     "visit": {}
