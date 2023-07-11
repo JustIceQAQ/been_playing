@@ -4,8 +4,8 @@
         "code_name": "mocataipei",
         "external_link": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent"
     },
-    "counts": 3,
-    "last_update": "2023-07-11T01:01:18.554885+00:00",
+    "counts": 4,
+    "last_update": "2023-07-11T08:15:33.300268+00:00",
     "data": [
         {
             "systematics": "mocataipei",
@@ -33,6 +33,15 @@
             "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u5783\u573e\u6876\u4e2d\u7684\u611b\uff0d\u73ed\u514b\u65af",
             "UUID": "f1f2b9f9cfde59d688bd71b9ca476e83",
             "figure": "https://i.imgur.com/uQkNkIe.webp"
+        },
+        {
+            "systematics": "mocataipei",
+            "title": "Signal Z",
+            "date": "2023-07-29 ~ 2023-10-22",
+            "address": "-",
+            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/Signal*Z",
+            "UUID": "4227eb7e03be58de9d42b7a283593c7e",
+            "figure": "https://i.imgur.com/SG9Chdy.webp"
         }
     ],
     "visit": {
