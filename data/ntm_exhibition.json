@@ -4,8 +4,8 @@
         "code_name": "ntm",
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
-    "counts": 15,
-    "last_update": "2023-07-19T02:03:58.321490+00:00",
+    "counts": 17,
+    "last_update": "2023-07-19T08:58:46.597968+00:00",
     "data": [
         {
             "systematics": "ntm",
@@ -42,6 +42,24 @@
             "source_url": "https://event.culture.tw/NTM/portal/Registration/C0103MAction?actId=90084",
             "UUID": "95ae38f648635bcf896b1104a779a9e0",
             "figure": "https://i.imgur.com/FpaaLTE.webp"
+        },
+        {
+            "systematics": "ntm",
+            "title": "\u6f02\u9ce5\u96c6\u2014\u81fa\u7063\u5019\u9ce5\u5c55",
+            "date": "2023-07-11~ 2024-06-16",
+            "address": "\u5c55\u89bd\u5730\u9ede\uff1a\u672c\u9928",
+            "source_url": "https://event.culture.tw/NTM/portal/Registration/C0103MAction?actId=30062",
+            "UUID": "27a874b815e85a6db98b82c7bb6a251d",
+            "figure": "https://i.imgur.com/fZMnBvq.webp"
+        },
+        {
+            "systematics": "ntm",
+            "title": "Kialreba\u91cd\u8fd4\u9727\u81fa\uff1a\u81fa\u535a\u8207\u7576\u4ee3\u9727\u81fa\u9b6f\u51f1\u65cf\u7684\u5c0d\u8a71",
+            "date": "2023-06-20~ 2024-03-10",
+            "address": "\u5c55\u89bd\u5730\u9ede\uff1a\u672c\u9928",
+            "source_url": "https://event.culture.tw/NTM/portal/Registration/C0103MAction?actId=30056",
+            "UUID": "37527678ad265e5caacce93d35ae7fe8",
+            "figure": "https://i.imgur.com/imiXPoo.webp"
         },
         {
             "systematics": "ntm",
