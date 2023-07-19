@@ -5,7 +5,7 @@
         "external_link": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage=1"
     },
     "counts": 8,
-    "last_update": "2023-07-18T16:15:50.691443+00:00",
+    "last_update": "2023-07-19T02:02:12.776026+00:00",
     "data": [
         {
             "systematics": "museum_post",
@@ -80,7 +80,5 @@
             "figure": "https://i.imgur.com/flZwIQP.webp"
         }
     ],
-    "visit": {
-        "opening": "\u958b\u653e\u6642\u9593\uff1a\u661f\u671f\u4e8c\u81f3\u661f\u671f\u65e5\uff0c\u4e0a\u5348 9 \u6642\u81f3\u4e0b\u5348 5 \u6642\uff08\u4e0b\u5348 4 \u6642 30 \u5206\u505c\u6b62\u5165\u5834\uff09\n\u661f\u671f\u4e00;\u9664\u5915\u66a8\u6625\u7bc0\u521d\u4e00\u81f3\u521d\u4e8c\u3001\u6c11\u65cf\u6383\u5893\u7bc0\u3001\u7aef\u5348\u7bc0\u3001\u4e2d\u79cb\u7bc0"
-    }
+    "visit": {}
 }
