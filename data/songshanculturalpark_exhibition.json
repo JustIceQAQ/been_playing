@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-07-21T00:59:35.550047+00:00",
+    "last_update": "2023-07-21T08:13:20.112590+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -81,6 +81,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "iF \u73a9\u6a02\u5730\u5716 | 2023 \u5e74 iF \u8a2d\u8a08\u734e\u7372\u734e\u4f5c\u54c1\u5c55 (I)",
+            "date": "2023-07-28 - 2023-08-26",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/b1d8aae2-8cd2-40c4-8178-6bd4205b4325",
+            "UUID": "3dc804c1b652571b929ee3b01438f5b5",
+            "figure": "https://i.imgur.com/6P8ggQl.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "Hadal Zone - Light is the Revelation",
             "date": "2023-08-01 - 2023-08-06",
             "address": "-",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/83ca9f62-1c29-4bd8-9621-2c0b31b2a7f9",
             "UUID": "94df5fd2d8dc5ac5acc3a82a8728de48",
             "figure": "https://i.imgur.com/dDOtyoU.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u61b2\u5175\u7279\u5c55",
-            "date": "2023-05-24 - 2023-08-20",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/8dcb95a7-6f2f-4eda-bdc7-67dbf5849524",
-            "UUID": "f74f11e6fa1d5b4594e57f0ebf3014d8",
-            "figure": "https://i.imgur.com/4AqeTBD.webp"
         }
     ],
     "visit": {}
