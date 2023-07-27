@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-07-27T00:52:39.629910+00:00",
+    "last_update": "2023-07-27T08:13:08.769644+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -27,21 +27,21 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "WeWe Futures\uff1a\u6295\u4f60\u7684\u672a\u4f86",
-            "date": "2023-07-01 - 2023-10-22",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/08013c15-07c8-44b8-b2fa-3d773ae7188a",
-            "UUID": "c27e75bcb5365e38a690c945b6897099",
-            "figure": "https://i.imgur.com/dWbcc73.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "D\u2019FESTA TAIPEI",
             "date": "2023-07-06 - 2023-09-10",
             "address": "-",
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/3da9949a-ca4c-408d-a0f2-90de557bc835",
             "UUID": "f3e0186a68b05a84a50cfdd0a6cb5842",
             "figure": "https://i.imgur.com/kgagda9.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "WeWe Futures\uff1a\u6295\u4f60\u7684\u672a\u4f86",
+            "date": "2023-07-01 - 2023-10-22",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/08013c15-07c8-44b8-b2fa-3d773ae7188a",
+            "UUID": "c27e75bcb5365e38a690c945b6897099",
+            "figure": "https://i.imgur.com/dWbcc73.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -108,6 +108,24 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "\u300a\u770b\u898b\u53f0\u7063\u300b10\u5468\u5e74\u651d\u5f71\u5de1\u8ff4\u5c55_\u6539\u8b8a\u7684\u529b\u91cf",
+            "date": "2023-08-15 - 2023-09-10",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/bb943534-1489-42b5-9264-6ca39c393829",
+            "UUID": "c794d2bd0cb85372b1d663b8c7d91ee3",
+            "figure": "https://i.imgur.com/cSM4Nd6.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u7a7a\u59d0\u306e\u4f50\u8cc0\u65e5\u8a18-\u4f50\u8cc0\u65c5\u904a\u8b1b\u5ea7",
+            "date": "2023-08-26",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/49451b82-7713-4366-a021-9a75526028d7",
+            "UUID": "2227d662f2835e1caec417e3eed0966e",
+            "figure": "https://i.imgur.com/qeuz3b9.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "\u6539\u8b8a\u76841000+1\uff1a\u9019\u500b\u4e5f\u80fd\u8a2d\u8a08",
             "date": "2023-06-27 - 2023-10-10",
             "address": "-",
@@ -123,24 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/e96753c3-e6bc-451c-96b9-eda5ec278e88",
             "UUID": "5f4b348dbbe659b48de9af4c5ef32625",
             "figure": "https://i.imgur.com/zefFZld.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u6d6a\u6f2b\u53f0\u4e09\u7dda\u85dd\u8853\u5b63\u300cFalabidbog \u82b1\u5566\u55f6\u5575\u300d",
-            "date": "2023-06-20 - 2023-08-27",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/83ca9f62-1c29-4bd8-9621-2c0b31b2a7f9",
-            "UUID": "94df5fd2d8dc5ac5acc3a82a8728de48",
-            "figure": "https://i.imgur.com/dDOtyoU.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u61b2\u5175\u7279\u5c55",
-            "date": "2023-05-24 - 2023-08-20",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/8dcb95a7-6f2f-4eda-bdc7-67dbf5849524",
-            "UUID": "f74f11e6fa1d5b4594e57f0ebf3014d8",
-            "figure": "https://i.imgur.com/4AqeTBD.webp"
         }
     ],
     "visit": {}
