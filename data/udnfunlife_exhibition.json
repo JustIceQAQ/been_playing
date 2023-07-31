@@ -4,8 +4,8 @@
         "code_name": "tickets_udnfunlife",
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
-    "counts": 19,
-    "last_update": "2023-07-31T00:55:36.736077+00:00",
+    "counts": 20,
+    "last_update": "2023-07-31T08:14:56.192659+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -81,6 +81,15 @@
         },
         {
             "systematics": "tickets_udnfunlife",
+            "title": "\u7cbd\u90aa \u9a45\u9b54\u6c89\u6d78\u5f0f\u9ad4\u9a57\u5c55\u3010\u9b3c\u9580\u958b\u7279\u6b8a\u5834\u3011",
+            "date": "2023/08/11 ~ 2023/08/16",
+            "address": "\u570b\u7acb\u81fa\u7063\u79d1\u5b78\u6559\u80b2\u9928 \u4e03\u6a13\u6771\u5074\u7279\u5c55\u5340",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P08OPBIH&kdid=featured",
+            "UUID": "cc6d2790cd5d572686c4de32a2a3e5ef",
+            "figure": "https://i.imgur.com/EoSxOvb.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
             "title": "\u300a\u72fc\u8207\u5f7c\u5f97\u300bTASO\u4e92\u52d5\u5f0f\u89aa\u5b50\u97f3\u6a02\u6703",
             "date": "2023/08/19 ~ 2023/09/23",
             "address": "\u81fa\u5357\u6587\u5316\u4e2d\u5fc3 \u6f14\u85dd\u5ef3,\u570b\u7acb\u81fa\u4e2d\u6559\u80b2\u5927\u5b78 \u5bf6\u6210\u6f14\u85dd\u5ef3,\u885b\u6b66\u71df\u570b\u5bb6\u85dd\u8853\u6587\u5316\u4e2d\u5fc3 \u97f3\u6a02\u5ef3,\u53f0\u5317\u5e02\u89aa\u5b50\u5287\u5834",
@@ -95,7 +104,7 @@
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3 \u6587\u5316\u9928 4~6\u6a13",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N23SE92T&kdid=featured",
             "UUID": "3050b601e161530ea819b75dccf95d20",
-            "figure": "https://i.imgur.com/8VpUhB3.webp"
+            "figure": "https://i.imgur.com/vSKh3Za.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
