@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 8,
-    "last_update": "2023-08-05T08:11:31.983566+00:00",
+    "counts": 4,
+    "last_update": "2023-08-05T16:11:18.130824+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -42,42 +42,6 @@
             "source_url": "https://chanchaotw.kktix.cc/events/ef70f638",
             "UUID": "5cab1975e0c7595eb31b36855a8e2799",
             "figure": "https://i.imgur.com/NQJ0Vty.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "\u85dd\u535a\u753a inbetween \u300c\u75db\u5feb\u5236\u9020- \u5275\u4f5c\u8005\u6d3e\u5c0d\u300d",
-            "date": "2023/8/18(\u4e94)",
-            "address": "",
-            "source_url": "https://inbetween0630.kktix.cc/events/18166e29",
-            "UUID": "df8d977fd0585a5d8ba21148ecb75168",
-            "figure": "https://i.imgur.com/c8gSboP.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "\u671b\uff1aEnvision",
-            "date": "2023/9/8(\u4e94)",
-            "address": "",
-            "source_url": "https://envision.kktix.cc/events/6c8b55f1",
-            "UUID": "c81fa23ae8f75c078c371ee02c1bc3d6",
-            "figure": "https://i.imgur.com/yWDxo5c.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "TILF\u53f0\u7063\u570b\u969b\u54c1\u9152\u751f\u6d3b\u7bc0 5\u6298\u65e9\u9ce5\u9810\u552e\u9580\u7968",
-            "date": "2023/9/15(\u4e94)",
-            "address": "",
-            "source_url": "https://sheng-dong.kktix.cc/events/tilf",
-            "UUID": "e68557d7ce3c50b58a04bc4dedb3778b",
-            "figure": "https://i.imgur.com/J0rm6xa.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "2023\u840c\u5bf5\u7269\u7528\u54c1\u5c55 \u514d\u8cbb\u7d22\u7968",
-            "date": "2023/10/7(\u516d)",
-            "address": "",
-            "source_url": "https://sheng-dong.kktix.cc/events/mengpet",
-            "UUID": "6d95bb4f3ae856b19b8c4bae55a4fc74",
-            "figure": "https://i.imgur.com/YV7K2op.webp"
         }
     ],
     "visit": {}
