@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-08-05T00:52:34.427942+00:00",
+    "last_update": "2023-08-05T08:12:06.238248+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -28,7 +28,7 @@
         {
             "systematics": "songshanculturalpark",
             "title": "Hadal Zone - Light is the Revelation",
-            "date": "2023-08-01 - 2023-08-06",
+            "date": "2023-08-01 - 2023-08-09",
             "address": "-",
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/ff0022f6-ac9d-4e95-88fb-4d0a96cda092",
             "UUID": "836f946bfe365bb091d2b088adc0c147",
@@ -68,7 +68,7 @@
             "address": "-",
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/8956f3b9-ad39-4fb2-a06e-10bb41f9ed51",
             "UUID": "a06bbb8440a55721b80f7c2d8ed09afa",
-            "figure": "https://i.imgur.com/vlThSWU.webp"
+            "figure": "https://i.imgur.com/SHtLl51.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -87,6 +87,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/bb943534-1489-42b5-9264-6ca39c393829",
             "UUID": "c794d2bd0cb85372b1d663b8c7d91ee3",
             "figure": "https://i.imgur.com/cSM4Nd6.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u6fb3\u9580\u6a02\u7121\u9650 See you Macao-\u65c5\u904a\u8b1b\u5ea7",
+            "date": "2023-08-26",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/a967aef6-84bc-47b8-a981-f5a2097a2e48",
+            "UUID": "f8984af2ed83592dbce8fbdac054eccb",
+            "figure": "https://i.imgur.com/XTJIXjS.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/08013c15-07c8-44b8-b2fa-3d773ae7188a",
             "UUID": "c27e75bcb5365e38a690c945b6897099",
             "figure": "https://i.imgur.com/dWbcc73.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u6ce2\u6ce2\u51b0\u72d7\u5ba4",
-            "date": "2023-06-28 - 2023-09-25",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/e96753c3-e6bc-451c-96b9-eda5ec278e88",
-            "UUID": "5f4b348dbbe659b48de9af4c5ef32625",
-            "figure": "https://i.imgur.com/zefFZld.webp"
         }
     ],
     "visit": {}
