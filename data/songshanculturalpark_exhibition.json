@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-08-06T08:11:29.076176+00:00",
+    "last_update": "2023-08-06T16:12:31.107416+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -51,15 +51,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/a22418c8-8261-4a5a-aec2-16fd215f0903",
             "UUID": "6b2875f3f4895f308f3ea2ce366050fe",
             "figure": "https://i.imgur.com/Cg5qc2U.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u5f9e\u6771\u4eac\u5230\u4eac\u90fd\uff5c\u65c5\u65e5\u8a2d\u8a08\u5e2b\u7684\u7f8e\u5b78\u89c0\u5bdf\u7b46\u8a18",
-            "date": "2023-08-06",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/446e5fa0-0c0a-45fc-9803-600b9378d6e8",
-            "UUID": "3360f2b520055c079f4ae231598bf0e5",
-            "figure": "https://i.imgur.com/DublINH.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -141,6 +132,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/08013c15-07c8-44b8-b2fa-3d773ae7188a",
             "UUID": "c27e75bcb5365e38a690c945b6897099",
             "figure": "https://i.imgur.com/dWbcc73.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u6ce2\u6ce2\u51b0\u72d7\u5ba4",
+            "date": "2023-06-28 - 2023-09-25",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/e96753c3-e6bc-451c-96b9-eda5ec278e88",
+            "UUID": "5f4b348dbbe659b48de9af4c5ef32625",
+            "figure": "https://i.imgur.com/zefFZld.webp"
         }
     ],
     "visit": {}
