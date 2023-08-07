@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 4,
-    "last_update": "2023-08-07T00:55:59.508751+00:00",
+    "counts": 7,
+    "last_update": "2023-08-07T08:15:05.163536+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -42,6 +42,33 @@
             "source_url": "https://chanchaotw.kktix.cc/events/ef70f638",
             "UUID": "5cab1975e0c7595eb31b36855a8e2799",
             "figure": "https://i.imgur.com/NQJ0Vty.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "2023\u4e16\u754c\u5ba2\u5bb6\u535a\u89bd\u6703\u81fa\u7063\u9928\uff0d\u5357\u6295\u7e23\u5c55\u5340\u300c\u5ba2\u4e2d\u6709\u5ba2\u2022\u5357\u6295\u597d\u5ba2\u6c23\u300d",
+            "date": "2023/8/11(\u4e94)",
+            "address": "",
+            "source_url": "https://hakkaexpo2023.kktix.cc/events/ece54585",
+            "UUID": "d5817a95a2225841ae9d47246a716e17",
+            "figure": "https://i.imgur.com/PrrcK2X.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u30108/14\u3011\u2606 hololive Meet x TAIPEI POP UP STORE\uff5c\u671f\u9593\u9650\u5b9a\u5feb\u9583\u5e97 \u2606",
+            "date": "2023/8/14(\u4e00)",
+            "address": "",
+            "source_url": "https://hololivemeetxtaipeitw.kktix.cc/events/rhye5ru1ce4",
+            "UUID": "d09e4b2fabcd5e729d89bb1180016055",
+            "figure": "https://i.imgur.com/GrGE8cG.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u30108/15\u3011\u2606 hololive Meet x TAIPEI POP UP STORE\uff5c\u671f\u9593\u9650\u5b9a\u5feb\u9583\u5e97 \u2606",
+            "date": "2023/8/15(\u4e8c)",
+            "address": "",
+            "source_url": "https://hololivemeetxtaipeitw.kktix.cc/events/rhye5ru1ce5",
+            "UUID": "f3761100c3455275a9e6c3a4a3c088bb",
+            "figure": "https://i.imgur.com/nf5oryY.webp"
         }
     ],
     "visit": {}

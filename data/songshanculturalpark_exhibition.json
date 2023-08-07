@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-08-07T00:55:59.259016+00:00",
+    "last_update": "2023-08-07T08:14:46.015804+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -32,7 +32,7 @@
             "address": "-",
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/ff0022f6-ac9d-4e95-88fb-4d0a96cda092",
             "UUID": "836f946bfe365bb091d2b088adc0c147",
-            "figure": "https://i.imgur.com/BHOTqNu.webp"
+            "figure": "https://i.imgur.com/HymHlz6.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -78,6 +78,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/bb943534-1489-42b5-9264-6ca39c393829",
             "UUID": "c794d2bd0cb85372b1d663b8c7d91ee3",
             "figure": "https://i.imgur.com/cSM4Nd6.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u3010\u540d\u6240\u6b72\u6642\u98a8\u6708\u8a18\u3011\u7248\u756b\u5c55",
+            "date": "2023-08-16 - 2023-08-27",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/32562458-8b5d-482e-8b69-46bd486ba383",
+            "UUID": "069d1ea24ee751feb2d015ecbd5ed057",
+            "figure": "https://i.imgur.com/BO4C8Hc.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/08013c15-07c8-44b8-b2fa-3d773ae7188a",
             "UUID": "c27e75bcb5365e38a690c945b6897099",
             "figure": "https://i.imgur.com/dWbcc73.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u6ce2\u6ce2\u51b0\u72d7\u5ba4",
-            "date": "2023-06-28 - 2023-09-25",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/e96753c3-e6bc-451c-96b9-eda5ec278e88",
-            "UUID": "5f4b348dbbe659b48de9af4c5ef32625",
-            "figure": "https://i.imgur.com/zefFZld.webp"
         }
     ],
     "visit": {}
