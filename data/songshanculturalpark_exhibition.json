@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-08-09T00:54:56.525773+00:00",
+    "last_update": "2023-08-09T08:14:04.637875+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -90,6 +90,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "\u3077\u3045\u5d0e\u3077\u3045\u5948 \u53f0\u7063\u521d\u500b\u5c55\u2500\u2500\u6953\u82b1\u96ea\u6708",
+            "date": "2023-08-25 - 2023-09-17",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/6e36ecbf-4741-4b04-a079-441ead71d501",
+            "UUID": "86dc27cfde3554abaac2f7caab4f3ae1",
+            "figure": "https://i.imgur.com/ZcQOgTv.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "\u6fb3\u9580\u6a02\u7121\u9650 See you Macao-\u65c5\u904a\u8b1b\u5ea7",
             "date": "2023-08-26",
             "address": "-",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/d078255c-25c6-4a5a-840d-79771ced06cf",
             "UUID": "a80d9607c7835ec7804f2b4f4b32b669",
             "figure": "https://i.imgur.com/dBllimt.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "2023\u4e9e\u6d32\u6700\u5927\u7403\u978b\u6f6e\u6d41\u5e02\u96c6 INFINITE SNEAKER MARKET",
-            "date": "2023-10-08 - 2023-10-09",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/05d6bec6-a560-4061-8c0a-ea9dbda762af",
-            "UUID": "3c759c7b1e01540fb46e2679fbf54412",
-            "figure": "https://i.imgur.com/fMn1e5u.webp"
         }
     ],
     "visit": {}
