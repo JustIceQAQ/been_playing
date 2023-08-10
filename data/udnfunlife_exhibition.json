@@ -5,7 +5,7 @@
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
     "counts": 21,
-    "last_update": "2023-08-10T00:55:59.027265+00:00",
+    "last_update": "2023-08-10T08:13:38.083624+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -33,6 +33,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P063XUMS&kdid=featured",
             "UUID": "8c43069788045d39bcfc225c0adf0ded",
             "figure": "https://i.imgur.com/ByOuHF2.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u821e\u53f0\u5287\u300a\u8b1d\u8b1d\u5927\u5bb6\u6536\u770b\u300b",
+            "date": "2023/09/22 ~ 2023/10/29",
+            "address": "\u81fa\u5317\u8868\u6f14\u85dd\u8853\u4e2d\u5fc3 \u5927\u5287\u9662,\u885b\u6b66\u71df\u570b\u5bb6\u85dd\u8853\u6587\u5316\u4e2d\u5fc3 \u6b4c\u5287\u9662",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P06RL7JZ&kdid=featured",
+            "UUID": "c930848c651455fa8816a6023b3f0323",
+            "figure": "https://i.imgur.com/L4pOJS4.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -78,15 +87,6 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P05PR0YP&kdid=featured",
             "UUID": "8d744479628758e5a1f0a44ff17026dc",
             "figure": "https://i.imgur.com/V7slOXC.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
-            "title": "\u821e\u53f0\u5287\u300a\u8b1d\u8b1d\u5927\u5bb6\u6536\u770b\u300b",
-            "date": "2023/09/22 ~ 2023/10/29",
-            "address": "\u81fa\u5317\u8868\u6f14\u85dd\u8853\u4e2d\u5fc3 \u5927\u5287\u9662,\u885b\u6b66\u71df\u570b\u5bb6\u85dd\u8853\u6587\u5316\u4e2d\u5fc3 \u6b4c\u5287\u9662",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P06RL7JZ&kdid=featured",
-            "UUID": "c930848c651455fa8816a6023b3f0323",
-            "figure": "https://i.imgur.com/L4pOJS4.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
