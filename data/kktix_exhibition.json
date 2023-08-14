@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 4,
-    "last_update": "2023-08-14T08:13:14.830211+00:00",
+    "counts": 5,
+    "last_update": "2023-08-14T16:11:37.177978+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -42,6 +42,15 @@
             "source_url": "https://kpmc.kktix.cc/events/poppoppop",
             "UUID": "2753092823855d20b12fbb3f6977690c",
             "figure": "https://i.imgur.com/76TL3BV.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u85dd\u535a\u753a inbetween \u300c\u75db\u5feb\u5236\u9020- \u5275\u4f5c\u8005\u6d3e\u5c0d\u300d",
+            "date": "2023/8/18(\u4e94)",
+            "address": "",
+            "source_url": "https://inbetween0630.kktix.cc/events/18166e29",
+            "UUID": "df8d977fd0585a5d8ba21148ecb75168",
+            "figure": "https://i.imgur.com/c8gSboP.webp"
         }
     ],
     "visit": {}
