@@ -5,17 +5,8 @@
         "external_link": "https://kktix.com/events?category_id=11"
     },
     "counts": 6,
-    "last_update": "2023-08-20T08:10:57.054122+00:00",
+    "last_update": "2023-08-20T16:11:04.553247+00:00",
     "data": [
-        {
-            "systematics": "KKTix",
-            "title": "\u85dd\u535a\u753a inbetween \u300c\u75db\u5feb\u5236\u9020- \u5275\u4f5c\u8005\u6d3e\u5c0d\u300d",
-            "date": "2023/8/18(\u4e94)",
-            "address": "",
-            "source_url": "https://inbetween0630.kktix.cc/events/18166e29",
-            "UUID": "df8d977fd0585a5d8ba21148ecb75168",
-            "figure": "https://i.imgur.com/c8gSboP.webp"
-        },
         {
             "systematics": "KKTix",
             "title": "\u300a\u9019\u500b\u9ad4\u9a57\u5f88\u5947\u7279 X \u897f\u8ca2\u516c\u7acb\u00b7\u540d\u5e2b\u51fa\u9ad8\u5154\u300b",
@@ -60,6 +51,15 @@
             "source_url": "https://kpmc.kktix.cc/events/poppoppop",
             "UUID": "2753092823855d20b12fbb3f6977690c",
             "figure": "https://i.imgur.com/76TL3BV.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u671b\uff1aEnvision",
+            "date": "2023/9/8(\u4e94)",
+            "address": "",
+            "source_url": "https://envision.kktix.cc/events/6c8b55f1",
+            "UUID": "c81fa23ae8f75c078c371ee02c1bc3d6",
+            "figure": "https://i.imgur.com/yWDxo5c.webp"
         }
     ],
     "visit": {}
