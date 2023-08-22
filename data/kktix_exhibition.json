@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 7,
-    "last_update": "2023-08-22T08:12:42.084371+00:00",
+    "counts": 8,
+    "last_update": "2023-08-22T16:12:30.179339+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -69,6 +69,15 @@
             "source_url": "https://sheng-dong.kktix.cc/events/tilf",
             "UUID": "e68557d7ce3c50b58a04bc4dedb3778b",
             "figure": "https://i.imgur.com/J0rm6xa.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "2023\u840c\u5bf5\u7269\u7528\u54c1\u5c55 \u514d\u8cbb\u7d22\u7968",
+            "date": "2023/10/7(\u516d)",
+            "address": "",
+            "source_url": "https://sheng-dong.kktix.cc/events/mengpet",
+            "UUID": "6d95bb4f3ae856b19b8c4bae55a4fc74",
+            "figure": "https://i.imgur.com/YV7K2op.webp"
         }
     ],
     "visit": {}
