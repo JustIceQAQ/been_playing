@@ -4,8 +4,27 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 0,
-    "last_update": "2023-08-27T00:53:56.635217+00:00",
-    "data": [],
+    "counts": 2,
+    "last_update": "2023-08-27T08:11:35.487359+00:00",
+    "data": [
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u5317\u570b\u969b\u822a\u592a\u66a8\u570b\u9632\u5de5\u696d\u5c55\u89bd\u6703",
+            "date": "09/14 ~ 09/16",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.tadte.com.tw",
+            "UUID": "542ffde8bb645c45bb5cae871e2485c6",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u570b\u969b\u6c34\u9031",
+            "date": "09/20 ~ 09/22",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.taiwanintlwaterweek.com",
+            "UUID": "b738c1639de350cd9e7aa121ac1ea2da",
+            "figure": ""
+        }
+    ],
     "visit": {}
 }
