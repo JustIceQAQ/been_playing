@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-08-29T08:13:45.537353+00:00",
+    "last_update": "2023-08-29T16:12:48.221657+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -51,15 +51,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/6e36ecbf-4741-4b04-a079-441ead71d501",
             "UUID": "86dc27cfde3554abaac2f7caab4f3ae1",
             "figure": "https://i.imgur.com/ZcQOgTv.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "G&G\u6587\u5316\u7522\u696d\u5be6\u9a57\u5ba4 \u5275\u4f5c\u8fd1\u672a\u4f86\u7cfb\u5217\u8b1b\u5ea7",
-            "date": "2023-08-29",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/28253ee6-a3c2-4c46-a210-f761340b0cb6",
-            "UUID": "b0fc2fe5272453cb899b7e5823f40ad6",
-            "figure": "https://i.imgur.com/2aEQ2nP.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -141,6 +132,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/3da9949a-ca4c-408d-a0f2-90de557bc835",
             "UUID": "f3e0186a68b05a84a50cfdd0a6cb5842",
             "figure": "https://i.imgur.com/kgagda9.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "WeWe Futures\uff1a\u6295\u4f60\u7684\u672a\u4f86",
+            "date": "2023-07-01 - 2023-10-22",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/08013c15-07c8-44b8-b2fa-3d773ae7188a",
+            "UUID": "c27e75bcb5365e38a690c945b6897099",
+            "figure": "https://i.imgur.com/dWbcc73.webp"
         }
     ],
     "visit": {}
