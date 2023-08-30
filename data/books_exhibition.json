@@ -5,17 +5,8 @@
         "external_link": "https://tickets.books.com.tw/leisure/"
     },
     "counts": 13,
-    "last_update": "2023-08-30T00:45:01.392046+00:00",
+    "last_update": "2023-08-30T08:12:48.153615+00:00",
     "data": [
-        {
-            "systematics": "tickets_books",
-            "title": "Puuzaki Puuna\u53f0\u7063\u521d\u500b\u5c55\u2500\u6953\u82b1\u96ea\u6708",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201398174",
-            "UUID": "1625bdd817095128a4464593d1820625",
-            "figure": "https://i.imgur.com/2pvyA6W.webp"
-        },
         {
             "systematics": "tickets_books",
             "title": "\u6551\u63f4\u5c0f\u82f1\u96c4\u6ce2\u529b\u4e92\u52d5\u7279\u5c55 \u53f0\u5317\u7ad9",
@@ -69,6 +60,15 @@
             "source_url": "https://tickets.books.com.tw/progshow/08010201094133",
             "UUID": "ce63b56609be51e3961d7726095223c6",
             "figure": "https://i.imgur.com/ypXuYaK.webp"
+        },
+        {
+            "systematics": "tickets_books",
+            "title": "Puuzaki Puuna\u53f0\u7063\u521d\u500b\u5c55\u2500\u6953\u82b1\u96ea\u6708",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010201398174",
+            "UUID": "1625bdd817095128a4464593d1820625",
+            "figure": "https://i.imgur.com/2pvyA6W.webp"
         },
         {
             "systematics": "tickets_books",

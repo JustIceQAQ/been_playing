@@ -4,9 +4,27 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 68,
-    "last_update": "2023-08-30T00:45:03.325962+00:00",
+    "counts": 71,
+    "last_update": "2023-08-30T08:14:39.228604+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "2023\u611b\u624b\u5275\u570b\u969b\u624b\u4f5c\u8a2d\u8a08\u7bc0\u2013\u5922\u60f3\u5609\u5e74\u83ef",
+            "date": "2023-11-10 ~ 2023-11-12",
+            "address": "\u83ef\u5c711914\u6587\u5275\u7522\u696d\u5712\u5340 \u6771\u4e8c\u9928",
+            "source_url": "https://tour.ibon.com.tw/event/64ec15d3040f3d358e8d848f",
+            "UUID": "af51ead8770d5dadb2d657e041f850d3",
+            "figure": "https://i.imgur.com/yPx42kG.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "2023\u53f0\u5317\u840c\u5bf5\u7269\u7528\u54c1\u5c55\uff0e\u840c\u6f6e\u6642\u5c1a\u9031",
+            "date": "2023-10-07 ~ 2023-10-09",
+            "address": "\u677e\u5c71\u6587\u5275\u5712\u53404\u30015\u865f\u5009\u5eab",
+            "source_url": "https://tour.ibon.com.tw/event/64e36a7fcbe7520efcd7eb3b",
+            "UUID": "7dd2be18792e53889cae00c7e856f935",
+            "figure": "https://i.imgur.com/yGlmoj2.webp"
+        },
         {
             "systematics": "ibon",
             "title": "2023 Corona\u5f1b\u653e\u97f3\u6a02\u7bc0",
@@ -15,6 +33,15 @@
             "source_url": "https://tour.ibon.com.tw/event/64dc6a29e26a83320737bd25",
             "UUID": "77177069af685ca699b9c09b6c27a6cc",
             "figure": "https://i.imgur.com/K1UG30U.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "AI\u9748\u611f\u5927\u5e2b\uff1a\u6fb3\u6d323D\u5149\u5f71\u89f8\u52d5\u6a02\u5712",
+            "date": "2023-09-29 ~ 2024-01-14",
+            "address": "\u8aa0\u54c1\u751f\u6d3b\u65b0\u5e97 3F\u5be6\u9a57\u5834",
+            "source_url": "https://tour.ibon.com.tw/event/64dacd069d2b58365f328db6",
+            "UUID": "d9034463b5f7541bbea7a813de216eac",
+            "figure": "https://i.imgur.com/Orqq0Bl.webp"
         },
         {
             "systematics": "ibon",
