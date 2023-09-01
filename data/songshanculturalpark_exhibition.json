@@ -5,8 +5,17 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-09-01T00:49:12.275702+00:00",
+    "last_update": "2023-09-01T08:13:33.847939+00:00",
     "data": [
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u5712\u5340\u6d3b\u52d5\u7570\u52d5",
+            "date": "2023-09-01 - 2023-09-03",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/bd9ac970-a323-4f40-a295-90174f83dd2f",
+            "UUID": "f0751107c59c51d68ab670367a451f87",
+            "figure": "https://i.imgur.com/mVGvUzn.webp"
+        },
         {
             "systematics": "songshanculturalpark",
             "title": "\u677e\u5c71\u6587\u5275\u5712\u5340-09\u6708\u5c55\u6f14\u653b\u7565",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/05d6bec6-a560-4061-8c0a-ea9dbda762af",
             "UUID": "3c759c7b1e01540fb46e2679fbf54412",
             "figure": "https://i.imgur.com/fMn1e5u.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "D\u2019FESTA TAIPEI",
-            "date": "2023-07-06 - 2023-09-10",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/3da9949a-ca4c-408d-a0f2-90de557bc835",
-            "UUID": "f3e0186a68b05a84a50cfdd0a6cb5842",
-            "figure": "https://i.imgur.com/kgagda9.webp"
         }
     ],
     "visit": {}
