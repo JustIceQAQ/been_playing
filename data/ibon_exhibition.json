@@ -4,8 +4,8 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 65,
-    "last_update": "2023-09-06T00:45:24.535549+00:00",
+    "counts": 66,
+    "last_update": "2023-09-06T08:13:21.951212+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -294,6 +294,15 @@
             "source_url": "https://tour.ibon.com.tw/event/64520a5c2005c81b6710b45d",
             "UUID": "369c0da564515606bd25a9a5d6c3dacb",
             "figure": "https://i.imgur.com/wBjvOxA.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u6bad \u9ad8\u96c4\u7ad9",
+            "date": "2023-06-30 ~ 2023-09-17",
+            "address": "\u570b\u7acb\u79d1\u5b78\u5de5\u85dd\u535a\u7269\u9928\u5317\u9928 \u7b2c\u4e00\u4e8c\u7279\u5c55\u5ef3",
+            "source_url": "https://tour.ibon.com.tw/event/6450ef1d2005c81b67109294",
+            "UUID": "2a125e4b653b524f872ccc10135102c6",
+            "figure": "https://i.imgur.com/nMgDNwz.webp"
         },
         {
             "systematics": "ibon",
