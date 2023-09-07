@@ -4,8 +4,8 @@
         "code_name": "ntm",
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
-    "counts": 19,
-    "last_update": "2023-09-07T08:15:19.215092+00:00",
+    "counts": 22,
+    "last_update": "2023-09-07T16:13:42.140606+00:00",
     "data": [
         {
             "systematics": "ntm",
@@ -51,6 +51,15 @@
             "source_url": "https://event.culture.tw/NTM/portal/Registration/C0103MAction?actId=30077",
             "UUID": "606fe297e0275027b7d628b6606fffeb",
             "figure": "https://i.imgur.com/UWW8S8w.webp"
+        },
+        {
+            "systematics": "ntm",
+            "title": "\u74b0\u5883\u8b70\u601d\u8b1b\u5802\u300c\u95dc\u4f60\u4ec0\u9ebc\u9ce5\u4e8b\u300d",
+            "date": "2023-07-23~ 2023-10-29",
+            "address": "\u5c55\u89bd\u5730\u9ede\uff1a\u672c\u9928",
+            "source_url": "https://event.culture.tw/NTM/portal/Registration/C0103MAction?actId=30069",
+            "UUID": "173cffed98e25ba9adb6ce7197818d32",
+            "figure": "https://i.imgur.com/HVN2Mpy.webp"
         },
         {
             "systematics": "ntm",
