@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 50,
-    "last_update": "2023-09-10T08:12:39.431408+00:00",
+    "last_update": "2023-09-10T16:13:25.495990+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -45,30 +45,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u4f0a\u85e4\u6f64\u4e8c\u6050\u6016\u9ad4\u9a57\u5c55 2 \u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/144016-taipei-exhibition-junji-ito-horror-experience-exhibition-for-2-guests-taiwan",
-            "UUID": "d1381475adbc5a98b209b3d62a155390",
-            "figure": "https://i.imgur.com/IIYKncR.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u6551\u63f4\u5c0f\u82f1\u96c4\u6ce2\u529b\u4e92\u52d5\u7279\u5c55\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/142186-limited-time-22-off-taipei-exhibition-rescue-little-hero-boli-interactive-special-exhibition-tickets-taiwan",
             "UUID": "4c4c338e4d6d504e8dd4f728e28ca382",
             "figure": "https://i.imgur.com/A4wnYph.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5317\u5c55\u89bd|\u7cbd\u90aa\u9a45\u9b54\u6c89\u6d78\u5f0f\u9ad4\u9a57\u5c55\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/143326-zongxie-exorcism-immersive-experience-exhibition-admission-ticket-taipei-taiwan",
-            "UUID": "fdb4023d5edc580cad1620c94af8326a",
-            "figure": "https://i.imgur.com/pTO1bxY.webp"
         },
         {
             "systematics": "KKDay",
@@ -144,12 +126,30 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u4f0a\u85e4\u6f64\u4e8c\u6050\u6016\u9ad4\u9a57\u5c55 2 \u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/144016-taipei-exhibition-junji-ito-horror-experience-exhibition-for-2-guests-taiwan",
+            "UUID": "d1381475adbc5a98b209b3d62a155390",
+            "figure": "https://i.imgur.com/IIYKncR.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u3010\u7dda\u4e0a\u512a\u60e08\u6298\u3011\u9ad8\u96c4\u79d1\u5de5\u9928&\u71b1\u96ea\u5929\u5802\u63a2\u7d22\u6a02\u5712\u7279\u5c55|\u806f\u5408\u9580\u7968\u512a\u60e0",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/118150-kaohsiung-national-science-and-technology-museum-hotsnow-adventure-paradise-tickets-taiwan",
             "UUID": "109f7a4a2f765b96926c58d36043c10e",
             "figure": "https://i.imgur.com/sBG2fF6.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5317\u5c55\u89bd|\u7cbd\u90aa\u9a45\u9b54\u6c89\u6d78\u5f0f\u9ad4\u9a57\u5c55\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/143326-zongxie-exorcism-immersive-experience-exhibition-admission-ticket-taipei-taiwan",
+            "UUID": "fdb4023d5edc580cad1620c94af8326a",
+            "figure": "https://i.imgur.com/pTO1bxY.webp"
         },
         {
             "systematics": "KKDay",
