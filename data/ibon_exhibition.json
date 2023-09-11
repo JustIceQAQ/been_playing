@@ -4,8 +4,8 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 67,
-    "last_update": "2023-09-11T00:45:51.717911+00:00",
+    "counts": 68,
+    "last_update": "2023-09-11T08:14:11.369830+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -87,6 +87,15 @@
             "source_url": "https://tour.ibon.com.tw/event/64c9eb1e01c5b342eaba981d",
             "UUID": "227a07b5e37158f5a5904dba7e80a2e6",
             "figure": "https://i.imgur.com/B7sgx2o.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u300a\u842c\u7269\u516c\u5f0f\u300b\u6578\u4f4d\u751f\u547d\u6f14\u5316\u4e4b\u65c5",
+            "date": "2023-10-04 ~ 2023-10-16",
+            "address": "\u53c8\u53c8\u878d\u57df AMBI SPACE ONE",
+            "source_url": "https://tour.ibon.com.tw/event/64c37bcbb85f310a6f0efd40",
+            "UUID": "7763b1e7f0625d4e8aeb8155668d901c",
+            "figure": "https://i.imgur.com/Lmvn52c.webp"
         },
         {
             "systematics": "ibon",
