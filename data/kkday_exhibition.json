@@ -5,17 +5,8 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 50,
-    "last_update": "2023-09-12T16:15:14.129441+00:00",
+    "last_update": "2023-09-13T00:47:50.454878+00:00",
     "data": [
-        {
-            "systematics": "KKDay",
-            "title": "\u3010\u9810\u552e8\u6298\u3011\u53f0\u5317\u5c55\u89bd| \u8993\u57ce\u30fb\u9f4a\u67cf\u6797\u7a7a\u9593\u5c55\u89bd\u9810\u552e\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/102570",
-            "UUID": "6574ae2dc63b58ae86a37d2ae4278d9a",
-            "figure": "https://i.imgur.com/XEvNKna.webp"
-        },
         {
             "systematics": "KKDay",
             "title": "\u3010\u570b\u4eba\u9650\u5b9a43\u6298\u3011\u570b\u7acb\u6545\u5bae\u535a\u7269\u9662\u9580\u7968",
@@ -24,6 +15,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/101875",
             "UUID": "f828ac5d8928578f9d21860bb949f5fd",
             "figure": "https://i.imgur.com/xtJ4Hty.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u9810\u552e8\u6298\u3011\u53f0\u5317\u5c55\u89bd| \u8993\u57ce\u30fb\u9f4a\u67cf\u6797\u7a7a\u9593\u5c55\u89bd\u9810\u552e\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/102570",
+            "UUID": "6574ae2dc63b58ae86a37d2ae4278d9a",
+            "figure": "https://i.imgur.com/XEvNKna.webp"
         },
         {
             "systematics": "KKDay",
@@ -216,12 +216,30 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u63d0\u59c6\u6ce2\u9813\u7570\u60f3\u4e16\u754c\u5c55\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/132834",
+            "UUID": "bd31d5fac3e0515290179cc897370b86",
+            "figure": "https://i.imgur.com/RzSHz8Q.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u9b3c\u6ec5\u4e4b\u5203\u5168\u96c6\u4e2d\u5c55\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/129130",
             "UUID": "6d73dfefcfca5047ab57c0f558313f09",
             "figure": "https://i.imgur.com/4pvUuCJ.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd | \u7fa9\u5927\u5229\u602a\u7f8e\u6bbf\u5802\u7279\u5c55 TOILETPAPER: The Studio\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/128869",
+            "UUID": "7a793eff98695808af38f5b49182222a",
+            "figure": "https://i.imgur.com/1RNL9hL.webp"
         },
         {
             "systematics": "KKDay",
@@ -252,21 +270,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5317\u5c55\u89bd|\u6c11\u96c4\u9b3c\u5c4b\u5be6\u5883\u9ad4\u9a57\u7279\u5c55",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/129706",
-            "UUID": "07461d1a329a5a52ab3bc0a0f7c48ceb",
-            "figure": "https://i.imgur.com/aOIKJTk.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010\u9650\u6642\u6298\u6263\u3011\u9ad8\u96c4\u5c55\u89bd|\u706b\u5f71\u5fcd\u8005\u52d5\u756b20\u9031\u5e74\u7279\u5c55\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/134243-exclusive-peripherals-kaohsiung-exhibition-naruto-animation-20th-anniversary-special-exhibition-ticket-taiwan",
             "UUID": "854ea828281959ce86ade8f4d3fa9df8",
             "figure": "https://i.imgur.com/BwwTHOa.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5317\u5c55\u89bd|\u6c11\u96c4\u9b3c\u5c4b\u5be6\u5883\u9ad4\u9a57\u7279\u5c55",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/129706",
+            "UUID": "07461d1a329a5a52ab3bc0a0f7c48ceb",
+            "figure": "https://i.imgur.com/aOIKJTk.webp"
         },
         {
             "systematics": "KKDay",
@@ -294,15 +312,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/131931",
             "UUID": "ed6ad8a094405b76a62e741c263a37ef",
             "figure": "https://i.imgur.com/bxlGcK2.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u63d0\u59c6\u6ce2\u9813\u7570\u60f3\u4e16\u754c\u5c55\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/132834",
-            "UUID": "bd31d5fac3e0515290179cc897370b86",
-            "figure": "https://i.imgur.com/RzSHz8Q.webp"
         },
         {
             "systematics": "KKDay",
@@ -351,15 +360,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd | \u7fa9\u5927\u5229\u602a\u7f8e\u6bbf\u5802\u7279\u5c55 TOILETPAPER: The Studio\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/128869",
-            "UUID": "7a793eff98695808af38f5b49182222a",
-            "figure": "https://i.imgur.com/1RNL9hL.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u5c4f\u6771\u5c55\u89bd|\u9b3c\u6ec5\u4e4b\u5203\u5168\u96c6\u4e2d\u5c55\u9580\u7968",
             "date": "",
             "address": "",
@@ -369,30 +369,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010KKday\u7368\u5bb6\u30112022 OneOffs NFT \u570b\u969b\u85dd\u8853\u535a\u89bd\u6703",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/132525",
-            "UUID": "3df16023cb5854e8976d533bbd679b81",
-            "figure": "https://i.imgur.com/P1JiyR1.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u3010KKday \u7368\u5bb6\u3011\u300a\u7d55\u7f8e\u4e4b\u5cf6-\u7e2e\u6642\u53f0\u7063\u6620\u50cf\u8a8c\u300b\u5168\u6c89\u6d78\u9ad4\u9a57\u5c55|\u9580\u7968|\u53f0\u5317101\u89c0\u666f\u53f0\u806f\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/143383-island-of-wonderful-beauty-timelapse-taiwan-video-history-full-immersion-experience-exhibition-ticket-taipei-101-observation-deck-combined-ticket",
-            "UUID": "f80c73d93c965e6b8c8f1ce49d9a0c29",
-            "figure": "https://i.imgur.com/uNpykc0.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5317\u5c55\u89bd|\u30b2\u30b2\u30b2\u306e\u9b3c\u592a\u90ce \u5996\u602a100\u7269\u8a9e\u7279\u5c55\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/134767",
             "UUID": "d7439d6187c35135b5331a5710c8e5a2",
             "figure": "https://i.imgur.com/AKZTVxt.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010KKday\u7368\u5bb6\u30112022 OneOffs NFT \u570b\u969b\u85dd\u8853\u535a\u89bd\u6703",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/132525",
+            "UUID": "3df16023cb5854e8976d533bbd679b81",
+            "figure": "https://i.imgur.com/P1JiyR1.webp"
         },
         {
             "systematics": "KKDay",
@@ -411,6 +402,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/136626",
             "UUID": "7f5b6825431c5766b7ab134949253136",
             "figure": "https://i.imgur.com/iDUjxPP.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010KKday \u7368\u5bb6\u3011\u300a\u7d55\u7f8e\u4e4b\u5cf6-\u7e2e\u6642\u53f0\u7063\u6620\u50cf\u8a8c\u300b\u5168\u6c89\u6d78\u9ad4\u9a57\u5c55|\u9580\u7968|\u53f0\u5317101\u89c0\u666f\u53f0\u806f\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/143383-island-of-wonderful-beauty-timelapse-taiwan-video-history-full-immersion-experience-exhibition-ticket-taipei-101-observation-deck-combined-ticket",
+            "UUID": "f80c73d93c965e6b8c8f1ce49d9a0c29",
+            "figure": "https://i.imgur.com/uNpykc0.webp"
         },
         {
             "systematics": "KKDay",
