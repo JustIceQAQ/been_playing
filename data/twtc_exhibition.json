@@ -4,8 +4,54 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 0,
-    "last_update": "2023-09-17T00:55:16.835526+00:00",
-    "data": [],
+    "counts": 5,
+    "last_update": "2023-09-17T08:11:51.250062+00:00",
+    "data": [
+        {
+            "systematics": "twtc",
+            "title": "2023\u53f0\u5317\u570b\u969b\u9023\u9396\u52a0\u76df\u5927\u5c55\uff0d\u79cb\u5b63\u5c55",
+            "date": "09/14 ~ 09/17",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.taiwanfranchise.org/",
+            "UUID": "233e423d253b5a66b3f849694bd4fd43",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u570b\u969b\u6c34\u9031",
+            "date": "09/20 ~ 09/22",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.taiwanintlwaterweek.com",
+            "UUID": "b738c1639de350cd9e7aa121ac1ea2da",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2023\u7b2c33\u5c46\u79cb\u51ac\u570b\u969b\u7f8e\u5bb9\u5316\u599d\u54c1\u5c55\u30012023\u7f8e\u7532\u7f8e\u776b\u535a\u89bd\u6703",
+            "date": "09/29 ~ 10/02",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://expo.udn.com/",
+            "UUID": "a83fc404c9aa5f54adc7343c45a022e7",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u5317\u570b\u969b\u79cb\u5b63\u65c5\u5c55\u3001\u53f0\u7063\u4f34\u624b\u79ae\u66a8\u89c0\u5149\u7279\u7522\u5c55",
+            "date": "09/29 ~ 10/02",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://fte.kje-event.com.tw/ticket/",
+            "UUID": "8ad55a7bdaea53be915b523cb49209c5",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c24\u5c46\u65b0\u4e16\u7d00\u5bb6\u5177\u7cbe\u54c1\u5927\u5c55",
+            "date": "09/29 ~ 10/02",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://taipei-furniture.kje-event.com.tw/ticket/",
+            "UUID": "82a4723678995e298ee7787a2f543ab7",
+            "figure": ""
+        }
+    ],
     "visit": {}
 }
