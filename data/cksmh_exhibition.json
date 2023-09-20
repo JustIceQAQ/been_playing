@@ -4,8 +4,8 @@
         "code_name": "cksmh",
         "external_link": "https://www.cksmh.gov.tw/activitysoonlist_369.html"
     },
-    "counts": 9,
-    "last_update": "2023-09-20T00:46:09.924737+00:00",
+    "counts": 11,
+    "last_update": "2023-09-20T08:15:22.877891+00:00",
     "data": [
         {
             "systematics": "cksmh",
@@ -78,6 +78,24 @@
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=30945",
             "UUID": "a4c6c1bce6505d5ca49d54fbcb804330",
             "figure": "https://i.imgur.com/RlEFLJx.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "2023\u9d3b\u6885\u65b0\u4eba\u734e\u806f\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2023-10-04 ~ 2023-10-15 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a4\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=30953",
+            "UUID": "445669fda69f58df9b61c98150bb9615",
+            "figure": "https://i.imgur.com/yDWmOnD.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u674e\u5bec\u96e8\u81fa\u7063\u500b\u5c55\uff0d\u51dd\u805a\uff08\u514d\u8cbb\u53c3\u89c0\uff09",
+            "date": "2023-10-04 ~ 2023-10-18 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a2\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=30949",
+            "UUID": "00c67151eb455786ab9e512177561878",
+            "figure": "https://i.imgur.com/SlwBWnr.webp"
         },
         {
             "systematics": "cksmh",
