@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 50,
-    "last_update": "2023-09-25T08:15:05.930059+00:00",
+    "last_update": "2023-09-25T16:15:51.617118+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -132,6 +132,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/151122",
             "UUID": "d940f9423803510095c65fc6e28c0965",
             "figure": "https://i.imgur.com/GnUA1X2.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u9650\u664276\u6298\u3011\u53f0\u5317\u5c55\u89bd|\u5947\u5e7b\u52d5\u7269\u68ee\u6797 \u6a0b\u53e3\u88d5\u5b50\u5c55\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/152763",
+            "UUID": "65d95ac9771555a3832f3b13bb36e871",
+            "figure": "https://i.imgur.com/THNfHkg.webp"
         },
         {
             "systematics": "KKDay",
@@ -447,15 +456,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/128383",
             "UUID": "5d9bf27f48db50eb8193bafdbe8f91a7",
             "figure": "https://i.imgur.com/sk29N5H.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u52a0\u8cfc\u9ad8\u9435\u512a\u60e0\u96fb\u5b50\u8eca\u7968|\u53f0\u7063\u53f0\u5317|JOJO\u7684\u5947\u5999\u5192\u96aa-\u300a\u9ec3\u91d1\u4e4b\u5fc3\u300b\u52d5\u756b\u5341\u9031\u5e74\u7279\u5c55\u9580\u7968|\u53f0\u5317\u7ad9 >> \u8acb\u81f3\u9ad8\u9435\u806f\u7968\u5373\u6642\u8a02\u4f4d\u65b0\u7cfb\u7d71\u8cfc\u8cb7\ud83d\udc47",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/139343",
-            "UUID": "c133fcd17dd35b3cbe00a2a3ce8976af",
-            "figure": "https://i.imgur.com/5clJ2iB.webp"
         }
     ],
     "visit": {}
