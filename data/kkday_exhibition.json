@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 50,
-    "last_update": "2023-09-30T16:12:21.460755+00:00",
+    "last_update": "2023-10-01T00:54:30.335775+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -144,15 +144,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u82b1\u84ee\u7389\u91cc|\u7da0\u9ede\u96c6\u79be\u9928\u4e2d\u79cb\u70e4\u8089\u5e02\u96c6|\u6d3b\u52d5\u9ad4\u9a57\u6298\u62b5\u5238",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/151085",
-            "UUID": "e57f1eae8a95507f9f0299d71bec5ea7",
-            "figure": "https://i.imgur.com/tstTSvb.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u6843\u5712|\u300a\u543e\u98db\u85dd\u8853\u9280\u884c\u300b\u661f\u8ecc\u85dd\u8853\u5e38\u8a2d\u5c55|\u542b\u5c08\u5c6c\u5c0e\u89bd",
             "date": "",
             "address": "",
@@ -270,15 +261,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd | \u6311\u6230\u2014\u5b89\u85e4\u5fe0\u96c4\u5c55 TADAO ANDO:ENDEAVORS\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/128873",
-            "UUID": "4c6d7e52b0da55799a3349f7fc66077e",
-            "figure": "https://i.imgur.com/Q9rKzee.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u5492\u8853\u8ff4\u6230\u5c55\u9580\u7968",
             "date": "",
             "address": "",
@@ -294,6 +276,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/133630",
             "UUID": "c46c428f95db5c128cfc76ec25b568b8",
             "figure": "https://i.imgur.com/JFQuFLT.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd | \u6311\u6230\u2014\u5b89\u85e4\u5fe0\u96c4\u5c55 TADAO ANDO:ENDEAVORS\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/128873",
+            "UUID": "4c6d7e52b0da55799a3349f7fc66077e",
+            "figure": "https://i.imgur.com/Q9rKzee.webp"
         },
         {
             "systematics": "KKDay",
@@ -456,6 +447,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/130238",
             "UUID": "94e735147c545330a6601f2756c7f445",
             "figure": "https://i.imgur.com/MZpvWDx.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd | \u666e\u7acb\u8332\u65b0\u805e\u651d\u5f71\u734e80\u9031\u5e74\u5c55\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/128614",
+            "UUID": "cf050c9f59935fd7810137aa844e070e",
+            "figure": "https://i.imgur.com/qBng4xp.webp"
         }
     ],
     "visit": {}
