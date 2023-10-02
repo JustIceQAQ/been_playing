@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 7,
-    "last_update": "2023-10-02T08:13:57.725655+00:00",
+    "counts": 8,
+    "last_update": "2023-10-02T16:13:35.725910+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -69,6 +69,15 @@
             "source_url": "https://fantasyteatime.kktix.cc/events/fteatime01",
             "UUID": "18d87f15c66b5520b4e82dcc6b833f12",
             "figure": "https://i.imgur.com/MOMB9v2.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "2023TECA\u53f0\u5317\u570b\u969b\u97f3\u97ff\u5927\u5c55 6\u6298\u65e9\u9ce5\u9810\u552e\u9580\u7968\uff08\u52a0\u78bc\u9001\u9650\u91cf\u7d00\u5ff5CD\u4e59\u4efd\uff09",
+            "date": "2023/12/14(\u56db)",
+            "address": "",
+            "source_url": "https://sheng-dong.kktix.cc/events/teca",
+            "UUID": "8b0ce636cffa5b079492e5f1a19e9087",
+            "figure": "https://i.imgur.com/8FnpL9T.webp"
         }
     ],
     "visit": {}
