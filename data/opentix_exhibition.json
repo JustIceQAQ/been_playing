@@ -4,8 +4,8 @@
         "code_name": "opentix",
         "external_link": "https://www.opentix.life/search/%20/ABOUT_TO_BEGIN?category=%E5%B1%95%E8%A6%BDAll"
     },
-    "counts": 5,
-    "last_update": "2023-10-02T00:47:25.736267+00:00",
+    "counts": 7,
+    "last_update": "2023-10-02T08:14:44.064081+00:00",
     "data": [
         {
             "systematics": "opentix",
@@ -36,6 +36,15 @@
         },
         {
             "systematics": "opentix",
+            "title": "\u76dc\u706b\u5287\u57182023\u83ef\u6587LAB\u5287\u672c\u5e02\u96c6\u2014\u65b0\u805eWOW WOW WOW",
+            "date": "2023-11-18 ~ 2023-11-19",
+            "address": "\u81fa\u5317",
+            "source_url": "https://www.opentix.life/event/1707337647983534080",
+            "UUID": "91683df3d412532fa62ff722f633e050",
+            "figure": "https://i.imgur.com/xIhvCXE.webp"
+        },
+        {
+            "systematics": "opentix",
             "title": "THE \u54c6\u5566A\u5922\u5c55 \u53f0\u5317 2023",
             "date": "2023-12-16 ~ 2024-04-07",
             "address": "\u81fa\u5317",
@@ -51,6 +60,15 @@
             "source_url": "https://www.opentix.life/event/1705044049994309633",
             "UUID": "66581c3b3efc5d1ba856ff1044389da8",
             "figure": "https://i.imgur.com/Ei1Vc2D.webp"
+        },
+        {
+            "systematics": "opentix",
+            "title": "O\u9e97\u7d72\u7684\u6642\u7a7a\u63a2\u96aa",
+            "date": "2026-09-30 ~ 2026-09-30",
+            "address": "",
+            "source_url": "https://www.opentix.life/event/1704333513570832385",
+            "UUID": "1c65f79c7a3c532eb35ebbdc49436c73",
+            "figure": "https://i.imgur.com/3X26b97.webp"
         }
     ],
     "visit": {}
