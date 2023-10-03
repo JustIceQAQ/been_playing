@@ -4,9 +4,18 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 63,
-    "last_update": "2023-10-03T00:47:25.273678+00:00",
+    "counts": 64,
+    "last_update": "2023-10-03T08:13:49.317540+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "\u53f0\u5275\u796d4",
+            "date": "2023-10-28 ~ 2023-10-29",
+            "address": "\u677e\u5c71\u6587\u5275\u5712\u5340 2+3\u865f\u5009\u5eab",
+            "source_url": "https://tour.ibon.com.tw/event/6512adfc29568f7a48d85eab",
+            "UUID": "6f4d52dbdb7050229c4bde9fa70860d3",
+            "figure": "https://i.imgur.com/fT0ujUq.webp"
+        },
         {
             "systematics": "ibon",
             "title": "2023 ITF\u53f0\u5317\u570b\u969b\u65c5\u5c55",

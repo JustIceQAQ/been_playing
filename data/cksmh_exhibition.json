@@ -4,8 +4,8 @@
         "code_name": "cksmh",
         "external_link": "https://www.cksmh.gov.tw/activitysoonlist_369.html"
     },
-    "counts": 9,
-    "last_update": "2023-10-03T00:47:32.582284+00:00",
+    "counts": 12,
+    "last_update": "2023-10-03T08:15:26.622147+00:00",
     "data": [
         {
             "systematics": "cksmh",
@@ -87,6 +87,33 @@
             "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=30952",
             "UUID": "9022e114994b51c99b6ca099a2354eb3",
             "figure": "https://i.imgur.com/IUOpngj.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u6d3b\u6c34\u66f8\u67032023\u6703\u54e1\u806f\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2023-10-18 ~ 2023-10-29 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a4\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=31106",
+            "UUID": "e20ddc0014d95c92b5220db281dcd10e",
+            "figure": "https://i.imgur.com/QyyAeUh.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u3010\u85dd\u97fb\u96cb\u6c38\u3011\u7b2c\u4e8c\u5c46\u81fa\u7063-\u65b0\u52a0\u5761\u66f8\u756b\u85dd\u8853\u4ea4\u6d41\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2023-10-18 ~ 2023-10-29 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a3\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=31105",
+            "UUID": "7fe1d1b786575901947b4bcee092f1a1",
+            "figure": "https://i.imgur.com/qGy6JcN.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u7121\u7a79\u85dd\u5883\u5f69\u7b46\u751f\u8f1d2023\u53f0\u7063\u73fe\u4ee3\u85dd\u8853\u5bb6\u5354\u6703\u806f\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2023-10-21 ~ 2023-10-30 09:00~18:00",
+            "address": "\u5730\u9ede\uff1a\u4e00\u6a13\u85dd\u5eca",
+            "source_url": "https://event.culture.tw/CKSMH/portal/Registration/C0103MAction?actId=31104",
+            "UUID": "933f938ac5a35166aeffaeb2130b957a",
+            "figure": "https://i.imgur.com/qVIR0Yx.webp"
         }
     ],
     "visit": {
