@@ -4,8 +4,8 @@
         "code_name": "huashan1914",
         "external_link": "https://www.huashan1914.com/w/huashan1914/exhibition"
     },
-    "counts": 31,
-    "last_update": "2023-10-06T00:46:47.137161+00:00",
+    "counts": 32,
+    "last_update": "2023-10-06T08:13:51.172962+00:00",
     "data": [
         {
             "systematics": "huashan1914",
@@ -81,21 +81,21 @@
         },
         {
             "systematics": "huashan1914",
-            "title": "\u6c38\u7e8c\u5e0c\u671b\u5712\u904a\u6703",
-            "date": "2023-10-14 ~ 2023-10-14",
-            "address": "-",
-            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_23100410470786036",
-            "UUID": "82113ca39aa55f7ca06a4698699f4cb7",
-            "figure": "https://i.imgur.com/FLUtv6O.webp"
-        },
-        {
-            "systematics": "huashan1914",
             "title": "\u91c7\u5be6\u59d0\u59d0\u8aaa\u6545\u4e8b\u300a\u9eb5\u5305\u5c0f\u50774\uff1a\u51fa\u767c\u5427\uff01\u98ef\u7cf0\u7537\u5b69\u300b",
             "date": "2023-10-14 ~ 2023-10-14",
             "address": "-",
             "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_23100414234527812",
             "UUID": "50092fd9a49d5caea11299e3d49049de",
             "figure": "https://i.imgur.com/JnYWaw9.webp"
+        },
+        {
+            "systematics": "huashan1914",
+            "title": "\u6c38\u7e8c\u5e0c\u671b\u5712\u904a\u6703",
+            "date": "2023-10-14 ~ 2023-10-14",
+            "address": "-",
+            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_23100410470786036",
+            "UUID": "82113ca39aa55f7ca06a4698699f4cb7",
+            "figure": "https://i.imgur.com/FLUtv6O.webp"
         },
         {
             "systematics": "huashan1914",
@@ -266,7 +266,7 @@
             "address": "-",
             "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_23092516055648534",
             "UUID": "961ddb9f5d665963bd6591e5b3ab3738",
-            "figure": "https://i.imgur.com/mbqAZno.webp"
+            "figure": "https://i.imgur.com/UWy9nKt.webp"
         },
         {
             "systematics": "huashan1914",
@@ -285,6 +285,15 @@
             "source_url": "https://www.huashan1914.com/w/umaytheater/performance_23100511520968728",
             "UUID": "8a73b5e605ba5a69b0df7e4090d8f1d8",
             "figure": "https://i.imgur.com/n2dObcF.webp"
+        },
+        {
+            "systematics": "huashan1914",
+            "title": "\u83ef\u6587LAB\u5287\u672c\u5e02\u96c6",
+            "date": "2023-11-17 ~ 2023-11-19",
+            "address": "-",
+            "source_url": "https://www.huashan1914.com/w/umaytheater/performance_23100610321853814",
+            "UUID": "0a92610a52a35f51bf1b1a97514b9962",
+            "figure": "https://i.imgur.com/Zpe6bCO.webp"
         }
     ],
     "visit": {}
