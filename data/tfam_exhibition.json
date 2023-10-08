@@ -4,8 +4,8 @@
         "code_name": "tfam",
         "external_link": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw"
     },
-    "counts": 9,
-    "last_update": "2023-10-08T08:11:58.825377+00:00",
+    "counts": 5,
+    "last_update": "2023-10-08T16:11:47.977184+00:00",
     "data": [
         {
             "systematics": "tfam",
@@ -24,42 +24,6 @@
             "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=733",
             "UUID": "bad3572bd6d959d3aa8fb7f3ec51755f",
             "figure": "https://i.imgur.com/bCogHO4.webp"
-        },
-        {
-            "systematics": "tfam",
-            "title": "\u00ab CdV \u00bb - \u9952\u52a0\u6069\u500b\u5c55",
-            "date": "2023-07-15 ~ 2023-10-08",
-            "address": "\u4e09\u6a133A",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=736",
-            "UUID": "7cb66dbb118b55e1a65ac17e9b66155c",
-            "figure": "https://i.imgur.com/S9gsiZf.webp"
-        },
-        {
-            "systematics": "tfam",
-            "title": "\u6578\u4f4d\u5b7f\u751f\u6280\u8853\u4e0b\u7684\u672a\u4f86\u5224\u7f70\u5f62\u5f0f\uff1a\u65bd\u61ff\u73ca\u500b\u5c55",
-            "date": "2023-07-15 ~ 2023-10-08",
-            "address": "\u4e09\u6a133A",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=735",
-            "UUID": "96907618434454ba9fa70c23827556c8",
-            "figure": "https://i.imgur.com/x35cvdv.webp"
-        },
-        {
-            "systematics": "tfam",
-            "title": "\u6700\u5f8c\u4e00\u4eba\u3001\u8d8a\u5357\u58eb\u5175\u3001\u904a\u5ba2\u3001\u963f\u9060\u3001\u7375\u4eba\u548c\u904a\u624b\u597d\u9592\u8005\uff1a\u738b\u8000\u5104\u500b\u5c55",
-            "date": "2023-07-15 ~ 2023-10-08",
-            "address": "\u4e09\u6a133B",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=742",
-            "UUID": "544885aed9b451d59f629c9556ec7c2a",
-            "figure": "https://i.imgur.com/Vk6FN5A.webp"
-        },
-        {
-            "systematics": "tfam",
-            "title": "Without Composing:\u5f35\u6c38\u9054\u500b\u5c55",
-            "date": "2023-07-15 ~ 2023-10-08",
-            "address": "\u4e09\u6a133B",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=743",
-            "UUID": "6d62aa92980a5c4e980e5bbc40e9b6f1",
-            "figure": "https://i.imgur.com/Ve5rMMe.webp"
         },
         {
             "systematics": "tfam",
