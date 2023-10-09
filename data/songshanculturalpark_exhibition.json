@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-10-09T08:14:48.139648+00:00",
+    "last_update": "2023-10-09T16:14:07.132708+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -81,24 +81,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "2023\u840c\u6f6e\u6642\u5c1a\u9031\uff5c\u840c\u5bf5\u7269\u7528\u54c1\u5c55",
-            "date": "2023-10-07 - 2023-10-09",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/d078255c-25c6-4a5a-840d-79771ced06cf",
-            "UUID": "a80d9607c7835ec7804f2b4f4b32b669",
-            "figure": "https://i.imgur.com/dBllimt.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "2023\u7403\u978b\u5e02\u96c6 INFINITE SNEAKER MARKET",
-            "date": "2023-10-08 - 2023-10-09",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/05d6bec6-a560-4061-8c0a-ea9dbda762af",
-            "UUID": "3c759c7b1e01540fb46e2679fbf54412",
-            "figure": "https://i.imgur.com/fMn1e5u.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "\u6539\u8b8a\u76841000+1\uff1a\u9019\u500b\u4e5f\u80fd\u8a2d\u8a08",
             "date": "2023-06-27 - 2023-10-10",
             "address": "-",
@@ -141,6 +123,24 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/6f49e3c5-54a1-493b-8db0-ee132763d1c9",
             "UUID": "fe38479388ac57f6b33734f7d70a9ea5",
             "figure": "https://i.imgur.com/hETC2o3.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "WeWe Futures\uff1a\u6295\u4f60\u7684\u672a\u4f86",
+            "date": "2023-07-01 - 2023-10-22",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/08013c15-07c8-44b8-b2fa-3d773ae7188a",
+            "UUID": "c27e75bcb5365e38a690c945b6897099",
+            "figure": "https://i.imgur.com/dWbcc73.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "2023 POPUPASIA\u4e9e\u6d32\u624b\u5275\u5c55 \u7b2c\u4e03\u5c46",
+            "date": "2023-11-16 - 2023-11-19",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/1c85c94e-bd9b-4904-ad6e-40e61e0994db",
+            "UUID": "b2151f5cd01d508ebd3a21ce784661c4",
+            "figure": "https://i.imgur.com/KQzewOb.webp"
         }
     ],
     "visit": {}
