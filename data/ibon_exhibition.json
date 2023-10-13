@@ -4,8 +4,8 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 64,
-    "last_update": "2023-10-13T08:13:50.753001+00:00",
+    "counts": 61,
+    "last_update": "2023-10-13T16:13:38.749375+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -297,15 +297,6 @@
         },
         {
             "systematics": "ibon",
-            "title": "\u4f8f\u7f85\u7d00X\u6050\u9f8d\u96ea\u4e16\u754c",
-            "date": "2023-06-14 ~ 2023-10-10",
-            "address": "\u99c1\u4e8c\u85dd\u8853\u7279\u5340P2\u5009\u5eab",
-            "source_url": "https://tour.ibon.com.tw/event/6458666490b5a619b3dfc660",
-            "UUID": "d27c4e12e6cb52dfa408e1844d9c2264",
-            "figure": "https://i.imgur.com/SuaiPoh.webp"
-        },
-        {
-            "systematics": "ibon",
             "title": "\u5947\u7f8e\u535a\u7269\u9928\u7279\u5c55\uff0e\u8df3\u51fa\u683c\u5b50\u5427\uff01\u6a5f\u5668\uff38\u6750\u6599\uff38\u85dd\u8853\u8d85\u5c55\u958b",
             "date": "2023-06-03 ~ 2024-02-29",
             "address": "\u5947\u7f8e\u535a\u7269\u9928\u4e00\u6a13\u7279\u5c55\u5ef3",
@@ -330,24 +321,6 @@
             "source_url": "https://tour.ibon.com.tw/event/64322eaac1f1184d3039d7f7",
             "UUID": "af1cc82dacca53b591b508e7b5f00b38",
             "figure": "https://i.imgur.com/1c5QAXL.webp"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u5492\u8853\u8ff4\u6230\u5c55\u9ad8\u96c4\u5834-\u5a03\u5a03\u5957\u7968",
-            "date": "2023-06-30 ~ 2023-10-10",
-            "address": "\u9ad8\u96c4\u5e02 \u99c1\u4e8c\u85dd\u8853\u7279\u5340 \u5927\u52c7P3\u5009\u5eab",
-            "source_url": "https://tour.ibon.com.tw/event/64196e7d617cb072730516cd",
-            "UUID": "0590f9bb1e0b5aedbff32b9219e4b7b1",
-            "figure": "https://i.imgur.com/3soHBtX.webp"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u5492\u8853\u8ff4\u6230\u5c55_\u9ad8\u96c4\u5834",
-            "date": "2023-06-30 ~ 2023-10-10",
-            "address": "\u9ad8\u96c4\u5e02 \u99c1\u4e8c\u85dd\u8853\u7279\u5340 \u5927\u52c7P3\u5009\u5eab",
-            "source_url": "https://tour.ibon.com.tw/event/6419545c617cb072730511eb",
-            "UUID": "cadb674aa93d517d9d9b98fad4bc9ece",
-            "figure": "https://i.imgur.com/Oj25xAX.webp"
         },
         {
             "systematics": "ibon",
