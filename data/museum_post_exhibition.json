@@ -4,8 +4,8 @@
         "code_name": "museum_post",
         "external_link": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage=1"
     },
-    "counts": 8,
-    "last_update": "2023-10-15T08:12:24.422646+00:00",
+    "counts": 6,
+    "last_update": "2023-10-15T16:12:17.089379+00:00",
     "data": [
         {
             "systematics": "museum_post",
@@ -24,24 +24,6 @@
             "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&control_type=page&MA_Id=9F2658A9-F1FA-490A-A4A8-53CE1A344293",
             "UUID": "62d1646ebd9a576e8d8b53eeb9a0e64c",
             "figure": "https://i.imgur.com/E3L0D14.webp"
-        },
-        {
-            "systematics": "museum_post",
-            "title": "\u9019\u4e00\u7247\u756a\u85af\u5730-\u8c50\u9952\u4e4b\u7f8e\u7279\u5c55",
-            "date": "2023/04/01 ~ 2023/10/15",
-            "address": "\u90f5\u653f\u535a\u7269\u99286\u6a13\u7279\u5c55\u5ba4",
-            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&control_type=page&MA_Id=B31FA352-C237-414F-AC53-6D5FF5411EC6",
-            "UUID": "3b3ca6936fc35b02b4a5d02b74c2915b",
-            "figure": "https://i.imgur.com/XXGBkIf.webp"
-        },
-        {
-            "systematics": "museum_post",
-            "title": "\u5947\u5e7b\u661f\u7a7a\u90f5\u7968\u5c55",
-            "date": "2022/10/20 ~ 2023/10/15",
-            "address": "\u90f5\u653f\u535a\u7269\u99285\u6a13\u90f5\u7968\u4e16\u754c",
-            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&control_type=page&MA_Id=75FD4801-D46C-480B-A98B-0FE7CCA15790",
-            "UUID": "d91fc59368205f2bb18ad3549806c4e4",
-            "figure": "https://i.imgur.com/aS6Wv1l.webp"
         },
         {
             "systematics": "museum_post",

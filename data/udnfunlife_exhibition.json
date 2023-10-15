@@ -4,8 +4,8 @@
         "code_name": "tickets_udnfunlife",
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
-    "counts": 16,
-    "last_update": "2023-10-15T08:11:58.843301+00:00",
+    "counts": 17,
+    "last_update": "2023-10-15T16:11:57.172024+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -64,7 +64,7 @@
         {
             "systematics": "tickets_udnfunlife",
             "title": "\u6c38\u6046\u8056\u6bcd\u9662_\u7a7f\u8d8a\u6642\u7a7a\u6c89\u6d78\u5f0fVR\u4e4b\u65c5",
-            "date": "2023/10/16 ~ 2023/11/15",
+            "date": "2023/10/17 ~ 2023/11/15",
             "address": "\u570b\u7acb\u79d1\u5b78\u5de5\u85dd\u535a\u7269\u9928 \u7b2c\u56db\u5c55\u5ef3(\u8acb\u7531B1\u96fb\u5f71\u9662\u5165\u53e3\u9032\u5165)",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P08G9BKE&kdid=featured",
             "UUID": "437c5e6bb08558f2b9c6d68f4c334600",
@@ -141,6 +141,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0A477MG&kdid=featured",
             "UUID": "19f250a3cbe25b668976dbe2b343f249",
             "figure": "https://i.imgur.com/6labcWU.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "2023 Pop Up Asia\u4e9e\u6d32\u624b\u5275",
+            "date": "2023/11/16 ~ 2023/11/19",
+            "address": "\u677e\u5c71\u6587\u5275\u5712\u5340 3\u30014\u30015\u865f\u5009\u5eab",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0AX2ISU&kdid=featured",
+            "UUID": "3002b9ce8f24586cb5349da3c5bb308a",
+            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/?v=202310131218"
         },
         {
             "systematics": "tickets_udnfunlife",
