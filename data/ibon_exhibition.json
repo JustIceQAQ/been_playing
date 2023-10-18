@@ -4,9 +4,27 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 61,
-    "last_update": "2023-10-18T00:46:58.958679+00:00",
+    "counts": 64,
+    "last_update": "2023-10-18T08:13:51.457849+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "\u5370\u8c61\u6d3e150\u9031\u5e74\u5149\u5f71\u85dd\u8853\u5c55",
+            "date": "2023-12-28 ~ 2024-04-07",
+            "address": "\u83ef\u5c711914\u6587\u5275\u5712\u5340\u67712C\u3001\u67712D",
+            "source_url": "https://tour.ibon.com.tw/event/652c9b96a59e70581dfb3beb",
+            "UUID": "5576c973ee395d8b8d015a47f9327b82",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/1518f17c-0b25-4307-96d6-60872817bd7a.jpg"
+        },
+        {
+            "systematics": "ibon",
+            "title": "OPEN RUN\u52a0\u8cfc\u5c08\u9801\u2013OPEN RUN\u52a0\u8cfc\u5c0f\u52c7\u58eb\u8a13\u7df4\u8cfd",
+            "date": "2023-12-09 ~ 2023-12-10",
+            "address": "\u9ad8\u96c4\u5922\u6642\u4ee3",
+            "source_url": "https://tour.ibon.com.tw/event/651fd4cd93e1b75b531d4e30",
+            "UUID": "bcd22a57131b5cd1bd5fde3d1b9b9696",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/d20de13e-5afa-4898-8f08-87802b49509f.jpg"
+        },
         {
             "systematics": "ibon",
             "title": "2024\u53f0\u5317\u65b0\u8eca\u66a8\u65b0\u80fd\u6e90\u8eca\u7279\u5c55",
@@ -15,6 +33,15 @@
             "source_url": "https://tour.ibon.com.tw/event/651e2fcee4fe902f764f936f",
             "UUID": "b223be1b73e4554aa0b19c0a2469971b",
             "figure": "https://i.imgur.com/GfJpqlA.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "OPEN! \u958b\u5fc3\u6a02\u5712 \u65af\u5df4\u9054\u5c0f\u52c7\u58eb\u969c\u7919\u8a13\u7df4\u8cfd",
+            "date": "2023-12-09 ~ 2023-12-10",
+            "address": "\u9ad8\u96c4\u5922\u6642\u4ee3",
+            "source_url": "https://tour.ibon.com.tw/event/651d14dd29568f7a48d9cd16",
+            "UUID": "06eb1847d6725aec8a187665c2ac6e78",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/bd9c2b8e-d271-4c4a-b9a1-af6446280f0c.jpg"
         },
         {
             "systematics": "ibon",

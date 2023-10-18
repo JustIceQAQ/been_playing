@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 8,
-    "last_update": "2023-10-18T00:46:56.283657+00:00",
+    "counts": 9,
+    "last_update": "2023-10-18T08:13:44.893183+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -78,6 +78,15 @@
             "source_url": "https://tmc.taipei/blog/show/live-in-concert-lang-lang-the-disney-book/",
             "UUID": "05aff3d7fb8158d08c333db3b5df34c8",
             "figure": "https://i.imgur.com/8UMva8k.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "2024 Yiruma\u674e\u958f\u73c9\u81fb\u9078\u97f3\u6a02\u6703",
+            "date": "2024.01.28(\u65e5)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/2024-yirumas-selected-concert/",
+            "UUID": "9e2c3cabd25559179b8ae0a709500256",
+            "figure": "https://tmc.taipei/wp-content/uploads/2023/10/35221697094916_pic.jpg"
         }
     ],
     "visit": {}
