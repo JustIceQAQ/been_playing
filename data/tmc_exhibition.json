@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 9,
-    "last_update": "2023-10-19T00:46:46.954463+00:00",
+    "counts": 11,
+    "last_update": "2023-10-19T08:13:39.073629+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -69,6 +69,24 @@
             "source_url": "https://tmc.taipei/blog/show/il-divo-a-new-day-tour-in-tmc-canto-actor-2023-taipei-concert/",
             "UUID": "06000b200b5f54c792b3da2536d4167e",
             "figure": "https://i.imgur.com/4Z8pLHk.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u300aG8\u9ad8\u5cf0\u6703\u300b",
+            "date": "2023.12.01(\u4e94) - 2023.12.02(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/g8-summit/",
+            "UUID": "4c6a621fd6a55c50a058c2731090c675",
+            "figure": "https://tmc.taipei/wp-content/uploads/2023/10/G8\u9ad8\u5cf0\u6703-1360x680-1.jpg"
+        },
+        {
+            "systematics": "tmc",
+            "title": "Daniel Caesar Presents \u201cSuperpowers World Tour \u2013 Leg 3: Australia + Asia + Hawaii\u201d",
+            "date": "2023.12.14(\u56db)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/daniel-caesar-presents-superpowers-world-tour-leg-3-australia-asia-hawaii/",
+            "UUID": "17ca1dfa422e58e18d2a501c0bcab23c",
+            "figure": "https://tmc.taipei/wp-content/uploads/2023/10/Daniel-Caesar1360x680.jpg"
         },
         {
             "systematics": "tmc",
