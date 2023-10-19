@@ -4,8 +4,45 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 0,
-    "last_update": "2023-10-18T16:13:19.290818+00:00",
-    "data": [],
+    "counts": 4,
+    "last_update": "2023-10-19T00:46:46.110123+00:00",
+    "data": [
+        {
+            "systematics": "KKTix",
+            "title": "POP! POP! POP! \u6d41\u884c\u97f3\u6a02\u4e92\u52d5\u5c55 \uff20 \u9ad8\u96c4\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
+            "date": "2022/3/1(\u4e8c)",
+            "address": "",
+            "source_url": "https://kpmc.kktix.cc/events/poppoppop",
+            "UUID": "2753092823855d20b12fbb3f6977690c",
+            "figure": "https://i.imgur.com/76TL3BV.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u30102023\u611b\u624b\u5275\u570b\u969b\u624b\u4f5c\u8a2d\u8a08\u7bc0-\u5922\u60f3\u5609\u5e74\u83ef\u3011 2023 ISHANDS International Craft Design Festival",
+            "date": "2023/11/10(\u4e94)",
+            "address": "",
+            "source_url": "https://ishands.kktix.cc/events/2023ishandsinternationalcraftdesignfestival",
+            "UUID": "8bc2ae63bad95f89b83729c9c82a587e",
+            "figure": "https://i.imgur.com/eOzw0re.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "Fantasy Teatime\u5947\u5e7b\u6642\u5149\uff1a\u540c\u4eba\u6587\u5316\u4ea4\u6d41\u5c55\u552e\u6703",
+            "date": "2023/11/25(\u516d)",
+            "address": "",
+            "source_url": "https://fantasyteatime.kktix.cc/events/fteatime01",
+            "UUID": "18d87f15c66b5520b4e82dcc6b833f12",
+            "figure": "https://i.imgur.com/MOMB9v2.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "2023TECA\u53f0\u5317\u570b\u969b\u97f3\u97ff\u5927\u5c55 6\u6298\u65e9\u9ce5\u9810\u552e\u9580\u7968\uff08\u52a0\u78bc\u9001\u9650\u91cf\u7d00\u5ff5CD\u4e59\u4efd\uff09",
+            "date": "2023/12/14(\u56db)",
+            "address": "",
+            "source_url": "https://sheng-dong.kktix.cc/events/teca",
+            "UUID": "8b0ce636cffa5b079492e5f1a19e9087",
+            "figure": "https://i.imgur.com/8FnpL9T.webp"
+        }
+    ],
     "visit": {}
 }
