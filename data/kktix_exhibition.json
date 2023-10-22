@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 4,
-    "last_update": "2023-10-22T08:11:42.514846+00:00",
+    "counts": 5,
+    "last_update": "2023-10-22T16:12:04.240761+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -42,6 +42,15 @@
             "source_url": "https://sheng-dong.kktix.cc/events/teca",
             "UUID": "8b0ce636cffa5b079492e5f1a19e9087",
             "figure": "https://i.imgur.com/8FnpL9T.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u5370\u8c61\u6d3e150\u9031\u5e74\u5149\u5f71\u85dd\u8853\u5c55",
+            "date": "2023/12/28(\u56db)",
+            "address": "",
+            "source_url": "https://firenzeculturex.kktix.cc/events/s0ef124",
+            "UUID": "7502db0fbf8d51d7a5ffa6f145598195",
+            "figure": "https://t.kfs.io/upload_images/183634/kktix-%E4%B8%BB%E8%A6%96%E8%A6%BA_1200x630_KKTIX%E5%AE%98%E7%B6%B2_medium.jpg"
         }
     ],
     "visit": {}
