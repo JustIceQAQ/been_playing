@@ -4,8 +4,8 @@
         "code_name": "tickets_udnfunlife",
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
-    "counts": 17,
-    "last_update": "2023-10-23T08:14:06.142410+00:00",
+    "counts": 18,
+    "last_update": "2023-10-23T16:13:23.488883+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -73,7 +73,7 @@
         {
             "systematics": "tickets_udnfunlife",
             "title": "\u6c38\u6046\u8056\u6bcd\u9662_\u7a7f\u8d8a\u6642\u7a7a\u6c89\u6d78\u5f0fVR\u4e4b\u65c5",
-            "date": "2023/10/24 ~ 2024/03/31",
+            "date": "2023/10/25 ~ 2024/03/31",
             "address": "\u570b\u7acb\u79d1\u5b78\u5de5\u85dd\u535a\u7269\u9928 \u7b2c\u56db\u5c55\u5ef3(\u8acb\u7531B1\u96fb\u5f71\u9662\u5165\u53e3\u9032\u5165)",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P08G9BKE&kdid=featured",
             "UUID": "437c5e6bb08558f2b9c6d68f4c334600",
@@ -159,6 +159,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0B5L2AJ&kdid=featured",
             "UUID": "3b1a26e2520b54e79da1cfd4b1e3342f",
             "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0B5L2AJ_Product.JPG?v=202310201652"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "2023\u9000\u4f11\u529b\u8ad6\u58c7",
+            "date": "2023/12/02 ~ 2023/12/02",
+            "address": "\u4e2d\u6cb9\u5927\u6a13 \u570b\u5149\u5ef3",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0B5O9AG&kdid=featured",
+            "UUID": "5e41452f45a552ac87d4cc66528c1198",
+            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0B5O9AG_Product.JPG?v=202310231722"
         }
     ],
     "visit": {}
