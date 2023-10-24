@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 10,
-    "last_update": "2023-10-24T08:14:06.124227+00:00",
+    "counts": 11,
+    "last_update": "2023-10-24T16:14:02.341816+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -24,6 +24,15 @@
             "source_url": "https://tmc.taipei/blog/show/secret-base-for-music-players/",
             "UUID": "646128baac3552b98a2ca535ea6a3179",
             "figure": "https://i.imgur.com/WVcE12M.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u7b2c14\u5c46\u91d1\u97f3\u5275\u4f5c\u734e\u9812\u734e\u5178\u79ae",
+            "date": "2023.10.28(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/2023-gima-bin-live014/",
+            "UUID": "6c086fde915059b2b3f74f38f39f3447",
+            "figure": "https://tmc.taipei/wp-content/uploads/2023/10/2023230922-Gima-Banner.jpg"
         },
         {
             "systematics": "tmc",
