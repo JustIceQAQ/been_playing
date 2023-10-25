@@ -4,8 +4,8 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 63,
-    "last_update": "2023-10-25T00:46:47.706575+00:00",
+    "counts": 64,
+    "last_update": "2023-10-25T08:13:47.907782+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -78,6 +78,15 @@
             "source_url": "https://tour.ibon.com.tw/event/651bc8f14c43106d99bfca72",
             "UUID": "9e1bf768824e517f83e9f1945e636d94",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/5c4ec600-b53f-4e79-bf24-27fd6dbe57d0.jpg"
+        },
+        {
+            "systematics": "ibon",
+            "title": "BTS EXHIBITION:Proof in TAIPEI",
+            "date": "2023-12-16 ~ 2024-01-14",
+            "address": "\u5fae\u98a8\u5ee3\u58349F\u2500\u5fae\u98a8\u85dd\u6587\u4e2d\u5fc3",
+            "source_url": "https://tour.ibon.com.tw/event/651baa4a4c43106d99bfc41c",
+            "UUID": "48788c24c4b4565c9633820f34e11551",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/b75c525b-ee2a-41ba-b3d2-374293cfc506.jpg"
         },
         {
             "systematics": "ibon",
