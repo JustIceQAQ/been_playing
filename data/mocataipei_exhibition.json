@@ -5,7 +5,7 @@
         "external_link": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent"
     },
     "counts": 4,
-    "last_update": "2023-10-25T08:13:46.623427+00:00",
+    "last_update": "2023-10-25T16:13:27.050943+00:00",
     "data": [
         {
             "systematics": "mocataipei",
@@ -27,21 +27,21 @@
         },
         {
             "systematics": "mocataipei",
-            "title": "\u95dc\u6e21\u52d5\u756b\u7bc0",
-            "date": "2023-10-28 ~ 2023-11-26",
-            "address": "-",
-            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u95dc\u6e21\u52d5\u756b\u7bc0",
-            "UUID": "5d6d65e85ab75f6a8f8e5f28e13c17e0",
-            "figure": "https://www.mocataipei.org.tw/upload/2023_10_253/20231025160048k2ud9kvz55.jpg"
-        },
-        {
-            "systematics": "mocataipei",
             "title": "\u795e\u6551\u63f4\uff1a\u694a\u8302\u6797\u7684\u5167\u5728\u82f1\u96c4\u4e4b\u65c5",
             "date": "2023-11-04 ~ 2024-01-14",
             "address": "-",
             "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u795e\u6551\u63f4\uff1a\u694a\u8302\u6797\u7684\u5167\u5728\u82f1\u96c4\u4e4b\u65c5",
             "UUID": "6c96284778535bc991a5273b12903f83",
             "figure": "https://www.mocataipei.org.tw/upload/2023_10_183/202310180954138omu4hEWB7.jpg"
+        },
+        {
+            "systematics": "mocataipei",
+            "title": "2023\u95dc\u6e21\u570b\u969b\u52d5\u756b\u7bc0 x \u53f0\u5317\u7576\u4ee3\u85dd\u8853\u9928\u2013\u85dd\u8853\u4e32\u806f\u8a08\u756b",
+            "date": "2023-10-28 ~ 2023-11-26",
+            "address": "-",
+            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/2023\u95dc\u6e21\u570b\u969b\u52d5\u756b\u7bc0*x*\u53f0\u5317\u7576\u4ee3\u85dd\u8853\u9928\u2013\u85dd\u8853\u4e32\u806f\u8a08\u756b",
+            "UUID": "d620202394f15cfcaf96633caed733dc",
+            "figure": "https://www.mocataipei.org.tw/upload/2023_10_253/20231025160048k2ud9kvz55.jpg"
         }
     ],
     "visit": {
