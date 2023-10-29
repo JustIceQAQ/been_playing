@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 50,
-    "last_update": "2023-10-28T16:12:44.385035+00:00",
+    "last_update": "2023-10-29T00:51:09.658991+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -27,15 +27,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u9810\u552e8\u6298\u3011\u53f0\u5317\u5c55\u89bd| \u8993\u57ce\u30fb\u9f4a\u67cf\u6797\u7a7a\u9593\u5c55\u89bd\u9810\u552e\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/102570",
-            "UUID": "6574ae2dc63b58ae86a37d2ae4278d9a",
-            "figure": "https://i.imgur.com/XEvNKna.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010\u7dda\u4e0a\u512a\u60e08\u6298\u3011\u9ad8\u96c4\u79d1\u5de5\u9928&\u71b1\u96ea\u5929\u5802\u63a2\u7d22\u6a02\u57122.0\u7279\u5c55|\u806f\u5408\u9580\u7968\u512a\u60e0",
             "date": "",
             "address": "",
@@ -45,12 +36,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u9650\u664276\u6298\u3011\u53f0\u5317\u5c55\u89bd|\u5947\u5e7b\u52d5\u7269\u68ee\u6797 \u6a0b\u53e3\u88d5\u5b50\u5c55\u9580\u7968",
+            "title": "\u3010\u9810\u552e8\u6298\u3011\u53f0\u5317\u5c55\u89bd| \u8993\u57ce\u30fb\u9f4a\u67cf\u6797\u7a7a\u9593\u5c55\u89bd\u9810\u552e\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/152763",
-            "UUID": "65d95ac9771555a3832f3b13bb36e871",
-            "figure": "https://i.imgur.com/THNfHkg.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/102570",
+            "UUID": "6574ae2dc63b58ae86a37d2ae4278d9a",
+            "figure": "https://i.imgur.com/XEvNKna.webp"
         },
         {
             "systematics": "KKDay",
@@ -72,12 +63,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u57fa\u9686|2023\u6c38\u665d\u6d77\u6ff1\u7f8e\u8853\u9928|999\u6735\u73ab\u7470\u306e\u611b\u4e4b\u8239 \u89c0\u5c55\u9580\u7968",
+            "title": "\u3010\u9650\u664276\u6298\u3011\u53f0\u5317\u5c55\u89bd|\u5947\u5e7b\u52d5\u7269\u68ee\u6797 \u6a0b\u53e3\u88d5\u5b50\u5c55\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/152571",
-            "UUID": "06b6ca3b55d152088a50d28440c648bc",
-            "figure": "https://i.imgur.com/15V9PJO.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/152763",
+            "UUID": "65d95ac9771555a3832f3b13bb36e871",
+            "figure": "https://i.imgur.com/THNfHkg.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u9650\u664277\u6298\u3011\u53f0\u5317\u5c55\u89bd|THE \u54c6\u5566A\u5922\u5c55 \u53f0\u5317 2023 \u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/151873-the-doraemon-exhibition-taipei-ticket-taiwan",
+            "UUID": "030998f5f549558cbca6d84a9e958893",
+            "figure": "https://i.imgur.com/5UmfWu9.webp"
         },
         {
             "systematics": "KKDay",
@@ -90,12 +90,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u9650\u664277\u6298\u3011\u53f0\u5317\u5c55\u89bd|THE \u54c6\u5566A\u5922\u5c55 \u53f0\u5317 2023 \u9580\u7968",
+            "title": "\u57fa\u9686|2023\u6c38\u665d\u6d77\u6ff1\u7f8e\u8853\u9928|999\u6735\u73ab\u7470\u306e\u611b\u4e4b\u8239 \u89c0\u5c55\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/151873-the-doraemon-exhibition-taipei-ticket-taiwan",
-            "UUID": "030998f5f549558cbca6d84a9e958893",
-            "figure": "https://i.imgur.com/5UmfWu9.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/152571",
+            "UUID": "06b6ca3b55d152088a50d28440c648bc",
+            "figure": "https://i.imgur.com/15V9PJO.webp"
         },
         {
             "systematics": "KKDay",
@@ -144,21 +144,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u62bd\u734e\u6d3b\u52d5\u3011\u53f0\u5317\u5c55\u89bd|\u8fea\u58eb\u5c3c\u52d5\u756b\u5c55\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/142411-limited-time-21-off-limited-collection-taipei-exhibition-ticket-disney-animation-exhibition-taiwan",
-            "UUID": "399bfa8643445825b2d3a18fc99d5386",
-            "figure": "https://i.imgur.com/iP3I0Rr.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|HELLO KITTY 50\u9031\u5e74\u7279\u5c55:\u8207\u672a\u4f86\u505a\u670b\u53cb\u5427",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/154586",
             "UUID": "9a9aab65dff05ca3a0b3871375f23a4b",
             "figure": "https://image.kkday.com/v2/image/get/w_600%2Cc_fit/s1.kkday.com/product_154586/20231026022347_6oyKu/jpg"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u62bd\u734e\u6d3b\u52d5\u3011\u53f0\u5317\u5c55\u89bd|\u8fea\u58eb\u5c3c\u52d5\u756b\u5c55\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/142411-limited-time-21-off-limited-collection-taipei-exhibition-ticket-disney-animation-exhibition-taiwan",
+            "UUID": "399bfa8643445825b2d3a18fc99d5386",
+            "figure": "https://i.imgur.com/iP3I0Rr.webp"
         },
         {
             "systematics": "KKDay",
@@ -207,6 +207,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u4e2d\u5c55\u89bd|PINKFONG BABY SHARK \u653e\u96fb\u8db4 in \u53f0\u4e2d\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/134831",
+            "UUID": "a22d5bf4a25e523fbb006210afa8f5fa",
+            "figure": "https://i.imgur.com/CXJ6nb1.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u3010\u9810\u552e75\u6298\u3011\u53f0\u5317\u5c55\u89bd | \u9032\u64ca\u7684\u5de8\u4eba\u5c55FINAL\u9580\u7968",
             "date": "",
             "address": "",
@@ -225,21 +234,21 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u5492\u8853\u8ff4\u6230\u5c55\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/135116",
+            "UUID": "918a4f1a91735a46addaa8648ea3d899",
+            "figure": "https://i.imgur.com/rKC7RoV.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u53f0\u6771\u71b1\u6c23\u7403\u5609\u5e74\u83ef\u5171\u4e58\u4f86\u56de\u63a5\u99c1|\u8d08\u9752\u8349\u8336+\u5ba2\u5bb6\u7cbf|\u514d\u8cbb\u501f\u7528\u91ce\u9910\u588a",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/116304",
             "UUID": "185133ea528959a5af67fdb23d68dc83",
             "figure": "https://i.imgur.com/acLHouC.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u4e2d\u5c55\u89bd|PINKFONG BABY SHARK \u653e\u96fb\u8db4 in \u53f0\u4e2d\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/134831",
-            "UUID": "a22d5bf4a25e523fbb006210afa8f5fa",
-            "figure": "https://i.imgur.com/CXJ6nb1.webp"
         },
         {
             "systematics": "KKDay",
@@ -294,15 +303,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/144016-taipei-exhibition-junji-ito-horror-experience-exhibition-for-2-guests-taiwan",
             "UUID": "d1381475adbc5a98b209b3d62a155390",
             "figure": "https://i.imgur.com/IIYKncR.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u5492\u8853\u8ff4\u6230\u5c55\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/135116",
-            "UUID": "918a4f1a91735a46addaa8648ea3d899",
-            "figure": "https://i.imgur.com/rKC7RoV.webp"
         },
         {
             "systematics": "KKDay",
