@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-10-29T08:12:18.071006+00:00",
+    "last_update": "2023-10-29T16:13:13.027824+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -54,15 +54,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "\u300a\u5c0f\u4e11\u91ab\u751f\u7684\u4e00\u5929\u300b\u7d00\u5be6\u5c55\u6f14",
-            "date": "2023-10-20 - 2023-10-29",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/e9047089-4987-4bfd-b2e4-6876571c62de",
-            "UUID": "e08d91402e195c41a0a8b01664f4f15f",
-            "figure": "https://i.imgur.com/iYuIHgE.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "iF \u751f\u6d3b\u81f3\u4e0a | 2023 \u5e74 iF \u8a2d\u8a08\u734e\u7372\u734e\u4f5c\u54c1\u5c55 (IV)",
             "date": "2023-10-24 - 2023-11-18",
             "address": "-",
@@ -90,42 +81,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "\u6200\u820a\u518d\u7e8c",
-            "date": "2023-10-27 - 2023-10-29",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/cd4d591c-1850-4e83-a31c-8f17f5fcfb7c",
-            "UUID": "b5024a91ac775eefaccec128d6510cad",
-            "figure": "https://i.imgur.com/jS9vr4B.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "2023 DesignBIZ Fest \u8a2d\u8a08\u65b0\u5546\u696d\u5e74\u6703",
-            "date": "2023-10-27 - 2023-10-29",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/d827a6c8-25c7-487f-95b4-350188ed4efe",
-            "UUID": "18775338777f58839c38d8ee55bd083d",
-            "figure": "https://www.songshanculturalpark.org/gallery/1697528749_ae63dc1bab638379e498.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "2023\u5fae\u91ba\u9152\u9928\u7f8e\u98df\u796d\uff5c\u5996\u602a\u9152\u9928\u842c\u8056\u8b8a\u88dd\u4e4b\u591c",
-            "date": "2023-10-27 - 2023-10-29",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/6f49e3c5-54a1-493b-8db0-ee132763d1c9",
-            "UUID": "fe38479388ac57f6b33734f7d70a9ea5",
-            "figure": "https://i.imgur.com/hETC2o3.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u53f0\u5275\u796d4",
-            "date": "2023-10-28 - 2023-10-29",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/cd03b317-6433-44c2-987d-97279d3a3c49",
-            "UUID": "8b45b70a03f1530587db8f78ac694032",
-            "figure": "https://www.songshanculturalpark.org/gallery/1698049663_c868ea674cb7567436f0.png"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "\u966a\u4f60\u80b2\u8d77-\u80b2\u7530\u57fa\u91d1\u6703\u670d\u52d9\u5341\u9031\u5e74",
             "date": "2023-10-28 - 2023-11-08",
             "address": "-",
@@ -141,6 +96,51 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/0848697c-7a2c-478f-9165-bb956c42983c",
             "UUID": "a13f9a946d3b54f190bc437970634f70",
             "figure": "https://www.songshanculturalpark.org/gallery/1697611167_e3d7e42cf9d4147595e5.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u89ba\u5275\u796d\u2013\u8eab\u5fc3\u9748\u6176\u5178\uff06\u5e02\u96c6",
+            "date": "2023-11-03 - 2023-11-05",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/50704f8d-903a-47a1-aefc-aa184b083a65",
+            "UUID": "057964004ab651cc9cd4d99527251bbd",
+            "figure": "https://www.songshanculturalpark.org/gallery/1698317547_31eb56e0a3dbd114dc78.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u5ba2\u5bb6\u96fb\u8996\u53f0 - \u65cf\u7fa4\u5a92\u9ad4\u9ad8\u5cf0\u6703Ethnic Media Summit 2023",
+            "date": "2023-11-06",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c2767315-e52d-44f0-aa1f-e086ff4d9f54",
+            "UUID": "5aa051a6122457d285450a0e6eeaf195",
+            "figure": "https://www.songshanculturalpark.org/gallery/1698040383_9429145d2bffeab21975.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "2023 POPUPASIA\u4e9e\u6d32\u624b\u5275\u5c55 \u7b2c\u4e03\u5c46",
+            "date": "2023-11-16 - 2023-11-19",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/1c85c94e-bd9b-4904-ad6e-40e61e0994db",
+            "UUID": "b2151f5cd01d508ebd3a21ce784661c4",
+            "figure": "https://i.imgur.com/KQzewOb.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "2023\u53cb\u597d\u62fc\u5e03\u624b\u4f5c\u7bc0",
+            "date": "2023-11-17 - 2023-11-19",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/df1ac649-dd09-44fc-92d6-76ebb0aad10d",
+            "UUID": "5d51cecb674c585587c6e375c78932c8",
+            "figure": "https://www.songshanculturalpark.org/gallery/1697608371_c1f986d147b01ef1053e.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u85dd\u8d77\u73a9\u5e02\u96c6",
+            "date": "2023-11-18 - 2023-11-19",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/30e3be08-f853-4029-9109-5639300c7641",
+            "UUID": "23a95021961a5555af60cf9f27984152",
+            "figure": "https://www.songshanculturalpark.org/gallery/1695970760_3d161a895113280f518d.jpg"
         }
     ],
     "visit": {}
