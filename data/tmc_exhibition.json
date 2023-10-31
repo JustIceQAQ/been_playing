@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 10,
-    "last_update": "2023-10-31T08:13:29.882675+00:00",
+    "counts": 11,
+    "last_update": "2023-10-31T16:13:36.381837+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -69,6 +69,15 @@
             "source_url": "https://tmc.taipei/blog/show/g8-summit/",
             "UUID": "4c6a621fd6a55c50a058c2731090c675",
             "figure": "https://tmc.taipei/wp-content/uploads/2023/10/G8\u9ad8\u5cf0\u6703-1360x680-1.jpg"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u653e\u6d6a\u5144\u5f1f 2023 \u53f0\u5317\u6f14\u5531\u6703 EXILE LIVE 2023 IN TAIPEI",
+            "date": "2023.12.09(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/exile-2023-taipei-concert-exile-live-2023-in-taipei/",
+            "UUID": "4216004ea13a528aa0e2cbb71c48dc3e",
+            "figure": "https://tmc.taipei/wp-content/uploads/2023/10/1360x680_0.jpg"
         },
         {
             "systematics": "tmc",
