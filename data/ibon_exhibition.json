@@ -4,8 +4,8 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 61,
-    "last_update": "2023-11-02T08:13:29.102606+00:00",
+    "counts": 60,
+    "last_update": "2023-11-02T16:14:20.887778+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -24,6 +24,15 @@
             "source_url": "https://tour.ibon.com.tw/event/653f4e2941a0c267be34ba00",
             "UUID": "a79e0a92561058fdac0a75f5dac9462e",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/64e59b9b-120f-4b41-adbe-cb7969659047.jpg"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u5168\u7cd6\u958b\u5531GIVE ME 100\uff05 SUGAR",
+            "date": "2023-12-08 ~ 2023-12-10",
+            "address": "\u81fa\u5357\u9ad4\u80b2\u516c\u5712\u5317\u5074\u8207\u897f\u5074\u5ee3\u5834",
+            "source_url": "https://tour.ibon.com.tw/event/6538a55d2aefd337ddfb6a45",
+            "UUID": "cac04369c2255ce58b97817c7c2f4f75",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/a432bfa6-82cb-45f8-82b4-a4a2228d5a78.jpg"
         },
         {
             "systematics": "ibon",
@@ -87,15 +96,6 @@
             "source_url": "https://tour.ibon.com.tw/event/651c2ddb4c43106d99bfdc58",
             "UUID": "dc6d9c1174635c74a329939716322ac4",
             "figure": "https://i.imgur.com/nNH43HP.webp"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u7f6a\u8b49\u7d00\u5ff5\u7c3f\uff0e\u5be6\u5883\u89e3\u8b0e\u904a\u6232",
-            "date": "2023-10-04 ~ 2023-10-31",
-            "address": null,
-            "source_url": "https://tour.ibon.com.tw/event/651bc8f14c43106d99bfca72",
-            "UUID": "9e1bf768824e517f83e9f1945e636d94",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/5c4ec600-b53f-4e79-bf24-27fd6dbe57d0.jpg"
         },
         {
             "systematics": "ibon",
@@ -321,15 +321,6 @@
             "source_url": "https://tour.ibon.com.tw/event/64479e2aa76b6d2a8e2d480f",
             "UUID": "1313c1749a765f1bbf0a940eebdecce4",
             "figure": "https://i.imgur.com/rFdkVCv.webp"
-        },
-        {
-            "systematics": "ibon",
-            "title": "Voyage\u967d\u660e\u5c71\uff0e\u8349\u5c71\u597d\u6c34\u79d8\u63a2\u7cfb\u5217\uff0d\u85cd\u5bf6\u77f3\u6cc9\uff08\u7b2c\u4e00\u5f48\uff09",
-            "date": "2023-04-22 ~ 2023-10-31",
-            "address": "\u967d\u660e\u5c71\u5929\u4e3b\u5802\uff08\u8acb\u627eVoyage\u8209\u724c\u5de5\u4f5c\u4eba\u54e1\u5831\u5230\uff09",
-            "source_url": "https://tour.ibon.com.tw/event/64322eaac1f1184d3039d7f7",
-            "UUID": "af1cc82dacca53b591b508e7b5f00b38",
-            "figure": "https://i.imgur.com/1c5QAXL.webp"
         },
         {
             "systematics": "ibon",
