@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-11-04T08:12:41.487846+00:00",
+    "last_update": "2023-11-04T16:12:03.196331+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -99,15 +99,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "2023\u6a94\u6848\u6708\u555f\u52d5\u5100\u5f0f",
-            "date": "2023-11-04",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/2a593b08-e1ff-45f0-85b8-f69d5ad6210d",
-            "UUID": "25b2c96e85325ca0a843f3bfb4b4447d",
-            "figure": "https://www.songshanculturalpark.org/gallery/1698634659_f440fd796084fade3310.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "\u5ba2\u5bb6\u96fb\u8996\u53f0 - \u65cf\u7fa4\u5a92\u9ad4\u9ad8\u5cf0\u6703Ethnic Media Summit 2023",
             "date": "2023-11-06",
             "address": "-",
@@ -141,6 +132,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/1c85c94e-bd9b-4904-ad6e-40e61e0994db",
             "UUID": "b2151f5cd01d508ebd3a21ce784661c4",
             "figure": "https://i.imgur.com/KQzewOb.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "2023\u53cb\u597d\u62fc\u5e03\u624b\u4f5c\u7bc0",
+            "date": "2023-11-17 - 2023-11-19",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/df1ac649-dd09-44fc-92d6-76ebb0aad10d",
+            "UUID": "5d51cecb674c585587c6e375c78932c8",
+            "figure": "https://www.songshanculturalpark.org/gallery/1697608371_c1f986d147b01ef1053e.jpg"
         }
     ],
     "visit": {}
