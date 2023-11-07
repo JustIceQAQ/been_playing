@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-11-07T00:48:23.524787+00:00",
+    "last_update": "2023-11-07T08:13:43.618581+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -99,6 +99,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "2023 \u7da0\u8272\u79d1\u6280\u65b0\u5275\u734e\u52f5\u7af6\u8cfd\u9812\u734e\u5178\u79ae\u66a8 Startup Terrace \u5468\u5e74\u6176",
+            "date": "2023-11-15",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/1dd8494c-8fb4-4370-a6f3-01cc356842ba",
+            "UUID": "453b4f0c35c053fc88d9f2b9fff9881b",
+            "figure": "https://www.songshanculturalpark.org/gallery/1699329149_4a0993dd6d8de1a19f94.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "2023 POPUPASIA\u4e9e\u6d32\u624b\u5275\u5c55 \u7b2c\u4e03\u5c46",
             "date": "2023-11-16 - 2023-11-19",
             "address": "-",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/30e3be08-f853-4029-9109-5639300c7641",
             "UUID": "23a95021961a5555af60cf9f27984152",
             "figure": "https://www.songshanculturalpark.org/gallery/1695970760_3d161a895113280f518d.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "2023\u7d19\u4e0a\u8e8d\u8e8d\u7136 \u2022 \u5178\u7f8e\u63d2\u756b\u5927\u8cde \u300a\u5beb\u4e00\u5c01\u4fe1\u7d66\u81ea\u5df1\u300b",
-            "date": "2023-11-18 - 2023-11-26",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c30026b9-43bc-4329-9bb4-6b674d4ad314",
-            "UUID": "186ba7b324a159f482d7f029eed81bfd",
-            "figure": "https://www.songshanculturalpark.org/gallery/1698226576_6fec31442865f01ecd76.jpg"
         }
     ],
     "visit": {}
