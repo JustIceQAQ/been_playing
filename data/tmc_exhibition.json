@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 12,
-    "last_update": "2023-11-09T08:13:59.523399+00:00",
+    "counts": 13,
+    "last_update": "2023-11-09T16:13:47.581474+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -69,6 +69,15 @@
             "source_url": "https://tmc.taipei/blog/show/exile-2023-taipei-concert-exile-live-2023-in-taipei/",
             "UUID": "4216004ea13a528aa0e2cbb71c48dc3e",
             "figure": "https://tmc.taipei/wp-content/uploads/2023/10/1360x680_0.jpg"
+        },
+        {
+            "systematics": "tmc",
+            "title": "K-Hiphop Fest in Asia 2023 [Swagger] Taipei",
+            "date": "2023.12.10(\u65e5)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/k-hiphop-fest-in-asia-2023-swagger-taipei/",
+            "UUID": "0c7020cfd49751e5a502fffdc0bcfe0f",
+            "figure": "https://tmc.taipei/wp-content/uploads/2023/11/Banner_1360x680.jpg"
         },
         {
             "systematics": "tmc",
