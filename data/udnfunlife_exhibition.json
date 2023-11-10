@@ -4,8 +4,8 @@
         "code_name": "tickets_udnfunlife",
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
-    "counts": 19,
-    "last_update": "2023-11-10T00:48:10.632107+00:00",
+    "counts": 21,
+    "last_update": "2023-11-10T08:13:45.018522+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -46,11 +46,11 @@
         {
             "systematics": "tickets_udnfunlife",
             "title": "\u70cf\u514b\u862d\u806f\u5408\u82ad\u857e\u821e\u5718\u300a\u5409\u8cfd\u5152\u300b",
-            "date": "2024/01/06 ~ 2024/01/21",
+            "date": "2024/01/05 ~ 2024/01/21",
             "address": "\u570b\u5bb6\u6232\u5287\u9662,\u885b\u6b66\u71df\u570b\u5bb6\u85dd\u8853\u6587\u5316\u4e2d\u5fc3 \u6b4c\u5287\u9662,\u81fa\u4e2d\u570b\u5bb6\u6b4c\u5287\u9662 \u5927\u5287\u9662",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P091DDV1&kdid=featured",
             "UUID": "e20251daf9fd53089fe441577ac2ffee",
-            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P091DDV1_Product.PNG?v=202311081717"
+            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P091DDV1_Product.JPG?v=202311101209"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -177,6 +177,24 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P098EADF&kdid=featured",
             "UUID": "df26116bd7de52d4987b463aa4da4661",
             "figure": "https://i.imgur.com/raBu46z.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "(\u516c\u4ed4\u5957\u7968)HELLO KITTY",
+            "date": "2023/12/30 ~ 2024/04/07",
+            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u4e2d4B\u9928",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0C211R8&kdid=featured",
+            "UUID": "1c909080fe695979ab25573e86d914fc",
+            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0C211R8_Product.JPG?v=202311091535"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "HELLO KITTY 50\u5468\u5e74\u7279\u5c55",
+            "date": "2023/12/30 ~ 2024/04/07",
+            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u4e2d4B\u9928",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0BE5N06&kdid=featured",
+            "UUID": "6e28c330fe5c5e19941366e312681800",
+            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0BE5N06_Product.JPG?v=202311091422"
         }
     ],
     "visit": {}
