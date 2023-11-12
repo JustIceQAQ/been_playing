@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 9,
-    "last_update": "2023-11-12T00:52:13.436222+00:00",
+    "counts": 10,
+    "last_update": "2023-11-12T08:12:15.019276+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -51,6 +51,15 @@
             "source_url": "https://fantasyteatime.kktix.cc/events/fteatime01",
             "UUID": "18d87f15c66b5520b4e82dcc6b833f12",
             "figure": "https://i.imgur.com/MOMB9v2.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u5b75\u5ba4 Maison March\u00e9",
+            "date": "2023/12/2(\u516d)",
+            "address": "",
+            "source_url": "https://honichiss.kktix.cc/events/159ef3d1",
+            "UUID": "0673cb830dc35dc9aba504921fe5b12a",
+            "figure": "https://t.kfs.io/upload_images/184653/1200_medium.jpg"
         },
         {
             "systematics": "KKTix",
