@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 50,
-    "last_update": "2023-11-11T16:13:04.588212+00:00",
+    "last_update": "2023-11-12T00:52:59.904925+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -72,21 +72,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u7063\u53f0\u5317|\u7121\u5149\u665a\u9910\u4e03\u865f\u83dc\u55ae Dining In The Dark|\u5fc5\u8a2a\u9910\u98f2\u9ad4\u9a57|\u9a5a\u559c\u88fd\u9020",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/145666",
-            "UUID": "b11c45b10c415bb18ce4665af2a940db",
-            "figure": "https://i.imgur.com/JlBic6n.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010\u9650\u664276\u6298\u3011\u53f0\u5317\u5c55\u89bd|\u5947\u5e7b\u52d5\u7269\u68ee\u6797 \u6a0b\u53e3\u88d5\u5b50\u5c55\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/152763",
             "UUID": "65d95ac9771555a3832f3b13bb36e871",
             "figure": "https://i.imgur.com/THNfHkg.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u7063\u53f0\u5317|\u7121\u5149\u665a\u9910\u4e03\u865f\u83dc\u55ae Dining In The Dark|\u5fc5\u8a2a\u9910\u98f2\u9ad4\u9a57|\u9a5a\u559c\u88fd\u9020",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/145666",
+            "UUID": "b11c45b10c415bb18ce4665af2a940db",
+            "figure": "https://i.imgur.com/JlBic6n.webp"
         },
         {
             "systematics": "KKDay",
@@ -198,15 +198,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u6551\u63f4\u5c0f\u82f1\u96c4\u6ce2\u529b\u4e92\u52d5\u7279\u5c55\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/142186-limited-time-22-off-taipei-exhibition-rescue-little-hero-boli-interactive-special-exhibition-tickets-taiwan",
-            "UUID": "4c4c338e4d6d504e8dd4f728e28ca382",
-            "figure": "https://i.imgur.com/A4wnYph.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u5492\u8853\u8ff4\u6230\u5c55\u9580\u7968",
             "date": "",
             "address": "",
@@ -216,12 +207,39 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u6551\u63f4\u5c0f\u82f1\u96c4\u6ce2\u529b\u4e92\u52d5\u7279\u5c55\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/142186-limited-time-22-off-taipei-exhibition-rescue-little-hero-boli-interactive-special-exhibition-tickets-taiwan",
+            "UUID": "4c4c338e4d6d504e8dd4f728e28ca382",
+            "figure": "https://i.imgur.com/A4wnYph.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5317\u5c55\u89bd|\u6c11\u96c4\u9b3c\u5c4b\u5be6\u5883\u9ad4\u9a57\u7279\u5c55",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/129706",
+            "UUID": "07461d1a329a5a52ab3bc0a0f7c48ceb",
+            "figure": "https://i.imgur.com/aOIKJTk.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd | \u5409\u535c\u529b\u52d5\u756b\u5927\u5e2b\u2014\u9ad8\u7551\u52f2\u5c55\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/128948",
             "UUID": "5ad137c665c55c9e9c747d9cb3b64059",
             "figure": "https://i.imgur.com/9PHftPx.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u4f0a\u85e4\u6f64\u4e8c\u6050\u6016\u9ad4\u9a57\u5c55 2 \u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/144016-taipei-exhibition-junji-ito-horror-experience-exhibition-for-2-guests-taiwan",
+            "UUID": "d1381475adbc5a98b209b3d62a155390",
+            "figure": "https://i.imgur.com/IIYKncR.webp"
         },
         {
             "systematics": "KKDay",
@@ -270,15 +288,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5317\u5c55\u89bd|\u6c11\u96c4\u9b3c\u5c4b\u5be6\u5883\u9ad4\u9a57\u7279\u5c55",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/129706",
-            "UUID": "07461d1a329a5a52ab3bc0a0f7c48ceb",
-            "figure": "https://i.imgur.com/aOIKJTk.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd | \u7fa9\u5927\u5229\u602a\u7f8e\u6bbf\u5802\u7279\u5c55 TOILETPAPER: The Studio\u9580\u7968",
             "date": "",
             "address": "",
@@ -294,15 +303,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/135257",
             "UUID": "8030c368bd7e51ce813c0477c75e4f9f",
             "figure": "https://i.imgur.com/Am6md7v.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u4f0a\u85e4\u6f64\u4e8c\u6050\u6016\u9ad4\u9a57\u5c55 2 \u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/144016-taipei-exhibition-junji-ito-horror-experience-exhibition-for-2-guests-taiwan",
-            "UUID": "d1381475adbc5a98b209b3d62a155390",
-            "figure": "https://i.imgur.com/IIYKncR.webp"
         },
         {
             "systematics": "KKDay",
@@ -378,21 +378,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5357|\u89e3\u5bc6\u8056\u6bcd\u767e\u82b1\u5927\u6559\u5802\u5c55\u89bd\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/136626",
-            "UUID": "7f5b6825431c5766b7ab134949253136",
-            "figure": "https://i.imgur.com/iDUjxPP.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5317\u5c55\u89bd|\u30b2\u30b2\u30b2\u306e\u9b3c\u592a\u90ce \u5996\u602a100\u7269\u8a9e\u7279\u5c55\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/134767",
             "UUID": "d7439d6187c35135b5331a5710c8e5a2",
             "figure": "https://i.imgur.com/AKZTVxt.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5357|\u89e3\u5bc6\u8056\u6bcd\u767e\u82b1\u5927\u6559\u5802\u5c55\u89bd\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/136626",
+            "UUID": "7f5b6825431c5766b7ab134949253136",
+            "figure": "https://i.imgur.com/iDUjxPP.webp"
         },
         {
             "systematics": "KKDay",
