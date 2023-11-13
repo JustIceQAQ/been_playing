@@ -4,47 +4,8 @@
         "code_name": "tfam",
         "external_link": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw"
     },
-    "counts": 4,
-    "last_update": "2023-11-13T08:14:11.050529+00:00",
-    "data": [
-        {
-            "systematics": "tfam",
-            "title": "2023\u81fa\u5317\u7f8e\u8853\u734e",
-            "date": "2023-11-04 ~ 2024-02-18",
-            "address": "\u4e09\u6a133A~3B",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=746",
-            "UUID": "099e6405adf45fea902924b479a144ce",
-            "figure": "https://www.tfam.museum/File/Exhibition/Main/746/20231020142446058494.jpg"
-        },
-        {
-            "systematics": "tfam",
-            "title": "\u5d0e",
-            "date": "2022-09-17 ~ 2023-11-26",
-            "address": "\u4e09\u6a133C\u8ff4\u5eca",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=715",
-            "UUID": "d9c73eae74c05aa58fac0ddc3d993f76",
-            "figure": "https://i.imgur.com/7wrS2TG.webp"
-        },
-        {
-            "systematics": "tfam",
-            "title": "\u52a0\u52a0\u6e1b\u6e1b",
-            "date": "2023-10-14 ~ 2024-02-25",
-            "address": "\u5152\u7ae5\u85dd\u8853\u6559\u80b2\u4e2d\u5fc3",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=744",
-            "UUID": "b0d69b1a202c54f8a9b477bb11c1cb96",
-            "figure": "https://i.imgur.com/rX4TMjw.webp"
-        },
-        {
-            "systematics": "tfam",
-            "title": "2023\u53f0\u5317\u96d9\u5e74\u5c55\u300c\u5c0f\u4e16\u754c\u300d",
-            "date": "2023-11-18 ~ 2024-03-24",
-            "address": "\u4e00\u6a131A~1B\u3001\u4e8c\u6a132A~2B\u3001\u5730\u4e0b\u6a13D~E~F",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=745",
-            "UUID": "aad3579f4dc251f1bdb5cd85eb46ceb8",
-            "figure": "https://i.imgur.com/Sby0rgf.webp"
-        }
-    ],
-    "visit": {
-        "opening": "\u9031\u4e00: \u4f11\u9928\n\u9031\u4e8c: 09:30 - 17:30\n\u9031\u4e09: 09:30 - 17:30\n\u9031\u56db: 09:30 - 17:30\n\u9031\u4e94: 09:30 - 17:30\n\u9031\u516d: 09:30 - 20:30\n\u9031\u65e5: 09:30 - 17:30"
-    }
+    "counts": 0,
+    "last_update": "2023-11-13T16:18:41.466376+00:00",
+    "data": [],
+    "visit": {}
 }

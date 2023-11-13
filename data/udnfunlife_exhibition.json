@@ -5,7 +5,7 @@
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
     "counts": 20,
-    "last_update": "2023-11-13T08:14:33.408141+00:00",
+    "last_update": "2023-11-13T16:13:49.604746+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -55,7 +55,7 @@
         {
             "systematics": "tickets_udnfunlife",
             "title": "\u6c38\u6046\u8056\u6bcd\u9662_\u7a7f\u8d8a\u6642\u7a7a\u6c89\u6d78\u5f0fVR\u4e4b\u65c5",
-            "date": "2023/11/14 ~ 2024/03/31",
+            "date": "2023/11/15 ~ 2024/03/31",
             "address": "\u570b\u7acb\u79d1\u5b78\u5de5\u85dd\u535a\u7269\u9928 \u7b2c\u56db\u5c55\u5ef3(\u8acb\u7531B1\u96fb\u5f71\u9662\u5165\u53e3\u9032\u5165)",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P08G9BKE&kdid=featured",
             "UUID": "437c5e6bb08558f2b9c6d68f4c334600",
@@ -114,15 +114,6 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0A477MG&kdid=featured",
             "UUID": "19f250a3cbe25b668976dbe2b343f249",
             "figure": "https://i.imgur.com/6labcWU.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
-            "title": "2023 Pop Up Asia\u4e9e\u6d32\u624b\u5275",
-            "date": "2023/11/16 ~ 2023/11/19",
-            "address": "\u677e\u5c71\u6587\u5275\u5712\u5340 3\u30014\u30015\u865f\u5009\u5eab",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0AX2ISU&kdid=featured",
-            "UUID": "3002b9ce8f24586cb5349da3c5bb308a",
-            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0AX2ISU_Product.JPG?v=202311021416"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -186,6 +177,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0BE5N06&kdid=featured",
             "UUID": "6e28c330fe5c5e19941366e312681800",
             "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0BE5N06_Product.JPG?v=202311091422"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "2023 Pop Up Asia\u4e9e\u6d32\u624b\u5275",
+            "date": "2023/11/16 ~ 2023/11/19",
+            "address": "\u677e\u5c71\u6587\u5275\u5712\u5340 3\u30014\u30015\u865f\u5009\u5eab",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0AX2ISU&kdid=featured",
+            "UUID": "3002b9ce8f24586cb5349da3c5bb308a",
+            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0AX2ISU_Product.JPG?v=202311021416"
         }
     ],
     "visit": {}
