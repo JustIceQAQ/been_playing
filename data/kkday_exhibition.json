@@ -4,8 +4,8 @@
         "code_name": "KKDay",
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
-    "counts": 35,
-    "last_update": "2023-11-15T08:15:04.929664+00:00",
+    "counts": 36,
+    "last_update": "2023-11-15T16:14:57.668311+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -105,6 +105,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/128289",
             "UUID": "39790675a68053bdb7a6b732f7a8cff8",
             "figure": "https://i.imgur.com/OiqItVw.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u9650\u664287\u6298\u3011\u53f0\u5357|\u5947\u7f8e\u535a\u7269\u9928 CHIMEI Museum|DISCO \u8056\u8a95\u6d3e\u5c0d",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/155705",
+            "UUID": "67fc5d61cdbc538eb42699fb9793cd04",
+            "figure": "https://image.kkday.com/v2/image/get/w_600%2Cc_fit/s1.kkday.com/product_155705/20231109032053_o4V18/jpg"
         },
         {
             "systematics": "KKDay",
