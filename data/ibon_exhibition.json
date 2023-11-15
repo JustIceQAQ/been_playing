@@ -4,9 +4,18 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 73,
-    "last_update": "2023-11-15T00:50:05.032572+00:00",
+    "counts": 74,
+    "last_update": "2023-11-15T08:15:01.732370+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "\u5947\u7f8e\u535a\u7269\u9928\uff0e2023\u8056\u8a95\u9031\u672b\uff0eDISCO\u8056\u8a95\u6d3e\u5c0d",
+            "date": "2023-12-16 ~ 2023-12-24",
+            "address": "\u5947\u7f8e\u535a\u7269\u9928 \u6236\u5916\u5712\u5340\u53ca\u9928\u5167\u5c55\u5ef3",
+            "source_url": "https://tour.ibon.com.tw/event/654d9d19bcbe1c5f4ecd633d",
+            "UUID": "ce1fb73a35575a688a71b44d0e11f1ec",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/ec70e3a4-8416-44d2-ba1d-0e46262d8b69.jpg"
+        },
         {
             "systematics": "ibon",
             "title": "CWT\uff0dK43\u53f0\u7063\u540c\u4eba\u8a8c\u8ca9\u552e\u6703\uff0e\u9ad8\u96c4\u5834\uff0e\u96d9\u65e5\u7968",
@@ -599,7 +608,7 @@
             "address": "\u5947\u7f8e\u535a\u7269\u9928",
             "source_url": "https://tour.ibon.com.tw/event/62b984397d59e3221859466a",
             "UUID": "d2b6556d3d5a5e59b94c41cde9b096ef",
-            "figure": "https://i.imgur.com/HNVdmR9.webp"
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/95654891-d9e2-47f5-928d-8f303a72fcfd.jpg"
         },
         {
             "systematics": "ibon",
@@ -608,7 +617,7 @@
             "address": "\u53f0\u5317\u5e02\u4fe1\u7fa9\u5340\u5149\u5fa9\u5357\u8def133\u865f",
             "source_url": "https://tour.ibon.com.tw/event/62b91abc63d4a55ee1390f34",
             "UUID": "32e17233dd9650dd9e2d8176f7470ce9",
-            "figure": "https://i.imgur.com/T5Y54WJ.webp"
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/1b2acbb8-1e7f-4418-b7f6-b5f45cd00b81.jpg"
         },
         {
             "systematics": "ibon",
