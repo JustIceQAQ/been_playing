@@ -4,8 +4,8 @@
         "code_name": "KKDay",
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
-    "counts": 36,
-    "last_update": "2023-11-20T00:51:45.256437+00:00",
+    "counts": 37,
+    "last_update": "2023-11-20T08:15:55.825978+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -27,6 +27,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u3010\u9650\u664258\u6298\u3011\u53f0\u5357\u5947\u7f8e\u535a\u7269\u9928 CHIMEI Museum|DISCO \u8056\u8a95\u6d3e\u5c0d|\u7368\u5bb6\u8d08$150\u501f\u96fb\u5238",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/155705",
+            "UUID": "67fc5d61cdbc538eb42699fb9793cd04",
+            "figure": "https://image.kkday.com/v2/image/get/w_600%2Cc_fit/s1.kkday.com/product_155705/20231109032053_o4V18/jpg"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u3010\u7dda\u4e0a\u512a\u60e08\u6298\u3011\u9ad8\u96c4\u79d1\u5de5\u9928&\u71b1\u96ea\u5929\u5802\u63a2\u7d22\u6a02\u57122.0\u7279\u5c55|\u806f\u5408\u9580\u7968\u512a\u60e0",
             "date": "",
             "address": "",
@@ -36,12 +45,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u9650\u664287\u6298\u3011\u53f0\u5357|\u5947\u7f8e\u535a\u7269\u9928 CHIMEI Museum|DISCO \u8056\u8a95\u6d3e\u5c0d",
+            "title": "\u3010KKday \u7368\u5bb6\u3011\u53f0\u7063\u53f0\u5317|Re:\u6c5f\u8ce2\u4e8c-\u6578\u4f4d\u51a5\u60f3.\u6c5f\u8ce2\u4e8c\u5149\u5f71\u6c88\u6d78\u5c55|\u5c55\u89bd\u9580\u7968\u30fb\u53f0\u5317101\u89c0\u666f\u53f0\u806f\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/155705",
-            "UUID": "67fc5d61cdbc538eb42699fb9793cd04",
-            "figure": "https://image.kkday.com/v2/image/get/w_600%2Cc_fit/s1.kkday.com/product_155705/20231109032053_o4V18/jpg"
+            "source_url": "https://www.kkday.com/zh-tw/product/155728",
+            "UUID": "8624c5928329500fb1cd68c155a7a9af",
+            "figure": "https://image.kkday.com/v2/image/get/w_600%2Cc_fit/s1.kkday.com/product_155728/20231109054028_bRBeM/jpg"
         },
         {
             "systematics": "KKDay",
@@ -69,15 +78,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/137251",
             "UUID": "0c93a1f9037353f1b9f1b5c02a2ea899",
             "figure": "https://i.imgur.com/SIJe7HS.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u3010KKday \u7368\u5bb6\u3011\u53f0\u7063\u53f0\u5317|Re:\u6c5f\u8ce2\u4e8c-\u6578\u4f4d\u51a5\u60f3.\u6c5f\u8ce2\u4e8c\u5149\u5f71\u6c88\u6d78\u5c55|\u5c55\u89bd\u9580\u7968\u30fb\u53f0\u5317101\u89c0\u666f\u53f0\u806f\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/155728",
-            "UUID": "8624c5928329500fb1cd68c155a7a9af",
-            "figure": "https://image.kkday.com/v2/image/get/w_600%2Cc_fit/s1.kkday.com/product_155728/20231109054028_bRBeM/jpg"
         },
         {
             "systematics": "KKDay",
@@ -159,6 +159,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/151122",
             "UUID": "d940f9423803510095c65fc6e28c0965",
             "figure": "https://i.imgur.com/GnUA1X2.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u65e9\u9ce56\u6298\u3011\u53f0\u5317\u5c55\u89bd \u2502 2023TECA\u53f0\u5317\u570b\u969b\u97f3\u97ff\u5927\u5c55",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/156396",
+            "UUID": "d79a47770f355a63b3c9cef7b06bcc79",
+            "figure": "https://image.kkday.com/v2/image/get/w_600%2Cc_fit/s1.kkday.com/product_156396/20231117075837_Idg5q/jpg"
         },
         {
             "systematics": "KKDay",
