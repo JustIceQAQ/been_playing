@@ -4,8 +4,8 @@
         "code_name": "KKDay",
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
-    "counts": 38,
-    "last_update": "2023-11-22T00:53:12.699058+00:00",
+    "counts": 40,
+    "last_update": "2023-11-22T08:15:02.370005+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -144,6 +144,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u9ad8\u96c4\u5c55\u89bd|\u6551\u63f4\u5c0f\u82f1\u96c4\u6ce2\u529b\u4e92\u52d5\u7279\u5c55\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/142186-limited-time-22-off-taipei-exhibition-rescue-little-hero-boli-interactive-special-exhibition-tickets-taiwan",
+            "UUID": "4c4c338e4d6d504e8dd4f728e28ca382",
+            "figure": "https://image.kkday.com/v2/image/get/w_600%2Cc_fit/s1.kkday.com/product_142186/20231110083405_fbMBH/jpg"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u3010\u9810\u552e8\u6298\u3011\u53f0\u5317\u5c55\u89bd| \u8993\u57ce\u30fb\u9f4a\u67cf\u6797\u7a7a\u9593\u5c55\u89bd\u9810\u552e\u9580\u7968",
             "date": "",
             "address": "",
@@ -189,12 +198,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u6551\u63f4\u5c0f\u82f1\u96c4\u6ce2\u529b\u4e92\u52d5\u7279\u5c55\u9580\u7968",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u7c89\u7d05\u8c6c\u5c0f\u59b9\u91ce\u9910\u8da3\u4e92\u52d5\u7279\u5c55",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/142186-limited-time-22-off-taipei-exhibition-rescue-little-hero-boli-interactive-special-exhibition-tickets-taiwan",
-            "UUID": "4c4c338e4d6d504e8dd4f728e28ca382",
-            "figure": "https://i.imgur.com/A4wnYph.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/156405",
+            "UUID": "dfc3e47d5ece5948a61a3990172bcf10",
+            "figure": "https://image.kkday.com/v2/image/get/w_600%2Cc_fit/s1.kkday.com/product_156405/20231117074452_HdpVo/jpg"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u9ad8\u96c4\u5c55\u89bd|\u4f8f\u7f85\u7d00\u6050\u9f8d\u63a2\u96aa\u6a02\u5712\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/155895",
+            "UUID": "9a1da6b185ed57c18085b26520cee376",
+            "figure": "https://image.kkday.com/v2/image/get/w_600%2Cc_fit/s1.kkday.com/product_155895/20231122054553_qLhiu/jpg"
         },
         {
             "systematics": "KKDay",
