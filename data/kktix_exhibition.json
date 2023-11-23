@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 8,
-    "last_update": "2023-11-23T08:13:39.847721+00:00",
+    "counts": 10,
+    "last_update": "2023-11-23T16:13:33.208504+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -24,6 +24,15 @@
             "source_url": "https://kecc.kktix.cc/events/5gemperislandoutdoorer",
             "UUID": "10f2fa7809ca50df85094ea739248cce",
             "figure": "https://t.kfs.io/upload_images/185240/%E4%B8%BB%E8%A6%96%E8%A6%BA1110_%E7%B6%B2%E7%AB%99-%E6%A1%8C%E6%A9%9F%E7%89%88_medium.jpg"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "2023\u300a\u7287\u85dd\u7bc0\u300b\u65b0\u5275\u5e02\u96c6",
+            "date": "2023/12/1(\u4e94)",
+            "address": "",
+            "source_url": "https://tnuaiic.kktix.cc/events/benawards",
+            "UUID": "2ad3caab00945c929489fcd23ac195ae",
+            "figure": "https://t.kfs.io/upload_images/185856/banner_medium.png"
         },
         {
             "systematics": "KKTix",
@@ -60,6 +69,15 @@
             "source_url": "https://sheng-dong.kktix.cc/events/teca",
             "UUID": "8b0ce636cffa5b079492e5f1a19e9087",
             "figure": "https://i.imgur.com/8FnpL9T.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "MSIology: \u5fae\u661f\u7b46\u96fb20\u9031\u5e74\u7279\u5c55 - \u6975\u81f4\u6548\u80fd \u5c0a\u5bf5\u9ad4\u9a57",
+            "date": "2023/12/15(\u4e94)",
+            "address": "",
+            "source_url": "https://msigamingtw.kktix.cc/events/msinb20",
+            "UUID": "bd237c827ea25b20a66268fc2ceed7ab",
+            "figure": "https://t.kfs.io/upload_images/185689/messageImage_1700550048457_medium.jpg"
         },
         {
             "systematics": "KKTix",
