@@ -4,8 +4,8 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 73,
-    "last_update": "2023-11-23T00:50:30.019109+00:00",
+    "counts": 74,
+    "last_update": "2023-11-23T08:13:49.580428+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -195,6 +195,15 @@
             "source_url": "https://tour.ibon.com.tw/event/6538a55d2aefd337ddfb6a45",
             "UUID": "cac04369c2255ce58b97817c7c2f4f75",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/a432bfa6-82cb-45f8-82b4-a4a2228d5a78.jpg"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u65e9\u9ce5\u7968+\u83ef\u5357\u5361\u53cb\u5834\u6b21\u9810\u7d04",
+            "date": "2023-12-16 ~ 2024-01-14",
+            "address": "\u5fae\u98a8\u5ee3\u58349F\u2500\u5fae\u98a8\u85dd\u6587\u4e2d\u5fc3",
+            "source_url": "https://tour.ibon.com.tw/event/6537255fa4b8d86c954b1c1c",
+            "UUID": "1f3a5a5a7ca55bc096215a799bc6bbef",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/ac9a0f51-09fc-47d3-9f0d-93dfe9bfe5a5.jpg"
         },
         {
             "systematics": "ibon",
