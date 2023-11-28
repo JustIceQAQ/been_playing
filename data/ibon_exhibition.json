@@ -4,9 +4,18 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 77,
-    "last_update": "2023-11-28T00:51:37.062206+00:00",
+    "counts": 78,
+    "last_update": "2023-11-28T08:14:18.942275+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "Tape Art Wave & Kepler\u96d9\u5c55\u806f\u7968",
+            "date": "2023-12-22 ~ 2024-03-03",
+            "address": "\u4e2d\u539f\u6587\u5275\u5712\u5340",
+            "source_url": "https://tour.ibon.com.tw/event/655eccfe16e89728fa06136b",
+            "UUID": "04fb0894b19f5f6a977a40ae4dd64982",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/30aa3eee-e9c9-4935-bbfe-0106c03c73a4.jpg"
+        },
         {
             "systematics": "ibon",
             "title": "\u5361\u5a1c\u8d6b\u62c9\u7684\u5c0f\u52d5\u7269 \u8352\u5510\u4e16\u754c\u535a\u7269\u9928 \u9ad8\u96c4\u7ad9",
@@ -101,7 +110,7 @@
             "systematics": "ibon",
             "title": "\u300a\u6551\u63f4\u5c0f\u82f1\u96c4\u6ce2\u529b\u4e92\u52d5\u7279\u5c55\u300b\u9ad8\u96c4\u7ad9",
             "date": "2023-12-30 ~ 2024-03-10",
-            "address": "\u9ad8\u96c4\u99c1\u4e8c\u85dd\u8853\u7279\u5340B3+B4\u5009\u5eab",
+            "address": "\u99c1\u4e8c\u85dd\u8853\u7279\u5340 B4\u5009\u5eab",
             "source_url": "https://tour.ibon.com.tw/event/654c54319614b3224eba63a3",
             "UUID": "b17e5654897d58c5bcc5edf721dfe35e",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/a785f506-8280-42d7-8cc4-bf366f912e5b.jpg"
@@ -110,7 +119,7 @@
             "systematics": "ibon",
             "title": "\u300a\u4f8f\u7f85\u7d00\u6050\u9f8d\u63a2\u96aa\u6a02\u5712\u300b",
             "date": "2023-12-30 ~ 2024-03-10",
-            "address": "\u9ad8\u96c4\u99c1\u4e8c\u85dd\u8853\u7279\u5340B3+B4\u5009\u5eab",
+            "address": "\u99c1\u4e8c\u85dd\u8853\u7279\u5340B3\u5009\u5eab\uff08\u7531B4\u5009\u5eab\u5165\u5834\uff09",
             "source_url": "https://tour.ibon.com.tw/event/654c44f19614b3224eba5ecf",
             "UUID": "f9ec93d5b2445f51901debd4673fc761",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/790da3b1-9207-454a-890d-0931519fe103.jpg"
