@@ -4,8 +4,8 @@
         "code_name": "mwr",
         "external_link": "https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070"
     },
-    "counts": 4,
-    "last_update": "2023-11-30T00:50:14.960934+00:00",
+    "counts": 5,
+    "last_update": "2023-11-30T08:13:41.579112+00:00",
     "data": [
         {
             "systematics": "mwr",
@@ -15,6 +15,15 @@
             "source_url": "https://www.mwr.org.tw//xcspecexhi/cont?xsmsid=0H305741810776620070&sid=0N159377853711046420",
             "UUID": "95abc7f652275d2a9d70f9e7184eacc2",
             "figure": "https://i.imgur.com/yLeAlrG.webp"
+        },
+        {
+            "systematics": "mwr",
+            "title": "\u6587\u7269\u958b\u7a97\u7cfb\u5217\u7279\u5c55\uff1a\u57fa\u7763\u5b97\u6559\u88e1\u7684\u65b0\u751f\u548c\u798f\u97f3",
+            "date": "2023-12-05~2024-05-05",
+            "address": "-",
+            "source_url": "https://www.mwr.org.tw//xcspecexhi/cont?xsmsid=0H305741810776620070&sid=0N334512905058959286",
+            "UUID": "26882ea460885d3184a615b3d9fa57d3",
+            "figure": "https://www.mwr.org.tw/files/file_pool/1/0n334513400310443799/1200x376.jpg"
         },
         {
             "systematics": "mwr",
