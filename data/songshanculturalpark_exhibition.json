@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2023-12-01T08:14:26.004824+00:00",
+    "last_update": "2023-12-01T16:13:52.986061+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -126,21 +126,21 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "\u8056\u8a95\u8001\u4eba\u516d\u89d2\u69d3\u786c\u8209\u5927\u8cfd",
+            "date": "2023-12-09",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/d8cdfbef-54be-4e91-97d2-59b388f1945e",
+            "UUID": "07bb4c95bdd75a8d8aae9bc414b48079",
+            "figure": "https://www.songshanculturalpark.org/gallery/1701420564_e4bffe806d422f43242e.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "\u53f0\u5317Y\u60f3\u4f60",
             "date": "2023-12-09 - 2023-12-10",
             "address": "-",
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/285f29b0-6dfa-4be7-8afd-ab8604d7c7fb",
             "UUID": "d13329aa69e5517bbc4d5c3477729ae4",
             "figure": "https://www.songshanculturalpark.org/gallery/1701316393_d742557b8d47f0dde836.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u570b\u969b\u516c\u5171\u8ca1\u8ad6\u58c7 Funding the Commons Taipei",
-            "date": "2023-12-09 - 2023-12-10",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/b545446f-5a97-4641-bb4c-50a372a2ab0e",
-            "UUID": "f39c099c7cc65872883741578226ea1e",
-            "figure": "https://www.songshanculturalpark.org/gallery/1699599069_a62750d13d531f91ecc5.jpg"
         }
     ],
     "visit": {}
