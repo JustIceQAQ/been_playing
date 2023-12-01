@@ -4,9 +4,18 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 76,
-    "last_update": "2023-12-01T00:54:56.234387+00:00",
+    "counts": 77,
+    "last_update": "2023-12-01T08:14:44.222689+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "\u53b2\u9670\u5b85\u4e4b\u65c5 \u6c89\u6d78\u5f0f\u9ad4\u9a57\u5c55",
+            "date": "2024-01-06 ~ 2024-04-07",
+            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712A\u3001B",
+            "source_url": "https://tour.ibon.com.tw/event/656442f316e89728fa06e0b9",
+            "UUID": "4c6bb164779958cf9c8f778cefe75b62",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/9fa41b47-a7f2-4ab8-a3a1-d637827cc673.jpg"
+        },
         {
             "systematics": "ibon",
             "title": "Tape Art Wave & Kepler\u96d9\u5c55\u806f\u7968",
@@ -658,8 +667,8 @@
         {
             "systematics": "ibon",
             "title": "\u3010\u5c4f\u6771\u3011\u570b\u7acb\u6d77\u6d0b\u751f\u7269\u535a\u7269\u9928",
-            "date": "2021-09-29 ~ 2023-12-31",
-            "address": "\u5c4f\u6771\u7e23\u8eca\u57ce\u9109\u5f8c\u7063\u6751\u5f8c\u7063\u8def2\u865f",
+            "date": "2021-09-29 ~ 2024-12-31",
+            "address": "\u570b\u7acb\u6d77\u6d0b\u751f\u7269\u535a\u7269\u9928",
             "source_url": "https://tour.ibon.com.tw/event/614d2bb350b6195589314ec9",
             "UUID": "92f865875f515d43a10b2ad3e326a699",
             "figure": "https://i.imgur.com/XrTvwQS.webp"
