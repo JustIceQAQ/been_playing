@@ -4,8 +4,8 @@
         "code_name": "tickets_books",
         "external_link": "https://tickets.books.com.tw/leisure/"
     },
-    "counts": 13,
-    "last_update": "2023-12-04T08:14:35.081128+00:00",
+    "counts": 12,
+    "last_update": "2023-12-04T16:15:17.503159+00:00",
     "data": [
         {
             "systematics": "tickets_books",
@@ -114,15 +114,6 @@
             "source_url": "https://tickets.books.com.tw/progshow/08010901714930",
             "UUID": "b77c79401227567896163f2782faedec",
             "figure": "https://i.imgur.com/aAS5Lkx.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\uff08\u96fb\u5b50\u7968\uff09\u82b1\u85dd\u8207\u88dd\u7f6e\u8a2d\u8a08",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005370638",
-            "UUID": "743c0ca28695583ba564343513f9f205",
-            "figure": "https://i.imgur.com/F4JierG.webp"
         }
     ],
     "visit": {}
