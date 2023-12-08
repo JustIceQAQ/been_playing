@@ -4,9 +4,18 @@
         "code_name": "tickets_books",
         "external_link": "https://tickets.books.com.tw/leisure/"
     },
-    "counts": 12,
-    "last_update": "2023-12-08T08:14:06.215912+00:00",
+    "counts": 13,
+    "last_update": "2023-12-08T16:14:05.690025+00:00",
     "data": [
+        {
+            "systematics": "tickets_books",
+            "title": "\u4f8f\u7f85\u7d00X\u6050\u9f8d\u96ea\u4e16\u754c\uff0d\u53f0\u5317\u7ad9",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010201609102",
+            "UUID": "fdef5e56cf555e5fb997202445124c05",
+            "figure": "https://addons.books.com.tw/G/2/08010201609102/08010201609102.gif"
+        },
         {
             "systematics": "tickets_books",
             "title": "NAKED FLOWERS \u82b1\u4e4b\u821e\u5149\u5f71\u5c55",
