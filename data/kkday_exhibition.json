@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 39,
-    "last_update": "2023-12-11T08:15:45.033419+00:00",
+    "last_update": "2023-12-11T16:15:42.571119+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -81,6 +81,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u3010KKday\u7368\u5bb6\u9650\u91cf\u6436\u8cfc\u3011\u53f0\u5317|\u97f3\u6a02\u73a9\u5bb6\u7684\u79d8\u5bc6\u57fa\u5730:\u63a2\u7d22\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/131082",
+            "UUID": "ef1e086464ba5d5fa27037377750e08e",
+            "figure": "https://i.imgur.com/9rJfZoz.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u3010\u9650\u664276\u6298\u3011\u53f0\u5317\u5c55\u89bd|\u5947\u5e7b\u52d5\u7269\u68ee\u6797 \u6a0b\u53e3\u88d5\u5b50\u5c55\u9580\u7968",
             "date": "",
             "address": "",
@@ -99,12 +108,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010KKday\u7368\u5bb6\u9650\u91cf\u6436\u8cfc\u3011\u53f0\u5317|\u97f3\u6a02\u73a9\u5bb6\u7684\u79d8\u5bc6\u57fa\u5730:\u63a2\u7d22\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
+            "title": "\u65b0\u5317\u516b\u91cc | \u5341\u4e09\u884c\u535a\u7269\u9928\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/131082",
-            "UUID": "ef1e086464ba5d5fa27037377750e08e",
-            "figure": "https://i.imgur.com/9rJfZoz.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/128289",
+            "UUID": "39790675a68053bdb7a6b732f7a8cff8",
+            "figure": "https://i.imgur.com/OiqItVw.webp"
         },
         {
             "systematics": "KKDay",
@@ -132,15 +141,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/155895",
             "UUID": "9a1da6b185ed57c18085b26520cee376",
             "figure": "https://image.kkday.com/v2/image/get/w_600%2Cc_fit/s1.kkday.com/product_155895/20231122054553_qLhiu/jpg"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u65b0\u5317\u516b\u91cc | \u5341\u4e09\u884c\u535a\u7269\u9928\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/128289",
-            "UUID": "39790675a68053bdb7a6b732f7a8cff8",
-            "figure": "https://i.imgur.com/OiqItVw.webp"
         },
         {
             "systematics": "KKDay",
@@ -270,21 +270,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u4e2d\u5c55\u89bd|PINKFONG BABY SHARK \u653e\u96fb\u8db4 in \u53f0\u4e2d\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/134831",
-            "UUID": "a22d5bf4a25e523fbb006210afa8f5fa",
-            "figure": "https://i.imgur.com/CXJ6nb1.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010\u65e9\u9ce59\u6298\u512a\u60e0\u3011\u53f0\u5317|\u6211\u4e0d\u662f\u80d6\u864e\u9031\u5e74\u5c55|\u500b\u4eba\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/128383",
             "UUID": "5d9bf27f48db50eb8193bafdbe8f91a7",
             "figure": "https://i.imgur.com/sk29N5H.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u4e2d\u5c55\u89bd|PINKFONG BABY SHARK \u653e\u96fb\u8db4 in \u53f0\u4e2d\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/134831",
+            "UUID": "a22d5bf4a25e523fbb006210afa8f5fa",
+            "figure": "https://i.imgur.com/CXJ6nb1.webp"
         },
         {
             "systematics": "KKDay",
