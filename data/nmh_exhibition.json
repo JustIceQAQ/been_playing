@@ -4,9 +4,18 @@
         "code_name": "nmh",
         "external_link": "https://www.nmh.gov.tw/activitysoonlist_66.html"
     },
-    "counts": 7,
-    "last_update": "2023-12-14T08:15:54.544662+00:00",
+    "counts": 8,
+    "last_update": "2023-12-14T16:12:13.507782+00:00",
     "data": [
+        {
+            "systematics": "nmh",
+            "title": "\u9928\u85cf\u501f\u5c55\uff1a\u300c\u9f8d\u6607\u798f\u805a\ufe31\u751f\u8096\u90f5\u7968\u8207\u6587\u7269\u7279\u5c55\u300d",
+            "date": "2023.12.15 -2024.04.07",
+            "address": "\u5730\u9ede\uff1a\u90f5\u653f\u535a\u7269\u99286\u6a13\u7279\u5c55\u5ba4",
+            "source_url": "https://event.culture.tw/NMH/portal/Registration/C0103MAction?actId=30044",
+            "UUID": "759a52dae096519abe48b37ddc17d648",
+            "figure": "https://mocfile.moc.gov.tw/activitySones/userFiles/NMH/JpgFile/01/30044/AD/30044_0_0_489760.jpg"
+        },
         {
             "systematics": "nmh",
             "title": "\u9928\u85cf\u501f\u5c55\uff1a\u300c2023\u81fa\u7063\u9676\u85dd\u734e\u300d",
@@ -71,7 +80,5 @@
             "figure": "https://i.imgur.com/z0XEcRv.webp"
         }
     ],
-    "visit": {
-        "opening": "\u570b\u7acb\u6b77\u53f2\u535a\u7269\u9928 \u9589\u9928\u6574\u5efa\u516c\u544a\u672c\u9928\u81ea\u6c11\u570b44\u5e74\u958b\u9928\u4ee5\u4f86\uff0c\u4e0d\u65b7\u8207\u6642\u4ff1\u9032\uff0c\u5df2\u6b7760\u9918\u8f09\uff0c\u672c\u9928\u65bc\u6c11\u570b107\u5e747\u67081\u65e5\u8d77\u9032\u884c\u9589\u9928\u6574\u5efa\u5de5\u7a0b\uff0c\u91dd\u5c0d\u672c\u9928\u4e4b\u9928\u820d\u7a7a\u9593\u3001\u670d\u52d9\u6a5f\u80fd\u3001\u71df\u904b\u7ba1\u7406\u7b49\u9762\u5411\uff0c\u9032\u884c\u5168\u9762\u63d0\u5347\u4fee\u5fa9\u53ca\u518d\u5229\u7528\u4f5c\u696d\uff0c\u4ffe\u4f7f\u672c\u9928\u65bc\u91cd\u65b0\u958b\u9928\u5f8c\uff0c\u63d0\u5347\u6574\u9ad4\u670d\u52d9\u54c1\u8cea\u53ca\u71df\u904b\u6548\u80fd\u3002\u300c\u5c0f\u5225 \uff0d \u70ba\u6211\u5011\u66f4\u7f8e\u7684\u518d\u898b\u300d\u672c\u9928\u9589\u9928\u6574\u5efa\u671f\u9593\uff0c\u82e5\u60a8\u8207\u89aa\u670b\u597d\u53cb\u60f3\u8981\u4f86\u672c\u9928\u53c3\u89c0\uff0c\u6211\u5011\u5c07\u7121\u6cd5\u63d0\u4f9b\u670d\u52d9\uff0c\u5411\u60a8\u81f4\u4e0a\u8aa0\u646f\u7684\u81f4\u6b49\u3002"
-    }
+    "visit": {}
 }

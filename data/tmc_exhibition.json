@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 14,
-    "last_update": "2023-12-14T08:14:21.326099+00:00",
+    "counts": 8,
+    "last_update": "2023-12-14T16:12:17.605741+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -24,15 +24,6 @@
             "source_url": "https://tmc.taipei/blog/show/secret-base-for-music-players/",
             "UUID": "646128baac3552b98a2ca535ea6a3179",
             "figure": "https://i.imgur.com/WVcE12M.webp"
-        },
-        {
-            "systematics": "tmc",
-            "title": "\u3010\u6d3b\u52d5\u53d6\u6d88\u3011Daniel Caesar Presents \u201cSuperpowers World Tour \u2013 Leg 3: Australia + Asia + Hawaii\u201d",
-            "date": "2023.12.14(\u56db)",
-            "address": "\u8868\u6f14\u5ef3",
-            "source_url": "https://tmc.taipei/blog/show/daniel-caesar-presents-superpowers-world-tour-leg-3-australia-asia-hawaii/",
-            "UUID": "17ca1dfa422e58e18d2a501c0bcab23c",
-            "figure": "https://tmc.taipei/wp-content/uploads/2023/10/Daniel-Caesar1360x680.jpg"
         },
         {
             "systematics": "tmc",
@@ -87,51 +78,6 @@
             "source_url": "https://tmc.taipei/blog/show/papun-band-strong-young-man-bombingtmc/",
             "UUID": "17ca663fbb305eb8acf245a87eec6dfe",
             "figure": "https://tmc.taipei/wp-content/uploads/2023/11/17_PAPUN-BAND-W1360x-H680.jpg"
-        },
-        {
-            "systematics": "tmc",
-            "title": "2024 FTISLAND LIVE \u2018HEY DAY\u2019 IN TAIPEI",
-            "date": "2024.02.18(\u65e5)",
-            "address": "\u8868\u6f14\u5ef3",
-            "source_url": "https://tmc.taipei/blog/show/2024-ftisland-live-hey-day-in-taipei/",
-            "UUID": "ef5e59941be85583b56ee1e2630528d8",
-            "figure": "https://tmc.taipei/wp-content/uploads/2023/11/ftisland-tmc-banner.jpg"
-        },
-        {
-            "systematics": "tmc",
-            "title": "deca joins 2024\u9996\u6f14 \u5929\u5802\u8207\u6ce5\u571f / Heaven & Dirt",
-            "date": "2024.02.23(\u4e94) - 2024.02.24(\u516d)",
-            "address": "\u8868\u6f14\u5ef3",
-            "source_url": "https://tmc.taipei/blog/show/deca-joins-2024-premiere-heaven-dirt/",
-            "UUID": "87a270c76e5c562daa53910436b1457e",
-            "figure": "https://tmc.taipei/wp-content/uploads/2023/11/\u5168\u65e5\u671f_1200x630.jpg.jpg-\u7684\u526f\u672c.jpg"
-        },
-        {
-            "systematics": "tmc",
-            "title": "2024 \u90ed\u975c\u300c\u5582 \u4f60\u5728\u5e79\u561b\u300d\u6f14\u5531\u6703 \u53f0\u5317\u5834",
-            "date": "2024.03.02(\u516d)",
-            "address": "\u8868\u6f14\u5ef3",
-            "source_url": "https://tmc.taipei/blog/show/2024-claire-kuo%e3%80%8chey-what-are-you-doing%e3%80%8dconcert-taipiei/",
-            "UUID": "6e4c98d525325bc193c1df54aa6c950c",
-            "figure": "https://tmc.taipei/wp-content/uploads/2023/11/\u5317\u6d41_\u90ed\u975c2024\u6f14\u5531\u6703_\u5b98\u7db2\u5c55\u6f14\u6d3b\u52d5_1360x680.jpg"
-        },
-        {
-            "systematics": "tmc",
-            "title": "\u85cd\u4eba\u6a02\u57182024\u4e16\u754c\u5de1\u8ff4 \u5168\u65b0\u9032\u5316",
-            "date": "2024.03.08(\u4e94) - 2024.03.10(\u65e5)",
-            "address": "\u8868\u6f14\u5ef3",
-            "source_url": "https://tmc.taipei/blog/show/blue-man-group-2024-bluevolution-world-tour/",
-            "UUID": "3cbcf52df2bd5259999a1003adb8eaf4",
-            "figure": "https://tmc.taipei/wp-content/uploads/2023/11/\u5317\u6d41BN_\u85cd\u4eba\u6a02\u57182024\u4e16\u754c\u5de1\u8ff4\u5168\u9762\u9032\u5316_\u5b98\u7db2\u5c55\u6f14\u6d3b\u52d5_1360x680.jpg"
-        },
-        {
-            "systematics": "tmc",
-            "title": "\u7d93\u5178\u6cd5\u6587\u97f3\u6a02\u5287\u300a\u5510\u749c\u300b",
-            "date": "2024.05.22(\u4e09) - 2024.05.26(\u65e5)",
-            "address": "\u8868\u6f14\u5ef3",
-            "source_url": "https://tmc.taipei/blog/show/classic-french-musical-don-juan/",
-            "UUID": "0b54ee52e60d57c28c6256502be8370e",
-            "figure": "https://tmc.taipei/wp-content/uploads/2023/12/DH\uff3f1360x680.jpg"
         }
     ],
     "visit": {}
