@@ -38,7 +38,7 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
     NTSEC = (
         "國立臺灣科學教育館",
         "ntsec",
-        "https://www.ntsec.gov.tw/User/Exhibitions.aspx?a=44",
+        "https://www.ntsec.gov.tw/article/list.aspx?a=25",
     )
     TFAM = (
         "臺北市立美術館",
