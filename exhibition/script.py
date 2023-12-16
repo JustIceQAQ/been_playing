@@ -20,7 +20,7 @@ from exhibition.tickets_udnfunlife.script import TicketsUdnFunLifeRunner
 from exhibition.tmc.script import TMCRunner
 from exhibition.twtc.script import TWTCRunner
 
-# from exhibition.klook.script import KLookRunner
+from exhibition.klook.script import KLookRunner
 PY_CLASS_SCRIPT = {
     CKSMHRunner,
     HuaShan1914Runner,
@@ -40,7 +40,7 @@ PY_CLASS_SCRIPT = {
     TWTCRunner,
     TicketsBooksRunner,
     TicketsUdnFunLifeRunner,
-    # KLookRunner,
+    KLookRunner,
     KKTixRunner,
     IBonRunner,
     KKDayRunner,

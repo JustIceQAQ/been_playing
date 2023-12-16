@@ -51,7 +51,7 @@ class KLookRunner(RunnerInit):
         return self.get_pagination_page(dataset_list, tasks)
 
     def get_pagination_page(
-        self, dataset_list: List, tasks: List[ScraperAsyncApiCrawler]
+            self, dataset_list: List, tasks: List[ScraperAsyncApiCrawler]
     ):
         while True:
             runtime_tasks = [job.get_status() for job in tasks]
