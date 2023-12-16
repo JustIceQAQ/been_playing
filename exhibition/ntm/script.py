@@ -1,8 +1,9 @@
 from itertools import chain, product
 from pathlib import Path
+from typing import List
 
 from exhibition import ExhibitionEnum
-from exhibition.ntm.parse import NTMParse
+from exhibition.ntm.parse import NTMParse, PathQuery
 from helper.clean_helper import RequestsClean
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
 from helper.runner_helper import RunnerInit
@@ -13,7 +14,7 @@ class NTMRunner(RunnerInit):
 
     root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_domain = "https://www.ntm.gov.tw"
-    urls_format = "{}/exhibitionlist_{}.html?Type={}"
+    urls_format = "{target_domain}/News_actives.aspx?n={n}&_CSN={_CSN}"
     target_visit_url = "https://www.ntm.gov.tw/content_158.html"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "ntm_exhibition.json")
@@ -23,21 +24,13 @@ class NTMRunner(RunnerInit):
     use_parse = NTMParse
 
     def get_response(self):
-        product_data = product(
-            (
-                "179",
-                "182",
-                "185",
-                "383",
-                "380",
-            ),
-            (
-                "PE1",
-                "SP1",
-            ),
-        )
+        path_query_data: List[PathQuery] = [
+            PathQuery(n=5472, _CSN=2446),
+            PathQuery(n=5472, _CSN=4479),
+        ]
         target_urls = list(
-            self.urls_format.format(self.target_domain, *item) for item in product_data
+            self.urls_format.format(target_domain=self.target_domain, n=item.n, _CSN=item._CSN)
+            for item in path_query_data
         )
 
         requests_workers = list(
@@ -51,7 +44,8 @@ class NTMRunner(RunnerInit):
     def get_items(self, responses):
         return list(
             chain.from_iterable(
-                response.select("#exhibition-list > dl") for response in responses
+                response.select_one("#CCMS_Content").select("ul[data-child] > li[data-index] > div.area-essay")
+                for response in responses
             )
         )
 

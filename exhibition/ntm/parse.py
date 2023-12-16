@@ -1,6 +1,14 @@
+import dataclasses
+
 import bs4
 
 from helper.parse_helper import ParseInit
+
+
+@dataclasses.dataclass
+class PathQuery:
+    n: int
+    _CSN: int
 
 
 class NTMParse(ParseInit):
@@ -8,21 +16,20 @@ class NTMParse(ParseInit):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str:
-        return self.item.select_one("dd > h2 > a").get_text()
+        return self.item.select_one("div.caption > span").get_text()
 
     def get_date(self, *args, **kwargs) -> str:
-        return "".join(
-            [
-                label.get_text().strip()
-                for label in self.item.select("dd > ul > li:nth-child(1) > label")
-            ]
-        ).replace("/", "-")
+        if (result := self.safe_get_text(self.item.select_one("p.activity-time"))) is not None:
+            return result.replace("日期：", "").strip()
+        return ""
 
     def get_address(self, *args, **kwargs) -> str:
-        return self.item.select_one("dd > ul > li:nth-child(2)").get_text()
+        if (result := self.safe_get_text(self.item.select_one("p.activity-season"))) is not None:
+            return result.replace("地點：", "").strip()
+        return ""
 
     def get_figure(self, *args, **kwargs) -> str:
-        return self.item.select_one("dt > a")["href"]
+        return self.item.select_one("img")["src"]
 
     def get_source_url(self, *args, **kwargs) -> str:
-        return self.item.select_one("dd > h2 > a")["href"]
+        return self.item.select_one("a")["href"]
