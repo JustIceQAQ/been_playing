@@ -1,6 +1,7 @@
 import inspect
 from abc import ABCMeta, abstractmethod
 from typing import Any, Dict
+import bs4
 
 
 class ParseInit(metaclass=ABCMeta):
@@ -23,6 +24,13 @@ class ParseInit(metaclass=ABCMeta):
     @abstractmethod
     def get_source_url(self, *args, **kwargs) -> str:
         raise NotImplementedError
+
+    def safe_get_text(self, obj: Any):
+        if obj is None:
+            return None
+        if isinstance(obj, bs4.element.Tag):
+            return obj.get_text()
+        return obj
 
     def parsed(self, *args, **kwargs) -> Dict[str, Any]:
         methods = [
