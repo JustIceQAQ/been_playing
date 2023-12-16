@@ -18,9 +18,11 @@ class TMCParse(ParseInit):
         ).get_text()
 
     def get_address(self, *args, **kwargs) -> str:
-        return self.item.find(
-            "p", {"class": "m-event-card__box-bottom-location"}
-        ).get_text()
+        return self.safe_get_text(
+            self.item.find(
+                "p", {"class": "m-event-card__box-bottom-location"}
+            )
+        )
 
     def get_figure(self, *args, **kwargs) -> str:
         return self.item.find("div", {"class": "m-event-card__img"})["data-bg"]
