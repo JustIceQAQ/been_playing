@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 68,
-    "last_update": "2023-12-16T17:13:44.273635+00:00",
+    "counts": 69,
+    "last_update": "2023-12-17T00:55:23.476452+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -405,6 +405,15 @@
         },
         {
             "systematics": "klook",
+            "title": "2023\u63d2\u756bIP\u5609\u5e74\u83ef",
+            "date": "12\u670817\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/activity/99836-illustrator-event-taipei/",
+            "UUID": "582c65ea12175049a8fd28d344ace246",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
             "title": "2023\u73a9\u8f49\u6587\u5177\u66a8\u624b\u4f5c\u5275\u610f\u5c55",
             "date": "",
             "address": "-",
@@ -437,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/99108-meditating-algorithm-immersive-life-works-paul-chiang/",
             "UUID": "472e912a9b5c5053b7d8e10b443ad472",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/KL-326x460_j5n7dg.jpg"
         },
         {
             "systematics": "klook",
@@ -518,7 +527,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101020309-2023-bts-exhibition-taipei/",
             "UUID": "e1d86c4773f154b690f52a491bff8e9e",
-            "figure": "https://res.klook.com/image/upload/x_0,y_9,w_1450,h_2030,c_crop/w_360,q_85/v1697014521/events_admin/jetxpo4y8bmwjdf74yrm.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -532,7 +541,7 @@
         {
             "systematics": "klook",
             "title": "THE \u54c6\u5566A\u5922\u5c55 \u53f0\u5317 2023",
-            "date": "2023\u5e7412\u670816\u65e5(\u9031\u516d) - 2024\u5e744\u67087\u65e5(\u9031\u65e5)",
+            "date": "2023\u5e7412\u670817\u65e5(\u9031\u65e5) - 2024\u5e744\u67087\u65e5(\u9031\u65e5)",
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/96105-the-doraemon-taipei-2023/",
             "UUID": "2525257a1bf85e8c9358b3ed5509ba06",
@@ -568,7 +577,7 @@
         {
             "systematics": "klook",
             "title": "WAKING WONDERLAND \u518d\u904a\u4ed9\u5883_\u6211\u963f\u5b24\u662f\u611b\u9e97\u7d72",
-            "date": "12\u670816\u65e5(\u9031\u516d) - 12\u670831\u65e5(\u9031\u65e5)",
+            "date": "12\u670817\u65e5(\u9031\u65e5) - 12\u670831\u65e5(\u9031\u65e5)",
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/92569-waking-wonderland-taipei/",
             "UUID": "09ac1856f46f551b9c3f0809d722852a",
@@ -595,7 +604,7 @@
         {
             "systematics": "klook",
             "title": "\u5fe0\u6cf0\u7f8e\u8853\u9928\u3010\u672a\u4f86\u7684\u751f\u547d\uff0c\u672a\u4f86\u7684\u4f60\u2500\u6578\u4f4d\u3001\u6a5f\u5668\u8207\u8cfd\u535a\u683c\u3011",
-            "date": "2023\u5e7412\u670816\u65e5(\u9031\u516d) - 2024\u5e741\u670828\u65e5(\u9031\u65e5)",
+            "date": "2023\u5e7412\u670817\u65e5(\u9031\u65e5) - 2024\u5e741\u670828\u65e5(\u9031\u65e5)",
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/77387-taipei-zhongtai-art-museum-perception-scene-architecture-art-crossover-exhibition/",
             "UUID": "bab1c30c01bc54f5915e361b55d6ad4a",
@@ -613,7 +622,7 @@
         {
             "systematics": "klook",
             "title": "\u5531 \u6211\u5011\u7684\u6b4c \u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55 - \u9580\u7968",
-            "date": "12\u670816\u65e5(\u9031\u516d) - 12\u670830\u65e5(\u9031\u516d)",
+            "date": "12\u670817\u65e5(\u9031\u65e5) - 12\u670830\u65e5(\u9031\u516d)",
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/activity/70429-music-island-stories-pop-music-in-taiwan-taipei/",
             "UUID": "dde6739eefe25fe9aae6270e758d7acd",
