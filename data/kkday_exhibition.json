@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 39,
-    "last_update": "2023-12-20T16:14:06.708304+00:00",
+    "last_update": "2023-12-21T00:50:31.010170+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -90,15 +90,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u9650\u664276\u6298\u3011\u53f0\u5317\u5c55\u89bd|\u5947\u5e7b\u52d5\u7269\u68ee\u6797 \u6a0b\u53e3\u88d5\u5b50\u5c55\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/152763",
-            "UUID": "65d95ac9771555a3832f3b13bb36e871",
-            "figure": "https://i.imgur.com/THNfHkg.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u5531 \u6211\u5011\u7684\u6b4c \u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55 MUSIC, ISLAND, STORIES:POP MUSIC IN TAIWAN \u9580\u7968",
             "date": "",
             "address": "",
@@ -108,12 +99,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u65b0\u5317\u516b\u91cc | \u5341\u4e09\u884c\u535a\u7269\u9928\u9580\u7968",
+            "title": "\u3010\u9650\u664276\u6298\u3011\u53f0\u5317\u5c55\u89bd|\u5947\u5e7b\u52d5\u7269\u68ee\u6797 \u6a0b\u53e3\u88d5\u5b50\u5c55\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/128289",
-            "UUID": "39790675a68053bdb7a6b732f7a8cff8",
-            "figure": "https://i.imgur.com/OiqItVw.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/152763",
+            "UUID": "65d95ac9771555a3832f3b13bb36e871",
+            "figure": "https://i.imgur.com/THNfHkg.webp"
         },
         {
             "systematics": "KKDay",
@@ -123,6 +114,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/142186-limited-time-22-off-taipei-exhibition-rescue-little-hero-boli-interactive-special-exhibition-tickets-taiwan",
             "UUID": "4c4c338e4d6d504e8dd4f728e28ca382",
             "figure": "https://i.imgur.com/05sRSVb.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u65b0\u5317\u516b\u91cc | \u5341\u4e09\u884c\u535a\u7269\u9928\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/128289",
+            "UUID": "39790675a68053bdb7a6b732f7a8cff8",
+            "figure": "https://i.imgur.com/OiqItVw.webp"
         },
         {
             "systematics": "KKDay",
@@ -243,21 +243,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u52a0\u8cfc\u9ad8\u9435\u512a\u60e0\u96fb\u5b50\u8eca\u7968|\u53f0\u7063\u53f0\u5317|About LOVE \u807d\u30fb\u8aaa\u611b\u60c5\u5c55\u9580\u7968|\u53f0\u5317\u7ad9 >> \u8acb\u81f3\u9ad8\u9435\u806f\u7968\u5373\u6642\u8a02\u4f4d\u65b0\u7cfb\u7d71\u8cfc\u8cb7\ud83d\udc47",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/139333",
-            "UUID": "5e2ab281dfa25bd0929fd4a7dc07668e",
-            "figure": "https://i.imgur.com/UQSvUmN.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011CWT-T30\u300a\u53f0\u4e2d\u5834\u300b\u53f0\u7063\u540c\u4eba\u8a8c\u8ca9\u552e\u6703\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/150500",
             "UUID": "22977a1fa2a654cdbefd72a28558417f",
             "figure": "https://i.imgur.com/g060Qoe.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u52a0\u8cfc\u9ad8\u9435\u512a\u60e0\u96fb\u5b50\u8eca\u7968|\u53f0\u7063\u53f0\u5317|About LOVE \u807d\u30fb\u8aaa\u611b\u60c5\u5c55\u9580\u7968|\u53f0\u5317\u7ad9 >> \u8acb\u81f3\u9ad8\u9435\u806f\u7968\u5373\u6642\u8a02\u4f4d\u65b0\u7cfb\u7d71\u8cfc\u8cb7\ud83d\udc47",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/139333",
+            "UUID": "5e2ab281dfa25bd0929fd4a7dc07668e",
+            "figure": "https://i.imgur.com/UQSvUmN.webp"
         },
         {
             "systematics": "KKDay",
