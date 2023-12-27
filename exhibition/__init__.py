@@ -95,6 +95,11 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "ncpi",
         "https://ncpiexhibition.ntmofa.gov.tw/tw/Exhibition/ListCur",
     )
+    NTCArtMuseum = (
+        "新北市美術館",
+        "ntc_art_museum",
+        "https://ntcart.museum/exhibition",
+    )
 
     OpenTix = (
         "OPENTIX兩廳院生活文化",

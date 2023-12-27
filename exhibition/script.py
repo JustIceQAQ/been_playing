@@ -10,6 +10,7 @@ from exhibition.mwr.script import MWRRunner
 from exhibition.ncpi.script import NCPIRunner
 from exhibition.nmh.script import NMHRunner
 from exhibition.npm.script import NPMRunner
+from exhibition.ntc_art_museum.script import NTCArtMuseumRunner
 from exhibition.ntm.script import NTMRunner
 from exhibition.ntsec.script import NTSECRunner
 from exhibition.opentix.script import OpenTixRunner
@@ -21,6 +22,7 @@ from exhibition.tmc.script import TMCRunner
 from exhibition.twtc.script import TWTCRunner
 
 from exhibition.klook.script import KLookRunner
+
 PY_CLASS_SCRIPT = {
     CKSMHRunner,
     HuaShan1914Runner,
@@ -38,6 +40,7 @@ PY_CLASS_SCRIPT = {
     TFAMRunner,
     TMCRunner,
     TWTCRunner,
+    NTCArtMuseumRunner,
     TicketsBooksRunner,
     TicketsUdnFunLifeRunner,
     KLookRunner,
