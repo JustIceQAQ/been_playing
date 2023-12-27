@@ -1,7 +1,7 @@
 import dataclasses
 import time
 from enum import Enum
-from typing import Any
+from typing import Any, Optional
 
 import requests
 
@@ -32,7 +32,7 @@ class ScraperAsyncApiCrawler(CrawlerInit):
         self.job_status_url = None
         self.job_status = False
 
-        self.runtime_status = False
+        self.runtime_status: Optional[bool] = False
         self.runtime_response = None
 
     class JobStatus(str, Enum):
@@ -41,7 +41,7 @@ class ScraperAsyncApiCrawler(CrawlerInit):
 
     @dataclasses.dataclass
     class JobTask:
-        status: bool
+        status: Optional[bool]
         response: Any
 
     def __set_api_key(self, api_key):
@@ -67,13 +67,17 @@ class ScraperAsyncApiCrawler(CrawlerInit):
         return self
 
     def get_status(self) -> JobTask:
-        if not self.runtime_status:
-            job_response = self.rs.get(self.job_status_url).json()
-            self.job_status = job_response.get("status")
+        if self.runtime_status is False:
+            job_response = self.rs.get(self.job_status_url)
+            if not job_response.ok:
+                return self.JobTask(status=None, response={})
+
+            job_result = job_response.json()
+            self.job_status = job_result.get("status")
 
             if self.job_status == self.JobStatus.Finished:
                 self.runtime_status = True
-                self.runtime_response = job_response.get("response").get("body")
+                self.runtime_response = job_result.get("response").get("body")
 
         return self.JobTask(status=self.runtime_status, response=self.runtime_response)
 
@@ -84,6 +88,9 @@ class ScraperAsyncApiCrawler(CrawlerInit):
                 runtime_tasks = self.get_status()
                 if runtime_tasks.status:
                     runtime_return = runtime_tasks.response
+                    break
+                elif runtime_tasks.status is None:
+                    runtime_return = {}
                     break
                 else:
                     runtime_flag += 1
