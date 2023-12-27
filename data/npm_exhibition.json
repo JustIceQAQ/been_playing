@@ -4,8 +4,8 @@
         "code_name": "npm",
         "external_link": "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1"
     },
-    "counts": 21,
-    "last_update": "2023-12-16T16:12:42.129165+00:00",
+    "counts": 19,
+    "last_update": "2023-12-27T16:13:45.979077+00:00",
     "data": [
         {
             "systematics": "npm",
@@ -14,7 +14,7 @@
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 304",
             "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013529&l=1&type=1&cat=",
             "UUID": "2097e276ace857679a5420d6c17d126c",
-            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013529/34055852.jpg&w=720&h=500"
+            "figure": "https://i.imgur.com/VeANlYA.webp"
         },
         {
             "systematics": "npm",
@@ -23,7 +23,7 @@
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 105,107",
             "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013505&l=1&type=1&cat=",
             "UUID": "c4215a2121c25aacb4705243b4aca4fb",
-            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013505/34055811.jpg&w=720&h=500"
+            "figure": "https://i.imgur.com/Z2Ktjpe.webp"
         },
         {
             "systematics": "npm",
@@ -32,7 +32,7 @@
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 103",
             "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013504&l=1&type=1&cat=",
             "UUID": "16059630b9285c8cb51e6614d0bf2ba7",
-            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013504/34055809.jpg&w=720&h=500"
+            "figure": "https://i.imgur.com/rOFHmEE.webp"
         },
         {
             "systematics": "npm",
@@ -42,24 +42,6 @@
             "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013454&l=1&type=1&cat=",
             "UUID": "7b7dd7efe5ac522cb467eaa11d746455",
             "figure": "https://i.imgur.com/fPlrnG8.webp"
-        },
-        {
-            "systematics": "npm",
-            "title": "\u7b46\u6b4c\u58a8\u821e\u2014\u6545\u5bae\u7e6a\u756b\u5c0e\u8cde III",
-            "date": "2023-10-06~2023-12-24",
-            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 210,212",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013453&l=1&type=1&cat=",
-            "UUID": "5e38d80e76af508099eb3a7133e8becd",
-            "figure": "https://i.imgur.com/3bzmXfq.webp"
-        },
-        {
-            "systematics": "npm",
-            "title": "\u570b\u5bf6\u805a\u7126 \u2163",
-            "date": "2023-10-06~2023-12-24",
-            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 208",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013458&l=1&type=1&cat=",
-            "UUID": "41ae2a5914d35adab3639ba4a088ef4a",
-            "figure": "https://i.imgur.com/ljeMZRd.webp"
         },
         {
             "systematics": "npm",
@@ -82,7 +64,7 @@
         {
             "systematics": "npm",
             "title": "\u53e4\u756b\u52d5\u6f2b\u2014\u660e\u4ec7\u82f1\u6f22\u5bae\u6625\u66c9",
-            "date": "2023-09-26~2023-12-24",
+            "date": "2023-09-26~2024-03-24",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 102",
             "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013459&l=1&type=1&cat=",
             "UUID": "3f31823d04e85b0a9006b6941187e8ef",
@@ -100,7 +82,7 @@
         {
             "systematics": "npm",
             "title": "\u98a8\u683c\u6545\u4e8b\u2014\u743a\u746f\u5f69\u74f7\u7279\u5c55",
-            "date": "2022-01-13~2023-12-31",
+            "date": "2022-01-13~2024-04-14",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 203,207",
             "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04012959&l=1&type=1&cat=",
             "UUID": "c61cd14fd3ad5e8287321316894be3bf",
@@ -198,6 +180,6 @@
         }
     ],
     "visit": {
-        "opening": "\u9031\u4e8c\u81f3\u9031\u65e5\uff1a09:00~17:00 (16:30\u505c\u6b62\u552e\u7968\u53ca\u7968\u5238\u514c\u63db)\n\uff5c\u9031\u4e00\u4f11\u9928\n\uff5c\u914d\u5408\u9023\u7e8c\u5047\u65e5\uff0c113\u5e74\u5ea6(2024)\u9031\u4e00\u958b\u9928\u65e5 1/1\u30012/12\u30016/10\u30019/16\u3002"
+        "opening": "\u9031\u4e8c\u81f3\u9031\u65e5\uff1a09:00~17:00 (16:30\u505c\u6b62\u552e\u7968\u53ca\u7968\u5238\u514c\u63db)\n\uff5c\u9031\u4e00\u4f11\u9928\n\uff5c\u914d\u5408\u9023\u7e8c\u5047\u65e5\uff0c113\u5e74\u5ea6(2024)\u9031\u4e00\u958b\u9928\u65e5 1/1\u30012/12\u30013/11\u30014/1\u30015/20\u30016/10\u30016/24\u30017/8\u30018/5\u30019/2\u30019/9\u30019/16\u300110/21\u300111/11\u300112/16\u3002"
     }
 }

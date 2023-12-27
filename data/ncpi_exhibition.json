@@ -4,9 +4,18 @@
         "code_name": "ncpi",
         "external_link": "https://ncpiexhibition.ntmofa.gov.tw/tw/Exhibition/ListCur"
     },
-    "counts": 2,
-    "last_update": "2023-12-16T16:12:31.531559+00:00",
+    "counts": 3,
+    "last_update": "2023-12-27T16:14:03.218552+00:00",
     "data": [
+        {
+            "systematics": "ncpi",
+            "title": "\u67e5\u770b \u6620\u614b\uff1a112\u5e74\u5168\u570b\u7f8e\u8853\u5c55\u651d\u5f71\u985e",
+            "date": "2023.12.23 - 2024.03.31",
+            "address": "\u81fa\u5317 \uff0f\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3 301,302,303 \u5c55\u89bd\u5ba4",
+            "source_url": "https://ncpiexhibition.ntmofa.gov.tw//tw/Exhibition/Detail/23120117310272747",
+            "UUID": "b28e655314e0510e8979e7854fbae18b",
+            "figure": "https://i.imgur.com/EywLxcW.webp"
+        },
         {
             "systematics": "ncpi",
             "title": "\u67e5\u770b \u66fe\u5728\u7684\u5f62\u8de1\u2014\u674e\u608c\u6b3d\u3001\u90b1\u5fb7\u96f2\u651d\u5f71\u6350\u8d08\u5c55",
@@ -14,7 +23,7 @@
             "address": "\u81fa\u5317\uff0f\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3 201 ~ 203\u5c55\u89bd\u5ba4",
             "source_url": "https://ncpiexhibition.ntmofa.gov.tw//tw/Exhibition/Detail/23113014074163268",
             "UUID": "e34d6ad9258555cd94f0cb672262142b",
-            "figure": "https://NCPIExhibition.ntmofa.gov.tw/WebUPD/1Exhibition/\u651d\u5f71\u4e2d\u5fc3_\u5c55\u89bd_\u7576\u671f\u5c55\u89bd1516x1012px_23113014074113156.jpg"
+            "figure": "https://i.imgur.com/GT2iWHk.webp"
         },
         {
             "systematics": "ncpi",
