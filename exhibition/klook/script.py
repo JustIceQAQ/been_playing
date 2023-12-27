@@ -100,3 +100,5 @@ class KLookRunner(RunnerInit):
                 systematics=self.target_systematics, **clean_data
             )
             yield exhibition
+if __name__ == "__main__":
+    KLookRunner().run(use_pickled=False)
