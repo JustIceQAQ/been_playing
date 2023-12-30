@@ -12,7 +12,7 @@ class NMHRunner(RunnerInit):
     """國立歷史博物館"""
 
     root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
-    target_url = "https://www.nmh.gov.tw/activitysoonlist_66.html"
+    target_url = "https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "nmh_exhibition.json")
     target_systematics = ExhibitionEnum.NMH
@@ -29,7 +29,7 @@ class NMHRunner(RunnerInit):
         return requests_worker.fetch(self.use_method, headers=headers)
 
     def get_items(self, response):
-        return response.select("ul.lists > li.item")
+        return response.select("div.area-figure.page-figure")
 
     def get_parsed(self, items):
         for item in items:
