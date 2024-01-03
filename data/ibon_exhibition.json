@@ -4,8 +4,8 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 68,
-    "last_update": "2024-01-02T08:13:54.409370+00:00",
+    "counts": 66,
+    "last_update": "2024-01-03T00:50:12.272158+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -478,7 +478,7 @@
         {
             "systematics": "ibon",
             "title": "\u53f0\u5317\uff0e\u570b\u7acb\u6545\u5bae\u535a\u7269\u9662\u5317\u9662",
-            "date": "2023-03-18 ~ 2023-12-31",
+            "date": "2023-03-18 ~ 2024-12-31",
             "address": "\u570b\u7acb\u6545\u5bae\u535a\u7269\u9662",
             "source_url": "https://tour.ibon.com.tw/event/62fdf870c3625e52ffb68ef6",
             "UUID": "1dcf3ebf07455fe29e9b346ceae84b8c",
@@ -567,24 +567,6 @@
         },
         {
             "systematics": "ibon",
-            "title": "\u3010\u4e03\u6d77\u5bd3\u6240\u3011\u7d93\u570b\u552f\u4e00\u6545\u5c45\uff0c\u4e00\u8d9f\u7a7f\u8d8a\u4eba\u6587\u6b77\u53f2\u7684\u5c0f\u65c5\u884c",
-            "date": "2022-05-01 ~ 2023-12-31",
-            "address": "",
-            "source_url": "https://tour.ibon.com.tw/event/62552e4aa3bff6685d8e10e9",
-            "UUID": "3159d47d8d915d679927dafcc378af0b",
-            "figure": "https://i.imgur.com/788mum0.webp"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u89e3\u958b\u4e16\u4ee3\u7684\u98a8\u83ef\uff0d\u5713\u5c71\u6700\u9577\u795e\u79d8\u6ed1\u68af\u8207\u6c34\u795e\u793e",
-            "date": "2022-04-06 ~ 2023-12-31",
-            "address": "\u5713\u5c71\u5927\u98ef\u5e97",
-            "source_url": "https://tour.ibon.com.tw/event/624ceff919860903c7c5291b",
-            "UUID": "4f8fd33413755766a986eaa80c2182d4",
-            "figure": "https://i.imgur.com/IskVyo4.webp"
-        },
-        {
-            "systematics": "ibon",
             "title": "\u3010\u5c4f\u6771\u3011\u570b\u7acb\u6d77\u6d0b\u751f\u7269\u535a\u7269\u9928",
             "date": "2021-09-29 ~ 2024-12-31",
             "address": "\u570b\u7acb\u6d77\u6d0b\u751f\u7269\u535a\u7269\u9928",
@@ -604,7 +586,7 @@
         {
             "systematics": "ibon",
             "title": "\u570b\u7acb\u79d1\u5b78\u5de5\u85dd\u535a\u7269\u9928",
-            "date": "2022-02-18 ~ 2023-12-31",
+            "date": "2022-02-18 ~ 2024-12-31",
             "address": "\u570b\u7acb\u79d1\u5b78\u5de5\u85dd\u535a\u7269\u9928",
             "source_url": "https://tour.ibon.com.tw/event/6130ba4df49a05007286dbf3",
             "UUID": "1e08575c80105e32b02e12adb4c8d88c",
