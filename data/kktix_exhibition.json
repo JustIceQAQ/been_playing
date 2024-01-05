@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 3,
-    "last_update": "2024-01-05T00:50:25.176748+00:00",
+    "counts": 11,
+    "last_update": "2024-01-05T08:17:36.223322+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -33,6 +33,78 @@
             "source_url": "https://taipeigameshow.kktix.cc/events/2024tgsonedaypass",
             "UUID": "c2cad4cfe7c858c4b7665b774aa7df85",
             "figure": "https://i.imgur.com/tPCRXSl.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u3010 2/1\uff08\u56db\uff09\u4e0a\u5348\u5834 / \u53d6\u8ca8\u6642\u9593\uff1a10:00-14:00\u3011NIJISANJI iPASS\u4e00\u5361\u901a\u5957\u5361<\u4e0b\u518a>\u2014\u20142024TiCA\u53f0\u5317\u570b\u969b\u52d5\u6f2b\u7bc0\u73fe\u5834\u73fe\u8ca8\u9810\u7d04",
+            "date": "2024/2/1(\u56db)",
+            "address": "",
+            "source_url": "https://capsuleleu.kktix.cc/events/nijiipass02011",
+            "UUID": "61a6ac16d8285e18b6a7959762576734",
+            "figure": "https://i.imgur.com/bHWaGoM.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u3010 2/1\uff08\u56db\uff09\u4e0b\u5348\u5834 / \u53d6\u8ca8\u6642\u9593\uff1a14:01-18:00\u3011NIJISANJI iPASS\u4e00\u5361\u901a\u5957\u5361<\u4e0b\u518a>\u2014\u20142024TiCA\u53f0\u5317\u570b\u969b\u52d5\u6f2b\u7bc0\u73fe\u5834\u73fe\u8ca8\u9810\u7d04",
+            "date": "2024/2/1(\u56db)",
+            "address": "",
+            "source_url": "https://capsuleleu.kktix.cc/events/nijiipass02012",
+            "UUID": "a4b3c808f5475a25adf7e4ab1a21b124",
+            "figure": "https://i.imgur.com/BCnHVY5.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u3010 2/2\uff08\u4e94\uff09\u4e0a\u5348\u5834 / \u53d6\u8ca8\u6642\u9593\uff1a10:00-14:00\u3011NIJISANJI iPASS\u4e00\u5361\u901a\u5957\u5361<\u4e0b\u518a>\u2014\u20142024TiCA\u53f0\u5317\u570b\u969b\u52d5\u6f2b\u7bc0\u73fe\u5834\u73fe\u8ca8\u9810\u7d04",
+            "date": "2024/2/2(\u4e94)",
+            "address": "",
+            "source_url": "https://capsuleleu.kktix.cc/events/nijiipass02021",
+            "UUID": "f53406720afe5cbeb4bed424451e69c0",
+            "figure": "https://i.imgur.com/j8VqcN7.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u3010 2/2\uff08\u4e94\uff09\u4e0b\u5348\u5834 / \u53d6\u8ca8\u6642\u9593\uff1a14:01-18:00\u3011NIJISANJI iPASS\u4e00\u5361\u901a\u5957\u5361<\u4e0b\u518a>\u2014\u20142024TiCA\u53f0\u5317\u570b\u969b\u52d5\u6f2b\u7bc0\u73fe\u5834\u73fe\u8ca8\u9810\u7d04",
+            "date": "2024/2/2(\u4e94)",
+            "address": "",
+            "source_url": "https://capsuleleu.kktix.cc/events/nijiipass02022",
+            "UUID": "7a9f3dbbfc7b529eb282498446280798",
+            "figure": "https://i.imgur.com/iFfY5xH.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u3010 2/3\uff08\u516d\uff09\u4e0a\u5348\u5834 / \u53d6\u8ca8\u6642\u9593\uff1a10:00-14:00\u3011NIJISANJI iPASS\u4e00\u5361\u901a\u5957\u5361<\u4e0b\u518a>\u2014\u20142024TiCA\u53f0\u5317\u570b\u969b\u52d5\u6f2b\u7bc0\u73fe\u5834\u73fe\u8ca8\u9810\u7d04",
+            "date": "2024/2/3(\u516d)",
+            "address": "",
+            "source_url": "https://capsuleleu.kktix.cc/events/nijiipass02031",
+            "UUID": "5dd695bbe52d5aeabd4669d119f20896",
+            "figure": "https://i.imgur.com/lALiExQ.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u3010 2/3\uff08\u516d\uff09\u4e0b\u5348\u5834 / \u53d6\u8ca8\u6642\u9593\uff1a14:01-18:00\u3011NIJISANJI iPASS\u4e00\u5361\u901a\u5957\u5361<\u4e0b\u518a>\u2014\u20142024TiCA\u53f0\u5317\u570b\u969b\u52d5\u6f2b\u7bc0\u73fe\u5834\u73fe\u8ca8\u9810\u7d04",
+            "date": "2024/2/3(\u516d)",
+            "address": "",
+            "source_url": "https://capsuleleu.kktix.cc/events/nijiipass02032",
+            "UUID": "345cac73fa265f858255284b8c888315",
+            "figure": "https://i.imgur.com/p8WfeCK.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u3010 2/4\uff08\u65e5\uff09\u4e0a\u5348\u5834 / \u53d6\u8ca8\u6642\u9593\uff1a10:00-14:00\u3011NIJISANJI iPASS\u4e00\u5361\u901a\u5957\u5361<\u4e0b\u518a>\u2014\u20142024TiCA\u53f0\u5317\u570b\u969b\u52d5\u6f2b\u7bc0\u73fe\u5834\u73fe\u8ca8\u9810\u7d04",
+            "date": "2024/2/4(\u65e5)",
+            "address": "",
+            "source_url": "https://capsuleleu.kktix.cc/events/nijiipass02041",
+            "UUID": "985d9bdab06d5e3ca203cd0a4851f4ea",
+            "figure": "https://i.imgur.com/WxMIYMt.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u3010 2/4\uff08\u65e5\uff09\u4e0b\u5348\u5834 / \u53d6\u8ca8\u6642\u9593\uff1a14:01-18:00\u3011NIJISANJI iPASS\u4e00\u5361\u901a\u5957\u5361<\u4e0b\u518a>\u2014\u20142024TiCA\u53f0\u5317\u570b\u969b\u52d5\u6f2b\u7bc0\u73fe\u5834\u73fe\u8ca8\u9810\u7d04",
+            "date": "2024/2/4(\u65e5)",
+            "address": "",
+            "source_url": "https://capsuleleu.kktix.cc/events/nijiipass02042",
+            "UUID": "bf636f4dedaa556ca45d97a61224e6ec",
+            "figure": "https://i.imgur.com/3o41WC1.webp"
         }
     ],
     "visit": {}
