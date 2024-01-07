@@ -4,18 +4,9 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 24,
-    "last_update": "2024-01-07T08:14:34.249731+00:00",
+    "counts": 23,
+    "last_update": "2024-01-07T16:14:06.340165+00:00",
     "data": [
-        {
-            "systematics": "twtc",
-            "title": "2024\u4e0a\u806f\u53f0\u5317\u5bf5\u7269\u7528\u54c1\u535a\u89bd\u6703",
-            "date": "01/04 ~ 01/07",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "http://www.top-link.com.tw",
-            "UUID": "08ecca6fe2d151488a2066c6a3f7225c",
-            "figure": ""
-        },
         {
             "systematics": "twtc",
             "title": "2024\u53f0\u5317\u6625\u590f\u978b\u5c55",
@@ -50,6 +41,15 @@
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "http://www.teca.org.tw",
             "UUID": "c36b63175f6054068389d2ff2f4acfa3",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c\u4e8c\u5341\u516d\u5c46\u53f0\u5317\u5167\u92b7\u5bb6\u5177\u66a8\u5bb6\u8a2d\u8a08\u7528\u54c1\u63a1\u8cfc\u7bc0",
+            "date": "01/19 ~ 01/22",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.top-link.com.tw",
+            "UUID": "08ecca6fe2d151488a2066c6a3f7225c",
             "figure": ""
         },
         {
