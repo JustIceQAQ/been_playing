@@ -4,18 +4,9 @@
         "code_name": "ntc_art_museum",
         "external_link": "https://ntcart.museum/exhibition"
     },
-    "counts": 3,
-    "last_update": "2024-01-08T00:53:00.768295+00:00",
+    "counts": 2,
+    "last_update": "2024-01-08T08:16:56.348608+00:00",
     "data": [
-        {
-            "systematics": "ntc_art_museum",
-            "title": "\u65b0\u7f8e\u9928\u9928\u6821\u8a08\u756b\u2014\u300c\u4e09\u89d2\u95dc\u4fc2\u300d",
-            "date": "2023-11-11 ~ 2023-12-29",
-            "address": "",
-            "source_url": "https://ntcart.museum/exhibition/H2309002",
-            "UUID": "de9260a1ebd65389a2db833b827e0249",
-            "figure": "https://i.imgur.com/FdWqypF.webp"
-        },
         {
             "systematics": "ntc_art_museum",
             "title": "Art Camping\uff1a\u51fa\u767c\uff01 \u6211\u5011\u548c\u85dd\u8853\u5728\u5927\u5730\u63a2\u96aa\uff01",
@@ -23,7 +14,7 @@
             "address": "",
             "source_url": "https://ntcart.museum/exhibition/H2310001",
             "UUID": "b150f8590a8e5aafb5b394b77c45f605",
-            "figure": "https://i.imgur.com/fTpNvrI.webp"
+            "figure": "https://i.imgur.com/3PEM6D5.webp"
         },
         {
             "systematics": "ntc_art_museum",
@@ -32,7 +23,7 @@
             "address": "",
             "source_url": "https://ntcart.museum/exhibition/H2310002",
             "UUID": "ba4fffd601ad5a0087361d00538637be",
-            "figure": "https://i.imgur.com/ID2nn0u.webp"
+            "figure": "https://i.imgur.com/OzJPTlG.webp"
         }
     ],
     "visit": {}
