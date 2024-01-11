@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 11,
-    "last_update": "2024-01-11T08:14:21.165592+00:00",
+    "counts": 13,
+    "last_update": "2024-01-11T16:14:58.276585+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -36,12 +36,30 @@
         },
         {
             "systematics": "tmc",
+            "title": "\u3010 \u773e\u5c71\u570d\u57ce \u3011\u90b5\u52f8\u660e2024\u5e74\u5ea6\u5c08\u5834",
+            "date": "2024.01.20(\u516d)",
+            "address": "\u7522\u696d\u5340",
+            "source_url": "https://tmc.taipei/blog/show/mountain-siege-quanming-shao/",
+            "UUID": "f1a62df75f5b53c78d4b9ab960c75ebd",
+            "figure": "https://i.imgur.com/1co739p.webp"
+        },
+        {
+            "systematics": "tmc",
             "title": "2024 Yiruma\u674e\u958f\u73c9\u81fb\u9078\u97f3\u6a02\u6703",
             "date": "2024.01.28(\u65e5)",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/2024-yirumas-selected-concert/",
             "UUID": "9e2c3cabd25559179b8ae0a709500256",
             "figure": "https://i.imgur.com/wT3ZMuh.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u6015\u80d6\u5718\u201c\u641e\u7838\u5317\u6d41\u201d\u6f14\u5531\u6703",
+            "date": "2024.02.03(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/papun-band-strong-young-man-bombingtmc/",
+            "UUID": "17ca663fbb305eb8acf245a87eec6dfe",
+            "figure": "https://i.imgur.com/4d841M6.webp"
         },
         {
             "systematics": "tmc",
