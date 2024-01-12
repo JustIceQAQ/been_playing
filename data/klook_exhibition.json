@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 63,
-    "last_update": "2024-01-12T00:52:25.192906+00:00",
+    "counts": 64,
+    "last_update": "2024-01-12T08:16:31.433286+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u7a4e\u5ddd\u756b\u5eca\u5e38\u614b\u5c55 - \u5875\u4e09 x \u5809\u6cc9 x \u5289\u4fe1\u7fa9 x \u5f35\u76ca\u6607 x \u9673\u5ef7\u5f70\u806f\u5c55",
+            "date": "1\u670811\u65e5(\u9031\u56db) - 2\u670829\u65e5(\u9031\u56db)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101022486-2024-in-river-gallery/",
+            "UUID": "d19850a5947f5c24bb09c580f0bc1312",
+            "figure": "https://i.imgur.com/X841Qao.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u53ef\u63a7\u8207\u4e0d\u53ef\u63a7\u4e4b\u9593 - \u694a\u4e16\u829d\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022315-2024-eastbeats-exhibition/",
             "UUID": "554c84d53c15547bbc6fbb1470a94319",
-            "figure": "https://i.imgur.com/0Ka1eyb.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "\u83ef\u5c71\u6587\u5275",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101021701-2024-sculpture-exhibition/",
             "UUID": "36514910c0e85c32ac41270d2ffe169f",
-            "figure": "-"
+            "figure": "https://i.imgur.com/fE3FNSQ.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101021502-2023-cogecha-exhibition/",
             "UUID": "2008cf1093ca5b0987b1d4c92123cea1",
-            "figure": "https://i.imgur.com/owEat9q.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101020459-2023-tiva-togetherness/",
             "UUID": "02d4b7e0436a5abb9f03ca0114b85f8e",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_0,y_28,w_3508,h_4911,c_crop/w_360,q_85/v1697609285/events_admin/xufozfscfllx6fyqhr9n.jpg"
         },
         {
             "systematics": "klook",
@@ -464,7 +473,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/98447-immersive-art-exhibition-immressionism/",
             "UUID": "bf5e925ba811586fb7797727223e1332",
-            "figure": "https://i.imgur.com/rtmxeLV.webp"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/klook_\u5c3a\u5bf8__\u5c55\u6f14\u9801\u9762\u6d3b\u52d5\u9996\u5716_1_uaqnie.jpg"
         },
         {
             "systematics": "klook",
@@ -518,7 +527,7 @@
             "address": "\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101018842-2023-taipei-biennial/",
             "UUID": "60065b5f2e1b597d9e7be4bf033c5829",
-            "figure": "https://i.imgur.com/LBmRxZc.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
