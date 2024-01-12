@@ -44,15 +44,16 @@ class MWRRunner(RunnerInit):
             yield exhibition
 
     def get_visit(self, *args, **kwargs):
-        requests_worker = self.instantiation(self.target_visit_url)
-        headers = (
-            self.use_header().get_header() if self.use_header is not None else None
-        )
-        response = requests_worker.fetch(self.use_method, headers=headers)
-        opening = response.select_one(
-            "#MainForm > div.editable_content.content.dev-xew-block > div:nth-child(1) > p:nth-child(4)"
-        )
-        return opening.get_text().replace("\u3000", "")
+        pass
+        # requests_worker = self.instantiation(self.target_visit_url)
+        # headers = (
+        #     self.use_header().get_header() if self.use_header is not None else None
+        # )
+        # response = requests_worker.fetch(self.use_method, headers=headers)
+        # opening = response.select_one(
+        #     "#MainForm > div.editable_content.content.dev-xew-block > div:nth-child(1) > p:nth-child(4)"
+        # )
+        # return opening.get_text().replace("\u3000", "")
 
 
 if __name__ == "__main__":
