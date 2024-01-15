@@ -5,7 +5,7 @@
         "external_link": "https://kktix.com/events?category_id=11"
     },
     "counts": 11,
-    "last_update": "2024-01-15T08:14:48.975670+00:00",
+    "last_update": "2024-01-15T16:14:02.005343+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -33,6 +33,15 @@
             "source_url": "https://taipeigameshow.kktix.cc/events/2024tgsonedaypass",
             "UUID": "c2cad4cfe7c858c4b7665b774aa7df85",
             "figure": "https://i.imgur.com/tPCRXSl.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "hololive production x CAPSULE Cheer UP \u806f\u540d\u4e3b\u984c\u5feb\u9583\u5e97 1/28 (\u65e5)",
+            "date": "2024/1/28(\u65e5)",
+            "address": "",
+            "source_url": "https://capsuleleu.kktix.cc/events/cu0128",
+            "UUID": "742906cd87525e338177ff752817163c",
+            "figure": "https://i.imgur.com/5LB0P5F.webp"
         },
         {
             "systematics": "KKTix",
@@ -96,15 +105,6 @@
             "source_url": "https://capsuleleu.kktix.cc/events/nijiipass02041",
             "UUID": "985d9bdab06d5e3ca203cd0a4851f4ea",
             "figure": "https://i.imgur.com/WxMIYMt.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "\u3010 2/4\uff08\u65e5\uff09\u4e0b\u5348\u5834 / \u53d6\u8ca8\u6642\u9593\uff1a14:01-18:00\u3011NIJISANJI iPASS\u4e00\u5361\u901a\u5957\u5361<\u4e0b\u518a>\u2014\u20142024TiCA\u53f0\u5317\u570b\u969b\u52d5\u6f2b\u7bc0\u73fe\u5834\u73fe\u8ca8\u9810\u7d04",
-            "date": "2024/2/4(\u65e5)",
-            "address": "",
-            "source_url": "https://capsuleleu.kktix.cc/events/nijiipass02042",
-            "UUID": "bf636f4dedaa556ca45d97a61224e6ec",
-            "figure": "https://i.imgur.com/3o41WC1.webp"
         }
     ],
     "visit": {}
