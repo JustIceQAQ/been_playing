@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 61,
-    "last_update": "2024-01-16T00:52:53.390446+00:00",
+    "counts": 62,
+    "last_update": "2024-01-16T08:17:47.406835+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "2024 Viva La Campo \u7b2c\u56db\u5c46\u570b\u969b\u9732\u71df\u5c55",
+            "date": "3\u670815\u65e5(\u9031\u4e94) - 3\u670817\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/activity/101102-viva-la-campo-camping-expo/",
+            "UUID": "f5e41239f32d5f719f88648a74e4c5ce",
+            "figure": "https://i.imgur.com/52x5WEv.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u5ca9\u77f3\u3001\u6708\u5149\u8207\u5c71\u82b1\u5c0f\u5f91 - \u6797\u9293\u5c45\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022347-2024-tica-festival/",
             "UUID": "14da1b665b44565a999844d04fd8f43d",
-            "figure": "https://i.imgur.com/gkqZnDc.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101021893-2024-got-riff-exhibition/",
             "UUID": "7077b8be079955e6b723428bf46774e3",
-            "figure": "-"
+            "figure": "https://i.imgur.com/E0Ujksq.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101021572-2023-the-fragment-exhibition/",
             "UUID": "92c70bd672475ac2819b7a2e3aa89a46",
-            "figure": "https://i.imgur.com/IGmhOHP.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101020667-2023-naked-flowers-exhibition/",
             "UUID": "e9f5f016b84758b1aa20f06fd2ac8eb3",
-            "figure": "-"
+            "figure": "https://i.imgur.com/kwKBRR9.webp"
         },
         {
             "systematics": "klook",
@@ -518,7 +527,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/85220-dining-in-the-dark-s3-surprise-lab/",
             "UUID": "f0d711edefe85a96b753f335e87e9a69",
-            "figure": "https://i.imgur.com/CVKBmd0.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",

@@ -4,8 +4,8 @@
         "code_name": "nmh",
         "external_link": "https://www.nmh.gov.tw/activitysoonlist_66.html"
     },
-    "counts": 7,
-    "last_update": "2024-01-16T00:51:30.981821+00:00",
+    "counts": 8,
+    "last_update": "2024-01-16T08:15:02.643242+00:00",
     "data": [
         {
             "systematics": "nmh",
@@ -69,6 +69,15 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NMH/Detail.init.ctr?actId=30001",
             "UUID": "50bbf118d42b553d8a69bbcf98ccb774",
             "figure": "https://i.imgur.com/zMqOyLl.webp"
+        },
+        {
+            "systematics": "nmh",
+            "title": "\u9928\u85cf\u501f\u5c55\uff1a\u300c\u4f5b\u9640\u5f62\u5f71\u2014\u9662\u85cf\u4e9e\u6d32\u4f5b\u6559\u85dd\u8853\u4e4b\u7f8e\u300d",
+            "date": "\u65e5\u671f : 2020-12-30 ~ 2024-12-31",
+            "address": "\u5730\u9ede : \u6545\u5bae\u5927\u9053888\u865f",
+            "source_url": "https://event.culture.tw/mocweb/reg/NMH/Detail.init.ctr?actId=00951",
+            "UUID": "2dabf2bbfcce5d42aeade61ac5528751",
+            "figure": "https://i.imgur.com/MNKWTRT.webp"
         }
     ],
     "visit": {}
