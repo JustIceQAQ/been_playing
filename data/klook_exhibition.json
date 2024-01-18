@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 62,
-    "last_update": "2024-01-18T00:52:38.517935+00:00",
+    "counts": 63,
+    "last_update": "2024-01-18T08:16:07.270196+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u9676\u8336\u4e4b\u9593",
+            "date": "2\u67081\u65e5(\u9031\u56db) - 2\u670828\u65e5(\u9031\u4e09)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101022561-2024-taipei-art-exhibition/",
+            "UUID": "f2a0818e1c0d5bbaa3a5393dbd924f3e",
+            "figure": "https://i.imgur.com/fMeHPJ1.webp"
+        },
         {
             "systematics": "klook",
             "title": "2024 Viva La Campo \u7b2c\u56db\u5c46\u570b\u969b\u9732\u71df\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022339-2024-george-bayer-exhibition/",
             "UUID": "3cbbac4e94a55881af66231e3243084c",
-            "figure": "https://i.imgur.com/Z9csYwh.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/101217-2024-taipei-game-show/",
             "UUID": "4c70cc11dae95b1f86f3677a6f4a44db",
-            "figure": "-"
+            "figure": "https://i.imgur.com/1wbxsbM.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101021587-2024-kagami-ryuichi-sakamoto/",
             "UUID": "2fc5b7d4eabf5c6db5677debc75e4df0",
-            "figure": "https://i.imgur.com/TY53Js7.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101020459-2023-tiva-togetherness/",
             "UUID": "02d4b7e0436a5abb9f03ca0114b85f8e",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_0,y_28,w_3508,h_4911,c_crop/w_360,q_85/v1697609285/events_admin/xufozfscfllx6fyqhr9n.jpg"
         },
         {
             "systematics": "klook",
@@ -518,7 +527,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/92569-waking-wonderland-taipei/",
             "UUID": "09ac1856f46f551b9c3f0809d722852a",
-            "figure": "https://i.imgur.com/tlrfTjj.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
