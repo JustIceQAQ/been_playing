@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 63,
-    "last_update": "2024-01-19T00:52:23.985144+00:00",
+    "counts": 64,
+    "last_update": "2024-01-19T08:16:23.580066+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u4f4e\u5931\u8a18\u61b6\u8853 Hypomnesic Memory - 2024 Afterimage Exhibition \u5c55\u89bd",
+            "date": "1\u67087\u65e5(\u9031\u65e5) - 1\u670822\u65e5(\u9031\u4e00)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101022611-2024-hypomnesic-memory/",
+            "UUID": "649d1766738856c8bb14a8a6826dfefd",
+            "figure": "https://i.imgur.com/S0nAT4a.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u9676\u8336\u4e4b\u9593",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022400-2024-gdap8-exhibition/",
             "UUID": "7b6d29d7e9cb59d0b074d47ce7c060df",
-            "figure": "https://i.imgur.com/RytkQMJ.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101021941-2023-traces-of-disappearing/",
             "UUID": "a7ccd22b1a5d5ea1bc37d56120ade4cd",
-            "figure": "-"
+            "figure": "https://i.imgur.com/bwSIoaf.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101021615-2023-the-source-exhibition/",
             "UUID": "caadf9b5ee2d5725ad28e74376a1fde8",
-            "figure": "https://i.imgur.com/GJps27R.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/99108-meditating-algorithm-immersive-life-works-paul-chiang/",
             "UUID": "472e912a9b5c5053b7d8e10b443ad472",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/KL-326x460_j5n7dg.jpg"
         },
         {
             "systematics": "klook",
@@ -518,7 +527,7 @@
             "address": "\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101018842-2023-taipei-biennial/",
             "UUID": "60065b5f2e1b597d9e7be4bf033c5829",
-            "figure": "https://i.imgur.com/LBmRxZc.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
