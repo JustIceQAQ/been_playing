@@ -5,7 +5,7 @@
         "external_link": "https://ntcart.museum/exhibition"
     },
     "counts": 3,
-    "last_update": "2024-01-23T00:53:18.306706+00:00",
+    "last_update": "2024-01-23T08:14:24.476332+00:00",
     "data": [
         {
             "systematics": "ntc_art_museum",
@@ -14,7 +14,7 @@
             "address": "",
             "source_url": "https://ntcart.museum/exhibition/H2310001",
             "UUID": "b150f8590a8e5aafb5b394b77c45f605",
-            "figure": "https://i.imgur.com/20u4sVj.webp"
+            "figure": "https://admin.ntcart.museum/Upload/H2310001/listimg.jpg?v=128160873"
         },
         {
             "systematics": "ntc_art_museum",
@@ -23,7 +23,7 @@
             "address": "",
             "source_url": "https://ntcart.museum/exhibition/H2309002",
             "UUID": "de9260a1ebd65389a2db833b827e0249",
-            "figure": "https://i.imgur.com/ICbgkwD.webp"
+            "figure": "https://admin.ntcart.museum/Upload/H2309002/listimg.jpg?v=128160873"
         },
         {
             "systematics": "ntc_art_museum",
@@ -32,7 +32,7 @@
             "address": "",
             "source_url": "https://ntcart.museum/exhibition/H2310002",
             "UUID": "ba4fffd601ad5a0087361d00538637be",
-            "figure": "https://i.imgur.com/aHHmTG2.webp"
+            "figure": "https://admin.ntcart.museum/Upload/H2310002/mainimg.jpg?v=128160873"
         }
     ],
     "visit": {}

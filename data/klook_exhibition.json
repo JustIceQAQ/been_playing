@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 54,
-    "last_update": "2024-01-23T00:53:28.462611+00:00",
+    "counts": 55,
+    "last_update": "2024-01-23T08:15:02.589897+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u82b1\u82b1\u4e16\u754c\u9084\u6709\u4f60 - \u66fe\u8a69\u4e91\u5fae\u578b\u500b\u5c55",
+            "date": "1\u670818\u65e5(\u9031\u56db) - 2\u67083\u65e5(\u9031\u516d)",
+            "address": "\u8072\u5436\u8a08\u756b\u7b2c\u4e94\u5c46 Sonar Project 5",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101022682-2024-toriko-solo-exhibition/",
+            "UUID": "c37236e7411558c69f11cb8641096375",
+            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1705996807/events_admin/f5tcgkuuel7ivawapsjo.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u5faa FOLLOW - \u6f58\u9e92\u65b9\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022400-2024-gdap8-exhibition/",
             "UUID": "7b6d29d7e9cb59d0b074d47ce7c060df",
-            "figure": "https://i.imgur.com/RytkQMJ.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/101217-2024-taipei-game-show/",
             "UUID": "4c70cc11dae95b1f86f3677a6f4a44db",
-            "figure": "-"
+            "figure": "https://i.imgur.com/1wbxsbM.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101021241-2023-nan-goldin-exhibition/",
             "UUID": "9bfa1f76382c562c8b960fba2b353281",
-            "figure": "https://i.imgur.com/9rqNCI7.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101018842-2023-taipei-biennial/",
             "UUID": "60065b5f2e1b597d9e7be4bf033c5829",
-            "figure": "-"
+            "figure": "https://i.imgur.com/LBmRxZc.webp"
         },
         {
             "systematics": "klook",
