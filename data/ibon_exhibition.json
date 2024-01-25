@@ -4,9 +4,27 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 52,
-    "last_update": "2024-01-25T00:52:16.838677+00:00",
+    "counts": 54,
+    "last_update": "2024-01-25T08:16:06.716527+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "\u53f0\u5317\u5929\u6bcd\uff06\u6843\u5712\uff06\u53f0\u4e2d\uff0e\u65b0\u5149\u5f71\u57ce\uff0e\u96d9\u4eba\u96fb\u5f71\u5957\u7968",
+            "date": "2024-01-24 ~ 2025-01-15",
+            "address": "\u65b0\u5149\u5f71\u57ce",
+            "source_url": "https://tour.ibon.com.tw/event/65a888d4b644cd10b4ba475d",
+            "UUID": "344c57344826519d910ca148ec48347a",
+            "figure": "https://i.imgur.com/Dio7WCD.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u53f0\u5317\u7345\u5b50\u6797\uff06\u53f0\u5357\u897f\u9580\uff0e\u65b0\u5149\u5f71\u57ce\uff0e\u96d9\u4eba\u96fb\u5f71\u5957\u7968",
+            "date": "2024-01-24 ~ 2025-01-15",
+            "address": "\u65b0\u5149\u5f71\u57ce",
+            "source_url": "https://tour.ibon.com.tw/event/65a8883eb644cd10b4ba4735",
+            "UUID": "328fc14d848c584c89cac5bfce4d5c7f",
+            "figure": "https://i.imgur.com/DEGZWjO.webp"
+        },
         {
             "systematics": "ibon",
             "title": "2024 COOL\uff58STANCAVE\u53f0\u7063\u904b\u52d5\u6587\u5316\u5c55",
