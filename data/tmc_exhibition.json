@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 13,
-    "last_update": "2024-01-25T08:14:18.362701+00:00",
+    "counts": 17,
+    "last_update": "2024-01-25T16:16:04.552368+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -27,12 +27,39 @@
         },
         {
             "systematics": "tmc",
+            "title": "Music Hits AI \u6d41\u884c\u97f3\u6a02\u88fd\u4f5c\u71df",
+            "date": "2024.01.27(\u516d) - 2024.01.28(\u65e5)",
+            "address": "\u7522\u696d\u5340",
+            "source_url": "https://tmc.taipei/blog/show/music-hits-ai-pop-music-production-camp-2024/",
+            "UUID": "2d013caa07405bf9a8a6deeb5245e141",
+            "figure": "https://i.imgur.com/g9aXego.webp"
+        },
+        {
+            "systematics": "tmc",
             "title": "2024 Yiruma\u674e\u958f\u73c9\u81fb\u9078\u97f3\u6a02\u6703",
             "date": "2024.01.28(\u65e5)",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/2024-yirumas-selected-concert/",
             "UUID": "9e2c3cabd25559179b8ae0a709500256",
             "figure": "https://i.imgur.com/wT3ZMuh.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "AFTER PARTY \u5e02\u96c6",
+            "date": "2024.02.03(\u516d) - 2024.02.04(\u65e5)",
+            "address": "\u6587\u5316\u9928",
+            "source_url": "https://tmc.taipei/blog/show/after-party-market-2024/",
+            "UUID": "42e1d01a1dbe5fbeb8c02e6853d27000",
+            "figure": "https://i.imgur.com/R6P20eB.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u5728\u57ce\u5e02\u767c\u5149\u7684\u65b0\u661f\u80fd\u91cf\uff1a\u300c\u5317\u6d41 NEW STAR Vol.1\u300d",
+            "date": "2024.02.03(\u516d) - 2024.02.04(\u65e5)",
+            "address": "\u6587\u5316\u9928",
+            "source_url": "https://tmc.taipei/blog/show/new-star-energy-shining-in-the-city-tmc-new-star-vol-1/",
+            "UUID": "85a0123b0c555ee99e9578d9a04faff7",
+            "figure": "https://i.imgur.com/pTSRvbb.webp"
         },
         {
             "systematics": "tmc",
@@ -60,6 +87,15 @@
             "source_url": "https://tmc.taipei/blog/show/2024-ftisland-live-hey-day-in-taipei/",
             "UUID": "ef5e59941be85583b56ee1e2630528d8",
             "figure": "https://i.imgur.com/yZASDcX.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u53ef\u53ef\u5360\u661f\u8853\uff5c\u9ed1\u91d1\u6d3e\u5c0d The Great Chocolate 2024",
+            "date": "2024.02.23(\u4e94) - 2024.02.25(\u65e5)",
+            "address": "\u6587\u5316\u9928",
+            "source_url": "https://tmc.taipei/blog/show/cocoa-astrology-black-gold-party-the-great-chocolate-2024/",
+            "UUID": "8b0a473a6b705750bdc9a1e6b7a812f8",
+            "figure": "https://i.imgur.com/kyzL326.webp"
         },
         {
             "systematics": "tmc",
