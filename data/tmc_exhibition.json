@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 17,
-    "last_update": "2024-01-26T08:13:00.429023+00:00",
+    "counts": 18,
+    "last_update": "2024-01-26T16:13:28.860302+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -150,6 +150,15 @@
             "source_url": "https://tmc.taipei/blog/show/astro-bunny-should-have-let-go-2024/",
             "UUID": "0868120453d356139a6dd5dc8f126d6c",
             "figure": "https://i.imgur.com/qT48Zyl.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "RADWIMPS WORLD TOUR 2024 \u201cThe way you yawn, and the outcry of Peace\u201d",
+            "date": "2024.05.15(\u4e09)",
+            "address": null,
+            "source_url": "https://tmc.taipei/blog/show/radwimps-world-tour-2024/",
+            "UUID": "2ef7dccc38cf51ed993cc1fe98775433",
+            "figure": "https://i.imgur.com/T6avLJJ.webp"
         },
         {
             "systematics": "tmc",
