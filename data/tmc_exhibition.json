@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 16,
-    "last_update": "2024-02-01T00:49:48.449325+00:00",
+    "counts": 17,
+    "last_update": "2024-02-01T08:13:40.476769+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -123,6 +123,15 @@
             "source_url": "https://tmc.taipei/blog/show/2024-acqua-tour-im-here/",
             "UUID": "41d03818d39a5f5ca703a699d7bc4616",
             "figure": "https://i.imgur.com/RDaOIGr.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "King Gnu Asia Tour\u300eTHE GREATEST UNKNOWN\u300fin Taipei",
+            "date": "2024.04.06(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://tmc.taipei/blog/show/king-gnu-asia-tourin-taipei/",
+            "UUID": "dd2d5fbb656d5cc0912da4ee18088ecb",
+            "figure": "https://i.imgur.com/jvPcTRR.webp"
         },
         {
             "systematics": "tmc",
