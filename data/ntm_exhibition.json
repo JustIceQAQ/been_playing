@@ -4,8 +4,8 @@
         "code_name": "ntm",
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
-    "counts": 6,
-    "last_update": "2024-02-01T08:14:56.666200+00:00",
+    "counts": 7,
+    "last_update": "2024-02-01T16:13:27.606327+00:00",
     "data": [
         {
             "systematics": "ntm",
@@ -15,6 +15,15 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=12140",
             "UUID": "84d6c9d7ae3456c2ba4a98281e828f70",
             "figure": "https://i.imgur.com/qV7b3De.webp"
+        },
+        {
+            "systematics": "ntm",
+            "title": "\u535a\u7269\u9928\u5c0b\u5bf6\u8a18(3\u6708\u4efd\u5834\u6b21)",
+            "date": "",
+            "address": "",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50023",
+            "UUID": "0caa3307ffdf59eeb383dd51d0dfcb2e",
+            "figure": "https://i.imgur.com/77DkH6M.webp"
         },
         {
             "systematics": "ntm",
@@ -62,5 +71,7 @@
             "figure": "https://i.imgur.com/RtEDksQ.webp"
         }
     ],
-    "visit": {}
+    "visit": {
+        "opening": "\u9031\u4e8c\u5230\u9031\u65e5\u6bcf\u65e59:30-17:00(\u9589\u9928\u524d30\u5206\u9418\u505c\u6b62\u552e\u7968\u670d\u52d9)\n\uff0a\u9022\u570b\u5b9a\u5047\u65e5\u53ca\u9023\u7e8c\u5047\u671f\u5747\u7167\u5e38\u958b\u9928\u3002\n\uff0a\u6bcf\u9031\u4e00\u3001\u9664\u5915\u53ca\u6625\u7bc0\u521d\u4e00\u4f11\u9928\u3002"
+    }
 }
