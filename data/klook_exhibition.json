@@ -4,9 +4,27 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 56,
-    "last_update": "2024-02-02T08:14:18.588909+00:00",
+    "counts": 58,
+    "last_update": "2024-02-02T16:13:38.252167+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u4e00\u5e74\u8a08\u5283\uff1a\u300c\u5ddd\u5802\u300d",
+            "date": "2024\u5e741\u670827\u65e5(\u9031\u516d) - 2025\u5e741\u67085\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101022906-2024-outing-exhibition/",
+            "UUID": "e229db2f09a55307b2f2f64f09c7b6b8",
+            "figure": "https://i.imgur.com/T4jBAuS.webp"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u4f60\u597d\uff0c\u4eba\u985e\uff01Hello, Human!",
+            "date": "1\u670827\u65e5(\u9031\u516d) - 5\u670812\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101022905-2024-hello-human/",
+            "UUID": "4bd37b096eb75f6a82bfb457fb4a195b",
+            "figure": "https://i.imgur.com/lR9EAnq.webp"
+        },
         {
             "systematics": "klook",
             "title": "2024 COOL x STANCAVE\u53f0\u7063\u904b\u52d5\u6587\u5316\u5c55",
@@ -77,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022686-2024-year-of-dragon-exhibition/",
             "UUID": "b66e7a827b1a5965a65f53ad605f80b5",
-            "figure": "https://i.imgur.com/blBWqop.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -86,7 +104,7 @@
             "address": "\u8072\u5436\u8a08\u756b\u7b2c\u4e94\u5c46 Sonar Project 5",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022682-2024-toriko-solo-exhibition/",
             "UUID": "c37236e7411558c69f11cb8641096375",
-            "figure": "https://i.imgur.com/BqG4uRT.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -212,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/102915-taipei-international-book-exhibition/",
             "UUID": "7eb2344e13f3553d934712cfe253874a",
-            "figure": "-"
+            "figure": "https://i.imgur.com/UsY1gxE.webp"
         },
         {
             "systematics": "klook",
@@ -221,7 +239,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022229-2024-zie-yongder-exhibition/",
             "UUID": "46c21bf255595be6add820e28be203b4",
-            "figure": "-"
+            "figure": "https://i.imgur.com/YjH96yx.webp"
         },
         {
             "systematics": "klook",
@@ -293,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101021587-2024-kagami-ryuichi-sakamoto/",
             "UUID": "2fc5b7d4eabf5c6db5677debc75e4df0",
-            "figure": "https://i.imgur.com/TY53Js7.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -302,7 +320,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101021572-2023-the-fragment-exhibition/",
             "UUID": "92c70bd672475ac2819b7a2e3aa89a46",
-            "figure": "https://i.imgur.com/IGmhOHP.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -428,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/98447-immersive-art-exhibition-immressionism/",
             "UUID": "bf5e925ba811586fb7797727223e1332",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/klook_\u5c3a\u5bf8__\u5c55\u6f14\u9801\u9762\u6d3b\u52d5\u9996\u5716_1_uaqnie.jpg"
         },
         {
             "systematics": "klook",
@@ -437,7 +455,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/96738-fantasy-animal-forest-higuchi-yuko/",
             "UUID": "290127802d47567abae36a782fc28d7d",
-            "figure": "-"
+            "figure": "https://i.imgur.com/vnKovkD.webp"
         },
         {
             "systematics": "klook",
@@ -509,7 +527,7 @@
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/activity/70429-music-island-stories-pop-music-in-taiwan-taipei/",
             "UUID": "dde6739eefe25fe9aae6270e758d7acd",
-            "figure": "https://i.imgur.com/3q0DDno.webp"
+            "figure": "-"
         }
     ],
     "visit": {}
