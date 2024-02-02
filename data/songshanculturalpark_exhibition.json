@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-02-02T00:47:15.730366+00:00",
+    "last_update": "2024-02-02T08:13:17.789716+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -117,6 +117,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "(G)I-DLE Super Lady\u5feb\u9583\u5e97",
+            "date": "2024-02-07 - 2024-02-18",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/2d39745a-cb75-415c-99f5-a56e73815bcd",
+            "UUID": "c6d882faa906518180d6bb80ebe54ea7",
+            "figure": "https://i.imgur.com/uRrkN7U.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "\u71d5\u4e09\u6761\u5de5\u696d\u8207\u5de5\u85dd\u6587\u5316\u4ea4\u6d41\u5c55\u2014\u2014\u6642\u8207\u5730\u30fb\u50b3\u627f\u8207\u5275\u65b0",
             "date": "2024-02-16 - 2024-02-18",
             "address": "-",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/fb7a02a4-3d2a-4fa2-add5-c1cefb16512e",
             "UUID": "c82ca9d87f9e5726975fce3f798beaad",
             "figure": "https://i.imgur.com/gBazNSG.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u677e\u83f8\u5403\u8ca8\u601d\u8def",
-            "date": "2024-02-01",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c0607239-4d13-41d5-8fd0-643248265ff7",
-            "UUID": "97359d5b22bf54459dfff2d2183d51b1",
-            "figure": "https://i.imgur.com/BHtcbTC.webp"
         }
     ],
     "visit": {}
