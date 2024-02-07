@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 4,
-    "last_update": "2024-02-07T00:44:50.556346+00:00",
+    "counts": 5,
+    "last_update": "2024-02-07T08:12:48.999783+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -42,6 +42,15 @@
             "source_url": "https://wanhualinhouse.kktix.cc/events/ced01053-copy-2",
             "UUID": "8a72e74e4ea351ce8875e375c91e1ae3",
             "figure": "https://i.imgur.com/EpH7g50.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "2024\u53f0\u7063\u71c8\u6703\u5728\u81fa\u5357 X hololive production 2/28(\u4e09)",
+            "date": "2024/2/28(\u4e09)",
+            "address": "",
+            "source_url": "https://capsuleleu.kktix.cc/events/hololantern0228",
+            "UUID": "bc5acba20fd858f69d22859b7ad54a2c",
+            "figure": "https://i.imgur.com/FfrYAUM.webp"
         }
     ],
     "visit": {}
