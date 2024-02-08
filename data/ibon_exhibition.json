@@ -4,9 +4,45 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 52,
-    "last_update": "2024-02-08T00:46:13.741351+00:00",
+    "counts": 57,
+    "last_update": "2024-02-08T08:15:02.230160+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "CWT\uff0dK44\u53f0\u7063\u540c\u4eba\u8a8c\u8ca9\u552e\u6703\uff0e\u9ad8\u96c4\u5834\uff0e\u55ae\u65e5\u7968",
+            "date": "2024-03-09 ~ 2024-03-10",
+            "address": "\u9ad8\u96c4\u65b0\u5149\u4e09\u8d8a\u5de6\u71df\u5e9710F",
+            "source_url": "https://tour.ibon.com.tw/event/65c209b0b3243652da06cb03",
+            "UUID": "55091f1d30f7534f935ae8137d18bcee",
+            "figure": "https://i.imgur.com/NsmYpG2.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "CWT\uff0dK44\u53f0\u7063\u540c\u4eba\u8a8c\u8ca9\u552e\u6703\uff0e\u9ad8\u96c4\u5834\uff0e\u96d9\u65e5\u7968",
+            "date": "2024-03-09 ~ 2024-03-10",
+            "address": "\u9ad8\u96c4\u65b0\u5149\u4e09\u8d8a\u5de6\u71df\u5e9710F",
+            "source_url": "https://tour.ibon.com.tw/event/65c2099eb3243652da06cafe",
+            "UUID": "0143611de73751a68182048b486a72ce",
+            "figure": "https://i.imgur.com/VjAthQX.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "CWT\uff0dT31\u53f0\u7063\u540c\u4eba\u8a8c\u8ca9\u552e\u6703\uff0e\u53f0\u4e2d\u5834\uff0e\u96d9\u65e5\u7968",
+            "date": "2024-03-02 ~ 2024-03-03",
+            "address": "\u81fa\u4e2d\u4e16\u754c\u8cbf\u6613\u4e2d\u5fc3\u4e8c\u9928",
+            "source_url": "https://tour.ibon.com.tw/event/65c2098fb3243652da06caf2",
+            "UUID": "55b8d8ba8ea45233aa998f3e4153a0fa",
+            "figure": "https://i.imgur.com/9bIkbQ2.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "CWT\uff0dT31\u53f0\u7063\u540c\u4eba\u8a8c\u8ca9\u552e\u6703\uff0e\u53f0\u4e2d\u5834\uff0e\u55ae\u65e5\u7968",
+            "date": "2024-03-02 ~ 2024-03-03",
+            "address": "\u81fa\u4e2d\u4e16\u754c\u8cbf\u6613\u4e2d\u5fc3\u4e8c\u9928",
+            "source_url": "https://tour.ibon.com.tw/event/65c20975b3243652da06cae7",
+            "UUID": "92fd720689325c249fd87a597ab31864",
+            "figure": "https://i.imgur.com/wz1v5dJ.webp"
+        },
         {
             "systematics": "ibon",
             "title": "CWT\uff0d66\u53f0\u7063\u540c\u4eba\u8a8c\u8ca9\u552e\u6703\uff0e\u53f0\u5317\u5834\uff0e\u96d9\u65e5\u7968",
@@ -33,6 +69,15 @@
             "source_url": "https://tour.ibon.com.tw/event/65b8a40ed8b17e595439a430",
             "UUID": "4a4b91d97dd55f46a8bff7986ba7a6e0",
             "figure": "https://i.imgur.com/DifSBqa.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u53f0\u5357\uff0e\u570b\u7acb\u81fa\u7063\u6b77\u53f2\u535a\u7269\u9928\uff0e\u8a9e\u97f3\u5c0e\u89bd\u5957\u7968",
+            "date": "2024-02-01 ~ 2024-12-31",
+            "address": "\u570b\u7acb\u81fa\u7063\u6b77\u53f2\u535a\u7269\u9928",
+            "source_url": "https://tour.ibon.com.tw/event/65b20c7e9f2eca4c006d78d9",
+            "UUID": "e93470ba4c7f5e0eb2846f3ded5fc1d6",
+            "figure": "https://i.imgur.com/PkpcWXd.webp"
         },
         {
             "systematics": "ibon",
