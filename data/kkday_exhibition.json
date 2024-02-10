@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 38,
-    "last_update": "2024-02-10T08:12:36.102706+00:00",
+    "last_update": "2024-02-10T16:13:39.474376+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -45,21 +45,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u512a\u60e08\u6298\u3011\u9ad8\u96c4\u79d1\u5de5\u9928&\u71b1\u96ea\u5929\u5802\u5152\u7ae5\u6ed1\u96ea\u6a02\u5712 2.0 \u7279\u5c55|\u806f\u5408\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/118150-kaohsiung-national-science-and-technology-museum-hotsnow-adventure-paradise-tickets-taiwan",
-            "UUID": "109f7a4a2f765b96926c58d36043c10e",
-            "figure": "https://i.imgur.com/sBG2fF6.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|HELLO KITTY 50\u9031\u5e74\u7279\u5c55:\u8207\u672a\u4f86\u505a\u670b\u53cb\u5427",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/154586",
             "UUID": "9a9aab65dff05ca3a0b3871375f23a4b",
             "figure": "https://i.imgur.com/HZvXfZC.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u512a\u60e08\u6298\u3011\u9ad8\u96c4\u79d1\u5de5\u9928&\u71b1\u96ea\u5929\u5802\u5152\u7ae5\u6ed1\u96ea\u6a02\u5712 2.0 \u7279\u5c55|\u806f\u5408\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/118150-kaohsiung-national-science-and-technology-museum-hotsnow-adventure-paradise-tickets-taiwan",
+            "UUID": "109f7a4a2f765b96926c58d36043c10e",
+            "figure": "https://i.imgur.com/sBG2fF6.webp"
         },
         {
             "systematics": "KKDay",
@@ -90,15 +90,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u7c89\u7d05\u8c6c\u5c0f\u59b9\u91ce\u9910\u8da3\u4e92\u52d5\u7279\u5c55",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/156405-taipei-peppa-pig-picnic-fun-ticket-taiwan",
-            "UUID": "f884719d5074536383ef3ce79317025c",
-            "figure": "https://i.imgur.com/XLYGJpT.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u9ad8\u96c4\u5c55\u89bd|\u6551\u63f4\u5c0f\u82f1\u96c4\u6ce2\u529b\u4e92\u52d5\u7279\u5c55\u9580\u7968",
             "date": "",
             "address": "",
@@ -108,12 +99,30 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u7c89\u7d05\u8c6c\u5c0f\u59b9\u91ce\u9910\u8da3\u4e92\u52d5\u7279\u5c55",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/156405-taipei-peppa-pig-picnic-fun-ticket-taiwan",
+            "UUID": "f884719d5074536383ef3ce79317025c",
+            "figure": "https://i.imgur.com/XLYGJpT.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|THE \u54c6\u5566A\u5922\u5c55 \u53f0\u5317 2023 \u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/151873-the-doraemon-exhibition-taipei-ticket-taiwan",
             "UUID": "030998f5f549558cbca6d84a9e958893",
             "figure": "https://i.imgur.com/aRlQkSv.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u65b0\u5317\u516b\u91cc | \u5341\u4e09\u884c\u535a\u7269\u9928\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/128289",
+            "UUID": "39790675a68053bdb7a6b732f7a8cff8",
+            "figure": "https://i.imgur.com/OiqItVw.webp"
         },
         {
             "systematics": "KKDay",
@@ -132,15 +141,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/155895-kaohsiung-jurassic-dinosaur-adventure-park-ticket-taiwan",
             "UUID": "44c3dd4405785ee780adf0d3f9c1ecf7",
             "figure": "https://i.imgur.com/lZbVXdY.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u65b0\u5317\u516b\u91cc | \u5341\u4e09\u884c\u535a\u7269\u9928\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/128289",
-            "UUID": "39790675a68053bdb7a6b732f7a8cff8",
-            "figure": "https://i.imgur.com/OiqItVw.webp"
         },
         {
             "systematics": "KKDay",
