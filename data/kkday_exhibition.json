@@ -5,17 +5,8 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 38,
-    "last_update": "2024-02-13T00:48:30.738552+00:00",
+    "last_update": "2024-02-13T08:14:52.458452+00:00",
     "data": [
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u5947\u5e7b\u52d5\u7269\u68ee\u6797 \u6a0b\u53e3\u88d5\u5b50\u5c55\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/152763",
-            "UUID": "65d95ac9771555a3832f3b13bb36e871",
-            "figure": "https://i.imgur.com/EnUUGRB.webp"
-        },
         {
             "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u6211\u662f\u9738\u738b\u9f8d20\u9031\u5e74\u5c55-\u6b61\u8fce\u5149\u81e8\u5bae\u897f\u9054\u4e5f\u904a\u6a02\u5712",
@@ -24,6 +15,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/154813",
             "UUID": "aeb5c332bc625344a9c290cc90e2a3ba",
             "figure": "https://i.imgur.com/qd2Rxqc.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u5947\u5e7b\u52d5\u7269\u68ee\u6797 \u6a0b\u53e3\u88d5\u5b50\u5c55\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/152763",
+            "UUID": "65d95ac9771555a3832f3b13bb36e871",
+            "figure": "https://i.imgur.com/EnUUGRB.webp"
         },
         {
             "systematics": "KKDay",
@@ -126,21 +126,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u9810\u552e8\u6298\u3011\u53f0\u5317\u5c55\u89bd| \u97cc\u5cf6\u30fb\u9f4a\u67cf\u6797\u7a7a\u9593\u5c55\u89bd\u9810\u552e\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/158313",
-            "UUID": "b320f621137354d2a943ed0bbceb21ed",
-            "figure": "https://i.imgur.com/sGQxpuz.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u9ad8\u96c4\u5c55\u89bd|\u4f8f\u7f85\u7d00\u6050\u9f8d\u63a2\u96aa\u6a02\u5712\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/155895-kaohsiung-jurassic-dinosaur-adventure-park-ticket-taiwan",
             "UUID": "44c3dd4405785ee780adf0d3f9c1ecf7",
             "figure": "https://i.imgur.com/lZbVXdY.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u9810\u552e8\u6298\u3011\u53f0\u5317\u5c55\u89bd| \u97cc\u5cf6\u30fb\u9f4a\u67cf\u6797\u7a7a\u9593\u5c55\u89bd\u9810\u552e\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/158313",
+            "UUID": "b320f621137354d2a943ed0bbceb21ed",
+            "figure": "https://i.imgur.com/sGQxpuz.webp"
         },
         {
             "systematics": "KKDay",
@@ -189,6 +189,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|OneOffs Fair & Fest",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/132525",
+            "UUID": "3df16023cb5854e8976d533bbd679b81",
+            "figure": "https://i.imgur.com/w8frX8O.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u3010\u7368\u5bb6\u512a\u60e0\u3011\u9ad8\u96c4\u99c1\u4e8c|\u9a5a\u559c\u88fd\u9020\u6c88\u6d78\u5f0f\u9ad4\u9a57\u5c55\u89bd|\u843d\u65e5\u8f49\u904b\u7ad9 - \u5fae\u91ba\u5217\u8eca/FLIGHT\u9580\u7968|\u5012\u6578\u642d\u4e58\u4e2d",
             "date": "",
             "address": "",
@@ -204,15 +213,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/134831",
             "UUID": "a22d5bf4a25e523fbb006210afa8f5fa",
             "figure": "https://i.imgur.com/CXJ6nb1.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|OneOffs Fair & Fest",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/132525",
-            "UUID": "3df16023cb5854e8976d533bbd679b81",
-            "figure": "https://i.imgur.com/w8frX8O.webp"
         },
         {
             "systematics": "KKDay",
