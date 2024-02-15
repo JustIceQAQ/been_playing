@@ -4,38 +4,8 @@
         "code_name": "mocataipei",
         "external_link": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent"
     },
-    "counts": 3,
-    "last_update": "2024-02-14T16:13:08.883541+00:00",
-    "data": [
-        {
-            "systematics": "mocataipei",
-            "title": "\u4f60\u597d\uff0c\u4eba\u985e\uff01Hello, Human!",
-            "date": "2024-01-27 ~ 2024-05-12",
-            "address": "-",
-            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u4f60\u597d\uff0c\u4eba\u985e\uff01Hello,*Human!",
-            "UUID": "0fcf646bc72f5c56bd7f7110e38e7138",
-            "figure": "https://i.imgur.com/YkAXwCL.webp"
-        },
-        {
-            "systematics": "mocataipei",
-            "title": "\u4e00\u5e74\u8a08\u5283\u300c\u5ddd\u5802\u300d",
-            "date": "2024-01-27 ~ 2025-01-05",
-            "address": "-",
-            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u4e00\u5e74\u8a08\u5283\u300c\u5ddd\u5802\u300d",
-            "UUID": "a1dce0ed95275e4394a8d46c6753553a",
-            "figure": "https://i.imgur.com/JC4gv3u.webp"
-        },
-        {
-            "systematics": "mocataipei",
-            "title": "\u4eba\u985e\u8207\u81ea\u7136\u7684\u518d\u60f3\u50cf\uff0d\u674e\u5bb0\u65ed\u500b\u5c55",
-            "date": "2024-02-03 ~ 2024-03-17",
-            "address": "-",
-            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u4eba\u985e\u8207\u81ea\u7136\u7684\u518d\u60f3\u50cf\uff0d\u674e\u5bb0\u65ed\u500b\u5c55",
-            "UUID": "df5b22f57cc95ac8a7043a9fada9b43a",
-            "figure": "https://i.imgur.com/YAnwSq0.webp"
-        }
-    ],
-    "visit": {
-        "opening": "\u6bcf\u5468\u4e00\u4f11\u9928\uff0c\u6bcf\u5468\u4e8c\u81f3\u5468\u65e5\u958b\u653e\u6642\u9593\u70ba10:00 - 18:00\uff0c\u4e14\u552e\u7968\u65bc\u7576\u65e517:30\u505c\u6b62\u670d\u52d9\u3002"
-    }
+    "counts": 0,
+    "last_update": "2024-02-15T00:47:27.989744+00:00",
+    "data": [],
+    "visit": {}
 }
