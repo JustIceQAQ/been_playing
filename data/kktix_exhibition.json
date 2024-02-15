@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 3,
-    "last_update": "2024-02-15T00:47:24.353539+00:00",
+    "counts": 2,
+    "last_update": "2024-02-15T08:12:59.273850+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -24,15 +24,6 @@
             "source_url": "https://kpmc.kktix.cc/events/poppoppop",
             "UUID": "2753092823855d20b12fbb3f6977690c",
             "figure": "https://i.imgur.com/76TL3BV.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "20240225\u4e0a\u5348\u53c3\u8a2a\u9810\u7d04",
-            "date": "2024/2/25(\u65e5)",
-            "address": "",
-            "source_url": "https://wanhualinhouse.kktix.cc/events/ced01053-copy-2",
-            "UUID": "8a72e74e4ea351ce8875e375c91e1ae3",
-            "figure": "https://i.imgur.com/EpH7g50.webp"
         }
     ],
     "visit": {}
