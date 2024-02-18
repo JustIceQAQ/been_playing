@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 38,
-    "last_update": "2024-02-17T16:13:19.963116+00:00",
+    "last_update": "2024-02-18T00:51:27.970463+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -72,21 +72,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010KKday \u7368\u5bb6\u3011\u53f0\u7063\u53f0\u5317|Re:\u6c5f\u8ce2\u4e8c-\u6578\u4f4d\u51a5\u60f3.\u6c5f\u8ce2\u4e8c\u5149\u5f71\u6c88\u6d78\u5c55|\u5c55\u89bd\u9580\u7968\u30fb\u53f0\u5317101\u89c0\u666f\u53f0\u806f\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/155728",
-            "UUID": "8624c5928329500fb1cd68c155a7a9af",
-            "figure": "https://i.imgur.com/eHfFgi6.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u301095\u6298\u3011\u53f0\u5317\u5c55\u89bd|\u7c89\u7d05\u8c6c\u5c0f\u59b9\u91ce\u9910\u8da3\u4e92\u52d5\u7279\u5c55",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/156405-taipei-peppa-pig-picnic-fun-ticket-taiwan",
             "UUID": "f884719d5074536383ef3ce79317025c",
             "figure": "https://i.imgur.com/XLYGJpT.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010KKday \u7368\u5bb6\u3011\u53f0\u7063\u53f0\u5317|Re:\u6c5f\u8ce2\u4e8c-\u6578\u4f4d\u51a5\u60f3.\u6c5f\u8ce2\u4e8c\u5149\u5f71\u6c88\u6d78\u5c55|\u5c55\u89bd\u9580\u7968\u30fb\u53f0\u5317101\u89c0\u666f\u53f0\u806f\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/155728",
+            "UUID": "8624c5928329500fb1cd68c155a7a9af",
+            "figure": "https://i.imgur.com/eHfFgi6.webp"
         },
         {
             "systematics": "KKDay",
@@ -180,30 +180,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|OneOffs Fair & Fest",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/132525",
-            "UUID": "3df16023cb5854e8976d533bbd679b81",
-            "figure": "https://i.imgur.com/w8frX8O.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010\u9650\u6642\u6298\u6263\u3011\u9ad8\u96c4\u5c55\u89bd|\u706b\u5f71\u5fcd\u8005\u52d5\u756b20\u9031\u5e74\u7279\u5c55\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/134243-exclusive-peripherals-kaohsiung-exhibition-naruto-animation-20th-anniversary-special-exhibition-ticket-taiwan",
             "UUID": "854ea828281959ce86ade8f4d3fa9df8",
             "figure": "https://i.imgur.com/BwwTHOa.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u3010\u7368\u5bb6\u512a\u60e0\u3011\u9ad8\u96c4\u99c1\u4e8c|\u9a5a\u559c\u88fd\u9020\u6c88\u6d78\u5f0f\u9ad4\u9a57\u5c55\u89bd|\u843d\u65e5\u8f49\u904b\u7ad9 - \u5fae\u91ba\u5217\u8eca/FLIGHT\u9580\u7968|\u5012\u6578\u642d\u4e58\u4e2d",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/134229-kaohsiung-pier-2-immersive-experience-exhibition",
-            "UUID": "b44efc7571225cec8d28d2ce396ccfae",
-            "figure": "https://i.imgur.com/KyQ5y6M.webp"
         },
         {
             "systematics": "KKDay",
@@ -222,6 +204,24 @@
             "source_url": "https://www.kkday.com/zh-tw/product/134831",
             "UUID": "a22d5bf4a25e523fbb006210afa8f5fa",
             "figure": "https://i.imgur.com/CXJ6nb1.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|OneOffs Fair & Fest",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/132525",
+            "UUID": "3df16023cb5854e8976d533bbd679b81",
+            "figure": "https://i.imgur.com/w8frX8O.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u7368\u5bb6\u512a\u60e0\u3011\u9ad8\u96c4\u99c1\u4e8c|\u9a5a\u559c\u88fd\u9020\u6c88\u6d78\u5f0f\u9ad4\u9a57\u5c55\u89bd|\u843d\u65e5\u8f49\u904b\u7ad9 - \u5fae\u91ba\u5217\u8eca/FLIGHT\u9580\u7968|\u5012\u6578\u642d\u4e58\u4e2d",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/134229-kaohsiung-pier-2-immersive-experience-exhibition",
+            "UUID": "b44efc7571225cec8d28d2ce396ccfae",
+            "figure": "https://i.imgur.com/KyQ5y6M.webp"
         },
         {
             "systematics": "KKDay",
