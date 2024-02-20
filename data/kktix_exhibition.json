@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 2,
-    "last_update": "2024-02-20T00:45:39.717936+00:00",
+    "counts": 4,
+    "last_update": "2024-02-20T08:13:15.760032+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -24,6 +24,24 @@
             "source_url": "https://kpmc.kktix.cc/events/poppoppop",
             "UUID": "2753092823855d20b12fbb3f6977690c",
             "figure": "https://i.imgur.com/76TL3BV.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "2024\u53f0\u7063\u71c8\u6703\u5728\u81fa\u5357 X hololive production 2/29(\u56db)",
+            "date": "2024/2/29(\u56db)",
+            "address": "",
+            "source_url": "https://capsuleleu.kktix.cc/events/hololantern0229",
+            "UUID": "cd9a06f23b055a3dada0664a445bd3fa",
+            "figure": "https://i.imgur.com/oNF3iuy.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "2024\u53f0\u7063\u71c8\u6703\u5728\u81fa\u5357 X hololive production 3/1(\u4e94)",
+            "date": "2024/3/1(\u4e94)",
+            "address": "",
+            "source_url": "https://capsuleleu.kktix.cc/events/hololantern0301",
+            "UUID": "49de0a170ff352838103cb7e93c70105",
+            "figure": "https://i.imgur.com/N4R8glk.webp"
         }
     ],
     "visit": {}

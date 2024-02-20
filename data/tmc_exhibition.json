@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 16,
-    "last_update": "2024-02-20T00:45:41.505303+00:00",
+    "counts": 17,
+    "last_update": "2024-02-20T08:13:49.238498+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -33,6 +33,15 @@
             "source_url": "https://tmc.taipei/blog/show/lets-drink-some-musicq1/",
             "UUID": "4c592d7ab413559c9084ae7b92ed8bab",
             "figure": "https://i.imgur.com/tjxEU8d.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u5f9e\u57ce\u5e02\u767c\u8de1\u7684\u8cea\u611f\u6d3e\u5c0d\u300c\u5317\u6d41 NEW STAR Vol.2\u300d",
+            "date": "2024.02.23(\u4e94) - 2024.02.25(\u65e5)",
+            "address": "\u6587\u5316\u9928",
+            "source_url": "https://tmc.taipei/blog/show/tmc-new-star-vol-2/",
+            "UUID": "3576a4b2af6d5262a26763aa21fcee8b",
+            "figure": "https://i.imgur.com/nvI1KVr.webp"
         },
         {
             "systematics": "tmc",
@@ -65,7 +74,7 @@
             "systematics": "tmc",
             "title": "\u5149\u7403\u821e\u6703 GLOWBALL ROOM presents: Mina",
             "date": "2024.02.24(\u516d)",
-            "address": null,
+            "address": "\u7522\u696d\u5340",
             "source_url": "https://tmc.taipei/blog/show/glowball-room-presents-mina/",
             "UUID": "f7c496288623521dbefb2514d5c0a5fe",
             "figure": "https://i.imgur.com/jKyk5Ul.webp"
@@ -83,7 +92,7 @@
             "systematics": "tmc",
             "title": "\u3010\u5317\u6d41\u97f3\u6a02\u6545\u4e8b\u6c99\u9f8d\u3011\u5cf6\u5dbc\u563b\u7814\u793e",
             "date": "2024.03.03(\u65e5) - 2024.03.03(\u65e5)",
-            "address": null,
+            "address": "\u6587\u5316\u9928",
             "source_url": "https://tmc.taipei/blog/show/island-hip-hop-research-society/",
             "UUID": "b6c5190418a953ecb0303d045a2bbe46",
             "figure": "https://i.imgur.com/C9jOAQO.webp"
@@ -137,7 +146,7 @@
             "systematics": "tmc",
             "title": "RADWIMPS WORLD TOUR 2024 \u201cThe way you yawn, and the outcry of Peace\u201d",
             "date": "2024.05.15(\u4e09)",
-            "address": null,
+            "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://tmc.taipei/blog/show/radwimps-world-tour-2024/",
             "UUID": "2ef7dccc38cf51ed993cc1fe98775433",
             "figure": "https://i.imgur.com/T6avLJJ.webp"
