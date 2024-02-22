@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 16,
-    "last_update": "2024-02-22T00:46:19.015515+00:00",
+    "counts": 17,
+    "last_update": "2024-02-22T08:14:23.741516+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -24,6 +24,15 @@
             "source_url": "https://tmc.taipei/blog/show/secret-base-for-music-players/",
             "UUID": "646128baac3552b98a2ca535ea6a3179",
             "figure": "https://i.imgur.com/WVcE12M.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u9435\u5439\u88fd\u4f5c2024\u5c08\u696d\u97f3\u97ff\u5de5\u7a0b\u8ab2\u7a0b",
+            "date": "2024.02.20(\u4e8c) - 2024.02.23(\u4e94)",
+            "address": "\u7522\u696d\u5340",
+            "source_url": "https://tmc.taipei/blog/show/sound-engineering-course/",
+            "UUID": "d70be74080425491a09785b963dcd3e4",
+            "figure": "https://i.imgur.com/CjiaLHO.webp"
         },
         {
             "systematics": "tmc",
