@@ -4,8 +4,8 @@
         "code_name": "tickets_books",
         "external_link": "https://tickets.books.com.tw/leisure/"
     },
-    "counts": 13,
-    "last_update": "2024-02-25T08:12:00.459135+00:00",
+    "counts": 11,
+    "last_update": "2024-02-25T16:12:45.237742+00:00",
     "data": [
         {
             "systematics": "tickets_books",
@@ -96,24 +96,6 @@
             "source_url": "https://tickets.books.com.tw/progshow/08010901512752",
             "UUID": "3afbec1e26345042b3caaa5c4d1dc574",
             "figure": "https://i.imgur.com/GOspaWq.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "DETECTIVE CONAN THE MOVIE\u5c55 \u301c\u9280\u5e55\u56de\u9867\u9304\u301c\u9ad8\u96c4\u5834",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201347577",
-            "UUID": "ef8c4d5c01655fd3b489f2b0a3bb20d0",
-            "figure": "https://i.imgur.com/GBu8TKt.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u65b0\u4e16\u7d00\u798f\u97f3\u6230\u58eb\u5c55VISUAL WORKS\u9ad8",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201565422",
-            "UUID": "8a5c86878641561eafb7326d85c01c99",
-            "figure": "https://i.imgur.com/GEzymWq.webp"
         },
         {
             "systematics": "tickets_books",
