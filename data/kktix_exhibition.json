@@ -4,45 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 4,
-    "last_update": "2024-02-29T08:12:51.299654+00:00",
-    "data": [
-        {
-            "systematics": "KKTix",
-            "title": "\u5370\u8c61\u6d3e150\u9031\u5e74\u5149\u5f71\u85dd\u8853\u5c55",
-            "date": "2023/12/28(\u56db)",
-            "address": "",
-            "source_url": "https://firenzeculturex.kktix.cc/events/s0ef124",
-            "UUID": "7502db0fbf8d51d7a5ffa6f145598195",
-            "figure": "https://i.imgur.com/yVuwNGm.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "POP! POP! POP! \u6d41\u884c\u97f3\u6a02\u4e92\u52d5\u5c55 \uff20 \u9ad8\u96c4\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
-            "date": "2022/3/1(\u4e8c)",
-            "address": "",
-            "source_url": "https://kpmc.kktix.cc/events/poppoppop",
-            "UUID": "2753092823855d20b12fbb3f6977690c",
-            "figure": "https://i.imgur.com/76TL3BV.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "2024\u53f0\u7063\u71c8\u6703\u5728\u81fa\u5357 X hololive production 3/6(\u4e09)",
-            "date": "2024/3/6(\u4e09)",
-            "address": "",
-            "source_url": "https://capsuleleu.kktix.cc/events/hololantern0306",
-            "UUID": "2a2b7bbc7d095daa8c4c6e53bc4d77ac",
-            "figure": "https://i.imgur.com/exPcysc.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "2024\u53f0\u7063\u71c8\u6703\u5728\u81fa\u5357 X hololive production 3/7(\u56db)",
-            "date": "2024/3/7(\u56db)",
-            "address": "",
-            "source_url": "https://capsuleleu.kktix.cc/events/hololantern0307",
-            "UUID": "be23e05ba8765cfbb2140fb1eb8e6c5a",
-            "figure": "https://i.imgur.com/pirt98U.webp"
-        }
-    ],
+    "counts": 0,
+    "last_update": "2024-02-29T16:12:17.079357+00:00",
+    "data": [],
     "visit": {}
 }
