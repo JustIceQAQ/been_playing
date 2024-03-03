@@ -5,7 +5,7 @@
         "external_link": "https://kktix.com/events?category_id=11"
     },
     "counts": 4,
-    "last_update": "2024-03-03T08:13:11.202658+00:00",
+    "last_update": "2024-03-03T16:11:11.111494+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -27,21 +27,21 @@
         },
         {
             "systematics": "KKTix",
-            "title": "2024\u53f0\u7063\u71c8\u6703\u5728\u81fa\u5357 X hololive production 3/7(\u56db)",
-            "date": "2024/3/7(\u56db)",
-            "address": "",
-            "source_url": "https://capsuleleu.kktix.cc/events/hololantern0307",
-            "UUID": "be23e05ba8765cfbb2140fb1eb8e6c5a",
-            "figure": "https://i.imgur.com/pirt98U.webp"
-        },
-        {
-            "systematics": "KKTix",
             "title": "\u5c4b\u6839\u88cf\u73c8\u7432\u82b8\u8853\u796d 2024",
             "date": "2024/3/9(\u516d)",
             "address": "",
             "source_url": "https://honichiss.kktix.cc/events/b4d2d9b9",
             "UUID": "70ca79d2008c5637b5670a7b19f59146",
             "figure": "https://i.imgur.com/LWYuk12.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "2024\u53f0\u5317\u570b\u969b\u70d8\u7119\u66a8\u8a2d\u5099\u5c55",
+            "date": "2024/3/14(\u56db)",
+            "address": "",
+            "source_url": "https://chanchaotw.kktix.cc/events/egrhgy",
+            "UUID": "8aab3eb5d4d053d39ac34bba69b0f90f",
+            "figure": "https://i.imgur.com/TnyqLFy.webp"
         }
     ],
     "visit": {}
