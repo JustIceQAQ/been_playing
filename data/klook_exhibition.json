@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 51,
-    "last_update": "2024-03-05T00:47:22.188962+00:00",
+    "counts": 52,
+    "last_update": "2024-03-05T08:15:45.043127+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u5e7b\u6ba4\u2500\u63d0\u6469\u7279\u65af\uff0e\u5b89\u683c\u842c\uff0e\u5eab\u65af\u8afe\u500b\u5c55",
+            "date": "2\u670824\u65e5(\u9031\u516d) - 4\u670821\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101023363-2024-phantoms-exhibition/",
+            "UUID": "5405bfeedaa95d53ae5ca91db16b55bf",
+            "figure": "https://i.imgur.com/C7kj3vr.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u9676\u8336\u4e4b\u9593Part 2",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023163-2024-solitary-walks-exhibition/",
             "UUID": "6a11877923d55a7a80e83f945d35df7d",
-            "figure": "https://i.imgur.com/Iqw1BWh.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022686-2024-year-of-dragon-exhibition/",
             "UUID": "b66e7a827b1a5965a65f53ad605f80b5",
-            "figure": "-"
+            "figure": "https://i.imgur.com/blBWqop.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "\u81fa\u7063\u6587\u5b78\u57fa\u5730",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101021469-2023-animals-taiwan-literature/",
             "UUID": "c6d2c382d7985386b7f467c3539b8b9e",
-            "figure": "https://i.imgur.com/b6XRPoE.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/92569-waking-wonderland-taipei/",
             "UUID": "09ac1856f46f551b9c3f0809d722852a",
-            "figure": "-"
+            "figure": "https://i.imgur.com/tlrfTjj.webp"
         },
         {
             "systematics": "klook",
