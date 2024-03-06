@@ -1,7 +1,7 @@
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
-from exhibition.cksmh.parse import CKSMHParse
+from exhibition.cksmh.parse import CKSMHParse, CKSMHParse2
 from helper.clean_helper import RequestsClean
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
 from helper.runner_helper import RunnerInit
@@ -17,18 +17,22 @@ class CKSMHRunner(RunnerInit):
     target_systematics = ExhibitionEnum.CKSMH
     target_visit_url = "https://www.cksmh.gov.tw/content_78.html"
     instantiation = RequestsBeautifulSoupInstantiation
-    use_parse = CKSMHParse
+    use_parse = CKSMHParse2
     use_header = None
 
+    # def get_response(self):
+    #     dataset_list = []
+    #     item_css_selector = "ul.exhibition-list li dl"
+    #     requests_worker = self.instantiation(self.target_url.format("1"))
+    #     target_object = requests_worker.fetch()
+    #     dataset_list.extend(target_object.select(item_css_selector))
+    #
+    #     self.get_more_range_with_url(dataset_list, item_css_selector)
+    #     return dataset_list
     def get_response(self):
-        dataset_list = []
-        item_css_selector = "ul.exhibition-list li dl"
-        requests_worker = self.instantiation(self.target_url.format("1"))
+        requests_worker = self.instantiation("https://www.cksmh.gov.tw/News_Actives_photo.aspx?n=6067&sms=14954")
         target_object = requests_worker.fetch()
-        dataset_list.extend(target_object.select(item_css_selector))
-
-        self.get_more_range_with_url(dataset_list, item_css_selector)
-        return dataset_list
+        return target_object
 
     def get_more_range_with_url(self, dataset_list, item_css_selector):
         for n in range(2, 5):
@@ -40,11 +44,15 @@ class CKSMHRunner(RunnerInit):
                 break
 
     def get_items(self, response):
-        return response
+        div = response.select_one("div.group-list.page-block")
+        data = div.find("ul").find_all("li")
+        return data
 
     def get_parsed(self, items):
         for item in items:
             data = self.use_parse(item).parsed()
+            if data["source_url"] is None:
+                continue
             clean_data = {
                 key: RequestsClean.clean_string(value) for key, value in data.items()
             }
