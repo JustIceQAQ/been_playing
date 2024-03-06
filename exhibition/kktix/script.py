@@ -28,7 +28,7 @@ class KKTixRunner(RunnerInit):
         return requests_worker.fetch(self.use_method, headers=headers)
 
     def get_items(self, response):
-        return response.select("ul.events > li.type-selling")
+        return response.select("ul.events > li.type-selling") + response.select("ul.events > li.type-view")
 
     def get_parsed(self, items):
         for item in items:
