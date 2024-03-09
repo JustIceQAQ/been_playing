@@ -5,7 +5,7 @@
         "external_link": "https://kktix.com/events?category_id=11"
     },
     "counts": 12,
-    "last_update": "2024-03-09T08:11:55.929936+00:00",
+    "last_update": "2024-03-09T16:11:32.259952+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -54,6 +54,15 @@
         },
         {
             "systematics": "KKTix",
+            "title": "20240324\u4e0a\u5348\u53c3\u8a2a\u9810\u7d04",
+            "date": "2024/3/24(\u65e5)",
+            "address": "",
+            "source_url": "https://wanhualinhouse.kktix.cc/events/ced01053-copy-4",
+            "UUID": "44418ef85c79592b96cf04dd3aae53e3",
+            "figure": "https://i.imgur.com/PKIXNEm.webp"
+        },
+        {
+            "systematics": "KKTix",
             "title": "2024\u53f0\u5317\u96fb\u5668\u7a7a\u8abf\u5f71\u97f33C\u5927\u5c55\u2502\u767e\u53f0\u5bb6\u96fb\u5929\u5929\u62bd",
             "date": "2024/3/29(\u4e94)",
             "address": "",
@@ -72,30 +81,21 @@
         },
         {
             "systematics": "KKTix",
-            "title": "2024\u53f0\u7063\u71c8\u6703\u5728\u81fa\u5357 X hololive production",
-            "date": "2024/2/23(\u4e94)",
-            "address": "",
-            "source_url": "https://capsuleleu.kktix.cc/events/hololantern",
-            "UUID": "699a2821777654caa4cd53f5c104a54f",
-            "figure": "https://i.imgur.com/He6imDg.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "2024\u53f0\u7063\u71c8\u6703\u5728\u81fa\u5357 X hololive production 3/9(\u516d)",
-            "date": "2024/3/9(\u516d)",
-            "address": "",
-            "source_url": "https://capsuleleu.kktix.cc/events/hololantern0309",
-            "UUID": "cbad692768a75036a69ce68bf4b4fe52",
-            "figure": "https://i.imgur.com/CuiDyXl.webp"
-        },
-        {
-            "systematics": "KKTix",
             "title": "\u5c4b\u6839\u88cf\u73c8\u7432\u82b8\u8853\u796d 2024",
             "date": "2024/3/9(\u516d)",
             "address": "",
             "source_url": "https://honichiss.kktix.cc/events/b4d2d9b9",
             "UUID": "70ca79d2008c5637b5670a7b19f59146",
             "figure": "https://i.imgur.com/LWYuk12.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "2024\u53f0\u7063\u71c8\u6703\u5728\u81fa\u5357 X hololive production",
+            "date": "2024/2/23(\u4e94)",
+            "address": "",
+            "source_url": "https://capsuleleu.kktix.cc/events/hololantern",
+            "UUID": "699a2821777654caa4cd53f5c104a54f",
+            "figure": "https://i.imgur.com/He6imDg.webp"
         },
         {
             "systematics": "KKTix",
