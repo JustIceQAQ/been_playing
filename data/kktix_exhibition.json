@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 12,
-    "last_update": "2024-03-10T08:12:34.316244+00:00",
+    "counts": 9,
+    "last_update": "2024-03-10T16:12:10.820719+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -78,33 +78,6 @@
             "source_url": "https://eduplus.kktix.cc/events/2024001",
             "UUID": "8f9f75d0cf01522791f2a4dc58b45075",
             "figure": "https://i.imgur.com/oTXpYoV.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "\u5c4b\u6839\u88cf\u73c8\u7432\u82b8\u8853\u796d 2024",
-            "date": "2024/3/9(\u516d)",
-            "address": "",
-            "source_url": "https://honichiss.kktix.cc/events/b4d2d9b9",
-            "UUID": "70ca79d2008c5637b5670a7b19f59146",
-            "figure": "https://i.imgur.com/LWYuk12.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "2024\u53f0\u7063\u71c8\u6703\u5728\u81fa\u5357 X hololive production",
-            "date": "2024/2/23(\u4e94)",
-            "address": "",
-            "source_url": "https://capsuleleu.kktix.cc/events/hololantern",
-            "UUID": "699a2821777654caa4cd53f5c104a54f",
-            "figure": "https://i.imgur.com/He6imDg.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "2024\u53f0\u7063\u71c8\u6703\u5728\u81fa\u5357 X hololive production 3/10(\u65e5)",
-            "date": "2024/3/10(\u65e5)",
-            "address": "",
-            "source_url": "https://capsuleleu.kktix.cc/events/hololantern0310",
-            "UUID": "d1f607113ca45a30aa7c3df350a289a8",
-            "figure": "https://i.imgur.com/pgTkbkW.webp"
         },
         {
             "systematics": "KKTix",
