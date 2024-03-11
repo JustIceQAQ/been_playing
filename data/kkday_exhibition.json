@@ -5,17 +5,8 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 40,
-    "last_update": "2024-03-11T08:14:52.154447+00:00",
+    "last_update": "2024-03-11T16:13:29.483208+00:00",
     "data": [
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u5357|\u82f1\u570b\u570b\u5bb6\u85dd\u5eca\u73cd\u85cf\u5c55\u300a\u5f9e\u62c9\u6590\u723e\u5230\u68b5\u8c37\u300b\u9580\u7968|\u5947\u7f8e\u535a\u7269\u9928 CHIMEI Museum",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/163280",
-            "UUID": "ada338b7325d5488829ab494bca4a406",
-            "figure": "https://i.imgur.com/QGw0aak.webp"
-        },
         {
             "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u6211\u662f\u9738\u738b\u9f8d20\u9031\u5e74\u5c55-\u6b61\u8fce\u5149\u81e8\u5bae\u897f\u9054\u4e5f\u904a\u6a02\u5712",
@@ -63,12 +54,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u512a\u60e08\u6298\u3011\u9ad8\u96c4\u79d1\u5de5\u9928&\u71b1\u96ea\u5929\u5802\u5152\u7ae5\u6ed1\u96ea\u6a02\u5712 2.0 \u7279\u5c55|\u806f\u5408\u9580\u7968",
+            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u5c4f\u6771\u5c55\u89bd|\u8c93\u30fb\u7f8e\u8853\u9928-\u4e16\u754c\u540d\u756b\u30fb\u5168\u9762\u55b5\u5316",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/118150-kaohsiung-national-science-and-technology-museum-hotsnow-adventure-paradise-tickets-taiwan",
-            "UUID": "109f7a4a2f765b96926c58d36043c10e",
-            "figure": "https://i.imgur.com/sBG2fF6.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/156679",
+            "UUID": "ba5e2d86215f50dca14f1d7851427f21",
+            "figure": "https://i.imgur.com/GhYcdMi.webp"
         },
         {
             "systematics": "KKDay",
@@ -81,12 +72,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u5c4f\u6771\u5c55\u89bd|\u8c93\u30fb\u7f8e\u8853\u9928-\u4e16\u754c\u540d\u756b\u30fb\u5168\u9762\u55b5\u5316",
+            "title": "\u3010\u512a\u60e08\u6298\u3011\u9ad8\u96c4\u79d1\u5de5\u9928&\u71b1\u96ea\u5929\u5802\u5152\u7ae5\u6ed1\u96ea\u6a02\u5712 2.0 \u7279\u5c55|\u806f\u5408\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/156679",
-            "UUID": "ba5e2d86215f50dca14f1d7851427f21",
-            "figure": "https://i.imgur.com/GhYcdMi.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/118150-kaohsiung-national-science-and-technology-museum-hotsnow-adventure-paradise-tickets-taiwan",
+            "UUID": "109f7a4a2f765b96926c58d36043c10e",
+            "figure": "https://i.imgur.com/sBG2fF6.webp"
         },
         {
             "systematics": "KKDay",
@@ -99,21 +90,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|THE \u54c6\u5566A\u5922\u5c55 \u53f0\u5317 2023 \u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/151873-the-doraemon-exhibition-taipei-ticket-taiwan",
-            "UUID": "030998f5f549558cbca6d84a9e958893",
-            "figure": "https://i.imgur.com/aRlQkSv.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010KKday\u7368\u5bb6\u9650\u91cf\u6436\u8cfc\u3011\u53f0\u5317|\u97f3\u6a02\u73a9\u5bb6\u7684\u79d8\u5bc6\u57fa\u5730:\u63a2\u7d22\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/131082",
             "UUID": "ef1e086464ba5d5fa27037377750e08e",
             "figure": "https://i.imgur.com/9rJfZoz.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|THE \u54c6\u5566A\u5922\u5c55 \u53f0\u5317 2023 \u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/151873-the-doraemon-exhibition-taipei-ticket-taiwan",
+            "UUID": "030998f5f549558cbca6d84a9e958893",
+            "figure": "https://i.imgur.com/aRlQkSv.webp"
         },
         {
             "systematics": "KKDay",
@@ -153,6 +144,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u53f0\u5357|\u82f1\u570b\u570b\u5bb6\u85dd\u5eca\u73cd\u85cf\u5c55\u300a\u5f9e\u62c9\u6590\u723e\u5230\u68b5\u8c37\u300b\u9580\u7968|\u5947\u7f8e\u535a\u7269\u9928 CHIMEI Museum",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/163280",
+            "UUID": "ada338b7325d5488829ab494bca4a406",
+            "figure": "https://i.imgur.com/QGw0aak.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011CWT \u53f0\u7063\u540c\u4eba\u8a8c\u8ca9\u552e\u6703\u9580\u7968|\u53f0\u5317\u5834\u3001\u53f0\u4e2d\u3001\u9ad8\u96c4",
             "date": "",
             "address": "",
@@ -162,21 +162,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010KKday \u7368\u5bb6\u3011\u53f0\u7063\u53f0\u5317|Re:\u6c5f\u8ce2\u4e8c-\u6578\u4f4d\u51a5\u60f3.\u6c5f\u8ce2\u4e8c\u5149\u5f71\u6c88\u6d78\u5c55|\u5c55\u89bd\u9580\u7968\u30fb\u53f0\u5317101\u89c0\u666f\u53f0\u806f\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/155728",
-            "UUID": "8624c5928329500fb1cd68c155a7a9af",
-            "figure": "https://i.imgur.com/eHfFgi6.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u301095\u6298\u3011\u9ad8\u96c4\u5c55\u89bd|\u6551\u63f4\u5c0f\u82f1\u96c4\u6ce2\u529b\u4e92\u52d5\u7279\u5c55\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/142186-limited-time-22-off-taipei-exhibition-rescue-little-hero-boli-interactive-special-exhibition-tickets-taiwan",
             "UUID": "4c4c338e4d6d504e8dd4f728e28ca382",
             "figure": "https://i.imgur.com/W35y2G1.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010KKday \u7368\u5bb6\u3011\u53f0\u7063\u53f0\u5317|Re:\u6c5f\u8ce2\u4e8c-\u6578\u4f4d\u51a5\u60f3.\u6c5f\u8ce2\u4e8c\u5149\u5f71\u6c88\u6d78\u5c55|\u5c55\u89bd\u9580\u7968\u30fb\u53f0\u5317101\u89c0\u666f\u53f0\u806f\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/155728",
+            "UUID": "8624c5928329500fb1cd68c155a7a9af",
+            "figure": "https://i.imgur.com/eHfFgi6.webp"
         },
         {
             "systematics": "KKDay",
