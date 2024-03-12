@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 10,
-    "last_update": "2024-03-12T00:45:58.440318+00:00",
+    "counts": 12,
+    "last_update": "2024-03-12T08:14:25.320642+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -63,6 +63,15 @@
         },
         {
             "systematics": "tmc",
+            "title": "HAUSER REBEL WITH A CELLO",
+            "date": "2024.04.30(\u4e8c)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/hauser-rebel-with-a-cello/",
+            "UUID": "e5e34d3f12985416b851b88160ecaa19",
+            "figure": "https://i.imgur.com/etSUuHZ.webp"
+        },
+        {
+            "systematics": "tmc",
             "title": "\u5468\u8559\u300e25\u300f\u53f0\u5317\u6f14\u5531\u6703",
             "date": "2024.05.04(\u516d)",
             "address": "\u8868\u6f14\u5ef3",
@@ -96,6 +105,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/nierorchestra-concert-12024/",
             "UUID": "656236e60e8450b9956761ff0ae1f68a",
             "figure": "https://i.imgur.com/luwcEk0.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "Perfume COD3 OF P3RFUM3 ZOZ5 Asia Tour 2024 \u6f14\u5531\u6703",
+            "date": "2024.07.06(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/perfume-zoz5-asia-tour-2024/",
+            "UUID": "41edfc07b2235e95add00dc60cd1ca26",
+            "figure": "https://i.imgur.com/WERtcur.webp"
         }
     ],
     "visit": {}
