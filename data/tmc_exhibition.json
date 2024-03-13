@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 13,
-    "last_update": "2024-03-13T08:13:13.531104+00:00",
+    "counts": 14,
+    "last_update": "2024-03-13T16:44:10.265507+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -33,6 +33,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/2024-richie-jen/",
             "UUID": "b60399a8ba1e51eea19c36ecc7be5424",
             "figure": "https://i.imgur.com/o9Y1YKY.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u300c\u5317\u6d41 NEW STAR Vol.4\u300d\u2014\u6253\u9020\u7576\u4ee3\u563b\u54c8\u56e1\u4ed4\u65b0\u9762\u8c8c\u7684\u8349\u5730\u97f3\u6a02\u7bc0",
+            "date": "2024.03.23(\u516d) - 2024.03.24(\u65e5)",
+            "address": "\u6236\u5916\u8868\u6f14\u7a7a\u9593",
+            "source_url": "https://www.tmc.taipei/blog/show/tmc-new-star-vol-4/",
+            "UUID": "09167853346653a7b275021117d23ba6",
+            "figure": "https://i.imgur.com/AcOb170.webp"
         },
         {
             "systematics": "tmc",
@@ -101,7 +110,7 @@
             "systematics": "tmc",
             "title": "NieR:Orchestra Concert 12024 [ the end of data ] \u4ea4\u97ff\u97f3\u6a02\u6703",
             "date": "2024.06.01(\u516d)",
-            "address": null,
+            "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/nierorchestra-concert-12024/",
             "UUID": "656236e60e8450b9956761ff0ae1f68a",
             "figure": "https://i.imgur.com/luwcEk0.webp"
