@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 14,
-    "last_update": "2024-03-14T00:46:48.009562+00:00",
+    "counts": 16,
+    "last_update": "2024-03-14T08:14:18.028140+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -36,6 +36,15 @@
         },
         {
             "systematics": "tmc",
+            "title": "\u3010\u4f86\u4e00\u676f\u97f3\u6a02\u91c0\u7684\u9152 \u3011Q1\u6211\u662f\u5973\u8072\uff5c3/20\uff08\u4e09\uff09\u4e09\u59ca\u59b9\u7e8c\u6524 \u6700\u7d42\u5834",
+            "date": "2024.03.20(\u4e09) - 2024.03.20(\u4e09)",
+            "address": "\u7522\u696d\u5340",
+            "source_url": "https://www.tmc.taipei/blog/show/lets-drink-some-musicq1-4/",
+            "UUID": "d2ae5dcfa28d57208385281b8e605528",
+            "figure": "https://i.imgur.com/5UMrIif.webp"
+        },
+        {
+            "systematics": "tmc",
             "title": "\u300c\u5317\u6d41 NEW STAR Vol.4\u300d\u2014\u6253\u9020\u7576\u4ee3\u563b\u54c8\u56e1\u4ed4\u65b0\u9762\u8c8c\u7684\u8349\u5730\u97f3\u6a02\u7bc0",
             "date": "2024.03.23(\u516d) - 2024.03.24(\u65e5)",
             "address": "\u6236\u5916\u8868\u6f14\u7a7a\u9593",
@@ -60,6 +69,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/king-gnu-asia-tourin-taipei/",
             "UUID": "d9ee105a3ce65f8f878b19a397547329",
             "figure": "https://i.imgur.com/GdxWjfN.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "H\u00b3 RIZZ UP",
+            "date": "2024.04.13(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/h-rizz-up/",
+            "UUID": "4f7d04957fd55b0db06c034996119c2a",
+            "figure": "https://i.imgur.com/19jMTFr.webp"
         },
         {
             "systematics": "tmc",
