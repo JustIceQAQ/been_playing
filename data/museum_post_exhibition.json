@@ -4,9 +4,18 @@
         "code_name": "museum_post",
         "external_link": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage=1"
     },
-    "counts": 7,
-    "last_update": "2024-03-14T08:13:37.594917+00:00",
+    "counts": 8,
+    "last_update": "2024-03-14T16:14:37.102326+00:00",
     "data": [
+        {
+            "systematics": "museum_post",
+            "title": "\u98db\u7fbd\u6620\u50cf\u90f5\u7968\u7279\u5c55",
+            "date": "2024/03/15 ~ 2024/09/01",
+            "address": "\u90f5\u653f\u535a\u7269\u9928\u9ad8\u96c4\u9928",
+            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&control_type=page&MA_Id=F80BA70A-62BA-484D-AEF4-93345BC730C8",
+            "UUID": "c968f84404815c8eb05724200f399193",
+            "figure": "https://i.imgur.com/Spwspyd.webp"
+        },
         {
             "systematics": "museum_post",
             "title": "\u6f2b\u90f5\u756b\u8da3\uff0d\u5361\u901a\u8207\u6f2b\u756b\u90f5\u7968\u7279\u5c55",
