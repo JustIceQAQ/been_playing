@@ -11,9 +11,11 @@ class NMHParse(ParseInit):
         return self.item.find("div", {"class": "caption"}).get_text().strip()
 
     def get_date(self, *args, **kwargs) -> str:
-        date_str = self.item.find("p", {"class": "activity-time"}).get_text()
-        if date_str:
-            date_str = date_str.replace("時間：", "").strip()
+        date_str = ""
+        if (date_obj := self.item.find("p", {"class": "activity-time"})) is not None:
+            date_str = date_obj.get_text()
+            if date_str:
+                date_str = date_str.replace("時間：", "").strip()
         return date_str
 
     def get_address(self, *args, **kwargs) -> str:
