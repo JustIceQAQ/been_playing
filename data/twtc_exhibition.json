@@ -4,81 +4,8 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 8,
-    "last_update": "2024-03-16T00:45:48.111212+00:00",
-    "data": [
-        {
-            "systematics": "twtc",
-            "title": "2024\u53f0\u5317\u570b\u969b\u70d8\u7119\u66a8\u8a2d\u5099\u5c55",
-            "date": "03/14 ~ 03/17",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "http://www.tibs.org.tw/",
-            "UUID": "320eae78367e5ddbaa3e705669cb7132",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "2024\u5927\u53f0\u5317\u570b\u969b\u7259\u5c55\u66a8\u5b78\u8853\u5e74\u6703",
-            "date": "03/16 ~ 03/17",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=20673",
-            "UUID": "2046226f288d596c901b354ad372e140",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "OH! Study \u6d77\u5916\u7559\u904a\u5b78\u6559\u80b2\u5c55",
-            "date": "03/16 ~ 03/17",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=20667",
-            "UUID": "3ff81122e9c454cdb219e7d068fe169a",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "\u667a\u6167\u57ce\u5e02\u8ad6\u58c7\u66a8\u5c55\u89bd",
-            "date": "03/19 ~ 03/22",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
-            "source_url": "http://smartcity.org.tw/index.php",
-            "UUID": "e51e68c1e1365660adff680847d634fb",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "2024\u7b2c25\u5c46\u53f0\u5317\u570b\u969b\u9023\u9396\u52a0\u76df\u5927\u5c55\uff0d\u6625\u5b63\u5c55",
-            "date": "03/22 ~ 03/25",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "http://www.taiwanfranchise.org/",
-            "UUID": "233e423d253b5a66b3f849694bd4fd43",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "\u53f0\u7063\u570b\u969b\u5de5\u5177\u6a5f\u5c55",
-            "date": "03/27 ~ 03/31",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "https://www.tmts.tw/zh-TW",
-            "UUID": "85513cbfebaa5693b6fa90e0a25beaa6",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "UA COMBINE",
-            "date": "03/29 ~ 03/30",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "https://uacombinetw.com/",
-            "UUID": "366c628691c4547fa50ae36cb8710823",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "\u7b2c34\u5c46\u53f0\u5317\u96fb\u5668\u7a7a\u8abf\uff13\uff23\u5927\u5c55",
-            "date": "03/29 ~ 04/01",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "http://www.teca.org.tw",
-            "UUID": "c36b63175f6054068389d2ff2f4acfa3",
-            "figure": ""
-        }
-    ],
+    "counts": 0,
+    "last_update": "2024-03-16T08:12:12.963626+00:00",
+    "data": [],
     "visit": {}
 }
