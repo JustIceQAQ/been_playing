@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 54,
-    "last_update": "2024-03-17T08:12:48.136874+00:00",
+    "counts": 50,
+    "last_update": "2024-03-17T16:12:13.729084+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -54,15 +54,6 @@
         },
         {
             "systematics": "klook",
-            "title": "\u7b2c\u4e00\u56de\u798f\u723e\u6469\u6c99\u7926\u7269\u535a\u89bd\u6703 FORMOSA International Mineral Expo - \u677e\u5c71\u6587\u5275\u5712\u5340",
-            "date": "3\u670816\u65e5(\u9031\u516d) - 3\u670817\u65e5(\u9031\u65e5)",
-            "address": "\u677e\u83f8",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101023514-2024-formosa-mineral-expo/",
-            "UUID": "f4631e21656c56468014d73e6b66eda0",
-            "figure": "https://i.imgur.com/2B8VqOv.webp"
-        },
-        {
-            "systematics": "klook",
             "title": "\u7559\u7d66\u5927\u5730\u66f4\u591a\u8272\u5f69 - \u512a\u5e2d\u592b\u7279\u5c55",
             "date": "3\u67082\u65e5(\u9031\u516d) - 4\u670828\u65e5(\u9031\u65e5)",
             "address": "-",
@@ -95,7 +86,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023418-2024-san-yu-exhibition/",
             "UUID": "941ed0b270a757e491dcecfb392dc940",
-            "figure": "-"
+            "figure": "https://i.imgur.com/SnWWpeM.webp"
         },
         {
             "systematics": "klook",
@@ -230,7 +221,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022977-2024-slight-wave-ripples/",
             "UUID": "62ad9069494c5765a2bf15c908148920",
-            "figure": "https://i.imgur.com/oK2bEmW.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -279,15 +270,6 @@
         },
         {
             "systematics": "klook",
-            "title": "2024 Viva La Campo \u7b2c\u56db\u5c46\u570b\u969b\u9732\u71df\u5c55",
-            "date": "3\u670817\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/activity/101102-viva-la-campo-camping-expo/",
-            "UUID": "f5e41239f32d5f719f88648a74e4c5ce",
-            "figure": "https://i.imgur.com/52x5WEv.webp"
-        },
-        {
-            "systematics": "klook",
             "title": "\u3010\u7dda\u4e0a\u7248\u3011\u5370\u8c61\u30fb\u7d93\u5178\u2014\u5370\u8c61\u6d3e 150 \u9031\u5e74\u7dda\u4e0a\u5c55\u89bd",
             "date": "3\u670817\u65e5(\u9031\u65e5) - 12\u670826\u65e5(\u9031\u56db)",
             "address": "-",
@@ -311,7 +293,7 @@
             "address": "\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022114-2024-reflective-states/",
             "UUID": "0b9d8302651453b5962e4df8feeade70",
-            "figure": "-"
+            "figure": "https://i.imgur.com/L1LSwHy.webp"
         },
         {
             "systematics": "klook",
@@ -320,7 +302,7 @@
             "address": "\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101021941-2023-traces-of-disappearing/",
             "UUID": "a7ccd22b1a5d5ea1bc37d56120ade4cd",
-            "figure": "-"
+            "figure": "https://i.imgur.com/bwSIoaf.webp"
         },
         {
             "systematics": "klook",
@@ -369,29 +351,11 @@
         },
         {
             "systematics": "klook",
-            "title": "Nan Goldin \u500b\u5c55",
-            "date": "2023\u5e7411\u670811\u65e5(\u9031\u516d) - 2024\u5e743\u670817\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101021241-2023-nan-goldin-exhibition/",
-            "UUID": "9bfa1f76382c562c8b960fba2b353281",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
             "title": "\u6211\u662f\u9738\u738b\u9f8d20\u9031\u5e74\u5c55-\u6b61\u8fce\u5149\u81e8\u5bae\u897f\u9054\u4e5f\u904a\u6a02\u5712",
             "date": "3\u670817\u65e5(\u9031\u65e5) - 4\u67087\u65e5(\u9031\u65e5)",
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/99386-i-am-a-tyrannosaurus/",
             "UUID": "4f7ffd90830251f2b45b466f7e548142",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "2023\u53f0\u7063\u8a2d\u8a08\u5c55\uff0d\u8d85\u7dad\u589e\u751f",
-            "date": "2023\u5e7411\u670821\u65e5(\u9031\u4e8c) - 2024\u5e743\u670817\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101021178-2023-golden-pin-design/",
-            "UUID": "3621957d19c2557fa8641d1d8b3308e0",
             "figure": "-"
         },
         {
@@ -446,7 +410,7 @@
             "address": "\u4e2d\u6b63\u7d00\u5ff5\u5802",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101019689-2023-higuchiyukoten-taipei/",
             "UUID": "a97e6c06b38f5b80b96289670f6a43cd",
-            "figure": "https://i.imgur.com/1tZTZAP.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -455,7 +419,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101019053-2023-the-where-we-are/",
             "UUID": "729d0764c47758618cb199a19ea1b465",
-            "figure": "https://i.imgur.com/QcB8CTj.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -464,7 +428,7 @@
             "address": "\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101018842-2023-taipei-biennial/",
             "UUID": "60065b5f2e1b597d9e7be4bf033c5829",
-            "figure": "https://i.imgur.com/LBmRxZc.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -473,7 +437,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/92569-waking-wonderland-taipei/",
             "UUID": "09ac1856f46f551b9c3f0809d722852a",
-            "figure": "https://i.imgur.com/tlrfTjj.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
