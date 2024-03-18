@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 16,
-    "last_update": "2024-03-18T08:13:23.379635+00:00",
+    "counts": 17,
+    "last_update": "2024-03-18T16:14:28.091523+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -150,6 +150,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/perfume-zoz5-asia-tour-2024/",
             "UUID": "41edfc07b2235e95add00dc60cd1ca26",
             "figure": "https://i.imgur.com/WERtcur.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u767e\u8001\u532f\u7d93\u5178\u97f3\u6a02\u5287\u300a\u829d\u52a0\u54e5\u300b",
+            "date": "2024.08.07(\u4e09)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/chicago-the-musical/",
+            "UUID": "dea3fd4686e55fedb6ae5711e993f77b",
+            "figure": "https://i.imgur.com/NWdkQSN.webp"
         }
     ],
     "visit": {}
