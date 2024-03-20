@@ -4,8 +4,8 @@
         "code_name": "tickets_udnfunlife",
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
-    "counts": 14,
-    "last_update": "2024-03-20T00:46:47.023895+00:00",
+    "counts": 15,
+    "last_update": "2024-03-20T08:14:17.316824+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -32,7 +32,7 @@
             "address": "\u81fa\u5317\u8868\u6f14\u85dd\u8853\u4e2d\u5fc3 \u5927\u5287\u9662",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0DW66UQ&kdid=featured",
             "UUID": "d3db050916055f3ab99e506433cdc4e1",
-            "figure": "https://i.imgur.com/TioFAHL.webp"
+            "figure": "https://i.imgur.com/4ZVMuSO.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -51,6 +51,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0DW66UW&kdid=featured",
             "UUID": "a3c74adad7485270b964e0a8cfdde8df",
             "figure": "https://i.imgur.com/KMau79L.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u5947\u5e7b\u52d5\u7269\u68ee\u6797 \u6a0b\u53e3\u88d5\u5b50\u5c55",
+            "date": "2023/12/30 ~ 2024/04/07",
+            "address": "\u570b\u7acb\u4e2d\u6b63\u7d00\u5ff5\u5802 2\u30013\u5c55\u5ef3",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P09H40RD&kdid=featured",
+            "UUID": "df83f8da58b95c69b06a03da7f8e29a9",
+            "figure": "https://i.imgur.com/yOAwO7V.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -108,15 +117,6 @@
         },
         {
             "systematics": "tickets_udnfunlife",
-            "title": "\u5947\u5e7b\u52d5\u7269\u68ee\u6797 \u6a0b\u53e3\u88d5\u5b50\u5c55",
-            "date": "2023/12/30 ~ 2024/04/07",
-            "address": "\u570b\u7acb\u4e2d\u6b63\u7d00\u5ff5\u5802 2\u30013\u5c55\u5ef3",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P09H40RD&kdid=featured",
-            "UUID": "df83f8da58b95c69b06a03da7f8e29a9",
-            "figure": "https://i.imgur.com/yOAwO7V.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
             "title": "\u53b2\u9670\u5b85\u4e4b\u65c5 \u6c89\u6d78\u5f0f\u9ad4\u9a57\u5c55",
             "date": "2024/01/06 ~ 2024/04/07",
             "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712A\u3001\u67712B",
@@ -132,6 +132,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0C3HZGY&kdid=featured",
             "UUID": "d4d12cd9046357e0abadfd11b1ca5367",
             "figure": "https://i.imgur.com/jfJhtPk.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u7b2c\u516d\u5c46\u53f0\u5317\u77ed\u5287\u7bc0",
+            "date": "2024/04/12 ~ 2024/04/21",
+            "address": "PLAYground \u5357\u6751\u5287\u5834",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0GAOVPJ&kdid=featured",
+            "UUID": "befb67d538b1586b878234cccfa6fec2",
+            "figure": "https://i.imgur.com/zHFdWWS.webp"
         }
     ],
     "visit": {}
