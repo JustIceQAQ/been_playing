@@ -4,9 +4,36 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 52,
-    "last_update": "2024-03-21T00:49:37.935481+00:00",
+    "counts": 55,
+    "last_update": "2024-03-21T08:14:52.467494+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u6df5\u85ea - \u30db\u30ce\u30b8\u30ed\u30c8\u30f2\u30b8\u53f0\u7063\u521d\u500b\u5c55",
+            "date": "4\u67086\u65e5(\u9031\u516d) - 5\u67085\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101023703-2024-honojiro-towoji/",
+            "UUID": "b87c541829f655efa995e1e765d34b57",
+            "figure": "https://i.imgur.com/Rq2WRKY.webp"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u7a1c\u93e1\u2014\u6642\u5149\u4e4b\u85cd - \u6df1\u4e95\u9686\u500b\u5c55",
+            "date": "3\u670816\u65e5(\u9031\u516d) - 4\u670828\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101023702-2024-prism-time-in-blue/",
+            "UUID": "1e212b9e133856fc9e608188afbe9f8c",
+            "figure": "https://i.imgur.com/nSwCz1v.webp"
+        },
+        {
+            "systematics": "klook",
+            "title": "MoCA Video\u300c\u5c45\u5bb6\u7b26\u865f\u5b78\u300d",
+            "date": "3\u670823\u65e5(\u9031\u516d) - 5\u67085\u65e5(\u9031\u65e5)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101023699-2024-semiotics-of-the-home/",
+            "UUID": "8326771b1379575ea25cfe0c1f16211a",
+            "figure": "https://i.imgur.com/UBE39x7.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u9b3c\u9b42\u8207\u6df1\u85cd\u6d77\uff1a\u81f4\u7a4e\u500b\u5c55 - \u7b2c\u4e03\u5c46\u9285\u9418\u85dd\u8853\u8cde",
@@ -68,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023521-2024-the-polaroid-project/",
             "UUID": "d8ab734e5004517f9f9603f647314528",
-            "figure": "https://i.imgur.com/uU4vU4g.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -77,7 +104,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023516-2024-chen-yue-hung-exhibition/",
             "UUID": "2994b4d126d65cf28f86b606db8e3983",
-            "figure": "https://i.imgur.com/Rcm5rNO.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -86,7 +113,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023425-2024-yosifu-taipei-exhibition/",
             "UUID": "c8c638b5d9b05fdf94a2d81c1a1b6910",
-            "figure": "https://i.imgur.com/Aj6wX2l.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -203,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023104-2024-chen-san-solo-exhibition/",
             "UUID": "818179c12ee3510e8ba2567e396fe53d",
-            "figure": "-"
+            "figure": "https://i.imgur.com/3rB9l1h.webp"
         },
         {
             "systematics": "klook",
@@ -212,7 +239,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023068-2024-uriko-solo-exhibition/",
             "UUID": "f78e92898f8d5ae488665f01e79bdec8",
-            "figure": "-"
+            "figure": "https://i.imgur.com/JdHCkhd.webp"
         },
         {
             "systematics": "klook",
@@ -221,7 +248,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023058-2024-taipei-audio-expo/",
             "UUID": "d5fd1d792bfa5d22b7c5097e2010b073",
-            "figure": "-"
+            "figure": "https://i.imgur.com/n0wz4TY.webp"
         },
         {
             "systematics": "klook",
@@ -284,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022686-2024-year-of-dragon-exhibition/",
             "UUID": "b66e7a827b1a5965a65f53ad605f80b5",
-            "figure": "https://i.imgur.com/blBWqop.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -293,7 +320,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/103468-online-immersive-art-exhibition-impressionism/",
             "UUID": "1fd3432c192a5b5d81be282150935f90",
-            "figure": "https://i.imgur.com/9jCosiN.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -302,7 +329,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022309-2024-love-joy-and-bliss/",
             "UUID": "32656f1f03725e869aa5fdecea31db82",
-            "figure": "https://i.imgur.com/JK65pET.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -419,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/96105-the-doraemon-taipei-2023/",
             "UUID": "2525257a1bf85e8c9358b3ed5509ba06",
-            "figure": "-"
+            "figure": "https://i.imgur.com/nb8P76g.webp"
         },
         {
             "systematics": "klook",
@@ -428,7 +455,7 @@
             "address": "\u4e2d\u6b63\u7d00\u5ff5\u5802",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101019689-2023-higuchiyukoten-taipei/",
             "UUID": "a97e6c06b38f5b80b96289670f6a43cd",
-            "figure": "-"
+            "figure": "https://i.imgur.com/1tZTZAP.webp"
         },
         {
             "systematics": "klook",
@@ -437,7 +464,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101019053-2023-the-where-we-are/",
             "UUID": "729d0764c47758618cb199a19ea1b465",
-            "figure": "-"
+            "figure": "https://i.imgur.com/QcB8CTj.webp"
         },
         {
             "systematics": "klook",
