@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 15,
-    "last_update": "2024-03-25T00:49:17.993253+00:00",
+    "counts": 16,
+    "last_update": "2024-03-25T08:15:40.740646+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -123,6 +123,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/fire-ex-one-life-one-shot/",
             "UUID": "d91834d9f4dc5db49f45afd42a29a5d5",
             "figure": "https://i.imgur.com/ZckWdTt.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u9676\u6676\u7469\u300cCrazy MoMoment\u760b\u9676\u79c0\u300d",
+            "date": "2024.06.29(\u516d)",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/crazy-momoment/",
+            "UUID": "a6aeeac302fa5d9796c7b91c7f00e43e",
+            "figure": "https://i.imgur.com/2zWT5Lp.webp"
         },
         {
             "systematics": "tmc",
