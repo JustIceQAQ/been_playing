@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-03-27T08:16:18.710008+00:00",
+    "last_update": "2024-03-27T16:14:28.157626+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -81,6 +81,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "3MONTHS \u4eab\u6c90\u6642\u5149\u5feb\u9583\u5e97",
+            "date": "2024-03-29 - 2024-04-21",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/fb9ca4ae-4433-4131-80f7-9244d511cae3",
+            "UUID": "74240fc543d3522aad4ad9e259348050",
+            "figure": "https://i.imgur.com/IiE8YYQ.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "UNIKO's Hardware 2024 \u7b2c\u4e00\u5b63\u5fae\u661f\u8207\u535a\u5e1d\u6280\u8853\u8aaa\u660e\u6703",
             "date": "2024-03-30",
             "address": "-",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/006efd4e-a610-47ec-913f-7279a91427a7",
             "UUID": "9ceda51678735ac2a977f3a15feb2ad3",
             "figure": "https://i.imgur.com/DKzwKRf.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u8f14\u5927\u5ee3\u544a\u7cfb\u7b2c27\u5c46\u7562\u5c55\u300a\u4eba\u4f9b\u667a\u6167\uff1a\u6709\u8840\u6709\u8089\u6709\u5275\u610f\u300b",
-            "date": "2024-04-12 - 2024-04-14",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/397c59eb-1102-4fcc-b49f-00401e653145",
-            "UUID": "20e69f4478255a04aa4a0989492a253a",
-            "figure": "https://i.imgur.com/Xp2RekD.webp"
         }
     ],
     "visit": {}
