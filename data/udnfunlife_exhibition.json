@@ -4,8 +4,8 @@
         "code_name": "tickets_udnfunlife",
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
-    "counts": 18,
-    "last_update": "2024-03-27T00:47:31.698954+00:00",
+    "counts": 19,
+    "last_update": "2024-03-27T08:16:30.010640+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -41,7 +41,7 @@
             "address": "\u53f0\u5317\u570b\u969b\u6703\u8b70\u4e2d\u5fc3",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0GHHYH6&kdid=featured",
             "UUID": "950ed9201696593b90037de002ddeb7f",
-            "figure": "https://i.imgur.com/KMfDg5P.webp"
+            "figure": "https://i.imgur.com/w68ePXs.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -113,7 +113,7 @@
             "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712C\u3001\u67712D",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0B5L2AJ&kdid=featured",
             "UUID": "3b1a26e2520b54e79da1cfd4b1e3342f",
-            "figure": "https://i.imgur.com/DAGUr3T.webp"
+            "figure": "https://i.imgur.com/zSdxrTn.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -168,6 +168,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0GAOVPJ&kdid=featured",
             "UUID": "befb67d538b1586b878234cccfa6fec2",
             "figure": "https://i.imgur.com/zHFdWWS.webp"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u611b\u624b\u5275\u65e5\u672c\u624b\u4f5c\u796d \u7b2c\u516d\u56de \u7adc\u5bae\u306e\u5922",
+            "date": "2024/06/14 ~ 2024/06/16",
+            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u6771\u4e8c\u9928\u56db\u9023\u68df",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0FY5RX9&kdid=featured",
+            "UUID": "337ef42b96305291bd038f8bbdda0caf",
+            "figure": "https://i.imgur.com/EQGPCP8.webp"
         }
     ],
     "visit": {}

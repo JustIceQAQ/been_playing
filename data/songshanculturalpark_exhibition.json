@@ -5,12 +5,12 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-03-27T00:47:15.824224+00:00",
+    "last_update": "2024-03-27T08:16:18.710008+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
-            "title": "\u677e\u5c71\u6587\u5275\u5712\u5340-3\u6708\u5c55\u6f14\u653b\u7565",
-            "date": "2024-03-01 - 2024-03-31",
+            "title": "\u677e\u5c71\u6587\u5275\u5712\u5340-4\u6708\u5c55\u6f14\u653b\u7565",
+            "date": "2024-04-01 - 2024-04-30",
             "address": "-",
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/757e4366-eb9c-4bf5-b199-c41487afb885",
             "UUID": "12395859bbf65c68b44561cd12b4cc7a",
@@ -81,6 +81,24 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "UNIKO's Hardware 2024 \u7b2c\u4e00\u5b63\u5fae\u661f\u8207\u535a\u5e1d\u6280\u8853\u8aaa\u660e\u6703",
+            "date": "2024-03-30",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/e9b02975-529a-4f3a-98da-a2874ccf8c76",
+            "UUID": "abd1034add9359408c29172eb6cbd670",
+            "figure": "https://i.imgur.com/iyChqPQ.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "2024\u7b2c13\u5c46\u5b78\u751f\u6587\u85dd\u806f\u5c55",
+            "date": "2024-03-30 - 2024-03-31",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/f1d3c685-a594-4fc1-8809-2247e3da5d0e",
+            "UUID": "ec6f66c2fd6652ff9fc08571eca7e9ea",
+            "figure": "https://i.imgur.com/BzQP3s8.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "VOLVO \u5b88\u8b77\u7684\u529b\u91cf",
             "date": "2024-03-30 - 2024-03-31",
             "address": "-",
@@ -117,30 +135,12 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "2024\u5947\u60f3\u8a2d\u8a08\u5927\u8cfd\u5165\u570d\u4f5c\u54c1\u5c55",
-            "date": "2024-04-12 - 2024-04-26",
+            "title": "\u8f14\u5927\u5ee3\u544a\u7cfb\u7b2c27\u5c46\u7562\u5c55\u300a\u4eba\u4f9b\u667a\u6167\uff1a\u6709\u8840\u6709\u8089\u6709\u5275\u610f\u300b",
+            "date": "2024-04-12 - 2024-04-14",
             "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/1aea0fc2-ffe3-4b57-898d-5c5b8fa4388f",
-            "UUID": "283e29564e545b978554b9c08b824503",
-            "figure": "https://i.imgur.com/1JRpwAW.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u7a40\u96e8\u6625\u6f64\u5e02 Suki Market",
-            "date": "2024-04-19 - 2024-04-21",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/1d4d818a-a2d1-4fca-a334-13e728d255cf",
-            "UUID": "012fb9fe7b8a5501aba3574026c9a05f",
-            "figure": "https://i.imgur.com/BgCJ4uC.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "2024\u53f0\u5317M\u00e9ng\u840c\u5bf5\u7269\u7528\u54c1\u5c55\uff5c\u840c\u5bf5\u82f1\u96c4\u96fb\u5f71\u7bc0",
-            "date": "2024-04-19 - 2024-04-22",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/05042e18-d4af-4c21-979f-db1f4cc25dd4",
-            "UUID": "948054aeff59523db9e4f04116b820ef",
-            "figure": "https://i.imgur.com/rujuTFX.webp"
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/397c59eb-1102-4fcc-b49f-00401e653145",
+            "UUID": "20e69f4478255a04aa4a0989492a253a",
+            "figure": "https://i.imgur.com/Xp2RekD.webp"
         }
     ],
     "visit": {}

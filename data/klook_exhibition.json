@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 57,
-    "last_update": "2024-03-27T00:48:07.065857+00:00",
+    "counts": 58,
+    "last_update": "2024-03-27T08:16:32.336885+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u7b2c22\u5c46\u53f0\u5317\u570b\u969b\u6578\u4f4d\u5f71\u97f3\u5bb6\u96fb\u5c55",
+            "date": "6\u670828\u65e5(\u9031\u4e94) - 7\u67081\u65e5(\u9031\u4e00)",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101023728-2024-taipei-future-technology/",
+            "UUID": "8468dc0609d85f5888e7d2dc51722899",
+            "figure": "https://i.imgur.com/Str0Wog.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u4e09\u79e6\u516c\u5b6b \u5f35\u514b\u6649\u7532\u8fb0\u66f8\u756b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023702-2024-prism-time-in-blue/",
             "UUID": "1e212b9e133856fc9e608188afbe9f8c",
-            "figure": "https://i.imgur.com/nSwCz1v.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023363-2024-phantoms-exhibition/",
             "UUID": "5405bfeedaa95d53ae5ca91db16b55bf",
-            "figure": "-"
+            "figure": "https://i.imgur.com/C7kj3vr.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023058-2024-taipei-audio-expo/",
             "UUID": "d5fd1d792bfa5d22b7c5097e2010b073",
-            "figure": "https://i.imgur.com/n0wz4TY.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/98512-hello-kitty-50th-anniversay/",
             "UUID": "c63ece0f6b4b55f6a4bcd95d7939153a",
-            "figure": "-"
+            "figure": "https://i.imgur.com/7dxlAVd.webp"
         },
         {
             "systematics": "klook",
@@ -518,7 +527,7 @@
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/activity/70429-music-island-stories-pop-music-in-taiwan-taipei/",
             "UUID": "dde6739eefe25fe9aae6270e758d7acd",
-            "figure": "https://i.imgur.com/3q0DDno.webp"
+            "figure": "-"
         }
     ],
     "visit": {}
