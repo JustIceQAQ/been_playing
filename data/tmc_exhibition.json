@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 16,
-    "last_update": "2024-03-28T08:12:54.981588+00:00",
+    "counts": 17,
+    "last_update": "2024-03-28T16:13:24.546571+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -51,6 +51,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/king-gnu-asia-tourin-taipei/",
             "UUID": "d9ee105a3ce65f8f878b19a397547329",
             "figure": "https://i.imgur.com/GdxWjfN.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u963f\u6839\u5ef7\u4e16\u754c\u51a0\u8ecd\u53cc\u57ce\u5de1\u8ff4\u4e4b\u53f0\u5317\u7ad9",
+            "date": "2024.04.08(\u4e00) - 2024.04.08(\u4e00)",
+            "address": "\u7522\u696d\u5340",
+            "source_url": "https://www.tmc.taipei/blog/show/argentina-world-champion-twin/",
+            "UUID": "431f14224ad55ab2810283b64225a782",
+            "figure": "https://i.imgur.com/fRE0umu.webp"
         },
         {
             "systematics": "tmc",
