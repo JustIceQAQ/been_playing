@@ -4,8 +4,8 @@
         "code_name": "tfam",
         "external_link": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw"
     },
-    "counts": 3,
-    "last_update": "2024-03-29T08:13:05.547767+00:00",
+    "counts": 4,
+    "last_update": "2024-03-29T16:12:12.347114+00:00",
     "data": [
         {
             "systematics": "tfam",
@@ -18,12 +18,12 @@
         },
         {
             "systematics": "tfam",
-            "title": "\u8881\u5ee3\u9cf4\uff1a\u65e5\u5e38\u6230\u722d\uff0f\u7b2c60\u5c46\u5a01\u5c3c\u65af\u570b\u969b\u7f8e\u8853\u96d9\u5e74\u5c55\u53f0\u7063\u9928",
-            "date": "2024-04-20 ~ 2024-11-24",
-            "address": "\u7fa9\u5927\u5229\u5a01\u5c3c\u65af\u666e\u91cc\u5947\u6b50\u5c3c\u5bae",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=765",
-            "UUID": "1ed2b28192d05f56b905bfd1fbe9bb4c",
-            "figure": "https://i.imgur.com/kLswLwH.webp"
+            "title": "\u5317\u7f8e\u9928\u958b\u653e\u7db2\u7d61\u8a08\u756b TFAM Net.Open\u2502\u5377\u7a4d",
+            "date": "2024-03-29 ~ 2024-12-31",
+            "address": "",
+            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=767",
+            "UUID": "744313cfeff6589abfd4592176fbf788",
+            "figure": "https://i.imgur.com/gSlWKkt.webp"
         },
         {
             "systematics": "tfam",
@@ -33,6 +33,15 @@
             "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=752",
             "UUID": "7c6be89bbc3d5c99a8fe5ff8ec7f0a3c",
             "figure": "https://i.imgur.com/Yn3V8yz.webp"
+        },
+        {
+            "systematics": "tfam",
+            "title": "\u8881\u5ee3\u9cf4\uff1a\u65e5\u5e38\u6230\u722d\uff0f\u7b2c60\u5c46\u5a01\u5c3c\u65af\u570b\u969b\u7f8e\u8853\u96d9\u5e74\u5c55\u53f0\u7063\u9928",
+            "date": "2024-04-20 ~ 2024-11-24",
+            "address": "\u7fa9\u5927\u5229\u5a01\u5c3c\u65af\u666e\u91cc\u5947\u6b50\u5c3c\u5bae",
+            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=765",
+            "UUID": "1ed2b28192d05f56b905bfd1fbe9bb4c",
+            "figure": "https://i.imgur.com/kLswLwH.webp"
         }
     ],
     "visit": {
