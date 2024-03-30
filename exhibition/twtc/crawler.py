@@ -58,6 +58,6 @@ class TWTCCrawler:
         year = first_time_run_result.find("select", {"id": "body_ddlYear", }).find("option", {"selected": "selected"})
         year_selected = int(year["value"])
         options = first_time_run_result.find("select", {"id": "body_ddlMoth", }).find_all("option", selected=False)
-        for option in options:
+        for option in options[:1]:
             second_time_run_result = self.second_time_run_case(year_selected, int(option["value"]))
             self.response_set.append(second_time_run_result)
