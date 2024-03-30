@@ -12,7 +12,10 @@ class NCPIParse(ParseInit):
         return self.item.get("title")
 
     def get_date(self, *args, **kwargs) -> str:
-        return self.item.select_one("div.info-box > div.date").get_text()
+        raw_date_string = self.item.select_one("div.info-box > div.date").get_text()
+        raw_date_string = raw_date_string.replace("-", "~")
+        raw_date_string = raw_date_string.replace(".", "-")
+        return raw_date_string
 
     def get_address(self, *args, **kwargs) -> str:
         return self.item.select_one("div.info-box > div.location").get_text()
