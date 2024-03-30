@@ -16,6 +16,8 @@ class NMHParse(ParseInit):
             date_str = date_obj.get_text()
             if date_str:
                 date_str = date_str.replace("時間：", "").strip()
+                date_str = date_str.replace("日期:", "").strip()
+
         return date_str
 
     def get_address(self, *args, **kwargs) -> str:
