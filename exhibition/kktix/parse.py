@@ -1,3 +1,5 @@
+import re
+
 import bs4
 
 from helper.parse_helper import ParseInit
@@ -11,7 +13,10 @@ class KKTixParse(ParseInit):
         return self.item.select_one(".event-title").get_text()
 
     def get_date(self, *args, **kwargs) -> str:
-        return self.item.select_one("span.date").get_text()
+        raw_date_string = self.item.select_one("span.date").get_text()
+        subbed_string = re.sub(r'(\(.\))', '', raw_date_string)
+        subbed_string = subbed_string.replace("/", "-")
+        return subbed_string
 
     def get_address(self, *args, **kwargs) -> str:
         return ""
