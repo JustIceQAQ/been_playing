@@ -4,13 +4,13 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 17,
-    "last_update": "2024-03-30T08:13:43.383256+00:00",
+    "counts": 16,
+    "last_update": "2024-03-30T16:13:13.826212+00:00",
     "data": [
         {
             "systematics": "tmc",
             "title": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3\u3010\u5531 \u6211\u5011\u7684\u6b4c \u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55 MUSIC, ISLAND, STORIES: Pop Music in Taiwan\u3011",
-            "date": "2021.09.18(\u516d) - 2026.09.20(\u65e5)",
+            "date": "2021.09.18 ~ 2026.09.20",
             "address": "\u6587\u5316\u9928",
             "source_url": "https://www.tmc.taipei/blog/show/music-island-stories/",
             "UUID": "b026b02911b858ecaaca4f57edb97aec",
@@ -19,7 +19,7 @@
         {
             "systematics": "tmc",
             "title": "\u97f3\u6a02\u73a9\u5bb6\u7684\u79d8\u5bc6\u57fa\u5730\uff1a\u63a2\u7d22\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
-            "date": "2023.06.24(\u516d) - 2024.12.31(\u4e8c)",
+            "date": "2023.06.24 ~ 2024.12.31",
             "address": "\u6587\u5316\u9928",
             "source_url": "https://www.tmc.taipei/blog/show/secret-base-for-music-players/",
             "UUID": "ed786e5f55e3597a8456693a7330e51e",
@@ -27,17 +27,8 @@
         },
         {
             "systematics": "tmc",
-            "title": "2024 AcQUA Tour \u3010I\u2019m Here\u3011 \u53f0\u5317\u7ad9",
-            "date": "2024.03.30(\u516d)",
-            "address": "\u8868\u6f14\u5ef3",
-            "source_url": "https://www.tmc.taipei/blog/show/2024-acqua-tour-im-here/",
-            "UUID": "936253f5ab7c58bbba8a7df1cbf32a05",
-            "figure": "https://i.imgur.com/2Dk8Qsp.webp"
-        },
-        {
-            "systematics": "tmc",
             "title": "2024\u5317\u6d41\u6b61\u6a02\u5cf6\uff0d\u4e00\u540c\u8da3\u8cfd\u8dd1\uff5c\u6625\u5929 \u2715 \u97f3\u6a02 \u2715 \u5e02\u96c6",
-            "date": "2024.04.06(\u516d) - 2024.04.07(\u65e5)",
+            "date": "2024.04.06 ~ 2024.04.07",
             "address": "\u6236\u5916\u8868\u6f14\u7a7a\u9593",
             "source_url": "https://www.tmc.taipei/blog/show/2024tmc-happy-island/",
             "UUID": "44f8f8d474525fce85abff5eb82dc082",
@@ -46,7 +37,7 @@
         {
             "systematics": "tmc",
             "title": "King Gnu Asia Tour\u300eTHE GREATEST UNKNOWN\u300fin Taipei",
-            "date": "2024.04.06(\u516d)",
+            "date": "2024.04.06",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/king-gnu-asia-tourin-taipei/",
             "UUID": "d9ee105a3ce65f8f878b19a397547329",
@@ -55,7 +46,7 @@
         {
             "systematics": "tmc",
             "title": "\u963f\u6839\u5ef7\u4e16\u754c\u51a0\u8ecd\u53cc\u57ce\u5de1\u8ff4\u4e4b\u53f0\u5317\u7ad9",
-            "date": "2024.04.08(\u4e00) - 2024.04.08(\u4e00)",
+            "date": "2024.04.08 ~ 2024.04.08",
             "address": "\u7522\u696d\u5340",
             "source_url": "https://www.tmc.taipei/blog/show/argentina-world-champion-twin/",
             "UUID": "431f14224ad55ab2810283b64225a782",
@@ -64,7 +55,7 @@
         {
             "systematics": "tmc",
             "title": "H\u00b3 RIZZ UP",
-            "date": "2024.04.13(\u516d)",
+            "date": "2024.04.13",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/h-rizz-up/",
             "UUID": "4f7d04957fd55b0db06c034996119c2a",
@@ -73,7 +64,7 @@
         {
             "systematics": "tmc",
             "title": "\u539f\u5b50\u90a6\u59ae\u300c\u660e\u660e\u65e9\u9ede\u653e\u68c4\u5c31\u6c92\u4e8b\u4e86\u300d\u6f14\u5531\u6703",
-            "date": "2024.04.20(\u516d)",
+            "date": "2024.04.20",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/astro-bunny-should-have-let-go-2024/",
             "UUID": "d2293dace4a955e39e1d4c2e3780f344",
@@ -82,7 +73,7 @@
         {
             "systematics": "tmc",
             "title": "HAUSER REBEL WITH A CELLO",
-            "date": "2024.04.30(\u4e8c)",
+            "date": "2024.04.30",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/hauser-rebel-with-a-cello/",
             "UUID": "e5e34d3f12985416b851b88160ecaa19",
@@ -91,7 +82,7 @@
         {
             "systematics": "tmc",
             "title": "\u5468\u8559\u300e25\u300f\u53f0\u5317\u6f14\u5531\u6703",
-            "date": "2024.05.04(\u516d)",
+            "date": "2024.05.04",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/chou-huei_25th_concert/",
             "UUID": "133446a852c75bbb8d58c0bc2894887e",
@@ -100,7 +91,7 @@
         {
             "systematics": "tmc",
             "title": "RADWIMPS WORLD TOUR 2024 \u201cThe way you yawn, and the outcry of Peace\u201d",
-            "date": "2024.05.15(\u4e09)",
+            "date": "2024.05.15",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/radwimps-world-tour-2024/",
             "UUID": "3c4731f0a41c5739b1e9938363f38251",
@@ -109,7 +100,7 @@
         {
             "systematics": "tmc",
             "title": "\u7d93\u5178\u6cd5\u6587\u97f3\u6a02\u5287\u300a\u5510\u749c\u300b",
-            "date": "2024.05.22(\u4e09) - 2024.05.26(\u65e5)",
+            "date": "2024.05.22 ~ 2024.05.26",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/classic-french-musical-don-juan/",
             "UUID": "925eeac4d3a2583bb7555e1a62b8bd98",
@@ -118,7 +109,7 @@
         {
             "systematics": "tmc",
             "title": "NieR:Orchestra Concert 12024 [ the end of data ] \u4ea4\u97ff\u97f3\u6a02\u6703",
-            "date": "2024.06.01(\u516d)",
+            "date": "2024.06.01",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/nierorchestra-concert-12024/",
             "UUID": "656236e60e8450b9956761ff0ae1f68a",
@@ -127,7 +118,7 @@
         {
             "systematics": "tmc",
             "title": "\u6ec5\u706b\u5668 Fire EX.\u300a\u4e00\u751f\u5230\u5e95 One Life\uff0c One Shot\u300b\u6f14\u5531\u6703 \u2013 \u53f0\u5317\u5834",
-            "date": "2024.06.15(\u516d)",
+            "date": "2024.06.15",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/fire-ex-one-life-one-shot/",
             "UUID": "d91834d9f4dc5db49f45afd42a29a5d5",
@@ -136,7 +127,7 @@
         {
             "systematics": "tmc",
             "title": "\u9676\u6676\u7469\u300cCrazy MoMoment\u760b\u9676\u79c0\u300d",
-            "date": "2024.06.29(\u516d)",
+            "date": "2024.06.29",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/crazy-momoment/",
             "UUID": "a6aeeac302fa5d9796c7b91c7f00e43e",
@@ -145,7 +136,7 @@
         {
             "systematics": "tmc",
             "title": "Perfume COD3 OF P3RFUM3 ZOZ5 Asia Tour 2024 \u6f14\u5531\u6703",
-            "date": "2024.07.06(\u516d)",
+            "date": "2024.07.06",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/perfume-zoz5-asia-tour-2024/",
             "UUID": "41edfc07b2235e95add00dc60cd1ca26",
@@ -154,7 +145,7 @@
         {
             "systematics": "tmc",
             "title": "\u767e\u8001\u532f\u7d93\u5178\u97f3\u6a02\u5287\u300a\u829d\u52a0\u54e5\u300b",
-            "date": "2024.08.07(\u4e09)",
+            "date": "2024.08.07",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/chicago-the-musical/",
             "UUID": "dea3fd4686e55fedb6ae5711e993f77b",
