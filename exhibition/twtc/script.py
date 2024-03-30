@@ -5,6 +5,7 @@ from pathlib import Path
 import pytz
 
 from exhibition import ExhibitionEnum
+from exhibition.twtc.crawler import TWTCCrawler
 from exhibition.twtc.header import TWTCHeader
 from exhibition.twtc.parse import TWTCParse
 from helper.clean_helper import RequestsClean
@@ -25,14 +26,12 @@ class TWTCRunner(RunnerInit):
     use_parse = TWTCParse
 
     def get_response(self, *args, **kwargs):
-        requests_worker = self.instantiation(self.target_url)
-        headers = (
-            self.use_header().get_header() if self.use_header is not None else None
-        )
-        return requests_worker.fetch(self.use_method, headers=headers)
+        responses = TWTCCrawler(self.target_url)
+        responses.run()
+        return responses.response_set
 
-    def get_items(self, response):
-        return response.select("#home > div > table > tbody > tr")
+    def get_items(self, responses):
+        return sum([response.select("#home > div > table > tbody > tr") for response in responses], [])
 
     def get_parsed(self, items):
         runtime_now = datetime.datetime.now(pytz.timezone("Asia/Taipei")).date()
