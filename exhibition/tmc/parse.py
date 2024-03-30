@@ -1,4 +1,5 @@
 import json
+import re
 
 import bs4
 
@@ -13,9 +14,15 @@ class TMCParse(ParseInit):
         return self.item.find("p", {"class": "m-event-card__box-title"}).get_text()
 
     def get_date(self, *args, **kwargs) -> str:
-        return self.item.find(
+        raw_date_string = self.item.find(
             "p", {"class": "m-event-card__box-bottom-date"}
         ).get_text()
+
+        raw_date_string = raw_date_string.replace("-", "~")
+
+        subbed_string = re.sub(r'(\(.\))', '', raw_date_string)
+
+        return subbed_string
 
     def get_address(self, *args, **kwargs) -> str:
         return self.safe_get_text(
