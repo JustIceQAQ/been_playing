@@ -11,7 +11,9 @@ class JamParse(ParseInit):
         return self.item.find("h3", {"class": "field-content"}).get_text()
 
     def get_date(self, *args, **kwargs) -> str:
-        return self.item.find("div", {"class": "event-date"}).get_text()
+        raw_date_string = self.item.find("div", {"class": "event-date"}).get_text()
+        raw_date_string = raw_date_string.replace("-", "~")
+        return raw_date_string
 
     def get_address(self, *args, **kwargs) -> str:
         return "-"
