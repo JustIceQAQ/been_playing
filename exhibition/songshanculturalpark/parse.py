@@ -12,7 +12,7 @@ class SongShanCulturalParkParse(ParseInit):
 
     def get_date(self, *args, **kwargs) -> str:
         raw_date_string = self.item.select_one("span.row_rt > p.date.montsrt").get_text()
-        raw_date_string = raw_date_string.replace("-", "~")
+        raw_date_string = raw_date_string.replace(" - ", " ~ ")
         return raw_date_string
 
     def get_address(self, *args, **kwargs) -> str:
