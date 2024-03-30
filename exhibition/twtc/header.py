@@ -10,4 +10,5 @@ class TWTCHeader(HeaderInit):
             "User-Agent": random.choice(USER_AGENT_LIST),
             "Host": "twtc.com.tw",
             "Pragma": "no-cache",
+            "Referer": "https://twtc.com.tw/exhibition?p=home"
         }
