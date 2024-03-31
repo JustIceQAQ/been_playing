@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 58,
-    "last_update": "2024-03-31T08:14:04.601229+00:00",
+    "counts": 53,
+    "last_update": "2024-03-31T16:12:38.299751+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -279,15 +279,6 @@
         },
         {
             "systematics": "klook",
-            "title": "\u30a8\u30b9\uff0fSS 20\u5468\u5e74\u7d00\u5ff5\u5c55 -Taiwan Exhibition Vol.2-",
-            "date": "3\u67082\u65e5(\u9031\u516d) - 3\u670831\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101023257-2024-ss-20th-taiwan-exhibition/",
-            "UUID": "2c83ab82a599510283fea72581db73d5",
-            "figure": "https://i.imgur.com/lpFe3V7.webp"
-        },
-        {
-            "systematics": "klook",
             "title": "\u5317\u6295\u8907\u5beb\u672c Beitou Palimpsest",
             "date": "2\u670824\u65e5(\u9031\u516d) - 4\u670814\u65e5(\u9031\u65e5)",
             "address": "-",
@@ -297,21 +288,12 @@
         },
         {
             "systematics": "klook",
-            "title": "\u9e7f\u306e\u60d1\u661f \u2013 Day & Night - \u77f3\u4e95\u967d\u5b50Yoko ISHII\u651d\u5f71\u500b\u5c55",
-            "date": "3\u67081\u65e5(\u9031\u4e94) - 3\u670831\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101023185-2024-yoko-ishii-exhibition/",
-            "UUID": "28a17d23f1a752659d0f85d1d63d8ac8",
-            "figure": "https://i.imgur.com/Ni3On7M.webp"
-        },
-        {
-            "systematics": "klook",
             "title": "\u7389\u8fb0\u5927\u8c61 - \u5875\u4e09\u500b\u5c55",
             "date": "3\u67089\u65e5(\u9031\u516d) - 4\u670825\u65e5(\u9031\u56db)",
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023104-2024-chen-san-solo-exhibition/",
             "UUID": "818179c12ee3510e8ba2567e396fe53d",
-            "figure": "-"
+            "figure": "https://i.imgur.com/3rB9l1h.webp"
         },
         {
             "systematics": "klook",
@@ -320,7 +302,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023058-2024-taipei-audio-expo/",
             "UUID": "d5fd1d792bfa5d22b7c5097e2010b073",
-            "figure": "-"
+            "figure": "https://i.imgur.com/n0wz4TY.webp"
         },
         {
             "systematics": "klook",
@@ -360,29 +342,11 @@
         },
         {
             "systematics": "klook",
-            "title": "\u5fc3\u5411\u30fb\u672a\u4f86 2024\u9f8d\u5e74\u6625\u5b63\u5c55 - \u904e\u5e742024",
-            "date": "1\u670820\u65e5(\u9031\u516d) - 3\u670831\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101022686-2024-year-of-dragon-exhibition/",
-            "UUID": "b66e7a827b1a5965a65f53ad605f80b5",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
             "title": "\u3010\u7dda\u4e0a\u7248\u3011\u5370\u8c61\u30fb\u7d93\u5178\u2014\u5370\u8c61\u6d3e 150 \u9031\u5e74\u7dda\u4e0a\u5c55\u89bd",
             "date": "3\u670831\u65e5(\u9031\u65e5) - 12\u670826\u65e5(\u9031\u56db)",
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/103468-online-immersive-art-exhibition-impressionism/",
             "UUID": "1fd3432c192a5b5d81be282150935f90",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u6620\u614b\uff1a112\u5e74\u5168\u570b\u7f8e\u8853\u5c55\u651d\u5f71\u985e",
-            "date": "2023\u5e7412\u670823\u65e5(\u9031\u516d) - 2024\u5e743\u670831\u65e5(\u9031\u65e5)",
-            "address": "\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101022114-2024-reflective-states/",
-            "UUID": "0b9d8302651453b5962e4df8feeade70",
             "figure": "-"
         },
         {
@@ -446,7 +410,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/98512-hello-kitty-50th-anniversay/",
             "UUID": "c63ece0f6b4b55f6a4bcd95d7939153a",
-            "figure": "https://i.imgur.com/7dxlAVd.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -455,7 +419,7 @@
             "address": "\u5317\u85dd\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101020871-2023-jurassic-exhibition-taipe/",
             "UUID": "97000d32b28358f090dde0d914a7cf1e",
-            "figure": "https://i.imgur.com/GSvCbgx.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -464,7 +428,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/98447-immersive-art-exhibition-immressionism/",
             "UUID": "bf5e925ba811586fb7797727223e1332",
-            "figure": "https://i.imgur.com/5wbW6oa.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -473,7 +437,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/96738-fantasy-animal-forest-higuchi-yuko/",
             "UUID": "290127802d47567abae36a782fc28d7d",
-            "figure": "https://i.imgur.com/vnKovkD.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -504,15 +468,6 @@
         },
         {
             "systematics": "klook",
-            "title": "WAKING WONDERLAND \u518d\u904a\u4ed9\u5883_\u6211\u963f\u5b24\u662f\u611b\u9e97\u7d72",
-            "date": "3\u670831\u65e5(\u9031\u65e5)",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/activity/92569-waking-wonderland-taipei/",
-            "UUID": "09ac1856f46f551b9c3f0809d722852a",
-            "figure": "https://i.imgur.com/tlrfTjj.webp"
-        },
-        {
-            "systematics": "klook",
             "title": "\u8de8\u2027\u4ea4\u2027\u901a\uff1a\u5f9e\u300c\u5927\u962a\u5546\u8239\u682a\u5f0f\u6703\u793e\u81fa\u5317\u652f\u5e97\u300d\u5230\u300c\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3\u81fa\u5317\u9928\u300d - \u5e38\u8a2d\u5c55\u51fa",
             "date": "2021\u5e743\u670825\u65e5(\u9031\u56db) - 2024\u5e7412\u670831\u65e5(\u9031\u4e8c)",
             "address": "\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3",
@@ -527,7 +482,7 @@
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/activity/70429-music-island-stories-pop-music-in-taiwan-taipei/",
             "UUID": "dde6739eefe25fe9aae6270e758d7acd",
-            "figure": "-"
+            "figure": "https://i.imgur.com/3q0DDno.webp"
         }
     ],
     "visit": {}
