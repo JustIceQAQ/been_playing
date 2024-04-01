@@ -1,7 +1,33 @@
+import datetime
+import re
+
 import bs4
 import cssutils
 
 from helper.parse_helper import ParseInit
+
+
+def chinese_date_format(raw_date_string: str) -> str:
+    if "年" in raw_date_string:
+        pattern = r'(\d{4})年(\d{1,2})月(\d{1,2})日'
+        match = re.search(pattern, raw_date_string)
+        if match:
+            year = match.group(1)
+            month = match.group(2)
+            day = match.group(3)
+            return f"{year}-{month}-{day}"
+        else:
+            return ""
+    else:
+        year = datetime.datetime.now().year
+        pattern = r'(\d{1,2})月(\d{1,2})日'
+        match = re.search(pattern, raw_date_string)
+        if match:
+            month = match.group(1)
+            day = match.group(2)
+            return f"{year}-{month}-{day}"
+        else:
+            return ""
 
 
 class KLookParse(ParseInit):
@@ -38,7 +64,16 @@ class KLookParse(ParseInit):
         return runtime_title
 
     def get_date(self, *args, **kwargs) -> str:
-        return self.item.select_one("div.dates > * > span").get_text()
+        raw_date_string = self.item.select_one("div.dates > * > span").get_text()
+        subbed_string = re.sub(r'(\(..\))', '', raw_date_string)
+        raw_date_string_strip = subbed_string.strip("-")
+
+        if len(raw_date_string_strip) == 1:
+            start_date = raw_date_string_strip[0].strip()
+            return chinese_date_format(start_date)
+        else:
+            start_date, end_date = raw_date_string_strip
+            return f"{chinese_date_format(start_date)}~{chinese_date_format(end_date)}"
 
     def get_address(self, *args, **kwargs) -> str:
         raw_title = self.item.select_one("h3.title").get_text()
