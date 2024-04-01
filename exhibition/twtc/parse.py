@@ -21,7 +21,7 @@ class TWTCParse(ParseInit):
         end_date_month, end_date_day = end_date_str.split("/")
         string_date = f"{this_year}-{start_date_month}-{start_date_day}"
         end_date_year = (this_year + 1) if int(end_date_month) < int(start_date_month) else this_year
-        end_date = f"{end_date_year}-{end_date_month}-{end_date_day}"
+        end_date = f"{end_date_year}-{int(end_date_month)}-{end_date_day}"
         return f"{string_date} ~ {end_date}"
 
     def get_address(self, *args, **kwargs) -> str:
