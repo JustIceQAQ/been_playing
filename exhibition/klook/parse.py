@@ -66,7 +66,7 @@ class KLookParse(ParseInit):
     def get_date(self, *args, **kwargs) -> str:
         raw_date_string = self.item.select_one("div.dates > * > span").get_text()
         subbed_string = re.sub(r'(\(..\))', '', raw_date_string)
-        raw_date_string_strip = subbed_string.strip("-")
+        raw_date_string_strip = subbed_string.split("-")
 
         if len(raw_date_string_strip) == 1:
             start_date = raw_date_string_strip[0].strip()
