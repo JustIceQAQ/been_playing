@@ -25,7 +25,7 @@ class NCPIParse(ParseInit):
         style = cssutils.parseStyle(dev_style)
 
         return (
-            url.replace("url(", "")[:-1].replace('"', "")
+            url.replace("url(", "")[:-1].replace('"', "").replace(' ', "%20")
             if (url := style["background-image"])
             else "-"
         )
