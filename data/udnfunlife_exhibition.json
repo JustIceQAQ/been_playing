@@ -4,8 +4,8 @@
         "code_name": "tickets_udnfunlife",
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
-    "counts": 11,
-    "last_update": "2024-04-08T00:50:01.551654+00:00",
+    "counts": 10,
+    "last_update": "2024-04-08T08:15:29.458607+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -32,7 +32,7 @@
             "address": "\u885b\u6b66\u71df\u570b\u5bb6\u85dd\u8853\u6587\u5316\u4e2d\u5fc3 \u6b4c\u5287\u9662,\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3 \u8868\u6f14\u5ef3",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0C8NMSR&kdid=featured",
             "UUID": "f10635b5101d51c29ef9d17c85e1fa0c",
-            "figure": "https://i.imgur.com/5WVRDYn.webp"
+            "figure": "https://i.imgur.com/82qkkOm.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -50,7 +50,7 @@
             "address": "\u81fa\u5317\u8868\u6f14\u85dd\u8853\u4e2d\u5fc3 \u5927\u5287\u9662",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0DW66UQ&kdid=featured",
             "UUID": "d3db050916055f3ab99e506433cdc4e1",
-            "figure": "https://i.imgur.com/woJINzr.webp"
+            "figure": "https://i.imgur.com/4LiwXIB.webp"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -96,15 +96,6 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0FY5RX9&kdid=featured",
             "UUID": "337ef42b96305291bd038f8bbdda0caf",
             "figure": "https://i.imgur.com/EQGPCP8.webp"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
-            "title": "\u6e2c\u8a66\u7bc0\u76ee",
-            "date": "2024/05/01 ~ 2024/05/05",
-            "address": "\u6e2c\u8a66\u5834\u9928",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0GJDF3M&kdid=featured",
-            "UUID": "8956b0b066845a709e7f4ef4aa1dcf5b",
-            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/?v=202403201211"
         }
     ],
     "visit": {}
