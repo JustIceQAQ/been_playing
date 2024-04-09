@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 48,
-    "last_update": "2024-04-09T00:48:50.595221+00:00",
+    "counts": 49,
+    "last_update": "2024-04-09T08:14:23.579408+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u3010\u7e6a\u3002\u6d6e\u4e16\u3011\u90ed\u96c5\u5022\u81a0\u5f69\u756b\u5275\u4f5c\u500b\u5c55",
+            "date": "2024-4-20~2024-5-8",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101023989-2024-vaikuntha-exhibition/",
+            "UUID": "c1e5f2e07a6652179fc8dd9d39a2c83d",
+            "figure": "https://res.klook.com/image/upload/x_0,y_34,w_4967,h_6954,c_crop/w_360,q_85/v1712638314/events_admin/ffrocvdpszd8saosfe9w.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u5c71\u91cd\u6c34\u8907\uff1a\u901d\u53bb\u4f5c\u70ba\u4e00\u77ac - \u6c60\u67bb\u9f8d\u5275\u4f5c\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023854-2024-yes-taiwan-exhibition/",
             "UUID": "986b983323c054938bb8f19eebf0e88c",
-            "figure": "https://i.imgur.com/0YqPjb4.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023670-2024-synergy-exhibition/",
             "UUID": "ef46d1b090f85b1da901d3fc56807ef0",
-            "figure": "-"
+            "figure": "https://i.imgur.com/7GM8gB8.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023418-2024-san-yu-exhibition/",
             "UUID": "941ed0b270a757e491dcecfb392dc940",
-            "figure": "https://i.imgur.com/SnWWpeM.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101009551-2022-trans-communication/",
             "UUID": "e4e842f083515a8895442ae7d5ada5df",
-            "figure": "-"
+            "figure": "https://i.imgur.com/IEzADyX.webp"
         }
     ],
     "visit": {}
