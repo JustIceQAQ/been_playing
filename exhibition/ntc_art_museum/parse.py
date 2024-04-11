@@ -22,9 +22,9 @@ class NTCArtMuseumMainParse(ParseInit):
             date_format += f"{year}-{left_month}-{left_month_day}"
         if clean_right_date:
             right_month, _, right_month_day = clean_right_date.partition(".")
-            if int(right_month) < int(left_month):
-                next_year = int(year) + 1
-            date_format += f" ~ {next_year}-{right_month}-{right_month_day}"
+            if int(right_month) < int(right_month):
+                year = int(year) + 1
+            date_format += f" ~ {year}-{right_month}-{right_month_day}"
         return date_format
 
     def get_address(self, *args, **kwargs) -> str:
