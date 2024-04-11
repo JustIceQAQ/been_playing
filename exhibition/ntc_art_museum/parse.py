@@ -17,13 +17,16 @@ class NTCArtMuseumMainParse(ParseInit):
         left_date, _, right_date = dates.partition("—")
         clean_left_date = left_date.strip()
         clean_right_date = right_date.strip()
+        has_left_month = None
         if clean_left_date:
             left_month, _, left_month_day = clean_left_date.partition(".")
             date_format += f"{year}-{left_month}-{left_month_day}"
+            has_left_month = left_month
         if clean_right_date:
             right_month, _, right_month_day = clean_right_date.partition(".")
-            if int(right_month) < int(right_month):
-                year = int(year) + 1
+            if has_left_month:
+                if int(right_month) < int(has_left_month):
+                    year = int(year) + 1
             date_format += f" ~ {year}-{right_month}-{right_month_day}"
         return date_format
 
