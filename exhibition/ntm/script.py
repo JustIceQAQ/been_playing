@@ -67,7 +67,11 @@ class NTMRunner(RunnerInit):
         )
         response = requests_worker.fetch(self.use_method, headers=headers)
         opening = response.select_one("#visit > .info > p")
-        return opening.get_text().replace("＊", "\n＊")
+        return (
+            ""
+            if (opening_text := opening.get_text()) is None
+            else opening_text.replace("＊", "\n＊")
+        )
 
 
 if __name__ == "__main__":
