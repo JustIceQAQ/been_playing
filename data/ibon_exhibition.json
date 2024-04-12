@@ -4,8 +4,8 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 43,
-    "last_update": "2024-04-12T00:48:28.431015+00:00",
+    "counts": 44,
+    "last_update": "2024-04-12T08:13:23.113976+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -24,6 +24,15 @@
             "source_url": "https://tour.ibon.com.tw/event/660b658357a3906b66caa4f6",
             "UUID": "c8ab969c2daa55de9fe779f6bbab0340",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/aed63614-8482-4ee7-ad67-b363f65901d4.jpg"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u53f0\u5357\uff0e\u81fa\u5357\u5e02\u7f8e\u8853\u9928\uff0e\u8d08CITY CAFE",
+            "date": "2024-04-01 ~ 2024-12-31",
+            "address": "\u81fa\u5357\u5e02\u7f8e\u8853\u9928 1\u9928\uff062\u9928",
+            "source_url": "https://tour.ibon.com.tw/event/660a2dba26c57037e85892b2",
+            "UUID": "fcaea3f29812515ba80fd15a527f83bc",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/cc5c42b0-9150-422b-b6a7-be1f5288ec2e.jpg"
         },
         {
             "systematics": "ibon",
