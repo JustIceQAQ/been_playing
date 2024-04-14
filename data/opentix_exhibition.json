@@ -4,8 +4,8 @@
         "code_name": "opentix",
         "external_link": "https://www.opentix.life/search/%20/ABOUT_TO_BEGIN?category=%E5%B1%95%E8%A6%BDAll"
     },
-    "counts": 4,
-    "last_update": "2024-04-14T10:37:35.481558+00:00",
+    "counts": 6,
+    "last_update": "2024-04-14T22:27:50.876151+00:00",
     "data": [
         {
             "systematics": "opentix",
@@ -42,6 +42,24 @@
             "source_url": "https://www.opentix.life/event/1739536336309276673",
             "UUID": "0aa5951772d85aef8ba6a69cc0e2d313",
             "figure": "https://i.imgur.com/FnIPj98.webp"
+        },
+        {
+            "systematics": "opentix",
+            "title": "\u6703\u52d5\u7684\u6e05\u660e\u4e0a\u6cb3\u5716",
+            "date": "2024-06-26 ~ 2024-09-15",
+            "address": "\u81fa\u5317",
+            "source_url": "https://www.opentix.life/event/1778274076541489153",
+            "UUID": "a7639187406b5051ac795d0734c6ff2d",
+            "figure": "https://s3.resource.opentix.life/upload/program/1712806676824tEmDGxTEZ6.jpeg"
+        },
+        {
+            "systematics": "opentix",
+            "title": "\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55",
+            "date": "2024-06-29 ~ 2024-09-22",
+            "address": "\u81fa\u5317",
+            "source_url": "https://www.opentix.life/event/1778332973177020417",
+            "UUID": "6d1801027d445db3a2ceebd5509e7015",
+            "figure": "https://s3.resource.opentix.life/upload/program/1712822609925llMFtucbYs.jpeg"
         }
     ],
     "visit": {}
