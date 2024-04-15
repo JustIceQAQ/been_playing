@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 40,
-    "last_update": "2024-04-14T22:28:50.739110+00:00",
+    "last_update": "2024-04-15T03:13:56.019002+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -198,6 +198,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u301095\u6298\u3011\u9ad8\u96c4\u5c55\u89bd|\u4f8f\u7f85\u7d00\u6050\u9f8d\u63a2\u96aa\u6a02\u5712\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/155895-kaohsiung-jurassic-dinosaur-adventure-park-ticket-taiwan",
+            "UUID": "44c3dd4405785ee780adf0d3f9c1ecf7",
+            "figure": "https://i.imgur.com/qzfDOeg.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u301095\u6298\u3011\u9ad8\u96c4\u5c55\u89bd|\u6551\u63f4\u5c0f\u82f1\u96c4\u6ce2\u529b\u4e92\u52d5\u7279\u5c55\u9580\u7968",
             "date": "",
             "address": "",
@@ -207,12 +216,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u301095\u6298\u3011\u9ad8\u96c4\u5c55\u89bd|\u4f8f\u7f85\u7d00\u6050\u9f8d\u63a2\u96aa\u6a02\u5712\u9580\u7968",
+            "title": "\u3010KKday \u7368\u5bb6\u3011\u53f0\u7063\u53f0\u5317|Re:\u6c5f\u8ce2\u4e8c-\u6578\u4f4d\u51a5\u60f3.\u6c5f\u8ce2\u4e8c\u5149\u5f71\u6c88\u6d78\u5c55|\u5c55\u89bd\u9580\u7968\u30fb\u53f0\u5317101\u89c0\u666f\u53f0\u806f\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/155895-kaohsiung-jurassic-dinosaur-adventure-park-ticket-taiwan",
-            "UUID": "44c3dd4405785ee780adf0d3f9c1ecf7",
-            "figure": "https://i.imgur.com/qzfDOeg.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/155728",
+            "UUID": "8624c5928329500fb1cd68c155a7a9af",
+            "figure": "https://i.imgur.com/eHfFgi6.webp"
         },
         {
             "systematics": "KKDay",
@@ -231,15 +240,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/134831",
             "UUID": "a22d5bf4a25e523fbb006210afa8f5fa",
             "figure": "https://i.imgur.com/CXJ6nb1.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u3010KKday \u7368\u5bb6\u3011\u53f0\u7063\u53f0\u5317|Re:\u6c5f\u8ce2\u4e8c-\u6578\u4f4d\u51a5\u60f3.\u6c5f\u8ce2\u4e8c\u5149\u5f71\u6c88\u6d78\u5c55|\u5c55\u89bd\u9580\u7968\u30fb\u53f0\u5317101\u89c0\u666f\u53f0\u806f\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/155728",
-            "UUID": "8624c5928329500fb1cd68c155a7a9af",
-            "figure": "https://i.imgur.com/eHfFgi6.webp"
         },
         {
             "systematics": "KKDay",
@@ -342,21 +342,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u65e9\u9ce56\u6298\u3011\u53f0\u5317\u5c55\u89bd \u2502 2023TECA\u53f0\u5317\u570b\u969b\u97f3\u97ff\u5927\u5c55",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/156396",
-            "UUID": "d79a47770f355a63b3c9cef7b06bcc79",
-            "figure": "https://i.imgur.com/4EUhiuR.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010\u7368\u5bb689\u6298\u3011\u6843\u5712\u5927\u6eaa|\u852c\u98df\u7121\u83dc\u55ae\u6599\u7406+\u512a\u8cea\u85dd\u6587\u7279\u5c55+\u54c1\u724c\u4f34\u624b\u79ae",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/144223",
             "UUID": "d6e66182d2a55c30a6e0f17a2d3a63e5",
             "figure": "https://i.imgur.com/LFc7dii.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010\u65e9\u9ce56\u6298\u3011\u53f0\u5317\u5c55\u89bd \u2502 2023TECA\u53f0\u5317\u570b\u969b\u97f3\u97ff\u5927\u5c55",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/156396",
+            "UUID": "d79a47770f355a63b3c9cef7b06bcc79",
+            "figure": "https://i.imgur.com/4EUhiuR.webp"
         },
         {
             "systematics": "KKDay",
