@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 40,
-    "last_update": "2024-04-16T00:48:53.572052+00:00",
+    "last_update": "2024-04-16T08:14:38.556704+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -68,7 +68,7 @@
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/116304",
             "UUID": "185133ea528959a5af67fdb23d68dc83",
-            "figure": "https://i.imgur.com/acLHouC.webp"
+            "figure": "https://image.kkday.com/v2/image/get/w_600%2Cc_fit/s1.kkday.com/product_116304/20220422055225_kg5So/jpg"
         },
         {
             "systematics": "KKDay",
@@ -207,15 +207,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u301095\u6298\u3011\u9ad8\u96c4\u5c55\u89bd|\u4f8f\u7f85\u7d00\u6050\u9f8d\u63a2\u96aa\u6a02\u5712\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/155895-kaohsiung-jurassic-dinosaur-adventure-park-ticket-taiwan",
-            "UUID": "44c3dd4405785ee780adf0d3f9c1ecf7",
-            "figure": "https://i.imgur.com/qzfDOeg.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u5317|\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55|\u5c55\u89bd\u9580\u7968",
             "date": "",
             "address": "",
@@ -234,12 +225,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u4e2d\u5c55\u89bd|PINKFONG BABY SHARK \u653e\u96fb\u8db4 in \u53f0\u4e2d\u9580\u7968",
+            "title": "\u301095\u6298\u3011\u9ad8\u96c4\u5c55\u89bd|\u4f8f\u7f85\u7d00\u6050\u9f8d\u63a2\u96aa\u6a02\u5712\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/134831",
-            "UUID": "a22d5bf4a25e523fbb006210afa8f5fa",
-            "figure": "https://i.imgur.com/CXJ6nb1.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/155895-kaohsiung-jurassic-dinosaur-adventure-park-ticket-taiwan",
+            "UUID": "44c3dd4405785ee780adf0d3f9c1ecf7",
+            "figure": "https://i.imgur.com/qzfDOeg.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u3010KKday\u7368\u5bb6\u3011\u53f0\u7063\u53f0\u5317|ART SOLO 2022 \u85dd\u4e4b\u7368\u79c0\u85dd\u8853\u535a\u89bd\u6703|\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/126960",
+            "UUID": "bdd2478b4e775b42aaa73af193ab7795",
+            "figure": "https://i.imgur.com/Ynnaoon.webp"
         },
         {
             "systematics": "KKDay",
@@ -252,12 +252,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010KKday\u7368\u5bb6\u3011\u53f0\u7063\u53f0\u5317|ART SOLO 2022 \u85dd\u4e4b\u7368\u79c0\u85dd\u8853\u535a\u89bd\u6703|\u9580\u7968",
+            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u53f0\u4e2d\u5c55\u89bd|PINKFONG BABY SHARK \u653e\u96fb\u8db4 in \u53f0\u4e2d\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/126960",
-            "UUID": "bdd2478b4e775b42aaa73af193ab7795",
-            "figure": "https://i.imgur.com/Ynnaoon.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/134831",
+            "UUID": "a22d5bf4a25e523fbb006210afa8f5fa",
+            "figure": "https://i.imgur.com/CXJ6nb1.webp"
         },
         {
             "systematics": "KKDay",
