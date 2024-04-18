@@ -4,8 +4,54 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 0,
-    "last_update": "2024-04-18T08:14:28.183387+00:00",
-    "data": [],
+    "counts": 5,
+    "last_update": "2024-04-18T16:12:54.770573+00:00",
+    "data": [
+        {
+            "systematics": "KKTix",
+            "title": "[HYBE INSIGHT] The Daydream Believers: \uafc8, \ub9c8\uce68\ub0b4 in Taipei",
+            "date": "2024-3-22",
+            "address": "",
+            "source_url": "https://djbent.kktix.cc/events/thedaydream",
+            "UUID": "dfd94a3184e7579dbe7e56f5b15d9293",
+            "figure": "https://i.imgur.com/0mVQ8Db.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "POP! POP! POP! \u6d41\u884c\u97f3\u6a02\u4e92\u52d5\u5c55 \uff20 \u9ad8\u96c4\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
+            "date": "2022-3-1",
+            "address": "",
+            "source_url": "https://kpmc.kktix.cc/events/poppoppop",
+            "UUID": "2753092823855d20b12fbb3f6977690c",
+            "figure": "https://i.imgur.com/76TL3BV.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u91cd\u6a5f\u66a8\u4eba\u8eab\u90e8\u54c1\u5c55",
+            "date": "2024-6-7",
+            "address": "",
+            "source_url": "https://cheng-sing.kktix.cc/events/90f38dfe",
+            "UUID": "5a0f8c5f25f754dab89122c00fb2e967",
+            "figure": "https://i.imgur.com/JU0w8um.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "2024\u53f0\u5317\u570b\u969b\u9152\u5c55\uff0e\u7d14\u9152\u5c55",
+            "date": "2024-4-19",
+            "address": "",
+            "source_url": "https://chanchaotw.kktix.cc/events/lfiewge",
+            "UUID": "663711d53fe95e6f8abb9b94c5c264c3",
+            "figure": "https://i.imgur.com/H51YZCZ.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "Tattour HK 2024",
+            "date": "2024-5-3",
+            "address": "",
+            "source_url": "https://rgbacademy.kktix.cc/events/tattourhk",
+            "UUID": "00324273c35d59c1aa339512adf3b3ed",
+            "figure": "https://i.imgur.com/kkTYCrr.webp"
+        }
+    ],
     "visit": {}
 }
