@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 56,
-    "last_update": "2024-04-19T08:14:30.321543+00:00",
+    "counts": 57,
+    "last_update": "2024-04-19T16:13:58.905988+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u542b\u82f1\u5480\u83ef\u301c\u5b5f\u712636\u9031\u5e74\u5178\u85cf\u5c55",
+            "date": "2024-5-1~2024-5-30",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101024187-2024-art-exhibition/",
+            "UUID": "302017434fdd596ea5289b976bd6e61a",
+            "figure": "https://res.klook.com/image/upload/x_0,y_134,w_2848,h_3987,c_crop/w_360,q_85/v1713516596/events_admin/ywx3v57usdm3r3hlmlwt.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024008-2024-lin-pei-yao-ehxibition/",
             "UUID": "d26e8c55683d51468f4c7a68c7948f98",
-            "figure": "https://i.imgur.com/cXtMIEh.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023728-2024-taipei-future-technology/",
             "UUID": "8468dc0609d85f5888e7d2dc51722899",
-            "figure": "-"
+            "figure": "https://i.imgur.com/Str0Wog.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023699-2024-semiotics-of-the-home/",
             "UUID": "8326771b1379575ea25cfe0c1f16211a",
-            "figure": "https://i.imgur.com/UBE39x7.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101021941-2023-traces-of-disappearing/",
             "UUID": "a7ccd22b1a5d5ea1bc37d56120ade4cd",
-            "figure": "-"
+            "figure": "https://i.imgur.com/bwSIoaf.webp"
         },
         {
             "systematics": "klook",
