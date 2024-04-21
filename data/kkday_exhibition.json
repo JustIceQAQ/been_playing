@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 40,
-    "last_update": "2024-04-21T00:53:47.066753+00:00",
+    "last_update": "2024-04-21T08:13:43.074650+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -63,6 +63,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u3010\u9810\u552e74\u6298\u3011\u53f0\u5317|\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55|\u5c55\u89bd\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/115138",
+            "UUID": "bf21f8fe10c25cf688af2331002e7be6",
+            "figure": "https://image.kkday.com/v2/image/get/w_600%2Cc_fit/s1.kkday.com/product_115138/20240410094703_r9yvM/jpg"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u3010\u65e9\u9ce5\u512a\u60e0\u30112024\u53f0\u6771\u71b1\u6c23\u7403\u5609\u5e74\u83ef\u5171\u4e58\u4f86\u56de\u63a5\u99c1|\u8d08\u9752\u8349\u8336+\u5ba2\u5bb6\u7cbf|\u514d\u8cbb\u501f\u7528\u91ce\u9910\u588a",
             "date": "",
             "address": "",
@@ -87,15 +96,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/137251-sing-our-songs-music-island-stories-pop-music-exhibition-tickets-taipei",
             "UUID": "0ea3d03dde465435af4c8d5e787c0700",
             "figure": "https://i.imgur.com/SIJe7HS.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u3010\u9810\u552e74\u6298\u3011\u53f0\u5317|\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55|\u5c55\u89bd\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/115138",
-            "UUID": "bf21f8fe10c25cf688af2331002e7be6",
-            "figure": "https://image.kkday.com/v2/image/get/w_600%2Cc_fit/s1.kkday.com/product_115138/20240410094703_r9yvM/jpg"
         },
         {
             "systematics": "KKDay",
@@ -198,24 +198,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u301095\u6298\u3011\u9ad8\u96c4\u5c55\u89bd|\u4f8f\u7f85\u7d00\u6050\u9f8d\u63a2\u96aa\u6a02\u5712\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/155895-kaohsiung-jurassic-dinosaur-adventure-park-ticket-taiwan",
-            "UUID": "44c3dd4405785ee780adf0d3f9c1ecf7",
-            "figure": "https://i.imgur.com/qzfDOeg.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|OneOffs Fair & Fest",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/132525",
-            "UUID": "3df16023cb5854e8976d533bbd679b81",
-            "figure": "https://i.imgur.com/w8frX8O.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u301095\u6298\u3011\u9ad8\u96c4\u5c55\u89bd|\u6551\u63f4\u5c0f\u82f1\u96c4\u6ce2\u529b\u4e92\u52d5\u7279\u5c55\u9580\u7968",
             "date": "",
             "address": "",
@@ -231,6 +213,24 @@
             "source_url": "https://www.kkday.com/zh-tw/product/122638",
             "UUID": "5bbde5295d595d1e8cda6d94646dc456",
             "figure": "https://i.imgur.com/AtdEe1D.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|OneOffs Fair & Fest",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/132525",
+            "UUID": "3df16023cb5854e8976d533bbd679b81",
+            "figure": "https://i.imgur.com/w8frX8O.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u301095\u6298\u3011\u9ad8\u96c4\u5c55\u89bd|\u4f8f\u7f85\u7d00\u6050\u9f8d\u63a2\u96aa\u6a02\u5712\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/155895-kaohsiung-jurassic-dinosaur-adventure-park-ticket-taiwan",
+            "UUID": "44c3dd4405785ee780adf0d3f9c1ecf7",
+            "figure": "https://i.imgur.com/qzfDOeg.webp"
         },
         {
             "systematics": "KKDay",
