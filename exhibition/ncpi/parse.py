@@ -13,6 +13,14 @@ class NCPIParse(ParseInit):
 
     def get_date(self, *args, **kwargs) -> str:
         raw_date_string = self.item.select_one("div.info-box > div.date").get_text()
+        split_date = raw_date_string.split("-")
+        if len(split_date) == 2:
+            start_date, end_date = split_date
+            if len((start_date_data := start_date.split("."))) == 3 and len((end_date_data := end_date.split("."))) == 2:
+                start_date_year = start_date_data[0]
+                end_date = f"{start_date_year}.{end_date.strip()}"
+                raw_date_string = f"{start_date} - {end_date}"
+
         raw_date_string = raw_date_string.replace("-", "~")
         raw_date_string = raw_date_string.replace(".", "-")
         return raw_date_string
