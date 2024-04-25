@@ -4,8 +4,8 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 43,
-    "last_update": "2024-04-25T00:52:01.898106+00:00",
+    "counts": 44,
+    "last_update": "2024-04-25T08:13:59.140759+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -33,6 +33,15 @@
             "source_url": "https://tour.ibon.com.tw/event/660b658357a3906b66caa4f6",
             "UUID": "c8ab969c2daa55de9fe779f6bbab0340",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/aed63614-8482-4ee7-ad67-b363f65901d4.jpg"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u85dd\u96c6\u85dd\u8853\u8b1b\u5802\uff0e\u502b\u6566\u570b\u5bb6\u85dd\u5eca\u8207\u5b83\u7684\u73cd\u85cf",
+            "date": "2024-05-05 ~ 2024-08-18",
+            "address": "\u9752\u7530\u85dd\u96c6 Art Reading Cafe",
+            "source_url": "https://tour.ibon.com.tw/event/660ab1c172063c471d43a4e6",
+            "UUID": "b9ffe5f501cc544a847d944383547c9e",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/b6462c9a-3a11-47fa-82fa-273eafbb27a2.jpg"
         },
         {
             "systematics": "ibon",
