@@ -4,8 +4,8 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 45,
-    "last_update": "2024-04-26T08:14:05.774253+00:00",
+    "counts": 46,
+    "last_update": "2024-04-26T16:14:41.363035+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -24,6 +24,15 @@
             "source_url": "https://tour.ibon.com.tw/event/6625c6cfd1b94a2173846bcb",
             "UUID": "72e7d12d77fd582aa48d13619513ea88",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/fe6ae2b6-aeb0-4525-aad5-f4ef2f74f701.jpg"
+        },
+        {
+            "systematics": "ibon",
+            "title": "CooMIC\u4e8c\u5143\u5275\u5eab2",
+            "date": "2024-05-25 ~ 2024-05-25",
+            "address": "\u82b1\u535a\u722d\u8c54\u9928",
+            "source_url": "https://tour.ibon.com.tw/event/6618212508bdf4203f4408d9",
+            "UUID": "c7c60d22bb2a5c23ba6126c2a8557ebc",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/eec862ee-6937-40c1-8010-c95ce3b2f5e1.jpg"
         },
         {
             "systematics": "ibon",

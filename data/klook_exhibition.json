@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 57,
-    "last_update": "2024-04-26T08:14:46.615329+00:00",
+    "counts": 58,
+    "last_update": "2024-04-26T16:15:17.506427+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u8ca7\u7aae\u4eba\u7684\u53f0\u5317\uff1a\u8f49\u904b\u7ad9",
+            "date": "2024-4-27~2024-6-16",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101024331-2024-transfer-station/",
+            "UUID": "3c8681a6e4b35a489ebb3cb50c874ae8",
+            "figure": "https://res.klook.com/image/upload/x_9,y_0,w_1339,h_1875,c_crop/w_360,q_85/v1714121612/events_admin/tudppazuwtfvldq6k7c1.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u9054\u6587\u897f\u9ad4\u9a57\u5c55\uff0d\u8d85\u8d8a 500 \u5e74\u7684\u8f1d\u714c - \u677e\u5c71\u6587\u5275\u5712\u5340",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024112-2024-hidy-iroiro-exhibition/",
             "UUID": "cc73992888da5b7a9466e4817269c04d",
-            "figure": "https://res.klook.com/image/upload/x_0,y_9,w_1450,h_2030,c_crop/w_360,q_85/v1713235862/events_admin/j5s6v5rqgfc08d2uyvbp.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023854-2024-yes-taiwan-exhibition/",
             "UUID": "986b983323c054938bb8f19eebf0e88c",
-            "figure": "-"
+            "figure": "https://i.imgur.com/0YqPjb4.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "\u5c55\u89bd",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023727-2024-geometric-variations/",
             "UUID": "5caee4a385205c8e89af6065f39dab02",
-            "figure": "https://i.imgur.com/enVCVft.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/103571-paintings-in-the-southern-breeze-online-exhibition/",
             "UUID": "5565769bff1052c1af370f0e957c73c8",
-            "figure": "-"
+            "figure": "https://i.imgur.com/TxE2nBM.webp"
         },
         {
             "systematics": "klook",
@@ -518,7 +527,7 @@
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/activity/70429-music-island-stories-pop-music-in-taiwan-taipei/",
             "UUID": "dde6739eefe25fe9aae6270e758d7acd",
-            "figure": "https://i.imgur.com/3q0DDno.webp"
+            "figure": "-"
         }
     ],
     "visit": {}
