@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 58,
-    "last_update": "2024-04-27T08:13:51.719739+00:00",
+    "counts": 57,
+    "last_update": "2024-04-27T16:12:46.279380+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -225,15 +225,6 @@
         },
         {
             "systematics": "klook",
-            "title": "Y.E.S. TAIWAN X",
-            "date": "2024-4-6~2024-4-27",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101023854-2024-yes-taiwan-exhibition/",
-            "UUID": "986b983323c054938bb8f19eebf0e88c",
-            "figure": "https://i.imgur.com/0YqPjb4.webp"
-        },
-        {
-            "systematics": "klook",
             "title": "2024\u53f0\u5317\u570b\u969b\u7cbe\u7dfb\u9152\u5c55",
             "date": "2024-8-16~2024-8-19",
             "address": "-",
@@ -311,7 +302,7 @@
             "address": "\u5c55\u89bd",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023727-2024-geometric-variations/",
             "UUID": "5caee4a385205c8e89af6065f39dab02",
-            "figure": "-"
+            "figure": "https://i.imgur.com/enVCVft.webp"
         },
         {
             "systematics": "klook",
@@ -446,7 +437,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/103571-paintings-in-the-southern-breeze-online-exhibition/",
             "UUID": "5565769bff1052c1af370f0e957c73c8",
-            "figure": "https://i.imgur.com/TxE2nBM.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -527,7 +518,7 @@
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/activity/70429-music-island-stories-pop-music-in-taiwan-taipei/",
             "UUID": "dde6739eefe25fe9aae6270e758d7acd",
-            "figure": "-"
+            "figure": "https://i.imgur.com/3q0DDno.webp"
         }
     ],
     "visit": {}
