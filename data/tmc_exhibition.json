@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 17,
-    "last_update": "2024-04-29T08:15:20.323638+00:00",
+    "counts": 18,
+    "last_update": "2024-04-29T16:13:42.544659+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -42,6 +42,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/hauser-rebel-with-a-cello/",
             "UUID": "e5e34d3f12985416b851b88160ecaa19",
             "figure": "https://i.imgur.com/etSUuHZ.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "Mercedes-Benz FUN\u96fb\u661f\u6a02\u5712",
+            "date": "2024.05.02 ~ 2024.05.05",
+            "address": "\u6236\u5916\u8868\u6f14\u7a7a\u9593",
+            "source_url": "https://www.tmc.taipei/blog/show/mercedes-benz-fun-paradise/",
+            "UUID": "1159b01e06e85b08a74bf9d42e94c6ef",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/04/MB_Road_Show_Banner_1360x680.png"
         },
         {
             "systematics": "tmc",

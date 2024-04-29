@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 49,
-    "last_update": "2024-04-29T08:15:58.858847+00:00",
+    "counts": 51,
+    "last_update": "2024-04-29T16:14:41.566826+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "teamLab\u5171\u5275\uff01\u672a\u4f86\u5712",
+            "date": "2024-6-14",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/activity/115951-teamlab-future-park/",
+            "UUID": "99ff8f4cea685364b93dd22b5cd497f6",
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/klook_326x460_nymvyz.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u8ca7\u7aae\u4eba\u7684\u53f0\u5317\uff1a\u8f49\u904b\u7ad9",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/114440-the-river-of-wisdom-along-the-river-during-the-qingming-festival/",
             "UUID": "24e3af3e20d056d5b9e6dee29955ce4a",
-            "figure": "https://res.klook.com/image/upload/w_360,q_85/klook_\u5c3a\u5bf8__\u5c55\u6f14\u9801\u9762\u6d3b\u52d5\u9996\u5716_1_aee0hr.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023847-2024-taipei-fine-wine-eexpo/",
             "UUID": "d6fe6ef9fdb7522bb35dd22fcca5769e",
-            "figure": "-"
+            "figure": "https://i.imgur.com/QOjAx2o.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023699-2024-semiotics-of-the-home/",
             "UUID": "8326771b1379575ea25cfe0c1f16211a",
-            "figure": "https://i.imgur.com/UBE39x7.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -405,6 +414,15 @@
         },
         {
             "systematics": "klook",
+            "title": "\u6211\u662f\u9738\u738b\u9f8d20\u9031\u5e74\u5c55\uff0d\u6b61\u8fce\u5149\u81e8\u5bae\u897f\u9054\u4e5f\u904a\u6a02\u5712\uff08\u5c4f\u6771\u7ad9\uff09",
+            "date": "2024-6-29",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/activity/99386-i-am-a-tyrannosaurus/",
+            "UUID": "4f7ffd90830251f2b45b466f7e548142",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
             "title": "\u5bd3\u610f\u6240\u5728 - \u738b\u4ec1\u5091 x \u9ece\u5fd7\u6587\u5c0d\u8a71\u5c55",
             "date": "2023-8-15~2024-4-30",
             "address": "-",
@@ -428,7 +446,7 @@
             "address": "\u9a5a\u559c\u88fd\u9020",
             "source_url": "https://www.klook.com/zh-TW/activity/81847-the-sunset-terminal/",
             "UUID": "b148959df7175628a044b1bcb87bf5c0",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/20240207_\u843d\u65e5\u6708\u53f0_Klook_Banner_326x420_1_niv7h2.png"
         },
         {
             "systematics": "klook",
@@ -437,7 +455,7 @@
             "address": "\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101009551-2022-trans-communication/",
             "UUID": "e4e842f083515a8895442ae7d5ada5df",
-            "figure": "-"
+            "figure": "https://i.imgur.com/IEzADyX.webp"
         },
         {
             "systematics": "klook",
