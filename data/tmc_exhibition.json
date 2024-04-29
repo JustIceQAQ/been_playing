@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 14,
-    "last_update": "2024-04-29T00:50:34.242412+00:00",
+    "counts": 17,
+    "last_update": "2024-04-29T08:15:20.323638+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -63,6 +63,15 @@
         },
         {
             "systematics": "tmc",
+            "title": "\u300ehololive Meet SUPER KARAOKE PARTY @ TAIPEI 2024\u300f",
+            "date": "2024.05.11",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/super-kraoke-party-taipei/",
+            "UUID": "3a8d501ec4135caa936337f877ef7632",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/04/\u5b98\u7db2\u5c55\u6f14\u6d3b\u52d51360x680.jpg"
+        },
+        {
+            "systematics": "tmc",
             "title": "RADWIMPS WORLD TOUR 2024 \u201cThe way you yawn, and the outcry of Peace\u201d",
             "date": "2024.05.15",
             "address": "\u8868\u6f14\u5ef3",
@@ -81,12 +90,30 @@
         },
         {
             "systematics": "tmc",
+            "title": "\u300c\u7da0\u8272\u53cd\u601d\u65e5 The Critical Green\u300d\u2014\u97f3\u6a02\u7bc0x\u672b\u65e5\u5e02\u96c6x\u852c\u98dfx\u6c38\u7e8c\u85dd\u8853x\u6df1\u5ea6\u8ad6\u58c7\u2014\u4e0d\u4e00\u6a23\u7684\u7da0\u8272\u5be6\u8e10\uff01",
+            "date": "2024.06.01 ~ 2024.06.02",
+            "address": "\u6587\u5316\u9928",
+            "source_url": "https://www.tmc.taipei/blog/show/the-critical-green/",
+            "UUID": "05276f0193b05cb3a49c4b6c8d9cc159",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/04/\u5716\u7247\u4e00_\u6a19\u984c\u5716W1360xH680.jpg"
+        },
+        {
+            "systematics": "tmc",
             "title": "NieR:Orchestra Concert 12024 [ the end of data ] \u4ea4\u97ff\u97f3\u6a02\u6703",
             "date": "2024.06.01",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/nierorchestra-concert-12024/",
             "UUID": "656236e60e8450b9956761ff0ae1f68a",
             "figure": "https://i.imgur.com/luwcEk0.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "2024 Lisa Ono \u5c0f\u91ce\u9e97\u838e35\u9031\u5e74\u4e16\u754c\u5de1\u8ff4\u6f14\u5531\u6703\uff0d\u81fa\u7063\u7ad9",
+            "date": "2024.06.09",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/2024-lisa-ono-35-taipei/",
+            "UUID": "4550f6e697c45d7baa43b2833be153f6",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/04/\u5317\u6d41\u5716\u6a94.jpg"
         },
         {
             "systematics": "tmc",
