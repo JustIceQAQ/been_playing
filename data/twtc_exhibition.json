@@ -5,7 +5,7 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 64,
-    "last_update": "2024-04-29T16:14:04.526859+00:00",
+    "last_update": "2024-04-30T00:49:19.167217+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -54,20 +54,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u53f0\u5317\u570b\u969b\u6c7d\u6a5f\u8eca\u96f6\u914d\u4ef6\u5c55&\u53f0\u5317\u570b\u969b\u8eca\u7528\u96fb\u5b50\u5c55",
-            "date": "2024-04-17 ~ 2024-4-20",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "http://www.taipeiampa.com.tw",
-            "UUID": "12e133c8fe41523b9275b3521560aee0",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u53f0\u7063\u570b\u969b\u667a\u6167\u79fb\u52d5\u5c55",
             "date": "2024-04-17 ~ 2024-4-20",
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.e-mobilityshow.com.tw",
             "UUID": "035fc7b3f06256a8b7eeb0252a8233ba",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u5317\u570b\u969b\u6c7d\u6a5f\u8eca\u96f6\u914d\u4ef6\u5c55&\u53f0\u5317\u570b\u969b\u8eca\u7528\u96fb\u5b50\u5c55",
+            "date": "2024-04-17 ~ 2024-4-20",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.taipeiampa.com.tw",
+            "UUID": "12e133c8fe41523b9275b3521560aee0",
             "figure": ""
         },
         {
@@ -200,7 +200,7 @@
             "systematics": "twtc",
             "title": "\u53f0\u5317\u570b\u969b\u96fb\u8166\u5c55",
             "date": "2024-06-04 ~ 2024-6-07",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.computextaipei.com.tw",
             "UUID": "129604ba884e546dbf3a1570551c7bc8",
             "figure": ""
@@ -380,7 +380,7 @@
             "systematics": "twtc",
             "title": "\u53f0\u5317\u570b\u969b\u81ea\u884c\u8eca\u5c55\u89bd\u6703",
             "date": "2024-03-06 ~ 2024-3-09",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
             "source_url": "http://www.taipeicycle.com.tw",
             "UUID": "72a6325fb458569d9c47d352bc48d176",
             "figure": ""
@@ -423,20 +423,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "OH! Study \u6d77\u5916\u7559\u904a\u5b78\u6559\u80b2\u5c55",
-            "date": "2024-03-16 ~ 2024-3-17",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=20667",
-            "UUID": "3ff81122e9c454cdb219e7d068fe169a",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "2024\u5927\u53f0\u5317\u570b\u969b\u7259\u5c55\u66a8\u5b78\u8853\u5e74\u6703",
             "date": "2024-03-16 ~ 2024-3-17",
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=20673",
             "UUID": "2046226f288d596c901b354ad372e140",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "OH! Study \u6d77\u5916\u7559\u904a\u5b78\u6559\u80b2\u5c55",
+            "date": "2024-03-16 ~ 2024-3-17",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=20667",
+            "UUID": "3ff81122e9c454cdb219e7d068fe169a",
             "figure": ""
         },
         {
