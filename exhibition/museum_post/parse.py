@@ -14,7 +14,7 @@ class MuseumPostParse(ParseInit):
         date_value = "-"
         if runtime_value := self.item.find("div", {"class": "ex_date"}):
             date_value = runtime_value.get_text().replace("日期：", "").strip()
-        return date_value
+        return date_value.replace("/", "-")
 
     def get_address(self, *args, **kwargs) -> str:
         address_value = "-"
