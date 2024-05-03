@@ -22,7 +22,7 @@ class TMCParse(ParseInit):
 
         subbed_string = re.sub(r'(\(.\))', '', raw_date_string)
 
-        return subbed_string
+        return subbed_string.replace(".", "-")
 
     def get_address(self, *args, **kwargs) -> str:
         return self.safe_get_text(
