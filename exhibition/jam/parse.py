@@ -13,7 +13,7 @@ class JamParse(ParseInit):
     def get_date(self, *args, **kwargs) -> str:
         raw_date_string = self.item.find("div", {"class": "event-date"}).get_text()
         raw_date_string = raw_date_string.replace("-", "~")
-        return raw_date_string
+        return raw_date_string.replace("/", "-")
 
     def get_address(self, *args, **kwargs) -> str:
         return "-"
