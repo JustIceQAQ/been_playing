@@ -5,8 +5,17 @@
         "external_link": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw"
     },
     "counts": 7,
-    "last_update": "2024-05-03T08:13:47.332139+00:00",
+    "last_update": "2024-05-03T16:14:14.861596+00:00",
     "data": [
+        {
+            "systematics": "tfam",
+            "title": "William Kentridge \u5a01\u5ec9\uff0e\u80af\u7279\u91cc\u5947",
+            "date": "2024-05-04 ~ 2024-09-01",
+            "address": "\u4e00\u6a131A~1B",
+            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=768",
+            "UUID": "c44f86a6cdef5bc4a01b645ad6fb225e",
+            "figure": "https://www.tfam.museum/File/Exhibition/Main/768/2024041016590710630401.jpg"
+        },
         {
             "systematics": "tfam",
             "title": "\u6469\u767b\u751f\u6d3b\uff1a\u81fa\u7063\u5efa\u7bc91949\u20131983",
@@ -60,15 +69,6 @@
             "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=769",
             "UUID": "02e96edba040571db9c7f50a8f0aa1b5",
             "figure": "https://www.tfam.museum/File/Exhibition/Main/769/2024042512093466710944.jpg"
-        },
-        {
-            "systematics": "tfam",
-            "title": "William Kentridge \u5a01\u5ec9\uff0e\u80af\u7279\u91cc\u5947",
-            "date": "2024-05-04 ~ 2024-09-01",
-            "address": "\u4e00\u6a131A~1B",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=768",
-            "UUID": "c44f86a6cdef5bc4a01b645ad6fb225e",
-            "figure": "https://www.tfam.museum/File/Exhibition/Main/768/2024041016590710630401.jpg"
         }
     ],
     "visit": {
