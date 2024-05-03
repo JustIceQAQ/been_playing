@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 17,
-    "last_update": "2024-05-03T00:52:40.496502+00:00",
+    "counts": 18,
+    "last_update": "2024-05-03T08:13:57.117224+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -123,6 +123,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/fire-ex-one-life-one-shot/",
             "UUID": "d91834d9f4dc5db49f45afd42a29a5d5",
             "figure": "https://i.imgur.com/ZckWdTt.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "[BABYMONSTER PRESENTS : SEE YOU THERE] IN TAIPEI",
+            "date": "2024.06.23",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/babymonster-see-you/",
+            "UUID": "cc3d78053eb955728e6e701340b3ce77",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/05/1360680_0.jpg"
         },
         {
             "systematics": "tmc",
