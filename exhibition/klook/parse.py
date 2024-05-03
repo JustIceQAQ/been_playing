@@ -15,7 +15,7 @@ def chinese_date_format(raw_date_string: str) -> str:
             year = match.group(1)
             month = match.group(2)
             day = match.group(3)
-            return f"{year}-{month:02d}-{day:02d}"
+            return f"{year}-{int(month):02d}-{int(day):02d}"
         else:
             return "-"
     else:
@@ -25,7 +25,7 @@ def chinese_date_format(raw_date_string: str) -> str:
         if match:
             month = match.group(1)
             day = match.group(2)
-            return f"{year}-{month:02d}-{day:02d}"
+            return f"{year}-{int(month):02d}-{int(day):02d}"
         else:
             return "-"
 
