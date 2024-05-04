@@ -1,6 +1,6 @@
 from typing import Optional
 import httpx
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 
 from exhibition.twtc.header import TWTCHeader
 
@@ -57,7 +57,8 @@ class TWTCCrawler:
 
         year = first_time_run_result.find("select", {"id": "body_ddlYear", }).find("option", {"selected": "selected"})
         year_selected = int(year["value"])
-        options = first_time_run_result.find("select", {"id": "body_ddlMoth", }).find_all("option", selected=False)
-        for option in options[:1]:
+        runtime_options = first_time_run_result.find("select", {"id": "body_ddlMoth", }).find("option", selected=True)
+        next_options = [item for item in runtime_options.next_siblings if isinstance(item, Tag)]
+        for option in next_options:
             second_time_run_result = self.second_time_run_case(year_selected, int(option["value"]))
             self.response_set.append(second_time_run_result)
