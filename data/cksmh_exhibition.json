@@ -4,8 +4,8 @@
         "code_name": "cksmh",
         "external_link": "https://www.cksmh.gov.tw/activitysoonlist_369.html"
     },
-    "counts": 4,
-    "last_update": "2024-05-06T00:51:17.087158+00:00",
+    "counts": 6,
+    "last_update": "2024-05-06T08:14:59.049225+00:00",
     "data": [
         {
             "systematics": "cksmh",
@@ -36,12 +36,30 @@
         },
         {
             "systematics": "cksmh",
+            "title": "\u6843\u674e\u82ac\u82b3\uff0d\u9673\u8aa0\u4e5d\u5341\u5d69\u58fd\u5e2b\u751f\u7f8e\u5c55\uff08\u514d\u8cbb\u53c3\u89c0\uff09",
+            "date": "2024-05-07 ~ 2024-05-30",
+            "address": "1\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=40784",
+            "UUID": "ed33e69a144d5553affc4f259da41f0f",
+            "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/40784/AD/40784_0_0_89019.jpg"
+        },
+        {
+            "systematics": "cksmh",
             "title": "\u90fd\u6703\u85dd\u904a\u5341\u516b\u5468\u5e74\u806f\u5c55(\u514d\u8cbb\u53c3\u89c0)",
             "date": "2024-05-10 ~ 2024-05-21",
             "address": "4\u5c55\u5ef3",
             "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=40783",
             "UUID": "8207cde5ef26517f9ec5d148426e78f4",
             "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/40783/AD/40783_0_0_514432.jpg"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u570b\u7acb\u81fa\u7063\u85dd\u8853\u5927\u5b78109\u7d1a\u53e4\u8e5f\u85dd\u8853\u4fee\u8b77\u5b78\u7cfb\u7562\u696d\u5c55\u2014\u300c\u796d\u796d\u796d\u796d\u7b4a\u7b4a\u7b4a\u7b4a\u300d(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2024-05-16 ~ 2024-05-25",
+            "address": "\u4e09\u6a13\u85dd\u5eca",
+            "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=40785",
+            "UUID": "343b41f743735aca8360632cbc484681",
+            "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/40785/AD/40785_0_0_700034.jpg"
         }
     ],
     "visit": {}
