@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 44,
-    "last_update": "2024-05-07T00:50:55.685687+00:00",
+    "counts": 45,
+    "last_update": "2024-05-07T08:14:33.974319+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u4f4e\u8a9e Whisper - \u821f\u8d8a\u6842 Katsura FUNAKOSHI\u500b\u5c55",
+            "date": "2024-05-11~2024-06-22",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101024446-2024-katsura-funakoshi/",
+            "UUID": "d207fede435c53e4b820071fca02daa7",
+            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1715063941/events_admin/v0fvjgbkocklqelkiloy.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u4f8f\u7f85\u7d00X\u6050\u9f8d\u5149\u5f71\u5c55 - \u570b\u7acb\u81fa\u7063\u79d1\u5b78\u6559\u80b2\u9928",
@@ -27,12 +36,12 @@
         },
         {
             "systematics": "klook",
-            "title": "\u9ad4\u73fe Menifest - \u6c5f\u6771\u8aed\u500b\u5c55",
+            "title": "\u9ad4\u73fe Manifest - \u6c5f\u6771\u8aed\u500b\u5c55",
             "date": "2024-05-17~2024-07-06",
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024394-2024-menifest-exhibition/",
             "UUID": "c3db628e29e45bf5a39979fbe42abb4e",
-            "figure": "https://res.klook.com/image/upload/x_36,y_0,w_1523,h_2132,c_crop/w_360,q_85/v1714630751/events_admin/koszc4fbncjvdxvlrkfj.jpg"
+            "figure": "https://res.klook.com/image/upload/x_0,y_689,w_4823,h_6752,c_crop/w_360,q_85/v1715053479/events_admin/an3hs4xsw3h9rxhjf7kz.jpg"
         },
         {
             "systematics": "klook",
@@ -86,7 +95,7 @@
             "address": "\u677e\u83f8",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024299-2024-leonardo-da-vinci-taipei/",
             "UUID": "8fdf28fb4db8515e8a3d82cb7edd51c8",
-            "figure": "https://res.klook.com/image/upload/x_0,y_10,w_1449,h_2029,c_crop/w_360,q_85/v1714033585/events_admin/ovrxnqbuyzdzo0o3ll0p.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023844-2024-taipei-travel-exhibition/",
             "UUID": "54b8b2fa2e3b50d287a01beca9a50a75",
-            "figure": "-"
+            "figure": "https://i.imgur.com/oTLjJ0I.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023683-2024-ghost-sea-exhibition/",
             "UUID": "3a39c019553a577fa7da904058b9ebff",
-            "figure": "https://i.imgur.com/23z3l8s.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",

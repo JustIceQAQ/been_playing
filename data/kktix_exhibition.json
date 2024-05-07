@@ -4,8 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 9,
-    "last_update": "2024-05-07T00:50:16.882896+00:00",
+    "counts": 10,
+    "last_update": "2024-05-07T08:13:56.673272+00:00",
     "data": [
         {
             "systematics": "KKTix",
@@ -87,6 +87,15 @@
             "source_url": "https://kklivetw.kktix.cc/events/ldv500tp",
             "UUID": "ae50c874108f5e9b9ad804706277441d",
             "figure": "https://t.kfs.io/upload_images/201411/KV-%E6%A9%AB_%E6%A9%AB%E5%BC%8FKV_medium.jpg"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u722c\u73a9\u5e9c\u57ce\u936c\u936c\u4e00\u8d77\u4f86",
+            "date": "2024-10-12",
+            "address": "",
+            "source_url": "https://insectw.kktix.cc/events/pwtn77176",
+            "UUID": "0324005ef6f25d9fb2bf1e36c6b9739a",
+            "figure": "https://t.kfs.io/upload_images/202312/S__187850754_medium.jpg"
         }
     ],
     "visit": {}
