@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 44,
-    "last_update": "2024-05-09T00:51:14.153744+00:00",
+    "counts": 45,
+    "last_update": "2024-05-09T08:15:00.826096+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u842c\u576a - \u66fe\u4e0a\u6770\u500b\u5c55",
+            "date": "2024-04-20~2024-06-08",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101024488-2024-wanping-exhibtiion/",
+            "UUID": "2a37a44857c65332bbeedac0e4200891",
+            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1715239841/events_admin/huabw5pcnm7yxbfqjla1.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u4f4e\u8a9e Whisper - \u821f\u8d8a\u6842 Katsura FUNAKOSHI\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024331-2024-transfer-station/",
             "UUID": "3c8681a6e4b35a489ebb3cb50c874ae8",
-            "figure": "https://res.klook.com/image/upload/x_9,y_0,w_1339,h_1875,c_crop/w_360,q_85/v1714121612/events_admin/tudppazuwtfvldq6k7c1.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023844-2024-taipei-travel-exhibition/",
             "UUID": "54b8b2fa2e3b50d287a01beca9a50a75",
-            "figure": "-"
+            "figure": "https://i.imgur.com/oTLjJ0I.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023683-2024-ghost-sea-exhibition/",
             "UUID": "3a39c019553a577fa7da904058b9ebff",
-            "figure": "https://i.imgur.com/23z3l8s.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
