@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 36,
-    "last_update": "2024-05-11T00:50:43.459884+00:00",
+    "last_update": "2024-05-11T08:14:31.860335+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -99,6 +99,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u3010KKday\u7368\u5bb6\u9650\u91cf\u6436\u8cfc\u3011\u53f0\u5317|\u97f3\u6a02\u73a9\u5bb6\u7684\u79d8\u5bc6\u57fa\u5730:\u63a2\u7d22\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/131082",
+            "UUID": "ef1e086464ba5d5fa27037377750e08e",
+            "figure": "https://i.imgur.com/9rJfZoz.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u3010\u9810\u552e8\u6298\u3011\u53f0\u5317\u5c55\u89bd| \u97cc\u5cf6\u30fb\u9f4a\u67cf\u6797\u7a7a\u9593\u5c55\u89bd\u9810\u552e\u9580\u7968",
             "date": "",
             "address": "",
@@ -114,15 +123,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/116304",
             "UUID": "185133ea528959a5af67fdb23d68dc83",
             "figure": "https://image.kkday.com/v2/image/get/w_600%2Cc_fit/s1.kkday.com/product_116304/20220422055225_kg5So/jpg"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u3010KKday\u7368\u5bb6\u9650\u91cf\u6436\u8cfc\u3011\u53f0\u5317|\u97f3\u6a02\u73a9\u5bb6\u7684\u79d8\u5bc6\u57fa\u5730:\u63a2\u7d22\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/131082",
-            "UUID": "ef1e086464ba5d5fa27037377750e08e",
-            "figure": "https://i.imgur.com/9rJfZoz.webp"
         },
         {
             "systematics": "KKDay",
@@ -153,21 +153,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|HELLO KITTY 50\u9031\u5e74\u7279\u5c55:\u8207\u672a\u4f86\u505a\u670b\u53cb\u5427",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/154586",
-            "UUID": "9a9aab65dff05ca3a0b3871375f23a4b",
-            "figure": "https://i.imgur.com/HZvXfZC.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u7063\u53f0\u5317|\u7121\u5149\u665a\u9910\u4e03\u865f\u83dc\u55ae Dining In The Dark|\u5fc5\u8a2a\u9910\u98f2\u9ad4\u9a57|\u9a5a\u559c\u88fd\u9020",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/145666",
             "UUID": "b11c45b10c415bb18ce4665af2a940db",
             "figure": "https://i.imgur.com/JlBic6n.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|HELLO KITTY 50\u9031\u5e74\u7279\u5c55:\u8207\u672a\u4f86\u505a\u670b\u53cb\u5427",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/154586",
+            "UUID": "9a9aab65dff05ca3a0b3871375f23a4b",
+            "figure": "https://i.imgur.com/HZvXfZC.webp"
         },
         {
             "systematics": "KKDay",
