@@ -4,8 +4,8 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 49,
-    "last_update": "2024-05-14T08:15:39.190649+00:00",
+    "counts": 50,
+    "last_update": "2024-05-14T16:14:14.533443+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -87,6 +87,15 @@
             "source_url": "https://tour.ibon.com.tw/event/6617785c72063c471d4575e3",
             "UUID": "370f5e643e7b5a7e937bde4a263df220",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/31dd2167-1666-496e-80e2-0b611fa41ade.jpg"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u3010\u6e2c\u8a66\u3011\u4e3b\u8fa6\u8cfc\u7968\u9a57\u6536tammy\u8acb\u52ff\u8cfc\u8cb7\u6e2c\u8a66\u6d3b\u52d5\u4e0d\u9000\u7968",
+            "date": "2024-05-10 ~ 2024-12-31",
+            "address": "\u83ef\u5c71\u6587\u5275\u5712\u5340",
+            "source_url": "https://tour.ibon.com.tw/event/66175c4d72063c471d456e77",
+            "UUID": "3388dbba6bd3524294e8e5aab504bf96",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/6f03361e-18be-49ee-8185-0e6fc87d97e2.jpg"
         },
         {
             "systematics": "ibon",
