@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 16,
-    "last_update": "2024-05-14T00:51:35.122849+00:00",
+    "counts": 18,
+    "last_update": "2024-05-14T08:15:39.258505+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -60,6 +60,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/classic-french-musical-don-juan/",
             "UUID": "925eeac4d3a2583bb7555e1a62b8bd98",
             "figure": "https://i.imgur.com/0kW9I2e.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u300e \u5149\u7403\u97f3\u6a02\u796dGLOWBALL FESTIVAL \u300f\u96fb\u5b50\u97f3\u6a02 x \u85dd\u8853\u821e\u8e48 x \u79d1\u6280\u5f71\u50cf\uff0c\u96a8\u5fc3\u800c\u52d5\u7684\u8de8\u57df\u5c55\u6f14\uff3f\u8df3\u5c31\u5c0d\u4e86\uff01",
+            "date": "2024-06-01 ~ 2024-06-01",
+            "address": "\u6236\u5916\u8868\u6f14\u7a7a\u9593",
+            "source_url": "https://www.tmc.taipei/blog/show/glowball-festival-festival/",
+            "UUID": "9e832e630cef50058df8d76021bd6494",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/05/\u5716\u4e00.jpg"
         },
         {
             "systematics": "tmc",
@@ -150,6 +159,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/chicago-the-musical/",
             "UUID": "dea3fd4686e55fedb6ae5711e993f77b",
             "figure": "https://i.imgur.com/NWdkQSN.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u300a\u6210\u529f\u4e4b\u8def\uff1aHow to Be a Rock Star\u300b\u6416\u6efe\u6b4c\u5287",
+            "date": "2024-09-27 ~ 2024-10-06",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/how-to-be-a-rock-star/",
+            "UUID": "fa80a8a73edb58dcb9bfe83396431347",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/05/\u5317\u6d41\u5b98\u7db2\u5c55\u6f14\u6d3b\u52d5.jpg"
         }
     ],
     "visit": {}
