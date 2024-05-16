@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 18,
-    "last_update": "2024-05-16T00:51:21.997743+00:00",
+    "counts": 19,
+    "last_update": "2024-05-16T08:12:06.004619+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -132,6 +132,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/perfume-zoz5-asia-tour-2024/",
             "UUID": "41edfc07b2235e95add00dc60cd1ca26",
             "figure": "https://i.imgur.com/WERtcur.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "2024 SUHO CONCERT IN TAIPEI",
+            "date": "2024-07-13",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/2024-suho-concert-in-taipei/",
+            "UUID": "e70f4447a4a65469bca43f1ef0daf517",
+            "figure": ""
         },
         {
             "systematics": "tmc",
