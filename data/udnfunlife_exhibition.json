@@ -5,7 +5,7 @@
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
     "counts": 16,
-    "last_update": "2024-05-19T08:13:05.837874+00:00",
+    "last_update": "2024-05-19T16:13:48.751311+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -27,39 +27,12 @@
         },
         {
             "systematics": "tickets_udnfunlife",
-            "title": "\u7d93\u5178\u6cd5\u6587\u97f3\u6a02\u5287\u300a\u5510\u749c\u300b",
-            "date": "2024-05-22 ~ 2024-05-26",
-            "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3 \u8868\u6f14\u5ef3",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0C8NMSR&kdid=featured",
-            "UUID": "f10635b5101d51c29ef9d17c85e1fa0c",
-            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0C8NMSR_Product.JPG?v=202405100939"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
-            "title": "2024\u300a\u6703\u6f14\u662f\u82f1\u96c4\u300b",
-            "date": "2024-07-13 ~ 2024-10-27",
-            "address": "\u65b0\u7af9\u7e23\u653f\u5e9c\u6587\u5316\u5c40 \u6f14\u85dd\u5ef3,\u96f2\u6797\u8868\u6f14\u5ef3,\u57fa\u9686\u8868\u6f14\u85dd\u8853\u4e2d\u5fc3 \u6f14\u85dd\u5ef3,\u9ad8\u96c4\u5e02\u7acb\u6587\u5316\u4e2d\u5fc3 \u81f3\u5fb7\u5802,\u81fa\u5317\u8868\u6f14\u85dd\u8853\u4e2d\u5fc3 \u5927\u5287\u9662",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0G8GDL6&kdid=featured",
-            "UUID": "03f41256db785d9490c510c54547f6c8",
-            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0G8GDL6_Product.JPG?v=202404301404"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
             "title": "teamLab\u5171\u5275\uff01\u672a\u4f86\u5712",
             "date": "2024-06-14 ~ 2024-10-13",
             "address": "\u570b\u7acb\u81fa\u7063\u79d1\u5b78\u6559\u80b2\u9928 \u4e03\u6a13\u5357\u5074\u7279\u5c55\u5340",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0HHX4B9&kdid=featured",
             "UUID": "6861814202905422b30a1b30e002227e",
             "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0HHX4B9_Product.JPG?v=202405031454"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
-            "title": "\u821e\u53f0\u5287\u300a\u8b1d\u8b1d\u5927\u5bb6\u6536\u770b\u300b",
-            "date": "2024-12-27 ~ 2024-12-29",
-            "address": "\u81fa\u4e2d\u570b\u5bb6\u6b4c\u5287\u9662 \u5927\u5287\u9662",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0DW66UW&kdid=featured",
-            "UUID": "a3c74adad7485270b964e0a8cfdde8df",
-            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0DW66UW_Product.JPG?v=202404301405"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -72,12 +45,57 @@
         },
         {
             "systematics": "tickets_udnfunlife",
+            "title": "\u7121\u9650\u6b21\u901a\u884c\u8b49\u2013\u8d85\u4eba\u529b\u9738\u738b\u82f1\u96c4\u5c55",
+            "date": "2024-07-06 ~ 2024-07-31",
+            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712CD\u68df",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0I9WLMM&kdid=featured",
+            "UUID": "6689e0851d2a5e09873c070e12d54e73",
+            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0I9WLMM_Product.JPG?v=202405192342"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u8d85\u4eba\u529b\u9738\u738b\u82f1\u96c4\u5c55",
+            "date": "2024-07-06 ~ 2024-09-15",
+            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712CD\u68df",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0HZKWF1&kdid=featured",
+            "UUID": "4a4cecc1ba155daaac7f8502017db40f",
+            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0HZKWF1_Product.JPG?v=202405192344"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u7d93\u5178\u6cd5\u6587\u97f3\u6a02\u5287\u300a\u5510\u749c\u300b",
+            "date": "2024-05-22 ~ 2024-05-26",
+            "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3 \u8868\u6f14\u5ef3",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0C8NMSR&kdid=featured",
+            "UUID": "f10635b5101d51c29ef9d17c85e1fa0c",
+            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0C8NMSR_Product.JPG?v=202405100939"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
             "title": "\u5531 \u6211\u5011\u7684\u6b4c \u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55",
             "date": "2022-09-01 ~ 2024-12-31",
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3 \u6587\u5316\u9928 4~6\u6a13",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=N23SE92T&kdid=featured",
             "UUID": "3050b601e161530ea819b75dccf95d20",
             "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/N23SE92T_Product.JPG?v=202405081438"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u821e\u53f0\u5287\u300a\u8b1d\u8b1d\u5927\u5bb6\u6536\u770b\u300b",
+            "date": "2024-12-27 ~ 2024-12-29",
+            "address": "\u81fa\u4e2d\u570b\u5bb6\u6b4c\u5287\u9662 \u5927\u5287\u9662",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0DW66UW&kdid=featured",
+            "UUID": "a3c74adad7485270b964e0a8cfdde8df",
+            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0DW66UW_Product.JPG?v=202404301405"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "2024\u300a\u6703\u6f14\u662f\u82f1\u96c4\u300b",
+            "date": "2024-07-13 ~ 2024-10-27",
+            "address": "\u65b0\u7af9\u7e23\u653f\u5e9c\u6587\u5316\u5c40 \u6f14\u85dd\u5ef3,\u96f2\u6797\u8868\u6f14\u5ef3,\u57fa\u9686\u8868\u6f14\u85dd\u8853\u4e2d\u5fc3 \u6f14\u85dd\u5ef3,\u9ad8\u96c4\u5e02\u7acb\u6587\u5316\u4e2d\u5fc3 \u81f3\u5fb7\u5802,\u81fa\u5317\u8868\u6f14\u85dd\u8853\u4e2d\u5fc3 \u5927\u5287\u9662",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0G8GDL6&kdid=featured",
+            "UUID": "03f41256db785d9490c510c54547f6c8",
+            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0G8GDL6_Product.JPG?v=202404301404"
         },
         {
             "systematics": "tickets_udnfunlife",
@@ -132,24 +150,6 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0I9INNN&kdid=featured",
             "UUID": "39094ea78cfd54f6b60f67ae9de3773a",
             "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0I9INNN_Product.JPG?v=202405141314"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
-            "title": "\u7121\u9650\u6b21\u901a\u884c\u8b49\u2013\u8d85\u4eba\u529b\u9738\u738b\u82f1\u96c4\u5c55",
-            "date": "2024-07-06 ~ 2024-07-31",
-            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712CD\u68df",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0I9WLMM&kdid=featured",
-            "UUID": "6689e0851d2a5e09873c070e12d54e73",
-            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0I9WLMM_Product.JPG?v=202405171621"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
-            "title": "\u8d85\u4eba\u529b\u9738\u738b\u82f1\u96c4\u5c55",
-            "date": "2024-07-06 ~ 2024-09-15",
-            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712CD\u68df",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0HZKWF1&kdid=featured",
-            "UUID": "4a4cecc1ba155daaac7f8502017db40f",
-            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0HZKWF1_Product.JPG?v=202405171622"
         }
     ],
     "visit": {}
