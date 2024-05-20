@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 43,
-    "last_update": "2024-05-20T00:52:38.545534+00:00",
+    "counts": 44,
+    "last_update": "2024-05-20T08:15:50.207058+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u5361\u54c7\u4f0a - \u65e5\u672c\u7576\u4ee3\u85dd\u8853\u5c55",
+            "date": "2024-05-15~2024-06-24",
+            "address": "\u83ef\u5c71\u6587\u5275",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101024664-2024-kawaii-contemporary-art/",
+            "UUID": "f8d8df162908572689927c1140f524cb",
+            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1716177019/events_admin/wq5t4e9suktcovwtczwu.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u53f0\u5317\u5c55\u89bd\u300a\u8d85\u4eba\u529b\u9738\u738b\u82f1\u96c4\u5c55\u300b",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024406-2024-jurassic-exhibition/",
             "UUID": "da0e15939cf35688919927e9d0b9a7a6",
-            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1714647499/events_admin/gpyou3jg3rtznfmlo7xi.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024007-2024-blank-stream-exhibition/",
             "UUID": "aaec4fe13c60573a9a8017c0b18bc584",
-            "figure": "-"
+            "figure": "https://i.imgur.com/g6c53l9.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "\u4e00\u8d77\u5171\u821e",
             "source_url": "https://www.klook.com/zh-TW/activity/109976-le-bal-de-paris-de-blanca-li/",
             "UUID": "b34b4165c64552b0a61abbe8bc9ce876",
-            "figure": "https://i.imgur.com/G54WNNZ.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
