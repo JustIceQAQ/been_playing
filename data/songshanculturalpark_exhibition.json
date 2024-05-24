@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-05-24T08:14:32.756226+00:00",
+    "last_update": "2024-05-24T16:13:06.423328+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -126,21 +126,21 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "\u6c38\u7e8c\u6587\u5275\u65fa\u5e02\u96c6",
+            "date": "2024-06-01",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/0c32eceb-24e9-452a-bd44-b938bfe78f99",
+            "UUID": "bc6add214f1359c9b7475922945e83f4",
+            "figure": "https://www.songshanculturalpark.org/gallery/1716550056_2be4c3ffc01fd7ec345b.jpeg"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "ADVENTURE FESTA",
             "date": "2024-06-01 ~ 2024-06-02",
             "address": "-",
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/ac718552-826f-4e66-bdd3-740fddf212a2",
             "UUID": "6fffae5b13fc5984b64fded03026d775",
             "figure": "https://www.songshanculturalpark.org/gallery/1715679446_1e5fab7731a34aebc4f7.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "SMALL PLANET POP UP STORE \u2015pickles the frog\u840c\u86d9\u5339\u514b\u5feb\u9583\u5e97",
-            "date": "2024-06-05 ~ 2024-06-27",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/024f60da-b65f-4ac3-b217-ca861b43402c",
-            "UUID": "29bbadecfbfa509c9a343032553eebac",
-            "figure": "https://www.songshanculturalpark.org/gallery/1716259556_e16a1786086e84a2e78c.jpg"
         }
     ],
     "visit": {}
