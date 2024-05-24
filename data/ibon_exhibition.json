@@ -4,9 +4,18 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 50,
-    "last_update": "2024-05-24T00:52:13.474611+00:00",
+    "counts": 51,
+    "last_update": "2024-05-24T08:14:36.841456+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "\u65b0\u5317\uff0e2024\u798f\u9686\u570b\u969b\u6c99\u96d5\u85dd\u8853\u5b63",
+            "date": "2024-05-31 ~ 2024-10-13",
+            "address": "\u798f\u9686\u6d77\u6c34\u6d74\u5834",
+            "source_url": "https://tour.ibon.com.tw/event/664efab99341874ba3d3f35a",
+            "UUID": "92391328554d5b41a15905dcb7569a6e",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/2c5ee403-c548-4652-8eb8-a780f8acb07d.jpg"
+        },
         {
             "systematics": "ibon",
             "title": "\u5275\u7269\u6587\u5316\u796dIdeas Assemble\uff01",
