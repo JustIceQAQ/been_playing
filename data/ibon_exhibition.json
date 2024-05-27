@@ -4,8 +4,8 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 51,
-    "last_update": "2024-05-27T00:52:47.952560+00:00",
+    "counts": 53,
+    "last_update": "2024-05-27T08:15:21.110241+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -15,6 +15,15 @@
             "source_url": "https://tour.ibon.com.tw/event/664efab99341874ba3d3f35a",
             "UUID": "92391328554d5b41a15905dcb7569a6e",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/2c5ee403-c548-4652-8eb8-a780f8acb07d.jpg"
+        },
+        {
+            "systematics": "ibon",
+            "title": "ART IJ 2024\u65e5\u672c\u7121\u6975\u9650\u7576\u4ee3\u85dd\u535a\u6703",
+            "date": "2024-07-26 ~ 2024-07-28",
+            "address": "\u53f0\u5317\u6676\u83ef\u9152\u5e97 Regent TAIPEI",
+            "source_url": "https://tour.ibon.com.tw/event/664576665af0271da58e014f",
+            "UUID": "a068c0a16b9550a1ad1f4e13199a7868",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/4799dc68-e186-4b23-a53a-cc2fc3d1d1ca.jpg"
         },
         {
             "systematics": "ibon",
@@ -42,6 +51,15 @@
             "source_url": "https://tour.ibon.com.tw/event/6642bc8d44c8985246f9fca7",
             "UUID": "3fa6b06761bc597e9643c45674aa3ef1",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/fa5f824d-837f-46b7-a59e-b81e67b2034d.jpg"
+        },
+        {
+            "systematics": "ibon",
+            "title": "Honey sweetie \u7e6a\u5e2b\u806f\u5408\u5c55",
+            "date": "2024-06-19 ~ 2024-07-17",
+            "address": "\u83ef\u5c71\u6587\u5275\u5712\u5340 \u4e2d4A\u9928",
+            "source_url": "https://tour.ibon.com.tw/event/66418b3e44c8985246f9c458",
+            "UUID": "ab69075fbfd4519c84549eedcc386cd9",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/b894227e-3831-47a9-bdbe-786f94603217.jpg"
         },
         {
             "systematics": "ibon",
