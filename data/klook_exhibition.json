@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 49,
-    "last_update": "2024-05-28T00:52:40.293096+00:00",
+    "counts": 50,
+    "last_update": "2024-05-28T08:17:00.379216+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "THE BYE PRODUCT - UDON \u5728\u53f0\u9996\u5c55",
+            "date": "2024-04-13~2024-06-23",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101024784-2024-udon-the-bye-product/",
+            "UUID": "d24bed4799fc5a7d8d59890c848d0a85",
+            "figure": "https://res.klook.com/image/upload/x_0,y_28,w_3508,h_4911,c_crop/w_360,q_85/v1716868706/events_admin/hji0vjmt55rci4le5ngk.jpg"
+        },
         {
             "systematics": "klook",
             "title": "2024\u4e0a\u806f\u53f0\u5317\u570b\u969b\u7f8e\u5bb9\u7f8e\u7532\u7f8e\u9aee\u5c55 2024\u97d3\u570b\u7f8e\u5bb9\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024588-2024-red-house-exhibition/",
             "UUID": "80cbe7702e465d4a8b38d113dd679eda",
-            "figure": "https://res.klook.com/image/upload/x_0,y_28,w_3508,h_4911,c_crop/w_360,q_85/v1715767246/events_admin/q1mqwkbzcm40ztxvzl4q.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024187-2024-art-exhibition/",
             "UUID": "302017434fdd596ea5289b976bd6e61a",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_0,y_134,w_2848,h_3987,c_crop/w_360,q_85/v1713516596/events_admin/ywx3v57usdm3r3hlmlwt.jpg"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023844-2024-taipei-travel-exhibition/",
             "UUID": "54b8b2fa2e3b50d287a01beca9a50a75",
-            "figure": "https://i.imgur.com/oTLjJ0I.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101009551-2022-trans-communication/",
             "UUID": "e4e842f083515a8895442ae7d5ada5df",
-            "figure": "-"
+            "figure": "https://i.imgur.com/IEzADyX.webp"
         },
         {
             "systematics": "klook",
