@@ -4,9 +4,54 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 50,
-    "last_update": "2024-05-29T08:16:25.031447+00:00",
+    "counts": 55,
+    "last_update": "2024-05-29T16:15:29.456175+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u68ee\u9748 - \u4f59\u6fa4\u5275\u4f5c\u500b\u5c55",
+            "date": "2024-05-25~2024-07-07",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101024832-2024-jacob-yu-exhibition/",
+            "UUID": "101b13e2fe345b36a408c78c4231982e",
+            "figure": "https://res.klook.com/image/upload/x_1191,y_0,w_659,h_922,c_crop/w_360,q_85/v1716975105/events_admin/ztjhuba52iudn1nd4s6g.jpg"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u6f2c\u7684\u6642\u614b - \u5085\u8056\u96c5\u5275\u4f5c\u500b\u5c55",
+            "date": "2024-05-25~2024-07-07",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101024831-2024-fu-sheng-ya-exhibition/",
+            "UUID": "79aa6ed7070b5b2eab1237ea1eb25eb0",
+            "figure": "https://res.klook.com/image/upload/x_422,y_0,w_659,h_922,c_crop/w_360,q_85/v1716974671/events_admin/aoozyn9m8npdasar4fnz.jpg"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u68ee\u6797\u5e7b\u60f3 - \u5742\u672c\u85cd\u5b50\u6d77\u5916\u9996\u6b21\u500b\u5c55",
+            "date": "2024-06-15~2024-07-13",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101024830-2024-aiko-sakamoto/",
+            "UUID": "8419e825c2b051db9591a96b72247173",
+            "figure": "https://res.klook.com/image/upload/x_14,y_0,w_773,h_1082,c_crop/w_360,q_85/v1716973519/events_admin/upwlgebbhvp9kgapftk5.jpg"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u9593\u8ddd\uff0e\u4e4b\u9593 - \u806f\u5c55",
+            "date": "2024-05-11~2024-06-01",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101024827-2024-sapce-between-the-space/",
+            "UUID": "054d61d4bf715ad1b68da148ea22225c",
+            "figure": "https://res.klook.com/image/upload/x_9,y_0,w_1182,h_1655,c_crop/w_360,q_85/v1716972929/events_admin/bjv0vx7ib7svyb5b7gvz.jpg"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u4e4b\u9593 In Between - \u85a9\u4f0a\u592b\u30fb\u52a0\u91cc\u6ce2\u7b2c\uff08Syaful Garibaldi\uff09\u500b\u5c55",
+            "date": "2024-05-10~2024-06-20",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101024824-2024-in-between-exhibition/",
+            "UUID": "4dac3d7a142e5826b875189d3dbd1386",
+            "figure": "https://res.klook.com/image/upload/x_1327,y_0,w_907,h_1270,c_crop/w_360,q_85/v1716971109/events_admin/mnk8hexltggkwx0st6cy.jpg"
+        },
         {
             "systematics": "klook",
             "title": "THE BYE PRODUCT - UDON \u5728\u53f0\u9996\u5c55",
@@ -50,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024685-2024-scuplture-exhibition/",
             "UUID": "9e19743e59865412b92e3760becd5792",
-            "figure": "https://res.klook.com/image/upload/x_42,y_0,w_571,h_800,c_crop/w_360,q_85/v1716277849/events_admin/nqux2dlwlimknfuoph2s.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -59,7 +104,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024677-2024-franchaise-exhibtion/",
             "UUID": "e90bcaeff4985b61a79100a6a5b5e999",
-            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1716260114/events_admin/uf8tyyf7xicmf4stgada.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -68,7 +113,7 @@
             "address": "\u83ef\u5c71\u6587\u5275",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024664-2024-kawaii-contemporary-art/",
             "UUID": "f8d8df162908572689927c1140f524cb",
-            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1716177019/events_admin/wq5t4e9suktcovwtczwu.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -77,7 +122,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/116982-ultraman-expo-2024/",
             "UUID": "51ac22a9624b5fa099343628bb358950",
-            "figure": "https://res.klook.com/image/upload/w_360,q_85/\u5c55\u6f14\u9801\u9762\u6d3b\u52d5\u9996\u5716_326x460_nr1eho.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -86,7 +131,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/116773-bugcat-world-exhibition/",
             "UUID": "84a8e4337d7f5708ab27a7ce060ea5e1",
-            "figure": "https://res.klook.com/image/upload/w_360,q_85/\u5c55\u6f14\u9801\u9762\u6d3b\u52d5\u9996\u5716_326x460_qrjv4l.png"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -185,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024340-2024-beyond-the-sea/",
             "UUID": "41943a53f9d45d3bb05eb8c82609e9a0",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_50,y_0,w_1919,h_2687,c_crop/w_360,q_85/v1714135919/events_admin/xmde8veblarmf7ytppfy.jpg"
         },
         {
             "systematics": "klook",
@@ -194,7 +239,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/115951-teamlab-future-park/",
             "UUID": "99ff8f4cea685364b93dd22b5cd497f6",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/klook_326x460_nymvyz.jpg"
         },
         {
             "systematics": "klook",
@@ -203,7 +248,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024331-2024-transfer-station/",
             "UUID": "3c8681a6e4b35a489ebb3cb50c874ae8",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_9,y_0,w_1339,h_1875,c_crop/w_360,q_85/v1714121612/events_admin/tudppazuwtfvldq6k7c1.jpg"
         },
         {
             "systematics": "klook",
@@ -212,7 +257,7 @@
             "address": "\u677e\u83f8",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024299-2024-leonardo-da-vinci-taipei/",
             "UUID": "8fdf28fb4db8515e8a3d82cb7edd51c8",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_0,y_10,w_1449,h_2029,c_crop/w_360,q_85/v1714033585/events_admin/ovrxnqbuyzdzo0o3ll0p.jpg"
         },
         {
             "systematics": "klook",
@@ -221,7 +266,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024185-2024-hong-gah-museum/",
             "UUID": "1f2485c46e7d5389ae83f024a64a7627",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_0,y_31,w_1076,h_1507,c_crop/w_360,q_85/v1714027900/events_admin/brngsa7gk1aknj5jzswz.jpg"
         },
         {
             "systematics": "klook",
@@ -266,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024044-2024-piao-piao-exhibition/",
             "UUID": "f3266caad4f65c9fa8d6e044e8c17b6a",
-            "figure": "https://res.klook.com/image/upload/x_2,y_153,w_1148,h_1608,c_crop/w_360,q_85/v1712815065/events_admin/u9gbyvrvozphxf0dfkf3.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -275,7 +320,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024008-2024-lin-pei-yao-ehxibition/",
             "UUID": "d26e8c55683d51468f4c7a68c7948f98",
-            "figure": "https://i.imgur.com/cXtMIEh.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -284,7 +329,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024007-2024-blank-stream-exhibition/",
             "UUID": "aaec4fe13c60573a9a8017c0b18bc584",
-            "figure": "https://i.imgur.com/g6c53l9.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -293,7 +338,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023938-2024-mountainsdense-rivervast/",
             "UUID": "84a8a4c3365a5efd965776b8e0d808fa",
-            "figure": "https://i.imgur.com/MtjbQTv.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -302,7 +347,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023935-2024-fun-with-object/",
             "UUID": "9168b1ad2f4b59d8b19463c4ba73b65f",
-            "figure": "https://i.imgur.com/Z9tsDZs.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -401,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101021893-2024-got-riff-exhibition/",
             "UUID": "7077b8be079955e6b723428bf46774e3",
-            "figure": "-"
+            "figure": "https://i.imgur.com/E0Ujksq.webp"
         },
         {
             "systematics": "klook",
@@ -410,7 +455,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/99386-i-am-a-tyrannosaurus/",
             "UUID": "4f7ffd90830251f2b45b466f7e548142",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/2023\u6211\u662f\u9738\u738b\u9f8dKV_\u5c4f\u6771\u7ad9__1080x1080_dm7yhe.jpg"
         },
         {
             "systematics": "klook",
@@ -419,7 +464,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/87261-the-6th-ishands-connect-asia-craft-matsuri/",
             "UUID": "7b8734d442f2568c85a4067b44eff2ce",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/2023\u611b\u624b\u5275\u570b\u969b\u624b\u4f5c\u8a2d\u8a08\u7bc0-Klook\u7db2\u8def\u7528\u5716_\u6d3b\u52d5\u9996\u5716326x460px_v7zjag.jpg"
         },
         {
             "systematics": "klook",
@@ -428,7 +473,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/85220-dining-in-the-dark-s3-surprise-lab/",
             "UUID": "f0d711edefe85a96b753f335e87e9a69",
-            "figure": "-"
+            "figure": "https://i.imgur.com/CVKBmd0.webp"
         },
         {
             "systematics": "klook",
@@ -437,7 +482,7 @@
             "address": "\u9a5a\u559c\u88fd\u9020",
             "source_url": "https://www.klook.com/zh-TW/activity/81847-the-sunset-terminal/",
             "UUID": "b148959df7175628a044b1bcb87bf5c0",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/20240207_\u843d\u65e5\u6708\u53f0_Klook_Banner_326x420_1_niv7h2.png"
         },
         {
             "systematics": "klook",
