@@ -4,8 +4,72 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 0,
-    "last_update": "2024-05-30T00:52:09.168532+00:00",
-    "data": [],
+    "counts": 7,
+    "last_update": "2024-05-30T08:15:17.538171+00:00",
+    "data": [
+        {
+            "systematics": "KKTix",
+            "title": "POP! POP! POP! \u6d41\u884c\u97f3\u6a02\u4e92\u52d5\u5c55 \uff20 \u9ad8\u96c4\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
+            "date": "2022-3-1",
+            "address": "",
+            "source_url": "https://kpmc.kktix.cc/events/poppoppop",
+            "UUID": "2753092823855d20b12fbb3f6977690c",
+            "figure": "https://i.imgur.com/76TL3BV.webp"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "6/1 \u623f\u9593\u85dd\u8853\u5275\u4f5c\u5e02\u96c6\u3010\u590f \u00b7 \u646f\u3011\u9810\u8cfc\u7968",
+            "date": "2024-6-1",
+            "address": "",
+            "source_url": "https://roomroommarket.kktix.cc/events/3093987c",
+            "UUID": "8d21232a78b35be9954dd4ffa1863fa6",
+            "figure": "https://t.kfs.io/upload_images/202200/%E6%9C%AA%E5%91%BD%E5%90%8D-1_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F_1_medium.jpg"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "6/2 \u623f\u9593\u85dd\u8853\u5275\u4f5c\u5e02\u96c6\u3010\u590f \u00b7 \u646f\u3011\u9810\u8cfc\u7968",
+            "date": "2024-6-2",
+            "address": "",
+            "source_url": "https://roomroommarket.kktix.cc/events/3093987c-copy-1",
+            "UUID": "71cb7f6acd54521fb7a782c33b798c46",
+            "figure": "https://t.kfs.io/upload_images/202201/%E6%9C%AA%E5%91%BD%E5%90%8D-1_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F_1_medium.jpg"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u91cd\u6a5f\u66a8\u4eba\u8eab\u90e8\u54c1\u5c55",
+            "date": "2024-6-7",
+            "address": "",
+            "source_url": "https://cheng-sing.kktix.cc/events/90f38dfe",
+            "UUID": "5a0f8c5f25f754dab89122c00fb2e967",
+            "figure": "https://t.kfs.io/upload_images/203794/%E9%87%8D%E6%A9%9F%E7%A5%A82_medium.jpg"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u86a4\u7269\u5e02 2024",
+            "date": "2024-6-15",
+            "address": "",
+            "source_url": "https://honichiss.kktix.cc/events/acft-2024",
+            "UUID": "537849fc010155869732354adc1d5352",
+            "figure": "https://t.kfs.io/upload_images/202331/KKTIX_large_medium.jpg"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u9054\u6587\u897f\u9ad4\u9a57\u5c55",
+            "date": "2024-6-14",
+            "address": "",
+            "source_url": "https://kklivetw.kktix.cc/events/ldv500tp",
+            "UUID": "ae50c874108f5e9b9ad804706277441d",
+            "figure": "https://t.kfs.io/upload_images/201411/KV-%E6%A9%AB_%E6%A9%AB%E5%BC%8FKV_medium.jpg"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u722c\u73a9\u5e9c\u57ce\u936c\u936c\u4e00\u8d77\u4f86",
+            "date": "2024-10-12",
+            "address": "",
+            "source_url": "https://insectw.kktix.cc/events/pwtn77176",
+            "UUID": "0324005ef6f25d9fb2bf1e36c6b9739a",
+            "figure": "https://t.kfs.io/upload_images/202312/S__187850754_medium.jpg"
+        }
+    ],
     "visit": {}
 }

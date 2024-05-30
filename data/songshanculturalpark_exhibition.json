@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-05-30T00:52:13.109687+00:00",
+    "last_update": "2024-05-30T08:15:18.249857+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -90,6 +90,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "IVE SWITCH POP-UP",
+            "date": "2024-05-31 ~ 2024-06-16",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/57acbd34-acde-42cd-8b92-ea0232310738",
+            "UUID": "55617ec0c28b5a0187ad901748d9a948",
+            "figure": "https://www.songshanculturalpark.org/gallery/1717039244_a1ac09d0f48c0663304d.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "\u5728\u5730\u54c1\u724c\u5171\u5275\u52a0\u503c\u8a08\u756b\u968e\u6bb5\u6210\u679c\u767c\u8868\u6703",
             "date": "2024-06-01",
             "address": "-",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/024f60da-b65f-4ac3-b217-ca861b43402c",
             "UUID": "29bbadecfbfa509c9a343032553eebac",
             "figure": "https://www.songshanculturalpark.org/gallery/1716259556_e16a1786086e84a2e78c.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "LeSportsac 50\u9031\u5e74\u7d00\u5ff5\u7279\u5c55",
-            "date": "2024-06-07 ~ 2024-06-23",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/4c65f21d-5a74-4bf9-85c0-b292e0188554",
-            "UUID": "dbc4d91b62465f018674e7d302bc7f01",
-            "figure": "https://www.songshanculturalpark.org/gallery/1716451769_562e4e889f9afeaceeae.jpg"
         }
     ],
     "visit": {}
