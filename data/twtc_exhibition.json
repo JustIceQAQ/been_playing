@@ -5,7 +5,7 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 100,
-    "last_update": "2024-05-29T16:14:58.296111+00:00",
+    "last_update": "2024-05-30T00:52:21.747120+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -200,7 +200,7 @@
             "systematics": "twtc",
             "title": "\u53f0\u5317\u570b\u969b\u96fb\u8166\u5c55",
             "date": "2024-06-04 ~ 2024-06-07",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
             "source_url": "http://www.computextaipei.com.tw",
             "UUID": "129604ba884e546dbf3a1570551c7bc8",
             "figure": ""
@@ -219,8 +219,8 @@
             "title": "\u7b2c30\u5c46\u798f\u723e\u6469\u838e\u5bb6\u5177\u5c55\u66a8\u5bb6\u8a2d\u8a08\u7528\u54c1\u63a1\u8cfc\u7bc0",
             "date": "2024-06-07 ~ 2024-06-10",
             "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "http://www.ifpr.com.tw",
-            "UUID": "6de9e92576b650e8a33a7acbabbd0600",
+            "source_url": "https://www.sheng-dong.com.tw/activity/furniture-expo-taipei",
+            "UUID": "5083a7a6829557ee944416561ddc2937",
             "figure": ""
         },
         {
@@ -491,6 +491,15 @@
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.taipeiplas.com.tw",
             "UUID": "bb30288193ce53569717c8fbf9bd7fcf",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c25\u5c46\u65b0\u4e16\u7d00\u5bb6\u5177\u7cbe\u54c1\u5927\u5c55",
+            "date": "2024-09-27 ~ 2024-09-30",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.ifpr.com.tw",
+            "UUID": "6de9e92576b650e8a33a7acbabbd0600",
             "figure": ""
         },
         {
