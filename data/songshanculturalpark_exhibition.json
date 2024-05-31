@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-05-31T08:14:46.870561+00:00",
+    "last_update": "2024-05-31T16:13:46.924421+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -51,15 +51,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/20028bbd-8f9c-472a-ad04-3e7584800adf",
             "UUID": "fc81f640c0dd59b280ca780404feed87",
             "figure": "https://www.songshanculturalpark.org/gallery/1713939771_2a2f8d3ea21106e35a9d.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "iF \u5275\u610f\u4e32\u6d41 | 2024 \u5e74 iF \u8a2d\u8a08\u734e\u7372\u734e\u4f5c\u54c1\u5c55 (I)",
-            "date": "2024-05-02 ~ 2024-05-31",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c2f244d9-bc7b-43be-b3e4-ce6548258e13",
-            "UUID": "209777827a2b5c6abb02a0a84f6fff6d",
-            "figure": "https://www.songshanculturalpark.org/gallery/1714009571_5602adb4b31c72f26cb6.jpg"
         },
         {
             "systematics": "songshanculturalpark",
@@ -141,6 +132,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/024f60da-b65f-4ac3-b217-ca861b43402c",
             "UUID": "29bbadecfbfa509c9a343032553eebac",
             "figure": "https://www.songshanculturalpark.org/gallery/1716259556_e16a1786086e84a2e78c.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "LeSportsac 50\u9031\u5e74\u7d00\u5ff5\u7279\u5c55",
+            "date": "2024-06-07 ~ 2024-06-23",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/4c65f21d-5a74-4bf9-85c0-b292e0188554",
+            "UUID": "dbc4d91b62465f018674e7d302bc7f01",
+            "figure": "https://www.songshanculturalpark.org/gallery/1716451769_562e4e889f9afeaceeae.jpg"
         }
     ],
     "visit": {}
