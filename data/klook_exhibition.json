@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 54,
-    "last_update": "2024-05-31T00:53:47.271437+00:00",
+    "counts": 55,
+    "last_update": "2024-05-31T08:15:27.000032+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "WATCH OUT 2024 \u9336\u5c55 - \u83ef\u5c71\u6587\u5275",
+            "date": "2024-06-15~2024-06-16",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101024901-2024-watch-out-exhibition/",
+            "UUID": "4e4f2827b1b056bfacb6eb0f023b53c6",
+            "figure": "https://res.klook.com/image/upload/x_60,y_0,w_771,h_1080,c_crop/w_360,q_85/v1717142541/events_admin/nkr4wzhqqlu5kbz8yuj4.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u68ee\u9748 - \u4f59\u6fa4\u5275\u4f5c\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024690-2024-artist-image-of-the-self/",
             "UUID": "06a93c23f26452c9b04ff1e0941d2da7",
-            "figure": "https://res.klook.com/image/upload/x_1194,y_0,w_590,h_826,c_crop/w_360,q_85/v1716287574/events_admin/qcukkhx0mycidf7k2mrj.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -212,15 +221,6 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024394-2024-menifest-exhibition/",
             "UUID": "c3db628e29e45bf5a39979fbe42abb4e",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "Gabriel Orozco\u500b\u5c55",
-            "date": "2024-04-06~2024-10-13",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101024386-2024-gabriel-orozco-exhibition/",
-            "UUID": "e372209841aa5d2ea365b86ad2ac991a",
             "figure": "-"
         },
         {
