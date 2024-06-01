@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-06-01T08:14:11.935923+00:00",
+    "last_update": "2024-06-01T16:12:33.856512+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -90,24 +90,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "\u5728\u5730\u54c1\u724c\u5171\u5275\u52a0\u503c\u8a08\u756b\u968e\u6bb5\u6210\u679c\u767c\u8868\u6703",
-            "date": "2024-06-01",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/e91355f2-4780-4fc3-bd8b-6789d2d97e19",
-            "UUID": "5f44ea78b6bb5d6680a65dbbb43b995f",
-            "figure": "https://www.songshanculturalpark.org/gallery/1716452949_8b9202c3f4dc016d9f1f.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u6c38\u7e8c\u6587\u5275\u65fa\u5e02\u96c6",
-            "date": "2024-06-01",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/0c32eceb-24e9-452a-bd44-b938bfe78f99",
-            "UUID": "bc6add214f1359c9b7475922945e83f4",
-            "figure": "https://www.songshanculturalpark.org/gallery/1716550056_2be4c3ffc01fd7ec345b.jpeg"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "ADVENTURE FESTA",
             "date": "2024-06-01 ~ 2024-06-02",
             "address": "-",
@@ -141,6 +123,24 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/4c65f21d-5a74-4bf9-85c0-b292e0188554",
             "UUID": "dbc4d91b62465f018674e7d302bc7f01",
             "figure": "https://www.songshanculturalpark.org/gallery/1716451769_562e4e889f9afeaceeae.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u9054\u6587\u897f\u9ad4\u9a57\u5c55\uff0d\u8d85\u8d8a 500 \u5e74\u7684\u8f1d\u714c Leonardo da Vinci - 500 Years o",
+            "date": "2024-06-14 ~ 2024-09-29",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/36142f4a-bd1b-4d78-a4b6-fa38b7314afb",
+            "UUID": "0ad4921867035ccda70810bf68799de4",
+            "figure": "https://www.songshanculturalpark.org/gallery/1716545837_22cdc39f2ad6697a8df8.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u7375\u4eba\u5be6\u5883\u89e3\u8b0e\u904a\u6232 \u2013 \u8caa\u5a6a\u4e4b\u5cf6",
+            "date": "2024-06-27 ~ 2024-09-17",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/f7ecb259-42b4-4da7-9dc6-5d2b4ca46450",
+            "UUID": "74418b283494551187b6e4afa2bc2c98",
+            "figure": "https://www.songshanculturalpark.org/gallery/1715928492_8b9d04be24802c2a4c2f.jpg"
         }
     ],
     "visit": {}
