@@ -4,9 +4,27 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 52,
-    "last_update": "2024-06-03T00:54:05.971348+00:00",
+    "counts": 54,
+    "last_update": "2024-06-03T08:16:48.520395+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u5bf6\u85cf\u5dd6\u570b\u969b\u85dd\u8853\u67512024\u7b2c\u4e8c\u5b63\u99d0\u6751\u85dd\u8853\u5bb6\u806f\u5408\u767c\u8868",
+            "date": "2024-06-01~2024-06-16",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101024920-2024-treasure-hill-exhibition/",
+            "UUID": "5740f6d1183754f3a4c2b4956924eaab",
+            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1717397204/events_admin/ridkmtpkj6dsw2o6aw9u.jpg"
+        },
+        {
+            "systematics": "klook",
+            "title": "Walkers' Journey",
+            "date": "2024-06-17~2024-06-23",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101024916-2024-walkers-journey/",
+            "UUID": "30cef2d17d5957c0b4590be3eb1c6efb",
+            "figure": "https://res.klook.com/image/upload/x_1271,y_0,w_3222,h_4511,c_crop/w_360,q_85/v1717390422/events_admin/s4kggglafcllfmt8x8yl.jpg"
+        },
         {
             "systematics": "klook",
             "title": "WATCH OUT 2024 \u9336\u5c55 - \u83ef\u5c71\u6587\u5275",
@@ -77,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024721-2024-taipei-pets-fair-expo/",
             "UUID": "6b4df299921552a592569c89408505aa",
-            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1716455886/events_admin/zfsoz2m0ughw9xntprhi.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -86,7 +104,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024690-2024-artist-image-of-the-self/",
             "UUID": "06a93c23f26452c9b04ff1e0941d2da7",
-            "figure": "https://res.klook.com/image/upload/x_1194,y_0,w_590,h_826,c_crop/w_360,q_85/v1716287574/events_admin/qcukkhx0mycidf7k2mrj.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -212,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024386-2024-gabriel-orozco-exhibition/",
             "UUID": "e372209841aa5d2ea365b86ad2ac991a",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1714474215/events_admin/amindlzywxj5taxjcxnz.jpg"
         },
         {
             "systematics": "klook",
@@ -221,7 +239,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024340-2024-beyond-the-sea/",
             "UUID": "41943a53f9d45d3bb05eb8c82609e9a0",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_50,y_0,w_1919,h_2687,c_crop/w_360,q_85/v1714135919/events_admin/xmde8veblarmf7ytppfy.jpg"
         },
         {
             "systematics": "klook",
@@ -293,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024008-2024-lin-pei-yao-ehxibition/",
             "UUID": "d26e8c55683d51468f4c7a68c7948f98",
-            "figure": "https://i.imgur.com/cXtMIEh.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -302,7 +320,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024007-2024-blank-stream-exhibition/",
             "UUID": "aaec4fe13c60573a9a8017c0b18bc584",
-            "figure": "https://i.imgur.com/g6c53l9.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -428,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/99386-i-am-a-tyrannosaurus/",
             "UUID": "4f7ffd90830251f2b45b466f7e548142",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/2023\u6211\u662f\u9738\u738b\u9f8dKV_\u5c4f\u6771\u7ad9__1080x1080_dm7yhe.jpg"
         },
         {
             "systematics": "klook",
@@ -437,7 +455,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/87261-the-6th-ishands-connect-asia-craft-matsuri/",
             "UUID": "7b8734d442f2568c85a4067b44eff2ce",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/2023\u611b\u624b\u5275\u570b\u969b\u624b\u4f5c\u8a2d\u8a08\u7bc0-Klook\u7db2\u8def\u7528\u5716_\u6d3b\u52d5\u9996\u5716326x460px_v7zjag.jpg"
         },
         {
             "systematics": "klook",
