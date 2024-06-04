@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 36,
-    "last_update": "2024-06-04T08:15:39.562171+00:00",
+    "last_update": "2024-06-04T16:15:55.139619+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -207,6 +207,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u301095\u6298\u3011\u9ad8\u96c4\u5c55\u89bd|\u4f8f\u7f85\u7d00\u6050\u9f8d\u63a2\u96aa\u6a02\u5712\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/155895-kaohsiung-jurassic-dinosaur-adventure-park-ticket-taiwan",
+            "UUID": "44c3dd4405785ee780adf0d3f9c1ecf7",
+            "figure": "https://i.imgur.com/qzfDOeg.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011\u5c4f\u6771\u5c55\u89bd|\u8c93\u30fb\u7f8e\u8853\u9928-\u4e16\u754c\u540d\u756b\u30fb\u5168\u9762\u55b5\u5316",
             "date": "",
             "address": "",
@@ -234,15 +243,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010KKday\u7368\u5bb6\u3011\u53f0\u7063\u53f0\u5317|ART SOLO 2022 \u85dd\u4e4b\u7368\u79c0\u85dd\u8853\u535a\u89bd\u6703|\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/126960",
-            "UUID": "bdd2478b4e775b42aaa73af193ab7795",
-            "figure": "https://i.imgur.com/Ynnaoon.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u52a0\u8cfc\u9ad8\u9435\u512a\u60e0\u96fb\u5b50\u8eca\u7968|\u53f0\u7063\u53f0\u5317|JOJO\u7684\u5947\u5999\u5192\u96aa-\u300a\u9ec3\u91d1\u4e4b\u5fc3\u300b\u52d5\u756b\u5341\u9031\u5e74\u7279\u5c55\u9580\u7968|\u53f0\u5317\u7ad9 >> \u8acb\u81f3\u9ad8\u9435\u806f\u7968\u5373\u6642\u8a02\u4f4d\u65b0\u7cfb\u7d71\u8cfc\u8cb7\ud83d\udc47",
             "date": "",
             "address": "",
@@ -252,12 +252,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u301095\u6298\u3011\u9ad8\u96c4\u5c55\u89bd|\u4f8f\u7f85\u7d00\u6050\u9f8d\u63a2\u96aa\u6a02\u5712\u9580\u7968",
+            "title": "\u3010KKday\u7368\u5bb6\u3011\u53f0\u7063\u53f0\u5317|ART SOLO 2022 \u85dd\u4e4b\u7368\u79c0\u85dd\u8853\u535a\u89bd\u6703|\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/155895-kaohsiung-jurassic-dinosaur-adventure-park-ticket-taiwan",
-            "UUID": "44c3dd4405785ee780adf0d3f9c1ecf7",
-            "figure": "https://i.imgur.com/qzfDOeg.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/126960",
+            "UUID": "bdd2478b4e775b42aaa73af193ab7795",
+            "figure": "https://i.imgur.com/Ynnaoon.webp"
         },
         {
             "systematics": "KKDay",
