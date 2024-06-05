@@ -1,0 +1,57 @@
+{
+    "information": {
+        "fullname": "FuBonArtMuseum",
+        "code_name": "FuBonArtMuseum",
+        "external_link": "https://www.fubonartmuseum.org/Default"
+    },
+    "counts": 5,
+    "last_update": "2024-06-05T15:03:33.252344+00:00",
+    "data": [
+        {
+            "systematics": "FuBonArtMuseum",
+            "title": "\u771f\u5be6\u672c\u8cea-\u7f85\u4e39\u8207\u5370\u8c61\u6d3e\u6642\u4ee3 Single Exhibition\u2500The True Essence",
+            "date": "2024-06-06 ~ 2024-08-05",
+            "address": "\u5bcc\u90a6\u7f8e\u8853\u9928-1\u6a13 \u6c34\u666f\u5c55\u5ef3",
+            "source_url": "https://www.fubonartmuseum.org//ExhibitionDetail?PKNO=X007MKVB",
+            "UUID": "492b9a68aa0c5c3bbe1ca2c03462859f",
+            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007MKVB/Cover/\u7968\u50f9_01_0.jpg"
+        },
+        {
+            "systematics": "FuBonArtMuseum",
+            "title": "\u5bcc\u90a6\u5178\u85cf\u5c55.\u89f8\u52d5 Single Exhibition\u2500Fubon Collection Exhibition",
+            "date": "2024-06-06 ~ 2024-08-05",
+            "address": "\u5bcc\u90a6\u7f8e\u8853\u9928-3\u6a13 \u65e5\u5149\u5c55\u5ef3\u3001\u661f\u5149\u5c55\u5ef3",
+            "source_url": "https://www.fubonartmuseum.org//ExhibitionDetail?PKNO=X007MKVC",
+            "UUID": "36c30c24476e5d4cba2799d9aee80bfd",
+            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007MKVC/Cover/\u7968\u50f9-02_0.jpg"
+        },
+        {
+            "systematics": "FuBonArtMuseum",
+            "title": "\u5bcc\u90a6\u5178\u85cf\u5c55\uff0e\u89f8\u52d5 In Touch\uff1aCollection of Fubon",
+            "date": "2024-05-04 ~ 2024-08-05",
+            "address": "\u5bcc\u90a6\u7f8e\u8853\u9928-3\u6a13 \u65e5\u5149\u5c55\u5ef3\u3001\u661f\u5149\u5c55\u5ef3",
+            "source_url": "https://www.fubonartmuseum.org//ExhibitionDetail?PKNO=X007IA44",
+            "UUID": "38c2fe8e22a4504d85fd11ac70fd7da3",
+            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007IA44/Cover/\u5178\u85cf\u5c55_\u5b98\u7db2_\u7f85\u4e39\u5c55_\u5b98\u7db2BN_1784x1935px.jpg"
+        },
+        {
+            "systematics": "FuBonArtMuseum",
+            "title": "\u771f\u5be6\u672c\u8cea \u7f85\u4e39\u8207\u5370\u8c61\u6d3e\u6642\u4ee3 True Nature Rodin and the Age of Impressionism",
+            "date": "2024-05-04 ~ 2024-09-23",
+            "address": "\u5bcc\u90a6\u7f8e\u8853\u9928-1\u6a13 \u6c34\u666f\u5c55\u5ef3",
+            "source_url": "https://www.fubonartmuseum.org//ExhibitionDetail?PKNO=X007HPYU",
+            "UUID": "488974b6d8285b50841cdf52d6447928",
+            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007HPYU/Cover/\u4e3b\u8996\u89ba4.jpg"
+        },
+        {
+            "systematics": "FuBonArtMuseum",
+            "title": "\u6236\u5916\u88dd\u7f6e Outdoor Installation",
+            "date": "2024-01-01 ~ 2024-12-31",
+            "address": "\u5bcc\u90a6A25\u5712\u5340-\u5ee3\u5834",
+            "source_url": "https://www.fubonartmuseum.org//ExhibitionDetail?PKNO=X007HPYQ",
+            "UUID": "3b95ae4614bc5249a6075f76543147d7",
+            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007HPYQ/Cover/Fubon Calendar _DSC3820 (1).jpg"
+        }
+    ],
+    "visit": {}
+}
