@@ -130,6 +130,10 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1",
     )
 
+    FuBonArtMuseum = (
+        "FuBonArtMuseum", "FuBonArtMuseum", "https://www.fubonartmuseum.org/Default",
+    )
+
     BUG = (
         "BUG",
         "BUG",

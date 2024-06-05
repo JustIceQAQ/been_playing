@@ -1,4 +1,5 @@
 from exhibition.cksmh.script import CKSMHRunner
+from exhibition.fubonartmuseum.script import FuBonArtMuseumRunner
 from exhibition.huashan1914.script import HuaShan1914Runner
 from exhibition.ibon.script import IBonRunner
 from exhibition.jam.script import JamRunner
@@ -47,4 +48,5 @@ PY_CLASS_SCRIPT = {
     KKTixRunner,
     IBonRunner,
     KKDayRunner,
+    FuBonArtMuseumRunner,
 }
