@@ -8,7 +8,7 @@ from helper.parse_helper import ParseInit
 @dataclasses.dataclass
 class PathQuery:
     n: int
-    _CSN: int
+    sms: int
 
 
 class NTMParse(ParseInit):
