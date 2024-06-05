@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-06-05T08:14:56.967447+00:00",
+    "last_update": "2024-06-05T16:14:48.071395+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -108,6 +108,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "\u5922\u60f3\u532f\u805a\u7684\u4e00\u64ca-\u5922\u60f3\u5feb\u7167\u8eca",
+            "date": "2024-06-13 ~ 2024-06-16",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/32660550-5b72-468a-ab23-2295c7b5ba01",
+            "UUID": "969db9a4fc8c575ab8581ba36e2cf534",
+            "figure": "https://www.songshanculturalpark.org/gallery/1717575736_966c362e218afb1b1058.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "\u6587\u5316\u5efa\u7bc9\u4e00\u4e00\u4e09\u7d1a\u7562\u696d\u7279\u5c55 \u2013 Resonance of Process",
             "date": "2024-06-14 ~ 2024-06-16",
             "address": "-",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/d641d301-5305-4eb6-adfc-c813dc5bd3ce",
             "UUID": "68d0c8f2f5b45d6db38f42221e52729f",
             "figure": "https://www.songshanculturalpark.org/gallery/1717405516_571288295e1853d3827a.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u7375\u4eba\u5be6\u5883\u89e3\u8b0e\u904a\u6232 \u2013 \u8caa\u5a6a\u4e4b\u5cf6",
-            "date": "2024-06-27 ~ 2024-09-17",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/f7ecb259-42b4-4da7-9dc6-5d2b4ca46450",
-            "UUID": "74418b283494551187b6e4afa2bc2c98",
-            "figure": "https://www.songshanculturalpark.org/gallery/1715928492_8b9d04be24802c2a4c2f.jpg"
         }
     ],
     "visit": {}
