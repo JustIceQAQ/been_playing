@@ -14,7 +14,7 @@ class NTMRunner(RunnerInit):
 
     root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_domain = "https://www.ntm.gov.tw"
-    urls_format = "{target_domain}/News_actives.aspx?n={n}&_CSN={_CSN}"
+    urls_format = "{target_domain}/News_actives.aspx?n={n}&sms={sms}"
     target_visit_url = "https://www.ntm.gov.tw/content_158.html"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "ntm_exhibition.json")
@@ -25,11 +25,14 @@ class NTMRunner(RunnerInit):
 
     def get_response(self):
         path_query_data: List[PathQuery] = [
-            PathQuery(n=5472, _CSN=2446),
-            PathQuery(n=5472, _CSN=4479),
+            PathQuery(n=5472, sms=13389),
+            PathQuery(n=5473, sms=13389),
+            PathQuery(n=5474, sms=13389),
+            PathQuery(n=5478, sms=13389),
+            PathQuery(n=5477, sms=13389),
         ]
         target_urls = list(
-            self.urls_format.format(target_domain=self.target_domain, n=item.n, _CSN=item._CSN)
+            self.urls_format.format(target_domain=self.target_domain, n=item.n, sms=item.sms)
             for item in path_query_data
         )
 
