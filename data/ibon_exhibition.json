@@ -4,9 +4,18 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 53,
-    "last_update": "2024-06-06T08:15:07.528195+00:00",
+    "counts": 55,
+    "last_update": "2024-06-06T16:14:37.726800+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "\u96c6\u82f1\u793e \u6c88\u6d78\u5f0f\u6f2b\u756b\u5149\u5f71\u5c55\u3010\u6211\u63a8\u7684\u5b69\u5b50\u3011",
+            "date": "2024-06-29 ~ 2024-09-06",
+            "address": "\u53f0\u5317 \u83ef\u5c71\u6587\u5275 Magic Box",
+            "source_url": "https://tour.ibon.com.tw/event/66596ff194e662570be49400",
+            "UUID": "bfbff6f0b00f543d9a0184be089e8c94",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/f23e25d7-fa21-4d6d-b2f2-9e9869aa073a.jpg"
+        },
         {
             "systematics": "ibon",
             "title": "\u65b0\u5317\uff0e2024\u798f\u9686\u570b\u969b\u6c99\u96d5\u85dd\u8853\u5b63",
@@ -96,6 +105,15 @@
             "source_url": "https://tour.ibon.com.tw/event/663c8e292392532d7824c5af",
             "UUID": "74b99fd8325e5b8588f2a9ae0b90c3e4",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/41ab8593-4176-4d9f-90e3-c0380561e437.jpeg"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u8d85\u4eba\u529b\u9738\u738b\u82f1\u96c4\u5c55\uff0d\u8207\u5149\u76f8\u9047\u898b\u9762\u5238",
+            "date": "2024-07-06 ~ 2024-09-15",
+            "address": "\u83ef\u5c711914\u6587\u5275\u5712\u5340\u67712CD\u68df",
+            "source_url": "https://tour.ibon.com.tw/event/663c2fff44c8985246f8e792",
+            "UUID": "32f3ce563692516ea9c4b0ed8eb742c1",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/1426c85f-c120-4d72-82c8-76cdfe1bae8a.jpg"
         },
         {
             "systematics": "ibon",

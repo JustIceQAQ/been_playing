@@ -5,7 +5,7 @@
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
     "counts": 21,
-    "last_update": "2024-06-06T08:15:06.897551+00:00",
+    "last_update": "2024-06-06T16:14:36.732370+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -153,17 +153,8 @@
         },
         {
             "systematics": "tickets_udnfunlife",
-            "title": "\u4e2d\u83ef\u53f0\u5317 vs \u963f\u66fc",
-            "date": "2024-06-06 ~ 2024-06-06",
-            "address": "\u81fa\u5317\u7530\u5f91\u5834",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0I9INNN&kdid=featured",
-            "UUID": "39094ea78cfd54f6b60f67ae9de3773a",
-            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0I9INNN_Product.JPG?v=202406051533"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
             "title": "\u547d\u904b\u4e4b\u7d04II",
-            "date": "2024-06-06 ~ 2024-06-30",
+            "date": "2024-06-08 ~ 2024-06-30",
             "address": "PLAYground \u5357\u6751\u5287\u5834",
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0HBJOVJ&kdid=featured",
             "UUID": "fd0982bfa8245e33b13153e673d0703f",
@@ -195,6 +186,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0IYC24V&kdid=featured",
             "UUID": "6fff834e8a9958c5a89531408fdb83d1",
             "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0IYC24V_Product.JPG?v=202406040925"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u300c\u6c11\u6b4c\u4e94\u5341\u300d\u6f14\u5531\u6703(9\u6708\u958b\u8ce3)",
+            "date": "2025-02-14 ~ 2025-02-16",
+            "address": "\u81fa\u5317\u5c0f\u5de8\u86cb",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0IMVN91&kdid=featured",
+            "UUID": "1f00c5f94e7759dc821dc299e7369385",
+            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0IMVN91_Product.PNG?v=202406061934"
         }
     ],
     "visit": {}
