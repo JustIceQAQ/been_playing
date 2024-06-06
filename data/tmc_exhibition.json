@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 14,
-    "last_update": "2024-06-06T00:52:23.520282+00:00",
+    "counts": 17,
+    "last_update": "2024-06-06T08:15:03.293103+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -24,6 +24,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/secret-base-for-music-players/",
             "UUID": "ed786e5f55e3597a8456693a7330e51e",
             "figure": "https://i.imgur.com/wREjFkJ.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "2024 Lisa Ono \u5c0f\u91ce\u9e97\u838e35\u9031\u5e74\u4e16\u754c\u5de1\u8ff4\u6f14\u5531\u6703\uff0d\u81fa\u7063\u7ad9",
+            "date": "2024-06-09",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/2024-lisa-ono-35-taipei/",
+            "UUID": "4550f6e697c45d7baa43b2833be153f6",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/04/\u5317\u6d41\u5716\u6a94.jpg"
         },
         {
             "systematics": "tmc",
@@ -81,12 +90,30 @@
         },
         {
             "systematics": "tmc",
+            "title": "\u521d\u604bEternal \u2013 First One Man Live \u300e\u3042\u306e\u65e5\u304b\u3089\u3001\u300f\uff5e\u904e\u53bb\u3068\u672a\u6765\uff5e",
+            "date": "2024-07-13",
+            "address": "Live House D",
+            "source_url": "https://www.tmc.taipei/blog/show/eternal-first-one-man-live/",
+            "UUID": "daeaf110fb295e508b30f21ece8aa75d",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/06/\u5b98\u7db2\u5c55\u6f14\u6d3b\u52d5.png"
+        },
+        {
+            "systematics": "tmc",
             "title": "2024 SUHO CONCERT \ufe64SU:HOME\ufe65 IN TAIPEI",
             "date": "2024-07-13",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/2024-suho-concert-in-taipei/",
             "UUID": "e70f4447a4a65469bca43f1ef0daf517",
             "figure": "https://www.tmc.taipei/wp-content/uploads/2024/05/SUHO_TPE_Banner_240514_1360x680.jpg"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u6cf0\u60f3\u548c\u4f60\u8d70\u5b8c\u4e0d\u6b6216\u5e74",
+            "date": "2024-07-14",
+            "address": "Live House D",
+            "source_url": "https://www.tmc.taipei/blog/show/tai-wants-more-than-16-years/",
+            "UUID": "bb8a037d05d65e7cbb92fe3bf9e5996f",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/06/S__48472076_0.jpg"
         },
         {
             "systematics": "tmc",
