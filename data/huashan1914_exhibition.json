@@ -4,8 +4,8 @@
         "code_name": "huashan1914",
         "external_link": "https://www.huashan1914.com/w/huashan1914/exhibition"
     },
-    "counts": 36,
-    "last_update": "2024-06-08T08:13:25.183948+00:00",
+    "counts": 35,
+    "last_update": "2024-06-08T16:14:58.660352+00:00",
     "data": [
         {
             "systematics": "huashan1914",
@@ -108,6 +108,15 @@
         },
         {
             "systematics": "huashan1914",
+            "title": "\u6a02\u5712\u661f\u7403PLANET PARK-\u5168\u5883\u5f0f\u4e92\u52d5\u6a02\u5712",
+            "date": "2024-05-17 ~ 2024-06-23",
+            "address": "-",
+            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_24052011351080241",
+            "UUID": "97c706c85de45504abbbf2b14b5d1bee",
+            "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/Planet%20park1920x1080_24052011351078326.jpg"
+        },
+        {
+            "systematics": "huashan1914",
             "title": "\u300a\u72d0\u5996\u5c0f\u7d05\u5a18\u6708\u7d05\u7bc7\u300b\u5feb\u9583\u5c55",
             "date": "2024-06-15 ~ 2024-06-23",
             "address": "-",
@@ -132,15 +141,6 @@
             "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_24060316414356020",
             "UUID": "cbc95e4a5a485824a22e8820f1949b95",
             "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e5%bb%a2%e6%96%99%e5%a4%a7%e8%ae%8a%e8%ba%ab%e2%80%94%e2%80%94%e5%b0%8b%e6%89%be%e5%be%aa%e7%92%b0%e7%9a%84%e5%8f%af%e8%83%bd%e6%80%a7%ef%bc%bf0520_1920x1080_24060316364574372.jpg"
-        },
-        {
-            "systematics": "huashan1914",
-            "title": "\u6a02\u5712\u661f\u7403PLANET PARK-\u5168\u5883\u5f0f\u4e92\u52d5\u6a02\u5712",
-            "date": "2024-05-17 ~ 2024-06-23",
-            "address": "-",
-            "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_24052011351080241",
-            "UUID": "97c706c85de45504abbbf2b14b5d1bee",
-            "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/Planet%20park1920x1080_24052011351078326.jpg"
         },
         {
             "systematics": "huashan1914",
@@ -321,15 +321,6 @@
             "source_url": "https://www.huashan1914.com/w/umaytheater/performance_24043010473676547",
             "UUID": "f847067d580252f0b243e49474538735",
             "figure": "https://media.huashan1914.com/WebUPD/umaytheater/performance/1920_1080-01_24050610103081917.jpg"
-        },
-        {
-            "systematics": "huashan1914",
-            "title": "\u4e0d\u8cb3\u5076\u5287 \u7532\u8fb0\u7aef\u5348\u846b\u8606\u9999\u5305\u88fd\u4f5c\u5de5\u4f5c\u574a",
-            "date": "2024-06-08 ~ 2024-06-08",
-            "address": "-",
-            "source_url": "https://www.huashan1914.com/w/umaytheater/performance_24052318072190942",
-            "UUID": "8cafc77fe60e5ef49ea830cec19fc96b",
-            "figure": "https://media.huashan1914.com/WebUPD/umaytheater/performance/4.%20%e8%8f%af%e5%b1%b1FB%e8%87%89%e6%9b%b8%ef%bc%9aJPG%e6%a0%bc%e5%bc%8f%ef%bd%9c1200(W)%20x%20800(H)%20pixel-01.jpg"
         }
     ],
     "visit": {}
