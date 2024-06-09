@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-06-09T08:13:52.813129+00:00",
+    "last_update": "2024-06-09T16:13:21.526310+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -51,15 +51,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/20028bbd-8f9c-472a-ad04-3e7584800adf",
             "UUID": "fc81f640c0dd59b280ca780404feed87",
             "figure": "https://www.songshanculturalpark.org/gallery/1713939771_2a2f8d3ea21106e35a9d.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u4e00\u5ff5\u4e4b\u9593 \u4e00\u65b9\u7a7a\u9593\uff1a\u7409\u7483\u5de5\u623f\u5faa\u74b0\u518d\u751f",
-            "date": "2024-05-23 ~ 2024-06-09",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/6f147851-e362-4524-ae4d-c8f950f53a2c",
-            "UUID": "2d44b298c6dd59d6bdad8bf5a8112eee",
-            "figure": "https://www.songshanculturalpark.org/gallery/1715322109_124ebf30c46a61a7ab67.jpg"
         },
         {
             "systematics": "songshanculturalpark",
@@ -141,6 +132,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/d641d301-5305-4eb6-adfc-c813dc5bd3ce",
             "UUID": "68d0c8f2f5b45d6db38f42221e52729f",
             "figure": "https://www.songshanculturalpark.org/gallery/1717405516_571288295e1853d3827a.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u7375\u4eba\u5be6\u5883\u89e3\u8b0e\u904a\u6232 \u2013 \u8caa\u5a6a\u4e4b\u5cf6",
+            "date": "2024-06-27 ~ 2024-09-17",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/f7ecb259-42b4-4da7-9dc6-5d2b4ca46450",
+            "UUID": "74418b283494551187b6e4afa2bc2c98",
+            "figure": "https://www.songshanculturalpark.org/gallery/1715928492_8b9d04be24802c2a4c2f.jpg"
         }
     ],
     "visit": {}
