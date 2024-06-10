@@ -4,8 +4,8 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 55,
-    "last_update": "2024-06-10T08:16:00.020480+00:00",
+    "counts": 52,
+    "last_update": "2024-06-10T16:15:03.883470+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -33,15 +33,6 @@
             "source_url": "https://tour.ibon.com.tw/event/664d53479341874ba3d39438",
             "UUID": "a8fdef9e0b225bb98b671348003b1224",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/efc3c733-f368-4ec9-b47c-fe1b4686cea0.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "2024\u53f0\u5317\u570b\u969b\u96fb\u8166\u5c55 COMPUTEX TAIPEI",
-            "date": "2024-06-07 ~ 2024-06-07",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928\u30012\u9928",
-            "source_url": "https://tour.ibon.com.tw/event/664bfa2761a3691608d926a6",
-            "UUID": "23970099bea7571695f3bcab8db597f7",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/705db22f-77de-4661-aeb8-2cb2543d5c9a.jpg"
         },
         {
             "systematics": "ibon",
@@ -330,24 +321,6 @@
             "source_url": "https://tour.ibon.com.tw/event/65dd52e524941108dd593327",
             "UUID": "774e9aa5eaba54bcba525a6f98365ab2",
             "figure": "https://i.imgur.com/NjMfgPJ.webp"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u4e00\u62cd\u5373\u5f71\u5c55\u2013\u5716\u9304\u5957\u7968",
-            "date": "2024-03-09 ~ 2024-06-07",
-            "address": "\u5e2b\u5927\u7f8e\u8853\u9928",
-            "source_url": "https://tour.ibon.com.tw/event/65d56771ef1ac711317a29b6",
-            "UUID": "21aef4ec2a055efcafdfb1a62424c6ad",
-            "figure": "https://i.imgur.com/cQ3H2sj.webp"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u4e00\u62cd\u5373\u5f71\uff1a\u62cd\u7acb\u5f97\u570b\u969b\u540d\u5bb6\u651d\u5f71\u5927\u5c55",
-            "date": "2024-03-09 ~ 2024-06-07",
-            "address": "\u5e2b\u5927\u7f8e\u8853\u9928",
-            "source_url": "https://tour.ibon.com.tw/event/65d556963c18c20c86d3f399",
-            "UUID": "6eea5de37f8b53109aa4585fa42977a4",
-            "figure": "https://i.imgur.com/C8JjQXM.webp"
         },
         {
             "systematics": "ibon",
