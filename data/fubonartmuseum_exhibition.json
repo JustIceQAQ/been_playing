@@ -4,8 +4,8 @@
         "code_name": "FuBonArtMuseum",
         "external_link": "https://www.fubonartmuseum.org/Default"
     },
-    "counts": 3,
-    "last_update": "2024-06-10T00:54:51.596177+00:00",
+    "counts": 2,
+    "last_update": "2024-06-10T08:15:45.666886+00:00",
     "data": [
         {
             "systematics": "FuBonArtMuseum",
@@ -24,15 +24,6 @@
             "source_url": "https://www.fubonartmuseum.org//ExhibitionDetail?PKNO=X007HPYU",
             "UUID": "488974b6d8285b50841cdf52d6447928",
             "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007HPYU/Cover/\u4e3b\u8996\u89ba4.jpg"
-        },
-        {
-            "systematics": "FuBonArtMuseum",
-            "title": "\u6236\u5916\u88dd\u7f6e Outdoor Installation",
-            "date": "2024-01-01 ~ 2024-12-31",
-            "address": "\u5bcc\u90a6A25\u5712\u5340-\u5ee3\u5834",
-            "source_url": "https://www.fubonartmuseum.org//ExhibitionDetail?PKNO=X007HPYQ",
-            "UUID": "3b95ae4614bc5249a6075f76543147d7",
-            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007HPYQ/Cover/Fubon Calendar _DSC3820 (1).jpg"
         }
     ],
     "visit": {}

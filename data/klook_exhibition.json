@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 50,
-    "last_update": "2024-06-10T00:55:31.180584+00:00",
+    "counts": 51,
+    "last_update": "2024-06-10T08:16:27.555575+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u5275\u7269\u6587\u5316\u796d Ideas Assemble\uff01",
+            "date": "2024-06-28~2024-06-30",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/activity/119108-ideas-assemble/",
+            "UUID": "c3449c2f8e165ff4adaa35eb9b3217d6",
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/20240513_KLOOK_-_\u6d3b\u52d5\u9996\u5716_326x460_ep4fnp.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u96c6\u82f1\u793e \u6c89\u6d78\u5f0f\u6f2b\u756b\u5149\u5f71\u5c55\u3010\u6211\u63a8\u7684\u5b69\u5b50\u3011",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024725-2024-taipei-beauty-show-expo/",
             "UUID": "899f1038fa2b5c4b855ccaecac7b43b8",
-            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1716459988/events_admin/yaejmhnd1vrjrmqmbbyt.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/115951-teamlab-future-park/",
             "UUID": "99ff8f4cea685364b93dd22b5cd497f6",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/klook_326x460_nymvyz.jpg"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023938-2024-mountainsdense-rivervast/",
             "UUID": "84a8a4c3365a5efd965776b8e0d808fa",
-            "figure": "https://i.imgur.com/MtjbQTv.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "\u9a5a\u559c\u88fd\u9020",
             "source_url": "https://www.klook.com/zh-TW/activity/81847-the-sunset-terminal/",
             "UUID": "b148959df7175628a044b1bcb87bf5c0",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/20240207_\u843d\u65e5\u6708\u53f0_Klook_Banner_326x420_1_niv7h2.png"
         },
         {
             "systematics": "klook",
