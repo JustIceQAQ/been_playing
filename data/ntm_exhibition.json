@@ -5,7 +5,7 @@
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
     "counts": 51,
-    "last_update": "2024-06-11T00:54:35.107512+00:00",
+    "last_update": "2024-06-11T08:15:56.858367+00:00",
     "data": [
         {
             "systematics": "ntm",
@@ -15,6 +15,15 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40223",
             "UUID": "f4ae8a4f37f750f5928e5d623725ec76",
             "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/40223/AD/40223_0_0_327776.jpg"
+        },
+        {
+            "systematics": "ntm",
+            "title": "\u7279\u5c55 \u6377\u514b\u57ce\u5821\u8207\u5821\u90b8",
+            "date": "",
+            "address": "\u81fa\u535a\u9928\u672c\u9928",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40220",
+            "UUID": "52be7655a1855df5ac4ec39304b26c04",
+            "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/40220/AD/40220_0_0_249081.jpg"
         },
         {
             "systematics": "ntm",
@@ -87,15 +96,6 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=30096",
             "UUID": "4e57150355dc541aa1a6b7af603d8bed",
             "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/30096/AD/30096_0_0_32923.jpg"
-        },
-        {
-            "systematics": "ntm",
-            "title": "\u7279\u5c55 \u6f02\u9ce5\u96c6\u2014\u81fa\u7063\u5019\u9ce5\u5c55",
-            "date": "",
-            "address": "\u81fa\u535a\u9928\u672c\u9928",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=30062",
-            "UUID": "bcedb4c8a7515a888e0d577e2c15dea7",
-            "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/30062/AD/30062_0_0_884798.jpg"
         },
         {
             "systematics": "ntm",
