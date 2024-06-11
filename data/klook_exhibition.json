@@ -4,9 +4,27 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 51,
-    "last_update": "2024-06-11T08:16:10.450856+00:00",
+    "counts": 53,
+    "last_update": "2024-06-11T16:15:24.860219+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u5e7b\u96b1\u5149\u9748\uff1a\u7981\u5730",
+            "date": "2024-06-11~2024-12-31",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/activity/119464-goblet-of-soul-forbidden-zone/",
+            "UUID": "05df4edf0009559ab6cb4fbb709e64f8",
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/\u5c55\u6f14\u9801\u9762\u6d3b\u52d5\u9996\u5716-\u7981\u5730_326x460_v2z4sl.jpg"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u5e7b\u96b1\u5149\u9748\uff1a\u4ed9\u8e64",
+            "date": "2024-06-11~2024-12-29",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/activity/119455-goblet-of-soul-wonderland/",
+            "UUID": "c8dc290f4aa45f98acf45c9f6b9a5550",
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/\u5c55\u6f14\u9801\u9762\u6d3b\u52d5\u9996\u5716-\u4ed9\u8e64_326x460_x3gc83.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u5275\u7269\u6587\u5316\u796d Ideas Assemble\uff01",
@@ -77,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024824-2024-in-between-exhibition/",
             "UUID": "4dac3d7a142e5826b875189d3dbd1386",
-            "figure": "https://res.klook.com/image/upload/x_1327,y_0,w_907,h_1270,c_crop/w_360,q_85/v1716971109/events_admin/mnk8hexltggkwx0st6cy.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -86,7 +104,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024784-2024-udon-the-bye-product/",
             "UUID": "d24bed4799fc5a7d8d59890c848d0a85",
-            "figure": "https://res.klook.com/image/upload/x_0,y_28,w_3508,h_4911,c_crop/w_360,q_85/v1716868706/events_admin/hji0vjmt55rci4le5ngk.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -212,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024386-2024-gabriel-orozco-exhibition/",
             "UUID": "e372209841aa5d2ea365b86ad2ac991a",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1714474215/events_admin/amindlzywxj5taxjcxnz.jpg"
         },
         {
             "systematics": "klook",
@@ -221,7 +239,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024340-2024-beyond-the-sea/",
             "UUID": "41943a53f9d45d3bb05eb8c82609e9a0",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_50,y_0,w_1919,h_2687,c_crop/w_360,q_85/v1714135919/events_admin/xmde8veblarmf7ytppfy.jpg"
         },
         {
             "systematics": "klook",
@@ -293,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024008-2024-lin-pei-yao-ehxibition/",
             "UUID": "d26e8c55683d51468f4c7a68c7948f98",
-            "figure": "https://i.imgur.com/cXtMIEh.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -302,7 +320,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024007-2024-blank-stream-exhibition/",
             "UUID": "aaec4fe13c60573a9a8017c0b18bc584",
-            "figure": "https://i.imgur.com/g6c53l9.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -428,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/87261-the-6th-ishands-connect-asia-craft-matsuri/",
             "UUID": "7b8734d442f2568c85a4067b44eff2ce",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/2023\u611b\u624b\u5275\u570b\u969b\u624b\u4f5c\u8a2d\u8a08\u7bc0-Klook\u7db2\u8def\u7528\u5716_\u6d3b\u52d5\u9996\u5716326x460px_v7zjag.jpg"
         },
         {
             "systematics": "klook",
@@ -437,7 +455,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/85220-dining-in-the-dark-s3-surprise-lab/",
             "UUID": "f0d711edefe85a96b753f335e87e9a69",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/240516_klook\u5546\u54c1\u5716_\u6d3b\u52d5\u9996\u5716_326_sqrpz0.png"
         },
         {
             "systematics": "klook",
