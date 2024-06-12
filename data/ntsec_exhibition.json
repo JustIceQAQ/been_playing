@@ -4,9 +4,18 @@
         "code_name": "ntsec",
         "external_link": "https://www.ntsec.gov.tw/article/list.aspx?a=25"
     },
-    "counts": 4,
-    "last_update": "2024-06-12T00:53:49.806651+00:00",
+    "counts": 5,
+    "last_update": "2024-06-12T08:14:48.823642+00:00",
     "data": [
+        {
+            "systematics": "ntsec",
+            "title": "teamLab\u5171\u5275\uff01\u672a\u4f86\u5712",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5428",
+            "UUID": "451efc957fdf5a6483381a0c3b112e10",
+            "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/5428_2.jpg"
+        },
         {
             "systematics": "ntsec",
             "title": "\u96d9\u8a9e\u7e6a\u672c\u7279\u5c55\uff1a\u5927\u6d77\u88e1\u7684\u5c0f\u5de8\u4eba~\u6709\u5b54\u87f2",
