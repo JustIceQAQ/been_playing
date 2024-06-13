@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 20,
-    "last_update": "2024-06-13T00:53:14.558910+00:00",
+    "counts": 21,
+    "last_update": "2024-06-13T08:15:19.813632+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -19,7 +19,7 @@
         {
             "systematics": "tmc",
             "title": "\u97f3\u6a02\u73a9\u5bb6\u7684\u79d8\u5bc6\u57fa\u5730\uff1a\u63a2\u7d22\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
-            "date": "2023-06-24 ~ 2024-12-31",
+            "date": "2023-06-24 ~ 2024-06-30",
             "address": "\u6587\u5316\u9928",
             "source_url": "https://www.tmc.taipei/blog/show/secret-base-for-music-players/",
             "UUID": "ed786e5f55e3597a8456693a7330e51e",
@@ -96,6 +96,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/crazy-momoment/",
             "UUID": "a6aeeac302fa5d9796c7b91c7f00e43e",
             "figure": "https://i.imgur.com/2zWT5Lp.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u70cf\u5c3c\u6b50\u5361\u6ce2\u8036\u62c9\u8077\u696d\u5718\u9ad4 BATIZADO\u5df4\u897f\u6230\u821e\u7dac\u5e36\u5100\u5f0f",
+            "date": "2024-07-06 ~ 2024-07-06",
+            "address": "Live House D",
+            "source_url": "https://www.tmc.taipei/blog/show/unio-capoeira-batizado/",
+            "UUID": "2fe8ff3db5fb50909456055001a65200",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/06/\u5716\u72471.jpg"
         },
         {
             "systematics": "tmc",

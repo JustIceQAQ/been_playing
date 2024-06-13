@@ -4,8 +4,8 @@
         "code_name": "npm",
         "external_link": "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1"
     },
-    "counts": 22,
-    "last_update": "2024-06-13T00:53:33.456119+00:00",
+    "counts": 23,
+    "last_update": "2024-06-13T08:15:18.520494+00:00",
     "data": [
         {
             "systematics": "npm",
@@ -132,6 +132,15 @@
             "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011058&l=1&type=1&cat=",
             "UUID": "33e44a88163a5fc6b4c57da8fe65e59a",
             "figure": "https://i.imgur.com/AK2KUq7.webp"
+        },
+        {
+            "systematics": "npm",
+            "title": "\u5152\u7ae5\u5b78\u85dd\u4e2d\u5fc3",
+            "date": "2020-07-01~",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013724&l=1&type=1&cat=",
+            "UUID": "ae25e42bef915d819fa6c40c8ee79932",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013724/34056526.jpg&w=720&h=500"
         },
         {
             "systematics": "npm",
