@@ -5,7 +5,7 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 100,
-    "last_update": "2024-06-16T16:13:08.535478+00:00",
+    "last_update": "2024-06-17T00:56:28.846272+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -495,20 +495,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u7b2c\u4e94\u5c46\u53f0\u5317\u570b\u969b\u79cb\u5b63\u65c5\u5c55\u3001\u53f0\u7063\u4f34\u624b\u79ae\u66a8\u89c0\u5149\u7279\u7522\u5c55",
-            "date": "2024-09-27 ~ 2024-09-30",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "http://www.kje.com.tw/",
-            "UUID": "38b859e033c155bb921a6e6ce7cb559f",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u7b2c25\u5c46\u65b0\u4e16\u7d00\u5bb6\u5177\u7cbe\u54c1\u5927\u5c55",
             "date": "2024-09-27 ~ 2024-09-30",
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "http://www.ifpr.com.tw",
             "UUID": "6de9e92576b650e8a33a7acbabbd0600",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c\u4e94\u5c46\u53f0\u5317\u570b\u969b\u79cb\u5b63\u65c5\u5c55\u3001\u53f0\u7063\u4f34\u624b\u79ae\u66a8\u89c0\u5149\u7279\u7522\u5c55",
+            "date": "2024-09-27 ~ 2024-09-30",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.kje.com.tw/",
+            "UUID": "38b859e033c155bb921a6e6ce7cb559f",
             "figure": ""
         },
         {
