@@ -4,8 +4,8 @@
         "code_name": "cksmh",
         "external_link": "https://www.cksmh.gov.tw/activitysoonlist_369.html"
     },
-    "counts": 4,
-    "last_update": "2024-06-17T00:55:38.659532+00:00",
+    "counts": 7,
+    "last_update": "2024-06-17T08:15:33.357550+00:00",
     "data": [
         {
             "systematics": "cksmh",
@@ -42,6 +42,33 @@
             "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=40941",
             "UUID": "2edbca3701c75289b2114b12a7efcff0",
             "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/40941/AD/40941_0_0_249205.jpg"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u9010\u5fc3\u00b7\u7bc9\u5fc3 \u8b1d\u8446\u771f\u500b\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "\u65e5\u671f:2024-06-22 ~ 2024-07-04",
+            "address": "4\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=40984",
+            "UUID": "2322f35e903c5ec18a85fcea872da43a",
+            "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/40984/AD/40984_0_0_123524.jpg"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u6700\u7121\u60c5\u5927\u8cde\uff08\u514d\u8cbb\u53c3\u89c0\uff09",
+            "date": "\u65e5\u671f:2024-06-29 ~ 2024-07-10",
+            "address": "2\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=40986",
+            "UUID": "b68eddf2d75e550ba80ee0901d6d6896",
+            "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/40986/AD/40986_0_0_458499.jpg"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u602a\u7378\u8207\u5927\u81ea\u7136\u7684\u5947\u5e7b\u4e16\u754c",
+            "date": "\u65e5\u671f:2024-07-04 ~ 2024-10-13",
+            "address": "1\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=40983",
+            "UUID": "cb39eb56d43c5af8b904398028526d8b",
+            "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/40983/AD/40983_0_0_68365.jpg"
         }
     ],
     "visit": {}
