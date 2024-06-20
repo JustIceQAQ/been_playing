@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 19,
-    "last_update": "2024-06-20T00:52:32.221576+00:00",
+    "counts": 21,
+    "last_update": "2024-06-20T08:16:11.698665+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -99,6 +99,15 @@
         },
         {
             "systematics": "tmc",
+            "title": "\u3010\u5317\u6d41\u9031\u672b\u6d3e\u3011 \u672c\u5b63\u6700\u7d42\u5834 \u5f69\u8679\u518d\u73fe",
+            "date": "2024-07-07 ~ 2024-07-07",
+            "address": "\u7522\u696d\u5340",
+            "source_url": "https://www.tmc.taipei/blog/show/beiliu-weekend-party-0707/",
+            "UUID": "460c96acce215be0bb4395af57a5d92a",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/06/\u300a\u5317\u6d41\u9031\u672b\u6d3e\u300b\u96fb\u5b50\u88fd\u4f5c\u7269-resize\u7b2c\u4e09\u7248_\u5b98\u7db2Banner_small.jpg"
+        },
+        {
+            "systematics": "tmc",
             "title": "\u521d\u604bEternal \u2013 First One Man Live \u300e\u3042\u306e\u65e5\u304b\u3089\u3001\u300f\uff5e\u904e\u53bb\u3068\u672a\u6765\uff5e",
             "date": "2024-07-13",
             "address": "Live House D",
@@ -150,6 +159,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/blood-juice-machine-temple-in-2024/",
             "UUID": "f5a1810f904256b597a7fdb63742018f",
             "figure": "https://www.tmc.taipei/wp-content/uploads/2024/04/1360x680.jpg"
+        },
+        {
+            "systematics": "tmc",
+            "title": "Matzka \u6771\u904a\u8a18\u6f14\u5531\u6703",
+            "date": "2024-08-03",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/matzka-journey-the-east-concert/",
+            "UUID": "fa9b9174444c5e9596999a4c6826bab6",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/06/Matzka\u6771\u904a\u8a18-\u5317\u6d41-1360X680.jpg"
         },
         {
             "systematics": "tmc",
