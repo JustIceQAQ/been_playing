@@ -4,8 +4,8 @@
         "code_name": "npm",
         "external_link": "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1"
     },
-    "counts": 23,
-    "last_update": "2024-06-23T08:13:20.347398+00:00",
+    "counts": 20,
+    "last_update": "2024-06-23T16:13:12.968279+00:00",
     "data": [
         {
             "systematics": "npm",
@@ -27,15 +27,6 @@
         },
         {
             "systematics": "npm",
-            "title": "\u65b9\u5bf8\u9298\u60c5",
-            "date": "2024-04-12~2024-06-23",
-            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 212",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013648&l=1&type=1&cat=",
-            "UUID": "c28dc0b6c4065823be445142d4bbda2b",
-            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013648/34056292.jpg&w=720&h=500"
-        },
-        {
-            "systematics": "npm",
             "title": "\u7b46\u58a8\u898b\u771f\u7ae0\uff0d\u6545\u5bae\u66f8\u6cd5\u5c0e\u8cde (2024-II)",
             "date": "2024-04-12~2024-06-30",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 204,206",
@@ -51,24 +42,6 @@
             "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013638&l=1&type=1&cat=",
             "UUID": "febd1ec5009e500a8f4d36a83ad9d93d",
             "figure": "https://i.imgur.com/9AM5H4H.webp"
-        },
-        {
-            "systematics": "npm",
-            "title": "\u570b\u5bf6\u805a\u7126 (2024-II)",
-            "date": "2024-04-04~2024-06-23",
-            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 208",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013637&l=1&type=1&cat=",
-            "UUID": "37e6bf386c9e52409f7acece902ed4a8",
-            "figure": "https://i.imgur.com/pDLfEEW.webp"
-        },
-        {
-            "systematics": "npm",
-            "title": "\u7b46\u6b4c\u58a8\u821e\u2014\u6545\u5bae\u7e6a\u756b\u5c0e\u8cde (2024-II)",
-            "date": "2024-04-04~2024-06-23",
-            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 210",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013641&l=1&type=1&cat=",
-            "UUID": "ca3ac5252b9657d59f9400aed8e0cc0d",
-            "figure": "https://i.imgur.com/xAX2k9e.webp"
         },
         {
             "systematics": "npm",

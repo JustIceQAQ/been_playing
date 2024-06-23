@@ -4,8 +4,8 @@
         "code_name": "mocataipei",
         "external_link": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent"
     },
-    "counts": 4,
-    "last_update": "2024-06-23T08:13:10.098114+00:00",
+    "counts": 3,
+    "last_update": "2024-06-23T16:12:58.056942+00:00",
     "data": [
         {
             "systematics": "mocataipei",
@@ -18,30 +18,21 @@
         },
         {
             "systematics": "mocataipei",
-            "title": "\u4e00\u5e74\u8a08\u5283\u300c\u5ddd\u5802\u300d",
-            "date": "2024-01-27 ~ 2024-12-29",
-            "address": "-",
-            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u4e00\u5e74\u8a08\u5283\u300c\u5ddd\u5802\u300d",
-            "UUID": "a1dce0ed95275e4394a8d46c6753553a",
-            "figure": "https://www.mocataipei.org.tw/upload/2024_05_203/20240520142731z8jqp1ei61.jpg"
-        },
-        {
-            "systematics": "mocataipei",
-            "title": "\u904e\u671f\u9713\u8679\u2500\u6236\u5916\u653e\u6620\u2014\u674e\u52c7\u5fd7\u500b\u5c55",
-            "date": "2024-05-11 ~ 2024-06-23",
-            "address": "-",
-            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u904e\u671f\u9713\u8679\u2500\u6236\u5916\u653e\u6620\u2014\u674e\u52c7\u5fd7\u500b\u5c55",
-            "UUID": "dd25f5a7fa7452748b99ff663d06c071",
-            "figure": "https://www.mocataipei.org.tw/upload/2024_05_0514/20240505174257z8i6ts1lA5.jpg"
-        },
-        {
-            "systematics": "mocataipei",
             "title": "Q POWER",
             "date": "2024-06-22 ~ 2024-08-11",
             "address": "-",
             "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/Q*POWER",
             "UUID": "395fe79de3b75c33ab41a4b874a111fd",
             "figure": "https://www.mocataipei.org.tw/upload/2024_06_073/20240607172653q4ver08lQ1.jpg"
+        },
+        {
+            "systematics": "mocataipei",
+            "title": "\u4e00\u5e74\u8a08\u5283\u300c\u5ddd\u5802\u300d",
+            "date": "2024-01-27 ~ 2024-12-29",
+            "address": "-",
+            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u4e00\u5e74\u8a08\u5283\u300c\u5ddd\u5802\u300d",
+            "UUID": "a1dce0ed95275e4394a8d46c6753553a",
+            "figure": "https://www.mocataipei.org.tw/upload/2024_05_203/20240520142731z8jqp1ei61.jpg"
         }
     ],
     "visit": {
