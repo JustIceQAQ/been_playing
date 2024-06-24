@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 45,
-    "last_update": "2024-06-24T08:15:53.489157+00:00",
+    "counts": 44,
+    "last_update": "2024-06-24T16:15:06.614180+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u5f17\u6717\u7d22\u74e6\u30fb\u90a6\u5167\u723e\uff1a\u6703\u5531\u6b4c\u7684\u756b Fran\u00e7ois Bonnel \uff1aLyrical Painting \u4e9e\u6d32\u9996\u500b\u5c55",
+            "date": "2024-05-11~2024-06-30",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101025233-2024-lyrical-painting/",
+            "UUID": "62751dc0e8f55bfaad2fca1e32846d56",
+            "figure": "https://res.klook.com/image/upload/x_0,y_53,w_2217,h_3104,c_crop/w_360,q_85/v1719224066/events_admin/tl6uzseiyl2pwpamddny.jpg"
+        },
         {
             "systematics": "klook",
             "title": "56\u51047000\u4e07\u5e74\u306e\u5c0f\u4f11\u6b62 - \u8d64\u7a57\u9032\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/119464-goblet-of-soul-forbidden-zone/",
             "UUID": "05df4edf0009559ab6cb4fbb709e64f8",
-            "figure": "https://res.klook.com/image/upload/w_360,q_85/\u5c55\u6f14\u9801\u9762\u6d3b\u52d5\u9996\u5716-\u7981\u5730_326x460_v2z4sl.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -180,24 +189,6 @@
         },
         {
             "systematics": "klook",
-            "title": "2024\u53f0\u5317\u590f\u5b63\u9023\u9396\u52a0\u76df\u5275\u696d\u5c55",
-            "date": "2024-06-21~2024-06-24",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101024677-2024-franchaise-exhibtion/",
-            "UUID": "e90bcaeff4985b61a79100a6a5b5e999",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u5361\u54c7\u4f0a - \u65e5\u672c\u7576\u4ee3\u85dd\u8853\u5c55",
-            "date": "2024-05-15~2024-06-24",
-            "address": "\u83ef\u5c71\u6587\u5275",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101024664-2024-kawaii-contemporary-art/",
-            "UUID": "f8d8df162908572689927c1140f524cb",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
             "title": "\u53f0\u5317\u5c55\u89bd\u300a\u8d85\u4eba\u529b\u9738\u738b\u82f1\u96c4\u5c55\u300b",
             "date": "2024-07-06~2024-09-15",
             "address": "-",
@@ -230,7 +221,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024394-2024-menifest-exhibition/",
             "UUID": "c3db628e29e45bf5a39979fbe42abb4e",
-            "figure": "https://res.klook.com/image/upload/x_0,y_689,w_4823,h_6752,c_crop/w_360,q_85/v1715072592/events_admin/n5lepdrzvcz2sijkpov3.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -311,7 +302,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023841-2024-design-exhibition/",
             "UUID": "6a24af7ca23554e7819a684a4748dfc6",
-            "figure": "-"
+            "figure": "https://i.imgur.com/4OOd8Vs.webp"
         },
         {
             "systematics": "klook",
