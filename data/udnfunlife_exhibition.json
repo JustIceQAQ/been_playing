@@ -5,7 +5,7 @@
         "external_link": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST"
     },
     "counts": 25,
-    "last_update": "2024-06-25T08:15:45.766932+00:00",
+    "last_update": "2024-06-25T16:15:04.934468+00:00",
     "data": [
         {
             "systematics": "tickets_udnfunlife",
@@ -135,15 +135,6 @@
         },
         {
             "systematics": "tickets_udnfunlife",
-            "title": "\u6703\u52d5\u7684\u6e05\u660e\u4e0a\u6cb3\u5716",
-            "date": "2024-06-26 ~ 2024-09-15",
-            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u4e2d4B\u9928",
-            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0H8C69C&kdid=featured",
-            "UUID": "9959cb88e7155f07bdf1b4fa6b85ba94",
-            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0H8C69C_Product.JPG?v=202405301623"
-        },
-        {
-            "systematics": "tickets_udnfunlife",
             "title": "\u6211\u662f\u9738\u738b\u9f8d20\u9031\u5e74\u5c55(\u5c4f\u6771\u7ad9)",
             "date": "2024-06-29 ~ 2024-09-22",
             "address": "\u5c4f\u83f81936\u6587\u5316\u57fa\u5730 10\u865f\u5009\u5eab",
@@ -222,6 +213,15 @@
             "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0JGS0WK&kdid=featured",
             "UUID": "4f4389eaccc25202bc5d5548b0646168",
             "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0JGS0WK_Product.JPG?v=202406171255"
+        },
+        {
+            "systematics": "tickets_udnfunlife",
+            "title": "\u6703\u52d5\u7684\u6e05\u660e\u4e0a\u6cb3\u5716",
+            "date": "2024-06-26 ~ 2024-09-15",
+            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u4e2d4B\u9928",
+            "source_url": "https://tickets.udnfunlife.com/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0H8C69C&kdid=featured",
+            "UUID": "9959cb88e7155f07bdf1b4fa6b85ba94",
+            "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P0H8C69C_Product.JPG?v=202405301623"
         },
         {
             "systematics": "tickets_udnfunlife",

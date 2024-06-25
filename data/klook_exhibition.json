@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 44,
-    "last_update": "2024-06-25T08:16:16.654454+00:00",
+    "counts": 45,
+    "last_update": "2024-06-25T16:15:53.917990+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "Chimeric Sculpture Expressions",
+            "date": "2024-06-29~2024-08-03",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101025250-2024-chimeric-sculpture/",
+            "UUID": "d5d7556e6e6856518236712ff9819f97",
+            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1719313147/events_admin/hbc7sexfxpuznwycpkcf.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u5f17\u6717\u7d22\u74e6\u30fb\u90a6\u5167\u723e\uff1a\u6703\u5531\u6b4c\u7684\u756b Fran\u00e7ois Bonnel \uff1aLyrical Painting \u4e9e\u6d32\u9996\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/116484-fantastic-beasts-the-wonder-of-nature/",
             "UUID": "8da0e09a63c9583fb9c2d20bb1461710",
-            "figure": "https://res.klook.com/image/upload/w_360,q_85/FBTWON_KLOOK_326x460_xiwnyz.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024394-2024-menifest-exhibition/",
             "UUID": "c3db628e29e45bf5a39979fbe42abb4e",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_0,y_689,w_4823,h_6752,c_crop/w_360,q_85/v1715072592/events_admin/n5lepdrzvcz2sijkpov3.jpg"
         },
         {
             "systematics": "klook",
@@ -275,7 +284,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/114440-the-river-of-wisdom-along-the-river-during-the-qingming-festival/",
             "UUID": "24e3af3e20d056d5b9e6dee29955ce4a",
-            "figure": "https://res.klook.com/image/upload/w_360,q_85/klook_\u5c3a\u5bf8__\u5c55\u6f14\u9801\u9762\u6d3b\u52d5\u9996\u5716_1_aee0hr.jpg"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/klook-\u5c3a\u5bf8_\u7b2c\u4e8c\u7248\u4e3b\u8996\u89ba_\u5c55\u6f14\u9801\u9762\u6d3b\u52d5\u9996\u5716_326x460_byfngg.jpg"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023841-2024-design-exhibition/",
             "UUID": "6a24af7ca23554e7819a684a4748dfc6",
-            "figure": "https://i.imgur.com/4OOd8Vs.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",

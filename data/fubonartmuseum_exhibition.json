@@ -4,9 +4,18 @@
         "code_name": "FuBonArtMuseum",
         "external_link": "https://www.fubonartmuseum.org/Default"
     },
-    "counts": 2,
-    "last_update": "2024-06-25T08:15:34.723407+00:00",
+    "counts": 3,
+    "last_update": "2024-06-25T16:14:51.838974+00:00",
     "data": [
+        {
+            "systematics": "FuBonArtMuseum",
+            "title": "\u300a\u68b5\u8c37\uff1a\u5c0b\u5149\u4e4b\u8def\u300b Van Gogh: Journey of Light",
+            "date": "2024-08-24 ~ 2024-11-11",
+            "address": "\u5bcc\u90a6\u7f8e\u8853\u9928-3\u6a13 \u65e5\u5149\u5c55\u5ef3",
+            "source_url": "https://www.fubonartmuseum.org//ExhibitionDetail?PKNO=X007NBYX",
+            "UUID": "55c8acd400be56f6b13f7a4a904a6548",
+            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007NBYX/Cover/\u5c55\u89bdBN_589x589px.jpg"
+        },
         {
             "systematics": "FuBonArtMuseum",
             "title": "\u5bcc\u90a6\u5178\u85cf\u5c55\uff0e\u89f8\u52d5 In Touch\uff1aCollection of Fubon",
