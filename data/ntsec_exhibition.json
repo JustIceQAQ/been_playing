@@ -4,17 +4,26 @@
         "code_name": "ntsec",
         "external_link": "https://www.ntsec.gov.tw/article/list.aspx?a=25"
     },
-    "counts": 5,
-    "last_update": "2024-06-27T00:53:58.375537+00:00",
+    "counts": 6,
+    "last_update": "2024-06-27T08:15:01.870476+00:00",
     "data": [
         {
             "systematics": "ntsec",
-            "title": "teamLab\u5171\u5275\uff01\u672a\u4f86\u5712",
+            "title": "\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55",
             "date": "-",
             "address": "-",
-            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5428",
-            "UUID": "451efc957fdf5a6483381a0c3b112e10",
-            "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/5428_2.jpg"
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5434",
+            "UUID": "5722a7fef6dd56f4b5e8118f5d45e7c0",
+            "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/5434_2.jpg"
+        },
+        {
+            "systematics": "ntsec",
+            "title": "\u4f8f\u7f85\u7d00x\u6050\u9f8d\u5149\u5f71\u5c55",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5433",
+            "UUID": "e3e0cc78e4e1505b971cc45b9c95bb14",
+            "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/5433_2.jpg"
         },
         {
             "systematics": "ntsec",
@@ -27,12 +36,12 @@
         },
         {
             "systematics": "ntsec",
-            "title": "\u5316\u77f3\u8207\u751f\u7269\u6f14\u5316\u5de1\u8ff4\u5c55~\u53e4\u751f\u7269\u63a2\u7d22\uff1a\u63ed\u79d8\u4e09\u8449\u87f2\u8207\u982d\u8db3\u985e",
+            "title": "teamLab\u5171\u5275\uff01\u672a\u4f86\u5712",
             "date": "-",
             "address": "-",
-            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5387#fossil",
-            "UUID": "7049e2d089bb5718a2db6f2f31d26f18",
-            "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/5422_2.png"
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5428",
+            "UUID": "451efc957fdf5a6483381a0c3b112e10",
+            "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/5428_2.jpg"
         },
         {
             "systematics": "ntsec",

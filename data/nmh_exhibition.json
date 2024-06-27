@@ -4,9 +4,18 @@
         "code_name": "nmh",
         "external_link": "https://www.nmh.gov.tw/activitysoonlist_66.html"
     },
-    "counts": 7,
-    "last_update": "2024-06-27T00:54:19.637594+00:00",
+    "counts": 8,
+    "last_update": "2024-06-27T08:15:32.721712+00:00",
     "data": [
+        {
+            "systematics": "nmh",
+            "title": "\u300c\u4faf\u5f65\u5ef7\u6c34\u5f69\u5275\u4f5c\u5c55\u300d\u3001\u300c\u8a79\u5b50\u5b8f\u9285\u96d5\u5275\u4f5c\u5c55\u300d\u65bc\u7acb\u6cd5\u9662\u5c55\u51fa",
+            "date": "2024-07-01 ~ 2024-08-28",
+            "address": "\u5730\u9ede\uff1a\u7acb\u6cd5\u9662\u570b\u6703\u85dd\u5eca\u3001\u6587\u5316\u8d70\u5eca(\u672c\u5c55\u89bd\u4f4d\u65bc\u7acb\u6cd5\u9662\u8fa6\u516c\u5340\u4e0d\u5c0d\u5916\u958b\u653e)",
+            "source_url": "https://event.culture.tw/mocweb/reg/NMH/Detail.init.ctr?actId=40031",
+            "UUID": "8b2412aca84454a0b2996859d514cb15",
+            "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMH/JpgFile/01/40031/AD/40031_0_0_300832.jpg"
+        },
         {
             "systematics": "nmh",
             "title": "\u83e9\u63d0\u5fc3\u8d77\u2014\u9928\u85cf\u4f5b\u6559\u9020\u50cf\u7279\u5c55",
@@ -27,7 +36,7 @@
         },
         {
             "systematics": "nmh",
-            "title": "\u5f69\u58a8\u84ec\u5cf6",
+            "title": "\u5f69\u58a8\u84ec\u5cf6\u2014\u9928\u85cf\u81fa\u7063\u5730\u666f\u7279\u5c55",
             "date": "2024-06-25 ~ 2024-08-25",
             "address": "\u5730\u9ede\uff1a\u570b\u7acb\u6b77\u53f2\u535a\u7269\u99281\u6a13103\u5c55\u5ef3",
             "source_url": "https://event.culture.tw/mocweb/reg/NMH/Detail.init.ctr?actId=40028",

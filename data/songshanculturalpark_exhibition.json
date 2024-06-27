@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-06-27T00:54:13.090861+00:00",
+    "last_update": "2024-06-27T08:15:03.344059+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -108,6 +108,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "\u57ce\u5e02\u89e3\u65b9-\u627e\u51fa\u516c\u5171\u5834\u57df\u7684\u6700\u4f73\u89e3",
+            "date": "2024-06-25 ~ 2024-09-08",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/acb4a64d-0fb9-466a-87e9-b2e75ecbe92f",
+            "UUID": "ed424c2a40f353e7937cc58ba520024b",
+            "figure": "https://www.songshanculturalpark.org/gallery/1719473719_28b46b2426fca01f0c69.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "\u7375\u4eba\u5be6\u5883\u89e3\u8b0e\u904a\u6232 \u2013 \u8caa\u5a6a\u4e4b\u5cf6",
             "date": "2024-06-27 ~ 2024-09-17",
             "address": "-",
@@ -117,30 +126,21 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "\u5cf6\uff1a\u5b57\u9ad4\u8a2d\u8a08\u767e\u666f\u5c55",
+            "date": "2024-06-28 ~ 2024-08-18",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/0a537c94-bfc2-479a-86a2-7f0a280f6b0c",
+            "UUID": "f4487357176851d78e46f35f04e14953",
+            "figure": "https://www.songshanculturalpark.org/gallery/1719474353_90889292d1d1c85326a9.png"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "ZB1 \u5feb\u9583\u5e97",
             "date": "2024-06-28 ~ 2024-07-10",
             "address": "-",
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/6a06ea02-debe-48e0-9b0d-7124cf4a21b5",
             "UUID": "25d0e9f00f97546b9cdedc32acf10f9e",
             "figure": "https://www.songshanculturalpark.org/gallery/1719392481_5984cd557773eb77f2d7.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "Dynamic \u6771\u5433\u5927\u5b78T School\u7b2c\u4e00\u5c46\u6210\u679c\u5c55",
-            "date": "2024-06-29 ~ 2024-06-30",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/a5b524ab-c339-47d0-a6a9-0d6eb42aaee3",
-            "UUID": "b9eac778cbcd548c8a3b0d7c71f4c02e",
-            "figure": "https://www.songshanculturalpark.org/gallery/1718156986_802f8cedf21255b80f8a.png"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u6c38\u7e8c\u597d\u65e5\u5b50\uff0c\u7b97\u6211\u4e00\u5206\u5b50\uff01",
-            "date": "2024-06-29 ~ 2024-06-30",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/d05a19f3-cd5f-4eca-84cb-ce885bebdb7a",
-            "UUID": "dd82633d9c3058e598f8740e5cc7c312",
-            "figure": "https://www.songshanculturalpark.org/gallery/1718953159_1f9ffcb9d07d26f36c35.jpg"
         }
     ],
     "visit": {}
