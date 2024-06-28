@@ -5,7 +5,7 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 100,
-    "last_update": "2024-06-27T16:14:29.413043+00:00",
+    "last_update": "2024-06-28T00:54:50.401425+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -54,20 +54,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u53f0\u5317\u570b\u969b\u6c7d\u6a5f\u8eca\u96f6\u914d\u4ef6\u5c55&\u53f0\u5317\u570b\u969b\u8eca\u7528\u96fb\u5b50\u5c55",
-            "date": "2024-04-17 ~ 2024-04-20",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "http://www.taipeiampa.com.tw",
-            "UUID": "12e133c8fe41523b9275b3521560aee0",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u53f0\u7063\u570b\u969b\u667a\u6167\u79fb\u52d5\u5c55",
             "date": "2024-04-17 ~ 2024-04-20",
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.e-mobilityshow.com.tw",
             "UUID": "035fc7b3f06256a8b7eeb0252a8233ba",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u5317\u570b\u969b\u6c7d\u6a5f\u8eca\u96f6\u914d\u4ef6\u5c55&\u53f0\u5317\u570b\u969b\u8eca\u7528\u96fb\u5b50\u5c55",
+            "date": "2024-04-17 ~ 2024-04-20",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.taipeiampa.com.tw",
+            "UUID": "12e133c8fe41523b9275b3521560aee0",
             "figure": ""
         },
         {
@@ -234,20 +234,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u7b2c23\u5c46\u570b\u969b\u6025\u8a3a\u91ab\u5b78\u6703\u8b70",
-            "date": "2024-06-20 ~ 2024-06-23",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=22136",
-            "UUID": "3db4f858ca545436bfb0d156474478c9",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u53f0\u7063\u570b\u969b\u91ab\u7642\u66a8\u5065\u5eb7\u7167\u8b77\u5c55",
             "date": "2024-06-20 ~ 2024-06-22",
             "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
             "source_url": "http://www.medicaltaiwan.com.tw",
             "UUID": "f97c404c2c665ee296b5680d81cb7aff",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c23\u5c46\u570b\u969b\u6025\u8a3a\u91ab\u5b78\u6703\u8b70",
+            "date": "2024-06-20 ~ 2024-06-23",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=22136",
+            "UUID": "3db4f858ca545436bfb0d156474478c9",
             "figure": ""
         },
         {
@@ -281,7 +281,7 @@
             "systematics": "twtc",
             "title": "\u53f0\u5317\u570b\u969b\u98df\u54c1\u5c55",
             "date": "2024-06-26 ~ 2024-06-29",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.foodtaipei.com.tw",
             "UUID": "8fd05415eab35d7abbd112f266979464",
             "figure": ""
@@ -495,20 +495,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u7b2c25\u5c46\u65b0\u4e16\u7d00\u5bb6\u5177\u7cbe\u54c1\u5927\u5c55",
-            "date": "2024-09-27 ~ 2024-09-30",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "http://www.ifpr.com.tw",
-            "UUID": "6de9e92576b650e8a33a7acbabbd0600",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u7b2c\u4e94\u5c46\u53f0\u5317\u570b\u969b\u79cb\u5b63\u65c5\u5c55\u3001\u53f0\u7063\u4f34\u624b\u79ae\u66a8\u89c0\u5149\u7279\u7522\u5c55",
             "date": "2024-09-27 ~ 2024-09-30",
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "http://www.kje.com.tw/",
             "UUID": "38b859e033c155bb921a6e6ce7cb559f",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c25\u5c46\u65b0\u4e16\u7d00\u5bb6\u5177\u7cbe\u54c1\u5927\u5c55",
+            "date": "2024-09-27 ~ 2024-09-30",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.ifpr.com.tw",
+            "UUID": "6de9e92576b650e8a33a7acbabbd0600",
             "figure": ""
         },
         {
@@ -567,20 +567,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u53f0\u7063\u96fb\u8def\u677f\u7522\u696d\u570b\u969b\u5c55\u89bd\u6703(\u53f0\u7063\u96fb\u5b50\u7d44\u88dd\u570b\u969b\u5c55\u89bd\u6703\u3001\u53f0\u7063\u7da0\u8272\u79d1\u6280\u570b\u969b\u5c55\u89bd\u6703\u3001\u53f0\u7063\u71b1\u7ba1\u7406\u6280\u8853\u570b\u969b\u5c55\u89bd\u6703\u3001\u53f0\u7063\u69cb\u88dd\u570b\u969b\u5c55\u89bd\u6703)",
-            "date": "2024-10-23 ~ 2024-10-25",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "http://www.tpcashow.com",
-            "UUID": "5329f6ea155e5f6eb885ba5ba5dedd75",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u53f0\u5317\u570b\u969b\u96fb\u5b50\u7522\u696d\u79d1\u6280\u5c55\u3001\u53f0\u7063\u570b\u969b\u4eba\u5de5\u667a\u6167\u66a8\u7269\u806f\u7db2\u5c55",
             "date": "2024-10-23 ~ 2024-10-25",
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.taitronics.tw",
             "UUID": "2205c55f3cc5568dbe7299f91bc7f219",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u96fb\u8def\u677f\u7522\u696d\u570b\u969b\u5c55\u89bd\u6703(\u53f0\u7063\u96fb\u5b50\u7d44\u88dd\u570b\u969b\u5c55\u89bd\u6703\u3001\u53f0\u7063\u7da0\u8272\u79d1\u6280\u570b\u969b\u5c55\u89bd\u6703\u3001\u53f0\u7063\u71b1\u7ba1\u7406\u6280\u8853\u570b\u969b\u5c55\u89bd\u6703\u3001\u53f0\u7063\u69cb\u88dd\u570b\u969b\u5c55\u89bd\u6703)",
+            "date": "2024-10-23 ~ 2024-10-25",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.tpcashow.com",
+            "UUID": "5329f6ea155e5f6eb885ba5ba5dedd75",
             "figure": ""
         },
         {
