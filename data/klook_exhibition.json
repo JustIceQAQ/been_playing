@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 49,
-    "last_update": "2024-06-29T08:15:33.640331+00:00",
+    "counts": 48,
+    "last_update": "2024-06-29T16:15:03.839803+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -104,15 +104,6 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025092-2024-rebellious-generation/",
             "UUID": "6047bbde4f2d532c98b21caa3b86bfa2",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u5728\u9019\u5de5\u4f5c\uff0c\u771f\u5e78\u798f \u201cHow\u2019s your job?\u201d",
-            "date": "2024-06-01~2024-06-29",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101025091-2024-hows-your-job-exhibition/",
-            "UUID": "7e25f8a6fdac57598cb0988b2a321e9a",
             "figure": "-"
         },
         {
@@ -230,7 +221,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024685-2024-scuplture-exhibition/",
             "UUID": "9e19743e59865412b92e3760becd5792",
-            "figure": "https://res.klook.com/image/upload/x_18,y_0,w_857,h_1200,c_crop/w_360,q_85/v1718435477/events_admin/jhopmyk00m5vbz0guosk.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -311,7 +302,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/114371-bologna-illustration-exhibition/",
             "UUID": "5a355028d42e579780be93ed3aaf30a7",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/klook_\u5c3a\u5bf8__\u5c55\u6f14\u9801\u9762\u6d3b\u52d5\u9996\u5716_2_khuozr.jpg"
         },
         {
             "systematics": "klook",
@@ -446,7 +437,7 @@
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/activity/70429-music-island-stories-pop-music-in-taiwan-taipei/",
             "UUID": "dde6739eefe25fe9aae6270e758d7acd",
-            "figure": "https://i.imgur.com/3q0DDno.webp"
+            "figure": "-"
         }
     ],
     "visit": {}
