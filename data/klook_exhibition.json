@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 42,
-    "last_update": "2024-07-01T01:00:46.206788+00:00",
+    "counts": 43,
+    "last_update": "2024-07-01T08:16:44.669957+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u97d3\u570b\u8272\u5f69K\u2022Color - \u97d3\u570b\u570b\u969b\u85dd\u8853\u806f\u5c55",
+            "date": "2024-06-22~2024-07-20",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101025261-2024-k-color-exhibition/",
+            "UUID": "08629d74c59852f7bcafbbdf5af7b6c2",
+            "figure": "https://res.klook.com/image/upload/x_21,y_0,w_857,h_1200,c_crop/w_360,q_85/v1719377293/events_admin/omuxa3bzq3kwmldnwssf.jpg"
+        },
         {
             "systematics": "klook",
             "title": "AMBI PLAYGROUND\u300a\u5b87\u5b99\u5927\u672a\u4f86-\u8d85\u661f\u969b\u7121\u9650\u865f\u300b",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025121-2024-meet-you-here-exhibition/",
             "UUID": "75a45df9ba3055d98d99956cafebe439",
-            "figure": "https://res.klook.com/image/upload/x_458,y_0,w_632,h_885,c_crop/w_360,q_85/v1718605154/events_admin/y630m5eaz2tbvsjfp1fe.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024406-2024-jurassic-exhibition/",
             "UUID": "da0e15939cf35688919927e9d0b9a7a6",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1714647499/events_admin/gpyou3jg3rtznfmlo7xi.jpg"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101023841-2024-design-exhibition/",
             "UUID": "6a24af7ca23554e7819a684a4748dfc6",
-            "figure": "https://i.imgur.com/4OOd8Vs.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
