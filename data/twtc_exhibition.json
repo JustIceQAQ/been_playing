@@ -5,7 +5,7 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 61,
-    "last_update": "2024-07-02T00:54:14.181061+00:00",
+    "last_update": "2024-07-02T08:15:26.065691+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -99,20 +99,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "2024\u53f0\u7063\u7f8e\u98df\u5c55",
-            "date": "2024-08-02 ~ 2024-08-05",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "http://www.tcetva.tw/",
-            "UUID": "15349603267f599cba640de1e71375e8",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u7b2c\u4e00\u5c46\u9ad8\u9f61\u79d1\u6280\u5c55",
             "date": "2024-08-02 ~ 2024-08-04",
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "https://ibmi.taiwan-healthcare.org/",
             "UUID": "85ef2fcd382a52ba9fa7f67e9169b4e3",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u53f0\u7063\u7f8e\u98df\u5c55",
+            "date": "2024-08-02 ~ 2024-08-05",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.tcetva.tw/",
+            "UUID": "15349603267f599cba640de1e71375e8",
             "figure": ""
         },
         {
@@ -225,15 +225,6 @@
         },
         {
             "systematics": "twtc",
-            "title": "2024\u7b2c34\u5c46\u79cb\u5b63\u570b\u969b\u7f8e\u5bb9\u4fdd\u990a\u5c55\u30012024\u7f8e\u7532\u7f8e\u776b\u535a\u89bd\u6703",
-            "date": "2024-09-27 ~ 2024-09-30",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "http://expo.udn.com/",
-            "UUID": "a83fc404c9aa5f54adc7343c45a022e7",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u7b2c25\u5c46\u65b0\u4e16\u7d00\u5bb6\u5177\u7cbe\u54c1\u5927\u5c55",
             "date": "2024-09-27 ~ 2024-09-30",
             "address": "\u4e16\u8cbf\u4e00\u9928",
@@ -248,6 +239,15 @@
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "http://www.kje.com.tw/",
             "UUID": "38b859e033c155bb921a6e6ce7cb559f",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u7b2c34\u5c46\u79cb\u5b63\u570b\u969b\u7f8e\u5bb9\u4fdd\u990a\u5c55\u30012024\u7f8e\u7532\u7f8e\u776b\u535a\u89bd\u6703",
+            "date": "2024-09-27 ~ 2024-09-30",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://expo.udn.com/",
+            "UUID": "a83fc404c9aa5f54adc7343c45a022e7",
             "figure": ""
         },
         {
@@ -306,20 +306,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u53f0\u5317\u570b\u969b\u96fb\u5b50\u7522\u696d\u79d1\u6280\u5c55\u3001\u53f0\u7063\u570b\u969b\u4eba\u5de5\u667a\u6167\u66a8\u7269\u806f\u7db2\u5c55",
-            "date": "2024-10-23 ~ 2024-10-25",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "http://www.taitronics.tw",
-            "UUID": "2205c55f3cc5568dbe7299f91bc7f219",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u53f0\u7063\u96fb\u8def\u677f\u7522\u696d\u570b\u969b\u5c55\u89bd\u6703(\u53f0\u7063\u96fb\u5b50\u7d44\u88dd\u570b\u969b\u5c55\u89bd\u6703\u3001\u53f0\u7063\u7da0\u8272\u79d1\u6280\u570b\u969b\u5c55\u89bd\u6703\u3001\u53f0\u7063\u71b1\u7ba1\u7406\u6280\u8853\u570b\u969b\u5c55\u89bd\u6703\u3001\u53f0\u7063\u69cb\u88dd\u570b\u969b\u5c55\u89bd\u6703)",
             "date": "2024-10-23 ~ 2024-10-25",
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.tpcashow.com",
             "UUID": "5329f6ea155e5f6eb885ba5ba5dedd75",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u5317\u570b\u969b\u96fb\u5b50\u7522\u696d\u79d1\u6280\u5c55\u3001\u53f0\u7063\u570b\u969b\u4eba\u5de5\u667a\u6167\u66a8\u7269\u806f\u7db2\u5c55",
+            "date": "2024-10-23 ~ 2024-10-25",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.taitronics.tw",
+            "UUID": "2205c55f3cc5568dbe7299f91bc7f219",
             "figure": ""
         },
         {
