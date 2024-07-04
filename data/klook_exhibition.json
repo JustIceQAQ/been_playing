@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 45,
-    "last_update": "2024-07-04T00:54:43.276714+00:00",
+    "counts": 46,
+    "last_update": "2024-07-04T08:16:14.187173+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u6c34\u4e4b\u773e\u795e\uff1a\u9867\u5ee3\u6bc5\u500b\u5c55",
+            "date": "2024-07-13~2024-09-08",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101025373-2024-gods-of-water-exhibition/",
+            "UUID": "9c2834189b2b57309531348a92667d5d",
+            "figure": "https://res.klook.com/image/upload/x_0,y_850,w_4500,h_6300,c_crop/w_360,q_85/v1720064916/events_admin/jtuqkpbuuuhkxdgp8dh6.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u300a\u68b5\u8c37\uff1a\u5c0b\u5149\u4e4b\u8def\u300b\u7279\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025278-2024-midsummer-olympism/",
             "UUID": "373c5a7405c15cb1a8763e62929c69aa",
-            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1719460337/events_admin/ngakuq3phsofd2t2dz92.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024725-2024-taipei-beauty-show-expo/",
             "UUID": "899f1038fa2b5c4b855ccaecac7b43b8",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1716459988/events_admin/yaejmhnd1vrjrmqmbbyt.jpg"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "\u677e\u83f8",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024299-2024-leonardo-da-vinci-taipei/",
             "UUID": "8fdf28fb4db8515e8a3d82cb7edd51c8",
-            "figure": "https://res.klook.com/image/upload/x_0,y_10,w_1449,h_2029,c_crop/w_360,q_85/v1714033585/events_admin/ovrxnqbuyzdzo0o3ll0p.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
