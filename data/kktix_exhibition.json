@@ -4,63 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 6,
-    "last_update": "2024-07-05T08:14:44.811243+00:00",
-    "data": [
-        {
-            "systematics": "KKTix",
-            "title": "\u9054\u6587\u897f\u9ad4\u9a57\u5c55",
-            "date": "2024-6-14",
-            "address": "",
-            "source_url": "https://kklivetw.kktix.cc/events/ldv500tp",
-            "UUID": "ae50c874108f5e9b9ad804706277441d",
-            "figure": "https://t.kfs.io/upload_images/201411/KV-%E6%A9%AB_%E6%A9%AB%E5%BC%8FKV_medium.jpg"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "POP! POP! POP! \u6d41\u884c\u97f3\u6a02\u4e92\u52d5\u5c55 \uff20 \u9ad8\u96c4\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
-            "date": "2022-3-1",
-            "address": "",
-            "source_url": "https://kpmc.kktix.cc/events/poppoppop",
-            "UUID": "2753092823855d20b12fbb3f6977690c",
-            "figure": "https://i.imgur.com/76TL3BV.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "2024\u53f0\u5317\u570b\u969b\u89c0\u5149\u65c5\u5c55\u66a8\u7f8e\u98df\u7bc0 \u514d\u8cbb\u7d22\u7968",
-            "date": "2024-8-9",
-            "address": "",
-            "source_url": "https://sheng-dong.kktix.cc/events/sdtravel",
-            "UUID": "31c6c71781a250a5b45672302e322032",
-            "figure": "https://t.kfs.io/upload_images/206397/2024%E6%97%85%E5%B1%95kv1200x630_ALL_medium.jpg"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "\u722c\u73a9\u5e9c\u57ce\u936c\u936c\u4e00\u8d77\u4f86",
-            "date": "2024-10-12",
-            "address": "",
-            "source_url": "https://insectw.kktix.cc/events/pwtn77176",
-            "UUID": "0324005ef6f25d9fb2bf1e36c6b9739a",
-            "figure": "https://t.kfs.io/upload_images/202312/S__187850754_medium.jpg"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "2024 \u5c55\u662d\u53f0\u5317\u5bf5\u7269\u7528\u54c1\u5c55-\u7d93\u5178\u5834",
-            "date": "2024-7-5",
-            "address": "",
-            "source_url": "https://chanchaotw.kktix.cc/events/20699447",
-            "UUID": "278853564d8555d7a0a2afd3a9937877",
-            "figure": "https://t.kfs.io/upload_images/204278/Kktix_1200x630__2__medium.jpg"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "KTX MEETING",
-            "date": "2024-8-16",
-            "address": "",
-            "source_url": "https://ktx.kktix.cc/events/ktxmeeting",
-            "UUID": "ef8dd88fa4bd5dbbaa1d07a19c9c31db",
-            "figure": "https://t.kfs.io/upload_images/205637/SPICY_LABEL_medium.png"
-        }
-    ],
+    "counts": 0,
+    "last_update": "2024-07-05T16:14:06.477045+00:00",
+    "data": [],
     "visit": {}
 }
