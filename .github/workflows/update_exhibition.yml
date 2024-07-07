@@ -24,7 +24,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  run-process:
     runs-on: ubuntu-latest
     steps:
       - name: set timezone
@@ -37,10 +37,10 @@ jobs:
         with:
           ref: 'deploy'
         
-      - name: setup python 3.8
+      - name: setup python 3.10
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'
+          python-version: '3.10'
       
       - uses: actions/cache@v3
         name: init cache
