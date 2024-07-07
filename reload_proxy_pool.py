@@ -1,4 +1,3 @@
-import abc
 import asyncio
 import base64
 import dataclasses
@@ -6,14 +5,13 @@ import datetime
 import os
 import secrets
 from pathlib import Path
+import logging
 
 import dill
 import httpx
 import sentry_sdk
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 from dotenv import load_dotenv
-
-httpx_client = httpx.AsyncClient()
 
 
 @dataclasses.dataclass
@@ -23,21 +21,12 @@ class Proxy:
     protocol: str
 
 
-class SourceInit(abc.ABC):
-    ...
-
-
-class freeProxySource(SourceInit):
-    def __init__(self, filename="proxy.pkl"):
+class FreeProxySource:
+    def __init__(self, filename: str = "proxy.pkl"):
         self.root_path = ["http://free-proxy.cz/zh/proxylist/country/TW/all/ping/all"]
         self.filename = filename
 
-    async def get_page_data(self, url, headers, httpx_client):
-        response = await httpx_client.get(url, headers=headers)
-        parsed = BeautifulSoup(response.text, "html5lib")
-        return parsed.select_one("#proxy_list")
-
-    def get_headers(self):
+    def get_headers(self) -> dict:
         return {
             "User-Agent": (
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -50,27 +39,34 @@ class freeProxySource(SourceInit):
             "Cookie": f"fp={secrets.token_hex(16)}",
         }
 
-    async def ip_availability(self, proxy: Proxy):
-        target_url = "https://ncpi.ntmofa.gov.tw/visit.html"
+    async def get_page_data(self, url: str, headers: dict, httpx_client: httpx.AsyncClient) -> Tag:
+        response = await httpx_client.get(url, headers=headers)
+        parsed = BeautifulSoup(response.text, "html5lib")
+        return parsed.select_one("#proxy_list")
+
+    async def ip_availability(self, proxy: Proxy) -> Proxy | None:
+        target_url = "https://www.google.com.tw/"
         proxies = {
             f"{proxy.protocol}://".lower(): f"{proxy.protocol}://{proxy.ip}:{proxy.port}".lower()
         }
         try:
             async with httpx.AsyncClient(proxies=proxies) as client:
                 response = await client.get(target_url, timeout=10)
-                if response.status_code == 200:
+                if response.is_success:
                     return proxy
         except Exception as exc:
-            print(exc)
+            logging.error(exc)
+            return None
 
     async def run(self):
+        httpx_client = httpx.AsyncClient()
 
-        task = [
+        tasks = [
             self.get_page_data(url, self.get_headers(), httpx_client)
             for url in self.root_path
         ]
 
-        all_data = await asyncio.gather(*task)
+        all_data = await asyncio.gather(*tasks)
 
         tables = [
             [td.get_text() for td in tr.select("td:nth-child(n+1):nth-child(-n+3)")]
@@ -91,12 +87,12 @@ class freeProxySource(SourceInit):
         available_task = [self.ip_availability(p) for p in proxies]
 
         available_ip = await asyncio.gather(*available_task)
-
         clean_available_ip = [ip for ip in available_ip if ip]
 
         with open(self.filename, "wb") as f:
             timestamp = datetime.datetime.now().timestamp()
             dill.dump({"timestamp": timestamp, "available_ip": clean_available_ip}, f)
+        await httpx_client.aclose()
 
 
 if __name__ == "__main__":
@@ -110,6 +106,4 @@ if __name__ == "__main__":
     IS_DEBUG = os.getenv("IS_DEBUG", False)
     SENTRY_SDK_DNS = None if IS_DEBUG else os.getenv("SENTRY_SDK_DNS", None)
     sentry_sdk.init(dsn=SENTRY_SDK_DNS, traces_sample_rate=1.0)
-
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(freeProxySource().run())
+    asyncio.run(FreeProxySource().run())
