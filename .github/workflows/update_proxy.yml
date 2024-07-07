@@ -18,7 +18,7 @@ on:
     branches:
       - "deploy"
 jobs:
-  build:
+  update-proxy:
     runs-on: ubuntu-latest
     steps:
       - name: set timezone
@@ -34,7 +34,7 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'
+          python-version: '3.10'
           
       - name: install python packages
         run: |
