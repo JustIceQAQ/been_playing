@@ -5,8 +5,17 @@
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
     "counts": 51,
-    "last_update": "2024-07-08T08:15:26.871343+00:00",
+    "last_update": "2024-07-08T16:15:00.234408+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "\u8996\u7ddaSight-\u65e5\u672cBL\u7e6a\u5e2b\u806f\u5408\u5c55",
+            "date": "2024-08-01 ~ 2024-09-18",
+            "address": "\u677e\u5c71\u6587\u5275\u5712\u5340-\u5357\u5411\u88fd\u83f8\u5ee0",
+            "source_url": "https://tour.ibon.com.tw/event/66825112fb833a5247fbc77f",
+            "UUID": "6817dded0a5956c8be8cd7f5ae466567",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/85ea6932-d7aa-447c-8c9c-8529e533246b.jpg"
+        },
         {
             "systematics": "ibon",
             "title": "\u7b2c2\u5c46 \u73a9\u5177\u751f\u6d3b\u7bc0 2nd Designer Toy Life",
@@ -33,15 +42,6 @@
             "source_url": "https://tour.ibon.com.tw/event/66791d16381e3354ac7dab91",
             "UUID": "520bcdcc290551daa4a33ef45d012c2f",
             "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/acfbfbec-51b6-420c-b495-2a7e57416060.jpg"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u6e2c\u8a66_sunny-\u4e3b\u8fa6\u7968",
-            "date": "2024-06-21 ~ 2025-01-30",
-            "address": null,
-            "source_url": "https://tour.ibon.com.tw/event/66752d30ff3b1c48f2f4f913",
-            "UUID": "5819f42784155437b4d5ef3e1e8cb175",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/2da23e21-a822-4632-b61f-f74866d109b0.JPG"
         },
         {
             "systematics": "ibon",
