@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 49,
-    "last_update": "2024-07-12T08:21:47.086107+00:00",
+    "counts": 48,
+    "last_update": "2024-07-12T16:15:27.923991+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -360,15 +360,6 @@
         },
         {
             "systematics": "klook",
-            "title": "\u5929\u5149 - \u8521\u6587\u96c4\u500b\u5c55",
-            "date": "2024-05-04~2024-07-12",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101024100-2024-sky-light-exhibition/",
-            "UUID": "2b400d4ac31f587a924e85a7fead6a3e",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
             "title": "2024\u53f0\u5317\u570b\u969b\u7cbe\u7dfb\u9152\u5c55",
             "date": "2024-08-16~2024-08-19",
             "address": "-",
@@ -446,7 +437,7 @@
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/activity/70429-music-island-stories-pop-music-in-taiwan-taipei/",
             "UUID": "dde6739eefe25fe9aae6270e758d7acd",
-            "figure": "https://i.imgur.com/3q0DDno.webp"
+            "figure": "-"
         }
     ],
     "visit": {}
