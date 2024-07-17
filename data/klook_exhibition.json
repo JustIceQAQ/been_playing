@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 55,
-    "last_update": "2024-07-17T08:16:12.394409+00:00",
+    "counts": 57,
+    "last_update": "2024-07-17T16:15:17.637483+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u3010\u90a3\u4e9b\u6210\u70ba\u6211\u529b\u91cf\u7684\u3011\u4f55\u627f\u82b3\u67cf\u6cb9\u756b\u5275\u4f5c\u500b\u5c55",
+            "date": "2024-08-03~2024-08-25",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101025599-2024-taipei-art-exhibition/",
+            "UUID": "de1770af226b522fbca47be23edf038a",
+            "figure": "https://res.klook.com/image/upload/x_0,y_23,w_3311,h_4635,c_crop/w_360,q_85/v1721191071/events_admin/lqyz7xy1yqlgg1zzynco.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u9577\u65e5 - \u8cf4\u6c38\u9716\u5275\u4f5c\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025511-2024-travel-unbound/",
             "UUID": "fd0502aee769513bbba6f5e1ab79f20c",
-            "figure": "https://res.klook.com/image/upload/x_0,y_51,w_1080,h_1512,c_crop/w_360,q_85/v1720773202/events_admin/qiy5uxh5ocaqb77bhjwn.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "\u7dda\u4e0a\u5c55\u89bd",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025295-2024-captivating-times/",
             "UUID": "df680739f10c503db8abb2f4e8d127d7",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1719546731/events_admin/k2rteerjfhbpa15nnth5.jpg"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/119464-goblet-of-soul-forbidden-zone/",
             "UUID": "05df4edf0009559ab6cb4fbb709e64f8",
-            "figure": "https://res.klook.com/image/upload/w_360,q_85/\u5c55\u6f14\u9801\u9762\u6d3b\u52d5\u9996\u5716-\u7981\u5730_326x460_v2z4sl.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022906-2024-outing-exhibition/",
             "UUID": "e229db2f09a55307b2f2f64f09c7b6b8",
-            "figure": "-"
+            "figure": "https://i.imgur.com/T4jBAuS.webp"
         },
         {
             "systematics": "klook",
@@ -465,6 +474,15 @@
             "source_url": "https://www.klook.com/zh-TW/activity/88619-detective-conan-movie-exhibition/",
             "UUID": "c7c209fef0805e75936167d687a886bc",
             "figure": "https://res.klook.com/image/upload/w_360,q_85/\u67ef\u535730\u5468\u5e74\u5c55Banner_-_Klook_326x460_jdxarh.jpg"
+        },
+        {
+            "systematics": "klook",
+            "title": "CWT-67 \u53f0\u7063\u540c\u4eba\u8a8c\u8ca9\u552e\u6703 - \u53f0\u5317\u5834",
+            "date": "2024-08-10~2024-08-11",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/activity/82096-cwt-taipei/",
+            "UUID": "7927b8ee13ee5ab8b0cf173ba3ec1f25",
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/1200X800\u53f0\u5317_uphyhi.jpg"
         },
         {
             "systematics": "klook",
