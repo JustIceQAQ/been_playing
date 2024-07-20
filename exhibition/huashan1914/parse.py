@@ -64,9 +64,10 @@ class HuaShan1914Parse(ParseInit):
     def get_figure(self, *args, **kwargs) -> str:
         if self.item is None:
             return "-"
-        dev_style = self.item.select_one("li > a > div > div > div.card-img.wide")[
-            "style"
-        ]
+        dev_style = self.item.select_one("li > a > div > div > div.card-img.wide")
+        if dev_style is None:
+            return "-"
+        dev_style = dev_style["style"]
         style = cssutils.parseStyle(dev_style)
 
         return (
