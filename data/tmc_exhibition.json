@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 11,
-    "last_update": "2024-07-22T00:57:14.034045+00:00",
+    "counts": 12,
+    "last_update": "2024-07-22T08:16:26.737184+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -105,6 +105,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/2024-yang-naiwen-muse-concert/",
             "UUID": "93a8fbc82e095977b3d00ee191a78a5f",
             "figure": "https://www.tmc.taipei/wp-content/uploads/2024/07/\u694a\u4e43\u6587_\u4e3b\u8996\u89ba_1360x680.jpg"
+        },
+        {
+            "systematics": "tmc",
+            "title": "FINAL FANTASY VII REBIRTH Orchestra World Tour",
+            "date": "2024-12-07 ~ 2024-12-08",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/final-vii-rebirth-orchestra/",
+            "UUID": "65e1be6367a45e27b358050564646302",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/07/1.\u5317\u6d41\u7528banner_1360x680px.jpg"
         }
     ],
     "visit": {}
