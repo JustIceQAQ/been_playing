@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-07-25T08:15:42.258598+00:00",
+    "last_update": "2024-07-25T16:15:11.046754+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -126,21 +126,21 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "L'OCCITANE \u6b50\u8212\u4e39\u300cRe\uff1a\u884c\u5357\u6cd5\u300d\u6c89\u6d78\u5f0f\u4e94\u611f\u9ad4\u9a57\u5c55",
-            "date": "2024-07-13 ~ 2024-07-25",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/1c701855-9158-4b7e-a792-d2e5c885899f",
-            "UUID": "7f4d4554d19e561b8f4e4e1e8f831bdb",
-            "figure": "https://www.songshanculturalpark.org/gallery/1720425101_38ae3278cc29c6dd57bf.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "2024\u5730\u65b9\u5275\u751f\u8ad6\u58c7\u66a8\u5c55\u89bd\u5e02\u96c6",
             "date": "2024-07-26 ~ 2024-07-28",
             "address": "-",
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/d874dee2-de99-4465-968c-6719e7690613",
             "UUID": "60eb9e42a56a5883ad72b22de31bf006",
             "figure": "https://www.songshanculturalpark.org/gallery/1720061763_5469bb7f7e3ac062a391.png"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u5275\u57dfLIFE SPACE\u2014\u77e5\u57df\uff38\u4e00\u5df1\u5ba4\u5167\u8a2d\u8a08\u806f\u5c55",
+            "date": "2024-07-26 ~ 2024-07-28",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/96d3198a-c869-46eb-9413-3acaf46d6505",
+            "UUID": "7abf7cdcccc653d9846cf8d58c93ba3c",
+            "figure": "https://www.songshanculturalpark.org/gallery/1719816717_83ec78504e017fe54700.jpg"
         }
     ],
     "visit": {}
