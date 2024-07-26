@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-07-26T08:14:43.721395+00:00",
+    "last_update": "2024-07-26T16:15:29.804014+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -27,8 +27,8 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "\u677e\u5c71\u6587\u5275\u5712\u5340-7\u6708\u5c55\u6f14\u653b\u7565",
-            "date": "2024-07-01 ~ 2024-07-31",
+            "title": "\u677e\u5c71\u6587\u5275\u5712\u5340-8\u6708\u5c55\u6f14\u653b\u7565",
+            "date": "2024-08-01 ~ 2024-08-31",
             "address": "-",
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/757e4366-eb9c-4bf5-b199-c41487afb885",
             "UUID": "12395859bbf65c68b44561cd12b4cc7a",
@@ -126,21 +126,21 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "2024\u5730\u65b9\u5275\u751f\u8ad6\u58c7\u66a8\u5c55\u89bd\u5e02\u96c6",
-            "date": "2024-07-26 ~ 2024-07-28",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/d874dee2-de99-4465-968c-6719e7690613",
-            "UUID": "60eb9e42a56a5883ad72b22de31bf006",
-            "figure": "https://www.songshanculturalpark.org/gallery/1720061763_5469bb7f7e3ac062a391.png"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "\u5275\u57dfLIFE SPACE\u2014\u77e5\u57df\uff38\u4e00\u5df1\u5ba4\u5167\u8a2d\u8a08\u806f\u5c55",
             "date": "2024-07-26 ~ 2024-07-28",
             "address": "-",
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/96d3198a-c869-46eb-9413-3acaf46d6505",
             "UUID": "7abf7cdcccc653d9846cf8d58c93ba3c",
             "figure": "https://www.songshanculturalpark.org/gallery/1719816717_83ec78504e017fe54700.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u4e8cO\u4e8c\u56db\u5730\u65b9\u5275\u751f\u8ad6\u58c7\u66a8\u5c55\u89bd\u5e02\u96c6",
+            "date": "2024-07-26 ~ 2024-07-28",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/36a3e304-7729-4e29-8fc8-e98ecbe23cbb",
+            "UUID": "32736cc2916851c78bec47dcccc74e2a",
+            "figure": "https://www.songshanculturalpark.org/gallery/1721983121_3b90efaccfc67ec45e74.jpg"
         }
     ],
     "visit": {}
