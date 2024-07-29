@@ -4,9 +4,36 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 59,
-    "last_update": "2024-07-29T08:16:17.843578+00:00",
+    "counts": 61,
+    "last_update": "2024-07-29T16:21:09.986150+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "2024\u53f0\u7063\u73cd\u7a00\u8336\u8449\u535a\u89bd\u6703 - \u677e\u5c71\u6587\u5275\u5712\u5340",
+            "date": "2024-09-05~2024-09-08",
+            "address": "\u677e\u83f8",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101025740-2024-taiwan-gold-tea-expo/",
+            "UUID": "443bf47395565fb3b1a810eefb6f6fe0",
+            "figure": "https://res.klook.com/image/upload/x_0,y_0,w_326,h_456,c_crop/w_360,q_85/v1722251415/events_admin/hq29ljls25bjeli81j8f.jpg"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u76f8\u6703\u65bc\u751f\u547d\u4e4b\u59cb - \u4f0a\u842c\u30fb\u5fb7\u30fb\u83ab\u4f0a\u6c99\u500b\u5c55",
+            "date": "2024-08-09~2024-09-12",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101025739-2024-ioan-de-moisa-exhibition/",
+            "UUID": "8340d4efc1da58f0af5d88842f2cb95e",
+            "figure": "https://res.klook.com/image/upload/x_0,y_0,w_1231,h_1723,c_crop/w_360,q_85/v1722250713/events_admin/hvlrnez0hnzmireso30c.jpg"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u9003\u666f Escaping Landscape - \u694a\u5bd3\u5be7\u500b\u5c55",
+            "date": "2024-08-09~2024-09-12",
+            "address": "\u6691\u50472024",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101025738-2024-escaping-landscape/",
+            "UUID": "12e42b45269a5128aa8bcfb72188ae28",
+            "figure": "https://res.klook.com/image/upload/x_0,y_0,w_1231,h_1723,c_crop/w_360,q_85/v1722250380/events_admin/q2v7dkunymd2fcocouq7.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u92fc\u4e4b\u934a\u91d1\u8853\u5e2b\u5c55 \u53f0\u5317\u7ad9",
@@ -68,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025586-2024-a-long-day-exhibition/",
             "UUID": "d9f5ad6d76145dcd9213d6f1a6e52d39",
-            "figure": "https://res.klook.com/image/upload/x_1272,y_0,w_642,h_899,c_crop/w_360,q_85/v1721125361/events_admin/iwjknvfwflkqov1vszwx.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -77,7 +104,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025585-2024-where-the-daydreams-hide/",
             "UUID": "dc2fbf77d02852a48909d925c46b4716",
-            "figure": "https://res.klook.com/image/upload/x_1077,y_0,w_659,h_922,c_crop/w_360,q_85/v1721124772/events_admin/bdiizluwvobls6wxgg6q.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -86,7 +113,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025582-2024-lin-wen-che-exhibition/",
             "UUID": "d0888fd3b5365a69952b80be21ae1a3b",
-            "figure": "https://res.klook.com/image/upload/x_385,y_0,w_659,h_922,c_crop/w_360,q_85/v1721123204/events_admin/zxeumrkqemdllhme0uda.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -203,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025373-2024-gods-of-water-exhibition/",
             "UUID": "9c2834189b2b57309531348a92667d5d",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_0,y_850,w_4500,h_6300,c_crop/w_360,q_85/v1720064916/events_admin/jtuqkpbuuuhkxdgp8dh6.jpg"
         },
         {
             "systematics": "klook",
@@ -212,7 +239,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/120795-van-gogh-journey-of-light-exhibition/",
             "UUID": "6354e903e34753cb98b98446442d4f9e",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/20240703-210009_bcaili.jpg"
         },
         {
             "systematics": "klook",
@@ -221,7 +248,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025358-2024-taipei-travel-food-expo/",
             "UUID": "53d617524cc05defa74447830da1c796",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1720000261/events_admin/eiiexkfsoaq8kk4bedse.jpg"
         },
         {
             "systematics": "klook",
@@ -284,16 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025195-2024-the-future-ark-exhibition/",
             "UUID": "ab35b122f4eb5d6bb621efc6c2ac1a64",
-            "figure": "https://res.klook.com/image/upload/x_0,y_63,w_1080,h_1512,c_crop/w_360,q_85/v1718896506/events_admin/ntt1jvf1d6ad8tatdimp.jpg"
-        },
-        {
-            "systematics": "klook",
-            "title": "2024\u7b2c23\u5c46\u6f2b\u756b\u535a\u89bd\u6703 - \u53f0\u5317\u4e16\u8cbf\u4e00\u9928",
-            "date": "2024-07-25~2024-07-29",
-            "address": "\u6691\u50472024",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101025146-2024-comic-exhibition/",
-            "UUID": "095af3ecf1f75cebb93471aa6e2f4451",
-            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1718684291/events_admin/ompzggvnug59was7lehz.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -302,7 +320,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025121-2024-meet-you-here-exhibition/",
             "UUID": "75a45df9ba3055d98d99956cafebe439",
-            "figure": "https://res.klook.com/image/upload/x_458,y_0,w_632,h_885,c_crop/w_360,q_85/v1718605154/events_admin/y630m5eaz2tbvsjfp1fe.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -428,7 +446,7 @@
             "address": "\u677e\u83f8",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024299-2024-leonardo-da-vinci-taipei/",
             "UUID": "8fdf28fb4db8515e8a3d82cb7edd51c8",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/x_0,y_10,w_1449,h_2029,c_crop/w_360,q_85/v1714033585/events_admin/ovrxnqbuyzdzo0o3ll0p.jpg"
         },
         {
             "systematics": "klook",
@@ -437,7 +455,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/114371-bologna-illustration-exhibition/",
             "UUID": "5a355028d42e579780be93ed3aaf30a7",
-            "figure": "-"
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/klook_\u5c3a\u5bf8__\u5c55\u6f14\u9801\u9762\u6d3b\u52d5\u9996\u5716_2_khuozr.jpg"
         },
         {
             "systematics": "klook",
@@ -509,7 +527,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/85220-dining-in-the-dark-s3-surprise-lab/",
             "UUID": "f0d711edefe85a96b753f335e87e9a69",
-            "figure": "https://res.klook.com/image/upload/w_360,q_85/240516_klook\u5546\u54c1\u5716_\u6d3b\u52d5\u9996\u5716_326_sqrpz0.png"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -518,7 +536,7 @@
             "address": "\u9a5a\u559c\u88fd\u9020",
             "source_url": "https://www.klook.com/zh-TW/activity/81847-the-sunset-terminal/",
             "UUID": "b148959df7175628a044b1bcb87bf5c0",
-            "figure": "https://res.klook.com/image/upload/w_360,q_85/20240722_\u843d\u65e5\u6708\u53f0_Klook_Banner_V2_326x460_fkiisr.png"
+            "figure": "-"
         },
         {
             "systematics": "klook",
