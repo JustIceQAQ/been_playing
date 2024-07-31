@@ -4,8 +4,8 @@
         "code_name": "ntm",
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
-    "counts": 50,
-    "last_update": "2024-07-31T15:20:58.763008+00:00",
+    "counts": 49,
+    "last_update": "2024-07-31T16:14:48.068495+00:00",
     "data": [
         {
             "systematics": "ntm",
@@ -263,7 +263,7 @@
             "systematics": "ntm",
             "title": "4\u215a\u5947\u5e7b\u9928\u8aa0\u5fb5\u77e5\u8b58\u9054\u4eba",
             "date": "",
-            "address": "4\u215a\u5947\u5e7b\u535a\u7269\u9928",
+            "address": "",
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40240",
             "UUID": "14a435b7b48a5359818ca97f8902fcb3",
             "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/40240/AD/40240_0_0_130261.jpg"
@@ -294,15 +294,6 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=12160",
             "UUID": "1a08a79ce41d5b118e28c468a11e97a6",
             "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/12160/12160.jpg"
-        },
-        {
-            "systematics": "ntm",
-            "title": "\u300c\u6f02\u9ce5\u96c6\u2014\u81fa\u7063\u5019\u9ce5\u5c55\u300d\u5c08\u6848\u5c0e\u89bd-7\u6708\u5834\u6b21",
-            "date": "",
-            "address": "",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40230",
-            "UUID": "30b8726893465a01af0693a866a7c060",
-            "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/40225/AD/40225_0_0_36579.jpg"
         }
     ],
     "visit": {
