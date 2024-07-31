@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 15,
-    "last_update": "2024-07-31T00:45:55.263271+00:00",
+    "counts": 17,
+    "last_update": "2024-07-31T15:20:21.966926+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -72,6 +72,15 @@
         },
         {
             "systematics": "tmc",
+            "title": "Legacy \u570b\u969b\u4ea4\u6d41\u97f3\u97ff\u5927\u5e2b\u5de5\u4f5c\u574a",
+            "date": "2024-08-26 ~ 2024-08-28",
+            "address": "Live House A",
+            "source_url": "https://www.tmc.taipei/blog/show/legacy-international-exchange/",
+            "UUID": "982bc007db655e0bb0fd86e2b2d62d45",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/07/2024\u5927\u5e2b\u73ed_\u5317\u6d41\u5b98\u7db21360_680.jpg"
+        },
+        {
+            "systematics": "tmc",
             "title": "TAIPEI MUSIC EXPO \u81fa\u5317\u97f3\u6a02\u535a\u89bd\u6703 (TMEX)",
             "date": "2024-09-07 ~ 2024-09-08",
             "address": "\u6587\u5316\u9928",
@@ -132,6 +141,15 @@
             "source_url": "https://www.tmc.taipei/blog/show/2024-yang-naiwen-muse-concert/",
             "UUID": "93a8fbc82e095977b3d00ee191a78a5f",
             "figure": "https://www.tmc.taipei/wp-content/uploads/2024/07/\u694a\u4e43\u6587_\u4e3b\u8996\u89ba_1360x680.jpg"
+        },
+        {
+            "systematics": "tmc",
+            "title": "Disney Princess \u2013 The Concert \u8fea\u58eb\u5c3c\u300a\u516c\u4e3b\u97f3\u6a02\u6703\u300b",
+            "date": "2024-11-14 ~ 2024-11-30",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/disney-princess-concert/",
+            "UUID": "b884a25123bd54b092ff30053d754b9b",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/07/\u5317\u6d41\u5716\u6a94_\u5b98\u7db2\u5c55\u6f14\u6d3b\u52d5_1360x680-2.jpg"
         },
         {
             "systematics": "tmc",

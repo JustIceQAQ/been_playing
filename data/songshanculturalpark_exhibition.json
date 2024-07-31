@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-07-31T00:45:49.624027+00:00",
+    "last_update": "2024-07-31T15:20:15.012284+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -117,6 +117,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "PP mini-\u611b\u7684\u90b1\u6bd4\u9d5d \u671f\u9593\u9650\u5b9a\u5e97",
+            "date": "2024-07-13 ~ 2024-08-11",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c60f89a2-b6fe-4ca7-b683-f8a787a58e37",
+            "UUID": "678a297396d55b25a522cf0ba18a5f7b",
+            "figure": "https://www.songshanculturalpark.org/gallery/1722389675_90641e2dd9522ca72620.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "\u7b2c\u516b\u5c46 Design For Taiwan\u3010\u7121\u9650 Infinite\u3011\u793e\u6703\u8a2d\u8a08\u5c55",
             "date": "2024-07-31 ~ 2024-08-04",
             "address": "-",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/00e237b6-8b44-4668-a5dc-1538a2c27f96",
             "UUID": "315b7a55f51a571ebafd90f29549cff8",
             "figure": "https://www.songshanculturalpark.org/gallery/1721803216_4ef7939567c3225eacec.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "113\u5e74\u5ea6\u83c1\u5e02\u96c6\u54c1\u724c\u63a8\u5ee3\u66a8\u9752\u5275\u5546\u54c1\u5c55\u552e\u8a08\u756b",
-            "date": "2024-08-02 ~ 2024-08-04",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/7571529e-b3ab-4e72-81bf-e36a7bb1df96",
-            "UUID": "c037750474ab528a8a25a0671df3dafa",
-            "figure": "https://www.songshanculturalpark.org/gallery/1720407493_6a6fb9d73f00c6c85784.jpg"
         }
     ],
     "visit": {}
