@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-08-04T08:13:22.343939+00:00",
+    "last_update": "2024-08-04T16:12:50.125364+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -117,15 +117,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "\u7b2c\u516b\u5c46 Design For Taiwan\u3010\u7121\u9650 Infinite\u3011\u793e\u6703\u8a2d\u8a08\u5c55",
-            "date": "2024-07-31 ~ 2024-08-04",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/411174d4-d524-49d2-b929-7bc2ca86353b",
-            "UUID": "ee31064400505fa5b74f672143a03997",
-            "figure": "https://www.songshanculturalpark.org/gallery/1721619010_d96d1c9ee852a2b5f0e0.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "\u8996\u7ddaSight\u2014\u65e5\u672cBL\u7e6a\u5e2b\u806f\u5408\u5c55",
             "date": "2024-08-01 ~ 2024-09-18",
             "address": "-",
@@ -135,12 +126,21 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "113\u5e74\u5ea6\u83c1\u5e02\u96c6\u54c1\u724c\u63a8\u5ee3\u66a8\u9752\u5275\u5546\u54c1\u5c55\u552e\u8a08\u756b",
-            "date": "2024-08-02 ~ 2024-08-04",
+            "title": "\u6545\u4e8b\u5354\u594f\u66f2\uff01Story Concerto",
+            "date": "2024-08-03 ~ 2024-08-11",
             "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/7571529e-b3ab-4e72-81bf-e36a7bb1df96",
-            "UUID": "c037750474ab528a8a25a0671df3dafa",
-            "figure": "https://www.songshanculturalpark.org/gallery/1720407493_6a6fb9d73f00c6c85784.jpg"
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/de1aec66-a7fa-4ccb-9101-4797270417e3",
+            "UUID": "c208d2fb813f50acb8e317b917664e2b",
+            "figure": "https://www.songshanculturalpark.org/gallery/1720667249_4adb629bbe8b00ef022b.jpg"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "iF \u8a2d\u8a08\u884c\u65c5 | 2024 \u5e74 iF \u8a2d\u8a08\u734e\u7372\u734e\u4f5c\u54c1\u5c55 (III)",
+            "date": "2024-08-06 ~ 2024-09-05",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/1167eb07-8f87-4afd-943b-1f448a44acba",
+            "UUID": "1114daa770245f8f81217603174f599d",
+            "figure": "https://www.songshanculturalpark.org/gallery/1721716306_3cd0a363b7a20ab8fa4a.jpg"
         }
     ],
     "visit": {}
