@@ -4,8 +4,8 @@
         "code_name": "FuBonArtMuseum",
         "external_link": "https://www.fubonartmuseum.org/Default"
     },
-    "counts": 3,
-    "last_update": "2024-08-05T08:16:27.120769+00:00",
+    "counts": 2,
+    "last_update": "2024-08-05T16:14:24.897199+00:00",
     "data": [
         {
             "systematics": "FuBonArtMuseum",
@@ -24,15 +24,6 @@
             "source_url": "https://www.fubonartmuseum.org//ExhibitionDetail?PKNO=X007HPYU",
             "UUID": "488974b6d8285b50841cdf52d6447928",
             "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007HPYU/Cover/\u4e3b\u8996\u89ba4.jpg"
-        },
-        {
-            "systematics": "FuBonArtMuseum",
-            "title": "\u5bcc\u90a6\u5178\u85cf\u5c55\uff0e\u89f8\u52d5 In Touch\uff1aCollection of Fubon",
-            "date": "2024-05-04 ~ 2024-08-05",
-            "address": "\u5bcc\u90a6\u7f8e\u8853\u9928-3\u6a13 \u65e5\u5149\u5c55\u5ef3\u3001\u661f\u5149\u5c55\u5ef3",
-            "source_url": "https://www.fubonartmuseum.org//ExhibitionDetail?PKNO=X007IA44",
-            "UUID": "38c2fe8e22a4504d85fd11ac70fd7da3",
-            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007IA44/Cover/A3.jpg"
         }
     ],
     "visit": {}
