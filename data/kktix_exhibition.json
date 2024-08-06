@@ -4,81 +4,8 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 8,
-    "last_update": "2024-08-06T08:15:02.004321+00:00",
-    "data": [
-        {
-            "systematics": "KKTix",
-            "title": "\u9054\u6587\u897f\u9ad4\u9a57\u5c55",
-            "date": "2024-6-14",
-            "address": "",
-            "source_url": "https://kklivetw.kktix.cc/events/ldv500tp",
-            "UUID": "ae50c874108f5e9b9ad804706277441d",
-            "figure": "https://t.kfs.io/upload_images/201411/KV-%E6%A9%AB_%E6%A9%AB%E5%BC%8FKV_medium.jpg"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "\u3010\u9060\u50b3\u7528\u6236\u5c08\u5340\u3011\u9054\u6587\u897f\u9ad4\u9a57\u5c55",
-            "date": "2024-6-14",
-            "address": "",
-            "source_url": "https://kklivetw.kktix.cc/events/ldv500fetnet",
-            "UUID": "75f1ae29d99452589561a6ee100913fb",
-            "figure": "https://t.kfs.io/upload_images/206391/KV-%E6%A9%AB_%E6%A9%AB%E5%BC%8FKV_original_medium.png"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "POP! POP! POP! \u6d41\u884c\u97f3\u6a02\u4e92\u52d5\u5c55 \uff20 \u9ad8\u96c4\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
-            "date": "2022-3-1",
-            "address": "",
-            "source_url": "https://kpmc.kktix.cc/events/poppoppop",
-            "UUID": "2753092823855d20b12fbb3f6977690c",
-            "figure": "https://i.imgur.com/76TL3BV.webp"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "2024\u53f0\u5317\u570b\u969b\u89c0\u5149\u65c5\u5c55\u66a8\u7f8e\u98df\u7bc0 \u514d\u8cbb\u7d22\u7968",
-            "date": "2024-8-9",
-            "address": "",
-            "source_url": "https://sheng-dong.kktix.cc/events/sdtravel",
-            "UUID": "31c6c71781a250a5b45672302e322032",
-            "figure": "https://t.kfs.io/upload_images/206397/2024%E6%97%85%E5%B1%95kv1200x630_ALL_medium.jpg"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "20240811\u4e0b\u5348\u53c3\u8a2a\u9810\u7d04",
-            "date": "2024-8-11",
-            "address": "",
-            "source_url": "https://wanhualinhouse.kktix.cc/events/1ca74b7f",
-            "UUID": "8c77e8d8fa18597e899f77565943b9d7",
-            "figure": "https://t.kfs.io/upload_images/206541/%E8%90%AC%E8%8F%AF%E6%9E%97%E5%AE%85%E7%B6%B2%E8%B7%AFLOGO_medium.png"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "\u300c\u6211\u4e0d\u61c2\u8a2d\u8a08\uff0c\u4f46\u8a2d\u8a08\u61c2\u6211\u2500\u9ad8\u96c4\u6c38\u7e8c\u8a2d\u8a08\u529b\u300d\u958b\u5c55\u9650\u5b9a\u8b1b\u5ea7",
-            "date": "2024-8-16",
-            "address": "",
-            "source_url": "https://pinwaywarehouse8.kktix.cc/events/pinsdgs",
-            "UUID": "c520afea54e951d3ba70229ecc6fe9e6",
-            "figure": "https://t.kfs.io/upload_images/208417/kktix-10_medium.png"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "\u722c\u73a9\u5e9c\u57ce\u936c\u936c\u4e00\u8d77\u4f86",
-            "date": "2024-10-12",
-            "address": "",
-            "source_url": "https://insectw.kktix.cc/events/pwtn77176",
-            "UUID": "0324005ef6f25d9fb2bf1e36c6b9739a",
-            "figure": "https://t.kfs.io/upload_images/202312/S__187850754_medium.jpg"
-        },
-        {
-            "systematics": "KKTix",
-            "title": "KTX MEETING",
-            "date": "2024-8-16",
-            "address": "",
-            "source_url": "https://ktx.kktix.cc/events/ktxmeeting",
-            "UUID": "ef8dd88fa4bd5dbbaa1d07a19c9c31db",
-            "figure": "https://t.kfs.io/upload_images/205637/SPICY_LABEL_medium.png"
-        }
-    ],
+    "counts": 0,
+    "last_update": "2024-08-06T16:14:51.690484+00:00",
+    "data": [],
     "visit": {}
 }
