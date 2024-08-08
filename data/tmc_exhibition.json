@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 16,
-    "last_update": "2024-08-08T00:57:03.162093+00:00",
+    "counts": 19,
+    "last_update": "2024-08-08T08:15:52.921094+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -90,6 +90,15 @@
         },
         {
             "systematics": "tmc",
+            "title": "2024\u81fa\u5317\u97f3\u6a02\u4e0d\u65b7\u96fb10\u9031\u5e74\u6f14\u5531\u6703",
+            "date": "2024-09-07 ~ 2024-09-08",
+            "address": "\u6236\u5916\u8868\u6f14\u7a7a\u9593",
+            "source_url": "https://www.tmc.taipei/blog/show/uninterrupted-10th-anniversary/",
+            "UUID": "58c2a261547d54e1be0b979646cf41e5",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/08/TMN_Banner_1360X680_0.png"
+        },
+        {
+            "systematics": "tmc",
             "title": "2024\u5317\u6d41\u9280\u9aee\u6a02(\u310c\u311c\u02cb)\u97f3\u793e",
             "date": "2024-09-10 ~ 2024-09-26",
             "address": "Live House D",
@@ -135,12 +144,30 @@
         },
         {
             "systematics": "tmc",
+            "title": "BOSE\u51a0\u540d\u8d0a\u52a9 \u5b6b\u76db\u5e0c \u300a\u300cI\u300d Can\u2019t Be Left Alone\u300b\u6f14\u5531\u6703",
+            "date": "2024-11-09 ~ 2024-11-09",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/cant-be-left-alone/",
+            "UUID": "9d52fe5bde545998a2685b68323ba621",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/08/1360x680-R.jpg"
+        },
+        {
+            "systematics": "tmc",
             "title": "Disney Princess \u2013 The Concert \u8fea\u58eb\u5c3c\u300a\u516c\u4e3b\u97f3\u6a02\u6703\u300b",
             "date": "2024-11-14 ~ 2024-11-30",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/blog/show/disney-princess-concert/",
             "UUID": "b884a25123bd54b092ff30053d754b9b",
             "figure": "https://www.tmc.taipei/wp-content/uploads/2024/07/\u5317\u6d41\u5716\u6a94_\u5b98\u7db2\u5c55\u6f14\u6d3b\u52d5_1360x680-2.jpg"
+        },
+        {
+            "systematics": "tmc",
+            "title": "milet Asia Tour 2024 in Taipei",
+            "date": "2024-11-30 ~ 2024-11-30",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/blog/show/milet-asia-tour-2024-in-taipei/",
+            "UUID": "a7f6fd8ebd545f5f8e6cf636b4a2b7b5",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/08/\u5317\u6d41size_04.png"
         },
         {
             "systematics": "tmc",
