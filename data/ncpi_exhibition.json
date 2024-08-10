@@ -4,8 +4,36 @@
         "code_name": "ncpi",
         "external_link": "https://ncpiexhibition.ntmofa.gov.tw/tw/Exhibition/ListCur"
     },
-    "counts": 0,
-    "last_update": "2024-08-09T16:19:43.841577+00:00",
-    "data": [],
+    "counts": 3,
+    "last_update": "2024-08-10T00:56:35.310662+00:00",
+    "data": [
+        {
+            "systematics": "ncpi",
+            "title": "\u67e5\u770b \u53cd\u8eab\u986f\u5f71\uff1a\u591a\u91cd\u93e1\u50cf\u4e2d\u7684\u81ea\u6211\u8eab\u5f71",
+            "date": "2024-05-16 ~ 2024-09-22",
+            "address": "\u81fa\u5317\uff0f\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3201-203\u5c55\u89bd\u5ba4",
+            "source_url": "https://ncpiexhibition.ntmofa.gov.tw//tw/Exhibition/Detail/24032716320930463",
+            "UUID": "b27f8ab30fe75b478b4641f2787d5bd3",
+            "figure": "https://NCPIExhibition.ntmofa.gov.tw/WebUPD/1Exhibition/\u651dbanner\u53cd\u8eab\u986f\u5f71%201516x1012(0319).png"
+        },
+        {
+            "systematics": "ncpi",
+            "title": "\u67e5\u770b \u51dd\u8996\u81ea\u6211\uff1a\u591a\u91cd\u93e1\u50cf\u4e2d\u7684\u81ea\u6211\u8eab\u5f71",
+            "date": "2024-04-23 ~ 2024-08-18",
+            "address": "\u81fa\u5317\uff0f \u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3 301-303\u3001305 \u5c55\u89bd\u5ba4",
+            "source_url": "https://ncpiexhibition.ntmofa.gov.tw//tw/Exhibition/Detail/24032716320501873",
+            "UUID": "3dccdb8a42e15762b28caa9c28f5d86b",
+            "figure": "https://NCPIExhibition.ntmofa.gov.tw/WebUPD/1Exhibition/\u651dbanner\u51dd\u8996\u81ea\u62111516x1012(0319).png"
+        },
+        {
+            "systematics": "ncpi",
+            "title": "\u67e5\u770b \u8de8\u2027\u4ea4\u2027\u901a\uff1a\u5f9e\u300c\u5927\u962a\u5546\u8239\u682a\u5f0f\u6703\u793e\u81fa\u5317\u652f\u5e97\u300d\u5230\u300c\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3\u81fa\u5317\u9928\u300d",
+            "date": "2021-03-25 ~",
+            "address": "\u81fa\u5317\uff0f\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3\u81fa\u5317\u9928204\u5c55\u89bd\u5ba4",
+            "source_url": "https://ncpiexhibition.ntmofa.gov.tw//tw/Exhibition/Detail/21011913002067827",
+            "UUID": "aef28c3d4da55f94b83437429b08a72f",
+            "figure": "https://i.imgur.com/P91hFja.webp"
+        }
+    ],
     "visit": {}
 }

@@ -5,7 +5,7 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 62,
-    "last_update": "2024-08-09T16:16:03.150102+00:00",
+    "last_update": "2024-08-10T00:56:54.371759+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -99,20 +99,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u7b2c\u4e00\u5c46\u9ad8\u9f61\u79d1\u6280\u5c55",
-            "date": "2024-08-02 ~ 2024-08-04",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "https://ibmi.taiwan-healthcare.org/",
-            "UUID": "85ef2fcd382a52ba9fa7f67e9169b4e3",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "2024\u53f0\u7063\u7f8e\u98df\u5c55",
             "date": "2024-08-02 ~ 2024-08-05",
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "http://www.tcetva.tw/",
             "UUID": "15349603267f599cba640de1e71375e8",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c\u4e00\u5c46\u9ad8\u9f61\u79d1\u6280\u5c55",
+            "date": "2024-08-02 ~ 2024-08-04",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://ibmi.taiwan-healthcare.org/",
+            "UUID": "85ef2fcd382a52ba9fa7f67e9169b4e3",
             "figure": ""
         },
         {
