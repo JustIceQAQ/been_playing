@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://tmc.taipei/show/event/"
     },
-    "counts": 19,
-    "last_update": "2024-08-11T08:14:40.927854+00:00",
+    "counts": 17,
+    "last_update": "2024-08-11T16:14:06.359410+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -18,30 +18,12 @@
         },
         {
             "systematics": "tmc",
-            "title": "\u767e\u8001\u532f\u7d93\u5178\u97f3\u6a02\u5287\u300a\u829d\u52a0\u54e5\u300b",
-            "date": "2024-08-07 ~ 2024-08-11",
-            "address": "\u8868\u6f14\u5ef3",
-            "source_url": "https://www.tmc.taipei/blog/show/chicago-the-musical/",
-            "UUID": "dea3fd4686e55fedb6ae5711e993f77b",
-            "figure": "https://i.imgur.com/NWdkQSN.webp"
-        },
-        {
-            "systematics": "tmc",
             "title": "2024\u5317\u6d41\u91d1\u821e\u53f0PLUS\u2013\u6b4c\u5531\u5927\u8cfd",
             "date": "2024-08-10 ~ 2024-09-22",
             "address": "\u6236\u5916\u8868\u6f14\u7a7a\u9593",
             "source_url": "https://www.tmc.taipei/blog/show/2024-stage-singing-contest/",
             "UUID": "7ad690122e7a5624869f9f3cc8fdf806",
             "figure": "https://www.tmc.taipei/wp-content/uploads/2024/06/2024\u5317\u6d41\u91d1\u821e\u53f0PLUS_\u5b98\u7db2Banner\u58d3\u7e2e_\u9673-\u4ead\u81fb.jpg"
-        },
-        {
-            "systematics": "tmc",
-            "title": "\u5317\u6d41\u590f\u591c\u665a\u98a8\u96fb\u5f71\u9662",
-            "date": "2024-08-10 ~ 2024-08-11",
-            "address": "\u6236\u5916\u8868\u6f14\u7a7a\u9593",
-            "source_url": "https://www.tmc.taipei/blog/show/summer-night-wind-cinema/",
-            "UUID": "0ed00744e8a65bd7b392fdd2da23a282",
-            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/07/\u5317\u6d41\u590f\u591c\u665a\u98a8\u96fb\u5f71\u9662_1200x600_\u7c21-\u5bb8\u7def.png"
         },
         {
             "systematics": "tmc",
@@ -81,21 +63,21 @@
         },
         {
             "systematics": "tmc",
-            "title": "2024 TRENDY TAIPEI \u6f6e\u81fa\u5317 \u2013 JAM JAM ASIA \u97f3\u6a02\u7bc0",
-            "date": "2024-09-07 ~ 2024-09-08",
-            "address": "Live House A",
-            "source_url": "https://www.tmc.taipei/blog/show/2024-jam-jam-asia/",
-            "UUID": "c5cb826691d05c77a6f6e6bd3410f84d",
-            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/07/\u552e\u7968\u76f8\u95dc_768\u00d7360_0.png"
-        },
-        {
-            "systematics": "tmc",
             "title": "2024\u81fa\u5317\u97f3\u6a02\u4e0d\u65b7\u96fb10\u9031\u5e74\u6f14\u5531\u6703",
             "date": "2024-09-07 ~ 2024-09-08",
             "address": "\u6236\u5916\u8868\u6f14\u7a7a\u9593",
             "source_url": "https://www.tmc.taipei/blog/show/uninterrupted-10th-anniversary/",
             "UUID": "58c2a261547d54e1be0b979646cf41e5",
             "figure": "https://www.tmc.taipei/wp-content/uploads/2024/08/TMN_Banner_1360X680_0.png"
+        },
+        {
+            "systematics": "tmc",
+            "title": "2024 TRENDY TAIPEI \u6f6e\u81fa\u5317 \u2013 JAM JAM ASIA \u97f3\u6a02\u7bc0",
+            "date": "2024-09-07 ~ 2024-09-08",
+            "address": "Live House A",
+            "source_url": "https://www.tmc.taipei/blog/show/2024-jam-jam-asia/",
+            "UUID": "c5cb826691d05c77a6f6e6bd3410f84d",
+            "figure": "https://www.tmc.taipei/wp-content/uploads/2024/07/\u552e\u7968\u76f8\u95dc_768\u00d7360_0.png"
         },
         {
             "systematics": "tmc",
