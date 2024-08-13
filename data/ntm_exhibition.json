@@ -4,8 +4,8 @@
         "code_name": "ntm",
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
-    "counts": 50,
-    "last_update": "2024-08-12T16:15:16.030801+00:00",
+    "counts": 51,
+    "last_update": "2024-08-13T00:58:54.869750+00:00",
     "data": [
         {
             "systematics": "ntm",
@@ -168,6 +168,15 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=12199",
             "UUID": "1d14be52f6395931a1f0883d6907f0ec",
             "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/12199/AD/12199_0_0_383313.jpg"
+        },
+        {
+            "systematics": "ntm",
+            "title": "\u672a\u4f86\u6230\u58eb",
+            "date": "",
+            "address": "",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40241",
+            "UUID": "af3ca727f4bf5fd7883b370be8aa5e58",
+            "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/40241/AD/40241_0_0_488326.jpg"
         },
         {
             "systematics": "ntm",
