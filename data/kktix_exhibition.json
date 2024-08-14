@@ -4,18 +4,9 @@
         "code_name": "KKTix",
         "external_link": "https://kktix.com/events?category_id=11"
     },
-    "counts": 9,
-    "last_update": "2024-08-14T00:56:51.922169+00:00",
+    "counts": 11,
+    "last_update": "2024-08-14T08:15:38.891320+00:00",
     "data": [
-        {
-            "systematics": "KKTix",
-            "title": "\u3010\u9060\u50b3\u7528\u6236\u5c08\u5340\u3011\u9054\u6587\u897f\u9ad4\u9a57\u5c55",
-            "date": "2024-6-14",
-            "address": "",
-            "source_url": "https://kklivetw.kktix.cc/events/ldv500fetnet",
-            "UUID": "75f1ae29d99452589561a6ee100913fb",
-            "figure": "https://t.kfs.io/upload_images/206391/KV-%E6%A9%AB_%E6%A9%AB%E5%BC%8FKV_original_medium.png"
-        },
         {
             "systematics": "KKTix",
             "title": "\u9054\u6587\u897f\u9ad4\u9a57\u5c55",
@@ -24,6 +15,15 @@
             "source_url": "https://kklivetw.kktix.cc/events/ldv500tp",
             "UUID": "ae50c874108f5e9b9ad804706277441d",
             "figure": "https://t.kfs.io/upload_images/201411/KV-%E6%A9%AB_%E6%A9%AB%E5%BC%8FKV_medium.jpg"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "\u3010\u9060\u50b3\u7528\u6236\u5c08\u5340\u3011\u9054\u6587\u897f\u9ad4\u9a57\u5c55",
+            "date": "2024-6-14",
+            "address": "",
+            "source_url": "https://kklivetw.kktix.cc/events/ldv500fetnet",
+            "UUID": "75f1ae29d99452589561a6ee100913fb",
+            "figure": "https://t.kfs.io/upload_images/206391/KV-%E6%A9%AB_%E6%A9%AB%E5%BC%8FKV_original_medium.png"
         },
         {
             "systematics": "KKTix",
@@ -69,6 +69,24 @@
             "source_url": "https://sheng-dong.kktix.cc/events/souvenirtc",
             "UUID": "d49e4699f3595e02964d8b40f9ddd7a0",
             "figure": "https://t.kfs.io/upload_images/208939/0920%E5%8F%B0%E4%B8%AD%E7%BE%8E%E9%A3%9F%E5%B1%95_KKTIX_BN_1200x630_medium.jpg"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "9/21 \u623f\u9593\u85dd\u8853\u5275\u4f5c\u5e02\u96c6\u3010\u79cb \u00b7 \u61b6\u3011\u9810\u8cfc\u7968",
+            "date": "2024-9-21",
+            "address": "",
+            "source_url": "https://roomroommarket.kktix.cc/events/c39a25f6",
+            "UUID": "db4570a62dd950f78eab17a5226f20e7",
+            "figure": "https://t.kfs.io/upload_images/209596/%E7%A5%A8_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F_1_medium.jpg"
+        },
+        {
+            "systematics": "KKTix",
+            "title": "9/22 \u623f\u9593\u85dd\u8853\u5275\u4f5c\u5e02\u96c6\u3010\u79cb \u00b7 \u61b6\u3011\u9810\u8cfc\u7968",
+            "date": "2024-9-22",
+            "address": "",
+            "source_url": "https://roomroommarket.kktix.cc/events/c39a25f6-copy-1",
+            "UUID": "a340152e268d5921bbe94e377866c58c",
+            "figure": "https://t.kfs.io/upload_images/209597/%E7%A5%A8_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F_1_medium.jpg"
         },
         {
             "systematics": "KKTix",
