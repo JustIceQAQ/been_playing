@@ -12,9 +12,9 @@ class NCPIRunner(RunnerInit):
     """國家攝影文化中心"""
 
     root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
-    target_url = "https://ncpiexhibition.ntmofa.gov.tw/tw/Exhibition/ListCur"
+    target_url = "https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?n=8006&sms=15632"
     use_method = "GET"
-    target_domain = "https://ncpiexhibition.ntmofa.gov.tw/"
+    target_domain = "https://ncpi.ntmofa.gov.tw/"
     target_storage = str(root_dir / "data" / "ncpi_exhibition.json")
     target_systematics = ExhibitionEnum.NCPI
     target_visit_url = "https://ncpi.ntmofa.gov.tw/visit.html"
@@ -31,7 +31,8 @@ class NCPIRunner(RunnerInit):
         return requests_worker.fetch(self.use_method, headers=headers)
 
     def get_items(self, response):
-        return response.select("a.exhibition_list")
+        data = response.select("div.area-essay > div > div > div > a")
+        return data
 
     def get_parsed(self, items):
         for item in items:
