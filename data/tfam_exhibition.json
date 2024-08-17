@@ -4,8 +4,8 @@
         "code_name": "tfam",
         "external_link": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw"
     },
-    "counts": 11,
-    "last_update": "2024-07-20T16:13:34.015632+00:00",
+    "counts": 10,
+    "last_update": "2024-08-17T00:54:39.976143+00:00",
     "data": [
         {
             "systematics": "tfam",
@@ -27,15 +27,6 @@
         },
         {
             "systematics": "tfam",
-            "title": "2024 X-site\uff1a\u6797\u6728\u6797",
-            "date": "2024-05-11 ~ 2024-07-21",
-            "address": "\u5317\u7f8e\u9928\u6236\u5916\u5ee3\u5834",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=769",
-            "UUID": "02e96edba040571db9c7f50a8f0aa1b5",
-            "figure": "https://www.tfam.museum/File/Exhibition/Main/769/2024042512093466710944.jpg"
-        },
-        {
-            "systematics": "tfam",
             "title": "\u5317\u7f8e\u9928\u958b\u653e\u7db2\u7d61\u8a08\u756b TFAM Net.Open\u2502\u5377\u7a4d",
             "date": "2024-03-29 ~ 2024-12-31",
             "address": "",
@@ -46,29 +37,11 @@
         {
             "systematics": "tfam",
             "title": "\u5317\u7f8e\u9928\u958b\u653e\u7db2\u7d61\u8a08\u756b TFAM Net.Open\u2502\u5171\u57df\u8a08\u756b",
-            "date": "2024-04-20 ~ 2024-11-17",
+            "date": "2024-04-20 ~ 2024-11-10",
             "address": "\u5730\u4e0b\u6a13E\u5c55\u89bd\u5ba4",
             "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=766",
             "UUID": "c349c3fb314559ec86aae1b57f662dcd",
             "figure": "https://i.imgur.com/ddwEFQw.webp"
-        },
-        {
-            "systematics": "tfam",
-            "title": "\u662f\u8ab0\u8eb2\u5728\u98a8\u666f\u88e1?",
-            "date": "2024-03-30 ~ 2024-09-15",
-            "address": "\u5152\u7ae5\u85dd\u8853\u6559\u80b2\u4e2d\u5fc3",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=752",
-            "UUID": "7c6be89bbc3d5c99a8fe5ff8ec7f0a3c",
-            "figure": "https://i.imgur.com/Yn3V8yz.webp"
-        },
-        {
-            "systematics": "tfam",
-            "title": "\u8881\u5ee3\u9cf4\uff1a\u65e5\u5e38\u6230\u722d\uff0f\u7b2c60\u5c46\u5a01\u5c3c\u65af\u570b\u969b\u7f8e\u8853\u96d9\u5e74\u5c55\u53f0\u7063\u9928",
-            "date": "2024-04-20 ~ 2024-11-24",
-            "address": "\u7fa9\u5927\u5229\u5a01\u5c3c\u65af\u666e\u91cc\u5947\u6b50\u5c3c\u5bae",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=765",
-            "UUID": "1ed2b28192d05f56b905bfd1fbe9bb4c",
-            "figure": "https://i.imgur.com/kLswLwH.webp"
         },
         {
             "systematics": "tfam",
@@ -105,6 +78,24 @@
             "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=775",
             "UUID": "90fb08c71a575efc9322ee52e453040d",
             "figure": "https://www.tfam.museum/File/Exhibition/Main/775/2024070208572219100791.jpg"
+        },
+        {
+            "systematics": "tfam",
+            "title": "\u662f\u8ab0\u8eb2\u5728\u98a8\u666f\u88e1?",
+            "date": "2024-03-30 ~ 2024-09-15",
+            "address": "\u5152\u7ae5\u85dd\u8853\u6559\u80b2\u4e2d\u5fc3",
+            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=752",
+            "UUID": "7c6be89bbc3d5c99a8fe5ff8ec7f0a3c",
+            "figure": "https://i.imgur.com/Yn3V8yz.webp"
+        },
+        {
+            "systematics": "tfam",
+            "title": "\u8881\u5ee3\u9cf4\uff1a\u65e5\u5e38\u6230\u722d\uff0f\u7b2c60\u5c46\u5a01\u5c3c\u65af\u570b\u969b\u7f8e\u8853\u96d9\u5e74\u5c55\u53f0\u7063\u9928",
+            "date": "2024-04-20 ~ 2024-11-24",
+            "address": "\u7fa9\u5927\u5229\u5a01\u5c3c\u65af\u666e\u91cc\u5947\u6b50\u5c3c\u5bae",
+            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=765",
+            "UUID": "1ed2b28192d05f56b905bfd1fbe9bb4c",
+            "figure": "https://i.imgur.com/kLswLwH.webp"
         }
     ],
     "visit": {

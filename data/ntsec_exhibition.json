@@ -4,17 +4,17 @@
         "code_name": "ntsec",
         "external_link": "https://www.ntsec.gov.tw/article/list.aspx?a=25"
     },
-    "counts": 6,
-    "last_update": "2024-07-20T16:13:32.660505+00:00",
+    "counts": 7,
+    "last_update": "2024-08-17T00:54:41.963358+00:00",
     "data": [
         {
             "systematics": "ntsec",
-            "title": "\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55",
+            "title": "\u300a\u672b\u65e5\u5b78\u6821\u300b\u7279\u5c55",
             "date": "-",
             "address": "-",
-            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5434",
-            "UUID": "5722a7fef6dd56f4b5e8118f5d45e7c0",
-            "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/5434_2.jpg"
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5462",
+            "UUID": "80324eec9f0e532bb720fb1d7d9ac7ec",
+            "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/5462_2.png"
         },
         {
             "systematics": "ntsec",
@@ -24,6 +24,15 @@
             "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5433",
             "UUID": "e3e0cc78e4e1505b971cc45b9c95bb14",
             "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/5433_2.jpg"
+        },
+        {
+            "systematics": "ntsec",
+            "title": "\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5434",
+            "UUID": "5722a7fef6dd56f4b5e8118f5d45e7c0",
+            "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/5434_2.jpg"
         },
         {
             "systematics": "ntsec",
