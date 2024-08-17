@@ -12,31 +12,29 @@ class NCPIParse(ParseInit):
         return self.item.get("title")
 
     def get_date(self, *args, **kwargs) -> str:
-        raw_date_string = self.item.select_one("div.info-box > div.date").get_text()
-        split_date = raw_date_string.split("-")
-        if len(split_date) == 2:
+        raw_date_string = self.item.select_one("div.label >ul > li >span > i.mark").get_text()
+        split_date = raw_date_string.split("~")
+        clean_split_date = [i for i in split_date if i]
+        if len(clean_split_date) == 2:
             start_date, end_date = split_date
-            if len((start_date_data := start_date.split("."))) == 3 and len((end_date_data := end_date.split("."))) == 2:
-                start_date_year = start_date_data[0]
-                end_date = f"{start_date_year}.{end_date.strip()}"
-                raw_date_string = f"{start_date} - {end_date}"
-
-        raw_date_string = raw_date_string.replace("-", "~")
-        raw_date_string = raw_date_string.replace(".", "-")
+            start_date = start_date.strip()
+            end_date = end_date.strip()
+            if (len((start_date_data := start_date.split("-"))) == 3
+                    and len((end_date_data := end_date.split("-"))) == 3
+            ):
+                raw_date_string = f"{start_date} ~ {end_date}"
+        else:
+            raw_date_string = raw_date_string.strip()
+            raw_date_string = raw_date_string.replace("~", "")
         return raw_date_string
 
     def get_address(self, *args, **kwargs) -> str:
-        return self.item.select_one("div.info-box > div.location").get_text()
+        return self.item.select_one("div.place >ul > li >span > i.mark").get_text()
 
     def get_figure(self, *args, **kwargs) -> str:
-        dev_style = self.item.find("div", {"class": "img"}).get("style")
-        style = cssutils.parseStyle(dev_style)
+        img = self.item.find("img")
 
-        return (
-            url.replace("url(", "")[:-1].replace('"', "").replace(' ', "%20")
-            if (url := style["background-image"])
-            else "-"
-        )
+        return img.get("src")
 
     def get_source_url(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
