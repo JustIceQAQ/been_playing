@@ -4,8 +4,8 @@
         "code_name": "ntm",
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
-    "counts": 51,
-    "last_update": "2024-08-17T08:14:58.304601+00:00",
+    "counts": 49,
+    "last_update": "2024-08-17T16:16:34.916766+00:00",
     "data": [
         {
             "systematics": "ntm",
@@ -24,15 +24,6 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40242",
             "UUID": "ae84abaac041513fb7a0e447f1fa8c8a",
             "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/40242/AD/40242_0_0_53915.png"
-        },
-        {
-            "systematics": "ntm",
-            "title": "\u81fa\u535a\u8d77\u6b65\u8d70-\u81fa\u535a\u9928\u6703\u54e1\u5361\u7279\u5225\u6d3b\u52d5",
-            "date": "",
-            "address": "",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40239",
-            "UUID": "b5e4fb6facd5558f820ab1e61aba2c29",
-            "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/40239/AD/40239_0_0_387636.jpg"
         },
         {
             "systematics": "ntm",
@@ -96,6 +87,15 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40188",
             "UUID": "d096485ff02a5f9aae2c13da68151e28",
             "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/40188/AD/40188_0_0_603472.jpg"
+        },
+        {
+            "systematics": "ntm",
+            "title": "Blast to the Past: Walking Tour of Old Taipei \u81fa\u5317\u57ce\u82f1\u8a9e\u6563\u6b65\u5c0e\u89bd",
+            "date": "",
+            "address": "Beimen Post Office",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40236",
+            "UUID": "70d0572f236a551ea0e8ea65b4f55e45",
+            "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/40236/AD/40236_0_0_424501.jpg"
         },
         {
             "systematics": "ntm",
@@ -171,6 +171,15 @@
         },
         {
             "systematics": "ntm",
+            "title": "NOAH\uff5c\u300a\u8afe\u4e9e\u8a08\u756b\u300b\u5be6\u5883\u89e3\u8b0e\u904a\u6232",
+            "date": "",
+            "address": "\u81fa\u535a\u9928\u672c\u9928\u3001\u53e4\u751f\u7269\u9928",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=00110",
+            "UUID": "21b639c9342d5f93ac7f657cad1d91b0",
+            "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/00110/00110.jpg"
+        },
+        {
+            "systematics": "ntm",
             "title": "\u672a\u4f86\u6230\u58eb\u2014\u6c38\u7e8c\u5730\u7403\u74b0\u5883\u7279\u5c55",
             "date": "2024-08-20 ~ 2025-08-31",
             "address": "\u81fa\u535a\u9928\u5357\u9580\u9928",
@@ -182,7 +191,7 @@
             "systematics": "ntm",
             "title": "Weekend\u7684\u79fb\u52d5\u535a\u7269\u9928-\u7530\u5712\u97f3\u6a02\u5bb6(\u5c0f\u8ca2)",
             "date": "2024-08-03 ~ 2024-08-17",
-            "address": "\u81fa\u535a\u9928\u5357\u9580\u9928\uff0d\u5c0f\u767d\u5bae",
+            "address": "",
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=20089",
             "UUID": "90c9cea1ab2f5d96bbdc463a5d5251df",
             "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/20089/20089.jpg"
