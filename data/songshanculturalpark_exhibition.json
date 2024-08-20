@@ -5,8 +5,17 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-08-20T00:56:34.518598+00:00",
+    "last_update": "2024-08-20T08:16:26.236632+00:00",
     "data": [
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u5973\u751f\u65e5\u5e38\u7bc0\u2014\u6211\u7684\u672a\u4f86\u6a02\u5712",
+            "date": "2024-08-24 ~ 2024-08-25",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/3a856983-b5f5-4323-bc96-9d81c4d6f467",
+            "UUID": "25f9594b8c4d58f1b1c07fe6ecbccfcc",
+            "figure": "https://www.songshanculturalpark.org/gallery/1724137950_dd5afe1df7740e6ea0d3.jpg"
+        },
         {
             "systematics": "songshanculturalpark",
             "title": "2024 \u590f\u65e5\u677e\u4e00\u4e0b\u300c Zoom In \u677e\u83f8\u52d5\u7269\u5712\u300d\uff0eSongYan Summer Festival",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/ca8adece-839a-4d87-a263-9e2f87ff649f",
             "UUID": "1b4097e76b5f52eb83dc701256d86acc",
             "figure": "https://www.songshanculturalpark.org/gallery/1723429334_0ec4b961730cf0b54266.jpg"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "SMALL PLANET POP UP STORE\u5c0f\u661f\u5c4b\u5feb\u9583\u5e97\u2015\u5409\u4f0a\u5361\u54c7\u3001\u8c93\u798f\u73ca\u8fea",
-            "date": "2024-08-14 ~ 2024-09-30",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/27f51977-4b40-4d38-bfbd-ca9443fb60c7",
-            "UUID": "412ee356fcbf593fa897e2fa51238de1",
-            "figure": "https://www.songshanculturalpark.org/gallery/1721985135_ac7719698e2bb94e6625.jpg"
         }
     ],
     "visit": {}

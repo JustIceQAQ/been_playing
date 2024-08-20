@@ -4,9 +4,18 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 60,
-    "last_update": "2024-08-20T00:57:00.124721+00:00",
+    "counts": 61,
+    "last_update": "2024-08-20T08:25:29.166034+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "2O24 \u8349\u7387\u5b63 Taipei Art Book Fair",
+            "date": "2024-11-22 ~ 2024-11-24",
+            "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u67712\u56db\u9023\u68df",
+            "source_url": "https://tour.ibon.com.tw/event/66c2a1a2abb2d46895eb099f",
+            "UUID": "414f6537dea753539449c69d8b867a5e",
+            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/51098934-8802-44cc-8b4d-135653a249fe.jpg"
+        },
         {
             "systematics": "ibon",
             "title": "\u611b\u624b\u5275\u570b\u969b\u624b\u4f5c\u8a2d\u8a08\u7bc0 \u767d\u65e5\u5922\u805a\u6a02\u90e8",
@@ -126,7 +135,7 @@
         },
         {
             "systematics": "ibon",
-            "title": "\u76dbSHOT\u5149\u5e74\uff0d2024\u865f\u822a\u73ed \u9152\uff08\u592a\uff09\u7a7a\u8ff7\u822a",
+            "title": "\u76dbSHOT\u5149\u5e74\uff0d2024\u865f\u822a\u73ed\u9152\uff08\u592a\uff09\u7a7a\u8ff7\u822a",
             "date": "2024-09-28 ~ 2024-09-29",
             "address": "\u4e00\u9ede\u7a7a\u9593/RoofOcean/\u99c1\u4e8c\u85dd\u8853\u7279\u5340",
             "source_url": "https://tour.ibon.com.tw/event/66838c2eabdb6b24d59548cf",
@@ -221,7 +230,7 @@
             "address": "\u83ef\u5c711914\u6587\u5275\u5712\u5340\u67712CD\u68df",
             "source_url": "https://tour.ibon.com.tw/event/663c2fff44c8985246f8e792",
             "UUID": "32f3ce563692516ea9c4b0ed8eb742c1",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/1426c85f-c120-4d72-82c8-76cdfe1bae8a.jpg"
+            "figure": "https://i.imgur.com/1UBpiZQ.webp"
         },
         {
             "systematics": "ibon",
@@ -230,7 +239,7 @@
             "address": null,
             "source_url": "https://tour.ibon.com.tw/event/6639c174b84e35178c0e9173",
             "UUID": "37e90e75c5ec5604940b7538db6f994c",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/2ad39148-c105-4673-a481-764ec42b023f.jpg"
+            "figure": "https://i.imgur.com/vwRvPoI.webp"
         },
         {
             "systematics": "ibon",
@@ -239,7 +248,7 @@
             "address": "\u83ef\u5c711914\u6587\u5275\u5712\u5340\u67712CD\u68df",
             "source_url": "https://tour.ibon.com.tw/event/662f36d25ba3dd6b729a7216",
             "UUID": "df650912325c5a4fb214a85a1df97522",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/be9e83ae-7c5b-40c9-9a64-f8d59059b387.jpg"
+            "figure": "https://i.imgur.com/rNB9JTo.webp"
         },
         {
             "systematics": "ibon",
@@ -248,7 +257,7 @@
             "address": "\u83ef\u5c711914\u6587\u5275\u5712\u5340\u67712CD\u68df",
             "source_url": "https://tour.ibon.com.tw/event/662af820f4b82849a3fb015f",
             "UUID": "98304e5cb936574b8c19ee1b73e5c5df",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/faf87f67-e4d5-446e-8e44-49cfa8f8671d.jpg"
+            "figure": "https://i.imgur.com/IStf7id.webp"
         },
         {
             "systematics": "ibon",
@@ -257,7 +266,7 @@
             "address": "\u5c4f\u83f81936\u6587\u5316\u57fa\u573010\u865f\u5009\u5eab",
             "source_url": "https://tour.ibon.com.tw/event/6627196dd1b94a2173849441",
             "UUID": "c5a4d05d5d985d48841b4b7bb52a5384",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/3dfd3a92-426f-4f9d-95f3-e25a5d58bda2.jpg"
+            "figure": "https://i.imgur.com/8kmTOzY.webp"
         },
         {
             "systematics": "ibon",
@@ -266,7 +275,7 @@
             "address": "\u570b\u7acb\u81fa\u7063\u79d1\u5b78\u6559\u80b2\u99287\u6a13\u5357\u5074\u7279\u5c55\u5340",
             "source_url": "https://tour.ibon.com.tw/event/6625c6cfd1b94a2173846bcb",
             "UUID": "72e7d12d77fd582aa48d13619513ea88",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/1ebe7b8f-6639-464f-ba68-98ff4428fa58.jpg"
+            "figure": "https://i.imgur.com/y9qGWrN.webp"
         },
         {
             "systematics": "ibon",
@@ -275,7 +284,7 @@
             "address": "\u9ad8\u96c4\u5e02\u7acb\u7f8e\u8853\u9928",
             "source_url": "https://tour.ibon.com.tw/event/661ccfa8c41db10ebb4ce006",
             "UUID": "a97e1b97468f5c378ae65b0056ce71ab",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/165df524-5af3-4e5d-b3ee-d0d1e64122f7.jpeg"
+            "figure": "https://i.imgur.com/qe6rr8S.webp"
         },
         {
             "systematics": "ibon",
@@ -284,7 +293,7 @@
             "address": "\u570b\u7acb\u81fa\u7063\u79d1\u5b78\u6559\u80b2\u9928 7F\u897f\u5074",
             "source_url": "https://tour.ibon.com.tw/event/6617785c72063c471d4575e3",
             "UUID": "370f5e643e7b5a7e937bde4a263df220",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/422b6283-5033-4c15-ac98-6f9eb78994d3.jpeg"
+            "figure": "https://i.imgur.com/7tVNYzF.webp"
         },
         {
             "systematics": "ibon",
@@ -293,7 +302,7 @@
             "address": "\u83ef\u5c711914\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u4e2d4B",
             "source_url": "https://tour.ibon.com.tw/event/6614e92524534b65772da2c1",
             "UUID": "96ff2976690851c2b58eef4f982eeb63",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/47d8c706-5b9b-47d7-bf4e-b2c58a461bb8.jpg"
+            "figure": "https://i.imgur.com/3oX4FLV.webp"
         },
         {
             "systematics": "ibon",
@@ -302,7 +311,7 @@
             "address": "\u9752\u7530\u85dd\u96c6 Art Reading Cafe",
             "source_url": "https://tour.ibon.com.tw/event/660ab1c172063c471d43a4e6",
             "UUID": "b9ffe5f501cc544a847d944383547c9e",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/b6462c9a-3a11-47fa-82fa-273eafbb27a2.jpg"
+            "figure": "https://i.imgur.com/yet8zvu.webp"
         },
         {
             "systematics": "ibon",
@@ -311,7 +320,7 @@
             "address": "\u81fa\u5357\u5e02\u7f8e\u8853\u9928 1\u9928\uff062\u9928",
             "source_url": "https://tour.ibon.com.tw/event/660a2dba26c57037e85892b2",
             "UUID": "fcaea3f29812515ba80fd15a527f83bc",
-            "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/97f663fe-d543-4581-9072-69364eaa6f06.07"
+            "figure": "https://i.imgur.com/pTXtn34.webp"
         },
         {
             "systematics": "ibon",
