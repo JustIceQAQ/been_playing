@@ -4,9 +4,18 @@
         "code_name": "tickets_books",
         "external_link": "https://tickets.books.com.tw/leisure/"
     },
-    "counts": 9,
-    "last_update": "2024-08-20T08:16:28.267004+00:00",
+    "counts": 10,
+    "last_update": "2024-08-21T01:05:35.850969+00:00",
     "data": [
+        {
+            "systematics": "tickets_books",
+            "title": "\u611b\u624b\u5275\u570b\u969b\u624b\u4f5c\u8a2d\u8a08\u7bc0 \u767d\u65e5\u5922\u805a",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010801156552",
+            "UUID": "bf5a5626dcaf55fc9b7e773116b1844c",
+            "figure": "https://i.imgur.com/fAnQBUQ.webp"
+        },
         {
             "systematics": "tickets_books",
             "title": "2024 \u96c6\u82f1\u793e \u6c88\u6d78\u5f0f\u6f2b\u756b\u5149\u5f71\u5c55",
@@ -14,7 +23,7 @@
             "address": "-",
             "source_url": "https://tickets.books.com.tw/progshow/08010201902440",
             "UUID": "7ddf72f6f9d45074b536c11ad08b4f01",
-            "figure": "https://addons.books.com.tw/G/0/08010201902440/08010201902440.gif"
+            "figure": "https://i.imgur.com/Dkd3quY.webp"
         },
         {
             "systematics": "tickets_books",
@@ -23,7 +32,7 @@
             "address": "-",
             "source_url": "https://tickets.books.com.tw/progshow/08010901592679",
             "UUID": "594131e4080155f6a1255a76ff0823c0",
-            "figure": "https://addons.books.com.tw/G/9/08010901592679/08010901592679.gif"
+            "figure": "https://i.imgur.com/HiFZfkg.webp"
         },
         {
             "systematics": "tickets_books",
@@ -32,7 +41,7 @@
             "address": "-",
             "source_url": "https://tickets.books.com.tw/progshow/08010201302374",
             "UUID": "78848a5e5d1d52ad93d046523c0d5790",
-            "figure": "https://addons.books.com.tw/G/4/08010201302374/08010201302374.gif"
+            "figure": "https://i.imgur.com/MxmMEy3.webp"
         },
         {
             "systematics": "tickets_books",
