@@ -67,7 +67,7 @@ class KKDayRunner(RunnerInit):
 
         _, product_count = self.format_init_state(first_response)
         if product_count is not None:
-            loop_number = (product_count // 10) + (product_count % 10)+1
+            loop_number = (product_count // 10) + 2
             for i in range(2, loop_number, 1):
                 this_url = self.get_this_url(i)
                 other_response = requests_worker.get_page(this_url).get_response(sleep_secs=10)
