@@ -5,8 +5,17 @@
         "external_link": "https://www.ntsec.gov.tw/article/list.aspx?a=25"
     },
     "counts": 7,
-    "last_update": "2024-08-30T00:58:56.438861+00:00",
+    "last_update": "2024-08-30T08:16:41.236662+00:00",
     "data": [
+        {
+            "systematics": "ntsec",
+            "title": "\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5434",
+            "UUID": "5722a7fef6dd56f4b5e8118f5d45e7c0",
+            "figure": "https://i.imgur.com/0m6Fgoz.webp"
+        },
         {
             "systematics": "ntsec",
             "title": "\u300a\u672b\u65e5\u5b78\u6821\u300b\u7279\u5c55",
@@ -24,15 +33,6 @@
             "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5433",
             "UUID": "e3e0cc78e4e1505b971cc45b9c95bb14",
             "figure": "https://i.imgur.com/SsnZUsW.webp"
-        },
-        {
-            "systematics": "ntsec",
-            "title": "\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5434",
-            "UUID": "5722a7fef6dd56f4b5e8118f5d45e7c0",
-            "figure": "https://i.imgur.com/0m6Fgoz.webp"
         },
         {
             "systematics": "ntsec",
