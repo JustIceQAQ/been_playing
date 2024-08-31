@@ -51,14 +51,21 @@ class TWTCCrawler:
             return parsed_response
         return None
 
-    def run(self):
+    def run(self) -> Optional[bool]:
         first_time_run_result = self.first_time_run_case()
+        if first_time_run_result is None:
+            return None
         self.response_set.append(first_time_run_result)
 
-        year = first_time_run_result.find("select", {"id": "body_ddlYear", }).find("option", {"selected": "selected"})
+        year = (
+            first_time_run_result
+            .find("select", {"id": "body_ddlYear", })
+            .find("option", {"selected": "selected"})
+        )
         year_selected = int(year["value"])
         runtime_options = first_time_run_result.find("select", {"id": "body_ddlMoth", }).find("option", selected=True)
         next_options = [item for item in runtime_options.next_siblings if isinstance(item, Tag)]
         for option in next_options:
             second_time_run_result = self.second_time_run_case(year_selected, int(option["value"]))
             self.response_set.append(second_time_run_result)
+        return True
