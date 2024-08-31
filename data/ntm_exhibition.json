@@ -4,8 +4,8 @@
         "code_name": "ntm",
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
-    "counts": 50,
-    "last_update": "2024-08-31T08:16:34.718284+00:00",
+    "counts": 48,
+    "last_update": "2024-08-31T16:14:56.060912+00:00",
     "data": [
         {
             "systematics": "ntm",
@@ -15,15 +15,6 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40250",
             "UUID": "c263f263fa295450b980f1fe237afec6",
             "figure": "https://i.imgur.com/fk3NPNu.webp"
-        },
-        {
-            "systematics": "ntm",
-            "title": "\u300c\u505a\u4f19\u8995\u76f8\u63e3\u300d\u53f0\u8a9e\u590f\u4ee4\u71df",
-            "date": "",
-            "address": "",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40245",
-            "UUID": "3f92e566486c5c9f88311e389b840ac8",
-            "figure": "https://i.imgur.com/numzKtC.webp"
         },
         {
             "systematics": "ntm",
@@ -96,6 +87,15 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40236",
             "UUID": "70d0572f236a551ea0e8ea65b4f55e45",
             "figure": "https://i.imgur.com/pCBDJXs.webp"
+        },
+        {
+            "systematics": "ntm",
+            "title": "Guided Tours in Multiple Languages \u535a\u7269\u9928\u591a\u8a9e\u5c0e\u89bd\u6d3b\u52d5",
+            "date": "",
+            "address": "NTM Main Building",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=30012",
+            "UUID": "b23a52cd3b835961b784ba8718bac04b",
+            "figure": "https://i.imgur.com/z5OJiPs.webp"
         },
         {
             "systematics": "ntm",
@@ -279,15 +279,6 @@
         },
         {
             "systematics": "ntm",
-            "title": "4\u215a\u5947\u5e7b\u535a\u7269\u9928",
-            "date": "",
-            "address": "",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=30132",
-            "UUID": "3e4c42b267465a2ab4980226df793b7a",
-            "figure": "https://i.imgur.com/780cmDG.webp"
-        },
-        {
-            "systematics": "ntm",
             "title": "\u81fa\u535a\u5b88\u8b77\u7cbe\u9748\u5c08\u5c6c\u6d3b\u52d5",
             "date": "",
             "address": "",
@@ -303,15 +294,6 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=12160",
             "UUID": "1a08a79ce41d5b118e28c468a11e97a6",
             "figure": "https://i.imgur.com/qejpjZ1.webp"
-        },
-        {
-            "systematics": "ntm",
-            "title": "\u300c\u6f02\u9ce5\u96c6\u2014\u81fa\u7063\u5019\u9ce5\u5c55\u300d\u5c08\u6848\u5c0e\u89bd-8\u6708\u5834\u6b21",
-            "date": "",
-            "address": "",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40243",
-            "UUID": "b7e71364edb35bb6b00ec58acc081f68",
-            "figure": "https://i.imgur.com/YhiNvck.webp"
         }
     ],
     "visit": {
