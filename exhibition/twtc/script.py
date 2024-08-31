@@ -28,7 +28,9 @@ class TWTCRunner(RunnerInit):
     def get_response(self, *args, **kwargs):
         responses = TWTCCrawler(self.target_url)
         responses.run()
-        return responses.response_set
+        if responses:
+            return responses.response_set
+        return []
 
     def get_items(self, responses):
         return sum([response.select("#home > div > table > tbody > tr") for response in responses], [])
