@@ -4,8 +4,450 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 0,
-    "last_update": "2024-09-02T01:00:08.263095+00:00",
-    "data": [],
+    "counts": 63,
+    "last_update": "2024-09-02T08:18:44.934121+00:00",
+    "data": [
+        {
+            "systematics": "twtc",
+            "title": "2024\u53f0\u5317\u570b\u969b\u6236\u5916\u4f11\u9592\u904b\u52d5\u7528\u54c1\u5c55",
+            "date": "2024-06-28 ~ 2024-07-01",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.top-link.com.tw",
+            "UUID": "08ecca6fe2d151488a2066c6a3f7225c",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u53f0\u7063\u570b\u969b\u5275\u610f\u6587\u5177\u5c55\u3001\u7b2c19\u5c46\u53f0\u7063\u6587\u5177\u5c55\u793a\u6703\u30012024\u53f0\u5317\u8a2d\u8a08\u73a9\u5275\u610f\u5c55",
+            "date": "2024-06-28 ~ 2024-07-01",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://music-fair.top-link.com.tw/home",
+            "UUID": "df4e8f56db745dc29b360f35f41831e6",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u5c55\u662d\u53f0\u5317\u5bf5\u7269\u7528\u54c1\u5c55-\u7d93\u5178\u5834",
+            "date": "2024-07-05 ~ 2024-07-08",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "https://www.chanchao.com.tw/petsshow/taipei/",
+            "UUID": "a037e25af9115819b94b02a7af1e30c3",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u5317\u9032\u53e3\u5167\u92b7\u5bb6\u5177\u5927\u5c55",
+            "date": "2024-07-05 ~ 2024-07-08",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://paulchan-furniture-expo.com/tapei_furniture",
+            "UUID": "55967d1e214559f4bc84f83cd88c9f35",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c37\u5c46\u53f0\u5317\u570b\u969b\u5a66\u5e7c(\u5b55\u3001\u5b30\u3001\u7ae5)\u7528\u54c1\u5c55(\u590f\u5b63\u5c55)\u3001\u53f0\u5317\u5b30\u5e7c\u5152\u8207\u5b55MOMMY\u7528\u54c1\u5c55(\u590f\u5b63\u5c55)\u3001\u53f0\u5317\u570b\u969b\u5152\u7ae5\u66f8\u5c55/\u53f0\u5317\u57ce\u5e02\u66f8\u5c55",
+            "date": "2024-07-05 ~ 2024-07-08",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.kje.com.tw",
+            "UUID": "c0a631e78d1f57a99917df4c5d94af9e",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u79cb\u51ac\u5b63\u53f0\u5317\u978b\u5c55",
+            "date": "2024-07-16 ~ 2024-07-19",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=20671",
+            "UUID": "b29ffb4f53c45e6a86e7e533952fc021",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "FUN!\u55dc100",
+            "date": "2024-07-19 ~ 2024-07-21",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.hobbynfun.com.tw",
+            "UUID": "8ea807cf27745adfafa2f89f136fac81",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u5e74\u7b2c\u56db\u5c46\u53f0\u5317\u570b\u969b\u5a1b\u6a02\u6578\u4f4d\u5167\u5bb9\u6574\u5408\u5c55\u30012024\u5e74\u7b2c\u516d\u5c46\u53f0\u7063\u570b\u969b\u96fb\u73a9\u96fb\u7af6\u7522\u696d\u5c55\u30012024\u7b2c\u56db\u5c46\u53f0\u7063\u570b\u969b\u865b\u64ec/\u64f4\u589e\u5be6\u5883\u61c9\u7528\u5c55",
+            "date": "2024-07-25 ~ 2024-07-29",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://gamerscon.kje-event.com.tw/",
+            "UUID": "5ce8ca8b6a6a5fc5acdede97bfab7372",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u4e9e\u6d32\u7f8e\u5bb9\u4fdd\u990a\u751f\u6280\u4fdd\u5065\u5927\u5c55/2024\u4e9e\u6d32\u751f\u6280\u5927\u5c55",
+            "date": "2024-07-25 ~ 2024-07-28",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "https://expo.bioasiataiwan.com/",
+            "UUID": "84bcc8a3cced53cf825f471012ff885b",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u7b2c23\u5c46\u6f2b\u756b\u535a\u89bd\u6703\u30012024\u5e74\u7b2c\u516b\u5c46\u53f0\u5317\u570b\u969b\u96fb\u5f71\u73a9\u5177\u66a8\u73a9\u5177\u5275\u4f5c\u5927\u5c55",
+            "date": "2024-07-25 ~ 2024-07-29",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.ccpa.org.tw/tica",
+            "UUID": "06a7c8de1c945a33b7b60b23419a8204",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c\u4e00\u5c46\u9ad8\u9f61\u79d1\u6280\u5c55",
+            "date": "2024-08-02 ~ 2024-08-04",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://ibmi.taiwan-healthcare.org/",
+            "UUID": "85ef2fcd382a52ba9fa7f67e9169b4e3",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u53f0\u7063\u7f8e\u98df\u5c55",
+            "date": "2024-08-02 ~ 2024-08-05",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.tcetva.tw/",
+            "UUID": "15349603267f599cba640de1e71375e8",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u4e9e\u592a\u6c38\u7e8c\u535a\u89bd\u6703",
+            "date": "2024-08-08 ~ 2024-08-10",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://www.sdgs-asia.com.tw/",
+            "UUID": "b4a7fb4dfca85b6f846d210725fc31be",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u53f0\u5317\u570b\u969b\u7cbe\u7dfb\u9152\u5c55-\u590f\u5b63\u5c55",
+            "date": "2024-08-16 ~ 2024-08-19",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://wine-fair.top-link.com.tw/",
+            "UUID": "9a6660a58d645a4eb938c5d0c2c41d10",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u53f0\u5317\u570b\u969b\u81ea\u52d5\u5316\u5de5\u696d\u5927\u5c55/\u81fa\u7063\u6a5f\u5668\u4eba\u8207\u667a\u6167\u81ea\u52d5\u5316\u5c55/\u53f0\u7063\u570b\u969b\u96fb\u6c60\u96fb\u80fd\u6a21\u7d44\u66a8\u96fb\u52d5\u8f09\u5177\u7cfb\u7d71\u6574\u5408\u5c55",
+            "date": "2024-08-21 ~ 2024-08-24",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "https://www.chanchao.com.tw/IntelligentAsia/",
+            "UUID": "4927d65c97d25268a10c983afb0c9f22",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u570b\u969b\u534a\u5c0e\u9ad4\u5c55",
+            "date": "2024-09-04 ~ 2024-09-06",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
+            "source_url": "http://www.semicontaiwan.org/zh/",
+            "UUID": "87d613828b9a58618621f994c7c861cf",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u53f0\u5317\u570b\u969b\u5ba4\u5167\u8a2d\u8a08\u5bb6\u5177\u540d\u5e8a\u5927\u5c55\u66a8\u5c45\u5bb6\u5275\u610f\u7528\u54c1\u5c55",
+            "date": "2024-09-06 ~ 2024-09-09",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.oaas.org.tw",
+            "UUID": "6760f0bc4a125a8f9352aabd1737816d",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u5e74\u81fa\u7063\u667a\u6167\u8fb2\u696d\u9031\u66a82024\u5e74\u81fa\u7063\u570b\u969b\u6f01\u696d\u7522\u696d\u5c55",
+            "date": "2024-09-11 ~ 2024-09-13",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.taiwanagriweek.com",
+            "UUID": "1e771839841f51eba78e1600f2f6fe2c",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u570b\u969b\u6c34\u9031",
+            "date": "2024-09-11 ~ 2024-09-13",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.taiwanintlwaterweek.com",
+            "UUID": "b738c1639de350cd9e7aa121ac1ea2da",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c\u4e94\u5c46\u53f0\u5317\u570b\u969b\u7167\u9867\u535a\u89bd\u6703",
+            "date": "2024-09-12 ~ 2024-09-14",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.ankecareexpo.com",
+            "UUID": "c03e510c05a550c9a8883611da222ef2",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u81fa\u7063\u91e3\u5177\u535a\u89bd\u6703",
+            "date": "2024-09-13 ~ 2024-09-15",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://tfta.org.tw/",
+            "UUID": "093451d1c00554d49f2e9ff9f4ad9c51",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u53f0\u5317\u570b\u969b\u9023\u9396\u52a0\u76df\u5927\u5c55\uff0d\u79cb\u5b63\u5c55",
+            "date": "2024-09-20 ~ 2024-09-23",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.taiwanfranchise.org/",
+            "UUID": "233e423d253b5a66b3f849694bd4fd43",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u8077\u6daf\u535a\u89bd\u6703",
+            "date": "2024-09-21 ~ 2024-09-21",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://www.cakeresume.com/",
+            "UUID": "04d96770644059599ec6b5b4c7b9251f",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u5317\u570b\u969b\u5851\u6a61\u81a0\u5de5\u696d\u5c55\u53ca\u53f0\u5317\u570b\u969b\u88fd\u978b\u6a5f\u68b0\u5c55",
+            "date": "2024-09-24 ~ 2024-09-28",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.taipeiplas.com.tw",
+            "UUID": "bb30288193ce53569717c8fbf9bd7fcf",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u7b2c34\u5c46\u79cb\u5b63\u570b\u969b\u7f8e\u5bb9\u4fdd\u990a\u5c55\u30012024\u7f8e\u7532\u7f8e\u776b\u535a\u89bd\u6703",
+            "date": "2024-09-27 ~ 2024-09-30",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://expo.udn.com/",
+            "UUID": "a83fc404c9aa5f54adc7343c45a022e7",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c25\u5c46\u65b0\u4e16\u7d00\u5bb6\u5177\u7cbe\u54c1\u5927\u5c55",
+            "date": "2024-09-27 ~ 2024-09-30",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.ifpr.com.tw",
+            "UUID": "6de9e92576b650e8a33a7acbabbd0600",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c\u4e94\u5c46\u53f0\u5317\u570b\u969b\u79cb\u5b63\u65c5\u5c55\u3001\u53f0\u7063\u4f34\u624b\u79ae\u66a8\u89c0\u5149\u7279\u7522\u5c55",
+            "date": "2024-09-27 ~ 2024-09-30",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.kje.com.tw/",
+            "UUID": "38b859e033c155bb921a6e6ce7cb559f",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u570b\u969b\u667a\u6167\u80fd\u6e90\u9031\u8207\u53f0\u7063\u570b\u969b\u6de8\u96f6\u6c38\u7e8c\u5c55",
+            "date": "2024-10-02 ~ 2024-10-04",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
+            "source_url": "http://www.energytaiwan.com.tw",
+            "UUID": "f1894230d80657ac9f9e8fdafe1a4123",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "TIGAX24 \u53f0\u5317\u570b\u969b\u5370\u5237\u6a5f\u6750\u5c55",
+            "date": "2024-10-03 ~ 2024-10-06",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://www.tigax.com.tw/zh-tw/index.html",
+            "UUID": "1592055cf7e5538da4eae511dd0bd2ef",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u53f0\u5317\u651d\u9304\u5f71\u5668\u6750\u66a8\u5f71\u97f3\u5275\u4f5c\u8a2d\u5099\u5c55\u30012024\u53f0\u7063\u6236\u5916\u7528\u54c1\u5c55/2024\u5c55\u662d\u4e16\u754c\u8c93\u54aa\u535a\u89bd\u6703",
+            "date": "2024-10-04 ~ 2024-10-07",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "https://www.chanchao.com.tw/digital/",
+            "UUID": "c9f777646f1257f0b592ef555c858381",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "OH! Study \u6d77\u5916\u7559\u904a\u5b78\u6559\u80b2\u5c55",
+            "date": "2024-10-05 ~ 2024-10-06",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=20668",
+            "UUID": "bb0ab8f9b55c5d7e87f019fbdcd0f7b0",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u5e74\u53f0\u5317\u7d21\u7e54\u5c55",
+            "date": "2024-10-15 ~ 2024-10-17",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.titas.tw",
+            "UUID": "2edc1694288259e191a5a3c0761b98a1",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u5275\u65b0\u6280\u8853\u535a\u89bd\u6703",
+            "date": "2024-10-17 ~ 2024-10-19",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.inventaipei.com.tw",
+            "UUID": "9d8cc339ee7554c1b35686bd6630d1a8",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u5317\u570b\u969b\u96fb\u5b50\u7522\u696d\u79d1\u6280\u5c55\u3001\u53f0\u7063\u570b\u969b\u4eba\u5de5\u667a\u6167\u66a8\u7269\u806f\u7db2\u5c55",
+            "date": "2024-10-23 ~ 2024-10-25",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.taitronics.tw",
+            "UUID": "2205c55f3cc5568dbe7299f91bc7f219",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u96fb\u8def\u677f\u7522\u696d\u570b\u969b\u5c55\u89bd\u6703(\u53f0\u7063\u96fb\u5b50\u7d44\u88dd\u570b\u969b\u5c55\u89bd\u6703\u3001\u53f0\u7063\u7da0\u8272\u79d1\u6280\u570b\u969b\u5c55\u89bd\u6703\u3001\u53f0\u7063\u71b1\u7ba1\u7406\u6280\u8853\u570b\u969b\u5c55\u89bd\u6703\u3001\u53f0\u7063\u69cb\u88dd\u570b\u969b\u5c55\u89bd\u6703)",
+            "date": "2024-10-23 ~ 2024-10-25",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.tpcashow.com",
+            "UUID": "5329f6ea155e5f6eb885ba5ba5dedd75",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "ART TAIPEI 2024 \u53f0\u5317\u570b\u969b\u85dd\u8853\u535a\u89bd\u6703",
+            "date": "2024-10-25 ~ 2024-10-28",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.art-taipei.com",
+            "UUID": "d679ee3890db5847add8806cd7a3039b",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024 ITF\u53f0\u5317\u570b\u969b\u65c5\u5c55",
+            "date": "2024-11-01 ~ 2024-11-04",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.taipeiitf.org.tw/",
+            "UUID": "171ca48e43dc5830b4cb6eab553d5eb2",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u53f0\u5317\u91d1\u878d\u79d1\u6280\u5c55",
+            "date": "2024-11-01 ~ 2024-11-02",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://www.fintechtaipei.tw/",
+            "UUID": "ba473f160de25372b2e686e1a409f784",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u5e74\u96fb\u5668\u7a7a\u8abf\u5f71\u97f3\u5927\u5c55",
+            "date": "2024-11-01 ~ 2024-11-04",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.teca.org.tw",
+            "UUID": "c36b63175f6054068389d2ff2f4acfa3",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u53f0\u7063\u570b\u969b\u8ecd\u4e8b\u6236\u5916\u73a9\u5177\u69cd\u7528\u54c1\u5c55",
+            "date": "2024-11-08 ~ 2024-11-10",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=24068",
+            "UUID": "bd276584e79e5697a8a2b6a486461073",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u4e9e\u592a\u570b\u969b\u7259\u79d1\u5668\u6750\u5546\u696d\u7d44\u7e54\u5e74\u5ea6\u5927\u6703",
+            "date": "2024-11-09 ~ 2024-11-10",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=24190",
+            "UUID": "1afbc0c0bfb654a798c0348c33b14a5d",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "113\u8cc7\u8a0a\u6708",
+            "date": "2024-11-14 ~ 2024-11-17",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://\u8cc7\u8a0a\u6708.tw",
+            "UUID": "0d46e920628f5739b672d7c99f40aeee",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u81fa\u7063\u6559\u80b2\u79d1\u6280\u5c55",
+            "date": "2024-11-14 ~ 2024-11-17",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "http://www.edtech.tw/",
+            "UUID": "598d1484050c50fba66437eb2ec5bce8",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u53f0\u7063\u570b\u969b\u98df\u54c1\u66a8\u8a2d\u5099\u5c55\u30012024\u53f0\u7063\u8336\u8449\u535a\u89bd\u6703\u30012024\u53f0\u5317\u570b\u969b\u9152\u5c55\u30012024\u53f0\u7063\u570b\u969b\u5496\u5561\u5c55",
+            "date": "2024-11-15 ~ 2024-11-18",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "https://www.chanchao.com.tw/taiwandrinks/",
+            "UUID": "c6ff8d29fc7d50d6abd893bfa62793c1",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u53f0\u7063\u91ab\u7642\u79d1\u6280\u5c55",
+            "date": "2024-12-05 ~ 2024-12-08",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "https://expo.taiwan-healthcare.org",
+            "UUID": "17987d4167a551a0b3d8e8be6a4b22f6",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2025\u6625\u590f\u5b63\u53f0\u5317\u978b\u5c55",
+            "date": "2024-12-10 ~ 2024-12-13",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=20672",
+            "UUID": "8c90f44a566354ccaf6bbd35161c2b54",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u7b2c36\u5c46\u53f0\u5317\u570b\u969b\u5efa\u7bc9\u5efa\u6750\u66a8\u7522\u54c1\u5c55",
+            "date": "2024-12-12 ~ 2024-12-15",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "https://www.taipeibex.com.tw",
+            "UUID": "3586976c1d28576481a479b6fac01f1d",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u690d\u65b9\u5e02\u96c6",
+            "date": "2024-12-13 ~ 2024-12-15",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=25372",
+            "UUID": "81da8a3f0c02546487ca29d4434998d0",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u842c\u4ee3\u5361\u724c\u5609\u5e74\u83ef",
+            "date": "2024-12-21 ~ 2024-12-22",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://www.gokids.com.tw/",
+            "UUID": "7e2c4a0e7b8859d2b5a74a7ce7026861",
+            "figure": ""
+        }
+    ],
     "visit": {}
 }
