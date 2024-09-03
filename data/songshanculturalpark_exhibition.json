@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-09-03T08:16:19.389082+00:00",
+    "last_update": "2024-09-03T16:16:38.033904+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -24,6 +24,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/757e4366-eb9c-4bf5-b199-c41487afb885",
             "UUID": "12395859bbf65c68b44561cd12b4cc7a",
             "figure": "https://i.imgur.com/VMx1o3N.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "ASUS ZenBAR Zenbeam L2 \u5df4\u6d1b\u514b\u82b1\u5712\u653e\u6620\u5ef3",
+            "date": "2024-09-06 ~ 2024-09-08",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/b9f55f92-f061-482b-9603-a24a65606540",
+            "UUID": "6eb380af3bcc53b6ba745f1244872fd2",
+            "figure": "https://i.imgur.com/d7xJTgD.webp"
         },
         {
             "systematics": "songshanculturalpark",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/f3c8e5b7-cd5d-4167-92a7-2694707644c5",
             "UUID": "caa3243cb1185e1b98ef7a814398f749",
             "figure": "https://i.imgur.com/oMGbSpa.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "BIRKENSTOCK 250\u5468\u5e74\u7279\u5c55",
-            "date": "2024-08-15 ~ 2024-09-08",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/4b9a0d77-ce8e-46c1-82e8-706f6a4f5152",
-            "UUID": "3015a339d6a75c20bcc871d2d3a71414",
-            "figure": "https://i.imgur.com/2aKyI3r.webp"
         }
     ],
     "visit": {}
