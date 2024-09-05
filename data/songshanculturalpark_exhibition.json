@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-09-05T08:16:40.924309+00:00",
+    "last_update": "2024-09-05T16:15:50.487138+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -108,15 +108,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "iF \u8a2d\u8a08\u884c\u65c5 | 2024 \u5e74 iF \u8a2d\u8a08\u734e\u7372\u734e\u4f5c\u54c1\u5c55 (III)",
-            "date": "2024-08-06 ~ 2024-09-05",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/1167eb07-8f87-4afd-943b-1f448a44acba",
-            "UUID": "1114daa770245f8f81217603174f599d",
-            "figure": "https://i.imgur.com/7SO1DEZ.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "\u8b8a\u8207\u4e0d\u8b8a\u7684\u6d41\u52d5-\u53f0\u5317\u57ce\u5e02\u666f\u89c0\u7f8e\u5b78\u5c55",
             "date": "2024-08-13 ~ 2024-11-24",
             "address": "-",
@@ -141,6 +132,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/f3c8e5b7-cd5d-4167-92a7-2694707644c5",
             "UUID": "caa3243cb1185e1b98ef7a814398f749",
             "figure": "https://i.imgur.com/oMGbSpa.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "BIRKENSTOCK 250\u5468\u5e74\u7279\u5c55",
+            "date": "2024-08-15 ~ 2024-09-08",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/4b9a0d77-ce8e-46c1-82e8-706f6a4f5152",
+            "UUID": "3015a339d6a75c20bcc871d2d3a71414",
+            "figure": "https://i.imgur.com/2aKyI3r.webp"
         }
     ],
     "visit": {}
