@@ -5,17 +5,8 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 63,
-    "last_update": "2024-09-10T16:16:02.138466+00:00",
+    "last_update": "2024-09-11T00:59:31.690588+00:00",
     "data": [
-        {
-            "systematics": "twtc",
-            "title": "2024\u53f0\u7063\u570b\u969b\u5275\u610f\u6587\u5177\u5c55\u3001\u7b2c19\u5c46\u53f0\u7063\u6587\u5177\u5c55\u793a\u6703\u30012024\u53f0\u5317\u8a2d\u8a08\u73a9\u5275\u610f\u5c55",
-            "date": "2024-06-28 ~ 2024-07-01",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "https://music-fair.top-link.com.tw/home",
-            "UUID": "df4e8f56db745dc29b360f35f41831e6",
-            "figure": ""
-        },
         {
             "systematics": "twtc",
             "title": "\u7b2c25\u5c46\u53f0\u5317\u570b\u969b\u96fb\u8166\u591a\u5a92\u9ad4\u5c55\u3001\u7b2c22\u5c46\u53f0\u5317\u570b\u969b\u6578\u4f4d\u5f71\u97f3\u5bb6\u96fb\u5c55",
@@ -23,6 +14,15 @@
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "http://www.top-link.com.tw",
             "UUID": "08ecca6fe2d151488a2066c6a3f7225c",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u53f0\u7063\u570b\u969b\u5275\u610f\u6587\u5177\u5c55\u3001\u7b2c19\u5c46\u53f0\u7063\u6587\u5177\u5c55\u793a\u6703\u30012024\u53f0\u5317\u8a2d\u8a08\u73a9\u5275\u610f\u5c55",
+            "date": "2024-06-28 ~ 2024-07-01",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://music-fair.top-link.com.tw/home",
+            "UUID": "df4e8f56db745dc29b360f35f41831e6",
             "figure": ""
         },
         {
@@ -162,20 +162,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "2024\u5e74\u81fa\u7063\u667a\u6167\u8fb2\u696d\u9031\u66a82024\u5e74\u81fa\u7063\u570b\u969b\u6f01\u696d\u7522\u696d\u5c55",
-            "date": "2024-09-11 ~ 2024-09-13",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "http://www.taiwanagriweek.com",
-            "UUID": "1e771839841f51eba78e1600f2f6fe2c",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u53f0\u7063\u570b\u969b\u6c34\u9031",
             "date": "2024-09-11 ~ 2024-09-13",
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "http://www.taiwanintlwaterweek.com",
             "UUID": "b738c1639de350cd9e7aa121ac1ea2da",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u5e74\u81fa\u7063\u667a\u6167\u8fb2\u696d\u9031\u66a82024\u5e74\u81fa\u7063\u570b\u969b\u6f01\u696d\u7522\u696d\u5c55",
+            "date": "2024-09-11 ~ 2024-09-13",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "http://www.taiwanagriweek.com",
+            "UUID": "1e771839841f51eba78e1600f2f6fe2c",
             "figure": ""
         },
         {
