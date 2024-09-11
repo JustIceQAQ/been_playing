@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 44,
-    "last_update": "2024-09-11T08:17:19.544934+00:00",
+    "counts": 45,
+    "last_update": "2024-09-11T16:16:19.082805+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u5178\u85cf\u958b\u5377\uff1a\u65e5\u6cbb\u6642\u671f\u5beb\u771f\u5e16\u4e2d\u7684\u81fa\u7063",
+            "date": "2024-09-05~2025-01-05",
+            "address": "\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101026384-2024-collection-unveiled/",
+            "UUID": "aedb4236314a51f98d37dca902be84df",
+            "figure": "https://res.klook.com/image/upload/x_35,y_0,w_541,h_758,c_crop/w_360,q_85/v1726048478/events_admin/eteetmca94oczji9krnh.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u7d66\u6211\u4e00\u76de\u8336\u7684\u6642\u9593\uff1a\u651d\u5f71\u5bb6\u666e\u840a\u65af\u8207\u4ed6\u7684\u300a\u5317\u798f\u723e\u6469\u6c99\u7684\u56de\u61b6\u300b - \u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3\u7dda\u4e0a\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026044-2024-kitan-club-toy-exhibition/",
             "UUID": "49b972e5fd325630b950030ec99abe93",
-            "figure": "https://i.imgur.com/DMDl9WW.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "\u7dda\u4e0a\u5c55\u89bd",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025295-2024-captivating-times/",
             "UUID": "df680739f10c503db8abb2f4e8d127d7",
-            "figure": "-"
+            "figure": "https://i.imgur.com/Qe4bXWI.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101024386-2024-gabriel-orozco-exhibition/",
             "UUID": "e372209841aa5d2ea365b86ad2ac991a",
-            "figure": "https://i.imgur.com/7Nq9047.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
