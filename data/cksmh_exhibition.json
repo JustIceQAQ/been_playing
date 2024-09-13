@@ -4,8 +4,8 @@
         "code_name": "cksmh",
         "external_link": "https://www.cksmh.gov.tw/activitysoonlist_369.html"
     },
-    "counts": 6,
-    "last_update": "2024-09-12T16:15:16.216793+00:00",
+    "counts": 7,
+    "last_update": "2024-09-13T01:00:03.972864+00:00",
     "data": [
         {
             "systematics": "cksmh",
@@ -60,6 +60,15 @@
             "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=41032",
             "UUID": "ee7cce2f39245ea8b7312dd87e1da971",
             "figure": "https://i.imgur.com/AlJxEem.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "2024\u4e2d\u83ef\u4e5d\u4e5d\u66f8\u756b\u6703\u7532\u8fb0\u5e74\u5275\u4f5c\u734e\u66a8\u6703\u54e1\u806f\u5c55\uff08\u514d\u8cbb\u53c3\u89c0\uff09",
+            "date": "2024-09-21 ~ 2024-10-01",
+            "address": "\u5730\u9ede\uff1a2\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=41033",
+            "UUID": "d2501f19eb195aa0a1e77a9b24d0c8c8",
+            "figure": "https://i.imgur.com/bhtZwLx.webp"
         }
     ],
     "visit": {}
