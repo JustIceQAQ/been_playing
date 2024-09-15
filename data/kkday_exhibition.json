@@ -5,17 +5,8 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 60,
-    "last_update": "2024-09-15T08:16:47.914601+00:00",
+    "last_update": "2024-09-15T16:15:53.617455+00:00",
     "data": [
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u8d85\u4eba\u529b\u9738\u738b\u82f1\u96c4\u5c55",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/172202",
-            "UUID": "870e237d63f75f73a077cfc823598fdc",
-            "figure": "https://i.imgur.com/JtFgI2c.webp"
-        },
         {
             "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u68b5\u8c37:\u5c0b\u5149\u4e4b\u8def\u7279\u5c55",
@@ -54,12 +45,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u6703\u52d5\u7684\u6e05\u660e\u4e0a\u6cb3\u5716\u9580\u7968",
+            "title": "\u53f0\u5317|\u9054\u6587\u897f\u9ad4\u9a57\u5c55 \u2014 \u8d85\u8d8a500\u5e74\u7684\u8f1d\u714c",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/166612",
-            "UUID": "a9f7a5df411758959bab6558b00f8842",
-            "figure": "https://i.imgur.com/kUF0VGK.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/179908-taipei-da-vinci-experience-exhibition-500-years-of-genius",
+            "UUID": "af5f3cd584c950b5b38a7da259a9e665",
+            "figure": "https://i.imgur.com/V8LpGLN.webp"
         },
         {
             "systematics": "KKDay",
@@ -72,15 +63,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317|\u9054\u6587\u897f\u9ad4\u9a57\u5c55 \u2014 \u8d85\u8d8a500\u5e74\u7684\u8f1d\u714c",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/179908-taipei-da-vinci-experience-exhibition-500-years-of-genius",
-            "UUID": "af5f3cd584c950b5b38a7da259a9e665",
-            "figure": "https://i.imgur.com/V8LpGLN.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317|\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55|\u5c55\u89bd\u9580\u7968",
             "date": "",
             "address": "",
@@ -90,12 +72,30 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u602a\u7378\u8207\u5927\u81ea\u7136\u7684\u5947\u5e7b\u4e16\u754c",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/181273",
+            "UUID": "1fd6a9fb861d5aa09cde0d32e9048ba3",
+            "figure": "https://i.imgur.com/j20Swx3.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u53f0\u5317|\u8896\u73cd\u535a\u7269\u9928\u96fb\u5b50\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/30573-miniatures-museum-of-taiwan-ticket-taipei",
             "UUID": "ec92ba2eff5952b6ad80c8e82f8b6728",
             "figure": "https://i.imgur.com/7OXpENS.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u5531\u6211\u5011\u7684\u6b4c\u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55\u9580\u7968|\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3\u5c55\u89bd",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/137251-sing-our-songs-music-island-stories-pop-music-exhibition-tickets-taipei",
+            "UUID": "0ea3d03dde465435af4c8d5e787c0700",
+            "figure": "https://i.imgur.com/HtUAqmX.webp"
         }
     ],
     "visit": {}
