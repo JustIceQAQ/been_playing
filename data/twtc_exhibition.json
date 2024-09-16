@@ -4,8 +4,8 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 63,
-    "last_update": "2024-09-16T01:03:52.271032+00:00",
+    "counts": 64,
+    "last_update": "2024-09-16T08:18:56.412167+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -320,6 +320,15 @@
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.tpcashow.com",
             "UUID": "5329f6ea155e5f6eb885ba5ba5dedd75",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u4e94\u91d1\u5c55\u3001\u53f0\u7063\u91d1\u5c6c\u6750\u6599\u66a8\u7cbe\u5bc6\u52a0\u5de5\u8a2d\u5099\u5c55",
+            "date": "2024-10-23 ~ 2024-10-25",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
+            "source_url": "https://www.hardwareshow.com.tw/home/Main_cht.asp",
+            "UUID": "ac592d6bf314592a824b5f2ff1645954",
             "figure": ""
         },
         {
