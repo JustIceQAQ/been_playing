@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 41,
-    "last_update": "2024-09-19T08:19:21.559636+00:00",
+    "counts": 42,
+    "last_update": "2024-09-19T16:16:33.060198+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u77f3\u9edb\u56e0\u4f9d - \u5468\u5bb8\u500b\u5c55",
+            "date": "2024-10-19~2024-12-24",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101026472-2024-cyan-black-fusion/",
+            "UUID": "ad8c9d3062e8565f87e2eba617dda4c1",
+            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1726737825/events_admin/jsfq7lekwmgeou9s5iju.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u3010\u8d77\u521d\u3001\u6df7\u6c8c\u3001\u78b0\u649e\u3011\u9673\u76ca\u6751\u5275\u4f5c\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026225-2024-taipei-toy-festival/",
             "UUID": "3b1cbfa3fbf957d7adeaf7f7d0b3224d",
-            "figure": "https://i.imgur.com/ssL933m.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025121-2024-meet-you-here-exhibition/",
             "UUID": "75a45df9ba3055d98d99956cafebe439",
-            "figure": "-"
+            "figure": "https://i.imgur.com/pbK561F.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/114371-bologna-illustration-exhibition/",
             "UUID": "5a355028d42e579780be93ed3aaf30a7",
-            "figure": "https://i.imgur.com/fLwuqCy.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
