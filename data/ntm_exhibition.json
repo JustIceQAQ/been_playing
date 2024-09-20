@@ -5,8 +5,17 @@
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
     "counts": 49,
-    "last_update": "2024-09-20T08:17:18.878283+00:00",
+    "last_update": "2024-09-20T16:16:06.033161+00:00",
     "data": [
+        {
+            "systematics": "ntm",
+            "title": "\u9cf4\u87f2\u6587\u5316\u8207\u79d1\u5b78\u7279\u5c55",
+            "date": "",
+            "address": "\u81fa\u535a\u9928\u672c\u9928",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40259",
+            "UUID": "4b04067d6aab5992b27ff73be61742ed",
+            "figure": "https://i.imgur.com/RrH72GK.webp"
+        },
         {
             "systematics": "ntm",
             "title": "2024\u881f\u67d3\u85dd\u8853\u7bc0-\u881f\u67d3\u8207\u5357\u5cf6\u7e54\u54c1-\u5a46\u7f85\u6d32Sasirangan",
@@ -90,15 +99,6 @@
         },
         {
             "systematics": "ntm",
-            "title": "Recruitment for International Docents 2024 Autumn",
-            "date": "",
-            "address": "",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40188",
-            "UUID": "d096485ff02a5f9aae2c13da68151e28",
-            "figure": "https://i.imgur.com/xDbJDB2.webp"
-        },
-        {
-            "systematics": "ntm",
             "title": "\u3010\u5730\u7403you & me\u3011\u6050\u9f8d\u77f3\u5149\u8de1",
             "date": "",
             "address": "\u81fa\u535a\u9928\u53e4\u751f\u7269\u9928 \u9be8\u8c5a\u5e73\u53f0",
@@ -110,7 +110,7 @@
             "systematics": "ntm",
             "title": "\u3010\u5730\u7403you & me\u3011\u9be8\u5947\u77f3\u5149\u8de1",
             "date": "",
-            "address": "",
+            "address": "\u81fa\u535a\u9928\u53e4\u751f\u7269\u9928 \u9be8\u8c5a\u5e73\u53f0",
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=12139",
             "UUID": "224220074164565d8bcf8b4ddcfcdcf9",
             "figure": "https://i.imgur.com/YaxLlIf.webp"
@@ -172,7 +172,7 @@
         {
             "systematics": "ntm",
             "title": "Weekend\u7684\u79fb\u52d5\u535a\u7269\u9928-\u7530\u5712\u97f3\u6a02\u5bb6(\u5c0f\u8ca2)",
-            "date": "2024-08-03 ~ 2024-08-17",
+            "date": "2024-10-13",
             "address": "",
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=20089",
             "UUID": "90c9cea1ab2f5d96bbdc463a5d5251df",
