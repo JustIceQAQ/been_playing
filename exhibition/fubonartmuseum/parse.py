@@ -1,8 +1,6 @@
 import datetime
-import re
 
 import bs4
-import cssutils
 
 from helper.parse_helper import ParseInit
 
@@ -84,4 +82,4 @@ class FuBonArtMuseumParse(ParseInit):
 
     def get_source_url(self, *args, **kwargs) -> str:
         a = self.item.find("a", {"class": "fb-exhibition-card"})
-        return f"https://www.fubonartmuseum.org/{a['href']}"
+        return f"https://www.fubonartmuseum.org{a['href']}"

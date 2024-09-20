@@ -43,7 +43,7 @@ PY_CLASS_SCRIPT = {
     TWTCRunner,
     NTCArtMuseumRunner,
     TicketsBooksRunner,
-    TicketsUdnFunLifeRunner,
+    # TicketsUdnFunLifeRunner,
     KLookRunner,
     KKTixRunner,
     IBonRunner,

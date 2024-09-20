@@ -11,12 +11,12 @@ class TMCParse(ParseInit):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str:
-        return self.item.find("p", {"class": "m-event-card__box-title"}).get_text()
+        return self.item.get("title")
 
     def get_date(self, *args, **kwargs) -> str:
         raw_date_string = self.item.find(
-            "p", {"class": "m-event-card__box-bottom-date"}
-        ).get_text()
+            "span", {"class": "date"}
+        ).get_text().strip()
 
         raw_date_string = raw_date_string.replace("-", "~")
 
@@ -27,21 +27,12 @@ class TMCParse(ParseInit):
     def get_address(self, *args, **kwargs) -> str:
         return self.safe_get_text(
             self.item.find(
-                "p", {"class": "m-event-card__box-bottom-location"}
-            )
+                "span", {"class": "location"}
+            ).get_text()
         )
 
     def get_figure(self, *args, **kwargs) -> str:
-        return self.item.find("div", {"class": "m-event-card__img"})["data-bg"]
+        return self.item.find("img").get("src")
 
     def get_source_url(self, *args, **kwargs) -> str:
-        o_archive_frame__item_wrap = self.item.find(
-            "div", {"class": "o-archive-frame__item-wrap"}
-        )
-        if this_a := o_archive_frame__item_wrap.find("a", {"class": "m-event-card"}):
-            return this_a.get("href", "")
-        else:
-            data_session = o_archive_frame__item_wrap["data-session"]
-            data_session_json = json.loads(data_session)
-            link = data_session_json[-1].get("link")
-        return link
+        return self.item.get("href")
