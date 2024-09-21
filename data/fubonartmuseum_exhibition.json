@@ -5,7 +5,7 @@
         "external_link": "https://www.fubonartmuseum.org/Default"
     },
     "counts": 3,
-    "last_update": "2024-09-20T19:02:54.288757+00:00",
+    "last_update": "2024-09-21T00:59:46.269909+00:00",
     "data": [
         {
             "systematics": "FuBonArtMuseum",
@@ -14,7 +14,7 @@
             "address": "\u5bcc\u90a6\u7f8e\u8853\u9928-1\u6a13 \u6c34\u666f\u5c55\u5ef3",
             "source_url": "https://www.fubonartmuseum.org/ExhibitionDetail?PKNO=X007Q5U3",
             "UUID": "0d83f6c3c36f5ff699e9ebb19d5a99b4",
-            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007Q5U3/Cover/\u65b0\u5bae\u6649\uff3f\u5b98\u7db2BN_598\u00d7598px.png"
+            "figure": "https://i.imgur.com/r8JmZG2.webp"
         },
         {
             "systematics": "FuBonArtMuseum",
@@ -23,7 +23,7 @@
             "address": "\u5bcc\u90a6\u7f8e\u8853\u9928-3\u6a13 \u65e5\u5149\u5c55\u5ef3",
             "source_url": "https://www.fubonartmuseum.org/ExhibitionDetail?PKNO=X007NBYX",
             "UUID": "60a3af3b604a5cafad3b85760bafaae6",
-            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007NBYX/Cover/\u5c55\u89bdBN_589x589px.jpg"
+            "figure": "https://i.imgur.com/i9VDmcU.webp"
         },
         {
             "systematics": "FuBonArtMuseum",
@@ -32,7 +32,7 @@
             "address": "\u5bcc\u90a6\u7f8e\u8853\u9928-1\u6a13 \u6c34\u666f\u5c55\u5ef3",
             "source_url": "https://www.fubonartmuseum.org/ExhibitionDetail?PKNO=X007HPYU",
             "UUID": "4c0f3139afc150ec8bdb7f712c23d3a6",
-            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007HPYU/Cover/\u4e3b\u8996\u89ba4.jpg"
+            "figure": "https://i.imgur.com/xSm9tQl.webp"
         }
     ],
     "visit": {}
