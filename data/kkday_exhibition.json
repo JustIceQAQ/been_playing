@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 60,
-    "last_update": "2024-09-22T08:15:31.350261+00:00",
+    "last_update": "2024-09-22T16:14:35.452237+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -54,24 +54,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317|\u6ce2\u9686\u90a3\u4e16\u754c\u63d2\u756b\u5927\u734e\u5c55|\u5c55\u89bd\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/115138",
-            "UUID": "bf21f8fe10c25cf688af2331002e7be6",
-            "figure": "https://i.imgur.com/NPamvzA.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u5531\u6211\u5011\u7684\u6b4c\u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55\u9580\u7968|\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3\u5c55\u89bd",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/137251-sing-our-songs-music-island-stories-pop-music-exhibition-tickets-taipei",
-            "UUID": "0ea3d03dde465435af4c8d5e787c0700",
-            "figure": "https://i.imgur.com/HtUAqmX.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u301068\u6298\u512a\u60e0\u3011\u53f0\u5317|\u5929\u6587\u9928\u30fb\u79d1\u5b78\u6559\u80b2\u9928\u30fb\u5152\u7ae5\u65b0\u6a02\u5712|\u4e8c\u9928\u806f\u7968\u30fb\u4e09\u9928\u806f\u7968",
             "date": "",
             "address": "",
@@ -90,12 +72,30 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u5531\u6211\u5011\u7684\u6b4c\u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55\u9580\u7968|\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3\u5c55\u89bd",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/137251-sing-our-songs-music-island-stories-pop-music-exhibition-tickets-taipei",
+            "UUID": "0ea3d03dde465435af4c8d5e787c0700",
+            "figure": "https://i.imgur.com/HtUAqmX.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u602a\u7378\u8207\u5927\u81ea\u7136\u7684\u5947\u5e7b\u4e16\u754c",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/181273",
             "UUID": "1fd6a9fb861d5aa09cde0d32e9048ba3",
             "figure": "https://i.imgur.com/j20Swx3.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u65b0\u5317|\u5341\u4e09\u884c\u535a\u7269\u9928\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/128289",
+            "UUID": "39790675a68053bdb7a6b732f7a8cff8",
+            "figure": "https://i.imgur.com/OiqItVw.webp"
         }
     ],
     "visit": {}

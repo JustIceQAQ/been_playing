@@ -4,8 +4,8 @@
         "code_name": "ntm",
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
-    "counts": 49,
-    "last_update": "2024-09-22T08:15:28.277664+00:00",
+    "counts": 48,
+    "last_update": "2024-09-22T16:14:30.319594+00:00",
     "data": [
         {
             "systematics": "ntm",
@@ -42,15 +42,6 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40253",
             "UUID": "51c862f4da14562da47863d98becdbd9",
             "figure": "https://i.imgur.com/HchDK37.webp"
-        },
-        {
-            "systematics": "ntm",
-            "title": "2024\u5e74\u5168\u570b\u53e4\u8e5f\u65e5\u300c\u53e4\u8e5f\u9b25\u9663\u884c\uff01\u300d",
-            "date": "",
-            "address": "",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40250",
-            "UUID": "c263f263fa295450b980f1fe237afec6",
-            "figure": "https://i.imgur.com/fk3NPNu.webp"
         },
         {
             "systematics": "ntm",
@@ -96,6 +87,15 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40220",
             "UUID": "52be7655a1855df5ac4ec39304b26c04",
             "figure": "https://i.imgur.com/kpmKaMQ.webp"
+        },
+        {
+            "systematics": "ntm",
+            "title": "Recruitment for International Docents 2024 Autumn",
+            "date": "",
+            "address": "",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40188",
+            "UUID": "d096485ff02a5f9aae2c13da68151e28",
+            "figure": "https://i.imgur.com/xDbJDB2.webp"
         },
         {
             "systematics": "ntm",
@@ -153,6 +153,15 @@
         },
         {
             "systematics": "ntm",
+            "title": "\u81fa\u535a\u6578\u4f4d\u5c0e\u89bdAPP \u5c0e\u89bd\u5728\u7dda \u77e5\u8b58\u7121\u9650",
+            "date": "",
+            "address": "\u7dda\u4e0a\u4e0b\u8f09",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=12199",
+            "UUID": "1d14be52f6395931a1f0883d6907f0ec",
+            "figure": "https://i.imgur.com/6iUkFYg.webp"
+        },
+        {
+            "systematics": "ntm",
             "title": "\u300cweekend\u7684\u79fb\u52d5\u535a\u7269\u9928\u300d-\u7530\u5712\u85dd\u8853\u5bb6(\u5c0f\u74e2)",
             "date": "2024-09-21 ~ 2024-09-22",
             "address": "\u81fa\u535a\u9928\u5357\u9580\u9928",
@@ -186,15 +195,6 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=30101",
             "UUID": "5d41b54fe983515a84971f7281ba2acd",
             "figure": "https://i.imgur.com/CeNf2bP.webp"
-        },
-        {
-            "systematics": "ntm",
-            "title": "\u81fa\u535a\u6578\u4f4d\u5c0e\u89bdAPP \u5c0e\u89bd\u5728\u7dda \u77e5\u8b58\u7121\u9650",
-            "date": "2021-07-27 ~ 2024-12-31",
-            "address": "\u7dda\u4e0a\u4e0b\u8f09",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=12199",
-            "UUID": "1d14be52f6395931a1f0883d6907f0ec",
-            "figure": "https://i.imgur.com/6iUkFYg.webp"
         },
         {
             "systematics": "ntm",
