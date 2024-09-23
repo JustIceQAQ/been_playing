@@ -4,9 +4,27 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 38,
-    "last_update": "2024-09-23T01:03:11.007439+00:00",
+    "counts": 41,
+    "last_update": "2024-09-23T08:18:09.371205+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u300aBE@RBRICK \u4e16\u754c\u5de1\u5c553\u2500\u2500 \u53f0\u5317\u7ad9\u300b",
+            "date": "2024-10-12~2024-11-10",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/activity/131797-be-rbrick-world-tour-3-taipei/",
+            "UUID": "6c46ad54990952259ef3f177584c7d6c",
+            "figure": "https://res.klook.com/image/upload/w_360,q_85/20240913-WWT3_Ticket_Platform-02_KKLOOK_326x460_fbeqwj.jpg"
+        },
+        {
+            "systematics": "klook",
+            "title": "2024\u53f0\u7063\u97d3\u570b\u7559\u5b78\u535a\u89bd\u6703",
+            "date": "2024-11-24",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101026459-2024-study-in-korea-expo/",
+            "UUID": "9b3cc4753ce850289e7b35baa6ee7286",
+            "figure": "https://res.klook.com/image/upload/x_0,y_2,w_326,h_456,c_crop/w_360,q_85/v1726649701/events_admin/l5vdnin54ltkddj70fmq.jpg"
+        },
         {
             "systematics": "klook",
             "title": "\u4e94\u8c61\u4e4b\u5883\uff1a\u98a8\u666f\u7e6a\u756b\u7684\u5f62\u8207\u610f",
@@ -77,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026207-2024-time-for-a-cup-of-tea/",
             "UUID": "ac76d49034215d1d99b18330258158c4",
-            "figure": "https://i.imgur.com/1M9Ilqw.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -86,7 +104,7 @@
             "address": "\u66fe\u4ee4\u7406 x \u5076\u7136\u8a2d\u8a08",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026257-2024-freedom-blooms-into-dance/",
             "UUID": "0404b91b744b599abe6e9a194a006578",
-            "figure": "https://i.imgur.com/6DcE0Tw.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -212,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025121-2024-meet-you-here-exhibition/",
             "UUID": "75a45df9ba3055d98d99956cafebe439",
-            "figure": "-"
+            "figure": "https://i.imgur.com/pbK561F.webp"
         },
         {
             "systematics": "klook",
@@ -221,7 +239,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/116484-fantastic-beasts-the-wonder-of-nature/",
             "UUID": "8da0e09a63c9583fb9c2d20bb1461710",
-            "figure": "-"
+            "figure": "https://i.imgur.com/QPFkZ1e.webp"
         },
         {
             "systematics": "klook",
@@ -293,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/97385-taipei-international-audio-show/",
             "UUID": "b4f0f7b75fa5586c9e6b70a379378960",
-            "figure": "https://res.klook.com/image/upload/w_360,q_85/1212\u53f0\u5317\u5713\u5c71\u97f3\u97ff\u5c55KLOOK_BN_326x460_fhjv5e.jpg"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -302,7 +320,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/87261-ishands-international-craft-design-festival/",
             "UUID": "ecb1f21a58605fbb8702a2878cab67cb",
-            "figure": "https://i.imgur.com/H8j2LxE.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -347,6 +365,15 @@
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/activity/70429-music-island-stories-pop-music-in-taiwan-taipei/",
             "UUID": "dde6739eefe25fe9aae6270e758d7acd",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "2024 \u7b2c\u4e03\u5c46 \u53f0\u5317\u63d2\u756b\u85dd\u8853\u7bc0",
+            "date": "2024-12-06~2024-12-08",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/activity/65492-taipei-illustration-fair-tickets/",
+            "UUID": "569c851255ce5c64981edd50e8300b0c",
             "figure": "-"
         }
     ],
