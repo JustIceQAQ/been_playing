@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 41,
-    "last_update": "2024-09-24T08:19:03.817000+00:00",
+    "counts": 42,
+    "last_update": "2024-09-24T16:17:18.021298+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u8cc7\u81ea\u901a\u9451 \u856d\u4e00\u51e12024\u66f8\u756b\u5c55",
+            "date": "2024-10-01~2024-10-13",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101026429-2024-art-exhibition/",
+            "UUID": "19f46866fb205da1943e144a89a1ab40",
+            "figure": "https://i.imgur.com/KB9LIcM.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u300aBE@RBRICK \u4e16\u754c\u5de1\u5c553\u2500\u2500 \u53f0\u5317\u7ad9\u300b",
@@ -86,7 +95,7 @@
             "address": "\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026384-2024-collection-unveiled/",
             "UUID": "aedb4236314a51f98d37dca902be84df",
-            "figure": "https://i.imgur.com/6cj83fQ.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "\u7dda\u4e0a\u5c55\u89bd",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025295-2024-captivating-times/",
             "UUID": "df680739f10c503db8abb2f4e8d127d7",
-            "figure": "-"
+            "figure": "https://i.imgur.com/Qe4bXWI.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022906-2024-outing-exhibition/",
             "UUID": "e229db2f09a55307b2f2f64f09c7b6b8",
-            "figure": "https://i.imgur.com/T4jBAuS.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
