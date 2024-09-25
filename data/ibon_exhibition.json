@@ -4,9 +4,18 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 48,
-    "last_update": "2024-09-25T01:03:38.252519+00:00",
+    "counts": 50,
+    "last_update": "2024-09-25T08:19:04.812089+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "WORLD BARBER CLASSIC\u6d69\u4e16\u8056\u5178\u53f0\u7063\u9078\u62d4\u8cfd",
+            "date": "2024-11-18 ~ 2024-11-18",
+            "address": "\u4e2d\u5f71\u516b\u5fb7\u6f14\u8b1b\u5ef3",
+            "source_url": "https://tour.ibon.com.tw/event/66f0c0f312e312544d56482d",
+            "UUID": "689c40cda62a5446ab64ff748b17378d",
+            "figure": "https://i.imgur.com/l4Khjqi.webp"
+        },
         {
             "systematics": "ibon",
             "title": "2024\u53f0\u4e2d\u570b\u969b\u5169\u68f2\u722c\u87f2\u76db\u5178",
@@ -51,6 +60,15 @@
             "source_url": "https://tour.ibon.com.tw/event/66cab5dd1e761a6762143329",
             "UUID": "630b663d99315e2482d6f031e060fd6d",
             "figure": "https://i.imgur.com/0uWSp3K.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "2024\u5922\u6642\u4ee3BABY\u660e\u661f\u904b\u52d5\u6703\uff0dHallmark\u602a\u7378\u6d3e\u5c0d",
+            "date": "2024-10-26 ~ 2024-10-27",
+            "address": "\u9ad8\u96c4\u5e02\u5922\u6642\u4ee3\u8cfc\u7269\u4e2d\u5fc3 8F\u6642\u4ee3\u6703\u9928",
+            "source_url": "https://tour.ibon.com.tw/event/66c867bf6c2d623a336eab7e",
+            "UUID": "2d82d0303ea15e1f8a08cec863081a83",
+            "figure": "https://i.imgur.com/4HDVxoL.webp"
         },
         {
             "systematics": "ibon",
