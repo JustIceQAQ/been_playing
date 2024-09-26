@@ -93,7 +93,7 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
     NCPI = (
         "國家攝影文化中心",
         "ncpi",
-        "https://ncpiexhibition.ntmofa.gov.tw/tw/Exhibition/ListCur",
+        "https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?n=8006&sms=15632",
     )
     NTCArtMuseum = (
         "新北市美術館",
