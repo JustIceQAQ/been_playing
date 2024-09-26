@@ -25,7 +25,7 @@ class NCPIParse(ParseInit):
                 raw_date_string = f"{start_date} ~ {end_date}"
         else:
             raw_date_string = raw_date_string.strip()
-            raw_date_string = raw_date_string.replace("~", "")
+            raw_date_string = f"{raw_date_string} ~" if split_date[1] == "" else raw_date_string
         return raw_date_string
 
     def get_address(self, *args, **kwargs) -> str:
