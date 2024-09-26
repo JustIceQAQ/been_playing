@@ -63,7 +63,7 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
     TMC = (
         "台北流行音樂中心",
         "tmc",
-        "https://tmc.taipei/show/event/",
+        "https://www.tmc.taipei/tw/lastest-event",
     )
     NMH = (
         "國立歷史博物館",
