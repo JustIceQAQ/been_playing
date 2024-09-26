@@ -14,18 +14,17 @@ class NCPIParse(ParseInit):
     def get_date(self, *args, **kwargs) -> str:
         raw_date_string = self.item.select_one("div.label >ul > li >span > i.mark").get_text()
         split_date = raw_date_string.split("~")
-        clean_split_date = [i for i in split_date if i]
-        if len(clean_split_date) == 2:
+        if len(split_date) == 2:
             start_date, end_date = split_date
-            start_date = start_date.strip()
-            end_date = end_date.strip()
-            if (len((start_date_data := start_date.split("-"))) == 3
-                    and len((end_date_data := end_date.split("-"))) == 3
-            ):
-                raw_date_string = f"{start_date} ~ {end_date}"
+            if end_date == "":
+                raw_date_string = raw_date_string.strip()
+            else:
+                start_date = start_date.strip()
+                end_date = end_date.strip()
+                if len(start_date.split("-")) == 3 and len(end_date.split("-")) == 3:
+                    raw_date_string = f"{start_date} ~ {end_date}"
         else:
             raw_date_string = raw_date_string.strip()
-            raw_date_string = f"{raw_date_string} ~" if split_date[1] == "" else raw_date_string
         return raw_date_string
 
     def get_address(self, *args, **kwargs) -> str:
