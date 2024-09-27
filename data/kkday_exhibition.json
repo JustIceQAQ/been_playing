@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 60,
-    "last_update": "2024-09-26T16:16:42.379031+00:00",
+    "last_update": "2024-09-27T01:02:41.534536+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -42,6 +42,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/179908-taipei-da-vinci-experience-exhibition-500-years-of-genius",
             "UUID": "af5f3cd584c950b5b38a7da259a9e665",
             "figure": "https://i.imgur.com/V8LpGLN.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u300aBE@RBRICK \u4e16\u754c\u5de1\u5c553\u2500\u2500 \u53f0\u5317\u7ad9\u300b",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/249780",
+            "UUID": "f1a38ed20d20530cbd3856577774947c",
+            "figure": "https://i.imgur.com/pArvnvL.webp"
         },
         {
             "systematics": "KKDay",
@@ -87,15 +96,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/137251-sing-our-songs-music-island-stories-pop-music-exhibition-tickets-taipei",
             "UUID": "0ea3d03dde465435af4c8d5e787c0700",
             "figure": "https://i.imgur.com/HtUAqmX.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u300aBE@RBRICK \u4e16\u754c\u5de1\u5c553\u2500\u2500 \u53f0\u5317\u7ad9\u300b",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/249780",
-            "UUID": "f1a38ed20d20530cbd3856577774947c",
-            "figure": "https://i.imgur.com/pArvnvL.webp"
         }
     ],
     "visit": {}
