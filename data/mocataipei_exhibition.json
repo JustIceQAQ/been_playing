@@ -5,8 +5,26 @@
         "external_link": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent"
     },
     "counts": 5,
-    "last_update": "2024-09-27T08:17:28.950934+00:00",
+    "last_update": "2024-09-27T16:16:00.754500+00:00",
     "data": [
+        {
+            "systematics": "mocataipei",
+            "title": "Beta\uff0b",
+            "date": "2024-09-28 ~ 2024-12-29",
+            "address": "-",
+            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/Beta\uff0b",
+            "UUID": "d968f3fd24aa5815b1fb4b7063099a8a",
+            "figure": "https://i.imgur.com/jPKeKqh.webp"
+        },
+        {
+            "systematics": "mocataipei",
+            "title": "\u71b1\u5f71\u50cf",
+            "date": "2024-09-28 ~ 2024-12-29",
+            "address": "-",
+            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u71b1\u5f71\u50cf",
+            "UUID": "a456d20bb3ca5f8c86c16c9714d96d23",
+            "figure": "https://i.imgur.com/KrG55gJ.webp"
+        },
         {
             "systematics": "mocataipei",
             "title": "\u4e00\u5e74\u8a08\u5283\u300c\u5ddd\u5802\u300d",
@@ -33,24 +51,6 @@
             "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u8857\u89d2\u7684\u5229\u606f",
             "UUID": "d23d0920c808542d8ba7c06c77df04a2",
             "figure": "https://i.imgur.com/bR1fAph.webp"
-        },
-        {
-            "systematics": "mocataipei",
-            "title": "Beta\uff0b",
-            "date": "2024-09-28 ~ 2024-12-29",
-            "address": "-",
-            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/Beta\uff0b",
-            "UUID": "d968f3fd24aa5815b1fb4b7063099a8a",
-            "figure": "https://i.imgur.com/jPKeKqh.webp"
-        },
-        {
-            "systematics": "mocataipei",
-            "title": "\u71b1\u5f71\u50cf",
-            "date": "2024-09-28 ~ 2024-12-29",
-            "address": "-",
-            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u71b1\u5f71\u50cf",
-            "UUID": "a456d20bb3ca5f8c86c16c9714d96d23",
-            "figure": "https://i.imgur.com/KrG55gJ.webp"
         }
     ],
     "visit": {
