@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://www.tmc.taipei/tw/lastest-event"
     },
-    "counts": 13,
-    "last_update": "2024-09-29T01:10:45.921776+00:00",
+    "counts": 14,
+    "last_update": "2024-09-29T08:16:39.430158+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -90,6 +90,15 @@
         },
         {
             "systematics": "tmc",
+            "title": "\u7b2c\u4e00\u5c46 FANTACO \u9b54\u5e7b\u85dd\u8853\u7bc0",
+            "date": "2024-11-30 ~ 2024-12-01",
+            "address": "\u6236\u5916\u8868\u6f14\u7a7a\u9593",
+            "source_url": "https://www.tmc.taipei/tw/fantaco2024",
+            "UUID": "76e6347a46ae55d4bf43573875ea3afb",
+            "figure": "https://i.imgur.com/vPUgEsc.webp"
+        },
+        {
+            "systematics": "tmc",
             "title": "milet Asia Tour 2024 in Taipei",
             "date": "2024-11-30 ~ 2024-12-01",
             "address": "\u8868\u6f14\u5ef3",
@@ -110,7 +119,7 @@
             "systematics": "tmc",
             "title": "TAEYANG 2024 TOUR [THE LIGHT YEAR] IN TAIPEI",
             "date": "2024-12-14",
-            "address": "",
+            "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/tw/TAEYANG2024TOUR",
             "UUID": "ffe18919872b571c9d33e9808d85481c",
             "figure": "https://i.imgur.com/0HDNnF1.webp"
