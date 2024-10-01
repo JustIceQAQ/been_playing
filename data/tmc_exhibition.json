@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://www.tmc.taipei/tw/lastest-event"
     },
-    "counts": 12,
-    "last_update": "2024-10-01T08:18:02.625464+00:00",
+    "counts": 13,
+    "last_update": "2024-10-01T16:16:56.556031+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -78,6 +78,15 @@
             "source_url": "https://www.tmc.taipei/tw/blog-show-Disney-Princess-the-Concert1114-1115",
             "UUID": "2ac6bcee168253b8895bfca1146a362c",
             "figure": "https://i.imgur.com/LheExnR.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u7b2c\u4e00\u5c46 FANTACO \u9b54\u5e7b\u85dd\u8853\u7bc0",
+            "date": "2024-11-30 ~ 2024-12-01",
+            "address": "\u6236\u5916\u8868\u6f14\u7a7a\u9593",
+            "source_url": "https://www.tmc.taipei/tw/fantaco2024",
+            "UUID": "76e6347a46ae55d4bf43573875ea3afb",
+            "figure": "https://i.imgur.com/vPUgEsc.webp"
         },
         {
             "systematics": "tmc",
