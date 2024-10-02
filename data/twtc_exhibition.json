@@ -5,17 +5,8 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 27,
-    "last_update": "2024-10-01T16:17:14.145811+00:00",
+    "last_update": "2024-10-02T01:02:47.228547+00:00",
     "data": [
-        {
-            "systematics": "twtc",
-            "title": "\u53f0\u7063\u570b\u969b\u667a\u6167\u80fd\u6e90\u9031\u8207\u53f0\u7063\u570b\u969b\u6de8\u96f6\u6c38\u7e8c\u5c55",
-            "date": "2024-10-02 ~ 2024-10-04",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
-            "source_url": "http://www.energytaiwan.com.tw",
-            "UUID": "f1894230d80657ac9f9e8fdafe1a4123",
-            "figure": ""
-        },
         {
             "systematics": "twtc",
             "title": "TIGAX24 \u53f0\u5317\u570b\u969b\u5370\u5237\u6a5f\u6750\u5c55",
@@ -23,6 +14,15 @@
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "https://www.tigax.com.tw/zh-tw/index.html",
             "UUID": "1592055cf7e5538da4eae511dd0bd2ef",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u53f0\u7063\u570b\u969b\u667a\u6167\u80fd\u6e90\u9031\u8207\u53f0\u7063\u570b\u969b\u6de8\u96f6\u6c38\u7e8c\u5c55",
+            "date": "2024-10-03 ~ 2024-10-05",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
+            "source_url": "http://www.energytaiwan.com.tw",
+            "UUID": "f1894230d80657ac9f9e8fdafe1a4123",
             "figure": ""
         },
         {
