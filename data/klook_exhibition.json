@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 47,
-    "last_update": "2024-10-04T08:23:07.835584+00:00",
+    "counts": 48,
+    "last_update": "2024-10-04T16:18:19.579508+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "mirror mirror - \u7a0b\u4e88\u5e0c\u500b\u5c55",
+            "date": "2024-10-25~2024-11-08",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101026700-2024-lyan-chen-exhibition/",
+            "UUID": "ca63fe6d90a25cf0b86f03048d9cc6f0",
+            "figure": "https://i.imgur.com/uYfXEpq.webp"
+        },
         {
             "systematics": "klook",
             "title": "Art Aquarium(\u91d1\u9b5a\u85dd\u8853\u5c55) in Taipei",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026572-2024-taipei-art-exhibition/",
             "UUID": "b4f4cfc0ce12533a92fb35f9d02beb0a",
-            "figure": "https://i.imgur.com/UturmNd.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026150-2024-chuang-tsung-husn/",
             "UUID": "d945ce1e93595402bdef3574933bf092",
-            "figure": "-"
+            "figure": "https://i.imgur.com/oiFMebY.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025121-2024-meet-you-here-exhibition/",
             "UUID": "75a45df9ba3055d98d99956cafebe439",
-            "figure": "https://i.imgur.com/pbK561F.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
