@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 50,
-    "last_update": "2024-10-05T08:16:40.467043+00:00",
+    "counts": 48,
+    "last_update": "2024-10-05T16:15:50.972214+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -243,24 +243,6 @@
         },
         {
             "systematics": "klook",
-            "title": "\u523b \u2027 \u756b - \u53f0\u7063\u65b0\u4e16\u4ee3\u7248\u756b\u85dd\u8853\u5bb6\u806f\u5c55",
-            "date": "2024-09-07~2024-10-05",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101026089-2024-engravings-art-exhibtion/",
-            "UUID": "04bc9498b4645d56b1ce28d3b017fd88",
-            "figure": "https://i.imgur.com/aY64TRC.webp"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u4e16\u754c\u4e4b\u5f8b - \u674e\u932b\u5947\u500b\u5c55",
-            "date": "2024-09-07~2024-10-05",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101026085-2024-eternal-rhythms/",
-            "UUID": "1debfb2124a05c479d160145917ab5da",
-            "figure": "https://i.imgur.com/7gas0pl.webp"
-        },
-        {
-            "systematics": "klook",
             "title": "anniversaire - \u3061\u3087\u3093\uff0a\u53f0\u7063\u521d\u500b\u5c55",
             "date": "2024-09-07~2024-10-06",
             "address": "-",
@@ -311,7 +293,7 @@
             "address": "\u7dda\u4e0a\u5c55\u89bd",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025295-2024-captivating-times/",
             "UUID": "df680739f10c503db8abb2f4e8d127d7",
-            "figure": "-"
+            "figure": "https://i.imgur.com/Qe4bXWI.webp"
         },
         {
             "systematics": "klook",
@@ -320,7 +302,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101025121-2024-meet-you-here-exhibition/",
             "UUID": "75a45df9ba3055d98d99956cafebe439",
-            "figure": "-"
+            "figure": "https://i.imgur.com/pbK561F.webp"
         },
         {
             "systematics": "klook",
@@ -446,7 +428,7 @@
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/activity/70429-music-island-stories-pop-music-in-taiwan-taipei/",
             "UUID": "dde6739eefe25fe9aae6270e758d7acd",
-            "figure": "https://i.imgur.com/3q0DDno.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -455,7 +437,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/65492-taipei-illustration-fair-tickets/",
             "UUID": "569c851255ce5c64981edd50e8300b0c",
-            "figure": "https://res.klook.com/image/upload/w_360,q_85/2024TIF_326x460_1_ps7lmx.jpg"
+            "figure": "-"
         }
     ],
     "visit": {}
