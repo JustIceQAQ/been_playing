@@ -5,7 +5,7 @@
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
     "counts": 52,
-    "last_update": "2024-10-06T08:15:59.204975+00:00",
+    "last_update": "2024-10-06T16:15:00.025841+00:00",
     "data": [
         {
             "systematics": "ntm",
@@ -33,15 +33,6 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40259",
             "UUID": "4b04067d6aab5992b27ff73be61742ed",
             "figure": "https://i.imgur.com/RrH72GK.webp"
-        },
-        {
-            "systematics": "ntm",
-            "title": "2024\u881f\u67d3\u85dd\u8853\u7bc0-\u881f\u67d3\u8207\u5357\u5cf6\u7e54\u54c1-\u5a46\u7f85\u6d32Sasirangan",
-            "date": "",
-            "address": "",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40255",
-            "UUID": "fa61cd86b8ca5b319e96b11cb78a7e30",
-            "figure": "https://i.imgur.com/8qU5CvN.webp"
         },
         {
             "systematics": "ntm",
@@ -99,6 +90,15 @@
         },
         {
             "systematics": "ntm",
+            "title": "\u7279\u5c55 \u6377\u514b\u57ce\u5821\u8207\u5821\u90b8",
+            "date": "",
+            "address": "\u81fa\u535a\u9928\u672c\u9928",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40220",
+            "UUID": "52be7655a1855df5ac4ec39304b26c04",
+            "figure": "https://i.imgur.com/kpmKaMQ.webp"
+        },
+        {
+            "systematics": "ntm",
             "title": "\u3010\u5730\u7403you & me\u3011\u6050\u9f8d\u77f3\u5149\u8de1",
             "date": "",
             "address": "\u81fa\u535a\u9928\u53e4\u751f\u7269\u9928 \u9be8\u8c5a\u5e73\u53f0",
@@ -153,6 +153,24 @@
         },
         {
             "systematics": "ntm",
+            "title": "\u81fa\u535a\u6578\u4f4d\u5c0e\u89bdAPP \u5c0e\u89bd\u5728\u7dda \u77e5\u8b58\u7121\u9650",
+            "date": "",
+            "address": "\u7dda\u4e0a\u4e0b\u8f09",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=12199",
+            "UUID": "1d14be52f6395931a1f0883d6907f0ec",
+            "figure": "https://i.imgur.com/6iUkFYg.webp"
+        },
+        {
+            "systematics": "ntm",
+            "title": "\u300c\u672a\u4f86\u6230\u58eb\u2014\u6c38\u7e8c\u5730\u7403\u74b0\u5883\u7279\u5c55\u300d\u7279\u5c55\u5c0e\u89bd (10\u6708\u5834\u6b21)",
+            "date": "",
+            "address": "",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40264",
+            "UUID": "c8111ee61f4751d5a3a6fa700e42d0af",
+            "figure": "https://i.imgur.com/7RJMM8n.webp"
+        },
+        {
+            "systematics": "ntm",
             "title": "\u300cweekend\u7684\u79fb\u52d5\u535a\u7269\u9928\u300d-\u7530\u5712\u85dd\u8853\u5bb6(\u5c0f\u74e2)",
             "date": "2024-09-21 ~ 2024-09-22",
             "address": "",
@@ -186,15 +204,6 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=30101",
             "UUID": "5d41b54fe983515a84971f7281ba2acd",
             "figure": "https://i.imgur.com/CeNf2bP.webp"
-        },
-        {
-            "systematics": "ntm",
-            "title": "\u81fa\u535a\u6578\u4f4d\u5c0e\u89bdAPP \u5c0e\u89bd\u5728\u7dda \u77e5\u8b58\u7121\u9650",
-            "date": "2021-07-27 ~ 2024-12-31",
-            "address": "\u7dda\u4e0a\u4e0b\u8f09",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=12199",
-            "UUID": "1d14be52f6395931a1f0883d6907f0ec",
-            "figure": "https://i.imgur.com/6iUkFYg.webp"
         },
         {
             "systematics": "ntm",
