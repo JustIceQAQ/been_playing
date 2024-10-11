@@ -4,8 +4,8 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 27,
-    "last_update": "2024-10-11T01:02:44.988550+00:00",
+    "counts": 28,
+    "last_update": "2024-10-11T08:18:07.559804+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -68,6 +68,15 @@
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "http://www.inventaipei.com.tw",
             "UUID": "9d8cc339ee7554c1b35686bd6630d1a8",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "\u570b\u969b\u5149\u96fb\u5927\u5c55",
+            "date": "2024-10-23 ~ 2024-10-25",
+            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
+            "source_url": "https://www.pida.org.tw/opto/",
+            "UUID": "a1a62a768d6957d3b19b3a9249f5c727",
             "figure": ""
         },
         {
