@@ -5,8 +5,17 @@
         "external_link": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent"
     },
     "counts": 6,
-    "last_update": "2024-10-11T08:17:21.800521+00:00",
+    "last_update": "2024-10-11T16:15:57.895677+00:00",
     "data": [
+        {
+            "systematics": "mocataipei",
+            "title": "\u8857\u89d2\u7684\u5229\u606f",
+            "date": "2024-10-12 ~ 2024-12-08",
+            "address": "-",
+            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u8857\u89d2\u7684\u5229\u606f",
+            "UUID": "d23d0920c808542d8ba7c06c77df04a2",
+            "figure": "https://i.imgur.com/bR1fAph.webp"
+        },
         {
             "systematics": "mocataipei",
             "title": "Beta\uff0b",
@@ -42,15 +51,6 @@
             "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u672a\u5883\u4e4b\u57df\u2014\u6797\u66f8\u6977\u500b\u5c55",
             "UUID": "a58fefe88d8b503d969edc53fd8ab76d",
             "figure": "https://i.imgur.com/zfQqZOe.webp"
-        },
-        {
-            "systematics": "mocataipei",
-            "title": "\u8857\u89d2\u7684\u5229\u606f",
-            "date": "2024-10-12 ~ 2024-12-08",
-            "address": "-",
-            "source_url": "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/\u8857\u89d2\u7684\u5229\u606f",
-            "UUID": "d23d0920c808542d8ba7c06c77df04a2",
-            "figure": "https://i.imgur.com/bR1fAph.webp"
         },
         {
             "systematics": "mocataipei",
