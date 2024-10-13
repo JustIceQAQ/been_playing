@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://www.tmc.taipei/tw/lastest-event"
     },
-    "counts": 12,
-    "last_update": "2024-10-13T08:16:05.727009+00:00",
+    "counts": 10,
+    "last_update": "2024-10-13T16:15:00.827783+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -24,24 +24,6 @@
             "source_url": "https://www.tmc.taipei/tw/lastest-event/CEc7b5e0e912",
             "UUID": "2661571eab7357bd8aa055d6c66f91bb",
             "figure": "https://i.imgur.com/I1nJY0Y.webp"
-        },
-        {
-            "systematics": "tmc",
-            "title": "\u4e16\u754c\u97f3\u6a02\u7bc0@\u81fa\u7063",
-            "date": "2024-10-11 ~ 2024-10-13",
-            "address": "\u6236\u5916\u8868\u6f14\u7a7a\u9593",
-            "source_url": "https://www.tmc.taipei/tw/worldmusicfestivaltaiwanPLAZA",
-            "UUID": "8eed19f486745b328946511db61a8394",
-            "figure": "https://i.imgur.com/jVX7KfL.webp"
-        },
-        {
-            "systematics": "tmc",
-            "title": "\u4e16\u754c\u97f3\u6a02\u7bc0@\u81fa\u7063",
-            "date": "2024-10-11 ~ 2024-10-13",
-            "address": "Live House D",
-            "source_url": "https://www.tmc.taipei/tw/worldmusicfestivaltaiwanLHD",
-            "UUID": "61ab25ed1834552d9de035e848a37e75",
-            "figure": "https://i.imgur.com/Qr5mN2B.webp"
         },
         {
             "systematics": "tmc",
