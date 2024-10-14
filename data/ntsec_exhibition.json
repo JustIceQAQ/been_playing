@@ -4,8 +4,8 @@
         "code_name": "ntsec",
         "external_link": "https://www.ntsec.gov.tw/article/list.aspx?a=25"
     },
-    "counts": 7,
-    "last_update": "2024-10-14T08:18:05.451783+00:00",
+    "counts": 5,
+    "last_update": "2024-10-14T16:15:54.975223+00:00",
     "data": [
         {
             "systematics": "ntsec",
@@ -15,15 +15,6 @@
             "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5531",
             "UUID": "47abe79535f35f56a123a3ee710f292e",
             "figure": "https://i.imgur.com/2myOmh1.webp"
-        },
-        {
-            "systematics": "ntsec",
-            "title": "\u300a\u8fb2\u696d\u79d1\u6280\u9b54\u6cd5\u76d2\u300b\u7279\u5c55",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5524",
-            "UUID": "f949030b3ffe5533814fe79cddc38374",
-            "figure": "https://i.imgur.com/L3kchEV.webp"
         },
         {
             "systematics": "ntsec",
@@ -42,15 +33,6 @@
             "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5433",
             "UUID": "e3e0cc78e4e1505b971cc45b9c95bb14",
             "figure": "https://i.imgur.com/SsnZUsW.webp"
-        },
-        {
-            "systematics": "ntsec",
-            "title": "teamLab\u5171\u5275\uff01\u672a\u4f86\u5712",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5428",
-            "UUID": "451efc957fdf5a6483381a0c3b112e10",
-            "figure": "https://i.imgur.com/bomDLeP.webp"
         },
         {
             "systematics": "ntsec",

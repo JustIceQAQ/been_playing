@@ -4,8 +4,8 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 51,
-    "last_update": "2024-10-14T08:18:25.624626+00:00",
+    "counts": 52,
+    "last_update": "2024-10-14T16:16:13.759818+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -42,6 +42,15 @@
             "source_url": "https://tour.ibon.com.tw/event/66ff8d8dab90b327f9b74c99",
             "UUID": "b727c794218b58a3aae5ad21e9c4f3eb",
             "figure": "https://i.imgur.com/tmgWEoc.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "Maker Faire Taipei 2024",
+            "date": "2024-11-30 ~ 2024-12-01",
+            "address": "\u74f6\u84cb\u5de5\u5ee0 \u53f0\u5317\u88fd\u9020\u6240",
+            "source_url": "https://tour.ibon.com.tw/event/66f505a812e312544d56de3a",
+            "UUID": "26e139caddff5ff08ce1e699f0150d6e",
+            "figure": "https://i.imgur.com/JGba4Cw.webp"
         },
         {
             "systematics": "ibon",
