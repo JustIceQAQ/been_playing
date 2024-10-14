@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 41,
-    "last_update": "2024-10-14T01:05:19.851600+00:00",
+    "counts": 42,
+    "last_update": "2024-10-14T08:19:23.495132+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "2024 ART Taipei | \u5927\u96cb\u85dd\u8853Rich Art Gallery | Booth\u3010F02\u3011",
+            "date": "2024-10-25~2024-10-28",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101026817-2024-rich-art-gallery/",
+            "UUID": "c9fc20767bb95142b7d2caa51b6c0338",
+            "figure": "https://i.imgur.com/WvmwhwX.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u3010Le Chat Taipei\u3011George Bayer\u5275\u4f5c\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/132339-art-aquarium-in-taipei/",
             "UUID": "ed0496a8e96350e1b34e1ec611405ea9",
-            "figure": "https://i.imgur.com/dRL9X4G.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "\u66fe\u4ee4\u7406 x \u5076\u7136\u8a2d\u8a08",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026257-2024-freedom-blooms-into-dance/",
             "UUID": "0404b91b744b599abe6e9a194a006578",
-            "figure": "-"
+            "figure": "https://i.imgur.com/6DcE0Tw.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101022906-2024-outing-exhibition/",
             "UUID": "e229db2f09a55307b2f2f64f09c7b6b8",
-            "figure": "https://i.imgur.com/T4jBAuS.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
