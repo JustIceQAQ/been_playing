@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 42,
-    "last_update": "2024-10-14T16:17:31.694825+00:00",
+    "counts": 43,
+    "last_update": "2024-10-15T01:04:04.077184+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -82,7 +82,7 @@
         {
             "systematics": "klook",
             "title": "\u3010\u514d\u63db\u7968\u76f4\u63a5\u5165\u5834\u30112024 ITF \u53f0\u5317\u570b\u969b\u65c5\u5c55",
-            "date": "2024-10-14~2025-10-13",
+            "date": "2024-10-15~2025-10-14",
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/132091-taipei-international-travel-fair/",
             "UUID": "374b6937b8735cb68c807b4037bebc5c",
@@ -154,7 +154,7 @@
         {
             "systematics": "klook",
             "title": "\u300aBE@RBRICK \u4e16\u754c\u5de1\u5c553\u2500\u2500 \u53f0\u5317\u7ad9\u300b",
-            "date": "2024-10-14~2024-11-10",
+            "date": "2024-10-15~2024-11-10",
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/131797-be-rbrick-world-tour-3-taipei/",
             "UUID": "6c46ad54990952259ef3f177584c7d6c",
@@ -262,7 +262,7 @@
         {
             "systematics": "klook",
             "title": "\u661f\u7403\u6a02\u5712 \u2014 \u5168\u5883\u5f0f\u6c88\u6d78\u4e92\u52d5\u9ad4\u9a57\u904a\u6a02\u5712",
-            "date": "2024-10-14~2024-10-31",
+            "date": "2024-10-15~2024-10-31",
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/127363-planet-park-immersive-interactive-playground/",
             "UUID": "8fa00d258f1a5639884f923e71febb43",
@@ -271,7 +271,7 @@
         {
             "systematics": "klook",
             "title": "\u300a\u68b5\u8c37\uff1a\u5c0b\u5149\u4e4b\u8def\u300b\u7279\u5c55",
-            "date": "2024-10-14~2024-11-11",
+            "date": "2024-10-15~2024-11-11",
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/120795-van-gogh-journey-of-light-exhibition/",
             "UUID": "6354e903e34753cb98b98446442d4f9e",
@@ -334,7 +334,7 @@
         {
             "systematics": "klook",
             "title": "\u7121\u5149\u665a\u9910\u7b2c\u4e09\u5b63 Dining In The Dark - \u9a5a\u559c\u88fd\u9020",
-            "date": "2024-10-23~2024-11-30",
+            "date": "2024-10-30~2024-11-30",
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/85220-dining-in-the-dark-s3-surprise-lab/",
             "UUID": "f0d711edefe85a96b753f335e87e9a69",
@@ -347,6 +347,15 @@
             "address": "\u9a5a\u559c\u88fd\u9020",
             "source_url": "https://www.klook.com/zh-TW/activity/81847-the-sunset-terminal/",
             "UUID": "b148959df7175628a044b1bcb87bf5c0",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "ONE ART Taipei 2025 \u85dd\u8853\u53f0\u5317",
+            "date": "2025-01-10~2024-01-12",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/activity/77617-one-art-taipei/",
+            "UUID": "a5647c43565a5f98a6f9cc02a512fb37",
             "figure": "-"
         },
         {

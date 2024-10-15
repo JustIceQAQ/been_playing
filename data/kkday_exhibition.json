@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 70,
-    "last_update": "2024-10-14T16:16:12.733915+00:00",
+    "last_update": "2024-10-15T01:03:41.897693+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -81,21 +81,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317|\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/134376",
-            "UUID": "0e86291192b75a109f0fb0a9a42848e6",
-            "figure": "https://i.imgur.com/bqLefYG.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u65b0\u5317|\u5341\u4e09\u884c\u535a\u7269\u9928\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/128289",
             "UUID": "39790675a68053bdb7a6b732f7a8cff8",
             "figure": "https://i.imgur.com/OiqItVw.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317|\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/134376",
+            "UUID": "0e86291192b75a109f0fb0a9a42848e6",
+            "figure": "https://i.imgur.com/bqLefYG.webp"
         }
     ],
     "visit": {}
