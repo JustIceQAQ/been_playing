@@ -4,8 +4,8 @@
         "code_name": "tfam",
         "external_link": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw"
     },
-    "counts": 11,
-    "last_update": "2024-10-16T01:03:19.219885+00:00",
+    "counts": 12,
+    "last_update": "2024-10-16T08:18:29.645610+00:00",
     "data": [
         {
             "systematics": "tfam",
@@ -105,9 +105,16 @@
             "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=776",
             "UUID": "11fdd65d1bfb507cb7e0fa04d2e829e1",
             "figure": "https://i.imgur.com/ykcBylH.webp"
+        },
+        {
+            "systematics": "tfam",
+            "title": "2024\u81fa\u5317\u7f8e\u8853\u734e",
+            "date": "2024-11-14 ~ 2025-03-02",
+            "address": "\u4e09\u6a133A~3B",
+            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=780",
+            "UUID": "959eb82555e1570dbc98522c51bd4d5b",
+            "figure": "https://i.imgur.com/GCAEI8J.webp"
         }
     ],
-    "visit": {
-        "opening": "\u9031\u4e00: \u4f11\u9928\n\u9031\u4e8c: 09:30 - 17:30\n\u9031\u4e09: 09:30 - 17:30\n\u9031\u56db: 09:30 - 17:30\n\u9031\u4e94: 09:30 - 17:30\n\u9031\u516d: 09:30 - 20:30\n\u9031\u65e5: 09:30 - 17:30"
-    }
+    "visit": {}
 }
