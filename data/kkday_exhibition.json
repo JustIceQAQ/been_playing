@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 70,
-    "last_update": "2024-10-16T08:18:03.890998+00:00",
+    "last_update": "2024-10-16T16:15:44.014162+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -72,15 +72,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u65b0\u5317|\u5341\u4e09\u884c\u535a\u7269\u9928\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/128289",
-            "UUID": "39790675a68053bdb7a6b732f7a8cff8",
-            "figure": "https://i.imgur.com/OiqItVw.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317|\u8896\u73cd\u535a\u7269\u9928\u96fb\u5b50\u9580\u7968",
             "date": "",
             "address": "",
@@ -96,6 +87,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/249655",
             "UUID": "bdd0b3f5e90058b0aac853365e38a6b8",
             "figure": "https://i.imgur.com/ugIgmF6.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317\u8c93\u7a7a\u7e9c\u8eca|\u8eca\u7968.\u52d5\u7269\u5712\u806f\u7968.\u512a\u60e0\u5957\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/115080-taipei-zoo-maokong-gondola-round-trip-tickets-taiwan",
+            "UUID": "983df51fa8245a6ca8ab5c569e3f3e31",
+            "figure": "https://i.imgur.com/gMnQVbe.webp"
         }
     ],
     "visit": {}
