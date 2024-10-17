@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://www.tmc.taipei/tw/lastest-event"
     },
-    "counts": 11,
-    "last_update": "2024-10-17T08:17:35.666493+00:00",
+    "counts": 12,
+    "last_update": "2024-10-17T16:17:45.396013+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -96,6 +96,15 @@
             "source_url": "https://www.tmc.taipei/tw/TAEYANG2024TOUR",
             "UUID": "ffe18919872b571c9d33e9808d85481c",
             "figure": "https://i.imgur.com/0HDNnF1.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u97d3\u5287OST\u97f3\u6a02\u6703K-Drama OST Concert",
+            "date": "2024-12-28",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/tw/kdrama",
+            "UUID": "620d8ee6a15f533bbac6154a486b6008",
+            "figure": "https://i.imgur.com/0i4AeGI.webp"
         },
         {
             "systematics": "tmc",
