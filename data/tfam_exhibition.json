@@ -5,7 +5,7 @@
         "external_link": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw"
     },
     "counts": 12,
-    "last_update": "2024-10-17T01:02:39.319633+00:00",
+    "last_update": "2024-10-17T08:17:37.623007+00:00",
     "data": [
         {
             "systematics": "tfam",
@@ -116,5 +116,7 @@
             "figure": "https://i.imgur.com/GCAEI8J.webp"
         }
     ],
-    "visit": {}
+    "visit": {
+        "opening": "\u9031\u4e00: \u4f11\u9928\n\u9031\u4e8c: 09:30 - 17:30\n\u9031\u4e09: 09:30 - 17:30\n\u9031\u56db: 09:30 - 17:30\n\u9031\u4e94: 09:30 - 17:30\n\u9031\u516d: 09:30 - 20:30\n\u9031\u65e5: 09:30 - 17:30"
+    }
 }
