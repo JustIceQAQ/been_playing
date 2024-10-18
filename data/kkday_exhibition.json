@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 70,
-    "last_update": "2024-10-17T16:17:44.857691+00:00",
+    "last_update": "2024-10-18T01:03:55.189206+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -54,6 +54,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u570b\u5bb6\u5730\u7406\u5973\u6027\u7d93\u5178\u5f71\u50cf\u5c55",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/251258",
+            "UUID": "60947bf9a07a52aaadd79e21eef7a823",
+            "figure": "https://i.imgur.com/6IiiT1I.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u300c\u65b0\u85dd\u8853\u904b\u52d5\u300d\u5149\u5f71\u85dd\u8853\u5c55.\u5f9e\u9ad8\u7b2c\u5230\u6155\u590f\u3001\u514b\u6797\u59c6",
             "date": "",
             "address": "",
@@ -81,21 +90,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317\u8c93\u7a7a\u7e9c\u8eca|\u8eca\u7968.\u52d5\u7269\u5712\u806f\u7968.\u512a\u60e0\u5957\u7968",
+            "title": "\u53f0\u5317|\u7b2c\u4e00\u5c46 FANTACO \u9b54\u5e7b\u85dd\u8853\u7bc0",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/115080-taipei-zoo-maokong-gondola-round-trip-tickets-taiwan",
-            "UUID": "983df51fa8245a6ca8ab5c569e3f3e31",
-            "figure": "https://i.imgur.com/gMnQVbe.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u5317|\u8896\u73cd\u535a\u7269\u9928\u96fb\u5b50\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/30573-miniatures-museum-of-taiwan-ticket-taipei",
-            "UUID": "ec92ba2eff5952b6ad80c8e82f8b6728",
-            "figure": "https://i.imgur.com/7OXpENS.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/251165",
+            "UUID": "e0c9ef8ad45f57f6bdf742b01ef129a1",
+            "figure": "https://i.imgur.com/1dWLPpH.webp"
         }
     ],
     "visit": {}
