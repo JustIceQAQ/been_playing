@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 70,
-    "last_update": "2024-10-18T08:18:03.216140+00:00",
+    "last_update": "2024-10-18T16:16:34.485959+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -54,6 +54,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u53f0\u5317|\u7b2c\u4e00\u5c46 FANTACO \u9b54\u5e7b\u85dd\u8853\u7bc0",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/251165",
+            "UUID": "e0c9ef8ad45f57f6bdf742b01ef129a1",
+            "figure": "https://i.imgur.com/1dWLPpH.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u570b\u5bb6\u5730\u7406\u5973\u6027\u7d93\u5178\u5f71\u50cf\u5c55",
             "date": "",
             "address": "",
@@ -72,15 +81,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u5531\u6211\u5011\u7684\u6b4c\u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55\u9580\u7968|\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3\u5c55\u89bd",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/137251-sing-our-songs-music-island-stories-pop-music-exhibition-tickets-taipei",
-            "UUID": "0ea3d03dde465435af4c8d5e787c0700",
-            "figure": "https://i.imgur.com/HtUAqmX.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u3010\u65e9\u9ce56\u6298\u3011\u53f0\u5317\u5c55\u89bd \u2502 2024TECA\u53f0\u5317\u570b\u969b\u97f3\u97ff\u5927\u5c55",
             "date": "",
             "address": "",
@@ -90,12 +90,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317|\u7b2c\u4e00\u5c46 FANTACO \u9b54\u5e7b\u85dd\u8853\u7bc0",
+            "title": "\u5531\u6211\u5011\u7684\u6b4c\u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55\u9580\u7968|\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3\u5c55\u89bd",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/251165",
-            "UUID": "e0c9ef8ad45f57f6bdf742b01ef129a1",
-            "figure": "https://i.imgur.com/1dWLPpH.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/137251-sing-our-songs-music-island-stories-pop-music-exhibition-tickets-taipei",
+            "UUID": "0ea3d03dde465435af4c8d5e787c0700",
+            "figure": "https://i.imgur.com/HtUAqmX.webp"
         }
     ],
     "visit": {}

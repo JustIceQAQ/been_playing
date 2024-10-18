@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://www.tmc.taipei/tw/lastest-event"
     },
-    "counts": 12,
-    "last_update": "2024-10-18T08:17:31.365132+00:00",
+    "counts": 14,
+    "last_update": "2024-10-18T16:17:40.196407+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -36,12 +36,30 @@
         },
         {
             "systematics": "tmc",
+            "title": "\u3010\u8a69/\u8a5e \u4e4b\u9593 \ud835\ude57\ud835\ude5a\ud835\ude69\ud835\ude6c\ud835\ude5a\ud835\ude5a\ud835\ude63 \ud835\ude69\ud835\ude5d\ud835\ude5a \ud835\ude6b\ud835\ude5a\ud835\ude67\ud835\ude68\ud835\ude5a \u7b2c\u2777\u9996 \u97f3\u6a02 \u2573 \u614b\u5ea6\u3011",
+            "date": "2024-10-25",
+            "address": "\u7522\u696d\u5340",
+            "source_url": "https://www.tmc.taipei/tw/lastest-event/FC7ed74c4a37",
+            "UUID": "d67992d760a65298b7575bd1f4f91724",
+            "figure": "https://i.imgur.com/II3l5CR.webp"
+        },
+        {
+            "systematics": "tmc",
             "title": "2024 \u694a\u4e43\u6587\u300a\u7e46\u65afMUSE\u300b\u6f14\u5531\u6703 \u53f0\u5317\u6700\u7d42\u5834",
             "date": "2024-10-26",
             "address": "\u8868\u6f14\u5ef3",
             "source_url": "https://www.tmc.taipei/tw/lastest-event/D8E7F09D1B62",
             "UUID": "3c766c3892cb544ca609abaf423d7e1d",
             "figure": "https://i.imgur.com/PnMbz2i.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u97f3\u6a02\u840c\u5bf5\u4f01\u5283 \u2500 \u6c6a\u6c6a ON AIR \u0a6f\u2027\u0300\u0361\u2b2e",
+            "date": "2024-10-27",
+            "address": "",
+            "source_url": "https://www.tmc.taipei/tw/lastest-event/08262bba68A8",
+            "UUID": "23579b870b115eadb95bed4b8142c8f5",
+            "figure": "https://i.imgur.com/CqggF6O.webp"
         },
         {
             "systematics": "tmc",
