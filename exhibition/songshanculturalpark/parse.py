@@ -11,7 +11,9 @@ class SongShanCulturalParkParse(ParseInit):
         return self.item.select_one("span.row_rt > p.lv_h2").get_text()
 
     def get_date(self, *args, **kwargs) -> str:
-        raw_date_string = self.item.select_one("span.row_rt > p.date.montsrt").get_text()
+        raw_date_string = self.item.select_one(
+            "span.row_rt > p.date.montsrt"
+        ).get_text()
         raw_date_string = raw_date_string.replace(" - ", " ~ ")
         return raw_date_string
 

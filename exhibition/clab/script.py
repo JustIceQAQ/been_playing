@@ -1,43 +1,55 @@
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
-from exhibition.fubonartmuseum.header import FuBonArtMuseumHeader
-from exhibition.fubonartmuseum.parse import FuBonArtMuseumParse
+from exhibition.clab.header import CLabHeader
+from exhibition.clab.paese import CLabParse
 from helper.clean_helper import RequestsClean
 from helper.crawler.requests_ import RequestsCrawler
-from helper.proxy_helper import NoneProxy
 from helper.runner_helper import RunnerInit
 from helper.translation_helper import BeautifulSoupTranslation
+from helper.utils_helper import date_now
 
 
-class FuBonArtMuseumRunner(RunnerInit):
-    """富邦博物館"""
+class CLabRunner(RunnerInit):
+    """臺灣當代文化實驗場 C-LAB"""
 
-    use_method = "GET"
     root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
-    target_url = "https://www.fubonartmuseum.org/Default"
-    target_storage = str(root_dir / "data" / "fubonartmuseum_exhibition.json")
-    target_systematics = ExhibitionEnum.FuBonArtMuseum
+    target_url = (
+        "https://clab.org.tw/events/?"
+        "event_category=exhibition"
+        "&filter_year={filter_year}"
+        "&filter_month={filter_month}"
+    )
+    use_method = "GET"
+    target_storage = str(root_dir / "data" / "clab_exhibition.json")
+    target_systematics = ExhibitionEnum.CLab
     use_crawler = RequestsCrawler
     use_translation = BeautifulSoupTranslation
-    use_parse = FuBonArtMuseumParse
-    use_header = FuBonArtMuseumHeader
-    use_proxy = NoneProxy
+    use_header = CLabHeader
+    use_parse = CLabParse
 
     def get_response(self):
-        requests_worker = self.use_crawler(self.target_url, module_proxy=self.use_proxy)
+        today = date_now()
+        filter_year = today.year
+        filter_month = today.month
+        target_url = self.target_url.format(
+            filter_year=filter_year, filter_month=filter_month
+        )
+        requests_worker = self.use_crawler(target_url)
         headers = (
             self.use_header().get_header() if self.use_header is not None else None
         )
         response = requests_worker.get_page(
             self.use_method, headers=headers, formatted=requests_worker.Formatted.text
         )
-        transitioned = self.use_translation().format_to_object(response)
-        return transitioned
+
+        return response
 
     def get_items(self, response):
-        return response.select(
-            "div#homepage-swiper-exhibitions > div.swiper-wrapper > div"
+        return (
+            self.use_translation()
+            .format_to_object(response)
+            .find_all("div", {"data-aos": "-block-line"})
         )
 
     def get_parsed(self, items):
@@ -53,4 +65,4 @@ class FuBonArtMuseumRunner(RunnerInit):
 
 
 if __name__ == "__main__":
-    FuBonArtMuseumRunner().run(use_pickled=False)
+    CLabRunner().run(use_pickled=False)

@@ -5,7 +5,7 @@ import os
 import uuid
 from abc import ABCMeta, abstractmethod
 from pathlib import Path
-from typing import IO, Any, Dict, List, Optional
+from typing import IO, Any
 
 import pytz
 from dotenv import load_dotenv
@@ -37,26 +37,26 @@ def hex_uuid5(systematics: str, value: str) -> str:
 
 class Exhibition(BaseModel):
     systematics: str
-    title: Optional[str] = None
-    date: Optional[str] = None
-    address: Optional[str] = None
-    figure: Optional[str] = None
+    title: str | None = None
+    date: str | None = None
+    address: str | None = None
+    figure: str | None = None
     source_url: str
-    UUID: Optional[str] = None
+    UUID: str | None = None
 
     def __init__(self, **kwargs) -> None:
         runtime_kwargs = kwargs
         runtime_kwargs["systematics"] = kwargs.get("systematics").code_name
         super().__init__(**runtime_kwargs)
-        self.UUID: Optional[str] = hex_uuid5(self.systematics, self.source_url)
+        self.UUID: str | None = hex_uuid5(self.systematics, self.source_url)
 
 
 class ExhibitionStorage(BaseModel):
-    information: Optional[Dict] = Field(default_factory=dict)
+    information: dict | None = Field(default_factory=dict)
     counts: int = 0
-    last_update: Optional[str] = None
-    data: Optional[List[Dict[str, str]]] = Field(default_factory=list)
-    visit: Optional[Dict[str, str]] = Field(default_factory=dict)
+    last_update: str | None = None
+    data: list[dict[str, str]] | None = Field(default_factory=list)
+    visit: dict[str, str] | None = Field(default_factory=dict)
 
 
 class StorageInit(metaclass=ABCMeta):
@@ -65,7 +65,7 @@ class StorageInit(metaclass=ABCMeta):
         raise NotImplementedError
 
     @abstractmethod
-    def read_data(self, *args, **kwargs) -> Optional[List[Dict[str, Any]]]:
+    def read_data(self, *args, **kwargs) -> list[dict[str, Any]] | None:
         raise NotImplementedError
 
     @abstractmethod
@@ -79,12 +79,12 @@ class StorageInit(metaclass=ABCMeta):
 
 class JustJsonStorage(StorageInit):
     def __init__(self, db_path: str, exhibition_information: ExhibitionInformation):
-        self.fd: Optional[IO] = None
+        self.fd: IO | None = None
         self.db_path = db_path
         self.db: Path = Path(db_path)
         new_db_name = f"{str(self.db.name)}"
         self.db_path = self.db_path.replace(self.db.name, new_db_name)
-        self.temp_data: List[Dict[str, str]] = []
+        self.temp_data: list[dict[str, str]] = []
         self.ImgurImage = ImgurImage()
         this_env = ROOT_DIR / ".env"
         load_dotenv(this_env)
@@ -96,7 +96,7 @@ class JustJsonStorage(StorageInit):
         self.visit = {}
         self.json_object.information = dataclasses.asdict(self.exhibition_information)
 
-    def create_data(self, data: Dict[str, str], pickled=True, *args, **kwargs) -> None:
+    def create_data(self, data: dict[str, str], pickled=True, *args, **kwargs) -> None:
         data["figure"] = (
             self.ImgurImage.upload(data.pop("figure"))
             if pickled
@@ -105,7 +105,7 @@ class JustJsonStorage(StorageInit):
 
         self.temp_data.append(data)
 
-    def set_visit(self, _dict: Dict):
+    def set_visit(self, _dict: dict):
         self.visit.update(_dict)
 
     def commit(self) -> None:
@@ -160,11 +160,11 @@ class PySonDBStorage(StorageInit):
 
     def read_data(
         self,
-        count: Optional[int] = None,
-        filter_dict: Optional[Dict[str, Any]] = None,
+        count: int | None = None,
+        filter_dict: dict[str, Any] | None = None,
         *args,
         **kwargs,
-    ) -> List[Dict[str, Any]]:
+    ) -> list[dict[str, Any]]:
         if count is None:
             return self.db.getAll()
         elif count and isinstance(count, int):

@@ -1,7 +1,7 @@
 import dataclasses
 import time
 from enum import Enum
-from typing import Any, Optional
+from typing import Any
 
 import requests
 
@@ -32,7 +32,7 @@ class ScraperAsyncApiCrawler(CrawlerInit):
         self.job_status_url = None
         self.job_status = False
 
-        self.runtime_status: Optional[bool] = False
+        self.runtime_status: bool | None = False
         self.runtime_response = None
 
     class JobStatus(str, Enum):
@@ -41,7 +41,7 @@ class ScraperAsyncApiCrawler(CrawlerInit):
 
     @dataclasses.dataclass
     class JobTask:
-        status: Optional[bool]
+        status: bool | None
         response: Any
 
     def __set_api_key(self, api_key):
@@ -94,7 +94,7 @@ class ScraperAsyncApiCrawler(CrawlerInit):
                     break
                 else:
                     runtime_flag += 1
-                    print(f"{runtime_tasks.status =} wait {sleep_secs}...")
+                    print(f"{runtime_tasks.status=} wait {sleep_secs}...")
                     time.sleep(sleep_secs)
             else:
                 runtime_return = {}

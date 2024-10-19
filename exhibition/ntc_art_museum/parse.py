@@ -12,8 +12,14 @@ class NTCArtMuseumMainParse(ParseInit):
 
     def get_date(self, *args, **kwargs) -> str:
         date_format = ""
-        year = self.item.select_one("div.text-group > div.upper-text > h1").get_text().strip()
-        dates = self.item.select_one("div.text-group > div.bottom-text").get_text().strip()
+        year = (
+            self.item.select_one("div.text-group > div.upper-text > h1")
+            .get_text()
+            .strip()
+        )
+        dates = (
+            self.item.select_one("div.text-group > div.bottom-text").get_text().strip()
+        )
         left_date, _, right_date = dates.partition("—")
         clean_left_date = left_date.strip()
         clean_right_date = right_date.strip()
@@ -40,9 +46,7 @@ class NTCArtMuseumMainParse(ParseInit):
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
-        return "{}{}".format(
-            target_domain, self.item.get("href")
-        )
+        return "{}{}".format(target_domain, self.item.get("href"))
 
 
 class NTCArtMuseumOtherParse(ParseInit):
@@ -53,7 +57,12 @@ class NTCArtMuseumOtherParse(ParseInit):
         return self.item.find("h2", {"class": "bigTitle"}).get_text().strip()
 
     def get_date(self, *args, **kwargs) -> str:
-        return self.item.find("p", {"class": "bigDate"}).get_text().strip().replace("—", "~")
+        return (
+            self.item.find("p", {"class": "bigDate"})
+            .get_text()
+            .strip()
+            .replace("—", "~")
+        )
 
     def get_address(self, *args, **kwargs) -> str:
         return ""
@@ -65,6 +74,4 @@ class NTCArtMuseumOtherParse(ParseInit):
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
-        return "{}{}".format(
-            target_domain, self.item.get("href")
-        )
+        return "{}{}".format(target_domain, self.item.get("href"))

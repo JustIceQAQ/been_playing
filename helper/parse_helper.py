@@ -1,6 +1,7 @@
 import inspect
 from abc import ABCMeta, abstractmethod
-from typing import Any, Dict
+from typing import Any
+
 import bs4
 
 
@@ -32,7 +33,7 @@ class ParseInit(metaclass=ABCMeta):
             return obj.get_text()
         return obj
 
-    def parsed(self, *args, **kwargs) -> Dict[str, Any]:
+    def parsed(self, *args, **kwargs) -> dict[str, Any]:
         methods = [
             method
             for method in inspect.getmembers(self, predicate=inspect.ismethod)

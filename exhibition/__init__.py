@@ -131,7 +131,14 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
     )
 
     FuBonArtMuseum = (
-        "FuBonArtMuseum", "FuBonArtMuseum", "https://www.fubonartmuseum.org/Default",
+        "FuBonArtMuseum",
+        "FuBonArtMuseum",
+        "https://www.fubonartmuseum.org/Default",
+    )
+    CLab = (
+        "CLab",
+        "CLab",
+        "https://clab.org.tw/events/",
     )
 
     BUG = (

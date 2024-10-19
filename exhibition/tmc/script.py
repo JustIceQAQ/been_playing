@@ -27,14 +27,17 @@ class TMCRunner(RunnerInit):
 
     def create_filter_base64_string(self, page_number: int) -> str:
 
-        str_dict = json.dumps({"pages": page_number, "category": "", "year": "", "month": "", "keyword": ""})
-
-        return (
-            base64.b64encode(
-                str_dict.encode()
-            )
-            .decode()
+        str_dict = json.dumps(
+            {
+                "pages": page_number,
+                "category": "",
+                "year": "",
+                "month": "",
+                "keyword": "",
+            }
         )
+
+        return base64.b64encode(str_dict.encode()).decode()
 
     def get_response(self):
 
@@ -47,8 +50,12 @@ class TMCRunner(RunnerInit):
         headers = (
             self.use_header().get_header() if self.use_header is not None else None
         )
-        response = requests_worker.fetch(self.use_method, headers=headers, cookies=s.cookies)
-        items.extend(response.select(".card-section > div.card-wrap > a.c-card-clip-wrap"))
+        response = requests_worker.fetch(
+            self.use_method, headers=headers, cookies=s.cookies
+        )
+        items.extend(
+            response.select(".card-section > div.card-wrap > a.c-card-clip-wrap")
+        )
 
         pagination_len = len(response.select("li.c-pagination-item")) - 2
         if pagination_len == 1:
@@ -56,11 +63,15 @@ class TMCRunner(RunnerInit):
         else:
             for n in range(2, pagination_len + 1):
                 url = f"{self.target_url}?filter={self.create_filter_base64_string(n)}"
-                requests_worker2 = RequestsBeautifulSoupInstantiation(
-                    url
+                requests_worker2 = RequestsBeautifulSoupInstantiation(url)
+                response = requests_worker2.fetch(
+                    self.use_method, headers=headers, cookies=s.cookies
                 )
-                response = requests_worker2.fetch(self.use_method, headers=headers, cookies=s.cookies)
-                items.extend(response.select(".card-section > div.card-wrap > a.c-card-clip-wrap"))
+                items.extend(
+                    response.select(
+                        ".card-section > div.card-wrap > a.c-card-clip-wrap"
+                    )
+                )
         return items
 
     def get_items(self, response):

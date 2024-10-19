@@ -1,9 +1,8 @@
 import json
 import os
 import re
-from pathlib import Path
 import urllib.parse
-from typing import Tuple, Optional
+from pathlib import Path
 
 from bs4 import BeautifulSoup
 
@@ -28,7 +27,7 @@ class KKDayRunner(RunnerInit):
         "currency": "TWD",
         "start": 0,
         "count": 10,
-        "sort": "prec"
+        "sort": "prec",
     }
     use_method = "GET"
     target_storage = str(root_dir / "data" / "kkday_exhibition.json")
@@ -43,13 +42,17 @@ class KKDayRunner(RunnerInit):
         encoded_query_parameter += f"&page={page}"
         return f"{self.target_url}?{encoded_query_parameter}"
 
-    def format_init_state(self, response: str) -> Tuple[list[dict], Optional[int]]:
+    def format_init_state(self, response: str) -> tuple[list[dict], int | None]:
         products = []
         product_count = None
         soup = BeautifulSoup(response, "html.parser")
-        script_content = soup.find_all('script', text=re.compile(r'window\.__INIT_STATE__\s*=\s*'))
+        script_content = soup.find_all(
+            "script", text=re.compile(r"window\.__INIT_STATE__\s*=\s*")
+        )
         for script in script_content:
-            match = re.search(r'window\.__INIT_STATE__\s*=\s*(\{.*?\})\s*;', script.string, re.DOTALL)
+            match = re.search(
+                r"window\.__INIT_STATE__\s*=\s*(\{.*?\})\s*;", script.string, re.DOTALL
+            )
             if match:
                 init_state_json = match.group(1)
                 raw_data = json.loads(init_state_json)
@@ -70,7 +73,9 @@ class KKDayRunner(RunnerInit):
             loop_number = (product_count // 10) + 2
             for i in range(2, loop_number, 1):
                 this_url = self.get_this_url(i)
-                other_response = requests_worker.get_page(this_url).get_response(sleep_secs=10)
+                other_response = requests_worker.get_page(this_url).get_response(
+                    sleep_secs=10
+                )
                 responses.append(other_response)
 
         return responses

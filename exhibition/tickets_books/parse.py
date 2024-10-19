@@ -1,4 +1,4 @@
-from typing import AnyStr, Dict, List
+from typing import AnyStr
 from urllib.parse import parse_qs, urlparse
 
 import bs4
@@ -26,9 +26,9 @@ class TicketsBooksParse(ParseInit):
 
     def clean_figure_url(self, o_url) -> str:
         u = urlparse(o_url)
-        query: Dict[AnyStr, List[AnyStr]] = parse_qs(u.query, keep_blank_values=True)
+        query: dict[AnyStr, list[AnyStr]] = parse_qs(u.query, keep_blank_values=True)
         runtime_url = o_url
-        query_i: List[str] = query.get("i")
+        query_i: list[str] = query.get("i")
         if query_i and (get_url := query_i[0]):
             runtime_url = get_url
         return runtime_url

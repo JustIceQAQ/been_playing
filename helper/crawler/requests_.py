@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import Any, Dict, Union
+from typing import Any
 
 import requests
 from retry import retry
@@ -33,7 +33,7 @@ class RequestsCrawler(CrawlerInit):
     @retry(tries=5, delay=20, backoff=2, max_delay=500)
     def get_page(
         self, method="GET", reload_session=True, formatted="text", *args, **kwargs
-    ) -> Union[Dict[Any, Any], str]:
+    ) -> dict[Any, Any] | str:
 
         if "timeout" not in kwargs.keys():
             kwargs["timeout"] = 60

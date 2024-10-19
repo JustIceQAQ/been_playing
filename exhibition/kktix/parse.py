@@ -14,7 +14,7 @@ class KKTixParse(ParseInit):
 
     def get_date(self, *args, **kwargs) -> str:
         raw_date_string = self.item.select_one("span.date").get_text()
-        subbed_string = re.sub(r'(\(.\))', '', raw_date_string)
+        subbed_string = re.sub(r"(\(.\))", "", raw_date_string)
         subbed_string = subbed_string.replace("/", "-")
         return subbed_string
 

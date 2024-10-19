@@ -9,7 +9,7 @@ from helper.parse_helper import ParseInit
 
 def chinese_date_format(raw_date_string: str) -> str:
     if "年" in raw_date_string:
-        pattern = r'(\d{4})年(\d{1,2})月(\d{1,2})日'
+        pattern = r"(\d{4})年(\d{1,2})月(\d{1,2})日"
         match = re.search(pattern, raw_date_string)
         if match:
             year = match.group(1)
@@ -20,7 +20,7 @@ def chinese_date_format(raw_date_string: str) -> str:
             return "-"
     else:
         year = datetime.datetime.now().year
-        pattern = r'(\d{1,2})月(\d{1,2})日'
+        pattern = r"(\d{1,2})月(\d{1,2})日"
         match = re.search(pattern, raw_date_string)
         if match:
             month = match.group(1)
@@ -45,11 +45,15 @@ class KLookParse(ParseInit):
             if ("預售" in titles[0]) and ("優惠" in titles[0]) and ("折" in titles[0]):
                 runtime_title = titles[1]
             else:
-                runtime_title = titles[0] if titles[1] in {"展覽"} else " - ".join(titles)
+                runtime_title = (
+                    titles[0] if titles[1] in {"展覽"} else " - ".join(titles)
+                )
 
         elif len(titles) == 3:
             runtime_address = titles[-1]
-            runtime_title = titles[0] if titles[1] in {"展覽"} else " - ".join(titles[:2])
+            runtime_title = (
+                titles[0] if titles[1] in {"展覽"} else " - ".join(titles[:2])
+            )
         elif len(titles) == 5:
             runtime_title = titles[3]
             runtime_address = titles[2]
@@ -65,7 +69,7 @@ class KLookParse(ParseInit):
 
     def get_date(self, *args, **kwargs) -> str:
         raw_date_string = self.item.select_one("div.dates > * > span").get_text()
-        subbed_string = re.sub(r'(\(..\))', '', raw_date_string)
+        subbed_string = re.sub(r"(\(..\))", "", raw_date_string)
         raw_date_string_strip = subbed_string.split("-")
 
         if len(raw_date_string_strip) == 1:
