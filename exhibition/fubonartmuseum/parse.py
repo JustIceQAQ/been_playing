@@ -15,7 +15,7 @@ class FuBonArtMuseumParse(ParseInit):
 
     def get_figure(self, *args, **kwargs) -> str:
         img = self.item.select_one("div.fb-photo-frame > img")
-        return img['src']
+        return img["src"]
 
     def get_address(self, *args, **kwargs) -> str:
         datas = self.item.select("div.card_info > div.info_group > p.font-body")

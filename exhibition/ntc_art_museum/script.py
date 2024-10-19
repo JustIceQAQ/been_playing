@@ -1,8 +1,10 @@
 from pathlib import Path
-from typing import Dict, List
 
 from exhibition import ExhibitionEnum
-from exhibition.ntc_art_museum.parse import NTCArtMuseumOtherParse, NTCArtMuseumMainParse
+from exhibition.ntc_art_museum.parse import (
+    NTCArtMuseumMainParse,
+    NTCArtMuseumOtherParse,
+)
 from helper.clean_helper import RequestsClean
 from helper.crawler.requests_ import RequestsCrawler
 from helper.runner_helper import RunnerInit
@@ -11,10 +13,9 @@ from helper.translation_helper import BeautifulSoupTranslation
 
 class NTCArtMuseumRunner(RunnerInit):
     """新北市立美術館"""
+
     root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
-    target_url = (
-        "https://ntcart.museum/exhibition"
-    )
+    target_url = "https://ntcart.museum/exhibition"
     target_domain = "https://ntcart.museum"
     use_method = "GET"
     target_storage = str(root_dir / "data" / "ntc_art_museum_exhibition.json")
@@ -39,13 +40,18 @@ class NTCArtMuseumRunner(RunnerInit):
         art_content_other = response.select("div.art-content-other.ex-group > a")
         main_exhibition = response.select("div.main-pic > a")
 
-        return {"art_content_other": art_content_other, "main_exhibition": main_exhibition}
+        return {
+            "art_content_other": art_content_other,
+            "main_exhibition": main_exhibition,
+        }
 
-    def get_parsed(self, items: Dict[str, List]):
+    def get_parsed(self, items: dict[str, list]):
         art_content_other = items.get("art_content_other")
         main_exhibition = items.get("main_exhibition")
         for art_content_other_item in art_content_other:
-            data = self.use_parse.get("other")(art_content_other_item).parsed(target_domain=self.target_domain)
+            data = self.use_parse.get("other")(art_content_other_item).parsed(
+                target_domain=self.target_domain
+            )
             clean_data = {
                 key: RequestsClean.clean_string(value) for key, value in data.items()
             }
@@ -54,7 +60,9 @@ class NTCArtMuseumRunner(RunnerInit):
             )
             yield exhibition
         for main_exhibition_item in main_exhibition:
-            data = self.use_parse.get("main")(main_exhibition_item).parsed(target_domain=self.target_domain)
+            data = self.use_parse.get("main")(main_exhibition_item).parsed(
+                target_domain=self.target_domain
+            )
             clean_data = {
                 key: RequestsClean.clean_string(value) for key, value in data.items()
             }
@@ -64,5 +72,5 @@ class NTCArtMuseumRunner(RunnerInit):
             yield exhibition
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     NTCArtMuseumRunner().run(use_pickled=False)

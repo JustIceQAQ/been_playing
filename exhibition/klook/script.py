@@ -1,7 +1,6 @@
 import os
 import time
 from pathlib import Path
-from typing import List
 
 from exhibition import ExhibitionEnum
 from exhibition.klook.parse import KLookParse
@@ -36,7 +35,7 @@ class KLookRunner(RunnerInit):
 
         pagination = self.get_first_page(dataset_list, pre_tasks)
 
-        tasks: List[ScraperAsyncApiCrawler] = []
+        tasks: list[ScraperAsyncApiCrawler] = []
         for runtime_url, referer_url in zip(pagination[1:], pagination):
             tasks.append(
                 self.use_crawler(api_key=os.getenv("SCRAPER_API_KEY", None)).get_page(
@@ -51,7 +50,7 @@ class KLookRunner(RunnerInit):
         return self.get_pagination_page(dataset_list, tasks)
 
     def get_pagination_page(
-            self, dataset_list: List, tasks: List[ScraperAsyncApiCrawler]
+        self, dataset_list: list, tasks: list[ScraperAsyncApiCrawler]
     ):
         while True:
             runtime_tasks = [job.get_status() for job in tasks]
@@ -65,7 +64,7 @@ class KLookRunner(RunnerInit):
                 time.sleep(self.while_sleep)
         return dataset_list
 
-    def get_first_page(self, dataset_list: List, pre_tasks: ScraperAsyncApiCrawler):
+    def get_first_page(self, dataset_list: list, pre_tasks: ScraperAsyncApiCrawler):
         while True:
             pre_tasks_runtime_result = pre_tasks.get_status()
             if pre_tasks_runtime_result.status:
@@ -100,5 +99,7 @@ class KLookRunner(RunnerInit):
                 systematics=self.target_systematics, **clean_data
             )
             yield exhibition
+
+
 if __name__ == "__main__":
     KLookRunner().run(use_pickled=False)

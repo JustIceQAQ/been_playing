@@ -1,6 +1,5 @@
 import os
 from pathlib import Path
-from typing import Dict
 
 from exhibition import ExhibitionEnum
 from exhibition.npm.parse import NpmColParse, NpmRowParse
@@ -34,12 +33,12 @@ class NPMRunner(RunnerInit):
         context = crawler.get_page(self.target_url)
         return self.use_translation().format_to_object(context)
 
-    def get_items(self, response) -> Dict:
+    def get_items(self, response) -> dict:
         datasets_row = response.select("ul.mt-4 li.mb-8")
         datasets_col = response.select("ul.mt-10 li.mb-8")
         return {"row": datasets_row, "col": datasets_col}
 
-    def get_parsed(self, items: Dict):
+    def get_parsed(self, items: dict):
         datasets_row = items.get("row")
         datasets_col = items.get("col")
 

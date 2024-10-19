@@ -12,7 +12,9 @@ class NCPIRunner(RunnerInit):
     """國家攝影文化中心"""
 
     root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
-    target_url = "https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?n=8006&sms=15632"
+    target_url = (
+        "https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?n=8006&sms=15632"
+    )
     use_method = "GET"
     target_domain = "https://ncpi.ntmofa.gov.tw/"
     target_storage = str(root_dir / "data" / "ncpi_exhibition.json")

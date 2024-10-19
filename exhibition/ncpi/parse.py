@@ -1,5 +1,4 @@
 import bs4
-import cssutils
 
 from helper.parse_helper import ParseInit
 
@@ -12,7 +11,9 @@ class NCPIParse(ParseInit):
         return self.item.get("title")
 
     def get_date(self, *args, **kwargs) -> str:
-        raw_date_string = self.item.select_one("div.label >ul > li >span > i.mark").get_text()
+        raw_date_string = self.item.select_one(
+            "div.label >ul > li >span > i.mark"
+        ).get_text()
         split_date = raw_date_string.split("~")
         if len(split_date) == 2:
             start_date, end_date = split_date

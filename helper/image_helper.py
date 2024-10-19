@@ -7,7 +7,6 @@ import time
 from abc import ABCMeta
 from pathlib import Path
 from threading import Lock
-from typing import Dict
 
 from dotenv import load_dotenv
 from imgurpython import ImgurClient
@@ -37,7 +36,7 @@ class ImageInit(metaclass=ABCMeta):
 
 
 class ImgurImage(ImageInit):
-    cache_data: Dict = {}
+    cache_data: dict = {}
     client = None
     cache_file = None
     cache_file_path = None
@@ -101,7 +100,7 @@ class ImgurImage(ImageInit):
         with open(self.cache_file_path, encoding="utf-8") as file:
             self.cache_data = json.load(file)
 
-    def commit_data(self, data: Dict):
+    def commit_data(self, data: dict):
         self.cache_data.update(data)
 
     def save_cache_file(self):

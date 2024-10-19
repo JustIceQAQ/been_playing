@@ -1,5 +1,4 @@
 from abc import ABCMeta, abstractmethod
-from typing import Dict, Optional
 
 USER_AGENT = (
     "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -21,5 +20,5 @@ USER_AGENT_LIST = [
 
 class HeaderInit(metaclass=ABCMeta):
     @abstractmethod
-    def get_header(self) -> Optional[Dict[str, str]]:
+    def get_header(self) -> dict[str, str] | None:
         raise NotImplementedError

@@ -1,6 +1,5 @@
-from itertools import chain, product
+from itertools import chain
 from pathlib import Path
-from typing import List
 
 from exhibition import ExhibitionEnum
 from exhibition.ntm.parse import NTMParse, PathQuery
@@ -24,7 +23,7 @@ class NTMRunner(RunnerInit):
     use_parse = NTMParse
 
     def get_response(self):
-        path_query_data: List[PathQuery] = [
+        path_query_data: list[PathQuery] = [
             PathQuery(n=5472, sms=13389),
             PathQuery(n=5473, sms=13389),
             PathQuery(n=5474, sms=13389),
@@ -32,7 +31,9 @@ class NTMRunner(RunnerInit):
             PathQuery(n=5477, sms=13389),
         ]
         target_urls = list(
-            self.urls_format.format(target_domain=self.target_domain, n=item.n, sms=item.sms)
+            self.urls_format.format(
+                target_domain=self.target_domain, n=item.n, sms=item.sms
+            )
             for item in path_query_data
         )
 
@@ -47,7 +48,9 @@ class NTMRunner(RunnerInit):
     def get_items(self, responses):
         return list(
             chain.from_iterable(
-                response.select_one("#CCMS_Content").select("ul[data-child] > li[data-index] > div.area-essay")
+                response.select_one("#CCMS_Content").select(
+                    "ul[data-child] > li[data-index] > div.area-essay"
+                )
                 for response in responses
             )
         )
