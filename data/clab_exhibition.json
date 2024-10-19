@@ -1,21 +1,12 @@
 {
     "information": {
-        "fullname": "CLab",
+        "fullname": "\u53f0\u7063\u7576\u4ee3\u6587\u5316\u5be6\u9a57\u5834C-Lab",
         "code_name": "CLab",
         "external_link": "https://clab.org.tw/events/"
     },
-    "counts": 6,
-    "last_update": "2024-10-19T09:59:29.626470+00:00",
+    "counts": 4,
+    "last_update": "2024-10-19T10:22:48.079200+00:00",
     "data": [
-        {
-            "systematics": "CLab",
-            "title": "\u5be6\u9a57\uff0f\u5834\uff1aC-LAB\u9032\u884c\u5f0f",
-            "date": "2024-05-03 ~ 2024-12-31",
-            "address": "\u670d\u52d9\u4e2d\u5fc31\u6a13",
-            "source_url": "https://clab.org.tw/events/experimenting-at-c-lab/",
-            "UUID": "f88beef277cf5c3092066d850c6d50db",
-            "figure": "https://clab.org.tw/wp-content/uploads/2024/04/%E5%AF%A6%E9%A9%97%E5%A0%B4-%E7%B6%B2%E9%A0%81banner-1744x1090px-scaled.jpg"
-        },
         {
             "systematics": "CLab",
             "title": "2024\u672a\u4f86\u5a92\u9ad4\u85dd\u8853\u7bc0\u2014\u2014\u5947\u7570\u9ede",
@@ -27,39 +18,30 @@
         },
         {
             "systematics": "CLab",
+            "title": "\u5be6\u9a57\uff0f\u5834\uff1aC-LAB\u9032\u884c\u5f0f",
+            "date": "2024-05-03 ~ 2024-12-31",
+            "address": "\u670d\u52d9\u4e2d\u5fc31\u6a13",
+            "source_url": "https://clab.org.tw/events/experimenting-at-c-lab/",
+            "UUID": "f88beef277cf5c3092066d850c6d50db",
+            "figure": "https://clab.org.tw/wp-content/uploads/2024/04/%E5%AF%A6%E9%A9%97%E5%A0%B4-%E7%B6%B2%E9%A0%81banner-1744x1090px-scaled.jpg"
+        },
+        {
+            "systematics": "CLab",
+            "title": "dialog() - \u4e9e\u6d32\u751f\u6210\u85dd\u8853\u5c55 2024 \u53f0\u5317\u7ad9",
+            "date": "2024-10-11 ~ 2024-10-20",
+            "address": "\u7f8e\u63f4\u5927\u6a13\u5c55\u6f14\u7a7a\u95931\u6a13\u3001\u6771\u8349\u576a",
+            "source_url": "https://clab.org.tw/events/dialog_taipei/",
+            "UUID": "cb87586bd4d55e0c8c9c5fb7ccb4449d",
+            "figure": "https://clab.org.tw/wp-content/uploads/2024/10/1744-1090-%E5%AE%98%E7%B6%B2%E6%A1%8C%E6%A9%9F-scaled.jpg"
+        },
+        {
+            "systematics": "CLab",
             "title": "\u8cc8\u5112\u6021\u85dd\u8853\u9996\u5c55 \u2014 \u300a\u5fc3\u65c5\uff1a\u4e00\u5834\u63a7\u5236\u4e2d\u7684\u5931\u63a7\u300b",
             "date": "2024-09-28 ~ 2024-10-06",
             "address": "\u670d\u52d9\u4e2d\u5fc3\u4e8c\u6a13",
             "source_url": "https://clab.org.tw/events/juyiart/",
             "UUID": "093e83074b0b5c00b6288fc7605073ee",
             "figure": "https://clab.org.tw/wp-content/uploads/2024/09/1.jpg"
-        },
-        {
-            "systematics": "CLab",
-            "title": "Stick Together! All the CREATORS! \u2014\u20142024 CREATORS\u958b\u653e\u5de5\u4f5c\u5ba4",
-            "date": "2024-09-22",
-            "address": "CREATORS\u7a7a\u95932\u6a13+3\u6a13\u3001102\u5171\u4eab\u5427",
-            "source_url": "https://clab.org.tw/events/2024creators_open_studio/",
-            "UUID": "42b2561132c854da8161883e0bc7d7d8",
-            "figure": "https://clab.org.tw/wp-content/uploads/2024/09/1744x1090-scaled.jpg"
-        },
-        {
-            "systematics": "CLab",
-            "title": "Work Better \u91cd\u65b0\u601d\u8003\u8fa6\u516c\u5ba4\u7684\u672a\u4f86",
-            "date": "2024-08-21 ~ 2024-09-06",
-            "address": "\u5716\u66f8\u9928\u5c55\u6f14\u7a7a\u9593\u4e00\u6a13\u3001\u4e8c\u6a13",
-            "source_url": "https://clab.org.tw/events/workbetter/",
-            "UUID": "61822278a7b750b4aaef7e1059647b8c",
-            "figure": "https://clab.org.tw/wp-content/uploads/2024/08/Banner_1744_1090.jpg"
-        },
-        {
-            "systematics": "CLab",
-            "title": "2024 \u8072\u5f9c\u97f3\u6a02\u7bc0\uff1aWandering",
-            "date": "2024-08-23 ~ 2024-09-15",
-            "address": "\u81fa\u7063\u8072\u97ff\u5be6\u9a57\u5ba4\u7acb\u9ad4\u8072\u5834\u3001\u806f\u5408\u9910\u5ef3\u5c55\u6f14\u7a7a\u9593\u3001\u806f\u5408\u9910\u5ef3\u5c55\u6f14\u7a7a\u9593 \u7070\u76d2\u5b50\u3001\u5716\u66f8\u9928\u5c55\u6f14\u7a7a\u9593\u3001\u6771\u8349\u576a\u3001\u591a\u529f\u80fd\u5ef3",
-            "source_url": "https://clab.org.tw/events/2024_wandering/",
-            "UUID": "e45988abc7e4592d9a317ee4a7210cbd",
-            "figure": "https://clab.org.tw/wp-content/uploads/2024/07/2024%E8%81%B2%E5%BE%9C%E9%9F%B3%E6%A8%82%E7%AF%80_C_LAB%E5%AE%98%E7%B6%B2_1744x1090.jpg"
         }
     ],
     "visit": {}
