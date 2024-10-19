@@ -1,5 +1,5 @@
 from abc import ABCMeta, abstractmethod
-from typing import Any, Dict, Union
+from typing import Any
 
 from bs4 import BeautifulSoup
 
@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 
 class TranslationInit(metaclass=ABCMeta):
     @abstractmethod
-    def format_to_object(self, *args, **kwargs) -> Union[BeautifulSoup, Dict[Any, Any]]:
+    def format_to_object(self, *args, **kwargs) -> BeautifulSoup | dict[Any, Any]:
         raise NotImplementedError
 
 
@@ -21,5 +21,5 @@ class BeautifulSoupTranslation(TranslationInit):
 
 
 class JsonTranslation(TranslationInit):
-    def format_to_object(self, json_context: Dict[Any, Any]) -> Dict[Any, Any]:
+    def format_to_object(self, json_context: dict[Any, Any]) -> dict[Any, Any]:
         return json_context

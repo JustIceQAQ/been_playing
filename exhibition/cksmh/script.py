@@ -1,7 +1,7 @@
 from pathlib import Path
 
 from exhibition import ExhibitionEnum
-from exhibition.cksmh.parse import CKSMHParse, CKSMHParse2
+from exhibition.cksmh.parse import CKSMHParse2
 from helper.clean_helper import RequestsClean
 from helper.instantiation_helper import RequestsBeautifulSoupInstantiation
 from helper.runner_helper import RunnerInit
@@ -30,7 +30,9 @@ class CKSMHRunner(RunnerInit):
     #     self.get_more_range_with_url(dataset_list, item_css_selector)
     #     return dataset_list
     def get_response(self):
-        requests_worker = self.instantiation("https://www.cksmh.gov.tw/News_Actives_photo.aspx?n=6067&sms=14954")
+        requests_worker = self.instantiation(
+            "https://www.cksmh.gov.tw/News_Actives_photo.aspx?n=6067&sms=14954"
+        )
         target_object = requests_worker.fetch()
         return target_object
 

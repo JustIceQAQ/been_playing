@@ -1,5 +1,5 @@
 from abc import ABCMeta, abstractmethod
-from typing import Any, Dict, List, Union
+from typing import Any
 
 from bs4 import BeautifulSoup
 
@@ -13,7 +13,7 @@ class InstantiationInit(metaclass=ABCMeta):
     @abstractmethod
     def fetch(
         self, *args, **kwargs
-    ) -> Union[BeautifulSoup, Dict[str, Any], List[Dict[str, Any]]]:
+    ) -> BeautifulSoup | dict[str, Any] | list[dict[str, Any]]:
         raise NotImplementedError
 
 
@@ -28,7 +28,7 @@ class RequestsBeautifulSoupInstantiation(
 
 
 class RequestsJsonInstantiation(InstantiationInit, RequestsCrawler, JsonTranslation):
-    def fetch(self, *args, **kwargs) -> Union[Dict[str, Any], List[Dict[str, Any]]]:
+    def fetch(self, *args, **kwargs) -> dict[str, Any] | list[dict[str, Any]]:
         context = self.get_page(formatted=self.Formatted.json, *args, **kwargs)
         translation_object = self.format_to_object(context)
         return translation_object

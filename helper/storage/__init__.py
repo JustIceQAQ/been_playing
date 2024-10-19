@@ -3,7 +3,6 @@ import abc
 
 class StorageInit(abc.ABC):
 
-
     @staticmethod
     def login(*args, **kwargs):
         raise NotImplementedError

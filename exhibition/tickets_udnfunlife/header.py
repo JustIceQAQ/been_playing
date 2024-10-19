@@ -1,11 +1,10 @@
 import random
-from typing import Dict
 
 from helper.header_helper import USER_AGENT_LIST, HeaderInit
 
 
 class TicketsUdnFunLifeHeader(HeaderInit):
-    def get_header(self) -> Dict[str, str]:
+    def get_header(self) -> dict[str, str]:
         return {
             "User-Agent": random.choice(USER_AGENT_LIST),
             "Host": "tickets.udnfunlife.com",
@@ -17,7 +16,7 @@ class TicketsUdnFunLifeHeader(HeaderInit):
 
 
 class TicketsUdnFunLifeCookieHeader(HeaderInit):
-    def get_header(self) -> Dict[str, str]:
+    def get_header(self) -> dict[str, str]:
         return {
             "User-Agent": random.choice(USER_AGENT_LIST),
             "Host": "tickets.udnfunlife.com",

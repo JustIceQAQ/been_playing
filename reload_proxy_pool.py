@@ -2,10 +2,10 @@ import asyncio
 import base64
 import dataclasses
 import datetime
+import logging
 import os
 import secrets
 from pathlib import Path
-import logging
 
 import dill
 import httpx
@@ -39,7 +39,9 @@ class FreeProxySource:
             "Cookie": f"fp={secrets.token_hex(16)}",
         }
 
-    async def get_page_data(self, url: str, headers: dict, httpx_client: httpx.AsyncClient) -> Tag:
+    async def get_page_data(
+        self, url: str, headers: dict, httpx_client: httpx.AsyncClient
+    ) -> Tag:
         response = await httpx_client.get(url, headers=headers)
         parsed = BeautifulSoup(response.text, "html5lib")
         return parsed.select_one("#proxy_list")
@@ -79,7 +81,7 @@ class FreeProxySource:
                 s = data[0].index('("') + 2
                 e = data[0].index('")')
                 clean_data.append(
-                    [base64.b64decode((data[0][s:e])).decode("utf-8"), data[1], data[2]]
+                    [base64.b64decode(data[0][s:e]).decode("utf-8"), data[1], data[2]]
                 )
 
         proxies = [Proxy(*item) for item in clean_data]

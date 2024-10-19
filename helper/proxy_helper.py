@@ -2,7 +2,6 @@ import abc
 import dataclasses
 import random
 from pathlib import Path
-from typing import List
 
 import dill
 
@@ -49,7 +48,7 @@ class FreeProxy(ProxyInit):
         if proxy_path.is_file():
             with open(proxy_path, "rb") as f:
                 data = dill.load(f)
-                self.proxy_pool: List[Proxy] = data.get("available_ip")
+                self.proxy_pool: list[Proxy] = data.get("available_ip")
         else:
             print("Not Find proxy.pkl. using NoneProxy")
             np = NoneProxy()

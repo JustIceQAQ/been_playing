@@ -19,12 +19,16 @@ class NTMParse(ParseInit):
         return self.item.select_one("div.caption > span").get_text()
 
     def get_date(self, *args, **kwargs) -> str:
-        if (result := self.safe_get_text(self.item.select_one("p.activity-time"))) is not None:
+        if (
+            result := self.safe_get_text(self.item.select_one("p.activity-time"))
+        ) is not None:
             return result.replace("日期：", "").strip()
         return ""
 
     def get_address(self, *args, **kwargs) -> str:
-        if (result := self.safe_get_text(self.item.select_one("p.activity-season"))) is not None:
+        if (
+            result := self.safe_get_text(self.item.select_one("p.activity-season"))
+        ) is not None:
             return result.replace("地點：", "").strip()
         return ""
 

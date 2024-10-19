@@ -6,12 +6,13 @@ from exhibition.fubonartmuseum.parse import FuBonArtMuseumParse
 from helper.clean_helper import RequestsClean
 from helper.crawler.requests_ import RequestsCrawler
 from helper.proxy_helper import NoneProxy
-from helper.translation_helper import BeautifulSoupTranslation
 from helper.runner_helper import RunnerInit
+from helper.translation_helper import BeautifulSoupTranslation
 
 
 class FuBonArtMuseumRunner(RunnerInit):
     """富邦博物館"""
+
     use_method = "GET"
     root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
     target_url = "https://www.fubonartmuseum.org/Default"
@@ -35,7 +36,9 @@ class FuBonArtMuseumRunner(RunnerInit):
         return transitioned
 
     def get_items(self, response):
-        return response.select("div#homepage-swiper-exhibitions > div.swiper-wrapper > div")
+        return response.select(
+            "div#homepage-swiper-exhibitions > div.swiper-wrapper > div"
+        )
 
     def get_parsed(self, items):
         for item in items:

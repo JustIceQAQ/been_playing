@@ -1,10 +1,8 @@
-from typing import Dict
-
 from helper.parse_helper import ParseInit
 
 
 class KKDayParse(ParseInit):
-    def __init__(self, item: Dict):
+    def __init__(self, item: dict):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str:

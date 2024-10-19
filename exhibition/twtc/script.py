@@ -33,7 +33,13 @@ class TWTCRunner(RunnerInit):
         return []
 
     def get_items(self, responses):
-        return sum([response.select("#home > div > table > tbody > tr") for response in responses], [])
+        return sum(
+            [
+                response.select("#home > div > table > tbody > tr")
+                for response in responses
+            ],
+            [],
+        )
 
     def get_parsed(self, items):
         runtime_now = datetime.datetime.now(pytz.timezone("Asia/Taipei")).date()
