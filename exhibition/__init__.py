@@ -140,6 +140,11 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "CLab",
         "https://clab.org.tw/events/",
     )
+    KingCarArt = (
+        "金車文藝中心",
+        "KingCarArt",
+        "https://www.kingcarart.org.tw/exhibitions/current",
+    )
 
     BUG = (
         "BUG",
