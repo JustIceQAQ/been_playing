@@ -1,12 +1,10 @@
-import random
-
-from helper.header_helper import USER_AGENT_LIST, HeaderInit
+from helper.header_helper import HeaderInit
 
 
 class TicketsUdnFunLifeHeader(HeaderInit):
     def get_header(self) -> dict[str, str]:
         return {
-            "User-Agent": random.choice(USER_AGENT_LIST),
+            "User-Agent": self.get_random_user_agent(),
             "Host": "tickets.udnfunlife.com",
             "Origin": "https://tickets.udnfunlife.com",
             "Referer": "https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx",
@@ -18,7 +16,7 @@ class TicketsUdnFunLifeHeader(HeaderInit):
 class TicketsUdnFunLifeCookieHeader(HeaderInit):
     def get_header(self) -> dict[str, str]:
         return {
-            "User-Agent": random.choice(USER_AGENT_LIST),
+            "User-Agent": self.get_random_user_agent(),
             "Host": "tickets.udnfunlife.com",
             "upgrade-insecure-requests": "1",
             "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",

@@ -13,3 +13,5 @@ httpx[socks]
 dill
 sentry-sdk
 prettytable
+fake-useragent
+aiofile

@@ -1,11 +1,9 @@
-import random
-
-from helper.header_helper import USER_AGENT_LIST, HeaderInit
+from helper.header_helper import HeaderInit
 
 
 class IBonHeader(HeaderInit):
     def get_header(self) -> dict[str, str] | None:
         return {
-            "User-Agent": random.choice(USER_AGENT_LIST),
+            "User-Agent": self.get_random_user_agent(),
             "Referer": "https://tour.ibon.com.tw/home/search?category=exhibition",
         }
