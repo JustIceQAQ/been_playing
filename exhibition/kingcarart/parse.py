@@ -60,7 +60,7 @@ class KingCarArtParse(ParseInit):
             return "-"
         dev_style = div.attrs.get("style")
         image = dev_style.split(":")[-1]
-        return f"https:{image[:-3]}"
+        return f"https:{image[:-2]}"
 
     def get_source_url(self, *args, **kwargs) -> str:
         return self.item.find("a")["href"]
