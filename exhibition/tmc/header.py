@@ -1,6 +1,4 @@
-import random
-
-from helper.header_helper import USER_AGENT_LIST, HeaderInit
+from helper.header_helper import HeaderInit
 
 
 class TMCHeader(HeaderInit):
@@ -13,6 +11,6 @@ class TMCHeader(HeaderInit):
             "image/webp,"
             "image/apng,*/*;q=0.8,"
             "application/signed-exchange;v=b3;q=0.7",
-            "User-Agent": random.choice(USER_AGENT_LIST),
+            "User-Agent": self.get_random_user_agent(),
             "Host": "www.tmc.taipei",
         }
