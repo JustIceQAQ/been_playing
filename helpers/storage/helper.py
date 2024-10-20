@@ -23,12 +23,23 @@ class ExhibitionData(BaseModel):
         return values
 
 
+class Information(BaseModel):
+    fullname: str
+    code_name: str
+    external_link: str
+
+
 class ExhibitionStorage(BaseModel):
-    information: dict | None = Field(default_factory=dict)
+    information: Information
     counts: int = 0
     last_update: str | None = None
     data: list[ExhibitionData] | None = Field(default_factory=list)
     visit: dict[str, str] | None = Field(default_factory=dict)
+
+    @model_validator(mode="after")
+    def generate_counts(cls, values):
+        values.counts = len(values.data)
+        return values
 
     async def save_to_local(
         self,
