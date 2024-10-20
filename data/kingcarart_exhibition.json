@@ -1,0 +1,66 @@
+{
+    "information": {
+        "fullname": "\u91d1\u8eca\u6587\u85dd\u4e2d\u5fc3",
+        "code_name": "KingCarArt",
+        "external_link": "https://www.kingcarart.org.tw/exhibitions/current"
+    },
+    "counts": 6,
+    "last_update": "2024-10-20T12:56:24.941588+00:00",
+    "data": [
+        {
+            "systematics": "KingCarArt",
+            "title": "\u5289\u6631\u5ef7 \u5275\u4f5c\u500b\u5c55\u3010\u8d70\u5728\u6c34\u4e0a\u3011",
+            "date": "2024-10-29 ~ 2024-12-15",
+            "address": "\u81fa\u5317\u627f\u5fb7\u9928, CHENGDE SPACE-TAIPEI",
+            "source_url": "https://www.kingcarart.org.tw/exhibitions-detail/213",
+            "UUID": "53aae334e58450f7b5210310dbc69da9",
+            "figure": "https://d3th77aaplrtu7.cloudfront.net/Chende_Art/2024/liu-yu-ting/2024-10-17-173416-1729157683IwG44.jp"
+        },
+        {
+            "systematics": "KingCarArt",
+            "title": "\u856d\u5b87\u5022 \u5275\u4f5c\u500b\u5c55\u3010\u50be\u8eab\u89c0\u770b\u3011",
+            "date": "2024-10-29 ~ 2024-12-15",
+            "address": "\u81fa\u5317\u627f\u5fb7\u9928, CHENGDE SPACE-TAIPEI",
+            "source_url": "https://www.kingcarart.org.tw/exhibitions-detail/212",
+            "UUID": "65baf2e49cae502ba46ff22634cd6a4a",
+            "figure": "https://d3th77aaplrtu7.cloudfront.net/Chende_Art/2024/HsiaoYuChieh/yao02612-1729062306ccoFA.jp"
+        },
+        {
+            "systematics": "KingCarArt",
+            "title": "\u5f35\u5b50\u6069 \u5275\u4f5c\u500b\u5c55\u3010\u4f60\u4e0d\u89ba\u5f97\u4ed6\u662f\u53ef\u4ee5\u64e6\u6389\u7684\u55ce\uff1f\u3011",
+            "date": "2024-10-29 ~ 2024-12-15",
+            "address": "\u81fa\u5317\u627f\u5fb7\u9928, CHENGDE SPACE-TAIPEI",
+            "source_url": "https://www.kingcarart.org.tw/exhibitions-detail/211",
+            "UUID": "fa7a32b388bd56578a2e362c24e1b1bb",
+            "figure": "https://d3th77aaplrtu7.cloudfront.net/Chende_Art/2024/Chang_Tzu_En/2024-10-15-141325-1728972853RIL4Y.pn"
+        },
+        {
+            "systematics": "KingCarArt",
+            "title": "\u8b1d\u5fd7\u5eb7 \u5275\u4f5c\u500b\u5c55\u3010\u5bb6-\u7269\u3011",
+            "date": "2024-09-28 ~ 2024-11-10",
+            "address": "\u81fa\u5317\u5357\u4eac\u9928, NANJING SPACE-TAIPEI",
+            "source_url": "https://www.kingcarart.org.tw/exhibitions-detail/209",
+            "UUID": "e949c972808456428c30c42ae066f104",
+            "figure": "https://d3th77aaplrtu7.cloudfront.net/Nanjing_Art/2024-09-28/Cheah-Chee-Hong/14-2024100cm100cm-17261137767ByFr.jp"
+        },
+        {
+            "systematics": "KingCarArt",
+            "title": "\u9ad8\u8446\u5bb9 \u5275\u4f5c\u500b\u5c55 \u3010\u5954\u8dd1\u81f3\u9072\u66ae\uff1a\u76f2\u4eba\u4f5c\u6230\u5b88\u5247\u3011",
+            "date": "2024-09-28 ~ 2024-11-10",
+            "address": "\u81fa\u5317\u5357\u4eac\u9928, NANJING SPACE-TAIPEI",
+            "source_url": "https://www.kingcarart.org.tw/exhibitions-detail/207",
+            "UUID": "608aea03a4845affbac71bcd195b77de",
+            "figure": "https://d3th77aaplrtu7.cloudfront.net/Nanjing_Art/2024-09-28/Kao-Pao-Jung/-1724321916vnqga.jp"
+        },
+        {
+            "systematics": "KingCarArt",
+            "title": "\u9418\u4f73\u8aed\u99d0\u9928\u5275\u4f5c\u5c55\u3010\u4fe1\u4ef0\u7684\uff0c\u592a\u4fe1\u4ef0\u7684\u3011",
+            "date": "2024-10-11 ~ 2024-11-03",
+            "address": "\u81fa\u5317\u627f\u5fb7\u9928, CHENGDE SPACE-TAIPEI",
+            "source_url": "https://www.kingcarart.org.tw/exhibitions-detail/210",
+            "UUID": "50ca9072fe3c5c738bb5df3c634cc0f2",
+            "figure": "https://d3th77aaplrtu7.cloudfront.net/Residency/3_JhongJiaYu/04-1728013558GtYMa.jp"
+        }
+    ],
+    "visit": {}
+}
