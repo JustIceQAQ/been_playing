@@ -4,18 +4,9 @@
         "code_name": "FuBonArtMuseum",
         "external_link": "https://www.fubonartmuseum.org/Default"
     },
-    "counts": 3,
-    "last_update": "2024-09-20T19:02:54.288757+00:00",
+    "counts": 2,
+    "last_update": "2024-10-21T02:55:16.699585+00:00",
     "data": [
-        {
-            "systematics": "FuBonArtMuseum",
-            "title": "\u65b0\u5bae\u6649\uff1a\u5b87\u5b99\u2014\u98a8\u4e4b\u65c5\u4eba COSMOS - Susumu Shingu - Wind Traveler",
-            "date": "2024-10-12 ~ 2024-02-17",
-            "address": "\u5bcc\u90a6\u7f8e\u8853\u9928-1\u6a13 \u6c34\u666f\u5c55\u5ef3",
-            "source_url": "https://www.fubonartmuseum.org/ExhibitionDetail?PKNO=X007Q5U3",
-            "UUID": "0d83f6c3c36f5ff699e9ebb19d5a99b4",
-            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007Q5U3/Cover/\u65b0\u5bae\u6649\uff3f\u5b98\u7db2BN_598\u00d7598px.png"
-        },
         {
             "systematics": "FuBonArtMuseum",
             "title": "\u300a\u68b5\u8c37\uff1a\u5c0b\u5149\u4e4b\u8def\u300b Van Gogh: Journey of Light",
@@ -27,12 +18,12 @@
         },
         {
             "systematics": "FuBonArtMuseum",
-            "title": "\u771f\u5be6\u672c\u8cea \u7f85\u4e39\u8207\u5370\u8c61\u6d3e\u6642\u4ee3 True Nature Rodin and the Age of Impressionism",
-            "date": "2024-05-04 ~ 2024-09-23",
+            "title": "\u65b0\u5bae\u6649\uff1a\u5b87\u5b99\u2014\u98a8\u4e4b\u65c5\u4eba COSMOS - Susumu Shingu - Wind Traveler",
+            "date": "2024-10-12 ~ 2025-02-17",
             "address": "\u5bcc\u90a6\u7f8e\u8853\u9928-1\u6a13 \u6c34\u666f\u5c55\u5ef3",
-            "source_url": "https://www.fubonartmuseum.org/ExhibitionDetail?PKNO=X007HPYU",
-            "UUID": "4c0f3139afc150ec8bdb7f712c23d3a6",
-            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007HPYU/Cover/\u4e3b\u8996\u89ba4.jpg"
+            "source_url": "https://www.fubonartmuseum.org/ExhibitionDetail?PKNO=X007Q5U3",
+            "UUID": "0d83f6c3c36f5ff699e9ebb19d5a99b4",
+            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007Q5U3/Cover/\u65b0\u5bae\u6649\uff3f\u5b98\u7db2BN_598\u00d7598px.png"
         }
     ],
     "visit": {}

@@ -36,20 +36,27 @@ class FuBonArtMuseumParse(ParseInit):
         raw_text = data.text.strip()
         if "." in raw_text and "-" in raw_text:
             raw_start_date, raw_end_date = raw_text.split("-")
+            this_raw_start_year = None
+            this_raw_start_month = None
+
             if len(start_date_split := raw_start_date.split(".")) == 3:
-                raw_year, raw_month, raw_day = start_date_split
+                raw_start_year, raw_start_month, raw_day = start_date_split
                 start_date = datetime.date(
-                    int(raw_year),
-                    int(raw_month),
+                    int(raw_start_year),
+                    int(raw_start_month),
                     int(raw_day),
                 )
+                this_raw_start_month = int(raw_start_month)
+                this_raw_start_year = int(raw_start_year)
             else:
-                raw_month, raw_day = start_date_split
+                raw_start_month, raw_day = start_date_split
                 start_date = datetime.date(
                     int(now_year),
-                    int(raw_month),
+                    int(raw_start_month),
                     int(raw_day),
                 )
+                this_raw_start_month = int(raw_start_month)
+                this_raw_start_year = int(now_year)
 
             if len(end_date_split := raw_end_date.split(".")) == 3:
                 raw_year, raw_month, raw_day = end_date_split
@@ -59,10 +66,16 @@ class FuBonArtMuseumParse(ParseInit):
                     int(raw_day),
                 )
             else:
-                raw_month, raw_day = end_date_split
+                raw_end_month, raw_day = end_date_split
+
+                use_year = (
+                    (this_raw_start_year + 1)
+                    if this_raw_start_month > int(raw_end_month)
+                    else this_raw_start_year
+                )
                 end_date = datetime.date(
-                    int(now_year),
-                    int(raw_month),
+                    int(use_year),
+                    int(raw_end_month),
                     int(raw_day),
                 )
             return f"{start_date.isoformat()} ~ {end_date.isoformat()}"
