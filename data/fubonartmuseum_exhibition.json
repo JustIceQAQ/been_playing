@@ -5,7 +5,7 @@
         "external_link": "https://www.fubonartmuseum.org/Default"
     },
     "counts": 2,
-    "last_update": "2024-10-20T13:32:45.553150+00:00",
+    "last_update": "2024-10-21T02:55:16.699585+00:00",
     "data": [
         {
             "systematics": "FuBonArtMuseum",
@@ -14,16 +14,16 @@
             "address": "\u5bcc\u90a6\u7f8e\u8853\u9928-3\u6a13 \u65e5\u5149\u5c55\u5ef3",
             "source_url": "https://www.fubonartmuseum.org/ExhibitionDetail?PKNO=X007NBYX",
             "UUID": "60a3af3b604a5cafad3b85760bafaae6",
-            "figure": "https://i.imgur.com/i9VDmcU.webp"
+            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007NBYX/Cover/\u5c55\u89bdBN_589x589px.jpg"
         },
         {
             "systematics": "FuBonArtMuseum",
             "title": "\u65b0\u5bae\u6649\uff1a\u5b87\u5b99\u2014\u98a8\u4e4b\u65c5\u4eba COSMOS - Susumu Shingu - Wind Traveler",
-            "date": "2024-10-12 ~ 2024-02-17",
+            "date": "2024-10-12 ~ 2025-02-17",
             "address": "\u5bcc\u90a6\u7f8e\u8853\u9928-1\u6a13 \u6c34\u666f\u5c55\u5ef3",
             "source_url": "https://www.fubonartmuseum.org/ExhibitionDetail?PKNO=X007Q5U3",
             "UUID": "0d83f6c3c36f5ff699e9ebb19d5a99b4",
-            "figure": "https://i.imgur.com/r8JmZG2.webp"
+            "figure": "https://backend.fubonartmuseum.org/Data/FUBON/Images/Exhibition/X007Q5U3/Cover/\u65b0\u5bae\u6649\uff3f\u5b98\u7db2BN_598\u00d7598px.png"
         }
     ],
     "visit": {}
