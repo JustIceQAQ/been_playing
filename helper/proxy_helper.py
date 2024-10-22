@@ -10,11 +10,11 @@ class ProxyInit(abc.ABC):
     proxy_pool = None
 
     @abc.abstractmethod
-    def get_random_proxy(self):
+    def get_random_proxy(self, *args, **kwargs):
         raise NotImplementedError
 
     @abc.abstractmethod
-    def load_source(self):
+    def load_source(self, *args, **kwargs):
         raise NotImplementedError
 
 
@@ -43,8 +43,12 @@ class FreeProxy(ProxyInit):
             runtime_proxy.protocol.lower(): f"{runtime_proxy.ip}:{runtime_proxy.port}"
         }
 
-    def load_source(self, path="proxy.pkl"):
-        proxy_path = Path(path)
+    def load_source(
+        self,
+        proxy_path: Path = Path(__file__).parent.parent.absolute()
+        / "fixture"
+        / "proxy.pkl",
+    ):
         if proxy_path.is_file():
             with open(proxy_path, "rb") as f:
                 data = dill.load(f)
@@ -57,5 +61,7 @@ class FreeProxy(ProxyInit):
 
 if __name__ == "__main__":
     fp = FreeProxy()
-    fp.load_source(path="../proxy.pkl")
+    fp.load_source(
+        proxy_path=Path(__file__).parent.parent.absolute() / "fixture" / "proxy.pkl"
+    )
     print(fp.get_random_proxy())

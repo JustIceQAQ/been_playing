@@ -44,7 +44,7 @@ jobs:
           PIP_DEFAULT_TIMEOUT: 100
           
       - name: execute py script
-        run: python reload_proxy_pool.py
+        run: python ./script/reload_proxy_pool.py
         env:
           SENTRY_SDK_DNS: ${{ secrets.SENTRY_SDK_DNS }}
         
