@@ -1,4 +1,5 @@
 import asyncio
+import functools
 import pathlib
 from typing import Any
 
@@ -28,9 +29,11 @@ class DiskCache:
         result = await future
         return result
 
-    async def set(self, key: str, value):
+    async def set(self, key: str, value, expire: float = None):
         loop = asyncio.get_running_loop()
-        future = loop.run_in_executor(None, self.cache.set, key, value)
+        future = loop.run_in_executor(
+            None, functools.partial(self.cache.set, key, value, expire=expire)
+        )
         result = await future
         return result
 
