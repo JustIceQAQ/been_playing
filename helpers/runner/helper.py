@@ -13,6 +13,9 @@ class RunnerInit3(abc.ABC):
     translation: type[TranslationInit] = JsonTranslation
     use_parse: type[ParseInit2]
 
+    def set_cache_expire(self) -> int | None:
+        return None
+
     @abc.abstractmethod
     def set_information(self) -> "Information":
         raise NotImplementedError
@@ -64,7 +67,11 @@ class RunnerInit3(abc.ABC):
         else:
             response = await self.image.upload(item.figure)
             if response.success:
-                await self.cache.set(hash_source_url, response.data.webp_link)
+                await self.cache.set(
+                    hash_source_url,
+                    response.data.webp_link,
+                    expire=self.set_cache_expire(),
+                )
                 item.figure = response.data.webp_link
             else:
                 pass
