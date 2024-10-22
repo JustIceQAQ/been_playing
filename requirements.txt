@@ -3,6 +3,7 @@ simplejson
 bs4
 cssutils
 pydantic
+pydantic-settings
 pysondb
 html5lib
 pytz
