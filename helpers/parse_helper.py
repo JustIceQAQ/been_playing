@@ -3,7 +3,9 @@ import inspect
 from typing import Any
 
 import bs4
-from pydantic import BaseModel
+
+from helper.clean_helper import RequestsClean
+from helpers.storage.helper import ExhibitionItem
 
 
 class ParseInit(abc.ABC):
@@ -45,6 +47,11 @@ class ParseInit(abc.ABC):
             for def_name, method in methods
         }
 
-    def parse_to_base_model(self, base_model: BaseModel, *args, **kwargs) -> BaseModel:
+    def parse_to_base_model(
+        self, base_model: type[ExhibitionItem], *args, **kwargs
+    ) -> ExhibitionItem:
         parsed_data = self.parsed(*args, **kwargs)
-        return base_model.model_validate(parsed_data)
+        clean_data = {
+            key: RequestsClean.clean_string(value) for key, value in parsed_data.items()
+        }
+        return base_model.model_validate(clean_data)
