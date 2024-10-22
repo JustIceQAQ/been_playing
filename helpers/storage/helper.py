@@ -29,11 +29,11 @@ class Information(BaseModel):
     external_link: str
 
 
-class ExhibitionStorage(BaseModel):
+class Exhibition(BaseModel):
     information: Information
     counts: int = 0
-    last_update: str | None = None
     data: list[ExhibitionData] | None = Field(default_factory=list)
+    last_update: str | None = None
     visit: dict[str, str] | None = Field(default_factory=dict)
 
     @model_validator(mode="after")
