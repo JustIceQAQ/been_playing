@@ -4,6 +4,7 @@ import bs4
 import httpx
 
 from exhibition.cksmh.parse import CKSMHParse3
+from helper.utils_helper import month_3
 from helpers.cache.disk.helper import DiskCache
 from helpers.image.imgur.helper import ImgurImage
 from helpers.runner.helper import RunnerInit3
@@ -14,6 +15,9 @@ from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 class CKSMHRunner(RunnerInit3):
     translation = BeautifulSoupTranslation
     use_parse = CKSMHParse3
+
+    def set_cache_expire(self) -> int | None:
+        return month_3()
 
     def set_information(self) -> "Information":
         return Information(
