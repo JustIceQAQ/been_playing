@@ -7,8 +7,8 @@ import sentry_sdk
 from dotenv import load_dotenv
 
 from exhibition.cksmh.re_script import CKSMHRunner
-from helper.image_helper import ImgurImage
 from helpers.cache.disk.helper import DiskCache
+from helpers.image.imgur.helper import ImgurImage
 
 
 async def main():
