@@ -6,8 +6,15 @@ from pathlib import Path
 import dill
 
 
+@dataclasses.dataclass
+class Proxy:
+    ip: str
+    port: str
+    protocol: str
+
+
 class ProxyInit(abc.ABC):
-    proxy_pool = None
+    proxy_pool: list[Proxy] | None = None
 
     @abc.abstractmethod
     def get_random_proxy(self, *args, **kwargs):
@@ -16,13 +23,6 @@ class ProxyInit(abc.ABC):
     @abc.abstractmethod
     def load_source(self, *args, **kwargs):
         raise NotImplementedError
-
-
-@dataclasses.dataclass
-class Proxy:
-    ip: str
-    port: str
-    protocol: str
 
 
 class NoneProxy(ProxyInit):
@@ -55,8 +55,6 @@ class FreeProxy(ProxyInit):
                 self.proxy_pool: list[Proxy] = data.get("available_ip")
         else:
             print("Not Find proxy.pkl. using NoneProxy")
-            np = NoneProxy()
-            self.proxy_pool = np.load_source()
 
 
 if __name__ == "__main__":
