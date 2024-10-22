@@ -2,7 +2,7 @@ import os
 from functools import lru_cache
 
 from pydantic import Field
-from pydantic.config import BaseSettings, SettingsConfigDict
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
@@ -19,11 +19,13 @@ class Settings(BaseSettings):
     SENTRY_SDK_DNS: str
 
 
-class LocalSettings(BaseSettings):
-    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
+class LocalSettings(Settings):
+    model_config = SettingsConfigDict(
+        env_file=".env", env_file_encoding="utf-8", extra="ignore"
+    )
 
 
-class ActionSettings(BaseSettings):
+class ActionSettings(Settings):
     pass
 
 
