@@ -4,7 +4,7 @@ import uuid
 
 import pytest
 
-from helpers.storage.helper import ExhibitionData, ExhibitionStorage, Information
+from helpers.storage.helper import Exhibition, ExhibitionData, Information
 
 
 def test_exhibition_data(fake_exhibition_data: dict):
@@ -27,9 +27,7 @@ def test_exhibition_data(fake_exhibition_data: dict):
 async def test_exhibition_storage(
     fake_exhibition_data: dict, fake_exhibition_information: dict
 ):
-    es = ExhibitionStorage(
-        information=Information.model_validate(fake_exhibition_information)
-    )
+    es = Exhibition(information=Information.model_validate(fake_exhibition_information))
     es.data = [
         ExhibitionData.model_validate(fake_exhibition_data),
         ExhibitionData.model_validate(fake_exhibition_data),
