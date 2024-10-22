@@ -4,11 +4,11 @@ import uuid
 
 import pytest
 
-from helpers.storage.helper import Exhibition, ExhibitionData, Information
+from helpers.storage.helper import Exhibition, ExhibitionItem, Information
 
 
 def test_exhibition_data(fake_exhibition_data: dict):
-    ed = ExhibitionData.model_validate(fake_exhibition_data)
+    ed = ExhibitionItem.model_validate(fake_exhibition_data)
     assert ed.title == fake_exhibition_data["title"]
     assert ed.date == fake_exhibition_data["date"]
     assert ed.address == fake_exhibition_data["address"]
@@ -28,9 +28,9 @@ async def test_exhibition_storage(
     fake_exhibition_data: dict, fake_exhibition_information: dict
 ):
     es = Exhibition(information=Information.model_validate(fake_exhibition_information))
-    es.data = [
-        ExhibitionData.model_validate(fake_exhibition_data),
-        ExhibitionData.model_validate(fake_exhibition_data),
+    es.items = [
+        ExhibitionItem.model_validate(fake_exhibition_data),
+        ExhibitionItem.model_validate(fake_exhibition_data),
     ]
     with tempfile.TemporaryDirectory() as tmp_dir:
         await es.save_to_local("QAQ", folder=pathlib.Path(tmp_dir))
