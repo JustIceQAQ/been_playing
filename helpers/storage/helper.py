@@ -4,22 +4,25 @@ from pathlib import Path
 from aiofile import async_open
 from pydantic import BaseModel, Field, model_validator
 
+from helper.utils_helper import datetime_now_iso_format
+
 
 def hex_uuid5(value: str) -> str:
     return uuid.uuid5(uuid.UUID("00000000-0000-0000-0000-000000000000"), value).hex
 
 
-class ExhibitionData(BaseModel):
+class ExhibitionItem(BaseModel):
     title: str | None = None
     date: str | None = None
     address: str | None = None
     figure: str | None = None
-    source_url: str
+    source_url: str | None = None
     UUID: str | None = None
 
     @model_validator(mode="after")
     def generate_uuid(cls, values):
-        values.UUID = hex_uuid5(values.source_url)
+        if values.source_url is not None:
+            values.UUID = hex_uuid5(values.source_url)
         return values
 
 
@@ -32,13 +35,13 @@ class Information(BaseModel):
 class Exhibition(BaseModel):
     information: Information
     counts: int = 0
-    data: list[ExhibitionData] | None = Field(default_factory=list)
-    last_update: str | None = None
+    items: list[ExhibitionItem] | None = Field(default_factory=list)
+    last_update: str | None = Field(default_factory=datetime_now_iso_format)
     visit: dict[str, str] | None = Field(default_factory=dict)
 
     @model_validator(mode="after")
     def generate_counts(cls, values):
-        values.counts = len(values.data)
+        values.counts = len(values.items)
         return values
 
     async def save_to_local(
