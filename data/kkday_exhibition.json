@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 70,
-    "last_update": "2024-10-20T13:33:05.620564+00:00",
+    "last_update": "2024-10-22T16:16:06.342728+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -24,6 +24,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/181803-taipei-van-gogh-journey-of-light-exhibition",
             "UUID": "434f7ec4b9195f829f3e4c33f8a7c78e",
             "figure": "https://i.imgur.com/KPU3qvC.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317|\u7b2c\u4e00\u5c46 FANTACO \u9b54\u5e7b\u85dd\u8853\u7bc0",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/251165",
+            "UUID": "e0c9ef8ad45f57f6bdf742b01ef129a1",
+            "figure": "https://i.imgur.com/1dWLPpH.webp"
         },
         {
             "systematics": "KKDay",
@@ -54,15 +63,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317|\u7b2c\u4e00\u5c46 FANTACO \u9b54\u5e7b\u85dd\u8853\u7bc0",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/251165",
-            "UUID": "e0c9ef8ad45f57f6bdf742b01ef129a1",
-            "figure": "https://i.imgur.com/1dWLPpH.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u570b\u5bb6\u5730\u7406\u5973\u6027\u7d93\u5178\u5f71\u50cf\u5c55",
             "date": "",
             "address": "",
@@ -90,12 +90,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317\u8c93\u7a7a\u7e9c\u8eca|\u8eca\u7968.\u52d5\u7269\u5712\u806f\u7968.\u512a\u60e0\u5957\u7968",
+            "title": "\u53f0\u5317|\u8896\u73cd\u535a\u7269\u9928\u96fb\u5b50\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/115080-taipei-zoo-maokong-gondola-round-trip-tickets-taiwan",
-            "UUID": "983df51fa8245a6ca8ab5c569e3f3e31",
-            "figure": "https://i.imgur.com/gMnQVbe.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/30573-miniatures-museum-of-taiwan-ticket-taipei",
+            "UUID": "ec92ba2eff5952b6ad80c8e82f8b6728",
+            "figure": "https://i.imgur.com/7OXpENS.webp"
         }
     ],
     "visit": {}
