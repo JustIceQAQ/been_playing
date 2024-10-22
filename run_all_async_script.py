@@ -6,10 +6,9 @@ from pathlib import Path
 import sentry_sdk
 from dotenv import load_dotenv
 
-from exhibition.cksmh.async_script import CKSMHRunnerAsync
-from exhibition.jam.async_script import JamRunnerAsync
+from exhibition.cksmh.re_script import CKSMHRunner
 from helper.image_helper import ImgurImage
-from helper.notify_helper import LogNotify  # LineNotify , NoneNotify
+from helpers.cache.disk.helper import DiskCache
 
 
 async def main():
@@ -17,8 +16,6 @@ async def main():
     IS_DEBUG = os.getenv("IS_DEBUG", False)
     CLIENT_ID = os.getenv("IMGUR_API_CLIENT_ID", False)
     CLIENT_SECRET = os.getenv("IMGUR_API_CLIENT_SECRET", False)
-    USE_PICKLED = os.getenv("USE_PICKLED", True)
-    # LINE_NOTIFY_API = os.getenv("LINE_NOTIFY_API", False)
 
     # logging init
     logging.basicConfig(
@@ -26,29 +23,13 @@ async def main():
         format="%(asctime)s %(levelname)s %(message)s",
         datefmt="%Y-%m-%d %H:%M",
     )
-    runtime_logging = logging.getLogger("runtime_logging")
-
-    # Imgur image
-    file_path = ROOT_DIR / "data" / "cache_file.json"
-    imgur_image = ImgurImage()
-    imgur_image.load_cache_file(file_path)
-
-    # local notify (use logging)
-    log_notify = LogNotify(runtime_logging)
-
-    # if runtime process except
-    # if IS_DEBUG is False and LINE_NOTIFY_API:
-    #     runtime_notify = LineNotify(LINE_NOTIFY_API)
-    # else:
-    #     runtime_notify = NoneNotify()
 
     if CLIENT_ID and CLIENT_SECRET:
-        imgur_image.login(CLIENT_ID, CLIENT_SECRET)
-        log_notify.send_message("imgur api is login", log_notify.LogLevel.INFO)
+        imgur = ImgurImage(client_id=CLIENT_ID)
+    disk_cache = DiskCache()
 
     all_async_script_runners = [
-        CKSMHRunnerAsync().run(use_pickled=USE_PICKLED),
-        JamRunnerAsync().run(use_pickled=USE_PICKLED),
+        CKSMHRunner().run(disk_cache, imgur),
     ]
     await asyncio.gather(*all_async_script_runners)
 
