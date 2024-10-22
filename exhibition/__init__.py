@@ -28,7 +28,7 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
     NPM = (
         "國立故宮博物院",
         "npm",
-        "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1",
+        "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1",
     )
     SongShanCulturalPark = (
         "松山文創園區",
@@ -38,7 +38,7 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
     NTSEC = (
         "國立臺灣科學教育館",
         "ntsec",
-        "https://www.ntsec.gov.tw/User/Exhibitions.aspx?a=44",
+        "https://www.ntsec.gov.tw/article/list.aspx?a=25",
     )
     TFAM = (
         "臺北市立美術館",
@@ -63,7 +63,7 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
     TMC = (
         "台北流行音樂中心",
         "tmc",
-        "https://tmc.taipei/show/event/",
+        "https://www.tmc.taipei/tw/lastest-event",
     )
     NMH = (
         "國立歷史博物館",
@@ -89,4 +89,65 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
         "忠泰美術館",
         "jam",
         "http://jam.jutfoundation.org.tw/online-exhibition",
+    )
+    NCPI = (
+        "國家攝影文化中心",
+        "ncpi",
+        "https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?n=8006&sms=15632",
+    )
+    NTCArtMuseum = (
+        "新北市美術館",
+        "ntc_art_museum",
+        "https://ntcart.museum/exhibition",
+    )
+
+    OpenTix = (
+        "OPENTIX兩廳院生活文化",
+        "opentix",
+        "https://www.opentix.life/search/%20/ABOUT_TO_BEGIN?category=%E5%B1%95%E8%A6%BDAll",
+    )
+    KLook = (
+        "KLOOK客路",
+        "klook",
+        "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/",
+    )
+
+    KKTix = (
+        "KKTix",
+        "KKTix",
+        "https://kktix.com/events?category_id=11",
+    )
+
+    IBon = (
+        "ibon售票",
+        "ibon",
+        "https://tour.ibon.com.tw/home/search?category=exhibition",
+    )
+
+    KKDay = (
+        "KKDay",
+        "KKDay",
+        "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1",
+    )
+
+    FuBonArtMuseum = (
+        "FuBonArtMuseum",
+        "FuBonArtMuseum",
+        "https://www.fubonartmuseum.org/Default",
+    )
+    CLab = (
+        "台灣當代文化實驗場C-Lab",
+        "CLab",
+        "https://clab.org.tw/events/",
+    )
+    KingCarArt = (
+        "金車文藝中心",
+        "KingCarArt",
+        "https://www.kingcarart.org.tw/exhibitions/current",
+    )
+
+    BUG = (
+        "BUG",
+        "BUG",
+        "BUG",
     )

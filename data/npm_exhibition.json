@@ -2,184 +2,202 @@
     "information": {
         "fullname": "\u570b\u7acb\u6545\u5bae\u535a\u7269\u9662",
         "code_name": "npm",
-        "external_link": "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1"
+        "external_link": "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1"
     },
-    "counts": 19,
-    "last_update": "2022-10-19T16:27:12.275369+00:00",
+    "counts": 21,
+    "last_update": "2023-06-10T07:50:18.795553+00:00",
     "data": [
         {
             "systematics": "npm",
-            "title": "\u570b\u5bf6\u805a\u7126",
-            "date": "2022-10-05~2023-01-02",
-            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 208",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013100&l=1&type=&cat=",
-            "UUID": "ab02b0af00e65853bd089b13c5e94017",
-            "figure": "https://i.imgur.com/2b2VnI7.webp"
-        },
-        {
-            "systematics": "npm",
-            "title": "\u5beb\u76e1\u7e41\u83ef\uff0d\u665a\u660e\u6587\u5316\u4eba\u738b\u4e16\u8c9e\u8207\u4ed6\u7684\u5fd7\u696d",
-            "date": "2022-10-05~2023-03-21",
-            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 202,204,206,210,212",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013066&l=1&type=&cat=",
-            "UUID": "471f455696b95c9bbe8c1393f0939401",
-            "figure": "https://i.imgur.com/hHypgMQ.webp"
-        },
-        {
-            "systematics": "npm",
-            "title": "\u53e4\u756b\u52d5\u6f2b\u66f8\u6cd5\u7bc7\u2014\u82b1\u6c23\u85b0\u4eba\u5e16",
-            "date": "2022-09-27~2022-12-25",
-            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 102",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013101&l=1&type=&cat=",
-            "UUID": "559120c8ca2c578ba4ea4504d1aa06d0",
-            "figure": "https://i.imgur.com/nz7TDV6.webp"
-        },
-        {
-            "systematics": "npm",
-            "title": "\u907f\u6691\u5c71\u838a\uff1a\u6e05\u5e1d\u570b\u591a\u5143\u7d71\u6cbb\u7684\u7e2e\u5f71",
-            "date": "2022-09-24~2023-02-05",
-            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 103,104",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013089&l=1&type=&cat=",
-            "UUID": "880b0570df715986b44cb69b50182b84",
-            "figure": "https://i.imgur.com/LNf4WjL.webp"
-        },
-        {
-            "systematics": "npm",
-            "title": "\u9591\u60c5\u56db\u4e8b\u2500\u2500\u63d2\u82b1\u3001\u711a\u9999\u3001\u639b\u756b\u3001\u559d\u8336",
-            "date": "2022-09-16~2022-12-18",
+            "title": "\u6587\u7269\u6aa2\u6e2c\u8207\u4fee\u5fa9\u5728\u6545\u5bae",
+            "date": "2023-03-31~2023-06-11",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 105",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013075&l=1&type=&cat=",
-            "UUID": "e6b3a37a44d55177b2729fa32b4ab1c8",
-            "figure": "https://i.imgur.com/cpA4z2x.webp"
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013275&l=1&type=1&cat=",
+            "UUID": "6a852e26cfae5aca900897c53cc377f6",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013275/34055211.jpg&w=720&h=500"
+        },
+        {
+            "systematics": "npm",
+            "title": "\u7b46\u6b4c\u58a8\u821e\u2014\u6545\u5bae\u7e6a\u756b\u5c0e\u8cde",
+            "date": "2023-03-30~2023-06-25",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 210,212",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013264&l=1&type=1&cat=",
+            "UUID": "39e2e666fa35556f8551bfc64665e6f4",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013264/34055176.jpg&w=720&h=500"
+        },
+        {
+            "systematics": "npm",
+            "title": "\u570b\u5bf6\u805a\u7126",
+            "date": "2023-03-30~2023-06-25",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 208",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013265&l=1&type=1&cat=",
+            "UUID": "02a818142f175491972d89941270bee3",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013265/34055178.jpg&w=720&h=500"
+        },
+        {
+            "systematics": "npm",
+            "title": "\u5de8\u5e45\u540d\u4f5c",
+            "date": "2023-03-28~2023-06-25",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 202",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013263&l=1&type=1&cat=",
+            "UUID": "2e751f95daa058a29d721d2d9e608949",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013263/34055174.jpg&w=720&h=500"
+        },
+        {
+            "systematics": "npm",
+            "title": "\u53e4\u756b\u52d5\u6f2b\u2014\u6e05\u9662\u672c\u6e05\u660e\u4e0a\u6cb3\u5716",
+            "date": "2023-03-28~2023-07-09",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 102",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013278&l=1&type=1&cat=",
+            "UUID": "0f9fc7628f2957ecb512b36524c37f4d",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013278/34055218.jpg&w=720&h=500"
+        },
+        {
+            "systematics": "npm",
+            "title": "\u7b46\u58a8\u898b\u771f\u7ae0\u2014\u6545\u5bae\u66f8\u6cd5\u5c0e\u8cde",
+            "date": "2023-03-25~2023-07-02",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 204,206",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013262&l=1&type=1&cat=",
+            "UUID": "c84526bc6f4e5f76aafb520d9271f137",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013262/34055172.jpg&w=720&h=500"
+        },
+        {
+            "systematics": "npm",
+            "title": "\u300c\u68b5\u8482\u5ca1\u5b97\u5ea7\u5716\u66f8\u9928\u73cd\u85cf\u300d\u66a8\u300c\u660e\u6e05\u5bae\u5ef7\u85cf\u66f8\u300d\u7279\u5c55",
+            "date": "2023-03-11~2023-07-16",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 103,104",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013254&l=1&type=1&cat=",
+            "UUID": "13a56ff56a365166b77d8ed1ec34b6de",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013254/34055158.jpg&w=720&h=500"
         },
         {
             "systematics": "npm",
             "title": "\u6545\u5baex\u53f0\u9054 \u65b0\u4e00\u4ee3\u7522\u5b78\u5408\u4f5c\u91d1\u734e",
             "date": "2022-03-25~",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 107",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013095&l=1&type=&cat=",
-            "UUID": "b9c2e56165fb5239a4e225c2af6cec22",
-            "figure": "https://i.imgur.com/q1ASMTz.webp"
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013095&l=1&type=1&cat=",
+            "UUID": "586ef8679a0f59ebac0361e37649a308",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04013095/34054731.jpg&w=720&h=500"
+        },
+        {
+            "systematics": "npm",
+            "title": "\u98a8\u683c\u6545\u4e8b\u2014\u743a\u746f\u5f69\u74f7\u7279\u5c55",
+            "date": "2022-01-13~2023-12-31",
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 203,207",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04012959&l=1&type=1&cat=",
+            "UUID": "c61cd14fd3ad5e8287321316894be3bf",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04012959/34054431.jpg&w=720&h=500"
         },
         {
             "systematics": "npm",
             "title": "\u83ef\u9e97\u9b54\u6cd5\u5c4b\u2500\u6545\u5bae\u7684\u6d1b\u53ef\u53ef\u73cd\u85cf",
             "date": "2021-12-24~",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 300,301",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04012832&l=1&type=&cat=",
-            "UUID": "66923c2d48915c0d9f4cd9d6929a3b62",
-            "figure": "https://i.imgur.com/1HS1h9S.webp"
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04012832&l=1&type=1&cat=",
+            "UUID": "553614a8d293533bb93f1d937226d69b",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04012832/34054063.jpg&w=720&h=500"
         },
         {
             "systematics": "npm",
             "title": "\u7d93\u5178\u4e4b\u7f8e\u2014\u65b0\u5a92\u9ad4\u85dd\u8853\u5c55",
             "date": "2021-11-02~",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 210",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011058&l=1&type=&cat=",
-            "UUID": "900de77cd59959f78e16eb2ef06a8f54",
-            "figure": "https://i.imgur.com/AK2KUq7.webp"
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011058&l=1&type=1&cat=",
+            "UUID": "33e44a88163a5fc6b4c57da8fe65e59a",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04011058/34053253.jpg&w=720&h=500"
         },
         {
             "systematics": "npm",
             "title": "\u9451\u53e4\u2014\u4e7e\u9686\u671d\u7684\u5bae\u5ef7\u9285\u5668\u6536\u85cf",
-            "date": "2020-12-01~",
+            "date": "2020-12-01~2023-10-15",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 304",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011128&l=1&type=&cat=",
-            "UUID": "3857c785b7e25e39a815f57f40166306",
-            "figure": "https://i.imgur.com/gYGV8sY.webp"
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011128&l=1&type=1&cat=",
+            "UUID": "1de56925e8b75379b460577584ab4953",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04011128/34053236.jpg&w=720&h=500"
         },
         {
             "systematics": "npm",
             "title": "\u58eb\u62ff\u4e4e\u2014\u6e05\u5bae\u9f3b\u7159\u58fa\u7684\u6642\u5c1a\u98a8\u6f6e",
             "date": "2020-07-31~",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 303",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011127&l=1&type=&cat=",
-            "UUID": "78051346c33556a397c7e89208420a76",
-            "figure": "https://i.imgur.com/umsrSNx.webp"
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011127&l=1&type=1&cat=",
+            "UUID": "0360e8f47c85595a8af82c23ce7f367e",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04011127/34053240.jpg&w=720&h=500"
         },
         {
             "systematics": "npm",
             "title": "\u5c0e\u89bd\u5927\u5ef3",
             "date": "2020-05-27~",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 102",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011292&l=1&type=&cat=",
-            "UUID": "45185daf41a555a78fd86fd37de825f9",
-            "figure": "https://i.imgur.com/bgnd8Jd.webp"
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011292&l=1&type=1&cat=",
+            "UUID": "959d8a5ae36e5c46b4d2acc99600ef2e",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04011292/34053241.jpg&w=720&h=500"
         },
         {
             "systematics": "npm",
             "title": "\u8cb4\u5191\u69ae\u83ef\u2500\u6e05\u4ee3\u5bae\u5ef7\u7684\u65e5\u5e38\u98a8\u666f",
             "date": "2020-05-01~",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 108",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011291&l=1&type=&cat=",
-            "UUID": "84e7f20737b65c3e9b5764cfa0b1cbbe",
-            "figure": "https://i.imgur.com/g9aMZ0Q.webp"
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011291&l=1&type=1&cat=",
+            "UUID": "c7fac935b3db5813a669e8824ca3ed34",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04011291/34053242.jpg&w=720&h=500"
         },
         {
             "systematics": "npm",
             "title": "\u5357\u5317\u6545\u5bae \u570b\u5bf6\u8588\u8403",
             "date": "2017-11-02~",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340 302",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04009612&l=1&type=&cat=",
-            "UUID": "e9019ad274ab52258fbf3fbd196980ce",
-            "figure": "https://i.imgur.com/QwMnRgg.webp"
-        },
-        {
-            "systematics": "npm",
-            "title": "\u98a8\u683c\u6545\u4e8b\u2014\u743a\u746f\u5f69\u74f7\u7279\u5c55",
-            "date": "-",
-            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340203,207",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04012959&l=1&type=&cat=",
-            "UUID": "7a268a30146455c0a323fa816ddc6d41",
-            "figure": "https://i.imgur.com/MjTJMez.webp"
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04009612&l=1&type=1&cat=",
+            "UUID": "9495a46d8bce529eb7f18b45ffacfc09",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig/04009612/34053243.jpg&w=720&h=500"
         },
         {
             "systematics": "npm",
             "title": "\u96c6\u74ca\u85fb\u2014\u9662\u85cf\u73cd\u73a9\u7cbe\u83ef\u5c55",
             "date": "-",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340106",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04005700&l=1&type=&cat=",
-            "UUID": "e7eefa5fe3ab5b58b9bd0f133419c53b",
-            "figure": "https://i.imgur.com/zFMxyTT.webp"
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04005700&l=1&type=1&cat=",
+            "UUID": "9134655caa9153bb93fd3159422e85e3",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig%2F04005700%2F34053244.jpg"
         },
         {
             "systematics": "npm",
             "title": "\u656c\u5929\u683c\u7269\u2014\u9662\u85cf\u7389\u5668\u7cbe\u83ef\u5c55",
             "date": "-",
-            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340306,308",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04000590&l=1&type=&cat=",
-            "UUID": "3aeba09fefe85c9697f92704343fbcb1",
-            "figure": "https://i.imgur.com/b36uigv.webp"
+            "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340306",
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04000590&l=1&type=1&cat=",
+            "UUID": "d9db9e57434e58c187b3db0a7acc214e",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig%2F04000590%2F34053245.jpg"
         },
         {
             "systematics": "npm",
             "title": "\u5409\u91d1\u8000\u91c7\u2014\u9662\u85cf\u9285\u5668\u7cbe\u83ef\u5c55",
             "date": "-",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340305,307",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04000576&l=1&type=&cat=",
-            "UUID": "c77afffc49ed5d568f41892efb298a3b",
-            "figure": "https://i.imgur.com/tHZ0yLp.webp"
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04000576&l=1&type=1&cat=",
+            "UUID": "4176c170006f55ad9f0e0e1175b6f7f3",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig%2F04000576%2F34053248.jpg"
         },
         {
             "systematics": "npm",
             "title": "\u6476\u6ce5\u5e7b\u5316\u2014\u9662\u85cf\u9676\u74f7\u7cbe\u83ef\u5c55",
             "date": "-",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340201,205",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04000569&l=1&type=&cat=",
-            "UUID": "7695cd62243d5c22920db226ad38818e",
-            "figure": "https://i.imgur.com/ezzgJy7.webp"
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04000569&l=1&type=1&cat=",
+            "UUID": "c08e45f5bab1531486b3d44937261d7a",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig%2F04000569%2F34053249.jpg"
         },
         {
             "systematics": "npm",
             "title": "\u6148\u60b2\u8207\u667a\u6167\u2014\u5b97\u6559\u96d5\u5851\u85dd\u8853",
             "date": "-",
             "address": "\u5317\u90e8\u9662\u5340 \u7b2c\u4e00\u5c55\u89bd\u5340101",
-            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04000459&l=1&type=&cat=",
-            "UUID": "654cdecc9de859c48942b1d8533b44d6",
-            "figure": "https://i.imgur.com/747rG7p.webp"
+            "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04000459&l=1&type=1&cat=",
+            "UUID": "fc7dbdeebe5951749a9e98dd1efeef0b",
+            "figure": "https://www.npm.gov.tw/NewFileAtt.ashx?name=exbitBig%2F04000459%2F34053221.jpg"
         }
     ],
     "visit": {
-        "opening": "\u9031\u4e8c\u81f3\u9031\u65e5\uff1a09:00~17:00\n\uff5c\u9031\u4e00\u4f11\u9928\n\uff5c\u914d\u5408\u9023\u7e8c\u5047\u65e5\uff0c112\u5e74\u5ea6\u9031\u4e00\u958b\u9928\u65e51/2\u30011/23\u30012/27\u30014/3\u300110/9\u3002"
+        "opening": "\u9031\u4e8c\u81f3\u9031\u65e5\uff1a09:00~17:00 (16:30\u505c\u6b62\u552e\u7968\u53ca\u7968\u5238\u514c\u63db)\n\uff5c\u9031\u4e00\u4f11\u9928\n\uff5c\u914d\u5408\u9023\u7e8c\u5047\u65e5\u53ca\u6d3b\u52d5\u5c08\u6848\uff0c112\u5e74\u5ea6\u9031\u4e00\u958b\u9928\u65e55/1\u30016/26\u30017/3\u30018/7\u30019/4\u300110/9\u300110/23\u300110/30\u300111/6\u300112/4\u3002"
     }
 }

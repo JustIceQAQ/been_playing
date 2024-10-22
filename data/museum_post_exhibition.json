@@ -4,9 +4,36 @@
         "code_name": "museum_post",
         "external_link": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage=1"
     },
-    "counts": 7,
-    "last_update": "2022-10-19T16:27:30.471445+00:00",
+    "counts": 8,
+    "last_update": "2023-01-31T16:47:03.058520+00:00",
     "data": [
+        {
+            "systematics": "museum_post",
+            "title": "\u8863\u614b\u842c\u5343\uff0d\u670d\u98fe\u90f5\u7968\u7279\u5c55",
+            "date": "2023/01/06 ~ 2023/06/25",
+            "address": "\u90f5\u653f\u535a\u7269\u9928\u81fa\u5317\u9928\u7279\u5c55\u5ba4",
+            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&control_type=page&MA_Id=9DAC50E0-8F40-447F-99E8-B118ADD7B388",
+            "UUID": "1513f8d6ea7155b79e19032729f5222f",
+            "figure": "https://museum.post.gov.tw/post/FileCenter/Postal_Museum/Museum_Activities/9DAC50E0-8F40-447F-99E8-B118ADD7B388.jpg"
+        },
+        {
+            "systematics": "museum_post",
+            "title": "Nice \u5154 Meet U - \u751f\u8096\u90f5\u7968|\u5238\u5e63|\u85dd\u6587\u806f\u5c55",
+            "date": "2022/12/23 ~ 2023/03/19",
+            "address": "\u90f5\u653f\u535a\u7269\u99286\u6a13\u7279\u5c55\u5ba4",
+            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&control_type=page&MA_Id=8C55AF2B-02BF-4681-A25B-9A1B356E24FA",
+            "UUID": "d739f647999759cda8afed047b9ba73b",
+            "figure": "https://museum.post.gov.tw/post/FileCenter/Postal_Museum/Museum_Activities/8C55AF2B-02BF-4681-A25B-9A1B356E24FA.jpg"
+        },
+        {
+            "systematics": "museum_post",
+            "title": "\u771f\u5584\u7f8e-\u5973\u6027\u591a\u5143\u5f62\u8c61\u7279\u5c55",
+            "date": "2022/11/10 ~ 2023/02/12",
+            "address": "\u90f5\u653f\u535a\u7269\u9928\u9ad8\u96c4\u9928",
+            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&control_type=page&MA_Id=FDB28AF7-9490-4C05-85CE-08CA386250C8",
+            "UUID": "e8b155d70e615451b9de4070c14a2f9e",
+            "figure": "https://museum.post.gov.tw/post/FileCenter/Postal_Museum/Museum_Activities/FDB28AF7-9490-4C05-85CE-08CA386250C8.jpg"
+        },
         {
             "systematics": "museum_post",
             "title": "\u5947\u5e7b\u661f\u7a7a\u90f5\u7968\u5c55",
@@ -14,25 +41,7 @@
             "address": "\u90f5\u653f\u535a\u7269\u99285\u6a13\u90f5\u7968\u4e16\u754c",
             "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&control_type=page&MA_Id=75FD4801-D46C-480B-A98B-0FE7CCA15790",
             "UUID": "d91fc59368205f2bb18ad3549806c4e4",
-            "figure": "https://museum.post.gov.tw/post/FileCenter/Postal_Museum/Museum_Activities/75FD4801-D46C-480B-A98B-0FE7CCA15790.jpg"
-        },
-        {
-            "systematics": "museum_post",
-            "title": "\u53e4\u65e9\u311f\u9ad8\u96c4-\u5c01\u7247\u73cd\u90f5\u7279\u5c55",
-            "date": "2022/08/10 ~ 2022/10/30",
-            "address": "\u90f5\u653f\u535a\u7269\u9928\u9ad8\u96c4\u9928\u7279\u5c55\u5ba4",
-            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&control_type=page&MA_Id=7515169A-7DB6-4C82-A036-E4CDBBDF3E0C",
-            "UUID": "9a6abc3bb0f655a299f9adcff473d433",
-            "figure": "https://i.imgur.com/hLDYr3P.webp"
-        },
-        {
-            "systematics": "museum_post",
-            "title": "\u6200\u6200\u9435\u9053\u98a8\u60c5\uff0d\u706b\u8eca\u90f5\u7968\u7279\u5c55",
-            "date": "2022/05/03 ~ 2022/12/25",
-            "address": "\u90f5\u653f\u535a\u7269\u9928\u81fa\u5317\u9928\u7279\u5c55\u5ba4",
-            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&control_type=page&MA_Id=46E0CA35-3DBF-4CE4-B8A3-9739B3B7B80C",
-            "UUID": "89b994e724595985b301b957d2c3d6ae",
-            "figure": "https://i.imgur.com/UvhFVPx.webp"
+            "figure": "https://museum.post.gov.tw/post/FileCenter/Postal_Museum/Museum_Activities/7D6F23C0-9B23-4F13-982E-8ADF4A1EC8D8.jpg"
         },
         {
             "systematics": "museum_post",

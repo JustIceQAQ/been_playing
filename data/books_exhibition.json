@@ -4,9 +4,117 @@
         "code_name": "tickets_books",
         "external_link": "https://tickets.books.com.tw/leisure/"
     },
-    "counts": 20,
-    "last_update": "2022-10-19T16:27:07.065992+00:00",
+    "counts": 17,
+    "last_update": "2023-01-01T08:13:24.912781+00:00",
     "data": [
+        {
+            "systematics": "tickets_books",
+            "title": "2023\u53f0\u5317\u570b\u969b\u70d8\u7119\u66a8\u8a2d\u5099\u5c55",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010801135284",
+            "UUID": "5c83eea121695bd99f397a478ab50dc7",
+            "figure": "https://i.imgur.com/aKqjlSy.webp"
+        },
+        {
+            "systematics": "tickets_books",
+            "title": "\u89e3\u5bc6\u8056\u6bcd\u767e\u82b1\u5927\u6559\u5802",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010901994567",
+            "UUID": "6011f2533eb9579887e0913b6bb27d6c",
+            "figure": "https://i.imgur.com/P22tkru.webp"
+        },
+        {
+            "systematics": "tickets_books",
+            "title": "\u3010\u7c73\u5947\u85dd\u8853\u5c55\u5168\u7403\u5de1\u5c55\u2014\u53f0\u5317\u7ad9\u3011",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010201097460",
+            "UUID": "a6b1aa8d1b2359789080eb53e4a9cef0",
+            "figure": "https://i.imgur.com/eNzN8zP.webp"
+        },
+        {
+            "systematics": "tickets_books",
+            "title": "\u963f\u5947\u5e7c\u5e7c\u5712\u7279\u5c55\uff0d\u9ad8\u96c4\u7ad9",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010201451409",
+            "UUID": "fc8fc4ea64745da9bb2d95be097bf10d",
+            "figure": "https://i.imgur.com/iKF3baQ.webp"
+        },
+        {
+            "systematics": "tickets_books",
+            "title": "NAKED OCEAN IN TAIPEI \u5149\u4e4b\u5f71\u6d77\u6d0b\u5c55",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010901615581",
+            "UUID": "50766a639faf5a99a566acdf65bc588f",
+            "figure": "https://i.imgur.com/SVGr3MJ.webp"
+        },
+        {
+            "systematics": "tickets_books",
+            "title": "\u3010\u9032\u64ca\u7684\u5de8\u4eba\u5c55FINAL\u3011\u9ad8\u96c4\u5834",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010201612709",
+            "UUID": "c09d6303c5855823b0ad46d69a1d9b51",
+            "figure": "https://i.imgur.com/buD0sTm.webp"
+        },
+        {
+            "systematics": "tickets_books",
+            "title": "JOJO\u7684\u5947\u5999\u5192\u96aa\u300a\u9ec3\u91d1\u4e4b\u5fc3\u300b\u52d5\u756b",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010201035982",
+            "UUID": "83efb71726825b6bbe8b95176f05a6b0",
+            "figure": "https://i.imgur.com/PxtaJrX.webp"
+        },
+        {
+            "systematics": "tickets_books",
+            "title": "2222\uff0d\u672a\u4f86\u9078\u64c7\u5730",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010801235047",
+            "UUID": "35b37b751aad5bc999ebb6c1eddf7902",
+            "figure": "https://i.imgur.com/wUDlqlz.webp"
+        },
+        {
+            "systematics": "tickets_books",
+            "title": "\u3010\u5492\u8853\u8ff4\u6230\u5c55\u3011",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010201449862",
+            "UUID": "3c11436aa9165a85b188dd4fe56d575b",
+            "figure": "https://i.imgur.com/HgUx5S2.webp"
+        },
+        {
+            "systematics": "tickets_books",
+            "title": "BABY SHARK \u653e\u96fb\u8db4",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010201948433",
+            "UUID": "78a9b2f92a8f5f10bbeb73c6c85918d9",
+            "figure": "https://i.imgur.com/Vg02qDH.webp"
+        },
+        {
+            "systematics": "tickets_books",
+            "title": "\u4e00\u978b\u5165\u9b42\uff01\u502b\u6566\u8a2d\u8a08\u535a\u7269\u9928 \u6f6e\u978b",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010901781071",
+            "UUID": "80ef174e11f756c8bc2d9953b1a54695",
+            "figure": "https://i.imgur.com/NHA7nQb.webp"
+        },
+        {
+            "systematics": "tickets_books",
+            "title": "\u300c\u30f4\u30f4\u30f4\u30bd\u9b3c\u592a\u90ce\u5996\u602a100\u7269\u8a9e\u300d",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://tickets.books.com.tw/progshow/08010201913055",
+            "UUID": "2a0937984d4e586e9d88c72bfd964e81",
+            "figure": "https://i.imgur.com/ylv999D.webp"
+        },
         {
             "systematics": "tickets_books",
             "title": "\u3010\u9b3c\u6ec5\u4e4b\u5203\u5168\u96c6\u4e2d\u5c55\u5c4f\u6771\u7ad9\u3011",
@@ -27,111 +135,21 @@
         },
         {
             "systematics": "tickets_books",
-            "title": "\u9177\u96ea\u4f8f\u7f85\u7d00-\u9996\u90e8\u66f2\u300c\u86cb\u300d\u751f",
+            "title": "\u5b89\u5f92\u751f\u7ae5\u8a71\uff0d\u5c0f\u7f8e\u4eba\u9b5a\u7279\u5c55",
             "date": "-",
             "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201598705",
-            "UUID": "80ce20c6ff3e5843a6f15de300f11e44",
-            "figure": "https://i.imgur.com/3nCTM1d.webp"
+            "source_url": "https://tickets.books.com.tw/progshow/08010201081200",
+            "UUID": "deb7a963d336505daa32caa68a18feaf",
+            "figure": "https://i.imgur.com/FHBCxCr.webp"
         },
         {
             "systematics": "tickets_books",
-            "title": "\u3010The World of Tim Burton\u63d0\u59c6\u6ce2\u9813\u7570\u60f3\u4e16\u754c\u5c55\u3011",
+            "title": "\u6bad",
             "date": "-",
             "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/08010201246097",
-            "UUID": "76e94c303fe65851ba32e15088be2ea7",
-            "figure": "https://i.imgur.com/yd1aSXd.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\uff08\u96fb\u5b50\u7968\uff09\u5973\u4eba\u8ff7 | 2022\u7b2c\u516d\u5c46\u5168\u7403\u5973\u6027\u5f71\u97ff\u529b\u8ad6\u58c7",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005633427",
-            "UUID": "820534cbc709524e8705ce8058c1c00f",
-            "figure": "https://i.imgur.com/bd03lhs.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\uff08\u96fb\u5b50\u7968\uff09\u4e2d\u83ef\u4eba\u4e8b\u4e3b\u7ba1\u5354\u6703\u3010\u7dda\u4e0a online\u3011\u5c31\u696d\u670d\u52d9\u4e59\u7d1a\u6280\u8853\u58eb\u8003\u7167\u8f14\u5c0e\u5c08\u73ed",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005357035",
-            "UUID": "85d4fe43a0f05c1191d50adbf9289b46",
-            "figure": "https://i.imgur.com/N4kx0F6.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\uff08\u96fb\u5b50\u7968\uff09\u4e2d\u83ef\u4eba\u4e8b\u4e3b\u7ba1\u5354\u6703\u3010\u7dda\u4e0a online\u3011\u54e1\u5de5\u5fc3\u7406\u5065\u5eb7\u7ba1\u7406\u5e2b\u8a8d\u8b49\u73ed",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005807565",
-            "UUID": "b1b17a98461a51599b388e81bd087fb4",
-            "figure": "https://i.imgur.com/DsA30dB.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\uff08\u96fb\u5b50\u7968\uff09\u4e2d\u83ef\u4eba\u4e8b\u4e3b\u7ba1\u5354\u6703\u3010\u7dda\u4e0a online\u3011\u9ad8\u968e\u79d8\u66f8\u66a8\u5e55\u50da\u884c\u653f\u4e3b\u7ba1\u8a8d\u8b49\u73ed",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005610665",
-            "UUID": "c0e3355435375fbe974ffe3a74a6fc2c",
-            "figure": "https://i.imgur.com/G5NqEv6.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\uff08\u96fb\u5b50\u7968\uff09\u4e2d\u83ef\u4eba\u4e8b\u4e3b\u7ba1\u5354\u6703\u3010\u7dda\u4e0a online\u3011\u9ad8\u968e\u52de\u52d5\u6cd5\u898f\u7ba1\u7406\u5e2b\u8a8d\u8b49\u73ed",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005445579",
-            "UUID": "63eba761b9c8525bb6a83632b77fbb11",
-            "figure": "https://i.imgur.com/lFuCL8k.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\uff08\u96fb\u5b50\u7968\uff09\u4e2d\u83ef\u4eba\u4e8b\u4e3b\u7ba1\u5354\u6703\u3010\u7dda\u4e0a online\u3011\u54e1\u5de5\u5fc3\u7406\u8f14\u5c0e\u4eba\u54e1\u8a8d\u8b49\u73ed",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005390884",
-            "UUID": "bc8b76c1b8dc50829f8087fc02a48b64",
-            "figure": "https://i.imgur.com/YnnvR7U.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\uff08\u96fb\u5b50\u7968\uff09\u4e2d\u83ef\u4eba\u4e8b\u4e3b\u7ba1\u5354\u6703\u3010\u7dda\u4e0a online\u3011\u6838\u5fc3\u5e79\u90e8\u7ba1\u7406\u5be6\u52d9\u8a8d\u8b49\u73ed",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005832409",
-            "UUID": "94d908abb96853618a1a7a396c76bd94",
-            "figure": "https://i.imgur.com/CbIGKTe.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\uff08\u96fb\u5b50\u7968\uff09\u4e2d\u83ef\u4eba\u4e8b\u4e3b\u7ba1\u5354\u6703\u3010\u7dda\u4e0a online\u3011\u5c08\u696d\u79d8\u66f8\u66a8\u884c\u653f\u7ba1\u7406\u5e2b\u8a8d\u8b49\u73ed",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005489023",
-            "UUID": "b2b3308e8c1457159e1b2423e55e0c3f",
-            "figure": "https://i.imgur.com/KImeCOw.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\uff08\u96fb\u5b50\u7968\uff09\u4e2d\u83ef\u4eba\u4e8b\u4e3b\u7ba1\u5354\u6703\u3010\u7dda\u4e0a online\u3011\u52de\u5065\u4fdd\u66a8\u52de\u52d5\u6cd5\u898f\u7ba1\u7406\u5e2b\u8a8d\u8b49\u73ed",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005056208",
-            "UUID": "a735c64a38d05fd48e156955b93e2363",
-            "figure": "https://i.imgur.com/FU5fest.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\uff08\u96fb\u5b50\u7968\uff09\u4e2d\u83ef\u4eba\u4e8b\u4e3b\u7ba1\u5354\u6703\u3010\u7dda\u4e0a online\u3011\u4eba\u529b\u8cc7\u6e90\u7ba1\u7406\u5e2b\u8a8d\u8b49\u73ed",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005082034",
-            "UUID": "c9c62e4d21b85106b3f0a483c28da4c3",
-            "figure": "https://i.imgur.com/AyTNjb4.webp"
+            "source_url": "https://tickets.books.com.tw/progshow/08010901124597",
+            "UUID": "e98fa0db4b745f5ab116651252f64f55",
+            "figure": "https://i.imgur.com/ZDQJouY.webp"
         },
         {
             "systematics": "tickets_books",
@@ -141,51 +159,6 @@
             "source_url": "https://tickets.books.com.tw/progshow/02050005803000",
             "UUID": "39d8e7af82c153c3952c72608b099429",
             "figure": "https://i.imgur.com/qwpVFFd.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u82f1\u6587\uff0d\u53cd\u8f49\u6aa2\u5b9a\u8ab2\u7a0b",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005419999",
-            "UUID": "f4759829629e5db88cb43f4d6eb0aae1",
-            "figure": "https://i.imgur.com/OFMMwDS.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u82f1\u6587\uff0d\u53cd\u8f49\u6703\u8a71\u8ab2\u7a0b",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005458305",
-            "UUID": "aa46ffb49eeb5937a5b13e6d66031f5a",
-            "figure": "https://i.imgur.com/vL52ypT.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u65e5\u6587\uff0d\u53cd\u8f49\u6aa2\u5b9a\u8ab2\u7a0b",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005968755",
-            "UUID": "57cedace640f56568aab433f626ace74",
-            "figure": "https://i.imgur.com/ZZVSxaG.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u65e5\u6587\uff0d\u53cd\u8f49\u6703\u8a71\u8ab2\u7a0b",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005773687",
-            "UUID": "2f35894762525b57aefa9ccfb5c36fd9",
-            "figure": "https://i.imgur.com/grlcwhU.webp"
-        },
-        {
-            "systematics": "tickets_books",
-            "title": "\u82f1\u3001\u65e5\u3001\u97d3\uff0d\u8a9e\u8a00\u5b78\u7fd2/\u6587\u6cd5/\u6aa2\u5b9a",
-            "date": "-",
-            "address": "-",
-            "source_url": "https://tickets.books.com.tw/progshow/02050005855994",
-            "UUID": "0a8e62bededa524fa5a9380fd347cbc0",
-            "figure": "https://i.imgur.com/zTw1SbV.webp"
         }
     ],
     "visit": {}

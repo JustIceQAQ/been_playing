@@ -4,27 +4,47 @@
         "code_name": "ntsec",
         "external_link": "https://www.ntsec.gov.tw/User/Exhibitions.aspx?a=44"
     },
-    "counts": 2,
-    "last_update": "2022-10-19T16:27:08.037743+00:00",
+    "counts": 4,
+    "last_update": "2023-02-05T17:27:34.977002+00:00",
     "data": [
         {
             "systematics": "ntsec",
-            "title": "\u6578\u611f\u5df4\u58eb\uff0d\u4f86\u79d1\u6559\u9928\u73a9\u6578\u5b78\u5427\uff01",
+            "title": "\u7da0\u6f6e\u4e16\u4ee3-\u524d\u9032!\u6c38\u7e8c\u80fd\u6e90\u5cf6",
             "date": "-",
             "address": "-",
-            "source_url": "https://www.ntsec.gov.tw/User/Article.aspx?a=4188",
-            "UUID": "6df231c4d5e45dc581484de67629ca52",
-            "figure": "https://i.imgur.com/ZMMHuzG.webp"
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=460",
+            "UUID": "b3171a17c14d558597edea20a7814a5b",
+            "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/460_2.jpg"
         },
         {
             "systematics": "ntsec",
-            "title": "\u8a2d\u8a08\u6211\u5011\u7684\u4e16\u754c-\u79d1\u6280\u6027\u5225\u5316\u5275\u65b0",
+            "title": "\u5b89\u5f92\u751f\u7ae5\u8a71\uff0d\u5c0f\u7f8e\u4eba\u9b5a\u7279\u5c55 The Little Mermaid",
             "date": "-",
             "address": "-",
-            "source_url": "https://www.ntsec.gov.tw/User/Article.aspx?a=3784",
-            "UUID": "b5846f1347a054eebbd5547af23327f8",
-            "figure": "https://i.imgur.com/p03N5rj.webp"
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=468",
+            "UUID": "d49c6f3e50a9538794d0cef1a4b2d656",
+            "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/468_2.jpg"
+        },
+        {
+            "systematics": "ntsec",
+            "title": "NAKED OCEAN IN TAIPEI \u5149\u4e4b\u5f71\u6d77\u6d0b\u5c55",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=467",
+            "UUID": "308efc42e4ff5d48b6138fa35d59e0fc",
+            "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/467_2.jpeg"
+        },
+        {
+            "systematics": "ntsec",
+            "title": "\u6df1\u85cf\u964b\u5df7\u4e2d\u7684\u795e\u7955\u535a\u7269\u9928 \u2014 \u6eff\u6eff\u6bad\u5c4d\u9f4a\u805a\u7b49\u8457\u4f60\uff01",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=469",
+            "UUID": "d2af4c93e6aa535da4300927ecfc4496",
+            "figure": "https://www.ntsec.gov.tw/images/ArticleListPic/469_2.jpg"
         }
     ],
-    "visit": {}
+    "visit": {
+        "opening": "112\u5e74\u71df\u696d\u6642\u9593\u53ca\u4f11\u9928\u8aaa\u660e\n\u672c\u9928\u5730\u4e0b\u4e00\u6a13\u65bc110\u5e741\u67081\u65e5\u8d77\u81f3112\u5e744\u670830\u65e5\u5c01\u9589\uff0c\u57f7\u884c\u7a7a\u9593\u6539\u9020\u5efa\u7f6e\u8a08\u756b\u3002\u5176\u9918\u6a13\u5c64\u7686\u6b63\u5e38\u71df\u904b\u3002\n\n<table>\n    <thead>\n        <tr>\n            <th>\u65e5\u671f</th>\n            <th>\u71df\u904b\u6642\u9593</th>\n            <th>\u5099\u8a3b</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>\u6bcf\u9031\u4e00</td>\n            <td>\u4f11\u9928</td>\n            <td>\u570b\u5b9a\u5047\u65e5\u3001\u7279\u5b9a\u5047\u65e5\u53ca\u5bd2\u6691\u5047\u4e0d\u4f11\u9928</td>\n        </tr>\n        <tr>\n            <td>\u9031\u516d\u3001\u9031\u65e5\u3001\u570b\u5b9a\u4f8b\u5047\u65e5\u3001\u5bd2\u6691\u5047</td>\n            <td>9:00-18:00</td>\n            <td>\u552e\u7968\u6642\u9593\uff1a9:00-17:00</td>\n        </tr>\n        <tr>\n            <td>\u975e\u5bd2\u6691\u5047\u4e4b\u9031\u4e8c\u81f3\u9031\u4e94</td>\n            <td>9:00-17:00</td>\n            <td>\u552e\u7968\u6642\u9593\uff1a9:00-16:00</td>\n        </tr>\n    </tbody>\n</table>\n\n\u203b \u5176\u9918\u5fc5\u8981\u4e4b\u505c\u6b62\u958b\u653e\u53e6\u884c\u516c\u544a\uff0c\u4e26\u4ee5\u73fe\u5834\u516c\u544a\u70ba\u4e3b\uff01"
+    }
 }
