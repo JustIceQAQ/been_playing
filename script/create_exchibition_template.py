@@ -1,10 +1,10 @@
 import pathlib
 
 import click
-from code_template import SCRIPT_CODE
+from code_template import PARSE_CODE, SCRIPT_CODE
 
 ROOT_DIR = pathlib.Path(__file__).parent.parent.absolute()
-SCRIPT_FOLDER = ROOT_DIR / "exhibition"
+SCRIPT_FOLDER = ROOT_DIR / "app"
 
 
 @click.command()
@@ -21,6 +21,8 @@ def create_exhibition_template(script_code: str):
 
     with (app_script_folder / "script.py").open(mode="a+", encoding="utf-8") as f:
         f.write(SCRIPT_CODE.format(script_code=script_code))
+    with (app_script_folder / "parse.py").open(mode="a+", encoding="utf-8") as f:
+        f.write(PARSE_CODE.format(script_code=script_code))
 
     click.echo(f"{script_code} folder created!")
 
