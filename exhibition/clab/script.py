@@ -7,7 +7,7 @@ from helper.clean_helper import RequestsClean
 from helper.crawler.requests_ import RequestsCrawler
 from helper.runner_helper import RunnerInit
 from helper.translation_helper import BeautifulSoupTranslation
-from helper.utils_helper import date_now
+from helpers.utils_helper import date_now
 
 
 class CLabRunner(RunnerInit):
