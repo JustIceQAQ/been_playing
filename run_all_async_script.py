@@ -5,8 +5,8 @@ from pathlib import Path
 import sentry_sdk
 from dotenv import load_dotenv
 
+from app.exhibition.cksmh.script import CKSMHRunner
 from configs.settings import get_settings
-from exhibition.cksmh.re_script import CKSMHRunner
 from helpers.cache.disk.helper import DiskCache
 from helpers.image.imgur.helper import ImgurImage
 from helpers.image.none.helper import NoneImage
