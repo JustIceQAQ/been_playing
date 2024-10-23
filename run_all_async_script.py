@@ -5,7 +5,7 @@ from pathlib import Path
 import sentry_sdk
 from dotenv import load_dotenv
 
-from app.exhibition.cksmh.script import CKSMHRunner
+from app.script import PY_CLASS_SCRIPT
 from configs.settings import get_settings
 from helpers.cache.disk.helper import DiskCache
 from helpers.image.imgur.helper import ImgurImage
@@ -29,7 +29,7 @@ async def main():
     disk_cache = DiskCache()
 
     all_async_script_runners = [
-        CKSMHRunner().run(disk_cache, imgur),
+        RunnerObj().run(disk_cache, imgur) for RunnerObj in PY_CLASS_SCRIPT
     ]
     await asyncio.gather(*all_async_script_runners)
 
