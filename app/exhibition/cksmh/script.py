@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 
 
 class CKSMHRunner(RunnerInit):
+    """中正紀念堂"""
+
     translation = BeautifulSoupTranslation
     use_parse = CKSMHParse
 
@@ -22,7 +24,7 @@ class CKSMHRunner(RunnerInit):
     def set_information(self) -> "Information":
         return Information(
             fullname="中正紀念堂",
-            code_name="cksmh",
+            code_name="CKSMH",
             external_link="https://www.cksmh.gov.tw/activitysoonlist_369.html",
         )
 
