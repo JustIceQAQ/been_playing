@@ -4,7 +4,7 @@ from pathlib import Path
 from aiofile import async_open
 from pydantic import BaseModel, Field, model_validator
 
-from helper.utils_helper import datetime_now_iso_format
+from helpers.utils_helper import datetime_now_iso_format
 
 
 def hex_uuid5(value: str) -> str:
@@ -48,7 +48,8 @@ class Exhibition(BaseModel):
         self,
         filename: str,
         folder: str | Path | None = Path(__file__).parent.parent.parent.absolute()
-        / "data",
+        / "data"
+        / "v2",
     ):
         async with async_open(folder / f"{filename}.json", "w+") as afp:
             await afp.write(self.model_dump_json())
