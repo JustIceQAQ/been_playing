@@ -9,7 +9,7 @@ from helpers.translation.base import TranslationInit
 from helpers.translation.json import JsonTranslation
 
 
-class RunnerInit3(abc.ABC):
+class RunnerInit(abc.ABC):
     translation: type[TranslationInit] = JsonTranslation
     use_parse: type[ParseInit2]
 
@@ -98,4 +98,4 @@ class RunnerInit3(abc.ABC):
         for item in self.exhibition_.items:
             await self.cache_image_url(item)
 
-        await self.exhibition_.save_to_local(f"{self.information_.code_name}_v2")
+        await self.exhibition_.save_to_local(f"{self.information_.code_name}")
