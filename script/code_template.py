@@ -1,9 +1,13 @@
 SCRIPT_CODE = """from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
+from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
 
 class {script_code}Runner(RunnerInit):
+    translation = BeautifulSoupTranslation
+    use_parse = {script_code}Parse
+
     def set_cache_expire(self) -> int | None:
         return month_3()
 
@@ -18,7 +22,7 @@ class {script_code}Runner(RunnerInit):
         pass
 
     async def fetch_parsed(self):
-        pass
+        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
 
 
 
@@ -28,6 +32,11 @@ if __name__ == '__main__':
 
 
 PARSE_CODE = """
+import bs4
+
+from helpers.parse_helper import ParseInit
+
+
 class {script_code}Parse(ParseInit):
     def __init__(self, item: bs4.element.Tag | dict):
         self.item = item
