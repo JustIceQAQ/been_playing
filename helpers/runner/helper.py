@@ -30,10 +30,12 @@ class RunnerInit(abc.ABC):
         else:
             return self.translation().translation_to_object(self.response)
 
-    async def fetch_items(self):
+    async def fetch_items(self, *args, **kwargs):
         exhibition_items = []
         for item in self.parsed_:
-            data = self.use_parse(item).parse_to_base_model(ExhibitionItem)
+            data = self.use_parse(item).parse_to_base_model(
+                ExhibitionItem, *args, **kwargs
+            )
             if data.source_url is None:
                 continue
             exhibition_items.append(data)
