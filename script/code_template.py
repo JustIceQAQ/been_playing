@@ -1,4 +1,6 @@
-SCRIPT_CODE = """from helpers.runner.helper import RunnerInit
+SCRIPT_CODE = """import bs4
+from app.exhibition.{script_code}.parse import {script_code}Parse
+from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
