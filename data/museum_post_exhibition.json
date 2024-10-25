@@ -4,74 +4,8 @@
         "code_name": "museum_post",
         "external_link": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage=1"
     },
-    "counts": 7,
-    "last_update": "2024-10-25T16:16:22.024872+00:00",
-    "data": [
-        {
-            "systematics": "museum_post",
-            "title": "\u904a\u8cde\u9435\u9053\u98a8\u60c5\uff0d\u706b\u8eca\u90f5\u7968\u7279\u5c55",
-            "date": "2024-09-14 ~ 2025-03-02",
-            "address": "\u90f5\u653f\u535a\u7269\u9928\u9ad8\u96c4\u9928\u7279\u5c55\u5ba4",
-            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&control_type=page&MA_Id=64AA3431-1712-44DB-9704-B12FF7F7192B",
-            "UUID": "3d61cba8fcd35aef814aa4dc4e7b774a",
-            "figure": "https://i.imgur.com/5M4fQvw.webp"
-        },
-        {
-            "systematics": "museum_post",
-            "title": "\u840c\u5bf5\u5831\u5230\uff0d\u5bf5\u7269\u90f5\u7968\u7279\u5c55",
-            "date": "2024-07-06 ~ 2025-01-05",
-            "address": "\u90f5\u653f\u535a\u7269\u9928\u81fa\u5317\u9928\u7279\u5c55\u5ba4",
-            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&control_type=page&MA_Id=35BD2C66-55DC-4F47-A2E5-CA197D8C103D",
-            "UUID": "890615712194581ea90d9e79d9c62cd5",
-            "figure": "https://i.imgur.com/vDdkecm.webp"
-        },
-        {
-            "systematics": "museum_post",
-            "title": "\u5947\u5e7b\u661f\u7a7a\u90f5\u7968\u5c55",
-            "date": "2022-10-20 ~ 2024-12-31",
-            "address": "\u90f5\u653f\u535a\u7269\u99285\u6a13\u90f5\u7968\u4e16\u754c",
-            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&control_type=page&MA_Id=75FD4801-D46C-480B-A98B-0FE7CCA15790",
-            "UUID": "d91fc59368205f2bb18ad3549806c4e4",
-            "figure": "https://i.imgur.com/RlEKHM3.webp"
-        },
-        {
-            "systematics": "museum_post",
-            "title": "\u91cd\u6eab\u7d93\u5178\u5728\u90f5\u535a",
-            "date": "-",
-            "address": "2\u6a13\u91cd\u6eab\u7d93\u5178\u5728\u90f5\u535a",
-            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=136&control_type=page&MPA_Id=DFAAD4F3-52ED-40E7-ACE9-0954ABCAA12B",
-            "UUID": "eede8388d9fa5f09ab46dd8062b83b9d",
-            "figure": "https://i.imgur.com/4EDNp6A.webp"
-        },
-        {
-            "systematics": "museum_post",
-            "title": "\u90f5\u653f\u6b77\u53f2",
-            "date": "-",
-            "address": "3\u6a13\u90f5\u653f\u6b77\u53f2",
-            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=136&control_type=page&MPA_Id=57C0FE90-86C6-4DAD-BF1C-9A2996A04B79",
-            "UUID": "5199a1515dd751978aebf17230224d0d",
-            "figure": "https://i.imgur.com/teQikGM.webp"
-        },
-        {
-            "systematics": "museum_post",
-            "title": "\u5152\u7ae5\u90f5\u5712",
-            "date": "-",
-            "address": "4\u6a13\u5152\u7ae5\u90f5\u5712",
-            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=136&control_type=page&MPA_Id=F70EA129-FCB5-4324-BC00-23A5FFF17761",
-            "UUID": "788caae2906b55e88dbd799032b66a44",
-            "figure": "https://i.imgur.com/aRqGoAy.webp"
-        },
-        {
-            "systematics": "museum_post",
-            "title": "\u90f5\u7968\u4e16\u754c",
-            "date": "-",
-            "address": "5\u6a13\u90f5\u7968\u4e16\u754c",
-            "source_url": "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=136&control_type=page&MPA_Id=EE584B85-F76D-48C2-BC36-B2D9D9DA8EBD",
-            "UUID": "97e2447ec7f35152b5ea4cb85717f33f",
-            "figure": "https://i.imgur.com/Gc4i15a.webp"
-        }
-    ],
-    "visit": {
-        "opening": "\u958b\u653e\u6642\u9593\uff1a\u661f\u671f\u4e8c\u81f3\u661f\u671f\u65e5\uff0c\u4e0a\u53489\u6642\u81f3\u4e0b\u53485\u6642\uff08\u4e0b\u53484\u664230\u5206\u505c\u6b62\u5165\u5834\uff09\n\u661f\u671f\u4e00;\u9664\u5915\u66a8\u6625\u7bc0\u521d\u4e00\u81f3\u521d\u4e8c\u3001\u6c11\u65cf\u6383\u5893\u7bc0\u3001\u7aef\u5348\u7bc0\u53ca\u4e2d\u79cb\u7bc0"
-    }
+    "counts": 0,
+    "last_update": "2024-10-25T21:15:52.737669+00:00",
+    "data": [],
+    "visit": {}
 }
