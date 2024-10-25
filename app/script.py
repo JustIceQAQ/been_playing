@@ -5,6 +5,7 @@ from .exhibition.huashan1914.script import HuaShan1914Runner
 from .exhibition.jam.script import JamRunner
 from .exhibition.kingcarart.script import KingCarArtRunner
 from .platform.ibon.script import IBonRunner
+from .platform.kkday.script import KKDayRunner
 
 PY_CLASS_SCRIPT = {
     CKSMHRunner,
@@ -14,4 +15,5 @@ PY_CLASS_SCRIPT = {
     JamRunner,
     IBonRunner,
     KingCarArtRunner,
+    KKDayRunner,
 }
