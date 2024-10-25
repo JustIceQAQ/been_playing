@@ -1,7 +1,7 @@
 import bs4
-import httpx
 
 from app.exhibition.fubonartmuseum.parse import FuBonArtMuseumParse
+from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
@@ -26,7 +26,7 @@ class FuBonArtMuseumRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        async with httpx.AsyncClient(timeout=None) as client:
+        async with HttpxAsyncClient() as client:
             response = await client.get(
                 "https://www.fubonartmuseum.org/Default", headers=get_header()
             )

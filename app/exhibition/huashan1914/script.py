@@ -1,6 +1,6 @@
 import bs4
-import httpx
 
+from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
@@ -20,14 +20,14 @@ class HuaShan1914Runner(RunnerInit):
     def set_information(self) -> "Information":
         return Information(
             fullname="華山1914文化創意產業園區",
-            code_name="huashan1914",
+            code_name="HuaShan1914",
             external_link="https://www.huashan1914.com/w/huashan1914/exhibition",
         )
 
     async def fetch_response(self):
         index = 1
         datasets = []
-        async with httpx.AsyncClient(timeout=None) as client:
+        async with HttpxAsyncClient() as client:
             while True:
                 response = await client.get(
                     f"https://www.huashan1914.com/w/huashan1914/exhibition?index={index}",

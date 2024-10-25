@@ -2,6 +2,7 @@ SCRIPT_CODE = """import bs4
 from app.exhibition.{script_code}.parse import {script_code}Parse
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
+from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -21,7 +22,8 @@ class {script_code}Runner(RunnerInit):
         )
 
     async def fetch_response(self):
-        pass
+        async with HttpxAsyncClient() as client:
+            pass
 
     async def fetch_parsed(self):
         parsed: bs4.BeautifulSoup = await super().fetch_parsed()
