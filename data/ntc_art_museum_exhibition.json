@@ -4,8 +4,18 @@
         "code_name": "ntc_art_museum",
         "external_link": "https://ntcart.museum/exhibition"
     },
-    "counts": 0,
-    "last_update": "2024-10-25T21:15:52.728622+00:00",
-    "data": [],
+    "counts": 1,
+    "last_update": "2024-10-25T21:31:02.751594+00:00",
+    "data": [
+        {
+            "systematics": "ntc_art_museum",
+            "title": "\u9ad4\u80b2\u8ab2",
+            "date": "2024-07-05 ~ 2024-11-17",
+            "address": "",
+            "source_url": "https://ntcart.museum/exhibition/H2404001",
+            "UUID": "31e04ef90cc55133a8b72d62fe54378b",
+            "figure": "https://admin.ntcart.museum/Upload/H2404001/mainimg.jpg?v=152055082"
+        }
+    ],
     "visit": {}
 }

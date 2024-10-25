@@ -28,7 +28,7 @@ def main():
     runtime_logging = logging.getLogger("runtime_logging")
 
     # Imgur image
-    file_path = ROOT_DIR / "data" / "cache_file.json"
+    file_path = ROOT_DIR / "fixture" / "cache_file.json"
     imgur_image = ImgurImage()
     imgur_image.load_cache_file(file_path)
 
