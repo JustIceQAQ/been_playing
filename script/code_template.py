@@ -2,6 +2,7 @@ SCRIPT_CODE = """import asyncio
 
 import bs4
 from app.exhibition.{script_code}.parse import {script_code}Parse
+from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -26,6 +27,7 @@ class {script_code}Runner(RunnerInit):
         )
 
     async def fetch_response(self):
+        headers = get_header()
         async with HttpxAsyncClient() as client:
             pass
 
