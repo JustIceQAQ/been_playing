@@ -7,6 +7,7 @@ from .exhibition.kingcarart.script import KingCarArtRunner
 from .platform.ibon.script import IBonRunner
 from .platform.kkday.script import KKDayRunner
 from .platform.kktix.script import KKTixRunner
+from .platform.klook.script import KLookRunner
 
 PY_CLASS_SCRIPT = {
     CKSMHRunner,
@@ -18,4 +19,5 @@ PY_CLASS_SCRIPT = {
     KingCarArtRunner,
     KKDayRunner,
     KKTixRunner,
+    KLookRunner,
 }

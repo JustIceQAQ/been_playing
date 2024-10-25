@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from app.script import PY_CLASS_SCRIPT
 from configs.settings import get_settings
 from helpers.cache.disk.helper import DiskCache
+from helpers.cache.none.helper import NoneCache
 from helpers.image.imgur.helper import ImgurImage
 from helpers.image.none.helper import NoneImage
 
@@ -26,7 +27,7 @@ async def main():
         imgur = ImgurImage(client_id=runtime_setting.IMGUR_API_CLIENT_ID)
     else:
         imgur = NoneImage()
-    disk_cache = DiskCache()
+    disk_cache = NoneCache() if runtime_setting.IS_DEBUG else DiskCache()
 
     all_async_script_runners = [
         RunnerObj().run(disk_cache, imgur) for RunnerObj in PY_CLASS_SCRIPT
