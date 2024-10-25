@@ -8,7 +8,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     IS_DEBUG: bool = Field(description="DEBUG 模式", default=False)
 
-    IMGUR_API_CLIENT_ID: str
+    IMGUR_API_CLIENT_ID: str | None = Field(default=None)
     IMGUR_API_CLIENT_SECRET: str
 
     SCRAPER_API_KEY: str
