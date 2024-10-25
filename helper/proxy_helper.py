@@ -29,7 +29,12 @@ class NoneProxy(ProxyInit):
     def get_random_proxy(self):
         return self.proxy_pool
 
-    def load_source(self):
+    def load_source(
+        self,
+        proxy_path: Path = Path(__file__).parent.parent.absolute()
+        / "fixture"
+        / "proxy.pkl",
+    ):
         return None
 
 

@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 from imgurpython import ImgurClient
 from imgurpython.helpers.error import ImgurClientError
 
-ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent
+ROOT_DIR = Path(__file__).parent.parent.absolute()
 runtime_logging = logging.getLogger("runtime_logging")
 
 
@@ -95,7 +95,7 @@ class ImgurImage(ImageInit):
 
     def load_cache_file(self, path: Path = None):
         self.cache_file_path = (
-            str(ROOT_DIR / "data" / "cache_file.json") if path is None else str(path)
+            str(ROOT_DIR / "fixture" / "cache_file.json") if path is None else str(path)
         )
         with open(self.cache_file_path, encoding="utf-8") as file:
             self.cache_data = json.load(file)
