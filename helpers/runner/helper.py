@@ -26,9 +26,11 @@ class RunnerInit(abc.ABC):
 
     async def fetch_parsed(self, *args, **kwargs) -> list[Any] | Any:
         if isinstance(self.response, list):
+            this_translation = self.translation()
+            responses = self.response
             return [
-                self.translation().translation_to_object(i, *args, **kwargs)
-                for i in self.response
+                this_translation.translation_to_object(response, *args, **kwargs)
+                for response in responses
             ]
         else:
             return self.translation().translation_to_object(

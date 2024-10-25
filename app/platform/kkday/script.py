@@ -100,11 +100,9 @@ class KKDayRunner(RunnerInit):
                     for i in range(2, loop_number, 1)
                 ]
                 sub_responses = await asyncio.gather(*sub_tasks)
-                responses.append(
-                    sub_response.response.body
-                    for sub_response in sub_responses
-                    if sub_response.status_code == http.HTTPStatus.OK
-                )
+                for sub_response in sub_responses:
+                    if sub_response.status_code == http.HTTPStatus.OK:
+                        responses.append(sub_response.response.body)
             return responses
 
     async def fetch_parsed(self):

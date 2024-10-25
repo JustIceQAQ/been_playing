@@ -6,6 +6,6 @@ class Data(BaseModel):
 
 
 class UploadResponse(BaseModel):
-    success: bool
-    status: int
-    data: Data
+    success: bool | None = Field(default=False)
+    status: int | None = Field(default=None)
+    data: Data | None = Field(default=None)
