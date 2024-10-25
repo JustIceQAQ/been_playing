@@ -5,6 +5,8 @@ from helpers.storage.helper import Information
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
+from helpers.cache.disk.helper import DiskCache
+from helpers.image.none.helper import NoneImage
 
 
 class {script_code}Runner(RunnerInit):
@@ -30,8 +32,12 @@ class {script_code}Runner(RunnerInit):
 
 
 
+async def main():
+    await {script_code}Runner().run(DiskCache(), NoneImage())
+
+
 if __name__ == '__main__':
-    {script_code}Runner().run()
+    asyncio.run(main())
 """
 
 
