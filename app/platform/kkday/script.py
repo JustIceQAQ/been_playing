@@ -65,6 +65,11 @@ class KKDayRunner(RunnerInit):
             if match:
                 init_state_json = match.group(1)
                 raw_data = json.loads(init_state_json)
+                state = raw_data["state"]
+                if (state.get("products", None) is None) or (
+                    state.get("productCount", None) is None
+                ):
+                    continue
                 products = raw_data["state"]["products"]
                 product_count = raw_data["state"]["productCount"]
                 break
