@@ -19,7 +19,14 @@ class ScraperAsyncClient:
         self.job_status = False
 
     async def get(
-        self, url: str, render=True, headers=None, sleep_secs=20, tries_flag=5
+        self,
+        url: str,
+        render=True,
+        headers=None,
+        sleep_secs=20,
+        tries_flag=5,
+        *args,
+        **kwargs
     ) -> ScraperResponse:
         payload = {
             "apiKey": self.api_key,

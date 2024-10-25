@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field, model_validator
 
 class Response(BaseModel):
     headers: dict = Field(default_factory=dict)
-    body: str = Field()
+    body: str | dict = Field(default_factory=dict)
     status_code: int = Field(alias="statusCode")
 
 
