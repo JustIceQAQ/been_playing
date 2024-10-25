@@ -13,6 +13,10 @@ def date_now() -> dt.date:
     return datetime_now().date()
 
 
+def this_date_year() -> int:
+    return date_now().year
+
+
 def datetime_now_iso_format() -> str:
     return datetime_now().isoformat()
 
