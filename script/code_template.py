@@ -1,0 +1,72 @@
+SCRIPT_CODE = """import asyncio
+
+import bs4
+from app.exhibition.{script_code}.parse import {script_code}Parse
+from helpers.headers_helper import get_header
+from helpers.runner.helper import RunnerInit
+from helpers.storage.helper import Information
+from helpers.crawler.httpx.helper import HttpxAsyncClient
+from helpers.translation.beautiful_soup import BeautifulSoupTranslation
+from helpers.utils_helper import month_3
+from helpers.cache.none.helper import NoneCache
+from helpers.image.none.helper import NoneImage
+
+
+class {script_code}Runner(RunnerInit):
+    translation = BeautifulSoupTranslation
+    use_parse = {script_code}Parse
+
+    def set_cache_expire(self) -> int | None:
+        return month_3()
+
+    def set_information(self) -> "Information":
+        return Information(
+            fullname="",
+            code_name="",
+            external_link=""
+        )
+
+    async def fetch_response(self):
+        headers = get_header()
+        async with HttpxAsyncClient() as client:
+            pass
+
+    async def fetch_parsed(self):
+        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+
+
+
+async def main():
+    await {script_code}Runner().run(NoneCache(), NoneImage())
+
+
+if __name__ == '__main__':
+    asyncio.run(main())
+"""
+
+
+PARSE_CODE = """
+import bs4
+
+from helpers.parse_helper import ParseInit
+
+
+class {script_code}Parse(ParseInit):
+    def __init__(self, item: bs4.element.Tag | dict):
+        self.item = item
+
+    def get_title(self, *args, **kwargs) -> str | None:
+        pass
+
+    def get_date(self, *args, **kwargs) -> str | None:
+        pass
+
+    def get_address(self, *args, **kwargs) -> str | None:
+        pass
+
+    def get_figure(self, *args, **kwargs) -> str | None:
+        pass
+
+    def get_source_url(self, *args, **kwargs) -> str | None:
+        pass
+"""

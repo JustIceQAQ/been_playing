@@ -5,3 +5,4 @@ pytest # https://github.com/pytest-dev/pytest/
 pytest-asyncio # https://github.com/pytest-dev/pytest-asyncio
 pytest-xdist # https://github.com/pytest-dev/pytest-xdist
 Faker
+click

@@ -11,7 +11,7 @@ from helper.translation_helper import BeautifulSoupTranslation
 
 
 class FuBonArtMuseumRunner(RunnerInit):
-    """富邦博物館"""
+    """富邦美術館"""
 
     use_method = "GET"
     root_dir = Path(__file__).resolve(strict=True).parent.parent.parent

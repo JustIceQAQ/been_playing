@@ -1,11 +1,12 @@
 from enum import Enum
+from pathlib import Path
 from typing import Any
 
 import requests
 from retry import retry
 
 from helper.crawler import CrawlerInit
-from helper.proxy_helper import NoneProxy
+from helper.proxy_helper import FreeProxy, NoneProxy
 
 
 class RequestsCrawler(CrawlerInit):
@@ -13,7 +14,7 @@ class RequestsCrawler(CrawlerInit):
         text = "text"
         json = "json"
 
-    def __init__(self, url: str, module_proxy=NoneProxy):
+    def __init__(self, url: str, module_proxy: NoneProxy | FreeProxy = NoneProxy):
         self.url = url
         self.rs = requests.session()
         self.rs.keep_alive = False
@@ -23,7 +24,11 @@ class RequestsCrawler(CrawlerInit):
     def init_proxy(self, module_proxy):
         if module_proxy:
             self.proxy = module_proxy()
-            self.proxy.load_source()
+            self.proxy.load_source(
+                proxy_path=Path(__file__).parent.parent.parent.absolute()
+                / "fixture"
+                / "proxy.pkl"
+            )
             self.rs.proxies = self.proxy.get_random_proxy()
 
     def get_cookies(self, method="GET", *args, **kwargs):

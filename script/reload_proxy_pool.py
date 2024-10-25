@@ -25,6 +25,7 @@ class FreeProxySource:
     def __init__(self, filename: str = "proxy.pkl"):
         self.root_path = ["http://free-proxy.cz/zh/proxylist/country/TW/all/ping/all"]
         self.filename = filename
+        self.folder = Path(__file__).parent.absolute() / "fixture"
 
     def get_headers(self) -> dict:
         return {
@@ -61,28 +62,32 @@ class FreeProxySource:
             return None
 
     async def run(self):
-        httpx_client = httpx.AsyncClient()
+        async with httpx.AsyncClient(proxies=None) as httpx_client:
 
-        tasks = [
-            self.get_page_data(url, self.get_headers(), httpx_client)
-            for url in self.root_path
-        ]
+            tasks = [
+                self.get_page_data(url, self.get_headers(), httpx_client)
+                for url in self.root_path
+            ]
 
-        all_data = await asyncio.gather(*tasks)
+            all_data = await asyncio.gather(*tasks)
 
-        tables = [
-            [td.get_text() for td in tr.select("td:nth-child(n+1):nth-child(-n+3)")]
-            for tr in all_data[0].select("tbody > tr")
-        ]
+            tables = [
+                [td.get_text() for td in tr.select("td:nth-child(n+1):nth-child(-n+3)")]
+                for tr in all_data[0].select("tbody > tr")
+            ]
 
-        clean_data = []
-        for data in tables:
-            if data:
-                s = data[0].index('("') + 2
-                e = data[0].index('")')
-                clean_data.append(
-                    [base64.b64decode(data[0][s:e]).decode("utf-8"), data[1], data[2]]
-                )
+            clean_data = []
+            for data in tables:
+                if data:
+                    s = data[0].index('("') + 2
+                    e = data[0].index('")')
+                    clean_data.append(
+                        [
+                            base64.b64decode(data[0][s:e]).decode("utf-8"),
+                            data[1],
+                            data[2],
+                        ]
+                    )
 
         proxies = [Proxy(*item) for item in clean_data]
 
@@ -91,10 +96,9 @@ class FreeProxySource:
         available_ip = await asyncio.gather(*available_task)
         clean_available_ip = [ip for ip in available_ip if ip]
 
-        with open(self.filename, "wb") as f:
+        with open(self.folder / self.filename, "wb") as f:
             timestamp = datetime.datetime.now().timestamp()
             dill.dump({"timestamp": timestamp, "available_ip": clean_available_ip}, f)
-        await httpx_client.aclose()
 
 
 if __name__ == "__main__":

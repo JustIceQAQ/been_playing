@@ -1,0 +1,28 @@
+{
+  "information": {
+    "fullname": "富邦美術館",
+    "code_name": "FuBonArtMuseum",
+    "external_link": "https://www.fubonartmuseum.org/Default"
+  },
+  "counts": 2,
+  "items": [
+    {
+      "title": "《梵谷：尋光之路》 Van Gogh: Journey of Light",
+      "date": "2024-08-24 ~ 2024-11-11",
+      "address": "富邦美術館-3樓 日光展廳",
+      "figure": "https://i.imgur.com/QbBraBZ.webp",
+      "source_url": "https://www.fubonartmuseum.org/ExhibitionDetail?PKNO=X007NBYX",
+      "UUID": "70712bc2ccbc5c97ac3df410bae1878a"
+    },
+    {
+      "title": "新宮晉：宇宙—風之旅人 COSMOS - Susumu Shingu - Wind Traveler",
+      "date": "2024-10-12 ~ 2025-02-17",
+      "address": "富邦美術館-1樓 水景展廳",
+      "figure": "https://i.imgur.com/vlJ08Qo.webp",
+      "source_url": "https://www.fubonartmuseum.org/ExhibitionDetail?PKNO=X007Q5U3",
+      "UUID": "57ad7dfdd6445e90acfd4b0b79e1210b"
+    }
+  ],
+  "last_update": "2024-10-23T16:44:08.424963+08:00",
+  "visit": {}
+}

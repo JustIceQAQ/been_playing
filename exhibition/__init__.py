@@ -115,7 +115,7 @@ class ExhibitionEnum(ExhibitionInformation, enum.Enum):
     KKTix = (
         "KKTix",
         "KKTix",
-        "https://kktix.com/events?category_id=11",
+        "https://kktix.com/events?utf8=%E2%9C%93&event_tag_ids_in=4",
     )
 
     IBon = (

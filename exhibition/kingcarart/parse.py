@@ -3,7 +3,7 @@ import datetime as dt
 from bs4 import Tag
 
 from helper.parse_helper import ParseInit
-from helper.utils_helper import date_now
+from helpers.utils_helper import date_now
 
 
 def parse_date(date_string: str) -> dt.date:
