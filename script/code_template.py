@@ -1,4 +1,6 @@
-SCRIPT_CODE = """import bs4
+SCRIPT_CODE = """import asyncio
+
+import bs4
 from app.exhibition.{script_code}.parse import {script_code}Parse
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
