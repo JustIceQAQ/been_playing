@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://www.tmc.taipei/tw/lastest-event"
     },
-    "counts": 13,
-    "last_update": "2024-10-25T01:01:15.132738+00:00",
+    "counts": 16,
+    "last_update": "2024-10-25T08:18:45.373629+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -27,6 +27,15 @@
         },
         {
             "systematics": "tmc",
+            "title": "\u5317\u6d41\u4e4b\u53cb-Coming Soon",
+            "date": "2023-10-02 ~ 2025-12-31",
+            "address": "",
+            "source_url": "https://www.tmc.taipei/tw/-blog-show-TMC-Members",
+            "UUID": "76f4fd32ab075f59ab9725e43941e5df",
+            "figure": "https://i.imgur.com/9lqFK1K.webp"
+        },
+        {
+            "systematics": "tmc",
             "title": "\u3010\u8a69/\u8a5e \u4e4b\u9593 \ud835\ude57\ud835\ude5a\ud835\ude69\ud835\ude6c\ud835\ude5a\ud835\ude5a\ud835\ude63 \ud835\ude69\ud835\ude5d\ud835\ude5a \ud835\ude6b\ud835\ude5a\ud835\ude67\ud835\ude68\ud835\ude5a \u7b2c\u2777\u9996 \u97f3\u6a02 \u2573 \u614b\u5ea6\u3011",
             "date": "2024-10-25",
             "address": "\u7522\u696d\u5340",
@@ -42,6 +51,15 @@
             "source_url": "https://www.tmc.taipei/tw/lastest-event/D8E7F09D1B62",
             "UUID": "3c766c3892cb544ca609abaf423d7e1d",
             "figure": "https://i.imgur.com/PnMbz2i.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u53f0\u65e5\u97f3\u6a02\u4ea4\u6d41x\u5168\u570b\u9ad8\u6821\u6a02\u5718\u5927\u8cfd\uff5cOpen Lab\u97f3\u6a02\u4eba\u624d\u767c\u6e90\u6276\u690d\u8a08\u756b\uff0c\u806f\u624b\u300cwe are SNEAKER AGES - Taiwan\u300d\uff0c\u5171\u5275\u76db\u5927\u9020\u97f3\u73fe\u5834\uff01",
+            "date": "2024-10-27",
+            "address": "\u5176\u4ed6",
+            "source_url": "https://www.tmc.taipei/tw/lastest-event/6d1BBd7fb095",
+            "UUID": "3d5cfafab3605c7a93338e1bb67b92c0",
+            "figure": "https://i.imgur.com/RBs3ZM5.webp"
         },
         {
             "systematics": "tmc",
@@ -69,6 +87,15 @@
             "source_url": "https://www.tmc.taipei/tw/blog-show-Disney-Princess-the-Concert1114-1115",
             "UUID": "2ac6bcee168253b8895bfca1146a362c",
             "figure": "https://i.imgur.com/LheExnR.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u3010\u5317\u6d41\uff38\u91d1\u99ac61\u3011\u5317\u6d41\u97f3\u6a02\u6545\u4e8b\u6c99\u9f8d",
+            "date": "2024-11-17",
+            "address": "\u6587\u5316\u9928",
+            "source_url": "https://www.tmc.taipei/tw/lastest-event/e93C28381151",
+            "UUID": "1f53cd68ae7157268c4faeb864a7fe60",
+            "figure": "https://i.imgur.com/4dX0468.webp"
         },
         {
             "systematics": "tmc",
