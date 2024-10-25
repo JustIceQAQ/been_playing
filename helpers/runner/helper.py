@@ -24,11 +24,16 @@ class RunnerInit(abc.ABC):
     async def fetch_response(self):
         raise NotImplementedError
 
-    async def fetch_parsed(self) -> list[Any] | Any:
+    async def fetch_parsed(self, *args, **kwargs) -> list[Any] | Any:
         if isinstance(self.response, list):
-            return [self.translation().translation_to_object(i) for i in self.response]
+            return [
+                self.translation().translation_to_object(i, *args, **kwargs)
+                for i in self.response
+            ]
         else:
-            return self.translation().translation_to_object(self.response)
+            return self.translation().translation_to_object(
+                self.response, *args, **kwargs
+            )
 
     async def fetch_items(self, *args, **kwargs):
         exhibition_items = []
