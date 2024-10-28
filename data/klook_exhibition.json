@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 49,
-    "last_update": "2024-10-28T08:19:13.803301+00:00",
+    "counts": 46,
+    "last_update": "2024-10-28T16:17:42.591303+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -90,29 +90,11 @@
         },
         {
             "systematics": "klook",
-            "title": "2024 ART Taipei | \u5927\u96cb\u85dd\u8853Rich Art Gallery | Booth\u3010F02\u3011",
-            "date": "2024-10-25~2024-10-28",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101026817-2024-rich-art-gallery/",
-            "UUID": "c9fc20767bb95142b7d2caa51b6c0338",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
             "title": "\u3010Le Chat Taipei\u3011George Bayer\u5275\u4f5c\u500b\u5c55",
             "date": "2024-10-24~2024-11-02",
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026781-2024-le-chat-taipei/",
             "UUID": "72748b58906b5ad883cf36449fe65889",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u66dc\u756b\u5eca - \u53f0\u5317\u570b\u969b\u85dd\u8853\u535a\u89bd\u6703 H11 \u5c55\u4f4d",
-            "date": "2024-10-25~2024-10-28",
-            "address": "\u7f8e\u67d4\u6c40\u4e4b\u6200",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101026457-2024-mezzotint-exhibition/",
-            "UUID": "af005fa0a1cf5a0b9852e51fedfc8124",
             "figure": "-"
         },
         {
@@ -230,7 +212,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/131797-be-rbrick-world-tour-3-taipei/",
             "UUID": "6c46ad54990952259ef3f177584c7d6c",
-            "figure": "https://i.imgur.com/4fzfCsH.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -239,7 +221,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026459-2024-study-in-korea-expo/",
             "UUID": "9b3cc4753ce850289e7b35baa6ee7286",
-            "figure": "https://i.imgur.com/xibmLgt.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -311,7 +293,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026258-2024-architecture-exhibition/",
             "UUID": "35ba25ea1e255792b1ac7a9ec36a766b",
-            "figure": "-"
+            "figure": "https://i.imgur.com/AB7cpno.webp"
         },
         {
             "systematics": "klook",
@@ -320,7 +302,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026150-2024-chuang-tsung-husn/",
             "UUID": "d945ce1e93595402bdef3574933bf092",
-            "figure": "-"
+            "figure": "https://i.imgur.com/oiFMebY.webp"
         },
         {
             "systematics": "klook",
@@ -423,15 +405,6 @@
         },
         {
             "systematics": "klook",
-            "title": "ART TAIPEI 2024 \u53f0\u5317\u570b\u969b\u85dd\u8853\u535a\u89bd\u6703 [\u514d\u63db\u7968\u76f4\u63a5\u5165\u5834]",
-            "date": "2024-10-28",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/activity/75154-art-taipei-2024-exhibition-ticket/",
-            "UUID": "705cfdb9106758b5a9d28a01b0fe8371",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
             "title": "\u5531 \u6211\u5011\u7684\u6b4c \u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55 - \u9580\u7968",
             "date": "2024-10-29~2024-12-31",
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
@@ -446,7 +419,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/65492-taipei-illustration-fair-tickets/",
             "UUID": "569c851255ce5c64981edd50e8300b0c",
-            "figure": "https://res.klook.com/image/upload/w_360,q_85/2024TIF_326x460_1_ps7lmx.jpg"
+            "figure": "-"
         }
     ],
     "visit": {}
