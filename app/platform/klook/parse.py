@@ -65,6 +65,11 @@ class KLookParse(ParseInit):
         runtime_title, _ = self.title_address_filter(raw_title)
         return runtime_title
 
+    def replace_1_7(self, value: str) -> str:
+        for i in {"(週日)", "(週一)", "(週二)", "(週三)", "(週四)", "(週五)", "(週六)"}:
+            value = value.replace(i, "").strip()
+        return value
+
     def date_format(self, raw_date_string: str) -> str:
         this_year = this_date_year()
         if "日" in raw_date_string:
@@ -89,14 +94,12 @@ class KLookParse(ParseInit):
 
         split_result = raw_date_string.split("-")
         if len(split_result) == 1:
-            one_date = split_result[0].replace("(週日)", "").strip()
+            one_date = self.replace_1_7(split_result[0])
             return self.date_format(one_date)
         else:
             start_string, end_string = raw_date_string.split("-")
-            start_string = (
-                start_string.strip().split("(")[0].replace("(週日)", "").strip()
-            )
-            end_string = end_string.strip().split("(")[0].replace("(週日)", "").strip()
+            start_string = self.replace_1_7(start_string.strip().split("(")[0])
+            end_string = self.replace_1_7(end_string.strip().split("(")[0])
             return f"{self.date_format(start_string)} ~ {self.date_format(end_string)}"
 
     def get_address(self, *args, **kwargs) -> str:
