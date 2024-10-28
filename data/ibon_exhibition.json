@@ -5,7 +5,7 @@
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
     "counts": 52,
-    "last_update": "2024-10-26T00:59:25.364988+00:00",
+    "last_update": "2024-10-28T00:12:00.734515+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -33,6 +33,15 @@
             "source_url": "https://tour.ibon.com.tw/event/671716810852fc1c6d0950a8",
             "UUID": "69435c7283cb5a6fa7f59d5a18de5ba2",
             "figure": "https://i.imgur.com/XGPsp8h.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "2024 WayV CONCERT \u6f14\u5531\u6703\u5468\u908a\u5546\u54c1",
+            "date": "2024-11-09 ~ 2024-11-09",
+            "address": "\u65b0\u5317\u5e02\u5de5\u5546\u5c55\u89bd\u4e2d\u5fc3",
+            "source_url": "https://tour.ibon.com.tw/event/6715ccae66e49c16fbebf860",
+            "UUID": "86346ca778b25cf3a1d9f7608aaec9fa",
+            "figure": "https://i.imgur.com/2EQPbX9.webp"
         },
         {
             "systematics": "ibon",
@@ -186,15 +195,6 @@
             "source_url": "https://tour.ibon.com.tw/event/66c867bf6c2d623a336eab7e",
             "UUID": "2d82d0303ea15e1f8a08cec863081a83",
             "figure": "https://i.imgur.com/4HDVxoL.webp"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u5143\u5b87\u5b99\u4e4b\u7121\u5883\u865b\u5e7b \u6c89\u6d78\u5f0f\u5149\u5f71\u85dd\u8853\u5c55",
-            "date": "2024-09-01 ~ 2024-10-23",
-            "address": "\u53f0\u4e2d\u5e02\u8c50\u539f\u5340\u8c50\u539f\u5927\u9053\u4e00\u6bb5165\u865f",
-            "source_url": "https://tour.ibon.com.tw/event/66c6b69c6fb70b0ea182b7db",
-            "UUID": "a08a78892cbb54e4a69b177dca78b1fa",
-            "figure": "https://i.imgur.com/SR5mzDw.webp"
         },
         {
             "systematics": "ibon",
