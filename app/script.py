@@ -6,6 +6,8 @@ from .exhibition.jam.script import JamRunner
 from .exhibition.kingcarart.script import KingCarArtRunner
 from .exhibition.mocataipei.script import MoCaTaipeiRunner
 from .exhibition.museumpost.script import MuseumPostRunner
+from .exhibition.mwr.script import MwrRunner
+from .exhibition.ncpi.script import NCPIRunner
 from .platform.ibon.script import IBonRunner
 from .platform.kkday.script import KKDayRunner
 from .platform.kktix.script import KKTixRunner
@@ -24,4 +26,6 @@ PY_CLASS_SCRIPT = {
     KLookRunner,
     MoCaTaipeiRunner,
     MuseumPostRunner,
+    MwrRunner,
+    NCPIRunner,
 }
