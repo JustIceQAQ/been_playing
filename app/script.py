@@ -11,6 +11,8 @@ from .exhibition.ncpi.script import NCPIRunner
 from .exhibition.nmh.script import NmhRunner
 from .exhibition.npm.script import NpmRunner
 from .exhibition.ntc_art_museum.script import NtcArtMuseumRunner
+from .exhibition.ntm.script import NtmRunner
+from .exhibition.ntsec.script import NtSecRunner
 from .platform.ibon.script import IBonRunner
 from .platform.kkday.script import KKDayRunner
 from .platform.kktix.script import KKTixRunner
@@ -34,4 +36,6 @@ PY_CLASS_SCRIPT = {
     NmhRunner,
     NpmRunner,
     NtcArtMuseumRunner,
+    NtmRunner,
+    NtSecRunner,
 }
