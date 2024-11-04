@@ -13,6 +13,8 @@ from .exhibition.npm.script import NpmRunner
 from .exhibition.ntc_art_museum.script import NtcArtMuseumRunner
 from .exhibition.ntm.script import NtmRunner
 from .exhibition.ntsec.script import NtSecRunner
+from .exhibition.songshanculturalpark.script import SongShanCulturalParkRunner
+from .exhibition.tfam.script import TFamRunner
 from .platform.ibon.script import IBonRunner
 from .platform.kkday.script import KKDayRunner
 from .platform.kktix.script import KKTixRunner
@@ -40,4 +42,6 @@ PY_CLASS_SCRIPT = {
     NtmRunner,
     NtSecRunner,
     OpenTixRunner,
+    SongShanCulturalParkRunner,
+    TFamRunner,
 }
