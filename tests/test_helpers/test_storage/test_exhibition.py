@@ -35,3 +35,15 @@ async def test_exhibition_storage(
     with tempfile.TemporaryDirectory() as tmp_dir:
         await es.save_to_local("QAQ", folder=pathlib.Path(tmp_dir))
         assert (pathlib.Path(tmp_dir) / "QAQ.json").exists() is True
+
+
+def test_exhibition_sort(fake_exhibition_data: dict):
+    min_obj = ExhibitionItem()
+    max_obj = ExhibitionItem.model_validate(fake_exhibition_data)
+    all_obj = sorted([max_obj, min_obj])
+
+    assert id(all_obj[0]) == id(min_obj)
+    assert id(min(all_obj)) == id(min_obj)
+
+    assert id(all_obj[-1]) == id(max_obj)
+    assert id(max(all_obj)) == id(max_obj)

@@ -25,6 +25,17 @@ class ExhibitionItem(BaseModel):
             values.UUID = hex_uuid5(values.source_url)
         return values
 
+    def count_none_fields(self) -> int:
+        return sum(1 for value in self.__dict__.values() if value is not None)
+
+    def __lt__(self, other: "ExhibitionItem") -> bool:
+        # 比較 None 值數量，小的排在前面
+        return self.count_none_fields() < other.count_none_fields()
+
+    def __eq__(self, other: "ExhibitionItem") -> bool:
+        # 判斷 None 值數量是否相等
+        return self.count_none_fields() == other.count_none_fields()
+
 
 class Information(BaseModel):
     fullname: str
