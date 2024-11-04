@@ -8,6 +8,7 @@ from .exhibition.mocataipei.script import MoCaTaipeiRunner
 from .exhibition.museumpost.script import MuseumPostRunner
 from .exhibition.mwr.script import MwrRunner
 from .exhibition.ncpi.script import NCPIRunner
+from .exhibition.npm.script import NpmRunner
 from .platform.ibon.script import IBonRunner
 from .platform.kkday.script import KKDayRunner
 from .platform.kktix.script import KKTixRunner
@@ -28,4 +29,5 @@ PY_CLASS_SCRIPT = {
     MuseumPostRunner,
     MwrRunner,
     NCPIRunner,
+    NpmRunner,
 }
