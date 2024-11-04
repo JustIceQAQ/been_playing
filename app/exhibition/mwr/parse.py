@@ -14,8 +14,8 @@ class MwrParse(ParseInit):
     def get_date(self, *args, **kwargs) -> str:
         return self.item.select_one("div.date").get_text()
 
-    def get_address(self, *args, **kwargs) -> str:
-        return "-"
+    def get_address(self, *args, **kwargs) -> str | None:
+        return None
 
     def get_figure(self, *args, **kwargs) -> str:
         dev_style = self.item.select_one("div.imgBox > a > div.img").get("style")

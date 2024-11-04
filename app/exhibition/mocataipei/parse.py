@@ -32,8 +32,8 @@ class MoCaTaipeiParse(ParseInit):
 
         return f"{start_date} ~ {end_date}"
 
-    def get_address(self, *args, **kwargs) -> str:
-        return "-"
+    def get_address(self, *args, **kwargs) -> str | None:
+        return None
 
     def get_figure(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)

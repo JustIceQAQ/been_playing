@@ -48,8 +48,8 @@ class NpmColParse(ParseInit):
     def get_title(self, *args, **kwargs) -> str:
         return self.item.find("h3", {"class": "card-title"}).get_text()
 
-    def get_date(self, *args, **kwargs) -> str:
-        return "-"
+    def get_date(self, *args, **kwargs) -> str | None:
+        return None
 
     def get_address(self, *args, **kwargs) -> str:
         return self.item.find("div", {"class": "card-content-bottom"}).get_text()

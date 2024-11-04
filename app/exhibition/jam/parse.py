@@ -15,8 +15,8 @@ class JamParse(ParseInit):
         raw_date_string = raw_date_string.replace("-", "~")
         return raw_date_string.replace("/", "-")
 
-    def get_address(self, *args, **kwargs) -> str:
-        return "-"
+    def get_address(self, *args, **kwargs) -> str | None:
+        return None
 
     def get_figure(self, *args, **kwargs) -> str:
         return self.item.find("img", {"class": "image-style-event-list"}).get("src")

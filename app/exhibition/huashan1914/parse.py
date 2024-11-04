@@ -58,15 +58,15 @@ class huashan1914Parse(ParseInit):
             cooked_string = f"{start_date} ~ {end_date}"
         return cooked_string
 
-    def get_address(self, *args, **kwargs) -> str:
-        return "-"
+    def get_address(self, *args, **kwargs) -> str | None:
+        return None
 
-    def get_figure(self, *args, **kwargs) -> str:
+    def get_figure(self, *args, **kwargs) -> str | None:
         if self.item is None:
-            return "-"
+            return None
         dev_style = self.item.select_one("li > a > div > div > div.card-img.wide")
         if dev_style is None:
-            return "-"
+            return None
         dev_style = dev_style["style"]
         style = cssutils.parseStyle(dev_style)
 
