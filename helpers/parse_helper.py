@@ -54,4 +54,5 @@ class ParseInit(abc.ABC):
         clean_data = {
             key: RequestsClean.clean_string(value) for key, value in parsed_data.items()
         }
+
         return base_model.model_validate(clean_data)

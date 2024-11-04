@@ -15,6 +15,7 @@ from .exhibition.ntm.script import NtmRunner
 from .exhibition.ntsec.script import NtSecRunner
 from .exhibition.songshanculturalpark.script import SongShanCulturalParkRunner
 from .exhibition.tfam.script import TFamRunner
+from .platform.bookstickets.script import BooksTicketsRunner
 from .platform.ibon.script import IBonRunner
 from .platform.kkday.script import KKDayRunner
 from .platform.kktix.script import KKTixRunner
@@ -22,6 +23,7 @@ from .platform.klook.script import KLookRunner
 from .platform.opentix.script import OpenTixRunner
 
 PY_CLASS_SCRIPT = {
+    BooksTicketsRunner,
     CKSMHRunner,
     CLabRunner,
     FuBonArtMuseumRunner,

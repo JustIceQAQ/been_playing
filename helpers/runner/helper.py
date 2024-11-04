@@ -48,6 +48,9 @@ class RunnerInit(abc.ABC):
             exhibition_items.append(data)
         return exhibition_items
 
+    async def suffix_item_data(self, item: list[ExhibitionItem]):
+        pass
+
     @property
     def information(self):
         return self.information_
@@ -106,5 +109,6 @@ class RunnerInit(abc.ABC):
         self.exhibition_ = Exhibition(information=self.information_, items=self.items)
         for item in self.exhibition_.items:
             await self.cache_image_url(item)
+        await self.suffix_item_data(self.exhibition_.items)
 
         await self.exhibition_.save_to_local(f"{self.information_.code_name}")
