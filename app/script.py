@@ -21,6 +21,7 @@ from .platform.kkday.script import KKDayRunner
 from .platform.kktix.script import KKTixRunner
 from .platform.klook.script import KLookRunner
 from .platform.opentix.script import OpenTixRunner
+from .platform.udnfunlife.script import UdnFunLifeRunner
 
 PY_CLASS_SCRIPT = {
     BooksTicketsRunner,
@@ -46,4 +47,5 @@ PY_CLASS_SCRIPT = {
     OpenTixRunner,
     SongShanCulturalParkRunner,
     TFamRunner,
+    UdnFunLifeRunner,
 }
