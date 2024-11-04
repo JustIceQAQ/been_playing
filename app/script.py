@@ -15,6 +15,7 @@ from .exhibition.ntm.script import NtmRunner
 from .exhibition.ntsec.script import NtSecRunner
 from .exhibition.songshanculturalpark.script import SongShanCulturalParkRunner
 from .exhibition.tfam.script import TFamRunner
+from .exhibition.tmc.script import TmcRunner
 from .platform.bookstickets.script import BooksTicketsRunner
 from .platform.ibon.script import IBonRunner
 from .platform.kkday.script import KKDayRunner
@@ -47,5 +48,6 @@ PY_CLASS_SCRIPT = {
     OpenTixRunner,
     SongShanCulturalParkRunner,
     TFamRunner,
+    TmcRunner,
     UdnFunLifeRunner,
 }
