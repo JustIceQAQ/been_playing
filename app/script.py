@@ -17,6 +17,7 @@ from .platform.ibon.script import IBonRunner
 from .platform.kkday.script import KKDayRunner
 from .platform.kktix.script import KKTixRunner
 from .platform.klook.script import KLookRunner
+from .platform.opentix.script import OpenTixRunner
 
 PY_CLASS_SCRIPT = {
     CKSMHRunner,
@@ -38,4 +39,5 @@ PY_CLASS_SCRIPT = {
     NtcArtMuseumRunner,
     NtmRunner,
     NtSecRunner,
+    OpenTixRunner,
 }
