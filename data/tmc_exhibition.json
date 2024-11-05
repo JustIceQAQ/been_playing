@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://www.tmc.taipei/tw/lastest-event"
     },
-    "counts": 10,
-    "last_update": "2024-11-05T00:59:42.735322+00:00",
+    "counts": 11,
+    "last_update": "2024-11-05T08:17:28.532018+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -15,6 +15,15 @@
             "source_url": "https://www.tmc.taipei/tw/lastest-event/553634384Ca5",
             "UUID": "21f494f63a7f561b98c3680cf2baf7fe",
             "figure": "https://i.imgur.com/TvKYIma.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u5c0f\u6a39\u5e02\u96c6 in \u53f0\u5317",
+            "date": "2024-11-09 ~ 2024-11-10",
+            "address": "\u6587\u5316\u9928",
+            "source_url": "https://www.tmc.taipei/tw/2024winterlittletreemarket",
+            "UUID": "a96873a23ca159bcb9667bed22a2ebed",
+            "figure": "https://i.imgur.com/Tjodcp8.webp"
         },
         {
             "systematics": "tmc",
