@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 70,
-    "last_update": "2024-11-07T08:16:35.929623+00:00",
+    "last_update": "2024-11-07T16:15:59.528457+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -33,15 +33,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/101875-taiwan-national-palace-museum-northern-southern-branch-ticket",
             "UUID": "5522f988185a5f5db43f5150c7fbcdce",
             "figure": "https://i.imgur.com/xtJ4Hty.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u3010 1 \u5143\u62bd\u597d\u79ae\u3011KKday \u4e00\u5143\u62bd\u4ea4\u901a\u65c5\u904a\u91d1\u5927\u79ae\u5305|ITF\u53f0\u5317\u65c5\u5c55\u9650\u5b9a!",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/251518",
-            "UUID": "4eb3cb0631e9568a915f94271f841e43",
-            "figure": "https://i.imgur.com/phCE52D.webp"
         },
         {
             "systematics": "KKDay",
@@ -81,6 +72,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u53f0\u5317|\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/134376",
+            "UUID": "0e86291192b75a109f0fb0a9a42848e6",
+            "figure": "https://i.imgur.com/bqLefYG.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u53f2\u524d\u5de8\u7378:\u6cf0\u5766\u6050\u9f8d\u5c55",
             "date": "",
             "address": "",
@@ -90,12 +90,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u5531\u6211\u5011\u7684\u6b4c\u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55\u9580\u7968|\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3\u5c55\u89bd",
+            "title": "\u53f0\u5317|\u8896\u73cd\u535a\u7269\u9928\u96fb\u5b50\u9580\u7968",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/137251-sing-our-songs-music-island-stories-pop-music-exhibition-tickets-taipei",
-            "UUID": "0ea3d03dde465435af4c8d5e787c0700",
-            "figure": "https://i.imgur.com/HtUAqmX.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/30573-miniatures-museum-of-taiwan-ticket-taipei",
+            "UUID": "ec92ba2eff5952b6ad80c8e82f8b6728",
+            "figure": "https://i.imgur.com/7OXpENS.webp"
         }
     ],
     "visit": {}

@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://www.tmc.taipei/tw/lastest-event"
     },
-    "counts": 12,
-    "last_update": "2024-11-07T08:16:52.657837+00:00",
+    "counts": 13,
+    "last_update": "2024-11-07T16:16:17.818134+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -24,6 +24,15 @@
             "source_url": "https://www.tmc.taipei/tw/lastest-event/1E7d07C173f4",
             "UUID": "e4556b6df9b353549f743fc60aaf6dab",
             "figure": "https://i.imgur.com/VBqkBgn.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u3010\u8a69/\u8a5e \u4e4b\u9593 \ud835\ude57\ud835\ude5a\ud835\ude69\ud835\ude6c\ud835\ude5a\ud835\ude5a\ud835\ude63 \ud835\ude69\ud835\ude5d\ud835\ude5a \ud835\ude6b\ud835\ude5a\ud835\ude67\ud835\ude68\ud835\ude5a \u7b2c\u2778\u9996 \uff5c \u97f3\u6a02 \u2573 \u81ea\u6211\u5c0d\u8a71\u3011",
+            "date": "2024-11-15",
+            "address": "\u7522\u696d\u5340",
+            "source_url": "https://www.tmc.taipei/tw/lastest-event/DF4D8CE408c4",
+            "UUID": "3fc9d07507f95977adb209c9907882c7",
+            "figure": "https://i.imgur.com/M8UCfog.webp"
         },
         {
             "systematics": "tmc",
