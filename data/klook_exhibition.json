@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 48,
-    "last_update": "2024-11-12T08:19:57.427159+00:00",
+    "counts": 49,
+    "last_update": "2024-11-12T16:18:07.546483+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u300c\u767e\u5e74\u91d1\u5eb8 \u7121\u76e1\u6c5f\u6e56\u300d\u7279\u5c55 - \u83ef\u5c71\u6587\u5275",
+            "date": "2024-10-26~2025-03-30",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101027325-2024-jin-yong-exhibition/",
+            "UUID": "48cf5aa8cc4d58659f3a844eaa7f791d",
+            "figure": "https://i.imgur.com/WKJW3Mo.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u50be\u8eab\u89c0\u770b - \u856d\u5b87\u5022\u5275\u4f5c\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101027171-2024-chen-shinchung-exhibition/",
             "UUID": "b19b48743e4a53ccaf83cdde7fb572df",
-            "figure": "https://i.imgur.com/Md7nhnv.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/133478-national-geographic-women-born-to-shine/",
             "UUID": "3ca3067b138a5f6299bd63613446c4b2",
-            "figure": "-"
+            "figure": "https://i.imgur.com/vQ4jYcE.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "Gallery 101",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026501-2024-the-realm-of-five-element/",
             "UUID": "85cab638bc265f5fa4cb21823008dafd",
-            "figure": "https://i.imgur.com/TUakOAN.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/65492-taipei-illustration-fair-tickets/",
             "UUID": "569c851255ce5c64981edd50e8300b0c",
-            "figure": "-"
+            "figure": "https://i.imgur.com/wIctVI3.webp"
         }
     ],
     "visit": {}

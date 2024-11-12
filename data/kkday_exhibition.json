@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 70,
-    "last_update": "2024-11-12T08:17:21.463902+00:00",
+    "last_update": "2024-11-12T16:16:14.546219+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -27,21 +27,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u301068\u6298\u512a\u60e0\u3011\u53f0\u5317|\u5929\u6587\u9928\u30fb\u79d1\u5b78\u6559\u80b2\u9928\u30fb\u5152\u7ae5\u65b0\u6a02\u5712|\u4e8c\u9928\u806f\u7968\u30fb\u4e09\u9928\u806f\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/128325-taipei-planetarium-science-education-center-taipei-childrens-amusement-park",
-            "UUID": "394d2748faf7546193e3ed3f419bc216",
-            "figure": "https://i.imgur.com/YMNbxHt.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u300c\u65b0\u85dd\u8853\u904b\u52d5\u300d\u5149\u5f71\u85dd\u8853\u5c55.\u5f9e\u9ad8\u7b2c\u5230\u6155\u590f\u3001\u514b\u6797\u59c6",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/250885",
             "UUID": "e38907c22f475e53ae31aa3666f79be8",
             "figure": "https://i.imgur.com/MWU3RvA.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u301068\u6298\u512a\u60e0\u3011\u53f0\u5317|\u5929\u6587\u9928\u30fb\u79d1\u5b78\u6559\u80b2\u9928\u30fb\u5152\u7ae5\u65b0\u6a02\u5712|\u4e8c\u9928\u806f\u7968\u30fb\u4e09\u9928\u806f\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/128325-taipei-planetarium-science-education-center-taipei-childrens-amusement-park",
+            "UUID": "394d2748faf7546193e3ed3f419bc216",
+            "figure": "https://i.imgur.com/YMNbxHt.webp"
         },
         {
             "systematics": "KKDay",
@@ -63,6 +63,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u3010\u9810\u552e8\u6298\u3011\u53f0\u5317\u5c55\u89bd| \u97cc\u5cf6\u30fb\u9f4a\u67cf\u6797\u7a7a\u9593\u5c55\u89bd\u9810\u552e\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/158313",
+            "UUID": "b320f621137354d2a943ed0bbceb21ed",
+            "figure": "https://i.imgur.com/sGQxpuz.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u53f0\u5317|\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928\u9580\u7968",
             "date": "",
             "address": "",
@@ -81,21 +90,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u3010\u65e9\u9ce56\u6298\u3011\u53f0\u5317\u5c55\u89bd \u2502 2024TECA\u53f0\u5317\u570b\u969b\u97f3\u97ff\u5927\u5c55",
+            "title": "2024 \u4e9e\u6d32\u624b\u5275\u5c55 POP UP ASIA Trade Fair",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/249655",
-            "UUID": "bdd0b3f5e90058b0aac853365e38a6b8",
-            "figure": "https://i.imgur.com/ugIgmF6.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u3010\u9810\u552e8\u6298\u3011\u53f0\u5317\u5c55\u89bd| \u97cc\u5cf6\u30fb\u9f4a\u67cf\u6797\u7a7a\u9593\u5c55\u89bd\u9810\u552e\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/158313",
-            "UUID": "b320f621137354d2a943ed0bbceb21ed",
-            "figure": "https://i.imgur.com/sGQxpuz.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/251081",
+            "UUID": "530fb6ac41f65801a511d8c6ba35aed4",
+            "figure": "https://i.imgur.com/qlZWRk7.webp"
         }
     ],
     "visit": {}
