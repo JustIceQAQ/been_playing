@@ -4,18 +4,9 @@
         "code_name": "cksmh",
         "external_link": "https://www.cksmh.gov.tw/activitysoonlist_369.html"
     },
-    "counts": 4,
-    "last_update": "2024-11-10T16:13:28.990205+00:00",
+    "counts": 5,
+    "last_update": "2024-11-12T08:19:22.211573+00:00",
     "data": [
-        {
-            "systematics": "cksmh",
-            "title": "\u7b2c50\u5c46\u53f0\u65e5\u7f8e\u8853\u4ea4\u6d41\u5c55\uff08\u514d\u8cbb\u53c3\u89c0\uff09",
-            "date": "2024-11-01 ~ 2024-11-11",
-            "address": "2\u5c55\u5ef3",
-            "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=41194",
-            "UUID": "f8f684586d0d5c3baf9325098164564f",
-            "figure": "https://i.imgur.com/eANPV5U.webp"
-        },
         {
             "systematics": "cksmh",
             "title": "\u7b2c\u4e8c\u5c46\u5dba\u5357\u756b\u6d3e\u5927\u5c55(\u514d\u8cbb\u53c3\u89c0)",
@@ -36,12 +27,30 @@
         },
         {
             "systematics": "cksmh",
+            "title": "\u86fb\u8b8a \u6df1\u5967\u5e7d\u7384 \u9ec3\u632f\u5ead\u535a\u58eb\u66f8\u6cd5\u3001\u7e6a\u756b\u3001\u7bc6\u5370\u3001\u74f7\u5275\u4f5c\u500b\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2024-11-16 ~ 2024-11-26",
+            "address": "4\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=41236",
+            "UUID": "7668b48c5cbc5d88903777afdf2d4a28",
+            "figure": "https://i.imgur.com/A3rjmQD.webp"
+        },
+        {
+            "systematics": "cksmh",
             "title": "113\u5e74\u6587\u5316\u85dd\u8853\u53ca\u6587\u5316\u5275\u610f\u7814\u7fd2\u73ed\u5e2b\u751f\u6210\u679c\u5c55",
             "date": "2024-11-29 ~ 2024-12-18",
-            "address": "3\u5c55\u5ef3",
+            "address": "3\u6a13\u85dd\u5eca",
             "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=41234",
             "UUID": "b218d1a4cf805fd7ac32cc4137168e12",
             "figure": "https://i.imgur.com/cFLmP5R.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u5e78\u798f\u529f\u5fb7\u4eba\u751f\uff08\u514d\u8cbb\u53c3\u89c0\uff09",
+            "date": "2024-11-30 ~ 2024-12-11",
+            "address": "2\u30013\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=41225",
+            "UUID": "0bc43b705b555a42b91610536a20f034",
+            "figure": "https://i.imgur.com/uBW2KvN.webp"
         }
     ],
     "visit": {}
