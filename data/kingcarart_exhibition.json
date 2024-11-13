@@ -4,8 +4,8 @@
         "code_name": "KingCarArt",
         "external_link": "https://www.kingcarart.org.tw/exhibitions/current"
     },
-    "counts": 8,
-    "last_update": "2024-11-13T01:00:38.030875+00:00",
+    "counts": 7,
+    "last_update": "2024-11-13T08:17:13.295028+00:00",
     "data": [
         {
             "systematics": "KingCarArt",
@@ -69,15 +69,6 @@
             "source_url": "https://www.kingcarart.org.tw/exhibitions-detail/207",
             "UUID": "608aea03a4845affbac71bcd195b77de",
             "figure": "https://i.imgur.com/Ap2ShVZ.webp"
-        },
-        {
-            "systematics": "KingCarArt",
-            "title": "\u9418\u4f73\u8aed\u99d0\u9928\u5275\u4f5c\u5c55\u3010\u4fe1\u4ef0\u7684\uff0c\u592a\u4fe1\u4ef0\u7684\u3011",
-            "date": "2024-10-11 ~ 2024-11-03",
-            "address": "\u81fa\u5317\u627f\u5fb7\u9928, CHENGDE SPACE-TAIPEI",
-            "source_url": "https://www.kingcarart.org.tw/exhibitions-detail/210",
-            "UUID": "50ca9072fe3c5c738bb5df3c634cc0f2",
-            "figure": "https://i.imgur.com/S7DAPiW.webp"
         }
     ],
     "visit": {}
