@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 49,
-    "last_update": "2024-11-13T08:20:53.697035+00:00",
+    "counts": 48,
+    "last_update": "2024-11-13T16:16:52.605110+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -207,15 +207,6 @@
         },
         {
             "systematics": "klook",
-            "title": "\u5fc3\u97fb \u6797\u9326\u6fe4\u6c34\u58a8\u756b\u5c55",
-            "date": "2024-11-01~2024-11-13",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101026773-2024-taipei-exhibition/",
-            "UUID": "880d2a8b062e58e0976e1b28bb5f9ef6",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
             "title": "\u5c4b\u9802\u52d5\u7269\u5712\uff1a\u89aa\u5b50\u4e92\u52d5\u611f\u5b98\u5c55",
             "date": "2024-12-20~2025-03-02",
             "address": "-",
@@ -230,7 +221,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/133478-national-geographic-women-born-to-shine/",
             "UUID": "3ca3067b138a5f6299bd63613446c4b2",
-            "figure": "https://i.imgur.com/vQ4jYcE.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -311,7 +302,7 @@
             "address": "Gallery 101",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026501-2024-the-realm-of-five-element/",
             "UUID": "85cab638bc265f5fa4cb21823008dafd",
-            "figure": "-"
+            "figure": "https://i.imgur.com/TUakOAN.webp"
         },
         {
             "systematics": "klook",
@@ -446,7 +437,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/65492-taipei-illustration-fair-tickets/",
             "UUID": "569c851255ce5c64981edd50e8300b0c",
-            "figure": "https://i.imgur.com/wIctVI3.webp"
+            "figure": "-"
         }
     ],
     "visit": {}
