@@ -5,7 +5,7 @@
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
     "counts": 51,
-    "last_update": "2024-11-14T01:01:15.310079+00:00",
+    "last_update": "2024-11-14T08:18:37.722832+00:00",
     "data": [
         {
             "systematics": "ntm",
@@ -99,6 +99,15 @@
         },
         {
             "systematics": "ntm",
+            "title": "\u4e3b\u6b0a\u3001\u571f\u5730\u8207\u85dd\u8853\u5275\u4f5c\uff1a\u6fb3\u6d32\u539f\u4f4f\u6c11\u85dd\u8853\u5bb6\u8b1b\u5ea7",
+            "date": "",
+            "address": "\u81fa\u535a\u9928\u53e4\u751f\u7269\u9928",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40274",
+            "UUID": "9850b9fe395359aa9f59a5fb0b5efc6c",
+            "figure": "https://i.imgur.com/LHbtRzG.webp"
+        },
+        {
+            "systematics": "ntm",
             "title": "\u3010\u5730\u7403you & me\u3011\u6050\u9f8d\u77f3\u5149\u8de1",
             "date": "",
             "address": "",
@@ -162,15 +171,6 @@
         },
         {
             "systematics": "ntm",
-            "title": "\u81fa\u535a\u6578\u4f4d\u5c0e\u89bdAPP \u5c0e\u89bd\u5728\u7dda \u77e5\u8b58\u7121\u9650",
-            "date": "",
-            "address": "\u7dda\u4e0a\u4e0b\u8f09",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=12199",
-            "UUID": "1d14be52f6395931a1f0883d6907f0ec",
-            "figure": "https://i.imgur.com/6iUkFYg.webp"
-        },
-        {
-            "systematics": "ntm",
             "title": "\u300cweekend\u7684\u79fb\u52d5\u535a\u7269\u9928\u300d-\u7530\u5712\u85dd\u8853\u5bb6(\u5c0f\u74e2)",
             "date": "2024-09-21 ~ 2024-09-22",
             "address": "",
@@ -204,6 +204,15 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=30101",
             "UUID": "5d41b54fe983515a84971f7281ba2acd",
             "figure": "https://i.imgur.com/CeNf2bP.webp"
+        },
+        {
+            "systematics": "ntm",
+            "title": "\u81fa\u535a\u6578\u4f4d\u5c0e\u89bdAPP \u5c0e\u89bd\u5728\u7dda \u77e5\u8b58\u7121\u9650",
+            "date": "2021-07-27 ~ 2024-12-31",
+            "address": "\u7dda\u4e0a\u4e0b\u8f09",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=12199",
+            "UUID": "1d14be52f6395931a1f0883d6907f0ec",
+            "figure": "https://i.imgur.com/6iUkFYg.webp"
         },
         {
             "systematics": "ntm",
