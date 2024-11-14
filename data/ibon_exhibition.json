@@ -5,7 +5,7 @@
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
     "counts": 58,
-    "last_update": "2024-11-14T08:17:32.251542+00:00",
+    "last_update": "2024-11-14T16:16:42.526877+00:00",
     "data": [
         {
             "systematics": "ibon",
@@ -33,6 +33,15 @@
             "source_url": "https://tour.ibon.com.tw/event/6729c7066eacfd35d35c7fec",
             "UUID": "d436953658dd557fb65872653b185544",
             "figure": "https://i.imgur.com/sJBsrs0.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u57ce\u5167\u805a\u6a02\u6d3e\u5c0dTainan Old Town CLUP",
+            "date": "2024-12-22 ~ 2024-12-22",
+            "address": "\u53f0\u5357\u6676\u82f1\u9152\u5e97",
+            "source_url": "https://tour.ibon.com.tw/event/67235919e807af383c5d3f94",
+            "UUID": "91220b32f6dc5663b92b3cd7fcf7110c",
+            "figure": "https://i.imgur.com/TBrqqZB.webp"
         },
         {
             "systematics": "ibon",
@@ -276,15 +285,6 @@
             "source_url": "https://tour.ibon.com.tw/event/66791d16381e3354ac7dab91",
             "UUID": "520bcdcc290551daa4a33ef45d012c2f",
             "figure": "https://i.imgur.com/ng2QVoX.webp"
-        },
-        {
-            "systematics": "ibon",
-            "title": "\u300a\u68b5\u8c37\uff1a\u5c0b\u5149\u4e4b\u8def\u300b\u7279\u5c55",
-            "date": "2024-08-24 ~ 2024-11-11",
-            "address": "\u5bcc\u90a6\u7f8e\u8853\u9928 3F\u65e5\u5149\u5c55\u5ef3",
-            "source_url": "https://tour.ibon.com.tw/event/66692f86395ef57c57014722",
-            "UUID": "3828bff135ae58a588dd32b4a5f88ee8",
-            "figure": "https://i.imgur.com/SbGbA5s.webp"
         },
         {
             "systematics": "ibon",
