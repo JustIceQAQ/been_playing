@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://www.tmc.taipei/tw/lastest-event"
     },
-    "counts": 10,
-    "last_update": "2024-11-15T08:17:33.891792+00:00",
+    "counts": 9,
+    "last_update": "2024-11-15T16:16:51.659773+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -15,24 +15,6 @@
             "source_url": "https://www.tmc.taipei/tw/lastest-event/553634384Ca5",
             "UUID": "21f494f63a7f561b98c3680cf2baf7fe",
             "figure": "https://i.imgur.com/TvKYIma.webp"
-        },
-        {
-            "systematics": "tmc",
-            "title": "\u3010\u8a69/\u8a5e \u4e4b\u9593 \ud835\ude57\ud835\ude5a\ud835\ude69\ud835\ude6c\ud835\ude5a\ud835\ude5a\ud835\ude63 \ud835\ude69\ud835\ude5d\ud835\ude5a \ud835\ude6b\ud835\ude5a\ud835\ude67\ud835\ude68\ud835\ude5a \u7b2c\u2778\u9996 \uff5c \u97f3\u6a02 \u2573 \u81ea\u6211\u5c0d\u8a71\u3011",
-            "date": "2024-11-15",
-            "address": "\u7522\u696d\u5340",
-            "source_url": "https://www.tmc.taipei/tw/lastest-event/DF4D8CE408c4",
-            "UUID": "3fc9d07507f95977adb209c9907882c7",
-            "figure": "https://i.imgur.com/M8UCfog.webp"
-        },
-        {
-            "systematics": "tmc",
-            "title": "Disney Princess \u2013 The Concert \u8fea\u58eb\u5c3c\u300a\u516c\u4e3b\u97f3\u6a02\u6703\u300b",
-            "date": "2024-11-14 ~ 2024-11-15",
-            "address": "\u8868\u6f14\u5ef3",
-            "source_url": "https://www.tmc.taipei/tw/blog-show-Disney-Princess-the-Concert1114-1115",
-            "UUID": "2ac6bcee168253b8895bfca1146a362c",
-            "figure": "https://i.imgur.com/LheExnR.webp"
         },
         {
             "systematics": "tmc",
@@ -87,6 +69,15 @@
             "source_url": "https://www.tmc.taipei/tw/kdrama",
             "UUID": "620d8ee6a15f533bbac6154a486b6008",
             "figure": "https://i.imgur.com/0i4AeGI.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u947d\u77f3\u821e\u53f0\u4e4b\u591c",
+            "date": "2025-02-22 ~ 2025-02-23",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/tw/diamond",
+            "UUID": "7e4a6803f9bd59749e04c6b7ae803609",
+            "figure": "https://i.imgur.com/6lUDLs8.webp"
         },
         {
             "systematics": "tmc",

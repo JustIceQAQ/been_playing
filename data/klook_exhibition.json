@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 52,
-    "last_update": "2024-11-15T08:18:34.493168+00:00",
+    "counts": 53,
+    "last_update": "2024-11-15T16:18:37.873137+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "Pierre Huyghe \u500b\u5c55",
+            "date": "2024-11-09~2025-03-23",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101027385-2024-pierre-huyghe-exhibition/",
+            "UUID": "79721a153f2a5678b04cccb3ea16999f",
+            "figure": "https://i.imgur.com/VSMiISY.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u6389\u5728\u534a\u8def\u7684\u5c0f\u6578\u9ede - \u5f90\u745e\u8b19\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/136008-animage-and-ghibli-exhibition/",
             "UUID": "d03dcba58c465df3855e7e0f2727f7a6",
-            "figure": "https://i.imgur.com/6BlAjWQ.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101027090-2024-digital-art-fest-taipei/",
             "UUID": "85699d0652c65cf096569fc90b92442d",
-            "figure": "-"
+            "figure": "https://i.imgur.com/dBxgJJ4.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026708-2025-taipei-fine-wine-expo/",
             "UUID": "dc0a51088fd45c72bb33a3b06976f231",
-            "figure": "https://i.imgur.com/l4YOSp5.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "\u9a5a\u559c\u88fd\u9020",
             "source_url": "https://www.klook.com/zh-TW/activity/81847-the-sunset-terminal/",
             "UUID": "b148959df7175628a044b1bcb87bf5c0",
-            "figure": "-"
+            "figure": "https://i.imgur.com/uUN1Yv7.webp"
         },
         {
             "systematics": "klook",

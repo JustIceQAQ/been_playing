@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-11-15T08:17:33.670122+00:00",
+    "last_update": "2024-11-15T16:16:39.786609+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -99,15 +99,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "iF \u8cea\u611f\u751f\u6d3b | 2024 \u5e74 iF \u8a2d\u8a08\u734e\u7372\u734e\u4f5c\u54c1\u5c55 (V)",
-            "date": "2024-10-15 ~ 2024-11-15",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/e726dd5b-3c0d-4b08-87e0-dd07832fb77a",
-            "UUID": "5ed8a8ef820e5f35a67c11b96b88182e",
-            "figure": "https://i.imgur.com/TPAY5Li.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "2024 TEAM TAIWAN\u671f\u9593\u9650\u5b9a\u5e97",
             "date": "2024-11-02 ~ 2024-11-24",
             "address": "-",
@@ -141,6 +132,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/2dd88a89-9f5b-4271-a5a1-35de5bc0d62b",
             "UUID": "6c56e5d7b048521385667e7275a6da40",
             "figure": "https://i.imgur.com/BmG3fuW.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u6200\u820aING\u5e02\u96c6\u6d3b\u52d5",
+            "date": "2024-11-15 ~ 2024-11-17",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/7c5a012c-2ff2-43a0-a4e9-7bc6e34142df",
+            "UUID": "0d3167c3b5d351f7a2f0da0c0d1254f2",
+            "figure": "https://i.imgur.com/bSdtqSD.webp"
         }
     ],
     "visit": {}
