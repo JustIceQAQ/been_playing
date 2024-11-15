@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 70,
-    "last_update": "2024-11-14T16:16:50.950129+00:00",
+    "last_update": "2024-11-15T01:04:45.410170+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -15,15 +15,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/101875-taiwan-national-palace-museum-northern-southern-branch-ticket",
             "UUID": "5522f988185a5f5db43f5150c7fbcdce",
             "figure": "https://i.imgur.com/xtJ4Hty.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u53f2\u524d\u5de8\u7378:\u6cf0\u5766\u6050\u9f8d\u5c55",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/260003",
-            "UUID": "d54f1cf003585dfebd778394117ef9a6",
-            "figure": "https://i.imgur.com/urr3etI.webp"
         },
         {
             "systematics": "KKDay",
@@ -54,6 +45,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u53f2\u524d\u5de8\u7378:\u6cf0\u5766\u6050\u9f8d\u5c55",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/260003",
+            "UUID": "d54f1cf003585dfebd778394117ef9a6",
+            "figure": "https://i.imgur.com/urr3etI.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u53f0\u5317|\u8896\u73cd\u535a\u7269\u9928\u96fb\u5b50\u9580\u7968",
             "date": "",
             "address": "",
@@ -81,21 +81,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u5531\u6211\u5011\u7684\u6b4c\u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55\u9580\u7968|\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3\u5c55\u89bd",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/137251-sing-our-songs-music-island-stories-pop-music-exhibition-tickets-taipei",
-            "UUID": "0ea3d03dde465435af4c8d5e787c0700",
-            "figure": "https://i.imgur.com/HtUAqmX.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u570b\u5bb6\u5730\u7406\u5973\u6027\u7d93\u5178\u5f71\u50cf\u5c55",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/251258",
             "UUID": "60947bf9a07a52aaadd79e21eef7a823",
             "figure": "https://i.imgur.com/6IiiT1I.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u5531\u6211\u5011\u7684\u6b4c\u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55\u9580\u7968|\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3\u5c55\u89bd",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/137251-sing-our-songs-music-island-stories-pop-music-exhibition-tickets-taipei",
+            "UUID": "0ea3d03dde465435af4c8d5e787c0700",
+            "figure": "https://i.imgur.com/HtUAqmX.webp"
         }
     ],
     "visit": {}
