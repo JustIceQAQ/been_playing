@@ -4,8 +4,8 @@
         "code_name": "KKDay",
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
-    "counts": 70,
-    "last_update": "2024-11-15T01:04:45.410170+00:00",
+    "counts": 80,
+    "last_update": "2024-11-15T08:18:26.920656+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -15,6 +15,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/101875-taiwan-national-palace-museum-northern-southern-branch-ticket",
             "UUID": "5522f988185a5f5db43f5150c7fbcdce",
             "figure": "https://i.imgur.com/xtJ4Hty.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u65b0\u5317|\u516b\u6597\u5b50\u6df1\u6fb3\u9435\u9053\u81ea\u884c\u8eca Rail Bike \u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/27378-taiwan-shenao-rail-bike-experience-new-taipei-city-taiwan",
+            "UUID": "f526080dee22535fb50225f7533b4f8a",
+            "figure": "https://i.imgur.com/pJzmhJW.webp"
         },
         {
             "systematics": "KKDay",
@@ -87,15 +96,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/251258",
             "UUID": "60947bf9a07a52aaadd79e21eef7a823",
             "figure": "https://i.imgur.com/6IiiT1I.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u5531\u6211\u5011\u7684\u6b4c\u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55\u9580\u7968|\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3\u5c55\u89bd",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/137251-sing-our-songs-music-island-stories-pop-music-exhibition-tickets-taipei",
-            "UUID": "0ea3d03dde465435af4c8d5e787c0700",
-            "figure": "https://i.imgur.com/HtUAqmX.webp"
         }
     ],
     "visit": {}
