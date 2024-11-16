@@ -5,7 +5,7 @@
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
     "counts": 51,
-    "last_update": "2024-11-16T01:03:43.245728+00:00",
+    "last_update": "2024-11-16T08:17:12.972035+00:00",
     "data": [
         {
             "systematics": "ntm",
@@ -225,15 +225,6 @@
         },
         {
             "systematics": "ntm",
-            "title": "\u3010\u81fa\u535a\u6703\u54e1\u9650\u5b9a\u3011\u6253\u958b\u81fa\u535aX\u300c\u6253\u958b\u53f0\u5317\u300d Open House Taipei",
-            "date": "",
-            "address": "\u81fa\u535a\u9928\u9435\u9053\u90e8\u5712\u5340",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40266",
-            "UUID": "b779a5b00a075a6c8794d922f7af48bc",
-            "figure": "https://i.imgur.com/MZj9G7r.webp"
-        },
-        {
-            "systematics": "ntm",
             "title": "\u3010\u79d8\u5883\u63a2\u7d22\u5305\u3011\u958b\u653e\u79df\u501f\u4e2d",
             "date": "",
             "address": "\u81fa\u535a\u9928\u9435\u9053\u90e8\u5712\u5340",
@@ -258,6 +249,15 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=00037",
             "UUID": "3f23c06539fd5ac28514d4e79ab95e63",
             "figure": "https://i.imgur.com/8E14url.webp"
+        },
+        {
+            "systematics": "ntm",
+            "title": "\u9435\u9053\u6587\u5316\u5e38\u8a2d\u5c55",
+            "date": "",
+            "address": "\u570b\u7acb\u81fa\u7063\u535a\u7269\u9928-\u9435\u9053\u90e8\u5712\u5340",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=00035",
+            "UUID": "5a85fcef2e9a537ca5c482478fdddcd4",
+            "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/00035/00035.jpg"
         },
         {
             "systematics": "ntm",
