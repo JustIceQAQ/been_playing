@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 80,
-    "last_update": "2024-11-19T08:18:12.718803+00:00",
+    "last_update": "2024-11-19T16:17:05.534483+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -45,6 +45,15 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u53f0\u5317.\u677e\u83f8|\u300a\u5e7b\u96b1\u5149\u9748:\u4ed9\u8e64\u300b|\u5be6\u5883\u89e3\u8b0e\u904a\u6232",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/261629",
+            "UUID": "587a5b6337485bb8bec10f3b6151bfaa",
+            "figure": "https://i.imgur.com/lxr2VGO.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u300c\u65b0\u85dd\u8853\u904b\u52d5\u300d\u5149\u5f71\u85dd\u8853\u5c55.\u5f9e\u9ad8\u7b2c\u5230\u6155\u590f\u3001\u514b\u6797\u59c6",
             "date": "",
             "address": "",
@@ -63,15 +72,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317.\u677e\u83f8|\u300a\u5e7b\u96b1\u5149\u9748:\u4ed9\u8e64\u300b|\u5be6\u5883\u89e3\u8b0e\u904a\u6232",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/261629",
-            "UUID": "587a5b6337485bb8bec10f3b6151bfaa",
-            "figure": "https://i.imgur.com/lxr2VGO.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u5531\u6211\u5011\u7684\u6b4c\u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55\u9580\u7968|\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3\u5c55\u89bd",
             "date": "",
             "address": "",
@@ -81,21 +81,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317|\u7b2c\u4e00\u5c46 FANTACO \u9b54\u5e7b\u85dd\u8853\u7bc0",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/251165",
-            "UUID": "e0c9ef8ad45f57f6bdf742b01ef129a1",
-            "figure": "https://i.imgur.com/1dWLPpH.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317|\u8896\u73cd\u535a\u7269\u9928\u96fb\u5b50\u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/30573-miniatures-museum-of-taiwan-ticket-taipei",
             "UUID": "ec92ba2eff5952b6ad80c8e82f8b6728",
             "figure": "https://i.imgur.com/7OXpENS.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317|\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/134376",
+            "UUID": "0e86291192b75a109f0fb0a9a42848e6",
+            "figure": "https://i.imgur.com/bqLefYG.webp"
         }
     ],
     "visit": {}

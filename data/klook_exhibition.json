@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 48,
-    "last_update": "2024-11-19T08:19:33.863859+00:00",
+    "counts": 49,
+    "last_update": "2024-11-19T16:18:37.845452+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u5922\u306e\u65c5 - \u8a18\u61b6\u8ecc\u8de1 - \u516b\u9928\u306a\u306a\u3053\u500b\u5c55",
+            "date": "2024-11-09~2024-12-21",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101027445-2024-nanaco-yashiro-exhibition/",
+            "UUID": "5c8ec1aa31a55e3f9a47611c384dd407",
+            "figure": "https://i.imgur.com/DcKeHOK.webp"
+        },
         {
             "systematics": "klook",
             "title": "Pierre Huyghe \u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101027245-2024-future-vision-lab/",
             "UUID": "12f9fc3143cd54fcb400776c510d26e3",
-            "figure": "https://i.imgur.com/mWNuznJ.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/134126-rooftop-zoo-interactive-sensory-exhibition-for-kids/",
             "UUID": "3697042aabae54ab9e4d3909954b71d9",
-            "figure": "-"
+            "figure": "https://i.imgur.com/WuMBauy.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026459-2024-study-in-korea-expo/",
             "UUID": "9b3cc4753ce850289e7b35baa6ee7286",
-            "figure": "https://i.imgur.com/xibmLgt.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/65492-taipei-illustration-fair-tickets/",
             "UUID": "569c851255ce5c64981edd50e8300b0c",
-            "figure": "-"
+            "figure": "https://i.imgur.com/wIctVI3.webp"
         }
     ],
     "visit": {}
