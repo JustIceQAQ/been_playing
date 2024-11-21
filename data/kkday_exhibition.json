@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 80,
-    "last_update": "2024-11-21T08:18:05.385044+00:00",
+    "last_update": "2024-11-21T16:17:04.052930+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -27,21 +27,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317.\u677e\u83f8|\u300a\u5e7b\u96b1\u5149\u9748:\u4ed9\u8e64\u300b|\u5be6\u5883\u89e3\u8b0e\u904a\u6232",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/261629",
-            "UUID": "587a5b6337485bb8bec10f3b6151bfaa",
-            "figure": "https://i.imgur.com/lxr2VGO.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317\u5c55\u89bd|\u53f2\u524d\u5de8\u7378:\u6cf0\u5766\u6050\u9f8d\u5c55",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/260003",
             "UUID": "d54f1cf003585dfebd778394117ef9a6",
             "figure": "https://i.imgur.com/urr3etI.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317.\u677e\u83f8|\u300a\u5e7b\u96b1\u5149\u9748:\u4ed9\u8e64\u300b|\u5be6\u5883\u89e3\u8b0e\u904a\u6232",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/261629",
+            "UUID": "587a5b6337485bb8bec10f3b6151bfaa",
+            "figure": "https://i.imgur.com/lxr2VGO.webp"
         },
         {
             "systematics": "KKDay",
@@ -72,15 +72,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u5531\u6211\u5011\u7684\u6b4c\u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55\u9580\u7968|\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3\u5c55\u89bd",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/137251-sing-our-songs-music-island-stories-pop-music-exhibition-tickets-taipei",
-            "UUID": "0ea3d03dde465435af4c8d5e787c0700",
-            "figure": "https://i.imgur.com/HtUAqmX.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u53f0\u5317|\u7b2c\u4e00\u5c46 FANTACO \u9b54\u5e7b\u85dd\u8853\u7bc0",
             "date": "",
             "address": "",
@@ -96,6 +87,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/30573-miniatures-museum-of-taiwan-ticket-taipei",
             "UUID": "ec92ba2eff5952b6ad80c8e82f8b6728",
             "figure": "https://i.imgur.com/7OXpENS.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u5531\u6211\u5011\u7684\u6b4c\u6d41\u884c\u97f3\u6a02\u6545\u4e8b\u5c55\u9580\u7968|\u53f0\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3\u5c55\u89bd",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/137251-sing-our-songs-music-island-stories-pop-music-exhibition-tickets-taipei",
+            "UUID": "0ea3d03dde465435af4c8d5e787c0700",
+            "figure": "https://i.imgur.com/HtUAqmX.webp"
         }
     ],
     "visit": {}
