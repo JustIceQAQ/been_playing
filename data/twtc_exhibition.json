@@ -4,8 +4,8 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 29,
-    "last_update": "2024-11-20T16:18:51.957225+00:00",
+    "counts": 30,
+    "last_update": "2024-11-21T01:05:01.721365+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -59,6 +59,15 @@
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.titas.tw",
             "UUID": "2edc1694288259e191a5a3c0761b98a1",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2024\u53f0\u7063\u5275\u65b0\u6280\u8853\u535a\u89bd\u6703(\u767c\u660e\u7af6\u8cfd\u5340)",
+            "date": "2024-10-17 ~ 2024-10-19",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://www.inventaipei.com.tw/",
+            "UUID": "7a88bdd3bd68549c84bcca06663696fa",
             "figure": ""
         },
         {
