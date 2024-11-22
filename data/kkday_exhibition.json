@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 80,
-    "last_update": "2024-11-22T08:18:11.787838+00:00",
+    "last_update": "2024-11-22T16:16:47.883154+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -54,15 +54,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u300c\u65b0\u85dd\u8853\u904b\u52d5\u300d\u5149\u5f71\u85dd\u8853\u5c55.\u5f9e\u9ad8\u7b2c\u5230\u6155\u590f\u3001\u514b\u6797\u59c6",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/250885",
-            "UUID": "e38907c22f475e53ae31aa3666f79be8",
-            "figure": "https://i.imgur.com/MWU3RvA.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u301068\u6298\u512a\u60e0\u3011\u53f0\u5317|\u5929\u6587\u9928\u30fb\u79d1\u5b78\u6559\u80b2\u9928\u30fb\u5152\u7ae5\u65b0\u6a02\u5712|\u4e8c\u9928\u806f\u7968\u30fb\u4e09\u9928\u806f\u7968",
             "date": "",
             "address": "",
@@ -72,12 +63,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317|\u7b2c\u4e00\u5c46 FANTACO \u9b54\u5e7b\u85dd\u8853\u7bc0",
+            "title": "\u53f0\u5317\u5c55\u89bd|\u300c\u65b0\u85dd\u8853\u904b\u52d5\u300d\u5149\u5f71\u85dd\u8853\u5c55.\u5f9e\u9ad8\u7b2c\u5230\u6155\u590f\u3001\u514b\u6797\u59c6",
             "date": "",
             "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/251165",
-            "UUID": "e0c9ef8ad45f57f6bdf742b01ef129a1",
-            "figure": "https://i.imgur.com/1dWLPpH.webp"
+            "source_url": "https://www.kkday.com/zh-tw/product/250885",
+            "UUID": "e38907c22f475e53ae31aa3666f79be8",
+            "figure": "https://i.imgur.com/MWU3RvA.webp"
         },
         {
             "systematics": "KKDay",
@@ -96,6 +87,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/137251-sing-our-songs-music-island-stories-pop-music-exhibition-tickets-taipei",
             "UUID": "0ea3d03dde465435af4c8d5e787c0700",
             "figure": "https://i.imgur.com/HtUAqmX.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317|\u7b2c\u4e00\u5c46 FANTACO \u9b54\u5e7b\u85dd\u8853\u7bc0",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/251165",
+            "UUID": "e0c9ef8ad45f57f6bdf742b01ef129a1",
+            "figure": "https://i.imgur.com/1dWLPpH.webp"
         }
     ],
     "visit": {}
