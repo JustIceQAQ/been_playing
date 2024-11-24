@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://www.tmc.taipei/tw/lastest-event"
     },
-    "counts": 10,
-    "last_update": "2024-11-24T01:08:57.283901+00:00",
+    "counts": 11,
+    "last_update": "2024-11-24T08:15:50.910844+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -78,6 +78,15 @@
             "source_url": "https://www.tmc.taipei/tw/kdrama",
             "UUID": "620d8ee6a15f533bbac6154a486b6008",
             "figure": "https://i.imgur.com/0i4AeGI.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "hololive STAGE World Tour 24 -Soar-\uff01 @ TAIPEI",
+            "date": "2025-01-18",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/tw/hololive2024",
+            "UUID": "8551c664be135b89b2ba53919c4751cb",
+            "figure": "https://i.imgur.com/ovXcEuL.webp"
         },
         {
             "systematics": "tmc",
