@@ -5,8 +5,17 @@
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
     "counts": 52,
-    "last_update": "2024-11-26T08:19:58.735273+00:00",
+    "last_update": "2024-11-26T16:18:45.814841+00:00",
     "data": [
+        {
+            "systematics": "ntm",
+            "title": "\u300c\u9cf4\u87f2\u6587\u5316\u8207\u79d1\u5b78\u7279\u5c55\u300d\u7279\u5c55\u5c0e\u89bd (11\u300112\u6708\u5834\u6b21)",
+            "date": "",
+            "address": "\u81fa\u535a\u9928\u672c\u99281\u6a13 \u897f\u5c55\u9593",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40278",
+            "UUID": "cfddda9231fd5a75bcdb8dcbc6a99b4c",
+            "figure": "https://i.imgur.com/y1EIup0.webp"
+        },
         {
             "systematics": "ntm",
             "title": "\u300c\u5f62\u8272\u8cea\u7f8e\uff1a\u6f22\u5bf6\u5fb7\u7684\u5efa\u7bc9\u300d\u7279\u5c55",
@@ -87,15 +96,6 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50023",
             "UUID": "0caa3307ffdf59eeb383dd51d0dfcb2e",
             "figure": "https://i.imgur.com/77DkH6M.webp"
-        },
-        {
-            "systematics": "ntm",
-            "title": "\u3010\u4e00\u9031\u4e00\u6377\u514b\u3011\u7dda\u4e0a\u5ef6\u4f38\u95b1\u8b80",
-            "date": "",
-            "address": "\u7dda\u4e0a\u5e73\u53f0",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40233",
-            "UUID": "4a2024ed6dcf54e6897ee623f5c09321",
-            "figure": "https://i.imgur.com/m2DFDbz.webp"
         },
         {
             "systematics": "ntm",
@@ -285,6 +285,15 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40247",
             "UUID": "ac724ac5220e53e3a2563cf1347b75d6",
             "figure": "https://i.imgur.com/IHMouDE.webp"
+        },
+        {
+            "systematics": "ntm",
+            "title": "\u3010\u4e00\u9031\u4e00\u6377\u514b\u3011\u7dda\u4e0a\u5ef6\u4f38\u95b1\u8b80",
+            "date": "",
+            "address": "\u7dda\u4e0a\u5e73\u53f0",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40233",
+            "UUID": "4a2024ed6dcf54e6897ee623f5c09321",
+            "figure": "https://i.imgur.com/m2DFDbz.webp"
         },
         {
             "systematics": "ntm",
