@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 58,
-    "last_update": "2024-11-29T08:19:40.334613+00:00",
+    "counts": 57,
+    "last_update": "2024-11-29T16:17:34.393210+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -288,15 +288,6 @@
         },
         {
             "systematics": "klook",
-            "title": "2024\u5433\u5fb7\u8ce2\u300c\u85dd\u91d1\u5f69\u300d\u9676\u85dd\u500b\u5c55",
-            "date": "2024-11-16~2024-11-29",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101026934-2024-taipei-exhibition/",
-            "UUID": "11c2c9b4906c5b14ae56714f02e6541d",
-            "figure": "https://i.imgur.com/MYC2VOm.webp"
-        },
-        {
-            "systematics": "klook",
             "title": "\u5c4b\u9802\u52d5\u7269\u5712\uff1a\u89aa\u5b50\u4e92\u52d5\u611f\u5b98\u5c55",
             "date": "2024-12-20~2025-03-02",
             "address": "-",
@@ -311,7 +302,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/133478-national-geographic-women-born-to-shine/",
             "UUID": "3ca3067b138a5f6299bd63613446c4b2",
-            "figure": "-"
+            "figure": "https://i.imgur.com/vQ4jYcE.webp"
         },
         {
             "systematics": "klook",
@@ -446,7 +437,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/119455-goblet-of-soul-wonderland/",
             "UUID": "c8dc290f4aa45f98acf45c9f6b9a5550",
-            "figure": "https://i.imgur.com/MueohiW.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -527,7 +518,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/65492-taipei-illustration-fair-tickets/",
             "UUID": "569c851255ce5c64981edd50e8300b0c",
-            "figure": "-"
+            "figure": "https://i.imgur.com/wIctVI3.webp"
         }
     ],
     "visit": {}

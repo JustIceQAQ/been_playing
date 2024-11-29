@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 80,
-    "last_update": "2024-11-29T08:18:34.523265+00:00",
+    "last_update": "2024-11-29T16:16:44.669065+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -81,21 +81,21 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317|\u8896\u73cd\u535a\u7269\u9928\u96fb\u5b50\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/30573-miniatures-museum-of-taiwan-ticket-taipei",
-            "UUID": "ec92ba2eff5952b6ad80c8e82f8b6728",
-            "figure": "https://i.imgur.com/7OXpENS.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u65b0\u5317|\u516b\u6597\u5b50\u6df1\u6fb3\u9435\u9053\u81ea\u884c\u8eca Rail Bike \u9580\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/27378-taiwan-shenao-rail-bike-experience-new-taipei-city-taiwan",
             "UUID": "f526080dee22535fb50225f7533b4f8a",
             "figure": "https://i.imgur.com/pJzmhJW.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317|\u8896\u73cd\u535a\u7269\u9928\u96fb\u5b50\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/30573-miniatures-museum-of-taiwan-ticket-taipei",
+            "UUID": "ec92ba2eff5952b6ad80c8e82f8b6728",
+            "figure": "https://i.imgur.com/7OXpENS.webp"
         }
     ],
     "visit": {}
