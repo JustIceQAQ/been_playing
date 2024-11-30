@@ -4,8 +4,8 @@
         "code_name": "ntm",
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
-    "counts": 52,
-    "last_update": "2024-11-30T08:16:41.356980+00:00",
+    "counts": 50,
+    "last_update": "2024-11-30T16:15:03.745468+00:00",
     "data": [
         {
             "systematics": "ntm",
@@ -33,15 +33,6 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40271",
             "UUID": "1116479bb9ec5a8490401b87deefb467",
             "figure": "https://i.imgur.com/A9mtlFj.webp"
-        },
-        {
-            "systematics": "ntm",
-            "title": "\u3010\u591c\u5149\u5c0b\u5821\u3011\u591c\u9593\u958b\u9928",
-            "date": "",
-            "address": "\u81fa\u535a\u9928\u672c\u9928",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40265",
-            "UUID": "6b01559834265dc0af54d5d4c0b9edd0",
-            "figure": "https://i.imgur.com/2dVZw3E.webp"
         },
         {
             "systematics": "ntm",
@@ -90,12 +81,21 @@
         },
         {
             "systematics": "ntm",
-            "title": "\u3010\u4e00\u9031\u4e00\u6377\u514b\u3011\u7dda\u4e0a\u5ef6\u4f38\u95b1\u8b80",
+            "title": "\u3010\u5c31\u662f\u90a3\u500b\u5149 Getting NTM\u3011\u672c\u9928\u53c3\u89c0\u6307\u5f15 Self-Guided Tour",
             "date": "",
             "address": "",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40233",
-            "UUID": "4a2024ed6dcf54e6897ee623f5c09321",
-            "figure": "https://i.imgur.com/m2DFDbz.webp"
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40222",
+            "UUID": "9c065d2f07a45f1a8e02f4cdcc1e0a2e",
+            "figure": "https://i.imgur.com/wleNYoa.webp"
+        },
+        {
+            "systematics": "ntm",
+            "title": "Blast to the Past: Walking Tour of Old Taipei \u81fa\u5317\u57ce\u82f1\u8a9e\u6563\u6b65\u5c0e\u89bd",
+            "date": "",
+            "address": "",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40236",
+            "UUID": "70d0572f236a551ea0e8ea65b4f55e45",
+            "figure": "https://i.imgur.com/pCBDJXs.webp"
         },
         {
             "systematics": "ntm",
@@ -168,15 +168,6 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=12199",
             "UUID": "1d14be52f6395931a1f0883d6907f0ec",
             "figure": "https://i.imgur.com/6iUkFYg.webp"
-        },
-        {
-            "systematics": "ntm",
-            "title": "\u3014\u7642\u7652\u6642\u5149\u6a5f\u3015\u793e\u6703\u8655\u65b9\u7b8b\u9ad4\u9a57\u6d3b\u52d5",
-            "date": "2024-11-30",
-            "address": "\u81fa\u535a\u9928\u5357\u9580\u9928\u5c0f\u767d\u5bae",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40275",
-            "UUID": "c620822a432957f3bb5ca37ffc0f13cf",
-            "figure": "https://i.imgur.com/PqncngD.webp"
         },
         {
             "systematics": "ntm",

@@ -4,8 +4,8 @@
         "code_name": "CLab",
         "external_link": "https://clab.org.tw/events/"
     },
-    "counts": 5,
-    "last_update": "2024-11-30T08:16:21.878980+00:00",
+    "counts": 3,
+    "last_update": "2024-11-30T16:16:28.591169+00:00",
     "data": [
         {
             "systematics": "CLab",
@@ -33,24 +33,6 @@
             "source_url": "https://clab.org.tw/events/wpm/",
             "UUID": "3a9bcef740435bcaa703ed56c11bec2e",
             "figure": "https://i.imgur.com/3iwTEDG.webp"
-        },
-        {
-            "systematics": "CLab",
-            "title": "\u3010\u5149\u8207\u5f71\u7684\u60c5\u611f\u8a9e\u5f59 - Arturo \u00c1lvarez | \u4e9e\u6d32\u9996\u5c55\u3011 Light and Shadow Art Exhibition",
-            "date": "2024-11-13 ~ 2024-11-17",
-            "address": "\u591a\u529f\u80fd\u5ef3",
-            "source_url": "https://clab.org.tw/events/arturo_alvarez/",
-            "UUID": "af2671676f1a57cc995fe668e4e2deab",
-            "figure": "https://i.imgur.com/qIyShS3.webp"
-        },
-        {
-            "systematics": "CLab",
-            "title": "\u5b87\u5b99\u63a2\u7d22\u865f\u2014\u8ff7\u4eba\u7684\u5047\u8272\u8207\u91cf\u5316\u7684\u60c5\u611f \u968e\u6bb5\u6210\u679c\u5448\u73fe",
-            "date": "2024-11-02 ~ 2024-11-10",
-            "address": "\u52d5\u756b\u5275\u4f5c\u8005\u57fa\u5730\u591a\u529f\u80fd\u5ef3",
-            "source_url": "https://clab.org.tw/events/20241102/",
-            "UUID": "a0810430a11a53e4bda8545112a55abd",
-            "figure": "https://i.imgur.com/Wpxa3KB.webp"
         }
     ],
     "visit": {}

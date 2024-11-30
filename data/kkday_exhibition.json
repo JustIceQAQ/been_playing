@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 80,
-    "last_update": "2024-11-30T08:16:50.158869+00:00",
+    "last_update": "2024-11-30T16:15:25.034944+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -15,15 +15,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/250413-taipei-exhibition-yayoi-kusama-collection",
             "UUID": "a87def1632ac59e3aacf2e1f8eaedaca",
             "figure": "https://i.imgur.com/JJcXktl.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "2024 \u6545\u5bae\u4e4b\u591c|\u55e8\u7ffb\u6545\u5bae!\u9081\u5411 100 |\u5165\u5834\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/261428",
-            "UUID": "ca50ee8ddf0a5fe1a44edea231c660f9",
-            "figure": "https://i.imgur.com/lwl3Q5n.webp"
         },
         {
             "systematics": "KKDay",
@@ -72,12 +63,12 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317\u5c55\u89bd|\u300c\u65b0\u85dd\u8853\u904b\u52d5\u300d\u5149\u5f71\u85dd\u8853\u5c55.\u5f9e\u9ad8\u7b2c\u5230\u6155\u590f\u3001\u514b\u6797\u59c6",
+            "title": "\u30101212\u9650\u6642\u512a\u60e0\u3011\u53f0\u5317\u5c55\u89bd|\u300c\u65b0\u85dd\u8853\u904b\u52d5\u300d\u5149\u5f71\u85dd\u8853\u5c55.\u5f9e\u9ad8\u7b2c\u5230\u6155\u590f\u3001\u514b\u6797\u59c6",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/250885",
             "UUID": "e38907c22f475e53ae31aa3666f79be8",
-            "figure": "https://i.imgur.com/MWU3RvA.webp"
+            "figure": "https://i.imgur.com/WSi0z9q.webp"
         },
         {
             "systematics": "KKDay",
@@ -96,6 +87,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/30573-miniatures-museum-of-taiwan-ticket-taipei",
             "UUID": "ec92ba2eff5952b6ad80c8e82f8b6728",
             "figure": "https://i.imgur.com/7OXpENS.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317|\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/134376",
+            "UUID": "0e86291192b75a109f0fb0a9a42848e6",
+            "figure": "https://i.imgur.com/bqLefYG.webp"
         }
     ],
     "visit": {}
