@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 57,
-    "last_update": "2024-12-02T08:21:06.121330+00:00",
+    "counts": 58,
+    "last_update": "2024-12-02T16:18:23.359349+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "2025\u53f0\u5317\u96fb\u5668\u7a7a\u8abf\u5f71\u97f3\u5927\u5c55 - \u53f0\u5317\u4e16\u8cbf\u4e00\u9928",
+            "date": "2025-01-03~2024-01-06",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101027680-2025-taipei-appliances-expo/",
+            "UUID": "e5f6628e00485d57a469d7dea988d705",
+            "figure": "https://i.imgur.com/80rgavn.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u3010\u3064\u306a\u3050\u3011\u56db\u4f4d\u65e5\u672c\u7576\u4ee3\u85dd\u8853\u5bb6\u806f\u5c55\u66a8\u6709\u6751\u4f73\u5948\u6536\u85cf\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101027444-2024-art-exhibition/",
             "UUID": "e274c3b7e11555ec8b3154f7d8354eb5",
-            "figure": "https://i.imgur.com/9Jf3cKq.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101027171-2024-chen-shinchung-exhibition/",
             "UUID": "b19b48743e4a53ccaf83cdde7fb572df",
-            "figure": "-"
+            "figure": "https://i.imgur.com/Md7nhnv.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/133478-national-geographic-women-born-to-shine/",
             "UUID": "3ca3067b138a5f6299bd63613446c4b2",
-            "figure": "https://i.imgur.com/vQ4jYcE.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -437,7 +446,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/119455-goblet-of-soul-wonderland/",
             "UUID": "c8dc290f4aa45f98acf45c9f6b9a5550",
-            "figure": "-"
+            "figure": "https://i.imgur.com/MueohiW.webp"
         },
         {
             "systematics": "klook",
@@ -518,7 +527,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/65492-taipei-illustration-fair-tickets/",
             "UUID": "569c851255ce5c64981edd50e8300b0c",
-            "figure": "https://i.imgur.com/wIctVI3.webp"
+            "figure": "-"
         }
     ],
     "visit": {}
