@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-12-05T08:18:41.986488+00:00",
+    "last_update": "2024-12-05T16:17:34.391665+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -81,15 +81,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "\u5468\u932b\u744b\u7684\u300c\u4e00\u5408\u76f8\u300d\u756b\u5c55",
-            "date": "2024-11-27 ~ 2024-12-05",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/06ecde3d-25e7-4b80-9245-534b4c4bdcc3",
-            "UUID": "982d646d981d5fc19b51fb8f7491f0a6",
-            "figure": "https://i.imgur.com/ZjZobMY.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "2024\u91d1\u9ede\u8a2d\u8a08\u5c55",
             "date": "2024-12-03 ~ 2024-12-06",
             "address": "-",
@@ -141,6 +132,15 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/fddc74b9-510e-4a3c-b411-76f33955a5ee",
             "UUID": "6bf665ecf92857569ce2add31f0c2103",
             "figure": "https://i.imgur.com/ZnPMZHg.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u53f0\u7063\u8a2d\u8a08\u9031-The Gateway",
+            "date": "2024-12-07 ~ 2025-02-02",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/10616ed8-2471-4708-ad96-c0d87bfa458f",
+            "UUID": "d5c9e822c46e556380ce3fea8c4abe52",
+            "figure": "https://i.imgur.com/onlA9Vj.webp"
         }
     ],
     "visit": {}
