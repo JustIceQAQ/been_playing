@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 58,
-    "last_update": "2024-12-08T08:18:41.537805+00:00",
+    "counts": 56,
+    "last_update": "2024-12-08T16:16:43.431622+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -252,15 +252,6 @@
         },
         {
             "systematics": "klook",
-            "title": "\u8857\u89d2\u7684\u5229\u606f",
-            "date": "2024-10-12~2024-12-08",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101027167-2024-interest-street-corner/",
-            "UUID": "40545ec6cff75403be30eea3d252a782",
-            "figure": "https://i.imgur.com/OPPBui5.webp"
-        },
-        {
-            "systematics": "klook",
             "title": "\u4f60\u4e0d\u89ba\u5f97\u4ed6\u662f\u53ef\u4ee5\u64e6\u6389\u7684\u55ce\uff1f - \u5f35\u5b50\u6069\u5275\u4f5c\u500b\u5c55",
             "date": "2024-10-29~2024-12-15",
             "address": "-",
@@ -311,7 +302,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/133478-national-geographic-women-born-to-shine/",
             "UUID": "3ca3067b138a5f6299bd63613446c4b2",
-            "figure": "-"
+            "figure": "https://i.imgur.com/vQ4jYcE.webp"
         },
         {
             "systematics": "klook",
@@ -446,7 +437,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/119455-goblet-of-soul-wonderland/",
             "UUID": "c8dc290f4aa45f98acf45c9f6b9a5550",
-            "figure": "https://i.imgur.com/MueohiW.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -519,15 +510,6 @@
             "source_url": "https://www.klook.com/zh-TW/activity/70429-music-island-stories-pop-music-in-taiwan-taipei/",
             "UUID": "dde6739eefe25fe9aae6270e758d7acd",
             "figure": "https://i.imgur.com/3q0DDno.webp"
-        },
-        {
-            "systematics": "klook",
-            "title": "2024 \u7b2c\u4e03\u5c46 \u53f0\u5317\u63d2\u756b\u85dd\u8853\u7bc0",
-            "date": "2024-12-08",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/activity/65492-taipei-illustration-fair-tickets/",
-            "UUID": "569c851255ce5c64981edd50e8300b0c",
-            "figure": "-"
         }
     ],
     "visit": {}

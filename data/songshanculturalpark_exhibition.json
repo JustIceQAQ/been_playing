@@ -4,8 +4,8 @@
         "code_name": "songshanculturalpark",
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
-    "counts": 15,
-    "last_update": "2024-12-08T08:16:50.964633+00:00",
+    "counts": 14,
+    "last_update": "2024-12-08T16:15:06.946665+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -72,33 +72,6 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "META Motion 2024 \uff5c \u7121\u7528\u4e4b\u7528\uff1a______",
-            "date": "2024-11-23 ~ 2024-12-08",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/a8e0d353-69ca-453f-843b-a34b0abca09c",
-            "UUID": "f5cfb09b7a625a0792cc440582d5d95f",
-            "figure": "https://i.imgur.com/y2l4ALw.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u5c0f\u9ce5\u6642\u51492.0",
-            "date": "2024-12-06 ~ 2024-12-08",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c5c216d6-6e52-486f-9ab0-ad73ac1c3528",
-            "UUID": "d4ff7f31b5805fe0b378acd2f621b661",
-            "figure": "https://i.imgur.com/swYfALg.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "2024 \u7b2c\u4e03\u5c46\u53f0\u5317\u63d2\u756b\u85dd\u8853\u7bc0\u300c \u6211\u60f3\u5ff5\u6211\u81ea\u5df1 \u300d",
-            "date": "2024-12-06 ~ 2024-12-08",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/81f88f82-e11e-4a4b-94be-a0e3e697ab11",
-            "UUID": "bfd46a4ab5175418b920e0efe274bf77",
-            "figure": "https://i.imgur.com/TwaoLCh.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
             "title": "\u53f0\u7063\u89d2\u5ddd25\u9031\u5e74POP-UP STORE",
             "date": "2024-12-06 ~ 2024-12-09",
             "address": "-",
@@ -135,12 +108,30 @@
         },
         {
             "systematics": "songshanculturalpark",
-            "title": "\u767d\u91d1\u6d3e\u5c0d by Da Party",
-            "date": "2024-12-07 ~ 2024-12-08",
+            "title": "\u65e5\u672c\u539f\u5275\u4f5c\u8005\u5546\u54c1\u5c55 SUZURI byGMO Pepabo",
+            "date": "2024-12-14 ~ 2024-12-15",
             "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/57514cff-d358-4d1a-8701-683bd6692e02",
-            "UUID": "d8c58792db9e58f7b2a744e5835ab43d",
-            "figure": "https://i.imgur.com/dLfcqEE.webp"
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/0f65d0fe-8749-493e-b5ee-c691c8132ddc",
+            "UUID": "57a1cdd516b05199b4b69c0bf25fe64d",
+            "figure": "https://i.imgur.com/3b92PAc.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u8212\u559c\u8036\u8a95\u5e02\u96c6\u2014\u51ac\u81f3\u5fc3\u76f8\u805a",
+            "date": "2024-12-21 ~ 2024-12-22",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/30fc41da-3166-4dbf-b7c3-80cff67ef0c5",
+            "UUID": "a435ba12c4b45277a8b0179ceb9369ab",
+            "figure": "https://i.imgur.com/f27uUdu.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
+            "title": "\u677e\u83f8\u73a9\u5496\u601d\u8def",
+            "date": "2024-07-01",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c0607239-4d13-41d5-8fd0-643248265ff7",
+            "UUID": "97359d5b22bf54459dfff2d2183d51b1",
+            "figure": "https://i.imgur.com/msfSxEj.webp"
         }
     ],
     "visit": {}
