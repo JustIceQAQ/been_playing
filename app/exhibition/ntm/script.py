@@ -55,10 +55,9 @@ class NtmRunner(RunnerInit):
         parsers: list[bs4.BeautifulSoup] = await super().fetch_parsed()
         return list(
             chain.from_iterable(
-                parser.select_one("#CCMS_Content").select(
-                    "ul[data-child] > li[data-index] > div.area-essay"
-                )
+                selected_one.select("ul[data-child] > li[data-index] > div.area-essay")
                 for parser in parsers
+                if (selected_one := parser.select_one("#CCMS_Content")) is not None
             )
         )
 
