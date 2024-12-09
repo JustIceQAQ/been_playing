@@ -19,14 +19,14 @@ class KingCarArtParse(ParseInit):
         ) or self.item.select_one("div.ex-info > h2 > span")
         return select_one_result.get_text() if select_one_result else "-"
 
-    def get_date(self, *args, **kwargs) -> str:
+    def get_date(self, *args, **kwargs) -> str | None:
         raw_date = (
             div.get_text()
             if (div := self.item.find("div", {"class": "ex-date"}))
             else ""
         )
         if not raw_date:
-            return "-"
+            return None
 
         first_date_raw, second_date_raw = raw_date.split("→")
         first_date_raw = first_date_raw.strip()
@@ -36,7 +36,7 @@ class KingCarArtParse(ParseInit):
             second_date = parse_date(second_date_raw)
             second_date_year = second_date.year
         else:
-            return "-"
+            return None
 
         first_date_split = first_date_raw.split(" ")
         if len(first_date_split) == 3:
@@ -52,10 +52,10 @@ class KingCarArtParse(ParseInit):
             for span in self.item.select("div.ex-location > span")
         )
 
-    def get_figure(self, *args, **kwargs) -> str:
+    def get_figure(self, *args, **kwargs) -> str | None:
         div = self.item.find("div", {"class": "ex-img"})
         if div is None:
-            return "-"
+            return None
         dev_style = div.attrs.get("style")
         image = dev_style.split(":")[-1]
         return f"https:{image[:-2]}"

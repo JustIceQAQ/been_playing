@@ -5,7 +5,7 @@ from helpers.parse_helper import ParseInit
 from helpers.utils_helper import this_date_year
 
 
-def chinese_date_format(raw_date_string: str) -> str:
+def chinese_date_format(raw_date_string: str) -> str | None:
     if "年" in raw_date_string:
         pattern = r"(\d{4})年(\d{1,2})月(\d{1,2})日"
         match = re.search(pattern, raw_date_string)
@@ -15,7 +15,7 @@ def chinese_date_format(raw_date_string: str) -> str:
             day = match.group(3)
             return f"{year}-{int(month):02d}-{int(day):02d}"
         else:
-            return "-"
+            return None
     else:
         year = dt.datetime.now().year
         pattern = r"(\d{1,2})月(\d{1,2})日"
@@ -25,7 +25,7 @@ def chinese_date_format(raw_date_string: str) -> str:
             day = match.group(2)
             return f"{year}-{int(month):02d}-{int(day):02d}"
         else:
-            return "-"
+            return None
 
 
 class KLookParse(ParseInit):
@@ -65,6 +65,11 @@ class KLookParse(ParseInit):
         runtime_title, _ = self.title_address_filter(raw_title)
         return runtime_title
 
+    def replace_1_7(self, value: str) -> str:
+        for i in {"(週日)", "(週一)", "(週二)", "(週三)", "(週四)", "(週五)", "(週六)"}:
+            value = value.replace(i, "").strip()
+        return value
+
     def date_format(self, raw_date_string: str) -> str:
         this_year = this_date_year()
         if "日" in raw_date_string:
@@ -89,14 +94,12 @@ class KLookParse(ParseInit):
 
         split_result = raw_date_string.split("-")
         if len(split_result) == 1:
-            one_date = split_result[0].replace("(週日)", "").strip()
+            one_date = self.replace_1_7(split_result[0])
             return self.date_format(one_date)
         else:
             start_string, end_string = raw_date_string.split("-")
-            start_string = (
-                start_string.strip().split("(")[0].replace("(週日)", "").strip()
-            )
-            end_string = end_string.strip().split("(")[0].replace("(週日)", "").strip()
+            start_string = self.replace_1_7(start_string.strip().split("(")[0])
+            end_string = self.replace_1_7(end_string.strip().split("(")[0])
             return f"{self.date_format(start_string)} ~ {self.date_format(end_string)}"
 
     def get_address(self, *args, **kwargs) -> str:

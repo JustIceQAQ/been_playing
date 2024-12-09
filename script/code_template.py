@@ -28,8 +28,9 @@ class {script_code}Runner(RunnerInit):
 
     async def fetch_response(self):
         headers = get_header()
-        async with HttpxAsyncClient() as client:
-            pass
+        async with HttpxAsyncClient(headers=headers) as client:
+            response = await client.get()
+        return response.text
 
     async def fetch_parsed(self):
         parsed: bs4.BeautifulSoup = await super().fetch_parsed()

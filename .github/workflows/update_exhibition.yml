@@ -66,16 +66,6 @@ jobs:
           SENTRY_SDK_DNS: ${{ secrets.SENTRY_SDK_DNS }}
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
           SCRAPE_DO_API_KEY: ${{ secrets.SCRAPE_DO_API_KEY }}
-      - name: execute py async script
-        run: python run_all_async_script.py
-        env:
-          IMGUR_API_CLIENT_ID: ${{ secrets.IMGUR_API_CLIENT_ID }}
-          IMGUR_API_CLIENT_SECRET: ${{ secrets.IMGUR_API_CLIENT_SECRET }}
-          LINE_NOTIFY_API: ${{ secrets.LINE_NOTIFY_API }}
-          SENTRY_SDK_DNS: ${{ secrets.SENTRY_SDK_DNS }}
-          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
-          SCRAPE_DO_API_KEY: ${{ secrets.SCRAPE_DO_API_KEY }}
-          IS_DEBUG: ${{ secrets.IS_DEBUG }}
 
       - name: commit files
         run: |

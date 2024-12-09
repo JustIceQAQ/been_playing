@@ -51,10 +51,10 @@ class CLabParse(ParseInit):
             self.item.find("p", {"class": "a-base-card__location"}).get_text().strip()
         )
 
-    def get_figure(self, *args, **kwargs) -> str:
+    def get_figure(self, *args, **kwargs) -> str | None:
         div = self.item.find("div", {"class": "a-base-card__thumbnail"})
         if div is None:
-            return "-"
+            return None
         dev_style = div.attrs.get(":style")
         pc_image = dev_style.split(":")[-1]
 

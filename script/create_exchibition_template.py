@@ -10,7 +10,7 @@ SCRIPT_FOLDER = ROOT_DIR / "app"
 @click.command()
 @click.option("--script_code", prompt="Your Script Code", help="Your Script Code")
 def create_exhibition_template(script_code: str):
-    app_script_folder = SCRIPT_FOLDER / script_code
+    app_script_folder = SCRIPT_FOLDER / (script_code.lower())
 
     if app_script_folder.exists():
         click.echo(f"{script_code} folder exists!")
