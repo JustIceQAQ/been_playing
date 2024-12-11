@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 80,
-    "last_update": "2024-12-11T08:19:38.530100+00:00",
+    "last_update": "2024-12-11T16:17:56.532126+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -24,15 +24,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/101875-taiwan-national-palace-museum-northern-southern-branch-ticket",
             "UUID": "5522f988185a5f5db43f5150c7fbcdce",
             "figure": "https://i.imgur.com/xtJ4Hty.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "2024 \u6545\u5bae\u4e4b\u591c|\u55e8\u7ffb\u6545\u5bae!\u9081\u5411 100 \u5165\u5834\u9580\u7968|\u8d08\u9662\u6176\u7d00\u5ff5\u60a0\u904a\u5361",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/261428",
-            "UUID": "ca50ee8ddf0a5fe1a44edea231c660f9",
-            "figure": "https://i.imgur.com/lwl3Q5n.webp"
         },
         {
             "systematics": "KKDay",
@@ -63,15 +54,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317|\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/134376",
-            "UUID": "0e86291192b75a109f0fb0a9a42848e6",
-            "figure": "https://i.imgur.com/bqLefYG.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u30101212\u9650\u6642\u512a\u60e0\u3011\u53f0\u5317\u5c55\u89bd|\u300c\u65b0\u85dd\u8853\u904b\u52d5\u300d\u5149\u5f71\u85dd\u8853\u5c55.\u5f9e\u9ad8\u7b2c\u5230\u6155\u590f\u3001\u514b\u6797\u59c6",
             "date": "",
             "address": "",
@@ -90,12 +72,30 @@
         },
         {
             "systematics": "KKDay",
+            "title": "\u53f0\u5317|\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928\u9580\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/134376",
+            "UUID": "0e86291192b75a109f0fb0a9a42848e6",
+            "figure": "https://i.imgur.com/bqLefYG.webp"
+        },
+        {
+            "systematics": "KKDay",
             "title": "\u301068\u6298\u512a\u60e0\u3011\u53f0\u5317|\u5929\u6587\u9928\u30fb\u79d1\u5b78\u6559\u80b2\u9928\u30fb\u5152\u7ae5\u65b0\u6a02\u5712|\u4e8c\u9928\u806f\u7968\u30fb\u4e09\u9928\u806f\u7968",
             "date": "",
             "address": "",
             "source_url": "https://www.kkday.com/zh-tw/product/128325-taipei-planetarium-science-education-center-taipei-childrens-amusement-park",
             "UUID": "394d2748faf7546193e3ed3f419bc216",
             "figure": "https://i.imgur.com/YMNbxHt.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u53f0\u5317\u8896\u73cd\u535a\u7269\u9928\u9580\u7968.\u806f\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/30573-miniatures-museum-of-taiwan-ticket-taipei",
+            "UUID": "ec92ba2eff5952b6ad80c8e82f8b6728",
+            "figure": "https://i.imgur.com/7OXpENS.webp"
         }
     ],
     "visit": {}
