@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://www.tmc.taipei/tw/lastest-event"
     },
-    "counts": 8,
-    "last_update": "2024-12-12T01:06:17.818759+00:00",
+    "counts": 10,
+    "last_update": "2024-12-12T08:19:53.626639+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -23,7 +23,16 @@
             "address": "\u5176\u4ed6",
             "source_url": "https://www.tmc.taipei/tw/lastest-event/323D0fcBb23F",
             "UUID": "eeefbe1498c255bc90048c103ce8614a",
-            "figure": "https://i.imgur.com/wusasWR.webp"
+            "figure": "https://i.imgur.com/r5bgoFM.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "\u4e09\u6821\u806f\u5408\u8fce\u65b0\u300a\u653f\u5be6\u8587\u310c\u6ce5\u300b",
+            "date": "2024-12-14",
+            "address": "Live House D",
+            "source_url": "https://www.tmc.taipei/tw/241214",
+            "UUID": "8e4b125ccb1857e7a26718a6bfcf0738",
+            "figure": "https://i.imgur.com/PiKZrR3.webp"
         },
         {
             "systematics": "tmc",
@@ -60,6 +69,15 @@
             "source_url": "https://www.tmc.taipei/tw/hololive2024",
             "UUID": "8551c664be135b89b2ba53919c4751cb",
             "figure": "https://i.imgur.com/ovXcEuL.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "2025 MAKSIM\u9081\u53ef\u68ee Segmenti\u4e16\u754c\u5de1\u6f14\uff0d\u53f0\u7063\u7ad9",
+            "date": "2025-02-08",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/tw/MAKSIM2024",
+            "UUID": "2f65ec7355e35643b7469c053bfbd101",
+            "figure": "https://i.imgur.com/nLfAEjj.webp"
         },
         {
             "systematics": "tmc",
