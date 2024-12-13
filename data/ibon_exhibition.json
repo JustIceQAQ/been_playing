@@ -4,9 +4,45 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 59,
-    "last_update": "2024-12-13T01:07:31.389092+00:00",
+    "counts": 63,
+    "last_update": "2024-12-13T08:20:10.719559+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "\u8d85\u7e6a\u5c55-\u5317\u7530\u9f8d\u99ac\u53f0\u7063\u7c3d\u540d\u6703",
+            "date": "2025-01-12 ~ 2025-01-12",
+            "address": "\u677e\u5c71\u6587\u5275\u5712\u5340(\u5317\u5411\u88fd\u83f8\u5ee0\u897f\u5074)",
+            "source_url": "https://tour.ibon.com.tw/event/675799284c6d101f71c6f5f8",
+            "UUID": "8a416e8c9e075b6d8f07f0176a933486",
+            "figure": "https://i.imgur.com/I4rGTuy.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u8d85\u7e6a\u5c55-\u4e00\u5bae\u5915\u7fbd\u53f0\u7063\u7c3d\u540d\u6703",
+            "date": "2025-01-18 ~ 2025-01-18",
+            "address": "\u677e\u5c71\u6587\u5275\u5712\u5340(\u5317\u5411\u88fd\u83f8\u5ee0\u897f\u5074)",
+            "source_url": "https://tour.ibon.com.tw/event/6756b7b14c6d101f71c6d210",
+            "UUID": "ad10913d89495b03b64c2556b45f4b09",
+            "figure": "https://i.imgur.com/N9hxlNY.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u8d85\u7e6a\u5c55-SASAMORI TOMOE\u53f0\u7063\u7c3d\u540d\u6703",
+            "date": "2025-02-15 ~ 2025-02-15",
+            "address": "\u677e\u5c71\u6587\u5275\u5712\u5340(\u5317\u5411\u88fd\u83f8\u5ee0\u897f\u5074)",
+            "source_url": "https://tour.ibon.com.tw/event/6756b0404c6d101f71c6cfeb",
+            "UUID": "7fc1aad09fc45941b9154b854cc6f64f",
+            "figure": "https://i.imgur.com/UBDb6Ax.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "\u8d85\u7e6a\u5c55-AYAKAWARIKU\u53f0\u7063\u7c3d\u540d\u6703",
+            "date": "2025-01-18 ~ 2025-01-18",
+            "address": "\u677e\u5c71\u6587\u5275\u5712\u5340(\u5317\u5411\u88fd\u83f8\u5ee0\u897f\u5074)",
+            "source_url": "https://tour.ibon.com.tw/event/675698394c6d101f71c6c8ee",
+            "UUID": "b148bae30beb58f2b37187f046973e44",
+            "figure": "https://i.imgur.com/ydAFrD1.webp"
+        },
         {
             "systematics": "ibon",
             "title": "2025\u9f8d\u5d0e\u5149\u7bc0\uff1a\u7a7a\u5c71\u796d\u300a\u7130\u571f\u65b0\u751f\u300b\uff0e\u5957\u7968",
