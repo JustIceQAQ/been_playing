@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://www.tmc.taipei/tw/lastest-event"
     },
-    "counts": 10,
-    "last_update": "2024-12-14T08:16:22.656571+00:00",
+    "counts": 8,
+    "last_update": "2024-12-14T16:14:58.467707+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -24,24 +24,6 @@
             "source_url": "https://www.tmc.taipei/tw/lastest-event/323D0fcBb23F",
             "UUID": "eeefbe1498c255bc90048c103ce8614a",
             "figure": "https://i.imgur.com/r5bgoFM.webp"
-        },
-        {
-            "systematics": "tmc",
-            "title": "\u4e09\u6821\u806f\u5408\u8fce\u65b0\u300a\u653f\u5be6\u8587\u310c\u6ce5\u300b",
-            "date": "2024-12-14",
-            "address": "Live House D",
-            "source_url": "https://www.tmc.taipei/tw/241214",
-            "UUID": "8e4b125ccb1857e7a26718a6bfcf0738",
-            "figure": "https://i.imgur.com/PiKZrR3.webp"
-        },
-        {
-            "systematics": "tmc",
-            "title": "TAEYANG 2024 TOUR THE LIGHT YEAR IN TAIPEI",
-            "date": "2024-12-14",
-            "address": "\u8868\u6f14\u5ef3",
-            "source_url": "https://www.tmc.taipei/tw/TAEYANG2024TOUR",
-            "UUID": "ffe18919872b571c9d33e9808d85481c",
-            "figure": "https://i.imgur.com/0HDNnF1.webp"
         },
         {
             "systematics": "tmc",
