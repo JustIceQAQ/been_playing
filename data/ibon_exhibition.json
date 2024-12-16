@@ -4,9 +4,27 @@
         "code_name": "ibon",
         "external_link": "https://tour.ibon.com.tw/home/search?category=exhibition"
     },
-    "counts": 64,
-    "last_update": "2024-12-16T01:09:24.515035+00:00",
+    "counts": 66,
+    "last_update": "2024-12-16T08:20:12.135171+00:00",
     "data": [
+        {
+            "systematics": "ibon",
+            "title": "\u7b2c2\u5c46 \u53f0\u5357\u570b\u969b\u73a9\u5177\u535a\u89bd\u6703 2nd Designer Toy Tainan",
+            "date": "2025-01-18 ~ 2025-01-19",
+            "address": "\u5927\u81fa\u5357\u6703\u5c55\u4e2d\u5fc3 \u6771\u5c55\u5340",
+            "source_url": "https://tour.ibon.com.tw/event/675bc27df161dd2c72041320",
+            "UUID": "ba28f25de8855d39a33dafcbd1ab8c6e",
+            "figure": "https://i.imgur.com/NdemZxK.webp"
+        },
+        {
+            "systematics": "ibon",
+            "title": "2025\u7b2c33\u5c46\u53f0\u5317\u570b\u969b\u66f8\u5c55",
+            "date": "2025-02-04 ~ 2025-02-09",
+            "address": "\u53f0\u5317\u4e16\u8cbf\u4e2d\u5fc3\u4e00\u9928",
+            "source_url": "https://tour.ibon.com.tw/event/675a3fb52bdb005614af9b4c",
+            "UUID": "1a9ffe75c1c050f095e8c716b7c36d16",
+            "figure": "https://i.imgur.com/dKOdM7D.webp"
+        },
         {
             "systematics": "ibon",
             "title": "2025\u4e9e\u592a\u862d\u82b1\u6703\u8b70\u66a8\u81fa\u7063\u570b\u969b\u862d\u5c55",
@@ -568,7 +586,7 @@
         {
             "systematics": "ibon",
             "title": "\u3010\u5c4f\u6771\u3011\u570b\u7acb\u6d77\u6d0b\u751f\u7269\u535a\u7269\u9928",
-            "date": "2021-09-29 ~ 2024-12-31",
+            "date": "2021-09-29 ~ 2025-01-31",
             "address": "\u570b\u7acb\u6d77\u6d0b\u751f\u7269\u535a\u7269\u9928",
             "source_url": "https://tour.ibon.com.tw/event/614d2bb350b6195589314ec9",
             "UUID": "92f865875f515d43a10b2ad3e326a699",
