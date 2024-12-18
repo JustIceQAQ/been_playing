@@ -4,8 +4,8 @@
         "code_name": "KingCarArt",
         "external_link": "https://www.kingcarart.org.tw/exhibitions/current"
     },
-    "counts": 5,
-    "last_update": "2024-12-18T01:04:00.009941+00:00",
+    "counts": 2,
+    "last_update": "2024-12-18T08:18:26.218353+00:00",
     "data": [
         {
             "systematics": "KingCarArt",
@@ -24,33 +24,6 @@
             "source_url": "https://www.kingcarart.org.tw/exhibitions-detail/214",
             "UUID": "9549356c320d514fbf740523734d08f8",
             "figure": "https://i.imgur.com/OSLweH2.webp"
-        },
-        {
-            "systematics": "KingCarArt",
-            "title": "\u5289\u6631\u5ef7 \u5275\u4f5c\u500b\u5c55\u3010\u8d70\u5728\u6c34\u4e0a\u3011",
-            "date": "2024-10-29 ~ 2024-12-15",
-            "address": "\u81fa\u5317\u627f\u5fb7\u9928, CHENGDE SPACE-TAIPEI",
-            "source_url": "https://www.kingcarart.org.tw/exhibitions-detail/213",
-            "UUID": "53aae334e58450f7b5210310dbc69da9",
-            "figure": "https://i.imgur.com/hyu0I0R.webp"
-        },
-        {
-            "systematics": "KingCarArt",
-            "title": "\u856d\u5b87\u5022 \u5275\u4f5c\u500b\u5c55\u3010\u50be\u8eab\u89c0\u770b\u3011",
-            "date": "2024-10-29 ~ 2024-12-15",
-            "address": "\u81fa\u5317\u627f\u5fb7\u9928, CHENGDE SPACE-TAIPEI",
-            "source_url": "https://www.kingcarart.org.tw/exhibitions-detail/212",
-            "UUID": "65baf2e49cae502ba46ff22634cd6a4a",
-            "figure": "https://i.imgur.com/wZtxOnp.webp"
-        },
-        {
-            "systematics": "KingCarArt",
-            "title": "\u5f35\u5b50\u6069 \u5275\u4f5c\u500b\u5c55\u3010\u4f60\u4e0d\u89ba\u5f97\u4ed6\u662f\u53ef\u4ee5\u64e6\u6389\u7684\u55ce\uff1f\u3011",
-            "date": "2024-10-29 ~ 2024-12-15",
-            "address": "\u81fa\u5317\u627f\u5fb7\u9928, CHENGDE SPACE-TAIPEI",
-            "source_url": "https://www.kingcarart.org.tw/exhibitions-detail/211",
-            "UUID": "fa7a32b388bd56578a2e362c24e1b1bb",
-            "figure": "https://i.imgur.com/UHRWW1L.webp"
         }
     ],
     "visit": {}
