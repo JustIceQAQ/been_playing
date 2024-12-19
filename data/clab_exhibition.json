@@ -5,17 +5,8 @@
         "external_link": "https://clab.org.tw/events/"
     },
     "counts": 3,
-    "last_update": "2024-12-19T08:17:55.020167+00:00",
+    "last_update": "2024-12-19T16:14:33.385133+00:00",
     "data": [
-        {
-            "systematics": "CLab",
-            "title": "2024\u672a\u4f86\u5a92\u9ad4\u85dd\u8853\u7bc0\u2014\u2014\u5947\u7570\u9ede",
-            "date": "2024-10-04 ~ 2024-12-15",
-            "address": "\u5716\u66f8\u9928\u5c55\u6f14\u7a7a\u9593\u3001\u5317\u8349\u576a\u3001\u806f\u5408\u9910\u5ef3\u5c55\u6f14\u7a7a\u9593\u3001\u901a\u4fe1\u5206\u968a\u5c55\u6f14\u7a7a\u9593",
-            "source_url": "https://clab.org.tw/events/2024fmf/",
-            "UUID": "11d2abd0f8585339a96baa6036803a75",
-            "figure": "https://i.imgur.com/4rBIyEf.webp"
-        },
         {
             "systematics": "CLab",
             "title": "\u5be6\u9a57\uff0f\u5834\uff1aC-LAB\u9032\u884c\u5f0f",
@@ -33,6 +24,15 @@
             "source_url": "https://clab.org.tw/events/wpm/",
             "UUID": "3a9bcef740435bcaa703ed56c11bec2e",
             "figure": "https://i.imgur.com/3iwTEDG.webp"
+        },
+        {
+            "systematics": "CLab",
+            "title": "2024\u672a\u4f86\u5a92\u9ad4\u85dd\u8853\u7bc0\u2014\u2014\u5947\u7570\u9ede",
+            "date": "2024-10-04 ~ 2024-12-15",
+            "address": "\u5716\u66f8\u9928\u5c55\u6f14\u7a7a\u9593\u3001\u5317\u8349\u576a\u3001\u806f\u5408\u9910\u5ef3\u5c55\u6f14\u7a7a\u9593\u3001\u901a\u4fe1\u5206\u968a\u5c55\u6f14\u7a7a\u9593",
+            "source_url": "https://clab.org.tw/events/2024fmf/",
+            "UUID": "11d2abd0f8585339a96baa6036803a75",
+            "figure": "https://i.imgur.com/4rBIyEf.webp"
         }
     ],
     "visit": {}
