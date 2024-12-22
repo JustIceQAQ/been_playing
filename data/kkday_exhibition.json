@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 80,
-    "last_update": "2024-12-22T08:15:31.547804+00:00",
+    "last_update": "2024-12-22T16:14:03.305421+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -15,15 +15,6 @@
             "source_url": "https://www.kkday.com/zh-tw/product/250413-taipei-exhibition-yayoi-kusama-collection",
             "UUID": "a87def1632ac59e3aacf2e1f8eaedaca",
             "figure": "https://i.imgur.com/qh0kXWq.webp"
-        },
-        {
-            "systematics": "KKDay",
-            "title": "\u3010\u5373\u8cb7\u5373\u7528\u3011CWT \u53f0\u7063\u540c\u4eba\u8a8c\u8ca9\u552e\u6703\u9580\u7968|\u53f0\u5317.\u9ad8\u96c4",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/150500",
-            "UUID": "22977a1fa2a654cdbefd72a28558417f",
-            "figure": "https://i.imgur.com/nmYnGy6.webp"
         },
         {
             "systematics": "KKDay",
@@ -96,6 +87,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/27378-taiwan-shenao-rail-bike-experience-new-taipei-city-taiwan",
             "UUID": "f526080dee22535fb50225f7533b4f8a",
             "figure": "https://i.imgur.com/pJzmhJW.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u301068\u6298\u512a\u60e0\u3011\u53f0\u5317|\u5929\u6587\u9928\u30fb\u79d1\u5b78\u6559\u80b2\u9928\u30fb\u5152\u7ae5\u65b0\u6a02\u5712|\u4e8c\u9928\u806f\u7968\u30fb\u4e09\u9928\u806f\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/128325-taipei-planetarium-science-education-center-taipei-childrens-amusement-park",
+            "UUID": "394d2748faf7546193e3ed3f419bc216",
+            "figure": "https://i.imgur.com/YMNbxHt.webp"
         }
     ],
     "visit": {}
