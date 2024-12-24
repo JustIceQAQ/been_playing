@@ -5,7 +5,7 @@
         "external_link": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1"
     },
     "counts": 80,
-    "last_update": "2024-12-23T16:15:53.311540+00:00",
+    "last_update": "2024-12-24T01:01:21.419140+00:00",
     "data": [
         {
             "systematics": "KKDay",
@@ -72,15 +72,6 @@
         },
         {
             "systematics": "KKDay",
-            "title": "\u53f0\u5317|\u81fa\u5317\u5e02\u7acb\u7f8e\u8853\u9928\u9580\u7968",
-            "date": "",
-            "address": "",
-            "source_url": "https://www.kkday.com/zh-tw/product/134376",
-            "UUID": "0e86291192b75a109f0fb0a9a42848e6",
-            "figure": "https://i.imgur.com/bqLefYG.webp"
-        },
-        {
-            "systematics": "KKDay",
             "title": "\u65b0\u5317|\u516b\u6597\u5b50\u6df1\u6fb3\u9435\u9053\u81ea\u884c\u8eca Rail Bike \u9580\u7968",
             "date": "",
             "address": "",
@@ -96,6 +87,15 @@
             "source_url": "https://www.kkday.com/zh-tw/product/261629",
             "UUID": "587a5b6337485bb8bec10f3b6151bfaa",
             "figure": "https://i.imgur.com/lxr2VGO.webp"
+        },
+        {
+            "systematics": "KKDay",
+            "title": "\u301068\u6298\u512a\u60e0\u3011\u53f0\u5317|\u5929\u6587\u9928\u30fb\u79d1\u5b78\u6559\u80b2\u9928\u30fb\u5152\u7ae5\u65b0\u6a02\u5712|\u4e8c\u9928\u806f\u7968\u30fb\u4e09\u9928\u806f\u7968",
+            "date": "",
+            "address": "",
+            "source_url": "https://www.kkday.com/zh-tw/product/128325-taipei-planetarium-science-education-center-taipei-childrens-amusement-park",
+            "UUID": "394d2748faf7546193e3ed3f419bc216",
+            "figure": "https://i.imgur.com/YMNbxHt.webp"
         }
     ],
     "visit": {}
