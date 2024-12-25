@@ -4,8 +4,8 @@
         "code_name": "cksmh",
         "external_link": "https://www.cksmh.gov.tw/activitysoonlist_369.html"
     },
-    "counts": 5,
-    "last_update": "2024-12-25T01:00:30.056012+00:00",
+    "counts": 8,
+    "last_update": "2024-12-25T08:19:22.904056+00:00",
     "data": [
         {
             "systematics": "cksmh",
@@ -36,6 +36,15 @@
         },
         {
             "systematics": "cksmh",
+            "title": "\u85dd\u9cf4\u9a5a\u4eba \u570b\u969b\u4ea4\u6d41\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2024-12-27 ~ 2025-01-07",
+            "address": "4\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=41278",
+            "UUID": "bc85b529885a55e7a502f94ed92f011e",
+            "figure": "https://i.imgur.com/40Fhws8.webp"
+        },
+        {
+            "systematics": "cksmh",
             "title": "\u6ce5\u9189\u7d05\u5f71-\u9ec3\u6021\u6587\u9676\u85dd\u500b\u5c55\uff08\u514d\u8cbb\u53c3\u89c0\uff09",
             "date": "2024-12-28 ~ 2025-01-05",
             "address": "2\u5c55\u5ef3",
@@ -51,6 +60,24 @@
             "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=41258",
             "UUID": "94af54521b5b598a914be7abb3d2d9b3",
             "figure": "https://i.imgur.com/ZBBVpCc.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "2025\u7570\u60f3\u4e16\u754c \u7c21\u7384\u660e\u3001\u8521\u7389\u96f2\u4f09\u5137\u6c34\u58a8\u5408\u4f5c\u756b\u5c55II(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2025-01-10 ~ 2025-01-20",
+            "address": "4\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=41279",
+            "UUID": "b01e0616a53a5415ab43b936254cb3b3",
+            "figure": "https://i.imgur.com/edDCitB.webp"
+        },
+        {
+            "systematics": "cksmh",
+            "title": "\u6211\u7684\u9109\u571f \u6211\u7684\u5bb6 \u5433\u7d20\u7d79\u6cb9\u756b\u500b\u5c55(\u514d\u8cbb\u53c3\u89c0)",
+            "date": "2025-01-23 ~ 2025-02-05",
+            "address": "4\u5c55\u5ef3",
+            "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=41280",
+            "UUID": "df14ea0b71f555a8aaae755cbcbd6d97",
+            "figure": "https://i.imgur.com/yQ5ys2a.webp"
         }
     ],
     "visit": {}
