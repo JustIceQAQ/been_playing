@@ -4,8 +4,8 @@
         "code_name": "ntm",
         "external_link": "https://www.ntm.gov.tw/submenu_178.html"
     },
-    "counts": 54,
-    "last_update": "2024-12-26T08:19:02.739386+00:00",
+    "counts": 53,
+    "last_update": "2024-12-26T16:16:38.361910+00:00",
     "data": [
         {
             "systematics": "ntm",
@@ -14,7 +14,7 @@
             "address": "\u81fa\u535a\u9928\u672c\u9928",
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40290",
             "UUID": "488dd420417a5120aa9a43e3884fbe02",
-            "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/40290/AD/40290_0_0_389396.jpg"
+            "figure": "https://i.imgur.com/VKTIsgJ.webp"
         },
         {
             "systematics": "ntm",
@@ -63,15 +63,6 @@
         },
         {
             "systematics": "ntm",
-            "title": "Always open~~\u266a\u535a\u7269\u9928\u4efb\u610f\u9580(113\u5b78\u5e74\u5ea6\u7b2c\u4e00\u5b78\u671f \u73ed\u7d1a\u5834)",
-            "date": "",
-            "address": "\u7dda\u4e0a\u5e73\u53f0",
-            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40258",
-            "UUID": "63f52a924cbd5d5780a81a26e6accc51",
-            "figure": "https://i.imgur.com/DyDYJp8.webp"
-        },
-        {
-            "systematics": "ntm",
             "title": "\u9cf4\u87f2\u6587\u5316\u8207\u79d1\u5b78\u7279\u5c55",
             "date": "",
             "address": "\u81fa\u535a\u9928\u672c\u9928",
@@ -96,6 +87,15 @@
             "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=40253",
             "UUID": "51c862f4da14562da47863d98becdbd9",
             "figure": "https://i.imgur.com/HchDK37.webp"
+        },
+        {
+            "systematics": "ntm",
+            "title": "\u535a\u7269\u9928\u5c0b\u5bf6\u8a18",
+            "date": "",
+            "address": "",
+            "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50023",
+            "UUID": "0caa3307ffdf59eeb383dd51d0dfcb2e",
+            "figure": "https://i.imgur.com/77DkH6M.webp"
         },
         {
             "systematics": "ntm",
