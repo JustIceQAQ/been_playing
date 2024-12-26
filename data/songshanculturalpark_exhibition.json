@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2024-12-26T01:00:44.699734+00:00",
+    "last_update": "2024-12-26T08:16:57.783388+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -126,21 +126,21 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "\u3010\u81bd\u5927\u9ee8\u3011\u671f\u9593\u9650\u5b9a\u5feb\u9583\u5e97",
+            "date": "2024-12-31 ~ 2025-02-06",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c71b75b9-c513-49ef-abbb-5d1fd6e07bd5",
+            "UUID": "8fecbb5f5c3b5f6fb7aec3ed79ccb0dd",
+            "figure": "https://i.imgur.com/OgwA1sV.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "\u5c0f\u661f\u5c4b\u5feb\u9583\u5e97 SMALL PLANET POP UP STORE",
             "date": "2025-01-03 ~ 2025-02-16",
             "address": "-",
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/74f84a9b-9716-471b-a6eb-4fa31a8effb5",
             "UUID": "879b4f7a8d1a5592a83e083532df1fc6",
             "figure": "https://i.imgur.com/TpJmZhy.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u677e\u83f8\u73a9\u5496\u601d\u8def",
-            "date": "2024-07-01",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c0607239-4d13-41d5-8fd0-643248265ff7",
-            "UUID": "97359d5b22bf54459dfff2d2183d51b1",
-            "figure": "https://i.imgur.com/msfSxEj.webp"
         }
     ],
     "visit": {}
