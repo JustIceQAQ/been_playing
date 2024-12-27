@@ -4,9 +4,27 @@
         "code_name": "ntsec",
         "external_link": "https://www.ntsec.gov.tw/article/list.aspx?a=25"
     },
-    "counts": 4,
-    "last_update": "2024-12-26T16:15:27.079907+00:00",
+    "counts": 6,
+    "last_update": "2024-12-27T01:02:17.923305+00:00",
     "data": [
+        {
+            "systematics": "ntsec",
+            "title": "AI SPORT",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5602",
+            "UUID": "3dff6a4c86bd57d0b01e118e670381a4",
+            "figure": "https://i.imgur.com/zMJ4vjv.webp"
+        },
+        {
+            "systematics": "ntsec",
+            "title": "AI\u7e6a\u52d5\u7684\u540d\u756b\u7279\u5c55",
+            "date": "-",
+            "address": "-",
+            "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=5603",
+            "UUID": "b06272a991f15576b9e0e2b89740ea88",
+            "figure": "https://i.imgur.com/hHpyGQb.webp"
+        },
         {
             "systematics": "ntsec",
             "title": "\u53f2\u524d\u5de8\u7378\u6cf0\u5766\u6050\u9f8d\u5c55",
