@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 52,
-    "last_update": "2024-12-29T08:17:12.627814+00:00",
+    "counts": 48,
+    "last_update": "2024-12-29T16:15:20.489224+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -288,30 +288,12 @@
         },
         {
             "systematics": "klook",
-            "title": "\u71b1\u5f71\u50cf",
-            "date": "2024-09-28~2024-12-29",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101026880-2024-image-fever-exhibition/",
-            "UUID": "7d33216ff0555818ba9ff27d17c87f02",
-            "figure": "https://i.imgur.com/5zCQFIB.webp"
-        },
-        {
-            "systematics": "klook",
-            "title": "Beta\uff0b",
-            "date": "2024-09-28~2024-12-29",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101026878-2024-beta-plus-exhibition/",
-            "UUID": "9fcbe2c2313859778df06bd17d8ab5ea",
-            "figure": "https://i.imgur.com/RpS7xbL.webp"
-        },
-        {
-            "systematics": "klook",
             "title": "\u53cd\u8986\u6f14\u7df4Re-her-sal\uff1a\u9810\u6f14",
             "date": "2024-10-19~2025-12-15",
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026874-2024-re-her-sal-exhibition/",
             "UUID": "258beeb29c9054c281432f28d3d967fb",
-            "figure": "-"
+            "figure": "https://i.imgur.com/OWyJoaZ.webp"
         },
         {
             "systematics": "klook",
@@ -320,7 +302,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/133201-art-nouveau-light-exhibition/",
             "UUID": "8f4cd9ca3ce5538ebc0a6b1be9f2349d",
-            "figure": "-"
+            "figure": "https://i.imgur.com/ehfkGL9.webp"
         },
         {
             "systematics": "klook",
@@ -396,24 +378,6 @@
         },
         {
             "systematics": "klook",
-            "title": "\u5e7b\u96b1\u5149\u9748\uff1a\u4ed9\u8e64",
-            "date": "2024-12-29",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/activity/119455-goblet-of-soul-wonderland/",
-            "UUID": "c8dc290f4aa45f98acf45c9f6b9a5550",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
-            "title": "\u4e00\u5e74\u8a08\u5283\uff1a\u300c\u5ddd\u5802\u300d",
-            "date": "2024-01-28~2024-12-29",
-            "address": "-",
-            "source_url": "https://www.klook.com/zh-TW/event-detail/101022906-2024-outing-exhibition/",
-            "UUID": "e229db2f09a55307b2f2f64f09c7b6b8",
-            "figure": "-"
-        },
-        {
-            "systematics": "klook",
             "title": "\u3010\u57ce\u5e02\u8eba\u5e73\u865f\u53ec\u884c\u52d5\u3011\u5728\u4e0a\u73ed\u8ddf\u4e0a\u9032\u4e4b\u9593\u9078\u64c7\u4e86\u4e0a\u5c71 #\u7576\u6211\u5011 LIE\u5728\u4e00\u8d77",
             "date": "2025-03-14~2024-03-16",
             "address": "-",
@@ -446,7 +410,7 @@
             "address": "\u9a5a\u559c\u88fd\u9020",
             "source_url": "https://www.klook.com/zh-TW/activity/81847-the-sunset-terminal/",
             "UUID": "b148959df7175628a044b1bcb87bf5c0",
-            "figure": "https://i.imgur.com/uUN1Yv7.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -455,7 +419,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/77617-one-art-taipei/",
             "UUID": "a5647c43565a5f98a6f9cc02a512fb37",
-            "figure": "https://i.imgur.com/TzrDmOz.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -464,7 +428,7 @@
             "address": "\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101009551-2022-trans-communication/",
             "UUID": "e4e842f083515a8895442ae7d5ada5df",
-            "figure": "https://i.imgur.com/IEzADyX.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -473,7 +437,7 @@
             "address": "\u81fa\u5317\u6d41\u884c\u97f3\u6a02\u4e2d\u5fc3",
             "source_url": "https://www.klook.com/zh-TW/activity/70429-music-island-stories-pop-music-in-taiwan-taipei/",
             "UUID": "dde6739eefe25fe9aae6270e758d7acd",
-            "figure": "https://i.imgur.com/3q0DDno.webp"
+            "figure": "-"
         }
     ],
     "visit": {}
