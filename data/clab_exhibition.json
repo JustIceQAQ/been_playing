@@ -4,8 +4,8 @@
         "code_name": "CLab",
         "external_link": "https://clab.org.tw/events/"
     },
-    "counts": 4,
-    "last_update": "2024-12-31T08:16:52.920420+00:00",
+    "counts": 3,
+    "last_update": "2024-12-31T16:15:24.719323+00:00",
     "data": [
         {
             "systematics": "CLab",
@@ -27,21 +27,12 @@
         },
         {
             "systematics": "CLab",
-            "title": "\u4f4e\u8a9e\u3001\u934d\u5c64\u8207\u795e\u8a71",
-            "date": "2024-11-16 ~ 2024-12-15",
-            "address": "\u82b1\u84ee\u6587\u5316\u5275\u610f\u7522\u696d\u5712\u5340 \u7b2c\u56db\u68df",
-            "source_url": "https://clab.org.tw/events/wpm/",
-            "UUID": "3a9bcef740435bcaa703ed56c11bec2e",
-            "figure": "https://i.imgur.com/3iwTEDG.webp"
-        },
-        {
-            "systematics": "CLab",
-            "title": "2024\u672a\u4f86\u5a92\u9ad4\u85dd\u8853\u7bc0\u2014\u2014\u5947\u7570\u9ede",
-            "date": "2024-10-04 ~ 2024-12-15",
-            "address": "\u5716\u66f8\u9928\u5c55\u6f14\u7a7a\u9593\u3001\u5317\u8349\u576a\u3001\u806f\u5408\u9910\u5ef3\u5c55\u6f14\u7a7a\u9593\u3001\u901a\u4fe1\u5206\u968a\u5c55\u6f14\u7a7a\u9593",
-            "source_url": "https://clab.org.tw/events/2024fmf/",
-            "UUID": "11d2abd0f8585339a96baa6036803a75",
-            "figure": "https://i.imgur.com/4rBIyEf.webp"
+            "title": "\u7131\u5c71\u4e4b\u57ce \u2014 \u5f15\u7206\u706b\u5c71\u5de5\u7a0b\u500b\u5c55",
+            "date": "2025-01-03 ~ 2025-03-09",
+            "address": "\u901a\u4fe1\u5206\u968a\u5c55\u6f14\u7a7a\u9593",
+            "source_url": "https://clab.org.tw/events/expo2025_volcanoes/",
+            "UUID": "30bc47fd26d45f79ac1963b97f9cc3e9",
+            "figure": "https://i.imgur.com/zfbO4oX.webp"
         }
     ],
     "visit": {}

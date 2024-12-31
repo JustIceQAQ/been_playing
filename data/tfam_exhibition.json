@@ -5,8 +5,17 @@
         "external_link": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw"
     },
     "counts": 6,
-    "last_update": "2024-12-31T08:16:54.142838+00:00",
+    "last_update": "2024-12-31T16:15:02.709058+00:00",
     "data": [
+        {
+            "systematics": "tfam",
+            "title": "\u958b\u653e\u5f0f\u7d50\u5c40\uff1aTFAM\u653e\u6620\u8a08\u756b",
+            "date": "2025-01-01 ~ 2025-03-30",
+            "address": "\u5730\u4e0b\u6a13F\u5c55\u89bd\u5ba4",
+            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=783",
+            "UUID": "2b26f8c9d60652729d17693c3bd3e1e5",
+            "figure": "https://i.imgur.com/pFsaKrz.webp"
+        },
         {
             "systematics": "tfam",
             "title": "\u55a7\u56c2\u7684\u5b64\u7368\uff1a\u81fa\u7063\u81a0\u5f69\u767e\u5e74\u5c0b\u9053",
@@ -42,15 +51,6 @@
             "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=776",
             "UUID": "11fdd65d1bfb507cb7e0fa04d2e829e1",
             "figure": "https://i.imgur.com/ykcBylH.webp"
-        },
-        {
-            "systematics": "tfam",
-            "title": "\u958b\u653e\u5f0f\u7d50\u5c40\uff1aTFAM\u653e\u6620\u8a08\u756b",
-            "date": "2025-01-01 ~ 2025-03-30",
-            "address": "\u5730\u4e0b\u6a13F\u5c55\u89bd\u5ba4",
-            "source_url": "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=783",
-            "UUID": "2b26f8c9d60652729d17693c3bd3e1e5",
-            "figure": "https://i.imgur.com/pFsaKrz.webp"
         },
         {
             "systematics": "tfam",
