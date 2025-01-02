@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 44,
-    "last_update": "2025-01-02T08:20:37.346601+00:00",
+    "counts": 45,
+    "last_update": "2025-01-02T16:19:47.767665+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u65e5\u65e5\u60a0\u60a0 - \u9ec3\u54c1\u5f64\u500b\u5c55",
+            "date": "2024-12-14~2025-01-24",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101028104-2024-sans-souci-exhibition/",
+            "UUID": "f79c8c4612065e64bd55201fea06ebd7",
+            "figure": "https://i.imgur.com/Im1rxk9.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u300a\u5149\u5f71\u7e6a\u52d5 \u8d70\u9032\u6545\u5bae \u2013 \u8de8\u8d8a\u6642\u7a7a\u7684\u6c89\u6d78\u9957\u5bb4\u300b",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101027872-2024-in-the-time-exhibition/",
             "UUID": "b62438fee7df5a91a839e957d92d2458",
-            "figure": "https://i.imgur.com/NtEamLW.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/134423-kusama-yayoi-1951-2005-from-w-collection-and-more/",
             "UUID": "27ce2ccc661b5e9ebd3de2971630637a",
-            "figure": "-"
+            "figure": "https://i.imgur.com/D995U6c.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101026708-2025-taipei-fine-wine-expo/",
             "UUID": "dc0a51088fd45c72bb33a3b06976f231",
-            "figure": "https://i.imgur.com/l4YOSp5.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
