@@ -4,9 +4,18 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 46,
-    "last_update": "2025-01-03T01:05:00.139239+00:00",
+    "counts": 47,
+    "last_update": "2025-01-03T08:20:19.770790+00:00",
     "data": [
+        {
+            "systematics": "klook",
+            "title": "\u6c34\u306e\u980c\u6b4c - MIZ\u00d9 \u500b\u5c55",
+            "date": "2024-12-14~2025-01-11",
+            "address": "-",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101028105-2025-hymn-to-water-exhibition/",
+            "UUID": "4b9eb5d24e0d51d19c0a735dff2e4b2c",
+            "figure": "https://i.imgur.com/s493vfN.webp"
+        },
         {
             "systematics": "klook",
             "title": "\u65e5\u65e5\u60a0\u60a0 - \u9ec3\u54c1\u5f64\u500b\u5c55",
@@ -86,7 +95,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101027902-2024-arturo-alvarez-exhibition/",
             "UUID": "6c0dd6d584b45eefbeadc982aabd80ed",
-            "figure": "https://i.imgur.com/e7uCBZA.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
@@ -221,7 +230,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/event-detail/101027358-2024-entangled-dynamics/",
             "UUID": "5ea94c079b475df9af11d67125639d8d",
-            "figure": "-"
+            "figure": "https://i.imgur.com/NLoRmmS.webp"
         },
         {
             "systematics": "klook",
@@ -302,7 +311,7 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/133201-art-nouveau-light-exhibition/",
             "UUID": "8f4cd9ca3ce5538ebc0a6b1be9f2349d",
-            "figure": "https://i.imgur.com/ehfkGL9.webp"
+            "figure": "-"
         },
         {
             "systematics": "klook",
