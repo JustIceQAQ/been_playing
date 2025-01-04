@@ -4,8 +4,8 @@
         "code_name": "twtc",
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
-    "counts": 127,
-    "last_update": "2025-01-03T16:20:27.868458+00:00",
+    "counts": 125,
+    "last_update": "2025-01-04T01:03:36.451528+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -333,16 +333,7 @@
         },
         {
             "systematics": "twtc",
-            "title": "InnoVEX",
-            "date": "2025-05-20 ~ 2025-05-23",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
-            "source_url": "http://www.innovex.com.tw",
-            "UUID": "957b988816175976be18b5a814ae7033",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
-            "title": "\u53f0\u5317\u570b\u969b\u96fb\u8166\u5c55",
+            "title": "COMPUTEX TAIPEI",
             "date": "2025-05-20 ~ 2025-05-23",
             "address": "\u5357\u6e2f\u5c55\u89bd\u99282\u9928\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.computextaipei.com.tw",
@@ -630,15 +621,6 @@
         },
         {
             "systematics": "twtc",
-            "title": "\u53f0\u7063\u570b\u969b\u7121\u4eba\u6a5f\u66a8\u7121\u4eba\u8f09\u5177\u5c55",
-            "date": "2025-09-18 ~ 2025-09-20",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
-            "source_url": "http://www.dronetaiwan.com.tw",
-            "UUID": "4fca2d4d11225133a0189d760d14dcfd",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "\u7b2c\u516d\u5c46\u53f0\u5317\u570b\u969b\u7167\u9867\u535a\u89bd\u6703",
             "date": "2025-09-25 ~ 2025-09-27",
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
@@ -740,7 +722,7 @@
             "systematics": "twtc",
             "title": "\u53f0\u7063\u570b\u969b\u6c34\u9031",
             "date": "2025-10-29 ~ 2025-10-31",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "address": "",
             "source_url": "http://www.taiwanintlwaterweek.com",
             "UUID": "b738c1639de350cd9e7aa121ac1ea2da",
             "figure": ""
@@ -765,20 +747,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "2025\u53f0\u5317\u570b\u969b\u91d1\u878d\u535a\u89bd\u6703",
-            "date": "2025-11-07 ~ 2025-11-09",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "https://www.taipeifinexpo.tw/index.html",
-            "UUID": "0082133681c154319f5356ced184bc51",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "2025 ITF\u53f0\u5317\u570b\u969b\u65c5\u5c55",
             "date": "2025-11-07 ~ 2025-11-10",
             "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.taipeiitf.org.tw/",
             "UUID": "171ca48e43dc5830b4cb6eab553d5eb2",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "2025\u53f0\u5317\u570b\u969b\u91d1\u878d\u535a\u89bd\u6703",
+            "date": "2025-11-07 ~ 2025-11-09",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://www.taipeifinexpo.tw/index.html",
+            "UUID": "0082133681c154319f5356ced184bc51",
             "figure": ""
         },
         {
