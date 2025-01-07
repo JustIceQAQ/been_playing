@@ -4,8 +4,8 @@
         "code_name": "tmc",
         "external_link": "https://www.tmc.taipei/tw/lastest-event"
     },
-    "counts": 6,
-    "last_update": "2025-01-07T08:16:51.101727+00:00",
+    "counts": 7,
+    "last_update": "2025-01-07T16:30:44.579882+00:00",
     "data": [
         {
             "systematics": "tmc",
@@ -60,6 +60,15 @@
             "source_url": "https://www.tmc.taipei/tw/blog-show-2025NotreDamedeParis",
             "UUID": "6cecd16fbe625d9fbf33e364b597cf30",
             "figure": "https://i.imgur.com/GmEQy9B.webp"
+        },
+        {
+            "systematics": "tmc",
+            "title": "GFRIEND 10th Anniversary \u3008Season of Memories\u3009 in Taipei",
+            "date": "2025-03-29",
+            "address": "\u8868\u6f14\u5ef3",
+            "source_url": "https://www.tmc.taipei/tw/GFRIEND",
+            "UUID": "1698697a042b5ddd903bfb0cee1c40ae",
+            "figure": "https://i.imgur.com/y15jBRs.webp"
         }
     ],
     "visit": {}
