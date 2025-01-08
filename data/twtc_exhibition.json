@@ -5,7 +5,7 @@
         "external_link": "https://twtc.com.tw/exhibition?p=home"
     },
     "counts": 125,
-    "last_update": "2025-01-07T16:35:05.598425+00:00",
+    "last_update": "2025-01-08T01:05:46.325175+00:00",
     "data": [
         {
             "systematics": "twtc",
@@ -137,7 +137,7 @@
             "systematics": "twtc",
             "title": "TIMTOS",
             "date": "2025-03-03 ~ 2025-03-08",
-            "address": "\u5357\u6e2f\u5c55\u89bd\u99281\u9928\u4e16\u8cbf\u4e00\u9928\u5357\u6e2f\u5c55\u89bd\u99282\u9928",
+            "address": "\u4e16\u8cbf\u4e00\u9928\u5357\u6e2f\u5c55\u89bd\u99282\u9928\u5357\u6e2f\u5c55\u89bd\u99281\u9928",
             "source_url": "http://www.timtos.com.tw",
             "UUID": "21013327d8ef510e98d6ad57c7f43cc5",
             "figure": ""
@@ -441,20 +441,20 @@
         },
         {
             "systematics": "twtc",
-            "title": "104\u4eba\u529b\u9280\u884c 2025\u8077\u6daf\u535a\u89bd\u6703",
-            "date": "2025-06-28 ~ 2025-06-28",
-            "address": "\u4e16\u8cbf\u4e00\u9928",
-            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=25373",
-            "UUID": "1ce76409cd7c5b0fab0236cd52a7f0ee",
-            "figure": ""
-        },
-        {
-            "systematics": "twtc",
             "title": "2025\u53f0\u7063\u5169\u68f2\u722c\u87f2\u7279\u5bf5\u5609\u5e74\u83ef",
             "date": "2025-06-28 ~ 2025-06-29",
             "address": "\u4e16\u8cbf\u4e00\u9928",
             "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=26013",
             "UUID": "0fb8d9db89255788a496cde1c2639d6b",
+            "figure": ""
+        },
+        {
+            "systematics": "twtc",
+            "title": "104\u4eba\u529b\u9280\u884c 2025\u8077\u6daf\u535a\u89bd\u6703",
+            "date": "2025-06-28 ~ 2025-06-28",
+            "address": "\u4e16\u8cbf\u4e00\u9928",
+            "source_url": "https://twtc.com.tw/exhibition_more.aspx?p=home&id=25373",
+            "UUID": "1ce76409cd7c5b0fab0236cd52a7f0ee",
             "figure": ""
         },
         {
