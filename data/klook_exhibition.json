@@ -4,8 +4,8 @@
         "code_name": "klook",
         "external_link": "https://www.klook.com/zh-TW/event/city-mcate/19-3-taipei-convention-exhibition-tickets/"
     },
-    "counts": 43,
-    "last_update": "2025-01-08T01:05:39.111540+00:00",
+    "counts": 44,
+    "last_update": "2025-01-08T08:23:05.194399+00:00",
     "data": [
         {
             "systematics": "klook",
@@ -383,6 +383,15 @@
             "address": "-",
             "source_url": "https://www.klook.com/zh-TW/activity/77617-one-art-taipei/",
             "UUID": "a5647c43565a5f98a6f9cc02a512fb37",
+            "figure": "-"
+        },
+        {
+            "systematics": "klook",
+            "title": "\u8de8\u2027\u4ea4\u2027\u901a\uff1a\u5f9e\u300c\u5927\u962a\u5546\u8239\u682a\u5f0f\u6703\u793e\u81fa\u5317\u652f\u5e97\u300d\u5230\u300c\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3\u81fa\u5317\u9928\u300d - \u5e38\u8a2d\u5c55\u51fa",
+            "date": "2021-03-25~2025-12-31",
+            "address": "\u570b\u5bb6\u651d\u5f71\u6587\u5316\u4e2d\u5fc3",
+            "source_url": "https://www.klook.com/zh-TW/event-detail/101009551-2022-trans-communication/",
+            "UUID": "e4e842f083515a8895442ae7d5ada5df",
             "figure": "-"
         },
         {
