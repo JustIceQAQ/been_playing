@@ -9,7 +9,6 @@ from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 
@@ -67,26 +66,18 @@ class KLookRunner(RunnerInit):
             )
             if response.status_code != 200:
                 return responses
-            content = response.response.body.get("content", None)
-            if content is None:
-                response_json = response.response.body
-            else:
-                response_json = json.loads(
-                    BeautifulSoupTranslation()
-                    .translation_to_object(response.response.body.get("content"))
-                    .find("pre")
-                    .get_text()
-                )
-            responses.append(response_json)
-            page_size = int(response_json.get("result").get("page_size"))
-            total = int(response_json.get("result").get("total"))
+            body = response.response.body
+            content = json.loads(body)
+            responses.append(content)
+            page_size = int(content.get("result").get("page_size"))
+            total = int(content.get("result").get("total"))
             for page in range(2, total // page_size + 2):
                 sub_response = await client.get(
                     self.target_url.format(page_num=page), headers=headers
                 )
                 if sub_response.status_code != 200:
                     return responses
-                responses.append(sub_response.response.body)
+                responses.append(json.loads(sub_response.response.body))
         return responses
 
     async def fetch_parsed(self):

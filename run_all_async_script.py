@@ -32,7 +32,7 @@ async def main():
     all_async_script_runners = [
         RunnerObj().run(disk_cache, imgur) for RunnerObj in PY_CLASS_SCRIPT
     ]
-    await asyncio.gather(*all_async_script_runners)
+    await asyncio.gather(*all_async_script_runners, return_exceptions=True)
 
 
 if __name__ == "__main__":

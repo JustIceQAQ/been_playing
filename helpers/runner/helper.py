@@ -1,6 +1,7 @@
 import abc
 import hashlib
 import json
+import traceback
 from typing import Any
 
 from helpers.parse_helper import ParseInit as ParseInit2
@@ -100,15 +101,20 @@ class RunnerInit(abc.ABC):
         return hashlib.md5(content.encode("utf-8")).hexdigest()
 
     async def run(self, cache, image):
-        self.cache = cache
-        self.image = image
-        self.information_ = self.set_information()
-        self.response_ = await self.fetch_response()
-        self.parsed_ = await self.fetch_parsed()
-        self.items_ = await self.fetch_items()
-        self.exhibition_ = Exhibition(information=self.information_, items=self.items)
-        for item in self.exhibition_.items:
-            await self.cache_image_url(item)
-        await self.suffix_item_data(self.exhibition_.items)
+        try:
+            self.cache = cache
+            self.image = image
+            self.information_ = self.set_information()
+            self.response_ = await self.fetch_response()
+            self.parsed_ = await self.fetch_parsed()
+            self.items_ = await self.fetch_items()
+            self.exhibition_ = Exhibition(
+                information=self.information_, items=self.items
+            )
+            for item in self.exhibition_.items:
+                await self.cache_image_url(item)
+            await self.suffix_item_data(self.exhibition_.items)
 
-        await self.exhibition_.save_to_local(f"{self.information_.code_name}")
+            await self.exhibition_.save_to_local(f"{self.information_.code_name}")
+        except Exception as e:  # noqa F841
+            print(traceback.format_exc())
