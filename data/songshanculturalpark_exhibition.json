@@ -5,7 +5,7 @@
         "external_link": "https://www.songshanculturalpark.org/exhibition"
     },
     "counts": 15,
-    "last_update": "2025-01-09T01:01:02.567226+00:00",
+    "last_update": "2025-01-09T08:16:52.256963+00:00",
     "data": [
         {
             "systematics": "songshanculturalpark",
@@ -117,6 +117,15 @@
         },
         {
             "systematics": "songshanculturalpark",
+            "title": "DINOTAENG _ Marshville COCOCUP POP-UP",
+            "date": "2025-01-10 ~ 2025-02-02",
+            "address": "-",
+            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/3596f7dd-26e8-4ae9-911d-8caea54cab38",
+            "UUID": "5d9c0299c49359589ca5556f70935d33",
+            "figure": "https://i.imgur.com/Hgu5Qqr.webp"
+        },
+        {
+            "systematics": "songshanculturalpark",
             "title": "\u5e74\u5473\u3002\u53f0\u5317\u5e02\u96c6",
             "date": "2025-01-11 ~ 2025-01-12",
             "address": "-",
@@ -132,15 +141,6 @@
             "source_url": "https://www.songshanculturalpark.org/exhibition/activity/e5b2369e-1f5c-4aa9-bd8e-54baadb1ae31",
             "UUID": "98f576fbcc1d5ded98b77f97000c3b09",
             "figure": "https://i.imgur.com/sjwmygD.webp"
-        },
-        {
-            "systematics": "songshanculturalpark",
-            "title": "\u718a\u672c\u8e29\u9ede\u8da3Let's go!\u718a\u672c\u718a\u611f\u8b1d\u796d",
-            "date": "2025-01-18 ~ 2025-01-19",
-            "address": "-",
-            "source_url": "https://www.songshanculturalpark.org/exhibition/activity/5a6e67c2-a6f9-415e-b0b3-41e7128ed9f8",
-            "UUID": "217bb95b06335e29aa1ca528edad9a41",
-            "figure": "https://i.imgur.com/OGj0Fuy.webp"
         }
     ],
     "visit": {}
