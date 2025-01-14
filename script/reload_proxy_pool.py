@@ -49,12 +49,14 @@ class FreeProxySource:
 
     async def ip_availability(self, proxy: Proxy) -> Proxy | None:
         target_url = "https://www.google.com.tw/"
-        proxies = {
-            f"{proxy.protocol}://".lower(): f"{proxy.protocol}://{proxy.ip}:{proxy.port}".lower()
+        proxy_mounts = {
+            f"{proxy.protocol}://".lower(): httpx.HTTPTransport(
+                proxy=f"{proxy.protocol}://{proxy.ip}:{proxy.port}".lower()
+            )
         }
         try:
-            async with httpx.AsyncClient(proxies=proxies) as client:
-                response = await client.get(target_url, timeout=10)
+            async with httpx.AsyncClient(mounts=proxy_mounts, timeout=None) as client:
+                response = await client.get(target_url)
                 if response.is_success:
                     return proxy
         except Exception as exc:
@@ -62,7 +64,7 @@ class FreeProxySource:
             return None
 
     async def run(self):
-        async with httpx.AsyncClient(proxies=None) as httpx_client:
+        async with httpx.AsyncClient(timeout=None) as httpx_client:
 
             tasks = [
                 self.get_page_data(url, self.get_headers(), httpx_client)
