@@ -35,14 +35,24 @@ class NCPIRunner(RunnerInit):
             "Cookie": f"ASP.NET_SessionId={secrets.token_hex(12)}",
         }
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?n=8006&sms=15632"
-            )
-        return response.text
+            tasks = [
+                client.get(
+                    "https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?IsF=1&n=8005&sms=15632"
+                ),
+                client.get(
+                    "https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?n=8006&sms=15632"
+                ),
+            ]
+
+            responses = await asyncio.gather(*tasks)
+        return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
-        return parsed.select("div.area-essay > div > div > div > a")
+        parseds: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        data = []
+        for parsed in parseds:
+            data.extend(parsed.select("div.area-essay > div > div > div > a"))
+        return data
 
     async def fetch_items(self, *args, **kwargs):
         return await super().fetch_items(target_domain="https://ncpi.ntmofa.gov.tw/")
