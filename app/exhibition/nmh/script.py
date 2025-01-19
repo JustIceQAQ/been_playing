@@ -24,14 +24,14 @@ class NmhRunner(RunnerInit):
         return Information(
             fullname="國立歷史博物館",
             code_name="Nmh",
-            external_link="https://www.nmh.gov.tw/activitysoonlist_66.html",
+            external_link="https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323",
         )
 
     async def fetch_response(self):
         headers = {
             **get_header(),
             "Host": "www.nmh.gov.tw",
-            "Referer": "https://www.nmh.gov.tw/activitysoonlist_66.html",
+            "Referer": "https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323",
         }
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(

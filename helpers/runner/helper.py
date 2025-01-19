@@ -25,6 +25,9 @@ class RunnerInit(abc.ABC):
     async def fetch_response(self):
         raise NotImplementedError
 
+    def suffix_items(self) -> None | dict[Any, ExhibitionItem]:
+        return None
+
     async def fetch_parsed(self, *args, **kwargs) -> list[Any] | Any:
         if isinstance(self.response, list):
             this_translation = self.translation()

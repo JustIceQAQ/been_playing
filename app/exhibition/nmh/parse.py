@@ -18,6 +18,9 @@ class NmhParse(ParseInit):
                 date_str = date_str.replace("時間：", "").strip()
                 date_str = date_str.replace("日期:", "").strip()
 
+                if "~" not in date_str:
+                    date_str = date_str + " ~"
+
         return date_str
 
     def get_address(self, *args, **kwargs) -> str:
