@@ -23,7 +23,7 @@ class Proxy:
 
 class FreeProxySource:
     def __init__(self, filename: str = "proxy.pkl"):
-        self.root_path = ["http://free-proxy.cz/zh/proxylist/country/TW/all/ping/all"]
+        self.root_path = ["http://free-proxy.cz/zh/proxylist/country/TW/http/ping/all"]
         self.filename = filename
         self.folder = Path(__file__).parent.absolute() / "fixture"
 
@@ -49,13 +49,11 @@ class FreeProxySource:
 
     async def ip_availability(self, proxy: Proxy) -> Proxy | None:
         target_url = "https://www.google.com.tw/"
-        proxy_mounts = {
-            f"{proxy.protocol}://".lower(): httpx.HTTPTransport(
-                proxy=f"{proxy.protocol}://{proxy.ip}:{proxy.port}".lower()
-            )
-        }
+        transport = httpx.AsyncHTTPTransport(
+            proxy=f"{proxy.protocol}://{proxy.ip}:{proxy.port}".lower()
+        )
         try:
-            async with httpx.AsyncClient(mounts=proxy_mounts, timeout=None) as client:
+            async with httpx.AsyncClient(transport=transport, timeout=None) as client:
                 response = await client.get(target_url)
                 if response.is_success:
                     return proxy
@@ -97,8 +95,8 @@ class FreeProxySource:
 
         available_ip = await asyncio.gather(*available_task)
         clean_available_ip = [ip for ip in available_ip if ip]
-
-        with open(self.folder / self.filename, "wb") as f:
+        os.makedirs(self.folder, exist_ok=True)
+        with open(self.folder / self.filename, "wb+") as f:
             timestamp = datetime.datetime.now().timestamp()
             dill.dump({"timestamp": timestamp, "available_ip": clean_available_ip}, f)
 
