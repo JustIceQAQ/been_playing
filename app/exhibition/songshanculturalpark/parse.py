@@ -15,6 +15,8 @@ class SongShanCulturalParkParse(ParseInit):
             "span.row_rt > p.date.montsrt"
         ).get_text()
         raw_date_string = raw_date_string.replace(" - ", " ~ ")
+        if "~" not in raw_date_string:
+            raw_date_string += " ~"
         return raw_date_string
 
     def get_address(self, *args, **kwargs) -> str | None:
