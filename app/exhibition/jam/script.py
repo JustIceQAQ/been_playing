@@ -35,14 +35,26 @@ class JamRunner(RunnerInit):
         }
 
         async with HttpxAsyncClient() as client:
-            response = await client.get(
-                "https://jam.jutfoundation.org.tw/online-exhibition", headers=headers
-            )
-        return response.text
+            urls = [
+                "https://jam.jutfoundation.org.tw/online-exhibition",
+                "https://jam.jutfoundation.org.tw/coming-exhibition",
+            ]
+            tasks = [
+                client.get(
+                    url,
+                    headers=headers,
+                )
+                for url in urls
+            ]
+            responses = await asyncio.gather(*tasks)
+        return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
-        return parsed.select("div.view-content > div.views-row")
+        parseds: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        data = []
+        for parsed in parseds:
+            data.extend(parsed.select("div.view-content > div.views-row"))
+        return data
 
 
 async def main():
