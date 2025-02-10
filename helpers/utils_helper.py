@@ -21,6 +21,10 @@ def datetime_now_iso_format() -> str:
     return datetime_now().isoformat()
 
 
+def timestamp_to_datetime(timestamp: int) -> dt.datetime:
+    return dt.datetime.fromtimestamp(timestamp, tz=TAIWAN_TIMEZONE)
+
+
 @lru_cache
 def month_1() -> int:
     return 1 * 30 * 24 * 60 * 60
