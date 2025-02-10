@@ -41,6 +41,7 @@ class Information(BaseModel):
     fullname: str
     code_name: str
     external_link: str
+    map_url: str | None = Field(default=None)
 
 
 class Exhibition(BaseModel):
