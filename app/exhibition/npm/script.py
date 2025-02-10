@@ -25,6 +25,13 @@ class NpmRunner(RunnerInit):
             fullname="國立故宮博物院",
             code_name="Npm",
             external_link="https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1",
+            map_url=(
+                "https://www.google.com/maps/embed?"
+                "pb=!1m18!1m12!1m3!1d1806.4952136975696!2d121.54715675991059!"
+                "3d25.102185378420387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!"
+                "3m3!1m2!1s0x3442ac3acd404a7d%3A0x5d6d7018397a09c1!"
+                "2z5ZyL56uL5pWF5a6u5Y2a54mp6Zmi!5e0!3m2!1szh-TW!2stw!4v1739201486970!5m2!1szh-TW!2stw"
+            ),
         )
 
     async def fetch_response(self):

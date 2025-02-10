@@ -29,7 +29,7 @@ class NTCRIRunner(RunnerInit):
                 "&offset=0"
                 "&query=null"
                 "&sort=sort"
-                "&order=asc",
+                "&order=asc"
             ),
         )
 
