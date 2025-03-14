@@ -32,3 +32,5 @@
   - [臺北市立美術館](https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw)
   - [台北流行音樂中心](https://www.tmc.taipei/tw/lastest-event)
   - [台北世貿中心](https://twtc.com.tw/exhibition?p=home)
+  - [剝皮寮歷史街區](https://www.bopiliao.taipei/)
+  - [國立臺灣工藝研究發展中心](https://www.ntcri.gov.tw/home/zh-tw)
