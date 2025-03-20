@@ -15,6 +15,7 @@ from .exhibition.ntcri.script import NTCRIRunner
 from .exhibition.ntm.script import NtmRunner
 from .exhibition.ntsec.script import NtSecRunner
 from .exhibition.songshanculturalpark.script import SongShanCulturalParkRunner
+from .exhibition.taipeiexpopark.script import TaipeiExPoParkRunner
 from .exhibition.tfam.script import TFamRunner
 from .exhibition.tmc.script import TmcRunner
 from .exhibition.twtc.script import TwTcRunner
@@ -54,4 +55,5 @@ PY_CLASS_SCRIPT = {
     TwTcRunner,
     UdnFunLifeRunner,
     NTCRIRunner,
+    TaipeiExPoParkRunner,
 }

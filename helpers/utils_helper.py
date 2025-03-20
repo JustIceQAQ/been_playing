@@ -17,6 +17,14 @@ def this_date_year() -> int:
     return date_now().year
 
 
+def ad_to_roc_era(year: int) -> int:
+    return year - 1911
+
+
+def roc_era_to_ad(roc_era: int) -> int:
+    return roc_era + 1911
+
+
 def datetime_now_iso_format() -> str:
     return datetime_now().isoformat()
 
