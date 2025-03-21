@@ -35,3 +35,4 @@
   - [剝皮寮歷史街區](https://www.bopiliao.taipei/)
   - [國立臺灣工藝研究發展中心](https://www.ntcri.gov.tw/home/zh-tw)
   - [花博公園](https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029)
+  - [國家人權博物館](https://www.nhrm.gov.tw/w/nhrm/ExhibitionA)

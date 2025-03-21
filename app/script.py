@@ -8,6 +8,7 @@ from .exhibition.mocataipei.script import MoCaTaipeiRunner
 from .exhibition.museumpost.script import MuseumPostRunner
 from .exhibition.mwr.script import MwrRunner
 from .exhibition.ncpi.script import NCPIRunner
+from .exhibition.nhrm.script import NHRMRunner
 from .exhibition.nmh.script import NmhRunner
 from .exhibition.npm.script import NpmRunner
 from .exhibition.ntc_art_museum.script import NtcArtMuseumRunner
@@ -56,4 +57,5 @@ PY_CLASS_SCRIPT = {
     UdnFunLifeRunner,
     NTCRIRunner,
     TaipeiExPoParkRunner,
+    NHRMRunner,
 }
