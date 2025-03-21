@@ -27,7 +27,9 @@ class {script_code}Runner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_header()
+        headers = {
+            **get_header()
+        }
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get()
         return response.text
