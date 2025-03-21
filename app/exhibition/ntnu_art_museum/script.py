@@ -22,7 +22,9 @@ class NTNUArtMuseumRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            fullname="師大美術館", code_name="NTNUArtMuseum", external_link="art_museum"
+            fullname="師大美術館",
+            code_name="NTNUArtMuseum",
+            external_link="https://www.artmuse.ntnu.edu.tw/index.php/current_exhibit/",
         )
 
     async def fetch_response(self):
