@@ -27,7 +27,7 @@ class NHRMParse(ParseInit):
     def get_figure(self, *args, **kwargs) -> str | None:
         img = self.item.find("div", {"class": "img"})
         style = img.get("style")
-        imager_url = style.split("url(")[1].replace(")", "")
+        imager_url = style.split("url(")[1].replace(")", "").replace("'", "")
         return imager_url
 
     def get_source_url(self, *args, **kwargs) -> str | None:
