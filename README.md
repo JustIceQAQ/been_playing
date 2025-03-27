@@ -37,3 +37,4 @@
     - [花博公園](https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029)
     - [國家人權博物館](https://www.nhrm.gov.tw/w/nhrm/ExhibitionA)
     - [師大美術館](https://www.artmuse.ntnu.edu.tw/index.php/current_exhibit/)
+    - [陽明海洋文化藝術館](https://www.ocam.org.tw/tw/Index/OCAM)
