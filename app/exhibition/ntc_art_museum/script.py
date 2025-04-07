@@ -39,10 +39,12 @@ class NtcArtMuseumRunner(RunnerInit):
         parsed: bs4.BeautifulSoup = await super().fetch_parsed()
         art_content_other = parsed.select("div.art-content-other.ex-group > a")
         main_exhibition = parsed.select("div.main-pic > a")
+        coming_soon = parsed.select("div.art-content-other.comingSoon > a")
 
         return {
             "art_content_other": art_content_other,
             "main_exhibition": main_exhibition,
+            "coming_soon": coming_soon,
         }
 
     def _sub_fetch_items(self, parsed_, use_parse, *args, **kwargs) -> list:
@@ -68,6 +70,14 @@ class NtcArtMuseumRunner(RunnerInit):
             self._sub_fetch_items(
                 runtime_parsed["main_exhibition"],
                 NtcArtMuseumMainParse,
+                target_domain="https://ntcart.museum",
+            )
+        )
+
+        exhibition_items.extend(
+            self._sub_fetch_items(
+                runtime_parsed["coming_soon"],
+                NtcArtMuseumOtherParse,
                 target_domain="https://ntcart.museum",
             )
         )
