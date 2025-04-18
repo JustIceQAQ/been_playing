@@ -34,7 +34,13 @@ class ExhibitionItem(BaseModel):
 
     def __eq__(self, other: "ExhibitionItem") -> bool:
         # 判斷 None 值數量是否相等
-        return self.count_none_fields() == other.count_none_fields()
+        return (
+            self.count_none_fields() == other.count_none_fields()
+            and self.UUID == other.UUID
+        )
+
+    def __hash__(self):
+        return hash(self.UUID)
 
 
 class Information(BaseModel):
@@ -47,9 +53,9 @@ class Information(BaseModel):
 class Exhibition(BaseModel):
     information: Information
     counts: int = 0
-    items: list[ExhibitionItem] | None = Field(default_factory=list)
-    last_update: str | None = Field(default_factory=datetime_now_iso_format)
-    visit: dict[str, str] | None = Field(default_factory=dict)
+    items: list[ExhibitionItem] = Field(default_factory=list)
+    last_update: str = Field(default_factory=datetime_now_iso_format)
+    visit: dict[str, str] = Field(default_factory=dict)
 
     @model_validator(mode="after")
     def generate_counts(cls, values):
