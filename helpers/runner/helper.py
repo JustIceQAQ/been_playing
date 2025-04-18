@@ -114,6 +114,7 @@ class RunnerInit(abc.ABC):
             self.exhibition_ = Exhibition(
                 information=self.information_, items=self.items
             )
+            self.exhibition_.items = list(set(self.exhibition_.items))
             for item in self.exhibition_.items:
                 await self.cache_image_url(item)
             await self.suffix_item_data(self.exhibition_.items)
