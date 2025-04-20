@@ -64,9 +64,10 @@ class TFAMRunner(RunnerInit):
         requests_visit = RequestsBeautifulSoupInstantiation(self.target_visit_url)
         targe_visit_object = requests_visit.fetch()
         visit = targe_visit_object.select_one("div.spacingB-20 > .table1")
-        days, openings = [th.get_text() for th in visit.select("th")], [
-            td.get_text() for td in visit.select("td")
-        ]
+        days, openings = (
+            [th.get_text() for th in visit.select("th")],
+            [td.get_text() for td in visit.select("td")],
+        )
         return "\n".join([f"{day}: {opening}" for day, opening in zip(days, openings)])
 
 

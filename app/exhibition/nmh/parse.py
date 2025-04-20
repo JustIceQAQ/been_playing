@@ -34,7 +34,6 @@ class NmhParse(ParseInit):
         return self.item.find("img").get("src", None)
 
     def get_source_url(self, *args, **kwargs) -> str:
-
         return self.item.find("a", {"class": "div-activity", "target": "_blank"}).get(
             "href", None
         )

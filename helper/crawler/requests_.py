@@ -39,7 +39,6 @@ class RequestsCrawler(CrawlerInit):
     def get_page(
         self, method="GET", reload_session=True, formatted="text", *args, **kwargs
     ) -> dict[Any, Any] | str:
-
         if "timeout" not in kwargs.keys():
             kwargs["timeout"] = 60
 
