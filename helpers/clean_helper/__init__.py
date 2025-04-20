@@ -1,13 +1,4 @@
-from abc import ABCMeta
-
-
-class CleanInit(metaclass=ABCMeta):
-    @staticmethod
-    def clean_string(raw_string) -> str:
-        raise NotImplementedError
-
-
-class RequestsClean(CleanInit):
+class RequestsClean:
     @staticmethod
     def clean_string(raw_string: str) -> str:
         # TODO: big5 utf-8

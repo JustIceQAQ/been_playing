@@ -1,7 +1,8 @@
 from typing import Any
+from helpers.cache.base import Cache
 
 
-class NoneCache:
+class NoneCache(Cache):
     _instance = None
 
     def __new__(cls, *args, **kwargs):

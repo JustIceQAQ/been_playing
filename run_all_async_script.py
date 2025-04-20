@@ -7,8 +7,7 @@ from dotenv import load_dotenv
 
 from app.script import PY_CLASS_SCRIPT
 from configs.settings import get_settings
-from helpers.cache.disk.helper import DiskCache
-from helpers.cache.none.helper import NoneCache
+from helpers.cache import DiskCache, NoneCache
 from helpers.image.imgur.helper import ImgurImage
 from helpers.image.none.helper import NoneImage
 

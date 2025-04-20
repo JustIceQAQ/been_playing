@@ -49,7 +49,7 @@ class ScraperAsyncClient:
         while response.status_code == http.HTTPStatus.TOO_MANY_REQUESTS:
             await asyncio.sleep(sleep_secs)
             response = await self.client.post(self.api_path, json=payload)
-
+        response.raise_for_status()
         this_response = ScraperResponse.model_validate(
             {**response.json(), "status_code": response.status_code}
         )

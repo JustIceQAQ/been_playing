@@ -4,7 +4,7 @@ from typing import Any
 
 import bs4
 
-from helper.clean_helper import RequestsClean
+from helpers.clean_helper import RequestsClean
 from helpers.storage.helper import ExhibitionItem
 
 

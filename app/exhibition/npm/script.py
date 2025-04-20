@@ -4,7 +4,7 @@ import bs4
 
 from app.exhibition.npm.parse import NpmColParse, NpmRowParse
 from configs.settings import get_settings
-from helpers.cache.none.helper import NoneCache
+from helpers.cache import NoneCache
 from helpers.crawler.scrape_do.helper import ScrapeDoAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage

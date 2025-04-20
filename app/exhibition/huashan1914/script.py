@@ -1,13 +1,16 @@
+import asyncio
+
 import bs4
 
+from app.exhibition.huashan1914.parse import huashan1914Parse
+from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
+from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
-
-from .parse import huashan1914Parse
 
 
 class HuaShan1914Runner(RunnerInit):
@@ -61,3 +64,11 @@ class HuaShan1914Runner(RunnerInit):
 
     async def fetch_items(self, *args, **kwargs):
         return await super().fetch_items(target_domain="https://www.huashan1914.com")
+
+
+async def main():
+    await HuaShan1914Runner().run(NoneCache(), NoneImage())
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
