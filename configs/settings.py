@@ -7,16 +7,11 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     IS_DEBUG: bool = Field(description="DEBUG 模式", default=False)
-
     IMGUR_API_CLIENT_ID: str | None = Field(default=None)
-    IMGUR_API_CLIENT_SECRET: str
-
-    SCRAPER_API_KEY: str
-    SCRAPE_DO_API_KEY: str
-
-    LINE_NOTIFY_API: str
-
-    SENTRY_SDK_DNS: str
+    IMGUR_API_CLIENT_SECRET: str | None = Field(default=None)
+    SCRAPER_API_KEY: str | None = Field(default=None)
+    SCRAPE_DO_API_KEY: str | None = Field(default=None)
+    SENTRY_SDK_DNS: str | None = Field(default=None)
 
 
 class LocalSettings(Settings):

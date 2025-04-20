@@ -2,7 +2,7 @@ import asyncio
 from typing import Any
 
 from app.exhibition.ntcri.parse import NTCRIParse
-from helpers.cache.none import NoneCache
+from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage

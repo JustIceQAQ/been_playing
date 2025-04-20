@@ -2,7 +2,7 @@ import asyncio
 import secrets
 
 from app.exhibition.ocam.parse import OCAMParse
-from helpers.cache.none import NoneCache
+from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage

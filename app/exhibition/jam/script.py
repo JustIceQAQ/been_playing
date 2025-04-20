@@ -3,7 +3,7 @@ import asyncio
 import bs4
 
 from app.exhibition.jam.parse import JamParse
-from helpers.cache.disk import DiskCache
+from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
@@ -58,7 +58,7 @@ class JamRunner(RunnerInit):
 
 
 async def main():
-    await JamRunner().run(DiskCache(), NoneImage())
+    await JamRunner().run(NoneCache(), NoneImage())
 
 
 if __name__ == "__main__":
