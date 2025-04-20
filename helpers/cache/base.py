@@ -1,4 +1,6 @@
 import abc
+import datetime
+from typing import Any
 
 
 class Cache(abc.ABC):
@@ -14,7 +16,13 @@ class Cache(abc.ABC):
         raise NotImplementedError
 
     @abc.abstractmethod
-    async def set(self, key: str, value, expire: float = None):
+    async def set(
+        self,
+        key: str,
+        value: Any,
+        expire: int | str | None = None,
+        from_datetime: datetime.datetime | None = None,
+    ):
         raise NotImplementedError
 
     @abc.abstractmethod

@@ -4,7 +4,7 @@ import bs4
 import httpx
 
 from app.exhibition.ntpc.parse import NTPCParse, normalize_date_range
-from helpers.cache import NoneCache
+from helpers.cache import DiskCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
@@ -48,6 +48,13 @@ class NTPCRunner(RunnerInit):
         return parsed.select("div.ListPicText > div.item")
 
     async def suffix_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
+        has_date_cache = await self.cache.get(f"{item.UUID}-date")
+        has_address_cache = await self.cache.get(f"{item.UUID}-address")
+        if has_date_cache and has_address_cache:
+            item.date = has_date_cache
+            item.address = has_address_cache
+            return
+
         response = await client.get(item.source_url)
         soup = self.translation().translation_to_object(response.text)
         exhibition_time = None
@@ -61,6 +68,10 @@ class NTPCRunner(RunnerInit):
                 )
             elif text.startswith("展覽地點："):
                 exhibition_location = text.replace("展覽地點：", "").strip()
+
+        await self.cache.set(f"{item.UUID}-date", exhibition_time, month_3())
+        await self.cache.set(f"{item.UUID}-address", exhibition_location, month_3())
+
         item.date = exhibition_time
         item.address = exhibition_location
 
@@ -71,7 +82,7 @@ class NTPCRunner(RunnerInit):
 
 
 async def main():
-    await NTPCRunner().run(NoneCache(), NoneImage())
+    await NTPCRunner().run(DiskCache(), NoneImage())
 
 
 if __name__ == "__main__":
