@@ -5,7 +5,7 @@ import httpx
 import pytest
 from bs4 import BeautifulSoup, Tag
 
-from helper.header_helper import UA
+from helpers.headers_helper import UA
 
 
 def get_items(obj: BeautifulSoup) -> list[Tag]:

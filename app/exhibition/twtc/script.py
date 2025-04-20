@@ -6,7 +6,7 @@ import httpx
 from app.exhibition.twtc.parse import TwTcParse
 from app.exhibition.twtc.schemas import TwTcResponse
 from app.exhibition.twtc.utils import get_next_element
-from helpers.cache.none.helper import NoneCache
+from helpers.cache.none import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage

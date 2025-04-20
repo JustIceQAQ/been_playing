@@ -3,7 +3,7 @@ import asyncio
 import bs4
 
 from app.exhibition.cksmh.parse import CKSMHParse
-from helpers.cache.disk.helper import DiskCache
+from helpers.cache.disk import DiskCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.image.imgur.helper import ImgurImage
 from helpers.runner.helper import RunnerInit

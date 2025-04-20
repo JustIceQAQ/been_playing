@@ -9,7 +9,7 @@ import bs4
 from app.platform.kkday.parse import KKDayParse
 from app.platform.kkday.utils import parse_list
 from configs.settings import get_settings
-from helpers.cache.none.helper import NoneCache
+from helpers.cache.none import NoneCache
 from helpers.crawler.scraper.helper import ScraperAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
