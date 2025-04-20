@@ -1,8 +1,7 @@
-from typing import Any
-from helpers.cache.base import Cache
+import abc
 
 
-class NoneCache(Cache):
+class Cache(abc.ABC):
     _instance = None
 
     def __new__(cls, *args, **kwargs):
@@ -10,11 +9,14 @@ class NoneCache(Cache):
             cls._instance = super().__new__(cls)
         return cls._instance
 
-    async def get(self, key: str) -> Any | None:
-        return None
+    @abc.abstractmethod
+    async def get(self, key: str) -> str:
+        raise NotImplementedError
 
+    @abc.abstractmethod
     async def set(self, key: str, value, expire: float = None):
-        pass
+        raise NotImplementedError
 
+    @abc.abstractmethod
     async def close(self):
-        pass
+        raise NotImplementedError

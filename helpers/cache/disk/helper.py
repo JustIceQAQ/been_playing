@@ -3,10 +3,12 @@ import functools
 import pathlib
 from typing import Any
 
-from diskcache import Cache
+from diskcache import Cache as disk_cache
+
+from helpers.cache.base import Cache
 
 
-class DiskCache:
+class DiskCache(Cache):
     _instance = None
 
     def __new__(cls, *args, **kwargs):
@@ -15,7 +17,7 @@ class DiskCache:
         return cls._instance
 
     def __init__(self):
-        self.cache = Cache(
+        self.cache = disk_cache(
             str(
                 pathlib.Path(__file__).parent.parent.parent.parent.absolute()
                 / "fixture"

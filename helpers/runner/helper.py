@@ -8,6 +8,7 @@ from helpers.parse_helper import ParseInit as ParseInit2
 from helpers.storage.helper import Exhibition, ExhibitionItem, Information
 from helpers.translation.base import TranslationInit
 from helpers.translation.json import JsonTranslation
+from helpers.cache.base import Cache
 
 
 class RunnerInit(abc.ABC):
@@ -103,7 +104,7 @@ class RunnerInit(abc.ABC):
 
         return hashlib.md5(content.encode("utf-8")).hexdigest()
 
-    async def run(self, cache, image):
+    async def run(self, cache: Cache, image):
         try:
             self.cache = cache
             self.image = image
