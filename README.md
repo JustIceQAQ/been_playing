@@ -38,3 +38,4 @@
     - [國家人權博物館](https://www.nhrm.gov.tw/w/nhrm/ExhibitionA)
     - [師大美術館](https://www.artmuse.ntnu.edu.tw/index.php/current_exhibit/)
     - [陽明海洋文化藝術館](https://www.ocam.org.tw/tw/Index/OCAM)
+    - [新北市立鶯歌陶瓷博物館](https://www.ceramics.ntpc.gov.tw/)
