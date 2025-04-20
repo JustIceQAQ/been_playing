@@ -12,7 +12,6 @@ class QQ:
         self,
         a: int,
     ):
-
         self.a = a
 
     def __hash__(self):

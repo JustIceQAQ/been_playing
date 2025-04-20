@@ -8,7 +8,6 @@ from .schemas import Response, ScrapeDoResponse
 
 
 class ScrapeDoAsyncClient:
-
     def __init__(
         self, api_key: str, timeout: int | None = None, *args, **kwargs
     ) -> None:

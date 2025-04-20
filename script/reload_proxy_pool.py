@@ -63,7 +63,6 @@ class FreeProxySource:
 
     async def run(self):
         async with httpx.AsyncClient(timeout=None) as httpx_client:
-
             tasks = [
                 self.get_page_data(url, self.get_headers(), httpx_client)
                 for url in self.root_path

@@ -16,6 +16,7 @@ from .exhibition.ntc_art_museum.script import NtcArtMuseumRunner
 from .exhibition.ntcri.script import NTCRIRunner
 from .exhibition.ntm.script import NtmRunner
 from .exhibition.ntnu_art_museum.script import NTNUArtMuseumRunner
+from .exhibition.ntpc.script import NTPCRunner
 from .exhibition.ntsec.script import NtSecRunner
 from .exhibition.ocam.script import OCAMRunner
 from .exhibition.songshanculturalpark.script import SongShanCulturalParkRunner
@@ -64,4 +65,5 @@ PY_CLASS_SCRIPT = {
     NTNUArtMuseumRunner,
     BoPiLiaoRunner,
     OCAMRunner,
+    NTPCRunner,
 }

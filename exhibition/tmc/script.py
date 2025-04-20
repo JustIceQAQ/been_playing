@@ -26,7 +26,6 @@ class TMCRunner(RunnerInit):
     use_parse = TMCParse
 
     def create_filter_base64_string(self, page_number: int) -> str:
-
         str_dict = json.dumps(
             {
                 "pages": page_number,
@@ -40,7 +39,6 @@ class TMCRunner(RunnerInit):
         return base64.b64encode(str_dict.encode()).decode()
 
     def get_response(self):
-
         s = requests.session()
         s.cookies.set("ci_session", secrets.token_hex(8), domain="www.tmc.taipei")
 

@@ -26,7 +26,7 @@ class ScraperAsyncClient:
         sleep_secs=20,
         tries_flag=5,
         *args,
-        **kwargs
+        **kwargs,
     ) -> ScraperResponse:
         payload = {
             "apiKey": self.api_key,
