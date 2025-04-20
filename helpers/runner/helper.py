@@ -115,8 +115,11 @@ class RunnerInit(abc.ABC):
                 information=self.information_, items=self.items
             )
             self.exhibition_.items = list(set(self.exhibition_.items))
-            for item in self.exhibition_.items:
-                await self.cache_image_url(item)
+            try:
+                for item in self.exhibition_.items:
+                    await self.cache_image_url(item)
+            except Exception as e:  # noqa F841
+                pass
             await self.suffix_item_data(self.exhibition_.items)
 
             await self.exhibition_.save_to_local(f"{self.information_.code_name}")
