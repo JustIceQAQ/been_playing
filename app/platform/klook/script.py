@@ -66,6 +66,8 @@ class KLookRunner(RunnerInit):
             )
             if response.status_code != 200:
                 return responses
+            if response.response is None:
+                return responses
             body = response.response.body
             content = json.loads(body)
             responses.append(content)
