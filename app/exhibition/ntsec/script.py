@@ -1,15 +1,17 @@
 import asyncio
 
 import bs4
+import httpx
 from dateutil.relativedelta import relativedelta
 
+from app.exhibition.ntsec.format.address import get_page_address
 from app.exhibition.ntsec.parse import NtSecParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, ExhibitionItem
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import datetime_now, month_3
 
@@ -37,11 +39,14 @@ class NtSecRunner(RunnerInit):
             ),
         )
 
-    async def fetch_response(self):
-        headers = {
+    def get_this_headers(self) -> dict:
+        return {
             **get_header(),
             "Host": "www.ntsec.gov.tw",
         }
+
+    async def fetch_response(self):
+        headers = self.get_this_headers()
         s_datetime = datetime_now()
         s_date = s_datetime.strftime("%Y-%m-%d")
         e_datetime = s_datetime + relativedelta(months=2)
@@ -59,6 +64,24 @@ class NtSecRunner(RunnerInit):
 
     async def fetch_items(self, *args, **kwargs):
         return await super().fetch_items(target_domain="https://www.ntsec.gov.tw")
+
+    async def suffix_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
+        # has_date_cache = await self.cache.get(f"{item.UUID}-date")
+        has_address_cache = await self.cache.get(f"{item.UUID}-address")
+        if has_address_cache:
+            # item.date = has_date_cache
+            item.address = has_address_cache
+            return
+        response = await client.get(item.source_url)
+        soup = self.translation().translation_to_object(response.text)
+        exhibition_location = get_page_address(soup)
+        await self.cache.set(f"{item.UUID}-address", exhibition_location, month_3())
+        item.address = exhibition_location
+
+    async def suffix_item_data(self, items: list[ExhibitionItem]):
+        headers = self.get_this_headers()
+        async with HttpxAsyncClient(headers=headers) as client:
+            await asyncio.gather(*[self.suffix_data(client, item) for item in items])
 
 
 async def main():
