@@ -8,9 +8,10 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, ExhibitionItem
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
+from helpers.suffix_helper import suffix_helper
 
 
 class NHRMRunner(RunnerInit):
@@ -39,6 +40,16 @@ class NHRMRunner(RunnerInit):
     async def fetch_parsed(self):
         parsed: bs4.BeautifulSoup = await super().fetch_parsed()
         return parsed.select("ul.list-group > li.list-item")
+
+    async def suffix_item_from_file(self, items: list[ExhibitionItem]):
+        suffix_data = suffix_helper.get_code_name_items("NHRM")
+        for item in items:
+            this_suffix: dict | None = suffix_data.get(item.UUID, None)
+            if this_suffix:
+                for column in item.model_fields.keys():
+                    this_column = this_suffix.get(column, None)
+                    if this_column:
+                        setattr(item, column, this_column)
 
 
 async def main():
