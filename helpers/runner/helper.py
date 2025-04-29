@@ -56,6 +56,9 @@ class RunnerInit(abc.ABC):
     async def suffix_item_data(self, item: list[ExhibitionItem]):
         pass
 
+    async def suffix_item_from_file(self, item: list[ExhibitionItem]):
+        pass
+
     @property
     def information(self):
         return self.information_
@@ -122,6 +125,7 @@ class RunnerInit(abc.ABC):
             except Exception as e:  # noqa F841
                 pass
             await self.suffix_item_data(self.exhibition_.items)
+            await self.suffix_item_from_file(self.exhibition_.items)
 
             await self.exhibition_.save_to_local(f"{self.information_.code_name}")
         except Exception as e:  # noqa F841
