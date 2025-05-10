@@ -23,6 +23,7 @@ from .exhibition.songshanculturalpark.script import SongShanCulturalParkRunner
 from .exhibition.taipeiexpopark.script import TaipeiExPoParkRunner
 from .exhibition.tfam.script import TFamRunner
 from .exhibition.tmc.script import TmcRunner
+from .exhibition.tncmmm.script import TncMMMRunner
 from .exhibition.twtc.script import TwTcRunner
 from .platform.bookstickets.script import BooksTicketsRunner
 from .platform.ibon.script import IBonRunner
@@ -66,4 +67,5 @@ PY_CLASS_SCRIPT = {
     BoPiLiaoRunner,
     OCAMRunner,
     NTPCRunner,
+    TncMMMRunner,
 }
