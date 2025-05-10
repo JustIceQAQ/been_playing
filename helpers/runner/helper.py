@@ -6,6 +6,7 @@ from typing import Any
 
 from helpers.parse_helper import ParseInit as ParseInit2
 from helpers.storage.helper import Exhibition, ExhibitionItem, Information
+from helpers.suffix_helper import suffix_helper
 from helpers.translation.base import TranslationInit
 from helpers.translation.json import JsonTranslation
 from helpers.cache.base import Cache
@@ -14,6 +15,7 @@ from helpers.cache.base import Cache
 class RunnerInit(abc.ABC):
     translation: type[TranslationInit] = JsonTranslation
     use_parse: type[ParseInit2]
+    use_suffix_item_from_file_func: bool = False
 
     def set_cache_expire(self) -> int | None:
         return None
@@ -56,8 +58,17 @@ class RunnerInit(abc.ABC):
     async def suffix_item_data(self, item: list[ExhibitionItem]):
         pass
 
-    async def suffix_item_from_file(self, item: list[ExhibitionItem]):
-        pass
+    async def suffix_item_from_file(self, items: list[ExhibitionItem]):
+        information = self.set_information()
+        code = information.code_name
+        suffix_data = suffix_helper.get_code_name_items(code)
+        for item in items:
+            this_suffix: dict | None = suffix_data.get(item.UUID, None)
+            if this_suffix:
+                for column in item.model_fields.keys():
+                    this_column = this_suffix.get(column, None)
+                    if this_column:
+                        setattr(item, column, this_column)
 
     @property
     def information(self):
@@ -125,7 +136,8 @@ class RunnerInit(abc.ABC):
             except Exception as e:  # noqa F841
                 pass
             await self.suffix_item_data(self.exhibition_.items)
-            await self.suffix_item_from_file(self.exhibition_.items)
+            if self.use_suffix_item_from_file_func:
+                await self.suffix_item_from_file(self.exhibition_.items)
 
             await self.exhibition_.save_to_local(f"{self.information_.code_name}")
         except Exception as e:  # noqa F841
