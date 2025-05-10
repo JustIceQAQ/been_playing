@@ -28,7 +28,7 @@ class TmcRunner(RunnerInit):
         return Information(
             fullname="台北流行音樂中心",
             code_name="Tmc",
-            external_link="https://www.tmc.taipei/tw/lastest-event",
+            external_link="https://www.tmc.taipei/tw/blog/show?filter=eyJkaXJlY3Rpb24iOiJsYXN0ZXN0In0=",
         )
 
     def create_filter_base64_string(self, page_number: int) -> str:
@@ -39,6 +39,7 @@ class TmcRunner(RunnerInit):
                 "year": "",
                 "month": "",
                 "keyword": "",
+                "direction": "latest",
             }
         )
         return base64.b64encode(str_dict.encode()).decode()
@@ -57,11 +58,13 @@ class TmcRunner(RunnerInit):
         }
         cookie_jar = httpx.Cookies()
         cookie_jar.set("ci_session", secrets.token_hex(8), domain="www.tmc.taipei")
-        target_url = "https://www.tmc.taipei/tw/lastest-event"
-        url_1 = f"{target_url}?filter={self.create_filter_base64_string(1)}"
+        target_url = "https://www.tmc.taipei/tw/blog/show"
         responses_text = []
         async with HttpxAsyncClient(headers=headers, cookies=cookie_jar) as client:
-            response = await client.get(url_1)
+            response = await client.get(
+                target_url, params={"filter": self.create_filter_base64_string(1)}
+            )
+            response.raise_for_status()
             responses_text.append(response.text)
             pagination_len = (
                 len(
@@ -73,10 +76,11 @@ class TmcRunner(RunnerInit):
             )
             if pagination_len != 1:
                 for n in range(2, pagination_len + 1):
-                    sub_url = (
-                        f"{target_url}?filter={self.create_filter_base64_string(n)}"
+                    sub_response = await client.get(
+                        target_url,
+                        params={"filter": self.create_filter_base64_string(n)},
                     )
-                    sub_response = await client.get(sub_url)
+                    sub_response.raise_for_status()
                     responses_text.append(sub_response.text)
 
         return responses_text
