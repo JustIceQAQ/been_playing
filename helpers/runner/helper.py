@@ -16,6 +16,7 @@ class RunnerInit(abc.ABC):
     translation: type[TranslationInit] = JsonTranslation
     use_parse: type[ParseInit2]
     use_suffix_item_from_file_func: bool = False
+    use_suffix_item_from_url_auto: bool = False
 
     def set_cache_expire(self) -> int | None:
         return None
@@ -27,9 +28,6 @@ class RunnerInit(abc.ABC):
     @abc.abstractmethod
     async def fetch_response(self):
         raise NotImplementedError
-
-    def suffix_items(self) -> None | dict[Any, ExhibitionItem]:
-        return None
 
     async def fetch_parsed(self, *args, **kwargs) -> list[Any] | Any:
         if isinstance(self.response, list):
@@ -55,7 +53,7 @@ class RunnerInit(abc.ABC):
             exhibition_items.append(data)
         return exhibition_items
 
-    async def suffix_item_data(self, item: list[ExhibitionItem]):
+    async def suffix_item_from_url_auto(self, item: list[ExhibitionItem]):
         pass
 
     async def suffix_item_from_file(self, items: list[ExhibitionItem]):
@@ -135,7 +133,8 @@ class RunnerInit(abc.ABC):
                     await self.cache_image_url(item)
             except Exception as e:  # noqa F841
                 pass
-            await self.suffix_item_data(self.exhibition_.items)
+            if self.use_suffix_item_from_url_auto:
+                await self.suffix_item_from_url_auto(self.exhibition_.items)
             if self.use_suffix_item_from_file_func:
                 await self.suffix_item_from_file(self.exhibition_.items)
 
