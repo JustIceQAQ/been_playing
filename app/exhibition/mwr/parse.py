@@ -27,6 +27,11 @@ class MwrParse(ParseInit):
             else "-"
         )
 
-    def get_source_url(self, *args, **kwargs) -> str:
-        pre_path = "https://www.mwr.org.tw/{}"
+    def get_source_url(self, *args, **kwargs) -> str | None:
+        pre_path = "https://www.mwr.org.tw{}"
+        href = self.item.select_one("div.title > a").get("href")
+        if href is None:
+            return None
+        if "http://" in href or "https://" in href:
+            return href
         return pre_path.format(self.item.select_one("div.title > a").get("href"))
