@@ -2,6 +2,8 @@ import datetime as dt
 import zoneinfo
 from functools import lru_cache
 
+from aiolimiter import AsyncLimiter
+
 TAIWAN_TIMEZONE = zoneinfo.ZoneInfo("Asia/Taipei")
 
 
@@ -46,3 +48,7 @@ def month_3() -> int:
 @lru_cache
 def month_6() -> int:
     return month_3() * 2
+
+
+def get_asyncio_rate_limit(concurrent: int, second: int) -> AsyncLimiter:
+    return AsyncLimiter(concurrent, second)
