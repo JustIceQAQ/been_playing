@@ -1,6 +1,7 @@
 import asyncio
 
 import bs4
+import httpx
 
 from app.exhibition.ntc_art_museum.parse import (
     NtcArtMuseumMainParse,
@@ -13,11 +14,12 @@ from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import month_3
+from helpers.utils_helper import month_3, get_asyncio_rate_limit
 
 
 class NtcArtMuseumRunner(RunnerInit):
     translation = BeautifulSoupTranslation
+    use_suffix_item_from_url_auto = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()
@@ -83,6 +85,30 @@ class NtcArtMuseumRunner(RunnerInit):
         )
 
         return exhibition_items
+
+    async def _get_item_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
+        has_address_cache = await self.cache.get(f"{item.UUID}-address")
+        if has_address_cache:
+            item.address = has_address_cache
+            return
+        response = await client.get(item.source_url)
+        soup = self.translation().translation_to_object(response.text)
+        exhibition_location = None
+        h2_tags = soup.select_one("div#about > div.right-group h2")
+        if h2_tags:
+            exhibition_location = h2_tags.get_text()
+            exhibition_location = exhibition_location.replace(
+                "新北市美術館 –", ""
+            ).strip()
+        await self.cache.set(f"{item.UUID}-address", exhibition_location, month_3())
+        item.address = exhibition_location
+
+    async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):
+        asyncio_limit = get_asyncio_rate_limit(3, 30)
+        headers = get_header()
+        async with httpx.AsyncClient(headers=headers) as client, asyncio_limit:
+            tasks = [self._get_item_data(client, item) for item in items]
+            await asyncio.gather(*tasks)
 
 
 async def main():
