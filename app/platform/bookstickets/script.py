@@ -11,12 +11,13 @@ from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import month_3
+from helpers.utils_helper import month_3, get_asyncio_rate_limit
 
 
 class BooksTicketsRunner(RunnerInit):
     translation = BeautifulSoupTranslation
     use_parse = BooksTicketsParse
+    use_suffix_item_from_url_auto = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()
@@ -38,9 +39,11 @@ class BooksTicketsRunner(RunnerInit):
         parsed: bs4.BeautifulSoup = await super().fetch_parsed()
         return parsed.select("ul.prd > li")
 
-    async def suffix_item_data(self, items: list[ExhibitionItem]):
+    async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):
         headers = get_header()
-        async with HttpxAsyncClient(headers=headers) as client:
+        asyncio_limit = get_asyncio_rate_limit(3, 30)
+
+        async with HttpxAsyncClient(headers=headers) as client, asyncio_limit:
             response_tasks = [client.get(item.source_url) for item in items]
             responses = await asyncio.gather(*response_tasks)
 

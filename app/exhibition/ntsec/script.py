@@ -13,12 +13,13 @@ from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, ExhibitionItem
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import datetime_now, month_3
+from helpers.utils_helper import datetime_now, month_3, get_asyncio_rate_limit
 
 
 class NtSecRunner(RunnerInit):
     translation = BeautifulSoupTranslation
     use_parse = NtSecParse
+    use_suffix_item_from_url_auto = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()
@@ -78,9 +79,10 @@ class NtSecRunner(RunnerInit):
         await self.cache.set(f"{item.UUID}-address", exhibition_location, month_3())
         item.address = exhibition_location
 
-    async def suffix_item_data(self, items: list[ExhibitionItem]):
+    async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):
         headers = self.get_this_headers()
-        async with HttpxAsyncClient(headers=headers) as client:
+        asyncio_limit = get_asyncio_rate_limit(3, 30)
+        async with HttpxAsyncClient(headers=headers) as client, asyncio_limit:
             await asyncio.gather(*[self.suffix_data(client, item) for item in items])
 
 

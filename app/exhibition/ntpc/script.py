@@ -11,12 +11,13 @@ from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import month_3
+from helpers.utils_helper import month_3, get_asyncio_rate_limit
 
 
 class NTPCRunner(RunnerInit):
     translation = BeautifulSoupTranslation
     use_parse = NTPCParse
+    use_suffix_item_from_url_auto = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()
@@ -75,9 +76,10 @@ class NTPCRunner(RunnerInit):
         item.date = exhibition_time
         item.address = exhibition_location
 
-    async def suffix_item_data(self, items: list[ExhibitionItem]):
+    async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):
         headers = self.get_this_header()
-        async with HttpxAsyncClient(headers=headers) as client:
+        asyncio_limit = get_asyncio_rate_limit(3, 30)
+        async with HttpxAsyncClient(headers=headers) as client, asyncio_limit:
             await asyncio.gather(*[self.suffix_data(client, item) for item in items])
 
 
