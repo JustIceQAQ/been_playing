@@ -16,6 +16,7 @@ aiofile
 sentry-sdk
 diskcache
 python-dateutil
+aiolimiter # https://github.com/mjpieters/aiolimiter
 
 # Cache
 # ============
