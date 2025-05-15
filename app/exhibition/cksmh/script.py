@@ -26,14 +26,8 @@ class CKSMHRunner(RunnerInit):
             fullname="中正紀念堂",
             code_name="CKSMH",
             external_link="https://www.cksmh.gov.tw/activitysoonlist_369.html",
-            map_url=(
-                "https://www.google.com/maps/embed?"
-                "pb=!1m18!1m12!1m3!1d7229.964450035861!"
-                "2d121.51870450237908!3d25.034677281972296!"
-                "2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!"
-                "1m2!1s0x3442a99db9a2a94d%3A0x43e9034292df69b2!2z5ZyL56uL5Lit5q2j57SA5b-"
-                "15aCC!5e0!3m2!1szh-TW!2stw!4v1739199635272!5m2!1szh-TW!2stw"
-            ),
+            address="臺北市中正區中山南路21號",
+            google_map_place_id="ChIJTamiuZ2pQjQRsmnfkkID6UM",
         )
 
     async def fetch_response(self) -> str:

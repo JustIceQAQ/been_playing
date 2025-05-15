@@ -16,6 +16,7 @@ from helpers.utils_helper import month_3
 class NTNUArtMuseumRunner(RunnerInit):
     translation = BeautifulSoupTranslation
     use_parse = NTNUArtMuseumParse
+    use_suffix_item_from_file_func: bool = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()
