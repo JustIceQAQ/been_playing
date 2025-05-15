@@ -25,14 +25,8 @@ class HuaShan1914Runner(RunnerInit):
             fullname="華山1914文化創意產業園區",
             code_name="HuaShan1914",
             external_link="https://www.huashan1914.com/w/huashan1914/exhibition",
-            map_url=(
-                "https://www.google.com/maps/embed?pb="
-                "!1m18!1m12!1m3!1d3614.70526064475!2d121.52678337571571!"
-                "3d25.044074637885124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!"
-                "4f13.1!3m3!1m2!1s0x3442a96523e0246d%3A0xf1c9276707165c71!"
-                "2z6I-v5bGxMTkxNOaWh-WMluWJteaEj-eUoualreWckuWNgA!5e0!3m2!"
-                "1szh-TW!2stw!4v1739201056327!5m2!1szh-TW!2stw"
-            ),
+            address="台北市中正區八德路一段1號",
+            google_map_place_id="ChIJbSTgI2WpQjQRcVwWB2cnyfE",
         )
 
     async def fetch_response(self):

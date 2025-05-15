@@ -80,6 +80,8 @@ class Information(BaseModel):
     code_name: str
     external_link: str
     map_url: str | None = Field(default=None)
+    address: str | None = Field(default=None)
+    google_map_place_id: str | None = Field(default=None)
 
 
 class Exhibition(BaseModel):
