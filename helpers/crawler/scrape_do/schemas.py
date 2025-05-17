@@ -8,3 +8,4 @@ class Response(BaseModel):
 class ScrapeDoResponse(BaseModel):
     response: Response | None = Field(default=None)
     status_code: int
+    is_success: bool
