@@ -1,5 +1,4 @@
 import asyncio
-import http
 from urllib.parse import urlencode
 
 import httpx
@@ -37,17 +36,12 @@ class ScrapeDoAsyncClient:
         response = await self.client.get(
             f"{self.api_path}?{query_parameters}", headers=headers
         )
-        if response.status_code in {
-            http.HTTPStatus.BAD_REQUEST,
-            http.HTTPStatus.NOT_FOUND,
-            http.HTTPStatus.UNAUTHORIZED,
-        }:
-            return ScrapeDoResponse(status_code=response.status_code)
+        if response.is_client_error or response.is_server_error:
+            return ScrapeDoResponse(
+                status_code=response.status_code, is_success=response.is_success
+            )
         error_flag = 0
-        while response.status_code in {
-            http.HTTPStatus.TOO_MANY_REQUESTS,
-            http.HTTPStatus.BAD_GATEWAY,
-        }:
+        while response.is_redirect:
             error_flag += 1
             if error_flag == tries_flag:
                 break
@@ -57,11 +51,15 @@ class ScrapeDoAsyncClient:
             )
 
         if error_flag == tries_flag:
-            return ScrapeDoResponse(status_code=response.status_code)
+            return ScrapeDoResponse(
+                status_code=response.status_code, is_success=response.is_success
+            )
 
         body = response.json() if return_json else response.text
         return ScrapeDoResponse(
-            status_code=response.status_code, response=Response(body=body)
+            status_code=response.status_code,
+            response=Response(body=body),
+            is_success=response.is_success,
         )
 
     async def __aenter__(self):

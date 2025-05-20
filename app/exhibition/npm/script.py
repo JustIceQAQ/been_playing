@@ -2,7 +2,7 @@ import asyncio
 
 import bs4
 
-from app.exhibition.npm.parse import NpmColParse, NpmRowParse
+from app.exhibition.npm.parse import NpmColParse, NpmRowParse, NpmPreviewParse
 from configs.settings import get_settings
 from helpers.cache import NoneCache
 from helpers.crawler.scrape_do.helper import ScrapeDoAsyncClient
@@ -25,33 +25,48 @@ class NpmRunner(RunnerInit):
             fullname="國立故宮博物院",
             code_name="Npm",
             external_link="https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1",
-            map_url=(
-                "https://www.google.com/maps/embed?"
-                "pb=!1m18!1m12!1m3!1d1806.4952136975696!2d121.54715675991059!"
-                "3d25.102185378420387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!"
-                "3m3!1m2!1s0x3442ac3acd404a7d%3A0x5d6d7018397a09c1!"
-                "2z5ZyL56uL5pWF5a6u5Y2a54mp6Zmi!5e0!3m2!1szh-TW!2stw!4v1739201486970!5m2!1szh-TW!2stw"
-            ),
         )
 
     async def fetch_response(self):
         runtime_setting = get_settings()
-        headers = get_header()
-
+        this_header = {
+            "upgrade-insecure-requests": "1",
+            "host": "www.npm.gov.tw",
+        }
         async with ScrapeDoAsyncClient(
             api_key=runtime_setting.SCRAPE_DO_API_KEY
         ) as client:
-            response = await client.get(
-                "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1",
-                headers=headers,
+            results = await asyncio.gather(
+                *[
+                    client.get(
+                        "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1",
+                        headers={**get_header(), **this_header},
+                    ),
+                    client.get(
+                        "https://www.npm.gov.tw/Exhibition-Preview.aspx?sno=03000061&l=1",
+                        headers={**get_header(), **this_header},
+                    ),
+                ]
             )
-        return response.response.body
+        return [
+            result.response.body if result.is_success else None for result in results
+        ]
 
     async def fetch_parsed(self) -> dict:
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
-        datasets_row = parsed.select("ul.mt-4 li.mb-8")
-        datasets_col = parsed.select("ul.mt-10 li.mb-8")
-        return {"row": datasets_row, "col": datasets_col}
+        parsed_dataset: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed, parsed_dataset_1 = parsed_dataset
+        if parsed is None and parsed_dataset_1 is None:
+            return {}
+        parsed_dict = {}
+        if parsed is not None:
+            datasets_row = parsed.select("ul.mt-4 li.mb-8")
+            datasets_col = parsed.select("ul.mt-10 li.mb-8")
+            parsed_dict = {"row": datasets_row, "col": datasets_col}
+
+        if parsed_dataset_1 is not None:
+            preview_parsed = parsed_dataset_1.select("li.mb-8 > a.card card-height-md")
+            parsed_dict["preview"] = preview_parsed
+        return parsed_dict
 
     def _sub_fetch_items(self, parsed_, use_parse, *args, **kwargs) -> list:
         sub_exhibition_items = []
@@ -65,20 +80,30 @@ class NpmRunner(RunnerInit):
     async def fetch_items(self, *args, **kwargs):
         exhibition_items = []
         runtime_parsed = self.parsed_
-        exhibition_items.extend(
-            self._sub_fetch_items(
-                runtime_parsed["row"],
-                NpmRowParse,
-                target_domain="https://www.npm.gov.tw/",
+        if runtime_parsed.get("row", None) is not None:
+            exhibition_items.extend(
+                self._sub_fetch_items(
+                    runtime_parsed["row"],
+                    NpmRowParse,
+                    target_domain="https://www.npm.gov.tw/",
+                )
             )
-        )
-        exhibition_items.extend(
-            self._sub_fetch_items(
-                runtime_parsed["col"],
-                NpmColParse,
-                target_domain="https://www.npm.gov.tw/",
+        if runtime_parsed.get("col", None) is not None:
+            exhibition_items.extend(
+                self._sub_fetch_items(
+                    runtime_parsed["col"],
+                    NpmColParse,
+                    target_domain="https://www.npm.gov.tw/",
+                )
             )
-        )
+        if runtime_parsed.get("preview", None) is not None:
+            exhibition_items.extend(
+                self._sub_fetch_items(
+                    runtime_parsed["preview"],
+                    NpmPreviewParse,
+                    target_domain="https://www.npm.gov.tw/",
+                )
+            )
         return exhibition_items
 
 

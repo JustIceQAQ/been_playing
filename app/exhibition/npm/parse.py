@@ -86,3 +86,50 @@ class NpmColParse(ParseInit):
                 target_domain,
                 used_this_to_clean(self.item.select_one("a.card")["href"]),
             )
+
+
+class NpmPreviewParse(ParseInit):
+    def __init__(self, item: bs4.element.Tag):
+        self.item = item
+
+    def get_title(self, *args, **kwargs) -> str:
+        return (
+            self.item.find("h3", {"class": "card-title-underline"}).get_text().strip()
+        )
+
+    def get_date(self, *args, **kwargs) -> str | None:
+        title = self.item.find("h3", {"class": "card-title-underline"})
+        if title is None:
+            return None
+        date = title.next_element.next_element.next_element
+        if date is None:
+            return None
+        return date.get_text().strip().replace("~", " ~ ")
+
+    def get_address(self, *args, **kwargs) -> str:
+        return self.item.find("div", {"class": "card-content-bottom"}).get_text()
+
+    def get_figure(self, *args, **kwargs) -> str:
+        target_domain = kwargs.get("target_domain", None)
+        if target_domain is None:
+            raise ValueError("請提供 TARGET_DOMAIN")
+
+        figure_url = "{}{}".format(
+            target_domain, self.item.select_one("figure.card-image img")["data-src"]
+        )
+
+        return self.clean_figure_url(figure_url)
+
+    def clean_figure_url(self, o_url):
+        u = urlparse(o_url)
+        query = parse_qs(u.query, keep_blank_values=True)
+        for word in {"w", "h"}:
+            query.pop(word, None)
+        u = u._replace(query=urlencode(query, True))
+        return urlunparse(u)
+
+    def get_source_url(self, *args, **kwargs) -> str:
+        target_domain = kwargs.get("target_domain", None)
+        if target_domain is None:
+            raise ValueError("請提供 TARGET_DOMAIN")
+        return "{}{}".format(target_domain, self.item.get("href"))

@@ -35,6 +35,8 @@ class RunnerInit(abc.ABC):
             responses = self.response
             return [
                 this_translation.translation_to_object(response, *args, **kwargs)
+                if response is not None
+                else None
                 for response in responses
             ]
         else:
