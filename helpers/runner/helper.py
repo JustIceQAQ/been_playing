@@ -126,10 +126,9 @@ class RunnerInit(abc.ABC):
             self.response_ = await self.fetch_response()
             self.parsed_ = await self.fetch_parsed()
             self.items_ = await self.fetch_items()
-            self.exhibition_ = Exhibition(
-                information=self.information_, items=self.items
-            )
-            self.exhibition_.items = list(set(self.exhibition_.items))
+            items_ = list(set(self.items_))
+            items_.sort()
+            self.exhibition_ = Exhibition(information=self.information_, items=items_)
             try:
                 for item in self.exhibition_.items:
                     await self.cache_image_url(item)
