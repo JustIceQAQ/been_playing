@@ -44,23 +44,73 @@ class ExhibitionItem(BaseModel):
             values.UUID = hex_uuid5(values.source_url)
         return values
 
+    def extract_date_type(self) -> int:
+        """
+        回傳數字分類型，數字越小排序越前面
+        - 0: 有開始與結束日期（範圍型）
+        - 1: 只有單一天日期
+        - 2: 無法判斷日期（None 或其他不明格式）
+        - 3: 開始日期為永久展（只有起始無結束）
+        """
+        if self.date is None:
+            return 2
+
+        if re.match(r"\d{4}-\d{2}-\d{2}\s*~\s*\d{4}-\d{2}-\d{2}", self.date):
+            return 0
+        elif re.match(r"\d{4}-\d{2}-\d{2}\s*~\s*", self.date):
+            return 3
+        elif re.match(r"\d{4}-\d{2}-\d{2}$", self.date):
+            return 1
+        else:
+            return 2
+
+    def extract_start_date(self) -> datetime.datetime | None:
+        if self.date is None:
+            return None
+        match = re.match(r"(\d{4}-\d{2}-\d{2})", self.date)
+        if match:
+            try:
+                return datetime.datetime.strptime(match.group(1), "%Y-%m-%d")
+            except ValueError:
+                return None
+        return None
+
     def count_none_fields(self) -> int:
-        return sum(1 for value in self.__dict__.values() if value is not None)
+        return sum(
+            1
+            for field in [
+                self.title,
+                self.date,
+                self.address,
+                self.figure,
+                self.source_url,
+                self.UUID,
+            ]
+            if field is None
+        )
 
     def __lt__(self, other: "ExhibitionItem") -> bool:
-        # 若 date 是 None，直接排到後面
-        self_date = extract_start_date(self.date)
-        other_date = extract_start_date(other.date)
+        self_type = self.extract_date_type()
+        other_type = other.extract_date_type()
 
-        if self_date is None and other_date is not None:
-            return False
-        if self_date is not None and other_date is None:
-            return True
-        if self_date is not None and other_date is not None:
-            return self_date < other_date
+        if self_type != other_type:
+            return self_type < other_type
 
-        # 若兩者都是 None，就看 None 欄位數
-        return self.count_none_fields() < other.count_none_fields()
+        if self_type in (0, 1, 3):
+            self_date = self.extract_start_date()
+            other_date = other.extract_start_date()
+            if self_date and other_date:
+                return self_date < other_date
+            elif self_date and not other_date:
+                return True
+            elif not self_date and other_date:
+                return False
+            else:
+                return False
+        elif self_type == 2:
+            return self.count_none_fields() < other.count_none_fields()
+
+        return False  # fallback
 
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, ExhibitionItem):
