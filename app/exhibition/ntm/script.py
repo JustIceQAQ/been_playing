@@ -4,7 +4,7 @@ from itertools import chain
 
 import bs4
 
-from app.exhibition.ntm.parse import NtmParse, PathQuery
+from app.exhibition.ntm.parse import NtmParse, all_branch
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
@@ -33,22 +33,20 @@ class NtmRunner(RunnerInit):
 
     async def fetch_response(self):
         headers = get_header()
-        urls_template = "https://www.ntm.gov.tw/News_actives.aspx?n={n}&sms={sms}&page=1&PageSize=50"
-        path_query_datas: list[PathQuery] = [
-            PathQuery(n=5472, sms=13389),
-            PathQuery(n=5473, sms=13389),
-            PathQuery(n=5474, sms=13389),
-            PathQuery(n=5478, sms=13389),
-            PathQuery(n=5477, sms=13389),
-        ]
+        urls_template = "https://www.ntm.gov.tw/News_actives.aspx?n={n}&sms={sms}&_CSN={csn}&page=1&PageSize=50"
+        tasks = []
         async with HttpxAsyncClient(headers=headers) as client:
-            tasks = [
-                client.get(
-                    urls_template.format(n=path_query_data.n, sms=path_query_data.sms)
-                )
-                for path_query_data in path_query_datas
-            ]
-
+            for branch in all_branch:
+                for path_query_data in branch:
+                    tasks.append(
+                        client.get(
+                            urls_template.format(
+                                n=path_query_data.n,
+                                sms=path_query_data.sms,
+                                csn=path_query_data.csn,
+                            ),
+                        )
+                    )
             responses = await asyncio.gather(*tasks)
 
         return [response.text for response in responses]

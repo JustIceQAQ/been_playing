@@ -7,7 +7,7 @@ pytz
 imgurpython
 python-dotenv
 retry
-httpx[socks]
+httpx
 dill
 sentry-sdk
 prettytable
