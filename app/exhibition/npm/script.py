@@ -3,9 +3,8 @@ import asyncio
 import bs4
 
 from app.exhibition.npm.parse import NpmColParse, NpmRowParse, NpmPreviewParse
-from configs.settings import get_settings
 from helpers.cache import NoneCache
-from helpers.crawler.scrape_do.helper import ScrapeDoAsyncClient
+from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
@@ -28,14 +27,13 @@ class NpmRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        runtime_setting = get_settings()
+        # runtime_setting = get_settings()
         this_header = {
+            "referer": "https://www.npm.gov.tw/",
             "upgrade-insecure-requests": "1",
             "host": "www.npm.gov.tw",
         }
-        async with ScrapeDoAsyncClient(
-            api_key=runtime_setting.SCRAPE_DO_API_KEY
-        ) as client:
+        async with HttpxAsyncClient() as client:
             results = await asyncio.gather(
                 *[
                     client.get(
@@ -48,9 +46,25 @@ class NpmRunner(RunnerInit):
                     ),
                 ]
             )
-        return [
-            result.response.body if result.is_success else None for result in results
-        ]
+        # async with ScrapeDoAsyncClient(
+        #     api_key=runtime_setting.SCRAPE_DO_API_KEY
+        # ) as client:
+        #     results = await asyncio.gather(
+        #         *[
+        #             client.get(
+        #                 "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1",
+        #                 headers={**get_header(), **this_header},
+        #             ),
+        #             client.get(
+        #                 "https://www.npm.gov.tw/Exhibition-Preview.aspx?sno=03000061&l=1",
+        #                 headers={**get_header(), **this_header},
+        #             ),
+        #         ]
+        #     )
+        for response in results:
+            response.raise_for_status()
+
+        return results
 
     async def fetch_parsed(self) -> dict:
         parsed_dataset: list[bs4.BeautifulSoup] = await super().fetch_parsed()
@@ -64,7 +78,9 @@ class NpmRunner(RunnerInit):
             parsed_dict = {"row": datasets_row, "col": datasets_col}
 
         if parsed_dataset_1 is not None:
-            preview_parsed = parsed_dataset_1.select("li.mb-8 > a.card card-height-md")
+            preview_parsed = parsed_dataset_1.select(
+                ".navtabs-content-static ul.grid > li.mb-8"
+            )
             parsed_dict["preview"] = preview_parsed
         return parsed_dict
 

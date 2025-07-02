@@ -93,9 +93,7 @@ class NpmPreviewParse(ParseInit):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str:
-        return (
-            self.item.find("h3", {"class": "card-title-underline"}).get_text().strip()
-        )
+        return self.item.find("a").get("title").strip()
 
     def get_date(self, *args, **kwargs) -> str | None:
         title = self.item.find("h3", {"class": "card-title-underline"})
@@ -132,4 +130,4 @@ class NpmPreviewParse(ParseInit):
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
-        return "{}{}".format(target_domain, self.item.get("href"))
+        return "{}{}".format(target_domain, self.item.find("a").get("href"))
