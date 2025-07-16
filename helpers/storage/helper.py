@@ -152,9 +152,13 @@ class Exhibition(BaseModel):
         folder: str | Path | None = Path(__file__).parent.parent.parent.absolute()
         / "data"
         / "v2",
+        is_unique: bool | None = True,
+        is_sort: bool | None = True,
     ):
-        self.items = list(set(self.items))
-        self.items.sort()
+        if is_unique:
+            self.items = list(set(self.items))
+        if is_sort:
+            self.items.sort()
 
         async with async_open(folder / f"{filename}.json", "w+") as afp:
             await afp.write(self.model_dump_json())
