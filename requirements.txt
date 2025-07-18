@@ -21,4 +21,4 @@ aiolimiter # https://github.com/mjpieters/aiolimiter
 # Cache
 # ============
 diskcache
-croniter==3.0.3 # https://github.com/kiorky/croniter
+croniter==6.0.0 # https://github.com/kiorky/croniter
