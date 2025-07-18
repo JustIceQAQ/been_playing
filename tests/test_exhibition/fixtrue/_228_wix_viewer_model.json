@@ -1,0 +1,57 @@
+{
+  "siteFeaturesConfigs": {
+    "dynamicPages": {
+      "prefixToRouterFetchData": {
+        "exhibitionse": {
+          "urlData": {
+            "basePath": "https:\/\/www.228.org.tw\/_api\/dynamic-pages-router\/v1",
+            "queryParams": "gridAppId=5ccdd18a-1d62-4607-8631-b77dfdd73ea2&viewMode=site",
+            "fetchUsingGet": true,
+            "compressPayload": true,
+            "appDefinitionId": "675bbcef-18d8-41f5-800e-131ec9e08762",
+            "encodeURI": false
+          },
+          "optionsData": {
+            "bodyData": {
+              "pageRoles": {
+                "a4d0d1a5-07cb-4872-b99b-06fff89ea3be": {
+                  "id": "h5o7e",
+                  "title": "ExhibitionsE (List)"
+                }
+              },
+              "routerPrefix": "\/exhibitionse",
+              "config": {
+                "patterns": {
+                  "\/": {
+                    "seoMetaTags": {},
+                    "pageRole": "a4d0d1a5-07cb-4872-b99b-06fff89ea3be",
+                    "title": "",
+                    "config": {
+                      "collection": "ExhibitionsE",
+                      "pageSize": 12,
+                      "sort": [
+                        {
+                          "sortId": "desc"
+                        }
+                      ],
+                      "lowercase": true,
+                      "seoV2": true
+                    }
+                  }
+                }
+              },
+              "roleVariations": {}
+            },
+            "headers": {
+              "Content-Type": "application\/json",
+              "X-XSRF-TOKEN": "1752675989|VrmBVTP8Ay15",
+              "x-wix-grid-app-id": "5ccdd18a-1d62-4607-8631-b77dfdd73ea2",
+              "Authorization": "wixcode-pub.0ddbdde2eda29a98489c04f5613b6a4265af993d.eyJpbnN0YW5jZUlkIjoiOGIxZGFiNjItZTk4NS00OWYyLWEyY2MtNjk1OTdlZTI4MWQyIiwiaHRtbFNpdGVJZCI6ImI4NmYzNjZiLTE5YTgtNDZmZS05OTc2LWIwOGVhYjk1YjkxMSIsInVpZCI6bnVsbCwicGVybWlzc2lvbnMiOm51bGwsImlzVGVtcGxhdGUiOmZhbHNlLCJzaWduRGF0ZSI6MTc1MjY3NjEwNjc2NSwiYWlkIjpudWxsLCJhcHBEZWZJZCI6IkNsb3VkU2l0ZUV4dGVuc2lvbiIsImlzQWRtaW4iOmZhbHNlLCJtZXRhU2l0ZUlkIjoiYmE0OTA1NjgtNDA2YS00ZjRmLWJjMjAtODlmOTAzMWE1MzQzIiwiY2FjaGUiOnRydWUsImV4cGlyYXRpb25EYXRlIjpudWxsLCJwcmVtaXVtQXNzZXRzIjoiSGFzRG9tYWluLEFkc0ZyZWUsU2hvd1dpeFdoaWxlTG9hZGluZyIsInRlbmFudCI6bnVsbCwic2l0ZU93bmVySWQiOiJjOTJkMDFlYi01Mjg3LTRmYjMtODU1ZC05OThlNjVlY2I2NWYiLCJpbnN0YW5jZVR5cGUiOiJwdWIiLCJzaXRlTWVtYmVySWQiOm51bGwsInBlcm1pc3Npb25TY29wZSI6bnVsbCwibG9naW5BY2NvdW50SWQiOm51bGwsImlzTG9naW5BY2NvdW50T3duZXIiOm51bGwsImJvdW5kU2Vzc2lvbiI6bnVsbCwic2Vzc2lvbklkIjpudWxsLCJzZXNzaW9uQ3JlYXRpb25UaW1lIjpudWxsLCJzaXRlQ3JlYXRlZERhdGUiOiIyMDIzLTA0LTI2VDIwOjMzOjI5LjQ3M1oiLCJhY2NvdW50Q3JlYXRlZERhdGUiOm51bGx9"
+            }
+          },
+          "wixCodeAppDefinitionId": "675bbcef-18d8-41f5-800e-131ec9e08762"
+        }
+      }
+    }
+  }
+}

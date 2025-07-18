@@ -17,6 +17,8 @@ class RunnerInit(abc.ABC):
     use_parse: type[ParseInit2]
     use_suffix_item_from_file_func: bool = False
     use_suffix_item_from_url_auto: bool = False
+    is_unique: bool = True
+    is_sort: bool = True
 
     def set_cache_expire(self) -> int | None:
         return None
@@ -126,9 +128,9 @@ class RunnerInit(abc.ABC):
             self.response_ = await self.fetch_response()
             self.parsed_ = await self.fetch_parsed()
             self.items_ = await self.fetch_items()
-            items_ = list(set(self.items_))
-            items_.sort()
-            self.exhibition_ = Exhibition(information=self.information_, items=items_)
+            self.exhibition_ = Exhibition(
+                information=self.information_, items=self.items_
+            )
             try:
                 for item in self.exhibition_.items:
                     await self.cache_image_url(item)
@@ -139,6 +141,10 @@ class RunnerInit(abc.ABC):
             if self.use_suffix_item_from_file_func:
                 await self.suffix_item_from_file(self.exhibition_.items)
 
-            await self.exhibition_.save_to_local(f"{self.information_.code_name}")
+            await self.exhibition_.save_to_local(
+                f"{self.information_.code_name}",
+                is_unique=self.is_unique,
+                is_sort=self.is_sort,
+            )
         except Exception as e:  # noqa F841
             print(traceback.format_exc())
