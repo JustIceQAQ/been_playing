@@ -9,6 +9,7 @@ from .exhibition.kingcarart.script import KingCarArtRunner
 from .exhibition.mocataipei.script import MoCaTaipeiRunner
 from .exhibition.museumpost.script import MuseumPostRunner
 from .exhibition.mwr.script import MwrRunner
+from .exhibition.n228mm.script import N228MMRunner
 from .exhibition.ncpi.script import NCPIRunner
 from .exhibition.nhrm.script import NHRMRunner
 from .exhibition.nmh.script import NmhRunner
@@ -70,4 +71,5 @@ PY_CLASS_SCRIPT = {
     NTPCRunner,
     TncMMMRunner,
     KdMoFaRunner,
+    N228MMRunner,
 }

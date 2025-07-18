@@ -1,5 +1,5 @@
 # been_playing
-
+[![update-async-exhibition](https://github.com/JustIceQAQ/been_playing/actions/workflows/update_async_exhibition.yml/badge.svg?branch=deploy)](https://github.com/JustIceQAQ/been_playing/actions/workflows/update_async_exhibition.yml)
 - Northern Taiwan Exhibition Crawlers
 
 ## Target Including But Not Limited to
