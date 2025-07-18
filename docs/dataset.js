@@ -120,6 +120,9 @@ const exhibitionTopicClass = [
     new Exhibition("KdMoFa", "關渡美術館",
         new ButtonStyle("#fff", "#eb7102", "#eb7102")
     ),
+    new Exhibition("n228mm", "二二八事件紀念基金會",
+        new ButtonStyle("#fff", "#49b88d", "#c0d429")
+    ),
 
 ]
 
