@@ -1,4 +1,5 @@
 # been_playing
+
 [![update-async-exhibition](https://github.com/JustIceQAQ/been_playing/actions/workflows/update_async_exhibition.yml/badge.svg?branch=deploy)](https://github.com/JustIceQAQ/been_playing/actions/workflows/update_async_exhibition.yml)
 - Northern Taiwan Exhibition Crawlers
 
@@ -41,3 +42,4 @@
     - [新北市立鶯歌陶瓷博物館](https://www.ceramics.ntpc.gov.tw/)
     - [臺灣新文化運動紀念館](https://tncmmm.gov.taipei/Content_List.aspx?n=2BF92E180FD68C1A)
     - [關渡美術館](https://kdmofa.tnua.edu.tw/mod/exhibition/index.php)
+    - [二二八國家紀念館](https://justiceqaq.github.io/been_playing/)
