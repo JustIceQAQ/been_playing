@@ -22,10 +22,14 @@ class QQ:
             return self.a == other.a
         return False
 
+    def __repr__(self):
+        return f"QQ({self.a})"
+
 
 def test_hash():
     aa = QQ(1)
     bb = QQ(2)
     cc = QQ(1)
-    ll = [aa, bb, cc]
-    print(set(ll))
+    items = [aa, bb, cc]
+    print()
+    print(list(dict.fromkeys(items)))
