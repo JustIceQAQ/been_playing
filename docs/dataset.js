@@ -1,4 +1,5 @@
 const URL_SOURCE = "https://raw.githubusercontent.com/JustIceQAQ/been_playing/deploy/data/v2/"
+
 // const URL_SOURCE = "https://raw.githubusercontent.com/JustIceQAQ/been_playing/refs/heads/develop/data/v2/"
 
 class Exhibition {
@@ -122,6 +123,9 @@ const exhibitionTopicClass = [
     ),
     new Exhibition("n228mm", "二二八事件紀念基金會",
         new ButtonStyle("#fff", "#49b88d", "#c0d429")
+    ),
+    new Exhibition("HongGah", "鳳甲美術館",
+        new ButtonStyle("#fff", "#585656", "#585656")
     ),
 
 ]
