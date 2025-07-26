@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+
+    <meta charset="UTF-8">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W2B9C87');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icon_folder/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon_folder/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon_folder/favicon-16x16.png">
+    <!--    <link rel="manifest" href="icon_folder/site.webmanifest">-->
+    <link rel="mask-icon" href="icon_folder/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Been Play</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/3.0.0/iconify.min.js"
+            integrity="sha512-EeYPY+3nx/BPm2ZgRlHllRBsaFLIgpYXJYxXjPBJGaxE8RxBhn/X9cI3eG9Z6Iin72om/zZ/TX+aUb4RImKDTQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/jquery.dataTables.min.css"
+          integrity="sha512-1k7mWiTNoyx2XtmI96o+hdjP8nn0f3Z2N4oF/9ZZRgijyV4omsKOXEnqL1gKQNPy2MTSP9rIEWGcH/CInulptA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/datatables.net-responsive-bs5/2.3.0/responsive.bootstrap5.min.css"
+          integrity="sha512-F4qNDxOqSXOoJ5LuO78wdzZGb4BcUqF6+o+FYjgp4hFElfceMljk5a6RnVluCJS7SrEkIZyThWJjC60DMXmzJw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/datatables.net-buttons-bs5/2.3.6/buttons.bootstrap5.min.css"
+          integrity="sha512-vWTrt2A9iAn2pK8hNZS26YZRDDUvLiOfyL+MmBEXJizrigtxnpLuLrLOOMm+pcrUJFzGssUwoS6Gofp+TT2deQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha3/css/bootstrap.min.css"
+          integrity="sha512-iGjGmwIm1UHNaSuwiNFfB3+HpzT/YLJMiYPKzlQEVpT6FWi5rfpbyrBuTPseScOCWBkRtsrRIbrTzJpQ02IaLA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+          integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control,
+        table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control {
+            position: relative;
+            padding-left: 50px;
+            cursor: pointer;
+        }
+
+        .dt-buttons {
+            display: flex;
+            flex-flow: wrap;
+            border: thick double #0d6efd;
+        }
+
+
+        .dt-buttons > button {
+            margin: 8px;
+        }
+
+        img {
+            max-width: 300px;
+            height: auto;
+            image-rendering: crisp-edges;
+        }
+
+        .btn:hover {
+            color: #fff;
+        }
+
+
+        td {
+            word-wrap: break-word;
+        }
+    </style>
+
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2B9C87"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand"></a>
+                    <button class="btn shadow" id="btnSwitch">
+                        <span class="iconify" id="themeIcon" data-icon="ph:sun-bold" data-inline="false"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table id="exhibition" class="table align-middle display responsive nowrap caption-top" style="width:100%">
+                <caption>
+                    <div class="card text-bg-warning">
+                        <h5 class="card-header caption-card-header"></h5>
+                        <div class="card-body caption-card-body"></div>
+                        <div class="card-footer caption-card-footer"></div>
+
+                    </div>
+                </caption>
+                <thead>
+                <tr>
+                    <th>展覽名稱</th>
+                    <th>圖片</th>
+                    <th>日期</th>
+                    <th>地點</th>
+                    <th>狀態</th>
+                </tr>
+                </thead>
+
+                <tfoot>
+                <tr>
+                    <th>展覽名稱</th>
+                    <th>圖片</th>
+                    <th>日期</th>
+                    <th>地點</th>
+                    <th>狀態</th>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <footer>
+                <div class="card">
+                    <div class="card-body">
+                        本網頁所有包含，但不限於商標、標誌、圖像、短片、聲音檔案、連結及其他資料等資料來源（以下簡稱「資料集」），
+                        僅供<a href="https://justiceqaq.github.io/">@JustIceQAQ</a>作為Side Project 技術展示用途。
+
+                        本網頁資料集會提供連結至其他機構網頁，但這些網頁並不是由<a href="https://justiceqaq.github.io/">@JustIceQAQ</a>所控制。
+                        本網頁不會對這些網頁所顯示的內容作出任何保證或承擔任何責任。
+
+                        資料集實際最新資訊請自行搜尋該機構官方網站。
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajax-localstorage-cache/2.0.1/jalc.min.js"
+        integrity="sha512-rhkfBTfRYBjxSBE4XxMUyDQ2kBXDrI/lIXHnyF2VB26pUiq3H4qZzsi+HQGtaxuJweoOuNyp031LUepkRy5tZA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
+
+<script type="text/javascript"
+        src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+        integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-2012-2022.min.js"
+        integrity="sha512-8Qkh6To/T2f66DV4VGbRwjLNdsiYnx02iwsyobMVGC5IeyLBlny8hHEGypFdkB3n7YpAnx5rsescbHyDNIV9Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="dataset.js"></script>
+<script src="utils.js"></script>
+
+
+<script>
+    const finishedAfter5Day = (dateString) => {
+        let nowDate = moment(new Date().toLocaleDateString('tw-zh'))
+        let splitDateString = dateString.split("~")
+        if (splitDateString.length === 1) {
+            let oneDate = moment(splitDateString[0].trim())
+            if (nowDate.isAfter(oneDate.add(5, 'days'))) {
+                return true
+            }
+        } else if (splitDateString.length === 2) {
+            let endDate = moment(splitDateString[1].trim())
+            if (nowDate.isAfter(endDate.add(5, 'days'))) {
+                return true
+            }
+        }
+        return false
+    }
+
+    const exhibitionStats = (dateString, tag = "h2") => {
+        if (dateString == null) {
+            return unableBadges(tag)
+        }
+
+        let nowDate = moment(new Date().toLocaleDateString('tw-zh'))
+        let splitDateString = dateString.split("~")
+
+
+        if (splitDateString.length === 1 && (splitDateString[0] === '-' || splitDateString[0] === '')) {
+            return inProgressBadges(tag)
+        }
+
+
+        if (splitDateString.length === 1) {
+            let oneDate = moment(splitDateString[0].trim())
+            if (isNaN(oneDate)) {
+                return unableBadges(tag)
+            }
+            if (nowDate.isAfter(oneDate)) {
+                return finishedBadges(tag)
+            }
+            if (oneDate.isAfter(nowDate)) {
+                return notStartedBadges(tag)
+            }
+
+            return unableBadges(tag)
+        } else if (splitDateString.length === 2) {
+
+            if (splitDateString[1] === '') {
+                return inProgressBadges(tag)
+            } else {
+                let startDate = moment(splitDateString[0].trim())
+                let endDate = moment(splitDateString[1].trim())
+                if (startDate.isAfter(nowDate)) {
+                    return notStartedBadges(tag)
+                }
+                if (nowDate.isAfter(endDate)) {
+                    return finishedBadges(tag)
+                }
+                return inProgressBadges(tag)
+            }
+        }
+        return unableBadges(tag)
+
+    }
+
+
+    const setLight = () => {
+        changeThemeMode('dark_mode_fix.css', "light_mode_fix.css")
+        document.documentElement.setAttribute('data-bs-theme', 'light')
+        document.getElementById('themeIcon').setAttribute("data-icon", "ph:sun-bold");
+    }
+    const setDark = () => {
+        changeThemeMode("light_mode_fix.css", 'dark_mode_fix.css')
+        document.documentElement.setAttribute('data-bs-theme', 'dark')
+        document.getElementById('themeIcon').setAttribute("data-icon", "ph:moon-stars-bold");
+    }
+    const changeThemeMode = (modeA, modelB) => {
+        $(`link[href='${modeA}]']`).remove();
+        $('head').append(`<link rel="stylesheet" type="text/css" href="${modelB}">`);
+    }
+    document.getElementById('btnSwitch').addEventListener('click', () => {
+        let runThemeSet = (document.documentElement.getAttribute('data-bs-theme') == 'dark') ? setLight : setDark
+        runThemeSet()
+    })
+    moment.locale('zh-tw');
+    $(document).ready(function () {
+        const isDark = window.matchMedia("(prefers-color-scheme:dark)").matches
+        const runThemeSet = isDark ? setDark : setLight
+        let initUrl = `${URL_SOURCE}${exhibitionTopicClass[0].topic}.json`
+        runThemeSet()
+        $('#exhibition').DataTable({
+            dom: 'Brtip',
+            processing: true,
+            responsive: true,
+            deferRender: true,
+            ajax: {
+                url: initUrl,
+                localCache: true,
+                type: "GET",
+                cacheTTL: 0.5,
+                dataSrc: function (d) {
+                    return d.items
+                }
+            },
+            order: [],
+            columns: [
+                {
+                    data: 'title',
+                    render: function (data, type, row) {
+                        if (row.systematics === "BUG") {
+                            return "有些意料之外得事情發生了...😔，等我修好前請先直接去官網查看吧~"
+                        }
+                        return `<a target="_blank" href="${row.source_url}"><div style="width:18rem;white-space:normal;word-break:break-all;">${data}${exhibitionStats(row.date, tag = "h6")}</div></a>`
+                    }
+                },
+                {
+                    data: 'figure',
+                    render: function (data, type, row) {
+                        if (row.systematics === "BUG") {
+                            return "😔"
+                        } else if (data === "-") {
+                            return "-"
+                        }
+                        return '<img src="' + data + '" loading="lazy" />';
+                    }
+                },
+                {data: 'date'},
+                {
+                    data: 'address',
+                    render: function (data, type, row) {
+                        if (row.systematics === "BUG") {
+                            return "😔"
+                        }
+                        if (data == null) {
+                            return `<div style="width:18rem;white-space:normal;word-break:break-all;">-</div>`
+                        }
+                        return `<div style="width:18rem;white-space:normal;word-break:break-all;">${data}</div>`
+                    }
+                },
+                {
+                    data: 'date',
+                    render: function (data, type, row) {
+                        return exhibitionStats(data)
+                    }
+
+                },
+            ],
+            columnDefs: [
+                {targets: 0, responsivePriority: 1,},
+                {targets: 1, responsivePriority: 10002},
+                {targets: 2, responsivePriority: 1},
+                {targets: 3, responsivePriority: 2},
+                {targets: 4, responsivePriority: 2},
+
+            ],
+            buttons: customizeButtons,
+            "drawCallback": function (exhibition) {
+                if (exhibition.json !== undefined) {
+                    let exhibitionInformation = exhibition.json["information"]
+
+                    let last_update = exhibition.json["last_update"];
+                    let informationFullName = exhibitionInformation["fullname"]
+                    let externalLink = exhibitionInformation["external_link"]
+                    let googleMapPlaceId = exhibitionInformation["google_map_place_id"]
+                    // let address = exhibitionInformation["address"]
+                    let externalLinkEle = ""
+                    if (externalLink !== undefined) {
+                        externalLinkEle = `<a class="btn btn-secondary" href="${externalLink}" target="_blank"><strong><i class="bi bi-box-arrow-up-right"></i></strong></a>`;
+                    }
+                    if (googleMapPlaceId !== undefined) {
+                        externalLinkEle = externalLinkEle + `<a style="margin-left: 10px" class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=${informationFullName}&query_place_id=${googleMapPlaceId}" target="_blank"><strong><i class="bi bi-pin-map"></i></strong></a>`;
+                    }
+                    let opening = ""
+                    if (exhibition.json["visit"] !== undefined) {
+                        opening = exhibition.json["visit"]["opening"]
+                    }
+
+                    $(".caption-card-header").html(`《${informationFullName}》${externalLinkEle}`)
+                    if (opening !== undefined && opening !== "") {
+                        $(".caption-card-body").html(`${opening.replaceAll('\n', '<br>')}`)
+                    } else {
+                        $(".caption-card-body").empty()
+                    }
+                    $(".caption-card-footer").html(`資料更新時間: ${formatDate(last_update)}`)
+                }
+            },
+            createdRow: function (row, data, dataIndex) {
+                if (data.systematics === "BUG") {
+                    $('td:eq(0)', row).attr('colspan', 5);
+                    $('td:eq(1)', row).css('display', 'none');
+                    $('td:eq(3)', row).css('display', 'none');
+                    $('td:eq(2)', row).css('display', 'none');
+                    $('td:eq(4)', row).css('display', 'none');
+                    $('td:eq(0)', row).css({"text-align": "center", "font-size": "1.5rem"})
+                    $('td:eq(0)', row).addClass("table-danger")
+                }
+
+            },
+            initComplete: function () {
+                this.api()
+                    .columns([4])
+                    .every(function () {
+                        let column = this;
+
+                        // Create select element
+                        let select = document.createElement('select');
+                        select.add(new Option('全部顯示', value = ''));
+
+                        column.footer().replaceChildren(select);
+
+
+                        // Apply listener for user change in value
+                        select.addEventListener('change', function () {
+                            column
+                                .search(select.value, {exact: true})
+                                .draw();
+                        });
+
+                        // Add list of options
+                        select.className = "form-select";
+
+
+                        select.add(new Option("尚未開始"))
+                        select.add(new Option("進行中"))
+                        select.add(new Option("已經結束"))
+                        select.add(new Option("無法判斷"))
+
+
+                    });
+            }
+
+        });
+    });
+    const LOCALTZ = moment.tz.guess()
+    const formatDate = (dateString) => {
+        let date = moment(dateString).tz(LOCALTZ);
+        return `${date.fromNow()} (${date.format("LLLL")})`
+    }
+
+
+</script>
+
+</html>
