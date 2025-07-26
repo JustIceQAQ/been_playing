@@ -30,6 +30,7 @@ class KLookRunner(RunnerInit):
         "&end_date="
         "&keywords="
     )
+    is_sort = False
 
     def set_cache_expire(self) -> int | None:
         return month_3()
