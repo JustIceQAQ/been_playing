@@ -50,14 +50,10 @@
           integrity="sha512-vWTrt2A9iAn2pK8hNZS26YZRDDUvLiOfyL+MmBEXJizrigtxnpLuLrLOOMm+pcrUJFzGssUwoS6Gofp+TT2deQ=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha3/css/bootstrap.min.css"
-          integrity="sha512-iGjGmwIm1UHNaSuwiNFfB3+HpzT/YLJMiYPKzlQEVpT6FWi5rfpbyrBuTPseScOCWBkRtsrRIbrTzJpQ02IaLA=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
-          integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <style>
         table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control,
         table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control {
@@ -104,12 +100,82 @@
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 <br>
+
+<div class="modal fade" id="deleteAllAchievementModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="deleteAllAchievementModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="deleteAllAchievementModalLabel">刪除成就列表</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                你確定真的要刪除所有已記錄的成就?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">返回</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteAchievements">我很確定!!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="confirmImportModal" tabindex="-1" aria-labelledby="confirmImportModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="confirmImportModalLabel">確認匯入</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="關閉"></button>
+            </div>
+            <div class="modal-body" id="importSummaryText">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-danger" id="btnConfirmImport">確定覆蓋匯入</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasAchievement"
+     aria-labelledby="offcanvasAchievementLabel">
+    <div class="offcanvas-header d-flex align-items-center gap-2 flex-wrap">
+        <h5 class="offcanvas-title" id="offcanvasAchievementLabel">成就列表</h5>
+        <button class="btn btn-success" onclick="exportAchievementsToJSON()">
+
+            <i class="bi bi-cloud-download-fill"></i>
+        </button>
+
+        <button class="btn btn-primary" onclick="document.getElementById('importAchievementsInput').click()">
+            <i class="bi bi-cloud-upload-fill"></i>
+        </button>
+        <input type="file" id="importAchievementsInput" accept=".json" style="display: none;">
+
+        <button class="btn btn-danger"
+                data-bs-toggle="modal"
+                data-bs-target="#deleteAllAchievementModal"
+                aria-label="成就列表"
+        >
+            <i class="bi bi-trash"></i>
+        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body" id="achievementList">
+    </div>
+</div>
+
+
 <div class="container-fluid">
     <div class="row">
         <div class="col">
             <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand"></a>
+                    <button class="btn btn-warning shadow" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasAchievement" aria-controls="offcanvasButton">
+                        <i class="bi bi-star-fill"></i>
+                    </button>
                     <button class="btn shadow" id="btnSwitch">
                         <span class="iconify" id="themeIcon" data-icon="ph:sun-bold" data-inline="false"></span>
                     </button>
@@ -135,6 +201,7 @@
                     <th>日期</th>
                     <th>地點</th>
                     <th>狀態</th>
+                    <th>去過了?</th>
                 </tr>
                 </thead>
 
@@ -145,6 +212,7 @@
                     <th>日期</th>
                     <th>地點</th>
                     <th>狀態</th>
+                    <th>去過了?</th>
                 </tr>
                 </tfoot>
             </table>
@@ -198,6 +266,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-2012-2022.min.js"
         integrity="sha512-8Qkh6To/T2f66DV4VGbRwjLNdsiYnx02iwsyobMVGC5IeyLBlny8hHEGypFdkB3n7YpAnx5rsescbHyDNIV9Sw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 
 <script src="dataset.js"></script>
 <script src="utils.js"></script>
@@ -304,7 +375,11 @@
                 type: "GET",
                 cacheTTL: 0.5,
                 dataSrc: function (d) {
-                    return d.items
+                    const visited = loadAchievements();
+                    const visitedUUIDs = new Set(visited.map(item => item.uuid));
+                    return d.items.filter(item => !visitedUUIDs.has(item.UUID));
+
+                    // return d.items
                 }
             },
             order: [],
@@ -312,18 +387,13 @@
                 {
                     data: 'title',
                     render: function (data, type, row) {
-                        if (row.systematics === "BUG") {
-                            return "有些意料之外得事情發生了...😔，等我修好前請先直接去官網查看吧~"
-                        }
                         return `<a target="_blank" href="${row.source_url}"><div style="width:18rem;white-space:normal;word-break:break-all;">${data}${exhibitionStats(row.date, tag = "h6")}</div></a>`
                     }
                 },
                 {
                     data: 'figure',
                     render: function (data, type, row) {
-                        if (row.systematics === "BUG") {
-                            return "😔"
-                        } else if (data === "-") {
+                        if (data === "-") {
                             return "-"
                         }
                         return '<img src="' + data + '" loading="lazy" />';
@@ -333,13 +403,10 @@
                 {
                     data: 'address',
                     render: function (data, type, row) {
-                        if (row.systematics === "BUG") {
-                            return "😔"
-                        }
                         if (data == null) {
-                            return `<div style="width:18rem;white-space:normal;word-break:break-all;">-</div>`
+                            return `<div style="width:14rem;white-space:normal;word-break:break-all;">-</div>`
                         }
-                        return `<div style="width:18rem;white-space:normal;word-break:break-all;">${data}</div>`
+                        return `<div style="width:14rem;white-space:normal;word-break:break-all;">${data}</div>`
                     }
                 },
                 {
@@ -347,7 +414,12 @@
                     render: function (data, type, row) {
                         return exhibitionStats(data)
                     }
-
+                },
+                {
+                    data: 'UUID',
+                    render: function (data, type, row, meta) {
+                        return `<button class="btn btn-info btn-mark-achieved" data-uuid="${data}"'><i class="bi bi-check-lg"></i></button>`
+                    }
                 },
             ],
             columnDefs: [
@@ -356,6 +428,7 @@
                 {targets: 2, responsivePriority: 1},
                 {targets: 3, responsivePriority: 2},
                 {targets: 4, responsivePriority: 2},
+                {targets: 5, responsivePriority: 2},
 
             ],
             buttons: customizeButtons,
@@ -423,24 +496,42 @@
 
                         // Add list of options
                         select.className = "form-select";
-
-
                         select.add(new Option("尚未開始"))
                         select.add(new Option("進行中"))
                         select.add(new Option("已經結束"))
                         select.add(new Option("無法判斷"))
-
-
                     });
             }
 
         });
+    });
+    $('#exhibition').on('click', '.btn-mark-achieved', function () {
+        const uuid = $(this).data('uuid');
+        const table = $('#exhibition').DataTable();
+        const rowData = table.rows().data().toArray().find(row => row.UUID === uuid);
+        console.log(rowData)
+
+
+        if (rowData) {
+            addToAchievement(rowData.title, rowData.figure, rowData.UUID);
+            const rowIndex = table.rows().indexes().toArray().find(index => table.row(index).data().UUID === uuid);
+            if (rowIndex !== undefined) {
+                table.row(rowIndex).remove().draw();
+            }
+        }
     });
     const LOCALTZ = moment.tz.guess()
     const formatDate = (dateString) => {
         let date = moment(dateString).tz(LOCALTZ);
         return `${date.fromNow()} (${date.format("LLLL")})`
     }
+
+    window.addEventListener('DOMContentLoaded', () => {
+        const achievements = loadAchievements();
+        achievements.forEach(item => {
+            addToAchievement(item.title, item.figure, item.uuid, false)
+        });
+    });
 
 
 </script>

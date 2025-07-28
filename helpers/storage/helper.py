@@ -146,6 +146,9 @@ class Exhibition(BaseModel):
         values.counts = len(values.items)
         return values
 
+    def deduplicate_items(self, items: list[ExhibitionItem]) -> list[ExhibitionItem]:
+        return list(dict.fromkeys(items))
+
     async def save_to_local(
         self,
         filename: str,
@@ -156,7 +159,7 @@ class Exhibition(BaseModel):
         is_sort: bool | None = True,
     ):
         if is_unique:
-            self.items = list(set(self.items))
+            self.items = self.deduplicate_items(self.items)
         if is_sort:
             self.items.sort()
 
