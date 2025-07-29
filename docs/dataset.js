@@ -275,6 +275,7 @@ document.getElementById('confirmDeleteAchievements').addEventListener('click', f
 
     const offcanvasAchievement = bootstrap.Offcanvas.getInstance(document.getElementById('offcanvasAchievement'));
     offcanvasAchievement.hide();
+    location.reload();
 });
 
 exhibitionTopicClass.map((exhibition) => {

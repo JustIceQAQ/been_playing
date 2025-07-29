@@ -263,8 +263,6 @@
 <script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
 
 
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
         integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -515,7 +513,6 @@
         const uuid = $(this).data('uuid');
         const table = $('#exhibition').DataTable();
         const rowData = table.rows().data().toArray().find(row => row.UUID === uuid);
-        console.log(rowData)
 
 
         if (rowData) {
