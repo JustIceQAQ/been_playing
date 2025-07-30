@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 from app.script import PY_CLASS_SCRIPT
 from configs.settings import get_settings
 from helpers.cache import DiskCache, NoneCache
-from helpers.image.imgur.helper import ImgurImage
 from helpers.image.none.helper import NoneImage
+from helpers.image.turboimagehost.helper import TurboImageHost
 
 
 async def main():
@@ -22,10 +22,11 @@ async def main():
         datefmt="%Y-%m-%d %H:%M",
     )
 
-    if runtime_setting.IMGUR_API_CLIENT_ID:
-        imgur = ImgurImage(client_id=runtime_setting.IMGUR_API_CLIENT_ID)
-    else:
+    if runtime_setting.IS_DEBUG:
         imgur = NoneImage()
+    else:
+        imgur = TurboImageHost()
+
     disk_cache = NoneCache() if runtime_setting.IS_DEBUG else DiskCache()
 
     all_async_script_runners = [

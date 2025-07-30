@@ -1,9 +1,11 @@
 import abc
+import asyncio
 import hashlib
 import json
 import traceback
 from typing import Any
-
+import httpx
+from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.parse_helper import ParseInit as ParseInit2
 from helpers.storage.helper import Exhibition, ExhibitionItem, Information
 from helpers.suffix_helper import suffix_helper
@@ -92,22 +94,25 @@ class RunnerInit(abc.ABC):
     def exhibition(self):
         return self.exhibition_
 
-    async def cache_image_url(self, item: ExhibitionItem):
-        hash_source_url = hashlib.sha256(item.source_url.encode("utf-8")).hexdigest()
-        cache_figure_url = await self.cache.get(hash_source_url)
-        if cache_figure_url:
-            item.figure = cache_figure_url
-        else:
-            response = await self.image.upload(item.figure)
-            if response.success:
-                await self.cache.set(
-                    hash_source_url,
-                    response.data.webp_link,
-                    expire=self.set_cache_expire(),
-                )
-                item.figure = response.data.webp_link
+    async def cache_image_url(self, item: ExhibitionItem, client: httpx.AsyncClient):
+        async with asyncio.Semaphore(10):
+            hash_source_url = hashlib.sha256(
+                item.source_url.encode("utf-8")
+            ).hexdigest()
+            cache_figure_url = await self.cache.get(hash_source_url)
+            if cache_figure_url:
+                item.figure = cache_figure_url
             else:
-                pass
+                response = await self.image.upload(item.figure, client)
+                if response.success:
+                    await self.cache.set(
+                        hash_source_url,
+                        response.data.webp_link,
+                        expire=self.set_cache_expire(),
+                    )
+                    item.figure = response.data.webp_link
+                else:
+                    pass
 
     def hash_content(self, content: str | dict):
         """生成頁面內容的哈希值，支持 str 和 dict 兩種格式"""
@@ -132,8 +137,12 @@ class RunnerInit(abc.ABC):
                 information=self.information_, items=self.items_
             )
             try:
-                for item in self.exhibition_.items:
-                    await self.cache_image_url(item)
+                async with HttpxAsyncClient() as client:
+                    tasks = [
+                        self.cache_image_url(item, client)
+                        for item in self.exhibition_.items
+                    ]
+                    await asyncio.gather(*tasks)
             except Exception as e:  # noqa F841
                 pass
             if self.use_suffix_item_from_url_auto:
