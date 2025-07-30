@@ -14,12 +14,12 @@ on:
     - cron: '0 0,8,16 * * *'
   pull_request:
     branches:
-      - "${{ env.BRANCH }}"
+      - "auto/data-update"
     paths:
       - ".github/workflows/update_async_exhibition.yml"
   push:
     branches:
-      - "${{ env.BRANCH }}"
+      - "auto/data-update"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -37,7 +37,7 @@ jobs:
       - name: checkout repo content
         uses: actions/checkout@v2
         with:
-          ref: '${{ env.BRANCH }}'
+          ref: "auto/data-update"
 
       - name: setup python 3.10
         uses: actions/setup-python@v2
@@ -80,6 +80,6 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ env.BRANCH }}
+          branch: "auto/data-update"
 
 
