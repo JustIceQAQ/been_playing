@@ -1,6 +1,6 @@
 import httpx
 
-from helpers.image.imgur.limiter import AsyncLimiter
+from helpers.image.limiter import AsyncLimiter
 from helpers.image.imgur.schemas import UploadResponse
 
 limiter = AsyncLimiter(delay=8)

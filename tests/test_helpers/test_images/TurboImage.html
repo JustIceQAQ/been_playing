@@ -1,0 +1,293 @@
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<title>Uploaded Images - TurboImageHost</title>
+
+<link rel="stylesheet" href="/css/fontawesome-free-5.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link href="/uploader1/fine-uploader-new.css" rel="stylesheet">
+<script src="/uploader1/fine-uploader.js"></script>
+<link href="/styleX.css?v=20" rel="stylesheet" type="text/css" />
+
+<script>
+var d=document;
+
+function copyC(i) {
+  i.select();
+  d.execCommand("copy");
+  i.setAttribute('data-toggle', 'tooltip');
+  i.setAttribute('data-placement', 'top');
+  i.setAttribute('title', 'Copied!');
+  $(i).tooltip('enable');
+  $(i).tooltip('show');
+  setTimeout(function(){ $(i).tooltip('hide'); $(i).tooltip('disable'); i.setAttribute('title', '');  }, 3000);
+}
+
+$(function () {
+	if (!("ontouchstart" in window)) {
+		  $('[data-toggle="tooltip"]').tooltip();
+	}
+
+	$('.imgCode').click(function(){copyC( this )});
+	$(".fa-copy").click(function () {
+		$(this).closest('span').find('.imgCode').trigger("click");
+	});
+
+	$('.btn-over-box').click(function(event){
+		event.preventDefault();
+	});
+
+
+
+})
+
+
+function error(t) {
+	if (t==1)
+	{
+		alert('We have some problem, please reload page and try again!');
+	} else {
+		alert(t.join('\n'));
+	}
+}
+function delImage(id,c) {
+	event.preventDefault();
+	if (!confirm("Delete this image?")) {
+		return false;
+	}
+	var sub = 's8d3';
+	var thumbB = 1;
+	var t='t';
+	if (thumbB==1)
+	{
+		t='t1';
+	}
+	$.ajax({
+	url:"/a.tu",
+	type:"POST",
+	cache: false,
+	data: {deleteImage:id,dc:c,uploadID:'0yac4a92lzaae2ywb269'},
+	success:function(m){
+		if (m != null && m != "")
+		{
+			if (!m.error)
+			{
+				if (m.html)
+				{
+					var htmlc = m.html.replace('[thumb]',t);
+					htmlc = htmlc.replace('[subdomain]',sub);
+					htmlc = $('<textarea/>').html(htmlc).text();
+					$("#imgCodeURW").val(htmlc);
+				}
+				if (m.forum)
+				{
+					var forum = m.forum.replace('[thumb]',t);
+					forum = forum.replace('[subdomain]',sub);
+					$("#imgCodeURF").val(forum);
+				}
+				if (m.alldeleted)
+				{
+					$("#imgCodeURW").val('all deleted');
+					$("#imgCodeURF").val('all deleted');
+					 window.location.replace("https://www.turboimagehost.com");
+				}
+				$("#im_"+id).hide();
+
+			} else {
+				error(m.messages);
+			}
+		} else {
+			error(1);
+		}
+	},
+	dataType:"json"
+	});
+
+}
+function bob() {
+	event.preventDefault();
+	return true;
+}
+function getCodes(id,name,t=1) {
+	event.preventDefault();
+	$("#MimgCodeIPW").val('');
+	$("#MimgCodeIPF").val('');
+	$("#MimgCodeIPMR").val('');
+	$("#MimgCodeIPMS").val('');
+	$("#MimgCodeIPSTF").val('');
+
+	if (id=="" || name=="")
+	{
+		alert('You must select image if you want generate codes for image.');
+		return false;
+	}
+	$.ajax({
+	url:"/a.tu",
+	type:"POST",
+	async: false,
+	cache: false,
+	data: {getcode:'1',imID:id,imName:name,thumb:t},
+	success:function(m){
+		if (m != null && m != "")
+		{
+			if (!m.error)
+			{
+			var html = $('<textarea/>').html(m.html).text();
+			$("#MimgCodeIPW").val(html);
+			$("#MimgCodeIPF").val(m.forum);
+			$("#MimgCodeIPMR").val(m.markdown1);
+			$("#MimgCodeIPMS").val(m.markdown2);
+			$("#MimgCodeIPSTF").val(m.purl);
+			$("#shareB").html(m.buttons);
+			if (!("ontouchstart" in window)) {
+				 $('[data-toggle="tooltip"]').tooltip();
+			}
+			$('#codes').modal('show');
+			} else {
+				error(m.messages);
+			}
+		}
+	},
+	dataType:"json"
+	});
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="container">
+ <nav class="navbar navbar-expand-md navbar-light py-0">
+  <a class="navbar-brand" href="/">TimgH</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Upload</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/remote.tu?">Upload by URL</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="/forum/">Forum</a>
+      </li>
+	  </ul>
+	  <ul class="navbar-nav">
+		<li class="nav-item">
+        <a class="nav-link" href="/login.tu">Log in</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="/signup.tu">Sign up</a>
+      </li>
+
+
+    </ul>
+</nav>
+
+<div class='uploaded'>
+<div class='titleBox'>CODES FOR ALL UPLOADED IMAGES</div><br />
+
+	<div class='imgCodes'>
+				Clickable Thumbnail for Websites:<br />
+			<span><input id="imgCodeIPW" type="text" class="imgCode" value=" &lt;a href=&quot;https://www.turboimagehost.com/p/114189055/20250501152944obo3difk61.jpg.html&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://s8d3.turboimg.net/t1/114189055_20250501152944obo3difk61.jpg&quot; border=&quot;0&quot; alt=&quot;Free Image Hosting&quot; /&gt;&lt;/a&gt;" /> <i class="far fa-copy" aria-hidden="true"></i></span>
+			<br />
+			Clickable Thumbnail for Forums:<br />
+			<span><input id="imgCodeIPF" type="text" class="imgCode" value=" [URL=https://www.turboimagehost.com/p/114189055/20250501152944obo3difk61.jpg.html][IMG]https://s8d3.turboimg.net/t1/114189055_20250501152944obo3difk61.jpg[/IMG][/URL]" /> <i class="far fa-copy" aria-hidden="true"></i></span>
+			<br />
+			Markdown <i class="fab fa-reddit-alien" aria-hidden="true"></i>:<br />
+			<span><input id="imgCodeIPMR" type="text" class="imgCode" value="[20250501152944obo3difk61.jpg](https://www.turboimagehost.com/p/114189055/20250501152944obo3difk61.jpg.html)" /> <i class="far fa-copy" aria-hidden="true"></i></span>
+			<br />
+			Markdown <i class="fab fa-github" aria-hidden="true"></i> <i class="fab fa-stack-overflow" aria-hidden="true"></i>:<br />
+			<span><input id="imgCodeIPMS" type="text" class="imgCode" value="[![20250501152944obo3difk61.jpg](https://s8d3.turboimg.net/sp/a126f22c590b34d75b1b14cf46c3e07b/20250501152944obo3difk61.jpg)](https://www.turboimagehost.com/p/114189055/20250501152944obo3difk61.jpg.html)" /> <i class="far fa-copy" aria-hidden="true"></i></span>
+			<br />
+			Show image to friends:<br />
+			<span><input id="imgCodeIPSTF" type="text" class="imgCode" value="https://www.turboimagehost.com/p/114189055/20250501152944obo3difk61.jpg.html" /> <i class="far fa-copy" aria-hidden="true"></i></span>
+
+
+	<div class='titleBox'>UPLOADED IMAGES</div><br />
+
+<div class='row galleryThumbs'>
+<div id="im_114189055" title="20250501152944obo3difk61.jpg" class="col-xs-12 col-sm-3 col-md-2"><a href="https://www.turboimagehost.com/p/114189055/20250501152944obo3difk61.jpg.html" class="thumbUrl" style="background-image:url('https://s8d3.turboimg.net/t1/114189055_20250501152944obo3difk61.jpg')"><div onclick="bob()" class="btn-over-box"><span onclick="getCodes('114189055','20250501152944obo3difk61.jpg')" data-toggle="tooltip" data-placement="top" title="Share Image" class="btn btn-outline-success btn-sm btn-over"><i class="fa fa-share" aria-hidden="true"></i></span><span onclick="delImage('114189055','fad79d8e96')" data-toggle="tooltip" data-placement="top" title="Delete Image" class="btn btn-outline-success btn-sm btn-over"><i class="far fa-trash-alt" aria-hidden="true"></i></span></div></a><br />
+					</div>
+
+	</div>
+</div> <!-- uploaded -->
+</div> <!-- container -->
+
+<div class="modal fade" id="codes" role="dialog">
+    <div class="modal-dialog modal-lg"  role="document">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imgCodeGLabel">Share Image</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+			<span id="shareB"></span><br />
+          Clickable Thumbnail for Websites:<br />
+			<span><input id="MimgCodeIPW" type="text" class="imgCode" /> <i class="far fa-copy" aria-hidden="true"></i></span>
+			<br />
+			Clickable Thumbnail for Forums:<br />
+			<span><input id="MimgCodeIPF" type="text" class="imgCode" /> <i class="far fa-copy" aria-hidden="true"></i></span>
+			<br />
+			Markdown <i class="fab fa-reddit-alien" aria-hidden="true"></i>:<br />
+			<span><input id="MimgCodeIPMR" type="text" class="imgCode" /> <i class="far fa-copy" aria-hidden="true"></i></span>
+			<br />
+			Markdown <i class="fab fa-github" aria-hidden="true"></i> <i class="fab fa-stack-overflow" aria-hidden="true"></i>:<br />
+			<span><input id="MimgCodeIPMS" type="text" class="imgCode" /> <i class="far fa-copy" aria-hidden="true"></i></span>
+			<br />
+			Show image to friends:<br />
+			<span><input id="MimgCodeIPSTF" type="text" class="imgCode" /> <i class="far fa-copy" aria-hidden="true"></i></span>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-508314-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-508314-4');
+gtag('event', 'Safe');
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1071569344"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1071569344');
+</script>
+
+
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-1071569344/zYDgCOyv-d8BEMCz-_4D'});
+</script>
+
+
+</body>
+</html>
