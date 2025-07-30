@@ -66,7 +66,7 @@ jobs:
           SENTRY_SDK_DNS: ${{ secrets.SENTRY_SDK_DNS }}
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
           SCRAPE_DO_API_KEY: ${{ secrets.SCRAPE_DO_API_KEY }}
-          IS_DEBUG: ${{ env.IS_DEBUG }}
+          IS_DEBUG: ${{ vars.IS_DEBUG }}
 
       - name: commit files
         run: |

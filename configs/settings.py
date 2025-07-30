@@ -14,6 +14,9 @@ class Settings(BaseSettings):
     SCRAPE_DO_API_KEY: str | None = Field(default=None)
     SENTRY_SDK_DNS: str | None = Field(default=None)
 
+    class Config:
+        case_sensitive = False
+
 
 class LocalSettings(Settings):
     model_config = SettingsConfigDict(
