@@ -4,6 +4,9 @@ permissions:
   contents: write
   pull-requests: write
 
+env:
+  BRANCH: "auto/data-update"
+
 on:
   workflow_dispatch:
   schedule:
@@ -11,12 +14,12 @@ on:
     - cron: '0 0,8,16 * * *'
   pull_request:
     branches:
-      - "deploy"
+      - "${{ env.BRANCH }}"
     paths:
       - ".github/workflows/update_async_exhibition.yml"
   push:
     branches:
-      - "deploy"
+      - "${{ env.BRANCH }}"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -34,7 +37,7 @@ jobs:
       - name: checkout repo content
         uses: actions/checkout@v2
         with:
-          ref: 'deploy'
+          ref: '${{ env.BRANCH }}'
 
       - name: setup python 3.10
         uses: actions/setup-python@v2
@@ -60,7 +63,6 @@ jobs:
         env:
           IMGUR_API_CLIENT_ID: ${{ secrets.IMGUR_API_CLIENT_ID }}
           IMGUR_API_CLIENT_SECRET: ${{ secrets.IMGUR_API_CLIENT_SECRET }}
-          LINE_NOTIFY_API: ${{ secrets.LINE_NOTIFY_API }}
           SENTRY_SDK_DNS: ${{ secrets.SENTRY_SDK_DNS }}
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
           SCRAPE_DO_API_KEY: ${{ secrets.SCRAPE_DO_API_KEY }}
@@ -78,6 +80,6 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: deploy
+          branch: ${{ env.BRANCH }}
 
 
