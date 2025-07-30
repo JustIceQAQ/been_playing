@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Been Play",
+    "short_name": "been_play",
+    "start_url": "/",
     "icons": [
         {
             "src": "icon_folder/android-chrome-192x192.png",
