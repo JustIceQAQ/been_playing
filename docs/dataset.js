@@ -130,6 +130,19 @@ const exhibitionTopicClass = [
 
 ]
 
+const exhibitionTopicSet = new Set(exhibitionTopicClass.map((exhibition) => {
+    return exhibition.topic
+}))
+
+const getInitTopic = () => {
+        const params = new URLSearchParams(window.location.search);
+        const topic = params.get('topic');
+        if (topic === undefined || topic === null || !exhibitionTopicSet.has(topic)) {
+            return exhibitionTopicClass[0].topic
+        }
+        return topic
+    }
+
 
 const customizeButtons = exhibitionTopicClass.map((exhibition) => {
     return {extend: exhibition.topic, className: `btn btn-${exhibition.topic}`}
