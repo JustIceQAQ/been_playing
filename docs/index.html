@@ -165,7 +165,9 @@
     </div>
 </div>
 
-<div class="toast align-items-center bottom-0 end-0 p-3" style="position: fixed; bottom: 1rem; right: 1rem; z-index: 1080;" id="cpToast" role="alert" aria-live="assertive" aria-atomic="true">
+<div class="toast align-items-center bottom-0 end-0 p-3"
+     style="position: fixed; bottom: 1rem; right: 1rem; z-index: 1080;" id="cpToast" role="alert" aria-live="assertive"
+     aria-atomic="true">
     <div class="d-flex">
         <div class="toast-body">
             分享網址以複製於剪貼簿
@@ -271,13 +273,19 @@
 <script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
-        integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/dayjs.min.js"
+        integrity="sha512-FwNWaxyfy2XlEINoSnZh1JQ5TRRtGow0D6XcmAWmYCRgvqOUTnzCxPc9uF35u5ZEpirk1uhlPVA19tflhvnW1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/plugin/relativeTime.min.js"
+        integrity="sha512-MVzDPmm7QZ8PhEiqJXKz/zw2HJuv61waxb8XXuZMMs9b+an3LoqOqhOEt5Nq3LY1e4Ipbbd/e+AWgERdHlVgaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/plugin/timezone.min.js"
+        integrity="sha512-nrkE2nl0pcqWefIY627DY1exPOSuZXMdOrxMxX0y7Ly6RH8K0WDjO1lqakkxQcX5m8hxoUSt75seRRiyhqPvIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/locale/zh-tw.min.js"
+        integrity="sha512-Z9Get/15RJrmq/peoDaFetj17/m9DkNYZrsoM0Z+y3CgAv+REWumafGOkchXHm1BUjqHTPa8aQ/bKMvEn7WuvQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-2012-2022.min.js"
-        integrity="sha512-8Qkh6To/T2f66DV4VGbRwjLNdsiYnx02iwsyobMVGC5IeyLBlny8hHEGypFdkB3n7YpAnx5rsescbHyDNIV9Sw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
@@ -287,16 +295,18 @@
 
 
 <script>
+    dayjs.extend(window.dayjs_plugin_relativeTime);
+    dayjs.extend(window.dayjs_plugin_timezone);
     const finishedAfter5Day = (dateString) => {
-        let nowDate = moment(new Date().toLocaleDateString('tw-zh'))
+        let nowDate = dayjs(new Date().toLocaleDateString('tw-zh'))
         let splitDateString = dateString.split("~")
         if (splitDateString.length === 1) {
-            let oneDate = moment(splitDateString[0].trim())
+            let oneDate = dayjs(splitDateString[0].trim())
             if (nowDate.isAfter(oneDate.add(5, 'days'))) {
                 return true
             }
         } else if (splitDateString.length === 2) {
-            let endDate = moment(splitDateString[1].trim())
+            let endDate = dayjs(splitDateString[1].trim())
             if (nowDate.isAfter(endDate.add(5, 'days'))) {
                 return true
             }
@@ -309,7 +319,7 @@
             return unableBadges(tag)
         }
 
-        let nowDate = moment(new Date().toLocaleDateString('tw-zh'))
+        let nowDate = dayjs(new Date().toLocaleDateString('tw-zh'))
         let splitDateString = dateString.split("~")
 
 
@@ -319,7 +329,7 @@
 
 
         if (splitDateString.length === 1) {
-            let oneDate = moment(splitDateString[0].trim())
+            let oneDate = dayjs(splitDateString[0].trim())
             if (isNaN(oneDate)) {
                 return unableBadges(tag)
             }
@@ -336,8 +346,8 @@
             if (splitDateString[1] === '') {
                 return inProgressBadges(tag)
             } else {
-                let startDate = moment(splitDateString[0].trim())
-                let endDate = moment(splitDateString[1].trim())
+                let startDate = dayjs(splitDateString[0].trim())
+                let endDate = dayjs(splitDateString[1].trim())
                 if (startDate.isAfter(nowDate)) {
                     return notStartedBadges(tag)
                 }
@@ -370,7 +380,7 @@
         let runThemeSet = (document.documentElement.getAttribute('data-bs-theme') == 'dark') ? setLight : setDark
         runThemeSet()
     })
-    moment.locale('zh-tw');
+    dayjs.locale('zh-tw');
 
 
     $(document).ready(function () {
@@ -538,10 +548,10 @@
             }
         }
     });
-    const LOCALTZ = moment.tz.guess()
+    const LOCALTZ = dayjs.tz.guess();
     const formatDate = (dateString) => {
-        let date = moment(dateString).tz(LOCALTZ);
-        return `${date.fromNow()} (${date.format("LLLL")})`
+        let date = dayjs(dateString);
+        return `${date.fromNow()} (${date.format("YYYY-MM-DD HH:mm:ss")})`
     }
 
     window.addEventListener('DOMContentLoaded', () => {
