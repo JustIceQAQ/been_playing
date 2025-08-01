@@ -165,6 +165,14 @@
     </div>
 </div>
 
+<div class="toast align-items-center bottom-0 end-0 p-3" style="position: fixed; bottom: 1rem; right: 1rem; z-index: 1080;" id="cpToast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+        <div class="toast-body">
+            分享網址以複製於剪貼簿
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+</div>
 
 <div class="container-fluid">
     <div class="row">
@@ -365,8 +373,6 @@
     moment.locale('zh-tw');
 
 
-
-
     $(document).ready(function () {
         const isDark = window.matchMedia("(prefers-color-scheme:dark)").matches
         const runThemeSet = isDark ? setDark : setLight
@@ -451,6 +457,7 @@
                     let externalLink = exhibitionInformation["external_link"]
                     let googleMapPlaceId = exhibitionInformation["google_map_place_id"]
                     // let address = exhibitionInformation["address"]
+
                     let externalLinkEle = ""
                     if (externalLink !== undefined) {
                         externalLinkEle = `<a class="btn btn-secondary" href="${externalLink}" target="_blank"><strong><i class="bi bi-box-arrow-up-right"></i></strong></a>`;
@@ -458,6 +465,8 @@
                     if (googleMapPlaceId !== undefined) {
                         externalLinkEle = externalLinkEle + `<a style="margin-left: 10px" class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=${informationFullName}&query_place_id=${googleMapPlaceId}" target="_blank"><strong><i class="bi bi-pin-map"></i></strong></a>`;
                     }
+                    let shareUrl = `<a style="margin-left: 10px" class="btn btn-secondary" onclick="copyUrlToClipboard('${window.location.origin}${window.location.pathname}?topic=${exhibitionInformation["code_name"]}')" target="_blank"><strong><i class="bi bi-share"></i></strong></a>`
+                    externalLinkEle = externalLinkEle + shareUrl
                     let opening = ""
                     if (exhibition.json["visit"] !== undefined) {
                         opening = exhibition.json["visit"]["opening"]

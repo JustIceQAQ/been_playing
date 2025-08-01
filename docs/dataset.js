@@ -135,14 +135,33 @@ const exhibitionTopicSet = new Set(exhibitionTopicClass.map((exhibition) => {
 }))
 
 const getInitTopic = () => {
-        const params = new URLSearchParams(window.location.search);
-        const topic = params.get('topic');
-        if (topic === undefined || topic === null || !exhibitionTopicSet.has(topic)) {
-            return exhibitionTopicClass[0].topic
-        }
-        return topic
+    const params = new URLSearchParams(window.location.search);
+    const topic = params.get('topic');
+    if (topic === undefined || topic === null || !exhibitionTopicSet.has(topic)) {
+        return exhibitionTopicClass[0].topic
     }
+    return topic
+}
 
+const copyUrlToClipboard = (url) => {
+
+    navigator.clipboard.writeText(url)
+        .then(() => {
+            const toastEl = document.getElementById('cpToast');
+            if (toastEl) {
+                const toast = new bootstrap.Toast(toastEl);
+                toast.show();
+            }
+        })
+        .catch((err) => {
+            const toastEl = document.getElementById('cpToast');
+            if (toastEl) {
+                const toast = new bootstrap.Toast(toastEl);
+                toast.show();
+            }
+
+        });
+}
 
 const customizeButtons = exhibitionTopicClass.map((exhibition) => {
     return {extend: exhibition.topic, className: `btn btn-${exhibition.topic}`}
