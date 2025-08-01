@@ -363,10 +363,16 @@
         runThemeSet()
     })
     moment.locale('zh-tw');
+
+
+
+
     $(document).ready(function () {
         const isDark = window.matchMedia("(prefers-color-scheme:dark)").matches
         const runThemeSet = isDark ? setDark : setLight
-        let initUrl = `${URL_SOURCE}${exhibitionTopicClass[0].topic}.json`
+        const initTopic = getInitTopic()
+
+        let initUrl = `${URL_SOURCE}${initTopic}.json`
         runThemeSet()
         $('#exhibition').DataTable({
             dom: 'Brtip',
