@@ -314,7 +314,6 @@ exhibitionTopicClass.map((exhibition) => {
     $.fn.dataTable.ext.buttons[exhibition.topic] = {
         text: exhibition.name,
         action: function (e, dt, node, config) {
-            console.log(`${URL_SOURCE}${exhibition.topic}.json`)
             dt.ajax.url(`${URL_SOURCE}${exhibition.topic}.json`).load()
         }
     }

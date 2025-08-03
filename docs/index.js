@@ -12,13 +12,11 @@ document.addEventListener('keydown', function (e) {
     const detectDevTools = () => {
         const threshold = 160;
 
-        // 方法 1：尺寸變化
         if (window.outerWidth - window.innerWidth > threshold ||
             window.outerHeight - window.innerHeight > threshold) {
             detected = true;
         }
 
-        // 方法 2：檢查是否斷點中斷（可混用 debugger + 時間）
         const before = performance.now();
         debugger;
         const after = performance.now();
