@@ -1,5 +1,7 @@
 # been_playing
+
 [![update-async-exhibition](https://github.com/JustIceQAQ/been_playing/actions/workflows/update_async_exhibition.yml/badge.svg?branch=deploy)](https://github.com/JustIceQAQ/been_playing/actions/workflows/update_async_exhibition.yml)
+
 - Northern Taiwan Exhibition Crawlers
 
 ## Target Including But Not Limited to
@@ -43,3 +45,4 @@
     - [關渡美術館](https://kdmofa.tnua.edu.tw/mod/exhibition/index.php)
     - [二二八國家紀念館](https://justiceqaq.github.io/been_playing/)
     - [鳳甲美術館](https://hong-gah.org.tw/exhibitions-zh)
+    - [順益台灣美術館](https://www.shungye-art.org/show_now.php)
