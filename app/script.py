@@ -22,6 +22,7 @@ from .exhibition.ntnu_art_museum.script import NTNUArtMuseumRunner
 from .exhibition.ntpc.script import NTPCRunner
 from .exhibition.ntsec.script import NtSecRunner
 from .exhibition.ocam.script import OCAMRunner
+from .exhibition.shungyeart.script import ShungYeArtRunner
 from .exhibition.songshanculturalpark.script import SongShanCulturalParkRunner
 from .exhibition.taipeiexpopark.script import TaipeiExPoParkRunner
 from .exhibition.tfam.script import TFamRunner
@@ -74,4 +75,5 @@ PY_CLASS_SCRIPT = {
     KdMoFaRunner,
     N228MMRunner,
     HongGahRunner,
+    ShungYeArtRunner,
 }
