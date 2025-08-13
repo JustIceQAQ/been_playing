@@ -127,6 +127,9 @@ const exhibitionTopicClass = [
     new Exhibition("HongGah", "鳳甲美術館",
         new ButtonStyle("#fff", "#585656", "#585656")
     ),
+     new Exhibition("ShungYeArt", "順益台灣美術館",
+        new ButtonStyle("#fff", "#83744c", "#585656")
+    ),
 
 ]
 

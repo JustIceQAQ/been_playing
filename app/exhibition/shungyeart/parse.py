@@ -14,6 +14,8 @@ class ShungYeArtParse(ParseInit):
 
     def get_date(self, *args, **kwargs) -> str | None:
         raw_date = self.item.select_one("div.fig > p").text.strip()
+        if "持續" in raw_date:
+            return None
 
         start_str, end_str = raw_date.split(" - ")
         start_date = datetime.datetime.strptime(start_str, "%Y.%m.%d").strftime(

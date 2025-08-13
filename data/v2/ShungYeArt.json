@@ -10,38 +10,38 @@
   "counts": 5,
   "items": [
     {
-      "title": "2025福星兒童金牌藝術展",
-      "date": "2025.08.03 - 2025.08.31",
+      "title": "倪氏寓言與懸念—順益台灣美術館倪再沁個展",
+      "date": "2025-01-11 ~ 2025-03-30",
       "address": null,
-      "figure": "https://www.shungye-art.org//uploads/show/202507300504357468.jpg",
-      "source_url": "https://www.shungye-art.org/show_now_detail.php?id=26",
-      "UUID": "13c46e345f19598dab27d9eb7975b8ed"
+      "figure": null,
+      "source_url": "https://www.shungye-art.org/show_now_detail.php?id=22",
+      "UUID": "f05a3c956ce85ec1a15e41b17861084c"
     },
     {
       "title": "典藏展：膠彩薈萃之美",
-      "date": "2025.07.01 - 2026.01.11",
+      "date": "2025-07-01 ~ 2026-01-11",
       "address": null,
       "figure": "https://www.shungye-art.org//uploads/show/202506180259305126.png",
       "source_url": "https://www.shungye-art.org/show_now_detail.php?id=25",
       "UUID": "abbdb65cfda356f39dfac970536892b2"
     },
     {
+      "title": "2025福星兒童金牌藝術展",
+      "date": "2025-08-03 ~ 2025-08-31",
+      "address": null,
+      "figure": "https://www.shungye-art.org//uploads/show/202507300504357468.jpg",
+      "source_url": "https://www.shungye-art.org/show_now_detail.php?id=26",
+      "UUID": "13c46e345f19598dab27d9eb7975b8ed"
+    },
+    {
       "title": "林清富先生展覽室",
-      "date": "持續",
+      "date": null,
       "address": null,
       "figure": "https://www.shungye-art.org//uploads/show/202006170122013634.jpg",
       "source_url": "https://www.shungye-art.org/show_now_detail.php?id=3",
       "UUID": "f410dc2132e15d2bbba323e7b127eb42"
-    },
-    {
-      "title": "倪氏寓言與懸念—順益台灣美術館倪再沁個展",
-      "date": "2025.01.11 - 2025.03.30",
-      "address": null,
-      "figure": null,
-      "source_url": "https://www.shungye-art.org/show_now_detail.php?id=22",
-      "UUID": "f05a3c956ce85ec1a15e41b17861084c"
     }
   ],
-  "last_update": "2025-08-12T18:23:41.570959+08:00",
+  "last_update": "2025-08-13T20:54:33.006612+08:00",
   "visit": {}
 }
