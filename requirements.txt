@@ -1,24 +1,24 @@
-bs4
-cssutils
-pydantic
-pydantic-settings
-html5lib
-pytz
-imgurpython
-python-dotenv
-retry
-httpx
-dill
-sentry-sdk
-prettytable
-fake-useragent
-aiofile
-sentry-sdk
-diskcache
-python-dateutil
-aiolimiter # https://github.com/mjpieters/aiolimiter
+bs4==0.0.2
+cssutils==2.11.1
+pydantic==2.10.6
+pydantic-settings==2.10.1
+html5lib==1.1
+python-dotenv==1.0.1
+retry==0.9.2
+httpx==0.28.1
+dill==0.3.9
+
+fake-useragent==2.1.0
+aiofile==3.9.0
+sentry-sdk==2.22.0
+python-dateutil==2.9.0.post0
+aiolimiter==1.2.1 # https://github.com/mjpieters/aiolimiter
 
 # Cache
 # ============
-diskcache
+diskcache==5.6.3
 croniter==6.0.0 # https://github.com/kiorky/croniter
+
+# Sentry
+# ============
+sentry-sdk==2.22.0
