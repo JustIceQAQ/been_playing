@@ -6,3 +6,4 @@ pytest-asyncio # https://github.com/pytest-dev/pytest-asyncio
 pytest-xdist # https://github.com/pytest-dev/pytest-xdist
 Faker
 click
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
