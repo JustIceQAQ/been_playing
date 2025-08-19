@@ -17,7 +17,7 @@ def create_exhibition_template(script_code: str):
         return
     app_script_folder.mkdir()
     with (app_script_folder / "__init__.py").open(mode="a+", encoding="utf-8") as f:
-        pass
+        f.write(f"from .script import {script_code}Runner  # noqa")
 
     with (app_script_folder / "script.py").open(mode="a+", encoding="utf-8") as f:
         f.write(
