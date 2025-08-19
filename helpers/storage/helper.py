@@ -139,7 +139,6 @@ class Exhibition(BaseModel):
     counts: int = 0
     items: list[ExhibitionItem] = Field(default_factory=list)
     last_update: str = Field(default_factory=datetime_now_iso_format)
-    visit: dict[str, str] = Field(default_factory=dict)
 
     @model_validator(mode="after")
     def generate_counts(cls, values):

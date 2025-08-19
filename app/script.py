@@ -1,4 +1,5 @@
 from .exhibition.bopiliao.script import BoPiLiaoRunner
+from .exhibition.chipolin import ChiPoLinRunner
 from .exhibition.cksmh.script import CKSMHRunner
 from .exhibition.clab.script import CLabRunner
 from .exhibition.fubonartmuseum.script import FuBonArtMuseumRunner
@@ -15,6 +16,7 @@ from .exhibition.ncpi.script import NCPIRunner
 from .exhibition.nhrm.script import NHRMRunner
 from .exhibition.nmh.script import NmhRunner
 from .exhibition.npm.script import NpmRunner
+from .exhibition.nrm import NrmRunner
 from .exhibition.ntc_art_museum.script import NtcArtMuseumRunner
 from .exhibition.ntcri.script import NTCRIRunner
 from .exhibition.ntm.script import NtmRunner
@@ -29,6 +31,7 @@ from .exhibition.tfam.script import TFamRunner
 from .exhibition.tmc.script import TmcRunner
 from .exhibition.tncmmm.script import TncMMMRunner
 from .exhibition.twtc.script import TwTcRunner
+from .exhibition.yatsen import YatsenRunner
 from .platform.bookstickets.script import BooksTicketsRunner
 from .platform.ibon.script import IBonRunner
 from .platform.kkday.script import KKDayRunner
@@ -76,4 +79,7 @@ PY_CLASS_SCRIPT = {
     N228MMRunner,
     HongGahRunner,
     ShungYeArtRunner,
+    YatsenRunner,
+    NrmRunner,
+    ChiPoLinRunner,
 }

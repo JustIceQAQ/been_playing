@@ -123,7 +123,7 @@ class RunnerInit(abc.ABC):
         elif not isinstance(content, str):
             raise ValueError("Content must be a string or a dictionary")
 
-        return hashlib.md5(content.encode("utf-8")).hexdigest()
+        return hashlib.sha256(content.encode("utf-8")).hexdigest()
 
     async def run(self, cache: Cache, image):
         try:
