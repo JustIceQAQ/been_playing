@@ -1,6 +1,7 @@
 import asyncio
 import urllib.parse
-from app.exhibition.pact.parse import PactParse
+
+from app.exhibition.redhouse.parse import RedHouseParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
@@ -11,48 +12,48 @@ from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
 
-class PactRunner(RunnerInit):
+class RedHouseRunner(RunnerInit):
     translation = JsonTranslation
-    use_parse = PactParse
-    is_sort = False
+    use_parse = RedHouseParse
+    is_sort: bool = False
 
     def set_cache_expire(self) -> int | None:
         return month_3()
 
     def set_information(self) -> "Information":
         return Information(
-            fullname="台北偶戲館",
-            code_name="PACT",
-            external_link="https://www.pact.taipei/exhibition_list.aspx?p=1&ps=10&t=all",
+            fullname="西門紅樓",
+            code_name="RedHouse",
+            external_link="https://www.redhouse.taipei/index.aspx",
         )
 
     async def fetch_response(self):
-        aspx = "https://www.pact.taipei/exhibition_list.aspx"
+        aspx = "https://www.redhouse.taipei/events.aspx"
         headers = {
             **get_header(),
             "x-requested-with": "XMLHttpRequest",
-            "referer": f"{aspx}?p=1&ps=10&t=all",
-            "origin": "https://www.pact.taipei",
-            "host": "www.pact.taipei",
+            "referer": f"{aspx}",
+            "origin": "https://www.redhouse.taipei",
+            "host": "www.redhouse.taipei",
         }
         data = {
             "q": "get",
-            "r": "0.9",
+            "r": "0.001",
             "t": "all",
-            "data": urllib.parse.quote('{"p":1,"ps":10,"t":"all"}'),
+            "data": urllib.parse.quote('{"ps":10,"p":1,"Kind":"展覽","Title":""}'),
         }
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.post(aspx, data=data)
+            response = await client.get(aspx, params=data)
             response.raise_for_status()
         return response.json()
 
     async def fetch_parsed(self):
         parsed: dict = await super().fetch_parsed()
-        return parsed["list"]["items"]
+        return parsed["items"]
 
 
 async def main():
-    await PactRunner().run(NoneCache(), NoneImage())
+    await RedHouseRunner().run(NoneCache(), NoneImage())
 
 
 if __name__ == "__main__":
