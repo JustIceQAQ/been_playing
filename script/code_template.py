@@ -1,7 +1,7 @@
 SCRIPT_CODE = """import asyncio
 
 import bs4
-from app.exhibition.{script_code_lower}.parse import {script_code}Parse
+from .parse import {script_code}Parse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
