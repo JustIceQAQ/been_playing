@@ -127,9 +127,19 @@ const exhibitionTopicClass = [
     new Exhibition("HongGah", "鳳甲美術館",
         new ButtonStyle("#fff", "#585656", "#585656")
     ),
-     new Exhibition("ShungYeArt", "順益台灣美術館",
+    new Exhibition("ShungYeArt", "順益台灣美術館",
         new ButtonStyle("#fff", "#83744c", "#585656")
     ),
+    new Exhibition("PACT", "台北偶戲館",
+        new ButtonStyle("#fff", "#e40012", "#db462f")),
+    new Exhibition("Yatsen", "國立國父紀念館",
+        new ButtonStyle("#fff", "#f6b64b", "#2f98d2")),
+    new Exhibition("Nrm", "國家鐵道博物館",
+        new ButtonStyle("#fff", "#009e40", "#fdfdfd")),
+    new Exhibition("RedHouse", "西門紅樓",
+        new ButtonStyle("#fff", "#c73405", "#c73405")),
+    new Exhibition("YoChangArt", "有章藝術博物館",
+        new ButtonStyle("#fff", "#585656", "#585656")),
 
 ]
 
