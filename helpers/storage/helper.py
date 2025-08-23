@@ -123,8 +123,16 @@ class ExhibitionItem(BaseModel):
         )
 
     def __hash__(self):
-        # 所有欄位都納入 hash 計算，確保 set() 正常運作
-        return hash(tuple(getattr(self, field) for field in self.model_fields.keys()))
+        values = []
+        for field, value in self.model_fields.items():
+            val = getattr(self, field)
+            try:
+                hash(val)  # 測試是否可 hash
+                values.append(val)
+            except TypeError:
+                # 忽略不可 hash 的值
+                continue
+        return hash(tuple(values))
 
 
 class Information(BaseModel):
