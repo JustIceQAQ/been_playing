@@ -24,6 +24,8 @@ from .exhibition.ntnu_art_museum.script import NTNUArtMuseumRunner
 from .exhibition.ntpc.script import NTPCRunner
 from .exhibition.ntsec.script import NtSecRunner
 from .exhibition.ocam.script import OCAMRunner
+from .exhibition.pact import PactRunner
+from .exhibition.redhouse import RedHouseRunner
 from .exhibition.shungyeart.script import ShungYeArtRunner
 from .exhibition.songshanculturalpark.script import SongShanCulturalParkRunner
 from .exhibition.taipeiexpopark.script import TaipeiExPoParkRunner
@@ -32,6 +34,7 @@ from .exhibition.tmc.script import TmcRunner
 from .exhibition.tncmmm.script import TncMMMRunner
 from .exhibition.twtc.script import TwTcRunner
 from .exhibition.yatsen import YatsenRunner
+from .exhibition.yochangart import YoChangArtRunner
 from .platform.bookstickets.script import BooksTicketsRunner
 from .platform.ibon.script import IBonRunner
 from .platform.kkday.script import KKDayRunner
@@ -82,4 +85,7 @@ PY_CLASS_SCRIPT = {
     YatsenRunner,
     NrmRunner,
     ChiPoLinRunner,
+    PactRunner,
+    RedHouseRunner,
+    YoChangArtRunner,
 }

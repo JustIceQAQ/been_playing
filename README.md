@@ -46,3 +46,8 @@
     - [二二八國家紀念館](https://justiceqaq.github.io/been_playing/)
     - [鳳甲美術館](https://hong-gah.org.tw/exhibitions-zh)
     - [順益台灣美術館](https://www.shungye-art.org/show_now.php)
+    - [台北偶戲館](https://www.pact.taipei/index.aspx)
+    - [國立國父紀念館](https://www.yatsen.gov.tw/)
+    - [國家鐵道博物館](https://www.nrm.gov.tw/)
+    - [西門紅樓](https://www.redhouse.taipei/index.aspx)
+    - [有章藝術博物館](https://museum.ntua.edu.tw)

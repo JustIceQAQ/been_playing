@@ -46,8 +46,7 @@ if __name__ == '__main__':
 """
 
 
-PARSE_CODE = """
-import bs4
+PARSE_CODE = """import bs4
 
 from helpers.parse_helper import ParseInit
 
