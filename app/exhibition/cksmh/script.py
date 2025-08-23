@@ -25,7 +25,7 @@ class CKSMHRunner(RunnerInit):
         return Information(
             fullname="中正紀念堂",
             code_name="CKSMH",
-            external_link="https://www.cksmh.gov.tw/activitysoonlist_369.html",
+            external_link="https://www.cksmh.gov.tw/Default.aspx",
             address="臺北市中正區中山南路21號",
             google_map_place_id="ChIJTamiuZ2pQjQRsmnfkkID6UM",
         )
