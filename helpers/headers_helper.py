@@ -5,5 +5,5 @@ UA = UserAgent(browsers="chrome", os=["windows", "macos"], platforms="pc")
 
 def get_header() -> dict[str, str]:
     return {
-        "User-Agent": UA.random,
+        "user-agent": UA.random,
     }

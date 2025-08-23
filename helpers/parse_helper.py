@@ -26,6 +26,10 @@ class ParseInit(abc.ABC):
         raise NotImplementedError
 
     @abc.abstractmethod
+    def get_tags(self, *args, **kwargs) -> str:
+        raise NotImplementedError
+
+    @abc.abstractmethod
     def get_source_url(self, *args, **kwargs) -> str:
         raise NotImplementedError
 

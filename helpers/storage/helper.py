@@ -36,6 +36,7 @@ class ExhibitionItem(BaseModel):
     address: str | None = None
     figure: str | None = None
     source_url: str | None = None
+    tags: list[str] | None = Field(default_factory=list)
     UUID: str | None = None
 
     @model_validator(mode="after")
@@ -84,6 +85,7 @@ class ExhibitionItem(BaseModel):
                 self.address,
                 self.figure,
                 self.source_url,
+                self.tags,
                 self.UUID,
             ]
             if field is None
