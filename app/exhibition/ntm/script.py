@@ -26,7 +26,7 @@ class NtmRunner(RunnerInit):
         return Information(
             fullname="國立臺灣博物館",
             code_name="Ntm",
-            external_link="https://www.ntm.gov.tw/submenu_178.html",
+            external_link="https://www.ntm.gov.tw/Default.aspx",
             address="臺北市中正區襄陽路2號",
             google_map_place_id="ChIJcRV3WHOpQjQRFpgzTpxZWgo",
         )
