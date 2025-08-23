@@ -34,6 +34,7 @@ from .exhibition.tmc.script import TmcRunner
 from .exhibition.tncmmm.script import TncMMMRunner
 from .exhibition.twtc.script import TwTcRunner
 from .exhibition.yatsen import YatsenRunner
+from .exhibition.yochangart import YoChangArtRunner
 from .platform.bookstickets.script import BooksTicketsRunner
 from .platform.ibon.script import IBonRunner
 from .platform.kkday.script import KKDayRunner
@@ -86,4 +87,5 @@ PY_CLASS_SCRIPT = {
     ChiPoLinRunner,
     PactRunner,
     RedHouseRunner,
+    YoChangArtRunner,
 }
