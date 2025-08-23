@@ -25,7 +25,6 @@ class ParseInit(abc.ABC):
     def get_figure(self, *args, **kwargs) -> str:
         raise NotImplementedError
 
-    @abc.abstractmethod
     def get_tags(self, *args, **kwargs) -> str:
         raise NotImplementedError
 
