@@ -5,6 +5,7 @@ import bs4
 import cssutils
 
 from helpers.parse_helper import ParseInit
+from helpers.tags_hepler import normalize_tag
 
 
 class huashan1914Parse(ParseInit):
@@ -75,6 +76,10 @@ class huashan1914Parse(ParseInit):
             if (url := style["background-image"])
             else "-"
         )
+
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
+        spans = self.item.select("div.event-list-type > span")
+        return [normalize_tag(span.get_text(strip=True)) for span in spans]
 
     def get_source_url(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)

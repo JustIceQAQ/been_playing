@@ -45,7 +45,6 @@ if __name__ == '__main__':
     asyncio.run(main())
 """
 
-
 PARSE_CODE = """import bs4
 
 from helpers.parse_helper import ParseInit
@@ -65,6 +64,8 @@ class {script_code}Parse(ParseInit):
         pass
 
     def get_figure(self, *args, **kwargs) -> str | None:
+        pass
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

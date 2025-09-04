@@ -26,6 +26,16 @@ class NpmRowParse(ParseInit):
             target_domain, self.item.select_one("figure.card-image img")["data-src"]
         )
 
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
+        tags = self.item.find(
+            "div", {"class": "exhibition-list-date"}
+        ).next_sibling.next_sibling
+        if tags is None:
+            return None
+        tags = tags.get_text(strip=True)
+        tags = [t.strip().replace("\u3000", "") for t in tags.split("#") if t.strip()]
+        return tags
+
     def get_source_url(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
@@ -72,6 +82,12 @@ class NpmColParse(ParseInit):
             query.pop(word, None)
         u = u._replace(query=urlencode(query, True))
         return urlunparse(u)
+
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
+        div = self.item.find("div", {"class": "card-tags"})
+        tags = div.get_text(strip=True)
+        tags = [t.strip().replace("\u3000", "") for t in tags.split("#") if t.strip()]
+        return tags
 
     def get_source_url(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
@@ -125,6 +141,12 @@ class NpmPreviewParse(ParseInit):
             query.pop(word, None)
         u = u._replace(query=urlencode(query, True))
         return urlunparse(u)
+
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
+        div = self.item.find("div", {"class": "card-tags"})
+        tags = div.get_text(strip=True)
+        tags = [t.strip().replace("\u3000", "") for t in tags.split("#") if t.strip()]
+        return tags
 
     def get_source_url(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
