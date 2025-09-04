@@ -13,7 +13,6 @@ aiofile==3.9.0
 sentry-sdk==2.35.0
 python-dateutil==2.9.0.post0
 aiolimiter==1.2.1 # https://github.com/mjpieters/aiolimiter
-cloudscraper==1.2.71 # https://github.com/VeNoMouS/cloudscraper
 # Cache
 # ============
 diskcache==5.6.3
