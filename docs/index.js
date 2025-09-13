@@ -20,7 +20,7 @@ document.addEventListener('keydown', function (e) {
         const before = performance.now();
         debugger;
         const after = performance.now();
-        if (after - before > 100) {
+        if (after - before > 1000) {
             detected = true;
         }
 
