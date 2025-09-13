@@ -16,11 +16,14 @@ document.addEventListener('keydown', function (e) {
             window.outerHeight - window.innerHeight > threshold) {
             detected = true;
         }
+        console.log(threshold, window.outerWidth - window.innerWidth, window.outerHeight - window.innerHeight)
 
         const before = performance.now();
         debugger;
         const after = performance.now();
-        if (after - before > 1000) {
+        let result = after - before
+        console.log(result)
+        if (result > 1000) {
             detected = true;
         }
 
