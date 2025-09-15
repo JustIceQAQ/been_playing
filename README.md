@@ -51,3 +51,5 @@
     - [國家鐵道博物館](https://www.nrm.gov.tw/)
     - [西門紅樓](https://www.redhouse.taipei/index.aspx)
     - [有章藝術博物館](https://museum.ntua.edu.tw)
+    -
+    - [高雄市立歷史博物館](https://khm.org.tw/tw)
