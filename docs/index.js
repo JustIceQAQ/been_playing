@@ -10,17 +10,11 @@ document.addEventListener('keydown', function (e) {
     let detected = false;
 
     const detectDevTools = () => {
-        const threshold = 160;
-
-        if (window.outerWidth - window.innerWidth > threshold ||
-            window.outerHeight - window.innerHeight > threshold) {
-            detected = true;
-        }
-
         const before = performance.now();
         debugger;
         const after = performance.now();
-        if (after - before > 100) {
+        let result = after - before
+        if (result > 1000) {
             detected = true;
         }
 
@@ -32,10 +26,10 @@ document.addEventListener('keydown', function (e) {
     const destroyPage = () => {
         document.body.innerHTML = `
             <div style="display:flex;align-items:center;justify-content:center;height:100vh;font-size:2rem;color:red;">
-                ⚠️ 頁面損毀，請重新整理
+                <img src="icon_folder/....png" alt="? 你想幹嘛?? 🤨">
             </div>
         `;
-        document.title = "已損毀";
+        document.title = "? 你想幹嘛?? 🤨";
         document.body.style.backgroundColor = "#000";
         window.onbeforeunload = null;
         window.onkeydown = window.onmousedown = window.onmousemove = () => false;

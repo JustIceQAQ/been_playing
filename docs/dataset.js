@@ -18,6 +18,31 @@ class ButtonStyle {
     }
 }
 
+
+const platformTopicClass = [
+    new Exhibition("KLook", "KLook 客路",
+        new ButtonStyle("#fff", "#fd5a01", "#e75234")
+    ),
+    new Exhibition("BooksTickets", "博客來售票網",
+        new ButtonStyle("#fff", "#61C0B4", "#61C0B4")
+    ),
+    new Exhibition("UdnFunLife", "udn售票網",
+        new ButtonStyle("#fff", "#F39800", "#F39800")
+    ),
+    new Exhibition("OpenTix", "OPENTIX兩廳院生活文化",
+        new ButtonStyle("#fff", "#e75234", "#e75234")
+    ),
+    new Exhibition("KKTix", "KKTIX",
+        new ButtonStyle("#fff", "#64be26", "#64be26")
+    ),
+    new Exhibition("IBon", "IBon",
+        new ButtonStyle("#8fc120", "#3f3a3a", "#3f3a3a")
+    ),
+    new Exhibition("KKDay", "KKDay",
+        new ButtonStyle("#fff", "#26bcc8", "#26bcc8")
+    ),
+]
+
 const exhibitionTopicClass = [
     new Exhibition("HuaShan1914", "華山1914文化創意產業園區",
         new ButtonStyle("#fff", "#437321", "#437321")
@@ -70,27 +95,6 @@ const exhibitionTopicClass = [
     new Exhibition("NtcArtMuseum", "新北市美術館",
         new ButtonStyle("#fff", "#000001", "#000001")
     ),
-    new Exhibition("KLook", "KLook 客路",
-        new ButtonStyle("#fff", "#fd5a01", "#e75234")
-    ),
-    new Exhibition("BooksTickets", "博客來售票網",
-        new ButtonStyle("#fff", "#61C0B4", "#61C0B4")
-    ),
-    new Exhibition("UdnFunLife", "udn售票網",
-        new ButtonStyle("#fff", "#F39800", "#F39800")
-    ),
-    new Exhibition("OpenTix", "OPENTIX兩廳院生活文化",
-        new ButtonStyle("#fff", "#e75234", "#e75234")
-    ),
-    new Exhibition("KKTix", "KKTIX",
-        new ButtonStyle("#fff", "#64be26", "#64be26")
-    ),
-    new Exhibition("IBon", "IBon",
-        new ButtonStyle("#8fc120", "#3f3a3a", "#3f3a3a")
-    ),
-    new Exhibition("KKDay", "KKDay",
-        new ButtonStyle("#fff", "#26bcc8", "#26bcc8")
-    ),
     new Exhibition("FuBonArtMuseum", "富邦美術館",
         new ButtonStyle("#fff", "#643164", "#643164")
     ),
@@ -140,18 +144,19 @@ const exhibitionTopicClass = [
         new ButtonStyle("#fff", "#c73405", "#c73405")),
     new Exhibition("YoChangArt", "有章藝術博物館",
         new ButtonStyle("#fff", "#585656", "#585656")),
-
 ]
 
-const exhibitionTopicSet = new Set(exhibitionTopicClass.map((exhibition) => {
+const allTopicClass = [].concat(exhibitionTopicClass, platformTopicClass)
+
+const allTopicSet = new Set(allTopicClass.map((exhibition) => {
     return exhibition.topic
 }))
 
 const getInitTopic = () => {
     const params = new URLSearchParams(window.location.search);
     const topic = params.get('topic');
-    if (topic === undefined || topic === null || !exhibitionTopicSet.has(topic)) {
-        return exhibitionTopicClass[0].topic
+    if (topic === undefined || topic === null || !allTopicSet.has(topic)) {
+        return allTopicClass[0].topic
     }
     return topic
 }
@@ -176,7 +181,7 @@ const copyUrlToClipboard = (url) => {
         });
 }
 
-const customizeButtons = exhibitionTopicClass.map((exhibition) => {
+const customizeButtons = allTopicClass.map((exhibition) => {
     return {extend: exhibition.topic, className: `btn btn-${exhibition.topic}`}
 })
 
@@ -323,7 +328,7 @@ document.getElementById('confirmDeleteAchievements').addEventListener('click', f
     location.reload();
 });
 
-exhibitionTopicClass.map((exhibition) => {
+allTopicClass.map((exhibition) => {
     $.fn.dataTable.ext.buttons[exhibition.topic] = {
         text: exhibition.name,
         action: function (e, dt, node, config) {
@@ -335,7 +340,7 @@ exhibitionTopicClass.map((exhibition) => {
 const style = document.createElement('style');
 style.type = 'text/css';
 
-style.innerHTML = exhibitionTopicClass.map((exhibition) => {
+style.innerHTML = allTopicClass.map((exhibition) => {
     return `.btn-${exhibition.topic} {
     color:${exhibition.buttonStyle.color};
     background-color:${exhibition.buttonStyle.backgroundColor};

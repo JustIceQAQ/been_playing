@@ -7,6 +7,7 @@ from .exhibition.hong_gah.script import HongGahRunner
 from .exhibition.huashan1914.script import HuaShan1914Runner
 from .exhibition.jam.script import JamRunner
 from .exhibition.kdmofa.script import KdMoFaRunner
+from .exhibition.khm import KhmRunner
 from .exhibition.kingcarart.script import KingCarArtRunner
 from .exhibition.mocataipei.script import MoCaTaipeiRunner
 from .exhibition.museumpost.script import MuseumPostRunner
@@ -36,6 +37,7 @@ from .exhibition.twtc.script import TwTcRunner
 from .exhibition.yatsen import YatsenRunner
 from .exhibition.yochangart import YoChangArtRunner
 from .platform.bookstickets.script import BooksTicketsRunner
+from .platform.cultureexpress import CultureExpressRunner
 from .platform.ibon.script import IBonRunner
 from .platform.kkday.script import KKDayRunner
 from .platform.kktix.script import KKTixRunner
@@ -88,4 +90,6 @@ PY_CLASS_SCRIPT = {
     PactRunner,
     RedHouseRunner,
     YoChangArtRunner,
+    KhmRunner,
+    CultureExpressRunner,
 }

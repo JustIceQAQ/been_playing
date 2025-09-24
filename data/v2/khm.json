@@ -1,0 +1,104 @@
+{
+  "information": {
+    "fullname": "高雄市立歷史博物館",
+    "code_name": "khm",
+    "external_link": "https://khm.org.tw/tw",
+    "map_url": null,
+    "address": null,
+    "google_map_place_id": null
+  },
+  "counts": 10,
+  "items": [
+    {
+      "title": "繡布上的歷史—微型展",
+      "date": "2025-09-16 ~ 2025-11-30",
+      "address": null,
+      "figure": "https://khm.org.tw/storage/files/6071/original/924443508568b559eb1d460.jpg",
+      "source_url": "https://khm.org.tw/tw/exhibition/currentexhibitions/detail/55",
+      "tags": null,
+      "UUID": "168783e1036c5c42baf5f7a84b419c3a"
+    },
+    {
+      "title": "牛背上的鬥士-簡吉與鳳山農民組合百年紀念特展",
+      "date": "2025-05-20 ~ 2025-11-30",
+      "address": null,
+      "figure": "https://khm.org.tw/storage/files/5783/original/8722749949682d7c9fc720b.jpg",
+      "source_url": "https://khm.org.tw/tw/exhibition/currentexhibitions/detail/53",
+      "tags": null,
+      "UUID": "ec1716b1f66e5431b101b09f6b61a993"
+    },
+    {
+      "title": "被竊走的孩子-世界兒童人權特展",
+      "date": "2025-09-05 ~ 2025-11-02",
+      "address": null,
+      "figure": "https://khm.org.tw/storage/files/6089/original/284193642068b973408526b.png",
+      "source_url": "https://khm.org.tw/tw/exhibition/currentexhibitions/detail/56",
+      "tags": null,
+      "UUID": "4af3724e0b66535197f2bd84d59176f2"
+    },
+    {
+      "title": "高小雄冒險記",
+      "date": "2018-10-25 ~ 2030-10-25",
+      "address": null,
+      "figure": "https://khm.org.tw/storage/files/5/original/23885209705f47044de1dcb.jpg",
+      "source_url": "https://khm.org.tw/tw/exhibition/permanentexhibitions/detail/1",
+      "tags": null,
+      "UUID": "497cf0ca11f653f1b4e408efd48b61c2"
+    },
+    {
+      "title": "大高雄歷史常設展－印象高雄",
+      "date": "2020-09-01 ~ 2029-12-31",
+      "address": null,
+      "figure": "https://khm.org.tw/storage/files/225/original/67920219845f484a70a9570.jpg",
+      "source_url": "https://khm.org.tw/tw/exhibition/permanentexhibitions/detail/11",
+      "tags": null,
+      "UUID": "7a95bc41e4205433a68e1636caa917b4"
+    },
+    {
+      "title": "大高雄歷史常設展－水系",
+      "date": "2022-01-27 ~ 2025-12-31",
+      "address": null,
+      "figure": "https://khm.org.tw/storage/files/2635/original/9623291736620dc3a1d2e53.png",
+      "source_url": "https://khm.org.tw/tw/exhibition/permanentexhibitions/detail/37",
+      "tags": null,
+      "UUID": "51357426d63c5f9a9ecef7200679a696"
+    },
+    {
+      "title": "大高雄歷史常設展－海港",
+      "date": "2022-01-27 ~ 2025-12-31",
+      "address": null,
+      "figure": "https://khm.org.tw/storage/files/2641/original/3710465453620dc7bbdcad7.png",
+      "source_url": "https://khm.org.tw/tw/exhibition/permanentexhibitions/detail/38",
+      "tags": null,
+      "UUID": "c336ce05a00e500094b1669e82b3e964"
+    },
+    {
+      "title": "大高雄歷史常設展－鐵道",
+      "date": "2022-01-27 ~ 2025-12-31",
+      "address": null,
+      "figure": "https://khm.org.tw/storage/files/2645/original/9106986829620de40a4effe.png",
+      "source_url": "https://khm.org.tw/tw/exhibition/permanentexhibitions/detail/39",
+      "tags": null,
+      "UUID": "bb2984251b2358da8babceafc95d2050"
+    },
+    {
+      "title": "高雄原來這麼大(線上PODCAST節目)",
+      "date": "2022-01-01 ~ 2025-12-31",
+      "address": null,
+      "figure": "https://khm.org.tw/storage/files/4748/original/801129010365fa4b8b7c918.png",
+      "source_url": "https://khm.org.tw/tw/exhibition/permanentexhibitions/detail/36",
+      "tags": null,
+      "UUID": "92469b1203f1590b9359582c754ded54"
+    },
+    {
+      "title": "二二八．0306",
+      "date": "2012-02-28 ~ 2025-12-31",
+      "address": null,
+      "figure": "https://khm.org.tw/storage/files/33/original/44374864875f4713e33e2e6.jpg",
+      "source_url": "https://khm.org.tw/tw/exhibition/permanentexhibitions/detail/2",
+      "tags": null,
+      "UUID": "4ec1173633f05386845cbcb2e8c47dd9"
+    }
+  ],
+  "last_update": "2025-09-16T01:07:46.185860+08:00"
+}
