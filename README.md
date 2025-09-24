@@ -6,7 +6,7 @@
 
 ## Target Including But Not Limited to
 
-- 售票網
+- 資訊網站、售票網
     - [Ibon售票系統](https://tour.ibon.com.tw/home/search?category=exhibition)
     - [KKday 酷遊天國際旅行社](https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1)
     - [kktix 華娛網路娛樂](https://kktix.com/events?category_id=11)
@@ -14,6 +14,7 @@
     - [OPENTIX 兩廳院生活文化](https://www.opentix.life/search/%20/ABOUT_TO_BEGIN?category=%E5%B1%95%E8%A6%BDAll)
     - [博客來售票網](https://tickets.books.com.tw/leisure/)
     - [udn售票網](https://tickets.udnfunlife.com/application/UTK01/UTK0101_.aspx/GET_PUSH_LIST)
+    - [文化快遞](https://cultureexpress.taipei/Event/C000003)
 - 博物館、美術館、園區
     - [中正紀念堂](https://www.cksmh.gov.tw/activitysoonlist_369.html)
     - [臺灣當代文化實驗場 C-LAB](https://clab.org.tw/events/)

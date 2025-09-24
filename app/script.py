@@ -37,6 +37,7 @@ from .exhibition.twtc.script import TwTcRunner
 from .exhibition.yatsen import YatsenRunner
 from .exhibition.yochangart import YoChangArtRunner
 from .platform.bookstickets.script import BooksTicketsRunner
+from .platform.cultureexpress import CultureExpressRunner
 from .platform.ibon.script import IBonRunner
 from .platform.kkday.script import KKDayRunner
 from .platform.kktix.script import KKTixRunner
@@ -90,4 +91,5 @@ PY_CLASS_SCRIPT = {
     RedHouseRunner,
     YoChangArtRunner,
     KhmRunner,
+    CultureExpressRunner,
 }
