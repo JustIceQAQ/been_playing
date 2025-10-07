@@ -17,13 +17,21 @@ class YoChangArtParse(ParseInit):
         p = figure_caption.find("p")
         if p is None:
             return None
-        raw_start_date, raw_end_date = p.get_text().split("-")
-        if len(raw_end_date.split(".")) == 2:
-            s_year = raw_start_date.split(".")[0]
-            raw_end_date = s_year + "." + raw_end_date
+        date_text = p.get_text()
+        result = date_text.split("-")
+        if len(result) == 2:
+            raw_start_date, raw_end_date = result
+            if len(raw_end_date.split(".")) == 2:
+                s_year = raw_start_date.split(".")[0]
+                raw_end_date = s_year + "." + raw_end_date
+            elif len(raw_end_date.split("/")) == 2:
+                s_year = raw_start_date.split("/")[0]
+                raw_end_date = s_year + "/" + raw_end_date
+        else:
+            return date_text.replace("/", "-")
 
-        ok_start_date = raw_start_date.replace(".", "-")
-        ok_end_date = raw_end_date.replace(".", "-")
+        ok_start_date = raw_start_date.replace(".", "-").replace("/", "-")
+        ok_end_date = raw_end_date.replace(".", "-").replace("/", "-")
         return ok_start_date + " ~ " + ok_end_date
 
     def get_address(self, *args, **kwargs) -> str | None:
