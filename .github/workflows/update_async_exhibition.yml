@@ -98,11 +98,7 @@ jobs:
           git add -A
           git commit -m "update data/*.json from async process" -a
 
-      - name: push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: "auto/data-update"
+
       - name: update push timestamp
         if: github.event_name == 'push'
         run: |
