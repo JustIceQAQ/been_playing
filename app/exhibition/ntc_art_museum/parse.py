@@ -71,7 +71,13 @@ class NtcArtMuseumOtherParse(ParseInit):
         start_date_year = start_date[:4]
 
         if len(end_date.split("/")) == 2:
-            end_date = start_date_year + "/" + end_date
+            year = start_date_year
+            left_year, left_month, left_month_day = start_date.split("-")
+
+            right_month, _, right_month_day = end_date.partition("/")
+            if int(right_month) < int(left_month):
+                year = int(start_date_year) + 1
+            end_date = str(year) + "/" + end_date
             end_date = end_date.replace("/", "-")
         else:
             pass
