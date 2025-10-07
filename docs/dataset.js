@@ -41,6 +41,10 @@ const platformTopicClass = [
     new Exhibition("KKDay", "KKDay",
         new ButtonStyle("#fff", "#26bcc8", "#26bcc8")
     ),
+    new Exhibition("CultureExpress", "文化快遞",
+        new ButtonStyle("#fff", "#313131", "#313131")
+    )
+
 ]
 
 const exhibitionTopicClass = [
@@ -143,7 +147,11 @@ const exhibitionTopicClass = [
     new Exhibition("RedHouse", "西門紅樓",
         new ButtonStyle("#fff", "#c73405", "#c73405")),
     new Exhibition("YoChangArt", "有章藝術博物館",
-        new ButtonStyle("#fff", "#585656", "#585656")),
+        new ButtonStyle("#fff", "#585656", "#585656")
+    ),
+    new Exhibition("khm", "高雄市立歷史博物館",
+        new ButtonStyle("#fff", "#228b82", "#228b82")
+    ),
 ]
 
 const allTopicClass = [].concat(exhibitionTopicClass, platformTopicClass)
