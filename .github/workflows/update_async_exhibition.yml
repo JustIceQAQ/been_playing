@@ -97,6 +97,7 @@ jobs:
           git config --local --unset-all "http.https://github.com/.extraheader"
           git add -A
           git commit -m "update data/*.json from async process" -a
+          git push
 
       - name: update push timestamp
         if: github.event_name == 'push'
@@ -107,10 +108,5 @@ jobs:
           git add .github/last_push_time.txt
           git commit -m "update last push timestamp" || echo "No changes"
           git push
-      - name: push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: "auto/data-update"
 
 
