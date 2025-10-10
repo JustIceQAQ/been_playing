@@ -54,3 +54,4 @@
     - [有章藝術博物館](https://museum.ntua.edu.tw)
     -
     - [高雄市立歷史博物館](https://khm.org.tw/tw)
+    - [高雄市立美術館](https://www.kmfa.gov.tw/)
