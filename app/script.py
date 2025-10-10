@@ -27,6 +27,7 @@ from .exhibition.ntpc.script import NTPCRunner
 from .exhibition.ntsec.script import NtSecRunner
 from .exhibition.ocam.script import OCAMRunner
 from .exhibition.pact import PactRunner
+from .exhibition.pier2 import Pier2Runner
 from .exhibition.redhouse import RedHouseRunner
 from .exhibition.shungyeart.script import ShungYeArtRunner
 from .exhibition.songshanculturalpark.script import SongShanCulturalParkRunner
@@ -94,4 +95,5 @@ PY_CLASS_SCRIPT = {
     KhmRunner,
     CultureExpressRunner,
     KmFaRunner,
+    Pier2Runner,
 }
