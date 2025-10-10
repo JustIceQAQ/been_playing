@@ -39,27 +39,6 @@ jobs:
         with:
           ref: "auto/data-update"
 
-      - name: check recent manual push
-        id: check_push
-        run: |
-          FILE=".github/last_push_time.txt"
-          if [ -f "$FILE" ]; then
-            last_push=$(cat $FILE)
-            now=$(date +%s)
-            diff=$(( (now - last_push) / 3600 ))
-            echo "⏱️ 時差：$diff 小時"
-            if [ "$diff" -lt 7 ]; then
-              echo "最近 $diff 小時內有 push，跳過這次自動任務"
-              echo "skip=true" >> $GITHUB_OUTPUT
-              exit 0
-            fi
-          else
-            echo "沒有記錄檔，繼續執行"
-          fi
-          echo "skip=false" >> $GITHUB_OUTPUT
-      - name: skip if recent push
-        if: steps.check_push.outputs.skip == 'true'
-        run: echo "⏭️ Skip execution due to recent push"
 
       - name: setup python 3.10
         uses: actions/setup-python@v2
@@ -98,15 +77,5 @@ jobs:
           git add -A
           git commit -m "update data/*.json from async process" -a
 
-
-      - name: update push timestamp
-        if: github.event_name == 'push'
-        run: |
-          echo $(date +%s) > .github/last_push_time.txt
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .github/last_push_time.txt
-          git commit -m "update last push timestamp" || echo "No changes"
-          git push
 
 
