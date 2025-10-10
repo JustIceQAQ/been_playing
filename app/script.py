@@ -32,6 +32,7 @@ from .exhibition.redhouse import RedHouseRunner
 from .exhibition.shungyeart.script import ShungYeArtRunner
 from .exhibition.songshanculturalpark.script import SongShanCulturalParkRunner
 from .exhibition.taipeiexpopark.script import TaipeiExPoParkRunner
+from .exhibition.tcm import TcmRunner
 from .exhibition.tfam.script import TFamRunner
 from .exhibition.tmc.script import TmcRunner
 from .exhibition.tncmmm.script import TncMMMRunner
@@ -96,4 +97,5 @@ PY_CLASS_SCRIPT = {
     CultureExpressRunner,
     KmFaRunner,
     Pier2Runner,
+    TcmRunner,
 }
