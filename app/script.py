@@ -9,6 +9,7 @@ from .exhibition.jam.script import JamRunner
 from .exhibition.kdmofa.script import KdMoFaRunner
 from .exhibition.khm import KhmRunner
 from .exhibition.kingcarart.script import KingCarArtRunner
+from .exhibition.kmfa import KmFaRunner
 from .exhibition.mocataipei.script import MoCaTaipeiRunner
 from .exhibition.museumpost.script import MuseumPostRunner
 from .exhibition.mwr.script import MwrRunner
@@ -26,10 +27,12 @@ from .exhibition.ntpc.script import NTPCRunner
 from .exhibition.ntsec.script import NtSecRunner
 from .exhibition.ocam.script import OCAMRunner
 from .exhibition.pact import PactRunner
+from .exhibition.pier2 import Pier2Runner
 from .exhibition.redhouse import RedHouseRunner
 from .exhibition.shungyeart.script import ShungYeArtRunner
 from .exhibition.songshanculturalpark.script import SongShanCulturalParkRunner
 from .exhibition.taipeiexpopark.script import TaipeiExPoParkRunner
+from .exhibition.tcm import TcmRunner
 from .exhibition.tfam.script import TFamRunner
 from .exhibition.tmc.script import TmcRunner
 from .exhibition.tncmmm.script import TncMMMRunner
@@ -92,4 +95,7 @@ PY_CLASS_SCRIPT = {
     YoChangArtRunner,
     KhmRunner,
     CultureExpressRunner,
+    KmFaRunner,
+    Pier2Runner,
+    TcmRunner,
 }

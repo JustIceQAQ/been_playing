@@ -99,7 +99,6 @@ jobs:
           git commit -m "update data/*.json from async process" -a
 
       - name: update push timestamp
-        if: github.event_name == 'push'
         run: |
           echo $(date +%s) > .github/last_push_time.txt
           git config --local user.email "action@github.com"
