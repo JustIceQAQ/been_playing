@@ -51,6 +51,15 @@ const exhibitionTopicClass = [
     new Exhibition("khm", "高雄市立歷史博物館",
         new ButtonStyle("#fff", "#228b82", "#228b82")
     ),
+    new Exhibition("KmFa", "高雄市立美術館",
+        new ButtonStyle("#fff", "#228b82", "#228b82")
+    ),
+    new Exhibition("Pier2", "駁2藝術特區",
+        new ButtonStyle("#fff", "#228b82", "#228b82")
+    ),
+    new Exhibition("Tcm", "臺南市立博物館",
+        new ButtonStyle("#fff", "#228b82", "#228b82")
+    ),
 ]
 
 const allTopicClass = [].concat(exhibitionTopicClass)
