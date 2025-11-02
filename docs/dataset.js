@@ -43,6 +43,9 @@ const platformTopicClass = [
     ),
     new Exhibition("CultureExpress", "文化快遞",
         new ButtonStyle("#fff", "#313131", "#313131")
+    ),
+    new Exhibition("GaCc", "中華文化總會",
+        new ButtonStyle("#fff", "#7b0025", "#7b0025")
     )
 
 ]
