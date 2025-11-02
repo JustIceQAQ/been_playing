@@ -56,4 +56,5 @@
     - [高雄市立歷史博物館](https://khm.org.tw/tw)
     - [高雄市立美術館](https://www.kmfa.gov.tw/)
     - [駁2藝術特區](https://pier2.org/)
+    - [國立科學工藝博物館](https://www.nstm.gov.tw/)
     - [臺南市立博物館](https://tcm.tainan.gov.tw/)
