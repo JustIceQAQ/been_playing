@@ -2,7 +2,9 @@ import httpx
 
 
 class HttpxAsyncClient:
-    def __init__(self, timeout: int | None = None, *args, **kwargs) -> None:
+    def __init__(
+        self, timeout: int | None | httpx.Timeout = None, *args, **kwargs
+    ) -> None:
         self.args = args
         self.kwargs = kwargs
         self.client = httpx.AsyncClient(timeout=timeout, *args, **kwargs)
