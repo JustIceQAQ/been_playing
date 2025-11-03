@@ -20,10 +20,11 @@ class N228MMParse(ParseInit):
         soup = BeautifulSoup(top_paragraph, "html.parser")
         text = soup.get_text()
         text = re.sub(r"[（(][^）)]*[）)]", "", text)
-        date_pattern = re.compile(r"展覽期間[:：]?\s*([^\n]+)", re.IGNORECASE)
+        date_pattern = re.compile(r"展覽期間[：]?\s*([^\n]+)", re.IGNORECASE)
 
         def parse_date(text):
-            date_matches = re.findall(r"(\d{4})[年/-](\d{1,2})[月/-](\d{1,2})", text)
+            pattern = r"(\d{4})\s*[年/-]\s*(\d{1,2})\s*[月/-]\s*(\d{1,2})\s*日?"
+            date_matches = re.findall(pattern, text)
             return [
                 f"{int(y):04d}-{int(m):02d}-{int(d):02d}" for y, m, d in date_matches
             ]
