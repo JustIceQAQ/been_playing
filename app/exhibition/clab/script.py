@@ -35,7 +35,7 @@ class CLabRunner(RunnerInit):
         filter_month = today.month
         target_url_template = (
             "https://clab.org.tw/events/?"
-            "event_category=exhibition"
+            "event_category="
             "&filter_year={filter_year}"
             "&filter_month={filter_month}"
         )

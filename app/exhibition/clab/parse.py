@@ -47,9 +47,9 @@ class CLabParse(ParseInit):
         return result_date
 
     def get_address(self, *args, **kwargs) -> str:
-        return (
-            self.item.find("p", {"class": "a-base-card__location"}).get_text().strip()
-        )
+        address = self.item.find("p", {"class": "a-base-card__location"})
+        if address is not None:
+            return address.get_text(strip=True)
 
     def get_figure(self, *args, **kwargs) -> str | None:
         div = self.item.find("div", {"class": "a-base-card__thumbnail"})
