@@ -33,7 +33,12 @@ class MoCaTaipeiParse(ParseInit):
         return f"{start_date} ~ {end_date}"
 
     def get_address(self, *args, **kwargs) -> str | None:
-        return None
+        sub_title = self.item.find("h4", {"class": "imgSubTitle"}).get_text(strip=True)
+        if not sub_title:
+            return None
+        if "MoCA Video" in sub_title:
+            return f"台北當代藝術館廣場電視牆 ({sub_title})"
+        return sub_title
 
     def get_figure(self, *args, **kwargs) -> str:
         target_domain = kwargs.get("target_domain", None)
