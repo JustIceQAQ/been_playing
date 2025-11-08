@@ -20,6 +20,7 @@ from .exhibition.nhrm.script import NHRMRunner
 from .exhibition.nmh.script import NmhRunner
 from .exhibition.npm.script import NpmRunner
 from .exhibition.nrm import NrmRunner
+from .exhibition.ntaec import NTAECRunner
 from .exhibition.ntc_art_museum.script import NtcArtMuseumRunner
 from .exhibition.ntcri.script import NTCRIRunner
 from .exhibition.ntm.script import NtmRunner
@@ -102,4 +103,5 @@ PY_CLASS_SCRIPT = {
     TcmRunner,
     GaCcRunner,
     KmoaRunner,
+    NTAECRunner,
 }
