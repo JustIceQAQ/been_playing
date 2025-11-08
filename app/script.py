@@ -2,6 +2,7 @@ from .exhibition.bopiliao.script import BoPiLiaoRunner
 from .exhibition.chipolin import ChiPoLinRunner
 from .exhibition.cksmh.script import CKSMHRunner
 from .exhibition.clab.script import CLabRunner
+from .exhibition.culture435 import Culture435Runner
 from .exhibition.fubonartmuseum.script import FuBonArtMuseumRunner
 from .exhibition.hong_gah.script import HongGahRunner
 from .exhibition.huashan1914.script import HuaShan1914Runner
@@ -104,4 +105,5 @@ PY_CLASS_SCRIPT = {
     GaCcRunner,
     KmoaRunner,
     NTAECRunner,
+    Culture435Runner,
 }
