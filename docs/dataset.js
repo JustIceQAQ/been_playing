@@ -152,8 +152,21 @@ const exhibitionTopicClass = [
     new Exhibition("YoChangArt", "有章藝術博物館",
         new ButtonStyle("#fff", "#585656", "#585656")
     ),
+    new Exhibition("NTAEC", "國立台灣藝術教育館",
+        new ButtonStyle("#fff", "#b83a32", "#24318e")
+    ),
+
+    new Exhibition("kmoa", "基隆美術館",
+        new ButtonStyle("#fff", "#e35449", "#e35449")
+    ),
+
+    new Exhibition("Culture435", "板橋435藝文特區",
+        new ButtonStyle("#fff", "#e35449", "#e35449")
+    ),
+
+
     new Exhibition("khm", "高雄市立歷史博物館",
-        new ButtonStyle("#fff", "#228b82", "#228b82")
+        new ButtonStyle("#fff", "#e2007e", "#009fe7")
     ),
 ]
 
