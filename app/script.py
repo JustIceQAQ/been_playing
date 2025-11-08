@@ -10,6 +10,7 @@ from .exhibition.kdmofa.script import KdMoFaRunner
 from .exhibition.khm import KhmRunner
 from .exhibition.kingcarart.script import KingCarArtRunner
 from .exhibition.kmfa import KmFaRunner
+from .exhibition.kmoa import KmoaRunner
 from .exhibition.mocataipei.script import MoCaTaipeiRunner
 from .exhibition.museumpost.script import MuseumPostRunner
 from .exhibition.mwr.script import MwrRunner
@@ -100,4 +101,5 @@ PY_CLASS_SCRIPT = {
     Pier2Runner,
     TcmRunner,
     GaCcRunner,
+    KmoaRunner,
 }
