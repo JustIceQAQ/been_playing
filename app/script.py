@@ -2,6 +2,7 @@ from .exhibition.bopiliao.script import BoPiLiaoRunner
 from .exhibition.chipolin import ChiPoLinRunner
 from .exhibition.cksmh.script import CKSMHRunner
 from .exhibition.clab.script import CLabRunner
+from .exhibition.culture435 import Culture435Runner
 from .exhibition.fubonartmuseum.script import FuBonArtMuseumRunner
 from .exhibition.hong_gah.script import HongGahRunner
 from .exhibition.huashan1914.script import HuaShan1914Runner
@@ -10,6 +11,7 @@ from .exhibition.kdmofa.script import KdMoFaRunner
 from .exhibition.khm import KhmRunner
 from .exhibition.kingcarart.script import KingCarArtRunner
 from .exhibition.kmfa import KmFaRunner
+from .exhibition.kmoa import KmoaRunner
 from .exhibition.mocataipei.script import MoCaTaipeiRunner
 from .exhibition.museumpost.script import MuseumPostRunner
 from .exhibition.mwr.script import MwrRunner
@@ -19,6 +21,7 @@ from .exhibition.nhrm.script import NHRMRunner
 from .exhibition.nmh.script import NmhRunner
 from .exhibition.npm.script import NpmRunner
 from .exhibition.nrm import NrmRunner
+from .exhibition.ntaec import NTAECRunner
 from .exhibition.ntc_art_museum.script import NtcArtMuseumRunner
 from .exhibition.ntcri.script import NTCRIRunner
 from .exhibition.ntm.script import NtmRunner
@@ -100,4 +103,7 @@ PY_CLASS_SCRIPT = {
     Pier2Runner,
     TcmRunner,
     GaCcRunner,
+    KmoaRunner,
+    NTAECRunner,
+    Culture435Runner,
 }
