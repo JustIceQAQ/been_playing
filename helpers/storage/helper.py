@@ -166,11 +166,16 @@ class Exhibition(BaseModel):
         / "v2",
         is_unique: bool | None = True,
         is_sort: bool | None = True,
+        prefix: str | None = None,
     ):
         if is_unique:
             self.items = self.deduplicate_items(self.items)
         if is_sort:
             self.items.sort()
+        this_folder = Path(__file__).parent.parent.parent.absolute()
+        if prefix is not None:
+            this_folder = this_folder / "data" / prefix
+            this_folder.mkdir(exist_ok=True)
 
-        async with async_open(folder / f"{filename}.json", "w+") as afp:
+        async with async_open(this_folder / f"{filename}.json", "w+") as afp:
             await afp.write(self.model_dump_json())

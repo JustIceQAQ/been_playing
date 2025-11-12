@@ -125,7 +125,7 @@ class RunnerInit(abc.ABC):
 
         return hashlib.sha256(content.encode("utf-8")).hexdigest()
 
-    async def run(self, cache: Cache, image):
+    async def run(self, cache: Cache, image, prefix: str | None = None):
         try:
             self.cache = cache
             self.image = image
@@ -154,6 +154,7 @@ class RunnerInit(abc.ABC):
                 f"{self.information_.code_name}",
                 is_unique=self.is_unique,
                 is_sort=self.is_sort,
+                prefix=prefix,
             )
         except Exception as e:  # noqa F841
             print(traceback.format_exc())
