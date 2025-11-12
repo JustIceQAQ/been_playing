@@ -64,6 +64,9 @@ jobs:
       - name: setup python 3.12 with uv
         uses: astral-sh/setup-uv@v2
 
+      - name: create virtual environment
+        run: uv venv
+
       - uses: actions/cache@v3
         with:
           path: ~/.cache/uv
@@ -71,7 +74,7 @@ jobs:
 
       - name: install dependencies with uv
         run: |
-          uv pip install --system -r requirements.txt
+          uv pip install -r requirements.txt
 
       - name: run async script with uv
         run: |
