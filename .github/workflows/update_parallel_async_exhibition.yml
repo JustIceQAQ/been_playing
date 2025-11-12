@@ -33,6 +33,7 @@ jobs:
           - { worker: 3, max-worker: 5 }
           - { worker: 4, max-worker: 5 }
           - { worker: 5, max-worker: 5 }
+          - { worker: 6, max-worker: 6 }
 
     steps:
       - name: set timezone
@@ -81,6 +82,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: worker
     steps:
+      - name: Checkout repo content
+        uses: actions/checkout@v3
+        with:
+          ref: "auto/data-update"
       - name: Download all partial results
         uses: actions/download-artifact@v4
         with:
