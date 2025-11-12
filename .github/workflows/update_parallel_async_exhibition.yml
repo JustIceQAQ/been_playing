@@ -97,11 +97,11 @@ jobs:
           python - <<'EOF'
           import shutil, pathlib
           data_dir = pathlib.Path("data")
-          (data_dir / "v2.1").mkdir(exist_ok=True)
-          for subdir in data_dir.glob("worker_*"):
+          (data_dir / "v2_1").mkdir(exist_ok=True)
+          for subdir in data_dir.glob("worker_*/**"):
               if subdir.is_dir():
-                  for json_file in subdir.glob("*.json"):
-                      shutil.move(str(json_file), data_dir / "v2.1" / json_file.name)
+                  for json_file in subdir.glob("**/*.json"):
+                      shutil.move(str(json_file), data_dir / "v2_1" / json_file.name)
                       print(f"Moved: {json_file.name}")
                   try:
                       subdir.rmdir()
