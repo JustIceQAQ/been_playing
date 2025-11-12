@@ -71,7 +71,7 @@ jobs:
 
       - name: install dependencies with uv
         run: |
-          uv pip install -r requirements.txt
+          uv pip install --system -r requirements.txt
 
       - name: run async script with uv
         run: |
