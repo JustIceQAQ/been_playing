@@ -31,16 +31,18 @@ async def main(worker: int | None = None, worker_max: int | None = None):
     disk_cache = NoneCache() if runtime_setting.IS_DEBUG else DiskCache()
     job = list(PY_CLASS_SCRIPT)
     script_total = len(job)
+    prefix = None
     if (worker is not None) and (worker_max is not None) and (worker_max > 0):
         chunk_size = (script_total + worker_max - 1) // worker_max
         start = (worker - 1) * chunk_size
         end = min(start + chunk_size, script_total)
         scripts_to_run = job[start:end]
+        prefix = f"worker_{worker}"
     else:
         scripts_to_run = job
 
     all_async_script_runners = [
-        RunnerObj().run(disk_cache, imgur) for RunnerObj in scripts_to_run
+        RunnerObj().run(disk_cache, imgur, prefix) for RunnerObj in scripts_to_run
     ]
     await asyncio.gather(*all_async_script_runners, return_exceptions=True)
 
