@@ -6,6 +6,7 @@ permissions:
 
 env:
   BRANCH: "auto/data-update"
+  MAX_WORKER: 6
 
 on:
   workflow_dispatch:
@@ -28,12 +29,12 @@ jobs:
     strategy:
       matrix:
         range:
-          - { worker: 1, max-worker: 5 }
-          - { worker: 2, max-worker: 5 }
-          - { worker: 3, max-worker: 5 }
-          - { worker: 4, max-worker: 5 }
-          - { worker: 5, max-worker: 5 }
-          - { worker: 6, max-worker: 6 }
+          - { worker: 1, max-worker: ${ { env.MAX_WORKER } } }
+          - { worker: 2, max-worker: ${ { env.MAX_WORKER } } }
+          - { worker: 3, max-worker: ${ { env.MAX_WORKER } } }
+          - { worker: 4, max-worker: ${ { env.MAX_WORKER } } }
+          - { worker: 5, max-worker: ${ { env.MAX_WORKER } } }
+          - { worker: 6, max-worker: ${ { env.MAX_WORKER } } }
 
     steps:
       - name: set timezone
