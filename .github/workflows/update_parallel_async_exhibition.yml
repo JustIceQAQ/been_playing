@@ -75,7 +75,7 @@ jobs:
       - name: Upload partial results
         uses: actions/upload-artifact@v4
         with:
-          name: results-${{ matrix.range.worker }}-${{ matrix.range.max-worker }}
+          name: worker_${{ matrix.range.worker }}
           path: data/worker_*/*.json
   merge-results:
     runs-on: ubuntu-latest
@@ -108,9 +108,10 @@ jobs:
 
       - name: commit files
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git config --local --unset-all "http.https://github.com/.extraheader"
+          ls -l
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git config --unset-all "http.https://github.com/.extraheader"
           git add -A
           git commit -m "update data/*.json from async process" -a
       - name: push changes
