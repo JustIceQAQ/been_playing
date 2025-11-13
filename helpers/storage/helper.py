@@ -172,9 +172,11 @@ class Exhibition(BaseModel):
             self.items = self.deduplicate_items(self.items)
         if is_sort:
             self.items.sort()
-        this_folder = Path(__file__).parent.parent.parent.absolute()
+        this_folder = folder
         if prefix is not None:
-            this_folder = this_folder / "data" / prefix
+            this_folder = (
+                Path(__file__).parent.parent.parent.absolute() / "data" / prefix
+            )
             this_folder.mkdir(exist_ok=True)
 
         async with async_open(this_folder / f"{filename}.json", "w+") as afp:
