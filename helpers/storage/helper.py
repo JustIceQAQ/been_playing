@@ -149,6 +149,7 @@ class Exhibition(BaseModel):
     counts: int = 0
     items: list[ExhibitionItem] = Field(default_factory=list)
     last_update: str = Field(default_factory=datetime_now_iso_format)
+    execution_time: float | None = Field(default=None)
 
     @model_validator(mode="after")
     def generate_counts(cls, values):
@@ -164,6 +165,7 @@ class Exhibition(BaseModel):
         folder: str | Path | None = Path(__file__).parent.parent.parent.absolute()
         / "data"
         / "v2",
+        execution_time: float | None = None,
         is_unique: bool | None = True,
         is_sort: bool | None = True,
         prefix: str | None = None,
@@ -178,6 +180,6 @@ class Exhibition(BaseModel):
                 Path(__file__).parent.parent.parent.absolute() / "data" / prefix
             )
             this_folder.mkdir(exist_ok=True)
-
+        self.execution_time = execution_time
         async with async_open(this_folder / f"{filename}.json", "w+") as afp:
             await afp.write(self.model_dump_json())
