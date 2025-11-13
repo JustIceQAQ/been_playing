@@ -2,6 +2,7 @@ import abc
 import asyncio
 import hashlib
 import json
+import time
 import traceback
 from typing import Any
 import httpx
@@ -126,6 +127,7 @@ class RunnerInit(abc.ABC):
         return hashlib.sha256(content.encode("utf-8")).hexdigest()
 
     async def run(self, cache: Cache, image, prefix: str | None = None):
+        start_time = time.time()
         try:
             self.cache = cache
             self.image = image
@@ -149,12 +151,15 @@ class RunnerInit(abc.ABC):
                 await self.suffix_item_from_url_auto(self.exhibition_.items)
             if self.use_suffix_item_from_file_func:
                 await self.suffix_item_from_file(self.exhibition_.items)
-
+            end_time = time.time()
+            execution_time = end_time - start_time
             await self.exhibition_.save_to_local(
                 f"{self.information_.code_name}",
+                execution_time=execution_time,
                 is_unique=self.is_unique,
                 is_sort=self.is_sort,
                 prefix=prefix,
             )
+
         except Exception as e:  # noqa F841
             print(traceback.format_exc())
