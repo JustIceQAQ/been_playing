@@ -1,0 +1,1 @@
+for .script import {{cookiecutter.script_code}}Runner # noqa
