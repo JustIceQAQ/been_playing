@@ -1,0 +1,33 @@
+{
+  "information": {
+    "fullname": "國立臺南生活美學館",
+    "code_name": "tncsec",
+    "external_link": "https://www.tncsec.gov.tw/News_actives.aspx?n=2921&sms=11885&page=1&PageSize=30",
+    "map_url": null,
+    "address": null,
+    "google_map_place_id": null
+  },
+  "counts": 2,
+  "items": [
+    {
+      "title": "𨑨迌物─遊戲與生活美學展覽",
+      "date": "2025-09-26 ~ 2026-08-30",
+      "address": "2館1樓、2樓大廳、第二、三展覽室、藝術轉動社區研究室",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/TNCSEC/JpgFile/01/50581/AD/50581_0_0_231456.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/TNCSEC/Detail.init.ctr?actId=50581",
+      "tags": null,
+      "UUID": "f88ec952689257779a891e17b523736a"
+    },
+    {
+      "title": "生活藝術家侯文釗創作回顧展",
+      "date": "2025-10-16 ~ 2025-12-31",
+      "address": "第一展覽室",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/TNCSEC/JpgFile/01/50562/AD/50562_0_0_929597.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/TNCSEC/Detail.init.ctr?actId=50562",
+      "tags": null,
+      "UUID": "12e5fa75be0456bf96fe526c48630aa4"
+    }
+  ],
+  "last_update": "2025-11-17T22:29:31.812935+08:00",
+  "execution_time": 0.6779670715332031
+}

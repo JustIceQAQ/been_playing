@@ -40,6 +40,7 @@ from .exhibition.tfam.script import TFamRunner
 from .exhibition.tmc.script import TmcRunner
 from .exhibition.tnammuseum import TnamMuseumRunner
 from .exhibition.tncmmm.script import TncMMMRunner
+from .exhibition.tncsec import TnCsEcRunner
 from .exhibition.twtc.script import TwTcRunner
 from .exhibition.yatsen import YatsenRunner
 from .exhibition.yochangart import YoChangArtRunner
@@ -108,4 +109,5 @@ PY_CLASS_SCRIPT = {
     NTAECRunner,
     Culture435Runner,
     TnamMuseumRunner,
+    TnCsEcRunner,
 }
