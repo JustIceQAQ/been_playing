@@ -38,6 +38,7 @@ from .exhibition.taipeiexpopark.script import TaipeiExPoParkRunner
 from .exhibition.tcm import TcmRunner
 from .exhibition.tfam.script import TFamRunner
 from .exhibition.tmc.script import TmcRunner
+from .exhibition.tnammuseum import TnamMuseumRunner
 from .exhibition.tncmmm.script import TncMMMRunner
 from .exhibition.twtc.script import TwTcRunner
 from .exhibition.yatsen import YatsenRunner
@@ -106,4 +107,5 @@ PY_CLASS_SCRIPT = {
     KmoaRunner,
     NTAECRunner,
     Culture435Runner,
+    TnamMuseumRunner,
 }
