@@ -156,6 +156,12 @@ const exhibitionTopicClass = [
         new ButtonStyle("#fff", "#b83a32", "#24318e")
     ),
 
+    new Exhibition("ChiPoLin", "齊柏林空間",
+        new ButtonStyle("#fff", "#585656", "#585656")
+    ),
+
+
+
     new Exhibition("kmoa", "基隆美術館",
         new ButtonStyle("#fff", "#e35449", "#e35449")
     ),
@@ -163,6 +169,8 @@ const exhibitionTopicClass = [
     new Exhibition("Culture435", "板橋435藝文特區",
         new ButtonStyle("#fff", "#e35449", "#e35449")
     ),
+
+
 
 
     new Exhibition("khm", "高雄市立歷史博物館",

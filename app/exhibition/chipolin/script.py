@@ -15,6 +15,7 @@ from helpers.image.none.helper import NoneImage
 class ChiPoLinRunner(RunnerInit):
     translation = BeautifulSoupTranslation
     use_parse = ChiPoLinParse
+    is_sort = False
 
     def set_cache_expire(self) -> int | None:
         return month_3()
