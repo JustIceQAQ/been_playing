@@ -27,7 +27,7 @@ class TnamMuseumParse(ParseInit):
         return self.item.find("div", {"class": "location"}).get_text(strip=True)
 
     def get_figure(self, *args, **kwargs) -> str | None:
-        return self.item.find("img").get("src")
+        return "https://www.tnam.museum/" + self.item.find("img").get("src")
 
     def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
