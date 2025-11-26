@@ -54,11 +54,15 @@
     - [西門紅樓](https://www.redhouse.taipei/index.aspx)
     - [有章藝術博物館](https://museum.ntua.edu.tw)
     - [國立台灣藝術教育館](https://www.arte.gov.tw/)
-    - [基隆美術館](https://kmoa.klcg.gov.tw/)
     - [板橋435藝文特區](https://www.435.culture.ntpc.gov.tw/)
+    - [齊柏林空間](https://www.chipolin.org/)
+    - [基隆美術館](https://kmoa.klcg.gov.tw/)
     -
     - [高雄市立歷史博物館](https://khm.org.tw/tw)
     - [高雄市立美術館](https://www.kmfa.gov.tw/)
     - [駁2藝術特區](https://pier2.org/)
-    - [國立科學工藝博物館](https://www.nstm.gov.tw/)
+
+    -
     - [臺南市立博物館](https://tcm.tainan.gov.tw/)
+    - [臺南市美術館](https://www.tnam.museum/)
+    - [國立臺南生活美學館](https://www.tncsec.gov.tw)

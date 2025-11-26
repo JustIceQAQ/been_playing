@@ -1,7 +1,7 @@
 import asyncio
 
 import bs4
-from app.exhibition.chipolin.parse import ChiPoLinParse
+from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.parse import {{cookiecutter.script_code}}Parse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
@@ -12,35 +12,34 @@ from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
 
-class ChiPoLinRunner(RunnerInit):
+class {{cookiecutter.script_code}}Runner(RunnerInit):
     translation = BeautifulSoupTranslation
-    use_parse = ChiPoLinParse
-    is_sort = False
+    use_parse = {{cookiecutter.script_code}}Parse
 
     def set_cache_expire(self) -> int | None:
         return month_3()
 
     def set_information(self) -> "Information":
         return Information(
-            fullname="齊柏林空間",
-            code_name="ChiPoLin",
-            external_link="https://www.chipolin.org/exhibition",
+            fullname="",
+            code_name="",
+            external_link=""
         )
 
     async def fetch_response(self):
         headers = dict(**get_header())
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get("https://www.chipolin.org/exhibition")
+            response = await client.get()
         return response.text
 
     async def fetch_parsed(self):
         parsed: bs4.BeautifulSoup = await super().fetch_parsed()
-        return parsed.find_all("li", {"class": "exhibition__item"})
+
 
 
 async def main():
-    await ChiPoLinRunner().run(NoneCache(), NoneImage())
+    await {{cookiecutter.script_code}}Runner().run(NoneCache(), NoneImage())
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     asyncio.run(main())

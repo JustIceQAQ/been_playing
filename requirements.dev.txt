@@ -7,3 +7,5 @@ pytest-xdist==3.8.0 # https://github.com/pytest-dev/pytest-xdist
 Faker==38.0.0
 click==8.3.0
 zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
+cookiecutter
+click

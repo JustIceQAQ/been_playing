@@ -1,6 +1,5 @@
 const URL_SOURCE = "https://raw.githubusercontent.com/JustIceQAQ/been_playing/auto/data-update/data/v2/"
 
-// const URL_SOURCE = "https://raw.githubusercontent.com/JustIceQAQ/been_playing/refs/heads/develop/data/v2/"
 
 class Exhibition {
     constructor(topic, name, buttonStyle) {
@@ -58,6 +57,12 @@ const exhibitionTopicClass = [
         new ButtonStyle("#fff", "#228b82", "#228b82")
     ),
     new Exhibition("Tcm", "臺南市立博物館",
+        new ButtonStyle("#fff", "#228b82", "#228b82")
+    ),
+    new Exhibition("tncsec", "國立臺南生活美學館",
+        new ButtonStyle("#fff", "#228b82", "#228b82")
+    ),
+    new Exhibition("TnamMuseum", "臺南市美術館",
         new ButtonStyle("#fff", "#228b82", "#228b82")
     ),
 ]

@@ -1,0 +1,8 @@
+{
+  "script_code": "ExampleCode",
+  "script_code_lower": "{{ cookiecutter.script_code.lower() }}",
+  "target_sub_directory": [
+    "exhibition",
+    "platform"
+  ]
+}
