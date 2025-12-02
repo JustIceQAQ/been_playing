@@ -1,3 +1,4 @@
+from .exhibition.aaaarchives import AAAArchivesRunner
 from .exhibition.bopiliao.script import BoPiLiaoRunner
 from .exhibition.chipolin import ChiPoLinRunner
 from .exhibition.cksmh.script import CKSMHRunner
@@ -112,4 +113,5 @@ PY_CLASS_SCRIPT = {
     TnamMuseumRunner,
     TnCsEcRunner,
     MoNTUERunner,
+    AAAArchivesRunner,
 }

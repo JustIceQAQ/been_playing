@@ -1,0 +1,37 @@
+import bs4
+
+from helpers.parse_helper import ParseInit
+
+
+class AAAArchivesParse(ParseInit):
+    def __init__(self, item: bs4.element.Tag):
+        self.item = item
+
+    def get_title(self, *args, **kwargs) -> str | None:
+        return self.item.find("a").get("title")
+
+    def get_date(self, *args, **kwargs) -> str | None:
+        i_calendar = self.item.find("i", class_="i_calendar")
+        if i_calendar:
+            raw_date = i_calendar.next_sibling
+            if raw_date:
+                return raw_date.strip().replace("/", "-")
+
+    def get_address(self, *args, **kwargs) -> str | None:
+        return "新北市林口區檔案館路1號 (已洽電詢問，全部展覽皆在林口區)"
+
+    def get_figure(self, *args, **kwargs) -> str | None:
+        img = self.item.find("img")
+        if img:
+            src = img.get("src")
+            return "https://aaa.archives.tw" + src
+
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
+        i_man = self.item.find("i", class_="i_man")
+        if i_man:
+            raw_man = i_man.next_sibling
+            if raw_man:
+                return raw_man.split(",")
+
+    def get_source_url(self, *args, **kwargs) -> str | None:
+        return self.item.find("a").get("href")
