@@ -4,6 +4,7 @@ import bs4
 import httpx
 
 from app.exhibition.khm.parse import KhmParse
+from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
@@ -37,7 +38,7 @@ class KhmRunner(RunnerInit):
         current_exhibitions_url = "https://khm.org.tw/tw/exhibition/currentexhibitions"
         permanent_exhibitions = "https://khm.org.tw/tw/exhibition/permanentexhibitions"
         headers = {**get_header(), "referer": current_exhibitions_url}
-        async with httpx.AsyncClient(headers=headers) as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             current_exhibitions_response = await self.sub_get_response(
                 client, current_exhibitions_url
             )
