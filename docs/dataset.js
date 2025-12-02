@@ -159,7 +159,9 @@ const exhibitionTopicClass = [
     new Exhibition("ChiPoLin", "齊柏林空間",
         new ButtonStyle("#fff", "#585656", "#585656")
     ),
-
+    new Exhibition("MoNTUE", "北師美術館",
+        new ButtonStyle("#fff", "#f0eb4c", "#4b4b4b")
+    ),
 
 
     new Exhibition("kmoa", "基隆美術館",
