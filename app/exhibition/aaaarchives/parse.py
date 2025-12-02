@@ -18,11 +18,7 @@ class AAAArchivesParse(ParseInit):
                 return raw_date.strip().replace("/", "-")
 
     def get_address(self, *args, **kwargs) -> str | None:
-        i_location = self.item.find("i", class_="i_location")
-        if i_location:
-            raw_location = i_location.next_sibling
-            if raw_location:
-                return raw_location.strip()
+        return "新北市林口區檔案館路1號 (已洽電詢問，全部展覽皆在林口區)"
 
     def get_figure(self, *args, **kwargs) -> str | None:
         img = self.item.find("img")
