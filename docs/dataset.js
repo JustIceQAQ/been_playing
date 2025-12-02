@@ -162,6 +162,9 @@ const exhibitionTopicClass = [
     new Exhibition("MoNTUE", "北師美術館",
         new ButtonStyle("#3c3d30", "#f0eb4c", "#4b4b4b")
     ),
+    new Exhibition("AAAArchives", "國家發展委員會檔案管理局",
+        new ButtonStyle("#fff", "#00afa9", "#00192e")
+    ),
 
 
     new Exhibition("kmoa", "基隆美術館",
