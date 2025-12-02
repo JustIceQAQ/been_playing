@@ -13,6 +13,7 @@ from .exhibition.kingcarart.script import KingCarArtRunner
 from .exhibition.kmfa import KmFaRunner
 from .exhibition.kmoa import KmoaRunner
 from .exhibition.mocataipei.script import MoCaTaipeiRunner
+from .exhibition.montue import MoNTUERunner
 from .exhibition.museumpost.script import MuseumPostRunner
 from .exhibition.mwr.script import MwrRunner
 from .exhibition.n228mm.script import N228MMRunner
@@ -110,4 +111,5 @@ PY_CLASS_SCRIPT = {
     Culture435Runner,
     TnamMuseumRunner,
     TnCsEcRunner,
+    MoNTUERunner,
 }
