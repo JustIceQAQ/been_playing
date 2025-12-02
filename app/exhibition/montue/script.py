@@ -2,7 +2,7 @@ import asyncio
 
 import bs4
 import httpx
-
+import logging
 from app.exhibition.montue.parse import MoNTUEParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
@@ -51,6 +51,8 @@ class MoNTUERunner(RunnerInit):
                 divs = soup.find_all("div", {"class": "ptsc pt-sc sc-slider exhibition-slider hide-title hide-mobile"})
                 for div in divs:
                     all_items_url.append(div.find("a").get("href"))
+            if not all_items_url:
+                logging.warning("all_items_url data is %s", bool(all_items_url))
             get_items_context = [
                 self.sub_fetch_response(client, item_url)
                 for item_url in all_items_url
