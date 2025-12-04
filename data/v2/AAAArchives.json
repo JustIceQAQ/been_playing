@@ -10,9 +10,9 @@
   "counts": 8,
   "items": [
     {
-      "title": "「島讀．我們的故事」常設展",
+      "title": "「島讀：我們的故事」常設展",
       "date": "2025-09-02 ~ 2026-12-31",
-      "address": "新北市",
+      "address": "新北市林口區檔案館路1號 (已洽電詢問，展覽皆在林口區新館)",
       "figure": "https://aaa.archives.tw/wSite/public/Attachment/004/f1756695794280.jpg",
       "source_url": "https://aaa.archives.tw/tw/event/306-9800.html",
       "tags": [
@@ -26,7 +26,7 @@
     {
       "title": "重返1987─解嚴檔案特展",
       "date": "2025-09-02 ~ 2027-08-31",
-      "address": "新北市",
+      "address": "新北市林口區檔案館路1號 (已洽電詢問，展覽皆在林口區新館)",
       "figure": "https://aaa.archives.tw/wSite/public/Attachment/004/f1763022141032.png",
       "source_url": "https://aaa.archives.tw/tw/event/306-9798.html",
       "tags": [
@@ -40,7 +40,7 @@
     {
       "title": "「解憶、航班」特展",
       "date": "2025-09-02 ~ 2027-09-02",
-      "address": "新北市",
+      "address": "新北市林口區檔案館路1號 (已洽電詢問，展覽皆在林口區新館)",
       "figure": "https://aaa.archives.tw/wSite/public/Attachment/004/f1756694079575.jpg",
       "source_url": "https://aaa.archives.tw/tw/event/306-9850.html",
       "tags": [
@@ -53,7 +53,7 @@
     {
       "title": "暗夜中不滅的火光：女性政治受難者檔案行動展",
       "date": "2025-09-02 ~ 2026-12-31",
-      "address": "全台",
+      "address": "線上展",
       "figure": "https://aaa.archives.tw/wSite/public/Attachment/004/f1760609289757.png",
       "source_url": "https://aaa.archives.tw/tw/event/306-10178.html",
       "tags": [
@@ -66,7 +66,7 @@
     {
       "title": "「『禁』歌金曲：威權統治時期的臺灣禁歌」行動展",
       "date": "2025-09-02 ~ 2026-12-31",
-      "address": "全台",
+      "address": "線上展",
       "figure": "https://aaa.archives.tw/wSite/public/Attachment/004/f1760582356495.jpg",
       "source_url": "https://aaa.archives.tw/tw/event/306-10171.html",
       "tags": [
@@ -80,7 +80,7 @@
     {
       "title": "「追風的我們：臺灣鐵道檔案風景話」行動展",
       "date": "2025-09-02 ~ 2026-12-31",
-      "address": "全台",
+      "address": "線上展",
       "figure": "https://aaa.archives.tw/wSite/public/Attachment/004/f1760520647224.jpg",
       "source_url": "https://aaa.archives.tw/tw/event/306-10170.html",
       "tags": [
@@ -94,7 +94,7 @@
     {
       "title": "「奇蹟之島：1970~1980從開發到保育臺灣建設檔案」行動展",
       "date": "2025-09-02 ~ 2026-12-31",
-      "address": "全台",
+      "address": "線上展",
       "figure": "https://aaa.archives.tw/wSite/public/Attachment/004/f1739149277571.png",
       "source_url": "https://aaa.archives.tw/tw/event/306-10172.html",
       "tags": [
@@ -108,7 +108,7 @@
     {
       "title": "臺金歲月─臺灣金銅礦務產業檔案行動展",
       "date": "2025-09-02 ~ 2026-12-31",
-      "address": "全台",
+      "address": "線上展",
       "figure": "https://aaa.archives.tw/wSite/public/Attachment/004/f1759920261449.jpg",
       "source_url": "https://aaa.archives.tw/tw/event/306-9936.html",
       "tags": [
@@ -119,6 +119,6 @@
       "UUID": "9f16d6601e5353f6b679f6133b62e3ee"
     }
   ],
-  "last_update": "2025-12-02T12:16:26.223209+08:00",
-  "execution_time": 0.36086297035217285
+  "last_update": "2025-12-04T21:23:33.348006+08:00",
+  "execution_time": 0.44275951385498047
 }

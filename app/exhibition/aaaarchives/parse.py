@@ -8,7 +8,7 @@ class AAAArchivesParse(ParseInit):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
-        return self.item.find("a").get("title")
+        return self.item.find("a").get("title").strip()
 
     def get_date(self, *args, **kwargs) -> str | None:
         i_calendar = self.item.find("i", class_="i_calendar")
@@ -18,7 +18,10 @@ class AAAArchivesParse(ParseInit):
                 return raw_date.strip().replace("/", "-")
 
     def get_address(self, *args, **kwargs) -> str | None:
-        return "新北市林口區檔案館路1號 (已洽電詢問，全部展覽皆在林口區)"
+        title = self.item.find("a").get("title").strip()
+        if "行動展" in title:
+            return "線上展"
+        return "新北市林口區檔案館路1號 (已洽電詢問，展覽皆在林口區新館)"
 
     def get_figure(self, *args, **kwargs) -> str | None:
         img = self.item.find("img")
