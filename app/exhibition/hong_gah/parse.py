@@ -11,7 +11,10 @@ def format_date_ranges(raw_text: str) -> str | None:
     for line in raw_text.strip().splitlines():
         if not line.strip():
             continue
-        start_str, end_str = line.split("-")
+        split_result = line.strip().split("-")
+        if len(split_result) != 2:
+            return split_result[0].replace(".", "-")
+        start_str, end_str = split_result
 
         if len(end_str) == 5:
             start_year = start_str.split(".")[0]
