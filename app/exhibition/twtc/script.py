@@ -11,7 +11,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import ExhibitionItem, Information
+from helpers.storage.helper import ExhibitionItem, Information, Coordinate, TaiwanCity
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import date_now, month_3
 
@@ -25,9 +25,11 @@ class TwTcRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.taipei_city,
             fullname="台北世貿中心",
             code_name="TwTc",
             external_link="https://twtc.com.tw/exhibition?p=home",
+            branch_coordinates=Coordinate(raw_coordinates="25.03358007614386, 121.56240955530657"),
         )
 
     def extract_import(self, response: httpx.Response) -> dict:

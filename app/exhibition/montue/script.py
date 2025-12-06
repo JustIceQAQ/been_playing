@@ -1,4 +1,5 @@
 import asyncio
+import decimal
 
 import bs4
 import httpx
@@ -6,7 +7,7 @@ import logging
 from app.exhibition.montue.parse import MoNTUEParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -24,9 +25,11 @@ class MoNTUERunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.taipei_city,
             fullname="北師美術館",
             code_name="MoNTUE",
-            external_link="https://montue.ntue.edu.tw/"
+            external_link="https://montue.ntue.edu.tw/",
+            branch_coordinates=Coordinate(raw_coordinates="25.024774854666255, 121.54460696977063"),
         )
 
     async def sub_fetch_response(self, client: httpx.AsyncClient, url: str) -> str:

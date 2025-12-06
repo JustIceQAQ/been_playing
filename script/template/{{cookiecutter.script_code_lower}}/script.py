@@ -4,7 +4,7 @@ import bs4
 from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.parse import {{cookiecutter.script_code}}Parse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -23,7 +23,8 @@ class {{cookiecutter.script_code}}Runner(RunnerInit):
         return Information(
             fullname="",
             code_name="",
-            external_link=""
+            external_link="",
+            branch_coordinates=Coordinate(raw_coordinates=None),
         )
 
     async def fetch_response(self):

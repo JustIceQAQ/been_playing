@@ -1,4 +1,5 @@
 import asyncio
+import decimal
 
 import bs4
 
@@ -8,7 +9,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -22,9 +23,11 @@ class NmhRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.taipei_city,
             fullname="國立歷史博物館",
             code_name="Nmh",
             external_link="https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323",
+            branch_coordinates=Coordinate(raw_coordinates="25.0317350368833, 121.51118866791836"),
         )
 
     async def fetch_response(self):

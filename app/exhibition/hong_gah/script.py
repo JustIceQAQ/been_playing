@@ -1,10 +1,11 @@
 import asyncio
+import decimal
 
 import bs4
 from app.exhibition.hong_gah.parse import HongGahParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -23,9 +24,11 @@ class HongGahRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.taipei_city,
             fullname="鳳甲美術館",
             code_name="HongGah",
             external_link="https://hong-gah.org.tw/exhibitions-zh",
+            branch_coordinates=Coordinate(raw_coordinates="25.125315737958747, 121.49922632559256"),
         )
 
     async def fetch_response(self):

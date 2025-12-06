@@ -5,7 +5,7 @@ import bs4
 from app.exhibition.aaaarchives.parse import AAAArchivesParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -22,9 +22,11 @@ class AAAArchivesRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.new_taipei_city,
             fullname="國家發展委員會檔案管理局",
             code_name="AAAArchives",
-            external_link="https://aaa.archives.tw/tw/event/306.html"
+            external_link="https://aaa.archives.tw/tw/event/306.html",
+            branch_coordinates=Coordinate(raw_coordinates="25.07521442685089, 121.37402598256791"),
         )
 
     async def fetch_response(self):

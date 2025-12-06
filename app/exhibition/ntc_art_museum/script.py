@@ -1,4 +1,5 @@
 import asyncio
+import decimal
 
 import bs4
 import httpx
@@ -12,7 +13,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import ExhibitionItem, Information
+from helpers.storage.helper import ExhibitionItem, Information, Coordinate, TaiwanCity
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3, get_asyncio_rate_limit
 
@@ -26,9 +27,11 @@ class NtcArtMuseumRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.new_taipei_city,
             fullname="新北市美術館",
             code_name="NtcArtMuseum",
             external_link="https://ntcart.museum/exhibition",
+            branch_coordinates=Coordinate(raw_coordinates="24.953654641948525, 121.358269212097"),
         )
 
     async def fetch_response(self):

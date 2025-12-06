@@ -1,4 +1,5 @@
 import asyncio
+import decimal
 
 import bs4
 
@@ -8,7 +9,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -22,11 +23,15 @@ class MoCaTaipeiRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.taipei_city,
             fullname="台北當代藝術館",
             code_name="MoCaTaipei",
             external_link="https://www.mocataipei.org.tw/tw/ExhibitionAndEvent",
-            address="台北市大同區103長安西路39號 ",
-            google_map_place_id="ChIJc-TxSWypQjQR-8Eh7elK97Q",
+
+
+            branch_coordinates=Coordinate(google_map_place_id="ChIJc-TxSWypQjQR-8Eh7elK97Q",
+                raw_coordinates="25.05101850889424, 121.51900878326302",
+            ),
         )
 
     async def fetch_response(self):

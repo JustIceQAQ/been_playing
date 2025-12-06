@@ -1,4 +1,5 @@
 import asyncio
+import decimal
 import secrets
 
 import bs4
@@ -7,7 +8,7 @@ import httpx
 from app.exhibition.kmoa.parse import KmoaParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -24,13 +25,15 @@ class KmoaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.keelung_city,
             fullname="基隆美術館",
             code_name="kmoa",
             external_link="https://kmoa.klcg.gov.tw/News_Photo.aspx?n=7484&sms=12489",
+            branch_coordinates=Coordinate(raw_coordinates="25.131248388298207, 121.74399937483508"),
         )
 
     async def fetch_sub_response(
-        self, client: httpx.AsyncClient, context: str
+            self, client: httpx.AsyncClient, context: str
     ) -> list[str]:
         p = BeautifulSoupTranslation().translation_to_object(context)
         div = p.find("div", {"class": "group-list page-block PhotoList"})

@@ -4,7 +4,7 @@ import bs4
 from app.exhibition.yatsen.parse import YatsenParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -21,9 +21,11 @@ class YatsenRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.taipei_city,
             fullname="國立國父紀念館",
             code_name="Yatsen",
             external_link="https://www.yatsen.gov.tw/News_actives.aspx?n=7339&sms=13411",
+            branch_coordinates=Coordinate(raw_coordinates="25.040205545923655, 121.56033102744308"),
         )
 
     async def fetch_response(self):

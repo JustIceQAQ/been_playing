@@ -4,7 +4,7 @@ import urllib.parse
 from app.exhibition.redhouse.parse import RedHouseParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
@@ -22,9 +22,11 @@ class RedHouseRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.taipei_city,
             fullname="西門紅樓",
             code_name="RedHouse",
             external_link="https://www.redhouse.taipei/index.aspx",
+            branch_coordinates=Coordinate(raw_coordinates="25.042286045915937, 121.50683773908234"),
         )
 
     async def fetch_response(self):

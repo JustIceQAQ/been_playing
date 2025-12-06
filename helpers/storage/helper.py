@@ -1,7 +1,10 @@
 import datetime
 import re
 import uuid
+from decimal import Decimal
+from enum import Enum
 from pathlib import Path
+from typing import Any
 
 from aiofile import async_open
 from pydantic import BaseModel, Field, model_validator
@@ -135,13 +138,74 @@ class ExhibitionItem(BaseModel):
         return hash(tuple(values))
 
 
+class TaiwanCity(str, Enum):
+    # 縣 (Counties) - 代碼多源於 ISO 3166/MA
+    changhua_county = "TW-CHA"  # 彰化縣 (Changhua County) - 來源: ISO 3166/MA
+    chiayi_county = "TW-CYQ"  # 嘉義縣 (Chiayi County) - 來源: ISO 3166/MA
+    hsinchu_county = "TW-HSQ"  # 新竹縣 (Hsinchu County) - 來源: ISO 3166/MA
+    hualien_county = "TW-HUA"  # 花蓮縣 (Hualien County) - 來源: ISO 3166/MA
+    yilan_county = "TW-ILA"  # 宜蘭縣 (Yilan County) - 來源: ISO 3166/MA
+    kinmen_county = "TW-KIN"  # 金門縣 (Kinmen County) - 來源: ISO 3166/MA
+    lienchiang_county = "TW-LIE"  # 連江縣 (Lienchiang County) - 來源: ISO 3166/MA
+    miaoli_county = "TW-MIA"  # 苗栗縣 (Miaoli County) - 來源: ISO 3166/MA
+    nantou_county = "TW-NAN"  # 南投縣 (Nantou County) - 來源: ISO 3166/MA
+    penghu_county = "TW-PEN"  # 澎湖縣 (Penghu County) - 來源: ISO 3166/MA
+    pingtung_county = "TW-PIF"  # 屏東縣 (Pingtung County) - 來源: IATA
+    taitung_county = "TW-TTT"  # 臺東縣 (Taitung County) - 來源: IATA
+    yunlin_county = "TW-YUN"  # 雲林縣 (Yunlin County) - 來源: ISO 3166/MA
+
+    # 市 (Cities) / 直轄市 (Special Municipalities) - 代碼多源於 IATA
+    chiayi_city = "TW-CYI"  # 嘉義市 (Chiayi City) - 來源: IATA
+    hsinchu_city = "TW-HSZ"  # 新竹市 (Hsinchu City) - 來源: IATA
+    keelung_city = "TW-KEE"  # 基隆市 (Keelung City) - 來源: ISO 3166/MA
+    kaohsiung_city = "TW-KHH"  # 高雄市 (Kaohsiung City) - 來源: IATA
+    new_taipei_city = "TW-NWT"  # 新北市 (New Taipei City) - 來源: ISO 3166/MA
+    taoyuan_city = "TW-TAO"  # 桃園市 (Taoyuan City) - 來源: ISO 3166/MA
+    tainan_city = "TW-TNN"  # 臺南市 (Tainan City) - 來源: IATA
+    taipei_city = "TW-TPE"  # 臺北市 (Taipei City) - 來源: IATA
+    taichung_city = "TW-TXG"  # 臺中市 (Taichung City) - 來源: IATA
+
+
+class Coordinate(BaseModel):
+    location_code: TaiwanCity | None = Field(default=None, description="ISO 3166/MA")
+    raw_coordinates: str | None = None
+    longitude: Decimal = Field(default=None, description="經度")
+    latitude: Decimal = Field(default=None, description="緯度")
+    google_map_place_id: str | None = Field(
+        default=None, description="Google Map Place ID"
+    )
+    name: str | None = Field(
+        default=None, description="名稱, 若為None 則代表該地點沒有分館"
+    )
+
+    @model_validator(mode="before")
+    @classmethod
+    def process_coordinates(cls, data: Any) -> Any:
+        if isinstance(data, dict):
+            raw_coords = data.get("raw_coordinates")
+            if raw_coords and isinstance(raw_coords, str):
+                try:
+                    parts = raw_coords.split(", ")
+                    if len(parts) == 2:
+                        lat_str, lon_str = parts
+                        data["latitude"] = lat_str
+                        data["longitude"] = lon_str
+
+                except Exception as e:
+                    print(f"座標解析失敗: {e}")
+                    pass
+
+        return data
+
+
 class Information(BaseModel):
     fullname: str
     code_name: str
     external_link: str
-    map_url: str | None = Field(default=None)
-    address: str | None = Field(default=None)
-    google_map_place_id: str | None = Field(default=None)
+    branch_coordinates: Coordinate | list[Coordinate] | None = Field(
+        default=None, description="經緯度"
+    )
+    location_code: TaiwanCity | None = Field(default=None, description="ISO 3166/MA")
 
 
 class Exhibition(BaseModel):

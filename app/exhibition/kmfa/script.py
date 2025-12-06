@@ -1,4 +1,5 @@
 import asyncio
+import decimal
 import uuid
 
 import bs4
@@ -7,7 +8,7 @@ import httpx
 from app.exhibition.kmfa.parse import KmFaParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -24,9 +25,11 @@ class KmFaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.kaohsiung_city,
             fullname="高雄市立美術館",
             code_name="KmFa",
             external_link="https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",
+            branch_coordinates=Coordinate(raw_coordinates="22.65687499527212, 120.28659401204955"),
         )
 
     async def sub_response(self, client: httpx.AsyncClient, url: str) -> str:

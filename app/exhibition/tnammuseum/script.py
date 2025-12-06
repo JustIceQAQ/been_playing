@@ -4,7 +4,7 @@ import bs4
 from app.exhibition.tnammuseum.parse import TnamMuseumParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -22,9 +22,14 @@ class TnamMuseumRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.tainan_city,
             fullname="臺南市美術館",
             code_name="TnamMuseum",
-            external_link="https://www.tnam.museum/exhibition/current?page=1"
+            external_link="https://www.tnam.museum/exhibition/current?page=1",
+            branch_coordinates=[
+                Coordinate(name="一館", raw_coordinates="22.99117888093109, 120.20502606285312"),
+                Coordinate(name="二館", raw_coordinates="22.99055275877767, 120.20140904089217"),
+            ]
         )
 
     async def fetch_response(self):

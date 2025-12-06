@@ -9,7 +9,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -23,9 +23,14 @@ class MuseumPostRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.taipei_city,
             fullname="郵政博物館",
             code_name="MuseumPost",
             external_link="https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage=1",
+            branch_coordinates=[
+                Coordinate(name="本館", raw_coordinates="25.032392367745082, 121.5147638567378"),
+                Coordinate(name="臺北館", raw_coordinates="25.047556287891062, 121.51158812126322"),
+            ]
         )
 
     async def fetch_response(self):
@@ -41,9 +46,9 @@ class MuseumPostRunner(RunnerInit):
             page = 1
             response = await client.get(target_url.format(to_page=page))
             while (
-                self.translation()
-                .translation_to_object(response.text)
-                .select("ul.part_list > li")
+                    self.translation()
+                            .translation_to_object(response.text)
+                            .select("ul.part_list > li")
             ):
                 responses.append(response.text)
                 page += 1

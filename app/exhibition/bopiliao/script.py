@@ -1,4 +1,5 @@
 import asyncio
+import decimal
 
 import httpx
 
@@ -8,7 +9,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 
@@ -22,9 +23,11 @@ class BoPiLiaoRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.taipei_city,
             fullname="剝皮寮歷史街區",
             code_name="BoPiLiao",
             external_link="https://www.bopiliao.taipei/Event_News",
+            branch_coordinates=Coordinate(raw_coordinates="25.03698373119932, 121.50212186318004"),
         )
 
     async def _fetch_url(
