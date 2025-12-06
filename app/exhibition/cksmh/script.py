@@ -1,4 +1,5 @@
 import asyncio
+import decimal
 
 import bs4
 
@@ -7,7 +8,7 @@ from helpers.cache import DiskCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.image.imgur.helper import ImgurImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -28,6 +29,7 @@ class CKSMHRunner(RunnerInit):
             external_link="https://www.cksmh.gov.tw/Default.aspx",
             address="臺北市中正區中山南路21號",
             google_map_place_id="ChIJTamiuZ2pQjQRsmnfkkID6UM",
+            branch_coordinates=Coordinate(raw_coordinates="25.035657453594702, 121.52023682270445"),
         )
 
     async def fetch_response(self) -> str:

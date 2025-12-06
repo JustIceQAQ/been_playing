@@ -1,4 +1,5 @@
 import asyncio
+import decimal
 import secrets
 
 import bs4
@@ -7,7 +8,7 @@ import httpx
 from app.exhibition.nstm.parse import NsTmParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -27,6 +28,7 @@ class NsTmRunner(RunnerInit):
             fullname="國立科學工藝博物館",
             code_name="NsTm",
             external_link="https://www.nstm.gov.tw/ExhibitionList.aspx?ExhibitionType=1&Period=1",
+            branch_coordinates=Coordinate(raw_coordinates="22.64161262350391, 120.32253339088527"),
         )
 
     async def sub_fetch_response(

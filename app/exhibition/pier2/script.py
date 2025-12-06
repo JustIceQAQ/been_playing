@@ -6,7 +6,7 @@ from typing import Any
 from app.exhibition.pier2.parse import Pier2Parse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
@@ -26,6 +26,7 @@ class Pier2Runner(RunnerInit):
             fullname="駁2藝術特區",
             code_name="Pier2",
             external_link="https://pier2.org/exhibition/list/all/",
+            branch_coordinates=Coordinate(raw_coordinates="22.620055196410377, 120.28155879030746"),
         )
 
     async def fetch_response(self):

@@ -10,7 +10,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import ad_to_roc_era, date_now, month_3
 
@@ -27,6 +27,7 @@ class TaipeiExPoParkRunner(RunnerInit):
             fullname="花博公園",
             code_name="TaipeiExPoPark",
             external_link="https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029",
+            branch_coordinates=Coordinate(raw_coordinates="25.069720986746507, 121.52071496978188"),
         )
 
     async def fetch_response(self):

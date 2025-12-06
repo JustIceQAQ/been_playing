@@ -11,7 +11,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, ExhibitionItem
+from helpers.storage.helper import Information, ExhibitionItem, Coordinate
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import datetime_now, month_3, get_asyncio_rate_limit
 
@@ -38,6 +38,7 @@ class NtSecRunner(RunnerInit):
                 "2z5ZyL56uL6Ie654Gj56eR5a245pWZ6IKy6aSo!5e0!3m2!"
                 "1szh-TW!2stw!4v1739201593044!5m2!1szh-TW!2stw"
             ),
+            branch_coordinates=Coordinate(raw_coordinates="25.096328164549, 121.51649185712368"),
         )
 
     def get_this_headers(self) -> dict:

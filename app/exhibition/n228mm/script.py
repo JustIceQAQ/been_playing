@@ -6,7 +6,7 @@ from app.exhibition.n228mm.parse import N228MMParse
 from app.exhibition.n228mm.schemas import CommonConfig, query_p
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
@@ -28,6 +28,7 @@ class N228MMRunner(RunnerInit):
             fullname="二二八國家紀念館",
             code_name="n228mm",
             external_link="https://www.228.org.tw/exhibitionsnew",
+            branch_coordinates=Coordinate(raw_coordinates="25.033429895790064, 121.51444555497802"),
         )
 
     async def fetch_response(self):

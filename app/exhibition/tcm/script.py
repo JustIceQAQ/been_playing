@@ -6,7 +6,7 @@ import httpx
 from app.exhibition.tcm.parse import TcmParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -26,6 +26,7 @@ class TcmRunner(RunnerInit):
             fullname="臺南市立博物館",
             code_name="Tcm",
             external_link="https://tcm.tainan.gov.tw/permanent",
+            branch_coordinates=Coordinate(raw_coordinates="22.987586370137066, 120.20828174089186"),
         )
 
     async def sub_client(self, client: httpx.AsyncClient, url: str):

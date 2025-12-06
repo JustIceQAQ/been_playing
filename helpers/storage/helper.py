@@ -1,7 +1,9 @@
 import datetime
 import re
 import uuid
+from decimal import Decimal
 from pathlib import Path
+from typing import Any
 
 from aiofile import async_open
 from pydantic import BaseModel, Field, model_validator
@@ -135,6 +137,34 @@ class ExhibitionItem(BaseModel):
         return hash(tuple(values))
 
 
+class Coordinate(BaseModel):
+    raw_coordinates: str | None = None
+    longitude: Decimal = Field(default=None, description="經度")
+    latitude: Decimal = Field(default=None, description="緯度")
+    name: str | None = Field(
+        default=None, description="名稱, 若為None 則代表該地點沒有分館"
+    )
+
+    @model_validator(mode="before")
+    @classmethod
+    def process_coordinates(cls, data: Any) -> Any:
+        if isinstance(data, dict):
+            raw_coords = data.get("raw_coordinates")
+            if raw_coords and isinstance(raw_coords, str):
+                try:
+                    parts = raw_coords.split(", ")
+                    if len(parts) == 2:
+                        lat_str, lon_str = parts
+                        data["latitude"] = lat_str
+                        data["longitude"] = lon_str
+
+                except Exception as e:
+                    print(f"座標解析失敗: {e}")
+                    pass
+
+        return data
+
+
 class Information(BaseModel):
     fullname: str
     code_name: str
@@ -142,6 +172,10 @@ class Information(BaseModel):
     map_url: str | None = Field(default=None)
     address: str | None = Field(default=None)
     google_map_place_id: str | None = Field(default=None)
+    branch_coordinates: Coordinate | list[Coordinate] | None = Field(
+        default=None, description="經緯度"
+    )
+    location_code: str | None = Field(default=None, description="ISO 3166/MA")
 
 
 class Exhibition(BaseModel):

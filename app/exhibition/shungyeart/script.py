@@ -5,7 +5,7 @@ import bs4
 from app.exhibition.shungyeart.parse import ShungYeArtParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -25,6 +25,7 @@ class ShungYeArtRunner(RunnerInit):
             fullname="順益台灣美術館",
             code_name="ShungYeArt",
             external_link="https://www.shungye-art.org/show_now.php",
+            branch_coordinates=Coordinate(raw_coordinates="25.046560256806668, 121.51092983908268"),
         )
 
     async def fetch_response(self):

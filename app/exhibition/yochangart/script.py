@@ -5,7 +5,7 @@ import bs4
 from app.exhibition.yochangart.parse import YoChangArtParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -25,6 +25,7 @@ class YoChangArtRunner(RunnerInit):
             fullname="有章藝術博物館",
             code_name="YoChangArt",
             external_link="https://museum.ntua.edu.tw/c001.asp",
+            branch_coordinates=Coordinate(raw_coordinates="25.006981532547897, 121.44882905627831"),
         )
 
     async def fetch_response(self):

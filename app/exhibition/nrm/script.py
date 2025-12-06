@@ -1,10 +1,11 @@
 import asyncio
+import decimal
 
 import bs4
 from app.exhibition.nrm.parse import NrmParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -24,6 +25,7 @@ class NrmRunner(RunnerInit):
             fullname="國家鐵道博物館",
             code_name="Nrm",
             external_link="https://www.nrm.gov.tw/News_actives.aspx?n=3325&sms=13412",
+            branch_coordinates=Coordinate(raw_coordinates="25.04759981549798, 121.56476041209898"),
         )
 
     async def fetch_response(self):

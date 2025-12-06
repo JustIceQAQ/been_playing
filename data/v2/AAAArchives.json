@@ -5,7 +5,14 @@
     "external_link": "https://aaa.archives.tw/tw/event/306.html",
     "map_url": null,
     "address": null,
-    "google_map_place_id": null
+    "google_map_place_id": null,
+    "branch_coordinates": {
+      "raw_coordinates": "25.07521442685089, 121.37402598256791",
+      "longitude": "121.37402598256791",
+      "latitude": "25.07521442685089",
+      "name": null
+    },
+    "location_code": null
   },
   "counts": 8,
   "items": [
@@ -119,6 +126,6 @@
       "UUID": "9f16d6601e5353f6b679f6133b62e3ee"
     }
   ],
-  "last_update": "2025-12-04T21:23:33.348006+08:00",
-  "execution_time": 0.44275951385498047
+  "last_update": "2025-12-06T12:38:29.040288+08:00",
+  "execution_time": 0.41482114791870117
 }

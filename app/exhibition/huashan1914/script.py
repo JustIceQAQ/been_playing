@@ -1,4 +1,5 @@
 import asyncio
+import decimal
 
 import bs4
 
@@ -8,7 +9,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -27,6 +28,7 @@ class HuaShan1914Runner(RunnerInit):
             external_link="https://www.huashan1914.com/w/huashan1914/exhibition",
             address="台北市中正區八德路一段1號",
             google_map_place_id="ChIJbSTgI2WpQjQRcVwWB2cnyfE",
+            branch_coordinates=Coordinate(raw_coordinates="25.044242402011122, 121.5292898083939"),
         )
 
     async def fetch_response(self):

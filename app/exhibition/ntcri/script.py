@@ -1,4 +1,5 @@
 import asyncio
+import decimal
 from typing import Any
 
 from app.exhibition.ntcri.parse import NTCRIParse
@@ -7,7 +8,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
+from helpers.storage.helper import Information, Coordinate
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 
@@ -31,6 +32,9 @@ class NTCRIRunner(RunnerInit):
                 "&sort=sort"
                 "&order=asc"
             ),
+            branch_coordinates=[
+                Coordinate(name="臺北當代工藝設計分館",raw_coordinates="25.03210292140622, 121.51234399386772"),
+            ]
         )
 
     async def fetch_response(self):
