@@ -466,8 +466,14 @@
                     let last_update = exhibition.json["last_update"];
                     let informationFullName = exhibitionInformation["fullname"]
                     let externalLink = exhibitionInformation["external_link"]
-                    let googleMapPlaceId = exhibitionInformation["google_map_place_id"]
-                    // let address = exhibitionInformation["address"]
+                    let coordinate = exhibitionInformation["branch_coordinates"]
+                    let googleMapPlaceId = undefined
+                    if (coordinate !== null && typeof coordinate === 'object'){
+                        googleMapPlaceId = coordinate["google_map_place_id"]
+                    }else if (coordinate !== null && Array.isArray(coordinate)){
+                        googleMapPlaceId = coordinate[0]["google_map_place_id"]
+                    }
+
 
                     let externalLinkEle = ""
                     if (externalLink !== undefined) {

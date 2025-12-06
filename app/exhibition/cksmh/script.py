@@ -1,5 +1,4 @@
 import asyncio
-import decimal
 
 import bs4
 
@@ -27,9 +26,10 @@ class CKSMHRunner(RunnerInit):
             fullname="中正紀念堂",
             code_name="CKSMH",
             external_link="https://www.cksmh.gov.tw/Default.aspx",
-            address="臺北市中正區中山南路21號",
-            google_map_place_id="ChIJTamiuZ2pQjQRsmnfkkID6UM",
-            branch_coordinates=Coordinate(raw_coordinates="25.035657453594702, 121.52023682270445"),
+            branch_coordinates=Coordinate(
+                google_map_place_id="ChIJTamiuZ2pQjQRsmnfkkID6UM",
+                raw_coordinates="25.035657453594702, 121.52023682270445"
+            ),
         )
 
     async def fetch_response(self) -> str:

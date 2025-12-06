@@ -141,6 +141,9 @@ class Coordinate(BaseModel):
     raw_coordinates: str | None = None
     longitude: Decimal = Field(default=None, description="經度")
     latitude: Decimal = Field(default=None, description="緯度")
+    google_map_place_id: str | None = Field(
+        default=None, description="Google Map Place ID"
+    )
     name: str | None = Field(
         default=None, description="名稱, 若為None 則代表該地點沒有分館"
     )
@@ -169,9 +172,6 @@ class Information(BaseModel):
     fullname: str
     code_name: str
     external_link: str
-    map_url: str | None = Field(default=None)
-    address: str | None = Field(default=None)
-    google_map_place_id: str | None = Field(default=None)
     branch_coordinates: Coordinate | list[Coordinate] | None = Field(
         default=None, description="經緯度"
     )

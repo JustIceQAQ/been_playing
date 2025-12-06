@@ -466,14 +466,19 @@
                     let last_update = exhibition.json["last_update"];
                     let informationFullName = exhibitionInformation["fullname"]
                     let externalLink = exhibitionInformation["external_link"]
-                    let googleMapPlaceId = exhibitionInformation["google_map_place_id"]
-                    // let address = exhibitionInformation["address"]
+                    let coordinate = exhibitionInformation["branch_coordinates"]
+                    let googleMapPlaceId = null
+                    if (coordinate !== null && typeof coordinate === 'object'){
+                        googleMapPlaceId = coordinate["google_map_place_id"]
+                    }else if (coordinate !== null && Array.isArray(coordinate)){
+                        googleMapPlaceId = coordinate[0]["google_map_place_id"]
+                    }
 
                     let externalLinkEle = ""
                     if (externalLink !== undefined) {
                         externalLinkEle = `<a class="btn btn-secondary" href="${externalLink}" target="_blank"><strong><i class="bi bi-box-arrow-up-right"></i></strong></a>`;
                     }
-                    if (googleMapPlaceId !== undefined) {
+                    if (googleMapPlaceId !== null) {
                         externalLinkEle = externalLinkEle + `<a style="margin-left: 10px" class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=${informationFullName}&query_place_id=${googleMapPlaceId}" target="_blank"><strong><i class="bi bi-pin-map"></i></strong></a>`;
                     }
                     let shareUrl = `<a style="margin-left: 10px" class="btn btn-secondary" onclick="copyUrlToClipboard('${window.location.origin}${window.location.pathname}?topic=${exhibitionInformation["code_name"]}')" target="_blank"><strong><i class="bi bi-share"></i></strong></a>`

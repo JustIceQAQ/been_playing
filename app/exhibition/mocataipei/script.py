@@ -27,9 +27,11 @@ class MoCaTaipeiRunner(RunnerInit):
             fullname="台北當代藝術館",
             code_name="MoCaTaipei",
             external_link="https://www.mocataipei.org.tw/tw/ExhibitionAndEvent",
-            address="台北市大同區103長安西路39號 ",
-            google_map_place_id="ChIJc-TxSWypQjQR-8Eh7elK97Q",
-            branch_coordinates=Coordinate(raw_coordinates="25.05101850889424, 121.51900878326302"),
+
+
+            branch_coordinates=Coordinate(google_map_place_id="ChIJc-TxSWypQjQR-8Eh7elK97Q",
+                raw_coordinates="25.05101850889424, 121.51900878326302",
+            ),
         )
 
     async def fetch_response(self):

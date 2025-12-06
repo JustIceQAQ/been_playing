@@ -27,10 +27,8 @@ class NtmRunner(RunnerInit):
             fullname="國立臺灣博物館",
             code_name="Ntm",
             external_link="https://www.ntm.gov.tw/Default.aspx",
-            address="臺北市中正區襄陽路2號",
-            google_map_place_id="ChIJcRV3WHOpQjQRFpgzTpxZWgo",
             branch_coordinates=[
-                Coordinate(name="本館", raw_coordinates="25.042991302660226, 121.5151621120989"),
+                Coordinate(google_map_place_id="ChIJcRV3WHOpQjQRFpgzTpxZWgo",name="本館", raw_coordinates="25.042991302660226, 121.5151621120989"),
                 Coordinate(name="古生物館", raw_coordinates="25.043788780293, 121.51440168326278"),
                 Coordinate(name="鐵道部園區", raw_coordinates="25.048869075417418, 121.5113360427876"),
                 Coordinate(name="南門館", raw_coordinates="25.033613597291687, 121.51583661209861"),

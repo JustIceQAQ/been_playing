@@ -1,5 +1,4 @@
 import asyncio
-import decimal
 
 import bs4
 
@@ -26,9 +25,11 @@ class HuaShan1914Runner(RunnerInit):
             fullname="華山1914文化創意產業園區",
             code_name="HuaShan1914",
             external_link="https://www.huashan1914.com/w/huashan1914/exhibition",
-            address="台北市中正區八德路一段1號",
-            google_map_place_id="ChIJbSTgI2WpQjQRcVwWB2cnyfE",
-            branch_coordinates=Coordinate(raw_coordinates="25.044242402011122, 121.5292898083939"),
+
+            branch_coordinates=Coordinate(
+                google_map_place_id="ChIJbSTgI2WpQjQRcVwWB2cnyfE",
+                raw_coordinates="25.044242402011122, 121.5292898083939",
+            ),
         )
 
     async def fetch_response(self):
