@@ -8,7 +8,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -24,7 +24,7 @@ class MwrRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code="TW-NWT",
+            location_code=TaiwanCity.new_taipei_city,
             fullname="世界宗教博物館",
             code_name="Mwr",
             external_link="https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070",

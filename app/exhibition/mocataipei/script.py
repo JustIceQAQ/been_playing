@@ -9,7 +9,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -23,7 +23,7 @@ class MoCaTaipeiRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code="TW-TPE",
+            location_code=TaiwanCity.taipei_city,
             fullname="台北當代藝術館",
             code_name="MoCaTaipei",
             external_link="https://www.mocataipei.org.tw/tw/ExhibitionAndEvent",

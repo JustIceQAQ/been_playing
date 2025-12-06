@@ -8,7 +8,7 @@ import httpx
 from app.exhibition.kmoa.parse import KmoaParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -25,7 +25,7 @@ class KmoaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code="TW-KEE",
+            location_code=TaiwanCity.keelung_city,
             fullname="基隆美術館",
             code_name="kmoa",
             external_link="https://kmoa.klcg.gov.tw/News_Photo.aspx?n=7484&sms=12489",

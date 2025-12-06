@@ -9,7 +9,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, ExhibitionItem, Coordinate
+from helpers.storage.helper import Information, ExhibitionItem, Coordinate, TaiwanCity
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3, get_asyncio_rate_limit
 
@@ -24,6 +24,7 @@ class SongShanCulturalParkRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.taipei_city,
             fullname="松山文創園區",
             code_name="SongShanCulturalPark",
             external_link="https://www.songshanculturalpark.org/exhibition",

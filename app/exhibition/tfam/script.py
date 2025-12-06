@@ -7,7 +7,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 
@@ -21,6 +21,7 @@ class TFamRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.taipei_city,
             fullname="臺北市立美術館",
             code_name="TFam",
             external_link="https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw",

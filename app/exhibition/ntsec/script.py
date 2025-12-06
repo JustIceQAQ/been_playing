@@ -11,7 +11,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, ExhibitionItem, Coordinate
+from helpers.storage.helper import Information, ExhibitionItem, Coordinate, TaiwanCity
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import datetime_now, month_3, get_asyncio_rate_limit
 
@@ -26,18 +26,10 @@ class NtSecRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.taipei_city,
             fullname="國立臺灣科學教育館",
             code_name="NtSec",
             external_link="https://www.ntsec.gov.tw/article/list.aspx?a=25",
-            map_url=(
-                "https://www.google.com/maps/embed?"
-                "pb=!1m18!1m12!1m3!1d1806.5863476548393!"
-                "2d121.51546188876574!3d25.09601482344974!"
-                "2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!"
-                "1m2!1s0x3442aeb8cbc067e3%3A0xf4ede97e74e06013!"
-                "2z5ZyL56uL6Ie654Gj56eR5a245pWZ6IKy6aSo!5e0!3m2!"
-                "1szh-TW!2stw!4v1739201593044!5m2!1szh-TW!2stw"
-            ),
             branch_coordinates=Coordinate(raw_coordinates="25.096328164549, 121.51649185712368"),
         )
 

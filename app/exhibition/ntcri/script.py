@@ -8,7 +8,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 
@@ -22,6 +22,7 @@ class NTCRIRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.taipei_city,
             fullname="國立台灣工藝研究發展中心",
             code_name="NTCRI",
             external_link=(
@@ -33,7 +34,10 @@ class NTCRIRunner(RunnerInit):
                 "&order=asc"
             ),
             branch_coordinates=[
-                Coordinate(name="臺北當代工藝設計分館",raw_coordinates="25.03210292140622, 121.51234399386772"),
+                Coordinate(location_code=TaiwanCity.taipei_city,
+                           name="臺北當代工藝設計分館",
+                           raw_coordinates="25.03210292140622, 121.51234399386772"
+                           ),
             ]
         )
 

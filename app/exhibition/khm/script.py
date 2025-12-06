@@ -8,7 +8,7 @@ from app.exhibition.khm.parse import KhmParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
@@ -25,7 +25,7 @@ class KhmRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code="TW-KHH",
+            location_code=TaiwanCity.kaohsiung_city,
             fullname="高雄市立歷史博物館",
             code_name="khm",
             external_link="https://khm.org.tw/tw",

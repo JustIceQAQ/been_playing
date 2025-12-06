@@ -7,7 +7,7 @@ from helpers.cache import DiskCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.image.imgur.helper import ImgurImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -23,6 +23,7 @@ class CKSMHRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.taipei_city,
             fullname="中正紀念堂",
             code_name="CKSMH",
             external_link="https://www.cksmh.gov.tw/Default.aspx",

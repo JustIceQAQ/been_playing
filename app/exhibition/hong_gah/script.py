@@ -5,7 +5,7 @@ import bs4
 from app.exhibition.hong_gah.parse import HongGahParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -24,6 +24,7 @@ class HongGahRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=TaiwanCity.taipei_city,
             fullname="鳳甲美術館",
             code_name="HongGah",
             external_link="https://hong-gah.org.tw/exhibitions-zh",

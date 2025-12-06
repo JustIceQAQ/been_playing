@@ -8,7 +8,7 @@ import httpx
 from app.exhibition.kmfa.parse import KmFaParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information, Coordinate, TaiwanCity
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -25,7 +25,7 @@ class KmFaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code="TW-KHH",
+            location_code=TaiwanCity.kaohsiung_city,
             fullname="高雄市立美術館",
             code_name="KmFa",
             external_link="https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",
