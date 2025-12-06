@@ -37,7 +37,8 @@ def parse_range(s):
         raise ValueError(f"日期範圍格式錯誤: {s}")
 
     start_raw, end_raw = parts[0], parts[1]
-
+    start_raw = start_raw.replace(" ", "")
+    end_raw = end_raw.replace(" ", "")
     sy, sm, sd = normalize_date(start_raw)
     ey, em, ed = normalize_date(end_raw)
     if ey is None:

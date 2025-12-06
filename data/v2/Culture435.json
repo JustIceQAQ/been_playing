@@ -1,14 +1,47 @@
 {
   "information": {
-    "fullname": "板橋435文藝特區",
+    "fullname": "板橋435藝文特區",
     "code_name": "Culture435",
     "external_link": "https://www.435.culture.ntpc.gov.tw/xmdoc?xsmsid=0G256373177821958325",
-    "map_url": null,
-    "address": null,
-    "google_map_place_id": null
+    "branch_coordinates": {
+      "location_code": null,
+      "raw_coordinates": "25.024344268554966, 121.45235225442633",
+      "longitude": "121.45235225442633",
+      "latitude": "25.024344268554966",
+      "google_map_place_id": null,
+      "name": null
+    },
+    "location_code": "TW-NWT"
   },
   "counts": 10,
   "items": [
+    {
+      "title": "《收集散落的感覺》——陳莉惠創作個展",
+      "date": "2026-02-27 ~ 2026-03-10",
+      "address": null,
+      "figure": "https://www.435.culture.ntpc.gov.tw/files/file_pool/4/0p338367722574261891/%e6%94%b6%e9%9b%86%e6%95%a3%e8%90%bd%e7%9a%84%e6%84%9f%e8%a6%ba%e6%b5%b7%e5%a0%b1-%e5%b7%b2%e5%b0%87%e5%a4%a7%e5%b0%8f%e8%aa%bf%e6%95%b4-%e7%82%ba-300x500.jpeg",
+      "source_url": "https://www.435.culture.ntpc.gov.tw/xmdoc/cont?xsmsid=0G256373177821958325&sid=0P338367468850069892",
+      "tags": null,
+      "UUID": "3e8e9f756d1b57d99350c7535143f577"
+    },
+    {
+      "title": "《誠真美善游於藝》—世外陶緣共學會聯展",
+      "date": "2026-01-31 ~ 2026-02-12",
+      "address": null,
+      "figure": "https://www.435.culture.ntpc.gov.tw/files/file_pool/4/0p338366999370643470/%e8%aa%a0%e7%9c%9f%e7%be%8e%e5%96%84%e6%b8%b8%e6%96%bc%e8%97%9d--%e6%b5%b7%e5%a0%b1%28%e4%bf%ae%29-%e5%b7%b2%e5%b0%87%e5%a4%a7%e5%b0%8f%e8%aa%bf%e6%95%b4-%e7%82%ba-300x500.jpeg",
+      "source_url": "https://www.435.culture.ntpc.gov.tw/xmdoc/cont?xsmsid=0G256373177821958325&sid=0P338366694727041623",
+      "tags": null,
+      "UUID": "72509a038e925530861056ba402b9984"
+    },
+    {
+      "title": "《旅說畫語》—盧敏玲個展",
+      "date": "2026-01-10 ~ 2026-01-26",
+      "address": null,
+      "figure": "https://www.435.culture.ntpc.gov.tw/files/file_pool/4/0p338365770063880658/%e7%9b%a7%e6%95%8f%e7%8e%b2%ef%bc%bf%e6%97%85%e8%aa%aa%e7%95%ab%e8%aa%9e_%e6%b5%b7%e5%a0%b1-%e5%b7%b2%e5%b0%87%e5%a4%a7%e5%b0%8f%e8%aa%bf%e6%95%b4-%e7%82%ba-300x500.jpeg",
+      "source_url": "https://www.435.culture.ntpc.gov.tw/xmdoc/cont?xsmsid=0G256373177821958325&sid=0P338365471158913049",
+      "tags": null,
+      "UUID": "26eea1e2f7fe55fb879fc5fec5266e31"
+    },
     {
       "title": "風向球畫會寫生聯展2025： 藝漾粼粼",
       "date": "2025-12-26 ~ 2026-01-13",
@@ -71,34 +104,8 @@
       "source_url": "https://www.435.culture.ntpc.gov.tw/xmdoc/cont?xsmsid=0G256373177821958325&sid=0P231339266353015496",
       "tags": null,
       "UUID": "d31f9bdd91825341a9cccbdf1409b685"
-    },
-    {
-      "title": "JINGZHI 靜置｜楊芷娟 × 林泰盛雙人聯展",
-      "date": "2025-09-06 ~ 2025-09-22",
-      "address": null,
-      "figure": "https://www.435.culture.ntpc.gov.tw/files/file_pool/4/0p217379794158996445/%e5%b1%95%e8%a6%bd%e6%b5%b7%e5%a0%b1-%e5%b7%b2%e5%b0%87%e5%a4%a7%e5%b0%8f%e8%aa%bf%e6%95%b4-%e7%82%ba-300x500.jpeg",
-      "source_url": "https://www.435.culture.ntpc.gov.tw/xmdoc/cont?xsmsid=0G256373177821958325&sid=0P217376314236767793",
-      "tags": null,
-      "UUID": "6cdb43fe0f6c5ce2bb4dfa25f367cc8e"
-    },
-    {
-      "title": "視界名話 Vision Quotes",
-      "date": "2025-08-26 ~ 2025-09-07",
-      "address": null,
-      "figure": "https://www.435.culture.ntpc.gov.tw/files/file_pool/4/0p217368087299937817/2025%e5%86%a0%e7%a5%ba435%e8%97%9d%e8%a1%93%e5%b1%95%20-%e5%b7%b2%e5%b0%87%e5%a4%a7%e5%b0%8f%e8%aa%bf%e6%95%b4-%e7%82%ba-300x500.jpeg",
-      "source_url": "https://www.435.culture.ntpc.gov.tw/xmdoc/cont?xsmsid=0G256373177821958325&sid=0P217361312622439051",
-      "tags": null,
-      "UUID": "a7a61dc1fbce500490d5ce6cfcc971e7"
-    },
-    {
-      "title": "不好意思—李妍個展 Sumimasen",
-      "date": "2025-08-06 ~ 2025-08-18",
-      "address": null,
-      "figure": "https://www.435.culture.ntpc.gov.tw/files/file_pool/4/0p198608997974766861/download%20%284%29.jpeg",
-      "source_url": "https://www.435.culture.ntpc.gov.tw/xmdoc/cont?xsmsid=0G256373177821958325&sid=0P198565682082987960",
-      "tags": null,
-      "UUID": "7ce5a79420695774a69b3a49a497ba4f"
     }
   ],
-  "last_update": "2025-11-08T15:53:11.754484+08:00"
+  "last_update": "2025-12-06T14:36:26.641845+08:00",
+  "execution_time": 1.1747872829437256
 }
