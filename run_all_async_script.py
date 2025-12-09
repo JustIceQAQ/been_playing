@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 from app.script import PY_CLASS_SCRIPT
 from configs.settings import get_settings
 from helpers.cache import DiskCache, NoneCache
+from helpers.crawler.scraper.helper import available_scraper_async_client
 from helpers.image.none.helper import NoneImage
 from helpers.image.turboimagehost.helper import TurboImageHost
 
@@ -41,6 +42,8 @@ async def main(worker: int | None = None, worker_max: int | None = None):
     else:
         scripts_to_run = job
 
+    await available_scraper_async_client(runtime_setting.SCRAPER_API_KEY)
+
     all_async_script_runners = [
         RunnerObj().run(disk_cache, imgur, prefix) for RunnerObj in scripts_to_run
     ]
@@ -63,4 +66,5 @@ if __name__ == "__main__":
         runtime_setting.SENTRY_SDK_DNS if not runtime_setting.IS_DEBUG else None
     )
     sentry_sdk.init(dsn=SENTRY_SDK_DNS, traces_sample_rate=1.0)
-    asyncio.run(main(args.worker, args.max_worker))
+    asyncio.run(main())
+    # asyncio.run(main(args.worker, args.max_worker))

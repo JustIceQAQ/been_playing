@@ -10,7 +10,7 @@ from app.platform.kkday.parse import KKDayParse
 from app.platform.kkday.utils import parse_list
 from configs.settings import get_settings
 from helpers.cache import NoneCache
-from helpers.crawler.scraper.helper import ScraperAsyncClient
+from helpers.crawler.scraper.helper import get_a_available_scraper_async_client, available_scraper_async_client
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
@@ -86,11 +86,11 @@ class KKDayRunner(RunnerInit):
             "Accept": "application/json, text/plain, */*",
             "Accept-Language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
         }
-        async with ScraperAsyncClient(
-            api_key=runtime_settings.SCRAPER_API_KEY
-        ) as client:
+        scraper_async_client = get_a_available_scraper_async_client()
+
+        async with scraper_async_client as client:
             first_response = await client.get(self._get_this_url(), headers=headers)
-            if first_response.status_code != http.HTTPStatus.OK:
+            if first_response.status_code != http.HTTPStatus.OK or first_response.response is None:
                 return []
             responses.append(first_response.response.body)
             _, product_count = self._format_init_state(
@@ -122,6 +122,8 @@ class KKDayRunner(RunnerInit):
 
 
 async def main():
+    runtime_setting = get_settings()
+    await available_scraper_async_client(runtime_setting.SCRAPER_API_KEY)
     await KKDayRunner().run(NoneCache(), NoneImage())
 
 

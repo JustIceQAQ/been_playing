@@ -4,7 +4,7 @@ import json
 from app.platform.klook.parse import KLookParse
 from configs.settings import get_settings
 from helpers.cache import NoneCache
-from helpers.crawler.scraper.helper import ScraperAsyncClient
+from helpers.crawler.scraper.helper import ScraperAsyncClient, get_a_available_scraper_async_client
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
@@ -58,10 +58,8 @@ class KLookRunner(RunnerInit):
             "q=0.7",
             "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
         }
-        runtime_settings = get_settings()
-        async with ScraperAsyncClient(
-            api_key=runtime_settings.SCRAPER_API_KEY
-        ) as client:
+        scraper_async_client = get_a_available_scraper_async_client()
+        async with scraper_async_client as client:
             response = await client.get(
                 self.target_url.format(page_num=1), headers=headers
             )
