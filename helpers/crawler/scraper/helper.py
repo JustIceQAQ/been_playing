@@ -1,9 +1,13 @@
 import asyncio
 import http
+import random
 
 import httpx
 
 from helpers.crawler.scraper.schemas import ScraperResponse
+
+SCRAPER_ASYNC_CLIENT = set()
+AVAILABLE_POOL = set()
 
 
 class ScraperAsyncClient:
@@ -17,6 +21,7 @@ class ScraperAsyncClient:
         self.api_key = api_key
         self.job_status_url = None
         self.job_status = False
+        self.available_info = None
 
     async def get(
         self,
@@ -65,8 +70,31 @@ class ScraperAsyncClient:
             runtime_flag += 1
         return this_response
 
+    async def get_available_info(self):
+        url = "https://api.scraperapi.com/account"
+        r = httpx.get(url, params={"api_key": self.api_key})
+        self.available_info = r.json()
+        SCRAPER_ASYNC_CLIENT.add(self)
+
     async def __aenter__(self):
         return self
 
     async def __aexit__(self, exc_type, exc_val, exc_tb):
         await self.client.aclose()
+
+
+def get_a_available_scraper_async_client() -> ScraperAsyncClient:
+    return random.choice(tuple(SCRAPER_ASYNC_CLIENT))
+
+
+async def available_scraper_async_client(keys: list[str]):
+    await asyncio.gather(
+        *[ScraperAsyncClient(api_key=key).get_available_info() for key in keys]
+    )
+    for client in SCRAPER_ASYNC_CLIENT:
+        available_info = client.available_info
+        if (
+            available_info["requestLimit"] != 0
+            and available_info["requestLimit"] < available_info["requestCount"]
+        ):
+            SCRAPER_ASYNC_CLIENT.add(client)

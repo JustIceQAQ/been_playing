@@ -144,13 +144,17 @@
     <div class="offcanvas-header d-flex align-items-center gap-2 flex-wrap">
         <h5 class="offcanvas-title" id="offcanvasAchievementLabel">成就列表</h5>
         <button class="btn btn-success" onclick="exportAchievementsToJSON()">
-
             <i class="bi bi-cloud-download-fill"></i>
         </button>
 
         <button class="btn btn-primary" onclick="document.getElementById('importAchievementsInput').click()">
             <i class="bi bi-cloud-upload-fill"></i>
         </button>
+
+
+
+
+
         <input type="file" id="importAchievementsInput" accept=".json" style="display: none;">
 
         <button class="btn btn-danger"
@@ -187,6 +191,14 @@
                             data-bs-target="#offcanvasAchievement" aria-controls="offcanvasButton">
                         <i class="bi bi-star-fill"></i>
                     </button>
+
+                    <button
+                    class="btn btn-primary"
+                    type="button"
+                    onclick="window.open('https://justiceqaq.github.io/been_playing/been_play_clusters_map.html','_blank')">
+                        <i class="bi bi-flask"></i>
+                    </button>
+
                     <button class="btn shadow" id="btnSwitch">
                         <span class="iconify" id="themeIcon" data-icon="ph:sun-bold" data-inline="false"></span>
                     </button>

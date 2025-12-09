@@ -29,6 +29,9 @@ class CultureExpressParse(ParseInit):
                 return text_node.text.replace("活動地點：", "")
 
     def get_figure(self, *args, **kwargs) -> str | None:
+        img = self.item.select_one("figure > img")
+        if img is None:
+            return "https://cultureexpress.taipei/images/default-x.jpg"
         return (
             "https://cultureexpress.taipei"
             + self.item.select_one("figure > img").attrs["src"]
