@@ -14,7 +14,7 @@ class JobStatus(str, Enum):
     Finished = "finished"
 
 
-class ScraperResponse(BaseModel):
+class ScraperJobsResponse(BaseModel):
     status: JobStatus = Field(description="執行狀態", default=JobStatus.Running)
     is_finished: bool | None = Field(default=None)
     is_running: bool | None = Field(default=None)

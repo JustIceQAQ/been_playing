@@ -4,7 +4,7 @@ import random
 
 import httpx
 
-from helpers.crawler.scraper.schemas import ScraperResponse
+from helpers.crawler.scraper.schemas import ScraperJobsResponse
 
 SCRAPER_ASYNC_CLIENT = set()
 AVAILABLE_POOL = set()
@@ -32,7 +32,7 @@ class ScraperAsyncClient:
         tries_flag=5,
         *args,
         **kwargs,
-    ) -> ScraperResponse:
+    ) -> ScraperJobsResponse:
         payload = {
             "apiKey": self.api_key,
             "url": url,
@@ -49,13 +49,13 @@ class ScraperAsyncClient:
             http.HTTPStatus.INTERNAL_SERVER_ERROR,
             http.HTTPStatus.FORBIDDEN,
         }:
-            return ScraperResponse(status_code=response.status_code)
+            return ScraperJobsResponse(status_code=response.status_code)
 
         while response.status_code == http.HTTPStatus.TOO_MANY_REQUESTS:
             await asyncio.sleep(sleep_secs)
             response = await self.client.post(self.api_path, json=payload)
         response.raise_for_status()
-        this_response = ScraperResponse.model_validate(
+        this_response = ScraperJobsResponse.model_validate(
             {**response.json(), "status_code": response.status_code}
         )
         runtime_flag = 0
@@ -64,7 +64,7 @@ class ScraperAsyncClient:
                 break
             await asyncio.sleep(sleep_secs)
             response = await self.client.get(this_response.status_url)
-            this_response = ScraperResponse.model_validate(
+            this_response = ScraperJobsResponse.model_validate(
                 {**response.json(), "status_code": response.status_code}
             )
             runtime_flag += 1
