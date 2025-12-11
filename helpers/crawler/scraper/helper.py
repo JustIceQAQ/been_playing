@@ -72,9 +72,11 @@ class ScraperAsyncClient:
 
     async def get_available_info(self):
         url = "https://api.scraperapi.com/account"
-        r = httpx.get(url, params={"api_key": self.api_key})
-        self.available_info = r.json()
-        SCRAPER_ASYNC_CLIENT.add(self)
+        async with httpx.AsyncClient(timeout=None) as client:
+            response = await client.get(url, params={"api_key": self.api_key})
+            if response.is_success:
+                self.available_info = response.json()
+                SCRAPER_ASYNC_CLIENT.add(self)
 
     async def __aenter__(self):
         return self
