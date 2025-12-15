@@ -6,7 +6,8 @@ import httpx
 from app.exhibition.tcm.parse import TcmParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate, TaiwanCity
+from helpers.storage.helper import Information, Coordinate
+from helpers.storage.symbol import TaiwanCity
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
