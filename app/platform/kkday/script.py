@@ -41,7 +41,7 @@ class KKDayRunner(RunnerInit):
         return Information(
             fullname="KKDay",
             code_name="KKDay",
-            external_link="https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?sort=prec&page=1",
+            external_link="https://www.kkday.com/zh-tw/category/tw-taiwan/exhibition-events/list?currency=TWD&sort=prec&page=1&count=10&product_categories=CATEGORY_016",
         )
 
     def _get_this_url(self, page: int | None = 1):
@@ -77,7 +77,6 @@ class KKDayRunner(RunnerInit):
 
     async def fetch_response(self):
         responses = []
-        runtime_settings = get_settings()
         headers = {
             **get_header(),
             "host": "www.kkday.com",

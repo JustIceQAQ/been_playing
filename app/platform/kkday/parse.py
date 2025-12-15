@@ -17,7 +17,12 @@ class KKDayParse(ParseInit):
         return ""
 
     def get_figure(self, *args, **kwargs) -> str:
-        return self.item.get("img_url")
+        img_url = self.item.get("img_url", None)
+        if img_url:
+            return img_url
+        img_url_list = self.item.get("img_url_list", None)
+        if img_url_list:
+            return img_url_list[0]
 
     def get_source_url(self, *args, **kwargs) -> str:
         return self.item.get("url")
