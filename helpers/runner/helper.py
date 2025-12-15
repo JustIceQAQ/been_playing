@@ -153,6 +153,11 @@ class RunnerInit(abc.ABC):
                 await self.suffix_item_from_file(self.exhibition_.items)
             end_time = time.time()
             execution_time = end_time - start_time
+            if not self.items_:
+                import sentry_sdk
+
+                class_name = self.__class__.__name__
+                sentry_sdk.capture_message(f"{class_name} items is empty")
             await self.exhibition_.save_to_local(
                 f"{self.information_.code_name}",
                 execution_time=execution_time,
