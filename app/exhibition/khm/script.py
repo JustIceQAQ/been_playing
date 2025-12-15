@@ -8,7 +8,8 @@ from app.exhibition.khm.parse import KhmParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate, TaiwanCity
+from helpers.storage.helper import Information, Coordinate
+from helpers.storage.symbol import TaiwanCity
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache

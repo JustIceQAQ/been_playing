@@ -1,25 +1,22 @@
 import asyncio
-import decimal
 
-import bs4
 import httpx
 
-from app.exhibition.ntc_art_museum.parse import (
-    NtcArtMuseumMainParse,
-    NtcArtMuseumOtherParse,
-)
+from app.exhibition.ntc_art_museum.parse import NtcArtMuseumParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import ExhibitionItem, Information, Coordinate, TaiwanCity
-from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import month_3, get_asyncio_rate_limit
+from helpers.storage.helper import Information, Coordinate
+from helpers.storage.symbol import TaiwanCity
+from helpers.translation.json import JsonTranslation
+from helpers.utils_helper import month_3
 
 
 class NtcArtMuseumRunner(RunnerInit):
-    translation = BeautifulSoupTranslation
+    translation = JsonTranslation
+    use_parse = NtcArtMuseumParse
     use_suffix_item_from_url_auto = True
 
     def set_cache_expire(self) -> int | None:
@@ -30,88 +27,49 @@ class NtcArtMuseumRunner(RunnerInit):
             location_code=TaiwanCity.new_taipei_city,
             fullname="新北市美術館",
             code_name="NtcArtMuseum",
-            external_link="https://ntcart.museum/exhibition",
+            external_link="https://ntcart.museum/exhibition.aspx?kind=today",
             branch_coordinates=Coordinate(raw_coordinates="24.953654641948525, 121.358269212097"),
         )
 
+    async def sub_fetch_response(self, client: httpx.AsyncClient, kind: str) -> httpx.Response:
+        return await client.post(
+            "https://ntcart.museum/exhibition.aspx",
+            data={
+                "q": "get",
+                "r": "0.9999999999999999",
+                "data": {"p": 1, "ps": 12, "Kind": kind}
+            }
+        )
+
     async def fetch_response(self):
-        headers = get_header()
-        async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get("https://ntcart.museum/exhibition")
-        return response.text
+        headers = {
+            **get_header(),
+            "x-requested-with": "XMLHttpRequest",
+            "referer": "https://ntcart.museum/exhibition.aspx?kind=today",
+            "origin": "https://ntcart.museum",
+            "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
 
-    async def fetch_parsed(self) -> dict:
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
-        art_content_other = parsed.select("div.art-content-other.ex-group > a")
-        main_exhibition = parsed.select("div.main-pic > a")
-        coming_soon = parsed.select("div.art-content-other.comingSoon > a")
-
-        return {
-            "art_content_other": art_content_other,
-            "main_exhibition": main_exhibition,
-            "coming_soon": coming_soon,
         }
+        kinds = [
+            "today",
+            "future",
+        ]
+        async with HttpxAsyncClient(headers=headers) as client:
+            tasks = [
+                self.sub_fetch_response(client, kind)
+                for kind in kinds
+            ]
+            responses = await asyncio.gather(*tasks)
+        return [response.json() for response in responses]
 
-    def _sub_fetch_items(self, parsed_, use_parse, *args, **kwargs) -> list:
-        sub_exhibition_items = []
-        for item in parsed_:
-            data = use_parse(item).parse_to_base_model(ExhibitionItem, *args, **kwargs)
-            if data.source_url is None:
-                continue
-            sub_exhibition_items.append(data)
-        return sub_exhibition_items
-
-    async def fetch_items(self, *args, **kwargs):
-        exhibition_items = []
-        runtime_parsed = self.parsed_
-        exhibition_items.extend(
-            self._sub_fetch_items(
-                runtime_parsed["art_content_other"],
-                NtcArtMuseumOtherParse,
-                target_domain="https://ntcart.museum",
-            )
-        )
-        exhibition_items.extend(
-            self._sub_fetch_items(
-                runtime_parsed["main_exhibition"],
-                NtcArtMuseumMainParse,
-                target_domain="https://ntcart.museum",
-            )
-        )
-
-        exhibition_items.extend(
-            self._sub_fetch_items(
-                runtime_parsed["coming_soon"],
-                NtcArtMuseumOtherParse,
-                target_domain="https://ntcart.museum",
-            )
-        )
-
-        return exhibition_items
-
-    async def _get_item_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
-        has_address_cache = await self.cache.get(f"{item.UUID}-address")
-        if has_address_cache:
-            item.address = has_address_cache
-            return
-        response = await client.get(item.source_url)
-        soup = self.translation().translation_to_object(response.text)
-        exhibition_location = None
-        h2_tags = soup.select_one("div#about > div.right-group h2")
-        if h2_tags:
-            exhibition_location = h2_tags.get_text()
-            exhibition_location = exhibition_location.replace(
-                "新北市美術館 –", ""
-            ).strip()
-        await self.cache.set(f"{item.UUID}-address", exhibition_location, month_3())
-        item.address = exhibition_location
-
-    async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):
-        asyncio_limit = get_asyncio_rate_limit(3, 30)
-        headers = get_header()
-        async with httpx.AsyncClient(headers=headers) as client, asyncio_limit:
-            tasks = [self._get_item_data(client, item) for item in items]
-            await asyncio.gather(*tasks)
+    async def fetch_parsed(self):
+        parsed: list[dict] = await super().fetch_parsed()
+        all_items = []
+        for parse in parsed:
+            this_items = parse.get("list").get("items")
+            if this_items:
+                all_items.extend(this_items)
+        return all_items
 
 
 async def main():

@@ -3,7 +3,7 @@ from enum import Enum
 from pydantic import BaseModel, Field, model_validator
 
 
-class Response(BaseModel):
+class RealResponse(BaseModel):
     headers: dict = Field(default_factory=dict)
     body: str | dict = Field(default_factory=dict)
     status_code: int = Field(alias="statusCode")
@@ -14,7 +14,7 @@ class JobStatus(str, Enum):
     Finished = "finished"
 
 
-class ScraperResponse(BaseModel):
+class ScraperJobsResponse(BaseModel):
     status: JobStatus = Field(description="執行狀態", default=JobStatus.Running)
     is_finished: bool | None = Field(default=None)
     is_running: bool | None = Field(default=None)
@@ -22,7 +22,7 @@ class ScraperResponse(BaseModel):
         description="執行狀態 url", alias="statusUrl", default=None
     )
     url: str | None = Field(default=None)
-    response: Response | None = Field(default=None)
+    response: RealResponse | None = Field(default=None)
     status_code: int = Field()
 
     @model_validator(mode="after")
