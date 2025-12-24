@@ -76,7 +76,7 @@ class KKTixRunner(RunnerInit):
                         )
                         is None
                 ):
-                    print(response.text())
+                    print(this_response_text)
                     break
                 responses.append(this_response_text)
                 page += 1
