@@ -66,7 +66,6 @@ class KKTixRunner(RunnerInit):
             proxies = [Proxy.all(
                 runtime_settings.PROXY_POOL
             )]
-            print("Has PROXY_POOL !!!")
         async with RNetAsyncClient(
                 proxies=proxies,
         ) as client:
@@ -85,7 +84,6 @@ class KKTixRunner(RunnerInit):
                         )
                         is None
                 ):
-                    print(this_response_text)
                     break
                 responses.append(this_response_text)
                 page += 1
