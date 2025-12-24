@@ -5,6 +5,7 @@ import urllib.parse
 
 import bs4
 from dateutil.relativedelta import relativedelta
+from rnet import Proxy
 
 from app.platform.kktix.parse import KKTixParse
 from helpers.cache import NoneCache
@@ -15,6 +16,7 @@ from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import datetime_now, month_3
+from configs.settings import get_settings
 
 
 def within_two_months() -> tuple[dt.datetime, dt.datetime]:
@@ -58,8 +60,14 @@ class KKTixRunner(RunnerInit):
         start_at = urllib.parse.quote(today.strftime("%Y/%m/%d"), safe="")
         end_at = urllib.parse.quote(today_add_2_months.strftime("%Y/%m/%d"), safe="")
         responses = []
+        runtime_settings = get_settings()
+        proxies = None
+        if runtime_settings.PROXY_POOL is not None:
+            proxies = [Proxy.all(
+                runtime_settings.PROXY_POOL
+            )]
         async with RNetAsyncClient(
-                # proxies=[Proxy.all("http://154.17.228.122:80")],
+                proxies=proxies,
         ) as client:
             page = 1
             while True:
@@ -76,7 +84,6 @@ class KKTixRunner(RunnerInit):
                         )
                         is None
                 ):
-                    print(this_response_text)
                     break
                 responses.append(this_response_text)
                 page += 1
