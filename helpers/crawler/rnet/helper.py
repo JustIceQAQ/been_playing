@@ -3,7 +3,9 @@ import rnet
 
 class RNetAsyncClient:
     def __init__(self, *args, **kwargs) -> None:
-        self.client = rnet.Client(*args, **kwargs, impersonate=rnet.Impersonate.OkHttp5)
+        self.client = rnet.Client(
+            *args, **kwargs, impersonate=rnet.Impersonate.Chrome137
+        )
 
     async def __aenter__(self) -> rnet.Client:
         return self.client
