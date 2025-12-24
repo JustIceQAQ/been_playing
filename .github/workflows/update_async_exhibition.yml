@@ -86,6 +86,7 @@ jobs:
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
           SCRAPE_DO_API_KEY: ${{ secrets.SCRAPE_DO_API_KEY }}
           IS_DEBUG: ${{ vars.IS_DEBUG }}
+          PROXY_POOL: ${{ secrets.PROXY_POOL }}
 
       - name: commit files
         run: |
