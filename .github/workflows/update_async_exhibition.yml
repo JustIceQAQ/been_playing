@@ -78,7 +78,7 @@ jobs:
 
       - name: run async script with uv
         run: |
-          uv run python run_all_async_script.py
+          uv run python run_some_async_script.py
         env:
           IMGUR_API_CLIENT_ID: ${{ secrets.IMGUR_API_CLIENT_ID }}
           IMGUR_API_CLIENT_SECRET: ${{ secrets.IMGUR_API_CLIENT_SECRET }}

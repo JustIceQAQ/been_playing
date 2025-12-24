@@ -8,7 +8,6 @@ from dateutil.relativedelta import relativedelta
 
 from app.platform.kktix.parse import KKTixParse
 from helpers.cache import NoneCache
-from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.crawler.rnet.helper import RNetAsyncClient
 from helpers.headers_helper import get_header
 from helpers.image.none.helper import NoneImage
@@ -59,20 +58,25 @@ class KKTixRunner(RunnerInit):
         start_at = urllib.parse.quote(today.strftime("%Y/%m/%d"), safe="")
         end_at = urllib.parse.quote(today_add_2_months.strftime("%Y/%m/%d"), safe="")
         responses = []
-        async with RNetAsyncClient() as client:
+        async with RNetAsyncClient(
+                # proxies=[Proxy.all("http://154.17.228.122:80")],
+        ) as client:
             page = 1
             while True:
-
                 response = await client.get(
-                    self.target_url.format(start_at=start_at, end_at=end_at, page=page)
+                    self.target_url.format(start_at=start_at, end_at=end_at, page=page),
+                    headers=headers
                 )
                 this_response_text = await response.text()
                 if (
-                    self.translation()
-                    .translation_to_object(this_response_text)
-                    .select_one("div[data-react-class='SearchWrapper']")
-                    is None
+                        (
+                                self.translation()
+                                        .translation_to_object(this_response_text)
+                                        .select_one("div[data-react-class='SearchWrapper']")
+                        )
+                        is None
                 ):
+                    print(response.text())
                     break
                 responses.append(this_response_text)
                 page += 1
