@@ -1,22 +1,22 @@
 import asyncio
-import http
+import copy
 import json
 import re
 import urllib.parse
 
 import bs4
+from rnet import Proxy
 
 from app.platform.kkday.parse import KKDayParse
 from app.platform.kkday.utils import parse_list
 from configs.settings import get_settings
 from helpers.cache import NoneCache
-from helpers.crawler.scraper.helper import get_a_available_scraper_async_client, available_scraper_async_client
-from helpers.headers_helper import get_header
+from helpers.crawler.rnet.helper import RNetAsyncClient
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import month_3
+from helpers.utils_helper import month_3, date_format_digit
 
 
 class KKDayRunner(RunnerInit):
@@ -24,14 +24,15 @@ class KKDayRunner(RunnerInit):
     use_parse = KKDayParse
     target_url = "https://www.kkday.com/zh-tw/product/productlist"
     query_parameter = {
-        "city": ["A01-001-00001", "A01-001-00006"],
-        "prodcat": [
+        "destination": ["D-TW-5013", "D-TW-4736"],
+        "product_categories": [
             "CATEGORY_016",
         ],
         "currency": "TWD",
-        "start": 0,
         "count": 10,
+        "page": 1,
         "sort": "prec",
+        "sale_date_from": date_format_digit()
     }
 
     def set_cache_expire(self) -> int | None:
@@ -41,22 +42,30 @@ class KKDayRunner(RunnerInit):
         return Information(
             fullname="KKDay",
             code_name="KKDay",
-            external_link="https://www.kkday.com/zh-tw/category/tw-taiwan/exhibition-events/list?currency=TWD&sort=prec&page=1&count=10&product_categories=CATEGORY_016",
+            external_link="https://www.kkday.com/zh-tw/product/productlist?"
+                          "destination=D-TW-5013,D-TW-4736&"
+                          "product_categories=CATEGORY_016&"
+                          "currency=TWD&"
+                          "sort=prec&"
+                          "page=1&"
+                          "start=10&"
+                          "count=10",
         )
 
     def _get_this_url(self, page: int | None = 1):
-        parse_list_result = parse_list(KKDayRunner.query_parameter)
-        encoded_query_parameter = urllib.parse.urlencode(parse_list_result)
-        encoded_query_parameter += f"&page={page}"
+        runtime_query_parameter = copy.deepcopy(KKDayRunner.query_parameter)
+        runtime_query_parameter["page"] = page
+        parse_list_result = parse_list(runtime_query_parameter)
+        encoded_query_parameter = urllib.parse.urlencode(parse_list_result, safe=',')
         return f"{self.target_url}?{encoded_query_parameter}"
 
     def _format_init_state(
-        self, transitioned: bs4.BeautifulSoup
+            self, transitioned: bs4.BeautifulSoup
     ) -> tuple[list[dict], int | None]:
         products = []
         product_count = None
         script_content = transitioned.find_all(
-            "script", text=re.compile(r"window\.__INIT_STATE__\s*=\s*")
+            "script", string=re.compile(r"window\.__INIT_STATE__\s*=\s*")
         )
         for script in script_content:
             match = re.search(
@@ -67,7 +76,7 @@ class KKDayRunner(RunnerInit):
                 raw_data = json.loads(init_state_json)
                 state = raw_data["state"]
                 if (state.get("products", None) is None) or (
-                    state.get("productCount", None) is None
+                        state.get("productCount", None) is None
                 ):
                     continue
                 products = raw_data["state"]["products"]
@@ -78,35 +87,47 @@ class KKDayRunner(RunnerInit):
     async def fetch_response(self):
         responses = []
         headers = {
-            **get_header(),
             "host": "www.kkday.com",
-            "Referer": "https://www.kkday.com/zh-tw/country/taiwan/events-and-exhibitions?cat=TAG_3&sort=prec&page=1",
+            "Referer": "https://www.kkday.com/zh-tw/product/productlist?product_categories=CATEGORY_016&currency=TWD&start=0&count=10&sort=prec&page=2&destination=D-TW-5013,D-TW-4736",
             "Accept-Encoding": "gzip, deflate, br",
             "Accept": "application/json, text/plain, */*",
             "Accept-Language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
         }
-        scraper_async_client = get_a_available_scraper_async_client()
-
-        async with scraper_async_client as client:
+        runtime_settings = get_settings()
+        proxies = (
+            None
+            if runtime_settings.PROXY_POOL is None
+            else [
+                Proxy.all(
+                    runtime_settings.PROXY_POOL
+                )
+            ]
+        )
+        async with RNetAsyncClient(
+                proxies=proxies,
+        ) as client:
             first_response = await client.get(self._get_this_url(), headers=headers)
-            if first_response.status_code != http.HTTPStatus.OK or first_response.response is None:
+
+            if (not first_response.status_code.is_success()):
                 return []
-            responses.append(first_response.response.body)
+            first_context = await first_response.text()
+            responses.append(first_context)
             _, product_count = self._format_init_state(
                 self.translation().translation_to_object(
-                    first_response.response.body, format_encoding="html.parser"
+                    first_context, format_encoding="html.parser"
                 )
             )
             if product_count is not None:
                 loop_number = (product_count // 10) + 2
                 sub_tasks = [
-                    client.get(self._get_this_url(i), sleep_secs=10)
+                    client.get(self._get_this_url(i), headers=headers)
                     for i in range(2, loop_number, 1)
                 ]
                 sub_responses = await asyncio.gather(*sub_tasks)
                 for sub_response in sub_responses:
-                    if sub_response.status_code == http.HTTPStatus.OK:
-                        responses.append(sub_response.response.body)
+                    sub_context = await sub_response.text()
+                    if sub_response.status_code.is_success():
+                        responses.append(sub_context)
             return responses
 
     async def fetch_parsed(self):
@@ -121,8 +142,6 @@ class KKDayRunner(RunnerInit):
 
 
 async def main():
-    runtime_setting = get_settings()
-    await available_scraper_async_client(runtime_setting.SCRAPER_API_KEY)
     await KKDayRunner().run(NoneCache(), NoneImage())
 
 
