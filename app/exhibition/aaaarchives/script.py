@@ -2,6 +2,8 @@ import asyncio
 import secrets
 
 import bs4
+from justhtml import JustHTML
+
 from app.exhibition.aaaarchives.parse import AAAArchivesParse
 from helpers.headers_helper import get_header
 from helpers.runner.helper import RunnerInit
@@ -9,13 +11,14 @@ from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
+from helpers.translation.justhtml.helper import JustHTMLTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
 
 class AAAArchivesRunner(RunnerInit):
-    translation = BeautifulSoupTranslation
+    translation = JustHTMLTranslation
     use_parse = AAAArchivesParse
 
     def set_cache_expire(self) -> int | None:
@@ -52,8 +55,8 @@ class AAAArchivesRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
-        li = parsed.select("div.actList > ul > li")
+        parsed: JustHTML = await super().fetch_parsed()
+        li = parsed.query("div.actList > ul > li")
         return li
 
 

@@ -15,6 +15,12 @@ def date_now() -> dt.date:
     return datetime_now().date()
 
 
+def date_format_digit() -> str:
+    # YYYYMMDD
+    this_date = datetime_now().date()
+    return this_date.strftime("%Y%m%d")
+
+
 def this_date_year() -> int:
     return date_now().year
 
@@ -52,3 +58,7 @@ def month_6() -> int:
 
 def get_asyncio_rate_limit(concurrent: int, second: int) -> AsyncLimiter:
     return AsyncLimiter(concurrent, second)
+
+
+if __name__ == "__main__":
+    print(date_format_digit())
