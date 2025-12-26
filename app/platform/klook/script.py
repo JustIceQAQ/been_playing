@@ -1,11 +1,12 @@
 import asyncio
 import json
 
+from rnet import Proxy
+
 from app.platform.klook.parse import KLookParse
 from configs.settings import get_settings
 from helpers.cache import NoneCache
-from helpers.crawler.scraper.helper import ScraperAsyncClient, get_a_available_scraper_async_client
-from helpers.headers_helper import get_header
+from helpers.crawler.rnet.helper import RNetAsyncClient
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
@@ -40,35 +41,42 @@ class KLookRunner(RunnerInit):
             fullname="KLook 客路",
             code_name="KLook",
             external_link="https://www.klook.com/zh-TW/event/search/listing/?"
-            "area=city_19"
-            "&filters=convention_exhibition"
-            "&date=next_30_days"
-            "&sort=latest"
-            "&page=1",
+                          "area=city_19"
+                          "&filters=convention_exhibition"
+                          "&date=next_30_days"
+                          "&sort=latest"
+                          "&page=1",
         )
 
     async def fetch_response(self):
         responses = []
         headers = {
-            **get_header(),
             "accept": "text/html,application/xhtml+xml,application/xml;"
-            "q=0.9,image/avif,image/webp,image/apng,*/*;"
-            "q=0.8,application/signed-exchange;"
-            "v=b3;"
-            "q=0.7",
+                      "q=0.9,image/avif,image/webp,image/apng,*/*;"
+                      "q=0.8,application/signed-exchange;"
+                      "v=b3;"
+                      "q=0.7",
             "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
         }
-        scraper_async_client = get_a_available_scraper_async_client()
-        async with scraper_async_client as client:
+        runtime_settings = get_settings()
+        proxies = (
+            None
+            if runtime_settings.PROXY_POOL is None
+            else [
+                Proxy.all(
+                    runtime_settings.PROXY_POOL
+                )
+            ]
+        )
+        async with RNetAsyncClient(
+                proxies=proxies,
+        ) as client:
             response = await client.get(
                 self.target_url.format(page_num=1), headers=headers
             )
-            if response.status_code != 200:
+            if not response.status_code.is_success():
                 return responses
-            if response.response is None:
-                return responses
-            body = response.response.body
-            content = json.loads(body)
+            content = await response.json()
             responses.append(content)
             page_size = int(content.get("result").get("page_size"))
             total = int(content.get("result").get("total"))
@@ -76,9 +84,10 @@ class KLookRunner(RunnerInit):
                 sub_response = await client.get(
                     self.target_url.format(page_num=page), headers=headers
                 )
-                if sub_response.status_code != 200:
+                if not sub_response.status_code.is_success():
                     return responses
-                responses.append(json.loads(sub_response.response.body))
+                content = await sub_response.json()
+                responses.append(content)
         return responses
 
     async def fetch_parsed(self):
