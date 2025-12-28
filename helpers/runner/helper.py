@@ -34,6 +34,13 @@ class RunnerInit(abc.ABC):
     async def fetch_response(self):
         raise NotImplementedError
 
+    async def items_check(self):
+        if not self.items_:
+            import sentry_sdk
+
+            class_name = self.__class__.__name__
+            sentry_sdk.capture_message(f"{class_name} items is empty")
+
     async def fetch_parsed(self, *args, **kwargs) -> list[Any] | Any:
         if isinstance(self.response, list):
             this_translation = self.translation()
@@ -116,11 +123,8 @@ class RunnerInit(abc.ABC):
                     pass
 
     def hash_content(self, content: str | dict):
-        """生成頁面內容的哈希值，支持 str 和 dict 兩種格式"""
         if isinstance(content, dict):
-            content = json.dumps(
-                content, sort_keys=True
-            )  # sort_keys=True 確保鍵的順序一致
+            content = json.dumps(content, sort_keys=True)
         elif not isinstance(content, str):
             raise ValueError("Content must be a string or a dictionary")
 
@@ -151,13 +155,12 @@ class RunnerInit(abc.ABC):
                 await self.suffix_item_from_url_auto(self.exhibition_.items)
             if self.use_suffix_item_from_file_func:
                 await self.suffix_item_from_file(self.exhibition_.items)
+
             end_time = time.time()
             execution_time = end_time - start_time
-            if not self.items_:
-                import sentry_sdk
 
-                class_name = self.__class__.__name__
-                sentry_sdk.capture_message(f"{class_name} items is empty")
+            await self.items_check()
+
             await self.exhibition_.save_to_local(
                 f"{self.information_.code_name}",
                 execution_time=execution_time,
