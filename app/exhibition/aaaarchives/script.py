@@ -1,7 +1,6 @@
 import asyncio
 import secrets
 
-import bs4
 from justhtml import JustHTML
 
 from app.exhibition.aaaarchives.parse import AAAArchivesParse
@@ -10,7 +9,6 @@ from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.translation.justhtml.helper import JustHTMLTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache

@@ -41,6 +41,9 @@ class YatsenRunner(RunnerInit):
         parsed: bs4.BeautifulSoup = await super().fetch_parsed()
         return parsed.find_all("a", {"class": "div-activity"})
 
+    async def items_check(self):
+        pass
+
 
 async def main():
     await YatsenRunner().run(NoneCache(), NoneImage())
