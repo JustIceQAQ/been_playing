@@ -59,7 +59,7 @@ class MoNTUERunner(RunnerInit):
                 logging.error("all_items_url data is %s", bool(all_items_url))
             get_items_context = [
                 self.sub_fetch_response(client, item_url)
-                for item_url in all_items_url
+                for item_url in set(all_items_url)
             ]
             get_items_context_results = await asyncio.gather(*get_items_context)
             if not get_items_context_results:
