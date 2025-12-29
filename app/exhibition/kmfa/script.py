@@ -6,7 +6,7 @@ import bs4
 import httpx
 
 from app.exhibition.kmfa.parse import KmFaParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_header, get_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -45,10 +45,7 @@ class KmFaRunner(RunnerInit):
                 "referer": "https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",
             },
         )
-        cookies = {
-            "ASP.NET_SessionId": uuid.uuid4().hex,
-            "CONSENT": "YES+",
-        }
+        cookies = get_cookies(need_asp_net_session_id=True, need_consent=True)
         urls = [
             "https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",
             "https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=2",

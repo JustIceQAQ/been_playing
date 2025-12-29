@@ -4,7 +4,7 @@ import uuid
 from typing import Any
 
 from app.exhibition.pier2.parse import Pier2Parse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_header, get_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -38,7 +38,7 @@ class Pier2Runner(RunnerInit):
             "referer": "https://pier2.org/exhibition/list/all/",
             "origin": "https://pier2.org",
         }
-        cookies = {"PHPSESSID": uuid.uuid4().hex}
+        cookies = get_cookies(need_phpsessid=True)
         params = {
             "type": "exhibition",
             "date": f"{datetime.date.today():%Y-%m-%d}",

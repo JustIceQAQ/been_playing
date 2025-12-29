@@ -4,7 +4,7 @@ import secrets
 from justhtml import JustHTML
 
 from app.exhibition.aaaarchives.parse import AAAArchivesParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_header, get_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -41,7 +41,7 @@ class AAAArchivesRunner(RunnerInit):
             "content-type": "application/x-www-form-urlencoded",
         }
         cookies = {
-            "JSESSIONID": secrets.token_hex(16),
+            **get_cookies(need_js_ession_id=True),
             "cookiesession1": secrets.token_hex(16)
         }
         data = {

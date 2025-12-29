@@ -1,9 +1,9 @@
-import secrets
-
 import httpx
 import pytest
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
+
+from helpers.headers_helper import get_cookies
 
 UA = UserAgent(browsers="chrome", os=["windows", "macos"], platforms="pc")
 
@@ -21,7 +21,7 @@ async def test_base():
         "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
         "priority": "u=1, i",
     }
-    cookies = {"CONSENT": "YES+", "PHPSESSID": secrets.token_hex(16)}
+    cookies = get_cookies(need_phpsessid=True, need_consent=True)
     data = {"site": "OCAM", "nowpage": 1, "ispast": 0}
     async with httpx.AsyncClient(
         timeout=None, headers=headers, cookies=cookies

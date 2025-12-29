@@ -1,9 +1,7 @@
-import secrets
-
 from bs4 import BeautifulSoup
 
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import UA
+from helpers.headers_helper import UA, get_cookies
 from helpers.image.imgur.helper import limiter
 from helpers.image.turboimagehost.schemas import Data, UploadResponse
 
@@ -12,7 +10,7 @@ headers = {
     "referer": "https://www.turboimagehost.com/",
     "origin": "https://www.turboimagehost.com",
 }
-cookies = {"PHPSESSID": secrets.token_hex(16)}
+cookies = get_cookies(need_phpsessid=True)
 
 
 class TurboImageHost:

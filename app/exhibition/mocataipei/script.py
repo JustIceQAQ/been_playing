@@ -28,8 +28,6 @@ class MoCaTaipeiRunner(RunnerInit):
             fullname="台北當代藝術館",
             code_name="MoCaTaipei",
             external_link="https://www.mocataipei.org.tw/tw/ExhibitionAndEvent",
-
-
             branch_coordinates=Coordinate(google_map_place_id="ChIJc-TxSWypQjQR-8Eh7elK97Q",
                 raw_coordinates="25.05101850889424, 121.51900878326302",
             ),
