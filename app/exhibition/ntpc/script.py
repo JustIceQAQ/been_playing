@@ -6,7 +6,7 @@ import httpx
 from app.exhibition.ntpc.parse import NTPCParse, normalize_date_range
 from helpers.cache import DiskCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information, Coordinate
@@ -35,7 +35,7 @@ class NTPCRunner(RunnerInit):
 
     def get_this_header(self):
         return {
-            **get_header(),
+            **get_headers(),
             "upgrade-insecure-requests": "1",
             "host": "www.ceramics.ntpc.gov.tw",
         }

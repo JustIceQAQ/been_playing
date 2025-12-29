@@ -52,6 +52,8 @@
         - [國家鐵道博物館](https://www.nrm.gov.tw/)
         - [西門紅樓](https://www.redhouse.taipei/index.aspx)
         - [有章藝術博物館](https://museum.ntua.edu.tw)
+        - [寶藏巖國際藝術村](https://www.artistvillage.org/event.php)
+        - [紀州庵文學森林](https://kishuan.org.tw/activity.htm)
     - TW-KEE
         - [基隆美術館](https://kmoa.klcg.gov.tw/)
         - [陽明海洋文化藝術館](https://www.ocam.org.tw/tw/Index/OCAM)

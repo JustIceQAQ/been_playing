@@ -1,4 +1,5 @@
 from .exhibition.aaaarchives import AAAArchivesRunner
+from .exhibition.artistvillage import ArtistVillageRunner
 from .exhibition.bopiliao.script import BoPiLiaoRunner
 from .exhibition.chipolin import ChiPoLinRunner
 from .exhibition.cksmh.script import CKSMHRunner
@@ -11,6 +12,7 @@ from .exhibition.jam.script import JamRunner
 from .exhibition.kdmofa.script import KdMoFaRunner
 from .exhibition.khm import KhmRunner
 from .exhibition.kingcarart.script import KingCarArtRunner
+from .exhibition.kishuan import KiShuAnRunner
 from .exhibition.kmfa import KmFaRunner
 from .exhibition.kmoa import KmoaRunner
 from .exhibition.mocataipei.script import MoCaTaipeiRunner
@@ -114,4 +116,6 @@ PY_CLASS_SCRIPT = {
     TnCsEcRunner,
     MoNTUERunner,
     AAAArchivesRunner,
+    ArtistVillageRunner,
+    KiShuAnRunner,
 }

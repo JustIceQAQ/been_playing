@@ -1,9 +1,8 @@
 import asyncio
-import uuid
 
 import bs4
 from app.exhibition.shungyeart.parse import ShungYeArtParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers, get_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -32,11 +31,8 @@ class ShungYeArtRunner(RunnerInit):
 
     async def fetch_response(self):
         url = "https://www.shungye-art.org/show_now.php"
-        headers = {**get_header(), "referer": url}
-        cookies = {
-            "CONSENT": "YES+",
-            "PHPSESSID": uuid.uuid4().hex,
-        }
+        headers = get_headers(referer=url)
+        cookies = get_cookies(need_phpsessid=True, need_consent=True)
 
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             response = await client.get(url)

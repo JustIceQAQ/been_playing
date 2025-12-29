@@ -1,12 +1,11 @@
 import asyncio
-import decimal
 import secrets
 
 import bs4
 import httpx
 
 from app.exhibition.nstm.parse import NsTmParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -34,7 +33,7 @@ class NsTmRunner(RunnerInit):
         )
 
     async def sub_fetch_response(
-        self, client: httpx.AsyncClient, url: str
+            self, client: httpx.AsyncClient, url: str
     ) -> list[str]:
         sub_response = []
         for p_index in range(0, 2, 1):
@@ -52,15 +51,16 @@ class NsTmRunner(RunnerInit):
         semaphore = asyncio.Semaphore(1)
         limits = httpx.Limits(max_connections=5, max_keepalive_connections=2)
         timeout = httpx.Timeout(10.0, connect=5.0)
-        headers = {
-            **get_header(),
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            "Accept-Language": "zh-TW,zh;q=0.9",
-            "Accept-Encoding": "gzip, deflate, br",
-            "Referer": "https://www.nstm.gov.tw/ExhibitionList.aspx?appname=Exhibition",
-            "Upgrade-Insecure-Requests": "1",
-            "Cache-Control": "no-cache",
-        }
+        headers = get_headers(
+            referer="https://www.nstm.gov.tw/ExhibitionList.aspx?appname=Exhibition",
+            need_upgrade_insecure_requests=True,
+            other_headers={
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "zh-TW,zh;q=0.9",
+                "Accept-Encoding": "gzip, deflate, br",
+                "Cache-Control": "no-cache",
+            }
+        )
         cookies = httpx.Cookies()
         cookies.set(
             "ASP.NET_SessionId", secrets.token_hex(16), domain="www.nstm.gov.tw"
@@ -71,11 +71,11 @@ class NsTmRunner(RunnerInit):
             # "https://www.nstm.gov.tw/ExhibitionList.aspx?ExhibitionType=2&Period=1",
         ]
         async with HttpxAsyncClient(
-            headers=headers,
-            cookies=cookies,
-            http2=False,
-            limits=limits,
-            timeout=timeout,
+                headers=headers,
+                cookies=cookies,
+                http2=False,
+                limits=limits,
+                timeout=timeout,
         ) as client:
             responses = []
             async with semaphore:

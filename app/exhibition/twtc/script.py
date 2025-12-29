@@ -8,7 +8,7 @@ from app.exhibition.twtc.schemas import TwTcResponse
 from app.exhibition.twtc.utils import get_next_element
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information, Coordinate
@@ -57,12 +57,13 @@ class TwTcRunner(RunnerInit):
         }
 
     async def fetch_response(self):
-        headers = {
-            **get_header(),
-            "Host": "twtc.com.tw",
-            "Pragma": "no-cache",
-            "Referer": "https://twtc.com.tw/exhibition?p=home",
-        }
+        headers = get_headers(
+            host="twtc.com.tw",
+            referer="https://twtc.com.tw/exhibition?p=home",
+            other_headers={
+                "Pragma": "no-cache",
+            }
+        )
         responses = []
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get("https://twtc.com.tw/exhibition?p=home")

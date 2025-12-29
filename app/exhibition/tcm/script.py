@@ -4,7 +4,7 @@ import bs4
 import httpx
 
 from app.exhibition.tcm.parse import TcmParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -37,7 +37,7 @@ class TcmRunner(RunnerInit):
         return response.text
 
     async def fetch_response(self):
-        headers = dict(**get_header())
+        headers = dict(**get_headers())
         urls = [
             "https://tcm.tainan.gov.tw/permanent",
             "https://tcm.tainan.gov.tw/special",

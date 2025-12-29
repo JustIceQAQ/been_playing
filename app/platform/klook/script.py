@@ -1,5 +1,4 @@
 import asyncio
-import json
 
 from rnet import Proxy
 
@@ -7,6 +6,7 @@ from app.platform.klook.parse import KLookParse
 from configs.settings import get_settings
 from helpers.cache import NoneCache
 from helpers.crawler.rnet.helper import RNetAsyncClient
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
@@ -50,14 +50,17 @@ class KLookRunner(RunnerInit):
 
     async def fetch_response(self):
         responses = []
-        headers = {
-            "accept": "text/html,application/xhtml+xml,application/xml;"
-                      "q=0.9,image/avif,image/webp,image/apng,*/*;"
-                      "q=0.8,application/signed-exchange;"
-                      "v=b3;"
-                      "q=0.7",
-            "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
-        }
+        headers = get_headers(
+            not_use_user_agent=True,
+            other_headers={
+                "accept": "text/html,application/xhtml+xml,application/xml;"
+                          "q=0.9,image/avif,image/webp,image/apng,*/*;"
+                          "q=0.8,application/signed-exchange;"
+                          "v=b3;"
+                          "q=0.7",
+                "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+            }
+        )
         runtime_settings = get_settings()
         proxies = (
             None

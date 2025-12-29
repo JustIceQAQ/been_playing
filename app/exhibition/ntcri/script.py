@@ -1,11 +1,10 @@
 import asyncio
-import decimal
 from typing import Any
 
 from app.exhibition.ntcri.parse import NTCRIParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -43,15 +42,15 @@ class NTCRIRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_header()
-        headers = {
-            **headers,
-            "accept": "application/json, text/plain, */*",
-            "access_token": "b550b95f-ce44-4684-968b-298b0f5ad483",
-            "host": "tcdbdata.ntcri.gov.tw",
-            "origin": "https://www.ntcri.gov.tw",
-            "referer": "https://www.ntcri.gov.tw/",
-        }
+        headers = get_headers(
+            host="tcdbdata.ntcri.gov.tw",
+            origin="https://www.ntcri.gov.tw",
+            referer="https://www.ntcri.gov.tw/",
+            other_headers={
+                "access_token": "b550b95f-ce44-4684-968b-298b0f5ad483",
+                "accept": "application/json, text/plain, */*",
+            }
+        )
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
                 "https://tcdbdata.ntcri.gov.tw/api/cms/exhibition?limit=50&offset=0&query=null&sort=sort&order=asc"

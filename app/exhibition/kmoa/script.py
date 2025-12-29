@@ -1,12 +1,10 @@
 import asyncio
-import decimal
-import secrets
 
 import bs4
 import httpx
 
 from app.exhibition.kmoa.parse import KmoaParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers, get_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -54,12 +52,11 @@ class KmoaRunner(RunnerInit):
         return ok_responses_text
 
     async def fetch_response(self):
-        headers = {
-            **get_header(),
-            "upgrade-insecure-requests": "1",
-            "referer": "https://kmoa.klcg.gov.tw",
-        }
-        cookies = {"ASP.NET_SessionId": secrets.token_hex(12), "font-size-": "medium"}
+        headers = get_headers(
+                referer="https://kmoa.klcg.gov.tw",
+                need_upgrade_insecure_requests=True
+            )
+        cookies = {**get_cookies(need_asp_net_session_id=True), "font-size-": "medium"}
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             url = "https://kmoa.klcg.gov.tw/News_Photo.aspx?n=7484&sms=12489"
             response = await client.get(url)

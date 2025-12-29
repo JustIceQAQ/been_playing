@@ -3,7 +3,7 @@ import decimal
 
 import bs4
 from app.exhibition.nrm.parse import NrmParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -31,7 +31,7 @@ class NrmRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = dict(**get_header())
+        headers = dict(**get_headers())
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
                 "https://www.nrm.gov.tw/News_actives.aspx?n=3325&sms=13412"

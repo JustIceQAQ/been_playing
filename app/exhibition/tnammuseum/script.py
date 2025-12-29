@@ -2,7 +2,7 @@ import asyncio
 
 import bs4
 from app.exhibition.tnammuseum.parse import TnamMuseumParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -34,7 +34,7 @@ class TnamMuseumRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = dict(**get_header())
+        headers = dict(**get_headers())
         responses = []
         async with HttpxAsyncClient(headers=headers) as client:
             for url in ["https://www.tnam.museum/exhibition/current", "https://www.tnam.museum/exhibition/upcoming"]:

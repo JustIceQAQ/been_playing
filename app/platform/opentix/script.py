@@ -3,7 +3,7 @@ import asyncio
 from app.platform.opentix.parse import OpenTixParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
@@ -28,11 +28,7 @@ class OpenTixRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = {
-            **get_header(),
-            "origin": "https://www.opentix.life",
-            "referer": "https://www.opentix.life/",
-        }
+        headers = get_headers(origin="https://www.opentix.life", referer="https://www.opentix.life/")
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.post(
                 "https://search.opentix.life/search",

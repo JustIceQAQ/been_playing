@@ -6,7 +6,7 @@ import bs4
 from app.exhibition.mocataipei.parse import MoCaTaipeiParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -28,15 +28,13 @@ class MoCaTaipeiRunner(RunnerInit):
             fullname="台北當代藝術館",
             code_name="MoCaTaipei",
             external_link="https://www.mocataipei.org.tw/tw/ExhibitionAndEvent",
-
-
             branch_coordinates=Coordinate(google_map_place_id="ChIJc-TxSWypQjQR-8Eh7elK97Q",
                 raw_coordinates="25.05101850889424, 121.51900878326302",
             ),
         )
 
     async def fetch_response(self):
-        headers = get_header()
+        headers = get_headers()
         target_url = [
             "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent",
             "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Exhibitions/Upcoming",

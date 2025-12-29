@@ -1,5 +1,4 @@
 import asyncio
-import secrets
 import uuid
 
 import bs4
@@ -7,7 +6,7 @@ import bs4
 from app.exhibition.taipeiexpopark.parse import TaipeiExPoParkParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers, get_cookies
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -33,12 +32,10 @@ class TaipeiExPoParkRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = {
-            **get_header(),
-            "origin": "https://www.expopark.taipei",
-            "referer": "https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029",
-            "cookie": f"ASP.NET_SessionId={secrets.token_hex(12)}; font-size-=medium",
-        }
+        headers = get_headers(
+            origin="https://www.expopark.taipei",
+            referer="https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029", )
+        cookies = get_cookies(need_asp_net_session_id=True, other_cookies={"font-size-": "medium"})
         params = {
             "n": 247,
             "sms": 9029,
@@ -58,7 +55,7 @@ class TaipeiExPoParkRunner(RunnerInit):
             "jNewsModule_field_SDate4": this_date_format,
             "jNewsModule_BtnSend": "送出查詢",
         }
-        async with HttpxAsyncClient(headers=headers) as client:
+        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             response = await client.post(
                 "https://www.expopark.taipei/News_Exhibition.aspx",
                 params=params,

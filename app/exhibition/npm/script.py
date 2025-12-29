@@ -6,7 +6,7 @@ import bs4
 from app.exhibition.npm.parse import NpmColParse, NpmRowParse, NpmPreviewParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information, Coordinate
@@ -42,11 +42,11 @@ class NpmRunner(RunnerInit):
                 *[
                     client.get(
                         "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1",
-                        headers={**get_header(), **this_header},
+                        headers={**get_headers(), **this_header},
                     ),
                     client.get(
                         "https://www.npm.gov.tw/Exhibition-Preview.aspx?sno=03000061&l=1",
-                        headers={**get_header(), **this_header},
+                        headers={**get_headers(), **this_header},
                     ),
                 ]
             )

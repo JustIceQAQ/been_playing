@@ -4,7 +4,7 @@ import secrets
 from justhtml import JustHTML
 
 from app.exhibition.aaaarchives.parse import AAAArchivesParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers, get_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -33,15 +33,16 @@ class AAAArchivesRunner(RunnerInit):
 
     async def fetch_response(self):
         url = "https://aaa.archives.tw/tw/event/306.html"
-        headers = {
-            **get_header(),
-            "referer": url,
-            "origin": "https://aaa.archives.tw",
-            "host": "aaa.archives.tw",
-            "content-type": "application/x-www-form-urlencoded",
-        }
+        headers = get_headers(
+            referer=url,
+            origin="https://aaa.archives.tw",
+            host="aaa.archives.tw",
+            other_headers={
+                "content-type": "application/x-www-form-urlencoded",
+            }
+        )
         cookies = {
-            "JSESSIONID": secrets.token_hex(16),
+            **get_cookies(need_js_ession_id=True),
             "cookiesession1": secrets.token_hex(16)
         }
         data = {

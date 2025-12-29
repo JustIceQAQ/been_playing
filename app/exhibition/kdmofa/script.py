@@ -3,7 +3,7 @@ import secrets
 
 import bs4
 from app.exhibition.kdmofa.parse import KdMoFaParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers, get_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -32,13 +32,12 @@ class KdMoFaRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = {
-            **get_header(),
-            "host": "kdmofa.tnua.edu.tw",
-            "referer": "https://kdmofa.tnua.edu.tw",
-            "upgrade-insecure-requests": "1",
-        }
-        cookies = {"PHPSESSID": secrets.token_hex(13)}
+        headers = get_headers(
+                host="kdmofa.tnua.edu.tw",
+                referer="https://kdmofa.tnua.edu.tw",
+                need_upgrade_insecure_requests=True
+            )
+        cookies = get_cookies(need_phpsessid=True)
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             response = await client.get(
                 "https://kdmofa.tnua.edu.tw/mod/exhibition/index.php"

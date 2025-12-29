@@ -1,12 +1,11 @@
 import asyncio
-import decimal
 
 import bs4
 
 from app.exhibition.jam.parse import JamParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -32,11 +31,8 @@ class JamRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = {
-            **get_header(),
-            "Host": "jam.jutfoundation.org.tw",
-            "Referer": "http://jam.jutfoundation.org.tw",
-        }
+        headers = get_headers(host="jam.jutfoundation.org.tw",
+                              referer="https://jam.jutfoundation.org.tw")
 
         async with HttpxAsyncClient() as client:
             urls = [

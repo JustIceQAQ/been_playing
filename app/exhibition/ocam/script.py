@@ -6,7 +6,7 @@ import bs4
 from app.exhibition.ocam.parse import OCAMParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers, get_cookies
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -32,11 +32,8 @@ class OCAMRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = {
-            **get_header(),
-            "referer": "https://www.ymculture.org.tw/tw/Exhibition/OCAM#",
-        }
-        cookies = {"PHPSESSID": secrets.token_hex(16)}
+        headers = get_headers(referer="https://www.ymculture.org.tw/tw/Exhibition/OCAM#")
+        cookies = get_cookies(need_phpsessid=True)
         url = "https://www.ymculture.org.tw/tw/Exhibition/OCAM#"
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             response = await client.get(url)

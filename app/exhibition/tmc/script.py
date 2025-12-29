@@ -9,7 +9,7 @@ import httpx
 from app.exhibition.tmc.parse import TmcParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -48,17 +48,18 @@ class TmcRunner(RunnerInit):
         return base64.b64encode(str_dict.encode()).decode()
 
     async def fetch_response(self):
-        headers = {
-            **get_header(),
-            "accept": "text/html,"
-            "application/xhtml+xml,"
-            "application/xml;q=0.9,"
-            "image/avif,"
-            "image/webp,"
-            "image/apng,*/*;q=0.8,"
-            "application/signed-exchange;v=b3;q=0.7",
-            "Host": "www.tmc.taipei",
-        }
+        headers = get_headers(
+            host="www.tmc.taipei",
+            other_headers={
+                "accept": "text/html,"
+                          "application/xhtml+xml,"
+                          "application/xml;q=0.9,"
+                          "image/avif,"
+                          "image/webp,"
+                          "image/apng,*/*;q=0.8,"
+                          "application/signed-exchange;v=b3;q=0.7",
+            }
+        )
         cookie_jar = httpx.Cookies()
         cookie_jar.set("ci_session", secrets.token_hex(8), domain="www.tmc.taipei")
         target_url = "https://www.tmc.taipei/tw/blog/show"
@@ -70,12 +71,12 @@ class TmcRunner(RunnerInit):
             response.raise_for_status()
             responses_text.append(response.text)
             pagination_len = (
-                len(
-                    self.translation()
-                    .translation_to_object(response.text)
-                    .select("li.c-pagination-item")
-                )
-                - 2
+                    len(
+                        self.translation()
+                        .translation_to_object(response.text)
+                        .select("li.c-pagination-item")
+                    )
+                    - 2
             )
             if pagination_len != 1:
                 for n in range(2, pagination_len + 1):

@@ -7,7 +7,7 @@ import bs4
 from app.exhibition.ntm.parse import NtmParse, all_branch
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -38,7 +38,7 @@ class NtmRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_header()
+        headers = get_headers()
         urls_template = "https://www.ntm.gov.tw/News_actives.aspx?n={n}&sms={sms}&_CSN={csn}&page=1&PageSize=50"
         tasks = []
         async with HttpxAsyncClient(headers=headers) as client:
