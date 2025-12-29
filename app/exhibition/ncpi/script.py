@@ -6,7 +6,7 @@ import bs4
 from app.exhibition.ncpi.parse import NCPIParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers, get_cookies
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -32,12 +32,9 @@ class NCPIRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = {
-            **get_header(),
-            "Host": "ncpi.ntmofa.gov.tw",
-            "Cookie": f"ASP.NET_SessionId={secrets.token_hex(12)}",
-        }
-        async with HttpxAsyncClient(headers=headers) as client:
+        headers = get_headers(host="ncpi.ntmofa.gov.tw")
+        cookies = get_cookies(need_asp_net_session_id=True)
+        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             tasks = [
                 client.get(
                     "https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?IsF=1&n=8005&sms=15632"

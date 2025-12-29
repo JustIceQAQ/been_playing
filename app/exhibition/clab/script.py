@@ -6,7 +6,7 @@ import bs4
 from app.exhibition.clab.parse import CLabParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -47,7 +47,7 @@ class CLabRunner(RunnerInit):
             filter_year=filter_year, filter_month=filter_month
         )
         async with HttpxAsyncClient() as client:
-            response = await client.get(target_url, headers=get_header())
+            response = await client.get(target_url, headers=get_headers())
         return response.text
 
     async def fetch_parsed(self):

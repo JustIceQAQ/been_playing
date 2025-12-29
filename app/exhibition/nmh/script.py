@@ -1,12 +1,11 @@
 import asyncio
-import decimal
 
 import bs4
 
 from app.exhibition.nmh.parse import NmhParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -32,11 +31,10 @@ class NmhRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = {
-            **get_header(),
-            "Host": "www.nmh.gov.tw",
-            "Referer": "https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323",
-        }
+        headers = get_headers(
+            host="www.nmh.gov.tw",
+            referer="https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323"
+        )
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
                 "https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323"

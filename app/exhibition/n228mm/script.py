@@ -4,7 +4,7 @@ import json
 import bs4
 from app.exhibition.n228mm.parse import N228MMParse
 from app.exhibition.n228mm.schemas import CommonConfig, query_p
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -34,7 +34,7 @@ class N228MMRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = dict(**get_header())
+        headers = dict(**get_headers())
         async with HttpxAsyncClient() as client:
             response_1 = await client.get(
                 "https://www.228.org.tw/exhibitionsnew", headers=headers

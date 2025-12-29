@@ -1,7 +1,7 @@
 import asyncio
 import urllib.parse
 from app.exhibition.pact.parse import PactParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -31,13 +31,12 @@ class PactRunner(RunnerInit):
 
     async def fetch_response(self):
         aspx = "https://www.pact.taipei/exhibition_list.aspx"
-        headers = {
-            **get_header(),
-            "x-requested-with": "XMLHttpRequest",
-            "referer": f"{aspx}?p=1&ps=10&t=all",
-            "origin": "https://www.pact.taipei",
-            "host": "www.pact.taipei",
-        }
+        headers = get_headers(
+            referer=f"{aspx}?p=1&ps=10&t=all",
+            origin="https://www.pact.taipei",
+            host="www.pact.taipei",
+            x_requested_with="XMLHttpRequest",
+        )
         data = {
             "q": "get",
             "r": "0.9",

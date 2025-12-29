@@ -2,7 +2,7 @@ import asyncio
 
 import bs4
 from app.exhibition.tncmmm.parse import TncMMMParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -31,11 +31,10 @@ class TncMMMRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = {
-            **get_header(),
-            "host": "tncmmm.gov.taipei",
-            "referer": "https://tncmmm.gov.taipei",
-        }
+        headers = get_headers(
+                host="tncmmm.gov.taipei",
+                referer="https://tncmmm.gov.taipei",
+            )
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
                 "https://tncmmm.gov.taipei/Content_List.aspx?n=2BF92E180FD68C1A",

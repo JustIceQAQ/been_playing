@@ -2,7 +2,7 @@ import asyncio
 
 
 from app.exhibition.kishuan.parse import KiShuAnParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -31,7 +31,7 @@ class KiShuAnRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_header(
+        headers = get_headers(
             host="kishuan.org.tw",
             referer="https://kishuan.org.tw/activity.htm",
             need_upgrade_insecure_requests=True

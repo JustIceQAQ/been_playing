@@ -1,10 +1,10 @@
 import httpx
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 
 
 def test_get_cultureexpress_data():
     headers = {
-        **get_header(),
+        **get_headers(),
         "referer": "https://cultureexpress.taipei",
     }
     with httpx.Client(headers=headers) as client:

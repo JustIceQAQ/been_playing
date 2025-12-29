@@ -6,7 +6,7 @@ import httpx
 
 from app.exhibition.khm.parse import KhmParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -41,7 +41,7 @@ class KhmRunner(RunnerInit):
     async def fetch_response(self):
         current_exhibitions_url = "https://khm.org.tw/tw/exhibition/currentexhibitions"
         permanent_exhibitions = "https://khm.org.tw/tw/exhibition/permanentexhibitions"
-        headers = {**get_header(), "referer": current_exhibitions_url}
+        headers = get_headers(referer=current_exhibitions_url)
         async with HttpxAsyncClient(headers=headers) as client:
             current_exhibitions_response = await self.sub_get_response(
                 client, current_exhibitions_url

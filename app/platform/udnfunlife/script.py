@@ -5,7 +5,7 @@ import bs4
 from app.platform.udnfunlife.parse import UdnFunLifeParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
@@ -28,7 +28,7 @@ class UdnFunLifeRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_header()
+        headers = get_headers()
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.post(
                 "https://tickets.udnfunlife.com/Application/UTK01/UTK0101_009.aspx/Product_Category_List",

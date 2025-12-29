@@ -6,7 +6,7 @@ import httpx
 from app.exhibition.bopiliao.parse import BoPiLiaoParse
 from helpers.cache.none.helper import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -37,7 +37,8 @@ class BoPiLiaoRunner(RunnerInit):
         return await client.get(url, params=params)
 
     async def fetch_response(self):
-        headers = {**get_header(), "host": "www.bopiliao.taipei"}
+
+        headers = get_headers(host="www.bopiliao.taipei")
         params = {
             "ajax": 1,
             "search_day_start": "",

@@ -4,7 +4,7 @@ import bs4
 
 from app.exhibition.fubonartmuseum.parse import FuBonArtMuseumParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -33,7 +33,7 @@ class FuBonArtMuseumRunner(RunnerInit):
     async def fetch_response(self):
         async with HttpxAsyncClient() as client:
             response = await client.get(
-                "https://www.fubonartmuseum.org/Default", headers=get_header()
+                "https://www.fubonartmuseum.org/Default", headers=get_headers()
             )
         return response.text
 

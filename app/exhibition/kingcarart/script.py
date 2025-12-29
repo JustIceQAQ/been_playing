@@ -6,7 +6,7 @@ import bs4
 from app.exhibition.kingcarart.parse import KingCarArtParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -42,7 +42,7 @@ class KingCarArtRunner(RunnerInit):
             "&yuanshan=true"
             "&page={page}"
         )
-        headers = get_header()
+        headers = get_headers()
         responses = []
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(target_url.format(page=1))

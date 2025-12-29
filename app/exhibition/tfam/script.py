@@ -1,10 +1,9 @@
 import asyncio
-import secrets
 
 from app.exhibition.tfam.parse import TFamParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers, get_cookies
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -30,16 +29,17 @@ class TFamRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = {
-            **get_header(),
-            "Referer": "https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw",
-            "Content-Type": "application/json; charset=UTF-8",
-            "Host": "www.tfam.museum",
-            "origin": "https://www.tfam.museum",
-            "X-Requested-With": "XMLHttpRequest",
-            "cookie": f"ASP.NET_SessionId={secrets.token_hex(12)}",
-        }
-        async with HttpxAsyncClient(headers=headers) as client:
+        headers = get_headers(
+            origin="https://www.tfam.museum",
+            referer="https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw",
+            host="www.tfam.museum",
+            x_requested_with="XMLHttpRequest",
+            other_headers={
+                "Content-Type": "application/json; charset=UTF-8",
+            }
+        )
+        cookies = get_cookies(need_asp_net_session_id=True)
+        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             tasks = [
                 client.post(
                     "https://www.tfam.museum/ashx/Exhibition.ashx?ddlLang=zh-tw",

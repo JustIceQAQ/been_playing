@@ -2,7 +2,7 @@ import asyncio
 
 import bs4
 from app.exhibition.tncsec.parse import TnCsEcParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -30,7 +30,7 @@ class TnCsEcRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = dict(**get_header())
+        headers = dict(**get_headers())
         url = "https://www.tncsec.gov.tw/News_actives.aspx?n=2921&sms=11885&page=1&PageSize=30"
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(url)

@@ -10,7 +10,7 @@ from rnet import Proxy
 from app.platform.kktix.parse import KKTixParse
 from helpers.cache import NoneCache
 from helpers.crawler.rnet.helper import RNetAsyncClient
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
@@ -51,10 +51,7 @@ class KKTixRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = {
-            **get_header(),
-            "referer": "https://kktix.com/",
-        }
+        headers = get_headers(referer="https://kktix.com/", )
 
         today, today_add_2_months = within_two_months()
         start_at = urllib.parse.quote(today.strftime("%Y/%m/%d"), safe="")

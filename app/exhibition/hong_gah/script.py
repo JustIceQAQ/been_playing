@@ -3,7 +3,7 @@ import decimal
 
 import bs4
 from app.exhibition.hong_gah.parse import HongGahParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -33,12 +33,11 @@ class HongGahRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = {
-            **get_header(),
-            "x-requested-with": "XMLHttpRequest",
-            "referer": "https://hong-gah.org.tw/exhibitions-zh",
-            "host": "hong-gah.org.tw",
-        }
+        headers = get_headers(
+                host="hong-gah.org.tw",
+                referer="https://hong-gah.org.tw/exhibitions-zh",
+                x_requested_with="XMLHttpRequest"
+            )
         async with HttpxAsyncClient(headers=headers, follow_redirects=True) as client:
             response = await client.get("https://hong-gah.org.tw/exhibitions-zh/page/1")
             response.raise_for_status()

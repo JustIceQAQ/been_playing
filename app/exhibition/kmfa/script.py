@@ -6,7 +6,7 @@ import bs4
 import httpx
 
 from app.exhibition.kmfa.parse import KmFaParse
-from helpers.headers_helper import get_header, get_cookies
+from helpers.headers_helper import get_headers, get_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -41,7 +41,7 @@ class KmFaRunner(RunnerInit):
     async def fetch_response(self):
         headers = (
             {
-                **get_header(),
+                **get_headers(),
                 "referer": "https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",
             },
         )

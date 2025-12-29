@@ -1,15 +1,15 @@
 from bs4 import BeautifulSoup
 
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import UA, get_cookies
+from helpers.headers_helper import get_cookies, get_headers
 from helpers.image.imgur.helper import limiter
 from helpers.image.turboimagehost.schemas import Data, UploadResponse
 
-headers = {
-    "user-agent": UA.random,
-    "referer": "https://www.turboimagehost.com/",
-    "origin": "https://www.turboimagehost.com",
-}
+headers = get_headers(
+    origin="https://www.turboimagehost.com",
+    referer="https://www.turboimagehost.com/",
+)
+
 cookies = get_cookies(need_phpsessid=True)
 
 

@@ -1,10 +1,9 @@
 import asyncio
 import datetime
-import uuid
 from typing import Any
 
 from app.exhibition.pier2.parse import Pier2Parse
-from helpers.headers_helper import get_header, get_cookies
+from helpers.headers_helper import get_headers, get_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -32,12 +31,9 @@ class Pier2Runner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = {
-            **get_header(),
-            "x-requested-with": "XMLHttpRequest",
-            "referer": "https://pier2.org/exhibition/list/all/",
-            "origin": "https://pier2.org",
-        }
+        headers = get_headers(referer="https://pier2.org/exhibition/list/all/",
+                              origin="https://pier2.org",
+                              x_requested_with="XMLHttpRequest")
         cookies = get_cookies(need_phpsessid=True)
         params = {
             "type": "exhibition",

@@ -5,7 +5,7 @@ import bs4
 import httpx
 import logging
 from app.exhibition.montue.parse import MoNTUEParse
-from helpers.headers_helper import get_header
+from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
@@ -38,7 +38,7 @@ class MoNTUERunner(RunnerInit):
         return response.text
 
     async def fetch_response(self):
-        headers = dict(**get_header())
+        headers = dict(**get_headers())
         urls = [
             "https://montue.ntue.edu.tw/exhibitions/",
             "https://montue.ntue.edu.tw/exhibitions-upcoming/",
