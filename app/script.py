@@ -1,4 +1,5 @@
 from .exhibition.aaaarchives import AAAArchivesRunner
+from .exhibition.artistvillage import ArtistVillageRunner
 from .exhibition.bopiliao.script import BoPiLiaoRunner
 from .exhibition.chipolin import ChiPoLinRunner
 from .exhibition.cksmh.script import CKSMHRunner
@@ -114,4 +115,5 @@ PY_CLASS_SCRIPT = {
     TnCsEcRunner,
     MoNTUERunner,
     AAAArchivesRunner,
+    ArtistVillageRunner,
 }
