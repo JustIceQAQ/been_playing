@@ -3,10 +3,7 @@ from helpers.headers_helper import get_headers
 
 
 def test_get_cultureexpress_data():
-    headers = {
-        **get_headers(),
-        "referer": "https://cultureexpress.taipei",
-    }
+    headers = get_headers(referer="https://cultureexpress.taipei")
     with httpx.Client(headers=headers) as client:
         response1 = client.get(
             url="https://cultureexpress.taipei/Event/C000003", headers=headers

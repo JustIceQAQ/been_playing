@@ -32,7 +32,7 @@ class ChiPoLinRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = dict(**get_headers())
+        headers = get_headers()
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get("https://www.chipolin.org/exhibition")
         return response.text

@@ -32,7 +32,6 @@ class Culture435Runner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = dict(**get_headers())
         xsmsid = "0G256373177821958325"
         first_url = "https://www.435.culture.ntpc.gov.tw/xmdoc"
         headers = get_headers(host="www.435.culture.ntpc.gov.tw")

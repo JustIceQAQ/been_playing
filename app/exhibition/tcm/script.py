@@ -37,7 +37,7 @@ class TcmRunner(RunnerInit):
         return response.text
 
     async def fetch_response(self):
-        headers = dict(**get_headers())
+        headers = get_headers()
         urls = [
             "https://tcm.tainan.gov.tw/permanent",
             "https://tcm.tainan.gov.tw/special",

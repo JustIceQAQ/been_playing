@@ -30,7 +30,7 @@ class TnCsEcRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = dict(**get_headers())
+        headers = get_headers()
         url = "https://www.tncsec.gov.tw/News_actives.aspx?n=2921&sms=11885&page=1&PageSize=30"
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(url)

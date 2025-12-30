@@ -34,7 +34,7 @@ class TnamMuseumRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = dict(**get_headers())
+        headers = get_headers()
         responses = []
         async with HttpxAsyncClient(headers=headers) as client:
             for url in ["https://www.tnam.museum/exhibition/current", "https://www.tnam.museum/exhibition/upcoming"]:

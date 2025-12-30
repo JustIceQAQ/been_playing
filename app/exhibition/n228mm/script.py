@@ -34,7 +34,7 @@ class N228MMRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = dict(**get_headers())
+        headers = get_headers()
         async with HttpxAsyncClient() as client:
             response_1 = await client.get(
                 "https://www.228.org.tw/exhibitionsnew", headers=headers

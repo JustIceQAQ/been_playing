@@ -34,11 +34,7 @@ class NTPCRunner(RunnerInit):
         )
 
     def get_this_header(self):
-        return {
-            **get_headers(),
-            "upgrade-insecure-requests": "1",
-            "host": "www.ceramics.ntpc.gov.tw",
-        }
+        return get_headers(host="www.ceramics.ntpc.gov.tw", need_upgrade_insecure_requests=True)
 
     async def fetch_response(self):
         headers = self.get_this_header()
