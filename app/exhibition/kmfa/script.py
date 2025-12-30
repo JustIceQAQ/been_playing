@@ -39,12 +39,7 @@ class KmFaRunner(RunnerInit):
         return response.text
 
     async def fetch_response(self):
-        headers = (
-            {
-                **get_headers(),
-                "referer": "https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",
-            },
-        )
+        headers = get_headers(referer="https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1")
         cookies = get_cookies(need_asp_net_session_id=True, need_consent=True)
         urls = [
             "https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",

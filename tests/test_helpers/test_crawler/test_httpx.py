@@ -20,16 +20,17 @@ async def test_get():
             "&start_date="
             "&end_date="
             "&keywords=",
-            headers={
-                **get_headers(),
-                "accept": "text/html,"
-                "application/xhtml+xml,"
-                "application/xml;q=0.9,"
-                "image/avif,image/webp,"
-                "image/apng,*/*;q=0.8,"
-                "application/signed-exchange;v=b3;q=0.7",
-                "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
-            },
+            headers=get_headers(
+                other_headers={
+                    "accept": "text/html,"
+                    "application/xhtml+xml,"
+                    "application/xml;q=0.9,"
+                    "image/avif,image/webp,"
+                    "image/apng,*/*;q=0.8,"
+                    "application/signed-exchange;v=b3;q=0.7",
+                    "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+                }
+            ),
         )
         response_json = response.json()
         print(response_json)

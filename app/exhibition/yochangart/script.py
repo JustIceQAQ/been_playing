@@ -31,7 +31,7 @@ class YoChangArtRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = dict(**get_headers())
+        headers =get_headers()
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get("https://museum.ntua.edu.tw/c001.asp")
             response.raise_for_status()

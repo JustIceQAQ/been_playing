@@ -1,5 +1,4 @@
 import asyncio
-import decimal
 
 import bs4
 
@@ -31,40 +30,22 @@ class NpmRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        # runtime_setting = get_settings()
-        this_header = {
-            "referer": "https://www.npm.gov.tw/",
-            "upgrade-insecure-requests": "1",
-            "host": "www.npm.gov.tw",
-        }
-        async with HttpxAsyncClient() as client:
+        this_header = get_headers(
+            referer="https://www.npm.gov.tw/",
+            need_upgrade_insecure_requests=True,
+            host="www.npm.gov.tw"
+        )
+        async with HttpxAsyncClient(headers=this_header) as client:
             results = await asyncio.gather(
                 *[
                     client.get(
                         "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1",
-                        headers={**get_headers(), **this_header},
                     ),
                     client.get(
                         "https://www.npm.gov.tw/Exhibition-Preview.aspx?sno=03000061&l=1",
-                        headers={**get_headers(), **this_header},
                     ),
                 ]
             )
-        # async with ScrapeDoAsyncClient(
-        #     api_key=runtime_setting.SCRAPE_DO_API_KEY
-        # ) as client:
-        #     results = await asyncio.gather(
-        #         *[
-        #             client.get(
-        #                 "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1",
-        #                 headers={**get_header(), **this_header},
-        #             ),
-        #             client.get(
-        #                 "https://www.npm.gov.tw/Exhibition-Preview.aspx?sno=03000061&l=1",
-        #                 headers={**get_header(), **this_header},
-        #             ),
-        #         ]
-        #     )
         for response in results:
             response.raise_for_status()
 

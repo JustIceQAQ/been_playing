@@ -30,7 +30,7 @@ class YatsenRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = dict(**get_headers())
+        headers = get_headers()
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
                 "https://www.yatsen.gov.tw/News_actives.aspx?n=7339&sms=13411"

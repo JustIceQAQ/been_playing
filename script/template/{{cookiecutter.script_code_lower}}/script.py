@@ -31,7 +31,7 @@ class {{cookiecutter.script_code}}Runner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = dict(**get_headers())
+        headers = get_headers()
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get()
         return response.text

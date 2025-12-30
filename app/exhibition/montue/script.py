@@ -38,7 +38,7 @@ class MoNTUERunner(RunnerInit):
         return response.text
 
     async def fetch_response(self):
-        headers = dict(**get_headers())
+        headers = get_headers()
         urls = [
             "https://montue.ntue.edu.tw/exhibitions/",
             "https://montue.ntue.edu.tw/exhibitions-upcoming/",

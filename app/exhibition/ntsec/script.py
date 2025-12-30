@@ -35,10 +35,7 @@ class NtSecRunner(RunnerInit):
         )
 
     def get_this_headers(self) -> dict:
-        return {
-            **get_headers(),
-            "Host": "www.ntsec.gov.tw",
-        }
+        return get_headers(host="www.ntsec.gov.tw")
 
     async def fetch_response(self):
         headers = self.get_this_headers()
