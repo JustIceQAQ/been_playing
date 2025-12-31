@@ -1,11 +1,10 @@
 import asyncio
-import decimal
 
 import bs4
-import httpx
-
+from rnet import Proxy, Client
 from app.exhibition.khm.parse import KhmParse
-from helpers.crawler.httpx.helper import HttpxAsyncClient
+from configs.settings import get_settings
+from helpers.crawler.rnet.helper import RNetAsyncClient
 from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -33,23 +32,36 @@ class KhmRunner(RunnerInit):
             branch_coordinates=Coordinate(raw_coordinates="22.62712833389164, 120.28687449855717"),
         )
 
-    async def sub_get_response(self, client: httpx.AsyncClient, url: str) -> str:
+    async def sub_get_response(self, client: Client, url: str) -> str:
         response = await client.get(url)
-        response.raise_for_status()
-        return response.text
+        return await response.text()
 
     async def fetch_response(self):
         current_exhibitions_url = "https://khm.org.tw/tw/exhibition/currentexhibitions"
         permanent_exhibitions = "https://khm.org.tw/tw/exhibition/permanentexhibitions"
-        headers = get_headers(referer=current_exhibitions_url)
-        async with HttpxAsyncClient(headers=headers) as client:
-            current_exhibitions_response = await self.sub_get_response(
-                client, current_exhibitions_url
+        headers = get_headers(referer=current_exhibitions_url, not_use_user_agent=True)
+        runtime_settings = get_settings()
+        proxies = (
+            None
+            if runtime_settings.PROXY_POOL is None
+            else [
+                Proxy.all(
+                    runtime_settings.PROXY_POOL
+                )
+            ]
+        )
+        async with RNetAsyncClient(
+                proxies=proxies, headers=headers,
+        ) as client:
+            responses = await asyncio.gather(
+                self.sub_get_response(
+                    client, current_exhibitions_url
+                ),
+                self.sub_get_response(
+                    client, permanent_exhibitions
+                )
             )
-            permanent_exhibitions = await self.sub_get_response(
-                client, permanent_exhibitions
-            )
-        return [current_exhibitions_response, permanent_exhibitions]
+        return responses
 
     async def fetch_parsed(self):
         dataset = []
