@@ -6,7 +6,7 @@ from pathlib import Path
 import sentry_sdk
 from dotenv import load_dotenv
 
-from app.platform.kktix.script import KKTixRunner
+from app.exhibition.khm import KhmRunner
 from configs.settings import get_settings
 from helpers.cache import DiskCache, NoneCache
 from helpers.crawler.scraper.helper import available_scraper_async_client
@@ -30,7 +30,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         imgur = TurboImageHost()
 
     disk_cache = NoneCache() if runtime_setting.IS_DEBUG else DiskCache()
-    job = [KKTixRunner]
+    job = [KhmRunner]
     script_total = len(job)
     prefix = None
     if (worker is not None) and (worker_max is not None) and (worker_max > 0):
@@ -45,7 +45,8 @@ async def main(worker: int | None = None, worker_max: int | None = None):
     await available_scraper_async_client(runtime_setting.SCRAPER_API_KEY)
 
     all_async_script_runners = [
-        RunnerObj().run(disk_cache, imgur, prefix) for RunnerObj in scripts_to_run
+        RunnerObj().run(disk_cache, imgur, prefix, develop_mode=True)
+        for RunnerObj in scripts_to_run
     ]
     await asyncio.gather(*all_async_script_runners, return_exceptions=True)
 

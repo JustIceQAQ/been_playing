@@ -130,7 +130,9 @@ class RunnerInit(abc.ABC):
 
         return hashlib.sha256(content.encode("utf-8")).hexdigest()
 
-    async def run(self, cache: Cache, image, prefix: str | None = None):
+    async def run(
+        self, cache: Cache, image, prefix: str | None = None, develop_mode: bool = False
+    ):
         start_time = time.time()
         try:
             self.cache = cache
@@ -168,6 +170,8 @@ class RunnerInit(abc.ABC):
                 is_sort=self.is_sort,
                 prefix=prefix,
             )
+            if develop_mode:
+                print(self.exhibition_)
 
         except Exception as e:  # noqa F841
             print(traceback.format_exc())
