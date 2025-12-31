@@ -41,9 +41,11 @@ class RunnerInit(abc.ABC):
             class_name = self.__class__.__name__
             sentry_sdk.capture_message(f"{class_name} items is empty")
 
-    async def fetch_parsed(self, *args, **kwargs) -> list[Any] | Any:
+    async def fetch_parsed(
+        self, *args, **kwargs
+    ) -> list[Any] | Any | dict[str, list[Any]]:
+        this_translation = self.translation()
         if isinstance(self.response, list):
-            this_translation = self.translation()
             responses = self.response
             return [
                 this_translation.translation_to_object(response, *args, **kwargs)
@@ -51,6 +53,18 @@ class RunnerInit(abc.ABC):
                 else None
                 for response in responses
             ]
+        elif isinstance(self.response, dict) and all(
+            isinstance(i, list) for i in self.response.values()
+        ):
+            translation_data = {}
+            for key in self.response.keys():
+                translation_data[key] = []
+            for key, value in self.response.items():
+                for v in value:
+                    translation_data[key].append(
+                        this_translation.translation_to_object(v, *args, **kwargs)
+                    )
+            return translation_data
         else:
             return self.translation().translation_to_object(
                 self.response, *args, **kwargs
