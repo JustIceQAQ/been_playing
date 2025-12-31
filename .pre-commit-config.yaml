@@ -15,6 +15,21 @@ repos:
           - --unsafe
       - id: end-of-file-fixer
       - id: trailing-whitespace
+  - repo: local
+    hooks:
+      - id: skylos-scan
+        name: skylos report
+        entry: python -m skylos.cli
+        language: system
+        pass_filenames: false
+        require_serial: true
+        args: [ ".", "--confidence", "70", "--danger" ]
+      - id: skylos-fail-on-findings
+        name: skylos gate
+        language: system
+        pass_filenames: false
+        require_serial: true
+        entry: python script/skylos_gate.py
   - repo: https://github.com/rohaquinlop/complexipy-pre-commit
     rev: v4.2.0
     hooks:
