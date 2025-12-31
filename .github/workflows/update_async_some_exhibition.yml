@@ -1,11 +1,11 @@
-name: update-async-exhibition
+name: update-async-some-exhibition
 
 permissions:
   contents: write
   pull-requests: write
 
 env:
-  BRANCH: "auto/data-update"
+  BRANCH: "develop"
 
 on:
   workflow_dispatch:
