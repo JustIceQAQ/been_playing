@@ -13,7 +13,10 @@ on:
     branches:
       - "develop"
     paths:
-      - ".github/workflows/update_async_some_exhibition.yml"
+      - ".github/workflows/update_async_exhibition.yml"
+  push:
+    branches:
+      - "develop"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
