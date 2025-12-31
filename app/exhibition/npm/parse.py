@@ -3,6 +3,7 @@ from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 import bs4
 
 from helpers.parse_helper import ParseInit
+from helpers.utils_helper import roc_era_to_ad
 
 
 class NpmRowParse(ParseInit):
@@ -13,7 +14,11 @@ class NpmRowParse(ParseInit):
         return self.item.find("h3", {"class": "font-medium"}).get_text()
 
     def get_date(self, *args, **kwargs) -> str:
-        return self.item.find("div", {"class": "exhibition-list-date"}).get_text()
+        return (
+            self.item.find("div", {"class": "exhibition-list-date"})
+            .get_text()
+            .replace("~", " ~ ")
+        )
 
     def get_address(self, *args, **kwargs) -> str:
         return self.item.find("div", {"class": "card-content-bottom"}).get_text()
@@ -153,3 +158,46 @@ class NpmPreviewParse(ParseInit):
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
         return "{}{}".format(target_domain, self.item.find("a").get("href"))
+
+
+class SouthNpmParse(ParseInit):
+    def __init__(self, item: bs4.element.Tag):
+        self.item = item
+
+    def t(self, date_str: str) -> str:
+        y, m, d = date_str.split("-")
+        n_y = roc_era_to_ad(int(y))
+        return f"{n_y}-{m}-{d}"
+
+    def get_title(self, *args, **kwargs) -> str:
+        return self.item.find("a").get("title").strip()
+
+    def get_date(self, *args, **kwargs) -> str:
+        start, end = self.item.select("div.kf_imglist_time > span")
+        start_str = start.get_text(strip=True)
+        end_str = end.get_text(strip=True)
+
+        if end_str:
+            return f"{self.t(start_str)} ~ {self.t(end_str)}"
+
+        return f"{self.t(start_str)} ~ "
+
+    def get_address(self, *args, **kwargs) -> str:
+        address = self.item.find("div", {"class": "remarks_ic-map"}).get_text(
+            strip=True
+        )
+        if "S" in address and "F" in address:
+            return "南部院區 " + address
+        return self.item.find("div", {"class": "remarks_ic-map"}).get_text(strip=True)
+
+    def get_figure(self, *args, **kwargs) -> str:
+        return "https://south.npm.gov.tw/" + self.item.find(
+            "img",
+        ).get("src")
+
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
+        tags = self.item.select("div.mg_b-nuit > span")
+        return [tag.get_text(strip=True) for tag in tags]
+
+    def get_source_url(self, *args, **kwargs) -> str:
+        return "https://south.npm.gov.tw/" + self.item.find("a").get("href")
