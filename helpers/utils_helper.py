@@ -1,7 +1,7 @@
 import datetime as dt
 import zoneinfo
 from functools import lru_cache
-
+from dateutil.relativedelta import relativedelta
 from aiolimiter import AsyncLimiter
 
 TAIWAN_TIMEZONE = zoneinfo.ZoneInfo("Asia/Taipei")
@@ -39,6 +39,17 @@ def datetime_now_iso_format() -> str:
 
 def timestamp_to_datetime(timestamp: int) -> dt.datetime:
     return dt.datetime.fromtimestamp(timestamp, tz=TAIWAN_TIMEZONE)
+
+
+def get_current_and_previous_month():
+    now = datetime_now()
+
+    current_period = (now.year, now.month)
+
+    last_month_date = now - relativedelta(months=1)
+    previous_period = (last_month_date.year, last_month_date.month)
+
+    return current_period, previous_period
 
 
 @lru_cache

@@ -1,102 +1,153 @@
 {
   "information": {
-    "fullname": "台灣當代文化實驗場C-Lab",
+    "fullname": "台灣當代文化實驗場 C-Lab",
     "code_name": "CLab",
     "external_link": "https://clab.org.tw/events/",
-    "map_url": null,
-    "address": null,
-    "google_map_place_id": null
+    "branch_coordinates": {
+      "location_code": null,
+      "raw_coordinates": "25.039263447268308, 121.53884705257425",
+      "longitude": "121.53884705257425",
+      "latitude": "25.039263447268308",
+      "google_map_place_id": null,
+      "name": null
+    },
+    "location_code": "TW-TPE"
   },
-  "counts": 8,
+  "counts": 12,
   "items": [
     {
-      "title": "2025創意工坊：自然拾光",
-      "date": "2025-06-21 ~ 2025-11-30",
-      "address": "102共享吧",
-      "figure": "https://clab.org.tw/wp-content/uploads/2025/04/%E8%87%AA%E7%84%B6%E6%8B%BE%E5%85%89_C-lab%EF%BC%BFbanner_1744x1090-1.jpg",
-      "source_url": "https://clab.org.tw/events/2025-c-lab-workshop/",
-      "tags": [
-        "工作坊"
-      ],
-      "UUID": "ce34271153d255b4886800ec27f0296d"
-    },
-    {
-      "title": "2025 C-LAB 聲響藝術節：DIVERSONICS",
-      "date": "2025-10-23 ~ 2025-11-30",
-      "address": "臺灣當代文化實驗場",
-      "figure": "https://clab.org.tw/wp-content/uploads/2025/07/%E4%B8%8A%E7%A8%BF%E7%94%A8%EF%BC%BF2025%E8%81%B2%E9%9F%BF%E8%97%9D%E8%A1%93%E7%AF%80_c-lab-banner_1744x1090.jpg",
-      "source_url": "https://clab.org.tw/events/2025-diversonics/",
-      "tags": [
-        "藝術節"
-      ],
-      "UUID": "6044eb4d71a556079835645b3b504497"
-    },
-    {
-      "title": "空間與敘事：C-LAB導覽人才培力計畫",
-      "date": "2025-11-01 ~ 2025-11-08",
-      "address": "多功能廳、102共享吧",
-      "figure": "https://clab.org.tw/wp-content/uploads/2025/10/C-LAB-Space-and-Narrative_Banner_C-LAB%E5%AE%98%E7%B6%B2_1744x1090px.jpg",
-      "source_url": "https://clab.org.tw/events/2025clab-guide-training-program/",
-      "tags": [
-        "導覽"
-      ],
-      "UUID": "b635224eef1451a4a58642ffb7d9a180"
-    },
-    {
-      "title": "2025 IRCAM 境外國際論壇：台北場",
-      "date": "2025-11-05 ~ 2025-11-07",
-      "address": "臺灣當代文化實驗場、國立臺灣師範大學進修推廣學院演講堂",
-      "figure": "https://clab.org.tw/wp-content/uploads/2025/07/%E4%B8%8A%E7%A8%BF%E7%94%A8%EF%BC%BF2025%E8%81%B2%E9%9F%BF%E8%97%9D%E8%A1%93%E7%AF%80_c-lab-banner_1744x1090.jpg",
-      "source_url": "https://clab.org.tw/events/2025-diversonics-forum/",
-      "tags": [
-        "研討會"
-      ],
-      "UUID": "b4b94618b28b5abdba4fa7a8a6c7edb7"
-    },
-    {
-      "title": "【限時補給 Pop-up Supply】品品之間：細品生活的小小縫隙",
-      "date": "2025-11-14 ~ 2025-11-16",
-      "address": "加油站",
-      "figure": "https://clab.org.tw/wp-content/uploads/2025/10/%E9%99%90%E6%99%82%E8%A3%9C%E7%B5%A61-%E5%AE%98%E7%B6%B2%E5%88%97%E8%A1%A8-1744x1090-1.jpg",
-      "source_url": "https://clab.org.tw/events/popupsupply01/",
-      "tags": [
-        "市集"
-      ],
-      "UUID": "9780502efd5c52fca91af64ad5c5c4af"
-    },
-    {
-      "title": "展覽【Boom! EQUAL ACCESS 我們之間】",
-      "date": "2025-11-15 ~ 2025-12-07",
-      "address": "CREATORS空間 103 排練室、街角廣場",
-      "figure": "https://clab.org.tw/wp-content/uploads/2025/10/1744-1090-C-LAB%E5%AE%98%E7%B6%B2%E6%B4%BB%E5%8B%95%E9%A0%81%EF%BC%8F%E8%87%89%E6%9B%B8%E6%B4%BB%E5%8B%95%E9%A0%81-_%E6%A1%8C%E6%A9%9F%E7%89%88-scaled.jpg",
-      "source_url": "https://clab.org.tw/events/boom-equal-access/",
+      "title": "【從兒童到兒童｜開放成果展】",
+      "date": "2025-12-05 ~ 2025-12-07",
+      "address": "多功能廳",
+      "figure": "https://clab.org.tw/wp-content/uploads/2025/12/r206_1205_1744X1090.png",
+      "source_url": "https://clab.org.tw/events/r206_251205/",
       "tags": [
         "展覽"
       ],
-      "UUID": "d4a89f55b4f254e0a084891458b11ac6"
+      "UUID": "b18e82086af05ced8fd4f207727726c9"
     },
     {
-      "title": "✦ 沒有光的世界巴洛克 ✦ 微生物影音創作工作坊",
-      "date": "2025-11-01",
-      "address": "CREATORS R201工作室",
-      "figure": "https://clab.org.tw/wp-content/uploads/2025/10/R201_1141101_01-scaled.jpg",
-      "source_url": "https://clab.org.tw/events/r201_20251101/",
+      "title": "夜間不斷電：開放工作室重啟",
+      "date": "2025-12-09 ~ 2025-12-12",
+      "address": "CREATORS空間 203工作室",
+      "figure": "https://clab.org.tw/wp-content/uploads/2025/11/%E9%96%8B%E6%94%BE%E5%B7%A5%E4%BD%9C%E5%AE%A41744X1090px-scaled.jpg",
+      "source_url": "https://clab.org.tw/events/r203_2025120912/",
+      "tags": [
+        "展覽"
+      ],
+      "UUID": "0be5787151455add836532629f07f296"
+    },
+    {
+      "title": "【限時補給 Pop-up Supply】情書郵局",
+      "date": "2025-12-12 ~ 2025-12-14",
+      "address": "加油站",
+      "figure": "https://clab.org.tw/wp-content/uploads/2025/11/%E9%99%90%E6%99%82%E8%A3%9C%E7%B5%A62-%E5%AE%98%E7%B6%B2%E5%88%97%E8%A1%A8-1744x1090-1.jpg",
+      "source_url": "https://clab.org.tw/events/popupsupply02/",
+      "tags": [
+        "市集"
+      ],
+      "UUID": "6314f7bfb83d5e66929ee76add8fcac8"
+    },
+    {
+      "title": "Care in & Change out 讓愛閃耀｜社福 x 藝術 公益特展",
+      "date": "2025-12-13 ~ 2025-12-21",
+      "address": "圖書館展演空間1樓",
+      "figure": "https://clab.org.tw/wp-content/uploads/2025/12/%E7%95%B6%E4%BB%A3%E5%AE%98%E7%B6%B2-1744_1090-px-.jpg",
+      "source_url": "https://clab.org.tw/events/care-in-change-out/",
+      "tags": [
+        "展覽"
+      ],
+      "UUID": "66652ad1b5d0501ca7ee907629eaa6ee"
+    },
+    {
+      "title": "【從兒童到兒童】開放工作坊IV：澄境互動，科技藝術玩劇本",
+      "date": "2025-12-06",
+      "address": "多功能廳",
+      "figure": "https://clab.org.tw/wp-content/uploads/2025/12/R206_251206_1744X1090.png",
+      "source_url": "https://clab.org.tw/events/r206_251206/",
       "tags": [
         "工作坊"
       ],
-      "UUID": "ee5c3317ce0c5df48b340e8d6927000a"
+      "UUID": "d76b8db6982651baaa6d8a3b1339df7d"
     },
     {
-      "title": "異世界的聲音：雅庫布·詹薩與李亦凡作品聯合放映暨映後座談會",
-      "date": "2025-11-03",
-      "address": null,
-      "figure": "https://clab.org.tw/wp-content/uploads/2025/10/%E6%B4%BB%E5%8B%95%E5%88%97%E8%A1%A8-1744x1090-3.jpg",
-      "source_url": "https://clab.org.tw/events/whispersbeyond/",
+      "title": "【 從兒童到兒童｜開放論壇】給下一階段的兒童劇場與兒童藝術",
+      "date": "2025-12-07",
+      "address": "多功能廳",
+      "figure": "https://clab.org.tw/wp-content/uploads/2025/12/r206_251207_1744X1090.png",
+      "source_url": "https://clab.org.tw/events/r206_251207/",
       "tags": [
-        "放映"
+        "講談"
       ],
-      "UUID": "ee591249e9db5affaef2f8ceb4fae6c8"
+      "UUID": "129f3dc1a0975b72bd7c7726e9fd62ef"
+    },
+    {
+      "title": "臺灣同志數位博物館✧✧✧⎝線上開幕夜⎠✧✧✧",
+      "date": "2025-12-13",
+      "address": "線上活動",
+      "figure": "https://clab.org.tw/wp-content/uploads/2025/12/%E5%85%A5%E5%8F%A3banner_%E6%9C%89%E6%A8%99%E9%A1%8C.jpg",
+      "source_url": "https://clab.org.tw/events/r202_20251213/",
+      "tags": [
+        "線上活動"
+      ],
+      "UUID": "aca266b6323951a587270f1ad2f92e35"
+    },
+    {
+      "title": "來阮遮坐一下，好無？",
+      "date": "2025-12-13",
+      "address": "CREATORS空間 307共同空間",
+      "figure": "https://clab.org.tw/wp-content/uploads/2025/11/%E4%BE%86%E6%88%91%E5%AE%B6%E5%9D%90%E5%9D%90_1744x1090px-scaled.jpg",
+      "source_url": "https://clab.org.tw/events/r203_1213/",
+      "tags": [
+        "講談"
+      ],
+      "UUID": "4ca0b819b5bf5154b9becca2e0ec0de6"
+    },
+    {
+      "title": "從建築師的日常出發：檔案修護與數位化DIY",
+      "date": "2025-12-14",
+      "address": "王大閎書軒 (台灣臺北市中山區中山北路三段153號-北美館南側王大閎建築劇場內)",
+      "figure": "https://clab.org.tw/wp-content/uploads/2025/11/banner_%E6%A1%8C%E6%A9%9F1744x1090px-scaled.jpg",
+      "source_url": "https://clab.org.tw/events/archivingworkshop1214/",
+      "tags": [
+        "工作坊"
+      ],
+      "UUID": "29fc0687059b517da777ea3feea76946"
+    },
+    {
+      "title": "文化前線IV：戰爭下的藝術場景——何孟娟與陶亞倫的第一手見證",
+      "date": "2025-12-19",
+      "address": "102共享吧",
+      "figure": "https://clab.org.tw/wp-content/uploads/2025/12/251219_list_1744%C3%971090.jpg",
+      "source_url": "https://clab.org.tw/events/20251219/",
+      "tags": [
+        "講談"
+      ],
+      "UUID": "9d819983487a5acca0367e4e4215c97e"
+    },
+    {
+      "title": "沙漠中深度傾聽 Deep Listening in Deserts",
+      "date": "2025-12-21",
+      "address": "臺灣當代文化實驗場 多功能廳",
+      "figure": "https://clab.org.tw/wp-content/uploads/2025/12/%E6%9C%AA%E5%91%BD%E5%90%8D%E8%A8%AD%E8%A8%88-5.jpg",
+      "source_url": "https://clab.org.tw/events/deep-listening-in-deserts/",
+      "tags": [
+        "講談"
+      ],
+      "UUID": "57112d98dc3b5668b78481f50956b4c0"
+    },
+    {
+      "title": "【失聲祭 LSF #139】",
+      "date": "2025-12-27",
+      "address": "臺灣當代文化實驗場 圖書館展演空間1F",
+      "figure": "https://clab.org.tw/wp-content/uploads/2025/12/%E4%B8%BB%E8%A6%96%E8%A6%BA1744x1090.jpg",
+      "source_url": "https://clab.org.tw/events/lsf-139/",
+      "tags": [
+        "表演"
+      ],
+      "UUID": "ca39db53a0f857a9bed368409216e0c6"
     }
   ],
-  "last_update": "2025-11-07T09:48:35.549199+08:00"
+  "last_update": "2026-01-01T09:03:48.972461+08:00",
+  "execution_time": 4.4723920822143555
 }
