@@ -1,5 +1,4 @@
 import asyncio
-import decimal
 
 import bs4
 
@@ -12,7 +11,7 @@ from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import date_now, month_3
+from helpers.utils_helper import month_3, get_current_and_previous_month
 
 
 class CLabRunner(RunnerInit):
@@ -34,25 +33,42 @@ class CLabRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        today = date_now()
-        filter_year = today.year
-        filter_month = today.month
+        current_period, previous_period = get_current_and_previous_month()
+
         target_url_template = (
             "https://clab.org.tw/events/?"
             "event_category="
             "&filter_year={filter_year}"
             "&filter_month={filter_month}"
         )
+
         target_url = target_url_template.format(
-            filter_year=filter_year, filter_month=filter_month
+            filter_year=current_period[0], filter_month=current_period[1]
         )
         async with HttpxAsyncClient() as client:
-            response = await client.get(target_url, headers=get_headers())
-        return response.text
+            responses = await asyncio.gather(
+                client.get(
+                    target_url_template.format(
+                        filter_year=current_period[0],
+                        filter_month=current_period[1]
+                    ), headers=get_headers()
+                ),
+                client.get(
+                    target_url_template.format(
+                        filter_year=previous_period[0],
+                        filter_month=previous_period[1]
+                    ), headers=get_headers()
+                ),
+
+            )
+        return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
-        return parsed.find_all("div", {"data-aos": "-block-line"})
+        parseds: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        datas = []
+        for parsed in parseds:
+            datas.extend(parsed.find_all("div", {"data-aos": "-block-line"}))
+        return datas
 
 
 async def main():
