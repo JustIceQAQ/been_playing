@@ -6,6 +6,7 @@ permissions:
 
 env:
   BRANCH: "auto/data-update"
+  TZ: "Asia/Taipei"
 
 on:
   workflow_dispatch:
