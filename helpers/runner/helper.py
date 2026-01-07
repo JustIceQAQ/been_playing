@@ -7,7 +7,7 @@ import traceback
 from typing import Any
 import httpx
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.parse_helper import ParseInit as ParseInit2
+from helpers.parse_helper import ParseInit
 from helpers.storage.helper import Exhibition, ExhibitionItem, Information
 from helpers.suffix_helper import suffix_helper
 from helpers.translation.base import TranslationInit
@@ -17,7 +17,7 @@ from helpers.cache.base import Cache
 
 class RunnerInit(abc.ABC):
     translation: type[TranslationInit] = JsonTranslation
-    use_parse: type[ParseInit2]
+    use_parse: type[ParseInit]
     use_suffix_item_from_file_func: bool = False
     use_suffix_item_from_url_auto: bool = False
     is_unique: bool = True
