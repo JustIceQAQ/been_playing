@@ -23,3 +23,5 @@ croniter==6.0.0 # https://github.com/kiorky/croniter
 # ============
 sentry-sdk==2.48.0
 urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
+h11>=0.16.0 # not directly required, pinned by Snyk to avoid a vulnerability
+anyio>=4.4.0 # not directly required, pinned by Snyk to avoid a vulnerability
