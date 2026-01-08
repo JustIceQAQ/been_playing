@@ -4,19 +4,22 @@ import bs4
 
 from app.exhibition.huashan1914.parse import huashan1914Parse
 from helpers.cache import NoneCache
+import httpx
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information, Coordinate, ExhibitionItem
 from helpers.storage.symbol import TaiwanCity
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import month_3
+from helpers.utils_helper import month_3, get_asyncio_rate_limit
 
 
 class HuaShan1914Runner(RunnerInit):
     translation = BeautifulSoupTranslation
     use_parse = huashan1914Parse
+    use_suffix_item_from_url_auto = True
+    use_suffix_item_from_file_func = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()
@@ -63,6 +66,27 @@ class HuaShan1914Runner(RunnerInit):
 
     async def fetch_items(self, *args, **kwargs):
         return await super().fetch_items(target_domain="https://www.huashan1914.com")
+
+    async def _get_item_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
+        has_address_cache = await self.cache.aget(f"{item.UUID}-address")
+        if has_address_cache:
+            item.address = has_address_cache
+            return
+        response = await client.get(item.source_url)
+        soup = self.translation().translation_to_object(response.text)
+        exhibition_location = None
+        a_elements = soup.select("div.address a")
+        if a_elements:
+            exhibition_location = ", ".join([a_element.get_text(strip=True) for a_element in a_elements])
+        await self.cache.aset(f"{item.UUID}-address", exhibition_location, month_3())
+        item.address = exhibition_location
+
+    async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):
+        asyncio_limit = get_asyncio_rate_limit(3, 30)
+        headers = get_headers()
+        async with HttpxAsyncClient(headers=headers) as client, asyncio_limit:
+            tasks = [self._get_item_data(client, item) for item in items]
+            await asyncio.gather(*tasks)
 
 
 async def main():

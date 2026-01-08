@@ -1,3 +1,4 @@
+import datetime
 from typing import Any
 from helpers.cache.base import Cache
 
@@ -10,10 +11,28 @@ class NoneCache(Cache):
             cls._instance = super().__new__(cls)
         return cls._instance
 
-    async def get(self, key: str) -> Any | None:
+    async def aget(self, key: str) -> Any | None:
         return None
 
-    async def set(self, key: str, value, expire: float = None):
+    async def aset(
+        self,
+        key: str,
+        value: Any,
+        expire: int | str | None = None,
+        from_datetime: datetime.datetime | None = None,
+    ):
+        pass
+
+    def get(self, key: str) -> Any | None:
+        return None
+
+    def set(
+        self,
+        key: str,
+        value: Any,
+        expire: int | str | None = None,
+        from_datetime: datetime.datetime | None = None,
+    ):
         pass
 
     async def close(self):
