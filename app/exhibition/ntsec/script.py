@@ -58,16 +58,14 @@ class NtSecRunner(RunnerInit):
         return await super().fetch_items(target_domain="https://www.ntsec.gov.tw")
 
     async def suffix_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
-        # has_date_cache = await self.cache.get(f"{item.UUID}-date")
-        has_address_cache = await self.cache.get(f"{item.UUID}-address")
+        has_address_cache = await self.cache.aget(f"{item.UUID}-address")
         if has_address_cache:
-            # item.date = has_date_cache
             item.address = has_address_cache
             return
         response = await client.get(item.source_url)
         soup = self.translation().translation_to_object(response.text)
         exhibition_location = get_page_address(soup)
-        await self.cache.set(f"{item.UUID}-address", exhibition_location, month_3())
+        await self.cache.aset(f"{item.UUID}-address", exhibition_location, month_3())
         item.address = exhibition_location
 
     async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):

@@ -51,7 +51,7 @@ class SongShanCulturalParkRunner(RunnerInit):
         return items
 
     async def _get_item_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
-        has_address_cache = await self.cache.get(f"{item.UUID}-address")
+        has_address_cache = await self.cache.aget(f"{item.UUID}-address")
         if has_address_cache:
             item.address = has_address_cache
             return
@@ -61,7 +61,7 @@ class SongShanCulturalParkRunner(RunnerInit):
         p_tags = soup.find("p", {"class": "place"})
         if p_tags:
             exhibition_location = p_tags.get_text()
-        await self.cache.set(f"{item.UUID}-address", exhibition_location, month_3())
+        await self.cache.aset(f"{item.UUID}-address", exhibition_location, month_3())
         item.address = exhibition_location
 
     async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):

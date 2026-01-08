@@ -49,8 +49,8 @@ class NTPCRunner(RunnerInit):
         return parsed.select("div.ListPicText > div.item")
 
     async def suffix_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
-        has_date_cache = await self.cache.get(f"{item.UUID}-date")
-        has_address_cache = await self.cache.get(f"{item.UUID}-address")
+        has_date_cache = await self.cache.aget(f"{item.UUID}-date")
+        has_address_cache = await self.cache.aget(f"{item.UUID}-address")
         if has_date_cache and has_address_cache:
             item.date = has_date_cache
             item.address = has_address_cache
@@ -70,8 +70,8 @@ class NTPCRunner(RunnerInit):
             elif text.startswith("展覽地點："):
                 exhibition_location = text.replace("展覽地點：", "").strip()
 
-        await self.cache.set(f"{item.UUID}-date", exhibition_time, month_3())
-        await self.cache.set(f"{item.UUID}-address", exhibition_location, month_3())
+        await self.cache.aset(f"{item.UUID}-date", exhibition_time, month_3())
+        await self.cache.aset(f"{item.UUID}-address", exhibition_location, month_3())
 
         item.date = exhibition_time
         item.address = exhibition_location

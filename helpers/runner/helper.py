@@ -121,13 +121,13 @@ class RunnerInit(abc.ABC):
             hash_source_url = hashlib.sha256(
                 item.source_url.encode("utf-8")
             ).hexdigest()
-            cache_figure_url = await self.cache.get(hash_source_url)
+            cache_figure_url = await self.cache.aget(hash_source_url)
             if cache_figure_url:
                 item.figure = cache_figure_url
             else:
                 response = await self.image.upload(item.figure, client)
                 if response.success:
-                    await self.cache.set(
+                    await self.cache.aset(
                         hash_source_url,
                         response.data.webp_link,
                         expire=self.set_cache_expire(),
