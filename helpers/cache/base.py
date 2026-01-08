@@ -12,11 +12,25 @@ class Cache(abc.ABC):
         return cls._instance
 
     @abc.abstractmethod
-    async def get(self, key: str) -> str:
+    async def aget(self, key: str) -> str:
         raise NotImplementedError
 
     @abc.abstractmethod
-    async def set(
+    async def aset(
+        self,
+        key: str,
+        value: Any,
+        expire: int | str | None = None,
+        from_datetime: datetime.datetime | None = None,
+    ):
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def get(self, key: str) -> str:
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def set(
         self,
         key: str,
         value: Any,
