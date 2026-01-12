@@ -1,5 +1,9 @@
+[project]
+name = "been_playing"
+version = "0.1.0"
+requires-python = ">=3.12"
+
 [tool.skylos]
-# 1. Global Defaults (Applies to all languages)
 complexity = 10
 nesting = 3
 max_args = 5
@@ -7,7 +11,6 @@ max_lines = 50
 ignore = []
 model = "gpt-4.1"
 
-# 2. Language Overrides (Optional)
 [tool.skylos.languages.typescript]
 complexity = 15
 nesting = 4
