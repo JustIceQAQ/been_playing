@@ -6,7 +6,7 @@ from pathlib import Path
 import sentry_sdk
 from dotenv import load_dotenv
 
-from app.exhibition.khm import KhmRunner
+from app.museums.khm import KhmRunner
 from configs.settings import get_settings
 from helpers.cache import DiskCache, NoneCache
 from helpers.crawler.scraper.helper import available_scraper_async_client

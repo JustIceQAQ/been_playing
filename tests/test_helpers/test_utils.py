@@ -1,4 +1,4 @@
-from app.exhibition.twtc.utils import get_next_element
+from app.museums.twtc.utils import get_next_element
 
 
 def test_get_next_element():
