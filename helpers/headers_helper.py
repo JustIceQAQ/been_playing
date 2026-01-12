@@ -45,6 +45,7 @@ def get_cookies(
     need_asp_net_session_id: bool = False,
     need_js_ession_id: bool = False,
     need_consent: bool | None = False,
+    need_laravel_session: bool | None = False,
     other_cookies: dict | None = None,
 ) -> dict[str, str]:
     this_data = {}
@@ -59,6 +60,9 @@ def get_cookies(
 
     if need_consent:
         this_data["CONSENT"] = "YES+"
+
+    if need_laravel_session:
+        this_data["laravel_session"] = secrets.token_hex(20)
 
     if other_cookies:
         this_data |= other_cookies
