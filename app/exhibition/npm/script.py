@@ -25,9 +25,12 @@ class NpmRunner(RunnerInit):
             code_name="Npm",
             external_link="https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1",
             branch_coordinates=[
-                Coordinate(location_code=TaiwanCity.taipei_city,
-                           raw_coordinates="25.10255940335793, 121.5485139544282"),
                 Coordinate(
+                    name="北部院區",
+                    location_code=TaiwanCity.taipei_city,
+                    raw_coordinates="25.10255940335793, 121.5485139544282"),
+                Coordinate(
+                    name="南部院區",
                     location_code=TaiwanCity.chiayi_county,
                     raw_coordinates="23.473459041101574, 120.2928023651772"
                 )
