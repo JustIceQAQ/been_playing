@@ -1,4 +1,5 @@
 from .galleries.capitalart import CapitalArtRunner
+from .galleries.mindsetart import MindSetArtRunner
 from .galleries.ruomu import RuoMuRunner
 from .galleries.yiyun import YiYunRunner
 from .museums.aaaarchives import AAAArchivesRunner
@@ -130,6 +131,7 @@ GALLERIES_RUNNERS = {
     CapitalArtRunner,
     RuoMuRunner,
     YiYunRunner,
+    MindSetArtRunner,
 }
 
 ALL_RUNNERS = PLATFORM_RUNNERS | MUSEUMS_RUNNERS

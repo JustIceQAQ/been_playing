@@ -1,0 +1,54 @@
+import asyncio
+
+import bs4
+
+from app.galleries.mindsetart.parse import MindSetArtParse
+from helpers.headers_helper import get_headers, get_cookies
+from helpers.runner.helper import RunnerInit
+from helpers.storage.helper import Information, Coordinate
+from helpers.storage.symbol import TaiwanCity
+from helpers.crawler.httpx.helper import HttpxAsyncClient
+from helpers.translation.beautiful_soup import BeautifulSoupTranslation
+from helpers.utils_helper import month_3
+from helpers.cache.none.helper import NoneCache
+from helpers.image.none.helper import NoneImage
+
+
+class MindSetArtRunner(RunnerInit):
+    translation = BeautifulSoupTranslation
+    use_parse = MindSetArtParse
+    is_sort = False
+
+    def set_cache_expire(self) -> int | None:
+        return month_3()
+
+    def set_information(self) -> "Information":
+        return Information(
+            location_code=TaiwanCity.taipei_city,
+            fullname="安卓藝術",
+            code_name="MindSetArt",
+            external_link="https://www.art-msac.com/",
+            branch_coordinates=Coordinate(raw_coordinates="25.086444326900594, 121.56138806256338"),
+        )
+
+    async def fetch_response(self):
+        headers = get_headers(
+            host="www.art-msac.com"
+        )
+        cookies = get_cookies(other_cookies={"splash_screen_disabled": "true"})
+        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
+            response = await client.get("https://www.art-msac.com/exhibitions/")
+        return response.text
+
+    async def fetch_parsed(self):
+        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        lis  = parsed.select("div#exhibitions-grid-container li")
+        return lis[:-1]
+
+
+async def main():
+    await MindSetArtRunner().run(NoneCache(), NoneImage())
+
+
+if __name__ == '__main__':
+    asyncio.run(main())
