@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING
 import asyncio
 import httpx
 import aiofiles
-from app.script import PY_CLASS_SCRIPT
+from app.script import ALL_RUNNERS
 
 if TYPE_CHECKING:
     from helpers.storage.helper import Information
@@ -30,7 +30,7 @@ async def get_url_json(client: httpx.AsyncClient, info: "Information"):
 
 
 async def main():
-    jobs = list(PY_CLASS_SCRIPT)
+    jobs = list(ALL_RUNNERS)
     async with httpx.AsyncClient(timeout=None, follow_redirects=True) as client:
         tasks = [get_url_json(client, job().set_information()) for job in jobs]
         await asyncio.gather(*tasks)

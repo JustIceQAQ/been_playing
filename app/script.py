@@ -58,18 +58,25 @@ from .platform.klook.script import KLookRunner
 from .platform.opentix.script import OpenTixRunner
 from .platform.udnfunlife.script import UdnFunLifeRunner
 
-PY_CLASS_SCRIPT = {
+PLATFORM_RUNNERS = {
     BooksTicketsRunner,
+    CultureExpressRunner,
+    GaCcRunner,
+    IBonRunner,
+    KKDayRunner,
+    KKTixRunner,
+    KLookRunner,
+    OpenTixRunner,
+    UdnFunLifeRunner,
+}
+
+MUSEUMS_RUNNERS = {
     CKSMHRunner,
     CLabRunner,
     FuBonArtMuseumRunner,
     HuaShan1914Runner,
     JamRunner,
-    IBonRunner,
     KingCarArtRunner,
-    KKDayRunner,
-    KKTixRunner,
-    KLookRunner,
     MoCaTaipeiRunner,
     MuseumPostRunner,
     MwrRunner,
@@ -79,12 +86,10 @@ PY_CLASS_SCRIPT = {
     NtcArtMuseumRunner,
     NtmRunner,
     NtSecRunner,
-    OpenTixRunner,
     SongShanCulturalParkRunner,
     TFamRunner,
     TmcRunner,
     TwTcRunner,
-    UdnFunLifeRunner,
     NTCRIRunner,
     TaipeiExPoParkRunner,
     NHRMRunner,
@@ -104,11 +109,9 @@ PY_CLASS_SCRIPT = {
     RedHouseRunner,
     YoChangArtRunner,
     KhmRunner,
-    CultureExpressRunner,
     KmFaRunner,
     Pier2Runner,
     TcmRunner,
-    GaCcRunner,
     KmoaRunner,
     NTAECRunner,
     Culture435Runner,
@@ -119,3 +122,5 @@ PY_CLASS_SCRIPT = {
     ArtistVillageRunner,
     KiShuAnRunner,
 }
+
+ALL_RUNNERS = PLATFORM_RUNNERS | MUSEUMS_RUNNERS
