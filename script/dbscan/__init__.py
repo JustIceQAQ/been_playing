@@ -39,9 +39,10 @@ def clean_data(centers: list[dict]) -> list[dict]:
                     "longitude": branch_coordinates["longitude"],
                 }
             )
+            continue
         if isinstance(branch_coordinates, list):
             for branch_coordinate in branch_coordinates:
-                name = branch_coordinate["name"]
+                name = "None" if (this_name := branch_coordinate.get("name")) is None else this_name
                 ok_centers.append(
                     {
                         "fullname": fullname + "-" + name,
@@ -49,6 +50,7 @@ def clean_data(centers: list[dict]) -> list[dict]:
                         "longitude": branch_coordinate["longitude"],
                     }
                 )
+            continue
         if branch_coordinates is None:
             pass
     return ok_centers
@@ -132,6 +134,8 @@ async def main():
     json_files = await asyncio.gather(*tasks)
 
     centers = clean_data([json_file["information"] for json_file in json_files])
+    with open("ADDRESS_GPS.json", "w") as f:
+        json.dump(centers, f)
     dbscan(pd.DataFrame(centers))
 
 
