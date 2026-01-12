@@ -1,4 +1,5 @@
 from .galleries.capitalart import CapitalArtRunner
+from .galleries.ruomu import RuoMuRunner
 from .museums.aaaarchives import AAAArchivesRunner
 from .museums.artistvillage import ArtistVillageRunner
 from .museums.bopiliao.script import BoPiLiaoRunner
@@ -125,7 +126,8 @@ MUSEUMS_RUNNERS = {
 }
 
 GALLERIES_RUNNERS = {
-    CapitalArtRunner
+    CapitalArtRunner,
+    RuoMuRunner,
 }
 
 ALL_RUNNERS = PLATFORM_RUNNERS | MUSEUMS_RUNNERS
