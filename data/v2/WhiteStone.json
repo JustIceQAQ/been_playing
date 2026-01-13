@@ -1,0 +1,39 @@
+{
+  "information": {
+    "fullname": "白石畫廊",
+    "code_name": "WhiteStone",
+    "external_link": "https://www.whitestone-gallery.com/zh-hant",
+    "branch_coordinates": {
+      "location_code": null,
+      "raw_coordinates": "25.081886335785196, 121.5655333509274",
+      "longitude": "121.5655333509274",
+      "latitude": "25.081886335785196",
+      "google_map_place_id": null,
+      "name": null
+    },
+    "location_code": "TW-TPE"
+  },
+  "counts": 2,
+  "items": [
+    {
+      "title": "前川強個展：1960－至今",
+      "date": "2025-12-27 ~ 2026-02-13",
+      "address": "台北空間",
+      "figure": "https://www.whitestone-gallery.com/cdn/shop/articles/20251227_tw_Tsuyoshi-Maekawa_slider_sp_300x300.jpg?v=1767570084",
+      "source_url": "https://www.whitestone-gallery.com/zh-hant/blogs/gallery-exhibitions/tw-tsuyoshi-maekawa-122025",
+      "tags": null,
+      "UUID": "2c70d1af93fe56cc97285b66e92ca8c3"
+    },
+    {
+      "title": "日常小劇場：卡帕奧, 克拉蘇塔",
+      "date": "2026-01-10 ~ 2026-02-13",
+      "address": "台北空間",
+      "figure": "https://www.whitestone-gallery.com/cdn/shop/articles/260110_tw_Kappao_Clasutta_header_sp_295bed4b-b538-40d4-9f18-1c068d880870_300x300.jpg?v=1768262638",
+      "source_url": "https://www.whitestone-gallery.com/zh-hant/blogs/gallery-exhibitions/tw-kappao-clasutta-012026",
+      "tags": null,
+      "UUID": "aa588475d1bb5f6dae9d4680c55926d3"
+    }
+  ],
+  "last_update": "2026-01-13T13:24:08.078141+08:00",
+  "execution_time": 0.28300046920776367
+}
