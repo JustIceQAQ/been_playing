@@ -25,6 +25,8 @@
         - [安卓藝術](https://www.art-msac.com/)
         - [99度藝術中心](https://99dac.com/)
         - [白石畫廊](https://www.whitestone-gallery.com/zh-hant)
+        - [羲之堂畫廊](https://taipeiartweek.tw/)
+        - [1839 當代藝廊](https://www.1839cg.com/)
 
 - 博物館、美術館、園區
     - TW-TPE

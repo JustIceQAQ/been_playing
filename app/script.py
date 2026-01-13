@@ -1,4 +1,5 @@
 from .galleries.capitalart import CapitalArtRunner
+from .galleries.cg1839 import CG1839Runner
 from .galleries.dac99 import Dac99Runner
 from .galleries.mindsetart import MindSetArtRunner
 from .galleries.ruomu import RuoMuRunner
@@ -138,6 +139,7 @@ GALLERIES_RUNNERS = {
     Dac99Runner,
     WhiteStoneRunner,
     XiZhiTangRunner,
+    CG1839Runner,
 }
 
 ALL_RUNNERS = PLATFORM_RUNNERS | MUSEUMS_RUNNERS
