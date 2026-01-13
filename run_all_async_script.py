@@ -6,7 +6,7 @@ from pathlib import Path
 import sentry_sdk
 from dotenv import load_dotenv
 
-from app.script import PY_CLASS_SCRIPT
+from app.script import ALL_RUNNERS
 from configs.settings import get_settings
 from helpers.cache import DiskCache, NoneCache
 from helpers.crawler.scraper.helper import available_scraper_async_client
@@ -30,7 +30,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         imgur = TurboImageHost()
 
     disk_cache = NoneCache() if runtime_setting.IS_DEBUG else DiskCache()
-    job = list(PY_CLASS_SCRIPT)
+    job = list(ALL_RUNNERS)
     script_total = len(job)
     prefix = None
     if (worker is not None) and (worker_max is not None) and (worker_max > 0):

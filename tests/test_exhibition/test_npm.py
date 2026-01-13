@@ -3,7 +3,7 @@ import pathlib
 import pytest
 from bs4 import BeautifulSoup
 import httpx
-from app.exhibition.npm.parse import NpmPreviewParse
+from app.museums.npm.parse import NpmPreviewParse
 from helpers.storage.helper import ExhibitionItem
 
 

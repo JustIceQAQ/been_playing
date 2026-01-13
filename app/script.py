@@ -1,53 +1,60 @@
-from .exhibition.aaaarchives import AAAArchivesRunner
-from .exhibition.artistvillage import ArtistVillageRunner
-from .exhibition.bopiliao.script import BoPiLiaoRunner
-from .exhibition.chipolin import ChiPoLinRunner
-from .exhibition.cksmh.script import CKSMHRunner
-from .exhibition.clab.script import CLabRunner
-from .exhibition.culture435 import Culture435Runner
-from .exhibition.fubonartmuseum.script import FuBonArtMuseumRunner
-from .exhibition.hong_gah.script import HongGahRunner
-from .exhibition.huashan1914.script import HuaShan1914Runner
-from .exhibition.jam.script import JamRunner
-from .exhibition.kdmofa.script import KdMoFaRunner
-from .exhibition.khm import KhmRunner
-from .exhibition.kingcarart.script import KingCarArtRunner
-from .exhibition.kishuan import KiShuAnRunner
-from .exhibition.kmfa import KmFaRunner
-from .exhibition.kmoa import KmoaRunner
-from .exhibition.mocataipei.script import MoCaTaipeiRunner
-from .exhibition.montue import MoNTUERunner
-from .exhibition.museumpost.script import MuseumPostRunner
-from .exhibition.mwr.script import MwrRunner
-from .exhibition.n228mm.script import N228MMRunner
-from .exhibition.ncpi.script import NCPIRunner
-from .exhibition.nhrm.script import NHRMRunner
-from .exhibition.nmh.script import NmhRunner
-from .exhibition.npm.script import NpmRunner
-from .exhibition.nrm import NrmRunner
-from .exhibition.ntaec import NTAECRunner
-from .exhibition.ntc_art_museum.script import NtcArtMuseumRunner
-from .exhibition.ntcri.script import NTCRIRunner
-from .exhibition.ntm.script import NtmRunner
-from .exhibition.ntnu_art_museum.script import NTNUArtMuseumRunner
-from .exhibition.ntpc.script import NTPCRunner
-from .exhibition.ntsec.script import NtSecRunner
-from .exhibition.ocam.script import OCAMRunner
-from .exhibition.pact import PactRunner
-from .exhibition.pier2 import Pier2Runner
-from .exhibition.redhouse import RedHouseRunner
-from .exhibition.shungyeart.script import ShungYeArtRunner
-from .exhibition.songshanculturalpark.script import SongShanCulturalParkRunner
-from .exhibition.taipeiexpopark.script import TaipeiExPoParkRunner
-from .exhibition.tcm import TcmRunner
-from .exhibition.tfam.script import TFamRunner
-from .exhibition.tmc.script import TmcRunner
-from .exhibition.tnammuseum import TnamMuseumRunner
-from .exhibition.tncmmm.script import TncMMMRunner
-from .exhibition.tncsec import TnCsEcRunner
-from .exhibition.twtc.script import TwTcRunner
-from .exhibition.yatsen import YatsenRunner
-from .exhibition.yochangart import YoChangArtRunner
+from .galleries.capitalart import CapitalArtRunner
+from .galleries.dac99 import Dac99Runner
+from .galleries.mindsetart import MindSetArtRunner
+from .galleries.ruomu import RuoMuRunner
+from .galleries.whitestone import WhiteStoneRunner
+from .galleries.xizhitang import XiZhiTangRunner
+from .galleries.yiyun import YiYunRunner
+from .museums.aaaarchives import AAAArchivesRunner
+from .museums.artistvillage import ArtistVillageRunner
+from .museums.bopiliao.script import BoPiLiaoRunner
+from .museums.chipolin import ChiPoLinRunner
+from .museums.cksmh.script import CKSMHRunner
+from .museums.clab.script import CLabRunner
+from .museums.culture435 import Culture435Runner
+from .museums.fubonartmuseum.script import FuBonArtMuseumRunner
+from .museums.hong_gah.script import HongGahRunner
+from .museums.huashan1914.script import HuaShan1914Runner
+from .museums.jam.script import JamRunner
+from .museums.kdmofa.script import KdMoFaRunner
+from .museums.khm import KhmRunner
+from .museums.kingcarart.script import KingCarArtRunner
+from .museums.kishuan import KiShuAnRunner
+from .museums.kmfa import KmFaRunner
+from .museums.kmoa import KmoaRunner
+from .museums.mocataipei.script import MoCaTaipeiRunner
+from .museums.montue import MoNTUERunner
+from .museums.museumpost.script import MuseumPostRunner
+from .museums.mwr.script import MwrRunner
+from .museums.n228mm.script import N228MMRunner
+from .museums.ncpi.script import NCPIRunner
+from .museums.nhrm.script import NHRMRunner
+from .museums.nmh.script import NmhRunner
+from .museums.npm.script import NpmRunner
+from .museums.nrm import NrmRunner
+from .museums.ntaec import NTAECRunner
+from .museums.ntc_art_museum.script import NtcArtMuseumRunner
+from .museums.ntcri.script import NTCRIRunner
+from .museums.ntm.script import NtmRunner
+from .museums.ntnu_art_museum.script import NTNUArtMuseumRunner
+from .museums.ntpc.script import NTPCRunner
+from .museums.ntsec.script import NtSecRunner
+from .museums.ocam.script import OCAMRunner
+from .museums.pact import PactRunner
+from .museums.pier2 import Pier2Runner
+from .museums.redhouse import RedHouseRunner
+from .museums.shungyeart.script import ShungYeArtRunner
+from .museums.songshanculturalpark.script import SongShanCulturalParkRunner
+from .museums.taipeiexpopark.script import TaipeiExPoParkRunner
+from .museums.tcm import TcmRunner
+from .museums.tfam.script import TFamRunner
+from .museums.tmc.script import TmcRunner
+from .museums.tnammuseum import TnamMuseumRunner
+from .museums.tncmmm.script import TncMMMRunner
+from .museums.tncsec import TnCsEcRunner
+from .museums.twtc.script import TwTcRunner
+from .museums.yatsen import YatsenRunner
+from .museums.yochangart import YoChangArtRunner
 from .platform.bookstickets.script import BooksTicketsRunner
 from .platform.cultureexpress import CultureExpressRunner
 from .platform.gacc import GaCcRunner
@@ -58,18 +65,25 @@ from .platform.klook.script import KLookRunner
 from .platform.opentix.script import OpenTixRunner
 from .platform.udnfunlife.script import UdnFunLifeRunner
 
-PY_CLASS_SCRIPT = {
+PLATFORM_RUNNERS = {
     BooksTicketsRunner,
+    CultureExpressRunner,
+    GaCcRunner,
+    IBonRunner,
+    KKDayRunner,
+    KKTixRunner,
+    KLookRunner,
+    OpenTixRunner,
+    UdnFunLifeRunner,
+}
+
+MUSEUMS_RUNNERS = {
     CKSMHRunner,
     CLabRunner,
     FuBonArtMuseumRunner,
     HuaShan1914Runner,
     JamRunner,
-    IBonRunner,
     KingCarArtRunner,
-    KKDayRunner,
-    KKTixRunner,
-    KLookRunner,
     MoCaTaipeiRunner,
     MuseumPostRunner,
     MwrRunner,
@@ -79,12 +93,10 @@ PY_CLASS_SCRIPT = {
     NtcArtMuseumRunner,
     NtmRunner,
     NtSecRunner,
-    OpenTixRunner,
     SongShanCulturalParkRunner,
     TFamRunner,
     TmcRunner,
     TwTcRunner,
-    UdnFunLifeRunner,
     NTCRIRunner,
     TaipeiExPoParkRunner,
     NHRMRunner,
@@ -104,11 +116,9 @@ PY_CLASS_SCRIPT = {
     RedHouseRunner,
     YoChangArtRunner,
     KhmRunner,
-    CultureExpressRunner,
     KmFaRunner,
     Pier2Runner,
     TcmRunner,
-    GaCcRunner,
     KmoaRunner,
     NTAECRunner,
     Culture435Runner,
@@ -119,3 +129,15 @@ PY_CLASS_SCRIPT = {
     ArtistVillageRunner,
     KiShuAnRunner,
 }
+
+GALLERIES_RUNNERS = {
+    CapitalArtRunner,
+    RuoMuRunner,
+    YiYunRunner,
+    MindSetArtRunner,
+    Dac99Runner,
+    WhiteStoneRunner,
+    XiZhiTangRunner,
+}
+
+ALL_RUNNERS = PLATFORM_RUNNERS | MUSEUMS_RUNNERS

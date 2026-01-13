@@ -2,7 +2,7 @@ import pathlib
 
 import pytest
 
-from app.exhibition.ntsec.format.address import get_page_address
+from app.museums.ntsec.format.address import get_page_address
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 
 testdata = [

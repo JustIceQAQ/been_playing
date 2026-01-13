@@ -1,0 +1,51 @@
+import asyncio
+import decimal
+
+import bs4
+
+from app.museums.nhrm.parse import NHRMParse
+from helpers.cache import NoneCache
+from helpers.crawler.httpx.helper import HttpxAsyncClient
+from helpers.headers_helper import get_headers
+from helpers.image.none.helper import NoneImage
+from helpers.runner.helper import RunnerInit
+from helpers.storage.helper import Information, Coordinate
+from helpers.storage.symbol import TaiwanCity
+from helpers.translation.beautiful_soup import BeautifulSoupTranslation
+from helpers.utils_helper import month_3
+
+
+class NHRMRunner(RunnerInit):
+    translation = BeautifulSoupTranslation
+    use_parse = NHRMParse
+    use_suffix_item_from_file_func = True
+
+    def set_cache_expire(self) -> int | None:
+        return month_3()
+
+    def set_information(self) -> "Information":
+        return Information(
+            location_code=TaiwanCity.new_taipei_city,
+            fullname="國家人權博物館",
+            code_name="NHRM",
+            external_link="https://www.nhrm.gov.tw/w/nhrm/ExhibitionA",
+            branch_coordinates=Coordinate(raw_coordinates="24.987027946019857, 121.53208236236004"),
+        )
+
+    async def fetch_response(self):
+        headers = get_headers(referer="https://www.nhrm.gov.tw/w/nhrm/ExhibitionA")
+        async with HttpxAsyncClient(headers=headers) as client:
+            response = await client.get("https://www.nhrm.gov.tw/w/nhrm/ExhibitionA")
+        return response.text
+
+    async def fetch_parsed(self):
+        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        return parsed.select("ul.list-group > li.list-item")
+
+
+async def main():
+    await NHRMRunner().run(NoneCache(), NoneImage())
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
