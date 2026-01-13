@@ -3,6 +3,7 @@ from .galleries.dac99 import Dac99Runner
 from .galleries.mindsetart import MindSetArtRunner
 from .galleries.ruomu import RuoMuRunner
 from .galleries.whitestone import WhiteStoneRunner
+from .galleries.xizhitang import XiZhiTangRunner
 from .galleries.yiyun import YiYunRunner
 from .museums.aaaarchives import AAAArchivesRunner
 from .museums.artistvillage import ArtistVillageRunner
@@ -136,6 +137,7 @@ GALLERIES_RUNNERS = {
     MindSetArtRunner,
     Dac99Runner,
     WhiteStoneRunner,
+    XiZhiTangRunner,
 }
 
 ALL_RUNNERS = PLATFORM_RUNNERS | MUSEUMS_RUNNERS
