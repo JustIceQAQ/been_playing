@@ -1,4 +1,5 @@
 from .galleries.capitalart import CapitalArtRunner
+from .galleries.cg1839 import CG1839Runner
 from .galleries.dac99 import Dac99Runner
 from .galleries.mindsetart import MindSetArtRunner
 from .galleries.ruomu import RuoMuRunner
@@ -55,6 +56,7 @@ from .museums.tncsec import TnCsEcRunner
 from .museums.twtc.script import TwTcRunner
 from .museums.yatsen import YatsenRunner
 from .museums.yochangart import YoChangArtRunner
+from .platform.artemperor import ArtEmperorRunner
 from .platform.bookstickets.script import BooksTicketsRunner
 from .platform.cultureexpress import CultureExpressRunner
 from .platform.gacc import GaCcRunner
@@ -75,6 +77,7 @@ PLATFORM_RUNNERS = {
     KLookRunner,
     OpenTixRunner,
     UdnFunLifeRunner,
+    ArtEmperorRunner,
 }
 
 MUSEUMS_RUNNERS = {
@@ -138,6 +141,7 @@ GALLERIES_RUNNERS = {
     Dac99Runner,
     WhiteStoneRunner,
     XiZhiTangRunner,
+    CG1839Runner,
 }
 
 ALL_RUNNERS = PLATFORM_RUNNERS | MUSEUMS_RUNNERS

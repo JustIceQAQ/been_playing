@@ -1,0 +1,48 @@
+{
+  "information": {
+    "fullname": "1839 當代藝廊",
+    "code_name": "CG1839",
+    "external_link": "https://www.1839cg.com/",
+    "branch_coordinates": {
+      "location_code": null,
+      "raw_coordinates": "25.040566348234144, 121.55455459325458",
+      "longitude": "121.55455459325458",
+      "latitude": "25.040566348234144",
+      "google_map_place_id": null,
+      "name": null
+    },
+    "location_code": "TW-TPE"
+  },
+  "counts": 4,
+  "items": [
+    {
+      "title": "《域光流影》張影薇 攝影個展",
+      "date": "2026-01-10 ~ 2026-02-08",
+      "address": null,
+      "figure": "https://www.1839cg.com/wp-content/uploads/2025/12/Maria_DM_Accupass-1080x540-1.jpg",
+      "source_url": "https://www.1839cg.com/archives/8384",
+      "tags": null,
+      "UUID": "16eb180c016c58c292549d223c62b9f3"
+    },
+    {
+      "title": "《西藏より肖像》有元 伸也 攝影個展",
+      "date": "2025-11-28 ~ 2025-12-28",
+      "address": null,
+      "figure": "https://www.1839cg.com/wp-content/uploads/2025/11/webDM_1900x1000-1280x676.jpg",
+      "source_url": "https://www.1839cg.com/archives/8366",
+      "tags": null,
+      "UUID": "bc4de1eb80e4591bae613db99dbdd1f8"
+    },
+    {
+      "title": "《青之距離》諾頓·晶 攝影個展",
+      "date": "2025-11-07 ~ 2025-11-23",
+      "address": null,
+      "figure": "https://www.1839cg.com/wp-content/uploads/2025/11/800x600pxl-04-04.jpg",
+      "source_url": "https://www.1839cg.com/archives/8338",
+      "tags": null,
+      "UUID": "41db7ac0e6da5d01aca2c9179e20261a"
+    }
+  ],
+  "last_update": "2026-01-13T21:59:51.722161+08:00",
+  "execution_time": 4.822211742401123
+}
