@@ -1,5 +1,5 @@
-exclude: 'docs|node_modules|migrations|.git|.tox|chart|data|script'
-default_stages: [ pre-commit ]
+exclude: "docs|node_modules|migrations|.git|.tox|chart|data|script"
+default_stages: [pre-commit]
 fail_fast: true
 
 default_language_version:
@@ -23,7 +23,7 @@ repos:
         language: system
         pass_filenames: false
         require_serial: true
-        args: [ ".", "--confidence", "70", "--danger" ]
+        args: [".", "--confidence", "70", "--danger"]
       - id: skylos-fail-on-findings
         name: skylos gate
         language: system
@@ -41,3 +41,9 @@ repos:
         args:
           - --fix
       - id: ruff-format
+
+  - repo: https://github.com/rbubley/mirrors-prettier
+    rev: v3.4.2
+    hooks:
+      - id: prettier
+        types_or: [javascript, css, html, scss]
