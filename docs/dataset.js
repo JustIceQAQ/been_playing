@@ -65,6 +65,11 @@ const platformTopicClass = [
     "中華文化總會",
     new ButtonStyle("#fff", "#7b0025", "#7b0025"),
   ),
+    new Exhibition(
+    "ArtEmperor",
+    "非池中藝術網",
+    new ButtonStyle("#fff", "#e31472", "#f09500"),
+  ),
 ];
 
 const exhibitionTopicClass = [
