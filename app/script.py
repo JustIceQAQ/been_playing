@@ -56,6 +56,7 @@ from .museums.tncsec import TnCsEcRunner
 from .museums.twtc.script import TwTcRunner
 from .museums.yatsen import YatsenRunner
 from .museums.yochangart import YoChangArtRunner
+from .platform.artemperor import ArtEmperorRunner
 from .platform.bookstickets.script import BooksTicketsRunner
 from .platform.cultureexpress import CultureExpressRunner
 from .platform.gacc import GaCcRunner
@@ -76,6 +77,7 @@ PLATFORM_RUNNERS = {
     KLookRunner,
     OpenTixRunner,
     UdnFunLifeRunner,
+    ArtEmperorRunner,
 }
 
 MUSEUMS_RUNNERS = {
