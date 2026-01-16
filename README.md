@@ -30,6 +30,7 @@
     - [白石畫廊](https://www.whitestone-gallery.com/zh-hant)
     - [羲之堂畫廊](https://taipeiartweek.tw/)
     - [1839 當代藝廊](https://www.1839cg.com/)
+    - [索卡藝術中心](https://www.soka-art.com/tr)
 
 - 博物館、美術館、園區
   - TW-TPE
