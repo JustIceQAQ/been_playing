@@ -3,6 +3,7 @@ from .galleries.cg1839 import CG1839Runner
 from .galleries.dac99 import Dac99Runner
 from .galleries.mindsetart import MindSetArtRunner
 from .galleries.ruomu import RuoMuRunner
+from .galleries.sokaart import SoKaArtRunner
 from .galleries.whitestone import WhiteStoneRunner
 from .galleries.xizhitang import XiZhiTangRunner
 from .galleries.yiyun import YiYunRunner
@@ -78,6 +79,7 @@ PLATFORM_RUNNERS = {
     OpenTixRunner,
     UdnFunLifeRunner,
     ArtEmperorRunner,
+SoKaArtRunner,
 }
 
 MUSEUMS_RUNNERS = {

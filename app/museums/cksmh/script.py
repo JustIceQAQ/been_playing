@@ -8,7 +8,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.image.imgur.helper import ImgurImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -32,6 +32,7 @@ class CKSMHRunner(RunnerInit):
                 google_map_place_id="ChIJTamiuZ2pQjQRsmnfkkID6UM",
                 raw_coordinates="25.035657453594702, 121.52023682270445"
             ),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self) -> str:

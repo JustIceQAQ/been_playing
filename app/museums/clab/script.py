@@ -9,7 +9,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3, get_current_and_previous_month
 
@@ -30,6 +30,7 @@ class CLabRunner(RunnerInit):
             code_name="CLab",
             external_link="https://clab.org.tw/events/",
             branch_coordinates=Coordinate(raw_coordinates="25.039263447268308, 121.53884705257425"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

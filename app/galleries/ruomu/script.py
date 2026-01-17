@@ -6,7 +6,7 @@ from app.galleries.ruomu.parse import RuoMuParse
 from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -28,6 +28,7 @@ class RuoMuRunner(RunnerInit):
             code_name="RuoMu",
             external_link="https://www.ruomugallery.com/",
             branch_coordinates=Coordinate(raw_coordinates="25.033909532791032, 121.52358387976376"),
+            venue_type=VenueType.GALLERY,
         )
 
     async def fetch_response(self):

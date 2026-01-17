@@ -10,7 +10,7 @@ from helpers.headers_helper import get_headers, get_cookies
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import ad_to_roc_era, date_now, month_3
 
@@ -29,6 +29,7 @@ class TaipeiExPoParkRunner(RunnerInit):
             code_name="TaipeiExPoPark",
             external_link="https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029",
             branch_coordinates=Coordinate(raw_coordinates="25.069720986746507, 121.52071496978188"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

@@ -12,7 +12,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import date_now, month_3
 
@@ -31,6 +31,7 @@ class TwTcRunner(RunnerInit):
             code_name="TwTc",
             external_link="https://twtc.com.tw/exhibition?p=home",
             branch_coordinates=Coordinate(raw_coordinates="25.03358007614386, 121.56240955530657"),
+            venue_type=VenueType.MUSEUM,
         )
 
     def extract_import(self, response: httpx.Response) -> dict:

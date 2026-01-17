@@ -10,7 +10,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_6
 
@@ -32,6 +32,7 @@ class KingCarArtRunner(RunnerInit):
                 Coordinate(name="臺北承德館", raw_coordinates="25.067779239946375, 121.51865322216524"),
                 Coordinate(name="臺北南京館", raw_coordinates="25.052598382305003, 121.5278585635071"),
             ],
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

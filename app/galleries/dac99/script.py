@@ -6,7 +6,7 @@ from app.galleries.dac99.parse import Dac99Parse
 from helpers.headers_helper import get_headers, get_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -28,6 +28,7 @@ class Dac99Runner(RunnerInit):
             code_name="Dac99",
             external_link="https://99dac.com/exhibition.php",
             branch_coordinates=Coordinate(raw_coordinates="25.11649643071741, 121.5053916644182"),
+            venue_type=VenueType.GALLERY,
         )
 
     async def fetch_response(self):

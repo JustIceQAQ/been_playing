@@ -1,5 +1,13 @@
 from enum import Enum
 
+from enum import StrEnum, auto
+
+
+class VenueType(StrEnum):
+    MUSEUM = auto()  # 博物館
+    GALLERY = auto()  # 藝廊
+    PLATFORM = auto()  # 線上平台
+
 
 class TaiwanCity(str, Enum):
     # 縣 (Counties) - 代碼多源於 ISO 3166/MA

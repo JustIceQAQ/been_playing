@@ -10,7 +10,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -30,6 +30,7 @@ class NHRMRunner(RunnerInit):
             code_name="NHRM",
             external_link="https://www.nhrm.gov.tw/w/nhrm/ExhibitionA",
             branch_coordinates=Coordinate(raw_coordinates="24.987027946019857, 121.53208236236004"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

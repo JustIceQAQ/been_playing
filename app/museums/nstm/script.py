@@ -8,7 +8,7 @@ from app.museums.nstm.parse import NsTmParse
 from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -30,6 +30,7 @@ class NsTmRunner(RunnerInit):
             code_name="NsTm",
             external_link="https://www.nstm.gov.tw/ExhibitionList.aspx?ExhibitionType=1&Period=1",
             branch_coordinates=Coordinate(raw_coordinates="22.64161262350391, 120.32253339088527"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def sub_fetch_response(

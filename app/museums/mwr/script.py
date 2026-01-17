@@ -9,7 +9,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -30,6 +30,7 @@ class MwrRunner(RunnerInit):
             code_name="Mwr",
             external_link="https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070",
             branch_coordinates=Coordinate(raw_coordinates="25.008202799610107, 121.50783679675385"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

@@ -7,6 +7,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
+from helpers.storage.symbol import VenueType
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 
@@ -25,6 +26,7 @@ class OpenTixRunner(RunnerInit):
             external_link="https://www.opentix.life/search/%20/ABOUT_TO_BEGIN"
             "?category=%E5%B1%95%E8%A6%BDAll"
             "&type=programs",
+            venue_type=VenueType.PLATFORM,
         )
 
     async def fetch_response(self):

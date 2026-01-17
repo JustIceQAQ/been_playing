@@ -6,7 +6,7 @@ from app.museums.hong_gah.parse import HongGahParse
 from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -30,6 +30,7 @@ class HongGahRunner(RunnerInit):
             code_name="HongGah",
             external_link="https://hong-gah.org.tw/exhibitions-zh",
             branch_coordinates=Coordinate(raw_coordinates="25.125315737958747, 121.49922632559256"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

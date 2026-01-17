@@ -5,6 +5,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
+from helpers.storage.symbol import VenueType
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 
@@ -21,6 +22,7 @@ class IBonRunner(RunnerInit):
             fullname="IBon 售票",
             code_name="IBon",
             external_link="https://tour.ibon.com.tw/home/search?category=exhibition",
+            venue_type=VenueType.PLATFORM,
         )
 
     async def fetch_response(self):

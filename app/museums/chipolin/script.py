@@ -6,7 +6,7 @@ from app.museums.chipolin.parse import ChiPoLinParse
 from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -29,6 +29,7 @@ class ChiPoLinRunner(RunnerInit):
             code_name="ChiPoLin",
             external_link="https://www.chipolin.org/exhibition",
             branch_coordinates=Coordinate(raw_coordinates="25.17294603618085, 121.43711272744605"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

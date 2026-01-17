@@ -10,6 +10,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information
+from helpers.storage.symbol import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3, get_asyncio_rate_limit
 
@@ -27,6 +28,7 @@ class BooksTicketsRunner(RunnerInit):
             fullname="博客來售票網",
             code_name="BooksTickets",
             external_link="https://tickets.books.com.tw/leisure/",
+            venue_type=VenueType.PLATFORM,
         )
 
     async def fetch_response(self):

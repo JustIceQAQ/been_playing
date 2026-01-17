@@ -8,7 +8,7 @@ from helpers.crawler.rnet.helper import RNetAsyncClient
 from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
@@ -30,6 +30,7 @@ class KhmRunner(RunnerInit):
             code_name="khm",
             external_link="https://khm.org.tw/tw",
             branch_coordinates=Coordinate(raw_coordinates="22.62712833389164, 120.28687449855717"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def sub_get_response(self, client: Client, url: str) -> str:

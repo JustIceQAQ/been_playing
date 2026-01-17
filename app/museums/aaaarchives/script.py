@@ -7,7 +7,7 @@ from app.museums.aaaarchives.parse import AAAArchivesParse
 from helpers.headers_helper import get_headers, get_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.justhtml.helper import JustHTMLTranslation
 from helpers.utils_helper import month_3
@@ -29,6 +29,7 @@ class AAAArchivesRunner(RunnerInit):
             code_name="AAAArchives",
             external_link="https://aaa.archives.tw/tw/event/306.html",
             branch_coordinates=Coordinate(raw_coordinates="25.07521442685089, 121.37402598256791"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

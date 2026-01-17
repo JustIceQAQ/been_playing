@@ -11,7 +11,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -34,7 +34,8 @@ class NtmRunner(RunnerInit):
                 Coordinate(name="古生物館", raw_coordinates="25.043788780293, 121.51440168326278"),
                 Coordinate(name="鐵道部園區", raw_coordinates="25.048869075417418, 121.5113360427876"),
                 Coordinate(name="南門館", raw_coordinates="25.033613597291687, 121.51583661209861"),
-            ]
+            ],
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

@@ -9,7 +9,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 
@@ -29,6 +29,7 @@ class NtcArtMuseumRunner(RunnerInit):
             code_name="NtcArtMuseum",
             external_link="https://ntcart.museum/exhibition.aspx?kind=today",
             branch_coordinates=Coordinate(raw_coordinates="24.953654641948525, 121.358269212097"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def sub_fetch_response(self, client: httpx.AsyncClient, kind: str) -> httpx.Response:

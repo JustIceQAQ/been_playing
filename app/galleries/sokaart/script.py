@@ -1,7 +1,8 @@
 import asyncio
 
 import bs4
-from app.museums.tncmmm.parse import TncMMMParse
+
+from app.galleries.sokaart.parse import SoKaArtParse
 from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -13,10 +14,9 @@ from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
 
-class TncMMMRunner(RunnerInit):
+class SoKaArtRunner(RunnerInit):
     translation = BeautifulSoupTranslation
-    use_parse = TncMMMParse
-    use_suffix_item_from_file_func = True
+    use_parse = SoKaArtParse
 
     def set_cache_expire(self) -> int | None:
         return month_3()
@@ -24,33 +24,27 @@ class TncMMMRunner(RunnerInit):
     def set_information(self) -> "Information":
         return Information(
             location_code=TaiwanCity.taipei_city,
-            fullname="臺灣新文化運動紀念館",
-            code_name="TncMMM",
-            external_link="https://tncmmm.gov.taipei/Content_List.aspx?n=2BF92E180FD68C1A",
-            branch_coordinates=Coordinate(raw_coordinates="25.059502699444998, 121.51495546606633"),
-            venue_type=VenueType.MUSEUM,
+            fullname="索卡藝術中心",
+            code_name="SoKaArt",
+            external_link="https://www.soka-art.com/tr",
+            branch_coordinates=Coordinate(raw_coordinates="25.07961383080647, 121.56344961543039"),
+            venue_type=VenueType.GALLERY,
         )
 
     async def fetch_response(self):
-        headers = get_headers(
-                host="tncmmm.gov.taipei",
-                referer="https://tncmmm.gov.taipei",
-            )
+        headers = get_headers()
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://tncmmm.gov.taipei/Content_List.aspx?n=2BF92E180FD68C1A",
-                headers=headers,
-            )
+            response = await client.get("https://soka-art.com/tr/exhibition/current?artist_area=5")
         return response.text
 
     async def fetch_parsed(self):
         parsed: bs4.BeautifulSoup = await super().fetch_parsed()
-        return parsed.select("div.group-list.content a")
+        return parsed.select("div.exhibition-list-wrapper li.item")
 
 
 async def main():
-    await TncMMMRunner().run(NoneCache(), NoneImage())
+    await SoKaArtRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     asyncio.run(main())

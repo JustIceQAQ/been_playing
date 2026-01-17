@@ -10,7 +10,7 @@ from helpers.headers_helper import get_headers, get_cookies
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -29,6 +29,7 @@ class NCPIRunner(RunnerInit):
             code_name="NCPI",
             external_link="https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?n=8006&sms=15632",
             branch_coordinates=Coordinate(raw_coordinates="25.0468823164654, 121.51432273908243"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

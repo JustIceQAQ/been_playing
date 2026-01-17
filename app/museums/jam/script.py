@@ -9,7 +9,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -28,6 +28,7 @@ class JamRunner(RunnerInit):
             code_name="Jam",
             external_link="https://jam.jutfoundation.org.tw/online-exhibition",
             branch_coordinates=Coordinate(raw_coordinates="25.044509020251724, 121.53731469675466"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

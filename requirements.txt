@@ -8,7 +8,7 @@ retry==0.9.2
 httpx
 rnet==2.4.2 # https://pypi.org/project/rnet/
 dill==0.4.0
-justhtml==0.30.0
+justhtml==0.35.0
 
 fake-useragent==2.2.0
 aiofile==3.9.0
@@ -21,7 +21,11 @@ croniter==6.0.0 # https://github.com/kiorky/croniter
 
 # Sentry
 # ============
-sentry-sdk==2.48.0
+sentry-sdk==2.49.0
 urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
 h11>=0.16.0 # not directly required, pinned by Snyk to avoid a vulnerability
 anyio>=4.4.0 # not directly required, pinned by Snyk to avoid a vulnerability
+
+aiofiles
+
+orjson >= 3.10,<4

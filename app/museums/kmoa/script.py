@@ -7,7 +7,7 @@ from app.museums.kmoa.parse import KmoaParse
 from helpers.headers_helper import get_headers, get_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -29,6 +29,7 @@ class KmoaRunner(RunnerInit):
             code_name="kmoa",
             external_link="https://kmoa.klcg.gov.tw/News_Photo.aspx?n=7484&sms=12489",
             branch_coordinates=Coordinate(raw_coordinates="25.131248388298207, 121.74399937483508"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_sub_response(

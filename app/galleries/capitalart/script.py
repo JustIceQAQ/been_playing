@@ -6,7 +6,7 @@ from app.galleries.capitalart.parse import CapitalArtParse
 from helpers.headers_helper import get_headers, get_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -28,6 +28,7 @@ class CapitalArtRunner(RunnerInit):
             code_name="CapitalArt",
             external_link="https://capitalart.com.tw/",
             branch_coordinates=Coordinate(raw_coordinates="25.038294766316984, 121.55372725140036"),
+            venue_type=VenueType.GALLERY,
         )
 
     async def fetch_response(self):

@@ -31,7 +31,7 @@ class TurboImageHost:
                 data={"images": images_url, "imcontent": "all", "thumb_size": 500},
             )
             response.raise_for_status()
-        s = BeautifulSoup(response.content)
+        s = BeautifulSoup(response.content, "html5lib")
         img_code_ipms = s.select_one("#imgCodeIPMS")
         return UploadResponse(
             success=response.is_success,

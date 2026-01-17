@@ -5,7 +5,7 @@ from app.museums.tnammuseum.parse import TnamMuseumParse
 from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -30,7 +30,8 @@ class TnamMuseumRunner(RunnerInit):
             branch_coordinates=[
                 Coordinate(name="一館", raw_coordinates="22.99117888093109, 120.20502606285312"),
                 Coordinate(name="二館", raw_coordinates="22.99055275877767, 120.20140904089217"),
-            ]
+            ],
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

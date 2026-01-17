@@ -9,7 +9,7 @@ from app.museums.kmfa.parse import KmFaParse
 from helpers.headers_helper import get_headers, get_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -31,6 +31,7 @@ class KmFaRunner(RunnerInit):
             code_name="KmFa",
             external_link="https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",
             branch_coordinates=Coordinate(raw_coordinates="22.65687499527212, 120.28659401204955"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def sub_response(self, client: httpx.AsyncClient, url: str) -> str:

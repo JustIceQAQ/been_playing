@@ -14,6 +14,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
+from helpers.storage.symbol import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import datetime_now, month_3
 from configs.settings import get_settings
@@ -48,6 +49,7 @@ class KKTixRunner(RunnerInit):
             fullname="KKTix",
             code_name="KKTix",
             external_link="https://kktix.com/events?utf8=%E2%9C%93&event_tag_ids_in=4",
+            venue_type=VenueType.PLATFORM,
         )
 
     async def fetch_response(self):
