@@ -1,17 +1,59 @@
 import argparse
 import asyncio
+import json
 import logging
+import typing
 from pathlib import Path
-
+import aiofiles
 import sentry_sdk
 from dotenv import load_dotenv
 
 from app.script import ALL_RUNNERS
 from configs.settings import get_settings
 from helpers.cache import DiskCache, NoneCache
+
 from helpers.crawler.scraper.helper import available_scraper_async_client
 from helpers.image.none.helper import NoneImage
 from helpers.image.turboimagehost.helper import TurboImageHost
+
+if typing.TYPE_CHECKING:
+    from helpers.storage.helper import Information, Coordinate
+
+ROOT_PATH = Path(__file__).parent.absolute()
+
+
+async def generate_location(information: list["Information"]):
+    ok_centers = []
+
+    for location in information:
+        fullname = location.fullname
+        if isinstance(location.branch_coordinates, Coordinate):
+            ok_centers.append(
+                {
+                    "fullname": fullname,
+                    "latitude": location.branch_coordinates.latitude,
+                    "longitude": location.branch_coordinates.longitude,
+                    "venue_type": location.venue_type,
+                }
+            )
+            continue
+        if isinstance(location.branch_coordinates, list):
+            for branch_coordinate in location.branch_coordinates:
+                name = "None" if (this_name := branch_coordinate.get("name")) is None else this_name
+                ok_centers.append(
+                    {
+                        "fullname": fullname + "-" + name,
+                        "latitude": branch_coordinate.latitude,
+                        "longitude": branch_coordinate.longitude,
+                        "venue_type": location.venue_type,
+                    }
+                )
+            continue
+        if location.branch_coordinates is None:
+            pass
+
+    async with aiofiles.open(ROOT_PATH / "data" / "v2" / "_ALL_LOCATION.json", "w+") as afp:
+        await afp.write(json.dumps(ok_centers))
 
 
 async def main(worker: int | None = None, worker_max: int | None = None):
@@ -44,10 +86,15 @@ async def main(worker: int | None = None, worker_max: int | None = None):
 
     await available_scraper_async_client(runtime_setting.SCRAPER_API_KEY)
 
-    all_async_script_runners = [
-        RunnerObj().run(disk_cache, imgur, prefix) for RunnerObj in scripts_to_run
-    ]
+    all_script_information: list["Information"] = []
+    all_async_script_runners = []
+    for RunnerObj in scripts_to_run:
+        this_runner = RunnerObj()
+        all_script_information.append(this_runner.set_information())
+        all_async_script_runners.append(RunnerObj().run(disk_cache, imgur, prefix) for RunnerObj in scripts_to_run)
+
     await asyncio.gather(*all_async_script_runners, return_exceptions=True)
+    await generate_location(all_script_information)
 
 
 if __name__ == "__main__":
