@@ -36,7 +36,7 @@ async def generate_location(information: list["Information"]):
             continue
         if isinstance(location.branch_coordinates, list):
             for branch_coordinate in location.branch_coordinates:
-                name = "None" if (this_name := branch_coordinate.get("name")) is None else this_name
+                name = "None" if (this_name := branch_coordinate.name) is None else this_name
                 ok_centers.append(
                     {
                         "fullname": fullname + "-" + name,
