@@ -220,3 +220,9 @@ class Exhibition(BaseModel):
         self.execution_time = execution_time
         async with async_open(this_folder / f"{filename}.json", "w+") as afp:
             await afp.write(self.model_dump_json())
+
+
+def orjson_default_handler(obj):
+    if isinstance(obj, Decimal):
+        return str(obj)
+    raise TypeError
