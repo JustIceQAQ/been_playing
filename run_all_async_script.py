@@ -86,7 +86,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
 
     all_script_information: list["Information"] = []
     all_async_script_runners = []
-    for RunnerObj in scripts_to_run[:2]:
+    for RunnerObj in scripts_to_run:
         this_runner = RunnerObj()
         all_script_information.append(this_runner.set_information())
         all_async_script_runners.append(RunnerObj().run(disk_cache, imgur, prefix))
