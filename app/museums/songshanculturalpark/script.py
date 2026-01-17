@@ -10,7 +10,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, ExhibitionItem, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3, get_asyncio_rate_limit
 
@@ -30,6 +30,7 @@ class SongShanCulturalParkRunner(RunnerInit):
             code_name="SongShanCulturalPark",
             external_link="https://www.songshanculturalpark.org/exhibition",
             branch_coordinates=Coordinate(raw_coordinates="25.04389834091059, 121.56065162486529"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

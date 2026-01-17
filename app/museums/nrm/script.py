@@ -5,7 +5,7 @@ from app.museums.nrm.parse import NrmParse
 from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate, ExhibitionItem
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3, get_asyncio_rate_limit
@@ -28,6 +28,7 @@ class NrmRunner(RunnerInit):
             code_name="Nrm",
             external_link="https://www.nrm.gov.tw/News_actives.aspx?n=3325&sms=13412",
             branch_coordinates=Coordinate(raw_coordinates="25.04759981549798, 121.56476041209898"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

@@ -6,7 +6,7 @@ from app.galleries.xizhitang.parse import XiZhiTangParse
 from helpers.headers_helper import get_headers, get_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -29,6 +29,7 @@ class XiZhiTangRunner(RunnerInit):
             code_name="XiZhiTang",
             external_link="https://taipeiartweek.tw/",
             branch_coordinates=Coordinate(raw_coordinates="25.040329571305197, 121.56247655631785"),
+            venue_type=VenueType.GALLERY,
         )
 
     async def fetch_response(self):

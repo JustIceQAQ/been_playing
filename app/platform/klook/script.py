@@ -10,6 +10,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
+from helpers.storage.symbol import VenueType
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 
@@ -46,6 +47,7 @@ class KLookRunner(RunnerInit):
                           "&date=next_30_days"
                           "&sort=latest"
                           "&page=1",
+            venue_type=VenueType.PLATFORM,
         )
 
     async def fetch_response(self):

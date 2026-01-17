@@ -5,7 +5,7 @@ from app.museums.tncmmm.parse import TncMMMParse
 from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -28,6 +28,7 @@ class TncMMMRunner(RunnerInit):
             code_name="TncMMM",
             external_link="https://tncmmm.gov.taipei/Content_List.aspx?n=2BF92E180FD68C1A",
             branch_coordinates=Coordinate(raw_coordinates="25.059502699444998, 121.51495546606633"),
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

@@ -6,6 +6,7 @@ from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.crawler.httpx.helper import HttpxAsyncClient
+from helpers.storage.symbol import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
@@ -25,6 +26,7 @@ class CultureExpressRunner(RunnerInit):
             fullname="文化快遞",
             code_name="CultureExpress",
             external_link="https://cultureexpress.taipei/Event/C000003",
+            venue_type=VenueType.PLATFORM,
         )
 
     async def fetch_response(self):

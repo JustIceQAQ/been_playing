@@ -13,7 +13,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -32,6 +32,7 @@ class TmcRunner(RunnerInit):
             code_name="Tmc",
             external_link="https://www.tmc.taipei/tw/blog/show?filter=eyJkaXJlY3Rpb24iOiJsYXN0ZXN0In0=",
             branch_coordinates=Coordinate(raw_coordinates="25.05181188396233, 121.59745382637806"),
+            venue_type=VenueType.MUSEUM,
         )
 
     def create_filter_base64_string(self, page_number: int) -> str:

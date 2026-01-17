@@ -6,6 +6,7 @@ from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.crawler.httpx.helper import HttpxAsyncClient
+from helpers.storage.symbol import VenueType
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
@@ -25,6 +26,7 @@ class GaCcRunner(RunnerInit):
             fullname="中華文化總會",
             code_name="GaCc",
             external_link="https://www.gacc.org.tw/TW/events?categoryId=3",
+            venue_type=VenueType.PLATFORM,
         )
 
     async def fetch_response(self):

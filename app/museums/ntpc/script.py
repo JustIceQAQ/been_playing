@@ -10,7 +10,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3, get_asyncio_rate_limit
 
@@ -26,11 +26,11 @@ class NTPCRunner(RunnerInit):
     def set_information(self) -> "Information":
         return Information(
             location_code=TaiwanCity.new_taipei_city,
-
             fullname="鶯歌陶瓷博物館",
             code_name="NTPC",
             external_link="https://www.ceramics.ntpc.gov.tw/xmdoc?xsmsid=0J148497613881029302",
             branch_coordinates=Coordinate(raw_coordinates="24.949406697655782, 121.3520648774411"),
+            venue_type=VenueType.MUSEUM,
         )
 
     def get_this_header(self):

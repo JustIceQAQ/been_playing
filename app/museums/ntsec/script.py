@@ -12,7 +12,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, ExhibitionItem, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import datetime_now, month_3, get_asyncio_rate_limit
 
@@ -32,6 +32,7 @@ class NtSecRunner(RunnerInit):
             code_name="NtSec",
             external_link="https://www.ntsec.gov.tw/article/list.aspx?a=25",
             branch_coordinates=Coordinate(raw_coordinates="25.096328164549, 121.51649185712368"),
+            venue_type=VenueType.MUSEUM,
         )
 
     def get_this_headers(self) -> dict:

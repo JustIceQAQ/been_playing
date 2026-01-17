@@ -8,7 +8,7 @@ from typing import Any
 from aiofile import async_open
 from pydantic import BaseModel, Field, model_validator
 
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.utils_helper import datetime_now_iso_format
 
 
@@ -178,6 +178,7 @@ class Information(BaseModel):
         default=None, description="經緯度"
     )
     location_code: TaiwanCity | None = Field(default=None, description="ISO 3166/MA")
+    venue_type: VenueType | None = Field(default=None, description="場所類型")
 
 
 class Exhibition(BaseModel):

@@ -8,7 +8,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 
@@ -38,7 +38,8 @@ class NTCRIRunner(RunnerInit):
                            name="臺北當代工藝設計分館",
                            raw_coordinates="25.03210292140622, 121.51234399386772"
                            ),
-            ]
+            ],
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):

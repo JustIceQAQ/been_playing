@@ -7,7 +7,7 @@ from helpers.headers_helper import get_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_6
 
@@ -35,7 +35,8 @@ class NpmRunner(RunnerInit):
                     raw_coordinates="23.473459041101574, 120.2928023651772"
                 )
 
-            ]
+            ],
+            venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_south_response(self):

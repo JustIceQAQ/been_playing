@@ -6,7 +6,7 @@ from app.galleries.sokaart.parse import SoKaArtParse
 from helpers.headers_helper import get_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity
+from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -28,6 +28,7 @@ class SoKaArtRunner(RunnerInit):
             code_name="SoKaArt",
             external_link="https://www.soka-art.com/tr",
             branch_coordinates=Coordinate(raw_coordinates="25.07961383080647, 121.56344961543039"),
+            venue_type=VenueType.GALLERY,
         )
 
     async def fetch_response(self):
