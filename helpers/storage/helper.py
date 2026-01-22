@@ -5,15 +5,11 @@ from decimal import Decimal
 from pathlib import Path
 from typing import Any
 
-from aiofile import async_open
+import aiofiles
 from pydantic import BaseModel, Field, model_validator
 
 from helpers.storage.symbol import TaiwanCity, VenueType
-from helpers.utils_helper import datetime_now_iso_format
-
-
-def hex_uuid5(value: str) -> str:
-    return uuid.uuid5(uuid.UUID("00000000-0000-0000-0000-000000000000"), value).hex
+from helpers.utils_helper import datetime_now, datetime_now_iso_format
 
 
 def extract_start_date(date_str: str | None) -> datetime.datetime | None:
@@ -31,6 +27,16 @@ def extract_start_date(date_str: str | None) -> datetime.datetime | None:
     if match:
         return datetime.datetime.strptime(match.group(1), "%Y-%m-%d")
     return None
+
+
+def orjson_default_handler(obj):
+    if isinstance(obj, Decimal):
+        return str(obj)
+    raise TypeError
+
+
+def hex_uuid5(value: str) -> str:
+    return uuid.uuid5(uuid.UUID("00000000-0000-0000-0000-000000000000"), value).hex
 
 
 class ExhibitionItem(BaseModel):
@@ -218,11 +224,66 @@ class Exhibition(BaseModel):
             )
             this_folder.mkdir(exist_ok=True)
         self.execution_time = execution_time
-        async with async_open(this_folder / f"{filename}.json", "w+") as afp:
+
+        async with aiofiles.open(this_folder / f"{filename}.json", mode="r+") as afp:
+            context = await afp.read()
+            before_items = Exhibition.model_validate_json(context)
+            last_week_update.set_before_items(before_items.items)
+
+            await afp.seek(0)
             await afp.write(self.model_dump_json())
+            await afp.truncate()
+            last_week_update.set_after_items(self.items)
 
 
-def orjson_default_handler(obj):
-    if isinstance(obj, Decimal):
-        return str(obj)
-    raise TypeError
+class LastWeekUpdateData(BaseModel):
+    updated: datetime.datetime | None = Field(default_factory=datetime_now)
+    items: list[ExhibitionItem] | None = Field(default_factory=list)
+
+    def update_datetime(self):
+        self.updated = datetime_now()
+
+
+LAST_WEEK_FILE_PATH = (
+    Path(__file__).parent.parent.parent / "data" / "v2" / "last_week_update.json"
+)
+
+
+class LastWeekUpdate:
+    def __init__(self):
+        self.before_items: list["ExhibitionItem"] = []
+        self.after_items: list["ExhibitionItem"] = []
+
+    def set_before_items(self, items: list["ExhibitionItem"]):
+        self.before_items.extend(items)
+
+    def set_after_items(self, items: list["ExhibitionItem"]):
+        self.after_items.extend(items)
+
+    def get_last_week_update_items(self) -> set["ExhibitionItem"]:
+        return set(self.after_items) - set(self.before_items)
+
+    async def set_last_week_items(self):
+        data = LastWeekUpdateData()
+
+        if LAST_WEEK_FILE_PATH.exists():
+            async with aiofiles.open(LAST_WEEK_FILE_PATH, "r") as afp:
+                content = await afp.read()
+                if content:
+                    data = LastWeekUpdateData.model_validate_json(content)
+
+        if data.updated is not None:
+            today = datetime_now()
+            if today.isocalendar()[:2] != data.updated.isocalendar()[:2]:
+                data = LastWeekUpdateData()
+
+        last_week_update_items = self.get_last_week_update_items()
+        if last_week_update_items:
+            data.items.extend(list(last_week_update_items))
+            data.update_datetime()
+
+        async with aiofiles.open(LAST_WEEK_FILE_PATH, "w+") as afp:
+            await afp.write(data.model_dump_json(indent=2))
+
+
+last_week_update = LastWeekUpdate()
