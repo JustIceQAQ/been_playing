@@ -79,7 +79,7 @@ PLATFORM_RUNNERS = {
     OpenTixRunner,
     UdnFunLifeRunner,
     ArtEmperorRunner,
-SoKaArtRunner,
+    SoKaArtRunner,
 }
 
 MUSEUMS_RUNNERS = {
@@ -146,4 +146,4 @@ GALLERIES_RUNNERS = {
     CG1839Runner,
 }
 
-ALL_RUNNERS = PLATFORM_RUNNERS | MUSEUMS_RUNNERS
+ALL_RUNNERS = {KingCarArtRunner}  # PLATFORM_RUNNERS | MUSEUMS_RUNNERS

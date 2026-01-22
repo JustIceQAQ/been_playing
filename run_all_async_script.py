@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 from app.script import ALL_RUNNERS
 from configs.settings import get_settings
 from helpers.cache import DiskCache, NoneCache
-from helpers.storage.helper import Information, Coordinate, orjson_default_handler
+from helpers.storage.helper import Information, Coordinate, orjson_default_handler, last_week_update
 from helpers.crawler.scraper.helper import available_scraper_async_client
 from helpers.image.none.helper import NoneImage
 from helpers.image.turboimagehost.helper import TurboImageHost
@@ -93,6 +93,8 @@ async def main(worker: int | None = None, worker_max: int | None = None):
 
     await asyncio.gather(*all_async_script_runners, return_exceptions=True)
     await generate_location(all_script_information)
+
+    await last_week_update.set_last_week_items()
 
 
 if __name__ == "__main__":
