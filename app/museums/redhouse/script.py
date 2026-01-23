@@ -2,7 +2,7 @@ import asyncio
 import urllib.parse
 
 from app.museums.redhouse.parse import RedHouseParse
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -33,10 +33,10 @@ class RedHouseRunner(RunnerInit):
 
     async def fetch_response(self):
         aspx = "https://www.redhouse.taipei/events.aspx"
-        headers = get_headers(host="www.redhouse.taipei",
-                              origin="https://www.redhouse.taipei",
-                              referer=aspx,
-                              x_requested_with="XMLHttpRequest")
+        headers = generate_headers(host="www.redhouse.taipei",
+                                   origin="https://www.redhouse.taipei",
+                                   referer=aspx,
+                                   x_requested_with="XMLHttpRequest")
         data = {
             "q": "get",
             "r": "0.001",

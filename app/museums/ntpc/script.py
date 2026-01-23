@@ -6,7 +6,7 @@ import httpx
 from app.museums.ntpc.parse import NTPCParse, normalize_date_range
 from helpers.cache import DiskCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information, Coordinate
@@ -34,7 +34,7 @@ class NTPCRunner(RunnerInit):
         )
 
     def get_this_header(self):
-        return get_headers(host="www.ceramics.ntpc.gov.tw", need_upgrade_insecure_requests=True)
+        return generate_headers(host="www.ceramics.ntpc.gov.tw", need_upgrade_insecure_requests=True)
 
     async def fetch_response(self):
         headers = self.get_this_header()

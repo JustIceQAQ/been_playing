@@ -6,7 +6,7 @@ from app.platform.klook.parse import KLookParse
 from configs.settings import get_settings
 from helpers.cache import NoneCache
 from helpers.crawler.rnet.helper import RNetAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
@@ -52,7 +52,7 @@ class KLookRunner(RunnerInit):
 
     async def fetch_response(self):
         responses = []
-        headers = get_headers(
+        headers = generate_headers(
             not_use_user_agent=True,
             other_headers={
                 "accept": "text/html,application/xhtml+xml,application/xml;"

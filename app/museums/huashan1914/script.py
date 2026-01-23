@@ -6,7 +6,7 @@ from app.museums.huashan1914.parse import huashan1914Parse
 from helpers.cache import NoneCache
 import httpx
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate, ExhibitionItem
@@ -44,7 +44,7 @@ class HuaShan1914Runner(RunnerInit):
             while True:
                 response = await client.get(
                     f"https://www.huashan1914.com/w/huashan1914/exhibition?index={index}",
-                    headers=get_headers(),
+                    headers=generate_headers(),
                 )
                 dataset = bs4.BeautifulSoup(response.text, "html5lib").select(
                     "ul#event-ul li"
@@ -83,7 +83,7 @@ class HuaShan1914Runner(RunnerInit):
 
     async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):
         asyncio_limit = get_asyncio_rate_limit(3, 30)
-        headers = get_headers()
+        headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client, asyncio_limit:
             tasks = [self._get_item_data(client, item) for item in items]
             await asyncio.gather(*tasks)

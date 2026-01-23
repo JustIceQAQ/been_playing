@@ -1,7 +1,7 @@
 import asyncio
 
 from app.museums.artistvillage.parse import ArtistVillageParse
-from helpers.headers_helper import get_headers, get_cookies
+from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -32,7 +32,7 @@ class ArtistVillageRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers() | {
+        headers = generate_headers() | {
             "x-requested-with": "XMLHttpRequest",
             "referer": "https://www.artistvillage.org/event.php",
             "origin": "https://www.artistvillage.org",
@@ -42,7 +42,7 @@ class ArtistVillageRunner(RunnerInit):
             "accept-encoding": "gzip, deflate, br, zstd",
             "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
         }
-        cookies = get_cookies(need_phpsessid=True)
+        cookies = generate_cookies(need_phpsessid=True)
         next_year = this_date_year() + 1
         data = {
             "post_type": "event",

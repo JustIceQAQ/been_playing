@@ -3,7 +3,7 @@ import asyncio
 import bs4
 
 from app.galleries.mindsetart.parse import MindSetArtParse
-from helpers.headers_helper import get_headers, get_cookies
+from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -33,10 +33,10 @@ class MindSetArtRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(
+        headers = generate_headers(
             host="www.art-msac.com"
         )
-        cookies = get_cookies(other_cookies={"splash_screen_disabled": "true"})
+        cookies = generate_cookies(other_cookies={"splash_screen_disabled": "true"})
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             response = await client.get("https://www.art-msac.com/exhibitions/")
         return response.text

@@ -5,7 +5,7 @@ import bs4
 from app.museums.nmh.parse import NmhParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -32,7 +32,7 @@ class NmhRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(
+        headers = generate_headers(
             host="www.nmh.gov.tw",
             referer="https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323"
         )

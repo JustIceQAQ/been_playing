@@ -8,7 +8,7 @@ from app.museums.twtc.schemas import TwTcResponse
 from app.museums.twtc.utils import get_next_element
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information, Coordinate
@@ -58,7 +58,7 @@ class TwTcRunner(RunnerInit):
         }
 
     async def fetch_response(self):
-        headers = get_headers(
+        headers = generate_headers(
             host="twtc.com.tw",
             referer="https://twtc.com.tw/exhibition?p=home",
             other_headers={

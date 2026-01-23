@@ -9,7 +9,7 @@ import httpx
 from app.museums.tmc.parse import TmcParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -49,7 +49,7 @@ class TmcRunner(RunnerInit):
         return base64.b64encode(str_dict.encode()).decode()
 
     async def fetch_response(self):
-        headers = get_headers(
+        headers = generate_headers(
             host="www.tmc.taipei",
             other_headers={
                 "accept": "text/html,"

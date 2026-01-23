@@ -8,7 +8,7 @@ from app.museums.ntsec.format.address import get_page_address
 from app.museums.ntsec.parse import NtSecParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, ExhibitionItem, Coordinate
@@ -36,7 +36,7 @@ class NtSecRunner(RunnerInit):
         )
 
     def get_this_headers(self) -> dict:
-        return get_headers(host="www.ntsec.gov.tw")
+        return generate_headers(host="www.ntsec.gov.tw")
 
     async def fetch_response(self):
         headers = self.get_this_headers()

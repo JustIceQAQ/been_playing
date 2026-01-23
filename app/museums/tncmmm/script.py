@@ -2,7 +2,7 @@ import asyncio
 
 import bs4
 from app.museums.tncmmm.parse import TncMMMParse
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -32,7 +32,7 @@ class TncMMMRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(
+        headers = generate_headers(
                 host="tncmmm.gov.taipei",
                 referer="https://tncmmm.gov.taipei",
             )

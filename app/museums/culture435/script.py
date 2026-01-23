@@ -3,7 +3,7 @@ import decimal
 
 import bs4
 from app.museums.culture435.parse import Culture435Parse
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -35,7 +35,7 @@ class Culture435Runner(RunnerInit):
     async def fetch_response(self):
         xsmsid = "0G256373177821958325"
         first_url = "https://www.435.culture.ntpc.gov.tw/xmdoc"
-        headers = get_headers(host="www.435.culture.ntpc.gov.tw")
+        headers = generate_headers(host="www.435.culture.ntpc.gov.tw")
         async with HttpxAsyncClient(headers=headers) as client:
             first_response = await client.get(
                 first_url, headers=headers, params={"xsmsid": xsmsid}

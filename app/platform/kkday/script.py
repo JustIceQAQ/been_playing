@@ -12,7 +12,7 @@ from app.platform.kkday.utils import parse_list
 from configs.settings import get_settings
 from helpers.cache import NoneCache
 from helpers.crawler.rnet.helper import RNetAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
@@ -89,7 +89,7 @@ class KKDayRunner(RunnerInit):
 
     async def fetch_response(self):
         responses = []
-        headers = get_headers(
+        headers = generate_headers(
             not_use_user_agent=True,
             host="www.kkday.com",
             referer="https://www.kkday.com/zh-tw/product/productlist?product_categories=CATEGORY_016&currency=TWD&start=0&count=10&sort=prec&page=2&destination=D-TW-5013,D-TW-4736",

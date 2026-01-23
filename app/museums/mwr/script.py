@@ -5,7 +5,7 @@ import bs4
 from app.museums.mwr.parse import MwrParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -35,7 +35,7 @@ class MwrRunner(RunnerInit):
 
     async def fetch_response(self):
         xsmsid = "0H305741810776620070"
-        headers = get_headers()
+        headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
                 f"https://www.mwr.org.tw/xcspecexhi?xsmsid={xsmsid}"

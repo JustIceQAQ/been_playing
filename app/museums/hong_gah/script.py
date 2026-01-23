@@ -3,7 +3,7 @@ import decimal
 
 import bs4
 from app.museums.hong_gah.parse import HongGahParse
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -34,7 +34,7 @@ class HongGahRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(
+        headers = generate_headers(
                 host="hong-gah.org.tw",
                 referer="https://hong-gah.org.tw/exhibitions-zh",
                 x_requested_with="XMLHttpRequest"

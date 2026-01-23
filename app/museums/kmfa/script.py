@@ -6,7 +6,7 @@ import bs4
 import httpx
 
 from app.museums.kmfa.parse import KmFaParse
-from helpers.headers_helper import get_headers, get_cookies
+from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -40,8 +40,8 @@ class KmFaRunner(RunnerInit):
         return response.text
 
     async def fetch_response(self):
-        headers = get_headers(referer="https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1")
-        cookies = get_cookies(need_asp_net_session_id=True, need_consent=True)
+        headers = generate_headers(referer="https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1")
+        cookies = generate_cookies(need_asp_net_session_id=True, need_consent=True)
         urls = [
             "https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",
             "https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=2",

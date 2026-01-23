@@ -2,14 +2,14 @@ import httpx
 import pytest
 from bs4 import BeautifulSoup
 
-from helpers.headers_helper import UA, get_cookies
+from helpers.headers_helper import UA, generate_cookies
 
 
 @pytest.mark.asyncio
 async def test_shungye_art_url():
     url = "https://www.shungye-art.org/show_now.php"
     headers = {"user-agent": UA.random, "referer": url}
-    cookies = get_cookies(need_phpsessid=True, need_consent=True)
+    cookies = generate_cookies(need_phpsessid=True, need_consent=True)
     async with httpx.AsyncClient(
         timeout=None, headers=headers, cookies=cookies
     ) as client:

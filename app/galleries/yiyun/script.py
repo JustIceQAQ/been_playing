@@ -3,7 +3,7 @@ import asyncio
 import bs4
 
 from app.galleries.yiyun.parse import YiYunParse
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -37,7 +37,7 @@ class YiYunRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers()
+        headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get("https://www.yiyun-art.com/exhibitions")
         return response.text

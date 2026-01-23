@@ -5,7 +5,7 @@ from fake_useragent import UserAgent
 UA = UserAgent(browsers="chrome", os=["windows", "macos"], platforms="pc")
 
 
-def get_headers(
+def generate_headers(
     host: str | None = None,
     referer: str | None = None,
     origin: str | None = None,
@@ -40,7 +40,7 @@ def get_headers(
     return this_header
 
 
-def get_cookies(
+def generate_cookies(
     need_phpsessid: bool | None = False,
     need_asp_net_session_id: bool = False,
     need_js_ession_id: bool = False,

@@ -2,7 +2,7 @@ import asyncio
 
 
 from app.museums.kishuan.parse import KiShuAnParse
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -32,7 +32,7 @@ class KiShuAnRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(
+        headers = generate_headers(
             host="kishuan.org.tw",
             referer="https://kishuan.org.tw/activity.htm",
             need_upgrade_insecure_requests=True

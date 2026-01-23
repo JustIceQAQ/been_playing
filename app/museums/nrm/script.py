@@ -2,7 +2,7 @@ import asyncio
 import httpx
 import bs4
 from app.museums.nrm.parse import NrmParse
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate, ExhibitionItem
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -32,7 +32,7 @@ class NrmRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers()
+        headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
                 "https://www.nrm.gov.tw/News_actives.aspx?n=3325&sms=13412"
@@ -59,7 +59,7 @@ class NrmRunner(RunnerInit):
 
     async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):
         asyncio_limit = get_asyncio_rate_limit(3, 30)
-        headers = get_headers()
+        headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client, asyncio_limit:
             tasks = [self._get_item_data(client, item) for item in items]
             await asyncio.gather(*tasks)

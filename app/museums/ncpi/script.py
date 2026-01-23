@@ -6,7 +6,7 @@ import bs4
 from app.museums.ncpi.parse import NCPIParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers, get_cookies
+from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -33,8 +33,8 @@ class NCPIRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(host="ncpi.ntmofa.gov.tw")
-        cookies = get_cookies(need_asp_net_session_id=True)
+        headers = generate_headers(host="ncpi.ntmofa.gov.tw")
+        cookies = generate_cookies(need_asp_net_session_id=True)
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             tasks = [
                 client.get(

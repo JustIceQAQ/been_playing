@@ -5,7 +5,7 @@ import bs4
 from app.museums.ntnu_art_museum.parse import NTNUArtMuseumParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -33,7 +33,7 @@ class NTNUArtMuseumRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(host="www.artmuse.ntnu.edu.tw")
+        headers = generate_headers(host="www.artmuse.ntnu.edu.tw")
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
                 "https://www.artmuse.ntnu.edu.tw/index.php/current_exhibit/"

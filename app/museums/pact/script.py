@@ -1,7 +1,7 @@
 import asyncio
 import urllib.parse
 from app.museums.pact.parse import PactParse
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -32,7 +32,7 @@ class PactRunner(RunnerInit):
 
     async def fetch_response(self):
         aspx = "https://www.pact.taipei/exhibition_list.aspx"
-        headers = get_headers(
+        headers = generate_headers(
             referer=f"{aspx}?p=1&ps=10&t=all",
             origin="https://www.pact.taipei",
             host="www.pact.taipei",

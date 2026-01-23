@@ -5,7 +5,7 @@ import httpx
 from app.museums.ntc_art_museum.parse import NtcArtMuseumParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -43,7 +43,7 @@ class NtcArtMuseumRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(
+        headers = generate_headers(
             referer="https://ntcart.museum/exhibition.aspx?kind=today",
             origin="https://ntcart.museum",
             x_requested_with="XMLHttpRequest",

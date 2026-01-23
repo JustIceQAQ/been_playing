@@ -3,7 +3,7 @@ import asyncio
 import bs4
 
 from app.galleries.dac99.parse import Dac99Parse
-from helpers.headers_helper import get_headers, get_cookies
+from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -32,8 +32,8 @@ class Dac99Runner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers()
-        cookies = get_cookies(need_phpsessid=True)
+        headers = generate_headers()
+        cookies = generate_cookies(need_phpsessid=True)
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             response = await client.get("https://99dac.com/exhibition.php")
         return response.text

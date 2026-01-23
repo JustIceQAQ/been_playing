@@ -4,7 +4,7 @@ import decimal
 import bs4
 
 from app.museums.ntaec.parse import NTAECParse
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -33,7 +33,7 @@ class NTAECRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(need_upgrade_insecure_requests=True)
+        headers = generate_headers(need_upgrade_insecure_requests=True)
         cookies = {"ASPSESSIONIDAUCTQQQB": "NEHFIKKCELKMMEJKIMGKIPDP"}
         page_no = 1
         url = "https://www.arte.gov.tw/pro1_exh_nowlist.asp?PageNo=1"

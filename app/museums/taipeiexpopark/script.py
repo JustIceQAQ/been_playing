@@ -6,7 +6,7 @@ import bs4
 from app.museums.taipeiexpopark.parse import TaipeiExPoParkParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers, get_cookies
+from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -33,10 +33,10 @@ class TaipeiExPoParkRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(
+        headers = generate_headers(
             origin="https://www.expopark.taipei",
             referer="https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029", )
-        cookies = get_cookies(need_asp_net_session_id=True, other_cookies={"font-size-": "medium"})
+        cookies = generate_cookies(need_asp_net_session_id=True, other_cookies={"font-size-": "medium"})
         params = {
             "n": 247,
             "sms": 9029,
