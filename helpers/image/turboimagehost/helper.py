@@ -1,16 +1,16 @@
 from bs4 import BeautifulSoup
 
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_cookies, get_headers
+from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.image.imgur.helper import limiter
 from helpers.image.turboimagehost.schemas import Data, UploadResponse
 
-headers = get_headers(
+headers = generate_headers(
     origin="https://www.turboimagehost.com",
     referer="https://www.turboimagehost.com/",
 )
 
-cookies = get_cookies(need_phpsessid=True)
+cookies = generate_cookies(need_phpsessid=True)
 
 
 class TurboImageHost:

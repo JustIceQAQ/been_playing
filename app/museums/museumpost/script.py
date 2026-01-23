@@ -6,7 +6,7 @@ import bs4
 from app.museums.museumpost.parse import MuseumPostParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers, get_cookies
+from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -36,8 +36,8 @@ class MuseumPostRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(host="museum.post.gov.tw", other_headers={"Connection": "keep-alive"})
-        cookies = get_cookies(need_js_ession_id=True)
+        headers = generate_headers(host="museum.post.gov.tw", other_headers={"Connection": "keep-alive"})
+        cookies = generate_cookies(need_js_ession_id=True)
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             target_url = "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage={to_page}"
             responses = []

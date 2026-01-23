@@ -3,7 +3,7 @@ import asyncio
 import bs4
 
 from app.galleries.capitalart.parse import CapitalArtParse
-from helpers.headers_helper import get_headers, get_cookies
+from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -32,8 +32,8 @@ class CapitalArtRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(need_upgrade_insecure_requests=True)
-        cookies = get_cookies(need_laravel_session=True)
+        headers = generate_headers(need_upgrade_insecure_requests=True)
+        cookies = generate_cookies(need_laravel_session=True)
 
         urls = [
             "https://capitalart.com.tw/exhibitions.html",

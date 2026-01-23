@@ -5,7 +5,7 @@ from rnet import Proxy, Client
 from app.museums.khm.parse import KhmParse
 from configs.settings import get_settings
 from helpers.crawler.rnet.helper import RNetAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -40,7 +40,7 @@ class KhmRunner(RunnerInit):
     async def fetch_response(self):
         current_exhibitions_url = "https://khm.org.tw/tw/exhibition/currentexhibitions"
         permanent_exhibitions = "https://khm.org.tw/tw/exhibition/permanentexhibitions"
-        headers = get_headers(referer=current_exhibitions_url, not_use_user_agent=True)
+        headers = generate_headers(referer=current_exhibitions_url, not_use_user_agent=True)
         runtime_settings = get_settings()
         proxies = (
             None

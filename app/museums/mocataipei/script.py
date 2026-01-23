@@ -6,7 +6,7 @@ import bs4
 from app.museums.mocataipei.parse import MoCaTaipeiParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -36,7 +36,7 @@ class MoCaTaipeiRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers()
+        headers = generate_headers()
         target_url = [
             "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent",
             "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Exhibitions/Upcoming",

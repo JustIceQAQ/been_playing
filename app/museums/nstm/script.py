@@ -5,7 +5,7 @@ import bs4
 import httpx
 
 from app.museums.nstm.parse import NsTmParse
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -52,7 +52,7 @@ class NsTmRunner(RunnerInit):
         semaphore = asyncio.Semaphore(1)
         limits = httpx.Limits(max_connections=5, max_keepalive_connections=2)
         timeout = httpx.Timeout(10.0, connect=5.0)
-        headers = get_headers(
+        headers = generate_headers(
             referer="https://www.nstm.gov.tw/ExhibitionList.aspx?appname=Exhibition",
             need_upgrade_insecure_requests=True,
             other_headers={

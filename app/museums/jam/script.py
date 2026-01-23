@@ -5,7 +5,7 @@ import bs4
 from app.museums.jam.parse import JamParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -32,8 +32,8 @@ class JamRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(host="jam.jutfoundation.org.tw",
-                              referer="https://jam.jutfoundation.org.tw")
+        headers = generate_headers(host="jam.jutfoundation.org.tw",
+                                   referer="https://jam.jutfoundation.org.tw")
 
         async with HttpxAsyncClient() as client:
             urls = [

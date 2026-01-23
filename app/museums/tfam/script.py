@@ -3,7 +3,7 @@ import asyncio
 from app.museums.tfam.parse import TFamParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers, get_cookies
+from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -30,7 +30,7 @@ class TFamRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(
+        headers = generate_headers(
             origin="https://www.tfam.museum",
             referer="https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw",
             host="www.tfam.museum",
@@ -39,7 +39,7 @@ class TFamRunner(RunnerInit):
                 "Content-Type": "application/json; charset=UTF-8",
             }
         )
-        cookies = get_cookies(need_asp_net_session_id=True)
+        cookies = generate_cookies(need_asp_net_session_id=True)
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             tasks = [
                 client.post(

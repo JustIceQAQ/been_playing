@@ -4,7 +4,7 @@ from typing import Any
 from app.museums.ntcri.parse import NTCRIParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -43,7 +43,7 @@ class NTCRIRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(
+        headers = generate_headers(
             host="tcdbdata.ntcri.gov.tw",
             origin="https://www.ntcri.gov.tw",
             referer="https://www.ntcri.gov.tw/",

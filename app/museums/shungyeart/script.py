@@ -2,7 +2,7 @@ import asyncio
 
 import bs4
 from app.museums.shungyeart.parse import ShungYeArtParse
-from helpers.headers_helper import get_headers, get_cookies
+from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -32,8 +32,8 @@ class ShungYeArtRunner(RunnerInit):
 
     async def fetch_response(self):
         url = "https://www.shungye-art.org/show_now.php"
-        headers = get_headers(referer=url)
-        cookies = get_cookies(need_phpsessid=True, need_consent=True)
+        headers = generate_headers(referer=url)
+        cookies = generate_cookies(need_phpsessid=True, need_consent=True)
 
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             response = await client.get(url)

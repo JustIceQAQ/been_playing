@@ -6,7 +6,7 @@ import bs4
 import httpx
 
 from app.platform.artemperor.parse import ArtEmperorParse
-from helpers.headers_helper import get_headers, get_cookies
+from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -65,8 +65,8 @@ class ArtEmperorRunner(RunnerInit):
         return all_response
 
     async def fetch_response(self):
-        headers = get_headers(need_upgrade_insecure_requests=True)
-        cookies = get_cookies(need_phpsessid=True)
+        headers = generate_headers(need_upgrade_insecure_requests=True)
+        cookies = generate_cookies(need_phpsessid=True)
         async with asyncio.Semaphore(10):
             async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
                 tasks = await asyncio.gather(

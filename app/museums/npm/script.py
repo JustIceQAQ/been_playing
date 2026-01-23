@@ -3,7 +3,7 @@ import asyncio
 from app.museums.npm.parse import NpmColParse, NpmRowParse, NpmPreviewParse, SouthNpmParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information, Coordinate
@@ -40,7 +40,7 @@ class NpmRunner(RunnerInit):
         )
 
     async def fetch_south_response(self):
-        this_header = get_headers(
+        this_header = generate_headers(
             referer="https://south.npm.gov.tw/ExhibitionsListC003110.aspx?appname=Exhibition3112",
             need_upgrade_insecure_requests=True,
             host="south.npm.gov.tw"
@@ -62,7 +62,7 @@ class NpmRunner(RunnerInit):
         return results
 
     async def fetch_north_response(self):
-        this_header = get_headers(
+        this_header = generate_headers(
             referer="https://www.npm.gov.tw/",
             need_upgrade_insecure_requests=True,
             host="www.npm.gov.tw"

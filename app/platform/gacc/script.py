@@ -2,7 +2,7 @@ import asyncio
 from typing import Any
 
 from app.platform.gacc.parse import GaCcParse
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -30,7 +30,7 @@ class GaCcRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(
+        headers = generate_headers(
             referer="https://www.gacc.org.tw/TW/events?categoryId=3",
             other_headers={
                 "content-type": "application/json",

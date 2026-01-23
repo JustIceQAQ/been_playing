@@ -5,7 +5,7 @@ import bs4
 from app.museums.clab.parse import CLabParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -52,13 +52,13 @@ class CLabRunner(RunnerInit):
                     target_url_template.format(
                         filter_year=current_period[0],
                         filter_month=current_period[1]
-                    ), headers=get_headers()
+                    ), headers=generate_headers()
                 ),
                 client.get(
                     target_url_template.format(
                         filter_year=previous_period[0],
                         filter_month=previous_period[1]
-                    ), headers=get_headers()
+                    ), headers=generate_headers()
                 ),
 
             )

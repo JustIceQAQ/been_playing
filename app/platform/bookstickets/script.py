@@ -6,7 +6,7 @@ import bs4
 from app.platform.bookstickets.parse import BooksTicketsParse
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information
@@ -32,7 +32,7 @@ class BooksTicketsRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers()
+        headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get("https://tickets.books.com.tw/leisure/")
         return response.text
@@ -42,7 +42,7 @@ class BooksTicketsRunner(RunnerInit):
         return parsed.select("ul.prd > li")
 
     async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):
-        headers = get_headers()
+        headers = generate_headers()
         asyncio_limit = get_asyncio_rate_limit(3, 30)
 
         async with HttpxAsyncClient(headers=headers) as client, asyncio_limit:

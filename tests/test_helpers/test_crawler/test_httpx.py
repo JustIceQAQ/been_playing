@@ -1,7 +1,7 @@
 import pytest
 
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 
 
 @pytest.mark.asyncio
@@ -20,7 +20,7 @@ async def test_get():
             "&start_date="
             "&end_date="
             "&keywords=",
-            headers=get_headers(
+            headers=generate_headers(
                 other_headers={
                     "accept": "text/html,"
                     "application/xhtml+xml,"

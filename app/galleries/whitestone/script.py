@@ -3,7 +3,7 @@ import asyncio
 import bs4
 
 from app.galleries.whitestone.parse import WhiteStoneParse
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
@@ -36,7 +36,7 @@ class WhiteStoneRunner(RunnerInit):
             "https://www.whitestone-gallery.com/zh-hant/blogs/exhibitions/tagged/location_taipei+current",
             "https://www.whitestone-gallery.com/zh-hant/blogs/exhibitions/tagged/location_taipei+upcoming"
         ]
-        headers = get_headers()
+        headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client:
             responses = await asyncio.gather(
                 *[client.get(url)

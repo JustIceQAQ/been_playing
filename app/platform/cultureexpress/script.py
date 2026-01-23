@@ -2,7 +2,7 @@ import asyncio
 
 import bs4
 from app.platform.cultureexpress.parse import CultureExpressParse
-from helpers.headers_helper import get_headers
+from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -30,7 +30,7 @@ class CultureExpressRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = get_headers(
+        headers = generate_headers(
                 referer="https://cultureexpress.taipei",
             )
         responses = []
