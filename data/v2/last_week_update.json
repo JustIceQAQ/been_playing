@@ -1,5 +1,5 @@
 {
-  "updated": "2026-01-29T11:10:30.805476+08:00",
+  "updated": "2026-01-29T17:06:27.874438+08:00",
   "items": [
     {
       "title": "🔥 火與釉的詩篇 蔡永武潑釉瓷板藝術展",
@@ -2131,6 +2131,73 @@
       "source_url": "http://www.foodtaipei.com.tw",
       "tags": null,
       "UUID": "3cef74b51fcc549cb4dead48b4a912c2"
+    },
+    {
+      "title": "2026台日友好 青森睡魔抵嘉",
+      "date": "2026-03-03 ~ 2026-03-15",
+      "address": null,
+      "figure": "https://www.gacc.org.tw/s3/prod/event/20260129-b46p5jly0pxl4omd51aj9hxmc8qneuzx9pb99r5y.jpg",
+      "source_url": "https://www.gacc.org.tw/TW/events/222",
+      "tags": [
+        "文化活動"
+      ],
+      "UUID": "46e0184a1e8151928e53e13402d1ff1a"
+    },
+    {
+      "title": "印一個所在｜剝皮寮常設展",
+      "date": "2026-02-03 ~ 2027-12-31",
+      "address": null,
+      "figure": "https://www.bopiliao.taipei/upload/event_news/2c7ba7fbedae95732ac38e7201a8ea74.jpg",
+      "source_url": "https://www.bopiliao.taipei/Event_News/Detail/732",
+      "tags": null,
+      "UUID": "00f0ea123cfd551c9db488ee339036a0"
+    },
+    {
+      "title": "臺灣有犀 特展",
+      "date": null,
+      "address": "臺博館本館",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/50111/AD/50111_0_0_859414.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50111",
+      "tags": null,
+      "UUID": "abc4c4ce5091566a9563a03025ce17e4"
+    },
+    {
+      "title": "咒術迴戰展《劇場版咒術 0》篇",
+      "date": "2025-12-27 ~ 2026-04-06",
+      "address": "松山文創園區多功能展演廳",
+      "figure": "https://s3.resource.opentix.life/upload/program/1761635209636uChvT1ik86.jpeg",
+      "source_url": "https://www.opentix.life/event/1983069240594591745",
+      "tags": null,
+      "UUID": "b87f993304c75856824f1c76145d87e3"
+    },
+    {
+      "title": "工藝七十系列活動：與楊英風大師的工藝美學對話，鳳凰來儀（三）經典重現工藝中心",
+      "date": "2024-05-21 ~ 2026-04-30",
+      "address": "工藝文化館",
+      "figure": "https://tcdbdata.ntcri.gov.tw/upload/act/345cbf88cd69896aed749f92dc528a86c08703ca/40155_0_0_458784.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTCRI/Detail.init.ctr?actId=40155",
+      "tags": null,
+      "UUID": "c1bcc22f86555f97a1e1e183adf2a868"
+    },
+    {
+      "title": "歡迎來到霹靂宇宙大戲院",
+      "date": "2025-12-04 ~ 2026-03-04",
+      "address": "高雄 棧柒庫",
+      "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/f3dc3f9a-b6a3-41c2-a522-4b4f8f9f31f2.jpg",
+      "source_url": "https://tour.ibon.com.tw/event/68f9e2f27da9885572067b6b",
+      "tags": null,
+      "UUID": "83778a842b24537fa252aa4b737025ca"
+    },
+    {
+      "title": "宜可頌快閃店",
+      "date": "2026-02-05 ~ 2026-04-07",
+      "address": "小確幸前廣場",
+      "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/01_official%20web%20site_1920x1080.jpg",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26012816223016746",
+      "tags": [
+        "期間限定"
+      ],
+      "UUID": "dfea07c6bb385106b54441f4e5f51412"
     }
   ]
 }
