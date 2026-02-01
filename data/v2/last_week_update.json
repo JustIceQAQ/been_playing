@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-01T11:37:06.421718+08:00",
+  "updated": "2026-02-01T16:56:18.062873+08:00",
   "items": [
     {
       "title": "🔥 火與釉的詩篇 蔡永武潑釉瓷板藝術展",
@@ -3468,6 +3468,35 @@
       "source_url": "https://www.klook.com/zh-TW/activity/181228-a-century-of-vinnese-flower/",
       "tags": null,
       "UUID": "720d029879b45e46a532e3d88000b8b8"
+    },
+    {
+      "title": "歡迎來到霹靂宇宙大戲院—道友票",
+      "date": "2025-12-04 ~ 2026-03-04",
+      "address": "高雄 棧柒庫",
+      "figure": "https://systemeblob.blob.core.windows.net/allticket-prod/media/fd2b11b4-fc72-4869-8577-b2ec1cfdb07e.jpg",
+      "source_url": "https://tour.ibon.com.tw/event/69031d07a251122c730b2269",
+      "tags": null,
+      "UUID": "1fb4a2dd63415ef8af8d12af959fede3"
+    },
+    {
+      "title": "總統府常設展",
+      "date": "2024-10-19 ~ 2028-12-31",
+      "address": null,
+      "figure": "https://www.gacc.org.tw/s3/prod/event/20241017-qpkhc2l1mx3cuv3o0vsl2pstocz2yzylktqslh61.jpg",
+      "source_url": "https://www.gacc.org.tw/TW/events/201",
+      "tags": [
+        "藝文展覽"
+      ],
+      "UUID": "0ca4d106dfe054be8935fcdbcaf2e015"
+    },
+    {
+      "title": "爬爬GO展售會",
+      "date": "2026-03-21",
+      "address": "",
+      "figure": "https://assets.kktix.io/upload_images/293435/BBBBB_medium.jpg",
+      "source_url": "https://reptilego.kktix.cc/events/reptilego",
+      "tags": null,
+      "UUID": "24b9c2e6d0c152a28610254468d43290"
     }
   ]
 }
