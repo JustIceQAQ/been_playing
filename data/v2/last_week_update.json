@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-02T11:24:38.103631+08:00",
+  "updated": "2026-02-02T17:08:57.123231+08:00",
   "items": [
     {
       "title": "螺旋－變形者II",
@@ -401,6 +401,82 @@
       "source_url": "https://www.klook.com/zh-TW/activity/119455-goblet-of-soul-wonderland/",
       "tags": null,
       "UUID": "f3453e3fc3e75451be5c170c2cc4e78a"
+    },
+    {
+      "title": "COMPUTEX TAIPEI",
+      "date": "2026-06-02 ~ 2026-06-05",
+      "address": "南港展覽館2館世貿一館南港展覽館1館",
+      "figure": null,
+      "source_url": "http://www.computextaipei.com.tw",
+      "tags": null,
+      "UUID": "093e1056812958899a1c1edf9f5aa670"
+    },
+    {
+      "title": "松菸夜光花園 光影展 The LUMINOUS GARDEN",
+      "date": "2026-01-31 ~ 2026-06-30",
+      "address": "松山文創園區 巴洛克花園 Songshan Cultural and Creative Park︱Baroque Garden",
+      "figure": "https://www.songshanculturalpark.org/gallery/1768900940_f5f01da6212912e63bec.jpg",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/07e87658-6bea-4715-b633-5e44cd2d9e30",
+      "tags": null,
+      "UUID": "75eb82fe93285202bf85af258fdf48f8"
+    },
+    {
+      "title": "唱 我們的歌 流行音樂故事展",
+      "date": "2022-09-01 ~ 2026-09-20",
+      "address": "臺北流行音樂中心 文化館 4~6樓",
+      "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/N23SE92T_Product.JPG?v=202602021437",
+      "source_url": "https://tickets.udnfunlife.com/application/UTK02/UTK0201_.aspx?PRODUCT_ID=N23SE92T",
+      "tags": null,
+      "UUID": "2d5c875c9d22536283aa53b1041e754f"
+    },
+    {
+      "title": "鐵道文化常設展",
+      "date": null,
+      "address": null,
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/00035/00035.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=00035",
+      "tags": null,
+      "UUID": "bcdd401929cf5025a7fa37f63fd6741e"
+    },
+    {
+      "title": "台北國際食品展",
+      "date": "2026-06-24 ~ 2026-06-27",
+      "address": "南港展覽館1館世貿一館南港展覽館2館",
+      "figure": null,
+      "source_url": "http://www.foodtaipei.com.tw",
+      "tags": null,
+      "UUID": "3cef74b51fcc549cb4dead48b4a912c2"
+    },
+    {
+      "title": "「Chiikawa×Sanrio Characters POP UP SHOP」華山快閃店",
+      "date": "2026-02-06 ~ 2026-04-06",
+      "address": "華山紅磚六合院 西4館",
+      "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e8%8f%af%e5%b1%b1_%e5%ae%98%e7%b6%b2%e9%a6%96%e5%9c%96_1920x1080px_26020211262589060.jpg",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26020211263838582",
+      "tags": [
+        "期間限定"
+      ],
+      "UUID": "6053307caf0a5e34830a0d0f18f8cd34"
+    },
+    {
+      "title": "第三屆文總校園大使",
+      "date": "2024-05-27 ~ 2024-06-30",
+      "address": null,
+      "figure": "https://www.gacc.org.tw/s3/prod/event/20240528-xr3p1rq2phg8wesy1byd2gdn16lk7timptsyhrc4.jpg",
+      "source_url": "https://www.gacc.org.tw/TW/events/192",
+      "tags": [
+        "文化活動"
+      ],
+      "UUID": "ef1606478a17503b8dfcdfc963884cbe"
+    },
+    {
+      "title": "燼光之城：文明之後的迴響",
+      "date": "2026-03-21~2026-07-12",
+      "address": null,
+      "figure": "https://jam.jutfoundation.org.tw/sites/default/files/styles/event_list/public/exh_art/thumb/%E7%87%BC%E5%85%89%E4%B9%8B%E5%9F%8E_%E5%90%84%E5%BC%8FBanner_72dpi_350-262%20px_0.jpg?itok=o6ECZfXg",
+      "source_url": "http://jam.jutfoundation.org.tw/exhibition/5428",
+      "tags": null,
+      "UUID": "4d7770baeeb7560f82e324ac7b973c92"
     }
   ]
 }
