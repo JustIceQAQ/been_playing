@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-02T17:08:57.123231+08:00",
+  "updated": "2026-02-03T01:09:27.510637+08:00",
   "items": [
     {
       "title": "螺旋－變形者II",
@@ -477,6 +477,53 @@
       "source_url": "http://jam.jutfoundation.org.tw/exhibition/5428",
       "tags": null,
       "UUID": "4d7770baeeb7560f82e324ac7b973c92"
+    },
+    {
+      "title": "咒術迴戰展《劇場版咒術 0》篇",
+      "date": "2025-12-27 ~ 2026-04-06",
+      "address": "松山文創園區 2樓多功能展演廳",
+      "figure": "https://imgs2.utiki.com.tw/Data/UTIKI_UDN//Images/UTK2401/P1273BH5_Product_202512121116483735.JPG?v=202602021713",
+      "source_url": "https://tickets.udnfunlife.com/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1273BH5",
+      "tags": null,
+      "UUID": "dbcc2b1aabb35e3388675a55f8c1bad6"
+    },
+    {
+      "title": "2024台北霞海城隍文化節 — 誕隍祭City God’s Birthday",
+      "date": "2024-06-01 ~ 2024-06-30",
+      "address": null,
+      "figure": "https://www.gacc.org.tw/s3/prod/event/20240524-v0chiuqxfzcyh8r2hw6mtfoavvco5l9etpiyxixh.jpg",
+      "source_url": "https://www.gacc.org.tw/TW/events/191",
+      "tags": [
+        "文化活動"
+      ],
+      "UUID": "f9c8d2a2e1bc5c179f0d030659c0711b"
+    },
+    {
+      "title": "我是搖滾畫手－2026陳昇個展 A ROCKCRAFTER: Bobby Chen Solo Exhibition",
+      "date": "2026-02-07 ~ 2026-04-12",
+      "address": "1館1樓展覽室A",
+      "figure": "https://www.tnam.museum/images/filesys/images/ch/exhibition/2026_Rockcrafter/Banner_1280-960_SS.jpg",
+      "source_url": "https://www.tnam.museum/exhibition/detail/689",
+      "tags": null,
+      "UUID": "d8b29138cdf25dbc90945ddf6fec41ea"
+    },
+    {
+      "title": "托馬斯．薩拉切諾：共織宇宙",
+      "date": "2026-03-21 ~ 2026-09-06",
+      "address": "6A、6B",
+      "figure": "https://admin.ntcart.museum/Upload/20260202182551.jpg",
+      "source_url": "https://ntcart.museum/exhibition_content.aspx?id=H2601002",
+      "tags": null,
+      "UUID": "e896697fdcea586fa6bf1725f86cdda1"
+    },
+    {
+      "title": "「不接受滅絕的100個理由」 系列講座",
+      "date": "2026-02-07",
+      "address": "臺博館南門館",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/60137/AD/60137_0_0_501657.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60137",
+      "tags": null,
+      "UUID": "b6a716d82ea158cfa081e8f305bba24f"
     }
   ]
 }
