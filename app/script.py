@@ -32,6 +32,7 @@ from .museums.n228mm.script import N228MMRunner
 from .museums.ncpi.script import NCPIRunner
 from .museums.nhrm.script import NHRMRunner
 from .museums.nmh.script import NmhRunner
+from .museums.nmth import NMTHRunner
 from .museums.nmtl import NMTLRunner
 from .museums.npm.script import NpmRunner
 from .museums.nrm import NrmRunner
@@ -135,6 +136,7 @@ MUSEUMS_RUNNERS = {
     ArtistVillageRunner,
     KiShuAnRunner,
     NMTLRunner,
+    NMTHRunner,
 }
 
 GALLERIES_RUNNERS = {
