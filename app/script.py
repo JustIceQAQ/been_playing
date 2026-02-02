@@ -10,6 +10,7 @@ from .galleries.yiyun import YiYunRunner
 from .museums.aaaarchives import AAAArchivesRunner
 from .museums.artistvillage import ArtistVillageRunner
 from .museums.bopiliao.script import BoPiLiaoRunner
+from .museums.chiayimm import ChiayiMMRunner
 from .museums.chipolin import ChiPoLinRunner
 from .museums.cksmh.script import CKSMHRunner
 from .museums.clab.script import CLabRunner
@@ -137,6 +138,7 @@ MUSEUMS_RUNNERS = {
     KiShuAnRunner,
     NMTLRunner,
     NMTHRunner,
+ChiayiMMRunner,
 }
 
 GALLERIES_RUNNERS = {
