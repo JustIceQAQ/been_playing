@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-03T17:04:36.878821+08:00",
+  "updated": "2026-02-04T01:27:38.073313+08:00",
   "items": [
     {
       "title": "螺旋－變形者II",
@@ -874,6 +874,37 @@
       "source_url": "https://cultureexpress.taipei/Event/C000003?ID=91dd62dd-9c23-47d2-843f-77289f0ea1af&PageIndex=3&PageType=1",
       "tags": null,
       "UUID": "deda17f7a703543497857f5e6dcd92d8"
+    },
+    {
+      "title": "命運or機會?新年擲骰大作戰",
+      "date": "2026-02-14",
+      "address": "臺博館南門館",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/60140/AD/60140_0_0_848088.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60140",
+      "tags": null,
+      "UUID": "5c94170664215a9f8229c445e244bc8c"
+    },
+    {
+      "title": "棉線與石頭",
+      "date": "2026-02-07 ~ 2026-06-14",
+      "address": "3A、3B、4B展覽室",
+      "figure": "https://admin.ntcart.museum/Upload/20260203173434.jpg",
+      "source_url": "https://ntcart.museum/exhibition_content.aspx?id=H2601001",
+      "tags": [
+        "聯展"
+      ],
+      "UUID": "36a81f8a43bc54c097646be8d6a940bf"
+    },
+    {
+      "title": "TAIWAN PLUS 2024 京都新宝島",
+      "date": "2024-05-11 ~ 2024-05-12",
+      "address": null,
+      "figure": "https://www.gacc.org.tw/s3/prod/event/20240320-3d9go24h59j3c1c7463w3m26eyw5o2k1kg9twv2k.jpg",
+      "source_url": "https://www.gacc.org.tw/TW/events/188",
+      "tags": [
+        "文化活動"
+      ],
+      "UUID": "2265a13a06b555b7b3bc5998aa53fb90"
     }
   ]
 }
