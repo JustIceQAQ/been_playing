@@ -65,7 +65,6 @@ max_quality = 10
 strict = false
 
 [tool.ruff]
-line-length = 120
 exclude = [".tox", ".git", "*/migrations/*", "*/static/CACHE/*", "docs", "node_modules", "venv"]
 
 [tool.ruff.lint]
