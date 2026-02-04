@@ -63,3 +63,14 @@ fail_on_critical = true
 max_security = 0
 max_quality = 10
 strict = false
+
+[tool.ruff]
+line-length = 120
+exclude = [".tox", ".git", "*/migrations/*", "*/static/CACHE/*", "docs", "node_modules", "venv"]
+
+[tool.ruff.lint]
+
+
+[tool.ruff.lint.isort]
+force-single-line = false
+combine-as-imports = true
