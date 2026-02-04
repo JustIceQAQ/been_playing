@@ -13,6 +13,7 @@ def generate_headers(
     need_upgrade_insecure_requests: bool | None = False,
     other_headers: dict | None = None,
     not_use_user_agent: bool = False,
+    content_type_use_json: bool | None = False,
 ) -> dict[str, str]:
     this_header = {
         "user-agent": UA.random,
@@ -36,6 +37,9 @@ def generate_headers(
 
     if other_headers:
         this_header |= other_headers
+
+    if content_type_use_json:
+        this_header["content-type"] = "application/json"
 
     return this_header
 
