@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-04T11:14:43.382650+08:00",
+  "updated": "2026-02-04T12:51:26.663835+08:00",
   "items": [
     {
       "title": "螺旋－變形者II",
@@ -1087,6 +1087,24 @@
       "source_url": "https://www.klook.com/zh-TW/activity/181064-picasso-exhibition/",
       "tags": null,
       "UUID": "011b248dcdde58a6af27d312b3163306"
+    },
+    {
+      "title": "棉線與石頭",
+      "date": "2026-02-07 ~ 2026-06-14",
+      "address": "3A、3B、4B展覽室",
+      "figure": "https://admin.ntcart.museum/Upload/20260203173434.jpg",
+      "source_url": "https://ntcart.museum/exhibition_content.aspx?id=H2601001",
+      "tags": null,
+      "UUID": "36a81f8a43bc54c097646be8d6a940bf"
+    },
+    {
+      "title": "諸羅紀：人在・神在・城就在",
+      "date": "2025-12-12 ~ 2026-05-31",
+      "address": "嘉義市立博物館1樓特展廳",
+      "figure": "https://museum.chiayi.gov.tw/FileDownLoad/Exhibitions/20251203175043626695.png",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=a73704a2-fb75-41bb-bbf6-4406ea882f8d&StartDate=2026%2f02%2f04&EndDate=2026%2f02%2f04&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "bb627599609153f0832c9ff4b0232e19"
     }
   ]
 }
