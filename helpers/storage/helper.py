@@ -225,10 +225,14 @@ class Exhibition(BaseModel):
             this_folder.mkdir(exist_ok=True)
         self.execution_time = execution_time
 
+        if not (this_folder / f"{filename}.json").exists():
+            (this_folder / f"{filename}.json").touch(exist_ok=True)
+
         async with aiofiles.open(this_folder / f"{filename}.json", mode="r+") as afp:
             context = await afp.read()
-            before_items = Exhibition.model_validate_json(context)
-            last_week_update.set_before_items(before_items.items)
+            if context:
+                before_items = Exhibition.model_validate_json(context)
+                last_week_update.set_before_items(before_items.items)
 
             await afp.seek(0)
             await afp.write(self.model_dump_json())

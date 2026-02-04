@@ -10,6 +10,8 @@ from .galleries.yiyun import YiYunRunner
 from .museums.aaaarchives import AAAArchivesRunner
 from .museums.artistvillage import ArtistVillageRunner
 from .museums.bopiliao.script import BoPiLiaoRunner
+from .museums.chiayiam import ChiayiAMRunner
+from .museums.chiayimm import ChiayiMMRunner
 from .museums.chipolin import ChiPoLinRunner
 from .museums.cksmh.script import CKSMHRunner
 from .museums.clab.script import CLabRunner
@@ -32,6 +34,8 @@ from .museums.n228mm.script import N228MMRunner
 from .museums.ncpi.script import NCPIRunner
 from .museums.nhrm.script import NHRMRunner
 from .museums.nmh.script import NmhRunner
+from .museums.nmth import NMTHRunner
+from .museums.nmtl import NMTLRunner
 from .museums.npm.script import NpmRunner
 from .museums.nrm import NrmRunner
 from .museums.ntaec import NTAECRunner
@@ -133,6 +137,10 @@ MUSEUMS_RUNNERS = {
     AAAArchivesRunner,
     ArtistVillageRunner,
     KiShuAnRunner,
+    NMTLRunner,
+    NMTHRunner,
+    ChiayiMMRunner,
+    ChiayiAMRunner,
 }
 
 GALLERIES_RUNNERS = {

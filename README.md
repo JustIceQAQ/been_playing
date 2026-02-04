@@ -78,6 +78,9 @@
     - [板橋435藝文特區](https://www.435.culture.ntpc.gov.tw/)
     - [齊柏林空間](https://www.chipolin.org/)
     - [新北市立鶯歌陶瓷博物館](https://www.ceramics.ntpc.gov.tw/)
+  - TW-CYI
+    - [嘉義市立博物館](https://museum.chiayi.gov.tw/)
+    - [嘉義市立美術館](https://chiayiartmuseum.chiayi.gov.tw/)
   - TW-KHH
     - [高雄市立歷史博物館](https://khm.org.tw/tw)
     - [高雄市立美術館](https://www.kmfa.gov.tw/)
@@ -86,6 +89,7 @@
     - [臺南市立博物館](https://tcm.tainan.gov.tw/)
     - [臺南市美術館](https://www.tnam.museum/)
     - [國立臺南生活美學館](https://www.tncsec.gov.tw)
-    -
+    - [國立臺灣文學館](https://www.nmtl.gov.tw/)
+    - [國立臺灣歷史博物館](https://www.nmth.gov.tw/)
 
 [畫廊串聯 – Taipei Art Week 2025 台北藝術週](https://taipeiartweek.tw/zh/taw-galleries/)

@@ -63,19 +63,12 @@ jobs:
         run: echo "⏭️ Skip execution due to recent push"
 
       - name: setup python 3.12 with uv
-        uses: astral-sh/setup-uv@v2
-
-      - name: create virtual environment
-        run: uv venv
-
-      - uses: actions/cache@v3
+        uses: astral-sh/setup-uv@v7
         with:
-          path: ~/.cache/uv
-          key: ${{ runner.os }}-uv-${{ hashFiles('requirements.txt') }}
+          enable-cache: true
 
-      - name: install dependencies with uv
-        run: |
-          uv pip install -r requirements.txt
+      - name: Install dependencies
+        run: uv sync --no-dev
 
       - name: run async script with uv
         run: |
