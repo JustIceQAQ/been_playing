@@ -69,6 +69,7 @@ from .platform.ibon.script import IBonRunner
 from .platform.kkday.script import KKDayRunner
 from .platform.kktix.script import KKTixRunner
 from .platform.klook.script import KLookRunner
+from .platform.ntt import NTTRunner
 from .platform.opentix.script import OpenTixRunner
 from .platform.udnfunlife.script import UdnFunLifeRunner
 
@@ -84,6 +85,7 @@ PLATFORM_RUNNERS = {
     UdnFunLifeRunner,
     ArtEmperorRunner,
     SoKaArtRunner,
+NTTRunner,
 }
 
 MUSEUMS_RUNNERS = {
