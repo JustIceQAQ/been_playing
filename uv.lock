@@ -279,7 +279,7 @@ requires-dist = [
     { name = "h11", specifier = ">=0.16.0" },
     { name = "html5lib", specifier = "==1.1" },
     { name = "httpx", specifier = ">=0.28.1" },
-    { name = "justhtml", specifier = "==1.0.0" },
+    { name = "justhtml", specifier = "==1.5.0" },
     { name = "orjson", specifier = ">=3.10,<4" },
     { name = "pydantic", specifier = "==2.12.5" },
     { name = "pydantic-settings", specifier = "==2.12.0" },
@@ -287,7 +287,7 @@ requires-dist = [
     { name = "python-dotenv", specifier = "==1.2.1" },
     { name = "retry", specifier = "==0.9.2" },
     { name = "rnet", specifier = "==2.4.2" },
-    { name = "sentry-sdk", specifier = "==2.50.0" },
+    { name = "sentry-sdk", specifier = "==2.51.0" },
     { name = "urllib3", specifier = ">=2.5.0" },
 ]
 
@@ -1344,11 +1344,11 @@ wheels = [
 
 [[package]]
 name = "justhtml"
-version = "1.0.0"
+version = "1.5.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/cd/bb/ef76235d0d81576c9ac02b16fadb830a71ccea0df9e50a9e84121149a658/justhtml-1.0.0.tar.gz", hash = "sha256:d0476350ac1cc468c223cd73fd2cfdf052b20d594bd04c9844d3c528e11bce5c", size = 326549, upload-time = "2026-01-20T23:02:02.603Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2c/48/a924797e4d8557f55ab385428a9362eb1034339c0b8376c694f5b6dceb29/justhtml-1.5.0.tar.gz", hash = "sha256:3bdab5af41845de7c315814e90d729a5632b9c289934795fe32ecc61d4181067", size = 357581, upload-time = "2026-02-01T23:16:47.248Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/36/65/9cf054f9637394ebea691ba54f62947bde6c5bd04be04db43a0ada8de338/justhtml-1.0.0-py3-none-any.whl", hash = "sha256:01cfd04dc4d8dacc935a41464711b4f5f283108727fc10b5f3829e00d9d7b81b", size = 118425, upload-time = "2026-01-20T23:02:00.585Z" },
+    { url = "https://files.pythonhosted.org/packages/ed/5e/e78b8281d5e980a6db71cc9e27ed896c85e5b2cf6c9577ba6be1c3fe615a/justhtml-1.5.0-py3-none-any.whl", hash = "sha256:62efb0c641f15371ca67ac677515de65a0ef1042cdb8b5b0848d82eb69960729", size = 126068, upload-time = "2026-02-01T23:16:45.275Z" },
 ]
 
 [[package]]
@@ -2875,15 +2875,15 @@ wheels = [
 
 [[package]]
 name = "sentry-sdk"
-version = "2.50.0"
+version = "2.51.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "certifi" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/15/8a/3c4f53d32c21012e9870913544e56bfa9e931aede080779a0f177513f534/sentry_sdk-2.50.0.tar.gz", hash = "sha256:873437a989ee1b8b25579847bae8384515bf18cfed231b06c591b735c1781fe3", size = 401233, upload-time = "2026-01-20T12:53:16.244Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6f/9f/094bbb6be5cf218ab6712c6528310687f3d3fe8818249fcfe1d74192f7c5/sentry_sdk-2.51.0.tar.gz", hash = "sha256:b89d64577075fd8c13088bc3609a2ce77a154e5beb8cba7cc16560b0539df4f7", size = 407447, upload-time = "2026-01-28T10:29:50.962Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/4e/5b/cbc2bb9569f03c8e15d928357e7e6179e5cfab45544a3bbac8aec4caf9be/sentry_sdk-2.50.0-py2.py3-none-any.whl", hash = "sha256:0ef0ed7168657ceb5a0be081f4102d92042a125462d1d1a29277992e344e749e", size = 424961, upload-time = "2026-01-20T12:53:14.826Z" },
+    { url = "https://files.pythonhosted.org/packages/a0/da/df379404d484ca9dede4ad8abead5de828cdcff35623cd44f0351cf6869c/sentry_sdk-2.51.0-py2.py3-none-any.whl", hash = "sha256:e21016d318a097c2b617bb980afd9fc737e1efc55f9b4f0cdc819982c9717d5f", size = 431426, upload-time = "2026-01-28T10:29:48.868Z" },
 ]
 
 [[package]]
