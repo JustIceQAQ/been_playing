@@ -79,6 +79,7 @@
     - [板橋435藝文特區](https://www.435.culture.ntpc.gov.tw/)
     - [齊柏林空間](https://www.chipolin.org/)
     - [新北市立鶯歌陶瓷博物館](https://www.ceramics.ntpc.gov.tw/)
+    - [新北市立鶯歌陶瓷博物館](https://www.ceramics.ntpc.gov.tw/)
   - TW-CYI
     - [嘉義市立博物館](https://museum.chiayi.gov.tw/)
     - [嘉義市立美術館](https://chiayiartmuseum.chiayi.gov.tw/)

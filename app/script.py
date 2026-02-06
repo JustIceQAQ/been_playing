@@ -40,6 +40,7 @@ from .museums.npm.script import NpmRunner
 from .museums.nrm import NrmRunner
 from .museums.ntaec import NTAECRunner
 from .museums.ntc_art_museum.script import NtcArtMuseumRunner
+from .museums.ntcceramics import NtcCeramicsRunner
 from .museums.ntcri.script import NTCRIRunner
 from .museums.ntm.script import NtmRunner
 from .museums.ntnu_art_museum.script import NTNUArtMuseumRunner
@@ -85,7 +86,7 @@ PLATFORM_RUNNERS = {
     UdnFunLifeRunner,
     ArtEmperorRunner,
     SoKaArtRunner,
-NTTRunner,
+    NTTRunner,
 
 }
 
@@ -144,6 +145,7 @@ MUSEUMS_RUNNERS = {
     NMTHRunner,
     ChiayiMMRunner,
     ChiayiAMRunner,
+    NtcCeramicsRunner,
 }
 
 GALLERIES_RUNNERS = {

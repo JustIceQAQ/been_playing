@@ -66,10 +66,3 @@ strict = false
 
 [tool.ruff]
 exclude = [".tox", ".git", "*/migrations/*", "*/static/CACHE/*", "docs", "node_modules", "venv"]
-
-[tool.ruff.lint]
-
-
-[tool.ruff.lint.isort]
-force-single-line = false
-combine-as-imports = true
