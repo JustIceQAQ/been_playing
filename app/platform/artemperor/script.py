@@ -39,7 +39,6 @@ class ArtEmperorRunner(RunnerInit):
         )
 
     async def fetch_process(self, client: httpx.AsyncClient, ex_status: ExStatus):
-        all_response = []
 
         response = await client.get(
             "https://artemperor.tw/tidbits",
@@ -47,21 +46,18 @@ class ArtEmperorRunner(RunnerInit):
         )
         response.raise_for_status()
         response_text = response.text
-        all_response.append(response_text)
-
-        p = BeautifulSoupTranslation().translation_to_object(response_text)
-        end_page = int(p.find("input", {"id": "PG_size"}).get("value"))
-
-        tasks = [
-            client.get(
+        list_box_len = len(BeautifulSoupTranslation().translation_to_object(response_text).select("div.list_box"))
+        all_response = []
+        end_page = 1
+        while list_box_len > 1:
+            all_response.append(response_text)
+            end_page += 1
+            response = await client.get(
                 "https://artemperor.tw/tidbits",
-                params={"sort": ex_status.value, "page": page}
+                params={"sort": ex_status.value, "page": end_page}
             )
-            for page in range(2, end_page + 1)
-        ]
-        tasks_response = await asyncio.gather(*tasks)
-        all_response.extend([task.text for task in tasks_response])
-
+            list_box_len = len(BeautifulSoupTranslation().translation_to_object(response.text).select("div.list_box"))
+            await asyncio.sleep(1)
         return all_response
 
     async def fetch_response(self):
