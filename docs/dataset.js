@@ -286,6 +286,12 @@ const exhibitionTopicClass = [
         "板橋435藝文特區",
         new ButtonStyle("#fff", "#e35449", "#e35449"),
     ),
+
+    new Exhibition(
+        "NtcCeramics",
+        "新北市立鶯歌陶瓷博物館",
+        new ButtonStyle("#fff", "#585656", "#585656"),
+    ),
 ];
 
 const allTopicClass = [].concat(exhibitionTopicClass, platformTopicClass);

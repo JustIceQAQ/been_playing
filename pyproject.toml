@@ -24,7 +24,7 @@ dependencies = [
     "python-dotenv==1.2.1",
     "retry==0.9.2",
     "rnet==2.4.2",
-    "sentry-sdk==2.51.0",
+    "sentry-sdk==2.52.0",
     "urllib3>=2.5.0",
 ]
 
@@ -44,32 +44,10 @@ dev = [
     "folium>=0.20.0",
     "branca>=0.8.2",
     "skylos>=3.1.2",
+    "notebook>=7.5.3",
+    "duckdb>=1.4.4",
 ]
 
-[tool.skylos]
-complexity = 10
-nesting = 3
-max_args = 5
-max_lines = 50
-ignore = []
-model = "gpt-4.1"
-
-[tool.skylos.languages.typescript]
-complexity = 15
-nesting = 4
-
-[tool.skylos.gate]
-fail_on_critical = true
-max_security = 0
-max_quality = 10
-strict = false
 
 [tool.ruff]
 exclude = [".tox", ".git", "*/migrations/*", "*/static/CACHE/*", "docs", "node_modules", "venv"]
-
-[tool.ruff.lint]
-
-
-[tool.ruff.lint.isort]
-force-single-line = false
-combine-as-imports = true

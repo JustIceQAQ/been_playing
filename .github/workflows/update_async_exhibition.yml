@@ -13,14 +13,6 @@ on:
   schedule:
     #  0 0,8,16 * * *
     - cron: '30 0,8,16 * * *'
-#  pull_request:
-#    branches:
-#      - "auto/data-update"
-#    paths:
-#      - ".github/workflows/update_async_exhibition.yml"
-#  push:
-#    branches:
-#      - "auto/data-update"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -31,12 +23,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: set timezone
-        uses: szenius/set-timezone@v1.0
+        uses: szenius/set-timezone@1f9716b0f7120e344f0c62bb7b1ee98819aefd42
         with:
           timezoneLinux: "Asia/Taipei"
 
       - name: checkout repo content
-        uses: actions/checkout@v2
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           ref: "auto/data-update"
 
@@ -63,7 +55,7 @@ jobs:
         run: echo "⏭️ Skip execution due to recent push"
 
       - name: setup python 3.12 with uv
-        uses: astral-sh/setup-uv@v7
+        uses: astral-sh/setup-uv@eac588ad8def6316056a12d4907a9d4d84ff7a3b
         with:
           enable-cache: true
 
@@ -98,7 +90,7 @@ jobs:
           git add .github/last_push_time.txt
           git commit -m "update last push timestamp" || echo "No changes"
       - name: push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@77c5b412c50b723d2a4fbc6d71fb5723bcd439aa
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: "auto/data-update"
