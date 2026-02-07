@@ -35,6 +35,9 @@ jobs:
         with:
           languages: python
           setup-python-dependencies: false
+          config: |
+            paths-ignore:
+              - 'template/**'
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v4
