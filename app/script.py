@@ -67,6 +67,7 @@ from .platform.bookstickets.script import BooksTicketsRunner
 from .platform.cultureexpress import CultureExpressRunner
 from .platform.gacc import GaCcRunner
 from .platform.ibon.script import IBonRunner
+from .platform.iculture import ICultureRunner
 from .platform.kkday.script import KKDayRunner
 from .platform.kktix.script import KKTixRunner
 from .platform.klook.script import KLookRunner
@@ -87,7 +88,7 @@ PLATFORM_RUNNERS = {
     ArtEmperorRunner,
     SoKaArtRunner,
     NTTRunner,
-
+    ICultureRunner,
 }
 
 MUSEUMS_RUNNERS = {
