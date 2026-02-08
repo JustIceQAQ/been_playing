@@ -62,16 +62,8 @@ class TaipeiExPoParkRunner(RunnerInit):
                 params=params,
                 data=data,
             )
-            if not (response.is_success or response.is_redirect):
-                raise RuntimeError(response.text)
-
-            response2 = await client.get(
-                f"{response.next_request.url}&page=1&PageSize=100"
-            )
-            if not (response2.is_success or response2.is_redirect):
-                raise RuntimeError(response.text)
-
-        return response2.text
+            response.raise_for_status()
+        return response.text
 
     async def fetch_parsed(self):
         parsed: bs4.BeautifulSoup = await super().fetch_parsed()
