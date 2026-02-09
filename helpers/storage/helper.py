@@ -290,6 +290,9 @@ class Exhibition(BaseModel):
             if item.tags:
                 description_txt.append(f"標籤：{', '.join(item.tags)}")
 
+            if item.figure:
+                description_txt.append(f'<img src="{item.figure}" />')
+
             description = (
                 ("<br/>".join(description_txt) + "<br/>") if description_txt else ""
             )
