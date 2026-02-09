@@ -1,5 +1,6 @@
 const URL_SOURCE =
     "https://raw.githubusercontent.com/JustIceQAQ/been_playing/auto/data-update/data/v2/";
+const SOURCE_ROOT_URL = "https://raw.githubusercontent.com/JustIceQAQ/been_playing/auto/data-update/data/"
 
 // const URL_SOURCE = "https://raw.githubusercontent.com/JustIceQAQ/been_playing/refs/heads/develop/data/v2/"
 
