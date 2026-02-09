@@ -28,7 +28,9 @@ class AAAArchivesRunner(RunnerInit):
             fullname="國家發展委員會檔案管理局",
             code_name="AAAArchives",
             external_link="https://aaa.archives.tw/tw/event/306.html",
-            branch_coordinates=Coordinate(raw_coordinates="25.07521442685089, 121.37402598256791"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.07521442685089, 121.37402598256791"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -40,17 +42,19 @@ class AAAArchivesRunner(RunnerInit):
             host="aaa.archives.tw",
             other_headers={
                 "content-type": "application/x-www-form-urlencoded",
-            }
+            },
         )
         cookies = {
             **generate_cookies(need_js_ession_id=True),
-            "cookiesession1": secrets.token_hex(16)
+            "cookiesession1": secrets.token_hex(16),
         }
         data = {
             "nowPage": 1,
             "pageSize": 60,
         }
-        async with HttpxAsyncClient(headers=headers, cookies=cookies, verify=False) as client:
+        async with HttpxAsyncClient(
+            headers=headers, cookies=cookies, verify=False
+        ) as client:
             response = await client.post(url, data=data)
         return response.text
 
@@ -64,5 +68,5 @@ async def main():
     await AAAArchivesRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

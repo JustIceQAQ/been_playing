@@ -31,7 +31,7 @@ class CKSMHRunner(RunnerInit):
             external_link="https://www.cksmh.gov.tw/Default.aspx",
             branch_coordinates=Coordinate(
                 google_map_place_id="ChIJTamiuZ2pQjQRsmnfkkID6UM",
-                raw_coordinates="25.035657453594702, 121.52023682270445"
+                raw_coordinates="25.035657453594702, 121.52023682270445",
             ),
             venue_type=VenueType.MUSEUM,
         )

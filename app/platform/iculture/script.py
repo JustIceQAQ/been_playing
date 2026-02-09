@@ -32,13 +32,7 @@ class ICultureRunner(RunnerInit):
             referer="https://cloud.culture.tw/frontsite/inquiry/eventInquiryAction.do?method=showEventList",
             host="cloud.culture.tw",
         )
-        params = {
-            "page": 0,
-            "size": 100,
-            "sort": "id",
-            "category": "6",
-            "onSale": 0
-        }
+        params = {"page": 0, "size": 100, "sort": "id", "category": "6", "onSale": 0}
         async with HttpxAsyncClient(headers=headers) as client:
             tasks = [
                 client.get(
@@ -62,5 +56,5 @@ async def main():
     await ICultureRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

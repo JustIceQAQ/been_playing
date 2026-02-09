@@ -28,14 +28,14 @@ class MindSetArtRunner(RunnerInit):
             fullname="安卓藝術",
             code_name="MindSetArt",
             external_link="https://www.art-msac.com/",
-            branch_coordinates=Coordinate(raw_coordinates="25.086444326900594, 121.56138806256338"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.086444326900594, 121.56138806256338"
+            ),
             venue_type=VenueType.GALLERY,
         )
 
     async def fetch_response(self):
-        headers = generate_headers(
-            host="www.art-msac.com"
-        )
+        headers = generate_headers(host="www.art-msac.com")
         cookies = generate_cookies(other_cookies={"splash_screen_disabled": "true"})
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             response = await client.get("https://www.art-msac.com/exhibitions/")
@@ -43,7 +43,7 @@ class MindSetArtRunner(RunnerInit):
 
     async def fetch_parsed(self):
         parsed: bs4.BeautifulSoup = await super().fetch_parsed()
-        lis  = parsed.select("div#exhibitions-grid-container li")
+        lis = parsed.select("div#exhibitions-grid-container li")
         return lis[:-1]
 
 
@@ -51,5 +51,5 @@ async def main():
     await MindSetArtRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

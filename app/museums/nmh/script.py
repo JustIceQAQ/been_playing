@@ -27,14 +27,16 @@ class NmhRunner(RunnerInit):
             fullname="國立歷史博物館",
             code_name="Nmh",
             external_link="https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323",
-            branch_coordinates=Coordinate(raw_coordinates="25.0317350368833, 121.51118866791836"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.0317350368833, 121.51118866791836"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
         headers = generate_headers(
             host="www.nmh.gov.tw",
-            referer="https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323"
+            referer="https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323",
         )
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(

@@ -42,11 +42,11 @@ class KLookRunner(RunnerInit):
             fullname="KLook 客路",
             code_name="KLook",
             external_link="https://www.klook.com/zh-TW/event/search/listing/?"
-                          "area=city_19"
-                          "&filters=convention_exhibition"
-                          "&date=next_30_days"
-                          "&sort=latest"
-                          "&page=1",
+            "area=city_19"
+            "&filters=convention_exhibition"
+            "&date=next_30_days"
+            "&sort=latest"
+            "&page=1",
             venue_type=VenueType.PLATFORM,
         )
 
@@ -56,25 +56,21 @@ class KLookRunner(RunnerInit):
             not_use_user_agent=True,
             other_headers={
                 "accept": "text/html,application/xhtml+xml,application/xml;"
-                          "q=0.9,image/avif,image/webp,image/apng,*/*;"
-                          "q=0.8,application/signed-exchange;"
-                          "v=b3;"
-                          "q=0.7",
+                "q=0.9,image/avif,image/webp,image/apng,*/*;"
+                "q=0.8,application/signed-exchange;"
+                "v=b3;"
+                "q=0.7",
                 "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
-            }
+            },
         )
         runtime_settings = get_settings()
         proxies = (
             None
             if runtime_settings.PROXY_POOL is None
-            else [
-                Proxy.all(
-                    runtime_settings.PROXY_POOL
-                )
-            ]
+            else [Proxy.all(runtime_settings.PROXY_POOL)]
         )
         async with RNetAsyncClient(
-                proxies=proxies,
+            proxies=proxies,
         ) as client:
             response = await client.get(
                 self.target_url.format(page_num=1), headers=headers

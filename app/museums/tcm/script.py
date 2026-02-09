@@ -28,7 +28,9 @@ class TcmRunner(RunnerInit):
             fullname="臺南市立博物館",
             code_name="Tcm",
             external_link="https://tcm.tainan.gov.tw/permanent",
-            branch_coordinates=Coordinate(raw_coordinates="22.987586370137066, 120.20828174089186"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="22.987586370137066, 120.20828174089186"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

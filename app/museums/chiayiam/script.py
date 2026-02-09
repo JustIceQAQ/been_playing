@@ -27,7 +27,9 @@ class ChiayiAMRunner(RunnerInit):
             fullname="嘉義市立美術館",
             code_name="ChiayiAM",
             external_link="https://chiayiartmuseum.chiayi.gov.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="23.476964512470964, 120.44092961904913"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="23.476964512470964, 120.44092961904913"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -39,18 +41,13 @@ class ChiayiAMRunner(RunnerInit):
         async with HttpxAsyncClient(headers=headers) as client:
             urls = [
                 "https://chiayiartmuseum.chiayi.gov.tw/ExhibitionsListC003100.aspx?appname=Exhibition3110",
-                "https://chiayiartmuseum.chiayi.gov.tw/ExhibitionsListC003100.aspx?appname=Exhibition3120"
+                "https://chiayiartmuseum.chiayi.gov.tw/ExhibitionsListC003100.aspx?appname=Exhibition3120",
             ]
-            responses = await asyncio.gather(
-                *[
-                    client.get(url)
-                    for url in urls
-                ]
-            )
+            responses = await asyncio.gather(*[client.get(url) for url in urls])
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup]= await super().fetch_parsed()
+        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
         items = []
         for p in parsed:
             items.extend(p.select("div.kf-diagramtext-col a.kf-item"))
@@ -61,5 +58,5 @@ async def main():
     await ChiayiAMRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

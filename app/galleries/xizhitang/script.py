@@ -28,7 +28,9 @@ class XiZhiTangRunner(RunnerInit):
             fullname="羲之堂畫廊",
             code_name="XiZhiTang",
             external_link="https://taipeiartweek.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="25.040329571305197, 121.56247655631785"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.040329571305197, 121.56247655631785"
+            ),
             venue_type=VenueType.GALLERY,
         )
 
@@ -48,5 +50,5 @@ async def main():
     await XiZhiTangRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

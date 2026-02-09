@@ -39,14 +39,16 @@ class ArtEmperorRunner(RunnerInit):
         )
 
     async def fetch_process(self, client: httpx.AsyncClient, ex_status: ExStatus):
-
         response = await client.get(
-            "https://artemperor.tw/tidbits",
-            params={"sort": ex_status.value, "page": 1}
+            "https://artemperor.tw/tidbits", params={"sort": ex_status.value, "page": 1}
         )
         response.raise_for_status()
         response_text = response.text
-        list_box_len = len(BeautifulSoupTranslation().translation_to_object(response_text).select("div.list_box"))
+        list_box_len = len(
+            BeautifulSoupTranslation()
+            .translation_to_object(response_text)
+            .select("div.list_box")
+        )
         all_response = []
         end_page = 1
         while list_box_len > 1:
@@ -54,9 +56,13 @@ class ArtEmperorRunner(RunnerInit):
             end_page += 1
             response = await client.get(
                 "https://artemperor.tw/tidbits",
-                params={"sort": ex_status.value, "page": end_page}
+                params={"sort": ex_status.value, "page": end_page},
             )
-            list_box_len = len(BeautifulSoupTranslation().translation_to_object(response.text).select("div.list_box"))
+            list_box_len = len(
+                BeautifulSoupTranslation()
+                .translation_to_object(response.text)
+                .select("div.list_box")
+            )
             await asyncio.sleep(1)
         return all_response
 
@@ -67,8 +73,7 @@ class ArtEmperorRunner(RunnerInit):
             async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
                 tasks = await asyncio.gather(
                     self.fetch_process(client, ExStatus.current),
-                    self.fetch_process(client, ExStatus.upcoming)
-
+                    self.fetch_process(client, ExStatus.upcoming),
                 )
         flattened = list(itertools.chain.from_iterable(tasks))
         return flattened
@@ -86,5 +91,5 @@ async def main():
     await ArtEmperorRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

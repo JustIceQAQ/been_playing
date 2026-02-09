@@ -48,11 +48,12 @@ class ArtistVillageRunner(RunnerInit):
             "post_type": "event",
             "start_date": "20251030",  # date_format_digit(),
             "end_date": f"{next_year}1231",
-            "method": "get_posts_list_month"
-
+            "method": "get_posts_list_month",
         }
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
-            response = await client.post("https://www.artistvillage.org/ajax.php", data=data)
+            response = await client.post(
+                "https://www.artistvillage.org/ajax.php", data=data
+            )
         return response.json()
 
     async def fetch_parsed(self):
@@ -64,5 +65,5 @@ async def main():
     await ArtistVillageRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

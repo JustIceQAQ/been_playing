@@ -28,7 +28,9 @@ class NTNUArtMuseumRunner(RunnerInit):
             fullname="師大美術館",
             code_name="NTNUArtMuseum",
             external_link="https://www.artmuse.ntnu.edu.tw/index.php/current_exhibit/",
-            branch_coordinates=Coordinate(raw_coordinates="25.027981327647616, 121.53016316977069"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.027981327647616, 121.53016316977069"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

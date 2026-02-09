@@ -30,7 +30,9 @@ class OpenTixRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = generate_headers(origin="https://www.opentix.life", referer="https://www.opentix.life/")
+        headers = generate_headers(
+            origin="https://www.opentix.life", referer="https://www.opentix.life/"
+        )
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.post(
                 "https://search.opentix.life/search",

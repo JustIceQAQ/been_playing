@@ -27,7 +27,9 @@ class CapitalArtRunner(RunnerInit):
             fullname="首都藝術中心",
             code_name="CapitalArt",
             external_link="https://capitalart.com.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="25.038294766316984, 121.55372725140036"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.038294766316984, 121.55372725140036"
+            ),
             venue_type=VenueType.GALLERY,
         )
 
@@ -37,14 +39,11 @@ class CapitalArtRunner(RunnerInit):
 
         urls = [
             "https://capitalart.com.tw/exhibitions.html",
-            "https://capitalart.com.tw/exhibitions_upcoming.html"
+            "https://capitalart.com.tw/exhibitions_upcoming.html",
         ]
 
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
-            responses = await asyncio.gather(*[
-                client.get(url)
-                for url in urls
-            ])
+            responses = await asyncio.gather(*[client.get(url) for url in urls])
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
@@ -62,5 +61,5 @@ async def main():
     await CapitalArtRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

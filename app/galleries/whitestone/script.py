@@ -27,21 +27,20 @@ class WhiteStoneRunner(RunnerInit):
             fullname="白石畫廊",
             code_name="WhiteStone",
             external_link="https://www.whitestone-gallery.com/zh-hant",
-            branch_coordinates=Coordinate(raw_coordinates="25.081886335785196, 121.5655333509274"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.081886335785196, 121.5655333509274"
+            ),
             venue_type=VenueType.GALLERY,
         )
 
     async def fetch_response(self):
         urls = [
             "https://www.whitestone-gallery.com/zh-hant/blogs/exhibitions/tagged/location_taipei+current",
-            "https://www.whitestone-gallery.com/zh-hant/blogs/exhibitions/tagged/location_taipei+upcoming"
+            "https://www.whitestone-gallery.com/zh-hant/blogs/exhibitions/tagged/location_taipei+upcoming",
         ]
         headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client:
-            responses = await asyncio.gather(
-                *[client.get(url)
-                  for url in urls]
-            )
+            responses = await asyncio.gather(*[client.get(url) for url in urls])
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
@@ -56,5 +55,5 @@ async def main():
     await WhiteStoneRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

@@ -27,14 +27,18 @@ class Pier2Runner(RunnerInit):
             fullname="駁2藝術特區",
             code_name="Pier2",
             external_link="https://pier2.org/exhibition/list/all/",
-            branch_coordinates=Coordinate(raw_coordinates="22.620055196410377, 120.28155879030746"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="22.620055196410377, 120.28155879030746"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
-        headers = generate_headers(referer="https://pier2.org/exhibition/list/all/",
-                                   origin="https://pier2.org",
-                                   x_requested_with="XMLHttpRequest")
+        headers = generate_headers(
+            referer="https://pier2.org/exhibition/list/all/",
+            origin="https://pier2.org",
+            x_requested_with="XMLHttpRequest",
+        )
         cookies = generate_cookies(need_phpsessid=True)
         params = {
             "type": "exhibition",

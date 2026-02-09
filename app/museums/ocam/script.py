@@ -1,5 +1,4 @@
 import asyncio
-import secrets
 
 import bs4
 
@@ -28,12 +27,16 @@ class OCAMRunner(RunnerInit):
             fullname="陽明海洋文化藝術館",
             code_name="OCAM",
             external_link="https://www.ymculture.org.tw/tw/Exhibition/OCAM#",
-            branch_coordinates=Coordinate(raw_coordinates="25.132752348069353, 121.7400201544287"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.132752348069353, 121.7400201544287"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
-        headers = generate_headers(referer="https://www.ymculture.org.tw/tw/Exhibition/OCAM#")
+        headers = generate_headers(
+            referer="https://www.ymculture.org.tw/tw/Exhibition/OCAM#"
+        )
         cookies = generate_cookies(need_phpsessid=True)
         url = "https://www.ymculture.org.tw/tw/Exhibition/OCAM#"
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:

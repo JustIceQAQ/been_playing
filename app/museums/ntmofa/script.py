@@ -28,7 +28,9 @@ class NtMofaRunner(RunnerInit):
             fullname="國立臺灣美術館",
             code_name="NtMofa",
             external_link="https://www.ntmofa.gov.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="24.141372397797248, 120.66338819860081"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="24.141372397797248, 120.66338819860081"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -40,10 +42,7 @@ class NtMofaRunner(RunnerInit):
             "https://www.ntmofa.gov.tw/News_Actives_photo.aspx?n=1464&sms=11893",
         ]
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
-            tasks = [
-                client.get(url)
-                for url in urls
-            ]
+            tasks = [client.get(url) for url in urls]
             responses = await asyncio.gather(*tasks)
         return [response.text for response in responses]
 
@@ -61,5 +60,5 @@ async def main():
     await NtMofaRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

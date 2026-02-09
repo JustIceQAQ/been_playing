@@ -28,12 +28,14 @@ class KmoaRunner(RunnerInit):
             fullname="基隆美術館",
             code_name="kmoa",
             external_link="https://kmoa.klcg.gov.tw/News_Photo.aspx?n=7484&sms=12489",
-            branch_coordinates=Coordinate(raw_coordinates="25.131248388298207, 121.74399937483508"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.131248388298207, 121.74399937483508"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_sub_response(
-            self, client: httpx.AsyncClient, context: str
+        self, client: httpx.AsyncClient, context: str
     ) -> list[str]:
         p = BeautifulSoupTranslation().translation_to_object(context)
         div = p.find("div", {"class": "group-list page-block PhotoList"})
@@ -54,10 +56,12 @@ class KmoaRunner(RunnerInit):
 
     async def fetch_response(self):
         headers = generate_headers(
-                referer="https://kmoa.klcg.gov.tw",
-                need_upgrade_insecure_requests=True
-            )
-        cookies = {**generate_cookies(need_asp_net_session_id=True), "font-size-": "medium"}
+            referer="https://kmoa.klcg.gov.tw", need_upgrade_insecure_requests=True
+        )
+        cookies = {
+            **generate_cookies(need_asp_net_session_id=True),
+            "font-size-": "medium",
+        }
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             url = "https://kmoa.klcg.gov.tw/News_Photo.aspx?n=7484&sms=12489"
             response = await client.get(url)

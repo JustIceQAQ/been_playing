@@ -28,8 +28,12 @@ class TnamMuseumRunner(RunnerInit):
             code_name="TnamMuseum",
             external_link="https://www.tnam.museum/exhibition/current?page=1",
             branch_coordinates=[
-                Coordinate(name="一館", raw_coordinates="22.99117888093109, 120.20502606285312"),
-                Coordinate(name="二館", raw_coordinates="22.99055275877767, 120.20140904089217"),
+                Coordinate(
+                    name="一館", raw_coordinates="22.99117888093109, 120.20502606285312"
+                ),
+                Coordinate(
+                    name="二館", raw_coordinates="22.99055275877767, 120.20140904089217"
+                ),
             ],
             venue_type=VenueType.MUSEUM,
         )
@@ -38,11 +42,13 @@ class TnamMuseumRunner(RunnerInit):
         headers = generate_headers()
         responses = []
         async with HttpxAsyncClient(headers=headers) as client:
-            for url in ["https://www.tnam.museum/exhibition/current", "https://www.tnam.museum/exhibition/upcoming"]:
+            for url in [
+                "https://www.tnam.museum/exhibition/current",
+                "https://www.tnam.museum/exhibition/upcoming",
+            ]:
                 page = 1
                 while True:
-                    sub_response = await client.get(url,
-                                                    params={"page": page})
+                    sub_response = await client.get(url, params={"page": page})
                     sub_soup = bs4.BeautifulSoup(sub_response.text, "html.parser")
                     has_items = sub_soup.select("div.layout-large > figure > a")
                     if has_items:
@@ -66,5 +72,5 @@ async def main():
     await TnamMuseumRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

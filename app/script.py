@@ -148,7 +148,7 @@ MUSEUMS_RUNNERS = {
     ChiayiMMRunner,
     ChiayiAMRunner,
     NtcCeramicsRunner,
-NtMofaRunner,
+    NtMofaRunner,
 }
 
 GALLERIES_RUNNERS = {

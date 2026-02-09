@@ -26,7 +26,9 @@ class PactRunner(RunnerInit):
             fullname="台北偶戲館",
             code_name="PACT",
             external_link="https://www.pact.taipei/exhibition_list.aspx?p=1&ps=10&t=all",
-            branch_coordinates=Coordinate(raw_coordinates="25.04792075475668, 121.56141474093504"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.04792075475668, 121.56141474093504"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

@@ -1,5 +1,4 @@
 import asyncio
-import decimal
 
 import bs4
 from app.museums.culture435.parse import Culture435Parse
@@ -28,7 +27,9 @@ class Culture435Runner(RunnerInit):
             fullname="板橋435藝文特區",
             code_name="Culture435",
             external_link="https://www.435.culture.ntpc.gov.tw/xmdoc?xsmsid=0G256373177821958325",
-            branch_coordinates=Coordinate(raw_coordinates="25.024344268554966, 121.45235225442633"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.024344268554966, 121.45235225442633"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

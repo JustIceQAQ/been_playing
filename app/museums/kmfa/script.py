@@ -1,6 +1,4 @@
 import asyncio
-import decimal
-import uuid
 
 import bs4
 import httpx
@@ -30,7 +28,9 @@ class KmFaRunner(RunnerInit):
             fullname="高雄市立美術館",
             code_name="KmFa",
             external_link="https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",
-            branch_coordinates=Coordinate(raw_coordinates="22.65687499527212, 120.28659401204955"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="22.65687499527212, 120.28659401204955"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -40,7 +40,9 @@ class KmFaRunner(RunnerInit):
         return response.text
 
     async def fetch_response(self):
-        headers = generate_headers(referer="https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1")
+        headers = generate_headers(
+            referer="https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1"
+        )
         cookies = generate_cookies(need_asp_net_session_id=True, need_consent=True)
         urls = [
             "https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",

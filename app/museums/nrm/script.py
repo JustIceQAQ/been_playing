@@ -27,7 +27,9 @@ class NrmRunner(RunnerInit):
             fullname="國家鐵道博物館",
             code_name="Nrm",
             external_link="https://www.nrm.gov.tw/News_actives.aspx?n=3325&sms=13412",
-            branch_coordinates=Coordinate(raw_coordinates="25.04759981549798, 121.56476041209898"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.04759981549798, 121.56476041209898"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -53,7 +55,9 @@ class NrmRunner(RunnerInit):
         exhibition_location = None
         a_elements = soup.select("div.programicon_05 a")[1:]
         if a_elements:
-            exhibition_location = ", ".join([a_element.get_text(strip=True) for a_element in a_elements])
+            exhibition_location = ", ".join(
+                [a_element.get_text(strip=True) for a_element in a_elements]
+            )
         await self.cache.aset(f"{item.UUID}-address", exhibition_location, month_3())
         item.address = exhibition_location
 

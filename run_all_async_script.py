@@ -10,7 +10,12 @@ from dotenv import load_dotenv
 from app.script import ALL_RUNNERS
 from configs.settings import get_settings
 from helpers.cache import DiskCache, NoneCache
-from helpers.storage.helper import Information, Coordinate, orjson_default_handler, last_week_update
+from helpers.storage.helper import (
+    Information,
+    Coordinate,
+    orjson_default_handler,
+    last_week_update,
+)
 from helpers.crawler.scraper.helper import available_scraper_async_client
 from helpers.image.none.helper import NoneImage
 from helpers.image.turboimagehost.helper import TurboImageHost
@@ -36,7 +41,11 @@ async def generate_location(information: list["Information"]):
             continue
         if isinstance(location.branch_coordinates, list):
             for branch_coordinate in location.branch_coordinates:
-                name = "None" if (this_name := branch_coordinate.name) is None else this_name
+                name = (
+                    "None"
+                    if (this_name := branch_coordinate.name) is None
+                    else this_name
+                )
                 ok_centers.append(
                     {
                         "fullname": fullname + "-" + name,
@@ -50,7 +59,9 @@ async def generate_location(information: list["Information"]):
         if location.branch_coordinates is None:
             pass
 
-    async with aiofiles.open(ROOT_PATH / "data" / "v2" / "_ALL_LOCATION.json", "wb+") as afp:
+    async with aiofiles.open(
+        ROOT_PATH / "data" / "v2" / "_ALL_LOCATION.json", "wb+"
+    ) as afp:
         await afp.write(orjson.dumps(ok_centers, default=orjson_default_handler))
 
 
