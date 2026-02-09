@@ -35,7 +35,7 @@ class GaCcRunner(RunnerInit):
             other_headers={
                 "content-type": "application/json",
                 "content-language": "TW",
-            }
+            },
         )
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(

@@ -33,7 +33,7 @@ async def test_exhibition_storage(
         ExhibitionItem.model_validate(fake_exhibition_data),
     ]
     with tempfile.TemporaryDirectory() as tmp_dir:
-        await es.save_to_json_file("QAQ", folder=pathlib.Path(tmp_dir))
+        await es.save_to_json("QAQ", folder=pathlib.Path(tmp_dir))
         assert (pathlib.Path(tmp_dir) / "QAQ.json").exists() is True
 
 

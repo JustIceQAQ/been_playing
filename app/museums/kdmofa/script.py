@@ -1,5 +1,4 @@
 import asyncio
-import secrets
 
 import bs4
 from app.museums.kdmofa.parse import KdMoFaParse
@@ -27,16 +26,18 @@ class KdMoFaRunner(RunnerInit):
             fullname="關渡美術館",
             code_name="KdMoFa",
             external_link="https://kdmofa.tnua.edu.tw/mod/exhibition/index.php",
-            branch_coordinates=Coordinate(raw_coordinates="25.133800251190085, 121.47158422559258"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.133800251190085, 121.47158422559258"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
         headers = generate_headers(
-                host="kdmofa.tnua.edu.tw",
-                referer="https://kdmofa.tnua.edu.tw",
-                need_upgrade_insecure_requests=True
-            )
+            host="kdmofa.tnua.edu.tw",
+            referer="https://kdmofa.tnua.edu.tw",
+            need_upgrade_insecure_requests=True,
+        )
         cookies = generate_cookies(need_phpsessid=True)
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
             response = await client.get(

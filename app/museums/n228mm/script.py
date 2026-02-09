@@ -30,7 +30,9 @@ class N228MMRunner(RunnerInit):
             fullname="二二八國家紀念館",
             code_name="n228mm",
             external_link="https://www.228.org.tw/exhibitionsnew",
-            branch_coordinates=Coordinate(raw_coordinates="25.03187889577739, 121.51386505257408"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.03187889577739, 121.51386505257408"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

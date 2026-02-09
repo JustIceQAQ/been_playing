@@ -28,18 +28,22 @@ class NtcArtMuseumRunner(RunnerInit):
             fullname="新北市美術館",
             code_name="NtcArtMuseum",
             external_link="https://ntcart.museum/exhibition.aspx?kind=today",
-            branch_coordinates=Coordinate(raw_coordinates="24.953654641948525, 121.358269212097"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="24.953654641948525, 121.358269212097"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
-    async def sub_fetch_response(self, client: httpx.AsyncClient, kind: str) -> httpx.Response:
+    async def sub_fetch_response(
+        self, client: httpx.AsyncClient, kind: str
+    ) -> httpx.Response:
         return await client.post(
             "https://ntcart.museum/exhibition.aspx",
             data={
                 "q": "get",
                 "r": "0.9999999999999999",
-                "data": {"p": 1, "ps": 12, "Kind": kind}
-            }
+                "data": {"p": 1, "ps": 12, "Kind": kind},
+            },
         )
 
     async def fetch_response(self):
@@ -49,17 +53,14 @@ class NtcArtMuseumRunner(RunnerInit):
             x_requested_with="XMLHttpRequest",
             other_headers={
                 "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
-            }
+            },
         )
         kinds = [
             "today",
             "future",
         ]
         async with HttpxAsyncClient(headers=headers) as client:
-            tasks = [
-                self.sub_fetch_response(client, kind)
-                for kind in kinds
-            ]
+            tasks = [self.sub_fetch_response(client, kind) for kind in kinds]
             responses = await asyncio.gather(*tasks)
         return [response.json() for response in responses]
 

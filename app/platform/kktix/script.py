@@ -53,7 +53,9 @@ class KKTixRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = generate_headers(referer="https://kktix.com/", )
+        headers = generate_headers(
+            referer="https://kktix.com/",
+        )
 
         today, today_add_2_months = within_two_months()
         start_at = urllib.parse.quote(today.strftime("%Y/%m/%d"), safe="")
@@ -62,27 +64,22 @@ class KKTixRunner(RunnerInit):
         runtime_settings = get_settings()
         proxies = None
         if runtime_settings.PROXY_POOL is not None:
-            proxies = [Proxy.all(
-                runtime_settings.PROXY_POOL
-            )]
+            proxies = [Proxy.all(runtime_settings.PROXY_POOL)]
         async with RNetAsyncClient(
-                proxies=proxies,
+            proxies=proxies,
         ) as client:
             page = 1
             while True:
                 response = await client.get(
                     self.target_url.format(start_at=start_at, end_at=end_at, page=page),
-                    headers=headers
+                    headers=headers,
                 )
                 this_response_text = await response.text()
                 if (
-                        (
-                                self.translation()
-                                        .translation_to_object(this_response_text)
-                                        .select_one("div[data-react-class='SearchWrapper']")
-                        )
-                        is None
-                ):
+                    self.translation()
+                    .translation_to_object(this_response_text)
+                    .select_one("div[data-react-class='SearchWrapper']")
+                ) is None:
                     break
                 responses.append(this_response_text)
                 page += 1

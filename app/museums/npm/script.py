@@ -1,6 +1,11 @@
 import asyncio
 
-from app.museums.npm.parse import NpmColParse, NpmRowParse, NpmPreviewParse, SouthNpmParse
+from app.museums.npm.parse import (
+    NpmColParse,
+    NpmRowParse,
+    NpmPreviewParse,
+    SouthNpmParse,
+)
 from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
@@ -28,13 +33,13 @@ class NpmRunner(RunnerInit):
                 Coordinate(
                     name="北部院區",
                     location_code=TaiwanCity.taipei_city,
-                    raw_coordinates="25.10255940335793, 121.5485139544282"),
+                    raw_coordinates="25.10255940335793, 121.5485139544282",
+                ),
                 Coordinate(
                     name="南部院區",
                     location_code=TaiwanCity.chiayi_county,
-                    raw_coordinates="23.473459041101574, 120.2928023651772"
-                )
-
+                    raw_coordinates="23.473459041101574, 120.2928023651772",
+                ),
             ],
             venue_type=VenueType.MUSEUM,
         )
@@ -43,7 +48,7 @@ class NpmRunner(RunnerInit):
         this_header = generate_headers(
             referer="https://south.npm.gov.tw/ExhibitionsListC003110.aspx?appname=Exhibition3112",
             need_upgrade_insecure_requests=True,
-            host="south.npm.gov.tw"
+            host="south.npm.gov.tw",
         )
         async with HttpxAsyncClient(headers=this_header) as client:
             results = await asyncio.gather(
@@ -65,7 +70,7 @@ class NpmRunner(RunnerInit):
         this_header = generate_headers(
             referer="https://www.npm.gov.tw/",
             need_upgrade_insecure_requests=True,
-            host="www.npm.gov.tw"
+            host="www.npm.gov.tw",
         )
         async with HttpxAsyncClient(headers=this_header) as client:
             results = await asyncio.gather(
@@ -172,7 +177,11 @@ class NpmRunner(RunnerInit):
 
         if (south := runtime_parsed.get("south", None)) is not None:
             for item in south:
-                exhibition_items.append(SouthNpmParse(item).parse_to_base_model(ExhibitionItem, *args, **kwargs))
+                exhibition_items.append(
+                    SouthNpmParse(item).parse_to_base_model(
+                        ExhibitionItem, *args, **kwargs
+                    )
+                )
         return exhibition_items
 
 

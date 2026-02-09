@@ -1,5 +1,4 @@
 import asyncio
-import decimal
 
 import bs4
 
@@ -28,7 +27,9 @@ class NTAECRunner(RunnerInit):
             fullname="國立台灣藝術教育館",
             code_name="NTAEC",
             external_link="https://www.arte.gov.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="25.03249656295196, 121.51211159386773"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.03249656295196, 121.51211159386773"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

@@ -28,7 +28,9 @@ class CG1839Runner(RunnerInit):
             fullname="1839 當代藝廊",
             code_name="CG1839",
             external_link="https://www.1839cg.com/",
-            branch_coordinates=Coordinate(raw_coordinates="25.040566348234144, 121.55455459325458"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.040566348234144, 121.55455459325458"
+            ),
             venue_type=VenueType.GALLERY,
         )
 
@@ -49,27 +51,26 @@ class CG1839Runner(RunnerInit):
     async def get_current_item(self, all_items, client):
         current_response = await client.get("https://www.1839cg.com/current-exhibition")
         current_response.raise_for_status()
-        current_p = BeautifulSoupTranslation().translation_to_object(current_response.text)
-        current_responses = await asyncio.gather(*[
-            client.get(a.get("href"))
-            for a in current_p.select("p.has-text-align-center a")
-        ])
+        current_p = BeautifulSoupTranslation().translation_to_object(
+            current_response.text
+        )
+        current_responses = await asyncio.gather(
+            *[
+                client.get(a.get("href"))
+                for a in current_p.select("p.has-text-align-center a")
+            ]
+        )
         all_items.extend(
-            [current_response.text
-             for current_response in current_responses]
+            [current_response.text for current_response in current_responses]
         )
 
     async def get_index_item(self, all_items, client, response):
         p = BeautifulSoupTranslation().translation_to_object(response.text)
         items_response = p.select("div.entry-content figure.wp-block-image a")[:3]
-        responses = await asyncio.gather(*[
-            client.get(item.get("href"))
-            for item in items_response
-        ])
-        all_items.extend([
-            item_response.text
-            for item_response in responses
-        ])
+        responses = await asyncio.gather(
+            *[client.get(item.get("href")) for item in items_response]
+        )
+        all_items.extend([item_response.text for item_response in responses])
 
     async def fetch_parsed(self):
         parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
@@ -80,5 +81,5 @@ async def main():
     await CG1839Runner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

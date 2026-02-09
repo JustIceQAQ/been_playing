@@ -1,5 +1,4 @@
 import asyncio
-import decimal
 
 import bs4
 import httpx
@@ -30,7 +29,9 @@ class MoNTUERunner(RunnerInit):
             fullname="北師美術館",
             code_name="MoNTUE",
             external_link="https://montue.ntue.edu.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="25.024774854666255, 121.54460696977063"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.024774854666255, 121.54460696977063"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -45,15 +46,17 @@ class MoNTUERunner(RunnerInit):
             "https://montue.ntue.edu.tw/exhibitions-upcoming/",
         ]
         async with HttpxAsyncClient(headers=headers) as client:
-            get_a_tasks = [
-                self.sub_fetch_response(client, url)
-                for url in urls
-            ]
+            get_a_tasks = [self.sub_fetch_response(client, url) for url in urls]
             all_items_url = []
             get_a_results = await asyncio.gather(*get_a_tasks)
             for result in get_a_results:
                 soup = BeautifulSoupTranslation().translation_to_object(result)
-                divs = soup.find_all("div", {"class": "ptsc pt-sc sc-slider exhibition-slider hide-title hide-mobile"})
+                divs = soup.find_all(
+                    "div",
+                    {
+                        "class": "ptsc pt-sc sc-slider exhibition-slider hide-title hide-mobile"
+                    },
+                )
                 for div in divs:
                     all_items_url.append(div.find("a").get("href"))
             if not all_items_url:
@@ -64,7 +67,9 @@ class MoNTUERunner(RunnerInit):
             ]
             get_items_context_results = await asyncio.gather(*get_items_context)
             if not get_items_context_results:
-                logging.error("get_items_context_results data is %s", bool(all_items_url))
+                logging.error(
+                    "get_items_context_results data is %s", bool(all_items_url)
+                )
         return get_items_context_results
 
     async def fetch_parsed(self):
@@ -76,5 +81,5 @@ async def main():
     await MoNTUERunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

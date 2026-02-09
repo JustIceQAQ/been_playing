@@ -2,7 +2,7 @@ import asyncio
 
 import bs4
 
-from app.museums.chiayimm.parse import ChiayiMMParse
+from app.museums.ntmofa.parse import NtMofaParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -14,49 +14,50 @@ from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
 
-class ChiayiMMRunner(RunnerInit):
+class NtMofaRunner(RunnerInit):
     translation = BeautifulSoupTranslation
-    use_parse = ChiayiMMParse
+    use_parse = NtMofaParse
+    is_sort = False
 
     def set_cache_expire(self) -> int | None:
         return month_3()
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.chiayi_city,
-            fullname="嘉義市立博物館",
-            code_name="ChiayiMM",
-            external_link="https://museum.chiayi.gov.tw/",
+            location_code=TaiwanCity.taichung_city,
+            fullname="國立臺灣美術館",
+            code_name="NtMofa",
+            external_link="https://www.ntmofa.gov.tw/",
             branch_coordinates=Coordinate(
-                raw_coordinates="23.487196187060913, 120.45171887377413"
+                raw_coordinates="24.141372397797248, 120.66338819860081"
             ),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
-        headers = generate_headers(
-            referer="https://museum.chiayi.gov.tw/",
-            host="museum.chiayi.gov.tw",
-        )
+        headers = generate_headers()
         cookies = generate_cookies(need_asp_net_session_id=True)
+        urls = [
+            "https://www.ntmofa.gov.tw/News_Actives_photo.aspx?n=1462&sms=11893",
+            "https://www.ntmofa.gov.tw/News_Actives_photo.aspx?n=1464&sms=11893",
+        ]
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
-            urls = [
-                "https://museum.chiayi.gov.tw/ExhibitionListC003310.aspx?appname=ExhibitionListC003310&SearchAdvanced=true",
-                "https://museum.chiayi.gov.tw/ExhibitionListC003310.aspx?appname=ExhibitionListC003320&SearchAdvanced=true",
-            ]
-            responses = await asyncio.gather(*[client.get(url) for url in urls])
+            tasks = [client.get(url) for url in urls]
+            responses = await asyncio.gather(*tasks)
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
         parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
-        items = []
+        data = []
         for p in parsed:
-            items.extend(p.select("div.kf-diagramtext-col a.kf-item"))
-        return items
+            element = p.select("div#CCMS_Content a")
+            if element:
+                data.extend(element[1:])
+        return data
 
 
 async def main():
-    await ChiayiMMRunner().run(NoneCache(), NoneImage())
+    await NtMofaRunner().run(NoneCache(), NoneImage())
 
 
 if __name__ == "__main__":

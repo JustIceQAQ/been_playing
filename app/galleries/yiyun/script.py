@@ -28,10 +28,16 @@ class YiYunRunner(RunnerInit):
             code_name="YiYun",
             external_link="https://www.yiyun-art.com/",
             branch_coordinates=[
-                Coordinate(location_code=TaiwanCity.taipei_city, name="青田館",
-                           raw_coordinates="25.027213880907816, 121.53055350558525"),
-                Coordinate(location_code=TaiwanCity.taipei_city, name="金華館",
-                           raw_coordinates="25.028205131565272, 121.53223852023619"),
+                Coordinate(
+                    location_code=TaiwanCity.taipei_city,
+                    name="青田館",
+                    raw_coordinates="25.027213880907816, 121.53055350558525",
+                ),
+                Coordinate(
+                    location_code=TaiwanCity.taipei_city,
+                    name="金華館",
+                    raw_coordinates="25.028205131565272, 121.53223852023619",
+                ),
             ],
             venue_type=VenueType.GALLERY,
         )
@@ -55,5 +61,5 @@ async def main():
     await YiYunRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

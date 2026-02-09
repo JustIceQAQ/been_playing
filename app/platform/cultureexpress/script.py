@@ -31,8 +31,8 @@ class CultureExpressRunner(RunnerInit):
 
     async def fetch_response(self):
         headers = generate_headers(
-                referer="https://cultureexpress.taipei",
-            )
+            referer="https://cultureexpress.taipei",
+        )
         responses = []
         async with HttpxAsyncClient(headers=headers) as client:
             init_response = await client.get(

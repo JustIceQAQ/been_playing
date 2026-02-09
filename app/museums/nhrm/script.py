@@ -1,5 +1,4 @@
 import asyncio
-import decimal
 
 import bs4
 
@@ -29,7 +28,9 @@ class NHRMRunner(RunnerInit):
             fullname="國家人權博物館",
             code_name="NHRM",
             external_link="https://www.nhrm.gov.tw/w/nhrm/ExhibitionA",
-            branch_coordinates=Coordinate(raw_coordinates="24.987027946019857, 121.53208236236004"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="24.987027946019857, 121.53208236236004"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

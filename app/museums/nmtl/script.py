@@ -27,7 +27,9 @@ class NMTLRunner(RunnerInit):
             fullname="國立臺灣文學館",
             code_name="NMTL",
             external_link="https://www.nmtl.gov.tw/News_actives.aspx?n=3821&sms=13367",
-            branch_coordinates=Coordinate(raw_coordinates="22.992188481194308, 120.20432889300697"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="22.992188481194308, 120.20432889300697"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -35,7 +37,9 @@ class NMTLRunner(RunnerInit):
         headers = generate_headers(need_upgrade_insecure_requests=True)
         cookies = generate_cookies(need_asp_net_session_id=True)
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
-            response = await client.get("https://www.nmtl.gov.tw/News_actives.aspx?n=3821&sms=13367")
+            response = await client.get(
+                "https://www.nmtl.gov.tw/News_actives.aspx?n=3821&sms=13367"
+            )
         return response.text
 
     async def fetch_parsed(self):
@@ -47,5 +51,5 @@ async def main():
     await NMTLRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

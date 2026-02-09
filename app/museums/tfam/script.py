@@ -25,7 +25,9 @@ class TFamRunner(RunnerInit):
             fullname="臺北市立美術館",
             code_name="TFam",
             external_link="https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw",
-            branch_coordinates=Coordinate(raw_coordinates="25.07240807900826, 121.5244680697716"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.07240807900826, 121.5244680697716"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -37,7 +39,7 @@ class TFamRunner(RunnerInit):
             x_requested_with="XMLHttpRequest",
             other_headers={
                 "Content-Type": "application/json; charset=UTF-8",
-            }
+            },
         )
         cookies = generate_cookies(need_asp_net_session_id=True)
         async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:

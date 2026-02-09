@@ -1,5 +1,3 @@
-import decimal
-
 import bs4
 
 from app.museums.fubonartmuseum.parse import FuBonArtMuseumParse
@@ -27,7 +25,9 @@ class FuBonArtMuseumRunner(RunnerInit):
             fullname="富邦美術館",
             code_name="FuBonArtMuseum",
             external_link="https://www.fubonartmuseum.org/Default",
-            branch_coordinates=Coordinate(raw_coordinates="25.039545226356974, 121.57119466791848"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.039545226356974, 121.57119466791848"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

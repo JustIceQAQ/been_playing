@@ -27,15 +27,17 @@ class TncMMMRunner(RunnerInit):
             fullname="臺灣新文化運動紀念館",
             code_name="TncMMM",
             external_link="https://tncmmm.gov.taipei/Content_List.aspx?n=2BF92E180FD68C1A",
-            branch_coordinates=Coordinate(raw_coordinates="25.059502699444998, 121.51495546606633"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.059502699444998, 121.51495546606633"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
         headers = generate_headers(
-                host="tncmmm.gov.taipei",
-                referer="https://tncmmm.gov.taipei",
-            )
+            host="tncmmm.gov.taipei",
+            referer="https://tncmmm.gov.taipei",
+        )
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
                 "https://tncmmm.gov.taipei/Content_List.aspx?n=2BF92E180FD68C1A",

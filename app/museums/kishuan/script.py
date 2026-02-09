@@ -27,7 +27,9 @@ class KiShuAnRunner(RunnerInit):
             fullname="紀州庵文學森林",
             code_name="KiShuAn",
             external_link="https://kishuan.org.tw/activity.htm",
-            branch_coordinates=Coordinate(raw_coordinates="25.021773564949243, 121.5206021625705"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.021773564949243, 121.5206021625705"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -35,7 +37,7 @@ class KiShuAnRunner(RunnerInit):
         headers = generate_headers(
             host="kishuan.org.tw",
             referer="https://kishuan.org.tw/activity.htm",
-            need_upgrade_insecure_requests=True
+            need_upgrade_insecure_requests=True,
         )
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get("https://kishuan.org.tw/activity.htm")
@@ -46,9 +48,10 @@ class KiShuAnRunner(RunnerInit):
         qq = parsed.query("div.activityList > div.wrap")
         return qq
 
+
 async def main():
     await KiShuAnRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

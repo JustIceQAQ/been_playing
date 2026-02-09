@@ -30,7 +30,9 @@ class TwTcRunner(RunnerInit):
             fullname="台北世貿中心",
             code_name="TwTc",
             external_link="https://twtc.com.tw/exhibition?p=home",
-            branch_coordinates=Coordinate(raw_coordinates="25.03358007614386, 121.56240955530657"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.03358007614386, 121.56240955530657"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -63,7 +65,7 @@ class TwTcRunner(RunnerInit):
             referer="https://twtc.com.tw/exhibition?p=home",
             other_headers={
                 "Pragma": "no-cache",
-            }
+            },
         )
         responses = []
         async with HttpxAsyncClient(headers=headers) as client:

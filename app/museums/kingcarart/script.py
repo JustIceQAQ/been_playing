@@ -1,5 +1,4 @@
 import asyncio
-import decimal
 
 import bs4
 
@@ -29,8 +28,14 @@ class KingCarArtRunner(RunnerInit):
             code_name="KingCarArt",
             external_link="https://www.kingcarart.org.tw/exhibitions/current",
             branch_coordinates=[
-                Coordinate(name="臺北承德館", raw_coordinates="25.067779239946375, 121.51865322216524"),
-                Coordinate(name="臺北南京館", raw_coordinates="25.052598382305003, 121.5278585635071"),
+                Coordinate(
+                    name="臺北承德館",
+                    raw_coordinates="25.067779239946375, 121.51865322216524",
+                ),
+                Coordinate(
+                    name="臺北南京館",
+                    raw_coordinates="25.052598382305003, 121.5278585635071",
+                ),
             ],
             venue_type=VenueType.MUSEUM,
         )

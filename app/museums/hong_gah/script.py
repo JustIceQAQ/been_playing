@@ -1,5 +1,4 @@
 import asyncio
-import decimal
 
 import bs4
 from app.museums.hong_gah.parse import HongGahParse
@@ -29,16 +28,18 @@ class HongGahRunner(RunnerInit):
             fullname="鳳甲美術館",
             code_name="HongGah",
             external_link="https://hong-gah.org.tw/exhibitions-zh",
-            branch_coordinates=Coordinate(raw_coordinates="25.125315737958747, 121.49922632559256"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.125315737958747, 121.49922632559256"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
         headers = generate_headers(
-                host="hong-gah.org.tw",
-                referer="https://hong-gah.org.tw/exhibitions-zh",
-                x_requested_with="XMLHttpRequest"
-            )
+            host="hong-gah.org.tw",
+            referer="https://hong-gah.org.tw/exhibitions-zh",
+            x_requested_with="XMLHttpRequest",
+        )
         async with HttpxAsyncClient(headers=headers, follow_redirects=True) as client:
             response = await client.get("https://hong-gah.org.tw/exhibitions-zh/page/1")
             response.raise_for_status()

@@ -34,7 +34,7 @@ class KKDayRunner(RunnerInit):
         "count": 10,
         "page": 1,
         "sort": "prec",
-        "sale_date_from": date_format_digit()
+        "sale_date_from": date_format_digit(),
     }
 
     def set_cache_expire(self) -> int | None:
@@ -45,13 +45,13 @@ class KKDayRunner(RunnerInit):
             fullname="KKDay",
             code_name="KKDay",
             external_link="https://www.kkday.com/zh-tw/product/productlist?"
-                          "destination=D-TW-5013,D-TW-4736&"
-                          "product_categories=CATEGORY_016&"
-                          "currency=TWD&"
-                          "sort=prec&"
-                          "page=1&"
-                          "start=10&"
-                          "count=10",
+            "destination=D-TW-5013,D-TW-4736&"
+            "product_categories=CATEGORY_016&"
+            "currency=TWD&"
+            "sort=prec&"
+            "page=1&"
+            "start=10&"
+            "count=10",
             venue_type=VenueType.PLATFORM,
         )
 
@@ -59,11 +59,11 @@ class KKDayRunner(RunnerInit):
         runtime_query_parameter = copy.deepcopy(KKDayRunner.query_parameter)
         runtime_query_parameter["page"] = page
         parse_list_result = parse_list(runtime_query_parameter)
-        encoded_query_parameter = urllib.parse.urlencode(parse_list_result, safe=',')
+        encoded_query_parameter = urllib.parse.urlencode(parse_list_result, safe=",")
         return f"{self.target_url}?{encoded_query_parameter}"
 
     def _format_init_state(
-            self, transitioned: bs4.BeautifulSoup
+        self, transitioned: bs4.BeautifulSoup
     ) -> tuple[list[dict], int | None]:
         products = []
         product_count = None
@@ -79,7 +79,7 @@ class KKDayRunner(RunnerInit):
                 raw_data = json.loads(init_state_json)
                 state = raw_data["state"]
                 if (state.get("products", None) is None) or (
-                        state.get("productCount", None) is None
+                    state.get("productCount", None) is None
                 ):
                     continue
                 products = raw_data["state"]["products"]
@@ -97,24 +97,20 @@ class KKDayRunner(RunnerInit):
                 "Accept-Encoding": "gzip, deflate, br",
                 "Accept": "application/json, text/plain, */*",
                 "Accept-Language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
-            }
+            },
         )
         runtime_settings = get_settings()
         proxies = (
             None
             if runtime_settings.PROXY_POOL is None
-            else [
-                Proxy.all(
-                    runtime_settings.PROXY_POOL
-                )
-            ]
+            else [Proxy.all(runtime_settings.PROXY_POOL)]
         )
         async with RNetAsyncClient(
-                proxies=proxies,
+            proxies=proxies,
         ) as client:
             first_response = await client.get(self._get_this_url(), headers=headers)
 
-            if (not first_response.status_code.is_success()):
+            if not first_response.status_code.is_success():
                 return []
             first_context = await first_response.text()
             responses.append(first_context)

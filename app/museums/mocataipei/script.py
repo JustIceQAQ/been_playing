@@ -1,5 +1,4 @@
 import asyncio
-import decimal
 
 import bs4
 

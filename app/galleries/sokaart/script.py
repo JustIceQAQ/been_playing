@@ -27,14 +27,18 @@ class SoKaArtRunner(RunnerInit):
             fullname="索卡藝術中心",
             code_name="SoKaArt",
             external_link="https://www.soka-art.com/tr",
-            branch_coordinates=Coordinate(raw_coordinates="25.07961383080647, 121.56344961543039"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.07961383080647, 121.56344961543039"
+            ),
             venue_type=VenueType.GALLERY,
         )
 
     async def fetch_response(self):
         headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get("https://soka-art.com/tr/exhibition/current?artist_area=5")
+            response = await client.get(
+                "https://soka-art.com/tr/exhibition/current?artist_area=5"
+            )
         return response.text
 
     async def fetch_parsed(self):
@@ -46,5 +50,5 @@ async def main():
     await SoKaArtRunner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

@@ -29,12 +29,14 @@ class NsTmRunner(RunnerInit):
             fullname="國立科學工藝博物館",
             code_name="NsTm",
             external_link="https://www.nstm.gov.tw/ExhibitionList.aspx?ExhibitionType=1&Period=1",
-            branch_coordinates=Coordinate(raw_coordinates="22.64161262350391, 120.32253339088527"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="22.64161262350391, 120.32253339088527"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
     async def sub_fetch_response(
-            self, client: httpx.AsyncClient, url: str
+        self, client: httpx.AsyncClient, url: str
     ) -> list[str]:
         sub_response = []
         for p_index in range(0, 2, 1):
@@ -60,7 +62,7 @@ class NsTmRunner(RunnerInit):
                 "Accept-Language": "zh-TW,zh;q=0.9",
                 "Accept-Encoding": "gzip, deflate, br",
                 "Cache-Control": "no-cache",
-            }
+            },
         )
         cookies = httpx.Cookies()
         cookies.set(
@@ -72,11 +74,11 @@ class NsTmRunner(RunnerInit):
             # "https://www.nstm.gov.tw/ExhibitionList.aspx?ExhibitionType=2&Period=1",
         ]
         async with HttpxAsyncClient(
-                headers=headers,
-                cookies=cookies,
-                http2=False,
-                limits=limits,
-                timeout=timeout,
+            headers=headers,
+            cookies=cookies,
+            http2=False,
+            limits=limits,
+            timeout=timeout,
         ) as client:
             responses = []
             async with semaphore:

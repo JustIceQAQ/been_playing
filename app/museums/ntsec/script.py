@@ -31,7 +31,9 @@ class NtSecRunner(RunnerInit):
             fullname="國立臺灣科學教育館",
             code_name="NtSec",
             external_link="https://www.ntsec.gov.tw/article/list.aspx?a=25",
-            branch_coordinates=Coordinate(raw_coordinates="25.096328164549, 121.51649185712368"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.096328164549, 121.51649185712368"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

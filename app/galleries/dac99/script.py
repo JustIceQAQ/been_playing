@@ -27,7 +27,9 @@ class Dac99Runner(RunnerInit):
             fullname="99度藝術中心",
             code_name="Dac99",
             external_link="https://99dac.com/exhibition.php",
-            branch_coordinates=Coordinate(raw_coordinates="25.11649643071741, 121.5053916644182"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.11649643071741, 121.5053916644182"
+            ),
             venue_type=VenueType.GALLERY,
         )
 
@@ -47,5 +49,5 @@ async def main():
     await Dac99Runner().run(NoneCache(), NoneImage())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())

@@ -34,10 +34,11 @@ class NTCRIRunner(RunnerInit):
                 "&order=asc"
             ),
             branch_coordinates=[
-                Coordinate(location_code=TaiwanCity.taipei_city,
-                           name="臺北當代工藝設計分館",
-                           raw_coordinates="25.03210292140622, 121.51234399386772"
-                           ),
+                Coordinate(
+                    location_code=TaiwanCity.taipei_city,
+                    name="臺北當代工藝設計分館",
+                    raw_coordinates="25.03210292140622, 121.51234399386772",
+                ),
             ],
             venue_type=VenueType.MUSEUM,
         )
@@ -50,7 +51,7 @@ class NTCRIRunner(RunnerInit):
             other_headers={
                 "access_token": "b550b95f-ce44-4684-968b-298b0f5ad483",
                 "accept": "application/json, text/plain, */*",
-            }
+            },
         )
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(

@@ -29,7 +29,9 @@ class SongShanCulturalParkRunner(RunnerInit):
             fullname="松山文創園區",
             code_name="SongShanCulturalPark",
             external_link="https://www.songshanculturalpark.org/exhibition",
-            branch_coordinates=Coordinate(raw_coordinates="25.04389834091059, 121.56065162486529"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.04389834091059, 121.56065162486529"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

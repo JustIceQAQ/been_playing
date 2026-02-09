@@ -28,15 +28,20 @@ class TaipeiExPoParkRunner(RunnerInit):
             fullname="花博公園",
             code_name="TaipeiExPoPark",
             external_link="https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029",
-            branch_coordinates=Coordinate(raw_coordinates="25.069720986746507, 121.52071496978188"),
+            branch_coordinates=Coordinate(
+                raw_coordinates="25.069720986746507, 121.52071496978188"
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
         headers = generate_headers(
             origin="https://www.expopark.taipei",
-            referer="https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029", )
-        cookies = generate_cookies(need_asp_net_session_id=True, other_cookies={"font-size-": "medium"})
+            referer="https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029",
+        )
+        cookies = generate_cookies(
+            need_asp_net_session_id=True, other_cookies={"font-size-": "medium"}
+        )
         params = {
             "n": 247,
             "sms": 9029,

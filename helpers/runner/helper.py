@@ -185,7 +185,7 @@ class RunnerInit(abc.ABC):
 
             await self.items_check()
 
-            await self.exhibition_.save_to_json_file(
+            await self.exhibition_.save_to_json(
                 f"{self.information_.code_name}",
                 execution_time=execution_time,
                 is_unique=self.is_unique,
