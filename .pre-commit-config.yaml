@@ -1,5 +1,5 @@
 exclude: "docs|node_modules|migrations|.git|.tox|chart|data|script"
-default_stages: [pre-commit]
+default_stages: [ pre-commit ]
 fail_fast: true
 
 default_language_version:
@@ -13,12 +13,9 @@ repos:
       - id: check-yaml
         args:
           - --unsafe
+      - id: check-xml
       - id: end-of-file-fixer
       - id: trailing-whitespace
-  - repo: https://github.com/rohaquinlop/complexipy-pre-commit
-    rev: v4.2.0
-    hooks:
-      - id: complexipy
   - repo: https://github.com/charliermarsh/ruff-pre-commit
     rev: v0.1.2
     hooks:
@@ -26,9 +23,13 @@ repos:
         args:
           - --fix
       - id: ruff-format
+  - repo: https://github.com/rohaquinlop/complexipy-pre-commit
+    rev: v4.2.0
+    hooks:
+      - id: complexipy
 
   - repo: https://github.com/rbubley/mirrors-prettier
     rev: v3.4.2
     hooks:
       - id: prettier
-        types_or: [javascript, css, html, scss]
+        types_or: [ javascript, css, html, scss ]
