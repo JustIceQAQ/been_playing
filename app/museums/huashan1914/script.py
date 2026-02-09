@@ -20,6 +20,7 @@ class HuaShan1914Runner(RunnerInit):
     use_parse = huashan1914Parse
     use_suffix_item_from_url_auto = True
     use_suffix_item_from_file_func = True
+    output_rss = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()

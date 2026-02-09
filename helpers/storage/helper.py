@@ -1,4 +1,5 @@
 import datetime
+import pathlib
 import re
 import uuid
 from decimal import Decimal
@@ -7,9 +8,11 @@ from typing import Any
 
 import aiofiles
 from pydantic import BaseModel, Field, model_validator
+from feedgen.feed import FeedGenerator
 
+from configs.settings import get_settings
 from helpers.storage.symbol import TaiwanCity, VenueType
-from helpers.utils_helper import datetime_now, datetime_now_iso_format
+from helpers.utils_helper import datetime_now, datetime_now_iso_format, get_timezone
 
 
 def extract_start_date(date_str: str | None) -> datetime.datetime | None:
@@ -80,7 +83,22 @@ class ExhibitionItem(BaseModel):
         match = re.match(r"(\d{4}-\d{2}-\d{2})", self.date)
         if match:
             try:
-                return datetime.datetime.strptime(match.group(1), "%Y-%m-%d")
+                return datetime.datetime.strptime(match.group(1), "%Y-%m-%d").replace(
+                    tzinfo=get_timezone()
+                )
+            except ValueError:
+                return None
+        return None
+
+    def extract_end_date(self) -> datetime.datetime | None:
+        if self.date is None:
+            return None
+        match = re.match(r"(\d{4}-\d{2}-\d{2})", self.date)
+        if match:
+            try:
+                return datetime.datetime.strptime(match.group(2), "%Y-%m-%d").replace(
+                    tzinfo=get_timezone()
+                )
             except ValueError:
                 return None
         return None
@@ -185,6 +203,7 @@ class Information(BaseModel):
     )
     location_code: TaiwanCity | None = Field(default=None, description="ISO 3166/MA")
     venue_type: VenueType | None = Field(default=None, description="場所類型")
+    has_rss: bool | None = Field(default=False)
 
 
 class Exhibition(BaseModel):
@@ -202,7 +221,7 @@ class Exhibition(BaseModel):
     def deduplicate_items(self, items: list[ExhibitionItem]) -> list[ExhibitionItem]:
         return list(dict.fromkeys(items))
 
-    async def save_to_local(
+    async def save_to_json_file(
         self,
         filename: str,
         folder: str | Path | None = Path(__file__).parent.parent.parent.absolute()
@@ -238,6 +257,49 @@ class Exhibition(BaseModel):
             await afp.write(self.model_dump_json())
             await afp.truncate()
             last_week_update.set_after_items(self.items)
+
+    async def save_to_rss(self) -> pathlib.Path:
+        runtime_setting = get_settings()
+        fg = FeedGenerator()
+
+        fg.generator(generator="")
+        fg.title(f"{self.information.fullname} 展覽列表")
+        fg.link(href=self.information.external_link, rel="alternate")
+        fg.description(f"收錄來自 {self.information.fullname} 的最新展覽資訊")
+        fg.language("zh-TW")
+        fg.lastBuildDate(datetime_now())
+
+        for item in self.items:
+            fe = fg.add_entry()
+            fe.id(item.UUID)
+            fe.title(f"{item.title}")
+            fe.link(href=item.source_url)
+            description_txt = []
+            if item.date:
+                description_txt.append(f"日期：{item.date}")
+            if item.address:
+                description_txt.append(f"地址：{item.address}")
+
+            if item.tags:
+                description_txt.append(f"標籤：{', '.join(item.tags)}")
+
+            description = (
+                ("<br/>".join(description_txt) + "<br/>") if description_txt else ""
+            )
+
+            fe.description(description)
+
+            start_date = item.extract_start_date()
+            if start_date:
+                fe.pubDate(start_date.replace(tzinfo=get_timezone()))
+
+            if item.figure:
+                fe.enclosure(item.figure, 0, "image/jpeg")
+
+        this_folder = Path(__file__).parent.parent.parent.absolute() / "data"
+        file_path = this_folder / "rss" / f"{self.information.code_name}.xml"
+        fg.rss_file(str(file_path), pretty=runtime_setting.IS_DEBUG)
+        return file_path
 
 
 class LastWeekUpdateData(BaseModel):
