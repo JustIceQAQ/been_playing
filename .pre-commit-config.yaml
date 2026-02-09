@@ -23,10 +23,6 @@ repos:
         args:
           - --fix
       - id: ruff-format
-  - repo: https://github.com/rohaquinlop/complexipy-pre-commit
-    rev: v4.2.0
-    hooks:
-      - id: complexipy
 
   - repo: https://github.com/rbubley/mirrors-prettier
     rev: v3.4.2
