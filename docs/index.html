@@ -621,11 +621,14 @@
         drawCallback: function (exhibition) {
           if (exhibition.json !== undefined) {
             let exhibitionInformation = exhibition.json["information"];
-
+            let codeName = exhibitionInformation["code_name"];
             let last_update = exhibition.json["last_update"];
             let informationFullName = exhibitionInformation["fullname"];
             let externalLink = exhibitionInformation["external_link"];
             let coordinate = exhibitionInformation["branch_coordinates"];
+
+            let hasRSS = exhibitionInformation["has_rss"];
+            let hasIcs = exhibitionInformation["has_ics"];
             let googleMapPlaceId = null;
             if (coordinate !== null && typeof coordinate === "object") {
               googleMapPlaceId = coordinate["google_map_place_id"];
@@ -643,7 +646,37 @@
                 `<a style="margin-left: 10px" class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=${informationFullName}&query_place_id=${googleMapPlaceId}" target="_blank"><strong><i class="bi bi-pin-map"></i></strong></a>`;
             }
             let shareUrl = `<a style="margin-left: 10px" class="btn btn-secondary" onclick="copyUrlToClipboard('${window.location.origin}${window.location.pathname}?topic=${exhibitionInformation["code_name"]}')" target="_blank"><strong><i class="bi bi-share"></i></strong></a>`;
+
+
+            if (hasRSS!==false){
+                let rssUrl = `<a style="margin-left: 10px" class="btn btn-secondary" href="${SOURCE_ROOT_URL}rss/${codeName}.xml" target="_blank"><strong><i class="bi bi-rss-fill"></i></strong></a>`;
+                externalLinkEle = externalLinkEle + rssUrl
+            }
             externalLinkEle = externalLinkEle + shareUrl;
+
+            if (hasIcs!==false){
+                let rawHttpsIcsUrl = `${SOURCE_ROOT_URL}ics/${codeName}.ics`;
+                let webCalIcsUrl = rawHttpsIcsUrl.replace('https://', 'webcal://');
+                let googleIcsUrl = `https://www.google.com/calendar/render?cid=${webCalIcsUrl}`;
+
+                let dropdown = `<div class="btn-group" style="margin-left: 10px">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-calendar-plus"></i> 訂閱展覽時程
+                        </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="${webCalIcsUrl}" target="_blank">Apple 日曆 / Outlook</a></li>
+                            <li><a class="dropdown-item" href="${googleIcsUrl}" target="_blank">Google 日曆</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="${rawHttpsIcsUrl}" target="_blank">下載 .ics 檔案</a></li>
+                          </ul>
+                        </div>`
+                externalLinkEle = externalLinkEle + dropdown
+
+            }
+
+
+
+
             let opening = "";
             if (exhibition.json["visit"] !== undefined) {
               opening = exhibition.json["visit"]["opening"];
