@@ -84,6 +84,8 @@
     - TW-CYI
         - [嘉義市立博物館](https://museum.chiayi.gov.tw/)
         - [嘉義市立美術館](https://chiayiartmuseum.chiayi.gov.tw/)
+    - TW-TXG
+        - [國立臺灣美術館](https://www.ntmofa.gov.tw/)
     - TW-KHH
         - [高雄市立歷史博物館](https://khm.org.tw/tw)
         - [高雄市立美術館](https://www.kmfa.gov.tw/)

@@ -228,7 +228,7 @@ class Exhibition(BaseModel):
     def deduplicate_items(self, items: list[ExhibitionItem]) -> list[ExhibitionItem]:
         return list(dict.fromkeys(items))
 
-    async def save_to_json_file(
+    async def save_to_json(
         self,
         filename: str,
         folder: str | Path | None = Path(__file__).parent.parent.parent.absolute()
