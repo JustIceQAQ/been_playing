@@ -17,6 +17,7 @@ dependencies = [
     "h11>=0.16.0",
     "html5lib==1.1",
     "httpx>=0.28.1",
+    "icalendar>=6.3.2",
     "justhtml==1.5.0",
     "orjson>=3.10,<4",
     "pydantic==2.12.5",

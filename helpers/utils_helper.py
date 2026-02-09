@@ -11,6 +11,10 @@ def get_timezone():
     return TAIWAN_TIMEZONE
 
 
+def get_timezone_str():
+    return TAIWAN_TIMEZONE.key
+
+
 def datetime_now() -> dt.datetime:
     return dt.datetime.now(tz=TAIWAN_TIMEZONE)
 

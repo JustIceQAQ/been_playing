@@ -23,6 +23,7 @@ class RunnerInit(abc.ABC):
     is_unique: bool = True
     is_sort: bool = True
     output_rss: bool = False
+    output_ics: bool = False
 
     def set_cache_expire(self) -> int | None:
         return None
@@ -156,6 +157,8 @@ class RunnerInit(abc.ABC):
 
             if self.output_rss:
                 self.information_.has_rss = True
+            if self.output_ics:
+                self.information_.has_ics = True
 
             self.response_ = await self.fetch_response()
             self.parsed_ = await self.fetch_parsed()
@@ -191,6 +194,8 @@ class RunnerInit(abc.ABC):
             )
             if self.output_rss:
                 await self.exhibition_.save_to_rss()
+            if self.output_ics:
+                await self.exhibition_.save_to_ics()
             if develop_mode:
                 print(self.exhibition_)
 

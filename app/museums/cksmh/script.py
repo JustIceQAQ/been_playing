@@ -18,6 +18,7 @@ class CKSMHRunner(RunnerInit):
 
     translation = BeautifulSoupTranslation
     use_parse = CKSMHParse
+    output_ics = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()

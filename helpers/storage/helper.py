@@ -9,10 +9,15 @@ from typing import Any
 import aiofiles
 from pydantic import BaseModel, Field, model_validator
 from feedgen.feed import FeedGenerator
-
+from icalendar import Calendar, Event
 from configs.settings import get_settings
 from helpers.storage.symbol import TaiwanCity, VenueType
-from helpers.utils_helper import datetime_now, datetime_now_iso_format, get_timezone
+from helpers.utils_helper import (
+    datetime_now,
+    datetime_now_iso_format,
+    get_timezone,
+    get_timezone_str,
+)
 
 
 def extract_start_date(date_str: str | None) -> datetime.datetime | None:
@@ -93,10 +98,11 @@ class ExhibitionItem(BaseModel):
     def extract_end_date(self) -> datetime.datetime | None:
         if self.date is None:
             return None
-        match = re.match(r"(\d{4}-\d{2}-\d{2})", self.date)
+        match = re.search(r"~\s*(\d{4}-\d{2}-\d{2})", self.date)
         if match:
             try:
-                return datetime.datetime.strptime(match.group(2), "%Y-%m-%d").replace(
+                this_date = match.group(1)
+                return datetime.datetime.strptime(this_date, "%Y-%m-%d").replace(
                     tzinfo=get_timezone()
                 )
             except ValueError:
@@ -204,6 +210,7 @@ class Information(BaseModel):
     location_code: TaiwanCity | None = Field(default=None, description="ISO 3166/MA")
     venue_type: VenueType | None = Field(default=None, description="場所類型")
     has_rss: bool | None = Field(default=False)
+    has_ics: bool | None = Field(default=False)
 
 
 class Exhibition(BaseModel):
@@ -299,6 +306,46 @@ class Exhibition(BaseModel):
         this_folder = Path(__file__).parent.parent.parent.absolute() / "data"
         file_path = this_folder / "rss" / f"{self.information.code_name}.xml"
         fg.rss_file(str(file_path), pretty=runtime_setting.IS_DEBUG)
+        return file_path
+
+    async def save_to_ics(self):
+        cal = Calendar()
+        cal.add("prodid", f"-//Been Been Play Project//{self.information.fullname}//TW")
+        cal.add("version", "2.0")
+        cal.add("x-wr-calname", f"{self.information.fullname} 展覽時程")
+        cal.add("x-wr-timezone", get_timezone_str())
+
+        for item in self.items:
+            start_date = item.extract_start_date()
+            end_date = item.extract_end_date()
+            if not start_date or not end_date:
+                continue
+
+            event = Event()
+            event.add("uid", item.UUID)  # 保持 UID 一致，更新時日曆才不會重複
+            event.add("summary", f"[{self.information.fullname}] {item.title}")
+
+            event.add("dtstart", start_date.date())
+            event.add("dtend", end_date.date())
+
+            description = f"展覽日期：{item.date}\n"
+            if item.address:
+                description += f"地點：{item.address}\n"
+            if item.source_url:
+                description += f"原始連結：{item.source_url}\n"
+            if item.tags:
+                description += f"標籤：{', '.join(item.tags)}"
+
+            event.add("description", description)
+            if item.address:
+                event.add("location", item.address)
+            event.add("dtstamp", datetime_now())
+            cal.add_component(event)
+        this_folder = Path(__file__).parent.parent.parent.absolute() / "data" / "ics"
+        this_folder.mkdir(parents=True, exist_ok=True)
+        file_path = this_folder / f"{self.information.code_name}.ics"
+        async with aiofiles.open(file_path, mode="wb") as afp:
+            await afp.write(cal.to_ical())
         return file_path
 
 
