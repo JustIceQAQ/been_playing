@@ -364,7 +364,7 @@ requires-dist = [
     { name = "html5lib", specifier = "==1.1" },
     { name = "httpx", specifier = ">=0.28.1" },
     { name = "icalendar", specifier = ">=6.3.2" },
-    { name = "justhtml", specifier = "==1.5.0" },
+    { name = "justhtml", specifier = "==1.7.0" },
     { name = "orjson", specifier = ">=3.10,<4" },
     { name = "pydantic", specifier = "==2.12.5" },
     { name = "pydantic-settings", specifier = "==2.12.0" },
@@ -382,7 +382,7 @@ dev = [
     { name = "click", specifier = "==8.3.1" },
     { name = "cookiecutter", specifier = ">=2.6.0" },
     { name = "duckdb", specifier = ">=1.4.4" },
-    { name = "faker", specifier = "==40.1.2" },
+    { name = "faker", specifier = "==40.4.0" },
     { name = "folium", specifier = ">=0.20.0" },
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "notebook", specifier = ">=7.5.3" },
@@ -966,14 +966,14 @@ wheels = [
 
 [[package]]
 name = "faker"
-version = "40.1.2"
+version = "40.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "tzdata", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/5e/77/1c3ff07b6739b9a1d23ca01ec0a90a309a33b78e345a3eb52f9ce9240e36/faker-40.1.2.tar.gz", hash = "sha256:b76a68163aa5f171d260fc24827a8349bc1db672f6a665359e8d0095e8135d30", size = 1949802, upload-time = "2026-01-13T20:51:49.917Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/fc/7e/dccb7013c9f3d66f2e379383600629fec75e4da2698548bdbf2041ea4b51/faker-40.4.0.tar.gz", hash = "sha256:76f8e74a3df28c3e2ec2caafa956e19e37a132fdc7ea067bc41783affcfee364", size = 1952221, upload-time = "2026-02-06T23:30:15.515Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/46/ec/91a434c8a53d40c3598966621dea9c50512bec6ce8e76fa1751015e74cef/faker-40.1.2-py3-none-any.whl", hash = "sha256:93503165c165d330260e4379fd6dc07c94da90c611ed3191a0174d2ab9966a42", size = 1985633, upload-time = "2026-01-13T20:51:47.982Z" },
+    { url = "https://files.pythonhosted.org/packages/ac/63/58efa67c10fb27810d34351b7a10f85f109a7f7e2a07dc3773952459c47b/faker-40.4.0-py3-none-any.whl", hash = "sha256:486d43c67ebbb136bc932406418744f9a0bdf2c07f77703ea78b58b77e9aa443", size = 1987060, upload-time = "2026-02-06T23:30:13.44Z" },
 ]
 
 [[package]]
@@ -1851,11 +1851,11 @@ wheels = [
 
 [[package]]
 name = "justhtml"
-version = "1.5.0"
+version = "1.7.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/2c/48/a924797e4d8557f55ab385428a9362eb1034339c0b8376c694f5b6dceb29/justhtml-1.5.0.tar.gz", hash = "sha256:3bdab5af41845de7c315814e90d729a5632b9c289934795fe32ecc61d4181067", size = 357581, upload-time = "2026-02-01T23:16:47.248Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0b/6c/d5df59bf285b51bddb6029cd6361f0fe56686e38c098f42a5f81d6f5f80d/justhtml-1.7.0.tar.gz", hash = "sha256:46d821171396ab46a0a45cdb420ec4e8fb67ff6c1caab4050519ba9d6751028c", size = 363354, upload-time = "2026-02-08T20:43:28.761Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ed/5e/e78b8281d5e980a6db71cc9e27ed896c85e5b2cf6c9577ba6be1c3fe615a/justhtml-1.5.0-py3-none-any.whl", hash = "sha256:62efb0c641f15371ca67ac677515de65a0ef1042cdb8b5b0848d82eb69960729", size = 126068, upload-time = "2026-02-01T23:16:45.275Z" },
+    { url = "https://files.pythonhosted.org/packages/c0/ae/7ec5f9688127a937e72246632b2add4d4ec4d56c8f2fbed8119a8a607572/justhtml-1.7.0-py3-none-any.whl", hash = "sha256:58bca1fa0619920cd8fcc3dc4352c9ed22af4e388d09db3e6ad02814b61ee6d7", size = 129862, upload-time = "2026-02-08T20:43:26.647Z" },
 ]
 
 [[package]]
@@ -3842,7 +3842,7 @@ wheels = [
 
 [[package]]
 name = "skylos"
-version = "3.2.0"
+version = "3.2.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "flask" },
@@ -3852,15 +3852,16 @@ dependencies = [
     { name = "libcst" },
     { name = "litellm" },
     { name = "networkx" },
+    { name = "pytest" },
     { name = "pyyaml" },
     { name = "requests" },
     { name = "rich" },
     { name = "tree-sitter" },
     { name = "tree-sitter-typescript" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/aa/af/f76933aaba57da52368a86dd55cb5f26f7a9ff6ac40138e665376e3718dc/skylos-3.2.0.tar.gz", hash = "sha256:7a0902e96bf54537671b5d81af014dd0eeec3070128e530cdb26791a98287dac", size = 230478, upload-time = "2026-02-05T15:45:46.029Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/3b/fa/10f03e48d71aa11bbe85568dff341e6bb7ba93897b55fae3d971cea8ea42/skylos-3.2.5.tar.gz", hash = "sha256:84fd326052fbb8dc5fce72fa07ec8ff4064c86376db1110bda246616f137a0cf", size = 247755, upload-time = "2026-02-09T06:40:37.761Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/52/e6/0bf96415913869fb44787c087cc0820f48b9351a96c59ffcb1a9af8a9e46/skylos-3.2.0-py3-none-any.whl", hash = "sha256:5a5d3c16940ad39ec799f667904de6dafd3069b9b8a660f19502d5954342655c", size = 165342, upload-time = "2026-02-05T15:45:44.341Z" },
+    { url = "https://files.pythonhosted.org/packages/71/e4/96f31838ab6dbf05d4663f05f87188809f407600c688744081fe50d7f1cc/skylos-3.2.5-py3-none-any.whl", hash = "sha256:1939ea4cfa91009deeb3de5292ae1711f2110f81dcb4d8a1bd38105678a43600", size = 173940, upload-time = "2026-02-09T06:40:35.615Z" },
 ]
 
 [[package]]
