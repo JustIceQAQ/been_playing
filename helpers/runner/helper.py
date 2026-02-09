@@ -22,6 +22,7 @@ class RunnerInit(abc.ABC):
     use_suffix_item_from_url_auto: bool = False
     is_unique: bool = True
     is_sort: bool = True
+    output_rss: bool = False
 
     def set_cache_expire(self) -> int | None:
         return None
@@ -152,6 +153,10 @@ class RunnerInit(abc.ABC):
             self.cache = cache
             self.image = image
             self.information_ = self.set_information()
+
+            if self.output_rss:
+                self.information_.has_rss = True
+
             self.response_ = await self.fetch_response()
             self.parsed_ = await self.fetch_parsed()
             self.items_ = await self.fetch_items()
@@ -177,13 +182,15 @@ class RunnerInit(abc.ABC):
 
             await self.items_check()
 
-            await self.exhibition_.save_to_local(
+            await self.exhibition_.save_to_json_file(
                 f"{self.information_.code_name}",
                 execution_time=execution_time,
                 is_unique=self.is_unique,
                 is_sort=self.is_sort,
                 prefix=prefix,
             )
+            if self.output_rss:
+                await self.exhibition_.save_to_rss()
             if develop_mode:
                 print(self.exhibition_)
 

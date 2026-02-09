@@ -7,6 +7,10 @@ from aiolimiter import AsyncLimiter
 TAIWAN_TIMEZONE = zoneinfo.ZoneInfo("Asia/Taipei")
 
 
+def get_timezone():
+    return TAIWAN_TIMEZONE
+
+
 def datetime_now() -> dt.datetime:
     return dt.datetime.now(tz=TAIWAN_TIMEZONE)
 
