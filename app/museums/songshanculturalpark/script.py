@@ -19,6 +19,8 @@ class SongShanCulturalParkRunner(RunnerInit):
     translation = BeautifulSoupTranslation
     use_parse = SongShanCulturalParkParse
     use_suffix_item_from_url_auto = True
+    output_ics = True
+    output_rss = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()
