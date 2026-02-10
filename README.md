@@ -99,6 +99,8 @@
         - [高雄市立歷史博物館](https://khm.org.tw/tw)
         - [高雄市立美術館](https://www.kmfa.gov.tw/)
         - [駁2藝術特區](https://pier2.org/)
+    - 臺東縣
+        - [國立臺東生活美學館](https://www.ttcsec.gov.tw/)
 
 [畫廊串聯 – Taipei Art Week 2025 台北藝術週](https://taipeiartweek.tw/zh/taw-galleries/)
 [文化資料開放服務網](https://opendata.culture.tw/frontsite/openData/detail?datasetId=266)
