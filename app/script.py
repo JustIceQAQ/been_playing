@@ -33,6 +33,7 @@ from .museums.museumpost.script import MuseumPostRunner
 from .museums.mwr.script import MwrRunner
 from .museums.n228mm.script import N228MMRunner
 from .museums.ncpi.script import NCPIRunner
+from .museums.nhclac import NhClAcRunner
 from .museums.nhrm.script import NHRMRunner
 from .museums.nmh.script import NmhRunner
 from .museums.nmth import NMTHRunner
@@ -151,6 +152,7 @@ MUSEUMS_RUNNERS = {
     NtcCeramicsRunner,
     NtMofaRunner,
     ChCsEcRunner,
+    NhClAcRunner,
 }
 
 GALLERIES_RUNNERS = {
