@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-16T17:12:47.490783+08:00",
+  "updated": "2026-02-17T01:10:07.808050+08:00",
   "items": [
     {
       "title": "2025國家攝影文化中心典藏展－時代的側寫：攝影觀點的流轉與重構",
@@ -477,6 +477,51 @@
       "source_url": "https://cultureexpress.taipei/Event/C000003?ID=49c41ce7-3e91-4a07-bb67-65e483a50f6f&PageIndex=3&PageType=1",
       "tags": null,
       "UUID": "addfa283089d5698b0a584cc710e4ffc"
+    },
+    {
+      "title": "2025臺灣陶藝獎",
+      "date": "2025-11-28 ~ 2026-04-06",
+      "address": null,
+      "figure": "https://www.ceramics.ntpc.gov.tw/files/file_pool/1/0q020398265290310499/02%e5%8f%b0%e9%99%b6.jpg",
+      "source_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J148497613881029302&sid=0P311547968277719165",
+      "tags": null,
+      "UUID": "a513f316af3b5d6aa95ac6dd49afd8fc"
+    },
+    {
+      "title": "逐岸",
+      "date": "2020-08-08 ~ 2021-09-13",
+      "address": null,
+      "figure": "https://www.chipolin.org/resource/20211115123549510.jpg",
+      "source_url": "https://www.chipolin.org/abovethecoast",
+      "tags": null,
+      "UUID": "f86483addc8450f68028bc93e6fed1c7"
+    },
+    {
+      "title": "2025 金點設計展",
+      "date": "2025-11-25 ~ 2026-04-26",
+      "address": "台灣設計館 01、02、04 展間",
+      "figure": "https://s8d3.turboimg.net/sp/a3bf76f7b582811b20017e4548b808dc/1763967750_ce6114697a5090f2aa49.jpg",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/43ccfd8e-ef4d-464d-91ad-daa74ad4846f",
+      "tags": null,
+      "UUID": "1525f865f0445a8eb48d20306eec6f23"
+    },
+    {
+      "title": "2025臺灣陶藝獎",
+      "date": null,
+      "address": "3樓特展室",
+      "figure": "https://www.ceramics.ntpc.gov.tw/files/file_pool/1/0q020398265290310499/02%e5%8f%b0%e9%99%b6.jpg",
+      "source_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J148497613881029302&sid=0P311547968277719165",
+      "tags": null,
+      "UUID": "a513f316af3b5d6aa95ac6dd49afd8fc"
+    },
+    {
+      "title": "諸羅紀：人在・神在・城就在",
+      "date": "2025-12-12 ~ 2026-05-31",
+      "address": "嘉義市立博物館1樓特展廳",
+      "figure": "https://museum.chiayi.gov.tw/FileDownLoad/Exhibitions/20251203175043626695.png",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=a73704a2-fb75-41bb-bbf6-4406ea882f8d&StartDate=2026%2f02%2f17&EndDate=2026%2f02%2f17&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "90523bf0f852581da401eb5e27147bd5"
     }
   ]
 }
