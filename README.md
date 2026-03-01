@@ -99,6 +99,7 @@
         - [高雄市立歷史博物館](https://khm.org.tw/tw)
         - [高雄市立美術館](https://www.kmfa.gov.tw/)
         - [駁2藝術特區](https://pier2.org/)
+        - [金馬賓館當代美術館](https://www.alien.com.tw/)
     - 臺東縣
         - [國立臺東生活美學館](https://www.ttcsec.gov.tw/)
 

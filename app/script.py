@@ -8,6 +8,7 @@ from .galleries.whitestone import WhiteStoneRunner
 from .galleries.xizhitang import XiZhiTangRunner
 from .galleries.yiyun import YiYunRunner
 from .museums.aaaarchives import AAAArchivesRunner
+from .museums.alien import AlienRunner
 from .museums.artistvillage import ArtistVillageRunner
 from .museums.bopiliao.script import BoPiLiaoRunner
 from .museums.chcsec import ChCsEcRunner
@@ -155,6 +156,7 @@ MUSEUMS_RUNNERS = {
     ChCsEcRunner,
     NhClAcRunner,
     TtCsEcRunner,
+    AlienRunner,
 }
 
 GALLERIES_RUNNERS = {
