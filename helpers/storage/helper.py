@@ -13,8 +13,8 @@ from icalendar import Calendar, Event
 from configs.settings import get_settings
 from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.utils_helper import (
-    datetime_now,
-    datetime_now_iso_format,
+    get_datetime_now,
+    get_datetime_now_iso_format,
     get_timezone,
     get_timezone_str,
 )
@@ -217,7 +217,7 @@ class Exhibition(BaseModel):
     information: Information
     counts: int = 0
     items: list[ExhibitionItem] = Field(default_factory=list)
-    last_update: str = Field(default_factory=datetime_now_iso_format)
+    last_update: str = Field(default_factory=get_datetime_now_iso_format)
     execution_time: float | None = Field(default=None)
 
     @model_validator(mode="after")
@@ -274,7 +274,7 @@ class Exhibition(BaseModel):
         fg.link(href=self.information.external_link, rel="alternate")
         fg.description(f"收錄來自 {self.information.fullname} 的最新展覽資訊")
         fg.language("zh-TW")
-        fg.lastBuildDate(datetime_now())
+        fg.lastBuildDate(get_datetime_now())
 
         for item in self.items:
             fe = fg.add_entry()
@@ -342,7 +342,7 @@ class Exhibition(BaseModel):
             event.add("description", description)
             if item.address:
                 event.add("location", item.address)
-            event.add("dtstamp", datetime_now())
+            event.add("dtstamp", get_datetime_now())
             cal.add_component(event)
         this_folder = Path(__file__).parent.parent.parent.absolute() / "data" / "ics"
         this_folder.mkdir(parents=True, exist_ok=True)
@@ -353,11 +353,11 @@ class Exhibition(BaseModel):
 
 
 class LastWeekUpdateData(BaseModel):
-    updated: datetime.datetime | None = Field(default_factory=datetime_now)
+    updated: datetime.datetime | None = Field(default_factory=get_datetime_now)
     items: list[ExhibitionItem] | None = Field(default_factory=list)
 
     def update_datetime(self):
-        self.updated = datetime_now()
+        self.updated = get_datetime_now()
 
 
 LAST_WEEK_FILE_PATH = (
@@ -389,7 +389,7 @@ class LastWeekUpdate:
                     data = LastWeekUpdateData.model_validate_json(content)
 
         if data.updated is not None:
-            today = datetime_now()
+            today = get_datetime_now()
             if today.isocalendar()[:2] != data.updated.isocalendar()[:2]:
                 data = LastWeekUpdateData()
 

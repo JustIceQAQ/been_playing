@@ -15,34 +15,34 @@ def get_timezone_str():
     return TAIWAN_TIMEZONE.key
 
 
-def datetime_now() -> dt.datetime:
+def get_datetime_now() -> dt.datetime:
     return dt.datetime.now(tz=TAIWAN_TIMEZONE)
 
 
-def date_now() -> dt.date:
-    return datetime_now().date()
+def get_date_now() -> dt.date:
+    return get_datetime_now().date()
 
 
-def date_format_digit() -> str:
+def get_date_format_digit() -> str:
     # YYYYMMDD
-    this_date = datetime_now().date()
+    this_date = get_datetime_now().date()
     return this_date.strftime("%Y%m%d")
 
 
-def this_date_year() -> int:
-    return date_now().year
+def get_this_date_year() -> int:
+    return get_date_now().year
 
 
-def ad_to_roc_era(year: int) -> int:
+def get_ad_to_roc_era(year: int) -> int:
     return year - 1911
 
 
-def roc_era_to_ad(roc_era: int) -> int:
+def get_roc_era_to_ad(roc_era: int) -> int:
     return roc_era + 1911
 
 
-def datetime_now_iso_format() -> str:
-    return datetime_now().isoformat()
+def get_datetime_now_iso_format() -> str:
+    return get_datetime_now().isoformat()
 
 
 def timestamp_to_datetime(timestamp: int) -> dt.datetime:
@@ -50,7 +50,7 @@ def timestamp_to_datetime(timestamp: int) -> dt.datetime:
 
 
 def get_current_and_previous_month():
-    now = datetime_now()
+    now = get_datetime_now()
 
     current_period = (now.year, now.month)
 
@@ -80,4 +80,4 @@ def get_asyncio_rate_limit(concurrent: int, second: int) -> AsyncLimiter:
 
 
 if __name__ == "__main__":
-    print(date_format_digit())
+    print(get_date_format_digit())

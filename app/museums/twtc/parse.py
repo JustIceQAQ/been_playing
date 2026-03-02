@@ -1,7 +1,7 @@
 import bs4
 
 from helpers.parse_helper import ParseInit
-from helpers.utils_helper import datetime_now
+from helpers.utils_helper import get_datetime_now
 
 
 class TwTcParse(ParseInit):
@@ -13,7 +13,7 @@ class TwTcParse(ParseInit):
         return self.item_tds[1].get_text()
 
     def get_date(self, *args, **kwargs) -> str:
-        this_year = kwargs.get("year", datetime_now().year)
+        this_year = kwargs.get("year", get_datetime_now().year)
         raw_date_string = self.item_tds[0].get_text()
         start_date_str, end_date_str = raw_date_string.split("~")
         start_date_month, start_date_day = start_date_str.split("/")

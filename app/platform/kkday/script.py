@@ -18,7 +18,7 @@ from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.storage.symbol import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import month_3, date_format_digit
+from helpers.utils_helper import month_3, get_date_format_digit
 
 
 class KKDayRunner(RunnerInit):
@@ -34,7 +34,7 @@ class KKDayRunner(RunnerInit):
         "count": 10,
         "page": 1,
         "sort": "prec",
-        "sale_date_from": date_format_digit(),
+        "sale_date_from": get_date_format_digit(),
     }
 
     def set_cache_expire(self) -> int | None:
