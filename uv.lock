@@ -369,7 +369,7 @@ requires-dist = [
     { name = "pydantic", specifier = "==2.12.5" },
     { name = "pydantic-settings", specifier = "==2.13.1" },
     { name = "python-dateutil", specifier = "==2.9.0.post0" },
-    { name = "python-dotenv", specifier = "==1.2.1" },
+    { name = "python-dotenv", specifier = "==1.2.2" },
     { name = "retry", specifier = "==0.9.2" },
     { name = "rnet", specifier = "==2.4.2" },
     { name = "sentry-sdk", specifier = "==2.53.0" },
@@ -716,7 +716,7 @@ wheels = [
 
 [[package]]
 name = "cookiecutter"
-version = "2.6.0"
+version = "2.7.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "arrow" },
@@ -728,9 +728,9 @@ dependencies = [
     { name = "requests" },
     { name = "rich" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/52/17/9f2cd228eb949a91915acd38d3eecdc9d8893dde353b603f0db7e9f6be55/cookiecutter-2.6.0.tar.gz", hash = "sha256:db21f8169ea4f4fdc2408d48ca44859349de2647fbe494a9d6c3edfc0542c21c", size = 158767, upload-time = "2024-02-21T18:02:41.949Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/12/f6/c576423931c725c30f3c97e1eb5bdb53419c27ff7538751cfa6ad1a07f82/cookiecutter-2.7.0.tar.gz", hash = "sha256:b0bf50141201ebf022c95e3fa02a760b64e600b3675d6dabf97563425a62a707", size = 142869, upload-time = "2026-03-02T09:14:13.999Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b6/d9/0137658a353168ffa9d0fc14b812d3834772040858ddd1cb6eeaf09f7a44/cookiecutter-2.6.0-py3-none-any.whl", hash = "sha256:a54a8e37995e4ed963b3e82831072d1ad4b005af736bb17b99c2cbd9d41b6e2d", size = 39177, upload-time = "2024-02-21T18:02:39.569Z" },
+    { url = "https://files.pythonhosted.org/packages/94/1f/21c082112609cb53d89f86e34ea4fa160c0a5e63556ffa9495ad70566cf1/cookiecutter-2.7.0-py3-none-any.whl", hash = "sha256:08dc4398e2d8a57771c20703fa10f8d03952e870eddd46bbb832161dc784fa3d", size = 41616, upload-time = "2026-03-02T09:14:12.893Z" },
 ]
 
 [[package]]
@@ -3149,11 +3149,11 @@ wheels = [
 
 [[package]]
 name = "python-dotenv"
-version = "1.2.1"
+version = "1.2.2"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/f0/26/19cadc79a718c5edbec86fd4919a6b6d3f681039a2f6d66d14be94e75fb9/python_dotenv-1.2.1.tar.gz", hash = "sha256:42667e897e16ab0d66954af0e60a9caa94f0fd4ecf3aaf6d2d260eec1aa36ad6", size = 44221, upload-time = "2025-10-26T15:12:10.434Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/82/ed/0301aeeac3e5353ef3d94b6ec08bbcabd04a72018415dcb29e588514bba8/python_dotenv-1.2.2.tar.gz", hash = "sha256:2c371a91fbd7ba082c2c1dc1f8bf89ca22564a087c2c287cd9b662adde799cf3", size = 50135, upload-time = "2026-03-01T16:00:26.196Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/14/1b/a298b06749107c305e1fe0f814c6c74aea7b2f1e10989cb30f544a1b3253/python_dotenv-1.2.1-py3-none-any.whl", hash = "sha256:b81ee9561e9ca4004139c6cbba3a238c32b03e4894671e181b671e8cb8425d61", size = 21230, upload-time = "2025-10-26T15:12:09.109Z" },
+    { url = "https://files.pythonhosted.org/packages/0b/d7/1959b9648791274998a9c3526f6d0ec8fd2233e4d4acce81bbae76b44b2a/python_dotenv-1.2.2-py3-none-any.whl", hash = "sha256:1d8214789a24de455a8b8bd8ae6fe3c6b69a5e3d64aa8a8e5d68e694bbcb285a", size = 22101, upload-time = "2026-03-01T16:00:25.09Z" },
 ]
 
 [[package]]
@@ -3833,7 +3833,7 @@ wheels = [
 
 [[package]]
 name = "skylos"
-version = "3.4.3"
+version = "3.5.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "inquirer" },
@@ -3849,9 +3849,9 @@ dependencies = [
     { name = "tree-sitter" },
     { name = "tree-sitter-typescript" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ec/8b/6b6852832be9bd2235babd7d00c1b83a0871616aa26ddbe92ed236d0fdfd/skylos-3.4.3.tar.gz", hash = "sha256:6e2f9f9b5d4e90ff104fa38828e1605f148307c98011e13c3f70e7b527ce1845", size = 359349, upload-time = "2026-02-25T03:13:48.278Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/f8/f6/3807e995473e5557b19bb0c0566e39e4f7423b0211441507034429b83031/skylos-3.5.2.tar.gz", hash = "sha256:96f19aacc3dca78ee9d78473382a95bf4628b8795e0c95bfa2af4ddae514ebd4", size = 420496, upload-time = "2026-03-01T00:48:24.669Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/cd/75/c4bc4762f0538198447a2cb91d9c009f6d8965c6aedf809be83cbe04ad9e/skylos-3.4.3-py3-none-any.whl", hash = "sha256:929f514efedf9d9378e875de31b4e2683bfa9a6e23941a9ecf0e77c607e0c832", size = 259419, upload-time = "2026-02-25T03:13:44.495Z" },
+    { url = "https://files.pythonhosted.org/packages/e4/dc/d6c527b9c4d3bfbd0832755ad5bd8c6f895f5577d61921c0a2b28d176ffe/skylos-3.5.2-py3-none-any.whl", hash = "sha256:699e007cc1fa4dc96c643f64dc2a4b989e3c71e521f6ef75f269d7b94aa1d9dc", size = 295042, upload-time = "2026-03-01T00:48:20.342Z" },
 ]
 
 [[package]]
