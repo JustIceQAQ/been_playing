@@ -372,7 +372,7 @@ requires-dist = [
     { name = "python-dotenv", specifier = "==1.2.2" },
     { name = "retry", specifier = "==0.9.2" },
     { name = "rnet", specifier = "==2.4.2" },
-    { name = "sentry-sdk", specifier = "==2.53.0" },
+    { name = "sentry-sdk", specifier = "==2.54.0" },
     { name = "urllib3", specifier = ">=2.5.0" },
 ]
 
@@ -460,6 +460,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/c9/aa/4acaf814ff901145da37332e05bb510452ebed97bc9602695059dd46ef39/bs4-0.0.2.tar.gz", hash = "sha256:a48685c58f50fe127722417bae83fe6badf500d54b55f7e39ffe43b798653925", size = 698, upload-time = "2024-01-17T18:15:47.371Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/51/bb/bf7aab772a159614954d84aa832c129624ba6c32faa559dfb200a534e50b/bs4-0.0.2-py2.py3-none-any.whl", hash = "sha256:abf8742c0805ef7f662dce4b51cca104cffe52b835238afc169142ab9b3fbccc", size = 1189, upload-time = "2024-01-17T18:15:48.613Z" },
+]
+
+[[package]]
+name = "ca9"
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/de/1b/3864ee16ea3e3cfc1f30564f7d3ce752bbe6bdacd63a6468bf9d19e15b33/ca9-0.1.1.tar.gz", hash = "sha256:70e8b89081a286474c71a0a5533a7c720ccad8c841e79212ff2e8fde19638cd9", size = 1659814, upload-time = "2026-03-02T00:56:36.762Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a8/a5/ab5d9aa1b9af696ccfc2533dd571ee8f8ad045819eae3b9e2f441be4d455/ca9-0.1.1-py3-none-any.whl", hash = "sha256:a939b940120d99f3c1fb3a8be55095ca9170c0df7a8e2e3b8496e2184bc568e9", size = 30529, upload-time = "2026-03-02T00:56:33.317Z" },
 ]
 
 [[package]]
@@ -3793,15 +3802,15 @@ wheels = [
 
 [[package]]
 name = "sentry-sdk"
-version = "2.53.0"
+version = "2.54.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "certifi" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d3/06/66c8b705179bc54087845f28fd1b72f83751b6e9a195628e2e9af9926505/sentry_sdk-2.53.0.tar.gz", hash = "sha256:6520ef2c4acd823f28efc55e43eb6ce2e6d9f954a95a3aa96b6fd14871e92b77", size = 412369, upload-time = "2026-02-16T11:11:14.743Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c8/e9/2e3a46c304e7fa21eaa70612f60354e32699c7102eb961f67448e222ad7c/sentry_sdk-2.54.0.tar.gz", hash = "sha256:2620c2575128d009b11b20f7feb81e4e4e8ae08ec1d36cbc845705060b45cc1b", size = 413813, upload-time = "2026-03-02T15:12:41.355Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/47/d4/2fdf854bc3b9c7f55219678f812600a20a138af2dd847d99004994eada8f/sentry_sdk-2.53.0-py2.py3-none-any.whl", hash = "sha256:46e1ed8d84355ae54406c924f6b290c3d61f4048625989a723fd622aab838899", size = 437908, upload-time = "2026-02-16T11:11:13.227Z" },
+    { url = "https://files.pythonhosted.org/packages/53/39/be412cc86bc6247b8f69e9383d7950711bd86f8d0a4a4b0fe8fad685bc21/sentry_sdk-2.54.0-py2.py3-none-any.whl", hash = "sha256:fd74e0e281dcda63afff095d23ebcd6e97006102cdc8e78a29f19ecdf796a0de", size = 439198, upload-time = "2026-03-02T15:12:39.546Z" },
 ]
 
 [[package]]
@@ -3833,9 +3842,10 @@ wheels = [
 
 [[package]]
 name = "skylos"
-version = "3.5.2"
+version = "3.5.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
+    { name = "ca9" },
     { name = "inquirer" },
     { name = "keyring" },
     { name = "libcst" },
@@ -3849,9 +3859,9 @@ dependencies = [
     { name = "tree-sitter" },
     { name = "tree-sitter-typescript" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f8/f6/3807e995473e5557b19bb0c0566e39e4f7423b0211441507034429b83031/skylos-3.5.2.tar.gz", hash = "sha256:96f19aacc3dca78ee9d78473382a95bf4628b8795e0c95bfa2af4ddae514ebd4", size = 420496, upload-time = "2026-03-01T00:48:24.669Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/4e/2b/777bb40379714d5d518aef7ed2ab5738f2fa1e60621fe20feb2f461c4b93/skylos-3.5.4.tar.gz", hash = "sha256:b05cdf37fd09027f40cd2377d2ca17d620cdae446ae133c5ca1caf845324d45e", size = 430481, upload-time = "2026-03-03T07:06:04.024Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e4/dc/d6c527b9c4d3bfbd0832755ad5bd8c6f895f5577d61921c0a2b28d176ffe/skylos-3.5.2-py3-none-any.whl", hash = "sha256:699e007cc1fa4dc96c643f64dc2a4b989e3c71e521f6ef75f269d7b94aa1d9dc", size = 295042, upload-time = "2026-03-01T00:48:20.342Z" },
+    { url = "https://files.pythonhosted.org/packages/48/f6/0329741dba5c1de0b4616b23c5cb83753ca64945232a90d1b4bf2ed8e6a7/skylos-3.5.4-py3-none-any.whl", hash = "sha256:0de84e6353f44b364ac9e795b032f05906656cef071c0e78a58b6ef6e7081c60", size = 299921, upload-time = "2026-03-03T07:06:00.402Z" },
 ]
 
 [[package]]
