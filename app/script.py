@@ -29,6 +29,7 @@ from .museums.kishuan import KiShuAnRunner
 from .museums.kmfa import KmFaRunner
 from .museums.kmoa import KmoaRunner
 from .museums.mocataipei.script import MoCaTaipeiRunner
+from .museums.mofia import MofiaRunner
 from .museums.montue import MoNTUERunner
 from .museums.museumpost.script import MuseumPostRunner
 from .museums.mwr.script import MwrRunner
@@ -157,6 +158,7 @@ MUSEUMS_RUNNERS = {
     NhClAcRunner,
     TtCsEcRunner,
     AlienRunner,
+    MofiaRunner,
 }
 
 GALLERIES_RUNNERS = {
