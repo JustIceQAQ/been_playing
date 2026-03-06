@@ -8,8 +8,10 @@ from .galleries.whitestone import WhiteStoneRunner
 from .galleries.xizhitang import XiZhiTangRunner
 from .galleries.yiyun import YiYunRunner
 from .museums.aaaarchives import AAAArchivesRunner
+from .museums.alien import AlienRunner
 from .museums.artistvillage import ArtistVillageRunner
 from .museums.bopiliao.script import BoPiLiaoRunner
+from .museums.chcsec import ChCsEcRunner
 from .museums.chiayiam import ChiayiAMRunner
 from .museums.chiayimm import ChiayiMMRunner
 from .museums.chipolin import ChiPoLinRunner
@@ -32,6 +34,7 @@ from .museums.museumpost.script import MuseumPostRunner
 from .museums.mwr.script import MwrRunner
 from .museums.n228mm.script import N228MMRunner
 from .museums.ncpi.script import NCPIRunner
+from .museums.nhclac import NhClAcRunner
 from .museums.nhrm.script import NHRMRunner
 from .museums.nmh.script import NmhRunner
 from .museums.nmth import NMTHRunner
@@ -60,6 +63,7 @@ from .museums.tmc.script import TmcRunner
 from .museums.tnammuseum import TnamMuseumRunner
 from .museums.tncmmm.script import TncMMMRunner
 from .museums.tncsec import TnCsEcRunner
+from .museums.ttcsec import TtCsEcRunner
 from .museums.twtc.script import TwTcRunner
 from .museums.yatsen import YatsenRunner
 from .museums.yochangart import YoChangArtRunner
@@ -149,6 +153,10 @@ MUSEUMS_RUNNERS = {
     ChiayiAMRunner,
     NtcCeramicsRunner,
     NtMofaRunner,
+    ChCsEcRunner,
+    NhClAcRunner,
+    TtCsEcRunner,
+    AlienRunner,
 }
 
 GALLERIES_RUNNERS = {

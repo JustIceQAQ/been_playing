@@ -14,7 +14,7 @@ from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import date_now, month_3
+from helpers.utils_helper import get_date_now, month_3
 
 
 class TwTcRunner(RunnerInit):
@@ -110,7 +110,7 @@ class TwTcRunner(RunnerInit):
                 exhibition_items.append(data)
 
         ok_items = []
-        now_date = date_now()
+        now_date = get_date_now()
         for item in exhibition_items:
             end_date_string = item.date.split("~")[-1].strip()
             end_date = datetime.datetime.strptime(end_date_string, "%Y-%m-%d").date()

@@ -3,7 +3,7 @@ from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 import bs4
 
 from helpers.parse_helper import ParseInit
-from helpers.utils_helper import roc_era_to_ad
+from helpers.utils_helper import get_roc_era_to_ad
 
 
 class NpmRowParse(ParseInit):
@@ -166,7 +166,7 @@ class SouthNpmParse(ParseInit):
 
     def t(self, date_str: str) -> str:
         y, m, d = date_str.split("-")
-        n_y = roc_era_to_ad(int(y))
+        n_y = get_roc_era_to_ad(int(y))
         return f"{n_y}-{m}-{d}"
 
     def get_title(self, *args, **kwargs) -> str:

@@ -16,12 +16,12 @@ from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.storage.symbol import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import datetime_now, month_3
+from helpers.utils_helper import get_datetime_now, month_3
 from configs.settings import get_settings
 
 
 def within_two_months() -> tuple[dt.datetime, dt.datetime]:
-    today = datetime_now()
+    today = get_datetime_now()
     today_add_2_months = (today + relativedelta(months=2)) - dt.timedelta(days=1)
     return today, today_add_2_months
 

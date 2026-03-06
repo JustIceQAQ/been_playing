@@ -14,7 +14,7 @@ from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, ExhibitionItem, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import datetime_now, month_3, get_asyncio_rate_limit
+from helpers.utils_helper import get_datetime_now, month_3, get_asyncio_rate_limit
 
 
 class NtSecRunner(RunnerInit):
@@ -42,7 +42,7 @@ class NtSecRunner(RunnerInit):
 
     async def fetch_response(self):
         headers = self.get_this_headers()
-        s_datetime = datetime_now()
+        s_datetime = get_datetime_now()
         s_date = s_datetime.strftime("%Y-%m-%d")
         e_datetime = s_datetime + relativedelta(months=2)
         e_date = e_datetime.strftime("%Y-%m-%d")

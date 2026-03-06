@@ -12,7 +12,7 @@ from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import ad_to_roc_era, date_now, month_3
+from helpers.utils_helper import get_ad_to_roc_era, get_date_now, month_3
 
 
 class TaipeiExPoParkRunner(RunnerInit):
@@ -50,9 +50,9 @@ class TaipeiExPoParkRunner(RunnerInit):
             "_Query": str(uuid.uuid4()),
             "Create": 1,
         }
-        this_date = date_now()
+        this_date = get_date_now()
         this_date_format = this_date.strftime("%Y/%m/%d")
-        this_roc_era = ad_to_roc_era(this_date.year)
+        this_roc_era = get_ad_to_roc_era(this_date.year)
         this_date_format = this_date_format.replace(
             str(this_date.year), str(this_roc_era)
         )

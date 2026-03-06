@@ -23,7 +23,7 @@
 
 - 藝廊
 
-    - TW-TPE
+    - 臺北市
         - [若木藝廊](https://www.ruomugallery.com/)
         - [首都藝術中心](https://capitalart.com.tw/)
         - [異雲書屋](https://www.yiyun-art.com/)
@@ -35,7 +35,10 @@
         - [索卡藝術中心](https://www.soka-art.com/tr)
 
 - 博物館、美術館、園區
-    - TW-TPE
+    - 基隆市
+        - [基隆美術館](https://kmoa.klcg.gov.tw/)
+        - [陽明海洋文化藝術館](https://www.ocam.org.tw/tw/Index/OCAM)
+    - 臺北市
         - [中正紀念堂](https://www.cksmh.gov.tw/activitysoonlist_369.html)
         - [臺灣當代文化實驗場 C-LAB](https://clab.org.tw/events/)
         - [富邦美術館](https://www.fubonartmuseum.org/Default)
@@ -71,30 +74,34 @@
         - [有章藝術博物館](https://museum.ntua.edu.tw)
         - [寶藏巖國際藝術村](https://www.artistvillage.org/event.php)
         - [紀州庵文學森林](https://kishuan.org.tw/activity.htm)
-    - TW-KEE
-        - [基隆美術館](https://kmoa.klcg.gov.tw/)
-        - [陽明海洋文化藝術館](https://www.ocam.org.tw/tw/Index/OCAM)
-    - TW-NWT
+    - 新北市
         - [新北市美術館](https://ntcart.museum/exhibition)
         - [世界宗教博物館](https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070)
         - [板橋435藝文特區](https://www.435.culture.ntpc.gov.tw/)
         - [齊柏林空間](https://www.chipolin.org/)
         - [新北市立鶯歌陶瓷博物館](https://www.ceramics.ntpc.gov.tw/)
-    - TW-CYI
+    - 新竹市
+        - [國立新竹生活美學館](https://www.nhclac.gov.tw/)
+    - 臺中市
+        - [國立臺灣美術館](https://www.ntmofa.gov.tw/)
+    - 彰化縣
+        - [國立彰化生活美學館](https://www.chcsec.gov.tw/)
+    - 嘉義市
         - [嘉義市立博物館](https://museum.chiayi.gov.tw/)
         - [嘉義市立美術館](https://chiayiartmuseum.chiayi.gov.tw/)
-    - TW-TXG
-        - [國立臺灣美術館](https://www.ntmofa.gov.tw/)
-    - TW-KHH
-        - [高雄市立歷史博物館](https://khm.org.tw/tw)
-        - [高雄市立美術館](https://www.kmfa.gov.tw/)
-        - [駁2藝術特區](https://pier2.org/)
-    - TW-TNN
+    - 臺南市
         - [臺南市立博物館](https://tcm.tainan.gov.tw/)
         - [臺南市美術館](https://www.tnam.museum/)
         - [國立臺南生活美學館](https://www.tncsec.gov.tw)
         - [國立臺灣文學館](https://www.nmtl.gov.tw/)
         - [國立臺灣歷史博物館](https://www.nmth.gov.tw/)
+    - 高雄市
+        - [高雄市立歷史博物館](https://khm.org.tw/tw)
+        - [高雄市立美術館](https://www.kmfa.gov.tw/)
+        - [駁2藝術特區](https://pier2.org/)
+        - [金馬賓館當代美術館](https://www.alien.com.tw/)
+    - 臺東縣
+        - [國立臺東生活美學館](https://www.ttcsec.gov.tw/)
 
 [畫廊串聯 – Taipei Art Week 2025 台北藝術週](https://taipeiartweek.tw/zh/taw-galleries/)
 [文化資料開放服務網](https://opendata.culture.tw/frontsite/openData/detail?datasetId=266)
