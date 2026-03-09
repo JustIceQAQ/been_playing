@@ -21,6 +21,21 @@ from helpers.image.none.helper import NoneImage
     {% set venue_type = "VenueType.PLATFORM" %}
 {% endif %}
 
+
+
+{%  set crawler_fetch_type = "" %}
+{% if cookiecutter.crawler == "niquests" %}
+from helpers.crawler.niquests.helper import NiquestsAsyncSession
+{% set crawler_fetch_type = "NiquestsAsyncSession" %}
+{% elif cookiecutter.crawler == "httpx" %}
+from helpers.crawler.httpx.helper import HttpxAsyncClient
+{% set crawler_fetch_type = "HttpxAsyncClient" %}
+{% endif %}
+
+
+
+
+
 {% set translation_type = "" %}
 {% set fetch_parsed_return_type = "" %}
 
@@ -73,7 +88,7 @@ class {{cookiecutter.script_code}}Runner(RunnerInit):
 
     async def fetch_response(self):
         headers = generate_headers()
-        async with HttpxAsyncClient(headers=headers) as client:
+        async with {{ crawler_fetch_type }}(headers=headers) as client:
             response = await client.get()
         return response.text
 
