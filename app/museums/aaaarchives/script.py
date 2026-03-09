@@ -1,22 +1,21 @@
 import asyncio
 import secrets
 
-from justhtml import JustHTML
-
+from selectolax.lexbor import LexborHTMLParser
 from app.museums.aaaarchives.parse import AAAArchivesParse
+from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
-from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.translation.justhtml.helper import JustHTMLTranslation
+from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
 
 class AAAArchivesRunner(RunnerInit):
-    translation = JustHTMLTranslation
+    translation = SelectolaxTranslation
     use_parse = AAAArchivesParse
 
     def set_cache_expire(self) -> int | None:
@@ -52,15 +51,14 @@ class AAAArchivesRunner(RunnerInit):
             "nowPage": 1,
             "pageSize": 60,
         }
-        async with HttpxAsyncClient(
-            headers=headers, cookies=cookies, verify=False
-        ) as client:
+        async with NiquestsAsyncSession(headers=headers) as client:
+            client.cookies.update(cookies)
             response = await client.post(url, data=data)
         return response.text
 
     async def fetch_parsed(self):
-        parsed: JustHTML = await super().fetch_parsed()
-        li = parsed.query("div.actList > ul > li")
+        parsed: LexborHTMLParser = await super().fetch_parsed()
+        li = parsed.css("div.actList > ul > li")
         return li
 
 
