@@ -1,20 +1,19 @@
 import asyncio
 
-
 from app.museums.kishuan.parse import KiShuAnParse
+from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
-from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.translation.justhtml import JustHTMLTranslation, JustHTML
+from helpers.translation.selectolax import SelectolaxTranslation, LexborHTMLParser
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
 
 class KiShuAnRunner(RunnerInit):
-    translation = JustHTMLTranslation
+    translation = SelectolaxTranslation
     use_parse = KiShuAnParse
     is_sort = False
 
@@ -39,13 +38,13 @@ class KiShuAnRunner(RunnerInit):
             referer="https://kishuan.org.tw/activity.htm",
             need_upgrade_insecure_requests=True,
         )
-        async with HttpxAsyncClient(headers=headers) as client:
+        async with NiquestsAsyncSession(headers=headers) as client:
             response = await client.get("https://kishuan.org.tw/activity.htm")
         return response.text
 
     async def fetch_parsed(self):
-        parsed: JustHTML = await super().fetch_parsed()
-        qq = parsed.query("div.activityList > div.wrap")
+        parsed: LexborHTMLParser = await super().fetch_parsed()
+        qq = parsed.css("div.activityList > div.wrap")
         return qq
 
 

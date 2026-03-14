@@ -1,10 +1,21 @@
-import bs4
+
 
 from helpers.parse_helper import ParseInit
 
+{% set item_type = "" %}
+
+{% if cookiecutter.translation == "Selectolax" %}
+from selectolax.lexbor import LexborNode
+{% set item_type = "LexborNode" %}
+{% elif cookiecutter.translation == "BeautifulSoup4" %}
+import bs4
+    {% set item_type = "bs4.element.Tag" %}
+{% elif cookiecutter.translation == "Json" %}
+    {% set item_type = "dict" %}
+{% endif %}
 
 class {{cookiecutter.script_code}}Parse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: {{ item_type }}):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:

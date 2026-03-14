@@ -38,15 +38,25 @@ class NmhRunner(RunnerInit):
             host="www.nmh.gov.tw",
             referer="https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323",
         )
+
+        url_template = "https://www.nmh.gov.tw/News_Actives_photo.aspx?n={n}&sms=13323"
+        numbers = (
+            6984,
+            6983,
+        )
+
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323"
+            responses = await asyncio.gather(
+                *[client.get(url_template.format(n=number)) for number in numbers]
             )
-        return response.text
+        return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
-        return parsed.select("div.area-figure.page-figure")
+        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        datas = []
+        for p in parsed:
+            datas.extend(p.select("div.area-figure.page-figure"))
+        return datas
 
 
 async def main():

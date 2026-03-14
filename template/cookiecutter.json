@@ -5,5 +5,14 @@
     "museums",
     "platform",
     "galleries"
+  ],
+  "crawler": [
+    "niquests",
+    "httpx"
+  ],
+  "translation": [
+    "Selectolax",
+    "BeautifulSoup4",
+    "Json"
   ]
 }

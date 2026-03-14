@@ -2,7 +2,11 @@ import secrets
 
 from fake_useragent import UserAgent
 
-UA = UserAgent(browsers="chrome", os=["windows", "macos"], platforms="pc")
+UA = UserAgent(
+    browsers="Firefox",
+    os=["Windows", "Linux", "Ubuntu", "Chrome OS", "Mac OS X"],
+    platforms="desktop",
+)
 
 
 def generate_headers(
@@ -16,7 +20,7 @@ def generate_headers(
     content_type_use_json: bool | None = False,
 ) -> dict[str, str]:
     this_header = {
-        "user-agent": UA.random,
+        "user-agent": UA.firefox,
         "dnt": "1",
     }
     if not_use_user_agent:
