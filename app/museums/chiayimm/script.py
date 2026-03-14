@@ -39,12 +39,14 @@ class ChiayiMMRunner(RunnerInit):
             host="museum.chiayi.gov.tw",
         )
         cookies = generate_cookies(need_asp_net_session_id=True)
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             urls = [
                 "https://museum.chiayi.gov.tw/ExhibitionListC003310.aspx?appname=ExhibitionListC003310&SearchAdvanced=true",
                 "https://museum.chiayi.gov.tw/ExhibitionListC003310.aspx?appname=ExhibitionListC003320&SearchAdvanced=true",
             ]
-            responses = await asyncio.gather(*[client.get(url) for url in urls])
+            responses = await asyncio.gather(
+                *[client.get(url, cookies=cookies) for url in urls]
+            )
         return [response.text for response in responses]
 
     async def fetch_parsed(self):

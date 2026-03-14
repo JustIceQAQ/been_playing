@@ -38,9 +38,9 @@ class N228MMRunner(RunnerInit):
 
     async def fetch_response(self):
         headers = generate_headers()
-        async with HttpxAsyncClient() as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             response_1 = await client.get(
-                "https://www.228.org.tw/exhibitionsnew", headers=headers
+                "https://www.228.org.tw/exhibitionsnew",
             )
             parsed = bs4.BeautifulSoup(response_1.text, "html5lib")
             wix_viewer_model = parsed.select_one("#wix-viewer-model").string

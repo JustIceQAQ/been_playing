@@ -36,9 +36,10 @@ class ChCsEcRunner(RunnerInit):
     async def fetch_response(self):
         headers = generate_headers()
         cookies = generate_cookies(need_asp_net_session_id=True)
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
-                "https://www.chcsec.gov.tw/News_actives.aspx?n=4020&sms=13269"
+                "https://www.chcsec.gov.tw/News_actives.aspx?n=4020&sms=13269",
+                cookies=cookies,
             )
         return response.text
 

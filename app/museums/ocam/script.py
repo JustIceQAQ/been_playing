@@ -39,8 +39,8 @@ class OCAMRunner(RunnerInit):
         )
         cookies = generate_cookies(need_phpsessid=True)
         url = "https://www.ymculture.org.tw/tw/Exhibition/OCAM#"
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
-            response = await client.get(url)
+        async with HttpxAsyncClient(headers=headers) as client:
+            response = await client.get(url, cookies=cookies)
             response.raise_for_status()
         return response.text
 

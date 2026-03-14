@@ -61,11 +61,12 @@ class TaipeiExPoParkRunner(RunnerInit):
             "jNewsModule_field_SDate4": this_date_format,
             "jNewsModule_BtnSend": "送出查詢",
         }
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             response = await client.post(
                 "https://www.expopark.taipei/News_Exhibition.aspx",
                 params=params,
                 data=data,
+                cookies=cookies,
             )
             response.raise_for_status()
         return response.text

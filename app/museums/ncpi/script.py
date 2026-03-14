@@ -36,13 +36,15 @@ class NCPIRunner(RunnerInit):
     async def fetch_response(self):
         headers = generate_headers(host="ncpi.ntmofa.gov.tw")
         cookies = generate_cookies(need_asp_net_session_id=True)
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             tasks = [
                 client.get(
-                    "https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?IsF=1&n=8005&sms=15632"
+                    "https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?IsF=1&n=8005&sms=15632",
+                    cookies=cookies,
                 ),
                 client.get(
-                    "https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?n=8006&sms=15632"
+                    "https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?n=8006&sms=15632",
+                    cookies=cookies,
                 ),
             ]
 

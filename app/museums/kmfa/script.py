@@ -34,8 +34,10 @@ class KmFaRunner(RunnerInit):
             venue_type=VenueType.MUSEUM,
         )
 
-    async def sub_response(self, client: httpx.AsyncClient, url: str) -> str:
-        response = await client.get(url)
+    async def sub_response(
+        self, client: httpx.AsyncClient, url: str, *args, **kwargs
+    ) -> str:
+        response = await client.get(url, *args, **kwargs)
         response.raise_for_status()
         return response.text
 
@@ -48,9 +50,9 @@ class KmFaRunner(RunnerInit):
             "https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",
             "https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=2",
         ]
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             responses = await asyncio.gather(
-                *[self.sub_response(client, url) for url in urls]
+                *[self.sub_response(client, url, cookies=cookies) for url in urls]
             )
         return responses
 

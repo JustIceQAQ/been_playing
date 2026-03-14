@@ -42,11 +42,12 @@ class TFamRunner(RunnerInit):
             },
         )
         cookies = generate_cookies(need_asp_net_session_id=True)
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             tasks = [
                 client.post(
                     "https://www.tfam.museum/ashx/Exhibition.ashx?ddlLang=zh-tw",
                     json={"JJMethod": "GetEx", "Type": str(i)},
+                    cookies=cookies,
                 )
                 for i in range(1, 3)
             ]

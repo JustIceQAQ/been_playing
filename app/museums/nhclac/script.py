@@ -36,9 +36,9 @@ class NhClAcRunner(RunnerInit):
     async def fetch_response(self):
         headers = generate_headers()
         cookies = generate_cookies(need_asp_net_session_id=True)
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
-                "https://www.nhclac.gov.tw/News_actives.aspx?n=5282"
+                "https://www.nhclac.gov.tw/News_actives.aspx?n=5282", cookies=cookies
             )
         return response.text
 

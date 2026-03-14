@@ -67,9 +67,11 @@ class TmcRunner(RunnerInit):
         cookie_jar.set("ci_session", secrets.token_hex(8), domain="www.tmc.taipei")
         target_url = "https://www.tmc.taipei/tw/blog/show"
         responses_text = []
-        async with HttpxAsyncClient(headers=headers, cookies=cookie_jar) as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
-                target_url, params={"filter": self.create_filter_base64_string(1)}
+                target_url,
+                params={"filter": self.create_filter_base64_string(1)},
+                cookies=cookie_jar,
             )
             response.raise_for_status()
             responses_text.append(response.text)
@@ -86,6 +88,7 @@ class TmcRunner(RunnerInit):
                     sub_response = await client.get(
                         target_url,
                         params={"filter": self.create_filter_base64_string(n)},
+                        cookies=cookie_jar,
                     )
                     sub_response.raise_for_status()
                     responses_text.append(sub_response.text)

@@ -29,10 +29,9 @@ class IBonRunner(RunnerInit):
         headers = generate_headers()
         headers["Referer"] = "https://tour.ibon.com.tw/home/search?category=exhibition"
 
-        async with HttpxAsyncClient() as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
                 "https://tour.ibon.com.tw/api/public/event/list?page=1&limit=100&category=5fe4480d3ff56763f1bb99ba",
-                headers=headers,
             )
         return response.json()
 

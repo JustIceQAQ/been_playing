@@ -44,20 +44,19 @@ class CLabRunner(RunnerInit):
             "&filter_year={filter_year}"
             "&filter_month={filter_month}"
         )
+        headers = generate_headers()
 
-        async with HttpxAsyncClient() as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             responses = await asyncio.gather(
                 client.get(
                     target_url_template.format(
                         filter_year=current_period[0], filter_month=current_period[1]
                     ),
-                    headers=generate_headers(),
                 ),
                 client.get(
                     target_url_template.format(
                         filter_year=previous_period[0], filter_month=previous_period[1]
                     ),
-                    headers=generate_headers(),
                 ),
             )
         return [response.text for response in responses]

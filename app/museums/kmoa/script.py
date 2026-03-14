@@ -35,14 +35,17 @@ class KmoaRunner(RunnerInit):
         )
 
     async def fetch_sub_response(
-        self, client: httpx.AsyncClient, context: str
+        self, client: httpx.AsyncClient, context: str, *args, **kwargs
     ) -> list[str]:
         p = BeautifulSoupTranslation().translation_to_object(context)
         div = p.find("div", {"class": "group-list page-block PhotoList"})
         if div is None:
             return []
         lis = div.find_all("a")
-        tasks = [client.get("https://kmoa.klcg.gov.tw/" + a["href"]) for a in lis]
+        tasks = [
+            client.get("https://kmoa.klcg.gov.tw/" + a["href"], *args, **kwargs)
+            for a in lis
+        ]
         responses = await asyncio.gather(*tasks)
         responses_text = [response.text for response in responses]
         ok_responses_text = []
@@ -62,10 +65,12 @@ class KmoaRunner(RunnerInit):
             **generate_cookies(need_asp_net_session_id=True),
             "font-size-": "medium",
         }
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             url = "https://kmoa.klcg.gov.tw/News_Photo.aspx?n=7484&sms=12489"
             response = await client.get(url)
-            responses_data = await self.fetch_sub_response(client, response.text)
+            responses_data = await self.fetch_sub_response(
+                client, response.text, cookies=cookies
+            )
 
         return responses_data
 
