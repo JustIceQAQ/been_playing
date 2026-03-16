@@ -357,7 +357,7 @@ requires-dist = [
     { name = "anyio", specifier = ">=4.4.0" },
     { name = "brotlicffi", specifier = ">=1.2.0.1" },
     { name = "bs4", specifier = "==0.0.2" },
-    { name = "croniter", specifier = "==6.0.0" },
+    { name = "croniter", specifier = "==6.2.2" },
     { name = "cssutils", specifier = "==2.11.1" },
     { name = "dill", specifier = "==0.4.1" },
     { name = "diskcache", specifier = "==5.6.3" },
@@ -386,7 +386,7 @@ dev = [
     { name = "click", specifier = "==8.3.1" },
     { name = "cookiecutter", specifier = ">=2.6.0" },
     { name = "duckdb", specifier = ">=1.4.4" },
-    { name = "faker", specifier = "==40.8.0" },
+    { name = "faker", specifier = "==40.11.0" },
     { name = "folium", specifier = ">=0.20.0" },
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "notebook", specifier = ">=7.5.3" },
@@ -778,15 +778,14 @@ wheels = [
 
 [[package]]
 name = "croniter"
-version = "6.0.0"
+version = "6.2.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "python-dateutil" },
-    { name = "pytz" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ad/2f/44d1ae153a0e27be56be43465e5cb39b9650c781e001e7864389deb25090/croniter-6.0.0.tar.gz", hash = "sha256:37c504b313956114a983ece2c2b07790b1f1094fe9d81cc94739214748255577", size = 64481, upload-time = "2024-12-17T17:17:47.32Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/df/de/5832661ed55107b8a09af3f0a2e71e0957226a59eb1dcf0a445cce6daf20/croniter-6.2.2.tar.gz", hash = "sha256:ba60832a5ec8e12e51b8691c3309a113d1cf6526bdf1a48150ce8ec7a532d0ab", size = 113762, upload-time = "2026-03-15T08:43:48.112Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/07/4b/290b4c3efd6417a8b0c284896de19b1d5855e6dbdb97d2a35e68fa42de85/croniter-6.0.0-py2.py3-none-any.whl", hash = "sha256:2f878c3856f17896979b2a4379ba1f09c83e374931ea15cc835c5dd2eee9b368", size = 25468, upload-time = "2024-12-17T17:17:45.359Z" },
+    { url = "https://files.pythonhosted.org/packages/d0/39/783980e78cb92c2d7bdb1fc7dbc86e94ccc6d58224d76a7f1f51b6c51e30/croniter-6.2.2-py3-none-any.whl", hash = "sha256:a5d17b1060974d36251ea4faf388233eca8acf0d09cbd92d35f4c4ac8f279960", size = 45422, upload-time = "2026-03-15T08:43:46.626Z" },
 ]
 
 [[package]]
@@ -1009,14 +1008,14 @@ wheels = [
 
 [[package]]
 name = "faker"
-version = "40.8.0"
+version = "40.11.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "tzdata", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/70/03/14428edc541467c460d363f6e94bee9acc271f3e62470630fc9a647d0cf2/faker-40.8.0.tar.gz", hash = "sha256:936a3c9be6c004433f20aa4d99095df5dec82b8c7ad07459756041f8c1728875", size = 1956493, upload-time = "2026-03-04T16:18:48.161Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/94/dc/b68e5378e5a7db0ab776efcdd53b6fe374b29d703e156fd5bb4c5437069e/faker-40.11.0.tar.gz", hash = "sha256:7c419299103b13126bd02ec14bd2b47b946edb5a5eedf305e66a193b25f9a734", size = 1957570, upload-time = "2026-03-13T14:36:11.844Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/4c/3b/c6348f1e285e75b069085b18110a4e6325b763a5d35d5e204356fc7c20b3/faker-40.8.0-py3-none-any.whl", hash = "sha256:eb21bdba18f7a8375382eb94fb436fce07046893dc94cb20817d28deb0c3d579", size = 1989124, upload-time = "2026-03-04T16:18:46.45Z" },
+    { url = "https://files.pythonhosted.org/packages/b1/fa/a86c6ba66f0308c95b9288b1e3eaccd934b545646f63494a86f1ec2f8c8e/faker-40.11.0-py3-none-any.whl", hash = "sha256:0e9816c950528d2a37d74863f3ef389ea9a3a936cbcde0b11b8499942e25bf90", size = 1989457, upload-time = "2026-03-13T14:36:09.792Z" },
 ]
 
 [[package]]
@@ -3346,15 +3345,6 @@ wheels = [
 ]
 
 [[package]]
-name = "pytz"
-version = "2025.2"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/f8/bf/abbd3cdfb8fbc7fb3d4d38d320f2441b1e7cbe29be4f23797b4a2b5d8aac/pytz-2025.2.tar.gz", hash = "sha256:360b9e3dbb49a209c21ad61809c7fb453643e048b38924c765813546746e81c3", size = 320884, upload-time = "2025-03-25T02:25:00.538Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/81/c4/34e93fe5f5429d7570ec1fa436f1986fb1f00c3e0f43a589fe2bbcd22c3f/pytz-2025.2-py2.py3-none-any.whl", hash = "sha256:5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00", size = 509225, upload-time = "2025-03-25T02:24:58.468Z" },
-]
-
-[[package]]
 name = "pywin32"
 version = "311"
 source = { registry = "https://pypi.org/simple" }
@@ -4117,7 +4107,7 @@ wheels = [
 
 [[package]]
 name = "skylos"
-version = "3.5.10"
+version = "4.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ca9" },
@@ -4135,9 +4125,9 @@ dependencies = [
     { name = "tree-sitter" },
     { name = "tree-sitter-typescript" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e1/6a/b8d4bd31e4a87af0b053cfde77de71fb6f688b2518a4f776fb59de80f1cc/skylos-3.5.10.tar.gz", hash = "sha256:fc369d51ba27f8bc9e187c2fe1573478b7bcd26624d99fa89c233bc94acc8582", size = 507729, upload-time = "2026-03-11T00:36:31.363Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0f/c0/7154faf2935372a6eeeb5882ba9342dc6f3398a6d486b93368b9b148a50a/skylos-4.0.0.tar.gz", hash = "sha256:6345ded3f5517d998a54d993086efc2059537982872e61b49f20f6aaacd6c5aa", size = 555215, upload-time = "2026-03-16T05:37:43.195Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/8a/0c/aa38812da7ee1ee3fe98cfd3374ce20acd42cc640a2d9730e48a6b376253/skylos-3.5.10-py3-none-any.whl", hash = "sha256:c3fdee6d03ffa719d2c31e6b860458d5095b4939b25c456e065d4ae183191add", size = 366669, upload-time = "2026-03-11T00:36:29.054Z" },
+    { url = "https://files.pythonhosted.org/packages/19/6b/2ca5bb617f4d0cbccbdbcbfb6e4f073b128da344eb3a9ec5b2e80f522682/skylos-4.0.0-py3-none-any.whl", hash = "sha256:ac0b58b1cfab7d149721ba69f1eb15260527be95bcaa359e7881d66cde6fe7c1", size = 396611, upload-time = "2026-03-16T05:37:41.102Z" },
 ]
 
 [[package]]
