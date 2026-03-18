@@ -7,6 +7,7 @@ dependencies = [
     "aiofiles>=25.1.0",
     "aiolimiter==1.2.1",
     "anyio>=4.4.0",
+    "brotlicffi>=1.2.0.1",
     "bs4==0.0.2",
     "croniter==6.0.0",
     "cssutils==2.11.1",

@@ -37,8 +37,10 @@ class XiZhiTangRunner(RunnerInit):
     async def fetch_response(self):
         headers = generate_headers(host="www.xizhitang.com.tw")
         cookies = generate_cookies(need_phpsessid=True)
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
-            response = await client.get("https://www.xizhitang.com.tw/tidbits")
+        async with HttpxAsyncClient(headers=headers) as client:
+            response = await client.get(
+                "https://www.xizhitang.com.tw/tidbits", cookies=cookies
+            )
         return response.text
 
     async def fetch_parsed(self):

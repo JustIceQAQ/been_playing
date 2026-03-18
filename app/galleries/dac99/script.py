@@ -36,8 +36,10 @@ class Dac99Runner(RunnerInit):
     async def fetch_response(self):
         headers = generate_headers()
         cookies = generate_cookies(need_phpsessid=True)
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
-            response = await client.get("https://99dac.com/exhibition.php")
+        async with HttpxAsyncClient(headers=headers) as client:
+            response = await client.get(
+                "https://99dac.com/exhibition.php", cookies=cookies
+            )
         return response.text
 
     async def fetch_parsed(self):

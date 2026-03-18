@@ -37,8 +37,10 @@ class MindSetArtRunner(RunnerInit):
     async def fetch_response(self):
         headers = generate_headers(host="www.art-msac.com")
         cookies = generate_cookies(other_cookies={"splash_screen_disabled": "true"})
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
-            response = await client.get("https://www.art-msac.com/exhibitions/")
+        async with HttpxAsyncClient(headers=headers) as client:
+            response = await client.get(
+                "https://www.art-msac.com/exhibitions/", cookies=cookies
+            )
         return response.text
 
     async def fetch_parsed(self):

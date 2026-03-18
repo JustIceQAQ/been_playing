@@ -16,7 +16,7 @@ from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
 
-class NsTmRunner(RunnerInit):
+class NsTmRunner(RunnerInit):  # TODO: 壞掉中...
     translation = BeautifulSoupTranslation
     use_parse = NsTmParse
 

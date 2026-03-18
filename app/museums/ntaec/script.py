@@ -39,9 +39,11 @@ class NTAECRunner(RunnerInit):
         page_no = 1
         url = "https://www.arte.gov.tw/pro1_exh_nowlist.asp?PageNo=1"
         responses = []
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             for n in range(3):
-                response = await client.get(url, params={"PageNo": page_no + n})
+                response = await client.get(
+                    url, params={"PageNo": page_no + n}, cookies=cookies
+                )
                 responses.append(response.text)
         return responses
 

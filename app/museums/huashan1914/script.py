@@ -41,11 +41,10 @@ class HuaShan1914Runner(RunnerInit):
     async def fetch_response(self):
         index = 1
         datasets = []
-        async with HttpxAsyncClient() as client:
+        async with HttpxAsyncClient(headers=generate_headers()) as client:
             while True:
                 response = await client.get(
                     f"https://www.huashan1914.com/w/huashan1914/exhibition?index={index}",
-                    headers=generate_headers(),
                 )
                 dataset = bs4.BeautifulSoup(response.text, "html5lib").select(
                     "ul#event-ul li"

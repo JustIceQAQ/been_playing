@@ -42,8 +42,10 @@ class CapitalArtRunner(RunnerInit):
             "https://capitalart.com.tw/exhibitions_upcoming.html",
         ]
 
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
-            responses = await asyncio.gather(*[client.get(url) for url in urls])
+        async with HttpxAsyncClient(headers=headers) as client:
+            responses = await asyncio.gather(
+                *[client.get(url, cookies=cookies) for url in urls]
+            )
         return [response.text for response in responses]
 
     async def fetch_parsed(self):

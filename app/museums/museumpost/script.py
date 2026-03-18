@@ -44,11 +44,13 @@ class MuseumPostRunner(RunnerInit):
             host="museum.post.gov.tw", other_headers={"Connection": "keep-alive"}
         )
         cookies = generate_cookies(need_js_ession_id=True)
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             target_url = "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage={to_page}"
             responses = []
             page = 1
-            response = await client.get(target_url.format(to_page=page))
+            response = await client.get(
+                target_url.format(to_page=page), cookies=cookies
+            )
             while (
                 self.translation()
                 .translation_to_object(response.text)
@@ -56,7 +58,9 @@ class MuseumPostRunner(RunnerInit):
             ):
                 responses.append(response.text)
                 page += 1
-                response = await client.get(target_url.format(to_page=page))
+                response = await client.get(
+                    target_url.format(to_page=page), cookies=cookies
+                )
 
             return responses
 

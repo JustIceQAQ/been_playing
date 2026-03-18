@@ -38,7 +38,7 @@ class JamRunner(RunnerInit):
             host="jam.jutfoundation.org.tw", referer="https://jam.jutfoundation.org.tw"
         )
 
-        async with HttpxAsyncClient() as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             urls = [
                 "https://jam.jutfoundation.org.tw/online-exhibition",
                 "https://jam.jutfoundation.org.tw/coming-exhibition",
@@ -46,7 +46,6 @@ class JamRunner(RunnerInit):
             tasks = [
                 client.get(
                     url,
-                    headers=headers,
                 )
                 for url in urls
             ]

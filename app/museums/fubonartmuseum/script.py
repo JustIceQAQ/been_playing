@@ -32,9 +32,9 @@ class FuBonArtMuseumRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        async with HttpxAsyncClient() as client:
+        async with HttpxAsyncClient(headers=generate_headers()) as client:
             response = await client.get(
-                "https://www.fubonartmuseum.org/Default", headers=generate_headers()
+                "https://www.fubonartmuseum.org/Default",
             )
         return response.text
 

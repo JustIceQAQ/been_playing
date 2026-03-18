@@ -36,9 +36,10 @@ class TtCsEcRunner(RunnerInit):
     async def fetch_response(self):
         headers = generate_headers()
         cookies = generate_cookies(need_asp_net_session_id=True)
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
-                "https://www.ttcsec.gov.tw/News_Actives_photo.aspx?n=2387&sms=11896"
+                "https://www.ttcsec.gov.tw/News_Actives_photo.aspx?n=2387&sms=11896",
+                cookies=cookies,
             )
         return response.text
 

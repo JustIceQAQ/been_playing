@@ -37,8 +37,8 @@ class ShungYeArtRunner(RunnerInit):
         headers = generate_headers(referer=url)
         cookies = generate_cookies(need_phpsessid=True, need_consent=True)
 
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
-            response = await client.get(url)
+        async with HttpxAsyncClient(headers=headers) as client:
+            response = await client.get(url, cookies=cookies)
         return response.text
 
     async def fetch_parsed(self):

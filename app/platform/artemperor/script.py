@@ -38,9 +38,14 @@ class ArtEmperorRunner(RunnerInit):
             venue_type=VenueType.PLATFORM,
         )
 
-    async def fetch_process(self, client: httpx.AsyncClient, ex_status: ExStatus):
+    async def fetch_process(
+        self, client: httpx.AsyncClient, ex_status: ExStatus, *args, **kwargs
+    ):
         response = await client.get(
-            "https://artemperor.tw/tidbits", params={"sort": ex_status.value, "page": 1}
+            "https://artemperor.tw/tidbits",
+            *args,
+            **kwargs,
+            params={"sort": ex_status.value, "page": 1},
         )
         response.raise_for_status()
         response_text = response.text
@@ -56,6 +61,8 @@ class ArtEmperorRunner(RunnerInit):
             end_page += 1
             response = await client.get(
                 "https://artemperor.tw/tidbits",
+                *args,
+                **kwargs,
                 params={"sort": ex_status.value, "page": end_page},
             )
             list_box_len = len(
@@ -70,10 +77,10 @@ class ArtEmperorRunner(RunnerInit):
         headers = generate_headers(need_upgrade_insecure_requests=True)
         cookies = generate_cookies(need_phpsessid=True)
         async with asyncio.Semaphore(10):
-            async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
+            async with HttpxAsyncClient(headers=headers) as client:
                 tasks = await asyncio.gather(
-                    self.fetch_process(client, ExStatus.current),
-                    self.fetch_process(client, ExStatus.upcoming),
+                    self.fetch_process(client, ExStatus.current, cookies=cookies),
+                    self.fetch_process(client, ExStatus.upcoming, cookies=cookies),
                 )
         flattened = list(itertools.chain.from_iterable(tasks))
         return flattened

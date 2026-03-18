@@ -41,8 +41,8 @@ class NtMofaRunner(RunnerInit):
             "https://www.ntmofa.gov.tw/News_Actives_photo.aspx?n=1462&sms=11893",
             "https://www.ntmofa.gov.tw/News_Actives_photo.aspx?n=1464&sms=11893",
         ]
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
-            tasks = [client.get(url) for url in urls]
+        async with HttpxAsyncClient(headers=headers) as client:
+            tasks = [client.get(url, cookies=cookies) for url in urls]
             responses = await asyncio.gather(*tasks)
         return [response.text for response in responses]
 

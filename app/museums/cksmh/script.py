@@ -5,6 +5,7 @@ import bs4
 from app.museums.cksmh.parse import CKSMHParse
 from helpers.cache import DiskCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
+from helpers.headers_helper import generate_headers
 from helpers.image.imgur.helper import ImgurImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -38,7 +39,8 @@ class CKSMHRunner(RunnerInit):
         )
 
     async def fetch_response(self) -> str:
-        async with HttpxAsyncClient() as client:
+        headers = generate_headers()
+        async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
                 "https://www.cksmh.gov.tw/News_Actives_photo.aspx?n=6067&sms=14954"
             )

@@ -39,9 +39,9 @@ class KdMoFaRunner(RunnerInit):
             need_upgrade_insecure_requests=True,
         )
         cookies = generate_cookies(need_phpsessid=True)
-        async with HttpxAsyncClient(headers=headers, cookies=cookies) as client:
+        async with HttpxAsyncClient(headers=headers) as client:
             response = await client.get(
-                "https://kdmofa.tnua.edu.tw/mod/exhibition/index.php"
+                "https://kdmofa.tnua.edu.tw/mod/exhibition/index.php", cookies=cookies
             )
         return response.text
 
