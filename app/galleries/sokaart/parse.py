@@ -13,13 +13,16 @@ class SoKaArtParse(ParseInit):
     def get_date(self, *args, **kwargs) -> str | None:
         time = self.item.find("p", {"class": "time"}).get_text(strip=True)
         s_time, e_time = time.split("-")
-        s_time: str = s_time.strip()
-        e_time: str = e_time.strip()
+        s_time = s_time.strip()
+        e_time = e_time.strip()
 
+        # 如果結束日期沒有年份（點的數量不足）
         if len(e_time.split(".")) != 3:
             s_t_year = s_time.split(".")[0]
-            e_time = s_t_year + e_time
+            # 在年份後加上 "." 確保格式一致
+            e_time = f"{s_t_year}.{e_time}"
 
+        # 統一將點替換為橫線
         s_time = s_time.replace(".", "-")
         e_time = e_time.replace(".", "-")
 

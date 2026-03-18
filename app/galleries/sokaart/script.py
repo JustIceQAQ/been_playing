@@ -36,9 +36,7 @@ class SoKaArtRunner(RunnerInit):
     async def fetch_response(self):
         headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://soka-art.com/tr/exhibition/current?artist_area=5"
-            )
+            response = await client.get("https://soka-art.com/tr/exhibition/current")
         return response.text
 
     async def fetch_parsed(self):
