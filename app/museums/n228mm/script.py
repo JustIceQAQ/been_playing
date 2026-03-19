@@ -37,7 +37,9 @@ class N228MMRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = generate_headers()
+        headers = generate_headers(
+            other_headers={"accept-encoding": "gzip, deflate, zstd"}
+        )
         async with HttpxAsyncClient(headers=headers) as client:
             response_1 = await client.get(
                 "https://www.228.org.tw/exhibitionsnew",
