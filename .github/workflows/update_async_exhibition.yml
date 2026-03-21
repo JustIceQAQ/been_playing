@@ -46,6 +46,7 @@ jobs:
 
       - name: run async script with uv
         run: |
+          source .venv/bin/activate
           uv run python run_all_async_script.py
         env:
           IMGUR_API_CLIENT_ID: ${{ secrets.IMGUR_API_CLIENT_ID }}

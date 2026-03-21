@@ -101,11 +101,11 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         this_runner = RunnerObj()
         all_script_information.append(this_runner.set_information())
         all_async_script_runners.append(RunnerObj().run(disk_cache, imgur, prefix))
+    async with asyncio.Semaphore(10):
+        await asyncio.gather(*all_async_script_runners, return_exceptions=True)
+        await generate_location(all_script_information)
 
-    await asyncio.gather(*all_async_script_runners, return_exceptions=True)
-    await generate_location(all_script_information)
-
-    await last_week_update.set_last_week_items()
+        await last_week_update.set_last_week_items()
 
 
 if __name__ == "__main__":

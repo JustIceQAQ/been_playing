@@ -41,7 +41,7 @@ class HongGahRunner(RunnerInit):
             x_requested_with="XMLHttpRequest",
         )
         async with HttpxAsyncClient(headers=headers, follow_redirects=True) as client:
-            response = await client.get("https://hong-gah.org.tw/exhibitions-zh/page/1")
+            response = await client.get("https://hong-gah.org.tw/exhibitions-zh")
             response.raise_for_status()
         return response.text
 
