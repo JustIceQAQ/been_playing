@@ -1,12 +1,15 @@
 import asyncio
 
 import bs4
+from rnet.rnet import Proxy
+
 from app.museums.hong_gah.parse import HongGahParse
+from configs.settings import get_settings
+from helpers.crawler.rnet.helper import RNetAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
-from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
@@ -40,10 +43,19 @@ class HongGahRunner(RunnerInit):
             referer="https://hong-gah.org.tw/exhibitions-zh",
             x_requested_with="XMLHttpRequest",
         )
-        async with HttpxAsyncClient(headers=headers, follow_redirects=True) as client:
+        runtime_settings = get_settings()
+        proxies = (
+            None
+            if runtime_settings.PROXY_POOL is None
+            else [Proxy.all(runtime_settings.PROXY_POOL)]
+        )
+        async with RNetAsyncClient(
+            headers=headers,
+            follow_redirects=True,
+            proxies=proxies,
+        ) as client:
             response = await client.get("https://hong-gah.org.tw/exhibitions-zh")
-            response.raise_for_status()
-        return response.text
+        return await response.text()
 
     async def fetch_parsed(self):
         parsed: bs4.BeautifulSoup = await super().fetch_parsed()
