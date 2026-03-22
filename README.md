@@ -83,6 +83,7 @@
         - [板橋435藝文特區](https://www.435.culture.ntpc.gov.tw/)
         - [齊柏林空間](https://www.chipolin.org/)
         - [新北市立鶯歌陶瓷博物館](https://www.ceramics.ntpc.gov.tw/)
+        - [朱銘美術館](https://www.juming.org.tw/)
     - 新竹市
         - [國立新竹生活美學館](https://www.nhclac.gov.tw/)
     - 臺中市

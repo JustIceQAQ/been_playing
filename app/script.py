@@ -25,6 +25,7 @@ from .museums.hong_gah.script import HongGahRunner
 from .museums.huashan1914.script import HuaShan1914Runner
 from .museums.ioesinica import IOESinicaRunner
 from .museums.jam.script import JamRunner
+from .museums.juming import JuMingRunner
 from .museums.kdmofa.script import KdMoFaRunner
 from .museums.khm import KhmRunner
 from .museums.kingcarart.script import KingCarArtRunner
@@ -165,6 +166,7 @@ MUSEUMS_RUNNERS = {
     IOESinicaRunner,
     HistorySinicaRunner,
     HKMRunner,
+    JuMingRunner,
 }
 
 GALLERIES_RUNNERS = {
