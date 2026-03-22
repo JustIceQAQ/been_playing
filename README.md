@@ -74,6 +74,7 @@
         - [有章藝術博物館](https://museum.ntua.edu.tw)
         - [寶藏巖國際藝術村](https://www.artistvillage.org/event.php)
         - [紀州庵文學森林](https://kishuan.org.tw/activity.htm)
+        - [中央研究院-民族學研究所博物館](https://www.ioe.sinica.edu.tw/)
     - 新北市
         - [新北市美術館](https://ntcart.museum/exhibition)
         - [世界宗教博物館](https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070)
