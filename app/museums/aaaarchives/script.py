@@ -27,9 +27,7 @@ class AAAArchivesRunner(RunnerInit):
             fullname="國家發展委員會檔案管理局",
             code_name="AAAArchives",
             external_link="https://aaa.archives.tw/tw/event/306.html",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.07521442685089, 121.37402598256791"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.07521442685089, 121.37402598256791"),
             venue_type=VenueType.MUSEUM,
         )
 

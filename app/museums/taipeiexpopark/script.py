@@ -28,9 +28,7 @@ class TaipeiExPoParkRunner(RunnerInit):
             fullname="花博公園",
             code_name="TaipeiExPoPark",
             external_link="https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.069720986746507, 121.52071496978188"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.069720986746507, 121.52071496978188"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -39,9 +37,7 @@ class TaipeiExPoParkRunner(RunnerInit):
             origin="https://www.expopark.taipei",
             referer="https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029",
         )
-        cookies = generate_cookies(
-            need_asp_net_session_id=True, other_cookies={"font-size-": "medium"}
-        )
+        cookies = generate_cookies(need_asp_net_session_id=True, other_cookies={"font-size-": "medium"})
         params = {
             "n": 247,
             "sms": 9029,
@@ -53,9 +49,7 @@ class TaipeiExPoParkRunner(RunnerInit):
         this_date = get_date_now()
         this_date_format = this_date.strftime("%Y/%m/%d")
         this_roc_era = get_ad_to_roc_era(this_date.year)
-        this_date_format = this_date_format.replace(
-            str(this_date.year), str(this_roc_era)
-        )
+        this_date_format = this_date_format.replace(str(this_date.year), str(this_roc_era))
 
         data = {
             "jNewsModule_field_SDate4": this_date_format,

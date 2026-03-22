@@ -35,9 +35,7 @@ class CultureExpressRunner(RunnerInit):
         )
         responses = []
         async with HttpxAsyncClient(headers=headers) as client:
-            init_response = await client.get(
-                url="https://cultureexpress.taipei/Event/C000003"
-            )
+            init_response = await client.get(url="https://cultureexpress.taipei/Event/C000003")
             init_response.raise_for_status()
             page_index = 1
             while True:

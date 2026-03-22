@@ -26,9 +26,7 @@ class ShungYeArtRunner(RunnerInit):
             fullname="順益台灣美術館",
             code_name="ShungYeArt",
             external_link="https://www.shungye-art.org/show_now.php",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.046560256806668, 121.51092983908268"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.046560256806668, 121.51092983908268"),
             venue_type=VenueType.MUSEUM,
         )
 

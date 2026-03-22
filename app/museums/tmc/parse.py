@@ -22,9 +22,7 @@ class TmcParse(ParseInit):
         return subbed_string.replace(".", "-")
 
     def get_address(self, *args, **kwargs) -> str:
-        return self.safe_get_text(
-            self.item.find("span", {"class": "location"}).get_text()
-        )
+        return self.safe_get_text(self.item.find("span", {"class": "location"}).get_text())
 
     def get_figure(self, *args, **kwargs) -> str:
         return self.item.find("img").get("src")

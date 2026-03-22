@@ -29,6 +29,4 @@ class TFamParse(ParseInit):
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
 
-        return "{}/Exhibition/Exhibition_page.aspx?id={}".format(
-            target_domain, self.item.get("ExID", "-")
-        )
+        return "{}/Exhibition/Exhibition_page.aspx?id={}".format(target_domain, self.item.get("ExID", "-"))

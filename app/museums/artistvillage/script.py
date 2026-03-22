@@ -51,9 +51,7 @@ class ArtistVillageRunner(RunnerInit):
             "method": "get_posts_list_month",
         }
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.post(
-                "https://www.artistvillage.org/ajax.php", data=data, cookies=cookies
-            )
+            response = await client.post("https://www.artistvillage.org/ajax.php", data=data, cookies=cookies)
         return response.json()
 
     async def fetch_parsed(self):

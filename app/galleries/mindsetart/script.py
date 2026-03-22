@@ -28,9 +28,7 @@ class MindSetArtRunner(RunnerInit):
             fullname="安卓藝術",
             code_name="MindSetArt",
             external_link="https://www.art-msac.com/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.086444326900594, 121.56138806256338"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.086444326900594, 121.56138806256338"),
             venue_type=VenueType.GALLERY,
         )
 
@@ -38,9 +36,7 @@ class MindSetArtRunner(RunnerInit):
         headers = generate_headers(host="www.art-msac.com")
         cookies = generate_cookies(other_cookies={"splash_screen_disabled": "true"})
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://www.art-msac.com/exhibitions/", cookies=cookies
-            )
+            response = await client.get("https://www.art-msac.com/exhibitions/", cookies=cookies)
         return response.text
 
     async def fetch_parsed(self):

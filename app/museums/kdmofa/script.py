@@ -26,9 +26,7 @@ class KdMoFaRunner(RunnerInit):
             fullname="關渡美術館",
             code_name="KdMoFa",
             external_link="https://kdmofa.tnua.edu.tw/mod/exhibition/index.php",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.133800251190085, 121.47158422559258"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.133800251190085, 121.47158422559258"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -40,9 +38,7 @@ class KdMoFaRunner(RunnerInit):
         )
         cookies = generate_cookies(need_phpsessid=True)
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://kdmofa.tnua.edu.tw/mod/exhibition/index.php", cookies=cookies
-            )
+            response = await client.get("https://kdmofa.tnua.edu.tw/mod/exhibition/index.php", cookies=cookies)
         return response.text
 
     async def fetch_parsed(self):

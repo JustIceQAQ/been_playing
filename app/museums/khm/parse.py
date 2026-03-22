@@ -11,11 +11,7 @@ class KhmParse(ParseInit):
         return self.item.find("h3", {"class": "item-title"}).get_text(strip=True)
 
     def get_date(self, *args, **kwargs) -> str | None:
-        return (
-            self.item.find("span", {"class": "item-date"})
-            .get_text(strip=True)
-            .replace(".", "-")
-        )
+        return self.item.find("span", {"class": "item-date"}).get_text(strip=True).replace(".", "-")
 
     def get_address(self, *args, **kwargs) -> str | None:
         pass

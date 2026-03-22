@@ -27,9 +27,7 @@ class ChiayiAMRunner(RunnerInit):
             fullname="嘉義市立美術館",
             code_name="ChiayiAM",
             external_link="https://chiayiartmuseum.chiayi.gov.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="23.476964512470964, 120.44092961904913"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="23.476964512470964, 120.44092961904913"),
             venue_type=VenueType.MUSEUM,
         )
 

@@ -25,9 +25,7 @@ class FuBonArtMuseumRunner(RunnerInit):
             fullname="富邦美術館",
             code_name="FuBonArtMuseum",
             external_link="https://www.fubonartmuseum.org/Default",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.039545226356974, 121.57119466791848"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.039545226356974, 121.57119466791848"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -40,9 +38,7 @@ class FuBonArtMuseumRunner(RunnerInit):
 
     async def fetch_parsed(self):
         parsed: bs4.BeautifulSoup = await super().fetch_parsed()
-        return parsed.select(
-            "div#homepage-swiper-exhibitions > div.swiper-wrapper > div"
-        )
+        return parsed.select("div#homepage-swiper-exhibitions > div.swiper-wrapper > div")
 
 
 if __name__ == "__main__":

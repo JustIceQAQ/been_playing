@@ -69,9 +69,7 @@ class FuBonArtMuseumParse(ParseInit):
                 raw_end_month, raw_day = end_date_split
 
                 use_year = (
-                    (this_raw_start_year + 1)
-                    if this_raw_start_month > int(raw_end_month)
-                    else this_raw_start_year
+                    (this_raw_start_year + 1) if this_raw_start_month > int(raw_end_month) else this_raw_start_year
                 )
                 end_date = datetime.date(
                     int(use_year),

@@ -27,9 +27,7 @@ class YoChangArtRunner(RunnerInit):
             fullname="有章藝術博物館",
             code_name="YoChangArt",
             external_link="https://museum.ntua.edu.tw/c001.asp",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.006981532547897, 121.44882905627831"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.006981532547897, 121.44882905627831"),
             venue_type=VenueType.MUSEUM,
         )
 

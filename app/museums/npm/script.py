@@ -109,9 +109,7 @@ class NpmRunner(RunnerInit):
             north_parsed_dict = {"row": datasets_row, "col": datasets_col}
 
         if north_parsed_dataset_1 is not None:
-            preview_parsed = north_parsed_dataset_1.select(
-                ".navtabs-content-static ul.grid > li.mb-8"
-            )
+            preview_parsed = north_parsed_dataset_1.select(".navtabs-content-static ul.grid > li.mb-8")
             north_parsed_dict["preview"] = preview_parsed
         return north_parsed_dict
 
@@ -179,11 +177,7 @@ class NpmRunner(RunnerInit):
 
         if (south := runtime_parsed.get("south", None)) is not None:
             for item in south:
-                exhibition_items.append(
-                    SouthNpmParse(item).parse_to_base_model(
-                        ExhibitionItem, *args, **kwargs
-                    )
-                )
+                exhibition_items.append(SouthNpmParse(item).parse_to_base_model(ExhibitionItem, *args, **kwargs))
         return exhibition_items
 
 

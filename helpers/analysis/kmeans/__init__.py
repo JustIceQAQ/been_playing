@@ -41,11 +41,7 @@ def clean_data(centers: list[dict]) -> list[dict]:
             continue
         if isinstance(branch_coordinates, list):
             for branch_coordinate in branch_coordinates:
-                name = (
-                    "None"
-                    if (this_name := branch_coordinate.get("name")) is None
-                    else this_name
-                )
+                name = "None" if (this_name := branch_coordinate.get("name")) is None else this_name
                 ok_centers.append(
                     {
                         "fullname": fullname + "-" + name,
@@ -120,11 +116,7 @@ def kmeans_clustering(df: pd.DataFrame, n_clusters=20):
 
 
 async def main():
-    tasks = [
-        get_json_files(file)
-        for file in DATA_PATH.glob("*.json")
-        if not file.name.startswith("_")
-    ]
+    tasks = [get_json_files(file) for file in DATA_PATH.glob("*.json") if not file.name.startswith("_")]
     json_files = await asyncio.gather(*tasks)
 
     centers = clean_data([json_file["information"] for json_file in json_files])

@@ -27,9 +27,7 @@ class NMTLRunner(RunnerInit):
             fullname="國立臺灣文學館",
             code_name="NMTL",
             external_link="https://www.nmtl.gov.tw/News_actives.aspx?n=3821&sms=13367",
-            branch_coordinates=Coordinate(
-                raw_coordinates="22.992188481194308, 120.20432889300697"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="22.992188481194308, 120.20432889300697"),
             venue_type=VenueType.MUSEUM,
         )
 

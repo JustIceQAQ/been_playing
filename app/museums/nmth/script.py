@@ -27,9 +27,7 @@ class NMTHRunner(RunnerInit):
             fullname="國立臺灣歷史博物館",
             code_name="NMTH",
             external_link="https://www.nmth.gov.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="23.058163348092073, 120.23516300543494"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="23.058163348092073, 120.23516300543494"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -37,9 +35,7 @@ class NMTHRunner(RunnerInit):
         headers = generate_headers()
         cookies = generate_cookies(need_asp_net_session_id=True)
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://www.nmth.gov.tw/News2.aspx?n=4105&sms=13791", cookies=cookies
-            )
+            response = await client.get("https://www.nmth.gov.tw/News2.aspx?n=4105&sms=13791", cookies=cookies)
         return response.text
 
     async def fetch_parsed(self):

@@ -27,9 +27,7 @@ class WhiteStoneRunner(RunnerInit):
             fullname="白石畫廊",
             code_name="WhiteStone",
             external_link="https://www.whitestone-gallery.com/zh-hant",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.081886335785196, 121.5655333509274"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.081886335785196, 121.5655333509274"),
             venue_type=VenueType.GALLERY,
         )
 

@@ -29,9 +29,7 @@ class KhmRunner(RunnerInit):
             fullname="高雄市立歷史博物館",
             code_name="khm",
             external_link="https://khm.org.tw/tw",
-            branch_coordinates=Coordinate(
-                raw_coordinates="22.62712833389164, 120.28687449855717"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="22.62712833389164, 120.28687449855717"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -42,15 +40,9 @@ class KhmRunner(RunnerInit):
     async def fetch_response(self):
         current_exhibitions_url = "https://khm.org.tw/tw/exhibition/currentexhibitions"
         permanent_exhibitions = "https://khm.org.tw/tw/exhibition/permanentexhibitions"
-        headers = generate_headers(
-            referer=current_exhibitions_url, not_use_user_agent=True
-        )
+        headers = generate_headers(referer=current_exhibitions_url, not_use_user_agent=True)
         runtime_settings = get_settings()
-        proxies = (
-            None
-            if runtime_settings.PROXY_POOL is None
-            else [Proxy.all(runtime_settings.PROXY_POOL)]
-        )
+        proxies = None if runtime_settings.PROXY_POOL is None else [Proxy.all(runtime_settings.PROXY_POOL)]
         async with RNetAsyncClient(
             proxies=proxies,
             headers=headers,

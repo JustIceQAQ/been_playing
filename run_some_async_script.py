@@ -45,8 +45,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
     await available_scraper_async_client(runtime_setting.SCRAPER_API_KEY)
 
     all_async_script_runners = [
-        RunnerObj().run(disk_cache, imgur, prefix, develop_mode=True)
-        for RunnerObj in scripts_to_run
+        RunnerObj().run(disk_cache, imgur, prefix, develop_mode=True) for RunnerObj in scripts_to_run
     ]
     await asyncio.gather(*all_async_script_runners, return_exceptions=True)
 
@@ -63,9 +62,7 @@ if __name__ == "__main__":
         load_dotenv(this_env)
 
     runtime_setting = get_settings()
-    SENTRY_SDK_DNS = (
-        runtime_setting.SENTRY_SDK_DNS if not runtime_setting.IS_DEBUG else None
-    )
+    SENTRY_SDK_DNS = runtime_setting.SENTRY_SDK_DNS if not runtime_setting.IS_DEBUG else None
     sentry_sdk.init(dsn=SENTRY_SDK_DNS, traces_sample_rate=1.0)
     asyncio.run(main())
     # asyncio.run(main(args.worker, args.max_worker))

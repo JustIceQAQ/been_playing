@@ -88,9 +88,7 @@ class ExhibitionItem(BaseModel):
         match = re.match(r"(\d{4}-\d{2}-\d{2})", self.date)
         if match:
             try:
-                return datetime.datetime.strptime(match.group(1), "%Y-%m-%d").replace(
-                    tzinfo=get_timezone()
-                )
+                return datetime.datetime.strptime(match.group(1), "%Y-%m-%d").replace(tzinfo=get_timezone())
             except ValueError:
                 return None
         return None
@@ -102,9 +100,7 @@ class ExhibitionItem(BaseModel):
         if match:
             try:
                 this_date = match.group(1)
-                return datetime.datetime.strptime(this_date, "%Y-%m-%d").replace(
-                    tzinfo=get_timezone()
-                )
+                return datetime.datetime.strptime(this_date, "%Y-%m-%d").replace(tzinfo=get_timezone())
             except ValueError:
                 return None
         return None
@@ -150,10 +146,7 @@ class ExhibitionItem(BaseModel):
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, ExhibitionItem):
             return NotImplemented
-        return all(
-            getattr(self, field) == getattr(other, field)
-            for field in self.model_fields.keys()
-        )
+        return all(getattr(self, field) == getattr(other, field) for field in self.model_fields.keys())
 
     def __hash__(self):
         values = []
@@ -173,12 +166,8 @@ class Coordinate(BaseModel):
     raw_coordinates: str | None = None
     longitude: Decimal = Field(default=None, description="經度")
     latitude: Decimal = Field(default=None, description="緯度")
-    google_map_place_id: str | None = Field(
-        default=None, description="Google Map Place ID"
-    )
-    name: str | None = Field(
-        default=None, description="名稱, 若為None 則代表該地點沒有分館"
-    )
+    google_map_place_id: str | None = Field(default=None, description="Google Map Place ID")
+    name: str | None = Field(default=None, description="名稱, 若為None 則代表該地點沒有分館")
 
     @model_validator(mode="before")
     @classmethod
@@ -204,9 +193,7 @@ class Information(BaseModel):
     fullname: str
     code_name: str
     external_link: str
-    branch_coordinates: Coordinate | list[Coordinate] | None = Field(
-        default=None, description="經緯度"
-    )
+    branch_coordinates: Coordinate | list[Coordinate] | None = Field(default=None, description="經緯度")
     location_code: TaiwanCity | None = Field(default=None, description="ISO 3166/MA")
     venue_type: VenueType | None = Field(default=None, description="場所類型")
     has_rss: bool | None = Field(default=False)
@@ -231,9 +218,7 @@ class Exhibition(BaseModel):
     async def save_to_json(
         self,
         filename: str,
-        folder: str | Path | None = Path(__file__).parent.parent.parent.absolute()
-        / "data"
-        / "v2",
+        folder: str | Path | None = Path(__file__).parent.parent.parent.absolute() / "data" / "v2",
         execution_time: float | None = None,
         is_unique: bool | None = True,
         is_sort: bool | None = True,
@@ -245,9 +230,7 @@ class Exhibition(BaseModel):
             self.items.sort()
         this_folder = folder
         if prefix is not None:
-            this_folder = (
-                Path(__file__).parent.parent.parent.absolute() / "data" / prefix
-            )
+            this_folder = Path(__file__).parent.parent.parent.absolute() / "data" / prefix
             this_folder.mkdir(exist_ok=True)
         self.execution_time = execution_time
 
@@ -293,9 +276,7 @@ class Exhibition(BaseModel):
             if item.figure:
                 description_txt.append(f'<img src="{item.figure}" />')
 
-            description = (
-                ("<br/>".join(description_txt) + "<br/>") if description_txt else ""
-            )
+            description = ("<br/>".join(description_txt) + "<br/>") if description_txt else ""
 
             fe.description(description)
 
@@ -360,9 +341,7 @@ class LastWeekUpdateData(BaseModel):
         self.updated = get_datetime_now()
 
 
-LAST_WEEK_FILE_PATH = (
-    Path(__file__).parent.parent.parent / "data" / "v2" / "last_week_update.json"
-)
+LAST_WEEK_FILE_PATH = Path(__file__).parent.parent.parent / "data" / "v2" / "last_week_update.json"
 
 
 class LastWeekUpdate:

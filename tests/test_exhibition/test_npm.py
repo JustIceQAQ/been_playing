@@ -18,17 +18,13 @@ async def test_npm_url():
 
 
 def test_npm_preview_parse():
-    html = pathlib.Path("./fixtrue/npm.gov.twExhibition-Preview.html").read_text(
-        encoding="utf-8"
-    )
+    html = pathlib.Path("./fixtrue/npm.gov.twExhibition-Preview.html").read_text(encoding="utf-8")
     soup = BeautifulSoup(html, "html5lib")
     preview_parsed = soup.select("li.mb-8 > a.card.card-height-md")
     results = []
     for item in preview_parsed:
         results.append(
-            NpmPreviewParse(item).parse_to_base_model(
-                ExhibitionItem, target_domain="https://www.npm.gov.tw/"
-            )
+            NpmPreviewParse(item).parse_to_base_model(ExhibitionItem, target_domain="https://www.npm.gov.tw/")
         )
 
     assert results

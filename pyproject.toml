@@ -53,4 +53,11 @@ dev = [
 
 
 [tool.ruff]
+line-length = 120
+lint.ignore = [
+  "COM812", # conflicts with formatter
+  "CPY",    # no copyright
+  "D",      # pydocstyle: enable later for public APIs if publishing a library
+  "ISC001", # conflicts with formatter
+]
 exclude = [".tox", ".git", "*/migrations/*", "*/static/CACHE/*", "docs", "node_modules", "venv"]

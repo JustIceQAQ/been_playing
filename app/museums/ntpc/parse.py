@@ -33,9 +33,7 @@ def normalize_date_range(text: str) -> str | None:
         end_date = f"{year}-{int(m2):02d}-{int(d2):02d}"
         return f"{start_date} ~ {end_date}"
 
-    pattern2 = re.match(
-        r"(\d{4})年(\d{1,2})月(\d{1,2})日[~至\-]+(\d{1,2})月(\d{1,2})日", text
-    )
+    pattern2 = re.match(r"(\d{4})年(\d{1,2})月(\d{1,2})日[~至\-]+(\d{1,2})月(\d{1,2})日", text)
     if pattern2:
         year, m1, d1, m2, d2 = pattern2.groups()
         start_date = f"{year}-{int(m1):02d}-{int(d1):02d}"

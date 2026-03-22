@@ -27,9 +27,7 @@ class Dac99Runner(RunnerInit):
             fullname="99度藝術中心",
             code_name="Dac99",
             external_link="https://99dac.com/exhibition.php",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.11649643071741, 121.5053916644182"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.11649643071741, 121.5053916644182"),
             venue_type=VenueType.GALLERY,
         )
 
@@ -37,9 +35,7 @@ class Dac99Runner(RunnerInit):
         headers = generate_headers()
         cookies = generate_cookies(need_phpsessid=True)
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://99dac.com/exhibition.php", cookies=cookies
-            )
+            response = await client.get("https://99dac.com/exhibition.php", cookies=cookies)
         return response.text
 
     async def fetch_parsed(self):

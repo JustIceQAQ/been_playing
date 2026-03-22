@@ -27,9 +27,7 @@ class NmhRunner(RunnerInit):
             fullname="國立歷史博物館",
             code_name="Nmh",
             external_link="https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.0317350368833, 121.51118866791836"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.0317350368833, 121.51118866791836"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -46,9 +44,7 @@ class NmhRunner(RunnerInit):
         )
 
         async with HttpxAsyncClient(headers=headers) as client:
-            responses = await asyncio.gather(
-                *[client.get(url_template.format(n=number)) for number in numbers]
-            )
+            responses = await asyncio.gather(*[client.get(url_template.format(n=number)) for number in numbers])
         return [response.text for response in responses]
 
     async def fetch_parsed(self):

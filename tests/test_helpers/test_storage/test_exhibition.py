@@ -24,9 +24,7 @@ def test_exhibition_data(fake_exhibition_data: dict):
 
 
 @pytest.mark.asyncio
-async def test_exhibition_storage(
-    fake_exhibition_data: dict, fake_exhibition_information: dict
-):
+async def test_exhibition_storage(fake_exhibition_data: dict, fake_exhibition_information: dict):
     es = Exhibition(information=Information.model_validate(fake_exhibition_information))
     es.items = [
         ExhibitionItem.model_validate(fake_exhibition_data),

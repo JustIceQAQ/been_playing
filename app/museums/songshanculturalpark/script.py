@@ -31,18 +31,14 @@ class SongShanCulturalParkRunner(RunnerInit):
             fullname="松山文創園區",
             code_name="SongShanCulturalPark",
             external_link="https://www.songshanculturalpark.org/exhibition",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.04389834091059, 121.56065162486529"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.04389834091059, 121.56065162486529"),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
         headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://www.songshanculturalpark.org/exhibition"
-            )
+            response = await client.get("https://www.songshanculturalpark.org/exhibition")
         return response.text
 
     async def fetch_parsed(self):
@@ -50,9 +46,7 @@ class SongShanCulturalParkRunner(RunnerInit):
         return parsed.select("div#exhibition > div.rows")
 
     async def fetch_items(self, *args, **kwargs):
-        items = await super().fetch_items(
-            target_domain="https://www.songshanculturalpark.org"
-        )
+        items = await super().fetch_items(target_domain="https://www.songshanculturalpark.org")
         return items
 
     async def _get_item_data(self, client: httpx.AsyncClient, item: ExhibitionItem):

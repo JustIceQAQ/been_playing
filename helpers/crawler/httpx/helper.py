@@ -11,9 +11,7 @@ class HttpxAsyncClient:
     ) -> None:
         self.args = args
         self.kwargs = kwargs
-        self.client = httpx.AsyncClient(
-            timeout=timeout, follow_redirects=follow_redirects, *args, **kwargs
-        )
+        self.client = httpx.AsyncClient(timeout=timeout, follow_redirects=follow_redirects, *args, **kwargs)
 
     async def __aenter__(self) -> httpx.AsyncClient:
         return self.client

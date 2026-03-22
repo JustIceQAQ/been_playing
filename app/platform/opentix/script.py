@@ -30,9 +30,7 @@ class OpenTixRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = generate_headers(
-            origin="https://www.opentix.life", referer="https://www.opentix.life/"
-        )
+        headers = generate_headers(origin="https://www.opentix.life", referer="https://www.opentix.life/")
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.post(
                 "https://search.opentix.life/search",
@@ -50,9 +48,7 @@ class OpenTixRunner(RunnerInit):
         return parsed.get("result", {}).get("found", [])
 
     async def fetch_items(self, *args, **kwargs):
-        return await super().fetch_items(
-            target_domain="https://www.opentix.life/event/"
-        )
+        return await super().fetch_items(target_domain="https://www.opentix.life/event/")
 
 
 async def main():

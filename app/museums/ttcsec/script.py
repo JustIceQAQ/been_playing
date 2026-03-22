@@ -27,9 +27,7 @@ class TtCsEcRunner(RunnerInit):
             fullname="國立臺東生活美學館",
             code_name="ttcsec",
             external_link="https://www.ttcsec.gov.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="22.755456248316037, 121.15105139554878"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="22.755456248316037, 121.15105139554878"),
             venue_type=VenueType.MUSEUM,
         )
 

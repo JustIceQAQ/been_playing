@@ -26,18 +26,14 @@ class YatsenRunner(RunnerInit):
             fullname="國立國父紀念館",
             code_name="Yatsen",
             external_link="https://www.yatsen.gov.tw/News_actives.aspx?n=7339&sms=13411",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.040205545923655, 121.56033102744308"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.040205545923655, 121.56033102744308"),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
         headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://www.yatsen.gov.tw/News_actives.aspx?n=7339&sms=13411"
-            )
+            response = await client.get("https://www.yatsen.gov.tw/News_actives.aspx?n=7339&sms=13411")
         return response.text
 
     async def fetch_parsed(self):

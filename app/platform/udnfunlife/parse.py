@@ -15,11 +15,7 @@ class UdnFunLifeParse(ParseInit):
         date_value = ""
         for icon_text in icon_texts:
             if "icon-date" in icon_text.find("img")["src"]:
-                date_value = (
-                    icon_text.find("div", {"class": "ellipsis"})
-                    .get_text()
-                    .replace("/", "-")
-                )
+                date_value = icon_text.find("div", {"class": "ellipsis"}).get_text().replace("/", "-")
                 break
         return date_value
 
@@ -36,6 +32,4 @@ class UdnFunLifeParse(ParseInit):
         return self.item.select_one("div.yd_card-thumbnail > img")["src"]
 
     def get_source_url(self, *args, **kwargs) -> str:
-        return self.item.select_one("div.inner > a")["href"].replace(
-            "..", "https://tickets.udnfunlife.com/application"
-        )
+        return self.item.select_one("div.inner > a")["href"].replace("..", "https://tickets.udnfunlife.com/application")

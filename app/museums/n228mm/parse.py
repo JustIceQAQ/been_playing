@@ -25,9 +25,7 @@ class N228MMParse(ParseInit):
         def parse_date(text):
             pattern = r"(\d{4})\s*[年/-]\s*(\d{1,2})\s*[月/-]\s*(\d{1,2})\s*日?"
             date_matches = re.findall(pattern, text)
-            return [
-                f"{int(y):04d}-{int(m):02d}-{int(d):02d}" for y, m, d in date_matches
-            ]
+            return [f"{int(y):04d}-{int(m):02d}-{int(d):02d}" for y, m, d in date_matches]
 
         period_match = date_pattern.search(text)
 
@@ -47,9 +45,7 @@ class N228MMParse(ParseInit):
         soup = BeautifulSoup(top_paragraph, "html.parser")
         text = soup.get_text()
         text = re.sub(r"[（(][^）)]*[）)]", "", text)
-        location_pattern = re.compile(
-            r"(展覽地點|地點|地址)[:：]?\s*([^\n<]+)", re.IGNORECASE
-        )
+        location_pattern = re.compile(r"(展覽地點|地點|地址)[:：]?\s*([^\n<]+)", re.IGNORECASE)
         location = None
         location_match = location_pattern.search(text)
         if location_match:
@@ -57,11 +53,7 @@ class N228MMParse(ParseInit):
             parts = re.split(r"[／/]", location_raw)
             parts = [p.replace("二二八國家紀念館", "").strip() for p in parts]
             location = next(
-                (
-                    p
-                    for p in parts
-                    if "樓" in p or "展區" in p or "展示室" in p or "空間" in p
-                ),
+                (p for p in parts if "樓" in p or "展區" in p or "展示室" in p or "空間" in p),
                 "",
             )
             if not location and parts:

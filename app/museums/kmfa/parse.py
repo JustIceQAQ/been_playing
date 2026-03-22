@@ -11,9 +11,7 @@ class KmFaParse(ParseInit):
         return self.item.find("h4", {"class": "exhibition_title"}).get_text(strip=True)
 
     def get_date(self, *args, **kwargs) -> str | None:
-        data_range = self.item.find("span", {"class": "exhibition_date"}).get_text(
-            strip=True
-        )
+        data_range = self.item.find("span", {"class": "exhibition_date"}).get_text(strip=True)
         return data_range.replace("-", "~").replace(".", "-")
 
     def get_address(self, *args, **kwargs) -> str | None:

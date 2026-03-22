@@ -27,9 +27,7 @@ class AlienRunner(RunnerInit):
             fullname="金馬賓館當代美術館",
             code_name="Alien",
             external_link="https://www.alien.com.tw/u/zh-tw/list/exhibitions",
-            branch_coordinates=Coordinate(
-                raw_coordinates="22.627619441196142, 120.278842832973"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="22.627619441196142, 120.278842832973"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -39,9 +37,7 @@ class AlienRunner(RunnerInit):
             host="www.alien.com.tw",
         )
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://www.alien.com.tw/u/zh-tw/list/exhibitions"
-            )
+            response = await client.get("https://www.alien.com.tw/u/zh-tw/list/exhibitions")
         return response.text
 
     async def fetch_parsed(self):

@@ -38,9 +38,7 @@ class ArtEmperorRunner(RunnerInit):
             venue_type=VenueType.PLATFORM,
         )
 
-    async def fetch_process(
-        self, client: httpx.AsyncClient, ex_status: ExStatus, *args, **kwargs
-    ):
+    async def fetch_process(self, client: httpx.AsyncClient, ex_status: ExStatus, *args, **kwargs):
         response = await client.get(
             "https://artemperor.tw/tidbits",
             *args,
@@ -49,11 +47,7 @@ class ArtEmperorRunner(RunnerInit):
         )
         response.raise_for_status()
         response_text = response.text
-        list_box_len = len(
-            BeautifulSoupTranslation()
-            .translation_to_object(response_text)
-            .select("div.list_box")
-        )
+        list_box_len = len(BeautifulSoupTranslation().translation_to_object(response_text).select("div.list_box"))
         all_response = []
         end_page = 1
         while list_box_len > 1:
@@ -65,11 +59,7 @@ class ArtEmperorRunner(RunnerInit):
                 **kwargs,
                 params={"sort": ex_status.value, "page": end_page},
             )
-            list_box_len = len(
-                BeautifulSoupTranslation()
-                .translation_to_object(response.text)
-                .select("div.list_box")
-            )
+            list_box_len = len(BeautifulSoupTranslation().translation_to_object(response.text).select("div.list_box"))
             await asyncio.sleep(1)
         return all_response
 

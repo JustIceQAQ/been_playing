@@ -28,9 +28,7 @@ class TcmRunner(RunnerInit):
             fullname="臺南市立博物館",
             code_name="Tcm",
             external_link="https://tcm.tainan.gov.tw/permanent",
-            branch_coordinates=Coordinate(
-                raw_coordinates="22.987586370137066, 120.20828174089186"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="22.987586370137066, 120.20828174089186"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -46,9 +44,7 @@ class TcmRunner(RunnerInit):
             "https://tcm.tainan.gov.tw/special",
         ]
         async with HttpxAsyncClient(headers=headers) as client:
-            responses = await asyncio.gather(
-                *[self.sub_client(client, url) for url in urls]
-            )
+            responses = await asyncio.gather(*[self.sub_client(client, url) for url in urls])
         return responses
 
     async def fetch_parsed(self):

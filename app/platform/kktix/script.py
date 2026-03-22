@@ -90,9 +90,7 @@ class KKTixRunner(RunnerInit):
         items = []
         parsers: list[bs4.BeautifulSoup] = await super().fetch_parsed()
         for parsed in parsers:
-            data = parsed.select_one("div[data-react-class='SearchWrapper']").get(
-                "data-react-props"
-            )
+            data = parsed.select_one("div[data-react-class='SearchWrapper']").get("data-react-props")
             items.extend(json.loads(data).get("data", []))
         return items
 

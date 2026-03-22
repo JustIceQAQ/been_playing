@@ -41,21 +41,12 @@ class ParseInit(abc.ABC):
 
     def parsed(self, *args, **kwargs) -> dict[str, Any]:
         methods = [
-            method
-            for method in inspect.getmembers(self, predicate=inspect.ismethod)
-            if method[0].startswith("get_")
+            method for method in inspect.getmembers(self, predicate=inspect.ismethod) if method[0].startswith("get_")
         ]
-        return {
-            def_name.split("get_")[-1]: method(*args, **kwargs)
-            for def_name, method in methods
-        }
+        return {def_name.split("get_")[-1]: method(*args, **kwargs) for def_name, method in methods}
 
-    def parse_to_base_model(
-        self, base_model: type[ExhibitionItem], *args, **kwargs
-    ) -> ExhibitionItem:
+    def parse_to_base_model(self, base_model: type[ExhibitionItem], *args, **kwargs) -> ExhibitionItem:
         parsed_data = self.parsed(*args, **kwargs)
-        clean_data = {
-            key: RequestsClean.clean_string(value) for key, value in parsed_data.items()
-        }
+        clean_data = {key: RequestsClean.clean_string(value) for key, value in parsed_data.items()}
 
         return base_model.model_validate(clean_data)

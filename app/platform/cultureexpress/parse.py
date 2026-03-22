@@ -32,10 +32,7 @@ class CultureExpressParse(ParseInit):
         img = self.item.select_one("figure > img")
         if img is None:
             return "https://cultureexpress.taipei/images/default-x.jpg"
-        return (
-            "https://cultureexpress.taipei"
-            + self.item.select_one("figure > img").attrs["src"]
-        )
+        return "https://cultureexpress.taipei" + self.item.select_one("figure > img").attrs["src"]
 
     def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass

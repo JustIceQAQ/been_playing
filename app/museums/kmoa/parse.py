@@ -19,9 +19,7 @@ class KmoaParse(ParseInit):
         raw_start_date = self.item.find("div", {"title": "檔期時間(起)"})
         if raw_start_date is None:
             return None
-        start_span_text = raw_start_date.find("div", {"class": "p"}).get_text(
-            strip=True
-        )
+        start_span_text = raw_start_date.find("div", {"class": "p"}).get_text(strip=True)
         start_date = self.roc_to_ad(start_span_text)
 
         raw_end_date = self.item.find("div", {"title": "檔期時間(訖)"})

@@ -11,21 +11,11 @@ class TcmParse(ParseInit):
         return self.item.find("h2").get_text(strip=True)
 
     def get_date(self, *args, **kwargs) -> str | None:
-        if (
-            single_date := self.item.find("span", {"class": "date-display-single"})
-        ) is not None:
+        if (single_date := self.item.find("span", {"class": "date-display-single"})) is not None:
             return single_date.get_text(strip=True).replace(".", "-")
 
-        start_date = (
-            self.item.find("span", {"class": "date-display-start"})
-            .get_text(strip=True)
-            .replace(".", "-")
-        )
-        end_date = (
-            self.item.find("span", {"class": "date-display-end"})
-            .get_text(strip=True)
-            .replace(".", "-")
-        )
+        start_date = self.item.find("span", {"class": "date-display-start"}).get_text(strip=True).replace(".", "-")
+        end_date = self.item.find("span", {"class": "date-display-end"}).get_text(strip=True).replace(".", "-")
         return f"{start_date} ~ {end_date}"
 
     def get_address(self, *args, **kwargs) -> str | None:
@@ -38,7 +28,4 @@ class TcmParse(ParseInit):
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:
-        return (
-            "https://tcm.tainan.gov.tw"
-            + self.item.find("a", {"class": "d-block"}).attrs["href"]
-        )
+        return "https://tcm.tainan.gov.tw" + self.item.find("a", {"class": "d-block"}).attrs["href"]

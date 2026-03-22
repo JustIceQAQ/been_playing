@@ -28,9 +28,7 @@ class NtMofaRunner(RunnerInit):
             fullname="國立臺灣美術館",
             code_name="NtMofa",
             external_link="https://www.ntmofa.gov.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="24.141372397797248, 120.66338819860081"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="24.141372397797248, 120.66338819860081"),
             venue_type=VenueType.MUSEUM,
         )
 

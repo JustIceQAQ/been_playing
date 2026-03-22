@@ -27,9 +27,7 @@ class RuoMuRunner(RunnerInit):
             fullname="若木藝廊",
             code_name="RuoMu",
             external_link="https://www.ruomugallery.com/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.033909532791032, 121.52358387976376"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.033909532791032, 121.52358387976376"),
             venue_type=VenueType.GALLERY,
         )
 

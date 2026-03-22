@@ -26,9 +26,7 @@ class KiShuAnRunner(RunnerInit):
             fullname="紀州庵文學森林",
             code_name="KiShuAn",
             external_link="https://kishuan.org.tw/activity.htm",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.021773564949243, 121.5206021625705"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.021773564949243, 121.5206021625705"),
             venue_type=VenueType.MUSEUM,
         )
 

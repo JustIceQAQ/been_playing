@@ -29,9 +29,7 @@ class MwrRunner(RunnerInit):
             fullname="世界宗教博物館",
             code_name="Mwr",
             external_link="https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.008202799610107, 121.50783679675385"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.008202799610107, 121.50783679675385"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -39,9 +37,7 @@ class MwrRunner(RunnerInit):
         xsmsid = "0H305741810776620070"
         headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                f"https://www.mwr.org.tw/xcspecexhi?xsmsid={xsmsid}"
-            )
+            response = await client.get(f"https://www.mwr.org.tw/xcspecexhi?xsmsid={xsmsid}")
         return response.text
 
     async def fetch_parsed(self):

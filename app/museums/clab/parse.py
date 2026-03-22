@@ -7,20 +7,8 @@ from helpers.parse_helper import ParseInit
 
 
 def clean_date(value: Tag) -> str:
-    year = (
-        value.find("p", {"class": "a-dateTime__year"})
-        .get_text()
-        .strip()
-        .split(".")[0]
-        .strip()
-    )
-    month_day = (
-        value.find("p", {"class": "a-dateTime__text"})
-        .get_text()
-        .strip()
-        .split("(")[0]
-        .split(".")
-    )
+    year = value.find("p", {"class": "a-dateTime__year"}).get_text().strip().split(".")[0].strip()
+    month_day = value.find("p", {"class": "a-dateTime__text"}).get_text().strip().split("(")[0].split(".")
     month, day = month_day
     return f"{year}-{month}-{day}"
 

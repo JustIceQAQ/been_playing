@@ -11,11 +11,7 @@ class Pier2Parse(ParseInit):
         return self.item.get("thetitle").strip()
 
     def get_date(self, *args, **kwargs) -> str | None:
-        return (
-            self.item.get("starttime").strip()
-            + " ~ "
-            + self.item.get("endtime").strip()
-        )
+        return self.item.get("starttime").strip() + " ~ " + self.item.get("endtime").strip()
 
     def get_address(self, *args, **kwargs) -> str | None:
         return self.item.get("place").strip()
@@ -28,6 +24,4 @@ class Pier2Parse(ParseInit):
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:
-        return "https://pier2.org/exhibition/info/{info_code}/".format(
-            info_code=self.item.get("id")
-        )
+        return "https://pier2.org/exhibition/info/{info_code}/".format(info_code=self.item.get("id"))

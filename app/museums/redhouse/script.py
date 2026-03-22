@@ -27,9 +27,7 @@ class RedHouseRunner(RunnerInit):
             fullname="西門紅樓",
             code_name="RedHouse",
             external_link="https://www.redhouse.taipei/index.aspx",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.042286045915937, 121.50683773908234"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.042286045915937, 121.50683773908234"),
             venue_type=VenueType.MUSEUM,
         )
 

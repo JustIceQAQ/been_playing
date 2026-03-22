@@ -11,11 +11,7 @@ class NrmParse(ParseInit):
         return self.item.get("title").replace("[另開新視窗]", "").strip()
 
     def get_date(self, *args, **kwargs) -> str | None:
-        return (
-            self.item.find("p", {"class": "activity-time"})
-            .get_text()
-            .replace("日期：", "")
-        )
+        return self.item.find("p", {"class": "activity-time"}).get_text().replace("日期：", "")
 
     def get_address(self, *args, **kwargs) -> str | None:
         address_result = self.item.find("p", {"class": "activity-season"})

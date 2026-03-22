@@ -27,15 +27,11 @@ class BoPiLiaoRunner(RunnerInit):
             fullname="剝皮寮歷史街區",
             code_name="BoPiLiao",
             external_link="https://www.bopiliao.taipei/Event_News",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.03698373119932, 121.50212186318004"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.03698373119932, 121.50212186318004"),
             venue_type=VenueType.MUSEUM,
         )
 
-    async def _fetch_url(
-        self, client: httpx.AsyncClient, url: str, params: dict
-    ) -> httpx.Response:
+    async def _fetch_url(self, client: httpx.AsyncClient, url: str, params: dict) -> httpx.Response:
         return await client.get(url, params=params)
 
     async def fetch_response(self):

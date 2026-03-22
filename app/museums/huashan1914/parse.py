@@ -13,33 +13,21 @@ class huashan1914Parse(ParseInit):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str:
-        return self.item.select_one(
-            "li > a > div > div > div.card-text > div.card-text-name"
-        ).get_text()
+        return self.item.select_one("li > a > div > div > div.card-text > div.card-text-name").get_text()
 
     def get_date(self, *args, **kwargs) -> str:
-        raw_string = self.item.select_one(
-            "li > a > div > div > div.card-text > div.event-date"
-        ).get_text()
+        raw_string = self.item.select_one("li > a > div > div > div.card-text > div.event-date").get_text()
         if "-" in raw_string:
             row_start_date, row_end_date = raw_string.split(" - ")
-            regulated_start_date = re.search(
-                r"((?P<year>\d{4})\.(?P<month>\d{2})\.(?P<day>\d{2}))", row_start_date
-            )
+            regulated_start_date = re.search(r"((?P<year>\d{4})\.(?P<month>\d{2})\.(?P<day>\d{2}))", row_start_date)
             start_date = datetime.date(
                 int(regulated_start_date.group("year")),
                 int(regulated_start_date.group("month")),
                 int(regulated_start_date.group("day")),
             )
-            regulated_end_date = re.search(
-                r"((?P<year>\d{4})?\.?(?P<month>\d{2})\.(?P<day>\d{2}))", row_end_date
-            )
+            regulated_end_date = re.search(r"((?P<year>\d{4})?\.?(?P<month>\d{2})\.(?P<day>\d{2}))", row_end_date)
             end_date = datetime.date(
-                int(
-                    year
-                    if (year := regulated_end_date.group("year"))
-                    else start_date.year
-                ),
+                int(year if (year := regulated_end_date.group("year")) else start_date.year),
                 int(regulated_end_date.group("month")),
                 int(regulated_end_date.group("day")),
             )
@@ -47,9 +35,7 @@ class huashan1914Parse(ParseInit):
             cooked_string = f"{start_date.isoformat()} ~ {end_date.isoformat()}"
         else:
             # one day case
-            regulated = re.search(
-                r"((?P<year>\d{4})\.(?P<month>\d{2})\.(?P<day>\d{2}))", raw_string
-            )
+            regulated = re.search(r"((?P<year>\d{4})\.(?P<month>\d{2})\.(?P<day>\d{2}))", raw_string)
             start_date = datetime.date(
                 int(regulated.group("year")),
                 int(regulated.group("month")),
@@ -71,11 +57,7 @@ class huashan1914Parse(ParseInit):
         dev_style = dev_style["style"]
         style = cssutils.parseStyle(dev_style)
 
-        return (
-            url.replace("url(", "")[:-1].replace('"', "")
-            if (url := style["background-image"])
-            else "-"
-        )
+        return url.replace("url(", "")[:-1].replace('"', "") if (url := style["background-image"]) else "-"
 
     def get_tags(self, *args, **kwargs) -> list[str] | None:
         spans = self.item.select("div.event-list-type > span")

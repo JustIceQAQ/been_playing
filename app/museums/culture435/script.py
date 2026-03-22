@@ -27,9 +27,7 @@ class Culture435Runner(RunnerInit):
             fullname="板橋435藝文特區",
             code_name="Culture435",
             external_link="https://www.435.culture.ntpc.gov.tw/xmdoc?xsmsid=0G256373177821958325",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.024344268554966, 121.45235225442633"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.024344268554966, 121.45235225442633"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -38,22 +36,16 @@ class Culture435Runner(RunnerInit):
         first_url = "https://www.435.culture.ntpc.gov.tw/xmdoc"
         headers = generate_headers(host="www.435.culture.ntpc.gov.tw")
         async with HttpxAsyncClient(headers=headers) as client:
-            first_response = await client.get(
-                first_url, headers=headers, params={"xsmsid": xsmsid}
-            )
+            first_response = await client.get(first_url, headers=headers, params={"xsmsid": xsmsid})
             first_response.raise_for_status()
             p = BeautifulSoupTranslation().translation_to_object(
                 first_response.text,
             )
             conds_s_id = p.find("input", {"id": "CondsSId"}).attrs["value"]
-            request_verification_token = p.find(
-                "input", {"name": "__RequestVerificationToken"}
-            ).attrs["value"]
+            request_verification_token = p.find("input", {"name": "__RequestVerificationToken"}).attrs["value"]
             url = "https://www.435.culture.ntpc.gov.tw/xmdoc/indexaction"
             headers["x-requested-with"] = "XMLHttpRequest"
-            headers[
-                "referer"
-            ] = "https://www.435.culture.ntpc.gov.tw/xmdoc?xsmsid=0G256373177821958325"
+            headers["referer"] = "https://www.435.culture.ntpc.gov.tw/xmdoc?xsmsid=0G256373177821958325"
             headers["origin"] = "https://www.435.culture.ntpc.gov.tw"
             headers["host"] = "www.435.culture.ntpc.gov.tw"
             headers["content-type"] = "application/x-www-form-urlencoded; charset=UTF-8"

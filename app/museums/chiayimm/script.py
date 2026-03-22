@@ -27,9 +27,7 @@ class ChiayiMMRunner(RunnerInit):
             fullname="嘉義市立博物館",
             code_name="ChiayiMM",
             external_link="https://museum.chiayi.gov.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="23.487196187060913, 120.45171887377413"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="23.487196187060913, 120.45171887377413"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -44,9 +42,7 @@ class ChiayiMMRunner(RunnerInit):
                 "https://museum.chiayi.gov.tw/ExhibitionListC003310.aspx?appname=ExhibitionListC003310&SearchAdvanced=true",
                 "https://museum.chiayi.gov.tw/ExhibitionListC003310.aspx?appname=ExhibitionListC003320&SearchAdvanced=true",
             ]
-            responses = await asyncio.gather(
-                *[client.get(url, cookies=cookies) for url in urls]
-            )
+            responses = await asyncio.gather(*[client.get(url, cookies=cookies) for url in urls])
         return [response.text for response in responses]
 
     async def fetch_parsed(self):

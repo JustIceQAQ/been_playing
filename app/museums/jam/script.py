@@ -27,16 +27,12 @@ class JamRunner(RunnerInit):
             fullname="忠泰美術館",
             code_name="Jam",
             external_link="https://jam.jutfoundation.org.tw/online-exhibition",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.044509020251724, 121.53731469675466"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.044509020251724, 121.53731469675466"),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
-        headers = generate_headers(
-            host="jam.jutfoundation.org.tw", referer="https://jam.jutfoundation.org.tw"
-        )
+        headers = generate_headers(host="jam.jutfoundation.org.tw", referer="https://jam.jutfoundation.org.tw")
 
         async with HttpxAsyncClient(headers=headers) as client:
             urls = [

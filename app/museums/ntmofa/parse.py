@@ -27,9 +27,7 @@ class NtMofaParse(ParseInit):
         runtime_address = None
         if address_element := self.item.find("p", {"class": "activity-season"}):
             if runtime_address := address_element.get_text():
-                runtime_address = (
-                    runtime_address.replace("地點：", "").replace("，", "、").strip()
-                )
+                runtime_address = runtime_address.replace("地點：", "").replace("，", "、").strip()
         return runtime_address
 
     def get_figure(self, *args, **kwargs) -> str | None:

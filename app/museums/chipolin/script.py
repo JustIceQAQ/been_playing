@@ -27,9 +27,7 @@ class ChiPoLinRunner(RunnerInit):
             fullname="齊柏林空間",
             code_name="ChiPoLin",
             external_link="https://www.chipolin.org/exhibition",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.17294603618085, 121.43711272744605"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.17294603618085, 121.43711272744605"),
             venue_type=VenueType.MUSEUM,
         )
 

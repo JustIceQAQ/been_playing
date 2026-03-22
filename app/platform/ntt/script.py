@@ -38,16 +38,10 @@ class NTTRunner(RunnerInit):
         data = {"year": year}
         cookies = {}
         async with HttpxAsyncClient(headers=headers) as client:
-            html_response = await client.get(
-                "https://newtaipei.travel/zh-tw/calendar/list"
-            )
+            html_response = await client.get("https://newtaipei.travel/zh-tw/calendar/list")
             html_response.raise_for_status()
-            html_p = BeautifulSoupTranslation().translation_to_object(
-                html_response.text
-            )
-            request_verification_token = html_p.select(
-                "body > input[name=__RequestVerificationToken]"
-            )[0].get("value")
+            html_p = BeautifulSoupTranslation().translation_to_object(html_response.text)
+            request_verification_token = html_p.select("body > input[name=__RequestVerificationToken]")[0].get("value")
             cookies["__RequestVerificationToken"] = request_verification_token
             headers["content-type"] = "application/json"
             response = await client.post(

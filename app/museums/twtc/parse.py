@@ -19,15 +19,9 @@ class TwTcParse(ParseInit):
         start_date_month, start_date_day = start_date_str.split("/")
         end_date_month, end_date_day = end_date_str.split("/")
 
-        start_date_year = (
-            (this_year - 1)
-            if int(end_date_month) < int(start_date_month)
-            else this_year
-        )
+        start_date_year = (this_year - 1) if int(end_date_month) < int(start_date_month) else this_year
 
-        string_date = (
-            f"{start_date_year}-{int(start_date_month):02d}-{int(start_date_day):02d}"
-        )
+        string_date = f"{start_date_year}-{int(start_date_month):02d}-{int(start_date_day):02d}"
 
         end_date_year = this_year
         end_date = f"{end_date_year}-{int(end_date_month):02d}-{int(end_date_day):02d}"

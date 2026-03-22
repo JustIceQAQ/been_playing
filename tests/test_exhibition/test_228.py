@@ -23,14 +23,12 @@ async def test_get_228_header():
 
 
 def test_parsed_txt():
-    raw_txt = pathlib.Path("fixtrue/_228_wix_viewer_model.json").read_text(
-        encoding="utf-8"
-    )
+    raw_txt = pathlib.Path("fixtrue/_228_wix_viewer_model.json").read_text(encoding="utf-8")
     wix_viewer_model_dict = json.loads(raw_txt)
     print(
-        wix_viewer_model_dict["siteFeaturesConfigs"]["dynamicPages"][
-            "prefixToRouterFetchData"
-        ]["exhibitionse"]["optionsData"]["headers"]
+        wix_viewer_model_dict["siteFeaturesConfigs"]["dynamicPages"]["prefixToRouterFetchData"]["exhibitionse"][
+            "optionsData"
+        ]["headers"]
     )
 
 
@@ -74,9 +72,7 @@ def extract_exhibition_info(html: str):
     text = re.sub(r"[（(][^）)]*[）)]", "", text)
 
     date_pattern = re.compile(r"展覽期間[:：]?\s*([^\n]+)", re.IGNORECASE)
-    location_pattern = re.compile(
-        r"(展覽地點|地點|地址)[:：]?\s*([^\n<]+)", re.IGNORECASE
-    )
+    location_pattern = re.compile(r"(展覽地點|地點|地址)[:：]?\s*([^\n<]+)", re.IGNORECASE)
 
     def parse_date(text):
         date_matches = re.findall(r"(\d{4})[年/-](\d{1,2})[月/-](\d{1,2})", text)
@@ -99,11 +95,7 @@ def extract_exhibition_info(html: str):
         parts = re.split(r"[／/]", location_raw)
         parts = [p.replace("二二八國家紀念館", "").strip() for p in parts]
         location = next(
-            (
-                p
-                for p in parts
-                if "樓" in p or "展區" in p or "展示室" in p or "空間" in p
-            ),
+            (p for p in parts if "樓" in p or "展區" in p or "展示室" in p or "空間" in p),
             "",
         )
         if not location and parts:
@@ -116,13 +108,11 @@ def extract_exhibition_info(html: str):
 
 @pytest.mark.asyncio
 async def test_get_data():
-    raw_txt = pathlib.Path("fixtrue/_228_wix_viewer_model.json").read_text(
-        encoding="utf-8"
-    )
+    raw_txt = pathlib.Path("fixtrue/_228_wix_viewer_model.json").read_text(encoding="utf-8")
     wix_viewer_model_dict = json.loads(raw_txt)
-    headers_values = wix_viewer_model_dict["siteFeaturesConfigs"]["dynamicPages"][
-        "prefixToRouterFetchData"
-    ]["exhibitionse"]["optionsData"]["headers"]
+    headers_values = wix_viewer_model_dict["siteFeaturesConfigs"]["dynamicPages"]["prefixToRouterFetchData"][
+        "exhibitionse"
+    ]["optionsData"]["headers"]
     x_wix_grid_app_id = headers_values["x-wix-grid-app-id"]
 
     common_config = CommonConfig(BSI=x_wix_grid_app_id).to_query()
@@ -134,9 +124,7 @@ async def test_get_data():
         "commonconfig": common_config,
     }
     async with httpx.AsyncClient(timeout=None, headers=headers) as client:
-        response = await client.get(
-            "https://www.228.org.tw/_api/cloud-data/v2/items/query", params={".r": r}
-        )
+        response = await client.get("https://www.228.org.tw/_api/cloud-data/v2/items/query", params={".r": r})
         assert response.status_code == 200
         result = response.json()
         print()

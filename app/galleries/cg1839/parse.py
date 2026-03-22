@@ -19,9 +19,7 @@ class CG1839Parse(ParseInit):
             if "展期" in el.get_text():
                 date_text = el.get_text(separator=" ", strip=True)
                 break
-        match = re.search(
-            r"(\d{4})年(\d{2})月(\d{2})日?[–~](\d{2})月(\d{2})", date_text
-        )
+        match = re.search(r"(\d{4})年(\d{2})月(\d{2})日?[–~](\d{2})月(\d{2})", date_text)
         if match:
             year = match.group(1)
             start_month = match.group(2)
@@ -38,9 +36,7 @@ class CG1839Parse(ParseInit):
         pass
 
     def get_figure(self, *args, **kwargs) -> str | None:
-        return (
-            self.item.find("figure", {"class": "wp-block-image"}).find("img").get("src")
-        )
+        return self.item.find("figure", {"class": "wp-block-image"}).find("img").get("src")
 
     def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass

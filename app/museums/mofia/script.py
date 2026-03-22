@@ -26,9 +26,7 @@ class MofiaRunner(RunnerInit):
             fullname="臺中市纖維工藝博物館",
             code_name="Mofia",
             external_link="https://mofia.taichung.gov.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="24.100248374856758, 120.68606998009467"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="24.100248374856758, 120.68606998009467"),
             venue_type=VenueType.MUSEUM,
         )
 

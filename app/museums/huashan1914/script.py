@@ -46,9 +46,7 @@ class HuaShan1914Runner(RunnerInit):
                 response = await client.get(
                     f"https://www.huashan1914.com/w/huashan1914/exhibition?index={index}",
                 )
-                dataset = bs4.BeautifulSoup(response.text, "html5lib").select(
-                    "ul#event-ul li"
-                )
+                dataset = bs4.BeautifulSoup(response.text, "html5lib").select("ul#event-ul li")
                 if dataset:
                     datasets.append(response.text)
                     index = index + 1
@@ -77,9 +75,7 @@ class HuaShan1914Runner(RunnerInit):
         exhibition_location = None
         a_elements = soup.select("div.address a")
         if a_elements:
-            exhibition_location = ", ".join(
-                [a_element.get_text(strip=True) for a_element in a_elements]
-            )
+            exhibition_location = ", ".join([a_element.get_text(strip=True) for a_element in a_elements])
         await self.cache.aset(f"{item.UUID}-address", exhibition_location, month_3())
         item.address = exhibition_location
 

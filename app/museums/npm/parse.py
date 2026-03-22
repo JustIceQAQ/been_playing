@@ -14,11 +14,7 @@ class NpmRowParse(ParseInit):
         return self.item.find("h3", {"class": "font-medium"}).get_text()
 
     def get_date(self, *args, **kwargs) -> str:
-        return (
-            self.item.find("div", {"class": "exhibition-list-date"})
-            .get_text()
-            .replace("~", " ~ ")
-        )
+        return self.item.find("div", {"class": "exhibition-list-date"}).get_text().replace("~", " ~ ")
 
     def get_address(self, *args, **kwargs) -> str:
         return self.item.find("div", {"class": "card-content-bottom"}).get_text()
@@ -27,14 +23,10 @@ class NpmRowParse(ParseInit):
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
-        return "{}{}".format(
-            target_domain, self.item.select_one("figure.card-image img")["data-src"]
-        )
+        return "{}{}".format(target_domain, self.item.select_one("figure.card-image img")["data-src"])
 
     def get_tags(self, *args, **kwargs) -> list[str] | None:
-        tags = self.item.find(
-            "div", {"class": "exhibition-list-date"}
-        ).next_sibling.next_sibling
+        tags = self.item.find("div", {"class": "exhibition-list-date"}).next_sibling.next_sibling
         if tags is None:
             return None
         tags = tags.get_text(strip=True)
@@ -74,9 +66,7 @@ class NpmColParse(ParseInit):
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
 
-        figure_url = "{}{}".format(
-            target_domain, self.item.select_one("figure.card-image img")["data-src"]
-        )
+        figure_url = "{}{}".format(target_domain, self.item.select_one("figure.card-image img")["data-src"])
 
         return self.clean_figure_url(figure_url)
 
@@ -133,9 +123,7 @@ class NpmPreviewParse(ParseInit):
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
 
-        figure_url = "{}{}".format(
-            target_domain, self.item.select_one("figure.card-image img")["data-src"]
-        )
+        figure_url = "{}{}".format(target_domain, self.item.select_one("figure.card-image img")["data-src"])
 
         return self.clean_figure_url(figure_url)
 
@@ -183,9 +171,7 @@ class SouthNpmParse(ParseInit):
         return f"{self.t(start_str)} ~ "
 
     def get_address(self, *args, **kwargs) -> str:
-        address = self.item.find("div", {"class": "remarks_ic-map"}).get_text(
-            strip=True
-        )
+        address = self.item.find("div", {"class": "remarks_ic-map"}).get_text(strip=True)
         if "S" in address and "F" in address:
             return "南部院區 " + address
         return self.item.find("div", {"class": "remarks_ic-map"}).get_text(strip=True)

@@ -21,11 +21,7 @@ class MwrParse(ParseInit):
         dev_style = self.item.select_one("div.imgBox > a > div.img").get("style")
         style = cssutils.parseStyle(dev_style)
 
-        return (
-            url.replace("url(", "")[:-1].replace('"', "")
-            if (url := style["background-image"])
-            else "-"
-        )
+        return url.replace("url(", "")[:-1].replace('"', "") if (url := style["background-image"]) else "-"
 
     def get_source_url(self, *args, **kwargs) -> str | None:
         pre_path = "https://www.mwr.org.tw{}"

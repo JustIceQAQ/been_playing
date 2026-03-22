@@ -27,9 +27,7 @@ class MindSetArtParse(ParseInit):
         else:
             raise ValueError("Invalid date format")
 
-        start_date = (
-            f"{int(start_year):04d}-{int(start_month):02d}-{int(start_day):02d}"
-        )
+        start_date = f"{int(start_year):04d}-{int(start_month):02d}-{int(start_day):02d}"
         end_date = f"{int(end_year):04d}-{int(end_month):02d}-{int(end_day):02d}"
 
         return f"{start_date} ~ {end_date}"

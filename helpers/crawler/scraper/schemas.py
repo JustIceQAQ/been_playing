@@ -18,9 +18,7 @@ class ScraperJobsResponse(BaseModel):
     status: JobStatus = Field(description="執行狀態", default=JobStatus.Running)
     is_finished: bool | None = Field(default=None)
     is_running: bool | None = Field(default=None)
-    status_url: str | None = Field(
-        description="執行狀態 url", alias="statusUrl", default=None
-    )
+    status_url: str | None = Field(description="執行狀態 url", alias="statusUrl", default=None)
     url: str | None = Field(default=None)
     response: RealResponse | None = Field(default=None)
     status_code: int = Field()

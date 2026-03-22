@@ -26,9 +26,7 @@ class OCAMParse(ParseInit):
         pass
 
     def get_figure(self, *args, **kwargs) -> str | None:
-        return "https://www.ymculture.org.tw" + self.item.find(
-            "img", {"class": "block"}
-        ).get("src")
+        return "https://www.ymculture.org.tw" + self.item.find("img", {"class": "block"}).get("src")
 
     def get_source_url(self, *args, **kwargs) -> str | None:
         return "https://www.ymculture.org.tw" + self.item.find(

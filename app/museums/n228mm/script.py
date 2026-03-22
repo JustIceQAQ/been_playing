@@ -30,16 +30,12 @@ class N228MMRunner(RunnerInit):
             fullname="二二八國家紀念館",
             code_name="n228mm",
             external_link="https://www.228.org.tw/exhibitionsnew",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.03187889577739, 121.51386505257408"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.03187889577739, 121.51386505257408"),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
-        headers = generate_headers(
-            other_headers={"accept-encoding": "gzip, deflate, zstd"}
-        )
+        headers = generate_headers(other_headers={"accept-encoding": "gzip, deflate, zstd"})
         async with HttpxAsyncClient(headers=headers) as client:
             response_1 = await client.get(
                 "https://www.228.org.tw/exhibitionsnew",
@@ -47,9 +43,9 @@ class N228MMRunner(RunnerInit):
             parsed = bs4.BeautifulSoup(response_1.text, "html5lib")
             wix_viewer_model = parsed.select_one("#wix-viewer-model").string
             wix_viewer_model_dict = json.loads(wix_viewer_model)
-            runtime_headers = wix_viewer_model_dict["siteFeaturesConfigs"][
-                "dynamicPages"
-            ]["prefixToRouterFetchData"]["exhibitionse"]["optionsData"]["headers"]
+            runtime_headers = wix_viewer_model_dict["siteFeaturesConfigs"]["dynamicPages"]["prefixToRouterFetchData"][
+                "exhibitionse"
+            ]["optionsData"]["headers"]
             x_wix_grid_app_id = runtime_headers["x-wix-grid-app-id"]
             common_config = CommonConfig(BSI=x_wix_grid_app_id).to_query()
             r_query = query_p(x_wix_grid_app_id)

@@ -27,9 +27,7 @@ class NTAECRunner(RunnerInit):
             fullname="國立台灣藝術教育館",
             code_name="NTAEC",
             external_link="https://www.arte.gov.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.03249656295196, 121.51211159386773"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.03249656295196, 121.51211159386773"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -41,9 +39,7 @@ class NTAECRunner(RunnerInit):
         responses = []
         async with HttpxAsyncClient(headers=headers) as client:
             for n in range(3):
-                response = await client.get(
-                    url, params={"PageNo": page_no + n}, cookies=cookies
-                )
+                response = await client.get(url, params={"PageNo": page_no + n}, cookies=cookies)
                 responses.append(response.text)
         return responses
 

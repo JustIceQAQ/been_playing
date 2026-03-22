@@ -29,9 +29,7 @@ class CLabRunner(RunnerInit):
             fullname="台灣當代文化實驗場 C-Lab",
             code_name="CLab",
             external_link="https://clab.org.tw/events/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.039263447268308, 121.53884705257425"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.039263447268308, 121.53884705257425"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -39,24 +37,17 @@ class CLabRunner(RunnerInit):
         current_period, previous_period = get_current_and_previous_month()
 
         target_url_template = (
-            "https://clab.org.tw/events/?"
-            "event_category="
-            "&filter_year={filter_year}"
-            "&filter_month={filter_month}"
+            "https://clab.org.tw/events/?" "event_category=" "&filter_year={filter_year}" "&filter_month={filter_month}"
         )
         headers = generate_headers()
 
         async with HttpxAsyncClient(headers=headers) as client:
             responses = await asyncio.gather(
                 client.get(
-                    target_url_template.format(
-                        filter_year=current_period[0], filter_month=current_period[1]
-                    ),
+                    target_url_template.format(filter_year=current_period[0], filter_month=current_period[1]),
                 ),
                 client.get(
-                    target_url_template.format(
-                        filter_year=previous_period[0], filter_month=previous_period[1]
-                    ),
+                    target_url_template.format(filter_year=previous_period[0], filter_month=previous_period[1]),
                 ),
             )
         return [response.text for response in responses]

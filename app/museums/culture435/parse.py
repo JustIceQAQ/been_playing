@@ -26,7 +26,4 @@ class Culture435Parse(ParseInit):
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:
-        return (
-            "https://www.435.culture.ntpc.gov.tw"
-            + self.item.select_one("a").attrs["href"]
-        )
+        return "https://www.435.culture.ntpc.gov.tw" + self.item.select_one("a").attrs["href"]

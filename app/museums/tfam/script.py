@@ -25,9 +25,7 @@ class TFamRunner(RunnerInit):
             fullname="臺北市立美術館",
             code_name="TFam",
             external_link="https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.07240807900826, 121.5244680697716"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.07240807900826, 121.5244680697716"),
             venue_type=VenueType.MUSEUM,
         )
 

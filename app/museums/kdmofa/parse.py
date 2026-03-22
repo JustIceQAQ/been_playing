@@ -8,24 +8,14 @@ class KdMoFaParse(ParseInit):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
-        return (
-            self.item.find("div", {"class": "cont"})
-            .find("div", {"class": "STitle"})
-            .text
-        )
+        return self.item.find("div", {"class": "cont"}).find("div", {"class": "STitle"}).text
 
     def get_date(self, *args, **kwargs) -> str | None:
-        datetime_range = (
-            self.item.find("div", {"class": "cont"}).find("div", {"class": "subt"}).text
-        )
+        datetime_range = self.item.find("div", {"class": "cont"}).find("div", {"class": "subt"}).text
         return datetime_range.replace(".", "-").replace("～", " ~ ")
 
     def get_address(self, *args, **kwargs) -> str | None:
-        return (
-            self.item.find("div", {"class": "cont"})
-            .find("div", {"class": "location"})
-            .text
-        )
+        return self.item.find("div", {"class": "cont"}).find("div", {"class": "location"}).text
 
     def get_figure(self, *args, **kwargs) -> str | None:
         return self.item.find("div", {"class": "pic"}).find("img").get("src")

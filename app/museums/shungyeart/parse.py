@@ -18,9 +18,7 @@ class ShungYeArtParse(ParseInit):
             return None
 
         start_str, end_str = raw_date.split(" - ")
-        start_date = datetime.datetime.strptime(start_str, "%Y.%m.%d").strftime(
-            "%Y-%m-%d"
-        )
+        start_date = datetime.datetime.strptime(start_str, "%Y.%m.%d").strftime("%Y-%m-%d")
         end_date = datetime.datetime.strptime(end_str, "%Y.%m.%d").strftime("%Y-%m-%d")
 
         return f"{start_date} ~ {end_date}"
@@ -36,7 +34,4 @@ class ShungYeArtParse(ParseInit):
         return "https://www.shungye-art.org/" + style
 
     def get_source_url(self, *args, **kwargs) -> str | None:
-        return (
-            "https://www.shungye-art.org/"
-            + self.item.find("a").attrs["href"].split("&")[0]
-        )
+        return "https://www.shungye-art.org/" + self.item.find("a").attrs["href"].split("&")[0]

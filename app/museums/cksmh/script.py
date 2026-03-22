@@ -41,9 +41,7 @@ class CKSMHRunner(RunnerInit):
     async def fetch_response(self) -> str:
         headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://www.cksmh.gov.tw/News_Actives_photo.aspx?n=6067&sms=14954"
-            )
+            response = await client.get("https://www.cksmh.gov.tw/News_Actives_photo.aspx?n=6067&sms=14954")
         return response.text
 
     async def fetch_parsed(self):

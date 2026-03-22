@@ -28,32 +28,24 @@ class KmFaRunner(RunnerInit):
             fullname="高雄市立美術館",
             code_name="KmFa",
             external_link="https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",
-            branch_coordinates=Coordinate(
-                raw_coordinates="22.65687499527212, 120.28659401204955"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="22.65687499527212, 120.28659401204955"),
             venue_type=VenueType.MUSEUM,
         )
 
-    async def sub_response(
-        self, client: httpx.AsyncClient, url: str, *args, **kwargs
-    ) -> str:
+    async def sub_response(self, client: httpx.AsyncClient, url: str, *args, **kwargs) -> str:
         response = await client.get(url, *args, **kwargs)
         response.raise_for_status()
         return response.text
 
     async def fetch_response(self):
-        headers = generate_headers(
-            referer="https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1"
-        )
+        headers = generate_headers(referer="https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1")
         cookies = generate_cookies(need_asp_net_session_id=True, need_consent=True)
         urls = [
             "https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",
             "https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=2",
         ]
         async with HttpxAsyncClient(headers=headers) as client:
-            responses = await asyncio.gather(
-                *[self.sub_response(client, url, cookies=cookies) for url in urls]
-            )
+            responses = await asyncio.gather(*[self.sub_response(client, url, cookies=cookies) for url in urls])
         return responses
 
     async def fetch_parsed(self):

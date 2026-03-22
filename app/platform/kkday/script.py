@@ -62,25 +62,17 @@ class KKDayRunner(RunnerInit):
         encoded_query_parameter = urllib.parse.urlencode(parse_list_result, safe=",")
         return f"{self.target_url}?{encoded_query_parameter}"
 
-    def _format_init_state(
-        self, transitioned: bs4.BeautifulSoup
-    ) -> tuple[list[dict], int | None]:
+    def _format_init_state(self, transitioned: bs4.BeautifulSoup) -> tuple[list[dict], int | None]:
         products = []
         product_count = None
-        script_content = transitioned.find_all(
-            "script", string=re.compile(r"window\.__INIT_STATE__\s*=\s*")
-        )
+        script_content = transitioned.find_all("script", string=re.compile(r"window\.__INIT_STATE__\s*=\s*"))
         for script in script_content:
-            match = re.search(
-                r"window\.__INIT_STATE__\s*=\s*(\{.*?\})\s*;", script.string, re.DOTALL
-            )
+            match = re.search(r"window\.__INIT_STATE__\s*=\s*(\{.*?\})\s*;", script.string, re.DOTALL)
             if match:
                 init_state_json = match.group(1)
                 raw_data = json.loads(init_state_json)
                 state = raw_data["state"]
-                if (state.get("products", None) is None) or (
-                    state.get("productCount", None) is None
-                ):
+                if (state.get("products", None) is None) or (state.get("productCount", None) is None):
                     continue
                 products = raw_data["state"]["products"]
                 product_count = raw_data["state"]["productCount"]
@@ -100,11 +92,7 @@ class KKDayRunner(RunnerInit):
             },
         )
         runtime_settings = get_settings()
-        proxies = (
-            None
-            if runtime_settings.PROXY_POOL is None
-            else [Proxy.all(runtime_settings.PROXY_POOL)]
-        )
+        proxies = None if runtime_settings.PROXY_POOL is None else [Proxy.all(runtime_settings.PROXY_POOL)]
         async with RNetAsyncClient(
             proxies=proxies,
         ) as client:
@@ -115,16 +103,11 @@ class KKDayRunner(RunnerInit):
             first_context = await first_response.text()
             responses.append(first_context)
             _, product_count = self._format_init_state(
-                self.translation().translation_to_object(
-                    first_context, format_encoding="html.parser"
-                )
+                self.translation().translation_to_object(first_context, format_encoding="html.parser")
             )
             if product_count is not None:
                 loop_number = (product_count // 10) + 2
-                sub_tasks = [
-                    client.get(self._get_this_url(i), headers=headers)
-                    for i in range(2, loop_number, 1)
-                ]
+                sub_tasks = [client.get(self._get_this_url(i), headers=headers) for i in range(2, loop_number, 1)]
                 sub_responses = await asyncio.gather(*sub_tasks)
                 for sub_response in sub_responses:
                     sub_context = await sub_response.text()
@@ -134,9 +117,7 @@ class KKDayRunner(RunnerInit):
 
     async def fetch_parsed(self):
         dataset = []
-        parsers: list[bs4.BeautifulSoup] = await super().fetch_parsed(
-            format_encoding="html.parser"
-        )
+        parsers: list[bs4.BeautifulSoup] = await super().fetch_parsed(format_encoding="html.parser")
         for parsed in parsers:
             products, _ = self._format_init_state(parsed)
             dataset.extend(products)

@@ -28,9 +28,7 @@ class MuseumPostRunner(RunnerInit):
             code_name="MuseumPost",
             external_link="https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage=1",
             branch_coordinates=[
-                Coordinate(
-                    name="本館", raw_coordinates="25.032392367745082, 121.5147638567378"
-                ),
+                Coordinate(name="本館", raw_coordinates="25.032392367745082, 121.5147638567378"),
                 Coordinate(
                     name="臺北館",
                     raw_coordinates="25.047556287891062, 121.51158812126322",
@@ -40,27 +38,17 @@ class MuseumPostRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = generate_headers(
-            host="museum.post.gov.tw", other_headers={"Connection": "keep-alive"}
-        )
+        headers = generate_headers(host="museum.post.gov.tw", other_headers={"Connection": "keep-alive"})
         cookies = generate_cookies(need_js_ession_id=True)
         async with HttpxAsyncClient(headers=headers) as client:
             target_url = "https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage={to_page}"
             responses = []
             page = 1
-            response = await client.get(
-                target_url.format(to_page=page), cookies=cookies
-            )
-            while (
-                self.translation()
-                .translation_to_object(response.text)
-                .select("ul.part_list > li")
-            ):
+            response = await client.get(target_url.format(to_page=page), cookies=cookies)
+            while self.translation().translation_to_object(response.text).select("ul.part_list > li"):
                 responses.append(response.text)
                 page += 1
-                response = await client.get(
-                    target_url.format(to_page=page), cookies=cookies
-                )
+                response = await client.get(target_url.format(to_page=page), cookies=cookies)
 
             return responses
 

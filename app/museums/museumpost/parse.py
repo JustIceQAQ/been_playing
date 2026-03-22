@@ -27,6 +27,4 @@ class MuseumPostParse(ParseInit):
 
     def get_source_url(self, *args, **kwargs) -> str:
         pre_url = "https://museum.post.gov.tw/post/Postal_Museum/museum/{}"
-        return pre_url.format(
-            self.item.find("div", {"class": "textWrap"}).find("a").get("href")
-        )
+        return pre_url.format(self.item.find("div", {"class": "textWrap"}).find("a").get("href"))

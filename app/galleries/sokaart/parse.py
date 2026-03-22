@@ -41,6 +41,4 @@ class SoKaArtParse(ParseInit):
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:
-        return "https://soka-art.com" + self.item.find("h3", {"class": "title"}).find(
-            "a"
-        ).get("href")
+        return "https://soka-art.com" + self.item.find("h3", {"class": "title"}).find("a").get("href")

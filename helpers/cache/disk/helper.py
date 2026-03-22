@@ -20,12 +20,7 @@ class DiskCache(Cache):
         return cls._instance
 
     def __init__(self):
-        self.origin_cache = disk_cache(
-            str(
-                pathlib.Path(__file__).parent.parent.parent.parent.absolute()
-                / "fixture"
-            )
-        )
+        self.origin_cache = disk_cache(str(pathlib.Path(__file__).parent.parent.parent.parent.absolute() / "fixture"))
         self.loop = asyncio.get_running_loop()
 
     def get_datetime_now(self):
@@ -50,9 +45,7 @@ class DiskCache(Cache):
         loop = asyncio.get_running_loop()
         future = loop.run_in_executor(
             None,
-            functools.partial(
-                self.set, key, value, expire=expire, from_datetime=from_datetime
-            ),
+            functools.partial(self.set, key, value, expire=expire, from_datetime=from_datetime),
         )
         result = await future
         return result
@@ -76,9 +69,7 @@ class DiskCache(Cache):
             expire_seconds = None
         return expire_seconds
 
-    def croniter_str_to_seconds(
-        self, croniter_string: str, from_datetime: datetime.datetime | None = None
-    ) -> int:
+    def croniter_str_to_seconds(self, croniter_string: str, from_datetime: datetime.datetime | None = None) -> int:
         runtime_now = self.get_datetime_now()
         croniter_iter = croniter(croniter_string, (from_datetime or runtime_now))
         next_time: datetime.datetime = croniter_iter.get_next(datetime.datetime)

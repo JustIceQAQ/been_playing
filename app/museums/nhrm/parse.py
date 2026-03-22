@@ -13,13 +13,7 @@ class NHRMParse(ParseInit):
     def get_date(self, *args, **kwargs) -> str | None:
         date_range = self.item.find("div", {"class": "date"})
         if date_range:
-            return (
-                date_range.get_text()
-                .strip()
-                .replace("-", "~")
-                .replace("－", "~")
-                .replace(".", "-")
-            )
+            return date_range.get_text().strip().replace("-", "~").replace("－", "~").replace(".", "-")
 
     def get_address(self, *args, **kwargs) -> str | None:
         pass

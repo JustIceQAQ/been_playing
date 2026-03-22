@@ -27,9 +27,7 @@ class NCPIRunner(RunnerInit):
             fullname="國家攝影文化中心",
             code_name="NCPI",
             external_link="https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?n=8006&sms=15632",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.0468823164654, 121.51432273908243"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.0468823164654, 121.51432273908243"),
             venue_type=VenueType.MUSEUM,
         )
 

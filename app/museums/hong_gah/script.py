@@ -31,9 +31,7 @@ class HongGahRunner(RunnerInit):
             fullname="鳳甲美術館",
             code_name="HongGah",
             external_link="https://hong-gah.org.tw/exhibitions-zh",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.125315737958747, 121.49922632559256"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.125315737958747, 121.49922632559256"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -44,11 +42,7 @@ class HongGahRunner(RunnerInit):
             x_requested_with="XMLHttpRequest",
         )
         runtime_settings = get_settings()
-        proxies = (
-            None
-            if runtime_settings.PROXY_POOL is None
-            else [Proxy.all(runtime_settings.PROXY_POOL)]
-        )
+        proxies = None if runtime_settings.PROXY_POOL is None else [Proxy.all(runtime_settings.PROXY_POOL)]
         async with RNetAsyncClient(
             headers=headers,
             follow_redirects=True,

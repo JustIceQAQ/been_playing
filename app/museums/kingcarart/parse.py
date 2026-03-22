@@ -14,17 +14,13 @@ class KingCarArtParse(ParseInit):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str:
-        select_one_result = self.item.select_one(
-            "div.ex-info > h2 > span.tw"
-        ) or self.item.select_one("div.ex-info > h2 > span")
+        select_one_result = self.item.select_one("div.ex-info > h2 > span.tw") or self.item.select_one(
+            "div.ex-info > h2 > span"
+        )
         return select_one_result.get_text() if select_one_result else "-"
 
     def get_date(self, *args, **kwargs) -> str | None:
-        raw_date = (
-            div.get_text()
-            if (div := self.item.find("div", {"class": "ex-date"}))
-            else ""
-        )
+        raw_date = div.get_text() if (div := self.item.find("div", {"class": "ex-date"})) else ""
         if not raw_date:
             return None
 
@@ -47,10 +43,7 @@ class KingCarArtParse(ParseInit):
         return f'{first_date.strftime("%Y-%m-%d")} ~ {second_date.strftime("%Y-%m-%d")}'
 
     def get_address(self, *args, **kwargs) -> str:
-        return ", ".join(
-            span.get_text().strip() if span else ""
-            for span in self.item.select("div.ex-location > span")
-        )
+        return ", ".join(span.get_text().strip() if span else "" for span in self.item.select("div.ex-location > span"))
 
     def get_figure(self, *args, **kwargs) -> str | None:
         div = self.item.find("div", {"class": "ex-img"})

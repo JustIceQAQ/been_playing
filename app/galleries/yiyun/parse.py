@@ -13,12 +13,8 @@ class YiYunParse(ParseInit):
     def get_date(self, *args, **kwargs) -> str | None:
         dates_text = self.item.select("div.date-text")
         start_date, end_date = dates_text
-        start_date_text = datetime.datetime.strptime(
-            start_date.get_text(strip=True), "%m/%d/%Y"
-        ).strftime("%Y-%m-%d")
-        end_date_text = datetime.datetime.strptime(
-            end_date.get_text(strip=True), "%m/%d/%Y"
-        ).strftime("%Y-%m-%d")
+        start_date_text = datetime.datetime.strptime(start_date.get_text(strip=True), "%m/%d/%Y").strftime("%Y-%m-%d")
+        end_date_text = datetime.datetime.strptime(end_date.get_text(strip=True), "%m/%d/%Y").strftime("%Y-%m-%d")
         return f"{start_date_text} ~ {end_date_text}"
 
     def get_address(self, *args, **kwargs) -> str | None:

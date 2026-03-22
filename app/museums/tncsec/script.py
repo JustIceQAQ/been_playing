@@ -26,9 +26,7 @@ class TnCsEcRunner(RunnerInit):
             fullname="國立臺南生活美學館",
             code_name="tncsec",
             external_link="https://www.tncsec.gov.tw/News_actives.aspx?n=2921&sms=11885&page=1&PageSize=30",
-            branch_coordinates=Coordinate(
-                raw_coordinates="22.992283833020835, 120.18735052369556"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="22.992283833020835, 120.18735052369556"),
             venue_type=VenueType.MUSEUM,
         )
 

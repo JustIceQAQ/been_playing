@@ -20,9 +20,7 @@ class BooksTicketsParse(ParseInit):
         return None
 
     def get_figure(self, *args, **kwargs) -> str:
-        return self.clean_figure_url(
-            self.item.select_one("div.covbg > div > div > p > a > img")["src"]
-        )
+        return self.clean_figure_url(self.item.select_one("div.covbg > div > div > p > a > img")["src"])
 
     def clean_figure_url(self, o_url) -> str:
         u = urlparse(o_url)

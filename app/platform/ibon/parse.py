@@ -15,16 +15,12 @@ class IBonParse(ParseInit):
 
         start_date_millisecond: int | None = self.item.get("startDate", None)
         if start_date_millisecond is not None:
-            start_date = datetime.datetime.fromtimestamp(
-                int(str(start_date_millisecond)[:-3])
-            )
+            start_date = datetime.datetime.fromtimestamp(int(str(start_date_millisecond)[:-3]))
             runtime_date.append(start_date.date().isoformat())
 
         end_date_millisecond = self.item.get("endDate", None)
         if end_date_millisecond is not None:
-            end_date = datetime.datetime.fromtimestamp(
-                int(str(end_date_millisecond)[:-3])
-            )
+            end_date = datetime.datetime.fromtimestamp(int(str(end_date_millisecond)[:-3]))
             runtime_date.append(end_date.date().isoformat())
 
         return " ~ ".join(runtime_date)

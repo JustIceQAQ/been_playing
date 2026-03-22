@@ -25,9 +25,7 @@ class NtcArtMuseumParse(ParseInit):
         if ex_date_st_match:
             ex_date_st_timestamp_str = ex_date_st_match.group(1)
             ex_date_st_timestamp_ms = int(ex_date_st_timestamp_str) / 1000
-            ex_date_st_object_utc = datetime.datetime.fromtimestamp(
-                ex_date_st_timestamp_ms, TAIWAN_TIMEZONE
-            )
+            ex_date_st_object_utc = datetime.datetime.fromtimestamp(ex_date_st_timestamp_ms, TAIWAN_TIMEZONE)
             ex_date_st_formatted_date = ex_date_st_object_utc.strftime("%Y-%m-%d")
 
         if ex_date_en is None:
@@ -38,9 +36,7 @@ class NtcArtMuseumParse(ParseInit):
         if ex_date_en_match:
             ex_date_en_timestamp_str = ex_date_en_match.group(1)
             ex_date_en_timestamp_ms = int(ex_date_en_timestamp_str) / 1000
-            ex_date_en_object_utc = datetime.datetime.fromtimestamp(
-                ex_date_en_timestamp_ms, TAIWAN_TIMEZONE
-            )
+            ex_date_en_object_utc = datetime.datetime.fromtimestamp(ex_date_en_timestamp_ms, TAIWAN_TIMEZONE)
             ex_date_en_formatted_date = ex_date_en_object_utc.strftime("%Y-%m-%d")
 
         return ex_date_st_formatted_date + " ~ " + ex_date_en_formatted_date

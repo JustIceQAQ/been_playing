@@ -43,15 +43,11 @@ class KLookParse(ParseInit):
             if ("預售" in titles[0]) and ("優惠" in titles[0]) and ("折" in titles[0]):
                 runtime_title = titles[1]
             else:
-                runtime_title = (
-                    titles[0] if titles[1] in {"展覽"} else " - ".join(titles)
-                )
+                runtime_title = titles[0] if titles[1] in {"展覽"} else " - ".join(titles)
 
         elif len(titles) == 3:
             runtime_address = titles[-1]
-            runtime_title = (
-                titles[0] if titles[1] in {"展覽"} else " - ".join(titles[:2])
-            )
+            runtime_title = titles[0] if titles[1] in {"展覽"} else " - ".join(titles[:2])
         elif len(titles) == 5:
             runtime_title = titles[3]
             runtime_address = titles[2]

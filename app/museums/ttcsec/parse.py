@@ -8,11 +8,7 @@ class TtCsEcParse(ParseInit):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
-        return (
-            self.item.find("div", {"class": "caption"})
-            .find("span")
-            .get_text(strip=True)
-        )
+        return self.item.find("div", {"class": "caption"}).find("span").get_text(strip=True)
 
     def get_date(self, *args, **kwargs) -> str | None:
         pass

@@ -64,17 +64,11 @@ class KLookRunner(RunnerInit):
             },
         )
         runtime_settings = get_settings()
-        proxies = (
-            None
-            if runtime_settings.PROXY_POOL is None
-            else [Proxy.all(runtime_settings.PROXY_POOL)]
-        )
+        proxies = None if runtime_settings.PROXY_POOL is None else [Proxy.all(runtime_settings.PROXY_POOL)]
         async with RNetAsyncClient(
             proxies=proxies,
         ) as client:
-            response = await client.get(
-                self.target_url.format(page_num=1), headers=headers
-            )
+            response = await client.get(self.target_url.format(page_num=1), headers=headers)
             if not response.status_code.is_success():
                 return responses
             content = await response.json()
@@ -82,9 +76,7 @@ class KLookRunner(RunnerInit):
             page_size = int(content.get("result").get("page_size"))
             total = int(content.get("result").get("total"))
             for page in range(2, total // page_size + 2):
-                sub_response = await client.get(
-                    self.target_url.format(page_num=page), headers=headers
-                )
+                sub_response = await client.get(self.target_url.format(page_num=page), headers=headers)
                 if not sub_response.status_code.is_success():
                     return responses
                 content = await sub_response.json()

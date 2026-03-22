@@ -27,9 +27,7 @@ class Pier2Runner(RunnerInit):
             fullname="駁2藝術特區",
             code_name="Pier2",
             external_link="https://pier2.org/exhibition/list/all/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="22.620055196410377, 120.28155879030746"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="22.620055196410377, 120.28155879030746"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -45,9 +43,7 @@ class Pier2Runner(RunnerInit):
             "date": f"{datetime.date.today():%Y-%m-%d}",
         }
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.post(
-                "https://pier2.org/api/eventList.php", params=params, cookies=cookies
-            )
+            response = await client.post("https://pier2.org/api/eventList.php", params=params, cookies=cookies)
         return response.json()
 
     async def fetch_parsed(self):

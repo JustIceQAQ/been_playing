@@ -18,9 +18,7 @@ class TurboImageHost:
         self.url_upload = "https://s8d3.turboimagehost.com/remote_upload.tu?"
 
     @limiter.limit
-    async def upload(
-        self, images_url: str, import_client: HttpxAsyncClient | None = None
-    ) -> UploadResponse:
+    async def upload(self, images_url: str, import_client: HttpxAsyncClient | None = None) -> UploadResponse:
         this_client = import_client or HttpxAsyncClient()
         async with this_client as client:
             response = await client.post(

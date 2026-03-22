@@ -27,9 +27,7 @@ class SoKaArtRunner(RunnerInit):
             fullname="索卡藝術中心",
             code_name="SoKaArt",
             external_link="https://www.soka-art.com/tr",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.07961383080647, 121.56344961543039"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.07961383080647, 121.56344961543039"),
             venue_type=VenueType.GALLERY,
         )
 
