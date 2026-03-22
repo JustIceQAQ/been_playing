@@ -76,6 +76,7 @@
         - [紀州庵文學森林](https://kishuan.org.tw/activity.htm)
         - [中央研究院-民族學研究所博物館](https://www.ioe.sinica.edu.tw/)
         - [中央研究院-歷史文物陳列館](https://museum.sinica.edu.tw/)
+        - [華岡博物館](https://hkm.pccu.edu.tw/)
     - 新北市
         - [新北市美術館](https://ntcart.museum/exhibition)
         - [世界宗教博物館](https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070)
