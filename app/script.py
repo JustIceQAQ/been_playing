@@ -19,6 +19,7 @@ from .museums.cksmh.script import CKSMHRunner
 from .museums.clab.script import CLabRunner
 from .museums.culture435 import Culture435Runner
 from .museums.fubonartmuseum.script import FuBonArtMuseumRunner
+from .museums.historysinica import HistorySinicaRunner
 from .museums.hong_gah.script import HongGahRunner
 from .museums.huashan1914.script import HuaShan1914Runner
 from .museums.ioesinica import IOESinicaRunner
@@ -161,6 +162,7 @@ MUSEUMS_RUNNERS = {
     AlienRunner,
     MofiaRunner,
     IOESinicaRunner,
+    HistorySinicaRunner,
 }
 
 GALLERIES_RUNNERS = {
