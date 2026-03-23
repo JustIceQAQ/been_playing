@@ -26,7 +26,7 @@ class MindSetArtRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="安卓藝術",
             code_name="MindSetArt",
             external_link="https://www.art-msac.com/",

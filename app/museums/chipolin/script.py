@@ -25,7 +25,7 @@ class ChiPoLinRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.new_taipei_city,
+            location_code=TaiwanCity.NEW_TAIPEI_CITY,
             fullname="齊柏林空間",
             code_name="ChiPoLin",
             external_link="https://www.chipolin.org/exhibition",

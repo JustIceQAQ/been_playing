@@ -24,7 +24,7 @@ class TtCsEcRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taitung_county,
+            location_code=TaiwanCity.TAITUNG_COUNTY,
             fullname="國立臺東生活美學館",
             code_name="ttcsec",
             external_link="https://www.ttcsec.gov.tw/",

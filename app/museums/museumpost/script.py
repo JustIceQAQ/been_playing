@@ -24,7 +24,7 @@ class MuseumPostRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="郵政博物館",
             code_name="MuseumPost",
             external_link="https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage=1",

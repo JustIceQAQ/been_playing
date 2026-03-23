@@ -23,7 +23,7 @@ class Pier2Runner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.kaohsiung_city,
+            location_code=TaiwanCity.KAOHSIUNG_CITY,
             fullname="駁2藝術特區",
             code_name="Pier2",
             external_link="https://pier2.org/exhibition/list/all/",

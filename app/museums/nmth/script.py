@@ -25,7 +25,7 @@ class NMTHRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.tainan_city,
+            location_code=TaiwanCity.TAINAN_CITY,
             fullname="國立臺灣歷史博物館",
             code_name="NMTH",
             external_link="https://www.nmth.gov.tw/",

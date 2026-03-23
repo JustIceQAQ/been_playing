@@ -25,18 +25,18 @@ class YiYunRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="異雲書屋",
             code_name="YiYun",
             external_link="https://www.yiyun-art.com/",
             branch_coordinates=[
                 Coordinate(
-                    location_code=TaiwanCity.taipei_city,
+                    location_code=TaiwanCity.TAIPEI_CITY,
                     name="青田館",
                     raw_coordinates="25.027213880907816, 121.53055350558525",
                 ),
                 Coordinate(
-                    location_code=TaiwanCity.taipei_city,
+                    location_code=TaiwanCity.TAIPEI_CITY,
                     name="金華館",
                     raw_coordinates="25.028205131565272, 121.53223852023619",
                 ),

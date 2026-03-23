@@ -26,7 +26,7 @@ class KhmRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.kaohsiung_city,
+            location_code=TaiwanCity.KAOHSIUNG_CITY,
             fullname="高雄市立歷史博物館",
             code_name="khm",
             external_link="https://khm.org.tw/tw",

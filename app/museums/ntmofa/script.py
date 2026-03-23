@@ -25,7 +25,7 @@ class NtMofaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taichung_city,
+            location_code=TaiwanCity.TAICHUNG_CITY,
             fullname="國立臺灣美術館",
             code_name="NtMofa",
             external_link="https://www.ntmofa.gov.tw/",

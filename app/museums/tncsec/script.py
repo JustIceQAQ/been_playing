@@ -23,7 +23,7 @@ class TnCsEcRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.tainan_city,
+            location_code=TaiwanCity.TAINAN_CITY,
             fullname="國立臺南生活美學館",
             code_name="tncsec",
             external_link="https://www.tncsec.gov.tw/News_actives.aspx?n=2921&sms=11885&page=1&PageSize=30",

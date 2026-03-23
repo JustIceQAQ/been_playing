@@ -26,7 +26,7 @@ class MwrRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.new_taipei_city,
+            location_code=TaiwanCity.NEW_TAIPEI_CITY,
             fullname="世界宗教博物館",
             code_name="Mwr",
             external_link="https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070",

@@ -74,7 +74,7 @@ class {{cookiecutter.script_code}}Runner(RunnerInit):
         )
         {% else %}
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="",
             code_name="",
             external_link="",

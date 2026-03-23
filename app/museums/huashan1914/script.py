@@ -28,7 +28,7 @@ class HuaShan1914Runner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="華山1914文化創意產業園區",
             code_name="HuaShan1914",
             external_link="https://www.huashan1914.com/w/huashan1914/exhibition",

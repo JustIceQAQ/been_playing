@@ -25,7 +25,7 @@ class RedHouseRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="西門紅樓",
             code_name="RedHouse",
             external_link="https://www.redhouse.taipei/index.aspx",

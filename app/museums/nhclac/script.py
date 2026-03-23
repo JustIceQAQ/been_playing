@@ -25,7 +25,7 @@ class NhClAcRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.hsinchu_city,
+            location_code=TaiwanCity.HSINCHU_CITY,
             fullname="國立新竹生活美學館",
             code_name="nhclac",
             external_link="https://www.nhclac.gov.tw/",

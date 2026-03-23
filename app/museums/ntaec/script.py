@@ -25,7 +25,7 @@ class NTAECRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="國立台灣藝術教育館",
             code_name="NTAEC",
             external_link="https://www.arte.gov.tw/",

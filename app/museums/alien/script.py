@@ -25,7 +25,7 @@ class AlienRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.kaohsiung_city,
+            location_code=TaiwanCity.KAOHSIUNG_CITY,
             fullname="金馬賓館當代美術館",
             code_name="Alien",
             external_link="https://www.alien.com.tw/u/zh-tw/list/exhibitions",

@@ -26,7 +26,7 @@ class NHRMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.new_taipei_city,
+            location_code=TaiwanCity.NEW_TAIPEI_CITY,
             fullname="國家人權博物館",
             code_name="NHRM",
             external_link="https://www.nhrm.gov.tw/w/nhrm/ExhibitionA",

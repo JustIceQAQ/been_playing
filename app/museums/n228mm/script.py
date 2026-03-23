@@ -27,7 +27,7 @@ class N228MMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="二二八國家紀念館",
             code_name="n228mm",
             external_link="https://www.228.org.tw/exhibitionsnew",

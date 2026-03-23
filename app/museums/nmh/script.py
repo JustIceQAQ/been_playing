@@ -25,7 +25,7 @@ class NmhRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="國立歷史博物館",
             code_name="Nmh",
             external_link="https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323",

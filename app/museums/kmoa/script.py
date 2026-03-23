@@ -25,7 +25,7 @@ class KmoaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.keelung_city,
+            location_code=TaiwanCity.KEELUNG_CITY,
             fullname="基隆美術館",
             code_name="kmoa",
             external_link="https://kmoa.klcg.gov.tw/News_Photo.aspx?n=7484&sms=12489",

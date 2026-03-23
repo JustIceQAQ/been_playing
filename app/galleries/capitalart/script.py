@@ -24,7 +24,7 @@ class CapitalArtRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="首都藝術中心",
             code_name="CapitalArt",
             external_link="https://capitalart.com.tw/",

@@ -26,7 +26,7 @@ class NtmRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="國立臺灣博物館",
             code_name="Ntm",
             external_link="https://www.ntm.gov.tw/Default.aspx",

@@ -29,7 +29,7 @@ class NtSecRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="國立臺灣科學教育館",
             code_name="NtSec",
             external_link="https://www.ntsec.gov.tw/article/list.aspx?a=25",

@@ -27,7 +27,7 @@ class HKMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="華岡博物館",
             code_name="hkm",
             external_link="https://hkm.pccu.edu.tw/",

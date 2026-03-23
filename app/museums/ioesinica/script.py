@@ -26,7 +26,7 @@ class IOESinicaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="中央研究院-民族學研究所博物館",
             code_name="IOESinica",
             external_link="https://www.ioe.sinica.edu.tw/",

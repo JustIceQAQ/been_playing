@@ -25,7 +25,7 @@ class YoChangArtRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.new_taipei_city,
+            location_code=TaiwanCity.NEW_TAIPEI_CITY,
             fullname="有章藝術博物館",
             code_name="YoChangArt",
             external_link="https://museum.ntua.edu.tw/c001.asp",

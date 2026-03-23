@@ -27,7 +27,7 @@ class FuBonArtMuseumRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="富邦美術館",
             code_name="FuBonArtMuseum",
             external_link="https://www.fubonartmuseum.org/Default",

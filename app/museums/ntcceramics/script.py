@@ -25,7 +25,7 @@ class NtcCeramicsRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.new_taipei_city,
+            location_code=TaiwanCity.NEW_TAIPEI_CITY,
             fullname="新北市立鶯歌陶瓷博物館",
             code_name="NtcCeramics",
             external_link="https://www.ceramics.ntpc.gov.tw/",

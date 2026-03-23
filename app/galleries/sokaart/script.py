@@ -24,7 +24,7 @@ class SoKaArtRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="索卡藝術中心",
             code_name="SoKaArt",
             external_link="https://www.soka-art.com/tr",

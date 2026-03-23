@@ -23,7 +23,7 @@ class ChiayiAMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.chiayi_city,
+            location_code=TaiwanCity.CHIAYI_CITY,
             fullname="嘉義市立美術館",
             code_name="ChiayiAM",
             external_link="https://chiayiartmuseum.chiayi.gov.tw/",

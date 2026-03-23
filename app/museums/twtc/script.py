@@ -27,7 +27,7 @@ class TwTcRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="台北世貿中心",
             code_name="TwTc",
             external_link="https://twtc.com.tw/exhibition?p=home",

@@ -24,7 +24,7 @@ class AAAArchivesRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.new_taipei_city,
+            location_code=TaiwanCity.NEW_TAIPEI_CITY,
             fullname="國家發展委員會檔案管理局",
             code_name="AAAArchives",
             external_link="https://aaa.archives.tw/tw/event/306.html",
