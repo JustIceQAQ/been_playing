@@ -7,10 +7,10 @@ class IBonParse(ParseInit):
     def __init__(self, item: dict):
         self.item = item
 
-    def get_title(self, *args, **kwargs) -> str:
+    def get_title(self, *args, **kwargs) -> str | None:
         return self.item.get("title")
 
-    def get_date(self, *args, **kwargs) -> str:
+    def get_date(self, *args, **kwargs) -> str | None:
         runtime_date = []
 
         start_date_millisecond: int | None = self.item.get("startDate", None)
@@ -25,11 +25,11 @@ class IBonParse(ParseInit):
 
         return " ~ ".join(runtime_date)
 
-    def get_address(self, *args, **kwargs) -> str:
+    def get_address(self, *args, **kwargs) -> str | None:
         return self.item.get("displayAddress")
 
-    def get_figure(self, *args, **kwargs) -> str:
+    def get_figure(self, *args, **kwargs) -> str | None:
         return self.item.get("coverUrl")
 
-    def get_source_url(self, *args, **kwargs) -> str:
+    def get_source_url(self, *args, **kwargs) -> str | None:
         return "https://tour.ibon.com.tw/event/{}".format(self.item.get("id"))

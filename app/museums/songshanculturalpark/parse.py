@@ -4,13 +4,13 @@ from helpers.parse_helper import ParseInit
 
 
 class SongShanCulturalParkParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
-    def get_title(self, *args, **kwargs) -> str:
+    def get_title(self, *args, **kwargs) -> str | None:
         return self.item.select_one("span.row_rt > p.lv_h2").get_text()
 
-    def get_date(self, *args, **kwargs) -> str:
+    def get_date(self, *args, **kwargs) -> str | None:
         raw_date_string = self.item.select_one("span.row_rt > p.date.montsrt").get_text()
         raw_date_string = raw_date_string.replace(" - ", " ~ ")
         if "~" not in raw_date_string:
@@ -20,13 +20,13 @@ class SongShanCulturalParkParse(ParseInit):
     def get_address(self, *args, **kwargs) -> str | None:
         return None
 
-    def get_figure(self, *args, **kwargs) -> str:
+    def get_figure(self, *args, **kwargs) -> str | None:
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
         return "{}{}".format(target_domain, self.item.select_one("span.row_lt > img")["src"])
 
-    def get_source_url(self, *args, **kwargs) -> str:
+    def get_source_url(self, *args, **kwargs) -> str | None:
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")

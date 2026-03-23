@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 from app.platform.iculture.parse import ICultureParse
 from helpers.headers_helper import generate_headers
@@ -45,10 +46,13 @@ class ICultureRunner(RunnerInit):
         return [response.json() for response in responses]
 
     async def fetch_parsed(self):
-        parsed: list[dict] = await super().fetch_parsed()
+        parsed = cast(list[dict], await super().fetch_parsed())
         datas = []
         for data in parsed:
-            datas.extend(data.get("rows"))
+            rows = data.get("rows")
+            if rows is None:
+                continue
+            datas.extend(rows)
         return datas
 
 

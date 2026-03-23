@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 from app.museums.hkm.parse import HKMParse
 from helpers.headers_helper import generate_headers
@@ -46,7 +47,7 @@ class HKMRunner(RunnerInit):
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parsed: list[LexborNode] = await super().fetch_parsed()
+        parsed = cast(list[LexborNode], await super().fetch_parsed())
         items = []
         for p in parsed:
             items.extend(p.css("div.view-content > div.views-row > div"))

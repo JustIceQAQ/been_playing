@@ -25,7 +25,7 @@ class HistorySinicaParse(ParseInit):
     def get_figure(self, *args, **kwargs) -> str | None:
         return "https://museum.sinica.edu.tw/" + self.item.css_first("img").attributes.get("src")
 
-    def get_tags(self, *args, **kwargs) -> list[str] | None:
+    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

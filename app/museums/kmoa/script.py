@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 import httpx
@@ -50,10 +51,7 @@ class KmoaRunner(RunnerInit):
 
     async def fetch_response(self):
         headers = generate_headers(referer="https://kmoa.klcg.gov.tw", need_upgrade_insecure_requests=True)
-        cookies = {
-            **generate_cookies(need_asp_net_session_id=True),
-            "font-size-": "medium",
-        }
+        cookies = generate_cookies(need_asp_net_session_id=True, other_cookies={"font-size-": "medium"})
         async with HttpxAsyncClient(headers=headers) as client:
             url = "https://kmoa.klcg.gov.tw/News_Photo.aspx?n=7484&sms=12489"
             response = await client.get(url)
@@ -62,7 +60,7 @@ class KmoaRunner(RunnerInit):
         return responses_data
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         return parsed
 
 

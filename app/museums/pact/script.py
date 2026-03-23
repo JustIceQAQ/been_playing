@@ -11,6 +11,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class PactRunner(RunnerInit):
     translation = JsonTranslation
@@ -50,7 +52,7 @@ class PactRunner(RunnerInit):
         return response.json()
 
     async def fetch_parsed(self):
-        parsed: dict = await super().fetch_parsed()
+        parsed = cast(dict, await super().fetch_parsed())
         return parsed["list"]["items"]
 
 

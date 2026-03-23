@@ -4,13 +4,13 @@ from helpers.parse_helper import ParseInit
 
 
 class NCPIParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
-    def get_title(self, *args, **kwargs) -> str:
+    def get_title(self, *args, **kwargs) -> str | None:
         return self.item.get("title")
 
-    def get_date(self, *args, **kwargs) -> str:
+    def get_date(self, *args, **kwargs) -> str | None:
         raw_date_string = self.item.select_one("div.label >ul > li >span > i.mark").get_text()
         split_date = raw_date_string.split("~")
         if len(split_date) == 2:
@@ -26,15 +26,15 @@ class NCPIParse(ParseInit):
             raw_date_string = raw_date_string.strip()
         return raw_date_string
 
-    def get_address(self, *args, **kwargs) -> str:
+    def get_address(self, *args, **kwargs) -> str | None:
         return self.item.select_one("div.place >ul > li >span > i.mark").get_text()
 
-    def get_figure(self, *args, **kwargs) -> str:
+    def get_figure(self, *args, **kwargs) -> str | None:
         img = self.item.find("img")
 
         return img.get("src")
 
-    def get_source_url(self, *args, **kwargs) -> str:
+    def get_source_url(self, *args, **kwargs) -> str | None:
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")

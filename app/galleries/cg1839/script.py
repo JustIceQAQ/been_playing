@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class CG1839Runner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -62,7 +64,7 @@ class CG1839Runner(RunnerInit):
         all_items.extend([item_response.text for item_response in responses])
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         return parsed
 
 

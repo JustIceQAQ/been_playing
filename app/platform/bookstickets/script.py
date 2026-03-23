@@ -14,6 +14,8 @@ from helpers.storage.symbol import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3, get_asyncio_rate_limit
 
+from typing import cast
+
 
 class BooksTicketsRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -38,7 +40,7 @@ class BooksTicketsRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("ul.prd > li")
 
     async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):

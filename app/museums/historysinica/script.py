@@ -1,5 +1,6 @@
 import asyncio
 import secrets
+from typing import cast
 
 from app.museums.historysinica.parse import HistorySinicaParse
 from helpers.headers_helper import generate_headers, generate_cookies
@@ -43,7 +44,7 @@ class HistorySinicaRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: LexborNode = await super().fetch_parsed()
+        parsed = cast(LexborNode, await super().fetch_parsed())
         items = parsed.css("#main-content div.block-list div.item")
         return items
 

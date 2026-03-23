@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 from app.museums.tfam.parse import TFamParse
 from helpers.cache import NoneCache
@@ -54,7 +55,7 @@ class TFamRunner(RunnerInit):
 
     async def fetch_parsed(self):
         data = []
-        parsers: list[dict] = await super().fetch_parsed()
+        parsers = cast(list[dict], await super().fetch_parsed())
         for parsed in parsers:
             data.extend(parsed.get("Data", []))
         return data

@@ -6,18 +6,18 @@ from helpers.parse_helper import ParseInit
 
 
 class FuBonArtMuseumParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
-    def get_title(self, *args, **kwargs) -> str:
+    def get_title(self, *args, **kwargs) -> str | None:
         raw_text = self.item.select_one(".info_title").get_text()
         return raw_text.strip()
 
-    def get_figure(self, *args, **kwargs) -> str:
+    def get_figure(self, *args, **kwargs) -> str | None:
         img = self.item.select_one("div.fb-photo-frame > img")
         return img["src"]
 
-    def get_address(self, *args, **kwargs) -> str:
+    def get_address(self, *args, **kwargs) -> str | None:
         datas = self.item.select("div.card_info > div.info_group > p.font-body")
         if len(datas) == 1:
             raw_text = datas[0].text.strip()
@@ -31,7 +31,7 @@ class FuBonArtMuseumParse(ParseInit):
 
         return ""
 
-    def chech_is_date(self, data: bs4.element.Tag) -> str:
+    def chech_is_date(self, data: bs4.element.Tag) -> str | None:
         now_year = datetime.datetime.now().year
         raw_text = data.text.strip()
         if "." in raw_text and "-" in raw_text:
@@ -79,7 +79,7 @@ class FuBonArtMuseumParse(ParseInit):
             return f"{start_date.isoformat()} ~ {end_date.isoformat()}"
         return ""
 
-    def get_date(self, *args, **kwargs) -> str:
+    def get_date(self, *args, **kwargs) -> str | None:
         datas = self.item.select("div.card_info > div.info_group > p.font-body")
         cooked_string = ""
         if len(datas) == 1:
@@ -91,6 +91,6 @@ class FuBonArtMuseumParse(ParseInit):
 
         return cooked_string
 
-    def get_source_url(self, *args, **kwargs) -> str:
+    def get_source_url(self, *args, **kwargs) -> str | None:
         a = self.item.find("a", {"class": "fb-exhibition-card"})
         return f"https://www.fubonartmuseum.org{a['href']}"

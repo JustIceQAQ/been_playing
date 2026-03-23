@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class NTAECRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -45,7 +47,7 @@ class NTAECRunner(RunnerInit):
 
     async def fetch_parsed(self):
         item_data = []
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         for p in parsed:
             items = p.select("div.user-postes.wow")
             item_data.extend(items)

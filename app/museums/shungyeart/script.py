@@ -12,6 +12,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class ShungYeArtRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -40,7 +42,7 @@ class ShungYeArtRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         now = parsed.find("a", {"id": "Now"}).find_all_next(class_="indexnews1")
         notice = parsed.find("a", {"id": "Notice"}).find_all_next(class_="indexnews1")
         now_ex = now + notice

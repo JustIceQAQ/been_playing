@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 
@@ -53,7 +54,7 @@ class CLabRunner(RunnerInit):
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parseds: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parseds = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         datas = []
         for parsed in parseds:
             datas.extend(parsed.find_all("div", {"data-aos": "-block-line"}))

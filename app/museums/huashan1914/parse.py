@@ -9,23 +9,27 @@ from helpers.tags_hepler import normalize_tag
 
 
 class huashan1914Parse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
-    def get_title(self, *args, **kwargs) -> str:
+    def get_title(self, *args, **kwargs) -> str | None:
         return self.item.select_one("li > a > div > div > div.card-text > div.card-text-name").get_text()
 
-    def get_date(self, *args, **kwargs) -> str:
+    def get_date(self, *args, **kwargs) -> str | None:
         raw_string = self.item.select_one("li > a > div > div > div.card-text > div.event-date").get_text()
         if "-" in raw_string:
             row_start_date, row_end_date = raw_string.split(" - ")
             regulated_start_date = re.search(r"((?P<year>\d{4})\.(?P<month>\d{2})\.(?P<day>\d{2}))", row_start_date)
+            if regulated_start_date is None:
+                return None
             start_date = datetime.date(
                 int(regulated_start_date.group("year")),
                 int(regulated_start_date.group("month")),
                 int(regulated_start_date.group("day")),
             )
             regulated_end_date = re.search(r"((?P<year>\d{4})?\.?(?P<month>\d{2})\.(?P<day>\d{2}))", row_end_date)
+            if regulated_end_date is None:
+                return start_date.isoformat()
             end_date = datetime.date(
                 int(year if (year := regulated_end_date.group("year")) else start_date.year),
                 int(regulated_end_date.group("month")),
@@ -36,6 +40,8 @@ class huashan1914Parse(ParseInit):
         else:
             # one day case
             regulated = re.search(r"((?P<year>\d{4})\.(?P<month>\d{2})\.(?P<day>\d{2}))", raw_string)
+            if regulated is None:
+                return None
             start_date = datetime.date(
                 int(regulated.group("year")),
                 int(regulated.group("month")),
@@ -59,11 +65,11 @@ class huashan1914Parse(ParseInit):
 
         return url.replace("url(", "")[:-1].replace('"', "") if (url := style["background-image"]) else "-"
 
-    def get_tags(self, *args, **kwargs) -> list[str] | None:
+    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
         spans = self.item.select("div.event-list-type > span")
         return [normalize_tag(span.get_text(strip=True)) for span in spans]
 
-    def get_source_url(self, *args, **kwargs) -> str:
+    def get_source_url(self, *args, **kwargs) -> str | None:
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")

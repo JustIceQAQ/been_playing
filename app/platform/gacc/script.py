@@ -1,5 +1,5 @@
 import asyncio
-from typing import Any
+from typing import cast
 
 from app.platform.gacc.parse import GaCcParse
 from helpers.headers_helper import generate_headers
@@ -45,8 +45,15 @@ class GaCcRunner(RunnerInit):
         return response.json()
 
     async def fetch_parsed(self):
-        parsed: dict[str, Any] = await super().fetch_parsed()
-        return parsed.get("data").get("data")
+        parsed = cast(dict, await super().fetch_parsed())
+        data1 = parsed.get("data")
+        if data1 is None:
+            return {}
+
+        data2 = data1.get("data")
+        if data2 is None:
+            return {}
+        return data2
 
 
 async def main():

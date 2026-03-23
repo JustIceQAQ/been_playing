@@ -33,10 +33,10 @@ all_branch: list[list[PathQuery]] = [
 
 
 class NtmParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
-    def get_title(self, *args, **kwargs) -> str:
+    def get_title(self, *args, **kwargs) -> str | None:
         return self.item.select_one("div.caption > span").get_text()
 
     def get_date(self, *args, **kwargs) -> str | None:
@@ -49,8 +49,8 @@ class NtmParse(ParseInit):
             return result.replace("地點：", "").strip()
         return None
 
-    def get_figure(self, *args, **kwargs) -> str:
+    def get_figure(self, *args, **kwargs) -> str | None:
         return self.item.select_one("img")["src"]
 
-    def get_source_url(self, *args, **kwargs) -> str:
+    def get_source_url(self, *args, **kwargs) -> str | None:
         return self.item.select_one("a")["href"]

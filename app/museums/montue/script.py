@@ -14,6 +14,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class MoNTUERunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -64,7 +66,7 @@ class MoNTUERunner(RunnerInit):
         return get_items_context_results
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         return parsed
 
 

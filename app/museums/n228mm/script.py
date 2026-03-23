@@ -1,5 +1,6 @@
 import asyncio
 import json
+from typing import cast
 
 import bs4
 from app.museums.n228mm.parse import N228MMParse
@@ -64,7 +65,7 @@ class N228MMRunner(RunnerInit):
         return [item["data"] for item in result["dataItems"]]
 
     async def fetch_parsed(self):
-        parsed: list[dict] = await super().fetch_parsed()
+        parsed = cast(list[dict], await super().fetch_parsed())
         return parsed
 
 

@@ -4,7 +4,7 @@ from helpers.parse_helper import ParseInit
 
 
 class TcmParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
@@ -24,7 +24,7 @@ class TcmParse(ParseInit):
     def get_figure(self, *args, **kwargs) -> str | None:
         return self.item.find("img", {"class": "img-fluid"}).attrs["src"]
 
-    def get_tags(self, *args, **kwargs) -> list[str] | None:
+    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

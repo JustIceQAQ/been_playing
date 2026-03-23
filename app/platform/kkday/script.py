@@ -3,6 +3,7 @@ import copy
 import json
 import re
 import urllib.parse
+from typing import cast
 
 import bs4
 from rnet import Proxy
@@ -55,7 +56,7 @@ class KKDayRunner(RunnerInit):
             venue_type=VenueType.PLATFORM,
         )
 
-    def _get_this_url(self, page: int | None = 1):
+    def _get_this_url(self, page: int = 1):
         runtime_query_parameter = copy.deepcopy(KKDayRunner.query_parameter)
         runtime_query_parameter["page"] = page
         parse_list_result = parse_list(runtime_query_parameter)
@@ -117,7 +118,7 @@ class KKDayRunner(RunnerInit):
 
     async def fetch_parsed(self):
         dataset = []
-        parsers: list[bs4.BeautifulSoup] = await super().fetch_parsed(format_encoding="html.parser")
+        parsers = cast(list[bs4.BeautifulSoup], await super().fetch_parsed(format_encoding="html.parser"))
         for parsed in parsers:
             products, _ = self._format_init_state(parsed)
             dataset.extend(products)

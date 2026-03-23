@@ -1,7 +1,8 @@
 import asyncio
 import secrets
+from typing import cast
 
-from selectolax.lexbor import LexborHTMLParser
+from selectolax.lexbor import LexborNode
 from app.museums.aaaarchives.parse import AAAArchivesParse
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_headers, generate_cookies
@@ -41,10 +42,7 @@ class AAAArchivesRunner(RunnerInit):
                 "content-type": "application/x-www-form-urlencoded",
             },
         )
-        cookies = {
-            **generate_cookies(need_js_ession_id=True),
-            "cookiesession1": secrets.token_hex(16),
-        }
+        cookies = generate_cookies(need_js_ession_id=True, other_cookies={"cookiesession1": secrets.token_hex(16)})
         data = {
             "nowPage": 1,
             "pageSize": 60,
@@ -55,7 +53,7 @@ class AAAArchivesRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: LexborHTMLParser = await super().fetch_parsed()
+        parsed = cast(LexborNode, await super().fetch_parsed())
         li = parsed.css("div.actList > ul > li")
         return li
 

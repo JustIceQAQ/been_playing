@@ -6,7 +6,10 @@ class ICultureParse(ParseInit):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
-        return self.item.get("title")
+        title = self.item.get("title")
+        if title is None:
+            return None
+        return title
 
     def get_date(self, *args, **kwargs) -> str | None:
         raw_start_date: str | None = self.item.get("startDate", None)
@@ -24,15 +27,18 @@ class ICultureParse(ParseInit):
         return f"{start_date} ~ {end_date}"
 
     def get_address(self, *args, **kwargs) -> str | None:
-        return self.item.get("eventLocationName")
+        event_location_name = self.item.get("eventLocationName")
+        if event_location_name is None:
+            return None
+        return event_location_name
 
     def get_figure(self, *args, **kwargs) -> str | None:
         image_url = self.item.get("imageUrl")
         if image_url is None:
             return None
-        return "https://cloud.culture.tw" + self.item.get("imageUrl")
+        return "https://cloud.culture.tw" + image_url
 
-    def get_tags(self, *args, **kwargs) -> list[str] | None:
+    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
         tags = []
         for i in range(1, 4):
             ev_char = self.item.get(f"evChar{i}", None)
@@ -44,4 +50,7 @@ class ICultureParse(ParseInit):
             return tags
 
     def get_source_url(self, *args, **kwargs) -> str | None:
-        return self.item.get("sourceWebSiteSales")
+        source_web_site_sales = self.item.get("sourceWebSiteSales")
+        if source_web_site_sales is None:
+            return None
+        return source_web_site_sales

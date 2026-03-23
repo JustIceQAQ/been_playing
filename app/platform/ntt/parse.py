@@ -6,19 +6,34 @@ class NTTParse(ParseInit):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
-        return self.item.get("name")
+        name = self.item.get("name")
+        if name is None:
+            return None
+        return name
 
     def get_date(self, *args, **kwargs) -> str | None:
-        return self.item.get("subject").replace("～", " ~ ")
+        subject = self.item.get("subject")
+        if subject is None:
+            return None
+        return subject.replace("～", " ~ ")
 
     def get_address(self, *args, **kwargs) -> str | None:
-        return self.item.get("address")
+        address = self.item.get("address")
+        if address is None:
+            return None
+        return address
 
     def get_figure(self, *args, **kwargs) -> str | None:
-        return self.item.get("thumb")
+        thumb = self.item.get("thumb")
+        if thumb is None:
+            return None
+        return thumb
 
-    def get_tags(self, *args, **kwargs) -> list[str] | None:
+    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:
-        return self.item.get("url")
+        url = self.item.get("url")
+        if url is None:
+            return None
+        return url

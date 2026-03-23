@@ -11,6 +11,8 @@ from helpers.storage.symbol import VenueType
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 
+from typing import cast
+
 
 class OpenTixRunner(RunnerInit):
     translation = JsonTranslation
@@ -44,7 +46,7 @@ class OpenTixRunner(RunnerInit):
         return response.json()
 
     async def fetch_parsed(self) -> list:
-        parsed: dict = await super().fetch_parsed()
+        parsed = cast(dict, await super().fetch_parsed())
         return parsed.get("result", {}).get("found", [])
 
     async def fetch_items(self, *args, **kwargs):

@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class AlienRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -41,7 +43,7 @@ class AlienRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         list_content_area = parsed.select("div.listContentArea")
         return list_content_area[:11]
 

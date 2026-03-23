@@ -1,6 +1,6 @@
 import asyncio
 import datetime
-from typing import Any
+from typing import cast
 
 from app.museums.pier2.parse import Pier2Parse
 from helpers.headers_helper import generate_headers, generate_cookies
@@ -47,7 +47,7 @@ class Pier2Runner(RunnerInit):
         return response.json()
 
     async def fetch_parsed(self):
-        parsed: dict[str, Any] = await super().fetch_parsed()
+        parsed = cast(dict, await super().fetch_parsed())
         return parsed.get("list", [])
 
 

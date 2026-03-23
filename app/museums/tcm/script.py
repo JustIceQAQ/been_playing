@@ -14,6 +14,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class TcmRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -48,7 +50,7 @@ class TcmRunner(RunnerInit):
         return responses
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         items = []
         for parse in parsed:
             items.extend(parse.select("div.content > div.row > div"))

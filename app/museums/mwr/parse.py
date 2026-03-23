@@ -5,19 +5,19 @@ from helpers.parse_helper import ParseInit
 
 
 class MwrParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
-    def get_title(self, *args, **kwargs) -> str:
+    def get_title(self, *args, **kwargs) -> str | None:
         return self.item.select_one("div.title > a").get_text()
 
-    def get_date(self, *args, **kwargs) -> str:
+    def get_date(self, *args, **kwargs) -> str | None:
         return self.item.select_one("div.date").get_text()
 
     def get_address(self, *args, **kwargs) -> str | None:
         return None
 
-    def get_figure(self, *args, **kwargs) -> str:
+    def get_figure(self, *args, **kwargs) -> str | None:
         dev_style = self.item.select_one("div.imgBox > a > div.img").get("style")
         style = cssutils.parseStyle(dev_style)
 

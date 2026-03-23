@@ -13,6 +13,8 @@ from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
+from typing import cast
+
 
 class NmhRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -48,7 +50,7 @@ class NmhRunner(RunnerInit):
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         datas = []
         for p in parsed:
             datas.extend(p.select("div.area-figure.page-figure"))

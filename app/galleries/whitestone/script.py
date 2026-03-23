@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class WhiteStoneRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -42,7 +44,7 @@ class WhiteStoneRunner(RunnerInit):
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         datas = []
         for p in parsed:
             datas.extend(p.select("div.wsg-exhibition-card"))

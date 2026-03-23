@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class YiYunRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -49,7 +51,7 @@ class YiYunRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         current = parsed.find("div", {"id": "current"})
         following = parsed.find("div", {"id": "following"})
         followings = following.find_all("a", {"class": "exhibition-list"})

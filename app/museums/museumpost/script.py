@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 
@@ -53,7 +54,7 @@ class MuseumPostRunner(RunnerInit):
             return responses
 
     async def fetch_parsed(self):
-        parsers: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsers = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         items = []
         for parsed in parsers:
             items.extend(parsed.select("ul.part_list > li"))

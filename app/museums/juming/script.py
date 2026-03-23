@@ -1,5 +1,6 @@
 import asyncio
 import secrets
+from typing import cast
 
 from app.museums.juming.parse import JuMingParse
 from helpers.headers_helper import generate_headers, generate_cookies
@@ -44,7 +45,7 @@ class JuMingRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: LexborNode = await super().fetch_parsed()
+        parsed = cast(LexborNode, await super().fetch_parsed())
         items = parsed.css("div.dataBlogList.MsgInfoData")
         return items
 

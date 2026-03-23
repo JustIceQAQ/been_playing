@@ -10,7 +10,7 @@ def roc_to_ad(roc_date_str):
 
 
 class CultureExpressParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
@@ -34,7 +34,7 @@ class CultureExpressParse(ParseInit):
             return "https://cultureexpress.taipei/images/default-x.jpg"
         return "https://cultureexpress.taipei" + self.item.select_one("figure > img").attrs["src"]
 
-    def get_tags(self, *args, **kwargs) -> list[str] | None:
+    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

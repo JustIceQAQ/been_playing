@@ -12,6 +12,8 @@ from helpers.utils_helper import month_3, get_asyncio_rate_limit
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class NrmRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -38,7 +40,7 @@ class NrmRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.find_all("a", {"class": "div-activity"})
 
     async def _get_item_data(self, client: httpx.AsyncClient, item: ExhibitionItem):

@@ -37,4 +37,4 @@ repos:
       entry: uvx ty check  --ignore unresolved-import
       language: python
       types: [python]
-      exclude: ^template/
+      exclude: ^(template/|\.venv/|stdlib/)

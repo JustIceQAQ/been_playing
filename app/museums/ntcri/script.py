@@ -1,5 +1,5 @@
 import asyncio
-from typing import Any
+from typing import Any, cast
 
 from app.museums.ntcri.parse import NTCRIParse
 from helpers.cache import NoneCache
@@ -61,7 +61,7 @@ class NTCRIRunner(RunnerInit):
         return response.json()["rows"]
 
     async def fetch_parsed(self):
-        parsed: list[dict[str, Any]] = await super().fetch_parsed()
+        parsed = cast(list[dict[str, Any]], await super().fetch_parsed())
         return parsed
 
 

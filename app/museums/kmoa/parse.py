@@ -4,7 +4,7 @@ from helpers.parse_helper import ParseInit
 
 
 class KmoaParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
     def roc_to_ad(self, date_str: str) -> str:
@@ -48,7 +48,7 @@ class KmoaParse(ParseInit):
 
         return lis[0].attrs["data-src"]
 
-    def get_tags(self, *args, **kwargs) -> list[str] | None:
+    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

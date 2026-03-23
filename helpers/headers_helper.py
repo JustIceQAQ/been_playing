@@ -18,7 +18,7 @@ def generate_headers(
     other_headers: dict | None = None,
     not_use_user_agent: bool = False,
     content_type_use_json: bool | None = False,
-) -> dict[str, str]:
+) -> dict:
     this_header = {
         "user-agent": UA.firefox,
         "dnt": "1",
@@ -55,7 +55,7 @@ def generate_cookies(
     need_consent: bool | None = False,
     need_laravel_session: bool | None = False,
     other_cookies: dict | None = None,
-) -> dict[str, str]:
+) -> dict | None:
     this_data = {}
     if need_phpsessid:
         this_data["PHPSESSID"] = secrets.token_hex(16)

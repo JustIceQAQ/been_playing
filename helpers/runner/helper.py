@@ -71,7 +71,7 @@ class RunnerInit(abc.ABC):
             exhibition_items.append(data)
         return exhibition_items
 
-    async def suffix_item_from_url_auto(self, item: list[ExhibitionItem]):
+    async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):
         pass
 
     async def suffix_item_from_file(self, items: list[ExhibitionItem]):

@@ -4,7 +4,7 @@ from helpers.parse_helper import ParseInit
 
 
 class YatsenParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:

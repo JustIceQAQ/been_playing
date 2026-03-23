@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 
@@ -56,7 +57,7 @@ class HuaShan1914Runner(RunnerInit):
 
     async def fetch_parsed(self):
         items = []
-        parsers: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsers = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         for parsed in parsers:
             sub_items = parsed.select("ul#event-ul li")
             items.extend(sub_items)

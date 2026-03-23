@@ -13,6 +13,7 @@ from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
+from typing import cast
 
 
 class KhmRunner(RunnerInit):
@@ -55,7 +56,7 @@ class KhmRunner(RunnerInit):
 
     async def fetch_parsed(self):
         dataset = []
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         for soup in parsed:
             datas = soup.select("div.exhibition-list div.list-item")
             dataset.extend(datas)

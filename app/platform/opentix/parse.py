@@ -10,7 +10,7 @@ class OpenTixParse(ParseInit):
     def get_title(self, *args, **kwargs) -> str | None:
         return self.item.get("source", {}).get("title", None)
 
-    def get_date(self, *args, **kwargs) -> str:
+    def get_date(self, *args, **kwargs) -> str | None:
         start_date_time: int | None = self.item.get("source", {}).get("startDateTime", None)
         end_date_time: int | None = self.item.get("source", {}).get("endDateTime", None)
         date_time_string = ""
@@ -23,7 +23,7 @@ class OpenTixParse(ParseInit):
 
         return date_time_string
 
-    def get_address(self, *args, **kwargs) -> str:
+    def get_address(self, *args, **kwargs) -> str | None:
         event_venues = self.item.get("source", {}).get("eventVenues", [])
         return ", ".join(
             [event_venue.get("name") for event_venue in event_venues if event_venue.get("name", None) is not None]
@@ -32,7 +32,7 @@ class OpenTixParse(ParseInit):
     def get_figure(self, *args, **kwargs) -> str | None:
         return self.item.get("source", {}).get("imageUrl", None)
 
-    def get_source_url(self, *args, **kwargs) -> str:
+    def get_source_url(self, *args, **kwargs) -> str | None:
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")

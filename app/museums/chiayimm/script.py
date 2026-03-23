@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class ChiayiMMRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -46,7 +48,7 @@ class ChiayiMMRunner(RunnerInit):
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         items = []
         for p in parsed:
             items.extend(p.select("div.kf-diagramtext-col a.kf-item"))

@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 from app.museums.tnammuseum.parse import TnamMuseumParse
@@ -56,7 +57,7 @@ class TnamMuseumRunner(RunnerInit):
         return responses
 
     async def fetch_parsed(self):
-        parseds: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parseds = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         dataset = []
         for parsed in parseds:
             dataset.extend(parsed.select("div.layout-large > figure > a"))

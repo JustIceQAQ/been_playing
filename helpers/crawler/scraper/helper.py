@@ -83,7 +83,9 @@ def get_a_available_scraper_async_client() -> ScraperAsyncClient:
     return random.choice(tuple(SCRAPER_ASYNC_CLIENT))
 
 
-async def available_scraper_async_client(keys: list[str]):
+async def available_scraper_async_client(keys: list[str] | None):
+    if keys is None:
+        raise ValueError("Scraper keys is not provided")
     await asyncio.gather(*[ScraperAsyncClient(api_key=key).get_available_info() for key in keys])
     for client in SCRAPER_ASYNC_CLIENT:
         available_info = client.available_info

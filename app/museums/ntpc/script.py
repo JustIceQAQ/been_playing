@@ -14,6 +14,8 @@ from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3, get_asyncio_rate_limit
 
+from typing import cast
+
 
 class NTPCRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -43,7 +45,7 @@ class NTPCRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("div.ListPicText > div.item")
 
     async def suffix_data(self, client: httpx.AsyncClient, item: ExhibitionItem):

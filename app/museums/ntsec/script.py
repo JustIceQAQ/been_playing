@@ -16,6 +16,8 @@ from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import get_datetime_now, month_3, get_asyncio_rate_limit
 
+from typing import cast
+
 
 class NtSecRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -50,7 +52,7 @@ class NtSecRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("#MainContent_divListItem > a")
 
     async def fetch_items(self, *args, **kwargs):

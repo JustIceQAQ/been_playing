@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 from rnet import Proxy
 
@@ -85,9 +86,15 @@ class KLookRunner(RunnerInit):
 
     async def fetch_parsed(self):
         items = []
-        parsers: list[dict] = await super().fetch_parsed()
+        parsers = cast(list[dict], await super().fetch_parsed())
         for parsed in parsers:
-            items.extend(parsed.get("result").get("data_list"))
+            result = parsed.get("result")
+            if result is None:
+                continue
+            data_list = result.get("data_list")
+            if data_list is None:
+                continue
+            items.extend(data_list)
         return items
 
 

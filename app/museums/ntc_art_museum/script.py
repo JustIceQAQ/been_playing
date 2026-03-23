@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import httpx
 
@@ -59,10 +60,13 @@ class NtcArtMuseumRunner(RunnerInit):
         return [response.json() for response in responses]
 
     async def fetch_parsed(self):
-        parsed: list[dict] = await super().fetch_parsed()
+        parsed = cast(list[dict], await super().fetch_parsed())
         all_items = []
         for parse in parsed:
-            this_items = parse.get("list").get("items")
+            parse_list = parse.get("list")
+            if parse_list is None:
+                continue
+            this_items = parse_list.get("items")
             if this_items:
                 all_items.extend(this_items)
         return all_items

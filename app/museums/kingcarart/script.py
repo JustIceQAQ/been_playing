@@ -12,6 +12,7 @@ from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_6
+from typing import cast
 
 
 class KingCarArtRunner(RunnerInit):
@@ -61,7 +62,7 @@ class KingCarArtRunner(RunnerInit):
         return responses
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         items = []
         for item in parsed:
             items.extend(item.select("ul.ex-list-box > li"))

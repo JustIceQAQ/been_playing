@@ -32,7 +32,7 @@ class KLookParse(ParseInit):
     def __init__(self, item: dict | dict):
         self.item = item
 
-    def title_address_filter(self, text: str) -> (str, str):
+    def title_address_filter(self, text: str) -> tuple[str, str]:
         runtime_address = "-"
         titles = text.strip().split("｜")
 
@@ -56,8 +56,10 @@ class KLookParse(ParseInit):
 
         return runtime_title, runtime_address
 
-    def get_title(self, *args, **kwargs) -> str:
+    def get_title(self, *args, **kwargs) -> str | None:
         raw_title = self.item.get("title")
+        if raw_title is None:
+            return None
         runtime_title, _ = self.title_address_filter(raw_title)
         return runtime_title
 
@@ -82,7 +84,7 @@ class KLookParse(ParseInit):
             use_format = "%b %d, %Y"
         return dt.datetime.strptime(re_date_string, use_format).strftime("%Y-%m-%d")
 
-    def get_date(self, *args, **kwargs) -> str:
+    def get_date(self, *args, **kwargs) -> str | None:
         date_list = self.item.get("date_list", None)
         if date_list is None:
             return ""
@@ -98,14 +100,16 @@ class KLookParse(ParseInit):
             end_string = self.replace_1_7(end_string.strip().split("(")[0])
             return f"{self.date_format(start_string)} ~ {self.date_format(end_string)}"
 
-    def get_address(self, *args, **kwargs) -> str:
+    def get_address(self, *args, **kwargs) -> str | None:
         raw_title = self.item.get("title")
+        if raw_title is None:
+            return None
         _, runtime_address = self.title_address_filter(raw_title)
         return runtime_address
 
-    def get_figure(self, *args, **kwargs) -> str:
+    def get_figure(self, *args, **kwargs) -> str | None:
         figure = self.item.get("image_url")
         return figure
 
-    def get_source_url(self, *args, **kwargs) -> str:
+    def get_source_url(self, *args, **kwargs) -> str | None:
         return self.item.get("event_url")

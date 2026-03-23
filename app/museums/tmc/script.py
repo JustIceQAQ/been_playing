@@ -2,6 +2,7 @@ import asyncio
 import base64
 import json
 import secrets
+from typing import cast
 
 import bs4
 import httpx
@@ -90,7 +91,7 @@ class TmcRunner(RunnerInit):
 
     async def fetch_parsed(self):
         items = []
-        parsers: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsers = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         for parsed in parsers:
             items.extend(parsed.select(".card-section > div.card-wrap > a.c-card-clip-wrap"))
         return items

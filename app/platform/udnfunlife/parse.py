@@ -4,13 +4,13 @@ from helpers.parse_helper import ParseInit
 
 
 class UdnFunLifeParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
-    def get_title(self, *args, **kwargs) -> str:
+    def get_title(self, *args, **kwargs) -> str | None:
         return self.item.find("h5", {"class": "yd_card-title"}).get_text()
 
-    def get_date(self, *args, **kwargs) -> str:
+    def get_date(self, *args, **kwargs) -> str | None:
         icon_texts = self.item.findAll("div", {"class": "yd_card-iconText"})
         date_value = ""
         for icon_text in icon_texts:
@@ -19,7 +19,7 @@ class UdnFunLifeParse(ParseInit):
                 break
         return date_value
 
-    def get_address(self, *args, **kwargs) -> str:
+    def get_address(self, *args, **kwargs) -> str | None:
         icon_texts = self.item.findAll("div", {"class": "yd_card-iconText"})
         date_value = "-"
         for icon_text in icon_texts:
@@ -28,8 +28,8 @@ class UdnFunLifeParse(ParseInit):
                 break
         return date_value
 
-    def get_figure(self, *args, **kwargs) -> str:
+    def get_figure(self, *args, **kwargs) -> str | None:
         return self.item.select_one("div.yd_card-thumbnail > img")["src"]
 
-    def get_source_url(self, *args, **kwargs) -> str:
+    def get_source_url(self, *args, **kwargs) -> str | None:
         return self.item.select_one("div.inner > a")["href"].replace("..", "https://tickets.udnfunlife.com/application")

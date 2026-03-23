@@ -14,6 +14,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class KmFaRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -50,7 +52,7 @@ class KmFaRunner(RunnerInit):
 
     async def fetch_parsed(self):
         items = []
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         for parse in parsed:
             sub_items = parse.select("div.exhibition_list > a")
             items.extend(sub_items)

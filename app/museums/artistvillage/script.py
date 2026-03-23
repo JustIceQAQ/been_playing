@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 from app.museums.artistvillage.parse import ArtistVillageParse
 from helpers.headers_helper import generate_headers, generate_cookies
@@ -55,7 +56,7 @@ class ArtistVillageRunner(RunnerInit):
         return response.json()
 
     async def fetch_parsed(self):
-        parsed: list[dict] = await super().fetch_parsed()
+        parsed = cast(list[dict], await super().fetch_parsed())
         return parsed
 
 

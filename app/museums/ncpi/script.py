@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 
@@ -50,7 +51,7 @@ class NCPIRunner(RunnerInit):
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parseds: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parseds = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         data = []
         for parsed in parseds:
             data.extend(parsed.select("div.area-essay > div > div > div > a"))

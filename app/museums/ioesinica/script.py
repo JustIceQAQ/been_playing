@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 from app.museums.ioesinica.parse import IOESinicaParse
 from helpers.headers_helper import generate_headers
@@ -47,7 +48,7 @@ class IOESinicaRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: LexborNode = await super().fetch_parsed()
+        parsed = cast(LexborNode, await super().fetch_parsed())
         return parsed.css("div.museum_ic_list_block a")
 
 

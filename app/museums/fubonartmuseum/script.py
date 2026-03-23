@@ -1,13 +1,19 @@
+import asyncio
+
 import bs4
 
 from app.museums.fubonartmuseum.parse import FuBonArtMuseumParse
+from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
+from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
+
+from typing import cast
 
 
 class FuBonArtMuseumRunner(RunnerInit):
@@ -37,9 +43,13 @@ class FuBonArtMuseumRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("div#homepage-swiper-exhibitions > div.swiper-wrapper > div")
 
 
+async def main():
+    await FuBonArtMuseumRunner().run(NoneCache(), NoneImage())
+
+
 if __name__ == "__main__":
-    FuBonArtMuseumRunner().run()
+    asyncio.run(main())

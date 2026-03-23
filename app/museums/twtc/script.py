@@ -1,5 +1,6 @@
 import asyncio
 import datetime
+from typing import cast
 
 import httpx
 
@@ -82,7 +83,7 @@ class TwTcRunner(RunnerInit):
 
         return responses
 
-    async def fetch_parsed(self):
+    async def fetch_parsed(self) -> list[TwTcResponse]:
         this_translation = self.translation()
         responses: list[TwTcResponse] = self.response
         for response in responses:
@@ -92,7 +93,8 @@ class TwTcRunner(RunnerInit):
 
     async def fetch_items(self, *args, **kwargs):
         exhibition_items = []
-        for response in self.parsed_:
+        responses = cast(list[TwTcResponse], self.parsed_)
+        for response in responses:
             for item in response.items:
                 data = self.use_parse(item).parse_to_base_model(ExhibitionItem, year=response.year)
                 if data.source_url is None:

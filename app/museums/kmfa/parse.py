@@ -4,7 +4,7 @@ from helpers.parse_helper import ParseInit
 
 
 class KmFaParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
@@ -21,7 +21,7 @@ class KmFaParse(ParseInit):
         path = self.item.find("img").attrs["src"]
         return "https://www.kmfa.gov.tw/" + path
 
-    def get_tags(self, *args, **kwargs) -> list[str] | None:
+    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

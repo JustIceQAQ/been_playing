@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 from app.platform.cultureexpress.parse import CultureExpressParse
@@ -56,7 +57,7 @@ class CultureExpressRunner(RunnerInit):
 
     async def fetch_parsed(self):
         dataset = []
-        parseds: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parseds = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         for parsed in parseds:
             dataset.extend(parsed.select("div#block  div.card"))
         return dataset

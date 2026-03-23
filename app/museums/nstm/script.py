@@ -15,6 +15,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class NsTmRunner(RunnerInit):  # TODO: 壞掉中...
     translation = BeautifulSoupTranslation
@@ -83,7 +85,7 @@ class NsTmRunner(RunnerInit):  # TODO: 壞掉中...
         return ok
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         ok_data = []
         for parse in parsed:
             ok_data.extend(parse.select("div.exhi_data_list"))

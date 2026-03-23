@@ -52,7 +52,7 @@ class ExhibitionItem(BaseModel):
     date: str | None = None
     address: str | None = None
     figure: str | None = None
-    source_url: str | None = None
+    source_url: str
     tags: list[str] | None = Field(default_factory=list)
     UUID: str | None = None
 
@@ -218,7 +218,7 @@ class Exhibition(BaseModel):
     async def save_to_json(
         self,
         filename: str,
-        folder: str | Path | None = Path(__file__).parent.parent.parent.absolute() / "data" / "v2",
+        folder: Path = Path(__file__).parent.parent.parent.absolute() / "data" / "v2",
         execution_time: float | None = None,
         is_unique: bool | None = True,
         is_sort: bool | None = True,
@@ -233,6 +233,12 @@ class Exhibition(BaseModel):
             this_folder = Path(__file__).parent.parent.parent.absolute() / "data" / prefix
             this_folder.mkdir(exist_ok=True)
         self.execution_time = execution_time
+
+        this_folder = (
+            Path(this_folder)
+            if this_folder is not None
+            else Path(__file__).parent.parent.parent.absolute() / "data" / "v2"
+        )
 
         if not (this_folder / f"{filename}.json").exists():
             (this_folder / f"{filename}.json").touch(exist_ok=True)
@@ -334,8 +340,8 @@ class Exhibition(BaseModel):
 
 
 class LastWeekUpdateData(BaseModel):
-    updated: datetime.datetime | None = Field(default_factory=get_datetime_now)
-    items: list[ExhibitionItem] | None = Field(default_factory=list)
+    updated: datetime.datetime = Field(default_factory=get_datetime_now)
+    items: list[ExhibitionItem] = Field(default_factory=list)
 
     def update_datetime(self):
         self.updated = get_datetime_now()

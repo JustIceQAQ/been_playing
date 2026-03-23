@@ -12,6 +12,7 @@ from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
+from typing import cast
 
 
 class CKSMHRunner(RunnerInit):
@@ -45,7 +46,7 @@ class CKSMHRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         div = parsed.select_one("div.group-list.page-block")
         return div.find("ul").find_all("li")
 

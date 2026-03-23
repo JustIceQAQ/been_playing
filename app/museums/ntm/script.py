@@ -1,6 +1,7 @@
 import asyncio
 from collections import defaultdict
 from itertools import chain
+from typing import cast
 
 import bs4
 
@@ -72,7 +73,7 @@ class NtmRunner(RunnerInit):
         return [response.text for response in responses]
 
     async def fetch_parsed(self) -> list:
-        parsers: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsers = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         return list(
             chain.from_iterable(
                 selected_one.select("ul[data-child] > li[data-index] > div.area-essay")

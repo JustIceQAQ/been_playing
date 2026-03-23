@@ -11,6 +11,7 @@ from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
+from typing import cast
 
 
 class YatsenRunner(RunnerInit):
@@ -37,7 +38,7 @@ class YatsenRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.find_all("a", {"class": "div-activity"})
 
     async def items_check(self):

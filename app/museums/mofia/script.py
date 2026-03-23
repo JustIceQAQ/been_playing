@@ -1,5 +1,5 @@
 import asyncio
-
+from typing import cast
 
 from app.museums.mofia.parse import MofiaParse
 from helpers.headers_helper import generate_headers
@@ -40,7 +40,7 @@ class MofiaRunner(RunnerInit):
         return response.json()
 
     async def fetch_parsed(self):
-        parsed: dict = await super().fetch_parsed()
+        parsed = cast(dict, await super().fetch_parsed())
         return parsed.get("data")
 
 
