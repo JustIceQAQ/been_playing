@@ -84,6 +84,8 @@
         - [齊柏林空間](https://www.chipolin.org/)
         - [新北市立鶯歌陶瓷博物館](https://www.ceramics.ntpc.gov.tw/)
         - [朱銘美術館](https://www.juming.org.tw/)
+    - 桃園市
+        - [桃園市立大溪木藝生態博物館](https://wem.tycg.gov.tw/)
     - 新竹市
         - [國立新竹生活美學館](https://www.nhclac.gov.tw/)
     - 臺中市

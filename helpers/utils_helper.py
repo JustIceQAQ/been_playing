@@ -1,3 +1,4 @@
+import datetime
 import datetime as dt
 import zoneinfo
 from functools import lru_cache
@@ -58,6 +59,10 @@ def get_current_and_previous_month():
     previous_period = (last_month_date.year, last_month_date.month)
 
     return current_period, previous_period
+
+
+def set_date(year: int, month: int, day: int) -> datetime.date:
+    return dt.date(year, month, day)
 
 
 @lru_cache

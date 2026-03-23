@@ -70,6 +70,7 @@ from .museums.tncmmm.script import TncMMMRunner
 from .museums.tncsec import TnCsEcRunner
 from .museums.ttcsec import TtCsEcRunner
 from .museums.twtc.script import TwTcRunner
+from .museums.tycg import TyCgRunner
 from .museums.yatsen import YatsenRunner
 from .museums.yochangart import YoChangArtRunner
 from .platform.artemperor import ArtEmperorRunner
@@ -167,6 +168,7 @@ MUSEUMS_RUNNERS = {
     HistorySinicaRunner,
     HKMRunner,
     JuMingRunner,
+    TyCgRunner,
 }
 
 GALLERIES_RUNNERS = {
