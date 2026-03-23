@@ -10,26 +10,26 @@ from helpers.storage.helper import ExhibitionItem
 
 class ParseInit(abc.ABC):
     @abc.abstractmethod
-    def get_title(self, *args, **kwargs) -> str:
+    def get_title(self, *args, **kwargs) -> str | None:
         raise NotImplementedError
 
     @abc.abstractmethod
-    def get_date(self, *args, **kwargs) -> str:
+    def get_date(self, *args, **kwargs) -> str | None:
         raise NotImplementedError
 
     @abc.abstractmethod
-    def get_address(self, *args, **kwargs) -> str:
+    def get_address(self, *args, **kwargs) -> str | None:
         raise NotImplementedError
 
     @abc.abstractmethod
-    def get_figure(self, *args, **kwargs) -> str:
+    def get_figure(self, *args, **kwargs) -> str | None:
         raise NotImplementedError
 
     def get_tags(self, *args, **kwargs) -> list[str] | None:
         return None
 
     @abc.abstractmethod
-    def get_source_url(self, *args, **kwargs) -> str:
+    def get_source_url(self, *args, **kwargs) -> str | None:
         raise NotImplementedError
 
     def safe_get_text(self, obj: Any):
