@@ -4,7 +4,7 @@ from helpers.parse_helper import ParseInit
 
 
 class NtSecParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str:
@@ -16,8 +16,8 @@ class NtSecParse(ParseInit):
     def get_address(self, *args, **kwargs) -> str | None:
         return None
 
-    def get_figure(self, *args, **kwargs) -> str:
+    def get_figure(self, *args, **kwargs) -> str | None:
         return has_img.get("src") if (has_img := self.item.find("img")) else "-"
 
-    def get_source_url(self, *args, **kwargs) -> str:
+    def get_source_url(self, *args, **kwargs) -> str | None:
         return self.item.get("href")

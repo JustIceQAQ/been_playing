@@ -40,18 +40,14 @@ class FreeProxySource:
             "Cookie": f"fp={secrets.token_hex(16)}",
         }
 
-    async def get_page_data(
-        self, url: str, headers: dict, httpx_client: httpx.AsyncClient
-    ) -> Tag:
+    async def get_page_data(self, url: str, headers: dict, httpx_client: httpx.AsyncClient) -> Tag:
         response = await httpx_client.get(url, headers=headers)
         parsed = BeautifulSoup(response.text, "html5lib")
         return parsed.select_one("#proxy_list")
 
     async def ip_availability(self, proxy: Proxy) -> Proxy | None:
         target_url = "https://www.google.com.tw/"
-        transport = httpx.AsyncHTTPTransport(
-            proxy=f"{proxy.protocol}://{proxy.ip}:{proxy.port}".lower()
-        )
+        transport = httpx.AsyncHTTPTransport(proxy=f"{proxy.protocol}://{proxy.ip}:{proxy.port}".lower())
         try:
             async with httpx.AsyncClient(transport=transport, timeout=None) as client:
                 response = await client.get(target_url)
@@ -63,10 +59,7 @@ class FreeProxySource:
 
     async def run(self):
         async with httpx.AsyncClient(timeout=None) as httpx_client:
-            tasks = [
-                self.get_page_data(url, self.get_headers(), httpx_client)
-                for url in self.root_path
-            ]
+            tasks = [self.get_page_data(url, self.get_headers(), httpx_client) for url in self.root_path]
 
             all_data = await asyncio.gather(*tasks)
 

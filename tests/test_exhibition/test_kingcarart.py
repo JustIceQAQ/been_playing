@@ -24,10 +24,7 @@ async def test_kingcarart():
         items = []
         items.extend(get_items(parsed))
 
-        tasks = [
-            client.get(url.format(page=page_flag))
-            for page_flag in range(2, get_page_number + 1)
-        ]
+        tasks = [client.get(url.format(page=page_flag)) for page_flag in range(2, get_page_number + 1)]
 
         tasks_result = await asyncio.gather(*tasks)
 

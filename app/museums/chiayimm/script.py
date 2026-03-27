@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class ChiayiMMRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -23,13 +25,11 @@ class ChiayiMMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.chiayi_city,
+            location_code=TaiwanCity.CHIAYI_CITY,
             fullname="嘉義市立博物館",
             code_name="ChiayiMM",
             external_link="https://museum.chiayi.gov.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="23.487196187060913, 120.45171887377413"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="23.487196187060913, 120.45171887377413"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -44,13 +44,11 @@ class ChiayiMMRunner(RunnerInit):
                 "https://museum.chiayi.gov.tw/ExhibitionListC003310.aspx?appname=ExhibitionListC003310&SearchAdvanced=true",
                 "https://museum.chiayi.gov.tw/ExhibitionListC003310.aspx?appname=ExhibitionListC003320&SearchAdvanced=true",
             ]
-            responses = await asyncio.gather(
-                *[client.get(url, cookies=cookies) for url in urls]
-            )
+            responses = await asyncio.gather(*[client.get(url, cookies=cookies) for url in urls])
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         items = []
         for p in parsed:
             items.extend(p.select("div.kf-diagramtext-col a.kf-item"))

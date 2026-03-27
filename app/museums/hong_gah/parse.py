@@ -27,16 +27,14 @@ def format_date_ranges(raw_text: str) -> str | None:
                 end_str = f"{start_year}.{end_str}"
             else:
                 raise ValueError(f"無法解析的日期格式: {line}")
-        start_date = datetime.datetime.strptime(start_str, "%Y.%m.%d").strftime(
-            "%Y-%m-%d"
-        )
+        start_date = datetime.datetime.strptime(start_str, "%Y.%m.%d").strftime("%Y-%m-%d")
         end_date = datetime.datetime.strptime(end_str, "%Y.%m.%d").strftime("%Y-%m-%d")
         result = f"{start_date} ~ {end_date}"
     return result
 
 
 class HongGahParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:

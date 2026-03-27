@@ -12,6 +12,7 @@ from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
+from typing import cast
 
 
 class SoKaArtRunner(RunnerInit):
@@ -23,13 +24,11 @@ class SoKaArtRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="索卡藝術中心",
             code_name="SoKaArt",
             external_link="https://www.soka-art.com/tr",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.07961383080647, 121.56344961543039"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.07961383080647, 121.56344961543039"),
             venue_type=VenueType.GALLERY,
         )
 
@@ -40,7 +39,7 @@ class SoKaArtRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("div.exhibition-list-wrapper li.item")
 
 

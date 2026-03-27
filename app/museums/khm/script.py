@@ -13,6 +13,7 @@ from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
+from typing import cast
 
 
 class KhmRunner(RunnerInit):
@@ -25,13 +26,11 @@ class KhmRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.kaohsiung_city,
+            location_code=TaiwanCity.KAOHSIUNG_CITY,
             fullname="高雄市立歷史博物館",
             code_name="khm",
             external_link="https://khm.org.tw/tw",
-            branch_coordinates=Coordinate(
-                raw_coordinates="22.62712833389164, 120.28687449855717"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="22.62712833389164, 120.28687449855717"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -42,15 +41,9 @@ class KhmRunner(RunnerInit):
     async def fetch_response(self):
         current_exhibitions_url = "https://khm.org.tw/tw/exhibition/currentexhibitions"
         permanent_exhibitions = "https://khm.org.tw/tw/exhibition/permanentexhibitions"
-        headers = generate_headers(
-            referer=current_exhibitions_url, not_use_user_agent=True
-        )
+        headers = generate_headers(referer=current_exhibitions_url, not_use_user_agent=True)
         runtime_settings = get_settings()
-        proxies = (
-            None
-            if runtime_settings.PROXY_POOL is None
-            else [Proxy.all(runtime_settings.PROXY_POOL)]
-        )
+        proxies = None if runtime_settings.PROXY_POOL is None else [Proxy.all(runtime_settings.PROXY_POOL)]
         async with RNetAsyncClient(
             proxies=proxies,
             headers=headers,
@@ -63,7 +56,7 @@ class KhmRunner(RunnerInit):
 
     async def fetch_parsed(self):
         dataset = []
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         for soup in parsed:
             datas = soup.select("div.exhibition-list div.list-item")
             dataset.extend(datas)

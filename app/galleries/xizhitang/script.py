@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class XiZhiTangRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -24,13 +26,11 @@ class XiZhiTangRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="羲之堂畫廊",
             code_name="XiZhiTang",
             external_link="https://taipeiartweek.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.040329571305197, 121.56247655631785"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.040329571305197, 121.56247655631785"),
             venue_type=VenueType.GALLERY,
         )
 
@@ -38,13 +38,11 @@ class XiZhiTangRunner(RunnerInit):
         headers = generate_headers(host="www.xizhitang.com.tw")
         cookies = generate_cookies(need_phpsessid=True)
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://www.xizhitang.com.tw/tidbits", cookies=cookies
-            )
+            response = await client.get("https://www.xizhitang.com.tw/tidbits", cookies=cookies)
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("div.item-news")
 
 

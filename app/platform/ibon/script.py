@@ -1,8 +1,10 @@
-from typing import Any
+import asyncio
 
 from app.platform.ibon.parse import IBonParse
+from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
+from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.storage.symbol import VenueType
@@ -35,10 +37,16 @@ class IBonRunner(RunnerInit):
             )
         return response.json()
 
-    async def fetch_parsed(self) -> list[dict[str, Any]]:
-        parsed: dict[str, Any] = await super().fetch_parsed()
-        return parsed.get("list", [])
+    async def fetch_parsed(self) -> list[dict]:
+        result = await super().fetch_parsed()
+        if isinstance(result, dict):
+            return result.get("list", [])
+        return []
+
+
+async def main():
+    await IBonRunner().run(NoneCache(), NoneImage())
 
 
 if __name__ == "__main__":
-    IBonRunner().run()
+    asyncio.run(main())

@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 
@@ -27,7 +28,7 @@ class HuaShan1914Runner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="華山1914文化創意產業園區",
             code_name="HuaShan1914",
             external_link="https://www.huashan1914.com/w/huashan1914/exhibition",
@@ -46,9 +47,7 @@ class HuaShan1914Runner(RunnerInit):
                 response = await client.get(
                     f"https://www.huashan1914.com/w/huashan1914/exhibition?index={index}",
                 )
-                dataset = bs4.BeautifulSoup(response.text, "html5lib").select(
-                    "ul#event-ul li"
-                )
+                dataset = bs4.BeautifulSoup(response.text, "html5lib").select("ul#event-ul li")
                 if dataset:
                     datasets.append(response.text)
                     index = index + 1
@@ -58,7 +57,7 @@ class HuaShan1914Runner(RunnerInit):
 
     async def fetch_parsed(self):
         items = []
-        parsers: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsers = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         for parsed in parsers:
             sub_items = parsed.select("ul#event-ul li")
             items.extend(sub_items)
@@ -77,9 +76,7 @@ class HuaShan1914Runner(RunnerInit):
         exhibition_location = None
         a_elements = soup.select("div.address a")
         if a_elements:
-            exhibition_location = ", ".join(
-                [a_element.get_text(strip=True) for a_element in a_elements]
-            )
+            exhibition_location = ", ".join([a_element.get_text(strip=True) for a_element in a_elements])
         await self.cache.aset(f"{item.UUID}-address", exhibition_location, month_3())
         item.address = exhibition_location
 

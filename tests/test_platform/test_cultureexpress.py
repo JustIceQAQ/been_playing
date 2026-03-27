@@ -5,9 +5,7 @@ from helpers.headers_helper import generate_headers
 def test_get_cultureexpress_data():
     headers = generate_headers(referer="https://cultureexpress.taipei")
     with httpx.Client(headers=headers) as client:
-        response1 = client.get(
-            url="https://cultureexpress.taipei/Event/C000003", headers=headers
-        )
+        response1 = client.get(url="https://cultureexpress.taipei/Event/C000003", headers=headers)
         response1.raise_for_status()
 
         response = httpx.get(

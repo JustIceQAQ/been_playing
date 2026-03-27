@@ -1,6 +1,6 @@
 import asyncio
 
-
+from typing import cast
 from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.parse import {{cookiecutter.script_code}}Parse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
@@ -74,7 +74,7 @@ class {{cookiecutter.script_code}}Runner(RunnerInit):
         )
         {% else %}
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="",
             code_name="",
             external_link="",
@@ -93,7 +93,7 @@ class {{cookiecutter.script_code}}Runner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: {{fetch_parsed_return_type}} = await super().fetch_parsed()
+        parsed = cast({{fetch_parsed_return_type}}, await super().fetch_parsed())
 
 
 

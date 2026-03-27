@@ -1,6 +1,6 @@
 from typing import Any
 
-Values = str | list[Any]
+Values = str | list[Any] | None
 
 
 class RequestsClean:

@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class WhiteStoneRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -23,13 +25,11 @@ class WhiteStoneRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="白石畫廊",
             code_name="WhiteStone",
             external_link="https://www.whitestone-gallery.com/zh-hant",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.081886335785196, 121.5655333509274"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.081886335785196, 121.5655333509274"),
             venue_type=VenueType.GALLERY,
         )
 
@@ -44,7 +44,7 @@ class WhiteStoneRunner(RunnerInit):
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         datas = []
         for p in parsed:
             datas.extend(p.select("div.wsg-exhibition-card"))

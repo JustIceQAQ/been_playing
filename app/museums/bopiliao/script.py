@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import httpx
 
@@ -23,19 +24,15 @@ class BoPiLiaoRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="剝皮寮歷史街區",
             code_name="BoPiLiao",
             external_link="https://www.bopiliao.taipei/Event_News",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.03698373119932, 121.50212186318004"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.03698373119932, 121.50212186318004"),
             venue_type=VenueType.MUSEUM,
         )
 
-    async def _fetch_url(
-        self, client: httpx.AsyncClient, url: str, params: dict
-    ) -> httpx.Response:
+    async def _fetch_url(self, client: httpx.AsyncClient, url: str, params: dict) -> httpx.Response:
         return await client.get(url, params=params)
 
     async def fetch_response(self):
@@ -59,7 +56,7 @@ class BoPiLiaoRunner(RunnerInit):
 
     async def fetch_parsed(self):
         items = []
-        parsed: list[httpx.Response] = await super().fetch_parsed()
+        parsed = cast(list[httpx.Response], await super().fetch_parsed())
         for item in parsed:
             items.extend(item.json()["items"])
         return items

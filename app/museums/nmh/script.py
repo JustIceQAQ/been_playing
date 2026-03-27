@@ -13,6 +13,8 @@ from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
+from typing import cast
+
 
 class NmhRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -23,13 +25,11 @@ class NmhRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="國立歷史博物館",
             code_name="Nmh",
             external_link="https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.0317350368833, 121.51118866791836"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.0317350368833, 121.51118866791836"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -46,13 +46,11 @@ class NmhRunner(RunnerInit):
         )
 
         async with HttpxAsyncClient(headers=headers) as client:
-            responses = await asyncio.gather(
-                *[client.get(url_template.format(n=number)) for number in numbers]
-            )
+            responses = await asyncio.gather(*[client.get(url_template.format(n=number)) for number in numbers])
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         datas = []
         for p in parsed:
             datas.extend(p.select("div.area-figure.page-figure"))

@@ -56,9 +56,7 @@ def test_get_raw_response():
             headers=headers,
             data=payload,
         )
-    match_value = re.search(
-        r'handleCallback\("[^"]+", "[^"]+", "(.*?)"\);', response.text, re.S
-    )
+    match_value = re.search(r'handleCallback\("[^"]+", "[^"]+", "(.*?)"\);', response.text, re.S)
     if match_value:
         json_str = match_value.group(1)
         json_unescaped_str = json_str.replace("\\\\", "\\").replace('\\"', '"')

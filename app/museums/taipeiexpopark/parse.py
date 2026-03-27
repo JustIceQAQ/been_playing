@@ -12,7 +12,7 @@ def roc_era_date_to_ad_date(this_date: str) -> str:
 
 
 class TaipeiExPoParkParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:

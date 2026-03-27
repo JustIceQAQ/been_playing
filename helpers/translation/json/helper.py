@@ -4,7 +4,5 @@ from helpers.translation.base import TranslationInit
 
 
 class JsonTranslation(TranslationInit):
-    def translation_to_object(
-        self, json_context: dict[Any, Any], *args, **kwargs
-    ) -> dict[Any, Any]:
+    def translation_to_object(self, json_context: dict[Any, Any], *args, **kwargs) -> dict[Any, Any]:
         return json_context

@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class NTAECRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -23,13 +25,11 @@ class NTAECRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="國立台灣藝術教育館",
             code_name="NTAEC",
             external_link="https://www.arte.gov.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.03249656295196, 121.51211159386773"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.03249656295196, 121.51211159386773"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -41,15 +41,13 @@ class NTAECRunner(RunnerInit):
         responses = []
         async with HttpxAsyncClient(headers=headers) as client:
             for n in range(3):
-                response = await client.get(
-                    url, params={"PageNo": page_no + n}, cookies=cookies
-                )
+                response = await client.get(url, params={"PageNo": page_no + n}, cookies=cookies)
                 responses.append(response.text)
         return responses
 
     async def fetch_parsed(self):
         item_data = []
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         for p in parsed:
             items = p.select("div.user-postes.wow")
             item_data.extend(items)

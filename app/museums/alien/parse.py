@@ -46,7 +46,7 @@ class AlienParse(ParseInit):
         url = style.split("')")[0].split("url('")[1]
         return "https://www.alien.com.tw" + url
 
-    def get_tags(self, *args, **kwargs) -> list[str] | None:
+    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
         tags = self.item.select("span.tag")
         return [tag.get_text(strip=True) for tag in tags]
 

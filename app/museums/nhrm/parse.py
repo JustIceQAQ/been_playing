@@ -4,7 +4,7 @@ from helpers.parse_helper import ParseInit
 
 
 class NHRMParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
@@ -13,13 +13,7 @@ class NHRMParse(ParseInit):
     def get_date(self, *args, **kwargs) -> str | None:
         date_range = self.item.find("div", {"class": "date"})
         if date_range:
-            return (
-                date_range.get_text()
-                .strip()
-                .replace("-", "~")
-                .replace("－", "~")
-                .replace(".", "-")
-            )
+            return date_range.get_text().strip().replace("-", "~").replace("－", "~").replace(".", "-")
 
     def get_address(self, *args, **kwargs) -> str | None:
         pass

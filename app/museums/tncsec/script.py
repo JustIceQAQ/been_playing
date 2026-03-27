@@ -11,6 +11,7 @@ from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
+from typing import cast
 
 
 class TnCsEcRunner(RunnerInit):
@@ -22,13 +23,11 @@ class TnCsEcRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.tainan_city,
+            location_code=TaiwanCity.TAINAN_CITY,
             fullname="國立臺南生活美學館",
             code_name="tncsec",
             external_link="https://www.tncsec.gov.tw/News_actives.aspx?n=2921&sms=11885&page=1&PageSize=30",
-            branch_coordinates=Coordinate(
-                raw_coordinates="22.992283833020835, 120.18735052369556"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="22.992283833020835, 120.18735052369556"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -40,7 +39,7 @@ class TnCsEcRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         items = parsed.find("div", {"class": "group-list message"})
         if items is None:
             return None

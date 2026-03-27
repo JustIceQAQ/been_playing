@@ -12,6 +12,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class KdMoFaRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -22,13 +24,11 @@ class KdMoFaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="關渡美術館",
             code_name="KdMoFa",
             external_link="https://kdmofa.tnua.edu.tw/mod/exhibition/index.php",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.133800251190085, 121.47158422559258"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.133800251190085, 121.47158422559258"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -40,13 +40,11 @@ class KdMoFaRunner(RunnerInit):
         )
         cookies = generate_cookies(need_phpsessid=True)
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://kdmofa.tnua.edu.tw/mod/exhibition/index.php", cookies=cookies
-            )
+            response = await client.get("https://kdmofa.tnua.edu.tw/mod/exhibition/index.php", cookies=cookies)
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("div.items > a.item")
 
 

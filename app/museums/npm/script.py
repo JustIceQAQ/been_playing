@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 from app.museums.npm.parse import (
     NpmColParse,
@@ -34,12 +35,12 @@ class NpmRunner(RunnerInit):
             branch_coordinates=[
                 Coordinate(
                     name="北部院區",
-                    location_code=TaiwanCity.taipei_city,
+                    location_code=TaiwanCity.TAIPEI_CITY,
                     raw_coordinates="25.10255940335793, 121.5485139544282",
                 ),
                 Coordinate(
                     name="南部院區",
-                    location_code=TaiwanCity.chiayi_county,
+                    location_code=TaiwanCity.CHIAYI_COUNTY,
                     raw_coordinates="23.473459041101574, 120.2928023651772",
                 ),
             ],
@@ -109,9 +110,7 @@ class NpmRunner(RunnerInit):
             north_parsed_dict = {"row": datasets_row, "col": datasets_col}
 
         if north_parsed_dataset_1 is not None:
-            preview_parsed = north_parsed_dataset_1.select(
-                ".navtabs-content-static ul.grid > li.mb-8"
-            )
+            preview_parsed = north_parsed_dataset_1.select(".navtabs-content-static ul.grid > li.mb-8")
             north_parsed_dict["preview"] = preview_parsed
         return north_parsed_dict
 
@@ -130,7 +129,7 @@ class NpmRunner(RunnerInit):
         return south_parsed_list
 
     async def fetch_parsed(self) -> dict:
-        parsed_dataset: dict[str, list] = await super().fetch_parsed()
+        parsed_dataset = cast(dict[str, list], await super().fetch_parsed())
         north_parsed_dict = self.fetch_north_parsed(parsed_dataset["north"])
         south_parsed_list = self.fetch_south_parsed(parsed_dataset["south"])
 
@@ -150,8 +149,8 @@ class NpmRunner(RunnerInit):
 
     async def fetch_items(self, *args, **kwargs):
         exhibition_items = []
-        runtime_parsed = self.parsed_
-        if (north := runtime_parsed.get("north", None)) is not None:
+        runtime_parsed = cast(dict, self.parsed_)
+        if (north := runtime_parsed.get("north")) is not None:
             if (north_row := north.get("row", None)) is not None:
                 exhibition_items.extend(
                     self._sub_fetch_items(
@@ -160,7 +159,7 @@ class NpmRunner(RunnerInit):
                         target_domain="https://www.npm.gov.tw/",
                     )
                 )
-            if (north_col := north.get("col", None)) is not None:
+            if (north_col := north.get("col")) is not None:
                 exhibition_items.extend(
                     self._sub_fetch_items(
                         north_col,
@@ -168,7 +167,7 @@ class NpmRunner(RunnerInit):
                         target_domain="https://www.npm.gov.tw/",
                     )
                 )
-            if (north_preview := north.get("preview", None)) is not None:
+            if (north_preview := north.get("preview")) is not None:
                 exhibition_items.extend(
                     self._sub_fetch_items(
                         north_preview,
@@ -177,13 +176,9 @@ class NpmRunner(RunnerInit):
                     )
                 )
 
-        if (south := runtime_parsed.get("south", None)) is not None:
+        if (south := runtime_parsed.get("south")) is not None:
             for item in south:
-                exhibition_items.append(
-                    SouthNpmParse(item).parse_to_base_model(
-                        ExhibitionItem, *args, **kwargs
-                    )
-                )
+                exhibition_items.append(SouthNpmParse(item).parse_to_base_model(ExhibitionItem, *args, **kwargs))
         return exhibition_items
 
 

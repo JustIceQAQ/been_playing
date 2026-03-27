@@ -1,7 +1,7 @@
 import asyncio
 
 import bs4
-
+from typing import cast
 from app.museums.chiayiam.parse import ChiayiAMParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
@@ -23,13 +23,11 @@ class ChiayiAMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.chiayi_city,
+            location_code=TaiwanCity.CHIAYI_CITY,
             fullname="嘉義市立美術館",
             code_name="ChiayiAM",
             external_link="https://chiayiartmuseum.chiayi.gov.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="23.476964512470964, 120.44092961904913"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="23.476964512470964, 120.44092961904913"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -47,7 +45,7 @@ class ChiayiAMRunner(RunnerInit):
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         items = []
         for p in parsed:
             items.extend(p.select("div.kf-diagramtext-col a.kf-item"))

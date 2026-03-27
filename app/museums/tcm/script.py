@@ -14,6 +14,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class TcmRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -24,13 +26,11 @@ class TcmRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.tainan_city,
+            location_code=TaiwanCity.TAINAN_CITY,
             fullname="臺南市立博物館",
             code_name="Tcm",
             external_link="https://tcm.tainan.gov.tw/permanent",
-            branch_coordinates=Coordinate(
-                raw_coordinates="22.987586370137066, 120.20828174089186"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="22.987586370137066, 120.20828174089186"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -46,13 +46,11 @@ class TcmRunner(RunnerInit):
             "https://tcm.tainan.gov.tw/special",
         ]
         async with HttpxAsyncClient(headers=headers) as client:
-            responses = await asyncio.gather(
-                *[self.sub_client(client, url) for url in urls]
-            )
+            responses = await asyncio.gather(*[self.sub_client(client, url) for url in urls])
         return responses
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         items = []
         for parse in parsed:
             items.extend(parse.select("div.content > div.row > div"))

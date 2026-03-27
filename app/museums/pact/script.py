@@ -11,6 +11,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class PactRunner(RunnerInit):
     translation = JsonTranslation
@@ -22,13 +24,11 @@ class PactRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="台北偶戲館",
             code_name="PACT",
             external_link="https://www.pact.taipei/exhibition_list.aspx?p=1&ps=10&t=all",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.04792075475668, 121.56141474093504"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.04792075475668, 121.56141474093504"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -52,7 +52,7 @@ class PactRunner(RunnerInit):
         return response.json()
 
     async def fetch_parsed(self):
-        parsed: dict = await super().fetch_parsed()
+        parsed = cast(dict, await super().fetch_parsed())
         return parsed["list"]["items"]
 
 

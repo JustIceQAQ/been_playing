@@ -4,18 +4,14 @@ from helpers.parse_helper import ParseInit
 
 
 class WhiteStoneParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
-        return self.item.find("div", {"class": "wsg-exhibition-label__title"}).get_text(
-            strip=True
-        )
+        return self.item.find("div", {"class": "wsg-exhibition-label__title"}).get_text(strip=True)
 
     def get_date(self, *args, **kwargs) -> str | None:
-        p_tag = self.item.find(
-            "div", {"class": "wsg-exhibition-label__description"}
-        ).find("p")
+        p_tag = self.item.find("div", {"class": "wsg-exhibition-label__description"}).find("p")
         if p_tag is None:
             return None
         details = list(p_tag.stripped_strings)
@@ -36,9 +32,7 @@ class WhiteStoneParse(ParseInit):
             return f"{ok_start_date} ~ {ok_end_date}"
 
     def get_address(self, *args, **kwargs) -> str | None:
-        p_tag = self.item.find(
-            "div", {"class": "wsg-exhibition-label__description"}
-        ).find("p")
+        p_tag = self.item.find("div", {"class": "wsg-exhibition-label__description"}).find("p")
         if p_tag is None:
             return None
         details = list(p_tag.stripped_strings)
@@ -49,7 +43,7 @@ class WhiteStoneParse(ParseInit):
     def get_figure(self, *args, **kwargs) -> str | None:
         return "https:" + self.item.find("img").get("src")
 
-    def get_tags(self, *args, **kwargs) -> list[str] | None:
+    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

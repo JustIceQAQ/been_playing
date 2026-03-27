@@ -2,6 +2,7 @@ import asyncio
 import base64
 import json
 import secrets
+from typing import cast
 
 import bs4
 import httpx
@@ -27,13 +28,11 @@ class TmcRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="台北流行音樂中心",
             code_name="Tmc",
             external_link="https://www.tmc.taipei/tw/blog/show?filter=eyJkaXJlY3Rpb24iOiJsYXN0ZXN0In0=",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.05181188396233, 121.59745382637806"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.05181188396233, 121.59745382637806"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -76,12 +75,7 @@ class TmcRunner(RunnerInit):
             response.raise_for_status()
             responses_text.append(response.text)
             pagination_len = (
-                len(
-                    self.translation()
-                    .translation_to_object(response.text)
-                    .select("li.c-pagination-item")
-                )
-                - 2
+                len(self.translation().translation_to_object(response.text).select("li.c-pagination-item")) - 2
             )
             if pagination_len != 1:
                 for n in range(2, pagination_len + 1):
@@ -97,11 +91,9 @@ class TmcRunner(RunnerInit):
 
     async def fetch_parsed(self):
         items = []
-        parsers: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsers = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         for parsed in parsers:
-            items.extend(
-                parsed.select(".card-section > div.card-wrap > a.c-card-clip-wrap")
-            )
+            items.extend(parsed.select(".card-section > div.card-wrap > a.c-card-clip-wrap"))
         return items
 
 

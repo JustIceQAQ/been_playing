@@ -14,6 +14,8 @@ from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3, get_asyncio_rate_limit
 
+from typing import cast
+
 
 class SongShanCulturalParkRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -27,32 +29,26 @@ class SongShanCulturalParkRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="松山文創園區",
             code_name="SongShanCulturalPark",
             external_link="https://www.songshanculturalpark.org/exhibition",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.04389834091059, 121.56065162486529"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.04389834091059, 121.56065162486529"),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
         headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://www.songshanculturalpark.org/exhibition"
-            )
+            response = await client.get("https://www.songshanculturalpark.org/exhibition")
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("div#exhibition > div.rows")
 
     async def fetch_items(self, *args, **kwargs):
-        items = await super().fetch_items(
-            target_domain="https://www.songshanculturalpark.org"
-        )
+        items = await super().fetch_items(target_domain="https://www.songshanculturalpark.org")
         return items
 
     async def _get_item_data(self, client: httpx.AsyncClient, item: ExhibitionItem):

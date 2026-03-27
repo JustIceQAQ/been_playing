@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 from app.museums.artistvillage.parse import ArtistVillageParse
 from helpers.headers_helper import generate_headers, generate_cookies
@@ -21,7 +22,7 @@ class ArtistVillageRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="寶藏巖國際藝術村",
             code_name="ArtistVillage",
             external_link="https://www.artistvillage.org/event.php",
@@ -51,13 +52,11 @@ class ArtistVillageRunner(RunnerInit):
             "method": "get_posts_list_month",
         }
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.post(
-                "https://www.artistvillage.org/ajax.php", data=data, cookies=cookies
-            )
+            response = await client.post("https://www.artistvillage.org/ajax.php", data=data, cookies=cookies)
         return response.json()
 
     async def fetch_parsed(self):
-        parsed: list[dict] = await super().fetch_parsed()
+        parsed = cast(list[dict], await super().fetch_parsed())
         return parsed
 
 

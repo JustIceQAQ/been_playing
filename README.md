@@ -74,12 +74,18 @@
         - [有章藝術博物館](https://museum.ntua.edu.tw)
         - [寶藏巖國際藝術村](https://www.artistvillage.org/event.php)
         - [紀州庵文學森林](https://kishuan.org.tw/activity.htm)
+        - [中央研究院-民族學研究所博物館](https://www.ioe.sinica.edu.tw/)
+        - [中央研究院-歷史文物陳列館](https://museum.sinica.edu.tw/)
+        - [華岡博物館](https://hkm.pccu.edu.tw/)
     - 新北市
         - [新北市美術館](https://ntcart.museum/exhibition)
         - [世界宗教博物館](https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070)
         - [板橋435藝文特區](https://www.435.culture.ntpc.gov.tw/)
         - [齊柏林空間](https://www.chipolin.org/)
         - [新北市立鶯歌陶瓷博物館](https://www.ceramics.ntpc.gov.tw/)
+        - [朱銘美術館](https://www.juming.org.tw/)
+    - 桃園市
+        - [桃園市立大溪木藝生態博物館](https://wem.tycg.gov.tw/)
     - 新竹市
         - [國立新竹生活美學館](https://www.nhclac.gov.tw/)
     - 臺中市

@@ -15,6 +15,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class NsTmRunner(RunnerInit):  # TODO: 壞掉中...
     translation = BeautifulSoupTranslation
@@ -25,24 +27,18 @@ class NsTmRunner(RunnerInit):  # TODO: 壞掉中...
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="國立科學工藝博物館",
             code_name="NsTm",
             external_link="https://www.nstm.gov.tw/ExhibitionList.aspx?ExhibitionType=1&Period=1",
-            branch_coordinates=Coordinate(
-                raw_coordinates="22.64161262350391, 120.32253339088527"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="22.64161262350391, 120.32253339088527"),
             venue_type=VenueType.MUSEUM,
         )
 
-    async def sub_fetch_response(
-        self, client: httpx.AsyncClient, url: str
-    ) -> list[str]:
+    async def sub_fetch_response(self, client: httpx.AsyncClient, url: str) -> list[str]:
         sub_response = []
         for p_index in range(0, 2, 1):
-            response = await client.get(
-                url, params={"Pindex": p_index, "ExhibitionType": "1", "Period": "1"}
-            )
+            response = await client.get(url, params={"Pindex": p_index, "ExhibitionType": "1", "Period": "1"})
             response.raise_for_status()
             if response.is_success:
                 sub_response.append(response.text)
@@ -65,9 +61,7 @@ class NsTmRunner(RunnerInit):  # TODO: 壞掉中...
             },
         )
         cookies = httpx.Cookies()
-        cookies.set(
-            "ASP.NET_SessionId", secrets.token_hex(16), domain="www.nstm.gov.tw"
-        )
+        cookies.set("ASP.NET_SessionId", secrets.token_hex(16), domain="www.nstm.gov.tw")
         cookies.set("CONSENT", "YES+", domain="www.nstm.gov.tw")
         urls = [
             "https://www.nstm.gov.tw/ExhibitionList.aspx",
@@ -91,7 +85,7 @@ class NsTmRunner(RunnerInit):  # TODO: 壞掉中...
         return ok
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         ok_data = []
         for parse in parsed:
             ok_data.extend(parse.select("div.exhi_data_list"))

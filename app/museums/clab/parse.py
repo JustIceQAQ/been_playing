@@ -7,32 +7,20 @@ from helpers.parse_helper import ParseInit
 
 
 def clean_date(value: Tag) -> str:
-    year = (
-        value.find("p", {"class": "a-dateTime__year"})
-        .get_text()
-        .strip()
-        .split(".")[0]
-        .strip()
-    )
-    month_day = (
-        value.find("p", {"class": "a-dateTime__text"})
-        .get_text()
-        .strip()
-        .split("(")[0]
-        .split(".")
-    )
+    year = value.find("p", {"class": "a-dateTime__year"}).get_text().strip().split(".")[0].strip()
+    month_day = value.find("p", {"class": "a-dateTime__text"}).get_text().strip().split("(")[0].split(".")
     month, day = month_day
     return f"{year}-{month}-{day}"
 
 
 class CLabParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
-    def get_title(self, *args, **kwargs) -> str:
+    def get_title(self, *args, **kwargs) -> str | None:
         return self.item.find("p", {"class": "a-base-card__title"}).get_text().strip()
 
-    def get_date(self, *args, **kwargs) -> str:
+    def get_date(self, *args, **kwargs) -> str | None:
         date_raw = self.item.find("div", {"class": "a-dateTime__wrapper"})
         dates = date_raw.find_all("div")
         result_date = "-"
@@ -46,7 +34,7 @@ class CLabParse(ParseInit):
             pass
         return result_date
 
-    def get_address(self, *args, **kwargs) -> str:
+    def get_address(self, *args, **kwargs) -> str | None:
         address = self.item.find("p", {"class": "a-base-card__location"})
         if address is not None:
             return address.get_text(strip=True)
@@ -60,9 +48,9 @@ class CLabParse(ParseInit):
 
         return f"https:{urllib.parse.quote(pc_image[:-3])}"
 
-    def get_tags(self, *args, **kwargs) -> list[str] | None:
+    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
         a = self.item.find("a", {"class": "a-base-card__category"})
         return [a.get_text()]
 
-    def get_source_url(self, *args, **kwargs) -> str:
+    def get_source_url(self, *args, **kwargs) -> str | None:
         return self.item.find("a", {"class": "a-base-card__media"})["href"]

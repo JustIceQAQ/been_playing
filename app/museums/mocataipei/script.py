@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 
@@ -25,7 +26,7 @@ class MoCaTaipeiRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="台北當代藝術館",
             code_name="MoCaTaipei",
             external_link="https://www.mocataipei.org.tw/tw/ExhibitionAndEvent",
@@ -48,7 +49,7 @@ class MoCaTaipeiRunner(RunnerInit):
         return [task.text for task in tasks_response]
 
     async def fetch_parsed(self):
-        parsers: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsers = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         items_dataset = []
         for parsed in parsers:
             if runtime_element := parsed.select("div.listFrameBox div.list"):

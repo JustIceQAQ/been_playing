@@ -12,6 +12,8 @@ from helpers.utils_helper import month_3, get_this_date_year
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class NTTRunner(RunnerInit):
     translation = JsonTranslation
@@ -38,16 +40,10 @@ class NTTRunner(RunnerInit):
         data = {"year": year}
         cookies = {}
         async with HttpxAsyncClient(headers=headers) as client:
-            html_response = await client.get(
-                "https://newtaipei.travel/zh-tw/calendar/list"
-            )
+            html_response = await client.get("https://newtaipei.travel/zh-tw/calendar/list")
             html_response.raise_for_status()
-            html_p = BeautifulSoupTranslation().translation_to_object(
-                html_response.text
-            )
-            request_verification_token = html_p.select(
-                "body > input[name=__RequestVerificationToken]"
-            )[0].get("value")
+            html_p = BeautifulSoupTranslation().translation_to_object(html_response.text)
+            request_verification_token = html_p.select("body > input[name=__RequestVerificationToken]")[0].get("value")
             cookies["__RequestVerificationToken"] = request_verification_token
             headers["content-type"] = "application/json"
             response = await client.post(
@@ -58,7 +54,7 @@ class NTTRunner(RunnerInit):
         return response.json()
 
     async def fetch_parsed(self):
-        parsed: dict = await super().fetch_parsed()
+        parsed = cast(dict, await super().fetch_parsed())
         return parsed.get("data")
 
 

@@ -4,7 +4,7 @@ from helpers.parse_helper import ParseInit
 
 
 class ChiayiAMParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
@@ -14,22 +14,15 @@ class ChiayiAMParse(ParseInit):
         spans = self.item.select("div.exh-date span")
         if not spans:
             return None
-        return " ~ ".join(
-            [
-                span.get_text(strip=True).replace("-", "").replace("／", "-")
-                for span in spans
-            ]
-        )
+        return " ~ ".join([span.get_text(strip=True).replace("-", "").replace("／", "-") for span in spans])
 
     def get_address(self, *args, **kwargs) -> str | None:
         return self.item.find("div", {"class": "exh-map"}).get_text(strip=True)
 
     def get_figure(self, *args, **kwargs) -> str | None:
-        return "https://chiayiartmuseum.chiayi.gov.tw/" + self.item.find("img").get(
-            "src"
-        )
+        return "https://chiayiartmuseum.chiayi.gov.tw/" + self.item.find("img").get("src")
 
-    def get_tags(self, *args, **kwargs) -> list[str] | None:
+    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

@@ -13,6 +13,8 @@ from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
+from typing import cast
+
 
 class NHRMRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -24,13 +26,11 @@ class NHRMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.new_taipei_city,
+            location_code=TaiwanCity.NEW_TAIPEI_CITY,
             fullname="國家人權博物館",
             code_name="NHRM",
             external_link="https://www.nhrm.gov.tw/w/nhrm/ExhibitionA",
-            branch_coordinates=Coordinate(
-                raw_coordinates="24.987027946019857, 121.53208236236004"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="24.987027946019857, 121.53208236236004"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -41,7 +41,7 @@ class NHRMRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("ul.list-group > li.list-item")
 
 

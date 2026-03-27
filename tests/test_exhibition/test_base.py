@@ -23,9 +23,7 @@ async def test_base():
     }
     cookies = generate_cookies(need_phpsessid=True, need_consent=True)
     data = {"site": "OCAM", "nowpage": 1, "ispast": 0}
-    async with httpx.AsyncClient(
-        timeout=None, headers=headers, cookies=cookies
-    ) as client:
+    async with httpx.AsyncClient(timeout=None, headers=headers, cookies=cookies) as client:
         response = await client.post(url, data=data)
         response.raise_for_status()
     soup = BeautifulSoup(response.content, "html5lib")

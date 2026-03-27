@@ -4,7 +4,7 @@ from helpers.parse_helper import ParseInit
 
 
 class ChiPoLinParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
@@ -15,9 +15,7 @@ class ChiPoLinParse(ParseInit):
         return text
 
     def get_date(self, *args, **kwargs) -> str | None:
-        span = self.item.find(
-            "span", {"class": "exhibition__item__title__date"}
-        ).get_text()
+        span = self.item.find("span", {"class": "exhibition__item__title__date"}).get_text()
         return span.replace("-", "~").replace("/", "-")
 
     def get_address(self, *args, **kwargs) -> str | None:

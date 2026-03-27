@@ -12,7 +12,7 @@ class Cache(abc.ABC):
         return cls._instance
 
     @abc.abstractmethod
-    async def aget(self, key: str) -> str:
+    async def aget(self, key: str) -> Any | None:
         raise NotImplementedError
 
     @abc.abstractmethod
@@ -26,7 +26,7 @@ class Cache(abc.ABC):
         raise NotImplementedError
 
     @abc.abstractmethod
-    def get(self, key: str) -> str:
+    def get(self, key: str) -> Any | None:
         raise NotImplementedError
 
     @abc.abstractmethod

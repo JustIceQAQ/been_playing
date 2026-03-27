@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import httpx
 
@@ -24,19 +25,15 @@ class NtcArtMuseumRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.new_taipei_city,
+            location_code=TaiwanCity.NEW_TAIPEI_CITY,
             fullname="新北市美術館",
             code_name="NtcArtMuseum",
             external_link="https://ntcart.museum/exhibition.aspx?kind=today",
-            branch_coordinates=Coordinate(
-                raw_coordinates="24.953654641948525, 121.358269212097"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="24.953654641948525, 121.358269212097"),
             venue_type=VenueType.MUSEUM,
         )
 
-    async def sub_fetch_response(
-        self, client: httpx.AsyncClient, kind: str
-    ) -> httpx.Response:
+    async def sub_fetch_response(self, client: httpx.AsyncClient, kind: str) -> httpx.Response:
         return await client.post(
             "https://ntcart.museum/exhibition.aspx",
             data={
@@ -51,9 +48,7 @@ class NtcArtMuseumRunner(RunnerInit):
             referer="https://ntcart.museum/exhibition.aspx?kind=today",
             origin="https://ntcart.museum",
             x_requested_with="XMLHttpRequest",
-            other_headers={
-                "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
-            },
+            other_headers={"content-type": "application/x-www-form-urlencoded; charset=UTF-8"},
         )
         kinds = [
             "today",
@@ -65,10 +60,13 @@ class NtcArtMuseumRunner(RunnerInit):
         return [response.json() for response in responses]
 
     async def fetch_parsed(self):
-        parsed: list[dict] = await super().fetch_parsed()
+        parsed = cast(list[dict], await super().fetch_parsed())
         all_items = []
         for parse in parsed:
-            this_items = parse.get("list").get("items")
+            parse_list = parse.get("list")
+            if parse_list is None:
+                continue
+            this_items = parse_list.get("items")
             if this_items:
                 all_items.extend(this_items)
         return all_items

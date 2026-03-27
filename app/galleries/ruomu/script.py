@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class RuoMuRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -23,13 +25,11 @@ class RuoMuRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="若木藝廊",
             code_name="RuoMu",
             external_link="https://www.ruomugallery.com/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.033909532791032, 121.52358387976376"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.033909532791032, 121.52358387976376"),
             venue_type=VenueType.GALLERY,
         )
 
@@ -43,7 +43,7 @@ class RuoMuRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("#exhibitions-grid-current li")
 
 

@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 
@@ -23,13 +24,11 @@ class TtCsEcRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taitung_county,
+            location_code=TaiwanCity.TAITUNG_COUNTY,
             fullname="國立臺東生活美學館",
             code_name="ttcsec",
             external_link="https://www.ttcsec.gov.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="22.755456248316037, 121.15105139554878"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="22.755456248316037, 121.15105139554878"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -44,7 +43,7 @@ class TtCsEcRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         items = parsed.find("div", {"class": "group-list page-block"})
         if items is None:
             return None

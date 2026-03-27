@@ -7,7 +7,7 @@ from helpers.parse_helper import ParseInit
 
 
 class MindSetArtParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
@@ -27,9 +27,7 @@ class MindSetArtParse(ParseInit):
         else:
             raise ValueError("Invalid date format")
 
-        start_date = (
-            f"{int(start_year):04d}-{int(start_month):02d}-{int(start_day):02d}"
-        )
+        start_date = f"{int(start_year):04d}-{int(start_month):02d}-{int(start_day):02d}"
         end_date = f"{int(end_year):04d}-{int(end_month):02d}-{int(end_day):02d}"
 
         return f"{start_date} ~ {end_date}"
@@ -42,7 +40,7 @@ class MindSetArtParse(ParseInit):
         srcs = ast.literal_eval(data_responsive_src)
         return srcs["750"]
 
-    def get_tags(self, *args, **kwargs) -> list[str] | None:
+    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

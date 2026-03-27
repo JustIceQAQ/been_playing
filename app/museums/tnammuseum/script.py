@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 from app.museums.tnammuseum.parse import TnamMuseumParse
@@ -23,17 +24,13 @@ class TnamMuseumRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.tainan_city,
+            location_code=TaiwanCity.TAINAN_CITY,
             fullname="臺南市美術館",
             code_name="TnamMuseum",
             external_link="https://www.tnam.museum/exhibition/current?page=1",
             branch_coordinates=[
-                Coordinate(
-                    name="一館", raw_coordinates="22.99117888093109, 120.20502606285312"
-                ),
-                Coordinate(
-                    name="二館", raw_coordinates="22.99055275877767, 120.20140904089217"
-                ),
+                Coordinate(name="一館", raw_coordinates="22.99117888093109, 120.20502606285312"),
+                Coordinate(name="二館", raw_coordinates="22.99055275877767, 120.20140904089217"),
             ],
             venue_type=VenueType.MUSEUM,
         )
@@ -60,7 +57,7 @@ class TnamMuseumRunner(RunnerInit):
         return responses
 
     async def fetch_parsed(self):
-        parseds: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parseds = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         dataset = []
         for parsed in parseds:
             dataset.extend(parsed.select("div.layout-large > figure > a"))

@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class YiYunRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -23,18 +25,18 @@ class YiYunRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="異雲書屋",
             code_name="YiYun",
             external_link="https://www.yiyun-art.com/",
             branch_coordinates=[
                 Coordinate(
-                    location_code=TaiwanCity.taipei_city,
+                    location_code=TaiwanCity.TAIPEI_CITY,
                     name="青田館",
                     raw_coordinates="25.027213880907816, 121.53055350558525",
                 ),
                 Coordinate(
-                    location_code=TaiwanCity.taipei_city,
+                    location_code=TaiwanCity.TAIPEI_CITY,
                     name="金華館",
                     raw_coordinates="25.028205131565272, 121.53223852023619",
                 ),
@@ -49,7 +51,7 @@ class YiYunRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         current = parsed.find("div", {"id": "current"})
         following = parsed.find("div", {"id": "following"})
         followings = following.find_all("a", {"class": "exhibition-list"})

@@ -16,6 +16,8 @@ from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import get_datetime_now, month_3, get_asyncio_rate_limit
 
+from typing import cast
+
 
 class NtSecRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -27,13 +29,11 @@ class NtSecRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="國立臺灣科學教育館",
             code_name="NtSec",
             external_link="https://www.ntsec.gov.tw/article/list.aspx?a=25",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.096328164549, 121.51649185712368"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.096328164549, 121.51649185712368"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -48,13 +48,11 @@ class NtSecRunner(RunnerInit):
         e_date = e_datetime.strftime("%Y-%m-%d")
         url_template = "https://www.ntsec.gov.tw/article/list.aspx?a=25&s_date={s_date}&e_date={e_date}"
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                url_template.format(s_date=s_date, e_date=e_date)
-            )
+            response = await client.get(url_template.format(s_date=s_date, e_date=e_date))
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("#MainContent_divListItem > a")
 
     async def fetch_items(self, *args, **kwargs):

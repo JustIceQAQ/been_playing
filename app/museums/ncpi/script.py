@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 
@@ -23,13 +24,11 @@ class NCPIRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="國家攝影文化中心",
             code_name="NCPI",
             external_link="https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?n=8006&sms=15632",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.0468823164654, 121.51432273908243"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.0468823164654, 121.51432273908243"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -52,7 +51,7 @@ class NCPIRunner(RunnerInit):
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parseds: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parseds = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         data = []
         for parsed in parseds:
             data.extend(parsed.select("div.area-essay > div > div > div > a"))

@@ -1,5 +1,5 @@
 import asyncio
-
+from typing import cast
 
 from app.museums.mofia.parse import MofiaParse
 from helpers.headers_helper import generate_headers
@@ -22,13 +22,11 @@ class MofiaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taichung_city,
+            location_code=TaiwanCity.TAICHUNG_CITY,
             fullname="臺中市纖維工藝博物館",
             code_name="Mofia",
             external_link="https://mofia.taichung.gov.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="24.100248374856758, 120.68606998009467"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="24.100248374856758, 120.68606998009467"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -42,7 +40,7 @@ class MofiaRunner(RunnerInit):
         return response.json()
 
     async def fetch_parsed(self):
-        parsed: dict = await super().fetch_parsed()
+        parsed = cast(dict, await super().fetch_parsed())
         return parsed.get("data")
 
 

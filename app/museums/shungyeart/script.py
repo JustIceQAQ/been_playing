@@ -12,6 +12,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class ShungYeArtRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -22,13 +24,11 @@ class ShungYeArtRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="順益台灣美術館",
             code_name="ShungYeArt",
             external_link="https://www.shungye-art.org/show_now.php",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.046560256806668, 121.51092983908268"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.046560256806668, 121.51092983908268"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -42,7 +42,7 @@ class ShungYeArtRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         now = parsed.find("a", {"id": "Now"}).find_all_next(class_="indexnews1")
         notice = parsed.find("a", {"id": "Notice"}).find_all_next(class_="indexnews1")
         now_ex = now + notice

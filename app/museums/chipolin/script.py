@@ -12,6 +12,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class ChiPoLinRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -23,13 +25,11 @@ class ChiPoLinRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.new_taipei_city,
+            location_code=TaiwanCity.NEW_TAIPEI_CITY,
             fullname="齊柏林空間",
             code_name="ChiPoLin",
             external_link="https://www.chipolin.org/exhibition",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.17294603618085, 121.43711272744605"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.17294603618085, 121.43711272744605"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -40,7 +40,7 @@ class ChiPoLinRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.find_all("li", {"class": "exhibition__item"})
 
 

@@ -1,11 +1,9 @@
-import bs4
-
 from helpers.parse_helper import ParseInit
 from helpers.utils_helper import timestamp_to_datetime
 
 
 class NTCRIParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: dict):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
@@ -26,11 +24,19 @@ class NTCRIParse(ParseInit):
         return this_date
 
     def get_address(self, *args, **kwargs) -> str | None:
-        performances: list[dict[str, str]] = self.item.get("performances")
+        performances = self.item.get("performances")
+        if performances is None:
+            return None
         return performances[0].get("perfName")
 
     def get_figure(self, *args, **kwargs) -> str | None:
-        return self.item.get("image").get("original")
+        image = self.item.get("image")
+        if image is None:
+            return None
+        original = image.get("original")
+        if original is None:
+            return None
+        return original
 
     def get_source_url(self, *args, **kwargs) -> str | None:
         return self.item.get("actUrl")

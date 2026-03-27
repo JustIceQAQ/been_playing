@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 from app.museums.tfam.parse import TFamParse
 from helpers.cache import NoneCache
@@ -21,13 +22,11 @@ class TFamRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="臺北市立美術館",
             code_name="TFam",
             external_link="https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.07240807900826, 121.5244680697716"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.07240807900826, 121.5244680697716"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -56,7 +55,7 @@ class TFamRunner(RunnerInit):
 
     async def fetch_parsed(self):
         data = []
-        parsers: list[dict] = await super().fetch_parsed()
+        parsers = cast(list[dict], await super().fetch_parsed())
         for parsed in parsers:
             data.extend(parsed.get("Data", []))
         return data

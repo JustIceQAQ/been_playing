@@ -19,9 +19,13 @@ from .museums.cksmh.script import CKSMHRunner
 from .museums.clab.script import CLabRunner
 from .museums.culture435 import Culture435Runner
 from .museums.fubonartmuseum.script import FuBonArtMuseumRunner
+from .museums.historysinica import HistorySinicaRunner
+from .museums.hkm import HKMRunner
 from .museums.hong_gah.script import HongGahRunner
 from .museums.huashan1914.script import HuaShan1914Runner
+from .museums.ioesinica import IOESinicaRunner
 from .museums.jam.script import JamRunner
+from .museums.juming import JuMingRunner
 from .museums.kdmofa.script import KdMoFaRunner
 from .museums.khm import KhmRunner
 from .museums.kingcarart.script import KingCarArtRunner
@@ -66,6 +70,7 @@ from .museums.tncmmm.script import TncMMMRunner
 from .museums.tncsec import TnCsEcRunner
 from .museums.ttcsec import TtCsEcRunner
 from .museums.twtc.script import TwTcRunner
+from .museums.tycg import TyCgRunner
 from .museums.yatsen import YatsenRunner
 from .museums.yochangart import YoChangArtRunner
 from .platform.artemperor import ArtEmperorRunner
@@ -159,6 +164,11 @@ MUSEUMS_RUNNERS = {
     TtCsEcRunner,
     AlienRunner,
     MofiaRunner,
+    IOESinicaRunner,
+    HistorySinicaRunner,
+    HKMRunner,
+    JuMingRunner,
+    TyCgRunner,
 }
 
 GALLERIES_RUNNERS = {

@@ -14,6 +14,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class MoNTUERunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -25,13 +27,11 @@ class MoNTUERunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="北師美術館",
             code_name="MoNTUE",
             external_link="https://montue.ntue.edu.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.024774854666255, 121.54460696977063"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.024774854666255, 121.54460696977063"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -53,27 +53,20 @@ class MoNTUERunner(RunnerInit):
                 soup = BeautifulSoupTranslation().translation_to_object(result)
                 divs = soup.find_all(
                     "div",
-                    {
-                        "class": "ptsc pt-sc sc-slider exhibition-slider hide-title hide-mobile"
-                    },
+                    {"class": "ptsc pt-sc sc-slider exhibition-slider hide-title hide-mobile"},
                 )
                 for div in divs:
                     all_items_url.append(div.find("a").get("href"))
             if not all_items_url:
                 logging.error("all_items_url data is %s", bool(all_items_url))
-            get_items_context = [
-                self.sub_fetch_response(client, item_url)
-                for item_url in set(all_items_url)
-            ]
+            get_items_context = [self.sub_fetch_response(client, item_url) for item_url in set(all_items_url)]
             get_items_context_results = await asyncio.gather(*get_items_context)
             if not get_items_context_results:
-                logging.error(
-                    "get_items_context_results data is %s", bool(all_items_url)
-                )
+                logging.error("get_items_context_results data is %s", bool(all_items_url))
         return get_items_context_results
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         return parsed
 
 

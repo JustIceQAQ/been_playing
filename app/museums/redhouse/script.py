@@ -12,6 +12,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class RedHouseRunner(RunnerInit):
     translation = JsonTranslation
@@ -23,13 +25,11 @@ class RedHouseRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="西門紅樓",
             code_name="RedHouse",
             external_link="https://www.redhouse.taipei/index.aspx",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.042286045915937, 121.50683773908234"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.042286045915937, 121.50683773908234"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -53,7 +53,7 @@ class RedHouseRunner(RunnerInit):
         return response.json()
 
     async def fetch_parsed(self):
-        parsed: dict = await super().fetch_parsed()
+        parsed = cast(dict, await super().fetch_parsed())
         return parsed["items"]
 
 

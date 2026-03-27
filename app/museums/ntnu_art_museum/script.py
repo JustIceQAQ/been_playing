@@ -13,6 +13,8 @@ from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
+from typing import cast
+
 
 class NTNUArtMuseumRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -24,26 +26,22 @@ class NTNUArtMuseumRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="師大美術館",
             code_name="NTNUArtMuseum",
             external_link="https://www.artmuse.ntnu.edu.tw/index.php/current_exhibit/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.027981327647616, 121.53016316977069"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.027981327647616, 121.53016316977069"),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
         headers = generate_headers(host="www.artmuse.ntnu.edu.tw")
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://www.artmuse.ntnu.edu.tw/index.php/current_exhibit/"
-            )
+            response = await client.get("https://www.artmuse.ntnu.edu.tw/index.php/current_exhibit/")
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         items = parsed.select("figcaption")
         return [item.parent for item in items]
 

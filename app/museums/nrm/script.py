@@ -12,6 +12,8 @@ from helpers.utils_helper import month_3, get_asyncio_rate_limit
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class NrmRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -23,26 +25,22 @@ class NrmRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="國家鐵道博物館",
             code_name="Nrm",
             external_link="https://www.nrm.gov.tw/News_actives.aspx?n=3325&sms=13412",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.04759981549798, 121.56476041209898"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.04759981549798, 121.56476041209898"),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
         headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://www.nrm.gov.tw/News_actives.aspx?n=3325&sms=13412"
-            )
+            response = await client.get("https://www.nrm.gov.tw/News_actives.aspx?n=3325&sms=13412")
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.find_all("a", {"class": "div-activity"})
 
     async def _get_item_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
@@ -55,9 +53,7 @@ class NrmRunner(RunnerInit):
         exhibition_location = None
         a_elements = soup.select("div.programicon_05 a")[1:]
         if a_elements:
-            exhibition_location = ", ".join(
-                [a_element.get_text(strip=True) for a_element in a_elements]
-            )
+            exhibition_location = ", ".join([a_element.get_text(strip=True) for a_element in a_elements])
         await self.cache.aset(f"{item.UUID}-address", exhibition_location, month_3())
         item.address = exhibition_location
 

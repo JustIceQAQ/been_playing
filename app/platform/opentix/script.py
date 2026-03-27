@@ -11,6 +11,8 @@ from helpers.storage.symbol import VenueType
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 
+from typing import cast
+
 
 class OpenTixRunner(RunnerInit):
     translation = JsonTranslation
@@ -30,9 +32,7 @@ class OpenTixRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = generate_headers(
-            origin="https://www.opentix.life", referer="https://www.opentix.life/"
-        )
+        headers = generate_headers(origin="https://www.opentix.life", referer="https://www.opentix.life/")
         async with HttpxAsyncClient(headers=headers) as client:
             response = await client.post(
                 "https://search.opentix.life/search",
@@ -46,13 +46,11 @@ class OpenTixRunner(RunnerInit):
         return response.json()
 
     async def fetch_parsed(self) -> list:
-        parsed: dict = await super().fetch_parsed()
+        parsed = cast(dict, await super().fetch_parsed())
         return parsed.get("result", {}).get("found", [])
 
     async def fetch_items(self, *args, **kwargs):
-        return await super().fetch_items(
-            target_domain="https://www.opentix.life/event/"
-        )
+        return await super().fetch_items(target_domain="https://www.opentix.life/event/")
 
 
 async def main():

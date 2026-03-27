@@ -1,5 +1,6 @@
 import asyncio
 import json
+from typing import cast
 
 import bs4
 from app.museums.n228mm.parse import N228MMParse
@@ -26,20 +27,16 @@ class N228MMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="二二八國家紀念館",
             code_name="n228mm",
             external_link="https://www.228.org.tw/exhibitionsnew",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.03187889577739, 121.51386505257408"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.03187889577739, 121.51386505257408"),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
-        headers = generate_headers(
-            other_headers={"accept-encoding": "gzip, deflate, zstd"}
-        )
+        headers = generate_headers(other_headers={"accept-encoding": "gzip, deflate, zstd"})
         async with HttpxAsyncClient(headers=headers) as client:
             response_1 = await client.get(
                 "https://www.228.org.tw/exhibitionsnew",
@@ -47,9 +44,9 @@ class N228MMRunner(RunnerInit):
             parsed = bs4.BeautifulSoup(response_1.text, "html5lib")
             wix_viewer_model = parsed.select_one("#wix-viewer-model").string
             wix_viewer_model_dict = json.loads(wix_viewer_model)
-            runtime_headers = wix_viewer_model_dict["siteFeaturesConfigs"][
-                "dynamicPages"
-            ]["prefixToRouterFetchData"]["exhibitionse"]["optionsData"]["headers"]
+            runtime_headers = wix_viewer_model_dict["siteFeaturesConfigs"]["dynamicPages"]["prefixToRouterFetchData"][
+                "exhibitionse"
+            ]["optionsData"]["headers"]
             x_wix_grid_app_id = runtime_headers["x-wix-grid-app-id"]
             common_config = CommonConfig(BSI=x_wix_grid_app_id).to_query()
             r_query = query_p(x_wix_grid_app_id)
@@ -68,7 +65,7 @@ class N228MMRunner(RunnerInit):
         return [item["data"] for item in result["dataItems"]]
 
     async def fetch_parsed(self):
-        parsed: list[dict] = await super().fetch_parsed()
+        parsed = cast(list[dict], await super().fetch_parsed())
         return parsed
 
 

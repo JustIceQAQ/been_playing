@@ -12,6 +12,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class TncMMMRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -23,13 +25,11 @@ class TncMMMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="臺灣新文化運動紀念館",
             code_name="TncMMM",
             external_link="https://tncmmm.gov.taipei/Content_List.aspx?n=2BF92E180FD68C1A",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.059502699444998, 121.51495546606633"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.059502699444998, 121.51495546606633"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -46,7 +46,7 @@ class TncMMMRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("div.group-list.content a")
 
 

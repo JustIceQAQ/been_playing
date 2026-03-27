@@ -22,15 +22,18 @@ jobs:
   run-process:
     runs-on: ubuntu-latest
     steps:
-      - name: set timezone
-        uses: szenius/set-timezone@1f9716b0f7120e344f0c62bb7b1ee98819aefd42
-        with:
-          timezoneLinux: "Asia/Taipei"
+      - name: set timezone with Asia/Taipei
+        run: |
+          sudo ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
+          echo "Asia/Taipei" | sudo tee /etc/timezone
+      - name: check timezone
+        run: timedatectl
 
       - name: checkout repo content
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           ref: "auto/data-update"
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: skip if recent push
         if: steps.check_push.outputs.skip == 'true'
@@ -40,14 +43,13 @@ jobs:
         uses: astral-sh/setup-uv@eac588ad8def6316056a12d4907a9d4d84ff7a3b
         with:
           enable-cache: true
+          cache-dependency-glob: "uv.lock"
 
       - name: Install dependencies
-        run: uv sync --no-dev
+        run: uv sync --no-dev --frozen
 
       - name: run async script with uv
-        run: |
-          source .venv/bin/activate
-          uv run python run_all_async_script.py
+        run: uv run --no-sync python run_all_async_script.py
         env:
           IMGUR_API_CLIENT_ID: ${{ secrets.IMGUR_API_CLIENT_ID }}
           IMGUR_API_CLIENT_SECRET: ${{ secrets.IMGUR_API_CLIENT_SECRET }}
@@ -57,21 +59,19 @@ jobs:
           IS_DEBUG: ${{ vars.IS_DEBUG }}
           PROXY_POOL: ${{ secrets.PROXY_POOL }}
 
-      - name: commit files
+      - name: commit and push files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
           if ! git diff --cached --quiet; then
               git commit -m "update data/*.json from async process"
+              git push origin auto/data-update
           else
               echo "No changes to commit. Skipping..."
           fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: push changes
-        uses: ad-m/github-push-action@77c5b412c50b723d2a4fbc6d71fb5723bcd439aa
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: "auto/data-update"
 
 

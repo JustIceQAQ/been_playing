@@ -43,47 +43,35 @@ class RunnerInit(abc.ABC):
             class_name = self.__class__.__name__
             sentry_sdk.capture_message(f"{class_name} items is empty")
 
-    async def fetch_parsed(
-        self, *args, **kwargs
-    ) -> list[Any] | Any | dict[str, list[Any]]:
+    async def fetch_parsed(self, *args, **kwargs) -> list[Any] | Any | dict[str, list[Any]]:
         this_translation = self.translation()
         if isinstance(self.response, list):
             responses = self.response
             return [
-                this_translation.translation_to_object(response, *args, **kwargs)
-                if response is not None
-                else None
+                this_translation.translation_to_object(response, *args, **kwargs) if response is not None else None
                 for response in responses
             ]
-        elif isinstance(self.response, dict) and all(
-            isinstance(i, list) for i in self.response.values()
-        ):
+        elif isinstance(self.response, dict) and all(isinstance(i, list) for i in self.response.values()):
             translation_data = {}
             for key in self.response.keys():
                 translation_data[key] = []
             for key, value in self.response.items():
                 for v in value:
-                    translation_data[key].append(
-                        this_translation.translation_to_object(v, *args, **kwargs)
-                    )
+                    translation_data[key].append(this_translation.translation_to_object(v, *args, **kwargs))
             return translation_data
         else:
-            return self.translation().translation_to_object(
-                self.response, *args, **kwargs
-            )
+            return self.translation().translation_to_object(self.response, *args, **kwargs)
 
     async def fetch_items(self, *args, **kwargs):
         exhibition_items = []
         for item in self.parsed_:
-            data = self.use_parse(item).parse_to_base_model(
-                ExhibitionItem, *args, **kwargs
-            )
+            data = self.use_parse(item).parse_to_base_model(ExhibitionItem, *args, **kwargs)
             if data.source_url is None:
                 continue
             exhibition_items.append(data)
         return exhibition_items
 
-    async def suffix_item_from_url_auto(self, item: list[ExhibitionItem]):
+    async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):
         pass
 
     async def suffix_item_from_file(self, items: list[ExhibitionItem]):
@@ -120,9 +108,7 @@ class RunnerInit(abc.ABC):
 
     async def cache_image_url(self, item: ExhibitionItem, client: httpx.AsyncClient):
         async with asyncio.Semaphore(10):
-            hash_source_url = hashlib.sha256(
-                item.source_url.encode("utf-8")
-            ).hexdigest()
+            hash_source_url = hashlib.sha256(item.source_url.encode("utf-8")).hexdigest()
             cache_figure_url = await self.cache.aget(hash_source_url)
             if cache_figure_url:
                 item.figure = cache_figure_url
@@ -146,9 +132,7 @@ class RunnerInit(abc.ABC):
 
         return hashlib.sha256(content.encode("utf-8")).hexdigest()
 
-    async def run(
-        self, cache: Cache, image, prefix: str | None = None, develop_mode: bool = False
-    ):
+    async def run(self, cache: Cache, image, prefix: str | None = None, develop_mode: bool = False):
         start_time = time.time()
         try:
             self.cache = cache
@@ -163,15 +147,10 @@ class RunnerInit(abc.ABC):
             self.response_ = await self.fetch_response()
             self.parsed_ = await self.fetch_parsed()
             self.items_ = await self.fetch_items()
-            self.exhibition_ = Exhibition(
-                information=self.information_, items=self.items_
-            )
+            self.exhibition_ = Exhibition(information=self.information_, items=self.items_)
             try:
                 async with HttpxAsyncClient() as client:
-                    tasks = [
-                        self.cache_image_url(item, client)
-                        for item in self.exhibition_.items
-                    ]
+                    tasks = [self.cache_image_url(item, client) for item in self.exhibition_.items]
                     await asyncio.gather(*tasks)
             except Exception as e:  # noqa F841
                 pass

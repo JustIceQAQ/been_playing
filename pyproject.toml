@@ -27,7 +27,7 @@ dependencies = [
     "retry==0.9.2",
     "rnet==2.4.2",
     "selectolax>=0.4.7",
-    "sentry-sdk==2.54.0",
+    "sentry-sdk==2.55.0",
     "urllib3>=2.5.0",
 ]
 
@@ -53,4 +53,14 @@ dev = [
 
 
 [tool.ruff]
+line-length = 120
+lint.ignore = [
+  "COM812", # conflicts with formatter
+  "CPY",    # no copyright
+  "D",      # pydocstyle: enable later for public APIs if publishing a library
+  "ISC001", # conflicts with formatter
+]
 exclude = [".tox", ".git", "*/migrations/*", "*/static/CACHE/*", "docs", "node_modules", "venv"]
+
+[tool.ty.rules]
+too-many-positional-arguments = "ignore"

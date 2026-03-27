@@ -13,6 +13,8 @@ from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
+from typing import cast
+
 
 class OCAMRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -23,20 +25,16 @@ class OCAMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.keelung_city,
+            location_code=TaiwanCity.KEELUNG_CITY,
             fullname="陽明海洋文化藝術館",
             code_name="OCAM",
             external_link="https://www.ymculture.org.tw/tw/Exhibition/OCAM#",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.132752348069353, 121.7400201544287"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.132752348069353, 121.7400201544287"),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
-        headers = generate_headers(
-            referer="https://www.ymculture.org.tw/tw/Exhibition/OCAM#"
-        )
+        headers = generate_headers(referer="https://www.ymculture.org.tw/tw/Exhibition/OCAM#")
         cookies = generate_cookies(need_phpsessid=True)
         url = "https://www.ymculture.org.tw/tw/Exhibition/OCAM#"
         async with HttpxAsyncClient(headers=headers) as client:
@@ -45,7 +43,7 @@ class OCAMRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("ul#eachList li")
 
 

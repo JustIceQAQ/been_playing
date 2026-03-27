@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 
@@ -23,13 +24,11 @@ class CapitalArtRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="首都藝術中心",
             code_name="CapitalArt",
             external_link="https://capitalart.com.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.038294766316984, 121.55372725140036"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.038294766316984, 121.55372725140036"),
             venue_type=VenueType.GALLERY,
         )
 
@@ -43,13 +42,11 @@ class CapitalArtRunner(RunnerInit):
         ]
 
         async with HttpxAsyncClient(headers=headers) as client:
-            responses = await asyncio.gather(
-                *[client.get(url, cookies=cookies) for url in urls]
-            )
+            responses = await asyncio.gather(*[client.get(url, cookies=cookies) for url in urls])
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         datas = []
         for element in parsed:
             items = element.select("div.show-items")

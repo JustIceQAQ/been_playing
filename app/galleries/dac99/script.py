@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class Dac99Runner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -23,13 +25,11 @@ class Dac99Runner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="99度藝術中心",
             code_name="Dac99",
             external_link="https://99dac.com/exhibition.php",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.11649643071741, 121.5053916644182"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.11649643071741, 121.5053916644182"),
             venue_type=VenueType.GALLERY,
         )
 
@@ -37,13 +37,11 @@ class Dac99Runner(RunnerInit):
         headers = generate_headers()
         cookies = generate_cookies(need_phpsessid=True)
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://99dac.com/exhibition.php", cookies=cookies
-            )
+            response = await client.get("https://99dac.com/exhibition.php", cookies=cookies)
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("div.exhibition-current div.exhibition-current__item")
 
 

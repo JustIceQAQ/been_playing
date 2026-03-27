@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 
@@ -24,13 +25,11 @@ class NtMofaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taichung_city,
+            location_code=TaiwanCity.TAICHUNG_CITY,
             fullname="國立臺灣美術館",
             code_name="NtMofa",
             external_link="https://www.ntmofa.gov.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="24.141372397797248, 120.66338819860081"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="24.141372397797248, 120.66338819860081"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -47,7 +46,7 @@ class NtMofaRunner(RunnerInit):
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parsed: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         data = []
         for p in parsed:
             element = p.select("div#CCMS_Content a")

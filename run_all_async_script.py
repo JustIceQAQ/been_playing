@@ -41,11 +41,7 @@ async def generate_location(information: list["Information"]):
             continue
         if isinstance(location.branch_coordinates, list):
             for branch_coordinate in location.branch_coordinates:
-                name = (
-                    "None"
-                    if (this_name := branch_coordinate.name) is None
-                    else this_name
-                )
+                name = "None" if (this_name := branch_coordinate.name) is None else this_name
                 ok_centers.append(
                     {
                         "fullname": fullname + "-" + name,
@@ -59,13 +55,17 @@ async def generate_location(information: list["Information"]):
         if location.branch_coordinates is None:
             pass
 
-    async with aiofiles.open(
-        ROOT_PATH / "data" / "v2" / "_ALL_LOCATION.json", "wb+"
-    ) as afp:
+    async with aiofiles.open(ROOT_PATH / "data" / "v2" / "_ALL_LOCATION.json", "wb+") as afp:
         await afp.write(orjson.dumps(ok_centers, default=orjson_default_handler))
 
 
 async def main(worker: int | None = None, worker_max: int | None = None):
+    sem = asyncio.Semaphore(10)
+
+    async def run_with_sem(runner):
+        async with sem:
+            return await runner
+
     runtime_setting = get_settings()
 
     # logging init
@@ -101,11 +101,11 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         this_runner = RunnerObj()
         all_script_information.append(this_runner.set_information())
         all_async_script_runners.append(RunnerObj().run(disk_cache, imgur, prefix))
-    async with asyncio.Semaphore(10):
-        await asyncio.gather(*all_async_script_runners, return_exceptions=True)
-        await generate_location(all_script_information)
 
-        await last_week_update.set_last_week_items()
+    await asyncio.gather(*[run_with_sem(r) for r in all_async_script_runners], return_exceptions=True)
+    await generate_location(all_script_information)
+
+    await last_week_update.set_last_week_items()
 
 
 if __name__ == "__main__":
@@ -120,9 +120,7 @@ if __name__ == "__main__":
         load_dotenv(this_env)
 
     runtime_setting = get_settings()
-    SENTRY_SDK_DNS = (
-        runtime_setting.SENTRY_SDK_DNS if not runtime_setting.IS_DEBUG else None
-    )
+    SENTRY_SDK_DNS = runtime_setting.SENTRY_SDK_DNS if not runtime_setting.IS_DEBUG else None
     sentry_sdk.init(dsn=SENTRY_SDK_DNS, traces_sample_rate=1.0)
     asyncio.run(main())
     # asyncio.run(main(args.worker, args.max_worker))

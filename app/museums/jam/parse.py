@@ -4,13 +4,13 @@ from helpers.parse_helper import ParseInit
 
 
 class JamParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag | dict):
+    def __init__(self, item: bs4.element.Tag):
         self.item = item
 
-    def get_title(self, *args, **kwargs) -> str:
+    def get_title(self, *args, **kwargs) -> str | None:
         return self.item.find("h3", {"class": "field-content"}).get_text()
 
-    def get_date(self, *args, **kwargs) -> str:
+    def get_date(self, *args, **kwargs) -> str | None:
         raw_date_string = self.item.find("div", {"class": "event-date"}).get_text()
         raw_date_string = raw_date_string.replace("-", "~")
         return raw_date_string.replace("/", "-")
@@ -18,10 +18,10 @@ class JamParse(ParseInit):
     def get_address(self, *args, **kwargs) -> str | None:
         return None
 
-    def get_figure(self, *args, **kwargs) -> str:
+    def get_figure(self, *args, **kwargs) -> str | None:
         return self.item.find("img", {"class": "image-style-event-list"}).get("src")
 
-    def get_source_url(self, *args, **kwargs) -> str:
+    def get_source_url(self, *args, **kwargs) -> str | None:
         return "http://jam.jutfoundation.org.tw{}".format(
             self.item.find("h3", {"class": "field-content"}).find("a").get("href")
         )

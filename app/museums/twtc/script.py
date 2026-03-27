@@ -1,5 +1,6 @@
 import asyncio
 import datetime
+from typing import cast
 
 import httpx
 
@@ -26,31 +27,25 @@ class TwTcRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="台北世貿中心",
             code_name="TwTc",
             external_link="https://twtc.com.tw/exhibition?p=home",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.03358007614386, 121.56240955530657"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.03358007614386, 121.56240955530657"),
             venue_type=VenueType.MUSEUM,
         )
 
     def extract_import(self, response: httpx.Response) -> dict:
         parsed = self.translation().translation_to_object(response.text)
         view_state = parsed.find("input", attrs={"name": "__VIEWSTATE"})["value"]
-        view_state_generator = parsed.find(
-            "input", attrs={"name": "__EVENTVALIDATION"}
-        )["value"]
-        event_validation = parsed.find("input", attrs={"name": "__EVENTVALIDATION"})[
+        view_state_generator = parsed.find("input", attrs={"name": "__EVENTVALIDATION"})["value"]
+        event_validation = parsed.find("input", attrs={"name": "__EVENTVALIDATION"})["value"]
+        selected_year = parsed.find("select", attrs={"id": "body_ddlYear"}).find("option", {"selected": "selected"})[
             "value"
         ]
-        selected_year = parsed.find("select", attrs={"id": "body_ddlYear"}).find(
-            "option", {"selected": "selected"}
-        )["value"]
-        selected_month = parsed.find("select", attrs={"id": "body_ddlMoth"}).find(
-            "option", {"selected": "selected"}
-        )["value"]
+        selected_month = parsed.find("select", attrs={"id": "body_ddlMoth"}).find("option", {"selected": "selected"})[
+            "value"
+        ]
         return {
             "__VIEWSTATE": view_state,
             "__VIEWSTATEGENERATOR": view_state_generator,
@@ -83,14 +78,12 @@ class TwTcRunner(RunnerInit):
             extracted["ctl00$body$ddlYear"] = str(runtime_year)
             extracted["ctl00$body$ddlMoth"] = str(next_quarter)
 
-            next_response = await client.post(
-                "https://twtc.com.tw/exhibition?p=home", data=extracted
-            )
+            next_response = await client.post("https://twtc.com.tw/exhibition?p=home", data=extracted)
             responses.append(TwTcResponse(year=runtime_year, text=next_response.text))
 
         return responses
 
-    async def fetch_parsed(self):
+    async def fetch_parsed(self) -> list[TwTcResponse]:
         this_translation = self.translation()
         responses: list[TwTcResponse] = self.response
         for response in responses:
@@ -100,11 +93,10 @@ class TwTcRunner(RunnerInit):
 
     async def fetch_items(self, *args, **kwargs):
         exhibition_items = []
-        for response in self.parsed_:
+        responses = cast(list[TwTcResponse], self.parsed_)
+        for response in responses:
             for item in response.items:
-                data = self.use_parse(item).parse_to_base_model(
-                    ExhibitionItem, year=response.year
-                )
+                data = self.use_parse(item).parse_to_base_model(ExhibitionItem, year=response.year)
                 if data.source_url is None:
                     continue
                 exhibition_items.append(data)

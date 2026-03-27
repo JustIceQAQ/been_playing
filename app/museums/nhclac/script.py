@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class NhClAcRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -23,13 +25,11 @@ class NhClAcRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.hsinchu_city,
+            location_code=TaiwanCity.HSINCHU_CITY,
             fullname="國立新竹生活美學館",
             code_name="nhclac",
             external_link="https://www.nhclac.gov.tw/",
-            branch_coordinates=Coordinate(
-                raw_coordinates="24.803306982634894, 120.967233726293"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="24.803306982634894, 120.967233726293"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -37,13 +37,11 @@ class NhClAcRunner(RunnerInit):
         headers = generate_headers()
         cookies = generate_cookies(need_asp_net_session_id=True)
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://www.nhclac.gov.tw/News_actives.aspx?n=5282", cookies=cookies
-            )
+            response = await client.get("https://www.nhclac.gov.tw/News_actives.aspx?n=5282", cookies=cookies)
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         items = parsed.find("div", {"class": "group-list message"})
         if items is None:
             return None

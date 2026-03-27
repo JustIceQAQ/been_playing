@@ -1,5 +1,5 @@
 import asyncio
-from typing import Any
+from typing import Any, cast
 
 from app.museums.ntcri.parse import NTCRIParse
 from helpers.cache import NoneCache
@@ -22,7 +22,7 @@ class NTCRIRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="國立台灣工藝研究發展中心",
             code_name="NTCRI",
             external_link=(
@@ -35,7 +35,7 @@ class NTCRIRunner(RunnerInit):
             ),
             branch_coordinates=[
                 Coordinate(
-                    location_code=TaiwanCity.taipei_city,
+                    location_code=TaiwanCity.TAIPEI_CITY,
                     name="臺北當代工藝設計分館",
                     raw_coordinates="25.03210292140622, 121.51234399386772",
                 ),
@@ -61,7 +61,7 @@ class NTCRIRunner(RunnerInit):
         return response.json()["rows"]
 
     async def fetch_parsed(self):
-        parsed: list[dict[str, Any]] = await super().fetch_parsed()
+        parsed = cast(list[dict[str, Any]], await super().fetch_parsed())
         return parsed
 
 

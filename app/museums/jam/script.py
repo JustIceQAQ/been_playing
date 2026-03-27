@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 
@@ -23,20 +24,16 @@ class JamRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="忠泰美術館",
             code_name="Jam",
             external_link="https://jam.jutfoundation.org.tw/online-exhibition",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.044509020251724, 121.53731469675466"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.044509020251724, 121.53731469675466"),
             venue_type=VenueType.MUSEUM,
         )
 
     async def fetch_response(self):
-        headers = generate_headers(
-            host="jam.jutfoundation.org.tw", referer="https://jam.jutfoundation.org.tw"
-        )
+        headers = generate_headers(host="jam.jutfoundation.org.tw", referer="https://jam.jutfoundation.org.tw")
 
         async with HttpxAsyncClient(headers=headers) as client:
             urls = [
@@ -53,7 +50,7 @@ class JamRunner(RunnerInit):
         return [response.text for response in responses]
 
     async def fetch_parsed(self):
-        parseds: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parseds = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         data = []
         for parsed in parseds:
             data.extend(parsed.select("div.view-content > div.views-row"))

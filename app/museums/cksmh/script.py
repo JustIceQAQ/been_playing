@@ -12,6 +12,7 @@ from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
+from typing import cast
 
 
 class CKSMHRunner(RunnerInit):
@@ -27,7 +28,7 @@ class CKSMHRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.taipei_city,
+            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="中正紀念堂",
             code_name="CKSMH",
             external_link="https://www.cksmh.gov.tw/Default.aspx",
@@ -41,13 +42,11 @@ class CKSMHRunner(RunnerInit):
     async def fetch_response(self) -> str:
         headers = generate_headers()
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://www.cksmh.gov.tw/News_Actives_photo.aspx?n=6067&sms=14954"
-            )
+            response = await client.get("https://www.cksmh.gov.tw/News_Actives_photo.aspx?n=6067&sms=14954")
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         div = parsed.select_one("div.group-list.page-block")
         return div.find("ul").find_all("li")
 

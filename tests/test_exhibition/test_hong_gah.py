@@ -17,9 +17,7 @@ async def test_hong_gah_url():
     }
 
     url = "https://hong-gah.org.tw/exhibitions-zh/page/1"
-    async with httpx.AsyncClient(
-        timeout=None, headers=headers, follow_redirects=True
-    ) as client:
+    async with httpx.AsyncClient(timeout=None, headers=headers, follow_redirects=True) as client:
         response = await client.get(url)
         response.raise_for_status()
     soup = BeautifulSoup(response.text, "html5lib")
@@ -64,9 +62,7 @@ def format_date_ranges(raw_text: str) -> str | None:
                 end_str = f"{start_year}.{end_str}"
             else:
                 raise ValueError(f"無法解析的日期格式: {line}")
-        start_date = datetime.datetime.strptime(start_str, "%Y.%m.%d").strftime(
-            "%Y-%m-%d"
-        )
+        start_date = datetime.datetime.strptime(start_str, "%Y.%m.%d").strftime("%Y-%m-%d")
         end_date = datetime.datetime.strptime(end_str, "%Y.%m.%d").strftime("%Y-%m-%d")
         result = f"{start_date} ~ {end_date}"
     return result

@@ -18,9 +18,7 @@ async def test_khm_html():
     permanent_exhibitions = "https://khm.org.tw/tw/exhibition/permanentexhibitions"
     headers = generate_headers(referer=current_exhibitions_url)
     async with httpx.AsyncClient(headers=headers) as client:
-        current_exhibitions_response = await get_response(
-            client, current_exhibitions_url
-        )
+        current_exhibitions_response = await get_response(client, current_exhibitions_url)
         permanent_exhibitions = await get_response(client, permanent_exhibitions)
     for response_text in (current_exhibitions_response, permanent_exhibitions):
         soup = BeautifulSoup(response_text, "html5lib")

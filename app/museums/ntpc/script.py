@@ -14,6 +14,8 @@ from helpers.storage.symbol import TaiwanCity, VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3, get_asyncio_rate_limit
 
+from typing import cast
+
 
 class NTPCRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -25,31 +27,25 @@ class NTPCRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.new_taipei_city,
+            location_code=TaiwanCity.NEW_TAIPEI_CITY,
             fullname="鶯歌陶瓷博物館",
             code_name="NTPC",
             external_link="https://www.ceramics.ntpc.gov.tw/xmdoc?xsmsid=0J148497613881029302",
-            branch_coordinates=Coordinate(
-                raw_coordinates="24.949406697655782, 121.3520648774411"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="24.949406697655782, 121.3520648774411"),
             venue_type=VenueType.MUSEUM,
         )
 
     def get_this_header(self):
-        return generate_headers(
-            host="www.ceramics.ntpc.gov.tw", need_upgrade_insecure_requests=True
-        )
+        return generate_headers(host="www.ceramics.ntpc.gov.tw", need_upgrade_insecure_requests=True)
 
     async def fetch_response(self):
         headers = self.get_this_header()
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get(
-                "https://www.ceramics.ntpc.gov.tw/xmdoc?xsmsid=0J148497613881029302"
-            )
+            response = await client.get("https://www.ceramics.ntpc.gov.tw/xmdoc?xsmsid=0J148497613881029302")
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("div.ListPicText > div.item")
 
     async def suffix_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
@@ -68,9 +64,7 @@ class NTPCRunner(RunnerInit):
         for p in p_tags:
             text = p.get_text(strip=True)
             if text.startswith("展覽時間："):
-                exhibition_time = normalize_date_range(
-                    text.replace("展覽時間：", "").strip()
-                )
+                exhibition_time = normalize_date_range(text.replace("展覽時間：", "").strip())
             elif text.startswith("展覽地點："):
                 exhibition_location = text.replace("展覽地點：", "").strip()
 

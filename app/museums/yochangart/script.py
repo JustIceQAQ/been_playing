@@ -13,6 +13,8 @@ from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
 from helpers.image.none.helper import NoneImage
 
+from typing import cast
+
 
 class YoChangArtRunner(RunnerInit):
     translation = BeautifulSoupTranslation
@@ -23,13 +25,11 @@ class YoChangArtRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.new_taipei_city,
+            location_code=TaiwanCity.NEW_TAIPEI_CITY,
             fullname="有章藝術博物館",
             code_name="YoChangArt",
             external_link="https://museum.ntua.edu.tw/c001.asp",
-            branch_coordinates=Coordinate(
-                raw_coordinates="25.006981532547897, 121.44882905627831"
-            ),
+            branch_coordinates=Coordinate(raw_coordinates="25.006981532547897, 121.44882905627831"),
             venue_type=VenueType.MUSEUM,
         )
 
@@ -41,7 +41,7 @@ class YoChangArtRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("div.work_item")
 
 

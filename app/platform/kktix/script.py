@@ -2,6 +2,7 @@ import asyncio
 import datetime as dt
 import json
 import urllib.parse
+from typing import cast
 
 import bs4
 from dateutil.relativedelta import relativedelta
@@ -88,11 +89,9 @@ class KKTixRunner(RunnerInit):
 
     async def fetch_parsed(self):
         items = []
-        parsers: list[bs4.BeautifulSoup] = await super().fetch_parsed()
+        parsers = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         for parsed in parsers:
-            data = parsed.select_one("div[data-react-class='SearchWrapper']").get(
-                "data-react-props"
-            )
+            data = parsed.select_one("div[data-react-class='SearchWrapper']").get("data-react-props")
             items.extend(json.loads(data).get("data", []))
         return items
 

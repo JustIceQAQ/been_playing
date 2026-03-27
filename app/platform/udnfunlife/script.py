@@ -12,6 +12,7 @@ from helpers.storage.helper import Information
 from helpers.storage.symbol import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
+from typing import cast
 
 
 class UdnFunLifeRunner(RunnerInit):
@@ -39,7 +40,7 @@ class UdnFunLifeRunner(RunnerInit):
         return response.json()["d"]["ReturnData"]["script"]
 
     async def fetch_parsed(self):
-        parsed: bs4.BeautifulSoup = await super().fetch_parsed()
+        parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("div.inner")
 
 

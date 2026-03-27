@@ -11,9 +11,7 @@ AVAILABLE_POOL = set()
 
 
 class ScraperAsyncClient:
-    def __init__(
-        self, api_key: str, timeout: int | None = None, *args, **kwargs
-    ) -> None:
+    def __init__(self, api_key: str, timeout: int | None = None, *args, **kwargs) -> None:
         self.args = args
         self.kwargs = kwargs
         self.client = httpx.AsyncClient(timeout=timeout, *args, **kwargs)
@@ -55,18 +53,14 @@ class ScraperAsyncClient:
             await asyncio.sleep(sleep_secs)
             response = await self.client.post(self.api_path, json=payload)
         response.raise_for_status()
-        this_response = ScraperJobsResponse.model_validate(
-            {**response.json(), "status_code": response.status_code}
-        )
+        this_response = ScraperJobsResponse.model_validate({**response.json(), "status_code": response.status_code})
         runtime_flag = 0
         while this_response.is_running:
             if runtime_flag == tries_flag:
                 break
             await asyncio.sleep(sleep_secs)
             response = await self.client.get(this_response.status_url)
-            this_response = ScraperJobsResponse.model_validate(
-                {**response.json(), "status_code": response.status_code}
-            )
+            this_response = ScraperJobsResponse.model_validate({**response.json(), "status_code": response.status_code})
             runtime_flag += 1
         return this_response
 
@@ -89,14 +83,11 @@ def get_a_available_scraper_async_client() -> ScraperAsyncClient:
     return random.choice(tuple(SCRAPER_ASYNC_CLIENT))
 
 
-async def available_scraper_async_client(keys: list[str]):
-    await asyncio.gather(
-        *[ScraperAsyncClient(api_key=key).get_available_info() for key in keys]
-    )
+async def available_scraper_async_client(keys: list[str] | None):
+    if keys is None:
+        raise ValueError("Scraper keys is not provided")
+    await asyncio.gather(*[ScraperAsyncClient(api_key=key).get_available_info() for key in keys])
     for client in SCRAPER_ASYNC_CLIENT:
         available_info = client.available_info
-        if (
-            available_info["requestLimit"] != 0
-            and available_info["requestLimit"] < available_info["requestCount"]
-        ):
+        if available_info["requestLimit"] != 0 and available_info["requestLimit"] < available_info["requestCount"]:
             SCRAPER_ASYNC_CLIENT.add(client)
