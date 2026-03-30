@@ -47,8 +47,8 @@ class CKSMHRunner(RunnerInit):
 
     async def fetch_parsed(self):
         parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
-        div = parsed.select_one("div.group-list.page-block")
-        return div.find("ul").find_all("li")
+        div = parsed.select("div.group-list.page-block div.area-figure")
+        return div
 
 
 async def main():

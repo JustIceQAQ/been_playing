@@ -37,7 +37,12 @@ class TyCgRunner(RunnerInit):
 
     async def fetch_response(self):
         headers = generate_headers(referer="https://wem.tycg.gov.tw/", host="wem.tycg.gov.tw")
-        cookies = generate_cookies(need_asp_net_session_id=True)
+        cookies = generate_cookies(
+            need_asp_net_session_id=True,
+            other_cookies={
+                "font-size-": "medium",
+            },
+        )
         async with NiquestsAsyncSession(headers=headers, timeout=120) as client:
             response = await client.get("https://wem.tycg.gov.tw/News_Photo.aspx?n=9676&sms=13653", cookies=cookies)
         return response.text
