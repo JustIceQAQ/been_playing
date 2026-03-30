@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-30T17:56:08.784344+08:00",
+  "updated": "2026-03-31T01:29:53.214967+08:00",
   "items": [
     {
       "title": "印度「2026國際慶典藝術大賽暨線上展覽」",
@@ -734,6 +734,44 @@
       "source_url": "https://artemperor.tw/tidbits/19741",
       "tags": null,
       "UUID": "5ec4ebfd4e325cfa9284fe5e10c02c02"
+    },
+    {
+      "title": "莊惠婷精靈派對(免費參觀)",
+      "date": "2026-03-18 ~ 2026-03-30",
+      "address": null,
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/60705/AD/60705_0_0_201870.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=60705",
+      "tags": null,
+      "UUID": "be2d4b03510259fd8ba49658563d31b6"
+    },
+    {
+      "title": "都會藝遊二十週年聯展(免費參觀)",
+      "date": "2026-04-23 ~ 2026-05-04",
+      "address": "一樓藝廊",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/60724/AD/60724_0_0_192879.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=60724",
+      "tags": null,
+      "UUID": "99074949514e59ff90629cb8d2e5ea76"
+    },
+    {
+      "title": "盧廣仲 HeartBreakFast 傷心早餐店演唱會 2026 ver. 北高雙刀流",
+      "date": "2026-07-10 ~ 2026-07-11",
+      "address": "表演廳",
+      "figure": "https://www.tmc.taipei/files/1774868920NtlycfOHBb.jpg",
+      "source_url": "https://www.tmc.taipei/tw/blog/show/crowdlu2026",
+      "tags": [
+        "演唱會"
+      ],
+      "UUID": "9e3c89604a015d24bdf047688ca86001"
+    },
+    {
+      "title": "璀璨心象 2026蔡岳霖水彩個展(免費參觀)",
+      "date": "2026-04-02 ~ 2026-04-13",
+      "address": "4展廳",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/60722/AD/60722_0_0_71308.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=60722",
+      "tags": null,
+      "UUID": "ae7e0284694b553687d2d7e366e6c405"
     }
   ]
 }
