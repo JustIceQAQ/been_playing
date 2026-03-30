@@ -48,7 +48,6 @@ dev = [
     "branca>=0.8.2",
     "skylos>=3.1.2",
     "notebook>=7.5.3",
-    "duckdb>=1.4.4",
 ]
 
 
