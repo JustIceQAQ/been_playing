@@ -3,7 +3,6 @@ import asyncio
 import hashlib
 import json
 import time
-import traceback
 from typing import Any
 import httpx
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -179,4 +178,5 @@ class RunnerInit(abc.ABC):
                 print(self.exhibition_)
 
         except Exception as e:  # noqa F841
-            print(traceback.format_exc())
+            class_name = self.__class__.__name__
+            raise RuntimeError(f"[{class_name}] 執行失敗") from e

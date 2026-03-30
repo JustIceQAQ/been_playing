@@ -26,11 +26,12 @@ jobs:
         run: |
           sudo ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
           echo "Asia/Taipei" | sudo tee /etc/timezone
+          sudo dpkg-reconfigure -f noninteractive tzdata
       - name: check timezone
         run: timedatectl
 
       - name: checkout repo content
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        uses: actions/checkout@v6.0.2
         with:
           ref: "auto/data-update"
           token: ${{ secrets.GITHUB_TOKEN }}
