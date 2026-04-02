@@ -48,16 +48,18 @@ class NtcArtMuseumParse(ParseInit):
         return ex_location_text_tw.split("–")[1].strip()
 
     def get_tags(self, *args, **kwargs) -> list[str | None] | None:
-        ex_tag_set_text_tw: str | None = self.item.get("ExTagSetTextTW", None)
+        ex_tag_set_text_tw: str | None = self.item.get("ExTagSetTextTW")
         if ex_tag_set_text_tw is None:
             return None
         return ex_tag_set_text_tw.split(", ")
 
     def get_figure(self, *args, **kwargs) -> str | None:
-        ex_list_img = self.item.get("ExListImg")
+        ex_list_img: str | None = self.item.get("ExListImg")
         if ex_list_img is None:
             return None
-        return "https://admin.ntcart.museum/Upload/" + ex_list_img
+        if "/" in ex_list_img:
+            return "https://admin.ntcart.museum/Upload/" + ex_list_img
+        return "https://ntcart.museum/retrieve/exhibition/" + ex_list_img
 
     def get_source_url(self, *args, **kwargs) -> str | None:
         ex_no = self.item.get("ExNo")
