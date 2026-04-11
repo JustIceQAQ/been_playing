@@ -24,6 +24,10 @@ class RunnerInit(abc.ABC):
     output_rss: bool = False
     output_ics: bool = False
 
+    retry_on_empty: bool = True
+    retry_times: int = 3
+    retry_interval: int = 10
+
     def set_cache_expire(self) -> int | None:
         return None
 
@@ -146,6 +150,16 @@ class RunnerInit(abc.ABC):
             self.response_ = await self.fetch_response()
             self.parsed_ = await self.fetch_parsed()
             self.items_ = await self.fetch_items()
+
+            if self.retry_on_empty:
+                for attempt in range(1, self.retry_times + 1):
+                    if self.items_:
+                        break
+                    await asyncio.sleep(self.retry_interval * attempt)
+                    self.response_ = await self.fetch_response()
+                    self.parsed_ = await self.fetch_parsed()
+                    self.items_ = await self.fetch_items()
+
             self.exhibition_ = Exhibition(information=self.information_, items=self.items_)
             try:
                 async with HttpxAsyncClient() as client:
