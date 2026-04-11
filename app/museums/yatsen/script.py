@@ -17,6 +17,7 @@ from typing import cast
 class YatsenRunner(RunnerInit):
     translation = BeautifulSoupTranslation
     use_parse = YatsenParse
+    retry_on_empty = False
 
     def set_cache_expire(self) -> int | None:
         return month_3()
@@ -40,9 +41,6 @@ class YatsenRunner(RunnerInit):
     async def fetch_parsed(self):
         parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.find_all("a", {"class": "div-activity"})
-
-    async def items_check(self):
-        pass
 
 
 async def main():
