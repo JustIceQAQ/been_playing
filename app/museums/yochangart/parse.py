@@ -1,3 +1,5 @@
+import re
+
 import bs4
 
 from helpers.parse_helper import ParseInit
@@ -17,7 +19,8 @@ class YoChangArtParse(ParseInit):
         p = figure_caption.find("p")
         if p is None:
             return None
-        date_text = p.get_text()
+        date_text = re.sub(r"（[^）]*）|\([^)]*\)", "", p.get_text()).strip()
+        date_text = date_text.replace("–", "-").replace("—", "-")
         result = date_text.split("-")
         if len(result) == 2:
             raw_start_date, raw_end_date = result
