@@ -92,6 +92,7 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="theme_fix.css" />
 
     <link
       rel="stylesheet"
@@ -516,24 +517,12 @@
     };
 
     const setLight = () => {
-      changeThemeMode("dark_mode_fix.css", "light_mode_fix.css");
       document.documentElement.setAttribute("data-bs-theme", "light");
-      document
-        .getElementById("themeIcon")
-        .setAttribute("data-icon", "ph:sun-bold");
+      document.getElementById("themeIcon").setAttribute("data-icon", "ph:sun-bold");
     };
     const setDark = () => {
-      changeThemeMode("light_mode_fix.css", "dark_mode_fix.css");
       document.documentElement.setAttribute("data-bs-theme", "dark");
-      document
-        .getElementById("themeIcon")
-        .setAttribute("data-icon", "ph:moon-stars-bold");
-    };
-    const changeThemeMode = (modeA, modelB) => {
-      $(`link[href='${modeA}]']`).remove();
-      $("head").append(
-        `<link rel="stylesheet" type="text/css" href="${modelB}">`,
-      );
+      document.getElementById("themeIcon").setAttribute("data-icon", "ph:moon-stars-bold");
     };
     document.getElementById("btnSwitch").addEventListener("click", () => {
       let runThemeSet =
@@ -735,6 +724,93 @@
               select.add(new Option("已經結束"));
               select.add(new Option("無法判斷"));
             });
+
+          const dtButtonsDiv = document.querySelector(".dt-buttons");
+          if (dtButtonsDiv) {
+            const allBtns = Array.from(dtButtonsDiv.querySelectorAll("button"));
+            const initGroup = topicGroupMap[initTopic] || exhibitionGroupOrder[0];
+
+            const groupBtnsMap = {};
+            exhibitionGroupOrder.forEach(g => (groupBtnsMap[g] = []));
+            allBtns.forEach(btn => {
+              const topic = Array.from(btn.classList)
+                .map(c => c.replace(/^btn-/, ""))
+                .find(t => topicGroupMap[t]);
+              const group = topic ? topicGroupMap[topic] : null;
+              if (group && groupBtnsMap[group]) groupBtnsMap[group].push(btn);
+            });
+
+            const tabsContainer = document.createElement("div");
+            tabsContainer.className = "mb-2";
+
+            const nav = document.createElement("ul");
+            nav.className = "nav nav-tabs flex-wrap";
+
+            const content = document.createElement("div");
+            content.className = "d-flex flex-wrap gap-2 p-2 border border-top-0 rounded-bottom";
+
+            let activeGroup = initGroup;
+
+            const showGroup = (groupLabel) => {
+              activeGroup = groupLabel;
+              nav.querySelectorAll(".nav-link").forEach(link => {
+                link.classList.toggle("active", link.dataset.group === groupLabel);
+              });
+              content.innerHTML = "";
+              (groupBtnsMap[groupLabel] || []).forEach(btn => {
+                btn.style.display = "";
+                content.appendChild(btn);
+              });
+            };
+
+            exhibitionGroupOrder.forEach(groupLabel => {
+              const btns = groupBtnsMap[groupLabel];
+              if (!btns || btns.length === 0) return;
+              const li = document.createElement("li");
+              li.className = "nav-item";
+              const link = document.createElement("button");
+              link.className = `nav-link${groupLabel === initGroup ? " active" : ""}`;
+              link.dataset.group = groupLabel;
+              link.innerHTML = `${groupLabel} <span class="badge bg-secondary ms-1">${btns.length}</span>`;
+              link.addEventListener("click", () => showGroup(groupLabel));
+              li.appendChild(link);
+              nav.appendChild(li);
+            });
+
+            tabsContainer.appendChild(nav);
+            tabsContainer.appendChild(content);
+
+            const filterInput = document.createElement("input");
+            filterInput.type = "text";
+            filterInput.placeholder = "搜尋場館...";
+            filterInput.className = "form-control form-control-sm mb-1";
+            filterInput.style.maxWidth = "300px";
+
+            filterInput.addEventListener("input", function () {
+              const query = this.value.toLowerCase();
+              if (!query) {
+                nav.style.pointerEvents = "";
+                nav.style.opacity = "";
+                showGroup(activeGroup);
+                return;
+              }
+              nav.style.pointerEvents = "none";
+              nav.style.opacity = "0.4";
+              content.innerHTML = "";
+              Object.values(groupBtnsMap).flat().forEach(btn => {
+                if (btn.textContent.toLowerCase().includes(query)) {
+                  btn.style.display = "";
+                  content.appendChild(btn);
+                }
+              });
+            });
+
+            dtButtonsDiv.parentNode.insertBefore(filterInput, dtButtonsDiv);
+            dtButtonsDiv.parentNode.insertBefore(tabsContainer, dtButtonsDiv);
+            dtButtonsDiv.style.display = "none";
+
+            showGroup(initGroup);
+          }
         },
       });
     });

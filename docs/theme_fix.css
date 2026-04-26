@@ -1,0 +1,96 @@
+/* 共用：paginate 按鈕基礎樣式（兩個主題相同） */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 1.5em;
+  padding: 0.5em 1em;
+  margin-left: 2px;
+  text-align: center;
+  text-decoration: none !important;
+  cursor: pointer;
+  color: rgb(57, 147, 229) !important;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+/* ── Dark Mode ── */
+[data-bs-theme="dark"] .dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+[data-bs-theme="dark"] .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+[data-bs-theme="dark"] .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+  cursor: default;
+  color: white !important;
+  border: 1px solid transparent;
+  background: transparent;
+  box-shadow: none;
+}
+
+[data-bs-theme="dark"] .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+[data-bs-theme="dark"] .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  color: white !important;
+  border: 0.3rem solid #0d6efd;
+  background: linear-gradient(to bottom, rgba(230, 230, 230, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+[data-bs-theme="dark"] #exhibition > tbody > tr > td {
+  border-color: #0d6efd !important;
+}
+
+[data-bs-theme="dark"] table.dataTable.display tbody tr.odd td,
+[data-bs-theme="dark"] table.dataTable.display tbody tr.even td,
+[data-bs-theme="dark"] table.dataTable tbody tr {
+  background-color: rgb(43, 48, 53);
+}
+
+[data-bs-theme="dark"] table.dataTable.display tbody tr > .sorting_1,
+[data-bs-theme="dark"] table.dataTable.order-column.stripe tbody tr > .sorting_1 {
+  background-color: rgb(43, 48, 53) !important;
+}
+
+/* ── Light Mode ── */
+[data-bs-theme="light"] {
+  --bs-body-bg: #f0ede8;
+  --bs-body-color: #3a3a3a;
+  --bs-secondary-bg: #e6e3de;
+  --bs-tertiary-bg: #eae7e2;
+  --bs-border-color: #d5d2cd;
+}
+
+[data-bs-theme="light"] #exhibition_filter > label,
+[data-bs-theme="light"] #exhibition_info,
+[data-bs-theme="light"] #exhibition_previous {
+  color: #2b2b2b;
+}
+
+[data-bs-theme="light"] .dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+[data-bs-theme="light"] .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+[data-bs-theme="light"] .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+  cursor: default;
+  color: #2b2b2b !important;
+  border: 1px solid transparent;
+  background: transparent;
+  box-shadow: none;
+}
+
+[data-bs-theme="light"] .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+[data-bs-theme="light"] .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  color: #2b2b2b !important;
+  border: 0.3rem solid rgb(57, 147, 229);
+  background: linear-gradient(to bottom, rgba(230, 230, 230, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+[data-bs-theme="light"] table.dataTable.display tbody tr.odd td {
+  background-color: #eae7e2;
+}
+
+[data-bs-theme="light"] table.dataTable.display tbody tr.even td {
+  background-color: #f0ede8;
+}
+
+[data-bs-theme="light"] table.dataTable tbody tr {
+  background-color: #f0ede8;
+}
+
+[data-bs-theme="light"] table.dataTable.display tbody tr > .sorting_1,
+[data-bs-theme="light"] table.dataTable.order-column.stripe tbody tr > .sorting_1 {
+  background-color: #e6e3de !important;
+}
