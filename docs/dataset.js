@@ -384,10 +384,12 @@ const allTopicSet = new Set(
 const getInitTopic = () => {
     const params = new URLSearchParams(window.location.search);
     const topic = params.get("topic");
-    if (topic === undefined || topic === null || !allTopicSet.has(topic)) {
-        return allTopicClass[0].topic;
+    if (topic !== undefined && topic !== null && allTopicSet.has(topic)) {
+        return topic;
     }
-    return topic;
+    const firstWatched = loadVenueWatchlist().find(t => allTopicSet.has(t));
+    if (firstWatched) return firstWatched;
+    return allTopicClass[0].topic;
 };
 
 const copyUrlToClipboard = (url) => {
@@ -490,6 +492,31 @@ const exportAchievementsToJSON = () => {
 
     URL.revokeObjectURL(url);
 };
+
+// === 場館關注清單 ===
+const VENUE_WATCHLIST_KEY = "been-been-play-venue-watchlist";
+
+const loadVenueWatchlist = () => {
+    const raw = localStorage.getItem(VENUE_WATCHLIST_KEY);
+    try { return raw ? JSON.parse(raw) : []; }
+    catch (e) { return []; }
+};
+
+const saveVenueWatchlist = (data) => {
+    localStorage.setItem(VENUE_WATCHLIST_KEY, JSON.stringify(data));
+};
+
+const isVenueWatched = (topic) => loadVenueWatchlist().includes(topic);
+
+const toggleVenueWatch = (topic) => {
+    const list = loadVenueWatchlist();
+    const idx = list.indexOf(topic);
+    if (idx === -1) { list.push(topic); }
+    else { list.splice(idx, 1); }
+    saveVenueWatchlist(list);
+    return idx === -1;
+};
+// === end 場館關注清單 ===
 
 let importedAchievementsData = null;
 

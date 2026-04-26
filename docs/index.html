@@ -594,7 +594,7 @@
           {
             data: "UUID",
             render: function (data, type, row, meta) {
-              return `<button class="btn btn-info btn-mark-achieved" data-uuid="${data}"'><i class="bi bi-check-lg"></i></button>`;
+              return `<button class="btn btn-info btn-mark-achieved" data-uuid="${data}"><i class="bi bi-check-lg"></i></button>`;
             },
           },
         ],
@@ -740,6 +740,39 @@
               if (group && groupBtnsMap[group]) groupBtnsMap[group].push(btn);
             });
 
+            // 將每個場館按鈕包成 btn-group，右側附加關注 toggle
+            exhibitionGroupOrder.forEach(g => {
+              groupBtnsMap[g] = groupBtnsMap[g].map(btn => {
+                const topic = Array.from(btn.classList)
+                  .map(c => c.replace(/^btn-/, ""))
+                  .find(t => topicGroupMap[t]);
+
+                const wrapper = document.createElement("div");
+                wrapper.className = "btn-group";
+                wrapper.dataset.topic = topic || "";
+                wrapper.appendChild(btn);
+
+                if (topic) {
+                  const watched = isVenueWatched(topic);
+                  const watchBtn = document.createElement("button");
+                  watchBtn.type = "button";
+                  watchBtn.className = `btn ${watched ? "btn-warning" : "btn-outline-secondary"}`;
+                  watchBtn.innerHTML = `<i class="bi ${watched ? "bi-bell-fill" : "bi-bell"}"></i>`;
+                  watchBtn.title = watched ? "取消關注" : "加入關注";
+                  watchBtn.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    const nowWatched = toggleVenueWatch(topic);
+                    watchBtn.className = `btn ${nowWatched ? "btn-warning" : "btn-outline-secondary"}`;
+                    watchBtn.innerHTML = `<i class="bi ${nowWatched ? "bi-bell-fill" : "bi-bell"}"></i>`;
+                    watchBtn.title = nowWatched ? "取消關注" : "加入關注";
+                    if (activeGroup === "關注清單") showWatchlistTab();
+                  });
+                  wrapper.appendChild(watchBtn);
+                }
+                return wrapper;
+              });
+            });
+
             const tabsContainer = document.createElement("div");
             tabsContainer.className = "mb-2";
 
@@ -751,27 +784,61 @@
 
             let activeGroup = initGroup;
 
+            const showWatchlistTab = () => {
+              activeGroup = "關注清單";
+              nav.querySelectorAll(".nav-link").forEach(link => {
+                link.classList.toggle("active", link.dataset.group === "關注清單");
+              });
+              content.innerHTML = "";
+              let count = 0;
+              Object.values(groupBtnsMap).flat().forEach(wrapper => {
+                const topic = wrapper.dataset && wrapper.dataset.topic;
+                if (topic && isVenueWatched(topic)) {
+                  wrapper.style.display = "";
+                  content.appendChild(wrapper);
+                  count++;
+                }
+              });
+              if (count === 0) {
+                const empty = document.createElement("p");
+                empty.className = "text-muted m-2";
+                empty.textContent = "尚未關注任何場館，點擊場館旁的 🔔 即可加入關注";
+                content.appendChild(empty);
+              }
+            };
+
             const showGroup = (groupLabel) => {
               activeGroup = groupLabel;
               nav.querySelectorAll(".nav-link").forEach(link => {
                 link.classList.toggle("active", link.dataset.group === groupLabel);
               });
               content.innerHTML = "";
-              (groupBtnsMap[groupLabel] || []).forEach(btn => {
-                btn.style.display = "";
-                content.appendChild(btn);
+              (groupBtnsMap[groupLabel] || []).forEach(wrapper => {
+                wrapper.style.display = "";
+                content.appendChild(wrapper);
               });
             };
 
+            // 「關注清單」Tab 置第一
+            const watchlistLi = document.createElement("li");
+            watchlistLi.className = "nav-item";
+            const watchlistLink = document.createElement("button");
+            watchlistLink.className = "nav-link";
+            watchlistLink.dataset.group = "關注清單";
+            watchlistLink.innerHTML = `<i class="bi bi-bell-fill"></i> 關注清單`;
+            watchlistLink.addEventListener("click", () => showWatchlistTab());
+            watchlistLi.appendChild(watchlistLink);
+            nav.appendChild(watchlistLi);
+
             exhibitionGroupOrder.forEach(groupLabel => {
-              const btns = groupBtnsMap[groupLabel];
-              if (!btns || btns.length === 0) return;
+              const wrappers = groupBtnsMap[groupLabel];
+              if (!wrappers || wrappers.length === 0) return;
               const li = document.createElement("li");
               li.className = "nav-item";
               const link = document.createElement("button");
               link.className = `nav-link${groupLabel === initGroup ? " active" : ""}`;
               link.dataset.group = groupLabel;
-              link.innerHTML = `${groupLabel} <span class="badge bg-secondary ms-1">${btns.length}</span>`;
+              link.innerHTML = `${groupLabel} <span class="badge bg-secondary ms-1">${wrappers.length}</span>`;
               link.addEventListener("click", () => showGroup(groupLabel));
               li.appendChild(link);
               nav.appendChild(li);
@@ -797,10 +864,10 @@
               nav.style.pointerEvents = "none";
               nav.style.opacity = "0.4";
               content.innerHTML = "";
-              Object.values(groupBtnsMap).flat().forEach(btn => {
-                if (btn.textContent.toLowerCase().includes(query)) {
-                  btn.style.display = "";
-                  content.appendChild(btn);
+              Object.values(groupBtnsMap).flat().forEach(wrapper => {
+                if (wrapper.textContent.toLowerCase().includes(query)) {
+                  wrapper.style.display = "";
+                  content.appendChild(wrapper);
                 }
               });
             });
@@ -809,7 +876,14 @@
             dtButtonsDiv.parentNode.insertBefore(tabsContainer, dtButtonsDiv);
             dtButtonsDiv.style.display = "none";
 
-            showGroup(initGroup);
+            const urlTopic = new URLSearchParams(window.location.search).get("topic");
+            const hasExplicitTopic = urlTopic && allTopicSet.has(urlTopic);
+            const hasWatchlist = loadVenueWatchlist().some(t => allTopicSet.has(t));
+            if (!hasExplicitTopic && hasWatchlist) {
+              showWatchlistTab();
+            } else {
+              showGroup(initGroup);
+            }
           }
         },
       });
