@@ -92,6 +92,7 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="theme_fix.css" />
 
     <link
       rel="stylesheet"
@@ -516,24 +517,12 @@
     };
 
     const setLight = () => {
-      changeThemeMode("dark_mode_fix.css", "light_mode_fix.css");
       document.documentElement.setAttribute("data-bs-theme", "light");
-      document
-        .getElementById("themeIcon")
-        .setAttribute("data-icon", "ph:sun-bold");
+      document.getElementById("themeIcon").setAttribute("data-icon", "ph:sun-bold");
     };
     const setDark = () => {
-      changeThemeMode("light_mode_fix.css", "dark_mode_fix.css");
       document.documentElement.setAttribute("data-bs-theme", "dark");
-      document
-        .getElementById("themeIcon")
-        .setAttribute("data-icon", "ph:moon-stars-bold");
-    };
-    const changeThemeMode = (modeA, modelB) => {
-      $(`link[href='${modeA}]']`).remove();
-      $("head").append(
-        `<link rel="stylesheet" type="text/css" href="${modelB}">`,
-      );
+      document.getElementById("themeIcon").setAttribute("data-icon", "ph:moon-stars-bold");
     };
     document.getElementById("btnSwitch").addEventListener("click", () => {
       let runThemeSet =
@@ -605,7 +594,7 @@
           {
             data: "UUID",
             render: function (data, type, row, meta) {
-              return `<button class="btn btn-info btn-mark-achieved" data-uuid="${data}"'><i class="bi bi-check-lg"></i></button>`;
+              return `<button class="btn btn-info btn-mark-achieved" data-uuid="${data}"><i class="bi bi-check-lg"></i></button>`;
             },
           },
         ],
@@ -735,6 +724,167 @@
               select.add(new Option("已經結束"));
               select.add(new Option("無法判斷"));
             });
+
+          const dtButtonsDiv = document.querySelector(".dt-buttons");
+          if (dtButtonsDiv) {
+            const allBtns = Array.from(dtButtonsDiv.querySelectorAll("button"));
+            const initGroup = topicGroupMap[initTopic] || exhibitionGroupOrder[0];
+
+            const groupBtnsMap = {};
+            exhibitionGroupOrder.forEach(g => (groupBtnsMap[g] = []));
+            allBtns.forEach(btn => {
+              const topic = Array.from(btn.classList)
+                .map(c => c.replace(/^btn-/, ""))
+                .find(t => topicGroupMap[t]);
+              const group = topic ? topicGroupMap[topic] : null;
+              if (group && groupBtnsMap[group]) groupBtnsMap[group].push(btn);
+            });
+
+            // 將每個場館按鈕包成 btn-group，右側附加關注 toggle
+            exhibitionGroupOrder.forEach(g => {
+              groupBtnsMap[g] = groupBtnsMap[g].map(btn => {
+                const topic = Array.from(btn.classList)
+                  .map(c => c.replace(/^btn-/, ""))
+                  .find(t => topicGroupMap[t]);
+
+                const wrapper = document.createElement("div");
+                wrapper.className = "btn-group";
+                wrapper.dataset.topic = topic || "";
+                wrapper.appendChild(btn);
+
+                if (topic) {
+                  const watched = isVenueWatched(topic);
+                  const watchBtn = document.createElement("button");
+                  watchBtn.type = "button";
+                  watchBtn.className = `btn ${watched ? "btn-warning" : "btn-outline-secondary"}`;
+                  watchBtn.innerHTML = `<i class="bi ${watched ? "bi-bell-fill" : "bi-bell"}"></i>`;
+                  watchBtn.title = watched ? "取消關注" : "加入關注";
+                  watchBtn.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    const nowWatched = toggleVenueWatch(topic);
+                    watchBtn.className = `btn ${nowWatched ? "btn-warning" : "btn-outline-secondary"}`;
+                    watchBtn.innerHTML = `<i class="bi ${nowWatched ? "bi-bell-fill" : "bi-bell"}"></i>`;
+                    watchBtn.title = nowWatched ? "取消關注" : "加入關注";
+                    if (activeGroup === "關注清單") showWatchlistTab();
+                  });
+                  wrapper.appendChild(watchBtn);
+                }
+                return wrapper;
+              });
+            });
+
+            const tabsContainer = document.createElement("div");
+            tabsContainer.className = "mb-2";
+
+            const nav = document.createElement("ul");
+            nav.className = "nav nav-tabs flex-wrap";
+
+            const content = document.createElement("div");
+            content.className = "d-flex flex-wrap gap-2 p-2 border border-top-0 rounded-bottom";
+
+            let activeGroup = initGroup;
+
+            const showWatchlistTab = () => {
+              activeGroup = "關注清單";
+              nav.querySelectorAll(".nav-link").forEach(link => {
+                link.classList.toggle("active", link.dataset.group === "關注清單");
+              });
+              content.innerHTML = "";
+              let count = 0;
+              Object.values(groupBtnsMap).flat().forEach(wrapper => {
+                const topic = wrapper.dataset && wrapper.dataset.topic;
+                if (topic && isVenueWatched(topic)) {
+                  wrapper.style.display = "";
+                  content.appendChild(wrapper);
+                  count++;
+                }
+              });
+              if (count === 0) {
+                const empty = document.createElement("p");
+                empty.className = "text-muted m-2";
+                empty.textContent = "尚未關注任何場館，點擊場館旁的 🔔 即可加入關注";
+                content.appendChild(empty);
+              }
+            };
+
+            const showGroup = (groupLabel) => {
+              activeGroup = groupLabel;
+              nav.querySelectorAll(".nav-link").forEach(link => {
+                link.classList.toggle("active", link.dataset.group === groupLabel);
+              });
+              content.innerHTML = "";
+              (groupBtnsMap[groupLabel] || []).forEach(wrapper => {
+                wrapper.style.display = "";
+                content.appendChild(wrapper);
+              });
+            };
+
+            // 「關注清單」Tab 置第一
+            const watchlistLi = document.createElement("li");
+            watchlistLi.className = "nav-item";
+            const watchlistLink = document.createElement("button");
+            watchlistLink.className = "nav-link";
+            watchlistLink.dataset.group = "關注清單";
+            watchlistLink.innerHTML = `<i class="bi bi-bell-fill"></i> 關注清單`;
+            watchlistLink.addEventListener("click", () => showWatchlistTab());
+            watchlistLi.appendChild(watchlistLink);
+            nav.appendChild(watchlistLi);
+
+            exhibitionGroupOrder.forEach(groupLabel => {
+              const wrappers = groupBtnsMap[groupLabel];
+              if (!wrappers || wrappers.length === 0) return;
+              const li = document.createElement("li");
+              li.className = "nav-item";
+              const link = document.createElement("button");
+              link.className = `nav-link${groupLabel === initGroup ? " active" : ""}`;
+              link.dataset.group = groupLabel;
+              link.innerHTML = `${groupLabel} <span class="badge bg-secondary ms-1">${wrappers.length}</span>`;
+              link.addEventListener("click", () => showGroup(groupLabel));
+              li.appendChild(link);
+              nav.appendChild(li);
+            });
+
+            tabsContainer.appendChild(nav);
+            tabsContainer.appendChild(content);
+
+            const filterInput = document.createElement("input");
+            filterInput.type = "text";
+            filterInput.placeholder = "搜尋場館...";
+            filterInput.className = "form-control form-control-sm mb-1";
+            filterInput.style.maxWidth = "300px";
+
+            filterInput.addEventListener("input", function () {
+              const query = this.value.toLowerCase();
+              if (!query) {
+                nav.style.pointerEvents = "";
+                nav.style.opacity = "";
+                showGroup(activeGroup);
+                return;
+              }
+              nav.style.pointerEvents = "none";
+              nav.style.opacity = "0.4";
+              content.innerHTML = "";
+              Object.values(groupBtnsMap).flat().forEach(wrapper => {
+                if (wrapper.textContent.toLowerCase().includes(query)) {
+                  wrapper.style.display = "";
+                  content.appendChild(wrapper);
+                }
+              });
+            });
+
+            dtButtonsDiv.parentNode.insertBefore(filterInput, dtButtonsDiv);
+            dtButtonsDiv.parentNode.insertBefore(tabsContainer, dtButtonsDiv);
+            dtButtonsDiv.style.display = "none";
+
+            const urlTopic = new URLSearchParams(window.location.search).get("topic");
+            const hasExplicitTopic = urlTopic && allTopicSet.has(urlTopic);
+            const hasWatchlist = loadVenueWatchlist().some(t => allTopicSet.has(t));
+            if (!hasExplicitTopic && hasWatchlist) {
+              showWatchlistTab();
+            } else {
+              showGroup(initGroup);
+            }
+          }
         },
       });
     });

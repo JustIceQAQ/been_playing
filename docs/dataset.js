@@ -79,50 +79,16 @@ const platformTopicClass = [
 ];
 
 const exhibitionTopicClass = [
-    new Exhibition(
-        "HuaShan1914",
-        "華山1914文化創意產業園區",
-        new ButtonStyle("#fff", "#437321", "#437321"),
-    ),
-    new Exhibition(
-        "MoCaTaipei",
-        "台北當代藝術館",
-        new ButtonStyle("#fff", "#E83434", "#E83434"),
-    ),
+    // 台北市中正區
     new Exhibition(
         "CKSMH",
         "中正紀念堂",
         new ButtonStyle("#fff", "#04a1ae", "#04a1ae"),
     ),
     new Exhibition(
-        "Npm",
-        "國立故宮博物院",
-        new ButtonStyle("#fff", "#7D0000", "#7D0000"),
-    ),
-    new Exhibition(
         "Ntm",
         "國立臺灣博物館",
         new ButtonStyle("#fff", "#313131", "#313131"),
-    ),
-    new Exhibition(
-        "NtSec",
-        "國立臺灣科學教育館",
-        new ButtonStyle("#3c3d30", "#FAA61A", "#33C0C4"),
-    ),
-    new Exhibition(
-        "SongShanCulturalPark",
-        "松山文創園區",
-        new ButtonStyle("#fff", "#595758", "#F9DD00"),
-    ),
-    new Exhibition(
-        "TFam",
-        "臺北市立美術館",
-        new ButtonStyle("#fff", "#2B2B2B", "#2B2B2B"),
-    ),
-    new Exhibition(
-        "Tmc",
-        "台北流行音樂中心",
-        new ButtonStyle("#fff", "#FF5000", "#00BBD3"),
     ),
     new Exhibition(
         "Nmh",
@@ -135,24 +101,9 @@ const exhibitionTopicClass = [
         new ButtonStyle("#fff", "#00d186", "#00d186"),
     ),
     new Exhibition(
-        "TwTc",
-        "台北世貿中心",
-        new ButtonStyle("#fff", "#ef5923", "#ef5923"),
-    ),
-    new Exhibition(
-        "Mwr",
-        "世界宗教博物館",
-        new ButtonStyle("#fff", "#b01f23", "#b01f23"),
-    ),
-    new Exhibition(
         "MuseumPost",
         "郵政博物館",
         new ButtonStyle("#fff", "#e6121c", "#12429c"),
-    ),
-    new Exhibition(
-        "Jam",
-        "忠泰美術館",
-        new ButtonStyle("#3c3d30", "#00d186", "#00d186"),
     ),
     new Exhibition(
         "NCPI",
@@ -160,49 +111,30 @@ const exhibitionTopicClass = [
         new ButtonStyle("#fff", "#000001", "#000001"),
     ),
     new Exhibition(
-        "NtcArtMuseum",
-        "新北市美術館",
-        new ButtonStyle("#fff", "#000001", "#000001"),
+        "n228mm",
+        "二二八事件紀念基金會",
+        new ButtonStyle("#fff", "#49b88d", "#c0d429"),
     ),
     new Exhibition(
-        "FuBonArtMuseum",
-        "富邦美術館",
-        new ButtonStyle("#fff", "#643164", "#643164"),
+        "NTAEC",
+        "國立台灣藝術教育館",
+        new ButtonStyle("#fff", "#b83a32", "#24318e"),
     ),
     new Exhibition(
-        "CLab",
-        "台灣當代文化實驗場C-Lab",
-        new ButtonStyle("#fff", "#f87065", "#f2f2f0"),
+        "AAAArchives",
+        "國家發展委員會檔案管理局",
+        new ButtonStyle("#fff", "#00afa9", "#00192e"),
     ),
     new Exhibition(
-        "KingCarArt",
-        "金車文藝中心",
-        new ButtonStyle("#fff", "#000001", "#000001"),
+        "HuaShan1914",
+        "華山1914文化創意產業園區",
+        new ButtonStyle("#fff", "#437321", "#437321"),
     ),
+    // 台北市大同區
     new Exhibition(
-        "BoPiLiao",
-        "剝皮寮歷史街區",
-        new ButtonStyle("#fff", "#656565", "#cacaca"),
-    ),
-    new Exhibition(
-        "NTNUArtMuseum",
-        "師大美術館",
-        new ButtonStyle("#fff", "#4d070b", "#000001"),
-    ),
-    new Exhibition(
-        "NHRM",
-        "國家人權博物館",
-        new ButtonStyle("#fff", "#a42422", "#000001"),
-    ),
-    new Exhibition(
-        "TaipeiExPoPark",
-        "花博公園",
-        new ButtonStyle("#fff", "#e52410", "#626468"),
-    ),
-    new Exhibition(
-        "OCAM",
-        "陽明海洋文化藝術館",
-        new ButtonStyle("#fff", "#b81d21", "#b81d21"),
+        "MoCaTaipei",
+        "台北當代藝術館",
+        new ButtonStyle("#fff", "#E83434", "#E83434"),
     ),
     new Exhibition(
         "TncMMM",
@@ -210,60 +142,47 @@ const exhibitionTopicClass = [
         new ButtonStyle("#fff", "#9f211a", "#9f211a"),
     ),
     new Exhibition(
-        "KdMoFa",
-        "關渡美術館",
-        new ButtonStyle("#fff", "#eb7102", "#eb7102"),
-    ),
-    new Exhibition(
-        "n228mm",
-        "二二八事件紀念基金會",
-        new ButtonStyle("#fff", "#49b88d", "#c0d429"),
-    ),
-    new Exhibition(
-        "HongGah",
-        "鳳甲美術館",
-        new ButtonStyle("#fff", "#585656", "#585656"),
-    ),
-    new Exhibition(
-        "ShungYeArt",
-        "順益台灣美術館",
-        new ButtonStyle("#fff", "#83744c", "#585656"),
-    ),
-    new Exhibition(
-        "PACT",
-        "台北偶戲館",
-        new ButtonStyle("#fff", "#e40012", "#db462f"),
-    ),
-    new Exhibition(
-        "Yatsen",
-        "國立國父紀念館",
-        new ButtonStyle("#fff", "#f6b64b", "#2f98d2"),
-    ),
-    new Exhibition(
         "Nrm",
         "國家鐵道博物館",
         new ButtonStyle("#fff", "#009e40", "#fdfdfd"),
+    ),
+    // 台北市萬華區
+    new Exhibition(
+        "BoPiLiao",
+        "剝皮寮歷史街區",
+        new ButtonStyle("#fff", "#656565", "#cacaca"),
     ),
     new Exhibition(
         "RedHouse",
         "西門紅樓",
         new ButtonStyle("#fff", "#c73405", "#c73405"),
     ),
+    // 台北市中山區
     new Exhibition(
-        "YoChangArt",
-        "有章藝術博物館",
-        new ButtonStyle("#fff", "#585656", "#585656"),
+        "TFam",
+        "臺北市立美術館",
+        new ButtonStyle("#fff", "#2B2B2B", "#2B2B2B"),
     ),
     new Exhibition(
-        "NTAEC",
-        "國立台灣藝術教育館",
-        new ButtonStyle("#fff", "#b83a32", "#24318e"),
+        "TaipeiExPoPark",
+        "花博公園",
+        new ButtonStyle("#fff", "#e52410", "#626468"),
     ),
-
     new Exhibition(
-        "ChiPoLin",
-        "齊柏林空間",
-        new ButtonStyle("#fff", "#585656", "#585656"),
+        "Jam",
+        "忠泰美術館",
+        new ButtonStyle("#3c3d30", "#00d186", "#00d186"),
+    ),
+    new Exhibition(
+        "KingCarArt",
+        "金車文藝中心",
+        new ButtonStyle("#fff", "#000001", "#000001"),
+    ),
+    // 台北市大安區
+    new Exhibition(
+        "NTNUArtMuseum",
+        "師大美術館",
+        new ButtonStyle("#fff", "#4d070b", "#000001"),
     ),
     new Exhibition(
         "MoNTUE",
@@ -271,31 +190,190 @@ const exhibitionTopicClass = [
         new ButtonStyle("#3c3d30", "#f0eb4c", "#4b4b4b"),
     ),
     new Exhibition(
-        "AAAArchives",
-        "國家發展委員會檔案管理局",
-        new ButtonStyle("#fff", "#00afa9", "#00192e"),
+        "FuBonArtMuseum",
+        "富邦美術館",
+        new ButtonStyle("#fff", "#643164", "#643164"),
     ),
-
+    // 台北市松山區、信義區
     new Exhibition(
-        "kmoa",
-        "基隆美術館",
-        new ButtonStyle("#fff", "#e35449", "#e35449"),
+        "PACT",
+        "台北偶戲館",
+        new ButtonStyle("#fff", "#e40012", "#db462f"),
     ),
-
+    new Exhibition(
+        "SongShanCulturalPark",
+        "松山文創園區",
+        new ButtonStyle("#fff", "#595758", "#F9DD00"),
+    ),
+    new Exhibition(
+        "CLab",
+        "台灣當代文化實驗場C-Lab",
+        new ButtonStyle("#fff", "#f87065", "#f2f2f0"),
+    ),
+    new Exhibition(
+        "TwTc",
+        "台北世貿中心",
+        new ButtonStyle("#fff", "#ef5923", "#ef5923"),
+    ),
+    new Exhibition(
+        "Yatsen",
+        "國立國父紀念館",
+        new ButtonStyle("#fff", "#f6b64b", "#2f98d2"),
+    ),
+    new Exhibition(
+        "ChiPoLin",
+        "齊柏林空間",
+        new ButtonStyle("#fff", "#585656", "#585656"),
+    ),
+    // 台北市南港區
+    new Exhibition(
+        "Tmc",
+        "台北流行音樂中心",
+        new ButtonStyle("#fff", "#FF5000", "#00BBD3"),
+    ),
+    // 台北市士林區
+    new Exhibition(
+        "Npm",
+        "國立故宮博物院",
+        new ButtonStyle("#fff", "#7D0000", "#7D0000"),
+    ),
+    new Exhibition(
+        "NtSec",
+        "國立臺灣科學教育館",
+        new ButtonStyle("#3c3d30", "#FAA61A", "#33C0C4"),
+    ),
+    new Exhibition(
+        "ShungYeArt",
+        "順益台灣美術館",
+        new ButtonStyle("#fff", "#83744c", "#585656"),
+    ),
+    // 台北市北投區
+    new Exhibition(
+        "KdMoFa",
+        "關渡美術館",
+        new ButtonStyle("#fff", "#eb7102", "#eb7102"),
+    ),
+    new Exhibition(
+        "HongGah",
+        "鳳甲美術館",
+        new ButtonStyle("#fff", "#585656", "#585656"),
+    ),
+    new Exhibition(
+        "YoChangArt",
+        "有章藝術博物館",
+        new ButtonStyle("#fff", "#585656", "#585656"),
+    ),
+    // 新北市
+    new Exhibition(
+        "Mwr",
+        "世界宗教博物館",
+        new ButtonStyle("#fff", "#b01f23", "#b01f23"),
+    ),
+    new Exhibition(
+        "NHRM",
+        "國家人權博物館",
+        new ButtonStyle("#fff", "#a42422", "#000001"),
+    ),
+    new Exhibition(
+        "NtcArtMuseum",
+        "新北市美術館",
+        new ButtonStyle("#fff", "#000001", "#000001"),
+    ),
     new Exhibition(
         "Culture435",
         "板橋435藝文特區",
         new ButtonStyle("#fff", "#e35449", "#e35449"),
     ),
-
     new Exhibition(
         "NtcCeramics",
         "新北市立鶯歌陶瓷博物館",
         new ButtonStyle("#fff", "#585656", "#585656"),
     ),
+    // 基隆市
+    new Exhibition(
+        "kmoa",
+        "基隆美術館",
+        new ButtonStyle("#fff", "#e35449", "#e35449"),
+    ),
+    new Exhibition(
+        "OCAM",
+        "陽明海洋文化藝術館",
+        new ButtonStyle("#fff", "#b81d21", "#b81d21"),
+    ),
 ];
 
 const allTopicClass = [].concat(exhibitionTopicClass, platformTopicClass);
+
+const exhibitionGroupOrder = [
+    "中正・大同・萬華",
+    "中山・大安",
+    "信義・松山・南港",
+    "士林・北投",
+    "新北・基隆",
+    "票務平台",
+];
+
+const topicGroupMap = {
+    // 中正・大同・萬華
+    CKSMH: "中正・大同・萬華",
+    Ntm: "中正・大同・萬華",
+    Nmh: "中正・大同・萬華",
+    NTCRI: "中正・大同・萬華",
+    MuseumPost: "中正・大同・萬華",
+    NCPI: "中正・大同・萬華",
+    n228mm: "中正・大同・萬華",
+    NTAEC: "中正・大同・萬華",
+    AAAArchives: "中正・大同・萬華",
+    HuaShan1914: "中正・大同・萬華",
+    MoCaTaipei: "中正・大同・萬華",
+    TncMMM: "中正・大同・萬華",
+    Nrm: "中正・大同・萬華",
+    BoPiLiao: "中正・大同・萬華",
+    RedHouse: "中正・大同・萬華",
+    // 中山・大安
+    TFam: "中山・大安",
+    TaipeiExPoPark: "中山・大安",
+    Jam: "中山・大安",
+    KingCarArt: "中山・大安",
+    NTNUArtMuseum: "中山・大安",
+    MoNTUE: "中山・大安",
+    FuBonArtMuseum: "中山・大安",
+    // 信義・松山・南港
+    PACT: "信義・松山・南港",
+    SongShanCulturalPark: "信義・松山・南港",
+    CLab: "信義・松山・南港",
+    TwTc: "信義・松山・南港",
+    Yatsen: "信義・松山・南港",
+    ChiPoLin: "信義・松山・南港",
+    Tmc: "信義・松山・南港",
+    // 士林・北投
+    Npm: "士林・北投",
+    NtSec: "士林・北投",
+    ShungYeArt: "士林・北投",
+    KdMoFa: "士林・北投",
+    HongGah: "士林・北投",
+    YoChangArt: "士林・北投",
+    // 新北・基隆
+    Mwr: "新北・基隆",
+    NHRM: "新北・基隆",
+    NtcArtMuseum: "新北・基隆",
+    Culture435: "新北・基隆",
+    NtcCeramics: "新北・基隆",
+    kmoa: "新北・基隆",
+    OCAM: "新北・基隆",
+    // 票務平台
+    KLook: "票務平台",
+    BooksTickets: "票務平台",
+    UdnFunLife: "票務平台",
+    OpenTix: "票務平台",
+    KKTix: "票務平台",
+    IBon: "票務平台",
+    KKDay: "票務平台",
+    CultureExpress: "票務平台",
+    GaCc: "票務平台",
+    ArtEmperor: "票務平台",
+    NTT: "票務平台",
+};
 
 const allTopicSet = new Set(
     allTopicClass.map((exhibition) => {
@@ -306,10 +384,12 @@ const allTopicSet = new Set(
 const getInitTopic = () => {
     const params = new URLSearchParams(window.location.search);
     const topic = params.get("topic");
-    if (topic === undefined || topic === null || !allTopicSet.has(topic)) {
-        return allTopicClass[0].topic;
+    if (topic !== undefined && topic !== null && allTopicSet.has(topic)) {
+        return topic;
     }
-    return topic;
+    const firstWatched = loadVenueWatchlist().find(t => allTopicSet.has(t));
+    if (firstWatched) return firstWatched;
+    return allTopicClass[0].topic;
 };
 
 const copyUrlToClipboard = (url) => {
@@ -412,6 +492,31 @@ const exportAchievementsToJSON = () => {
 
     URL.revokeObjectURL(url);
 };
+
+// === 場館關注清單 ===
+const VENUE_WATCHLIST_KEY = "been-been-play-venue-watchlist";
+
+const loadVenueWatchlist = () => {
+    const raw = localStorage.getItem(VENUE_WATCHLIST_KEY);
+    try { return raw ? JSON.parse(raw) : []; }
+    catch (e) { return []; }
+};
+
+const saveVenueWatchlist = (data) => {
+    localStorage.setItem(VENUE_WATCHLIST_KEY, JSON.stringify(data));
+};
+
+const isVenueWatched = (topic) => loadVenueWatchlist().includes(topic);
+
+const toggleVenueWatch = (topic) => {
+    const list = loadVenueWatchlist();
+    const idx = list.indexOf(topic);
+    if (idx === -1) { list.push(topic); }
+    else { list.splice(idx, 1); }
+    saveVenueWatchlist(list);
+    return idx === -1;
+};
+// === end 場館關注清單 ===
 
 let importedAchievementsData = null;
 

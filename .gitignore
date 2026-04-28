@@ -226,3 +226,8 @@ dmypy.json
 cython_debug/
 
 _note/
+
+CLAUDE.local.md
+
+.history/
+.idea/
