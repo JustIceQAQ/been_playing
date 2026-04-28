@@ -4,21 +4,10 @@ PRODID:-//Been Been Play Project//松山文創園區//TW
 X-WR-CALNAME:松山文創園區 展覽時程
 X-WR-TIMEZONE:Asia/Taipei
 BEGIN:VEVENT
-SUMMARY:[松山文創園區] 2025 金點設計展
-DTSTART;VALUE=DATE:20251125
-DTEND;VALUE=DATE:20260426
-DTSTAMP:20260418T033527Z
-UID:1525f865f0445a8eb48d20306eec6f23
-DESCRIPTION:展覽日期：2025-11-25 ~ 2026-04-26\n地點：台灣設計
- 館 01、02、04 展間\n原始連結：https://www.songshanculturalpark.o
- rg/exhibition/activity/43ccfd8e-ef4d-464d-91ad-daa74ad4846f\n
-LOCATION:台灣設計館 01、02、04 展間
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[松山文創園區] 樂埔堂豆花甜感生活祭
 DTSTART;VALUE=DATE:20260103
 DTEND;VALUE=DATE:20260502
-DTSTAMP:20260418T033527Z
+DTSTAMP:20260427T174743Z
 UID:133317aeea425dd18f0e472575205cc6
 DESCRIPTION:展覽日期：2026-01-03 ~ 2026-05-02\n地點：松山文創
  園區檢查室\n原始連結：https://www.songshanculturalpark.org/exhib
@@ -30,7 +19,7 @@ SUMMARY:[松山文創園區] 松菸夜光花園 光影展 The LUMINOUS GAR
  DEN
 DTSTART;VALUE=DATE:20260131
 DTEND;VALUE=DATE:20260630
-DTSTAMP:20260418T033527Z
+DTSTAMP:20260427T174743Z
 UID:75eb82fe93285202bf85af258fdf48f8
 DESCRIPTION:展覽日期：2026-01-31 ~ 2026-06-30\n地點：松山文創
  園區 巴洛克花園 Songshan Cultural and Creative Park︱Baroque Garde
@@ -43,7 +32,7 @@ BEGIN:VEVENT
 SUMMARY:[松山文創園區] 100Y 山林有時：＿＿＿
 DTSTART;VALUE=DATE:20260206
 DTEND;VALUE=DATE:20260726
-DTSTAMP:20260418T033527Z
+DTSTAMP:20260427T174743Z
 UID:bec541e0eef65b0fa043223adf4d19c0
 DESCRIPTION:展覽日期：2026-02-06 ~ 2026-07-26\n地點：台灣設計
  館 03 展間\n原始連結：https://www.songshanculturalpark.org/exhibit
@@ -54,7 +43,7 @@ BEGIN:VEVENT
 SUMMARY:[松山文創園區] HUNTERxHUNTER 獵人快閃店
 DTSTART;VALUE=DATE:20260320
 DTEND;VALUE=DATE:20260517
-DTSTAMP:20260418T033527Z
+DTSTAMP:20260427T174743Z
 UID:c67afbace81b5e338ca3abf19fd52d48
 DESCRIPTION:展覽日期：2026-03-20 ~ 2026-05-17\n地點：松山文創
  園區 南向製菸工廠\n原始連結：https://www.songshanculturalpark
@@ -65,7 +54,7 @@ BEGIN:VEVENT
 SUMMARY:[松山文創園區] VISION TOYS 快閃店
 DTSTART;VALUE=DATE:20260320
 DTEND;VALUE=DATE:20260517
-DTSTAMP:20260418T033527Z
+DTSTAMP:20260427T174743Z
 UID:914f36fefe8b52ac969ea307eeed79b4
 DESCRIPTION:展覽日期：2026-03-20 ~ 2026-05-17\n地點：松山文創
  園區 南向製菸工廠\n原始連結：https://www.songshanculturalpark
@@ -76,7 +65,7 @@ BEGIN:VEVENT
 SUMMARY:[松山文創園區] 松山文創園區- 4月展演攻略
 DTSTART;VALUE=DATE:20260401
 DTEND;VALUE=DATE:20260430
-DTSTAMP:20260418T033527Z
+DTSTAMP:20260427T174743Z
 UID:7fe6fa99e54c5e7d96654f6bf4344946
 DESCRIPTION:展覽日期：2026-04-01 ~ 2026-04-30\n地點：松山文創
  園區\n原始連結：https://www.songshanculturalpark.org/exhibition/act
@@ -87,7 +76,7 @@ BEGIN:VEVENT
 SUMMARY:[松山文創園區] Second Morning《九歲生日慶》快閃店
 DTSTART;VALUE=DATE:20260402
 DTEND;VALUE=DATE:20260505
-DTSTAMP:20260418T033527Z
+DTSTAMP:20260427T174743Z
 UID:d97d33e948ae536f93c1d92082965bd3
 DESCRIPTION:展覽日期：2026-04-02 ~ 2026-05-05\n地點：松山文創
  園區藝思空間\n原始連結：https://www.songshanculturalpark.org/ex
@@ -95,45 +84,10 @@ DESCRIPTION:展覽日期：2026-04-02 ~ 2026-05-05\n地點：松山文創
 LOCATION:松山文創園區藝思空間
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[松山文創園區] 貳仟迴潮
-DTSTART;VALUE=DATE:20260414
-DTEND;VALUE=DATE:20260419
-DTSTAMP:20260418T033527Z
-UID:87e0cc7b72ff5e4894d302183d44e8c0
-DESCRIPTION:展覽日期：2026-04-14 ~ 2026-04-19\n地點：松山文創
- 園區 藝異空間\n原始連結：https://www.songshanculturalpark.org/e
- xhibition/activity/f0467f5a-09d4-450e-872c-1366ff8fcbd5\n
-LOCATION:松山文創園區 藝異空間
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[松山文創園區] 2026 台灣速克達改裝冠軍賽 Speed & C
- rafts Scooter
-DTSTART;VALUE=DATE:20260417
-DTEND;VALUE=DATE:20260419
-DTSTAMP:20260418T033527Z
-UID:3d14b946b20250a8b53a5a64564a6929
-DESCRIPTION:展覽日期：2026-04-17 ~ 2026-04-19\n地點：松山文創
- 園區 5 號倉庫\n原始連結：https://www.songshanculturalpark.org/ex
- hibition/activity/09d5d2b4-8846-414d-b80f-300617084558\n
-LOCATION:松山文創園區 5 號倉庫
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[松山文創園區] 粲然煥新-2026 中華插花藝術展 Respl
- endent Innovation: 2026 Chi
-DTSTART;VALUE=DATE:20260417
-DTEND;VALUE=DATE:20260426
-DTSTAMP:20260418T033527Z
-UID:849843e47efd57d0a3f0ed79866e4dfc
-DESCRIPTION:展覽日期：2026-04-17 ~ 2026-04-26\n地點：松山文創
- 園區 4 號倉庫\n原始連結：https://www.songshanculturalpark.org/ex
- hibition/activity/bc089483-c1aa-432c-ab80-d0c1cee67329\n
-LOCATION:松山文創園區 4 號倉庫
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[松山文創園區] 2026 奇想設計大賽入圍作品展
 DTSTART;VALUE=DATE:20260417
 DTEND;VALUE=DATE:20260429
-DTSTAMP:20260418T033527Z
+DTSTAMP:20260427T174743Z
 UID:385ac177ba8e5bc4ac5a0cc729389eeb
 DESCRIPTION:展覽日期：2026-04-17 ~ 2026-04-29\n地點：iF 台北設
  計沙龍 台北市光復南路 133 號 松山文創園區 西向製菸工
@@ -143,39 +97,85 @@ LOCATION:iF 台北設計沙龍 台北市光復南路 133 號 松山文創
  園區 西向製菸工廠二樓A7 W207
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[松山文創園區] 輔仁大學廣告傳播學系第 29 屆畢
- 業展《29 超有種》：新型態物種發表大會
-DTSTART;VALUE=DATE:20260424
-DTEND;VALUE=DATE:20260426
-DTSTAMP:20260418T033527Z
-UID:aa53426eb30a5b3a8c252ada5e680502
-DESCRIPTION:展覽日期：2026-04-24 ~ 2026-04-26\n地點：松山文創
- 園區 1 號倉庫\n原始連結：https://www.songshanculturalpark.org/ex
- hibition/activity/7bd9b263-6af9-4dc5-b92a-060bf4d002f7\n
-LOCATION:松山文創園區 1 號倉庫
+SUMMARY:[松山文創園區] 噪點 NOISE
+DTSTART;VALUE=DATE:20260427
+DTEND;VALUE=DATE:20260505
+DTSTAMP:20260427T174743Z
+UID:65a4e935c7115fea8df66052d94f4750
+DESCRIPTION:展覽日期：2026-04-27 ~ 2026-05-05\n地點：松山文創
+ 園區 藝異空間\n原始連結：https://www.songshanculturalpark.org/e
+ xhibition/activity/4131c805-0d27-4aa6-9d03-ec08a765421e\n
+LOCATION:松山文創園區 藝異空間
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[松山文創園區] 熱血青春《50+》全台最大運動同學
- 會
-DTSTART;VALUE=DATE:20260425
-DTEND;VALUE=DATE:20260425
-DTSTAMP:20260418T033527Z
-UID:5d5fc24761af57d5a6952e4d44835424
-DESCRIPTION:展覽日期：2026-04-25 ~ 2026-04-25\n地點：松山文創
- 園區 2、3 號倉庫\n原始連結：https://www.songshanculturalpark.or
- g/exhibition/activity/35e4a9da-7734-40a1-91c5-0e230772126e\n
-LOCATION:松山文創園區 2、3 號倉庫
+SUMMARY:[松山文創園區] ALIVEFORM × ACRONYM 「THE BLADE」聯乘系
+ 列發售
+DTSTART;VALUE=DATE:20260430
+DTEND;VALUE=DATE:20260503
+DTSTAMP:20260427T174743Z
+UID:de03e03d6f0651e498a501da8a3a9737
+DESCRIPTION:展覽日期：2026-04-30 ~ 2026-05-03\n地點：松山文創
+ 園區　男澡堂\n原始連結：https://www.songshanculturalpark.org/ex
+ hibition/activity/d3ceeb40-a2d1-4c05-91bf-189d522c4827\n
+LOCATION:松山文創園區　男澡堂
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[松山文創園區] 舒喜市集：百工匠心市——致敬手
  的力量
 DTSTART;VALUE=DATE:20260501
 DTEND;VALUE=DATE:20260503
-DTSTAMP:20260418T033527Z
+DTSTAMP:20260427T174743Z
 UID:adfbfdde80625f318be426ce20d94a16
 DESCRIPTION:展覽日期：2026-05-01 ~ 2026-05-03\n地點：北向製菸
  工廠一樓\n原始連結：https://www.songshanculturalpark.org/exhibiti
  on/activity/ae803840-3566-419a-b937-d60cacabd033\n
 LOCATION:北向製菸工廠一樓
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[松山文創園區] 智 · 核心 | 2026 年 iF 設計獎獲獎
+ 作品展 (I)
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260530
+DTSTAMP:20260427T174743Z
+UID:2b2557a8eeea557eb6823ad441dde757
+DESCRIPTION:展覽日期：2026-05-05 ~ 2026-05-30\n地點：iF 台北設
+ 計沙龍 松山文創園區 西向製菸工廠二樓 A7 W207\n原始連
+ 結：https://www.songshanculturalpark.org/exhibition/activity/7a5a8acc-ac
+ b8-4748-9db2-5705e5e06514\n
+LOCATION:iF 台北設計沙龍 松山文創園區 西向製菸工廠二樓
+  A7 W207
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[松山文創園區] 第十屆義大利設計日在台灣 | 2026
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260531
+DTSTAMP:20260427T174743Z
+UID:1f8cb1a67bb550798ba69a1e191fdbce
+DESCRIPTION:展覽日期：2026-05-05 ~ 2026-05-31\n地點：台灣設計
+ 館 02 展間\n原始連結：https://www.songshanculturalpark.org/exhibit
+ ion/activity/cd0ed7f4-f1be-45fe-bdbe-3ec082f56e74\n
+LOCATION:台灣設計館 02 展間
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[松山文創園區] 島嶼織者—國土生態綠網主題展
+DTSTART;VALUE=DATE:20260508
+DTEND;VALUE=DATE:20260607
+DTSTAMP:20260427T174743Z
+UID:79c60ebe9a3955eda40523610d85a40a
+DESCRIPTION:展覽日期：2026-05-08 ~ 2026-06-07\n地點：台灣設計
+ 研究院 01、04展間\n原始連結：https://www.songshanculturalpark.o
+ rg/exhibition/activity/c656c809-9c64-4c0b-9ed0-f0ea8001e9ee\n
+LOCATION:台灣設計研究院 01、04展間
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[松山文創園區] 《進擊的巨人》快閃店
+DTSTART;VALUE=DATE:20260512
+DTEND;VALUE=DATE:20260525
+DTSTAMP:20260427T174743Z
+UID:37fb4396fe5152179a8249d303bf8649
+DESCRIPTION:展覽日期：2026-05-12 ~ 2026-05-25\n地點：松山文創
+ 園區 藝異空間\n原始連結：https://www.songshanculturalpark.org/e
+ xhibition/activity/5d4cbe44-de4a-4480-ae12-5f7b4599598b\n
+LOCATION:松山文創園區 藝異空間
 END:VEVENT
 END:VCALENDAR
