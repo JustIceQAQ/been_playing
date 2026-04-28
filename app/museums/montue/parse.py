@@ -1,3 +1,5 @@
+import re
+
 import bs4
 
 from helpers.parse_helper import ParseInit
@@ -20,6 +22,11 @@ class MoNTUEParse(ParseInit):
                 result = next_content.strip()
                 raw_date = result.replace("｜", "").strip()
                 return raw_date.replace("-", " ~ ").replace(".", "-")
+        match = re.search(r"(\d{4})\.(\d{2})\.(\d{2})-(\d{4})\.(\d{2})\.(\d{2})", self.item.get_text())
+        if match:
+            start = f"{match.group(1)}-{match.group(2)}-{match.group(3)}"
+            end = f"{match.group(4)}-{match.group(5)}-{match.group(6)}"
+            return f"{start} ~ {end}"
 
     def get_address(self, *args, **kwargs) -> str | None:
         strong_tag = self.item.find("strong", string="地點")
