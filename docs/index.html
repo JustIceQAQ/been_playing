@@ -70,13 +70,6 @@
       referrerpolicy="no-referrer"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/datatables.net-responsive-bs5/2.3.0/responsive.bootstrap5.min.css"
-      integrity="sha512-F4qNDxOqSXOoJ5LuO78wdzZGb4BcUqF6+o+FYjgp4hFElfceMljk5a6RnVluCJS7SrEkIZyThWJjC60DMXmzJw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
     <link
       rel="stylesheet"
@@ -99,13 +92,6 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <style>
-      table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control,
-      table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control {
-        position: relative;
-        padding-left: 50px;
-        cursor: pointer;
-      }
-
       .dt-buttons {
         display: flex;
         flex-flow: wrap;
@@ -129,8 +115,100 @@
       td {
         word-wrap: break-word;
       }
+
       .caption-card-body:empty {
         display: none;
+      }
+
+      /* 場館選擇器 */
+      .venue-selector {
+        border: 1px solid var(--bs-border-color);
+        border-radius: 0.5rem;
+        overflow: hidden;
+        margin-bottom: 0.75rem;
+      }
+
+      .venue-selector-nav {
+        background: var(--bs-secondary-bg);
+        padding: 0.5rem 0.5rem 0;
+        gap: 0.25rem;
+        border-bottom: 1px solid var(--bs-border-color);
+      }
+
+      .venue-selector-nav .nav-link {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        padding: 0.4rem 0.85rem;
+        border-radius: 0.375rem 0.375rem 0 0;
+      }
+
+      .venue-selector-content {
+        padding: 0.75rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .venue-selector-content .btn {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      /* Table reflow：窄螢幕每列變 block */
+      @media (max-width: 575.98px) {
+        #exhibition_wrapper #exhibition,
+        #exhibition_wrapper #exhibition caption,
+        #exhibition_wrapper #exhibition tbody,
+        #exhibition_wrapper #exhibition tr {
+          display: block !important;
+          width: 100% !important;
+          box-sizing: border-box;
+        }
+
+        #exhibition_wrapper #exhibition thead,
+        #exhibition_wrapper #exhibition tfoot {
+          display: none !important;
+        }
+
+        #exhibition_wrapper #exhibition tbody tr {
+          border: 1px solid var(--bs-border-color);
+          border-radius: 0.5rem;
+          margin-bottom: 0.75rem;
+          overflow: hidden;
+        }
+
+        #exhibition_wrapper #exhibition td {
+          display: flex !important;
+          align-items: flex-start;
+          gap: 0.75rem;
+          padding: 0.5rem 0.75rem !important;
+          border: none !important;
+          border-bottom: 1px solid var(--bs-border-color-translucent) !important;
+          width: 100% !important;
+          box-sizing: border-box;
+        }
+
+        #exhibition_wrapper #exhibition td:last-child {
+          border-bottom: none !important;
+        }
+
+        #exhibition_wrapper #exhibition td::before {
+          content: attr(data-label);
+          font-weight: 600;
+          min-width: 4rem;
+          flex-shrink: 0;
+          color: var(--bs-secondary-color);
+          font-size: 0.8em;
+          padding-top: 0.2rem;
+        }
+
+        #exhibition_wrapper #exhibition td img {
+          max-width: 100%;
+          max-height: 150px;
+          object-fit: cover;
+        }
       }
     </style>
   </head>
@@ -337,7 +415,7 @@
         <div class="col">
           <table
             id="exhibition"
-            class="table align-middle display responsive nowrap caption-top"
+            class="table align-middle display caption-top"
             style="width: 100%"
           >
             <caption>
@@ -415,9 +493,6 @@
 
   <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
   <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
-
-  <!-- DataTables Plugins: Responsive -->
-  <script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
 
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/dayjs.min.js"
@@ -546,7 +621,6 @@
       $("#exhibition").DataTable({
         dom: "Brtip",
         processing: true,
-        responsive: true,
         deferRender: true,
         ajax: {
           url: initUrl,
@@ -565,12 +639,14 @@
         columns: [
           {
             data: "title",
+            createdCell: (td) => td.setAttribute("data-label", "展覽"),
             render: function (data, type, row) {
-              return `<a target="_blank" href="${row.source_url}"><div style="width:18rem;white-space:normal;word-break:break-all;">${data}${exhibitionStats(row.date, (tag = "h6"))}</div></a>`;
+              return `<a target="_blank" href="${row.source_url}"><div style="white-space:normal;word-break:break-all;">${data}${exhibitionStats(row.date, (tag = "h6"))}</div></a>`;
             },
           },
           {
             data: "figure",
+            createdCell: (td) => td.setAttribute("data-label", "圖片"),
             render: function (data, type, row) {
               if (data === "-") {
                 return "-";
@@ -578,36 +654,34 @@
               return '<img src="' + data + '" loading="lazy" />';
             },
           },
-          { data: "date" },
+          {
+            data: "date",
+            createdCell: (td) => td.setAttribute("data-label", "日期"),
+          },
           {
             data: "address",
+            createdCell: (td) => td.setAttribute("data-label", "地點"),
             render: function (data, type, row) {
               if (data == null) {
-                return `<div style="width:14rem;white-space:normal;word-break:break-all;">-</div>`;
+                return `<div style="white-space:normal;word-break:break-all;">-</div>`;
               }
-              return `<div style="width:14rem;white-space:normal;word-break:break-all;">${data}</div>`;
+              return `<div style="white-space:normal;word-break:break-all;">${data}</div>`;
             },
           },
           {
             data: "date",
+            createdCell: (td) => td.setAttribute("data-label", "狀態"),
             render: function (data, type, row) {
               return exhibitionStats(data);
             },
           },
           {
             data: "UUID",
+            createdCell: (td) => td.setAttribute("data-label", ""),
             render: function (data, type, row, meta) {
               return `<button class="btn btn-info btn-mark-achieved" data-uuid="${data}"><i class="bi bi-check-lg"></i></button>`;
             },
           },
-        ],
-        columnDefs: [
-          { targets: 0, responsivePriority: 1 },
-          { targets: 1, responsivePriority: 10002 },
-          { targets: 2, responsivePriority: 1 },
-          { targets: 3, responsivePriority: 2 },
-          { targets: 4, responsivePriority: 2 },
-          { targets: 5, responsivePriority: 2 },
         ],
         buttons: customizeButtons,
         drawCallback: function (exhibition) {
@@ -628,46 +702,35 @@
               googleMapPlaceId = coordinate[0]["google_map_place_id"];
             }
 
-            let externalLinkEle = "";
+            let btns = [];
             if (externalLink !== undefined) {
-              externalLinkEle = `<a class="btn btn-secondary" href="${externalLink}" target="_blank"><strong><i class="bi bi-box-arrow-up-right"></i></strong></a>`;
+              btns.push(`<a class="btn btn-secondary" href="${externalLink}" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>`);
             }
             if (googleMapPlaceId !== null) {
-              externalLinkEle =
-                externalLinkEle +
-                `<a style="margin-left: 10px" class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=${informationFullName}&query_place_id=${googleMapPlaceId}" target="_blank"><strong><i class="bi bi-pin-map"></i></strong></a>`;
+              btns.push(`<a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=${informationFullName}&query_place_id=${googleMapPlaceId}" target="_blank"><i class="bi bi-pin-map"></i></a>`);
             }
-            let shareUrl = `<a style="margin-left: 10px" class="btn btn-secondary" onclick="copyUrlToClipboard('${window.location.origin}${window.location.pathname}?topic=${exhibitionInformation["code_name"]}')" target="_blank"><strong><i class="bi bi-share"></i></strong></a>`;
+            btns.push(`<a class="btn btn-secondary" onclick="copyUrlToClipboard('${window.location.origin}${window.location.pathname}?topic=${exhibitionInformation["code_name"]}')" target="_blank"><i class="bi bi-share"></i></a>`);
 
-
-            if (hasRSS!==false){
-                let rssUrl = `<a style="margin-left: 10px" class="btn btn-secondary" href="${SOURCE_ROOT_URL}rss/${codeName}.xml" target="_blank"><strong><i class="bi bi-rss-fill"></i></strong></a>`;
-                externalLinkEle = externalLinkEle + rssUrl
-            }
-            externalLinkEle = externalLinkEle + shareUrl;
-
-            if (hasIcs!==false){
-                let rawHttpsIcsUrl = `${SOURCE_ROOT_URL}ics/${codeName}.ics`;
-                let webCalIcsUrl = rawHttpsIcsUrl.replace('https://', 'webcal://');
-                let googleIcsUrl = `https://www.google.com/calendar/render?cid=${webCalIcsUrl}`;
-
-                let dropdown = `<div class="btn-group" style="margin-left: 10px">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            <i class="bi bi-calendar-plus"></i> 訂閱展覽時程
-                        </button>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="${webCalIcsUrl}" target="_blank">Apple 日曆 / Outlook</a></li>
-                            <li><a class="dropdown-item" href="${googleIcsUrl}" target="_blank">Google 日曆</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="${rawHttpsIcsUrl}" target="_blank">下載 .ics 檔案</a></li>
-                          </ul>
-                        </div>`
-                externalLinkEle = externalLinkEle + dropdown
-
+            if (hasRSS !== false) {
+              btns.push(`<a class="btn btn-secondary" href="${SOURCE_ROOT_URL}rss/${codeName}.xml" target="_blank"><i class="bi bi-rss-fill"></i></a>`);
             }
 
-
-
+            if (hasIcs !== false) {
+              let rawHttpsIcsUrl = `${SOURCE_ROOT_URL}ics/${codeName}.ics`;
+              let webCalIcsUrl = rawHttpsIcsUrl.replace('https://', 'webcal://');
+              let googleIcsUrl = `https://www.google.com/calendar/render?cid=${webCalIcsUrl}`;
+              btns.push(`<div class="btn-group">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  <i class="bi bi-calendar-plus"></i> 訂閱
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="${webCalIcsUrl}" target="_blank">Apple 日曆 / Outlook</a></li>
+                  <li><a class="dropdown-item" href="${googleIcsUrl}" target="_blank">Google 日曆</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="${rawHttpsIcsUrl}" target="_blank">下載 .ics 檔案</a></li>
+                </ul>
+              </div>`);
+            }
 
             let opening = "";
             if (exhibition.json["visit"] !== undefined) {
@@ -675,8 +738,24 @@
             }
 
             $(".caption-card-header").html(
-              `《${informationFullName}》${externalLinkEle}`,
+              `<div class="d-flex flex-wrap align-items-center gap-2"><span>《${informationFullName}》</span>${btns.join("")}</div>`,
             );
+            const captionCard = document.querySelector("#exhibition caption .card");
+            if (captionCard) {
+              const ajaxCfg = this.ajax;
+              const currentUrl = (typeof ajaxCfg === "string" ? ajaxCfg : ajaxCfg?.url) || "";
+              const topicFromUrl = currentUrl.match(/\/([^/]+)\.json/)?.[1];
+              const btnStyle = allTopicClass.find(e => e.topic === topicFromUrl)?.buttonStyle;
+              if (btnStyle) {
+                captionCard.style.backgroundColor = btnStyle.backgroundColor;
+                captionCard.style.color = btnStyle.color;
+                captionCard.style.borderColor = btnStyle.borderColor;
+              } else {
+                captionCard.style.backgroundColor = "";
+                captionCard.style.color = "";
+                captionCard.style.borderColor = "";
+              }
+            }
             if (opening !== undefined && opening !== "") {
               $(".caption-card-body").html(
                 `${opening.replaceAll("\n", "<br>")}`,
@@ -777,13 +856,13 @@
             });
 
             const tabsContainer = document.createElement("div");
-            tabsContainer.className = "mb-2";
+            tabsContainer.className = "venue-selector";
 
             const nav = document.createElement("ul");
-            nav.className = "nav nav-tabs flex-wrap";
+            nav.className = "nav nav-tabs flex-wrap venue-selector-nav";
 
             const content = document.createElement("div");
-            content.className = "d-flex flex-wrap gap-2 p-2 border border-top-0 rounded-bottom";
+            content.className = "venue-selector-content";
 
             let activeGroup = initGroup;
 
@@ -847,14 +926,11 @@
               nav.appendChild(li);
             });
 
-            tabsContainer.appendChild(nav);
-            tabsContainer.appendChild(content);
-
             const filterInput = document.createElement("input");
             filterInput.type = "text";
             filterInput.placeholder = "搜尋場館...";
-            filterInput.className = "form-control form-control-sm mb-1";
-            filterInput.style.maxWidth = "300px";
+            filterInput.className = "form-control form-control-sm";
+            filterInput.style.cssText = "border-radius:0; border-left:0; border-right:0;";
 
             filterInput.addEventListener("input", function () {
               const query = this.value.toLowerCase();
@@ -875,7 +951,10 @@
               });
             });
 
-            dtButtonsDiv.parentNode.insertBefore(filterInput, dtButtonsDiv);
+            tabsContainer.appendChild(nav);
+            tabsContainer.appendChild(filterInput);
+            tabsContainer.appendChild(content);
+
             dtButtonsDiv.parentNode.insertBefore(tabsContainer, dtButtonsDiv);
             dtButtonsDiv.style.display = "none";
 
@@ -892,7 +971,9 @@
       });
     });
      $("#exhibition").on("page.dt", function () {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      const caption = document.querySelector("#exhibition caption");
+      const target = caption ?? document.getElementById("exhibition_wrapper");
+      target?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
 
     $("#exhibition").on("click", ".btn-mark-achieved", function () {
