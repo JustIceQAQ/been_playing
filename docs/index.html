@@ -129,6 +129,9 @@
       td {
         word-wrap: break-word;
       }
+      .caption-card-body:empty {
+        display: none;
+      }
     </style>
   </head>
 
@@ -541,7 +544,7 @@
       let initUrl = `${URL_SOURCE}${initTopic}.json`;
       runThemeSet();
       $("#exhibition").DataTable({
-        dom: "Bprtip",
+        dom: "Brtip",
         processing: true,
         responsive: true,
         deferRender: true,
@@ -888,6 +891,10 @@
         },
       });
     });
+     $("#exhibition").on("page.dt", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
     $("#exhibition").on("click", ".btn-mark-achieved", function () {
       const uuid = $(this).data("uuid");
       const table = $("#exhibition").DataTable();
