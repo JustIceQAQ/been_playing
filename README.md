@@ -112,6 +112,8 @@
         - [屏東美術館](https://ptam.ptcg.gov.tw/)
     - 臺東縣
         - [國立臺東生活美學館](https://www.ttcsec.gov.tw/)
+    - 花蓮縣
+        - [花蓮美術館](https://art.hccc.gov.tw/)
 
 [畫廊串聯 – Taipei Art Week 2025 台北藝術週](https://taipeiartweek.tw/zh/taw-galleries/)
 [文化資料開放服務網](https://opendata.culture.tw/frontsite/openData/detail?datasetId=266)

@@ -1,3 +1,5 @@
+from .museums.hcccart.script import HcccArtRunner
+
 from .museums.ptam.script import PTAMRunner
 
 from .galleries.capitalart import CapitalArtRunner
@@ -172,6 +174,7 @@ MUSEUMS_RUNNERS = {
     JuMingRunner,
     TyCgRunner,
     PTAMRunner,
+    HcccArtRunner,
 }
 
 GALLERIES_RUNNERS = {
