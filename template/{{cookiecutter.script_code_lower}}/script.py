@@ -6,7 +6,6 @@ from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.storage.symbol import TaiwanCity, VenueType
-from helpers.crawler.httpx.helper import HttpxAsyncClient
 
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
