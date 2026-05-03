@@ -91,6 +91,7 @@
         - [國立新竹生活美學館](https://www.nhclac.gov.tw/)
     - 臺中市
         - [國立臺灣美術館](https://www.ntmofa.gov.tw/)
+        - [臺中市立美術館](https://www.tcam.museum/)
         - [臺中市纖維工藝博物館](https://mofia.taichung.gov.tw/)
     - 彰化縣
         - [國立彰化生活美學館](https://www.chcsec.gov.tw/)
