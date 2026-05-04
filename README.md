@@ -112,6 +112,7 @@
     - 屏東縣
         - [屏東美術館](https://ptam.ptcg.gov.tw/)
     - 臺東縣
+        - [台東美術館](https://tm.ccl.ttct.edu.tw/)
         - [國立臺東生活美學館](https://www.ttcsec.gov.tw/)
     - 花蓮縣
         - [花蓮美術館](https://art.hccc.gov.tw/)
