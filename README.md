@@ -94,6 +94,7 @@
         - [臺中市立美術館](https://www.tcam.museum/)
         - [臺中市纖維工藝博物館](https://mofia.taichung.gov.tw/)
     - 彰化縣
+        - [彰化縣立美術館](https://fam.bocach.gov.tw/)
         - [國立彰化生活美學館](https://www.chcsec.gov.tw/)
     - 嘉義市
         - [嘉義市立博物館](https://museum.chiayi.gov.tw/)
