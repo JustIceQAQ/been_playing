@@ -1,1 +1,1 @@
-from .script import {{cookiecutter.script_code}}Runner # noqa
+from .script import {{cookiecutter.script_code}}Runner  # noqa

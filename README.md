@@ -91,8 +91,10 @@
         - [國立新竹生活美學館](https://www.nhclac.gov.tw/)
     - 臺中市
         - [國立臺灣美術館](https://www.ntmofa.gov.tw/)
+        - [臺中市立美術館](https://www.tcam.museum/)
         - [臺中市纖維工藝博物館](https://mofia.taichung.gov.tw/)
     - 彰化縣
+        - [彰化縣立美術館](https://fam.bocach.gov.tw/)
         - [國立彰化生活美學館](https://www.chcsec.gov.tw/)
     - 嘉義市
         - [嘉義市立博物館](https://museum.chiayi.gov.tw/)
@@ -111,9 +113,12 @@
     - 屏東縣
         - [屏東美術館](https://ptam.ptcg.gov.tw/)
     - 臺東縣
+        - [台東美術館](https://tm.ccl.ttct.edu.tw/)
         - [國立臺東生活美學館](https://www.ttcsec.gov.tw/)
     - 花蓮縣
         - [花蓮美術館](https://art.hccc.gov.tw/)
+    - 宜蘭縣
+        - [宜蘭美術館](https://ymoa.e-land.gov.tw/)
 
 [畫廊串聯 – Taipei Art Week 2025 台北藝術週](https://taipeiartweek.tw/zh/taw-galleries/)
 [文化資料開放服務網](https://opendata.culture.tw/frontsite/openData/detail?datasetId=266)

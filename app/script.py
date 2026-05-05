@@ -1,6 +1,4 @@
-from .museums.hcccart.script import HcccArtRunner
-
-from .museums.ptam.script import PTAMRunner
+from .museums.elandam.script import ELandAMRunner
 
 from .galleries.capitalart import CapitalArtRunner
 from .galleries.cg1839 import CG1839Runner
@@ -15,6 +13,7 @@ from .museums.aaaarchives import AAAArchivesRunner
 from .museums.alien import AlienRunner
 from .museums.artistvillage import ArtistVillageRunner
 from .museums.bopiliao.script import BoPiLiaoRunner
+from .museums.ccam.script import CCAMRunner
 from .museums.chcsec import ChCsEcRunner
 from .museums.chiayiam import ChiayiAMRunner
 from .museums.chiayimm import ChiayiMMRunner
@@ -23,6 +22,7 @@ from .museums.cksmh.script import CKSMHRunner
 from .museums.clab.script import CLabRunner
 from .museums.culture435 import Culture435Runner
 from .museums.fubonartmuseum.script import FuBonArtMuseumRunner
+from .museums.hcccart.script import HcccArtRunner
 from .museums.historysinica import HistorySinicaRunner
 from .museums.hkm import HKMRunner
 from .museums.hong_gah.script import HongGahRunner
@@ -62,10 +62,13 @@ from .museums.ntsec.script import NtSecRunner
 from .museums.ocam.script import OCAMRunner
 from .museums.pact import PactRunner
 from .museums.pier2 import Pier2Runner
+from .museums.ptam.script import PTAMRunner
 from .museums.redhouse import RedHouseRunner
 from .museums.shungyeart.script import ShungYeArtRunner
 from .museums.songshanculturalpark.script import SongShanCulturalParkRunner
 from .museums.taipeiexpopark.script import TaipeiExPoParkRunner
+from .museums.tam.script import TAMRunner
+from .museums.tcam.script import TcamRunner
 from .museums.tcm import TcmRunner
 from .museums.tfam.script import TFamRunner
 from .museums.tmc.script import TmcRunner
@@ -175,6 +178,10 @@ MUSEUMS_RUNNERS = {
     TyCgRunner,
     PTAMRunner,
     HcccArtRunner,
+    TcamRunner,
+    TAMRunner,
+    CCAMRunner,
+    ELandAMRunner,
 }
 
 GALLERIES_RUNNERS = {

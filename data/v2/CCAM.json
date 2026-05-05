@@ -1,0 +1,69 @@
+{
+    "information": {
+        "fullname": "彰化縣立美術館",
+        "code_name": "CCAM",
+        "external_link": "https://fam.bocach.gov.tw/",
+        "branch_coordinates": {
+            "location_code": null,
+            "raw_coordinates": "24.077744219640863, 120.54594898158135",
+            "longitude": "120.54594898158135",
+            "latitude": "24.077744219640863",
+            "google_map_place_id": null,
+            "name": null
+        },
+        "location_code": "TW-CHA",
+        "venue_type": "museum",
+        "has_rss": false,
+        "has_ics": false
+    },
+    "counts": 5,
+    "items": [
+        {
+            "title": "麗水芳華～徐細芳水墨創作展",
+            "date": "2026-04-28 ~ 2026-05-10",
+            "address": "彰化縣立美術館五樓展示室B及城市藝廊",
+            "figure": "https://ws.bocach.gov.tw/001/Upload/5/relpic/10480/53426/a5d728de-419d-431c-866e-d85a8ac7f5eb@710x470.jpeg",
+            "source_url": "https://fam.bocach.gov.tw/News_Content.aspx?n=989&s=53426",
+            "tags": null,
+            "UUID": "290f6fb1663a59b690c70c74784db0bb"
+        },
+        {
+            "title": "流光疊影--彰化縣青溪新文藝學會2026年會員聯展",
+            "date": "2026-04-28 ~ 2026-05-10",
+            "address": "彰化縣立美術館五樓展示室A",
+            "figure": "https://ws.bocach.gov.tw/001/Upload/5/relpic/10480/53537/5410bf6e-e00d-477f-94d8-95a3903f3fed@710x470.jpg",
+            "source_url": "https://fam.bocach.gov.tw/News_Content.aspx?n=989&s=53537",
+            "tags": null,
+            "UUID": "82ba3b4d75845d2f9bcff5b3b7329882"
+        },
+        {
+            "title": "「午馬墨蹤」彰化縣書法學會丙午會員聯展",
+            "date": "2026-04-28 ~ 2026-05-10",
+            "address": "彰化縣立美術館三樓展示室及城市藝廊",
+            "figure": "https://ws.bocach.gov.tw/001/Upload/5/relpic/10480/53785/b44027f7-5698-407d-b230-6e51553c6d4e@710x470.jpg",
+            "source_url": "https://fam.bocach.gov.tw/News_Content.aspx?n=989&s=53785",
+            "tags": null,
+            "UUID": "f01fb907b68c5460bf822c5e2df37a55"
+        },
+        {
+            "title": "85心象：黃輝雄雕塑展",
+            "date": "2026-05-06 ~ 2026-05-31",
+            "address": "彰化縣立美術館1樓",
+            "figure": "https://ws.bocach.gov.tw/001/Upload/5/relpic/10480/53793/39f37d9e-3a9b-4245-bdff-74d26c5d391b@710x470.jpg",
+            "source_url": "https://fam.bocach.gov.tw/News_Content.aspx?n=990&s=53793",
+            "tags": null,
+            "UUID": "8a1983e3cad95087b0461f2e62d1b737"
+        },
+        {
+            "title": "淡妝濃抹總相宜—2026墨采畫會會員聯展",
+            "date": "2026-05-12 ~ 2026-05-24",
+            "address": "彰化縣立美術館五樓展示室A",
+            "figure": "https://ws.bocach.gov.tw/001/Upload/5/relpic/10480/53710/dd056d01-a893-4ecc-85b3-eb430ea1abe8@710x470.jpg",
+            "source_url": "https://fam.bocach.gov.tw/News_Content.aspx?n=990&s=53710",
+            "tags": null,
+            "UUID": "d85910e46a5c551e9a85d33c1fb3c931"
+        }
+    ],
+    "last_update": "2026-05-04T17:16:18.550699+08:00",
+    "execution_time": 1.3219952583312988
+}
