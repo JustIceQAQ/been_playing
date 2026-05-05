@@ -1,3 +1,5 @@
+from .museums.elandam.script import ELandAMRunner
+
 from .galleries.capitalart import CapitalArtRunner
 from .galleries.cg1839 import CG1839Runner
 from .galleries.dac99 import Dac99Runner
@@ -179,6 +181,7 @@ MUSEUMS_RUNNERS = {
     TcamRunner,
     TAMRunner,
     CCAMRunner,
+    ELandAMRunner,
 }
 
 GALLERIES_RUNNERS = {
