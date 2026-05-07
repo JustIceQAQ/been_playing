@@ -5,7 +5,18 @@
     "external_link": "https://www.yiyun-art.com/",
     "branch_coordinates": [
       {
-        "location_code": "TW-TPE",
+        "location_code": {
+          "city": {
+            "name": "臺北市",
+            "code": "63000000",
+            "ios3166ma": "TW-TPE"
+          },
+          "area": {
+            "name": "大安區",
+            "code": "63000030",
+            "ios3166ma": null
+          }
+        },
         "raw_coordinates": "25.027213880907816, 121.53055350558525",
         "longitude": "121.53055350558525",
         "latitude": "25.027213880907816",
@@ -13,7 +24,18 @@
         "name": "青田館"
       },
       {
-        "location_code": "TW-TPE",
+        "location_code": {
+          "city": {
+            "name": "臺北市",
+            "code": "63000000",
+            "ios3166ma": "TW-TPE"
+          },
+          "area": {
+            "name": "大安區",
+            "code": "63000030",
+            "ios3166ma": null
+          }
+        },
         "raw_coordinates": "25.028205131565272, 121.53223852023619",
         "longitude": "121.53223852023619",
         "latitude": "25.028205131565272",
@@ -21,29 +43,32 @@
         "name": "金華館"
       }
     ],
-    "location_code": "TW-TPE"
+    "location_code": null,
+    "venue_type": "gallery",
+    "has_rss": false,
+    "has_ics": false
   },
   "counts": 2,
   "items": [
     {
-      "title": "群峰挺秀 — 余承堯 藝術展",
-      "date": "2025-12-10 ~ 2026-01-24",
+      "title": "假如故鄉",
+      "date": "2026-04-16 ~ 2026-05-15",
       "address": null,
-      "figure": "https://cdn.prod.website-files.com/6258f6ae66c51bd1d6eb4c27/69307cdd4de0f24ee059ce64_%E4%BD%99%E6%89%BF%E5%A0%AF-%E7%BE%A4%E5%B3%B0%E6%8C%BA%E7%A7%80-%E7%9B%B4-%E5%AE%98%E7%B6%B2_me%E5%B0%8F.jpg",
-      "source_url": "https://www.yiyun-art.com/exhibition/2025-13",
+      "figure": "https://cdn.prod.website-files.com/6258f6ae66c51bd1d6eb4c27/69d732577711f17eb4f7c125_2026%20If%20My%20Homeland_Chang%20Ling%20solo%20exhibition_Oderadek_Yi%20Yun%20Art.png",
+      "source_url": "https://www.yiyun-art.com/exhibition/2026-05",
       "tags": null,
-      "UUID": "97b93942953d54f0889fd6a54df45380"
+      "UUID": "f6f2482717795ef889764374d65abb13"
     },
     {
-      "title": "ONE ART Taipei 2026",
-      "date": "2026-01-16 ~ 2026-01-18",
+      "title": "假如故鄉",
+      "date": "2026-05-16 ~ 2026-06-20",
       "address": null,
-      "figure": "https://cdn.prod.website-files.com/6258f6ae66c51bd1d6eb4c27/69596aaebe16bb64582df8aa_2026%20OAT-%E7%9B%B4-A3(%E5%AE%98%E7%B6%B2)_%E5%B0%8F.jpg",
-      "source_url": "https://www.yiyun-art.com/exhibition/2026-01",
+      "figure": "https://cdn.prod.website-files.com/6258f6ae66c51bd1d6eb4c27/69f3a259f20442d980dc9186_%E5%B8%B8%E9%99%B5%E5%80%8B%E5%B1%95-%E5%81%87%E5%A6%82%E6%95%85%E9%84%89-%E7%9B%B4-A3_%E5%B0%8F.jpg",
+      "source_url": "https://www.yiyun-art.com/exhibition/2026-06",
       "tags": null,
-      "UUID": "7686be13de855ea3bc85fcf4f45dd404"
+      "UUID": "cf0e086dfa605befa4f70349294a3402"
     }
   ],
-  "last_update": "2026-01-13T02:45:59.624981+08:00",
-  "execution_time": 0.3269321918487549
+  "last_update": "2026-05-07T13:20:08.907765+08:00",
+  "execution_time": 0.1817622184753418
 }
