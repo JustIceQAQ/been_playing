@@ -1,4 +1,4 @@
-import httpx
+import httpxyz as httpx
 
 
 class HttpxAsyncClient:
