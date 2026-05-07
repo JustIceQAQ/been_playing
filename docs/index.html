@@ -156,6 +156,16 @@
         align-items: center;
       }
 
+      /* venue_type 次篩選列 */
+      .venue-selector-type-filter {
+        background: var(--bs-tertiary-bg);
+        padding: 0.4rem 0.6rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.375rem;
+        border-bottom: 1px solid var(--bs-border-color);
+      }
+
       /* Table reflow：窄螢幕每列變 block */
       @media (max-width: 575.98px) {
         #exhibition_wrapper #exhibition,
@@ -611,10 +621,18 @@
     });
     dayjs.locale("zh-tw");
 
-    $(document).ready(function () {
+    $(document).ready(async function () {
       const isDark = window.matchMedia("(prefers-color-scheme:dark)").matches;
       const runThemeSet = isDark ? setDark : setLight;
       const initTopic = getInitTopic();
+
+      // 預載場館 metadata，失敗時優雅降級
+      let venueMetaList = [];
+      try {
+        const resp = await fetch(`${URL_SOURCE}_VENUE_META.json`);
+        venueMetaList = await resp.json();
+      } catch (e) {}
+      const metaByTopic = Object.fromEntries(venueMetaList.map((v) => [v.code_name, v]));
 
       let initUrl = `${URL_SOURCE}${initTopic}.json`;
       runThemeSet();
@@ -810,121 +828,71 @@
           const dtButtonsDiv = document.querySelector(".dt-buttons");
           if (dtButtonsDiv) {
             const allBtns = Array.from(dtButtonsDiv.querySelectorAll("button"));
-            const initGroup = topicGroupMap[initTopic] || exhibitionGroupOrder[0];
 
-            const groupBtnsMap = {};
-            exhibitionGroupOrder.forEach(g => (groupBtnsMap[g] = []));
+            // 依城市 + 類型分桶；平台另存
+            const btnsByCityType = {}; // { city: { typeKey: [wrapper, ...] } }
+            const platformWrappers = [];
+
             allBtns.forEach(btn => {
               const topic = Array.from(btn.classList)
                 .map(c => c.replace(/^btn-/, ""))
-                .find(t => topicGroupMap[t]);
-              const group = topic ? topicGroupMap[topic] : null;
-              if (group && groupBtnsMap[group]) groupBtnsMap[group].push(btn);
-            });
+                .find(t => allTopicSet.has(t));
+              if (!topic) return;
 
-            // 將每個場館按鈕包成 btn-group，右側附加關注 toggle
-            exhibitionGroupOrder.forEach(g => {
-              groupBtnsMap[g] = groupBtnsMap[g].map(btn => {
-                const topic = Array.from(btn.classList)
-                  .map(c => c.replace(/^btn-/, ""))
-                  .find(t => topicGroupMap[t]);
+              const meta = metaByTopic[topic];
+              const city = meta?.city ?? null;
+              const typeKey = meta?.venue_type ?? "other";
 
-                const wrapper = document.createElement("div");
-                wrapper.className = "btn-group";
-                wrapper.dataset.topic = topic || "";
-                wrapper.appendChild(btn);
+              const wrapper = document.createElement("div");
+              wrapper.className = "btn-group";
+              wrapper.dataset.topic = topic;
+              wrapper.dataset.city = city || "";
+              wrapper.dataset.typeKey = typeKey;
+              wrapper.appendChild(btn);
 
-                if (topic) {
-                  const watched = isVenueWatched(topic);
-                  const watchBtn = document.createElement("button");
-                  watchBtn.type = "button";
-                  watchBtn.className = `btn ${watched ? "btn-warning" : "btn-outline-secondary"}`;
-                  watchBtn.innerHTML = `<i class="bi ${watched ? "bi-bell-fill" : "bi-bell"}"></i>`;
-                  watchBtn.title = watched ? "取消關注" : "加入關注";
-                  watchBtn.addEventListener("click", (e) => {
-                    e.stopPropagation();
-                    const nowWatched = toggleVenueWatch(topic);
-                    watchBtn.className = `btn ${nowWatched ? "btn-warning" : "btn-outline-secondary"}`;
-                    watchBtn.innerHTML = `<i class="bi ${nowWatched ? "bi-bell-fill" : "bi-bell"}"></i>`;
-                    watchBtn.title = nowWatched ? "取消關注" : "加入關注";
-                    if (activeGroup === "關注清單") showWatchlistTab();
-                  });
-                  wrapper.appendChild(watchBtn);
-                }
-                return wrapper;
+              const watched = isVenueWatched(topic);
+              const watchBtn = document.createElement("button");
+              watchBtn.type = "button";
+              watchBtn.className = `btn ${watched ? "btn-warning" : "btn-outline-secondary"}`;
+              watchBtn.innerHTML = `<i class="bi ${watched ? "bi-bell-fill" : "bi-bell"}"></i>`;
+              watchBtn.title = watched ? "取消關注" : "加入關注";
+              watchBtn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const nowWatched = toggleVenueWatch(topic);
+                watchBtn.className = `btn ${nowWatched ? "btn-warning" : "btn-outline-secondary"}`;
+                watchBtn.innerHTML = `<i class="bi ${nowWatched ? "bi-bell-fill" : "bi-bell"}"></i>`;
+                watchBtn.title = nowWatched ? "取消關注" : "加入關注";
+                if (activeCity === "關注清單") renderContent();
               });
+              wrapper.appendChild(watchBtn);
+
+              if (city === null) {
+                platformWrappers.push(wrapper);
+              } else {
+                if (!btnsByCityType[city]) btnsByCityType[city] = {};
+                if (!btnsByCityType[city][typeKey]) btnsByCityType[city][typeKey] = [];
+                btnsByCityType[city][typeKey].push(wrapper);
+              }
             });
 
+            // 取得所有非平台 wrapper
+            const allCityWrappers = () =>
+              Object.values(btnsByCityType).flatMap(t => Object.values(t).flat());
+
+            // 狀態
+            let activeCity = "全台";
+            let activeType = "all";
+
+            // DOM 結構
             const tabsContainer = document.createElement("div");
             tabsContainer.className = "venue-selector";
 
-            const nav = document.createElement("ul");
-            nav.className = "nav nav-tabs flex-wrap venue-selector-nav";
+            const cityNav = document.createElement("ul");
+            cityNav.className = "nav nav-tabs flex-wrap venue-selector-nav";
 
-            const content = document.createElement("div");
-            content.className = "venue-selector-content";
-
-            let activeGroup = initGroup;
-
-            const showWatchlistTab = () => {
-              activeGroup = "關注清單";
-              nav.querySelectorAll(".nav-link").forEach(link => {
-                link.classList.toggle("active", link.dataset.group === "關注清單");
-              });
-              content.innerHTML = "";
-              let count = 0;
-              Object.values(groupBtnsMap).flat().forEach(wrapper => {
-                const topic = wrapper.dataset && wrapper.dataset.topic;
-                if (topic && isVenueWatched(topic)) {
-                  wrapper.style.display = "";
-                  content.appendChild(wrapper);
-                  count++;
-                }
-              });
-              if (count === 0) {
-                const empty = document.createElement("p");
-                empty.className = "text-muted m-2";
-                empty.textContent = "尚未關注任何場館，點擊場館旁的 🔔 即可加入關注";
-                content.appendChild(empty);
-              }
-            };
-
-            const showGroup = (groupLabel) => {
-              activeGroup = groupLabel;
-              nav.querySelectorAll(".nav-link").forEach(link => {
-                link.classList.toggle("active", link.dataset.group === groupLabel);
-              });
-              content.innerHTML = "";
-              (groupBtnsMap[groupLabel] || []).forEach(wrapper => {
-                wrapper.style.display = "";
-                content.appendChild(wrapper);
-              });
-            };
-
-            // 「關注清單」Tab 置第一
-            const watchlistLi = document.createElement("li");
-            watchlistLi.className = "nav-item";
-            const watchlistLink = document.createElement("button");
-            watchlistLink.className = "nav-link";
-            watchlistLink.dataset.group = "關注清單";
-            watchlistLink.innerHTML = `<i class="bi bi-bell-fill"></i> 關注清單`;
-            watchlistLink.addEventListener("click", () => showWatchlistTab());
-            watchlistLi.appendChild(watchlistLink);
-            nav.appendChild(watchlistLi);
-
-            exhibitionGroupOrder.forEach(groupLabel => {
-              const wrappers = groupBtnsMap[groupLabel];
-              if (!wrappers || wrappers.length === 0) return;
-              const li = document.createElement("li");
-              li.className = "nav-item";
-              const link = document.createElement("button");
-              link.className = `nav-link${groupLabel === initGroup ? " active" : ""}`;
-              link.dataset.group = groupLabel;
-              link.innerHTML = `${groupLabel} <span class="badge bg-secondary ms-1">${wrappers.length}</span>`;
-              link.addEventListener("click", () => showGroup(groupLabel));
-              li.appendChild(link);
-              nav.appendChild(li);
-            });
+            const typeFilter = document.createElement("div");
+            typeFilter.className = "venue-selector-type-filter";
+            typeFilter.style.display = "none";
 
             const filterInput = document.createElement("input");
             filterInput.type = "text";
@@ -932,39 +900,152 @@
             filterInput.className = "form-control form-control-sm";
             filterInput.style.cssText = "border-radius:0; border-left:0; border-right:0;";
 
-            filterInput.addEventListener("input", function () {
-              const query = this.value.toLowerCase();
-              if (!query) {
-                nav.style.pointerEvents = "";
-                nav.style.opacity = "";
-                showGroup(activeGroup);
+            const content = document.createElement("div");
+            content.className = "venue-selector-content";
+
+            // 渲染 venue_type 次篩選列
+            const renderTypeFilter = () => {
+              typeFilter.innerHTML = "";
+
+              if (activeCity === "關注清單" || activeCity === "🎫 票務平台") {
+                typeFilter.style.display = "none";
                 return;
               }
-              nav.style.pointerEvents = "none";
-              nav.style.opacity = "0.4";
-              content.innerHTML = "";
-              Object.values(groupBtnsMap).flat().forEach(wrapper => {
-                if (wrapper.textContent.toLowerCase().includes(query)) {
-                  wrapper.style.display = "";
-                  content.appendChild(wrapper);
-                }
+
+              const pool = activeCity === "全台" ? allCityWrappers() : Object.values(btnsByCityType[activeCity] || {}).flat();
+              const byType = pool.reduce((acc, w) => {
+                const t = w.dataset.typeKey;
+                (acc[t] = acc[t] || []).push(w);
+                return acc;
+              }, {});
+
+              if (Object.keys(byType).length <= 1) {
+                typeFilter.style.display = "none";
+                return;
+              }
+              typeFilter.style.display = "";
+
+              const mkPill = (key, label, count) => {
+                const pill = document.createElement("button");
+                pill.className = `btn btn-sm ${activeType === key ? "btn-primary" : "btn-outline-secondary"}`;
+                pill.innerHTML = count != null
+                  ? `${label} <span class="badge bg-secondary ms-1">${count}</span>`
+                  : label;
+                pill.addEventListener("click", () => {
+                  activeType = key;
+                  renderTypeFilter();
+                  renderContent();
+                });
+                return pill;
+              };
+
+              typeFilter.appendChild(mkPill("all", "全部類型", pool.length));
+              Object.entries(byType).forEach(([k, ws]) => {
+                typeFilter.appendChild(mkPill(k, venueTypeDisplayMap[k] || k, ws.length));
               });
+            };
+
+            // 渲染場館按鈕區
+            const renderContent = (searchQuery = "") => {
+              content.innerHTML = "";
+              let wrappers = [];
+
+              if (searchQuery) {
+                wrappers = [...allCityWrappers(), ...platformWrappers]
+                  .filter(w => w.textContent.toLowerCase().includes(searchQuery));
+              } else if (activeCity === "關注清單") {
+                wrappers = [...allCityWrappers(), ...platformWrappers]
+                  .filter(w => isVenueWatched(w.dataset.topic));
+              } else if (activeCity === "🎫 票務平台") {
+                wrappers = platformWrappers;
+              } else {
+                const pool = activeCity === "全台"
+                  ? allCityWrappers()
+                  : Object.values(btnsByCityType[activeCity] || {}).flat();
+                wrappers = activeType === "all"
+                  ? pool
+                  : pool.filter(w => w.dataset.typeKey === activeType);
+              }
+
+              if (activeCity === "關注清單" && wrappers.length === 0) {
+                const empty = document.createElement("p");
+                empty.className = "text-muted m-2";
+                empty.textContent = "尚未關注任何場館，點擊場館旁的 🔔 即可加入關注";
+                content.appendChild(empty);
+              } else {
+                wrappers.forEach(w => content.appendChild(w));
+              }
+            };
+
+            // 切換城市 tab
+            const selectCity = (cityName) => {
+              activeCity = cityName;
+              activeType = "all";
+              cityNav.querySelectorAll(".nav-link").forEach(l =>
+                l.classList.toggle("active", l.dataset.city === cityName),
+              );
+              renderTypeFilter();
+              renderContent();
+            };
+
+            // 建立城市 tab
+            const addCityTab = (cityKey, label) => {
+              const li = document.createElement("li");
+              li.className = "nav-item";
+              const btn = document.createElement("button");
+              btn.className = "nav-link";
+              btn.dataset.city = cityKey;
+              btn.innerHTML = label;
+              btn.addEventListener("click", () => selectCity(cityKey));
+              li.appendChild(btn);
+              cityNav.appendChild(li);
+            };
+
+            addCityTab("關注清單", '<i class="bi bi-bell-fill"></i> 關注清單');
+            addCityTab("全台", "📍 全台");
+            // 依 cityDisplayOrder 排列，再補上不在清單內的城市
+            const knownCities = cityDisplayOrder.filter(c => btnsByCityType[c]);
+            const extraCities = Object.keys(btnsByCityType).filter(c => !cityDisplayOrder.includes(c));
+            [...knownCities, ...extraCities].forEach(city => {
+              const total = Object.values(btnsByCityType[city]).flat().length;
+              addCityTab(city, `${city} <span class="badge bg-secondary ms-1">${total}</span>`);
+            });
+            if (platformWrappers.length > 0)
+              addCityTab("🎫 票務平台", `🎫 票務平台 <span class="badge bg-secondary ms-1">${platformWrappers.length}</span>`);
+
+            filterInput.addEventListener("input", function () {
+              const query = this.value.toLowerCase();
+              if (query) {
+                cityNav.style.pointerEvents = "none";
+                cityNav.style.opacity = "0.4";
+                typeFilter.style.display = "none";
+              } else {
+                cityNav.style.pointerEvents = "";
+                cityNav.style.opacity = "";
+                renderTypeFilter();
+              }
+              renderContent(query);
             });
 
-            tabsContainer.appendChild(nav);
+            tabsContainer.appendChild(cityNav);
+            tabsContainer.appendChild(typeFilter);
             tabsContainer.appendChild(filterInput);
             tabsContainer.appendChild(content);
 
             dtButtonsDiv.parentNode.insertBefore(tabsContainer, dtButtonsDiv);
             dtButtonsDiv.style.display = "none";
 
+            // 初始 tab 選擇
             const urlTopic = new URLSearchParams(window.location.search).get("topic");
-            const hasExplicitTopic = urlTopic && allTopicSet.has(urlTopic);
             const hasWatchlist = loadVenueWatchlist().some(t => allTopicSet.has(t));
-            if (!hasExplicitTopic && hasWatchlist) {
-              showWatchlistTab();
+            if (!urlTopic && hasWatchlist) {
+              selectCity("關注清單");
             } else {
-              showGroup(initGroup);
+              const initMeta = metaByTopic[initTopic];
+              const initCity = initMeta
+                ? (initMeta.city === null ? "🎫 票務平台" : initMeta.city)
+                : "全台";
+              selectCity(initCity);
             }
           }
         },

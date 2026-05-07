@@ -304,75 +304,25 @@ const exhibitionTopicClass = [
 
 const allTopicClass = [].concat(exhibitionTopicClass, platformTopicClass);
 
-const exhibitionGroupOrder = [
-    "中正・大同・萬華",
-    "中山・大安",
-    "信義・松山・南港",
-    "士林・北投",
-    "新北・基隆",
-    "票務平台",
+// 城市顯示順序（北 → 南，新增城市自動落到正確位置）
+const cityDisplayOrder = [
+    "臺北市", "新北市", "基隆市", "桃園市",
+    "新竹市", "新竹縣", "苗栗縣",
+    "臺中市", "彰化縣", "南投縣", "雲林縣",
+    "嘉義市", "嘉義縣", "臺南市", "高雄市", "屏東縣",
+    "宜蘭縣", "花蓮縣", "臺東縣",
+    "澎湖縣", "金門縣", "連江縣",
 ];
 
-const topicGroupMap = {
-    // 中正・大同・萬華
-    CKSMH: "中正・大同・萬華",
-    Ntm: "中正・大同・萬華",
-    Nmh: "中正・大同・萬華",
-    NTCRI: "中正・大同・萬華",
-    MuseumPost: "中正・大同・萬華",
-    NCPI: "中正・大同・萬華",
-    n228mm: "中正・大同・萬華",
-    NTAEC: "中正・大同・萬華",
-    AAAArchives: "中正・大同・萬華",
-    HuaShan1914: "中正・大同・萬華",
-    MoCaTaipei: "中正・大同・萬華",
-    TncMMM: "中正・大同・萬華",
-    Nrm: "中正・大同・萬華",
-    BoPiLiao: "中正・大同・萬華",
-    RedHouse: "中正・大同・萬華",
-    // 中山・大安
-    TFam: "中山・大安",
-    TaipeiExPoPark: "中山・大安",
-    Jam: "中山・大安",
-    KingCarArt: "中山・大安",
-    NTNUArtMuseum: "中山・大安",
-    MoNTUE: "中山・大安",
-    FuBonArtMuseum: "中山・大安",
-    // 信義・松山・南港
-    PACT: "信義・松山・南港",
-    SongShanCulturalPark: "信義・松山・南港",
-    CLab: "信義・松山・南港",
-    TwTc: "信義・松山・南港",
-    Yatsen: "信義・松山・南港",
-    ChiPoLin: "信義・松山・南港",
-    Tmc: "信義・松山・南港",
-    // 士林・北投
-    Npm: "士林・北投",
-    NtSec: "士林・北投",
-    ShungYeArt: "中山・大安",
-    KdMoFa: "士林・北投",
-    HongGah: "士林・北投",
-    YoChangArt: "新北・基隆",
-    // 新北・基隆
-    Mwr: "新北・基隆",
-    NHRM: "新北・基隆",
-    NtcArtMuseum: "新北・基隆",
-    Culture435: "新北・基隆",
-    NtcCeramics: "新北・基隆",
-    kmoa: "新北・基隆",
-    OCAM: "新北・基隆",
-    // 票務平台
-    KLook: "票務平台",
-    BooksTickets: "票務平台",
-    UdnFunLife: "票務平台",
-    OpenTix: "票務平台",
-    KKTix: "票務平台",
-    IBon: "票務平台",
-    KKDay: "票務平台",
-    CultureExpress: "票務平台",
-    GaCc: "票務平台",
-    ArtEmperor: "票務平台",
-    NTT: "票務平台",
+// venue_type → 中文顯示標籤（UI 顯示用）
+const venueTypeDisplayMap = {
+    museum: "🏛️ 博物館",
+    memorial: "🏯 紀念館",
+    art_museum: "🖼️ 美術館",
+    gallery: "🎨 藝廊",
+    creative_park: "🏭 文創園區",
+    art_village: "🧪 藝術村",
+    expo_center: "🏢 展覽中心",
 };
 
 const allTopicSet = new Set(
