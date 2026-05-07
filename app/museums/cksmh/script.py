@@ -9,7 +9,8 @@ from helpers.headers_helper import generate_headers
 from helpers.image.imgur.helper import ImgurImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 from typing import cast
@@ -28,7 +29,7 @@ class CKSMHRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
+            location_code=Taiwan.taipei.zhong_zheng_63000050,
             fullname="中正紀念堂",
             code_name="CKSMH",
             external_link="https://www.cksmh.gov.tw/Default.aspx",
@@ -36,7 +37,7 @@ class CKSMHRunner(RunnerInit):
                 google_map_place_id="ChIJTamiuZ2pQjQRsmnfkkID6UM",
                 raw_coordinates="25.035657453594702, 121.52023682270445",
             ),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.MEMORIAL,
         )
 
     async def fetch_response(self) -> str:

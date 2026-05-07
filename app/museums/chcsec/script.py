@@ -6,7 +6,8 @@ from app.museums.chcsec.parse import ChCsEcParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -25,12 +26,12 @@ class ChCsEcRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.CHANGHUA_COUNTY,
+            location_code=Taiwan.changhua.zhang_hua_10007010,
             fullname="國立彰化生活美學館",
             code_name="chcsec",
             external_link="https://www.chcsec.gov.tw/News_actives.aspx?n=4020&sms=13269&_Query=b7c33695-58eb-4e1d-82e1-5e73654b385a&_CSN=",
             branch_coordinates=Coordinate(raw_coordinates="24.076669410098226, 120.55732233791466"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.EXPO_CENTER,
         )
 
     async def fetch_response(self):

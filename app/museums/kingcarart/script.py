@@ -9,7 +9,8 @@ from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_6
 from typing import cast
@@ -24,7 +25,6 @@ class KingCarArtRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="金車文藝中心",
             code_name="KingCarArt",
             external_link="https://www.kingcarart.org.tw/exhibitions/current",
@@ -32,13 +32,15 @@ class KingCarArtRunner(RunnerInit):
                 Coordinate(
                     name="臺北承德館",
                     raw_coordinates="25.067779239946375, 121.51865322216524",
+                    location_code=Taiwan.taipei.zhong_zheng_63000050,
                 ),
                 Coordinate(
                     name="臺北南京館",
                     raw_coordinates="25.052598382305003, 121.5278585635071",
+                    location_code=Taiwan.taipei.da_tong_63000060,
                 ),
             ],
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.EXPO_CENTER,
         )
 
     async def fetch_response(self):

@@ -5,7 +5,8 @@ from app.museums.ioesinica.parse import IOESinicaParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
@@ -26,7 +27,7 @@ class IOESinicaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
+            location_code=Taiwan.taipei.nan_gang_63000090,
             fullname="中央研究院-民族學研究所博物館",
             code_name="IOESinica",
             external_link="https://www.ioe.sinica.edu.tw/",

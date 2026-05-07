@@ -9,7 +9,8 @@ from helpers.crawler.rnet.helper import RNetAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
@@ -29,12 +30,12 @@ class HongGahRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
+            location_code=Taiwan.taipei.bei_tou_63000120,
             fullname="鳳甲美術館",
             code_name="HongGah",
             external_link="https://hong-gah.org.tw/exhibitions-zh",
             branch_coordinates=Coordinate(raw_coordinates="25.125315737958747, 121.49922632559256"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.ART_MUSEUM,
         )
 
     async def fetch_response(self):

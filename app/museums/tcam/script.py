@@ -8,7 +8,8 @@ from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Coordinate, Information
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 
@@ -22,12 +23,12 @@ class TcamRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAICHUNG_CITY,
+            location_code=Taiwan.taichung.xi_tun_66000060,
             fullname="臺中市立美術館",
             code_name="Tcam",
             external_link="https://www.tcam.museum/",
             branch_coordinates=Coordinate(raw_coordinates="24.193055105364973, 120.65443027094344"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.ART_MUSEUM,
         )
 
     async def fetch_response(self):

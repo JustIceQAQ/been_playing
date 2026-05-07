@@ -9,7 +9,8 @@ from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -26,12 +27,12 @@ class NHRMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.NEW_TAIPEI_CITY,
+            location_code=Taiwan.new_taipei.xin_dian_65000060,
             fullname="國家人權博物館",
             code_name="NHRM",
             external_link="https://www.nhrm.gov.tw/w/nhrm/ExhibitionA",
             branch_coordinates=Coordinate(raw_coordinates="24.987027946019857, 121.53208236236004"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.MEMORIAL,
         )
 
     async def fetch_response(self):

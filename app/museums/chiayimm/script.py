@@ -6,7 +6,8 @@ from app.museums.chiayimm.parse import ChiayiMMParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -25,7 +26,7 @@ class ChiayiMMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.CHIAYI_CITY,
+            location_code=Taiwan.chiayi_city.dong_10020010,
             fullname="嘉義市立博物館",
             code_name="ChiayiMM",
             external_link="https://museum.chiayi.gov.tw/",

@@ -8,7 +8,8 @@ from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 
@@ -22,7 +23,6 @@ class NTCRIRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="國立台灣工藝研究發展中心",
             code_name="NTCRI",
             external_link=(
@@ -35,7 +35,7 @@ class NTCRIRunner(RunnerInit):
             ),
             branch_coordinates=[
                 Coordinate(
-                    location_code=TaiwanCity.TAIPEI_CITY,
+                    location_code=Taiwan.taipei.zhong_zheng_63000050,
                     name="臺北當代工藝設計分館",
                     raw_coordinates="25.03210292140622, 121.51234399386772",
                 ),

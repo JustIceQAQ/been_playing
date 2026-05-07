@@ -5,7 +5,8 @@ from app.museums.mofia.parse import MofiaParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
@@ -22,7 +23,7 @@ class MofiaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAICHUNG_CITY,
+            location_code=Taiwan.taichung.da_li_66000280,
             fullname="臺中市纖維工藝博物館",
             code_name="Mofia",
             external_link="https://mofia.taichung.gov.tw/",

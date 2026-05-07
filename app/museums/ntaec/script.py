@@ -6,7 +6,8 @@ from app.museums.ntaec.parse import NTAECParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -25,7 +26,7 @@ class NTAECRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
+            location_code=Taiwan.taipei.zhong_zheng_63000050,
             fullname="國立台灣藝術教育館",
             code_name="NTAEC",
             external_link="https://www.arte.gov.tw/",

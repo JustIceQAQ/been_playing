@@ -5,7 +5,8 @@ from app.museums.tycg.parse import TyCgParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
@@ -27,7 +28,7 @@ class TyCgRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAOYUAN_CITY,
+            location_code=Taiwan.taoyuan.da_xi_68000030,
             fullname="桃園市立大溪木藝生態博物館",
             code_name="TyCg",
             external_link="https://wem.tycg.gov.tw/",

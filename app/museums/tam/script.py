@@ -10,7 +10,8 @@ from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Coordinate, Information
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3
 
@@ -24,12 +25,12 @@ class TAMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAITUNG_COUNTY,
-            fullname="台東美術館",
+            location_code=Taiwan.taitung.tai_dong_10014010,
+            fullname="臺東美術館",
             code_name="TAM",
             external_link="https://tm.ccl.ttct.edu.tw/",
             branch_coordinates=Coordinate(raw_coordinates="22.764445563601402, 121.14989120697749"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.ART_MUSEUM,
         )
 
     async def fetch_response(self):

@@ -13,7 +13,8 @@ from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import get_date_now, month_3
 
@@ -27,12 +28,32 @@ class TwTcRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="台北世貿中心",
             code_name="TwTc",
             external_link="https://twtc.com.tw/exhibition?p=home",
-            branch_coordinates=Coordinate(raw_coordinates="25.03358007614386, 121.56240955530657"),
-            venue_type=VenueType.MUSEUM,
+            branch_coordinates=[
+                Coordinate(
+                    location_code=Taiwan.taipei.xin_yi_63000020,
+                    name="世貿一館",
+                    raw_coordinates="25.03358007614386, 121.56240955530657",
+                ),
+                Coordinate(
+                    location_code=Taiwan.taipei.nan_gang_63000090,
+                    name="南港展覽館1館",
+                    raw_coordinates="25.056650206854755, 121.61812883883394",
+                ),
+                Coordinate(
+                    location_code=Taiwan.taipei.nan_gang_63000090,
+                    name="南港展覽館2館",
+                    raw_coordinates="25.05610107423643, 121.61623519926233",
+                ),
+                Coordinate(
+                    location_code=Taiwan.taichung.xi_tun_66000060,
+                    name="臺中國際會展中心",
+                    raw_coordinates="24.19381567538611, 120.65129562551822",
+                ),
+            ],
+            venue_type=VenueType.EXPO_CENTER,
         )
 
     def extract_import(self, response: httpx.Response) -> dict:

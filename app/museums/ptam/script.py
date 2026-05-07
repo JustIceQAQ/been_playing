@@ -5,7 +5,8 @@ from app.museums.ptam.parse import PTAMParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
@@ -28,12 +29,12 @@ class PTAMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.PINGTUNG_COUNTY,
+            location_code=Taiwan.pingtung.ping_dong_10013010,
             fullname="屏東美術館",
             code_name="PTAM",
             external_link="https://ptam.ptcg.gov.tw/",
             branch_coordinates=Coordinate(raw_coordinates="22.674969712813024, 120.48993190095096"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.ART_MUSEUM,
         )
 
     async def fetch_response(self):

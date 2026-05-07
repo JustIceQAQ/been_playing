@@ -349,10 +349,10 @@ const topicGroupMap = {
     // 士林・北投
     Npm: "士林・北投",
     NtSec: "士林・北投",
-    ShungYeArt: "士林・北投",
+    ShungYeArt: "中山・大安",
     KdMoFa: "士林・北投",
     HongGah: "士林・北投",
-    YoChangArt: "士林・北投",
+    YoChangArt: "新北・基隆",
     // 新北・基隆
     Mwr: "新北・基隆",
     NHRM: "新北・基隆",

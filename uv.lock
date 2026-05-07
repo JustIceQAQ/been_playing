@@ -128,6 +128,7 @@ dependencies = [
     { name = "h11" },
     { name = "html5lib" },
     { name = "httpx" },
+    { name = "httpxyz" },
     { name = "icalendar" },
     { name = "niquests" },
     { name = "orjson" },
@@ -176,6 +177,7 @@ requires-dist = [
     { name = "h11", specifier = ">=0.16.0" },
     { name = "html5lib", specifier = "==1.1" },
     { name = "httpx", specifier = ">=0.28.1" },
+    { name = "httpxyz", specifier = ">=0.31.1" },
     { name = "icalendar", specifier = ">=7.1.0" },
     { name = "niquests", specifier = ">=3.18.7" },
     { name = "orjson", specifier = ">=3.11.8,<4" },
@@ -292,11 +294,11 @@ wheels = [
 
 [[package]]
 name = "certifi"
-version = "2026.1.4"
+version = "2026.4.22"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/e0/2d/a891ca51311197f6ad14a7ef42e2399f36cf2f9bd44752b3dc4eab60fdc5/certifi-2026.1.4.tar.gz", hash = "sha256:ac726dd470482006e014ad384921ed6438c457018f4b3d204aea4281258b2120", size = 154268, upload-time = "2026-01-04T02:42:41.825Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/25/ee/6caf7a40c36a1220410afe15a1cc64993a1f864871f698c0f93acb72842a/certifi-2026.4.22.tar.gz", hash = "sha256:8d455352a37b71bf76a79caa83a3d6c25afee4a385d632127b6afb3963f1c580", size = 137077, upload-time = "2026-04-22T11:26:11.191Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e6/ad/3cc14f097111b4de0040c83a525973216457bbeeb63739ef1ed275c1c021/certifi-2026.1.4-py3-none-any.whl", hash = "sha256:9943707519e4add1115f44c2bc244f782c0249876bf51b6599fee1ffbedd685c", size = 152900, upload-time = "2026-01-04T02:42:40.15Z" },
+    { url = "https://files.pythonhosted.org/packages/22/30/7cd8fdcdfbc5b869528b079bfb76dcdf6056b1a2097a662e5e8c04f42965/certifi-2026.4.22-py3-none-any.whl", hash = "sha256:3cb2210c8f88ba2318d29b0388d1023c8492ff72ecdde4ebdaddbb13a31b1c4a", size = 135707, upload-time = "2026-04-22T11:26:09.372Z" },
 ]
 
 [[package]]
@@ -827,6 +829,19 @@ wheels = [
 ]
 
 [[package]]
+name = "httpcorexyz"
+version = "1.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "certifi" },
+    { name = "h11" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/26/c7/cb12e738c9bf3b8a0b90afc833b0c96c1b87b1fa644ba163d51104e8ad53/httpcorexyz-1.1.0.tar.gz", hash = "sha256:2678734930cbfe575a25356a0688b2290ced297865112e7a3cc742308db90b15", size = 95953, upload-time = "2026-04-25T18:10:21.795Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ce/93/71eabbde12b7211b327a1e5282755f066a191d02f9a8ce7dca961fae3518/httpcorexyz-1.1.0-py3-none-any.whl", hash = "sha256:98c6078baccc4d7b5c8e804e78297f785ff6dd53439e6135dae4c19326753faf", size = 83153, upload-time = "2026-04-25T18:10:19.278Z" },
+]
+
+[[package]]
 name = "httpx"
 version = "0.28.1"
 source = { registry = "https://pypi.org/simple" }
@@ -848,6 +863,21 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/0f/4c/751061ffa58615a32c31b2d82e8482be8dd4a89154f003147acee90f2be9/httpx_sse-0.4.3.tar.gz", hash = "sha256:9b1ed0127459a66014aec3c56bebd93da3c1bc8bb6618c8082039a44889a755d", size = 15943, upload-time = "2025-10-10T21:48:22.271Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d2/fd/6668e5aec43ab844de6fc74927e155a3b37bf40d7c3790e49fc0406b6578/httpx_sse-0.4.3-py3-none-any.whl", hash = "sha256:0ac1c9fe3c0afad2e0ebb25a934a59f4c7823b60792691f779fad2c5568830fc", size = 8960, upload-time = "2025-10-10T21:48:21.158Z" },
+]
+
+[[package]]
+name = "httpxyz"
+version = "0.31.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "certifi" },
+    { name = "httpcorexyz" },
+    { name = "idna" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/9a/2d/b30e88adba9fba946170870d44a19186aeaa3eddd1dbd2d5b9e48eda7750/httpxyz-0.31.1.tar.gz", hash = "sha256:21dba6eeb846830ccb8b9ce221cddff58a9ca24018b3f55bb817c88171306fb3", size = 148977, upload-time = "2026-04-29T07:39:08.549Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/38/3a/f119c0f3bc897997f870cd4cc70f08f0f17025cde56fe4bb8418614bd0ab/httpxyz-0.31.1-py3-none-any.whl", hash = "sha256:ade7f6f0b513cb9811f9faa703f2a0e222327ab034440a8da6583e73be7a9e37", size = 76791, upload-time = "2026-04-29T07:39:05.97Z" },
 ]
 
 [[package]]

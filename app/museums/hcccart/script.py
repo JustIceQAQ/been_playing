@@ -7,7 +7,8 @@ from app.museums.hcccart.parse import HcccArtParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
@@ -29,12 +30,12 @@ class HcccArtRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.HUALIEN_COUNTY,
+            location_code=Taiwan.hualien.hua_lian_10015010,
             fullname="花蓮美術館",
             code_name="HcccArt",
             external_link="https://art.hccc.gov.tw/",
             branch_coordinates=Coordinate(raw_coordinates="23.99010271299585, 121.62877324046998"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.ART_MUSEUM,
         )
 
     async def fetch_response(self):

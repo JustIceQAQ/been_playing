@@ -8,7 +8,8 @@ from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
@@ -25,12 +26,12 @@ class KiShuAnRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
+            location_code=Taiwan.taipei.zhong_zheng_63000050,
             fullname="紀州庵文學森林",
             code_name="KiShuAn",
             external_link="https://kishuan.org.tw/activity.htm",
             branch_coordinates=Coordinate(raw_coordinates="25.021773564949243, 121.5206021625705"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.MEMORIAL,
         )
 
     async def fetch_response(self):

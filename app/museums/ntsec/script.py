@@ -12,7 +12,8 @@ from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, ExhibitionItem, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import get_datetime_now, month_3, get_asyncio_rate_limit
 
@@ -29,7 +30,7 @@ class NtSecRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
+            location_code=Taiwan.taipei.shi_lin_63000110,
             fullname="國立臺灣科學教育館",
             code_name="NtSec",
             external_link="https://www.ntsec.gov.tw/article/list.aspx?a=25",

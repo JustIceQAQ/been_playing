@@ -8,7 +8,8 @@ from app.museums.kmoa.parse import KmoaParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -25,12 +26,12 @@ class KmoaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.KEELUNG_CITY,
+            location_code=Taiwan.keelung.zhong_shan_10017050,
             fullname="基隆美術館",
             code_name="kmoa",
             external_link="https://kmoa.klcg.gov.tw/News_Photo.aspx?n=7484&sms=12489",
             branch_coordinates=Coordinate(raw_coordinates="25.131248388298207, 121.74399937483508"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.ART_MUSEUM,
         )
 
     async def fetch_sub_response(self, client: httpx.AsyncClient, context: str, *args, **kwargs) -> list[str]:

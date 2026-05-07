@@ -6,7 +6,8 @@ from app.galleries.yiyun.parse import YiYunParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -25,18 +26,17 @@ class YiYunRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="異雲書屋",
             code_name="YiYun",
             external_link="https://www.yiyun-art.com/",
             branch_coordinates=[
                 Coordinate(
-                    location_code=TaiwanCity.TAIPEI_CITY,
+                    location_code=Taiwan.taipei.da_an_63000030,
                     name="青田館",
                     raw_coordinates="25.027213880907816, 121.53055350558525",
                 ),
                 Coordinate(
-                    location_code=TaiwanCity.TAIPEI_CITY,
+                    location_code=Taiwan.taipei.da_an_63000030,
                     name="金華館",
                     raw_coordinates="25.028205131565272, 121.53223852023619",
                 ),

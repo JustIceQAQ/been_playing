@@ -5,7 +5,8 @@ from app.museums.redhouse.parse import RedHouseParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
@@ -25,12 +26,12 @@ class RedHouseRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
+            location_code=Taiwan.taipei.wan_hua_63000070,
             fullname="西門紅樓",
             code_name="RedHouse",
             external_link="https://www.redhouse.taipei/index.aspx",
             branch_coordinates=Coordinate(raw_coordinates="25.042286045915937, 121.50683773908234"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.MEMORIAL,
         )
 
     async def fetch_response(self):

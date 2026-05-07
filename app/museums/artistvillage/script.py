@@ -6,7 +6,8 @@ from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3, get_this_date_year
 from helpers.cache.none.helper import NoneCache
@@ -22,14 +23,14 @@ class ArtistVillageRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
+            location_code=Taiwan.taipei.zhong_zheng_63000050,
             fullname="寶藏巖國際藝術村",
             code_name="ArtistVillage",
             external_link="https://www.artistvillage.org/event.php",
             branch_coordinates=Coordinate(
                 raw_coordinates="25.011242493165764, 121.53225091835029",
             ),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.ART_VILLAGE,
         )
 
     async def fetch_response(self):

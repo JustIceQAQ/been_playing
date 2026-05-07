@@ -5,7 +5,8 @@ from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
@@ -73,7 +74,7 @@ class {{cookiecutter.script_code}}Runner(RunnerInit):
         )
         {% else %}
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
+            location_code=Taiwan.taipei,
             fullname="",
             code_name="",
             external_link="",

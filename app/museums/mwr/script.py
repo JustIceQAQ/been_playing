@@ -10,7 +10,8 @@ from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -26,7 +27,7 @@ class MwrRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.NEW_TAIPEI_CITY,
+            location_code=Taiwan.new_taipei.yong_he_65000040,
             fullname="世界宗教博物館",
             code_name="Mwr",
             external_link="https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070",

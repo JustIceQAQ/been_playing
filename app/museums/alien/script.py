@@ -6,7 +6,8 @@ from app.museums.alien.parse import AlienParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -25,12 +26,12 @@ class AlienRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.KAOHSIUNG_CITY,
+            location_code=Taiwan.kaohsiung.gu_shan_64000020,
             fullname="金馬賓館當代美術館",
             code_name="Alien",
             external_link="https://www.alien.com.tw/u/zh-tw/list/exhibitions",
             branch_coordinates=Coordinate(raw_coordinates="22.627619441196142, 120.278842832973"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.ART_MUSEUM,
         )
 
     async def fetch_response(self):

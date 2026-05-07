@@ -5,7 +5,8 @@ from app.museums.hkm.parse import HKMParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
@@ -27,12 +28,12 @@ class HKMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
+            location_code=Taiwan.taipei.shi_lin_63000110,
             fullname="華岡博物館",
             code_name="hkm",
             external_link="https://hkm.pccu.edu.tw/",
             branch_coordinates=Coordinate(raw_coordinates="25.13827980838548, 121.54058154232688"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.ART_MUSEUM,
         )
 
     async def fetch_response(self):
