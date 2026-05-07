@@ -23,6 +23,28 @@ from helpers.image.turboimagehost.helper import TurboImageHost
 ROOT_PATH = Path(__file__).parent.absolute()
 
 
+async def generate_venue_meta(information: list["Information"]):
+    venues = []
+    for info in information:
+        city_name = None
+        area_name = None
+        if info.location_code is not None:
+            city_name = info.location_code.city.name
+            area_name = info.location_code.area.name if info.location_code.area else None
+        venues.append(
+            {
+                "code_name": info.code_name,
+                "fullname": info.fullname,
+                "venue_type": info.venue_type,
+                "city": city_name,
+                "area": area_name,
+            }
+        )
+
+    async with aiofiles.open(ROOT_PATH / "data" / "v2" / "_VENUE_META.json", "wb+") as afp:
+        await afp.write(orjson.dumps(venues, default=orjson_default_handler))
+
+
 async def generate_location(information: list["Information"]):
     ok_centers = []
 
@@ -104,6 +126,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
 
     await asyncio.gather(*[run_with_sem(r) for r in all_async_script_runners], return_exceptions=True)
     await generate_location(all_script_information)
+    await generate_venue_meta(all_script_information)
 
     await last_week_update.set_last_week_items()
 
