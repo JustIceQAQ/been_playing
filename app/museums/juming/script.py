@@ -6,7 +6,8 @@ from app.museums.juming.parse import JuMingParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 
 from helpers.utils_helper import month_3
 from helpers.cache.none.helper import NoneCache
@@ -27,12 +28,12 @@ class JuMingRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.NEW_TAIPEI_CITY,
+            location_code=Taiwan.new_taipei.jin_shan_65000270,
             fullname="朱銘美術館",
             code_name="JuMing",
             external_link="https://www.juming.org.tw/",
             branch_coordinates=Coordinate(raw_coordinates="25.246492169720533, 121.61118935623358"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.ART_MUSEUM,
         )
 
     async def fetch_response(self):

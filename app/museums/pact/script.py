@@ -4,7 +4,8 @@ from app.museums.pact.parse import PactParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
@@ -24,7 +25,7 @@ class PactRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
+            location_code=Taiwan.taipei.song_shan_63000010,
             fullname="台北偶戲館",
             code_name="PACT",
             external_link="https://www.pact.taipei/exhibition_list.aspx?p=1&ps=10&t=all",

@@ -11,7 +11,8 @@ from pydantic import BaseModel, Field, model_validator
 from feedgen.feed import FeedGenerator
 from icalendar import Calendar, Event
 from configs.settings import get_settings
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.storage.location import Location
+from helpers.symbol.venue import VenueType
 from helpers.utils_helper import (
     get_datetime_now,
     get_datetime_now_iso_format,
@@ -162,7 +163,7 @@ class ExhibitionItem(BaseModel):
 
 
 class Coordinate(BaseModel):
-    location_code: TaiwanCity | None = Field(default=None, description="ISO 3166/MA")
+    location_code: Location | None = Field(default=None, description="ISO 3166/MA")
     raw_coordinates: str | None = None
     longitude: Decimal = Field(default=None, description="經度")
     latitude: Decimal = Field(default=None, description="緯度")
@@ -194,7 +195,7 @@ class Information(BaseModel):
     code_name: str
     external_link: str
     branch_coordinates: Coordinate | list[Coordinate] | None = Field(default=None, description="經緯度")
-    location_code: TaiwanCity | None = Field(default=None, description="ISO 3166/MA")
+    location_code: Location | None = Field(default=None)
     venue_type: VenueType | None = Field(default=None, description="場所類型")
     has_rss: bool | None = Field(default=False)
     has_ics: bool | None = Field(default=False)

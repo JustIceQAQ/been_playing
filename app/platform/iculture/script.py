@@ -5,7 +5,7 @@ from app.platform.iculture.parse import ICultureParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.symbol import VenueType
+from helpers.symbol.venue import VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3

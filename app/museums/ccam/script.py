@@ -11,7 +11,8 @@ from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Coordinate, Information
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3
 
@@ -25,12 +26,12 @@ class CCAMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.CHANGHUA_COUNTY,
+            location_code=Taiwan.changhua.zhang_hua_10007010,
             fullname="彰化縣立美術館",
             code_name="CCAM",
             external_link="https://fam.bocach.gov.tw/",
             branch_coordinates=Coordinate(raw_coordinates="24.077744219640863, 120.54594898158135"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.ART_MUSEUM,
         )
 
     async def _fetch_sub_item_response(self, client: niquests.AsyncSession, url: str, cookies: dict | None):

@@ -11,7 +11,8 @@ from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate, ExhibitionItem
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3, get_asyncio_rate_limit
 
@@ -28,7 +29,7 @@ class HuaShan1914Runner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
+            location_code=Taiwan.taipei.zhong_zheng_63000050,
             fullname="華山1914文化創意產業園區",
             code_name="HuaShan1914",
             external_link="https://www.huashan1914.com/w/huashan1914/exhibition",
@@ -36,7 +37,7 @@ class HuaShan1914Runner(RunnerInit):
                 google_map_place_id="ChIJbSTgI2WpQjQRcVwWB2cnyfE",
                 raw_coordinates="25.044242402011122, 121.5292898083939",
             ),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.CREATIVE_PARK,
         )
 
     async def fetch_response(self):

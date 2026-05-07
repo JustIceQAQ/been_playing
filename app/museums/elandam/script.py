@@ -10,7 +10,8 @@ from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Coordinate, Information
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3
 
@@ -24,12 +25,12 @@ class ELandAMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.YILAN_COUNTY,
+            location_code=Taiwan.yilan.yi_lan_10002010,
             fullname="宜蘭美術館",
             code_name="ELandAM",
             external_link="https://ymoa.e-land.gov.tw/",
             branch_coordinates=Coordinate(raw_coordinates="24.7550562904822, 121.75175462425617"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.ART_MUSEUM,
         )
 
     async def fetch_response(self):

@@ -10,7 +10,8 @@ from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -24,15 +25,24 @@ class MuseumPostRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
             fullname="郵政博物館",
             code_name="MuseumPost",
             external_link="https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage=1",
             branch_coordinates=[
-                Coordinate(name="本館", raw_coordinates="25.032392367745082, 121.5147638567378"),
+                Coordinate(
+                    name="本館",
+                    raw_coordinates="25.032392367745082, 121.5147638567378",
+                    location_code=Taiwan.taipei.zhong_zheng_63000050,
+                ),
                 Coordinate(
                     name="臺北館",
                     raw_coordinates="25.047556287891062, 121.51158812126322",
+                    location_code=Taiwan.taipei.zhong_zheng_63000050,
+                ),
+                Coordinate(
+                    name="高雄館",
+                    raw_coordinates="22.638430558437683, 120.30123181704683",
+                    location_code=Taiwan.kaohsiung.san_min_64000050,
                 ),
             ],
             venue_type=VenueType.MUSEUM,

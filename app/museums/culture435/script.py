@@ -5,7 +5,8 @@ from app.museums.culture435.parse import Culture435Parse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -25,12 +26,12 @@ class Culture435Runner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.NEW_TAIPEI_CITY,
+            location_code=Taiwan.new_taipei.ban_qiao_65000010,
             fullname="板橋435藝文特區",
             code_name="Culture435",
             external_link="https://www.435.culture.ntpc.gov.tw/xmdoc?xsmsid=0G256373177821958325",
             branch_coordinates=Coordinate(raw_coordinates="25.024344268554966, 121.45235225442633"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.CREATIVE_PARK,
         )
 
     async def fetch_response(self):

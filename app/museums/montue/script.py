@@ -7,7 +7,8 @@ from app.museums.montue.parse import MoNTUEParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -27,12 +28,12 @@ class MoNTUERunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=TaiwanCity.TAIPEI_CITY,
+            location_code=Taiwan.taipei.da_an_63000030,
             fullname="北師美術館",
             code_name="MoNTUE",
             external_link="https://montue.ntue.edu.tw/",
             branch_coordinates=Coordinate(raw_coordinates="25.024774854666255, 121.54460696977063"),
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.ART_MUSEUM,
         )
 
     async def sub_fetch_response(self, client: httpx.AsyncClient, url: str) -> str:

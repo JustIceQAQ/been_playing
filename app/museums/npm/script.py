@@ -13,7 +13,8 @@ from helpers.headers_helper import generate_headers
 from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information, Coordinate
-from helpers.storage.symbol import TaiwanCity, VenueType
+from helpers.symbol.venue import VenueType
+from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_6
 
@@ -35,16 +36,16 @@ class NpmRunner(RunnerInit):
             branch_coordinates=[
                 Coordinate(
                     name="北部院區",
-                    location_code=TaiwanCity.TAIPEI_CITY,
+                    location_code=Taiwan.taipei.shi_lin_63000110,
                     raw_coordinates="25.10255940335793, 121.5485139544282",
                 ),
                 Coordinate(
                     name="南部院區",
-                    location_code=TaiwanCity.CHIAYI_COUNTY,
+                    location_code=Taiwan.chiayi_county.tai_bao_10010010,
                     raw_coordinates="23.473459041101574, 120.2928023651772",
                 ),
             ],
-            venue_type=VenueType.MUSEUM,
+            venue_type=VenueType.MEMORIAL,
         )
 
     async def fetch_south_response(self):
