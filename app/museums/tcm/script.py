@@ -27,7 +27,7 @@ class TcmRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.tainan.zhong_xi_67000370,
+            location_code=Taiwan.tainan.west_central_67000370,
             fullname="臺南市立博物館",
             code_name="Tcm",
             external_link="https://tcm.tainan.gov.tw/permanent",

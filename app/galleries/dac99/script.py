@@ -26,7 +26,7 @@ class Dac99Runner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.bei_tou_63000120,
+            location_code=Taiwan.taipei.beitou_63000120,
             fullname="99度藝術中心",
             code_name="Dac99",
             external_link="https://99dac.com/exhibition.php",

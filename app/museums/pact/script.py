@@ -25,7 +25,7 @@ class PactRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.song_shan_63000010,
+            location_code=Taiwan.taipei.songshan_63000010,
             fullname="台北偶戲館",
             code_name="PACT",
             external_link="https://www.pact.taipei/exhibition_list.aspx?p=1&ps=10&t=all",

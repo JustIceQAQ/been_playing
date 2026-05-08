@@ -25,7 +25,7 @@ class ELandAMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.yilan.yi_lan_10002010,
+            location_code=Taiwan.yilan.yilan_10002010,
             fullname="宜蘭美術館",
             code_name="ELandAM",
             external_link="https://ymoa.e-land.gov.tw/",

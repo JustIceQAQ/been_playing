@@ -26,7 +26,7 @@ class OCAMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.keelung.ren_ai_10017040,
+            location_code=Taiwan.keelung.renai_10017040,
             fullname="陽明海洋文化藝術館",
             code_name="OCAM",
             external_link="https://www.ymculture.org.tw/tw/Exhibition/OCAM#",

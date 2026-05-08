@@ -27,7 +27,7 @@ class MindSetArtRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.nei_hu_63000100,
+            location_code=Taiwan.taipei.neihu_63000100,
             fullname="安卓藝術",
             code_name="MindSetArt",
             external_link="https://www.art-msac.com/",

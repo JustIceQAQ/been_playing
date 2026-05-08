@@ -23,7 +23,7 @@ class TFamRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.zhong_shan_63000040,
+            location_code=Taiwan.taipei.zhongshan_63000040,
             fullname="臺北市立美術館",
             code_name="TFam",
             external_link="https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw",

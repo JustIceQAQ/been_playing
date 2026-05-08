@@ -26,7 +26,7 @@ class TaipeiExPoParkRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.zhong_shan_63000040,
+            location_code=Taiwan.taipei.zhongshan_63000040,
             fullname="花博公園",
             code_name="TaipeiExPoPark",
             external_link="https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029",

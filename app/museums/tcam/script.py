@@ -23,7 +23,7 @@ class TcamRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taichung.xi_tun_66000060,
+            location_code=Taiwan.taichung.xitun_66000060,
             fullname="臺中市立美術館",
             code_name="Tcam",
             external_link="https://www.tcam.museum/",

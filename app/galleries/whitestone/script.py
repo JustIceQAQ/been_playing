@@ -26,7 +26,7 @@ class WhiteStoneRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.nei_hu_63000100,
+            location_code=Taiwan.taipei.neihu_63000100,
             fullname="白石畫廊",
             code_name="WhiteStone",
             external_link="https://www.whitestone-gallery.com/zh-hant",

@@ -32,17 +32,17 @@ class MuseumPostRunner(RunnerInit):
                 Coordinate(
                     name="本館",
                     raw_coordinates="25.032392367745082, 121.5147638567378",
-                    location_code=Taiwan.taipei.zhong_zheng_63000050,
+                    location_code=Taiwan.taipei.zhongzheng_63000050,
                 ),
                 Coordinate(
                     name="臺北館",
                     raw_coordinates="25.047556287891062, 121.51158812126322",
-                    location_code=Taiwan.taipei.zhong_zheng_63000050,
+                    location_code=Taiwan.taipei.zhongzheng_63000050,
                 ),
                 Coordinate(
                     name="高雄館",
                     raw_coordinates="22.638430558437683, 120.30123181704683",
-                    location_code=Taiwan.kaohsiung.san_min_64000050,
+                    location_code=Taiwan.kaohsiung.sanmin_64000050,
                 ),
             ],
             venue_type=VenueType.MUSEUM,

@@ -27,7 +27,7 @@ class MoCaTaipeiRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.da_tong_63000060,
+            location_code=Taiwan.taipei.datong_63000060,
             fullname="台北當代藝術館",
             code_name="MoCaTaipei",
             external_link="https://www.mocataipei.org.tw/tw/ExhibitionAndEvent",

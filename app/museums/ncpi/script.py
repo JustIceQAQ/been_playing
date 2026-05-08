@@ -25,7 +25,7 @@ class NCPIRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.zhong_zheng_63000050,
+            location_code=Taiwan.taipei.zhongzheng_63000050,
             fullname="國家攝影文化中心",
             code_name="NCPI",
             external_link="https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?n=8006&sms=15632",

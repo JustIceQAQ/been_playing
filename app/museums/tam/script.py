@@ -25,7 +25,7 @@ class TAMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taitung.tai_dong_10014010,
+            location_code=Taiwan.taitung.taitung_10014010,
             fullname="臺東美術館",
             code_name="TAM",
             external_link="https://tm.ccl.ttct.edu.tw/",

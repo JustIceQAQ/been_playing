@@ -26,7 +26,7 @@ class TncMMMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.da_tong_63000060,
+            location_code=Taiwan.taipei.datong_63000060,
             fullname="臺灣新文化運動紀念館",
             code_name="TncMMM",
             external_link="https://tncmmm.gov.taipei/Content_List.aspx?n=2BF92E180FD68C1A",

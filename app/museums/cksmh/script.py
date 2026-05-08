@@ -29,7 +29,7 @@ class CKSMHRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.zhong_zheng_63000050,
+            location_code=Taiwan.taipei.zhongzheng_63000050,
             fullname="中正紀念堂",
             code_name="CKSMH",
             external_link="https://www.cksmh.gov.tw/Default.aspx",

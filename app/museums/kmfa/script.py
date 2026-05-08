@@ -27,7 +27,7 @@ class KmFaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.kaohsiung.gu_shan_64000020,
+            location_code=Taiwan.kaohsiung.gushan_64000020,
             fullname="高雄市立美術館",
             code_name="KmFa",
             external_link="https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",

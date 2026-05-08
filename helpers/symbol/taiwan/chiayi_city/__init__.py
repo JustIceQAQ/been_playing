@@ -12,9 +12,9 @@ class ChaiyiCity(Enum):
         return Location(city=self.value)
 
     @property
-    def dong_10020010(self) -> Location:
+    def east_10020010(self) -> Location:
         return Location(city=self.value, area=Name(name="東區", code="10020010"))
 
     @property
-    def xi_10020020(self) -> Location:
+    def west_10020020(self) -> Location:
         return Location(city=self.value, area=Name(name="西區", code="10020020"))

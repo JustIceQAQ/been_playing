@@ -23,7 +23,7 @@ class MofiaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taichung.da_li_66000280,
+            location_code=Taiwan.taichung.dali_66000280,
             fullname="臺中市纖維工藝博物館",
             code_name="Mofia",
             external_link="https://mofia.taichung.gov.tw/",

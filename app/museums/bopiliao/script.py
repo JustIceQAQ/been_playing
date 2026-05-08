@@ -25,7 +25,7 @@ class BoPiLiaoRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.wan_hua_63000070,
+            location_code=Taiwan.taipei.wanhua_63000070,
             fullname="剝皮寮歷史街區",
             code_name="BoPiLiao",
             external_link="https://www.bopiliao.taipei/Event_News",

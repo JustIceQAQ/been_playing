@@ -26,7 +26,7 @@ class ChCsEcRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.changhua.zhang_hua_10007010,
+            location_code=Taiwan.changhua.changhua_10007010,
             fullname="國立彰化生活美學館",
             code_name="chcsec",
             external_link="https://www.chcsec.gov.tw/News_actives.aspx?n=4020&sms=13269&_Query=b7c33695-58eb-4e1d-82e1-5e73654b385a&_CSN=",

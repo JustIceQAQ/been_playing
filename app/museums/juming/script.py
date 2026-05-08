@@ -28,7 +28,7 @@ class JuMingRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.new_taipei.jin_shan_65000270,
+            location_code=Taiwan.new_taipei.jinshan_65000270,
             fullname="朱銘美術館",
             code_name="JuMing",
             external_link="https://www.juming.org.tw/",

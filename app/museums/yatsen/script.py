@@ -25,7 +25,7 @@ class YatsenRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.xin_yi_63000020,
+            location_code=Taiwan.taipei.xinyi_63000020,
             fullname="國立國父紀念館",
             code_name="Yatsen",
             external_link="https://www.yatsen.gov.tw/News_actives.aspx?n=7339&sms=13411",

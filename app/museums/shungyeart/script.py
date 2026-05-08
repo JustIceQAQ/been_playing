@@ -25,7 +25,7 @@ class ShungYeArtRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.zhong_zheng_63000050,
+            location_code=Taiwan.taipei.zhongzheng_63000050,
             fullname="順益台灣美術館",
             code_name="ShungYeArt",
             external_link="https://www.shungye-art.org/show_now.php",

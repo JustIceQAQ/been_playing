@@ -30,7 +30,7 @@ class HcccArtRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.hualien.hua_lian_10015010,
+            location_code=Taiwan.hualien.hualien_10015010,
             fullname="花蓮美術館",
             code_name="HcccArt",
             external_link="https://art.hccc.gov.tw/",

@@ -36,12 +36,12 @@ class NpmRunner(RunnerInit):
             branch_coordinates=[
                 Coordinate(
                     name="北部院區",
-                    location_code=Taiwan.taipei.shi_lin_63000110,
+                    location_code=Taiwan.taipei.shilin_63000110,
                     raw_coordinates="25.10255940335793, 121.5485139544282",
                 ),
                 Coordinate(
                     name="南部院區",
-                    location_code=Taiwan.chiayi_county.tai_bao_10010010,
+                    location_code=Taiwan.chiayi_county.taibao_10010010,
                     raw_coordinates="23.473459041101574, 120.2928023651772",
                 ),
             ],

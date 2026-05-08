@@ -30,7 +30,7 @@ class SongShanCulturalParkRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.xin_yi_63000020,
+            location_code=Taiwan.taipei.xinyi_63000020,
             fullname="松山文創園區",
             code_name="SongShanCulturalPark",
             external_link="https://www.songshanculturalpark.org/exhibition",
