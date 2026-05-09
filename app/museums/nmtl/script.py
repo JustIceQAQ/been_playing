@@ -25,7 +25,7 @@ class NMTLRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.tainan.zhong_xi_67000370,
+            location_code=Taiwan.tainan.west_central_67000370,
             fullname="國立臺灣文學館",
             code_name="NMTL",
             external_link="https://www.nmtl.gov.tw/News_actives.aspx?n=3821&sms=13367",

@@ -28,16 +28,17 @@ class KingCarArtRunner(RunnerInit):
             fullname="金車文藝中心",
             code_name="KingCarArt",
             external_link="https://www.kingcarart.org.tw/exhibitions/current",
+            location_code=Taiwan.taipei.zhongzheng_63000050,
             branch_coordinates=[
                 Coordinate(
                     name="臺北承德館",
                     raw_coordinates="25.067779239946375, 121.51865322216524",
-                    location_code=Taiwan.taipei.zhong_zheng_63000050,
+                    location_code=Taiwan.taipei.zhongzheng_63000050,
                 ),
                 Coordinate(
                     name="臺北南京館",
                     raw_coordinates="25.052598382305003, 121.5278585635071",
-                    location_code=Taiwan.taipei.da_tong_63000060,
+                    location_code=Taiwan.taipei.datong_63000060,
                 ),
             ],
             venue_type=VenueType.EXPO_CENTER,

@@ -30,12 +30,12 @@ class TnamMuseumRunner(RunnerInit):
             external_link="https://www.tnam.museum/exhibition/current?page=1",
             branch_coordinates=[
                 Coordinate(
-                    location_code=Taiwan.tainan.zhong_xi_67000370,
+                    location_code=Taiwan.tainan.west_central_67000370,
                     name="一館",
                     raw_coordinates="22.99117888093109, 120.20502606285312",
                 ),
                 Coordinate(
-                    location_code=Taiwan.tainan.zhong_xi_67000370,
+                    location_code=Taiwan.tainan.west_central_67000370,
                     name="二館",
                     raw_coordinates="22.99055275877767, 120.20140904089217",
                 ),

@@ -30,25 +30,26 @@ class NtmRunner(RunnerInit):
             fullname="國立臺灣博物館",
             code_name="Ntm",
             external_link="https://www.ntm.gov.tw/Default.aspx",
+            location_code=Taiwan.taipei.zhongzheng_63000050,
             branch_coordinates=[
                 Coordinate(
-                    location_code=Taiwan.taipei.zhong_zheng_63000050,
+                    location_code=Taiwan.taipei.zhongzheng_63000050,
                     google_map_place_id="ChIJcRV3WHOpQjQRFpgzTpxZWgo",
                     name="本館",
                     raw_coordinates="25.042991302660226, 121.5151621120989",
                 ),
                 Coordinate(
-                    location_code=Taiwan.taipei.zhong_zheng_63000050,
+                    location_code=Taiwan.taipei.zhongzheng_63000050,
                     name="古生物館",
                     raw_coordinates="25.043788780293, 121.51440168326278",
                 ),
                 Coordinate(
-                    location_code=Taiwan.taipei.da_tong_63000060,
+                    location_code=Taiwan.taipei.datong_63000060,
                     name="鐵道部園區",
                     raw_coordinates="25.048869075417418, 121.5113360427876",
                 ),
                 Coordinate(
-                    location_code=Taiwan.taipei.zhong_zheng_63000050,
+                    location_code=Taiwan.taipei.zhongzheng_63000050,
                     name="南門館",
                     raw_coordinates="25.033613597291687, 121.51583661209861",
                 ),

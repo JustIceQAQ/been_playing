@@ -23,7 +23,7 @@ class ArtistVillageRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.zhong_zheng_63000050,
+            location_code=Taiwan.taipei.zhongzheng_63000050,
             fullname="寶藏巖國際藝術村",
             code_name="ArtistVillage",
             external_link="https://www.artistvillage.org/event.php",

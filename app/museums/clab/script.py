@@ -27,7 +27,7 @@ class CLabRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.da_an_63000030,
+            location_code=Taiwan.taipei.daan_63000030,
             fullname="台灣當代文化實驗場 C-Lab",
             code_name="CLab",
             external_link="https://clab.org.tw/events/",

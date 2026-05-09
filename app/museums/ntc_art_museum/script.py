@@ -26,7 +26,7 @@ class NtcArtMuseumRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.new_taipei.ying_ge_65000080,
+            location_code=Taiwan.new_taipei.yingge_65000080,
             fullname="新北市美術館",
             code_name="NtcArtMuseum",
             external_link="https://ntcart.museum/exhibition.aspx?kind=today",

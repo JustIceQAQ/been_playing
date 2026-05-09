@@ -122,3 +122,4 @@
 
 [畫廊串聯 – Taipei Art Week 2025 台北藝術週](https://taipeiartweek.tw/zh/taw-galleries/)
 [文化資料開放服務網](https://opendata.culture.tw/frontsite/openData/detail?datasetId=266)
+[戶役政資訊系統資料代碼內容清單](https://www.ris.gov.tw/documents/html/5/1/168.html)

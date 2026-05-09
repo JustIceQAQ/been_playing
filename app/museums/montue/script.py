@@ -28,7 +28,7 @@ class MoNTUERunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.da_an_63000030,
+            location_code=Taiwan.taipei.daan_63000030,
             fullname="北師美術館",
             code_name="MoNTUE",
             external_link="https://montue.ntue.edu.tw/",

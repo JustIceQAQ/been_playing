@@ -28,21 +28,22 @@ class MuseumPostRunner(RunnerInit):
             fullname="郵政博物館",
             code_name="MuseumPost",
             external_link="https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage=1",
+            location_code=Taiwan.taipei.zhongzheng_63000050,
             branch_coordinates=[
                 Coordinate(
                     name="本館",
                     raw_coordinates="25.032392367745082, 121.5147638567378",
-                    location_code=Taiwan.taipei.zhong_zheng_63000050,
+                    location_code=Taiwan.taipei.zhongzheng_63000050,
                 ),
                 Coordinate(
                     name="臺北館",
                     raw_coordinates="25.047556287891062, 121.51158812126322",
-                    location_code=Taiwan.taipei.zhong_zheng_63000050,
+                    location_code=Taiwan.taipei.zhongzheng_63000050,
                 ),
                 Coordinate(
                     name="高雄館",
                     raw_coordinates="22.638430558437683, 120.30123181704683",
-                    location_code=Taiwan.kaohsiung.san_min_64000050,
+                    location_code=Taiwan.kaohsiung.sanmin_64000050,
                 ),
             ],
             venue_type=VenueType.MUSEUM,

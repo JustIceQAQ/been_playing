@@ -28,7 +28,7 @@ class NsTmRunner(RunnerInit):  # TODO: 壞掉中...
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.kaohsiung.san_min_64000050,
+            location_code=Taiwan.kaohsiung.sanmin_64000050,
             fullname="國立科學工藝博物館",
             code_name="NsTm",
             external_link="https://www.nstm.gov.tw/ExhibitionList.aspx?ExhibitionType=1&Period=1",

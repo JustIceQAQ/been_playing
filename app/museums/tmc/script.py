@@ -29,7 +29,7 @@ class TmcRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.nan_gang_63000090,
+            location_code=Taiwan.taipei.nangang_63000090,
             fullname="台北流行音樂中心",
             code_name="Tmc",
             external_link="https://www.tmc.taipei/tw/blog/show?filter=eyJkaXJlY3Rpb24iOiJsYXN0ZXN0In0=",

@@ -27,7 +27,7 @@ class XiZhiTangRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.xin_yi_63000020,
+            location_code=Taiwan.taipei.xinyi_63000020,
             fullname="羲之堂畫廊",
             code_name="XiZhiTang",
             external_link="https://taipeiartweek.tw/",

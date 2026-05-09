@@ -28,7 +28,7 @@ class TyCgRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taoyuan.da_xi_68000030,
+            location_code=Taiwan.taoyuan.daxi_68000030,
             fullname="桃園市立大溪木藝生態博物館",
             code_name="TyCg",
             external_link="https://wem.tycg.gov.tw/",

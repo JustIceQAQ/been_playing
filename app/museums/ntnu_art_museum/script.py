@@ -27,7 +27,7 @@ class NTNUArtMuseumRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.da_an_63000030,
+            location_code=Taiwan.taipei.daan_63000030,
             fullname="師大美術館",
             code_name="NTNUArtMuseum",
             external_link="https://www.artmuse.ntnu.edu.tw/index.php/current_exhibit/",

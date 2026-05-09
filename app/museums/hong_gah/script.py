@@ -30,7 +30,7 @@ class HongGahRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.bei_tou_63000120,
+            location_code=Taiwan.taipei.beitou_63000120,
             fullname="鳳甲美術館",
             code_name="HongGah",
             external_link="https://hong-gah.org.tw/exhibitions-zh",

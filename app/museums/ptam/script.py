@@ -29,7 +29,7 @@ class PTAMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.pingtung.ping_dong_10013010,
+            location_code=Taiwan.pingtung.pingtung_10013010,
             fullname="屏東美術館",
             code_name="PTAM",
             external_link="https://ptam.ptcg.gov.tw/",

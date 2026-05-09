@@ -31,12 +31,12 @@ class YiYunRunner(RunnerInit):
             external_link="https://www.yiyun-art.com/",
             branch_coordinates=[
                 Coordinate(
-                    location_code=Taiwan.taipei.da_an_63000030,
+                    location_code=Taiwan.taipei.daan_63000030,
                     name="青田館",
                     raw_coordinates="25.027213880907816, 121.53055350558525",
                 ),
                 Coordinate(
-                    location_code=Taiwan.taipei.da_an_63000030,
+                    location_code=Taiwan.taipei.daan_63000030,
                     name="金華館",
                     raw_coordinates="25.028205131565272, 121.53223852023619",
                 ),

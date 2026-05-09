@@ -26,7 +26,7 @@ class CCAMRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.changhua.zhang_hua_10007010,
+            location_code=Taiwan.changhua.changhua_10007010,
             fullname="彰化縣立美術館",
             code_name="CCAM",
             external_link="https://fam.bocach.gov.tw/",

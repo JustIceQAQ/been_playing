@@ -29,7 +29,7 @@ class HistorySinicaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.nan_gang_63000090,
+            location_code=Taiwan.taipei.nangang_63000090,
             fullname="中央研究院-歷史文物陳列館",
             code_name="HistorySinica",
             external_link="https://museum.sinica.edu.tw/",

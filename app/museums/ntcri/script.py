@@ -33,9 +33,10 @@ class NTCRIRunner(RunnerInit):
                 "&sort=sort"
                 "&order=asc"
             ),
+            location_code=Taiwan.taipei.zhongzheng_63000050,
             branch_coordinates=[
                 Coordinate(
-                    location_code=Taiwan.taipei.zhong_zheng_63000050,
+                    location_code=Taiwan.taipei.zhongzheng_63000050,
                     name="臺北當代工藝設計分館",
                     raw_coordinates="25.03210292140622, 121.51234399386772",
                 ),

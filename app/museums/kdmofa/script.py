@@ -25,7 +25,7 @@ class KdMoFaRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.bei_tou_63000120,
+            location_code=Taiwan.taipei.beitou_63000120,
             fullname="關渡美術館",
             code_name="KdMoFa",
             external_link="https://kdmofa.tnua.edu.tw/mod/exhibition/index.php",

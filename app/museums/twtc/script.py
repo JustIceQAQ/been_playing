@@ -31,24 +31,25 @@ class TwTcRunner(RunnerInit):
             fullname="台北世貿中心",
             code_name="TwTc",
             external_link="https://twtc.com.tw/exhibition?p=home",
+            location_code=Taiwan.taipei.xinyi_63000020,
             branch_coordinates=[
                 Coordinate(
-                    location_code=Taiwan.taipei.xin_yi_63000020,
+                    location_code=Taiwan.taipei.xinyi_63000020,
                     name="世貿一館",
                     raw_coordinates="25.03358007614386, 121.56240955530657",
                 ),
                 Coordinate(
-                    location_code=Taiwan.taipei.nan_gang_63000090,
+                    location_code=Taiwan.taipei.nangang_63000090,
                     name="南港展覽館1館",
                     raw_coordinates="25.056650206854755, 121.61812883883394",
                 ),
                 Coordinate(
-                    location_code=Taiwan.taipei.nan_gang_63000090,
+                    location_code=Taiwan.taipei.nangang_63000090,
                     name="南港展覽館2館",
                     raw_coordinates="25.05610107423643, 121.61623519926233",
                 ),
                 Coordinate(
-                    location_code=Taiwan.taichung.xi_tun_66000060,
+                    location_code=Taiwan.taichung.xitun_66000060,
                     name="臺中國際會展中心",
                     raw_coordinates="24.19381567538611, 120.65129562551822",
                 ),

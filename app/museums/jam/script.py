@@ -25,7 +25,7 @@ class JamRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.da_an_63000030,
+            location_code=Taiwan.taipei.daan_63000030,
             fullname="忠泰美術館",
             code_name="Jam",
             external_link="https://jam.jutfoundation.org.tw/online-exhibition",

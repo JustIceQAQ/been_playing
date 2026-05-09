@@ -27,7 +27,7 @@ class CG1839Runner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.da_an_63000030,
+            location_code=Taiwan.taipei.daan_63000030,
             fullname="1839 當代藝廊",
             code_name="CG1839",
             external_link="https://www.1839cg.com/",

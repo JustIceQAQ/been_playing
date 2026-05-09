@@ -26,7 +26,7 @@ class RuoMuRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.da_an_63000030,
+            location_code=Taiwan.taipei.daan_63000030,
             fullname="若木藝廊",
             code_name="RuoMu",
             external_link="https://www.ruomugallery.com/",

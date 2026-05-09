@@ -26,7 +26,7 @@ class KiShuAnRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
-            location_code=Taiwan.taipei.zhong_zheng_63000050,
+            location_code=Taiwan.taipei.zhongzheng_63000050,
             fullname="紀州庵文學森林",
             code_name="KiShuAn",
             external_link="https://kishuan.org.tw/activity.htm",
