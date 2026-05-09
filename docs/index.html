@@ -633,15 +633,53 @@
     $(document).ready(async function () {
       const isDark = window.matchMedia("(prefers-color-scheme:dark)").matches;
       const runThemeSet = isDark ? setDark : setLight;
-      const initTopic = getInitTopic();
 
-      // 預載場館 metadata，失敗時優雅降級
+      // 從後端取得場館清單；前端只負責 CSS 樣式
       let venueMetaList = [];
       try {
         const resp = await fetch(`${URL_SOURCE}_VENUE_META.json`);
         venueMetaList = await resp.json();
       } catch (e) {}
       const metaByTopic = Object.fromEntries(venueMetaList.map((v) => [v.code_name, v]));
+
+      // 合併 metadata + CSS（找不到 VENUE_STYLES 對應項則套用 DEFAULT_STYLE）
+      const allVenues = venueMetaList.map((v) => {
+        const s = VENUE_STYLES[v.code_name] ?? DEFAULT_STYLE;
+        return { ...v, color: s.color, bg: s.bg, border: s.border ?? s.bg };
+      });
+      const allTopicSet = new Set(allVenues.map((v) => v.code_name));
+
+      // 決定初始場館（URL param → 關注清單 → 第一個）
+      const urlTopic = new URLSearchParams(window.location.search).get("topic");
+      const firstWatched = loadVenueWatchlist().find((t) => allTopicSet.has(t));
+      const initTopic =
+        urlTopic && allTopicSet.has(urlTopic)
+          ? urlTopic
+          : firstWatched ?? allVenues[0]?.code_name;
+
+      // 註冊 DataTable 按鈕
+      allVenues.forEach((v) => {
+        $.fn.dataTable.ext.buttons[v.code_name] = {
+          text: v.fullname,
+          action: (e, dt) => dt.ajax.url(`${URL_SOURCE}${v.code_name}.json`).load(),
+        };
+      });
+
+      // 注入場館按鈕 CSS
+      const venueStyleEl = document.createElement("style");
+      venueStyleEl.innerHTML = allVenues
+        .map(
+          (v) =>
+            `.btn-${v.code_name}{color:${v.color};background-color:${v.bg};border-color:${v.border};` +
+            `--bs-btn-hover-color:${v.color};--bs-btn-hover-bg:${v.bg};}`,
+        )
+        .join("");
+      document.head.appendChild(venueStyleEl);
+
+      const customizeButtons = allVenues.map((v) => ({
+        extend: v.code_name,
+        className: `btn btn-${v.code_name}`,
+      }));
 
       let initUrl = `${URL_SOURCE}${initTopic}.json`;
       runThemeSet();
@@ -769,19 +807,10 @@
             );
             const captionCard = document.querySelector("#exhibition caption .card");
             if (captionCard) {
-              const ajaxCfg = this.ajax;
-              const currentUrl = (typeof ajaxCfg === "string" ? ajaxCfg : ajaxCfg?.url) || "";
-              const topicFromUrl = currentUrl.match(/\/([^/]+)\.json/)?.[1];
-              const btnStyle = allTopicClass.find(e => e.topic === topicFromUrl)?.buttonStyle;
-              if (btnStyle) {
-                captionCard.style.backgroundColor = btnStyle.backgroundColor;
-                captionCard.style.color = btnStyle.color;
-                captionCard.style.borderColor = btnStyle.borderColor;
-              } else {
-                captionCard.style.backgroundColor = "";
-                captionCard.style.color = "";
-                captionCard.style.borderColor = "";
-              }
+              const s = VENUE_STYLES[codeName] ?? DEFAULT_STYLE;
+              captionCard.style.backgroundColor = s.bg;
+              captionCard.style.color = s.color;
+              captionCard.style.borderColor = s.border ?? s.bg;
             }
             if (opening !== undefined && opening !== "") {
               $(".caption-card-body").html(

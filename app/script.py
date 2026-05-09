@@ -104,7 +104,6 @@ PLATFORM_RUNNERS = {
     OpenTixRunner,
     UdnFunLifeRunner,
     ArtEmperorRunner,
-    SoKaArtRunner,
     NTTRunner,
     ICultureRunner,
 }
@@ -193,6 +192,7 @@ GALLERIES_RUNNERS = {
     WhiteStoneRunner,
     XiZhiTangRunner,
     CG1839Runner,
+    SoKaArtRunner,
 }
 
-ALL_RUNNERS = PLATFORM_RUNNERS | MUSEUMS_RUNNERS
+ALL_RUNNERS = PLATFORM_RUNNERS | MUSEUMS_RUNNERS | GALLERIES_RUNNERS
