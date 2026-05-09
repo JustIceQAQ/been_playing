@@ -28,6 +28,7 @@ class MuseumPostRunner(RunnerInit):
             fullname="郵政博物館",
             code_name="MuseumPost",
             external_link="https://museum.post.gov.tw/post/Postal_Museum/museum/index.jsp?ID=131&topage=1",
+            location_code=Taiwan.taipei.zhongzheng_63000050,
             branch_coordinates=[
                 Coordinate(
                     name="本館",

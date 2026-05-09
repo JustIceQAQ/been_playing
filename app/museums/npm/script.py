@@ -33,6 +33,7 @@ class NpmRunner(RunnerInit):
             fullname="國立故宮博物院",
             code_name="Npm",
             external_link="https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1",
+            raw_coordinates="25.10255940335793, 121.5485139544282",
             branch_coordinates=[
                 Coordinate(
                     name="北部院區",

@@ -31,6 +31,7 @@ class TwTcRunner(RunnerInit):
             fullname="台北世貿中心",
             code_name="TwTc",
             external_link="https://twtc.com.tw/exhibition?p=home",
+            location_code=Taiwan.taipei.xinyi_63000020,
             branch_coordinates=[
                 Coordinate(
                     location_code=Taiwan.taipei.xinyi_63000020,

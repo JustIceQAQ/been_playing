@@ -30,6 +30,7 @@ class NtmRunner(RunnerInit):
             fullname="國立臺灣博物館",
             code_name="Ntm",
             external_link="https://www.ntm.gov.tw/Default.aspx",
+            location_code=Taiwan.taipei.zhongzheng_63000050,
             branch_coordinates=[
                 Coordinate(
                     location_code=Taiwan.taipei.zhongzheng_63000050,

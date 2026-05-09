@@ -33,6 +33,7 @@ class NTCRIRunner(RunnerInit):
                 "&sort=sort"
                 "&order=asc"
             ),
+            location_code=Taiwan.taipei.zhongzheng_63000050,
             branch_coordinates=[
                 Coordinate(
                     location_code=Taiwan.taipei.zhongzheng_63000050,
