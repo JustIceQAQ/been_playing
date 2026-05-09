@@ -90,6 +90,7 @@
     - 新竹市
         - [國立新竹生活美學館](https://www.nhclac.gov.tw/)
         - [新竹市美術館](https://culture.hccg.gov.tw/ch/home.jsp?id=452&parentpath=0,145,154&mcustomize=activity_list.jsp)
+        - [新竹241藝術空間](https://culture.hccg.gov.tw/ch/home.jsp?id=453&parentpath=0,145,155&mcustomize=activity_list.jsp)
     - 臺中市
         - [國立臺灣美術館](https://www.ntmofa.gov.tw/)
         - [臺中市立美術館](https://www.tcam.museum/)

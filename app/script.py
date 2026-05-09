@@ -10,6 +10,7 @@ from .galleries.yiyun import YiYunRunner
 from .museums.aaaarchives import AAAArchivesRunner
 from .museums.alien import AlienRunner
 from .museums.artistvillage import ArtistVillageRunner
+from .museums.as241.script import AS241Runner
 from .museums.bopiliao.script import BoPiLiaoRunner
 from .museums.ccam.script import CCAMRunner
 from .museums.chcsec import ChCsEcRunner
@@ -182,6 +183,7 @@ MUSEUMS_RUNNERS = {
     CCAMRunner,
     ELandAMRunner,
     HCAMRunner,
+    AS241Runner,
 }
 
 GALLERIES_RUNNERS = {
