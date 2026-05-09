@@ -36,7 +36,7 @@ class AlienParse(ParseInit):
         start_date = start_date.strip()
         end_date = end_date.strip()
 
-        return f"{start_date} ~ {end_date}"
+        return f"{start_date} ~ {end_date}".replace(".", "-")
 
     def get_address(self, *args, **kwargs) -> str | None:
         pass
