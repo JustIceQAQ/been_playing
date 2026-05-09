@@ -1,3 +1,5 @@
+from .museums.pt1936.script import PT1936Runner
+
 from .galleries.capitalart import CapitalArtRunner
 from .galleries.cg1839 import CG1839Runner
 from .galleries.dac99 import Dac99Runner
@@ -184,6 +186,7 @@ MUSEUMS_RUNNERS = {
     ELandAMRunner,
     HCAMRunner,
     AS241Runner,
+    PT1936Runner,
 }
 
 GALLERIES_RUNNERS = {
