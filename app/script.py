@@ -1,5 +1,3 @@
-from .museums.elandam.script import ELandAMRunner
-
 from .galleries.capitalart import CapitalArtRunner
 from .galleries.cg1839 import CG1839Runner
 from .galleries.dac99 import Dac99Runner
@@ -21,7 +19,9 @@ from .museums.chipolin import ChiPoLinRunner
 from .museums.cksmh.script import CKSMHRunner
 from .museums.clab.script import CLabRunner
 from .museums.culture435 import Culture435Runner
+from .museums.elandam.script import ELandAMRunner
 from .museums.fubonartmuseum.script import FuBonArtMuseumRunner
+from .museums.hcam.script import HCAMRunner
 from .museums.hcccart.script import HcccArtRunner
 from .museums.historysinica import HistorySinicaRunner
 from .museums.hkm import HKMRunner
@@ -181,6 +181,7 @@ MUSEUMS_RUNNERS = {
     TAMRunner,
     CCAMRunner,
     ELandAMRunner,
+    HCAMRunner,
 }
 
 GALLERIES_RUNNERS = {

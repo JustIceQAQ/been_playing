@@ -89,6 +89,7 @@
         - [桃園市立大溪木藝生態博物館](https://wem.tycg.gov.tw/)
     - 新竹市
         - [國立新竹生活美學館](https://www.nhclac.gov.tw/)
+        - [新竹市美術館](https://culture.hccg.gov.tw/ch/home.jsp?id=452&parentpath=0,145,154&mcustomize=activity_list.jsp)
     - 臺中市
         - [國立臺灣美術館](https://www.ntmofa.gov.tw/)
         - [臺中市立美術館](https://www.tcam.museum/)

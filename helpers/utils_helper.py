@@ -2,8 +2,9 @@ import datetime
 import datetime as dt
 import zoneinfo
 from functools import lru_cache
-from dateutil.relativedelta import relativedelta
+
 from aiolimiter import AsyncLimiter
+from dateutil.relativedelta import relativedelta
 
 TAIWAN_TIMEZONE = zoneinfo.ZoneInfo("Asia/Taipei")
 
@@ -30,6 +31,12 @@ def get_date_format_digit() -> str:
     return this_date.strftime("%Y%m%d")
 
 
+def get_date_format_():
+    # YYYY-MM-DD
+    this_date = get_datetime_now().date()
+    return this_date.strftime("%Y-%m-%d")
+
+
 def get_this_date_year() -> int:
     return get_date_now().year
 
@@ -40,6 +47,12 @@ def get_ad_to_roc_era(year: int) -> int:
 
 def get_roc_era_to_ad(roc_era: int) -> int:
     return roc_era + 1911
+
+
+def get_roc_era_format_date_now():
+    this_date = get_datetime_now().date()
+    roc_era = get_ad_to_roc_era(this_date.year)
+    return f"{roc_era}-{this_date.month:02d}-{this_date.day:02d}"
 
 
 def get_datetime_now_iso_format() -> str:
