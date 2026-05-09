@@ -1,308 +1,113 @@
 const URL_SOURCE =
     "https://raw.githubusercontent.com/JustIceQAQ/been_playing/auto/data-update/data/v2/";
-const SOURCE_ROOT_URL = "https://raw.githubusercontent.com/JustIceQAQ/been_playing/auto/data-update/data/"
+const SOURCE_ROOT_URL = "https://raw.githubusercontent.com/JustIceQAQ/been_playing/auto/data-update/data/";
 
-// const URL_SOURCE = "https://raw.githubusercontent.com/JustIceQAQ/been_playing/refs/heads/develop/data/v2/"
+// CSS 對照表 — 前端唯一職責
+// key 對應 _VENUE_META.json 的 code_name；border 省略時自動沿用 bg
+const VENUE_STYLES = {
+    // ── 票務平台 ──────────────────────────────────────────────────────────
+    "KLook":                { color: "#fff",    bg: "#fd5a01", border: "#e75234" },
+    "BooksTickets":         { color: "#fff",    bg: "#61C0B4" },
+    "UdnFunLife":           { color: "#fff",    bg: "#F39800" },
+    "OpenTix":              { color: "#fff",    bg: "#e75234" },
+    "KKTix":                { color: "#fff",    bg: "#64be26" },
+    "IBon":                 { color: "#8fc120", bg: "#3f3a3a" },
+    "KKDay":                { color: "#fff",    bg: "#26bcc8" },
+    "CultureExpress":       { color: "#fff",    bg: "#313131" },
+    "GaCc":                 { color: "#fff",    bg: "#7b0025" },
+    "ArtEmperor":           { color: "#fff",    bg: "#e31472", border: "#f09500" },
+    "NTT":                  { color: "#fff",    bg: "#00c6fd" },
+    // ── 臺北市 ────────────────────────────────────────────────────────────
+    "CKSMH":                { color: "#fff",    bg: "#04a1ae" },
+    "Ntm":                  { color: "#fff",    bg: "#313131" },
+    "Nmh":                  { color: "#fff",    bg: "#8b3a47" },
+    "NTCRI":                { color: "#fff",    bg: "#00d186" },
+    "MuseumPost":           { color: "#fff",    bg: "#e6121c", border: "#12429c" },
+    "NCPI":                 { color: "#fff",    bg: "#000001" },
+    "n228mm":               { color: "#fff",    bg: "#49b88d", border: "#c0d429" },
+    "NTAEC":                { color: "#fff",    bg: "#b83a32", border: "#24318e" },
+    "AAAArchives":          { color: "#fff",    bg: "#00afa9", border: "#00192e" },
+    "HuaShan1914":          { color: "#fff",    bg: "#437321" },
+    "MoCaTaipei":           { color: "#fff",    bg: "#E83434" },
+    "TncMMM":               { color: "#fff",    bg: "#9f211a" },
+    "Nrm":                  { color: "#fff",    bg: "#009e40", border: "#fdfdfd" },
+    "BoPiLiao":             { color: "#fff",    bg: "#656565", border: "#cacaca" },
+    "RedHouse":             { color: "#fff",    bg: "#c73405" },
+    "ArtistVillage":        { color: "#fff",    bg: "#5d7a3e" },
+    "KiShuAn":              { color: "#fff",    bg: "#6b5b3e" },
+    "SoKaArt":              { color: "#fff",    bg: "#2c2c2c", border: "#777" },
+    "TFam":                 { color: "#fff",    bg: "#2B2B2B" },
+    "TaipeiExPoPark":       { color: "#fff",    bg: "#e52410", border: "#626468" },
+    "Jam":                  { color: "#3c3d30", bg: "#00d186" },
+    "KingCarArt":           { color: "#fff",    bg: "#000001" },
+    "NTNUArtMuseum":        { color: "#fff",    bg: "#4d070b", border: "#000001" },
+    "MoNTUE":               { color: "#3c3d30", bg: "#f0eb4c", border: "#4b4b4b" },
+    "FuBonArtMuseum":       { color: "#fff",    bg: "#643164" },
+    "Alien":                { color: "#fff",    bg: "#1a4060" },
+    "PACT":                 { color: "#fff",    bg: "#e40012", border: "#db462f" },
+    "SongShanCulturalPark": { color: "#fff",    bg: "#595758", border: "#F9DD00" },
+    "CLab":                 { color: "#fff",    bg: "#f87065", border: "#f2f2f0" },
+    "TwTc":                 { color: "#fff",    bg: "#ef5923" },
+    "Yatsen":               { color: "#fff",    bg: "#f6b64b", border: "#2f98d2" },
+    "Tmc":                  { color: "#fff",    bg: "#FF5000", border: "#00BBD3" },
+    "HistorySinica":        { color: "#fff",    bg: "#8B4513" },
+    "IOESinica":            { color: "#fff",    bg: "#a0522d" },
+    "Npm":                  { color: "#fff",    bg: "#7D0000" },
+    "NtSec":                { color: "#3c3d30", bg: "#FAA61A", border: "#33C0C4" },
+    "ShungYeArt":           { color: "#fff",    bg: "#83744c", border: "#585656" },
+    "KdMoFa":               { color: "#fff",    bg: "#eb7102" },
+    "HongGah":              { color: "#fff",    bg: "#585656" },
+    "hkm":                  { color: "#fff",    bg: "#4a235a" },
+    // ── 新北市 ────────────────────────────────────────────────────────────
+    "Mwr":                  { color: "#fff",    bg: "#b01f23" },
+    "NHRM":                 { color: "#fff",    bg: "#a42422", border: "#000001" },
+    "NtcArtMuseum":         { color: "#fff",    bg: "#000001" },
+    "Culture435":           { color: "#fff",    bg: "#e35449" },
+    "NTPC":                 { color: "#fff",    bg: "#585656" },
+    "NtcCeramics":          { color: "#fff",    bg: "#585656" },
+    "JuMing":               { color: "#fff",    bg: "#8b7355" },
+    "YoChangArt":           { color: "#fff",    bg: "#585656" },
+    "ChiPoLin":             { color: "#fff",    bg: "#585656" },
+    // ── 基隆市 ────────────────────────────────────────────────────────────
+    "kmoa":                 { color: "#fff",    bg: "#e35449" },
+    "OCAM":                 { color: "#fff",    bg: "#b81d21" },
+    // ── 桃園市 ────────────────────────────────────────────────────────────
+    "TyCg":                 { color: "#fff",    bg: "#7b5e2a" },
+    // ── 新竹市 ────────────────────────────────────────────────────────────
+    "nhclac":               { color: "#fff",    bg: "#2e7d62" },
+    // ── 宜蘭縣 ────────────────────────────────────────────────────────────
+    "ELandAM":              { color: "#fff",    bg: "#3a7a5e" },
+    // ── 臺中市 ────────────────────────────────────────────────────────────
+    "NtMofa":               { color: "#fff",    bg: "#228b82" },
+    "Tcam":                 { color: "#fff",    bg: "#1a6b8e" },
+    "Mofia":                { color: "#fff",    bg: "#3d7a9e" },
+    // ── 彰化縣 ────────────────────────────────────────────────────────────
+    "chcsec":               { color: "#fff",    bg: "#2e7d62" },
+    "CCAM":                 { color: "#fff",    bg: "#5e3a7a" },
+    // ── 嘉義市 ────────────────────────────────────────────────────────────
+    "ChiayiMM":             { color: "#fff",    bg: "#228b82" },
+    "ChiayiAM":             { color: "#fff",    bg: "#313131" },
+    // ── 臺南市 ────────────────────────────────────────────────────────────
+    "Tcm":                  { color: "#fff",    bg: "#007f90" },
+    "tncsec":               { color: "#fff",    bg: "#313131" },
+    "NMTL":                 { color: "#fff",    bg: "#5a4a1e" },
+    "NMTH":                 { color: "#fff",    bg: "#a98d44" },
+    "TnamMuseum":           { color: "#fff",    bg: "#228b82" },
+    // ── 高雄市 ────────────────────────────────────────────────────────────
+    "khm":                  { color: "#fff",    bg: "#228b82" },
+    "KmFa":                 { color: "#fff",    bg: "#1a6b6b" },
+    "Pier2":                { color: "#fff",    bg: "#43748f" },
+    // ── 屏東縣 ────────────────────────────────────────────────────────────
+    "PTAM":                 { color: "#fff",    bg: "#2e6b5e" },
+    // ── 花蓮縣 ────────────────────────────────────────────────────────────
+    "HcccArt":              { color: "#fff",    bg: "#4a6b8a" },
+    // ── 臺東縣 ────────────────────────────────────────────────────────────
+    "TAM":                  { color: "#fff",    bg: "#5a8a6a" },
+    "ttcsec":               { color: "#fff",    bg: "#4a7c59" },
+};
 
-class Exhibition {
-    constructor(topic, name, buttonStyle) {
-        this.topic = topic;
-        this.name = name;
-        this.buttonStyle = buttonStyle;
-    }
-}
-
-class ButtonStyle {
-    constructor(color, backgroundColor, borderColor) {
-        this.color = color;
-        this.backgroundColor = backgroundColor;
-        this.borderColor = borderColor;
-    }
-}
-
-const platformTopicClass = [
-    new Exhibition(
-        "KLook",
-        "KLook 客路",
-        new ButtonStyle("#fff", "#fd5a01", "#e75234"),
-    ),
-    new Exhibition(
-        "BooksTickets",
-        "博客來售票網",
-        new ButtonStyle("#fff", "#61C0B4", "#61C0B4"),
-    ),
-    new Exhibition(
-        "UdnFunLife",
-        "udn售票網",
-        new ButtonStyle("#fff", "#F39800", "#F39800"),
-    ),
-    new Exhibition(
-        "OpenTix",
-        "OPENTIX兩廳院生活文化",
-        new ButtonStyle("#fff", "#e75234", "#e75234"),
-    ),
-    new Exhibition(
-        "KKTix",
-        "KKTIX",
-        new ButtonStyle("#fff", "#64be26", "#64be26"),
-    ),
-    new Exhibition(
-        "IBon",
-        "IBon",
-        new ButtonStyle("#8fc120", "#3f3a3a", "#3f3a3a"),
-    ),
-    new Exhibition(
-        "KKDay",
-        "KKDay",
-        new ButtonStyle("#fff", "#26bcc8", "#26bcc8"),
-    ),
-    new Exhibition(
-        "CultureExpress",
-        "文化快遞",
-        new ButtonStyle("#fff", "#313131", "#313131"),
-    ),
-    new Exhibition(
-        "GaCc",
-        "中華文化總會",
-        new ButtonStyle("#fff", "#7b0025", "#7b0025"),
-    ),
-    new Exhibition(
-        "ArtEmperor",
-        "非池中藝術網",
-        new ButtonStyle("#fff", "#e31472", "#f09500"),
-    ), new Exhibition(
-        "NTT",
-        "新北市觀光旅遊網",
-        new ButtonStyle("#fff", "#00c6fd", "#00c6fd"),
-    )
-
-];
-
-const exhibitionTopicClass = [
-    // 台北市中正區
-    new Exhibition(
-        "CKSMH",
-        "中正紀念堂",
-        new ButtonStyle("#fff", "#04a1ae", "#04a1ae"),
-    ),
-    new Exhibition(
-        "Ntm",
-        "國立臺灣博物館",
-        new ButtonStyle("#fff", "#313131", "#313131"),
-    ),
-    new Exhibition(
-        "Nmh",
-        "國立歷史博物館",
-        new ButtonStyle("#fff", "#8b3a47", "#8b3a47"),
-    ),
-    new Exhibition(
-        "NTCRI",
-        "國立台灣工藝研究發展中心",
-        new ButtonStyle("#fff", "#00d186", "#00d186"),
-    ),
-    new Exhibition(
-        "MuseumPost",
-        "郵政博物館",
-        new ButtonStyle("#fff", "#e6121c", "#12429c"),
-    ),
-    new Exhibition(
-        "NCPI",
-        "國家攝影文化中心",
-        new ButtonStyle("#fff", "#000001", "#000001"),
-    ),
-    new Exhibition(
-        "n228mm",
-        "二二八事件紀念基金會",
-        new ButtonStyle("#fff", "#49b88d", "#c0d429"),
-    ),
-    new Exhibition(
-        "NTAEC",
-        "國立台灣藝術教育館",
-        new ButtonStyle("#fff", "#b83a32", "#24318e"),
-    ),
-    new Exhibition(
-        "AAAArchives",
-        "國家發展委員會檔案管理局",
-        new ButtonStyle("#fff", "#00afa9", "#00192e"),
-    ),
-    new Exhibition(
-        "HuaShan1914",
-        "華山1914文化創意產業園區",
-        new ButtonStyle("#fff", "#437321", "#437321"),
-    ),
-    // 台北市大同區
-    new Exhibition(
-        "MoCaTaipei",
-        "台北當代藝術館",
-        new ButtonStyle("#fff", "#E83434", "#E83434"),
-    ),
-    new Exhibition(
-        "TncMMM",
-        "臺灣新文化運動紀念館",
-        new ButtonStyle("#fff", "#9f211a", "#9f211a"),
-    ),
-    new Exhibition(
-        "Nrm",
-        "國家鐵道博物館",
-        new ButtonStyle("#fff", "#009e40", "#fdfdfd"),
-    ),
-    // 台北市萬華區
-    new Exhibition(
-        "BoPiLiao",
-        "剝皮寮歷史街區",
-        new ButtonStyle("#fff", "#656565", "#cacaca"),
-    ),
-    new Exhibition(
-        "RedHouse",
-        "西門紅樓",
-        new ButtonStyle("#fff", "#c73405", "#c73405"),
-    ),
-    // 台北市中山區
-    new Exhibition(
-        "TFam",
-        "臺北市立美術館",
-        new ButtonStyle("#fff", "#2B2B2B", "#2B2B2B"),
-    ),
-    new Exhibition(
-        "TaipeiExPoPark",
-        "花博公園",
-        new ButtonStyle("#fff", "#e52410", "#626468"),
-    ),
-    new Exhibition(
-        "Jam",
-        "忠泰美術館",
-        new ButtonStyle("#3c3d30", "#00d186", "#00d186"),
-    ),
-    new Exhibition(
-        "KingCarArt",
-        "金車文藝中心",
-        new ButtonStyle("#fff", "#000001", "#000001"),
-    ),
-    // 台北市大安區
-    new Exhibition(
-        "NTNUArtMuseum",
-        "師大美術館",
-        new ButtonStyle("#fff", "#4d070b", "#000001"),
-    ),
-    new Exhibition(
-        "MoNTUE",
-        "北師美術館",
-        new ButtonStyle("#3c3d30", "#f0eb4c", "#4b4b4b"),
-    ),
-    new Exhibition(
-        "FuBonArtMuseum",
-        "富邦美術館",
-        new ButtonStyle("#fff", "#643164", "#643164"),
-    ),
-    // 台北市松山區、信義區
-    new Exhibition(
-        "PACT",
-        "台北偶戲館",
-        new ButtonStyle("#fff", "#e40012", "#db462f"),
-    ),
-    new Exhibition(
-        "SongShanCulturalPark",
-        "松山文創園區",
-        new ButtonStyle("#fff", "#595758", "#F9DD00"),
-    ),
-    new Exhibition(
-        "CLab",
-        "台灣當代文化實驗場C-Lab",
-        new ButtonStyle("#fff", "#f87065", "#f2f2f0"),
-    ),
-    new Exhibition(
-        "TwTc",
-        "台北世貿中心",
-        new ButtonStyle("#fff", "#ef5923", "#ef5923"),
-    ),
-    new Exhibition(
-        "Yatsen",
-        "國立國父紀念館",
-        new ButtonStyle("#fff", "#f6b64b", "#2f98d2"),
-    ),
-    new Exhibition(
-        "ChiPoLin",
-        "齊柏林空間",
-        new ButtonStyle("#fff", "#585656", "#585656"),
-    ),
-    // 台北市南港區
-    new Exhibition(
-        "Tmc",
-        "台北流行音樂中心",
-        new ButtonStyle("#fff", "#FF5000", "#00BBD3"),
-    ),
-    // 台北市士林區
-    new Exhibition(
-        "Npm",
-        "國立故宮博物院",
-        new ButtonStyle("#fff", "#7D0000", "#7D0000"),
-    ),
-    new Exhibition(
-        "NtSec",
-        "國立臺灣科學教育館",
-        new ButtonStyle("#3c3d30", "#FAA61A", "#33C0C4"),
-    ),
-    new Exhibition(
-        "ShungYeArt",
-        "順益台灣美術館",
-        new ButtonStyle("#fff", "#83744c", "#585656"),
-    ),
-    // 台北市北投區
-    new Exhibition(
-        "KdMoFa",
-        "關渡美術館",
-        new ButtonStyle("#fff", "#eb7102", "#eb7102"),
-    ),
-    new Exhibition(
-        "HongGah",
-        "鳳甲美術館",
-        new ButtonStyle("#fff", "#585656", "#585656"),
-    ),
-    new Exhibition(
-        "YoChangArt",
-        "有章藝術博物館",
-        new ButtonStyle("#fff", "#585656", "#585656"),
-    ),
-    // 新北市
-    new Exhibition(
-        "Mwr",
-        "世界宗教博物館",
-        new ButtonStyle("#fff", "#b01f23", "#b01f23"),
-    ),
-    new Exhibition(
-        "NHRM",
-        "國家人權博物館",
-        new ButtonStyle("#fff", "#a42422", "#000001"),
-    ),
-    new Exhibition(
-        "NtcArtMuseum",
-        "新北市美術館",
-        new ButtonStyle("#fff", "#000001", "#000001"),
-    ),
-    new Exhibition(
-        "Culture435",
-        "板橋435藝文特區",
-        new ButtonStyle("#fff", "#e35449", "#e35449"),
-    ),
-    new Exhibition(
-        "NtcCeramics",
-        "新北市立鶯歌陶瓷博物館",
-        new ButtonStyle("#fff", "#585656", "#585656"),
-    ),
-    // 基隆市
-    new Exhibition(
-        "kmoa",
-        "基隆美術館",
-        new ButtonStyle("#fff", "#e35449", "#e35449"),
-    ),
-    new Exhibition(
-        "OCAM",
-        "陽明海洋文化藝術館",
-        new ButtonStyle("#fff", "#b81d21", "#b81d21"),
-    ),
-];
-
-const allTopicClass = [].concat(exhibitionTopicClass, platformTopicClass);
+// 無對應樣式時的預設值
+const DEFAULT_STYLE = { color: "#fff", bg: "#6c757d", border: "#6c757d" };
 
 // 城市顯示順序（北 → 南，新增城市自動落到正確位置）
 const cityDisplayOrder = [
@@ -325,55 +130,24 @@ const venueTypeDisplayMap = {
     expo_center: "🏢 展覽中心",
 };
 
-const allTopicSet = new Set(
-    allTopicClass.map((exhibition) => {
-        return exhibition.topic;
-    }),
-);
-
-const getInitTopic = () => {
-    const params = new URLSearchParams(window.location.search);
-    const topic = params.get("topic");
-    if (topic !== undefined && topic !== null && allTopicSet.has(topic)) {
-        return topic;
-    }
-    const firstWatched = loadVenueWatchlist().find(t => allTopicSet.has(t));
-    if (firstWatched) return firstWatched;
-    return allTopicClass[0].topic;
-};
-
 const copyUrlToClipboard = (url) => {
     navigator.clipboard
         .writeText(url)
         .then(() => {
             const toastEl = document.getElementById("cpToast");
-            if (toastEl) {
-                const toast = new bootstrap.Toast(toastEl);
-                toast.show();
-            }
+            if (toastEl) new bootstrap.Toast(toastEl).show();
         })
-        .catch((err) => {
+        .catch(() => {
             const toastEl = document.getElementById("cpToast");
-            if (toastEl) {
-                const toast = new bootstrap.Toast(toastEl);
-                toast.show();
-            }
+            if (toastEl) new bootstrap.Toast(toastEl).show();
         });
 };
-
-const customizeButtons = allTopicClass.map((exhibition) => {
-    return {extend: exhibition.topic, className: `btn btn-${exhibition.topic}`};
-});
 
 const ACHIEVEMENTS_STORAGE_KEY = "been-been-play-achievements";
 
 const loadAchievements = () => {
-    const raw = localStorage.getItem(ACHIEVEMENTS_STORAGE_KEY);
-    try {
-        return raw ? JSON.parse(raw) : [];
-    } catch (e) {
-        return [];
-    }
+    try { return JSON.parse(localStorage.getItem(ACHIEVEMENTS_STORAGE_KEY)) || []; }
+    catch (e) { return []; }
 };
 const saveAchievements = (data) => {
     localStorage.setItem(ACHIEVEMENTS_STORAGE_KEY, JSON.stringify(data));
@@ -403,43 +177,36 @@ const getAchievementElement = (title, figure, uuid) => {
     colText.className = "col-md-8";
     const cardBody = document.createElement("div");
     cardBody.className = "card-body";
-
     cardBody.appendChild(titleEl);
     colText.appendChild(cardBody);
 
     row.appendChild(colImg);
     row.appendChild(colText);
     card.appendChild(row);
-
     return card;
 };
 
 const addToAchievement = (title, figure, uuid, is_save = true) => {
-    let element = getAchievementElement(title, figure);
+    const element = getAchievementElement(title, figure, uuid);
     const container = document.getElementById("achievementList");
-    if (container) {
-        container.appendChild(element);
-    }
+    if (container) container.appendChild(element);
     if (is_save) {
         const achievements = loadAchievements();
-        const exists = achievements.some((item) => item.uuid === uuid);
-        if (!exists) {
-            achievements.push({title, figure, uuid});
+        if (!achievements.some((item) => item.uuid === uuid)) {
+            achievements.push({ title, figure, uuid });
             saveAchievements(achievements);
         }
     }
 };
-const exportAchievementsToJSON = () => {
-    const achievements = loadAchievements();
-    const dataStr = JSON.stringify(achievements, null, 2);
-    const blob = new Blob([dataStr], {type: "application/json"});
-    const url = URL.createObjectURL(blob);
 
+const exportAchievementsToJSON = () => {
+    const dataStr = JSON.stringify(loadAchievements(), null, 2);
+    const blob = new Blob([dataStr], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
     a.download = "achievements_backup.json";
     a.click();
-
     URL.revokeObjectURL(url);
 };
 
@@ -447,17 +214,11 @@ const exportAchievementsToJSON = () => {
 const VENUE_WATCHLIST_KEY = "been-been-play-venue-watchlist";
 
 const loadVenueWatchlist = () => {
-    const raw = localStorage.getItem(VENUE_WATCHLIST_KEY);
-    try { return raw ? JSON.parse(raw) : []; }
+    try { return JSON.parse(localStorage.getItem(VENUE_WATCHLIST_KEY)) || []; }
     catch (e) { return []; }
 };
-
-const saveVenueWatchlist = (data) => {
-    localStorage.setItem(VENUE_WATCHLIST_KEY, JSON.stringify(data));
-};
-
+const saveVenueWatchlist = (data) => localStorage.setItem(VENUE_WATCHLIST_KEY, JSON.stringify(data));
 const isVenueWatched = (topic) => loadVenueWatchlist().includes(topic);
-
 const toggleVenueWatch = (topic) => {
     const list = loadVenueWatchlist();
     const idx = list.indexOf(topic);
@@ -475,37 +236,22 @@ document
     .addEventListener("change", function (event) {
         const file = event.target.files[0];
         if (!file) return;
-
         const reader = new FileReader();
         reader.onload = function (e) {
             try {
                 const data = JSON.parse(e.target.result);
-                if (!Array.isArray(data)) {
-                    alert("格式錯誤：應為陣列！");
-                    return;
-                }
-
+                if (!Array.isArray(data)) { alert("格式錯誤：應為陣列！"); return; }
                 const isValid = data.every(
                     (item) =>
                         typeof item.title === "string" &&
                         typeof item.figure === "string" &&
                         typeof item.uuid === "string",
                 );
-                if (!isValid) {
-                    alert("格式錯誤：缺少必要欄位 (title, figure, UUID)");
-                    return;
-                }
-
+                if (!isValid) { alert("格式錯誤：缺少必要欄位 (title, figure, UUID)"); return; }
                 importedAchievementsData = data;
-
-                // 顯示 modal
                 document.getElementById("importSummaryText").innerHTML =
                     `你將匯入 <strong>${data.length}</strong> 筆成就資料，這將會覆蓋現有成就。確定嗎？`;
-
-                const confirmModal = new bootstrap.Modal(
-                    document.getElementById("confirmImportModal"),
-                );
-                confirmModal.show();
+                new bootstrap.Modal(document.getElementById("confirmImportModal")).show();
             } catch (err) {
                 console.error(err);
                 alert("匯入失敗：JSON 格式錯誤");
@@ -518,10 +264,7 @@ document
     .getElementById("btnConfirmImport")
     .addEventListener("click", function () {
         if (importedAchievementsData) {
-            localStorage.setItem(
-                ACHIEVEMENTS_STORAGE_KEY,
-                JSON.stringify(importedAchievementsData),
-            );
+            localStorage.setItem(ACHIEVEMENTS_STORAGE_KEY, JSON.stringify(importedAchievementsData));
             alert("匯入成功！將重新載入頁面。");
             location.reload();
         }
@@ -530,45 +273,9 @@ document
 document
     .getElementById("confirmDeleteAchievements")
     .addEventListener("click", function () {
-        // 清空 localStorage 中的成就資料
         localStorage.removeItem(ACHIEVEMENTS_STORAGE_KEY);
-
-        const achievementList = document.getElementById("achievementList");
-        achievementList.innerHTML = "";
-
-        const deleteModal = bootstrap.Modal.getInstance(
-            document.getElementById("deleteAllAchievementModal"),
-        );
-        deleteModal.hide();
-
-        const offcanvasAchievement = bootstrap.Offcanvas.getInstance(
-            document.getElementById("offcanvasAchievement"),
-        );
-        offcanvasAchievement.hide();
+        document.getElementById("achievementList").innerHTML = "";
+        bootstrap.Modal.getInstance(document.getElementById("deleteAllAchievementModal")).hide();
+        bootstrap.Offcanvas.getInstance(document.getElementById("offcanvasAchievement")).hide();
         location.reload();
     });
-
-allTopicClass.map((exhibition) => {
-    $.fn.dataTable.ext.buttons[exhibition.topic] = {
-        text: exhibition.name,
-        action: function (e, dt, node, config) {
-            dt.ajax.url(`${URL_SOURCE}${exhibition.topic}.json`).load();
-        },
-    };
-});
-
-const style = document.createElement("style");
-style.type = "text/css";
-
-style.innerHTML = allTopicClass
-    .map((exhibition) => {
-        return `.btn-${exhibition.topic} {
-    color:${exhibition.buttonStyle.color};
-    background-color:${exhibition.buttonStyle.backgroundColor};
-    border-color:${exhibition.buttonStyle.borderColor};
-    --bs-btn-hover-color: ${exhibition.buttonStyle.color};
-    --bs-btn-hover-bg: ${exhibition.buttonStyle.backgroundColor};
-    }`;
-    })
-    .join(" ");
-document.getElementsByTagName("head")[0].appendChild(style);
