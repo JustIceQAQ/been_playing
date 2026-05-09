@@ -115,6 +115,7 @@
     - 屏東縣
         - [屏東美術館](https://ptam.ptcg.gov.tw/) `PTAM`
         - [屏菸1936文化基地](https://www.cultural.pthg.gov.tw/pt1936/News9.aspx?n=8E5540CA059309A8&CategorySN=3630) `PT1936`
+        - [屏東縣立美術館](https://www.cultural.pthg.gov.tw/pt1936/News9.aspx?n=8E5540CA059309A8&CategorySN=3632) `PTCAM`
     - 臺東縣
         - [台東美術館](https://tm.ccl.ttct.edu.tw/) `TAM`
         - [國立臺東生活美學館](https://www.ttcsec.gov.tw/) `ttcsec`

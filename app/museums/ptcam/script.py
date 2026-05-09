@@ -3,7 +3,7 @@ from typing import cast
 
 from selectolax.lexbor import LexborNode
 
-from app.museums.pt1936.parse import PT1936Parse
+from app.museums.ptcam.parse import PTCAMParse
 from helpers.cache.none.helper import NoneCache
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_cookies, generate_headers
@@ -16,9 +16,9 @@ from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3
 
 
-class PT1936Runner(RunnerInit):
+class PTCAMRunner(RunnerInit):
     translation = SelectolaxTranslation
-    use_parse = PT1936Parse
+    use_parse = PTCAMParse
 
     def set_cache_expire(self) -> int | None:
         return month_3()
@@ -26,11 +26,11 @@ class PT1936Runner(RunnerInit):
     def set_information(self) -> "Information":
         return Information(
             location_code=Taiwan.pingtung.pingtung_10013010,
-            fullname="屏菸1936文化基地",
-            code_name="PT1936",
-            external_link="https://www.cultural.pthg.gov.tw/pt1936/News9.aspx?n=8E5540CA059309A8&CategorySN=3630",
-            branch_coordinates=Coordinate(raw_coordinates="22.66176638838444, 120.50517003897802"),
-            venue_type=VenueType.CREATIVE_PARK,
+            fullname="屏東縣立美術館",
+            code_name="PTCAM",
+            external_link="https://www.cultural.pthg.gov.tw/pt1936/News9.aspx?n=8E5540CA059309A8&CategorySN=3632",
+            branch_coordinates=Coordinate(raw_coordinates="22.66152654026495, 120.50527473558604"),
+            venue_type=VenueType.ART_MUSEUM,
         )
 
     async def _fetch_sub_response(self, client, url: str, cookies: dict | None):
@@ -44,7 +44,7 @@ class PT1936Runner(RunnerInit):
         cookies = generate_cookies(need_asp_net_session_id=True)
         async with NiquestsAsyncSession(headers=headers) as client:
             response = await client.get(
-                "https://www.cultural.pthg.gov.tw/pt1936/News9.aspx?n=8E5540CA059309A8&CategorySN=3630", cookies=cookies
+                "https://www.cultural.pthg.gov.tw/pt1936/News9.aspx?n=8E5540CA059309A8&CategorySN=3632", cookies=cookies
             )
             response_p = SelectolaxTranslation().translation_to_object(response.text)
             responses = await asyncio.gather(
@@ -64,7 +64,7 @@ class PT1936Runner(RunnerInit):
 
 
 async def main():
-    await PT1936Runner().run(NoneCache(), NoneImage())
+    await PTCAMRunner().run(NoneCache(), NoneImage())
 
 
 if __name__ == "__main__":

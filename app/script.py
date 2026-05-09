@@ -1,5 +1,3 @@
-from .museums.pt1936.script import PT1936Runner
-
 from .galleries.capitalart import CapitalArtRunner
 from .galleries.cg1839 import CG1839Runner
 from .galleries.dac99 import Dac99Runner
@@ -65,7 +63,9 @@ from .museums.ntsec.script import NtSecRunner
 from .museums.ocam.script import OCAMRunner
 from .museums.pact import PactRunner
 from .museums.pier2 import Pier2Runner
+from .museums.pt1936.script import PT1936Runner
 from .museums.ptam.script import PTAMRunner
+from .museums.ptcam.script import PTCAMRunner
 from .museums.redhouse import RedHouseRunner
 from .museums.shungyeart.script import ShungYeArtRunner
 from .museums.songshanculturalpark.script import SongShanCulturalParkRunner
@@ -187,6 +187,7 @@ MUSEUMS_RUNNERS = {
     HCAMRunner,
     AS241Runner,
     PT1936Runner,
+    PTCAMRunner,
 }
 
 GALLERIES_RUNNERS = {
