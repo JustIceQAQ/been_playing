@@ -10,13 +10,12 @@ _RETRY_STRATEGY = Retry(
     backoff_factor=0.5,
     raise_on_status=False,
 )
-_ADAPTER = AsyncHTTPAdapter(max_retries=_RETRY_STRATEGY)
 
 
 class NiquestsAsyncSession(niquests.AsyncSession):
     def __init__(
         self,
-        timeout: int | None | niquests.Timeout = 300,
+        timeout: int | None | niquests.Timeout = 30,
         *args,
         **kwargs,
     ) -> None:
@@ -24,8 +23,9 @@ class NiquestsAsyncSession(niquests.AsyncSession):
         self.passed_args = args
         self.passed_kwargs = kwargs
 
-        self.mount("https://", _ADAPTER)
-        self.mount("http://", _ADAPTER)
+        adapter = AsyncHTTPAdapter(max_retries=_RETRY_STRATEGY)
+        self.mount("https://", adapter)
+        self.mount("http://", adapter)
 
     async def __aenter__(self) -> niquests.AsyncSession:
         return self
