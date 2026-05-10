@@ -16,7 +16,10 @@ class Dac99Parse(ParseInit):
 
     def get_address(self, *args, **kwargs) -> str | None:
         exhibition_current__text = self.item.find("p", {"class": "exhibition-current__text"}).get_text(strip=True)
-        return exhibition_current__text.split("展覽地點：")[1].split("（")[0].strip()
+        split_str = exhibition_current__text.split("展覽地點：")
+        if len(split_str) == 1:
+            return None
+        return split_str[1].split("（")[0].strip()
 
     def get_figure(self, *args, **kwargs) -> str | None:
         return "https://99dac.com/" + self.item.find("img").get("src")[2:]
