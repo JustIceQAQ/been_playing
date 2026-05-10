@@ -9,8 +9,6 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3, get_this_date_year
-from helpers.cache.none.helper import NoneCache
-from helpers.image.none.helper import NoneImage
 
 from typing import cast
 
@@ -59,6 +57,9 @@ class NTTRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
+
     await NTTRunner().run(NoneCache(), NoneImage())
 
 

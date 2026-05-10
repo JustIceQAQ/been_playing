@@ -10,8 +10,6 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.symbol.venue import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
-from helpers.cache.none.helper import NoneCache
-from helpers.image.none.helper import NoneImage
 
 
 class CultureExpressRunner(RunnerInit):
@@ -64,6 +62,9 @@ class CultureExpressRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
+
     await CultureExpressRunner().run(NoneCache(), NoneImage())
 
 

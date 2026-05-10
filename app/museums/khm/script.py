@@ -12,8 +12,6 @@ from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
-from helpers.cache.none.helper import NoneCache
-from helpers.image.none.helper import NoneImage
 from typing import cast
 
 
@@ -65,6 +63,9 @@ class KhmRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
+
     await KhmRunner().run(NoneCache(), NoneImage())
 
 

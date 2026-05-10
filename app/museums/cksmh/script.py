@@ -54,8 +54,7 @@ async def main():
     from helpers.cache.none.helper import NoneCache
     from helpers.image.none.helper import NoneImage
 
-    runner = CKSMHRunner()
-    await runner.run(NoneCache(), NoneImage())
+    await CKSMHRunner().run(NoneCache(), NoneImage())
 
 
 if __name__ == "__main__":

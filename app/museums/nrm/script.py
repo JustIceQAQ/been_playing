@@ -10,8 +10,6 @@ from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3, get_asyncio_rate_limit
-from helpers.cache.none.helper import NoneCache
-from helpers.image.none.helper import NoneImage
 
 from typing import cast
 
@@ -67,6 +65,9 @@ class NrmRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
+
     await NrmRunner().run(NoneCache(), NoneImage())
 
 

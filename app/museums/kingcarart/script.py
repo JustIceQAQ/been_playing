@@ -3,10 +3,8 @@ import asyncio
 import bs4
 
 from app.museums.kingcarart.parse import KingCarArtParse
-from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
-from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.symbol.venue import VenueType
@@ -73,6 +71,9 @@ class KingCarArtRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
+
     await KingCarArtRunner().run(NoneCache(), NoneImage())
 
 

@@ -6,10 +6,8 @@ from dateutil.relativedelta import relativedelta
 
 from app.museums.ntsec.format.address import get_page_address
 from app.museums.ntsec.parse import NtSecParse
-from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
-from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, ExhibitionItem, Coordinate
 from helpers.symbol.venue import VenueType
@@ -78,6 +76,9 @@ class NtSecRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
+
     await NtSecRunner().run(NoneCache(), NoneImage())
 
 

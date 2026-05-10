@@ -4,10 +4,8 @@ from typing import cast
 from selectolax.lexbor import LexborNode
 
 from app.museums.as241.parse import AS241Parse
-from helpers.cache.none.helper import NoneCache
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_cookies, generate_headers
-from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Coordinate, Information
 from helpers.symbol.taiwan import Taiwan
@@ -69,6 +67,9 @@ class AS241Runner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
+
     await AS241Runner().run(NoneCache(), NoneImage())
 
 

@@ -7,10 +7,8 @@ import httpx
 from app.museums.twtc.parse import TwTcParse
 from app.museums.twtc.schemas import TwTcResponse
 from app.museums.twtc.utils import get_next_element
-from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
-from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information, Coordinate
 from helpers.symbol.venue import VenueType
@@ -134,6 +132,9 @@ class TwTcRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
+
     await TwTcRunner().run(NoneCache(), NoneImage())
 
 

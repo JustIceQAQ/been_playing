@@ -11,8 +11,6 @@ from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
-from helpers.cache.none.helper import NoneCache
-from helpers.image.none.helper import NoneImage
 
 
 class Pier2Runner(RunnerInit):
@@ -53,6 +51,9 @@ class Pier2Runner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
+
     await Pier2Runner().run(NoneCache(), NoneImage())
 
 

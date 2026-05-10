@@ -4,10 +4,8 @@ import datetime
 import bs4
 
 from app.platform.bookstickets.parse import BooksTicketsParse
-from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
-from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information
 from helpers.symbol.venue import VenueType
@@ -78,6 +76,9 @@ class BooksTicketsRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
+
     await BooksTicketsRunner().run(NoneCache(), NoneImage())
 
 

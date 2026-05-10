@@ -4,10 +4,8 @@ from typing import cast
 import httpx
 
 from app.museums.bopiliao.parse import BoPiLiaoParse
-from helpers.cache.none.helper import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
-from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.symbol.venue import VenueType
@@ -64,6 +62,9 @@ class BoPiLiaoRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
+
     await BoPiLiaoRunner().run(NoneCache(), NoneImage())
 
 

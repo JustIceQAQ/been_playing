@@ -11,8 +11,6 @@ from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
-from helpers.cache.none.helper import NoneCache
-from helpers.image.none.helper import NoneImage
 
 
 class TnamMuseumRunner(RunnerInit):
@@ -75,6 +73,9 @@ class TnamMuseumRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
+
     await TnamMuseumRunner().run(NoneCache(), NoneImage())
 
 

@@ -12,8 +12,6 @@ from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3
-from helpers.cache.none.helper import NoneCache
-from helpers.image.none.helper import NoneImage
 
 
 class KiShuAnRunner(RunnerInit):
@@ -51,6 +49,9 @@ class KiShuAnRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
+
     await KiShuAnRunner().run(NoneCache(), NoneImage())
 
 

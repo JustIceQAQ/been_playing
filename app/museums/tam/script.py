@@ -5,10 +5,8 @@ from selectolax.lexbor import LexborNode
 
 from app.museums.tam.parse import TAMParse
 from configs.settings import get_settings
-from helpers.cache.none.helper import NoneCache
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_headers
-from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Coordinate, Information
 from helpers.symbol.venue import VenueType
@@ -66,6 +64,9 @@ class TAMRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
+
     await TAMRunner().run(NoneCache(), NoneImage())
 
 
