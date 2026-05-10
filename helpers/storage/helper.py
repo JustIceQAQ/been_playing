@@ -121,28 +121,41 @@ class ExhibitionItem(BaseModel):
             if field is None
         )
 
-    def __lt__(self, other: "ExhibitionItem") -> bool:
-        self_type = self.extract_date_type()
-        other_type = other.extract_date_type()
+    def _sort_key(self) -> tuple:
+        today = datetime.datetime.now(tz=get_timezone()).replace(hour=0, minute=0, second=0, microsecond=0)
+        MAX_DATE = datetime.datetime(9999, 12, 31, tzinfo=get_timezone())
 
-        if self_type != other_type:
-            return self_type < other_type
+        start = self.extract_start_date()
+        end = self.extract_end_date()
+        date_type = self.extract_date_type()
 
-        if self_type in (0, 1, 3):
-            self_date = self.extract_start_date()
-            other_date = other.extract_start_date()
-            if self_date and other_date:
-                return self_date < other_date
-            elif self_date and not other_date:
-                return True
-            elif not self_date and other_date:
-                return False
+        # 進行中（無結束日期）
+        if date_type == 3:
+            return (0, 1, start or MAX_DATE)
+
+        # 進行中 / 尚未開始 / 已結束（有完整範圍）
+        if date_type == 0 and start and end:
+            if start <= today <= end:
+                return (0, 0, end)  # 進行中，以結束日期 asc 排序
+            elif start > today:
+                return (1, 0, start)  # 尚未開始（範圍型），以開始日期 asc 排序
             else:
-                return False
-        elif self_type == 2:
-            return self.count_none_fields() < other.count_none_fields()
+                return (3, 0, end)  # 已結束
 
-        return False  # fallback
+        # 尚未開始 / 已結束（單一日期）
+        if date_type == 1 and start:
+            if start > today:
+                return (1, 1, start)  # 尚未開始（單一日期）
+            elif today > start:
+                return (3, 1, start)  # 已結束（單一日期）
+            else:
+                return (0, 1, MAX_DATE)  # 今天即為展期
+
+        # 無法判斷
+        return (2, self.count_none_fields(), MAX_DATE)
+
+    def __lt__(self, other: "ExhibitionItem") -> bool:
+        return self._sort_key() < other._sort_key()
 
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, ExhibitionItem):

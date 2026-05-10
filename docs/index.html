@@ -567,9 +567,11 @@
       return false;
     };
 
-    const exhibitionStats = (dateString, tag = "h2") => {
+    const exhibitionStats = (dateString, tag = "h2", textOnly = false, countdownOnly = false) => {
+      const r = (badge, label) => textOnly ? label : badge;
+
       if (dateString == null) {
-        return unableBadges(tag);
+        return r(unableBadges(tag), "無法判斷");
       }
 
       let nowDate = dayjs(new Date().toLocaleDateString("tw-zh"));
@@ -579,38 +581,38 @@
         splitDateString.length === 1 &&
         (splitDateString[0] === "-" || splitDateString[0] === "")
       ) {
-        return inProgressBadges(tag);
+        return r(inProgressBadges(tag, null, countdownOnly), "進行中");
       }
 
       if (splitDateString.length === 1) {
         let oneDate = dayjs(splitDateString[0].trim());
         if (isNaN(oneDate)) {
-          return unableBadges(tag);
+          return r(unableBadges(tag), "無法判斷");
         }
         if (nowDate.isAfter(oneDate)) {
-          return finishedBadges(tag);
+          return r(finishedBadges(tag), "已經結束");
         }
         if (oneDate.isAfter(nowDate)) {
-          return notStartedBadges(tag);
+          return r(notStartedBadges(tag, oneDate, countdownOnly), "尚未開始");
         }
 
-        return unableBadges(tag);
+        return r(unableBadges(tag), "無法判斷");
       } else if (splitDateString.length === 2) {
         if (splitDateString[1] === "") {
-          return inProgressBadges(tag);
+          return r(inProgressBadges(tag, null, countdownOnly), "進行中");
         } else {
           let startDate = dayjs(splitDateString[0].trim());
           let endDate = dayjs(splitDateString[1].trim());
           if (startDate.isAfter(nowDate)) {
-            return notStartedBadges(tag);
+            return r(notStartedBadges(tag, startDate, countdownOnly), "尚未開始");
           }
           if (nowDate.isAfter(endDate)) {
-            return finishedBadges(tag);
+            return r(finishedBadges(tag), "已經結束");
           }
-          return inProgressBadges(tag);
+          return r(inProgressBadges(tag, endDate.endOf("day"), countdownOnly), "進行中");
         }
       }
-      return unableBadges(tag);
+      return r(unableBadges(tag), "無法判斷");
     };
 
     const setLight = () => {
@@ -629,6 +631,7 @@
       runThemeSet();
     });
     dayjs.locale("zh-tw");
+    dayjs.Ls["zh-tw"].relativeTime.future = "%s後";
 
     $(document).ready(async function () {
       const isDark = window.matchMedia("(prefers-color-scheme:dark)").matches;
@@ -706,7 +709,7 @@
             data: "title",
             createdCell: (td) => td.setAttribute("data-label", "展覽"),
             render: function (data, type, row) {
-              return `<a target="_blank" href="${row.source_url}"><div style="white-space:normal;word-break:break-all;">${data}${exhibitionStats(row.date, (tag = "h6"))}</div></a>`;
+              return `<a target="_blank" href="${row.source_url}"><div style="white-space:normal;word-break:break-all;">${data}</div></a>`;
             },
           },
           {
@@ -737,7 +740,7 @@
             data: "date",
             createdCell: (td) => td.setAttribute("data-label", "狀態"),
             render: function (data, type, row) {
-              return exhibitionStats(data);
+              return exhibitionStats(data, "h2", type === "filter", type !== "filter");
             },
           },
           {
