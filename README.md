@@ -1,6 +1,7 @@
 # been_playing
 
 [![update-async-exhibition](https://github.com/JustIceQAQ/been_playing/actions/workflows/update_async_exhibition.yml/badge.svg?branch=deploy)](https://github.com/JustIceQAQ/been_playing/actions/workflows/update_async_exhibition.yml)
+[![CodeQL Analysis](https://github.com/JustIceQAQ/been_playing/actions/workflows/codeql_analysis.yaml/badge.svg)](https://github.com/JustIceQAQ/been_playing/actions/workflows/codeql_analysis.yaml)
 
 - Northern Taiwan Exhibition Crawlers
 
