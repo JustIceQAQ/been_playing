@@ -2,7 +2,10 @@ import asyncio
 
 import cloudinary
 import cloudinary.uploader
-import httpxyz as httpx
+from rnet import Proxy
+
+from configs.settings import get_settings
+from helpers.crawler.rnet.helper import RNetAsyncClient
 
 _MAX_FILE_SIZE = 10 * 1024 * 1024  # Cloudinary 免費方案上限 10MB
 _WEBP_EXTS = (".jpg", ".jpeg", ".png", ".JPG", ".JPEG", ".PNG")
@@ -19,11 +22,15 @@ class CloudinaryImageHosting:
         )
 
     async def _download(self, image_url: str) -> bytes | None:
+        settings = get_settings()
+        proxies = None if settings.PROXY_POOL is None else [Proxy.all(settings.PROXY_POOL)]
         try:
-            async with httpx.AsyncClient(timeout=30, follow_redirects=True) as client:
+            async with RNetAsyncClient(proxies=proxies) as client:
                 response = await client.get(image_url)
-                response.raise_for_status()
-                return response.content
+                if not response.status_code.is_success():
+                    print(f"Cloudinary Error: 下載圖片失敗（HTTP {response.status_code}）{image_url}")
+                    return None
+                return await response.bytes()
         except Exception as e:
             print(f"Cloudinary Error: 下載圖片失敗 {image_url} — {e}")
             return None
