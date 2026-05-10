@@ -8,6 +8,7 @@ dependencies = [
     "aiolimiter==1.2.1",
     "anyio>=4.4.0",
     "bs4==0.0.2",
+    "cloudinary>=1.44.2",
     "croniter==6.2.2",
     "cssutils==2.15.0",
     "dill==0.4.1",
