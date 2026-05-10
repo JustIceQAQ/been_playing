@@ -25,6 +25,7 @@ class TnamMuseumRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=Taiwan.tainan.west_central_67000370,
             fullname="臺南市美術館",
             code_name="TnamMuseum",
             external_link="https://www.tnam.museum/exhibition/current?page=1",
