@@ -2,34 +2,64 @@ import asyncio
 
 import cloudinary
 import cloudinary.uploader
+import httpxyz as httpx
+
+_MAX_FILE_SIZE = 10 * 1024 * 1024  # Cloudinary 免費方案上限 10MB
+_WEBP_EXTS = (".jpg", ".jpeg", ".png", ".JPG", ".JPEG", ".PNG")
 
 
-class CloudinaryImageHost:
+class CloudinaryImageHosting:
     def __init__(self, cloud_name: str, api_key: str, api_secret: str):
         self.cloudinary = cloudinary
         self.cloudinary.config(
             cloud_name=cloud_name,
             api_key=api_key,
-            api_secret=api_secret,  # Click 'View API Keys' above to copy your API secret
+            api_secret=api_secret,
             secure=True,
         )
 
+    async def _download(self, image_url: str) -> bytes | None:
+        try:
+            async with httpx.AsyncClient(timeout=30, follow_redirects=True) as client:
+                response = await client.get(image_url)
+                response.raise_for_status()
+                return response.content
+        except Exception as e:
+            print(f"Cloudinary Error: 下載圖片失敗 {image_url} — {e}")
+            return None
+
     async def upload(self, image_url: str) -> str | None:
+        if not image_url:
+            return None
+
+        content = await self._download(image_url)
+        if content is None:
+            return None
+
+        if len(content) > _MAX_FILE_SIZE:
+            print(f"Cloudinary Error: 圖片過大（{len(content)} bytes），略過 {image_url}")
+            return None
+
         loop = asyncio.get_running_loop()
         try:
-            upload_result = await loop.run_in_executor(None, lambda: self.cloudinary.uploader.upload(image_url))
-            secure_url = upload_result.get("secure_url")
-            if ".jpg" in secure_url or ".png" in secure_url:
-                secure_url = secure_url.replace(".jpg", ".webp").replace(".png", ".webp")
-            return secure_url
+            upload_result = await loop.run_in_executor(
+                None,
+                lambda: self.cloudinary.uploader.upload(content, resource_type="image"),
+            )
+            secure_url: str = upload_result.get("secure_url", "")
+            for ext in _WEBP_EXTS:
+                if secure_url.endswith(ext):
+                    secure_url = secure_url[: -len(ext)] + ".webp"
+                    break
+            return secure_url or None
         except Exception as e:
             print(f"Cloudinary Error: {e}")
             return None
 
 
 async def main():
-    ci = CloudinaryImageHost("", "", "")
-    result = await ci.upload("")
+    ci = CloudinaryImageHosting("dpoo988ui", "185848834645339", "fRuBzXslmWuH7cK5vDplHVHJih0")
+    result = await ci.upload("https://khm.org.tw/storage/files/2635/original/9623291736620dc3a1d2e53.png")
     print(result)
 
 

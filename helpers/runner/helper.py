@@ -114,16 +114,17 @@ class RunnerInit(abc.ABC):
             if cache_figure_url:
                 item.figure = cache_figure_url
             else:
-                result = await self.image.upload(item.figure)
-                if result:
-                    await self.cache.aset(
-                        hash_source_url,
-                        result,
-                        expire=self.set_cache_expire(),
-                    )
-                    item.figure = result
-                else:
-                    pass
+                if item.figure:
+                    result = await self.image.upload(item.figure)
+                    if result:
+                        await self.cache.aset(
+                            hash_source_url,
+                            result,
+                            expire=self.set_cache_expire(),
+                        )
+                        item.figure = result
+                    else:
+                        pass
 
     def hash_content(self, content: str | dict):
         if isinstance(content, dict):

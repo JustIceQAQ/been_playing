@@ -57,9 +57,9 @@ class CapitalArtRunner(RunnerInit):
 
 async def main():
     from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImage
+    from helpers.image_hosting.none.helper import NoneImageHosting
 
-    await CapitalArtRunner().run(NoneCache(), NoneImage())
+    await CapitalArtRunner().run(NoneCache(), NoneImageHosting())
 
 
 if __name__ == "__main__":

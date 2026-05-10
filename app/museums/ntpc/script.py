@@ -7,7 +7,7 @@ from app.museums.ntpc.parse import NTPCParse, normalize_date_range
 from helpers.cache import DiskCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
-from helpers.image_hosting.none.helper import NoneImage
+from helpers.image_hosting.none.helper import NoneImageHosting
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information, Coordinate
 from helpers.symbol.venue import VenueType
@@ -83,7 +83,7 @@ class NTPCRunner(RunnerInit):
 
 
 async def main():
-    await NTPCRunner().run(DiskCache(), NoneImage())
+    await NTPCRunner().run(DiskCache(), NoneImageHosting())
 
 
 if __name__ == "__main__":

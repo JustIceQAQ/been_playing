@@ -69,9 +69,9 @@ class CG1839Runner(RunnerInit):
 
 async def main():
     from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImage
+    from helpers.image_hosting.none.helper import NoneImageHosting
 
-    await CG1839Runner().run(NoneCache(), NoneImage())
+    await CG1839Runner().run(NoneCache(), NoneImageHosting())
 
 
 if __name__ == "__main__":

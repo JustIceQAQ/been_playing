@@ -10,8 +10,8 @@ from app.museums.khm import KhmRunner
 from configs.settings import get_settings
 from helpers.cache import DiskCache, NoneCache
 from helpers.crawler.scraper.helper import available_scraper_async_client
-from helpers.image_hosting.none.helper import NoneImage
-from helpers.image_hosting.cloudinary.helper import CloudinaryImageHost
+from helpers.image_hosting.none.helper import NoneImageHosting
+from helpers.image_hosting.cloudinary.helper import CloudinaryImageHosting
 
 
 async def main(worker: int | None = None, worker_max: int | None = None):
@@ -24,12 +24,12 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         datefmt="%Y-%m-%d %H:%M",
     )
 
-    image_host = NoneImage()
+    image_host = NoneImageHosting()
     if (not runtime_setting.IS_DEBUG) and (runtime_setting.is_cloudinary_available):
         assert runtime_setting.CLOUDINARY_CLOUD_NAME is not None
         assert runtime_setting.CLOUDINARY_API_KEY is not None
         assert runtime_setting.CLOUDINARY_API_SECRET is not None
-        image_host = CloudinaryImageHost(
+        image_host = CloudinaryImageHosting(
             runtime_setting.CLOUDINARY_CLOUD_NAME,
             runtime_setting.CLOUDINARY_API_KEY,
             runtime_setting.CLOUDINARY_API_SECRET,

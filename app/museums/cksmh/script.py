@@ -52,9 +52,9 @@ class CKSMHRunner(RunnerInit):
 
 async def main():
     from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImage
+    from helpers.image_hosting.none.helper import NoneImageHosting
 
-    await CKSMHRunner().run(NoneCache(), NoneImage())
+    await CKSMHRunner().run(NoneCache(), NoneImageHosting())
 
 
 if __name__ == "__main__":
