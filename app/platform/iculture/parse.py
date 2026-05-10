@@ -51,6 +51,10 @@ class ICultureParse(ParseInit):
 
     def get_source_url(self, *args, **kwargs) -> str | None:
         source_web_site_sales = self.item.get("sourceWebSiteSales")
-        if source_web_site_sales is None:
+        source_web_promote = self.item.get("sourceWebPromote")
+
+        source_url = source_web_site_sales or source_web_promote
+
+        if source_url is None:
             return None
-        return source_web_site_sales
+        return source_url

@@ -6,6 +6,8 @@ from pathlib import Path
 import aiofiles
 import sentry_sdk
 from dotenv import load_dotenv
+from rich.console import Console
+from rich.progress import BarColumn, MofNCompleteColumn, Progress, SpinnerColumn, TextColumn, TimeElapsedColumn
 
 from app.script import ALL_RUNNERS
 from configs.settings import get_settings
@@ -82,11 +84,6 @@ async def generate_location(information: list["Information"]):
 
 async def main(worker: int | None = None, worker_max: int | None = None):
     sem = asyncio.Semaphore(10)
-
-    async def run_with_sem(runner):
-        async with sem:
-            return await runner
-
     runtime_setting = get_settings()
 
     # logging init
@@ -122,13 +119,55 @@ async def main(worker: int | None = None, worker_max: int | None = None):
     await available_scraper_async_client(runtime_setting.SCRAPER_API_KEY)
 
     all_script_information: list["Information"] = []
-    all_async_script_runners = []
+    named_runners: list[tuple[str, object]] = []
     for RunnerObj in scripts_to_run:
         this_runner = RunnerObj()
         all_script_information.append(this_runner.set_information())
-        all_async_script_runners.append(RunnerObj().run(disk_cache, image_host, prefix))
+        named_runners.append((RunnerObj.__name__, RunnerObj().run(disk_cache, image_host, prefix)))
 
-    await asyncio.gather(*[run_with_sem(r) for r in all_async_script_runners], return_exceptions=True)
+    total = len(named_runners)
+    done_count = 0
+    is_debug = runtime_setting.IS_DEBUG
+    console = Console()
+    failed: list[str] = []
+
+    with Progress(
+        SpinnerColumn(),
+        TextColumn("{task.description}"),
+        TimeElapsedColumn(),
+        BarColumn(),
+        MofNCompleteColumn(),
+        console=console,
+        disable=not is_debug,
+    ) as progress:
+        overall = progress.add_task("[bold cyan]總進度", total=total)
+
+        async def tracked_run(name: str, coro):
+            nonlocal done_count
+            async with sem:
+                task_id = progress.add_task(f"[yellow]{name}", total=None)
+                try:
+                    result = await coro
+                    done_count += 1
+                    progress.update(overall, advance=1)
+                    if is_debug:
+                        console.log(f"[green]OK [/green] {name}")
+                    return result
+                except Exception as e:
+                    done_count += 1
+                    failed.append(name)
+                    progress.update(overall, advance=1)
+                    cause = e.__cause__ or e
+                    if is_debug:
+                        console.log(f"[red]ERR[/red] {name} — {type(cause).__name__}: {cause}")
+                    return e
+                finally:
+                    progress.remove_task(task_id)
+
+        await asyncio.gather(*[tracked_run(name, coro) for name, coro in named_runners])
+
+    if failed and is_debug:
+        console.print(f"\n[bold red]失敗 ({len(failed)}):[/bold red] {', '.join(failed)}")
     await generate_location(all_script_information)
     await generate_venue_meta(all_script_information)
 
