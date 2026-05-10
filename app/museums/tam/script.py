@@ -4,6 +4,7 @@ from typing import cast
 from selectolax.lexbor import LexborNode
 
 from app.museums.tam.parse import TAMParse
+from configs.settings import get_settings
 from helpers.cache.none.helper import NoneCache
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_headers
@@ -19,6 +20,16 @@ from helpers.utils_helper import month_3
 class TAMRunner(RunnerInit):
     translation = SelectolaxTranslation
     use_parse = TAMParse
+
+    def set_proxies(self):
+        runtime_settings = get_settings()
+        proxies = None
+        if runtime_settings.PROXY_POOL is not None:
+            proxies = {
+                "http": runtime_settings.PROXY_POOL,
+                "https": runtime_settings.PROXY_POOL,
+            }
+        return proxies
 
     def set_cache_expire(self) -> int | None:
         return month_3()
@@ -37,6 +48,7 @@ class TAMRunner(RunnerInit):
         headers = generate_headers()
         appsname = ["ExhibitionsList4102", "ExhibitionsList4101"]
         async with NiquestsAsyncSession(headers=headers) as client:
+            client.proxies.update(self.set_proxies())
             responses = await asyncio.gather(
                 *[
                     client.get("https://tm.ccl.ttct.edu.tw/ExhibitionsListC004100.php", params={"appname": appname})

@@ -43,9 +43,7 @@ class IOESinicaRunner(RunnerInit):
                 "Catefilter": "1DE93031-F3C8-4AA0-94D8-EAD4BABD62BA",
                 "SiteID": "416763f8-a1f7-48fd-bfbf-9327913efad7",
             }
-            response = await client.get(
-                "https://www.ioe.sinica.edu.tw/ExhibitionCurrent/List", params=params, verify=False
-            )
+            response = await client.get("https://www.ioe.sinica.edu.tw/ExhibitionCurrent/List", params=params)
         return response.text
 
     async def fetch_parsed(self):

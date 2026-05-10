@@ -4,6 +4,7 @@ import string
 
 from typing import cast
 from app.museums.hcccart.parse import HcccArtParse
+from configs.settings import get_settings
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -25,6 +26,16 @@ class HcccArtRunner(RunnerInit):
     translation = SelectolaxTranslation
     use_parse = HcccArtParse
 
+    def set_proxies(self):
+        runtime_settings = get_settings()
+        proxies = None
+        if runtime_settings.PROXY_POOL is not None:
+            proxies = {
+                "http": runtime_settings.PROXY_POOL,
+                "https": runtime_settings.PROXY_POOL,
+            }
+        return proxies
+
     def set_cache_expire(self) -> int | None:
         return month_3()
 
@@ -45,6 +56,7 @@ class HcccArtRunner(RunnerInit):
             "art": "".join(secrets.choice(string.ascii_letters + string.digits) for _ in range(40)),
         }
         async with NiquestsAsyncSession(headers=headers) as client:
+            client.proxies.update(self.set_proxies())
             response = await client.get(
                 "https://art.hccc.gov.tw/%E5%B1%95%E8%A6%BD/%E7%95%B6%E6%9C%9F%E5%B1%95%E8%A6%BD", cookies=cookies
             )
