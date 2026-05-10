@@ -68,7 +68,7 @@
       crossorigin
     />
 
-    <!-- 提早下載 Bootstrap Icons 字型，消除 822ms 的字型鏈結延遲 -->
+    <!-- 提早下載 Bootstrap Icons 字型，消除字型鏈結延遲 -->
     <link
       rel="preload"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/fonts/bootstrap-icons.woff2"
@@ -84,27 +84,6 @@
       referrerpolicy="no-referrer"
       defer
     ></script>
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/jquery.dataTables.min.css"
-      integrity="sha512-1k7mWiTNoyx2XtmI96o+hdjP8nn0f3Z2N4oF/9ZZRgijyV4omsKOXEnqL1gKQNPy2MTSP9rIEWGcH/CInulptA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-      media="print"
-      onload="this.media='all'"
-    />
-
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/datatables.net-buttons-bs5/2.3.6/buttons.bootstrap5.min.css"
-      integrity="sha512-vWTrt2A9iAn2pK8hNZS26YZRDDUvLiOfyL+MmBEXJizrigtxnpLuLrLOOMm+pcrUJFzGssUwoS6Gofp+TT2deQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-      media="print"
-      onload="this.media='all'"
-    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
@@ -128,32 +107,27 @@
         font-display: swap;
       }
 
-      .dt-buttons {
-        display: flex;
-        flex-flow: wrap;
-        border: thick double #0d6efd;
+      /* === Exhibition Card Grid === */
+      .exhibition-card .card-img-top {
+        height: 200px;
+        object-fit: cover;
       }
-
-      .dt-buttons > button {
-        margin: 8px;
+      .exhibition-card .card-title a {
+        color: inherit;
+        text-decoration: none;
       }
-
-      img {
-        max-width: 300px;
-        height: auto;
-        image-rendering: crisp-edges;
+      .exhibition-card .card-title a:hover {
+        text-decoration: underline;
+      }
+      .exhibition-card {
+        transition: box-shadow 0.15s;
+      }
+      .exhibition-card:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
       }
 
       .btn:hover {
         color: #fff;
-      }
-
-      td {
-        word-wrap: break-word;
-      }
-
-      .caption-card-body:empty {
-        display: none;
       }
 
       /* 場館選擇器 */
@@ -245,61 +219,6 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-      }
-
-      /* Table reflow：窄螢幕每列變 block */
-      @media (max-width: 575.98px) {
-        #exhibition_wrapper #exhibition,
-        #exhibition_wrapper #exhibition caption,
-        #exhibition_wrapper #exhibition tbody,
-        #exhibition_wrapper #exhibition tr {
-          display: block !important;
-          width: 100% !important;
-          box-sizing: border-box;
-        }
-
-        #exhibition_wrapper #exhibition thead,
-        #exhibition_wrapper #exhibition tfoot {
-          display: none !important;
-        }
-
-        #exhibition_wrapper #exhibition tbody tr {
-          border: 1px solid var(--bs-border-color);
-          border-radius: 0.5rem;
-          margin-bottom: 0.75rem;
-          overflow: hidden;
-        }
-
-        #exhibition_wrapper #exhibition td {
-          display: flex !important;
-          align-items: flex-start;
-          gap: 0.75rem;
-          padding: 0.5rem 0.75rem !important;
-          border: none !important;
-          border-bottom: 1px solid var(--bs-border-color-translucent) !important;
-          width: 100% !important;
-          box-sizing: border-box;
-        }
-
-        #exhibition_wrapper #exhibition td:last-child {
-          border-bottom: none !important;
-        }
-
-        #exhibition_wrapper #exhibition td::before {
-          content: attr(data-label);
-          font-weight: 600;
-          min-width: 4rem;
-          flex-shrink: 0;
-          color: var(--bs-secondary-color);
-          font-size: 0.8em;
-          padding-top: 0.2rem;
-        }
-
-        #exhibition_wrapper #exhibition td img {
-          max-width: 100%;
-          max-height: 150px;
-          object-fit: cover;
-        }
       }
     </style>
   </head>
@@ -517,40 +436,37 @@
       <main>
       <div class="row">
         <div class="col">
-          <table
-            id="exhibition"
-            class="table align-middle display caption-top"
-            style="width: 100%"
-          >
-            <caption>
-              <div class="card text-bg-warning">
-                <h5 class="card-header caption-card-header"></h5>
-                <div class="card-body caption-card-body"></div>
-                <div class="card-footer caption-card-footer"></div>
-              </div>
-            </caption>
-            <thead>
-              <tr>
-                <th>展覽名稱</th>
-                <th>圖片</th>
-                <th>日期</th>
-                <th>地點</th>
-                <th>狀態</th>
-                <th>去過了?</th>
-              </tr>
-            </thead>
+          <!-- 場館資訊卡 -->
+          <div id="exhibition-info-card" class="card mb-3" style="display:none">
+            <h5 class="card-header" id="exhibition-info-header"></h5>
+            <div class="card-body" id="exhibition-info-body" style="display:none"></div>
+            <div class="card-footer" id="exhibition-info-footer"></div>
+          </div>
 
-            <tfoot>
-              <tr>
-                <th>展覽名稱</th>
-                <th>圖片</th>
-                <th>日期</th>
-                <th>地點</th>
-                <th>狀態</th>
-                <th>去過了?</th>
-              </tr>
-            </tfoot>
-          </table>
+          <!-- 篩選列 -->
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <select class="form-select" id="statusSelect" style="max-width:200px;min-height:44px">
+              <option value="">全部顯示</option>
+              <option value="尚未開始">尚未開始</option>
+              <option value="進行中">進行中</option>
+              <option value="已經結束">已經結束</option>
+              <option value="無法判斷">無法判斷</option>
+            </select>
+            <small class="text-muted" id="exhibition-count"></small>
+          </div>
+
+          <!-- 載入中 -->
+          <div id="exhibition-loading" class="text-center py-4" style="display:none">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">載入中...</span>
+            </div>
+          </div>
+
+          <!-- Card 格狀佈局 -->
+          <div id="exhibition-grid" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3"></div>
+
+          <!-- 分頁 -->
+          <nav id="exhibition-pagination" class="d-flex justify-content-center mt-3" aria-label="展覽分頁"></nav>
         </div>
       </div>
       </main>
@@ -576,28 +492,6 @@
       </div>
     </div>
   </body>
-
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajax-localstorage-cache/2.0.1/jalc.min.js"
-    integrity="sha512-rhkfBTfRYBjxSBE4XxMUyDQ2kBXDrI/lIXHnyF2VB26pUiq3H4qZzsi+HQGtaxuJweoOuNyp031LUepkRy5tZA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-
-  <!-- DataTables 核心 -->
-  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-
-  <!-- DataTables Plugins: Buttons -->
-
-  <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
 
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/dayjs.min.js"
@@ -636,67 +530,37 @@
   <script>
     dayjs.extend(window.dayjs_plugin_relativeTime);
     dayjs.extend(window.dayjs_plugin_timezone);
-    const finishedAfter5Day = (dateString) => {
-      let nowDate = dayjs(new Date().toLocaleDateString("tw-zh"));
-      let splitDateString = dateString.split("~");
-      if (splitDateString.length === 1) {
-        let oneDate = dayjs(splitDateString[0].trim());
-        if (nowDate.isAfter(oneDate.add(5, "days"))) {
-          return true;
-        }
-      } else if (splitDateString.length === 2) {
-        let endDate = dayjs(splitDateString[1].trim());
-        if (nowDate.isAfter(endDate.add(5, "days"))) {
-          return true;
-        }
-      }
-      return false;
+    dayjs.locale("zh-tw");
+    dayjs.Ls["zh-tw"].relativeTime.future = "%s後";
+
+    const LOCALTZ = dayjs.tz.guess();
+
+    const formatDate = (dateString) => {
+      const date = dayjs(dateString);
+      return `${date.fromNow()} (${date.format("YYYY-MM-DD HH:mm:ss")})`;
     };
 
     const exhibitionStats = (dateString, tag = "h2", textOnly = false, countdownOnly = false) => {
       const r = (badge, label) => textOnly ? label : badge;
-
-      if (dateString == null) {
-        return r(unableBadges(tag), "無法判斷");
-      }
-
-      let nowDate = dayjs(new Date().toLocaleDateString("tw-zh"));
+      if (dateString == null) return r(unableBadges(tag), "無法判斷");
+      let nowDate = dayjs().startOf("day");
       let splitDateString = dateString.split("~");
-
-      if (
-        splitDateString.length === 1 &&
-        (splitDateString[0] === "-" || splitDateString[0] === "")
-      ) {
+      if (splitDateString.length === 1 && (splitDateString[0] === "-" || splitDateString[0] === "")) {
         return r(inProgressBadges(tag, null, countdownOnly), "進行中");
       }
-
       if (splitDateString.length === 1) {
         let oneDate = dayjs(splitDateString[0].trim());
-        if (isNaN(oneDate)) {
-          return r(unableBadges(tag), "無法判斷");
-        }
-        if (nowDate.isAfter(oneDate)) {
-          return r(finishedBadges(tag), "已經結束");
-        }
-        if (oneDate.isAfter(nowDate)) {
-          return r(notStartedBadges(tag, oneDate, countdownOnly), "尚未開始");
-        }
-
+        if (isNaN(oneDate)) return r(unableBadges(tag), "無法判斷");
+        if (nowDate.isAfter(oneDate)) return r(finishedBadges(tag), "已經結束");
+        if (oneDate.isAfter(nowDate)) return r(notStartedBadges(tag, oneDate, countdownOnly), "尚未開始");
         return r(unableBadges(tag), "無法判斷");
       } else if (splitDateString.length === 2) {
-        if (splitDateString[1] === "") {
-          return r(inProgressBadges(tag, null, countdownOnly), "進行中");
-        } else {
-          let startDate = dayjs(splitDateString[0].trim());
-          let endDate = dayjs(splitDateString[1].trim());
-          if (startDate.isAfter(nowDate)) {
-            return r(notStartedBadges(tag, startDate, countdownOnly), "尚未開始");
-          }
-          if (nowDate.isAfter(endDate)) {
-            return r(finishedBadges(tag), "已經結束");
-          }
-          return r(inProgressBadges(tag, endDate.endOf("day"), countdownOnly), "進行中");
-        }
+        if (splitDateString[1] === "") return r(inProgressBadges(tag, null, countdownOnly), "進行中");
+        let startDate = dayjs(splitDateString[0].trim());
+        let endDate = dayjs(splitDateString[1].trim());
+        if (startDate.isAfter(nowDate)) return r(notStartedBadges(tag, startDate, countdownOnly), "尚未開始");
+        if (nowDate.isAfter(endDate)) return r(finishedBadges(tag), "已經結束");
+        return r(inProgressBadges(tag, endDate.endOf("day"), countdownOnly), "進行中");
       }
       return r(unableBadges(tag), "無法判斷");
     };
@@ -710,517 +574,454 @@
       document.getElementById("themeIcon").setAttribute("data-icon", "ph:moon-stars-bold");
     };
     document.getElementById("btnSwitch").addEventListener("click", () => {
-      let runThemeSet =
-        document.documentElement.getAttribute("data-bs-theme") == "dark"
-          ? setLight
-          : setDark;
+      const runThemeSet = document.documentElement.getAttribute("data-bs-theme") === "dark" ? setLight : setDark;
       runThemeSet();
     });
-    dayjs.locale("zh-tw");
-    dayjs.Ls["zh-tw"].relativeTime.future = "%s後";
 
-    $(document).ready(async function () {
+    // === localStorage 快取（取代 jQuery jalc） ===
+    const fetchWithCache = async (url, ttlHours = 0.5) => {
+      const cacheKey = `bbp_cache_${url}`;
+      let cached = null;
+      try { cached = JSON.parse(localStorage.getItem(cacheKey)); } catch {}
+      if (cached && (Date.now() - cached.ts) < ttlHours * 3600 * 1000) return cached.data;
+      const resp = await fetch(url);
+      const data = await resp.json();
+      try { localStorage.setItem(cacheKey, JSON.stringify({ ts: Date.now(), data })); } catch {}
+      return data;
+    };
+
+    // === 全域狀態 ===
+    let currentVenueData = null;
+    let currentVenueMeta = null;
+    let currentStatusFilter = "";
+    let currentPage = 1;
+    const PAGE_SIZE = 12;
+
+    // === 場館資訊卡 ===
+    const updateInfoCard = (data) => {
+      const infoCard = document.getElementById("exhibition-info-card");
+      const infoHeader = document.getElementById("exhibition-info-header");
+      const infoBody = document.getElementById("exhibition-info-body");
+      const infoFooter = document.getElementById("exhibition-info-footer");
+      if (!data?.information) return;
+      const info = data.information;
+      const { code_name, fullname, external_link, branch_coordinates, has_rss, has_ics } = info;
+      const last_update = data.last_update;
+      let googleMapPlaceId = null;
+      if (branch_coordinates !== null && !Array.isArray(branch_coordinates) && typeof branch_coordinates === "object") {
+        googleMapPlaceId = branch_coordinates.google_map_place_id;
+      } else if (Array.isArray(branch_coordinates)) {
+        googleMapPlaceId = branch_coordinates[0]?.google_map_place_id;
+      }
+      const btns = [];
+      if (external_link) btns.push(`<a class="btn btn-secondary btn-sm" href="${external_link}" target="_blank" rel="noopener noreferrer" aria-label="前往官網"><i class="bi bi-box-arrow-up-right"></i></a>`);
+      if (googleMapPlaceId) btns.push(`<a class="btn btn-secondary btn-sm" href="https://www.google.com/maps/search/?api=1&query=${fullname}&query_place_id=${googleMapPlaceId}" target="_blank" rel="noopener noreferrer" aria-label="查看地圖"><i class="bi bi-pin-map"></i></a>`);
+      btns.push(`<button class="btn btn-secondary btn-sm" onclick="copyUrlToClipboard('${window.location.origin}${window.location.pathname}?topic=${code_name}')" aria-label="分享連結"><i class="bi bi-share"></i></button>`);
+      if (has_rss !== false) btns.push(`<a class="btn btn-secondary btn-sm" href="${SOURCE_ROOT_URL}rss/${code_name}.xml" target="_blank" rel="noopener noreferrer" aria-label="RSS 訂閱"><i class="bi bi-rss-fill"></i></a>`);
+      if (has_ics !== false) {
+        const rawUrl = `${SOURCE_ROOT_URL}ics/${code_name}.ics`;
+        const webCal = rawUrl.replace("https://", "webcal://");
+        const gCal = `https://www.google.com/calendar/render?cid=${webCal}`;
+        btns.push(`<div class="btn-group"><button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"><i class="bi bi-calendar-plus"></i> 訂閱</button><ul class="dropdown-menu"><li><a class="dropdown-item" href="${webCal}" target="_blank">Apple 日曆 / Outlook</a></li><li><a class="dropdown-item" href="${gCal}" target="_blank">Google 日曆</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" href="${rawUrl}" target="_blank">下載 .ics 檔案</a></li></ul></div>`);
+      }
+      infoHeader.innerHTML = `<div class="d-flex flex-wrap align-items-center gap-2"><span>《${fullname}》</span>${btns.join("")}</div>`;
+      const s = VENUE_STYLES[code_name] ?? DEFAULT_STYLE;
+      infoCard.style.backgroundColor = s.bg;
+      infoCard.style.color = s.color;
+      infoCard.style.borderColor = s.border ?? s.bg;
+      infoCard.style.display = "";
+      const opening = data.visit?.opening;
+      if (opening) {
+        infoBody.innerHTML = opening.replaceAll("\n", "<br>");
+        infoBody.style.display = "";
+      } else {
+        infoBody.innerHTML = "";
+        infoBody.style.display = "none";
+      }
+      infoFooter.textContent = `資料更新時間: ${formatDate(last_update)}`;
+    };
+
+    // === Card 渲染 ===
+    const renderCard = (item) => {
+      const col = document.createElement("div");
+      if (item.systematics === "BUG") {
+        col.className = "col-12";
+        col.innerHTML = `<div class="alert alert-danger text-center fs-5">${item.title}</div>`;
+        return col;
+      }
+      col.className = "col";
+      const city = currentVenueMeta?.city ?? "";
+      const statusBadge = exhibitionStats(item.date, "span", false, true);
+      const cityHtml = city ? `<small class="text-muted">${city}</small><span class="text-muted mx-1">·</span>` : "";
+      const imgHtml = item.figure && item.figure !== "-"
+        ? `<img src="${item.figure}" class="card-img-top" loading="lazy" alt="${item.title}" width="400" height="225">`
+        : `<div class="card-img-top bg-secondary-subtle d-flex align-items-center justify-content-center" style="height:200px"><span class="text-muted">無圖片</span></div>`;
+      const addrHtml = item.address && item.address !== "-"
+        ? `<p class="card-text text-muted small mb-1"><i class="bi bi-geo-alt"></i> ${item.address}</p>`
+        : "";
+      const tagsHtml = Array.isArray(item.tags) && item.tags.length > 0
+        ? `<div class="d-flex flex-wrap gap-1 mt-1">${item.tags.map(t => `<span class="badge bg-secondary">${t}</span>`).join("")}</div>`
+        : "";
+      col.innerHTML = `
+        <div class="card h-100 exhibition-card" data-uuid="${item.UUID}">
+          <div class="position-relative">${imgHtml}</div>
+          <div class="card-body pb-1">
+            <div class="d-flex flex-wrap align-items-center gap-1 mb-1">${cityHtml}${statusBadge}</div>
+            <h6 class="card-title mb-1"><a href="${item.source_url}" target="_blank" rel="noopener noreferrer">${item.title}</a></h6>
+            <p class="card-text small fw-medium mb-1" style="color:var(--bs-warning-text-emphasis)">${item.date ?? "-"}</p>
+            ${addrHtml}${tagsHtml}
+          </div>
+          <div class="card-footer pt-1">
+            <button class="btn btn-info btn-sm btn-mark-achieved w-100" data-uuid="${item.UUID}" aria-label="標記已去過">
+              <i class="bi bi-check-lg"></i> 去過了
+            </button>
+          </div>
+        </div>`;
+      return col;
+    };
+
+    // === 篩選與分頁 ===
+    const getFilteredItems = () => {
+      if (!currentVenueData?.items) return [];
+      const visited = new Set(loadAchievements().map(a => a.uuid));
+      let items = currentVenueData.items.filter(item => !visited.has(item.UUID));
+      if (currentStatusFilter) {
+        items = items.filter(item => exhibitionStats(item.date, "h2", true) === currentStatusFilter);
+      }
+      return items;
+    };
+
+    const renderPagination = (totalPages, container) => {
+      container.innerHTML = "";
+      if (totalPages <= 1) return;
+      const ul = document.createElement("ul");
+      ul.className = "pagination";
+      const addPage = (label, page, disabled = false, active = false) => {
+        const li = document.createElement("li");
+        li.className = `page-item${disabled ? " disabled" : ""}${active ? " active" : ""}`;
+        const btn = document.createElement("button");
+        btn.className = "page-link";
+        btn.innerHTML = label;
+        if (!disabled && !active) {
+          btn.addEventListener("click", () => {
+            currentPage = page;
+            renderGrid();
+            document.getElementById("exhibition-info-card").scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        }
+        li.appendChild(btn);
+        ul.appendChild(li);
+      };
+      addPage("«", currentPage - 1, currentPage === 1);
+      const range = [];
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) range.push(i);
+      }
+      let prev = null;
+      range.forEach(p => {
+        if (prev !== null && p - prev > 1) addPage("…", -1, true);
+        addPage(p, p, false, p === currentPage);
+        prev = p;
+      });
+      addPage("»", currentPage + 1, currentPage === totalPages);
+      container.appendChild(ul);
+    };
+
+    const renderGrid = () => {
+      const grid = document.getElementById("exhibition-grid");
+      const pagination = document.getElementById("exhibition-pagination");
+      const countEl = document.getElementById("exhibition-count");
+      const items = getFilteredItems();
+      const total = items.length;
+      const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+      if (currentPage > totalPages) currentPage = totalPages;
+      const pageItems = items.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+      grid.innerHTML = "";
+      if (pageItems.length === 0) {
+        grid.innerHTML = `<div class="col-12 text-center py-5 text-muted">沒有符合條件的展覽</div>`;
+      } else {
+        pageItems.forEach(item => grid.appendChild(renderCard(item)));
+      }
+      if (countEl) countEl.textContent = `共 ${total} 筆`;
+      renderPagination(totalPages, pagination);
+    };
+
+    // === 載入場館資料 ===
+    const loadVenueData = async (codeName) => {
+      const loading = document.getElementById("exhibition-loading");
+      const grid = document.getElementById("exhibition-grid");
+      if (loading) loading.style.display = "";
+      if (grid) grid.innerHTML = "";
+      currentPage = 1;
+      try {
+        const data = await fetchWithCache(`${URL_SOURCE}${codeName}.json`);
+        currentVenueData = data;
+        console.log(currentVenueData)
+        updateInfoCard(data);
+        renderGrid();
+      } catch (e) {
+        console.error(e)
+        if (grid) grid.innerHTML = `<div class="col-12 text-center py-5 text-danger">載入失敗，請稍後再試</div>`;
+      } finally {
+        if (loading) loading.style.display = "none";
+      }
+    };
+
+    // === 事件委派 ===
+    document.getElementById("exhibition-grid").addEventListener("click", (e) => {
+      const btn = e.target.closest(".btn-mark-achieved");
+      if (!btn) return;
+      const uuid = btn.dataset.uuid;
+      const item = currentVenueData?.items?.find(i => i.UUID === uuid);
+      if (item) {
+        addToAchievement(item.title, item.figure, item.UUID);
+        renderGrid();
+      }
+    });
+
+    document.getElementById("statusSelect").addEventListener("change", function () {
+      currentStatusFilter = this.value;
+      currentPage = 1;
+      renderGrid();
+    });
+
+    // === 場館選擇器建構 ===
+    const buildVenueSelector = (allVenues, allTopicSet, metaByTopic, initTopic) => {
+      const btnsByCityType = {};
+      const platformVenues = [];
+
+      allVenues.forEach(v => {
+        if (v.city === null) {
+          platformVenues.push(v);
+        } else {
+          const typeKey = v.venue_type ?? "other";
+          if (!btnsByCityType[v.city]) btnsByCityType[v.city] = {};
+          if (!btnsByCityType[v.city][typeKey]) btnsByCityType[v.city][typeKey] = [];
+          btnsByCityType[v.city][typeKey].push(v);
+        }
+      });
+
+      const wrapperMap = {};
+      allVenues.forEach(v => {
+        const wrapper = document.createElement("div");
+        wrapper.className = "btn-group";
+        wrapper.dataset.topic = v.code_name;
+        wrapper.dataset.city = v.city || "";
+        wrapper.dataset.typeKey = v.venue_type ?? "other";
+
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = `btn btn-${v.code_name}`;
+        btn.textContent = v.fullname;
+        btn.addEventListener("click", async () => {
+          currentVenueMeta = v;
+          currentStatusFilter = "";
+          document.getElementById("statusSelect").value = "";
+          await loadVenueData(v.code_name);
+        });
+        wrapper.appendChild(btn);
+
+        const watched = isVenueWatched(v.code_name);
+        const watchBtn = document.createElement("button");
+        watchBtn.type = "button";
+        watchBtn.className = `btn ${watched ? "btn-warning" : "btn-outline-secondary"}`;
+        watchBtn.innerHTML = `<i class="bi ${watched ? "bi-bell-fill" : "bi-bell"}"></i>`;
+        watchBtn.title = watched ? "取消關注" : "加入關注";
+        watchBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const nowWatched = toggleVenueWatch(v.code_name);
+          watchBtn.className = `btn ${nowWatched ? "btn-warning" : "btn-outline-secondary"}`;
+          watchBtn.innerHTML = `<i class="bi ${nowWatched ? "bi-bell-fill" : "bi-bell"}"></i>`;
+          watchBtn.title = nowWatched ? "取消關注" : "加入關注";
+          if (activeCity === "關注清單") renderContent();
+        });
+        wrapper.appendChild(watchBtn);
+        wrapperMap[v.code_name] = wrapper;
+      });
+
+      const allCityWrappers = () =>
+        Object.values(btnsByCityType).flatMap(t => Object.values(t).flat().map(v => wrapperMap[v.code_name]));
+      const getCityWrappers = (city) =>
+        Object.values(btnsByCityType[city] || {}).flat().map(v => wrapperMap[v.code_name]);
+
+      let activeCity = "全台";
+      let activeType = "all";
+
+      const tabsContainer = document.createElement("div");
+      tabsContainer.className = "venue-selector";
+      const cityNav = document.createElement("ul");
+      cityNav.className = "nav nav-tabs flex-wrap venue-selector-nav";
+      const typeFilter = document.createElement("div");
+      typeFilter.className = "venue-selector-type-filter";
+      typeFilter.style.display = "none";
+      const filterInput = document.createElement("input");
+      filterInput.type = "text";
+      filterInput.placeholder = "搜尋場館...";
+      filterInput.className = "form-control";
+      filterInput.style.cssText = "border-radius:0; border-left:0; border-right:0;";
+      const content = document.createElement("div");
+      content.className = "venue-selector-content";
+
+      const renderTypeFilter = () => {
+        typeFilter.innerHTML = "";
+        if (activeCity === "關注清單" || activeCity === "🎫 票務平台") {
+          typeFilter.style.display = "none";
+          return;
+        }
+        const pool = activeCity === "全台" ? allCityWrappers() : getCityWrappers(activeCity);
+        const byType = pool.reduce((acc, w) => {
+          const t = w.dataset.typeKey;
+          (acc[t] = acc[t] || []).push(w);
+          return acc;
+        }, {});
+        if (Object.keys(byType).length <= 1) { typeFilter.style.display = "none"; return; }
+        typeFilter.style.display = "";
+        const mkPill = (key, label, count) => {
+          const pill = document.createElement("button");
+          pill.className = `btn ${activeType === key ? "btn-primary" : "btn-outline-secondary"}`;
+          pill.innerHTML = count != null ? `${label} <span class="badge bg-secondary ms-1">${count}</span>` : label;
+          pill.addEventListener("click", () => { activeType = key; renderTypeFilter(); renderContent(); });
+          return pill;
+        };
+        const sortedTypes = Object.keys(byType).sort((a, b) => {
+          const ia = venueTypeOrder.indexOf(a), ib = venueTypeOrder.indexOf(b);
+          return (ia === -1 ? Infinity : ia) - (ib === -1 ? Infinity : ib);
+        });
+        sortedTypes.forEach(k => typeFilter.appendChild(mkPill(k, venueTypeDisplayMap[k] || k, byType[k].length)));
+        typeFilter.appendChild(mkPill("all", "全部類型", pool.length));
+      };
+
+      const renderContent = (searchQuery = "") => {
+        content.innerHTML = "";
+        let wrappers = [];
+        if (searchQuery) {
+          wrappers = [...allCityWrappers(), ...platformVenues.map(v => wrapperMap[v.code_name])]
+            .filter(w => w.textContent.toLowerCase().includes(searchQuery));
+        } else if (activeCity === "關注清單") {
+          wrappers = [...allCityWrappers(), ...platformVenues.map(v => wrapperMap[v.code_name])]
+            .filter(w => isVenueWatched(w.dataset.topic));
+        } else if (activeCity === "🎫 票務平台") {
+          wrappers = platformVenues.map(v => wrapperMap[v.code_name]);
+        } else {
+          const pool = activeCity === "全台" ? allCityWrappers() : getCityWrappers(activeCity);
+          wrappers = activeType === "all" ? pool : pool.filter(w => w.dataset.typeKey === activeType);
+        }
+        if (activeCity === "關注清單" && wrappers.length === 0) {
+          const empty = document.createElement("p");
+          empty.className = "text-muted m-2";
+          empty.textContent = "尚未關注任何場館，點擊場館旁的 🔔 即可加入關注";
+          content.appendChild(empty);
+        } else {
+          wrappers.forEach(w => content.appendChild(w));
+        }
+      };
+
+      const selectCity = (cityName) => {
+        activeCity = cityName;
+        activeType = "all";
+        cityNav.querySelectorAll(".nav-link").forEach(l =>
+          l.classList.toggle("active", l.dataset.city === cityName)
+        );
+        renderTypeFilter();
+        renderContent();
+      };
+
+      const addCityTab = (cityKey, label) => {
+        const li = document.createElement("li");
+        li.className = "nav-item";
+        const btn = document.createElement("button");
+        btn.className = "nav-link";
+        btn.dataset.city = cityKey;
+        btn.innerHTML = label;
+        btn.addEventListener("click", () => selectCity(cityKey));
+        li.appendChild(btn);
+        cityNav.appendChild(li);
+      };
+
+      addCityTab("關注清單", '<i class="bi bi-bell-fill"></i> 關注清單');
+      const knownCities = cityDisplayOrder.filter(c => btnsByCityType[c]);
+      const extraCities = Object.keys(btnsByCityType).filter(c => !cityDisplayOrder.includes(c));
+      [...knownCities, ...extraCities].forEach(city => {
+        const total = Object.values(btnsByCityType[city]).flat().length;
+        addCityTab(city, `${city} <span class="badge bg-secondary ms-1">${total}</span>`);
+      });
+      if (platformVenues.length > 0)
+        addCityTab("🎫 票務平台", `🎫 票務平台 <span class="badge bg-secondary ms-1">${platformVenues.length}</span>`);
+      addCityTab("全台", "📍 全台");
+
+      filterInput.addEventListener("input", function () {
+        const query = this.value.toLowerCase();
+        if (query) {
+          cityNav.style.pointerEvents = "none";
+          cityNav.style.opacity = "0.4";
+          typeFilter.style.display = "none";
+        } else {
+          cityNav.style.pointerEvents = "";
+          cityNav.style.opacity = "";
+          renderTypeFilter();
+        }
+        renderContent(query);
+      });
+
+      tabsContainer.appendChild(cityNav);
+      tabsContainer.appendChild(typeFilter);
+      tabsContainer.appendChild(filterInput);
+      tabsContainer.appendChild(content);
+
+      const mainCol = document.querySelector("main .col");
+      if (mainCol) mainCol.insertBefore(tabsContainer, mainCol.firstChild);
+
+      const urlTopicParam = new URLSearchParams(window.location.search).get("topic");
+      const hasWatchlist = loadVenueWatchlist().some(t => allTopicSet.has(t));
+      if (!urlTopicParam && hasWatchlist) {
+        selectCity("關注清單");
+      } else {
+        const initMeta = metaByTopic[initTopic];
+        const initCity = initMeta ? (initMeta.city === null ? "🎫 票務平台" : initMeta.city) : "全台";
+        selectCity(initCity);
+      }
+    };
+
+    // === 初始化 ===
+    (async () => {
       const isDark = window.matchMedia("(prefers-color-scheme:dark)").matches;
-      const runThemeSet = isDark ? setDark : setLight;
+      (isDark ? setDark : setLight)();
 
-      // 從後端取得場館清單；前端只負責 CSS 樣式
       let venueMetaList = [];
       try {
         const resp = await fetch(`${URL_SOURCE}_VENUE_META.json`);
         venueMetaList = await resp.json();
       } catch (e) {}
-      const metaByTopic = Object.fromEntries(venueMetaList.map((v) => [v.code_name, v]));
 
-      // 合併 metadata + CSS（找不到 VENUE_STYLES 對應項則套用 DEFAULT_STYLE）
-      const allVenues = venueMetaList.map((v) => {
+      const metaByTopic = Object.fromEntries(venueMetaList.map(v => [v.code_name, v]));
+      const allVenues = venueMetaList.map(v => {
         const s = VENUE_STYLES[v.code_name] ?? DEFAULT_STYLE;
         return { ...v, color: s.color, bg: s.bg, border: s.border ?? s.bg };
       });
-      const allTopicSet = new Set(allVenues.map((v) => v.code_name));
+      const allTopicSet = new Set(allVenues.map(v => v.code_name));
 
-      // 決定初始場館（URL param → 關注清單 → 第一個）
-      const urlTopic = new URLSearchParams(window.location.search).get("topic");
-      const firstWatched = loadVenueWatchlist().find((t) => allTopicSet.has(t));
-      const initTopic =
-        urlTopic && allTopicSet.has(urlTopic)
-          ? urlTopic
-          : firstWatched ?? allVenues[0]?.code_name;
-
-      // 註冊 DataTable 按鈕
-      allVenues.forEach((v) => {
-        $.fn.dataTable.ext.buttons[v.code_name] = {
-          text: v.fullname,
-          action: (e, dt) => dt.ajax.url(`${URL_SOURCE}${v.code_name}.json`).load(),
-        };
-      });
-
-      // 注入場館按鈕 CSS
       const venueStyleEl = document.createElement("style");
-      venueStyleEl.innerHTML = allVenues
-        .map(
-          (v) =>
-            `.btn-${v.code_name}{color:${v.color};background-color:${v.bg};border-color:${v.border};` +
-            `--bs-btn-hover-color:${v.color};--bs-btn-hover-bg:${v.bg};}`,
-        )
-        .join("");
+      venueStyleEl.innerHTML = allVenues.map(v =>
+        `.btn-${v.code_name}{color:${v.color};background-color:${v.bg};border-color:${v.border};` +
+        `--bs-btn-hover-color:${v.color};--bs-btn-hover-bg:${v.bg};}`
+      ).join("");
       document.head.appendChild(venueStyleEl);
 
-      const customizeButtons = allVenues.map((v) => ({
-        extend: v.code_name,
-        className: `btn btn-${v.code_name}`,
-      }));
+      const urlTopic = new URLSearchParams(window.location.search).get("topic");
+      const firstWatched = loadVenueWatchlist().find(t => allTopicSet.has(t));
+      const initTopic = (urlTopic && allTopicSet.has(urlTopic)) ? urlTopic : firstWatched ?? allVenues[0]?.code_name;
 
-      let initUrl = `${URL_SOURCE}${initTopic}.json`;
-      runThemeSet();
-      $("#exhibition").DataTable({
-        dom: "Brtip",
-        processing: true,
-        deferRender: true,
-        ajax: {
-          url: initUrl,
-          localCache: true,
-          type: "GET",
-          cacheTTL: 0.5,
-          dataSrc: function (d) {
-            const visited = loadAchievements();
-            const visitedUUIDs = new Set(visited.map((item) => item.uuid));
-            return d.items.filter((item) => !visitedUUIDs.has(item.UUID));
+      buildVenueSelector(allVenues, allTopicSet, metaByTopic, initTopic);
 
-            // return d.items
-          },
-        },
-        order: [],
-        columns: [
-          {
-            data: "title",
-            createdCell: (td) => td.setAttribute("data-label", "展覽"),
-            render: function (data, type, row) {
-              return `<a target="_blank" href="${row.source_url}"><div style="white-space:normal;word-break:break-all;">${data}</div></a>`;
-            },
-          },
-          {
-            data: "figure",
-            createdCell: (td) => td.setAttribute("data-label", "圖片"),
-            render: function (data, type, row) {
-              if (data === "-") {
-                return "-";
-              }
-              return '<img src="' + data + '" loading="lazy" width="300" height="200" />';
-            },
-          },
-          {
-            data: "date",
-            createdCell: (td) => td.setAttribute("data-label", "日期"),
-          },
-          {
-            data: "address",
-            createdCell: (td) => td.setAttribute("data-label", "地點"),
-            render: function (data, type, row) {
-              if (data == null) {
-                return `<div style="white-space:normal;word-break:break-all;">-</div>`;
-              }
-              return `<div style="white-space:normal;word-break:break-all;">${data}</div>`;
-            },
-          },
-          {
-            data: "date",
-            createdCell: (td) => td.setAttribute("data-label", "狀態"),
-            render: function (data, type, row) {
-              return exhibitionStats(data, "h2", type === "filter", type !== "filter");
-            },
-          },
-          {
-            data: "UUID",
-            createdCell: (td) => td.setAttribute("data-label", ""),
-            render: function (data, type, row, meta) {
-              return `<button class="btn btn-info btn-mark-achieved" data-uuid="${data}"><i class="bi bi-check-lg"></i></button>`;
-            },
-          },
-        ],
-        buttons: customizeButtons,
-        drawCallback: function (exhibition) {
-          if (exhibition.json !== undefined) {
-            let exhibitionInformation = exhibition.json["information"];
-            let codeName = exhibitionInformation["code_name"];
-            let last_update = exhibition.json["last_update"];
-            let informationFullName = exhibitionInformation["fullname"];
-            let externalLink = exhibitionInformation["external_link"];
-            let coordinate = exhibitionInformation["branch_coordinates"];
-
-            let hasRSS = exhibitionInformation["has_rss"];
-            let hasIcs = exhibitionInformation["has_ics"];
-            let googleMapPlaceId = null;
-            if (coordinate !== null && typeof coordinate === "object") {
-              googleMapPlaceId = coordinate["google_map_place_id"];
-            } else if (coordinate !== null && Array.isArray(coordinate)) {
-              googleMapPlaceId = coordinate[0]["google_map_place_id"];
-            }
-
-            let btns = [];
-            if (externalLink !== undefined) {
-              btns.push(`<a class="btn btn-secondary" href="${externalLink}" target="_blank" aria-label="前往官網"><i class="bi bi-box-arrow-up-right"></i></a>`);
-            }
-            if (googleMapPlaceId !== null) {
-              btns.push(`<a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=${informationFullName}&query_place_id=${googleMapPlaceId}" target="_blank" aria-label="查看地圖"><i class="bi bi-pin-map"></i></a>`);
-            }
-            btns.push(`<a class="btn btn-secondary" onclick="copyUrlToClipboard('${window.location.origin}${window.location.pathname}?topic=${exhibitionInformation["code_name"]}')" target="_blank" aria-label="分享連結"><i class="bi bi-share"></i></a>`);
-
-            if (hasRSS !== false) {
-              btns.push(`<a class="btn btn-secondary" href="${SOURCE_ROOT_URL}rss/${codeName}.xml" target="_blank" aria-label="RSS 訂閱"><i class="bi bi-rss-fill"></i></a>`);
-            }
-
-            if (hasIcs !== false) {
-              let rawHttpsIcsUrl = `${SOURCE_ROOT_URL}ics/${codeName}.ics`;
-              let webCalIcsUrl = rawHttpsIcsUrl.replace('https://', 'webcal://');
-              let googleIcsUrl = `https://www.google.com/calendar/render?cid=${webCalIcsUrl}`;
-              btns.push(`<div class="btn-group">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                  <i class="bi bi-calendar-plus"></i> 訂閱
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="${webCalIcsUrl}" target="_blank">Apple 日曆 / Outlook</a></li>
-                  <li><a class="dropdown-item" href="${googleIcsUrl}" target="_blank">Google 日曆</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="${rawHttpsIcsUrl}" target="_blank">下載 .ics 檔案</a></li>
-                </ul>
-              </div>`);
-            }
-
-            let opening = "";
-            if (exhibition.json["visit"] !== undefined) {
-              opening = exhibition.json["visit"]["opening"];
-            }
-
-            $(".caption-card-header").html(
-              `<div class="d-flex flex-wrap align-items-center gap-2"><span>《${informationFullName}》</span>${btns.join("")}</div>`,
-            );
-            const captionCard = document.querySelector("#exhibition caption .card");
-            if (captionCard) {
-              const s = VENUE_STYLES[codeName] ?? DEFAULT_STYLE;
-              captionCard.style.backgroundColor = s.bg;
-              captionCard.style.color = s.color;
-              captionCard.style.borderColor = s.border ?? s.bg;
-            }
-            if (opening !== undefined && opening !== "") {
-              $(".caption-card-body").html(
-                `${opening.replaceAll("\n", "<br>")}`,
-              );
-            } else {
-              $(".caption-card-body").empty();
-            }
-            $(".caption-card-footer").html(
-              `資料更新時間: ${formatDate(last_update)}`,
-            );
-          }
-        },
-        createdRow: function (row, data, dataIndex) {
-          if (data.systematics === "BUG") {
-            $("td:eq(0)", row).attr("colspan", 5);
-            $("td:eq(1)", row).css("display", "none");
-            $("td:eq(3)", row).css("display", "none");
-            $("td:eq(2)", row).css("display", "none");
-            $("td:eq(4)", row).css("display", "none");
-            $("td:eq(0)", row).css({
-              "text-align": "center",
-              "font-size": "1.5rem",
-            });
-            $("td:eq(0)", row).addClass("table-danger");
-          }
-        },
-        initComplete: function () {
-          this.api()
-            .columns([4])
-            .every(function () {
-              let column = this;
-
-              // Create select element
-              let select = document.createElement("select");
-              select.add(new Option("全部顯示", (value = "")));
-
-              column.footer().replaceChildren(select);
-
-              // Apply listener for user change in value
-              select.addEventListener("change", function () {
-                column.search(select.value, { exact: true }).draw();
-              });
-
-              // Add list of options
-              select.className = "form-select";
-              select.add(new Option("尚未開始"));
-              select.add(new Option("進行中"));
-              select.add(new Option("已經結束"));
-              select.add(new Option("無法判斷"));
-            });
-
-          const dtButtonsDiv = document.querySelector(".dt-buttons");
-          if (dtButtonsDiv) {
-            const allBtns = Array.from(dtButtonsDiv.querySelectorAll("button"));
-
-            // 依城市 + 類型分桶；平台另存
-            const btnsByCityType = {}; // { city: { typeKey: [wrapper, ...] } }
-            const platformWrappers = [];
-
-            allBtns.forEach(btn => {
-              const topic = Array.from(btn.classList)
-                .map(c => c.replace(/^btn-/, ""))
-                .find(t => allTopicSet.has(t));
-              if (!topic) return;
-
-              const meta = metaByTopic[topic];
-              const city = meta?.city ?? null;
-              const typeKey = meta?.venue_type ?? "other";
-
-              const wrapper = document.createElement("div");
-              wrapper.className = "btn-group";
-              wrapper.dataset.topic = topic;
-              wrapper.dataset.city = city || "";
-              wrapper.dataset.typeKey = typeKey;
-              wrapper.appendChild(btn);
-
-              const watched = isVenueWatched(topic);
-              const watchBtn = document.createElement("button");
-              watchBtn.type = "button";
-              watchBtn.className = `btn ${watched ? "btn-warning" : "btn-outline-secondary"}`;
-              watchBtn.innerHTML = `<i class="bi ${watched ? "bi-bell-fill" : "bi-bell"}"></i>`;
-              watchBtn.title = watched ? "取消關注" : "加入關注";
-              watchBtn.addEventListener("click", (e) => {
-                e.stopPropagation();
-                const nowWatched = toggleVenueWatch(topic);
-                watchBtn.className = `btn ${nowWatched ? "btn-warning" : "btn-outline-secondary"}`;
-                watchBtn.innerHTML = `<i class="bi ${nowWatched ? "bi-bell-fill" : "bi-bell"}"></i>`;
-                watchBtn.title = nowWatched ? "取消關注" : "加入關注";
-                if (activeCity === "關注清單") renderContent();
-              });
-              wrapper.appendChild(watchBtn);
-
-              if (city === null) {
-                platformWrappers.push(wrapper);
-              } else {
-                if (!btnsByCityType[city]) btnsByCityType[city] = {};
-                if (!btnsByCityType[city][typeKey]) btnsByCityType[city][typeKey] = [];
-                btnsByCityType[city][typeKey].push(wrapper);
-              }
-            });
-
-            // 取得所有非平台 wrapper
-            const allCityWrappers = () =>
-              Object.values(btnsByCityType).flatMap(t => Object.values(t).flat());
-
-            // 狀態
-            let activeCity = "全台";
-            let activeType = "all";
-
-            // DOM 結構
-            const tabsContainer = document.createElement("div");
-            tabsContainer.className = "venue-selector";
-
-            const cityNav = document.createElement("ul");
-            cityNav.className = "nav nav-tabs flex-wrap venue-selector-nav";
-
-            const typeFilter = document.createElement("div");
-            typeFilter.className = "venue-selector-type-filter";
-            typeFilter.style.display = "none";
-
-            const filterInput = document.createElement("input");
-            filterInput.type = "text";
-            filterInput.placeholder = "搜尋場館...";
-            filterInput.className = "form-control";
-            filterInput.style.cssText = "border-radius:0; border-left:0; border-right:0;";
-
-            const content = document.createElement("div");
-            content.className = "venue-selector-content";
-
-            // 渲染 venue_type 次篩選列
-            const renderTypeFilter = () => {
-              typeFilter.innerHTML = "";
-
-              if (activeCity === "關注清單" || activeCity === "🎫 票務平台") {
-                typeFilter.style.display = "none";
-                return;
-              }
-
-              const pool = activeCity === "全台" ? allCityWrappers() : Object.values(btnsByCityType[activeCity] || {}).flat();
-              const byType = pool.reduce((acc, w) => {
-                const t = w.dataset.typeKey;
-                (acc[t] = acc[t] || []).push(w);
-                return acc;
-              }, {});
-
-              if (Object.keys(byType).length <= 1) {
-                typeFilter.style.display = "none";
-                return;
-              }
-              typeFilter.style.display = "";
-
-              const mkPill = (key, label, count) => {
-                const pill = document.createElement("button");
-                pill.className = `btn ${activeType === key ? "btn-primary" : "btn-outline-secondary"}`;
-                pill.innerHTML = count != null
-                  ? `${label} <span class="badge bg-secondary ms-1">${count}</span>`
-                  : label;
-                pill.addEventListener("click", () => {
-                  activeType = key;
-                  renderTypeFilter();
-                  renderContent();
-                });
-                return pill;
-              };
-
-              const sortedTypes = Object.keys(byType).sort((a, b) => {
-                const ia = venueTypeOrder.indexOf(a);
-                const ib = venueTypeOrder.indexOf(b);
-                return (ia === -1 ? Infinity : ia) - (ib === -1 ? Infinity : ib);
-              });
-              sortedTypes.forEach(k => {
-                typeFilter.appendChild(mkPill(k, venueTypeDisplayMap[k] || k, byType[k].length));
-              });
-              typeFilter.appendChild(mkPill("all", "全部類型", pool.length));
-            };
-
-            // 渲染場館按鈕區
-            const renderContent = (searchQuery = "") => {
-              content.innerHTML = "";
-              let wrappers = [];
-
-              if (searchQuery) {
-                wrappers = [...allCityWrappers(), ...platformWrappers]
-                  .filter(w => w.textContent.toLowerCase().includes(searchQuery));
-              } else if (activeCity === "關注清單") {
-                wrappers = [...allCityWrappers(), ...platformWrappers]
-                  .filter(w => isVenueWatched(w.dataset.topic));
-              } else if (activeCity === "🎫 票務平台") {
-                wrappers = platformWrappers;
-              } else {
-                const pool = activeCity === "全台"
-                  ? allCityWrappers()
-                  : Object.values(btnsByCityType[activeCity] || {}).flat();
-                wrappers = activeType === "all"
-                  ? pool
-                  : pool.filter(w => w.dataset.typeKey === activeType);
-              }
-
-              if (activeCity === "關注清單" && wrappers.length === 0) {
-                const empty = document.createElement("p");
-                empty.className = "text-muted m-2";
-                empty.textContent = "尚未關注任何場館，點擊場館旁的 🔔 即可加入關注";
-                content.appendChild(empty);
-              } else {
-                wrappers.forEach(w => content.appendChild(w));
-              }
-            };
-
-            // 切換城市 tab
-            const selectCity = (cityName) => {
-              activeCity = cityName;
-              activeType = "all";
-              cityNav.querySelectorAll(".nav-link").forEach(l =>
-                l.classList.toggle("active", l.dataset.city === cityName),
-              );
-              renderTypeFilter();
-              renderContent();
-            };
-
-            // 建立城市 tab
-            const addCityTab = (cityKey, label) => {
-              const li = document.createElement("li");
-              li.className = "nav-item";
-              const btn = document.createElement("button");
-              btn.className = "nav-link";
-              btn.dataset.city = cityKey;
-              btn.innerHTML = label;
-              btn.addEventListener("click", () => selectCity(cityKey));
-              li.appendChild(btn);
-              cityNav.appendChild(li);
-            };
-
-            addCityTab("關注清單", '<i class="bi bi-bell-fill"></i> 關注清單');
-            // 依 cityDisplayOrder 排列，再補上不在清單內的城市
-            const knownCities = cityDisplayOrder.filter(c => btnsByCityType[c]);
-            const extraCities = Object.keys(btnsByCityType).filter(c => !cityDisplayOrder.includes(c));
-            [...knownCities, ...extraCities].forEach(city => {
-              const total = Object.values(btnsByCityType[city]).flat().length;
-              addCityTab(city, `${city} <span class="badge bg-secondary ms-1">${total}</span>`);
-            });
-            if (platformWrappers.length > 0)
-              addCityTab("🎫 票務平台", `🎫 票務平台 <span class="badge bg-secondary ms-1">${platformWrappers.length}</span>`);
-            addCityTab("全台", "📍 全台");
-
-            filterInput.addEventListener("input", function () {
-              const query = this.value.toLowerCase();
-              if (query) {
-                cityNav.style.pointerEvents = "none";
-                cityNav.style.opacity = "0.4";
-                typeFilter.style.display = "none";
-              } else {
-                cityNav.style.pointerEvents = "";
-                cityNav.style.opacity = "";
-                renderTypeFilter();
-              }
-              renderContent(query);
-            });
-
-            tabsContainer.appendChild(cityNav);
-            tabsContainer.appendChild(typeFilter);
-            tabsContainer.appendChild(filterInput);
-            tabsContainer.appendChild(content);
-
-            dtButtonsDiv.parentNode.insertBefore(tabsContainer, dtButtonsDiv);
-            dtButtonsDiv.style.display = "none";
-
-            // 初始 tab 選擇
-            const urlTopic = new URLSearchParams(window.location.search).get("topic");
-            const hasWatchlist = loadVenueWatchlist().some(t => allTopicSet.has(t));
-            if (!urlTopic && hasWatchlist) {
-              selectCity("關注清單");
-            } else {
-              const initMeta = metaByTopic[initTopic];
-              const initCity = initMeta
-                ? (initMeta.city === null ? "🎫 票務平台" : initMeta.city)
-                : "全台";
-              selectCity(initCity);
-            }
-          }
-        },
-      });
-    });
-     $("#exhibition").on("page.dt", function () {
-      const caption = document.querySelector("#exhibition caption");
-      const target = caption ?? document.getElementById("exhibition_wrapper");
-      target?.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-
-    $("#exhibition").on("click", ".btn-mark-achieved", function () {
-      const uuid = $(this).data("uuid");
-      const table = $("#exhibition").DataTable();
-      const rowData = table
-        .rows()
-        .data()
-        .toArray()
-        .find((row) => row.UUID === uuid);
-
-      if (rowData) {
-        addToAchievement(rowData.title, rowData.figure, rowData.UUID);
-        const rowIndex = table
-          .rows()
-          .indexes()
-          .toArray()
-          .find((index) => table.row(index).data().UUID === uuid);
-        if (rowIndex !== undefined) {
-          table.row(rowIndex).remove().draw();
-        }
+      if (initTopic) {
+        currentVenueMeta = metaByTopic[initTopic];
+        await loadVenueData(initTopic);
       }
-    });
-    const LOCALTZ = dayjs.tz.guess();
-    const formatDate = (dateString) => {
-      let date = dayjs(dateString);
-      return `${date.fromNow()} (${date.format("YYYY-MM-DD HH:mm:ss")})`;
-    };
+    })();
 
     window.addEventListener("DOMContentLoaded", () => {
       const achievements = loadAchievements();
-      achievements.forEach((item) => {
-        addToAchievement(item.title, item.figure, item.uuid, false);
-      });
+      achievements.forEach(item => addToAchievement(item.title, item.figure, item.uuid, false));
     });
   </script>
 </html>
