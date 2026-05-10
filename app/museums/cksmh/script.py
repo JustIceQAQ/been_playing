@@ -1,19 +1,17 @@
 import asyncio
+from typing import cast
 
 import bs4
 
 from app.museums.cksmh.parse import CKSMHParse
-from helpers.cache import DiskCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
-from helpers.image.imgur.helper import ImgurImage
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
-from helpers.symbol.venue import VenueType
+from helpers.storage.helper import Coordinate, Information
 from helpers.symbol.taiwan import Taiwan
+from helpers.symbol.venue import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
-from typing import cast
 
 
 class CKSMHRunner(RunnerInit):
@@ -53,11 +51,11 @@ class CKSMHRunner(RunnerInit):
 
 
 async def main():
-    ii = ImgurImage(client_id="8cf25722e8ecbeb")
-    dc = DiskCache()
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
 
     runner = CKSMHRunner()
-    await runner.run(dc, ii)
+    await runner.run(NoneCache(), NoneImage())
 
 
 if __name__ == "__main__":
