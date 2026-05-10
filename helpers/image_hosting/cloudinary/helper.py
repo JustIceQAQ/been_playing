@@ -18,7 +18,10 @@ class CloudinaryImageHost:
         loop = asyncio.get_running_loop()
         try:
             upload_result = await loop.run_in_executor(None, lambda: self.cloudinary.uploader.upload(image_url))
-            return upload_result.get("secure_url")
+            secure_url = upload_result.get("secure_url")
+            if ".jpg" in secure_url or ".png" in secure_url:
+                secure_url = secure_url.replace(".jpg", ".webp").replace(".png", ".webp")
+            return secure_url
         except Exception as e:
             print(f"Cloudinary Error: {e}")
             return None
