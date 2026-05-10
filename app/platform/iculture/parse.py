@@ -36,6 +36,10 @@ class ICultureParse(ParseInit):
         image_url = self.item.get("imageUrl")
         if image_url is None:
             return None
+
+        if "://" in image_url:
+            return image_url
+
         return "https://cloud.culture.tw" + image_url
 
     def get_tags(self, *args, **kwargs) -> list[str | None] | None:
