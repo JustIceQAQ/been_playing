@@ -20,6 +20,7 @@ from helpers.storage.helper import (
 )
 from helpers.crawler.scraper.helper import available_scraper_async_client
 from helpers.image_hosting.none.helper import NoneImageHosting
+from helpers.image_hosting.cloudinary.helper import CloudinaryImageHosting
 
 ROOT_PATH = Path(__file__).parent.absolute()
 
@@ -97,7 +98,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         assert runtime_setting.CLOUDINARY_CLOUD_NAME is not None
         assert runtime_setting.CLOUDINARY_API_KEY is not None
         assert runtime_setting.CLOUDINARY_API_SECRET is not None
-        image_host = NoneImageHosting(
+        image_host = CloudinaryImageHosting(
             runtime_setting.CLOUDINARY_CLOUD_NAME,
             runtime_setting.CLOUDINARY_API_KEY,
             runtime_setting.CLOUDINARY_API_SECRET,
