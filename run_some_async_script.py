@@ -10,8 +10,8 @@ from app.museums.khm import KhmRunner
 from configs.settings import get_settings
 from helpers.cache import DiskCache, NoneCache
 from helpers.crawler.scraper.helper import available_scraper_async_client
-from helpers.image.none.helper import NoneImage
-from helpers.image.turboimagehost.helper import TurboImageHost
+from helpers.image_hosting.none.helper import NoneImage
+from helpers.image_hosting.cloudinary.helper import CloudinaryImageHost
 
 
 async def main(worker: int | None = None, worker_max: int | None = None):
@@ -24,10 +24,16 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         datefmt="%Y-%m-%d %H:%M",
     )
 
-    if runtime_setting.IS_DEBUG:
-        imgur = NoneImage()
-    else:
-        imgur = TurboImageHost()
+    image_host = NoneImage()
+    if (not runtime_setting.IS_DEBUG) and (runtime_setting.is_cloudinary_available):
+        assert runtime_setting.CLOUDINARY_CLOUD_NAME is not None
+        assert runtime_setting.CLOUDINARY_API_KEY is not None
+        assert runtime_setting.CLOUDINARY_API_SECRET is not None
+        image_host = CloudinaryImageHost(
+            runtime_setting.CLOUDINARY_CLOUD_NAME,
+            runtime_setting.CLOUDINARY_API_KEY,
+            runtime_setting.CLOUDINARY_API_SECRET,
+        )
 
     disk_cache = NoneCache() if runtime_setting.IS_DEBUG else DiskCache()
     job = [KhmRunner]
@@ -45,7 +51,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
     await available_scraper_async_client(runtime_setting.SCRAPER_API_KEY)
 
     all_async_script_runners = [
-        RunnerObj().run(disk_cache, imgur, prefix, develop_mode=True) for RunnerObj in scripts_to_run
+        RunnerObj().run(disk_cache, image_host, prefix, develop_mode=True) for RunnerObj in scripts_to_run
     ]
     await asyncio.gather(*all_async_script_runners, return_exceptions=True)
 
