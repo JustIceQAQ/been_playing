@@ -97,8 +97,8 @@ class {{cookiecutter.script_code}}Runner(RunnerInit):
 
 async def main():
     from helpers.cache.none.helper import NoneCache
-    from helpers.image.none.helper import NoneImage
-    await {{cookiecutter.script_code}}Runner().run(NoneCache(), NoneImage())
+    from helpers.image_hosting.none.helper import NoneImageHosting
+    await {{cookiecutter.script_code}}Runner().run(NoneCache(), NoneImageHosting())
 
 
 if __name__ == '__main__':

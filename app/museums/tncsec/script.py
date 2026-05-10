@@ -47,9 +47,9 @@ class TnCsEcRunner(RunnerInit):
 
 async def main():
     from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImage
+    from helpers.image_hosting.none.helper import NoneImageHosting
 
-    await TnCsEcRunner().run(NoneCache(), NoneImage())
+    await TnCsEcRunner().run(NoneCache(), NoneImageHosting())
 
 
 if __name__ == "__main__":

@@ -49,9 +49,9 @@ class ELandAMRunner(RunnerInit):
 
 async def main():
     from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImage
+    from helpers.image_hosting.none.helper import NoneImageHosting
 
-    await ELandAMRunner().run(NoneCache(), NoneImage())
+    await ELandAMRunner().run(NoneCache(), NoneImageHosting())
 
 
 if __name__ == "__main__":

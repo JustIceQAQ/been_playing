@@ -56,9 +56,9 @@ class GaCcRunner(RunnerInit):
 
 async def main():
     from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImage
+    from helpers.image_hosting.none.helper import NoneImageHosting
 
-    await GaCcRunner().run(NoneCache(), NoneImage())
+    await GaCcRunner().run(NoneCache(), NoneImageHosting())
 
 
 if __name__ == "__main__":

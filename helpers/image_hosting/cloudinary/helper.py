@@ -4,13 +4,13 @@ import cloudinary
 import cloudinary.uploader
 
 
-class CloudinaryImageHost:
+class CloudinaryImageHosting:
     def __init__(self, cloud_name: str, api_key: str, api_secret: str):
         self.cloudinary = cloudinary
         self.cloudinary.config(
             cloud_name=cloud_name,
             api_key=api_key,
-            api_secret=api_secret,  # Click 'View API Keys' above to copy your API secret
+            api_secret=api_secret,
             secure=True,
         )
 
@@ -28,7 +28,7 @@ class CloudinaryImageHost:
 
 
 async def main():
-    ci = CloudinaryImageHost("", "", "")
+    ci = CloudinaryImageHosting("", "", "")
     result = await ci.upload("")
     print(result)
 

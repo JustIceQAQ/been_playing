@@ -65,9 +65,9 @@ class TAMRunner(RunnerInit):
 
 async def main():
     from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImage
+    from helpers.image_hosting.none.helper import NoneImageHosting
 
-    await TAMRunner().run(NoneCache(), NoneImage())
+    await TAMRunner().run(NoneCache(), NoneImageHosting())
 
 
 if __name__ == "__main__":
