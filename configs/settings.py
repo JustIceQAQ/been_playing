@@ -14,6 +14,13 @@ class Settings(BaseSettings):
     SCRAPE_DO_API_KEY: str | None = Field(default=None)
     SENTRY_SDK_DNS: str | None = Field(default=None)
     PROXY_POOL: str | None = Field(default=None)
+    CLOUDINARY_CLOUD_NAME: str | None = Field(default=None)
+    CLOUDINARY_API_KEY: str | None = Field(default=None)
+    CLOUDINARY_API_SECRET: str | None = Field(default=None)
+
+    @property
+    def is_cloudinary_available(self) -> bool:
+        return all([self.CLOUDINARY_CLOUD_NAME, self.CLOUDINARY_API_KEY, self.CLOUDINARY_API_SECRET])
 
     class Config:
         case_sensitive = False

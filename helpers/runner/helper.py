@@ -116,14 +116,14 @@ class RunnerInit(abc.ABC):
             if cache_figure_url:
                 item.figure = cache_figure_url
             else:
-                response = await self.image.upload(item.figure, client)
-                if response.success:
+                result = await self.image.upload(item.figure, client)
+                if result:
                     await self.cache.aset(
                         hash_source_url,
-                        response.data.webp_link,
+                        result,
                         expire=self.set_cache_expire(),
                     )
-                    item.figure = response.data.webp_link
+                    item.figure = result
                 else:
                     pass
 

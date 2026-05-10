@@ -74,7 +74,7 @@ class TnamMuseumRunner(RunnerInit):
 
 async def main():
     from helpers.cache.none.helper import NoneCache
-    from helpers.image.none.helper import NoneImage
+    from helpers.image_hosting.none.helper import NoneImage
 
     await TnamMuseumRunner().run(NoneCache(), NoneImage())
 

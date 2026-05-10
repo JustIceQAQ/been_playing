@@ -74,7 +74,7 @@ class Culture435Runner(RunnerInit):
 
 async def main():
     from helpers.cache.none.helper import NoneCache
-    from helpers.image.none.helper import NoneImage
+    from helpers.image_hosting.none.helper import NoneImage
 
     await Culture435Runner().run(NoneCache(), NoneImage())
 
