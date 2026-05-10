@@ -17,8 +17,8 @@ from helpers.storage.helper import (
     last_week_update,
 )
 from helpers.crawler.scraper.helper import available_scraper_async_client
-from helpers.image.none.helper import NoneImage
-from helpers.image.turboimagehost.helper import TurboImageHost
+from helpers.image_hosting.none.helper import NoneImage
+from helpers.image_hosting.cloudinary.helper import CloudinaryImageHost
 
 ROOT_PATH = Path(__file__).parent.absolute()
 
@@ -96,11 +96,16 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         format="%(asctime)s %(levelname)s %(message)s",
         datefmt="%Y-%m-%d %H:%M",
     )
-
-    if runtime_setting.IS_DEBUG:
-        imgur = NoneImage()
-    else:
-        imgur = TurboImageHost()
+    image_host = NoneImage()
+    if (not runtime_setting.IS_DEBUG) and (runtime_setting.is_cloudinary_available):
+        assert runtime_setting.CLOUDINARY_CLOUD_NAME is not None
+        assert runtime_setting.CLOUDINARY_API_KEY is not None
+        assert runtime_setting.CLOUDINARY_API_SECRET is not None
+        image_host = CloudinaryImageHost(
+            runtime_setting.CLOUDINARY_CLOUD_NAME,
+            runtime_setting.CLOUDINARY_API_KEY,
+            runtime_setting.CLOUDINARY_API_SECRET,
+        )
 
     disk_cache = NoneCache() if runtime_setting.IS_DEBUG else DiskCache()
     job = list(ALL_RUNNERS)
@@ -122,7 +127,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
     for RunnerObj in scripts_to_run:
         this_runner = RunnerObj()
         all_script_information.append(this_runner.set_information())
-        all_async_script_runners.append(RunnerObj().run(disk_cache, imgur, prefix))
+        all_async_script_runners.append(RunnerObj().run(disk_cache, image_host, prefix))
 
     await asyncio.gather(*[run_with_sem(r) for r in all_async_script_runners], return_exceptions=True)
     await generate_location(all_script_information)

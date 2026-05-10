@@ -9,8 +9,6 @@ from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 
 from helpers.utils_helper import month_3
-from helpers.cache.none.helper import NoneCache
-from helpers.image.none.helper import NoneImage
 
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 
@@ -56,6 +54,9 @@ class HKMRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image_hosting.none.helper import NoneImage
+
     await HKMRunner().run(NoneCache(), NoneImage())
 
 

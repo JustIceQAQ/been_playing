@@ -9,8 +9,6 @@ from helpers.symbol.venue import VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
-from helpers.cache.none.helper import NoneCache
-from helpers.image.none.helper import NoneImage
 
 
 class ICultureRunner(RunnerInit):
@@ -57,6 +55,9 @@ class ICultureRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image_hosting.none.helper import NoneImage
+
     await ICultureRunner().run(NoneCache(), NoneImage())
 
 

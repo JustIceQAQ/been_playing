@@ -8,12 +8,17 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     IS_DEBUG: bool | None = Field(description="DEBUG 模式", default=False)
-    IMGUR_API_CLIENT_ID: str | None = Field(default=None)
-    IMGUR_API_CLIENT_SECRET: str | None = Field(default=None)
     SCRAPER_API_KEY: list[str] | None = Field(default=None)
     SCRAPE_DO_API_KEY: str | None = Field(default=None)
     SENTRY_SDK_DNS: str | None = Field(default=None)
     PROXY_POOL: str | None = Field(default=None)
+    CLOUDINARY_CLOUD_NAME: str | None = Field(default=None)
+    CLOUDINARY_API_KEY: str | None = Field(default=None)
+    CLOUDINARY_API_SECRET: str | None = Field(default=None)
+
+    @property
+    def is_cloudinary_available(self) -> bool:
+        return all([self.CLOUDINARY_CLOUD_NAME, self.CLOUDINARY_API_KEY, self.CLOUDINARY_API_SECRET])
 
     class Config:
         case_sensitive = False

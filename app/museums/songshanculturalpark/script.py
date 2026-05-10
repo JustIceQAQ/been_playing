@@ -4,10 +4,8 @@ import bs4
 import httpx
 
 from app.museums.songshanculturalpark.parse import SongShanCulturalParkParse
-from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
-from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, ExhibitionItem, Coordinate
 from helpers.symbol.venue import VenueType
@@ -75,6 +73,9 @@ class SongShanCulturalParkRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image_hosting.none.helper import NoneImage
+
     await SongShanCulturalParkRunner().run(NoneCache(), NoneImage())
 
 

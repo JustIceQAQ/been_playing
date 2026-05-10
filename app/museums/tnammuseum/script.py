@@ -11,8 +11,6 @@ from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
-from helpers.cache.none.helper import NoneCache
-from helpers.image.none.helper import NoneImage
 
 
 class TnamMuseumRunner(RunnerInit):
@@ -25,6 +23,7 @@ class TnamMuseumRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return Information(
+            location_code=Taiwan.tainan.west_central_67000370,
             fullname="臺南市美術館",
             code_name="TnamMuseum",
             external_link="https://www.tnam.museum/exhibition/current?page=1",
@@ -74,6 +73,9 @@ class TnamMuseumRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image_hosting.none.helper import NoneImage
+
     await TnamMuseumRunner().run(NoneCache(), NoneImage())
 
 

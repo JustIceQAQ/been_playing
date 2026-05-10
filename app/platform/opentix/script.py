@@ -1,10 +1,8 @@
 import asyncio
 
 from app.platform.opentix.parse import OpenTixParse
-from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
-from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.symbol.venue import VenueType
@@ -54,6 +52,9 @@ class OpenTixRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image_hosting.none.helper import NoneImage
+
     await OpenTixRunner().run(NoneCache(), NoneImage())
 
 

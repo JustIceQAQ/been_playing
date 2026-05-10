@@ -9,8 +9,6 @@ from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 
 from helpers.utils_helper import month_3
-from helpers.cache.none.helper import NoneCache
-from helpers.image.none.helper import NoneImage
 
 {% set venue_type = "" %}
 {% if cookiecutter.target_sub_directory == "museums" %}
@@ -98,6 +96,8 @@ class {{cookiecutter.script_code}}Runner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image.none.helper import NoneImage
     await {{cookiecutter.script_code}}Runner().run(NoneCache(), NoneImage())
 
 

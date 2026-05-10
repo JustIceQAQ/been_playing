@@ -4,11 +4,9 @@ from typing import cast
 import bs4
 
 from app.museums.huashan1914.parse import huashan1914Parse
-from helpers.cache import NoneCache
 import httpx
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
-from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate, ExhibitionItem
 from helpers.symbol.venue import VenueType
@@ -90,6 +88,9 @@ class HuaShan1914Runner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image_hosting.none.helper import NoneImage
+
     await HuaShan1914Runner().run(NoneCache(), NoneImage())
 
 

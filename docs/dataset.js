@@ -130,6 +130,18 @@ const venueTypeDisplayMap = {
     expo_center: "🏢 展覽中心",
 };
 
+// 嚴格對應 VenueType 列舉順序
+const venueTypeOrder = [
+    "museum",
+    "memorial",
+    "art_museum",
+    "gallery",
+    "creative_park",
+    "art_village",
+    "expo_center",
+    "platform",
+];
+
 const copyUrlToClipboard = (url) => {
     navigator.clipboard
         .writeText(url)
@@ -167,6 +179,8 @@ const getAchievementElement = (title, figure, uuid) => {
     img.className = "img-fluid rounded-start";
     img.src = figure;
     img.alt = title;
+    img.width = 135;
+    img.height = 180;
     colImg.appendChild(img);
 
     const titleEl = document.createElement("h5");

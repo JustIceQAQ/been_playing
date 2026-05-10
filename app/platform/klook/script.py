@@ -5,10 +5,8 @@ from rnet import Proxy
 
 from app.platform.klook.parse import KLookParse
 from configs.settings import get_settings
-from helpers.cache import NoneCache
 from helpers.crawler.rnet.helper import RNetAsyncClient
 from helpers.headers_helper import generate_headers
-from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.symbol.venue import VenueType
@@ -99,6 +97,9 @@ class KLookRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image_hosting.none.helper import NoneImage
+
     await KLookRunner().run(NoneCache(), NoneImage())
 
 

@@ -5,10 +5,8 @@ from selectolax.lexbor import LexborNode
 
 from app.museums.pt1936.parse import PT1936Parse
 from configs.settings import get_settings
-from helpers.cache.none.helper import NoneCache
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_cookies, generate_headers
-from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Coordinate, Information
 from helpers.symbol.taiwan import Taiwan
@@ -76,6 +74,9 @@ class PT1936Runner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image_hosting.none.helper import NoneImage
+
     await PT1936Runner().run(NoneCache(), NoneImage())
 
 

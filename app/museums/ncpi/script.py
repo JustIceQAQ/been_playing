@@ -4,10 +4,8 @@ from typing import cast
 import bs4
 
 from app.museums.ncpi.parse import NCPIParse
-from helpers.cache import NoneCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers, generate_cookies
-from helpers.image.none.helper import NoneImage
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
 from helpers.symbol.venue import VenueType
@@ -63,6 +61,9 @@ class NCPIRunner(RunnerInit):
 
 
 async def main():
+    from helpers.cache.none.helper import NoneCache
+    from helpers.image_hosting.none.helper import NoneImage
+
     await NCPIRunner().run(NoneCache(), NoneImage())
 
 
