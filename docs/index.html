@@ -20,7 +20,7 @@
       })(window, document, "script", "dataLayer", "GTM-W2B9C87");
     </script>
     <!-- End Google Tag Manager -->
-    <script src="index.min.js"></script>
+    <script src="index.min.js" defer></script>
 
     <meta
       name="viewport"
@@ -85,13 +85,13 @@
       defer
     ></script>
 
+    <script>document.documentElement.setAttribute("data-bs-theme",window.matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");</script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="theme_fix.css" />
 
     <link
       rel="stylesheet"
@@ -107,7 +107,9 @@
         font-display: swap;
       }
 
-      /* === Exhibition Card Grid === */
+      [data-bs-theme="light"]{--bs-body-bg:#f0ede8;--bs-body-color:#3a3a3a;--bs-secondary-bg:#e6e3de;--bs-tertiary-bg:#eae7e2;--bs-border-color:#d5d2cd}
+
+/* === Exhibition Card Grid === */
       .exhibition-card .card-img-top {
         height: 200px;
         object-fit: cover;
@@ -219,6 +221,19 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        @keyframes bbp-fadein {
+          from { opacity: 0; transform: translateY(6px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        .venue-selector-content.bbp-animate {
+          animation: bbp-fadein 0.22s ease-out;
+        }
+        .venue-selector-type-filter.bbp-animate {
+          animation: bbp-fadein 0.15s ease-out;
+        }
       }
     </style>
   </head>
@@ -445,6 +460,7 @@
 
           <!-- 篩選列 -->
           <div class="d-flex align-items-center gap-2 mb-3">
+            <label for="statusSelect" class="visually-hidden">展覽狀態篩選</label>
             <select class="form-select" id="statusSelect" style="max-width:200px;min-height:44px">
               <option value="">全部顯示</option>
               <option value="尚未開始">尚未開始</option>
@@ -498,36 +514,42 @@
     integrity="sha512-FwNWaxyfy2XlEINoSnZh1JQ5TRRtGow0D6XcmAWmYCRgvqOUTnzCxPc9uF35u5ZEpirk1uhlPVA19tflhvnW1g=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
+    defer
   ></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/plugin/relativeTime.min.js"
     integrity="sha512-MVzDPmm7QZ8PhEiqJXKz/zw2HJuv61waxb8XXuZMMs9b+an3LoqOqhOEt5Nq3LY1e4Ipbbd/e+AWgERdHlVgaA=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
+    defer
   ></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/plugin/timezone.min.js"
     integrity="sha512-nrkE2nl0pcqWefIY627DY1exPOSuZXMdOrxMxX0y7Ly6RH8K0WDjO1lqakkxQcX5m8hxoUSt75seRRiyhqPvIw=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
+    defer
   ></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.13/locale/zh-tw.min.js"
     integrity="sha512-Z9Get/15RJrmq/peoDaFetj17/m9DkNYZrsoM0Z+y3CgAv+REWumafGOkchXHm1BUjqHTPa8aQ/bKMvEn7WuvQ=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
+    defer
   ></script>
 
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"
+    defer
   ></script>
 
-  <script src="dataset.min.js"></script>
-  <script src="utils.min.js"></script>
+  <script src="dataset.min.js" defer></script>
+  <script src="utils.min.js" defer></script>
 
   <script>
+    document.addEventListener("DOMContentLoaded", async () => {
     dayjs.extend(window.dayjs_plugin_relativeTime);
     dayjs.extend(window.dayjs_plugin_timezone);
     dayjs.locale("zh-tw");
@@ -756,7 +778,6 @@
       try {
         const data = await fetchWithCache(`${URL_SOURCE}${codeName}.json`);
         currentVenueData = data;
-        console.log(currentVenueData)
         updateInfoCard(data);
         renderGrid();
       } catch (e) {
@@ -889,9 +910,13 @@
         });
         sortedTypes.forEach(k => typeFilter.appendChild(mkPill(k, venueTypeDisplayMap[k] || k, byType[k].length)));
         typeFilter.appendChild(mkPill("all", "全部類型", pool.length));
+        typeFilter.classList.remove("bbp-animate");
+        void typeFilter.offsetWidth;
+        typeFilter.classList.add("bbp-animate");
       };
 
       const renderContent = (searchQuery = "") => {
+        const fromH = content.offsetHeight;
         content.innerHTML = "";
         let wrappers = [];
         if (searchQuery) {
@@ -914,11 +939,31 @@
         } else {
           wrappers.forEach(w => content.appendChild(w));
         }
+        const toH = content.offsetHeight;
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && Math.abs(toH - fromH) > 4) {
+          content.style.overflow = "hidden";
+          content.animate(
+            [{ height: `${fromH}px` }, { height: `${toH}px` }],
+            { duration: 260, easing: "ease-in-out" }
+          ).onfinish = () => { content.style.overflow = ""; };
+        }
+        content.classList.remove("bbp-animate");
+        void content.offsetWidth;
+        content.classList.add("bbp-animate");
       };
 
       const selectCity = (cityName) => {
         activeCity = cityName;
-        activeType = "all";
+        if (cityName === "關注清單" || cityName === "🎫 票務平台" || cityName === "全台") {
+          activeType = "all";
+        } else {
+          const pool = getCityWrappers(cityName);
+          const byType = pool.reduce((acc, w) => {
+            (acc[w.dataset.typeKey] = acc[w.dataset.typeKey] || []).push(w);
+            return acc;
+          }, {});
+          activeType = venueTypeOrder.find(t => byType[t]) || "all";
+        }
         cityNav.querySelectorAll(".nav-link").forEach(l =>
           l.classList.toggle("active", l.dataset.city === cityName)
         );
@@ -973,12 +1018,22 @@
 
       const urlTopicParam = new URLSearchParams(window.location.search).get("topic");
       const hasWatchlist = loadVenueWatchlist().some(t => allTopicSet.has(t));
-      if (!urlTopicParam && hasWatchlist) {
-        selectCity("關注清單");
-      } else {
+      if (urlTopicParam) {
         const initMeta = metaByTopic[initTopic];
         const initCity = initMeta ? (initMeta.city === null ? "🎫 票務平台" : initMeta.city) : "全台";
         selectCity(initCity);
+      } else if (hasWatchlist) {
+        selectCity("關注清單");
+      } else {
+        selectCity("臺北市");
+        const pool = getCityWrappers("臺北市");
+        const byType = pool.reduce((acc, w) => { (acc[w.dataset.typeKey] = acc[w.dataset.typeKey] || []).push(w); return acc; }, {});
+        const firstType = venueTypeOrder.find(t => byType[t]);
+        if (firstType) {
+          activeType = firstType;
+          renderTypeFilter();
+          renderContent();
+        }
       }
     };
 
@@ -1009,7 +1064,8 @@
 
       const urlTopic = new URLSearchParams(window.location.search).get("topic");
       const firstWatched = loadVenueWatchlist().find(t => allTopicSet.has(t));
-      const initTopic = (urlTopic && allTopicSet.has(urlTopic)) ? urlTopic : firstWatched ?? allVenues[0]?.code_name;
+      const firstTaipeiMuseum = allVenues.find(v => v.city === "臺北市" && v.venue_type === "museum");
+      const initTopic = (urlTopic && allTopicSet.has(urlTopic)) ? urlTopic : firstWatched ?? firstTaipeiMuseum?.code_name ?? allVenues[0]?.code_name;
 
       buildVenueSelector(allVenues, allTopicSet, metaByTopic, initTopic);
 
@@ -1019,7 +1075,6 @@
       }
     })();
 
-    window.addEventListener("DOMContentLoaded", () => {
       const achievements = loadAchievements();
       achievements.forEach(item => addToAchievement(item.title, item.figure, item.uuid, false));
     });

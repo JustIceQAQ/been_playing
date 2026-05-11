@@ -1,11 +1,11 @@
 import asyncio
 
 import bs4
-from rnet.rnet import Proxy
+from wreq import Proxy
 
 from app.museums.hong_gah.parse import HongGahParse
 from configs.settings import get_settings
-from helpers.crawler.rnet.helper import RNetAsyncClient
+from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -44,7 +44,7 @@ class HongGahRunner(RunnerInit):
         )
         runtime_settings = get_settings()
         proxies = None if runtime_settings.PROXY_POOL is None else [Proxy.all(runtime_settings.PROXY_POOL)]
-        async with RNetAsyncClient(
+        async with WReqAsyncClient(
             headers=headers,
             follow_redirects=True,
             proxies=proxies,

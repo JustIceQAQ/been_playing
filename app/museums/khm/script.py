@@ -1,10 +1,10 @@
 import asyncio
 
 import bs4
-from rnet import Proxy, Client
+from wreq import Proxy, Client
 from app.museums.khm.parse import KhmParse
 from configs.settings import get_settings
-from helpers.crawler.rnet.helper import RNetAsyncClient
+from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, Coordinate
@@ -43,7 +43,7 @@ class KhmRunner(RunnerInit):
         headers = generate_headers(referer=current_exhibitions_url, not_use_user_agent=True)
         runtime_settings = get_settings()
         proxies = None if runtime_settings.PROXY_POOL is None else [Proxy.all(runtime_settings.PROXY_POOL)]
-        async with RNetAsyncClient(
+        async with WReqAsyncClient(
             proxies=proxies,
             headers=headers,
         ) as client:

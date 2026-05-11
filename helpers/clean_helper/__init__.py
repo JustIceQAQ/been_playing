@@ -6,7 +6,6 @@ Values = str | list[Any] | None
 class RequestsClean:
     @staticmethod
     def clean_string(raw_string: Values) -> Values:
-        # TODO: big5 utf-8
         if raw_string is None:
             return None
         if isinstance(raw_string, list):

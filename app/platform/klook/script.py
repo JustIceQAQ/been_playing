@@ -1,11 +1,11 @@
 import asyncio
 from typing import cast
 
-from rnet import Proxy
+from wreq import Proxy
 
 from app.platform.klook.parse import KLookParse
 from configs.settings import get_settings
-from helpers.crawler.rnet.helper import RNetAsyncClient
+from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
@@ -21,11 +21,11 @@ class KLookRunner(RunnerInit):
         "https://www.klook.com/v1/enteventapisrv/public/content/query_v3?"
         "k_lang=zh_TW"
         "&k_currency=TWD"
-        "&area=city_19"
-        "&page_size=24"
+        "&area=coureg_1014"
+        "&page_size=23"
         "&page_num={page_num}"
         "&filters=convention_exhibition"
-        "&sort=latest"
+        "&sort=coming_end"
         "&date=next_30_days"
         "&start_date="
         "&end_date="
@@ -40,12 +40,7 @@ class KLookRunner(RunnerInit):
         return Information(
             fullname="KLook 客路",
             code_name="KLook",
-            external_link="https://www.klook.com/zh-TW/event/search/listing/?"
-            "area=city_19"
-            "&filters=convention_exhibition"
-            "&date=next_30_days"
-            "&sort=latest"
-            "&page=1",
+            external_link=self.target_url.format(page_num=1),
             venue_type=VenueType.PLATFORM,
         )
 
@@ -64,11 +59,11 @@ class KLookRunner(RunnerInit):
         )
         runtime_settings = get_settings()
         proxies = None if runtime_settings.PROXY_POOL is None else [Proxy.all(runtime_settings.PROXY_POOL)]
-        async with RNetAsyncClient(
+        async with WReqAsyncClient(
             proxies=proxies,
         ) as client:
             response = await client.get(self.target_url.format(page_num=1), headers=headers)
-            if not response.status_code.is_success():
+            if not response.status.is_success():
                 return responses
             content = await response.json()
             responses.append(content)
@@ -76,7 +71,7 @@ class KLookRunner(RunnerInit):
             total = int(content.get("result").get("total"))
             for page in range(2, total // page_size + 2):
                 sub_response = await client.get(self.target_url.format(page_num=page), headers=headers)
-                if not sub_response.status_code.is_success():
+                if not sub_response.status.is_success():
                     return responses
                 content = await sub_response.json()
                 responses.append(content)
