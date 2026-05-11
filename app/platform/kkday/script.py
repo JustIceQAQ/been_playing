@@ -145,7 +145,7 @@ class KKDayRunner(RunnerInit):
             proxies=proxies,
         ) as client:
             first_response = await client.get(self._get_this_url(), headers=headers)
-            if not first_response.status.is_success:
+            if not first_response.status.is_success():
                 return []
             first_context = await first_response.text()
             responses.append(first_context)
@@ -159,7 +159,7 @@ class KKDayRunner(RunnerInit):
                 sub_responses = await asyncio.gather(*sub_tasks)
                 for sub_response in sub_responses:
                     sub_context = await sub_response.text()
-                    if sub_response.status.is_success:
+                    if sub_response.status.is_success():
                         responses.append(sub_context)
                         sub_soup = self.translation().translation_to_object(sub_context, format_encoding="html.parser")
                         if self._has_sold_out_divider(sub_soup):
