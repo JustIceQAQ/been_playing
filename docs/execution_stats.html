@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+    <meta name="description" content="Been Play — Runner 執行時間排行榜" />
+    <meta name="author" content="JustIceQAQ" />
+    <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
+    <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="referrer" content="no-referrer" />
+    <title>執行時間排行 — Been Play</title>
+
+    <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+    <link
+      rel="preload"
+      href="https://raw.githubusercontent.com/JustIceQAQ/been_playing/auto/data-update/data/v2/_EXECUTION_STATS.json"
+      as="fetch"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/fonts/bootstrap-icons.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <script>
+      document.documentElement.setAttribute(
+        "data-bs-theme",
+        window.matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light"
+      );
+    </script>
+
+    <style>
+      @font-face {
+        font-family: "bootstrap-icons";
+        src: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/fonts/bootstrap-icons.woff2") format("woff2");
+        font-display: block;
+      }
+
+      [data-bs-theme="light"] {
+        --bs-body-bg: #f0ede8;
+        --bs-body-color: #3a3a3a;
+        --bs-secondary-bg: #e6e3de;
+        --bs-tertiary-bg: #eae7e2;
+        --bs-border-color: #d5d2cd;
+      }
+
+      body { padding-top: 0.5rem; padding-bottom: 3rem; }
+
+      /* 摘要卡片 */
+      .stat-card {
+        border: 1px solid var(--bs-border-color);
+        border-radius: 0.75rem;
+        padding: 1rem 1.25rem;
+        background: var(--bs-secondary-bg);
+        transition: box-shadow 0.15s;
+      }
+      .stat-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+      .stat-card .stat-value {
+        font-size: 1.1rem;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+      .stat-card .stat-label {
+        font-size: 0.8rem;
+        opacity: 0.65;
+        margin-top: 0.2rem;
+      }
+
+      /* 搜尋列 */
+      #search-input {
+        min-height: 44px;
+        border-radius: 0.5rem;
+      }
+
+      /* 排行列表 */
+      .runner-row {
+        border: 1px solid var(--bs-border-color);
+        border-radius: 0.625rem;
+        padding: 0.75rem 1rem;
+        background: var(--bs-secondary-bg);
+        transition: box-shadow 0.15s;
+        cursor: default;
+      }
+      .runner-row:hover { box-shadow: 0 3px 12px rgba(0,0,0,0.10); }
+
+      .rank-badge {
+        font-size: 1rem;
+        font-weight: 700;
+        min-width: 2.2rem;
+        text-align: center;
+      }
+      .rank-medal-1 { color: #f4b942; }
+      .rank-medal-2 { color: #9aa4b2; }
+      .rank-medal-3 { color: #c47a45; }
+
+      .runner-name { font-weight: 600; font-size: 0.95rem; }
+      .runner-code { font-size: 0.75rem; opacity: 0.55; }
+      .runner-time { font-variant-numeric: tabular-nums; font-size: 0.9rem; }
+      .runner-last-update { font-size: 0.72rem; opacity: 0.5; }
+
+      .time-bar-wrap {
+        height: 6px;
+        border-radius: 3px;
+        background: var(--bs-tertiary-bg);
+        overflow: hidden;
+        margin-top: 0.35rem;
+      }
+      .time-bar {
+        height: 100%;
+        border-radius: 3px;
+        background: var(--bs-primary);
+        transition: width 0.4s ease;
+      }
+
+      /* 排序按鈕 */
+      .sort-btn {
+        min-height: 44px;
+        min-width: 44px;
+      }
+
+      /* 載入骨架 */
+      @keyframes skeleton-pulse {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 0.9; }
+      }
+      .skeleton {
+        background: var(--bs-secondary-bg);
+        border-radius: 0.5rem;
+        animation: skeleton-pulse 1.4s ease-in-out infinite;
+      }
+
+      /* 淡入動畫 */
+      @media (prefers-reduced-motion: no-preference) {
+        @keyframes fadein {
+          from { opacity: 0; transform: translateY(6px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        .animate-in { animation: fadein 0.22s ease-out both; }
+      }
+
+      #no-result {
+        opacity: 0.55;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container" style="max-width: 760px;">
+
+      <!-- Navbar -->
+      <nav class="d-flex align-items-center mb-1" style="gap:0.5rem;">
+        <a href="index.html" class="btn btn-sm btn-outline-secondary flex-shrink-0" aria-label="回首頁" style="min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;">
+          <i class="bi bi-arrow-left"></i>
+        </a>
+        <h1 class="h5 mb-0 fw-bold flex-grow-1 text-center">
+          <i class="bi bi-stopwatch me-1"></i>執行時間排行
+        </h1>
+        <button
+          class="btn btn-sm btn-outline-secondary flex-shrink-0"
+          id="theme-toggle"
+          aria-label="切換深色/淺色模式"
+          style="min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;"
+        >
+          <i class="bi bi-moon-stars" id="theme-icon"></i>
+        </button>
+      </nav>
+      <p id="generated-at-top" class="mb-3" style="font-size:0.78rem;opacity:0.5;padding-left:0.25rem;"></p>
+
+      <!-- 摘要卡片 (骨架) -->
+      <div id="stat-cards" class="row g-2 mb-3">
+        <div class="col-6 col-sm"><div class="skeleton" style="height:82px;"></div></div>
+        <div class="col-6 col-sm"><div class="skeleton" style="height:82px;"></div></div>
+        <div class="col-6 col-sm"><div class="skeleton" style="height:82px;"></div></div>
+        <div class="col-6 col-sm"><div class="skeleton" style="height:82px;"></div></div>
+        <div class="col-6 col-sm"><div class="skeleton" style="height:82px;"></div></div>
+      </div>
+
+      <!-- 搜尋 + 排序 -->
+      <div class="d-flex gap-2 mb-3 align-items-center">
+        <input
+          type="search"
+          id="search-input"
+          class="form-control"
+          placeholder="搜尋場館名稱或代碼…"
+          aria-label="搜尋"
+        />
+        <button
+          class="btn btn-outline-secondary sort-btn"
+          id="sort-btn"
+          aria-label="切換排序方向"
+          title="切換排序方向"
+        >
+          <i class="bi bi-sort-down" id="sort-icon"></i>
+        </button>
+      </div>
+
+      <!-- 排行列表 -->
+      <div id="runner-list" class="d-flex flex-column gap-2">
+        <!-- 骨架佔位 -->
+        <div class="skeleton" style="height:80px;"></div>
+        <div class="skeleton" style="height:80px;"></div>
+        <div class="skeleton" style="height:80px;"></div>
+        <div class="skeleton" style="height:80px;"></div>
+        <div class="skeleton" style="height:80px;"></div>
+      </div>
+
+      <p id="no-result" class="text-center mt-4 d-none">找不到符合的場館</p>
+
+      <!-- 更新時間 -->
+      <p id="generated-at" class="text-center mt-4" style="font-size:0.75rem;opacity:0.45;"></p>
+
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ0ffRXkB7BI4qhNX7mxXPB7MuZlDhR4jT0jCKMIEBD7BRWKK+nY"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/zh-tw.js"></script>
+    <script>
+      dayjs.extend(dayjs_plugin_relativeTime);
+      dayjs.locale("zh-tw");
+    </script>
+
+    <script>
+      const DATA_URL =
+        "https://raw.githubusercontent.com/JustIceQAQ/been_playing/auto/data-update/data/v2/_EXECUTION_STATS.json";
+
+      const MEDAL = ["bi-trophy-fill rank-medal-1", "bi-award-fill rank-medal-2", "bi-patch-check-fill rank-medal-3"];
+
+      function timeAgo(iso) {
+        if (!iso) return "";
+        return dayjs(iso).fromNow();
+      }
+
+      function fmtTime(sec) {
+        if (sec == null) return "—";
+        if (sec >= 60) {
+          const m = Math.floor(sec / 60);
+          const s = (sec % 60).toFixed(1);
+          return `${m} 分 ${s} 秒`;
+        }
+        return `${sec.toFixed(2)} 秒`;
+      }
+
+      function fmtDate(iso) {
+        if (!iso) return "";
+        try {
+          return new Date(iso).toLocaleString("zh-TW", {
+            year: "numeric", month: "2-digit", day: "2-digit",
+            hour: "2-digit", minute: "2-digit",
+          });
+        } catch { return iso; }
+      }
+
+      function calcMedian(runners) {
+        const times = [...runners].map(r => r.execution_time).sort((a, b) => a - b);
+        const mid = Math.floor(times.length / 2);
+        return times.length % 2 !== 0
+          ? times[mid]
+          : (times[mid - 1] + times[mid]) / 2;
+      }
+
+      function renderStatCards(data) {
+        const el = document.getElementById("stat-cards");
+        const median = calcMedian(data.runners ?? []);
+        const cards = [
+          { icon: "bi-people-fill",     label: "Runner 總數",   value: `${data.total_runners} 個`,    color: "text-primary" },
+          { icon: "bi-clock-history",   label: "總執行時間",     value: fmtTime(data.total_execution_time), color: "text-warning" },
+          { icon: "bi-bar-chart-line",  label: "平均執行時間",   value: fmtTime(data.avg_execution_time),   color: "text-success" },
+          { icon: "bi-activity",        label: "中位數",         value: fmtTime(median),                    color: "text-info" },
+          { icon: "bi-lightning-charge",label: "最長 / 最短",    value: `${fmtTime(data.max_execution_time)}<br><span style="opacity:0.6;font-weight:500;">${fmtTime(data.min_execution_time)}</span>`, color: "text-danger" },
+        ];
+        el.innerHTML = cards.map(c => `
+          <div class="col-6 col-sm">
+            <div class="stat-card h-100">
+              <div class="${c.color} mb-1"><i class="bi ${c.icon}"></i></div>
+              <div class="stat-value">${c.value}</div>
+              <div class="stat-label">${c.label}</div>
+            </div>
+          </div>
+        `).join("");
+      }
+
+      function renderRunners(runners, maxTime) {
+        const list = document.getElementById("runner-list");
+        const noResult = document.getElementById("no-result");
+
+        if (!runners.length) {
+          list.innerHTML = "";
+          noResult.classList.remove("d-none");
+          return;
+        }
+        noResult.classList.add("d-none");
+
+        list.innerHTML = runners.map((r, i) => {
+          const origRank = r._origRank;
+          const barPct = maxTime > 0 ? ((r.execution_time / maxTime) * 100).toFixed(1) : 0;
+          let rankHtml;
+          if (origRank <= 3) {
+            rankHtml = `<i class="bi ${MEDAL[origRank - 1]} rank-badge"></i>`;
+          } else {
+            rankHtml = `<span class="rank-badge text-secondary">${origRank}</span>`;
+          }
+          return `
+            <div class="runner-row animate-in" style="animation-delay:${Math.min(i * 30, 300)}ms">
+              <div class="d-flex align-items-start gap-3">
+                <div class="pt-1">${rankHtml}</div>
+                <div class="flex-grow-1 min-w-0">
+                  <div class="d-flex align-items-baseline justify-content-between gap-2 flex-wrap">
+                    <div>
+                      <div class="runner-name">${r.fullname}</div>
+                      <div class="runner-code">${r.code_name}</div>
+                    </div>
+                    <div class="text-end">
+                      <div class="runner-time fw-semibold">${fmtTime(r.execution_time)}</div>
+                      <div class="runner-last-update">${fmtDate(r.last_update)}</div>
+                    </div>
+                  </div>
+                  <div class="time-bar-wrap">
+                    <div class="time-bar" style="width:${barPct}%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join("");
+      }
+
+      let allRunners = [];
+      let sortDesc = true;
+
+      function applyFilter() {
+        const q = document.getElementById("search-input").value.trim().toLowerCase();
+        let filtered = allRunners.filter(r =>
+          !q ||
+          r.fullname.toLowerCase().includes(q) ||
+          r.code_name.toLowerCase().includes(q)
+        );
+        const maxTime = allRunners[0]?.execution_time ?? 1;
+        renderRunners(filtered, maxTime);
+      }
+
+      document.getElementById("search-input").addEventListener("input", applyFilter);
+
+      const sortBtn = document.getElementById("sort-btn");
+      const sortIcon = document.getElementById("sort-icon");
+      sortBtn.addEventListener("click", () => {
+        sortDesc = !sortDesc;
+        allRunners.reverse();
+        sortIcon.className = sortDesc ? "bi bi-sort-down" : "bi bi-sort-up";
+        applyFilter();
+      });
+
+      // 深色模式切換
+      const themeIcon = document.getElementById("theme-icon");
+      document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.documentElement;
+        const next = html.getAttribute("data-bs-theme") === "dark" ? "light" : "dark";
+        html.setAttribute("data-bs-theme", next);
+        themeIcon.className = next === "dark" ? "bi bi-sun" : "bi bi-moon-stars";
+      });
+      if (document.documentElement.getAttribute("data-bs-theme") === "dark") {
+        themeIcon.className = "bi bi-sun";
+      }
+
+      // 載入資料
+      fetch(DATA_URL, { cache: "no-cache" })
+        .then(r => {
+          if (!r.ok) throw new Error(`HTTP ${r.status}`);
+          return r.json();
+        })
+        .then(data => {
+          renderStatCards(data);
+
+          // 標記原始排名（資料已依 execution_time 降冪排序）
+          allRunners = (data.runners ?? []).map((r, i) => ({ ...r, _origRank: i + 1 }));
+
+          const maxTime = allRunners[0]?.execution_time ?? 1;
+          renderRunners(allRunners, maxTime);
+
+          if (data.generated_at) {
+            const relative = timeAgo(data.generated_at);
+            const absolute = fmtDate(data.generated_at);
+            const html = `<i class="bi bi-arrow-clockwise me-1"></i>${relative}
+              <span style="opacity:0.6;">（${absolute}）</span>`;
+            document.getElementById("generated-at-top").innerHTML = html;
+            document.getElementById("generated-at").innerHTML = html;
+          }
+        })
+        .catch(err => {
+          document.getElementById("runner-list").innerHTML = `
+            <div class="alert alert-danger" role="alert">
+              <i class="bi bi-exclamation-triangle-fill me-2"></i>
+              資料載入失敗：${err.message}
+            </div>`;
+        });
+    </script>
+  </body>
+</html>
