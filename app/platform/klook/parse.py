@@ -28,33 +28,29 @@ def chinese_date_format(raw_date_string: str) -> str | None:
             return None
 
 
+def check_use_to_split(text: str, check_list: list[str]) -> str | None:
+    for check in check_list:
+        if check in text:
+            return check
+    return None
+
+
 class KLookParse(ParseInit):
     def __init__(self, item: dict | dict):
         self.item = item
 
-    def title_address_filter(self, text: str) -> tuple[str, str]:
-        runtime_address = "-"
-        titles = text.strip().split("｜")
+    def title_address_filter(self, text: str) -> tuple[str, str | None]:
+        ok_text = text.strip()
+        use_split = check_use_to_split(ok_text, ["|", "｜"])
 
-        if len(titles) == 1:
-            runtime_title = titles[-1]
-
-        elif len(titles) == 2:
-            if ("預售" in titles[0]) and ("優惠" in titles[0]) and ("折" in titles[0]):
-                runtime_title = titles[1]
-            else:
-                runtime_title = titles[0] if titles[1] in {"展覽"} else " - ".join(titles)
-
-        elif len(titles) == 3:
-            runtime_address = titles[-1]
-            runtime_title = titles[0] if titles[1] in {"展覽"} else " - ".join(titles[:2])
-        elif len(titles) == 5:
-            runtime_title = titles[3]
-            runtime_address = titles[2]
-        else:
-            runtime_title = text.strip()
-
-        return runtime_title, runtime_address
+        if use_split is None:
+            return ok_text, None
+        parts = ok_text.split(use_split)
+        if len(parts) == 1:
+            return parts[0].strip(), None
+        address = parts[0].strip()
+        title = " ".join(p.strip() for p in parts[1:])
+        return title, address
 
     def get_title(self, *args, **kwargs) -> str | None:
         raw_title = self.item.get("title")
@@ -110,6 +106,13 @@ class KLookParse(ParseInit):
     def get_figure(self, *args, **kwargs) -> str | None:
         figure = self.item.get("image_url")
         return figure
+
+    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+        raw_tags: list[dict[str, str]] | None = self.item.get("tags")
+        if raw_tags:
+            return [tag.get("text") for tag in raw_tags if tag.get("text") is not None]
+
+        return None
 
     def get_source_url(self, *args, **kwargs) -> str | None:
         return self.item.get("event_url")
