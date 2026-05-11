@@ -268,6 +268,14 @@ class Exhibition(BaseModel):
             await afp.truncate()
             last_week_update.set_after_items(self.items)
 
+        if execution_time is not None:
+            execution_stats.record(
+                code_name=self.information.code_name,
+                fullname=self.information.fullname,
+                execution_time=execution_time,
+                last_update=self.last_update,
+            )
+
     async def save_to_rss(self) -> pathlib.Path:
         runtime_setting = get_settings()
         fg = FeedGenerator()
@@ -402,3 +410,58 @@ class LastWeekUpdate:
 
 
 last_week_update = LastWeekUpdate()
+
+
+EXECUTION_STATS_FILE_PATH = Path(__file__).parent.parent.parent / "data" / "v2" / "_EXECUTION_STATS.json"
+
+
+class ExecutionStatsItem(BaseModel):
+    code_name: str
+    fullname: str
+    execution_time: float
+    last_update: str
+
+
+class ExecutionStatsData(BaseModel):
+    generated_at: str = Field(default_factory=get_datetime_now_iso_format)
+    runners: list[ExecutionStatsItem] = Field(default_factory=list)
+    total_runners: int = 0
+    total_execution_time: float = 0.0
+    avg_execution_time: float = 0.0
+    max_execution_time: float = 0.0
+    min_execution_time: float = 0.0
+
+    @model_validator(mode="after")
+    def compute_summary(cls, values):
+        times = [r.execution_time for r in values.runners]
+        if times:
+            values.total_runners = len(times)
+            values.total_execution_time = round(sum(times), 4)
+            values.avg_execution_time = round(sum(times) / len(times), 4)
+            values.max_execution_time = round(max(times), 4)
+            values.min_execution_time = round(min(times), 4)
+        return values
+
+
+class ExecutionStats:
+    def __init__(self):
+        self._records: list[ExecutionStatsItem] = []
+
+    def record(self, code_name: str, fullname: str, execution_time: float, last_update: str):
+        self._records.append(
+            ExecutionStatsItem(
+                code_name=code_name,
+                fullname=fullname,
+                execution_time=round(execution_time, 4),
+                last_update=last_update,
+            )
+        )
+
+    async def save(self):
+        sorted_records = sorted(self._records, key=lambda r: r.execution_time, reverse=True)
+        data = ExecutionStatsData(runners=sorted_records)
+        async with aiofiles.open(EXECUTION_STATS_FILE_PATH, "w+") as afp:
+            await afp.write(data.model_dump_json(indent=2))
+
+
+execution_stats = ExecutionStats()

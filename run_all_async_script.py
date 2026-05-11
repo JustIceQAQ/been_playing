@@ -17,6 +17,7 @@ from helpers.storage.helper import (
     Coordinate,
     orjson_default_handler,
     last_week_update,
+    execution_stats,
 )
 from helpers.crawler.scraper.helper import available_scraper_async_client
 from helpers.image_hosting.none.helper import NoneImageHosting
@@ -173,6 +174,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
     await generate_venue_meta(all_script_information)
 
     await last_week_update.set_last_week_items()
+    await execution_stats.save()
 
 
 if __name__ == "__main__":
