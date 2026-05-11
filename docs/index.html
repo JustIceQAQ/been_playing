@@ -275,6 +275,7 @@
         src="https://www.googletagmanager.com/ns.html?id=GTM-W2B9C87"
         height="0"
         width="0"
+        title="Google Tag Manager"
         style="display: none; visibility: hidden"
       ></iframe>
     </noscript>
@@ -384,6 +385,7 @@
           type="file"
           id="importAchievementsInput"
           accept=".json"
+          aria-label="匯入成就列表 JSON 檔案"
           style="display: none"
           aria-hidden="true"
         />
@@ -486,7 +488,7 @@
           <div id="venue-selector-mount" aria-hidden="true"></div>
           <!-- 場館資訊卡 -->
           <div id="exhibition-info-card" class="card mb-3" style="display:none">
-            <h5 class="card-header" id="exhibition-info-header"></h5>
+            <div class="card-header" id="exhibition-info-header"></div>
             <div class="card-body" id="exhibition-info-body" style="display:none"></div>
             <div class="card-footer" id="exhibition-info-footer"></div>
           </div>
@@ -528,10 +530,7 @@
                 本網頁所有包含，但不限於商標、標誌、圖像、短片、聲音檔案、連結及其他資料等資料來源（以下簡稱「資料集」），
                 僅供<a href="https://justiceqaq.github.io/">@JustIceQAQ</a
                 >作為Side Project 技術展示用途。
-                本網頁資料集會提供連結至其他機構網頁，但這些網頁並不是由<a
-                  href="https://justiceqaq.github.io/"
-                  >@JustIceQAQ</a
-                >所控制。
+                本網頁資料集會提供連結至其他機構網頁，但這些網頁並不是由 @JustIceQAQ 所控制。
                 本網頁不會對這些網頁所顯示的內容作出任何保證或承擔任何責任。
                 資料集實際最新資訊請自行搜尋該機構官方網站。
                 <br /><br />
@@ -681,7 +680,7 @@
         const gCal = `https://www.google.com/calendar/render?cid=${webCal}`;
         btns.push(`<div class="btn-group"><button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"><i class="bi bi-calendar-plus"></i> 訂閱</button><ul class="dropdown-menu"><li><a class="dropdown-item" href="${webCal}" target="_blank">Apple 日曆 / Outlook</a></li><li><a class="dropdown-item" href="${gCal}" target="_blank">Google 日曆</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" href="${rawUrl}" target="_blank">下載 .ics 檔案</a></li></ul></div>`);
       }
-      infoHeader.innerHTML = `<div class="d-flex flex-wrap align-items-center gap-2"><span>《${fullname}》</span>${btns.join("")}</div>`;
+      infoHeader.innerHTML = `<h5 class="mb-0 d-flex flex-wrap align-items-center gap-2"><span>《${fullname}》</span>${btns.join("")}</h5>`;
       const s = VENUE_STYLES[code_name] ?? DEFAULT_STYLE;
       infoCard.style.backgroundColor = s.bg;
       infoCard.style.color = getContrastYIQ(s.bg);
