@@ -26,7 +26,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=1"
     />
-    <meta name="robots" content="noindex,nofollow" />
+    <meta name="description" content="Been Play — 蒐集台灣各地展覽與活動資訊，讓你隨時掌握近期有什麼好去處。" />
+    <meta name="author" content="JustIceQAQ" />
+    <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
+    <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
+    <meta name="bingbot" content="noindex,nofollow,noarchive,nosnippet" />
+    <meta name="Baiduspider" content="noindex,nofollow,noarchive" />
+    <meta name="YandexBot" content="noindex,nofollow,noarchive" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -52,6 +58,7 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+    <meta name="color-scheme" content="light dark" />
     <meta name="referrer" content="no-referrer" />
     <title>Been Play</title>
 
@@ -100,11 +107,26 @@
       onload="this.media='all'"
     />
     <style>
-      /* 覆寫 Bootstrap Icons font-display，避免 FOIT（不可見文字閃爍） */
+      /* 覆寫 Bootstrap Icons font-display：icon font 用 block 避免字型替換時位移 */
       @font-face {
         font-family: "bootstrap-icons";
         src: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/fonts/bootstrap-icons.woff2") format("woff2");
-        font-display: swap;
+        font-display: block;
+      }
+
+      body { padding-top: 0.5rem; }
+
+      /* 場館選擇器骨架佔位，防止資料載入後整頁下移 */
+      @keyframes bbp-skeleton-pulse {
+        0%, 100% { opacity: 0.55; }
+        50% { opacity: 0.9; }
+      }
+      #venue-selector-mount {
+        min-height: 116px;
+        background: var(--bs-secondary-bg);
+        border-radius: 0.5rem;
+        margin-bottom: 0.75rem;
+        animation: bbp-skeleton-pulse 1.4s ease-in-out infinite;
       }
 
       [data-bs-theme="light"]{--bs-body-bg:#f0ede8;--bs-body-color:#3a3a3a;--bs-secondary-bg:#e6e3de;--bs-tertiary-bg:#eae7e2;--bs-border-color:#d5d2cd}
@@ -145,6 +167,13 @@
         padding: 0.5rem 0.5rem 0;
         gap: 0.25rem;
         border-bottom: 1px solid var(--bs-border-color);
+        flex-wrap: wrap;
+        min-height: 100px; /* padding-top 8px + tab 44px + gap 4px + tab 44px */
+        align-content: flex-start;
+      }
+      .venue-selector-nav-break {
+        flex-basis: 100%;
+        height: 0;
       }
 
       .venue-selector-nav .nav-link {
@@ -153,6 +182,7 @@
         align-items: center;
         padding: 0.4rem 0.85rem;
         border-radius: 0.375rem 0.375rem 0 0;
+        white-space: nowrap;
       }
 
       .venue-selector-content {
@@ -249,7 +279,6 @@
       ></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <br />
 
     <div
       class="modal fade"
@@ -442,6 +471,7 @@
                   id="themeIcon"
                   data-icon="ph:sun-bold"
                   data-inline="false"
+                  style="width:1.25em;height:1.25em;display:inline-block;vertical-align:middle"
                 ></span>
               </button>
             </div>
@@ -451,6 +481,7 @@
       <main>
       <div class="row">
         <div class="col">
+          <div id="venue-selector-mount" aria-hidden="true"></div>
           <!-- 場館資訊卡 -->
           <div id="exhibition-info-card" class="card mb-3" style="display:none">
             <h5 class="card-header" id="exhibition-info-header"></h5>
@@ -501,6 +532,8 @@
                 >所控制。
                 本網頁不會對這些網頁所顯示的內容作出任何保證或承擔任何責任。
                 資料集實際最新資訊請自行搜尋該機構官方網站。
+                <br /><br />
+                &copy; 2024&ndash;2026 <a href="https://justiceqaq.github.io/">JustIceQAQ</a>. All rights reserved.
               </div>
             </div>
           </footer>
@@ -871,7 +904,7 @@
       const tabsContainer = document.createElement("div");
       tabsContainer.className = "venue-selector";
       const cityNav = document.createElement("ul");
-      cityNav.className = "nav nav-tabs flex-wrap venue-selector-nav";
+      cityNav.className = "nav nav-tabs venue-selector-nav";
       const typeFilter = document.createElement("div");
       typeFilter.className = "venue-selector-type-filter";
       typeFilter.style.display = "none";
@@ -992,6 +1025,9 @@
       });
       if (platformVenues.length > 0)
         addCityTab("🎫 票務平台", `🎫 票務平台 <span class="badge bg-secondary ms-1">${platformVenues.length}</span>`);
+      const navBreak = document.createElement("li");
+      navBreak.className = "venue-selector-nav-break";
+      cityNav.appendChild(navBreak);
       addCityTab("全台", "📍 全台");
 
       filterInput.addEventListener("input", function () {
@@ -1013,8 +1049,8 @@
       tabsContainer.appendChild(filterInput);
       tabsContainer.appendChild(content);
 
-      const mainCol = document.querySelector("main .col");
-      if (mainCol) mainCol.insertBefore(tabsContainer, mainCol.firstChild);
+      const mount = document.getElementById("venue-selector-mount");
+      if (mount) mount.replaceWith(tabsContainer);
 
       const urlTopicParam = new URLSearchParams(window.location.search).get("topic");
       const hasWatchlist = loadVenueWatchlist().some(t => allTopicSet.has(t));
