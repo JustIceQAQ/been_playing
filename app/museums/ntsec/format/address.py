@@ -1,3 +1,5 @@
+import re
+
 import bs4
 
 
@@ -67,6 +69,40 @@ def address_case_4(soup: bs4.BeautifulSoup) -> str | None:
     return location.text.strip()
 
 
+def address_case_5(soup: bs4.BeautifulSoup) -> str | None:
+    for strong in soup.select("div.newsin-text strong"):
+        if "展覽地點" in strong.text:
+            sibling = strong.parent.next_sibling
+            if sibling:
+                text = sibling.strip() if isinstance(sibling, str) else sibling.get_text(strip=True)
+                if text:
+                    return text
+    return None
+
+
+def address_case_6(soup: bs4.BeautifulSoup) -> str | None:
+    target = soup.select_one("div.newsin-text")
+    if target is None:
+        return None
+    for line in target.get_text("\n").split("\n"):
+        if "展出地點" in line:
+            match = re.search(r"（(.+?)）", line)
+            if match:
+                return match.group(1)
+            location = line.split("：")[-1].strip()
+            return location if location else None
+    return None
+
+
+def address_case_7(soup: bs4.BeautifulSoup) -> str | None:
+    for h3 in soup.select("div.newsin-text h3"):
+        if "展覽地點" in h3.text:
+            p = h3.find_next_sibling("p")
+            if p:
+                return p.get_text(strip=True)
+    return None
+
+
 def get_page_address(soup: bs4.BeautifulSoup) -> str | None:
     result = try_except(address_case_1, soup)
     if result is not None:
@@ -78,6 +114,15 @@ def get_page_address(soup: bs4.BeautifulSoup) -> str | None:
     if result is not None:
         return result
     result = try_except(address_case_4, soup)
+    if result is not None:
+        return result
+    result = try_except(address_case_5, soup)
+    if result is not None:
+        return result
+    result = try_except(address_case_6, soup)
+    if result is not None:
+        return result
+    result = try_except(address_case_7, soup)
     if result is not None:
         return result
     return None

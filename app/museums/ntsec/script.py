@@ -5,6 +5,7 @@ import httpx
 from dateutil.relativedelta import relativedelta
 
 from app.museums.ntsec.format.address import get_page_address
+from app.museums.ntsec.format.date import get_page_date
 from app.museums.ntsec.parse import NtSecParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
@@ -59,14 +60,25 @@ class NtSecRunner(RunnerInit):
 
     async def suffix_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
         has_address_cache = await self.cache.aget(f"{item.UUID}-address")
-        if has_address_cache:
+        has_date_cache = await self.cache.aget(f"{item.UUID}-date")
+        if has_address_cache and has_date_cache:
             item.address = has_address_cache
+            item.date = has_date_cache
             return
         response = await client.get(item.source_url)
         soup = self.translation().translation_to_object(response.text)
-        exhibition_location = get_page_address(soup)
-        await self.cache.aset(f"{item.UUID}-address", exhibition_location, month_3())
-        item.address = exhibition_location
+        if has_address_cache:
+            item.address = has_address_cache
+        else:
+            exhibition_location = get_page_address(soup)
+            await self.cache.aset(f"{item.UUID}-address", exhibition_location, month_3())
+            item.address = exhibition_location
+        if has_date_cache:
+            item.date = has_date_cache
+        else:
+            exhibition_date = get_page_date(soup)
+            await self.cache.aset(f"{item.UUID}-date", exhibition_date, month_3())
+            item.date = exhibition_date
 
     async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):
         headers = self.get_this_headers()
