@@ -51,12 +51,7 @@
       href="icon_folder/favicon-16x16.png"
     />
     <link rel="manifest" href="icon_folder/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="icon_folder/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
+<meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="color-scheme" content="light dark" />
     <meta name="referrer" content="no-referrer" />
@@ -177,12 +172,17 @@
       }
 
       .venue-selector-nav .nav-link {
+        color: var(--bs-body-color);
         min-height: 44px;
         display: inline-flex;
         align-items: center;
         padding: 0.4rem 0.85rem;
         border-radius: 0.375rem 0.375rem 0 0;
         white-space: nowrap;
+      }
+      .venue-selector-nav .nav-link:hover,
+      .venue-selector-nav .nav-link:focus {
+        color: var(--bs-body-color);
       }
 
       .venue-selector-content {
@@ -368,13 +368,14 @@
     >
       <div class="offcanvas-header d-flex align-items-center gap-2 flex-wrap">
         <h5 class="offcanvas-title" id="offcanvasAchievementLabel">成就列表</h5>
-        <button class="btn btn-success" onclick="exportAchievementsToJSON()">
+        <button class="btn btn-success" onclick="exportAchievementsToJSON()" aria-label="匯出成就列表">
           <i class="bi bi-cloud-download-fill"></i>
         </button>
 
         <button
           class="btn btn-primary"
           onclick="document.getElementById('importAchievementsInput').click()"
+          aria-label="匯入成就列表"
         >
           <i class="bi bi-cloud-upload-fill"></i>
         </button>
@@ -384,13 +385,14 @@
           id="importAchievementsInput"
           accept=".json"
           style="display: none"
+          aria-hidden="true"
         />
 
         <button
           class="btn btn-danger"
           data-bs-toggle="modal"
           data-bs-target="#deleteAllAchievementModal"
-          aria-label="成就列表"
+          aria-label="刪除所有成就"
         >
           <i class="bi bi-trash"></i>
         </button>
@@ -428,7 +430,7 @@
         <div class="col">
           <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand"></a>
+              <a class="navbar-brand" aria-label="Been Play 首頁"><h1 class="visually-hidden">Been Play</h1></a>
               <button
                 class="btn btn-warning shadow"
                 type="button"
@@ -682,7 +684,7 @@
       infoHeader.innerHTML = `<div class="d-flex flex-wrap align-items-center gap-2"><span>《${fullname}》</span>${btns.join("")}</div>`;
       const s = VENUE_STYLES[code_name] ?? DEFAULT_STYLE;
       infoCard.style.backgroundColor = s.bg;
-      infoCard.style.color = s.color;
+      infoCard.style.color = getContrastYIQ(s.bg);
       infoCard.style.borderColor = s.border ?? s.bg;
       infoCard.style.display = "";
       const opening = data.visit?.opening;
@@ -880,13 +882,13 @@
         watchBtn.type = "button";
         watchBtn.className = `btn ${watched ? "btn-warning" : "btn-outline-secondary"}`;
         watchBtn.innerHTML = `<i class="bi ${watched ? "bi-bell-fill" : "bi-bell"}"></i>`;
-        watchBtn.title = watched ? "取消關注" : "加入關注";
+        watchBtn.setAttribute("aria-label", watched ? "取消關注" : "加入關注");
         watchBtn.addEventListener("click", (e) => {
           e.stopPropagation();
           const nowWatched = toggleVenueWatch(v.code_name);
           watchBtn.className = `btn ${nowWatched ? "btn-warning" : "btn-outline-secondary"}`;
           watchBtn.innerHTML = `<i class="bi ${nowWatched ? "bi-bell-fill" : "bi-bell"}"></i>`;
-          watchBtn.title = nowWatched ? "取消關注" : "加入關注";
+          watchBtn.setAttribute("aria-label", nowWatched ? "取消關注" : "加入關注");
           if (activeCity === "關注清單") renderContent();
         });
         wrapper.appendChild(watchBtn);
@@ -911,6 +913,7 @@
       const filterInput = document.createElement("input");
       filterInput.type = "text";
       filterInput.placeholder = "搜尋場館...";
+      filterInput.setAttribute("aria-label", "搜尋場館");
       filterInput.className = "form-control";
       filterInput.style.cssText = "border-radius:0; border-left:0; border-right:0;";
       const content = document.createElement("div");
@@ -1092,10 +1095,11 @@
       const allTopicSet = new Set(allVenues.map(v => v.code_name));
 
       const venueStyleEl = document.createElement("style");
-      venueStyleEl.innerHTML = allVenues.map(v =>
-        `.btn-${v.code_name}{color:${v.color};background-color:${v.bg};border-color:${v.border};` +
-        `--bs-btn-hover-color:${v.color};--bs-btn-hover-bg:${v.bg};}`
-      ).join("");
+      venueStyleEl.innerHTML = allVenues.map(v => {
+        const textColor = getContrastYIQ(v.bg);
+        return `.btn-${v.code_name}{color:${textColor};background-color:${v.bg};border-color:${v.border};` +
+          `--bs-btn-hover-color:${textColor};--bs-btn-hover-bg:${v.bg};}`;
+      }).join("");
       document.head.appendChild(venueStyleEl);
 
       const urlTopic = new URLSearchParams(window.location.search).get("topic");
