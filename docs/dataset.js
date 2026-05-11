@@ -28,7 +28,7 @@ const VENUE_STYLES = {
     "NTAEC":                { color: "#fff",    bg: "#b83a32", border: "#24318e" },
     "AAAArchives":          { color: "#fff",    bg: "#00afa9", border: "#00192e" },
     "HuaShan1914":          { color: "#fff",    bg: "#437321" },
-    "MoCaTaipei":           { color: "#fff",    bg: "#E83434" },
+    "MoCaTaipei":           { color: "#fff",    bg: "#e22e2e" },
     "TncMMM":               { color: "#fff",    bg: "#9f211a" },
     "Nrm":                  { color: "#fff",    bg: "#009e40", border: "#fdfdfd" },
     "BoPiLiao":             { color: "#fff",    bg: "#656565", border: "#cacaca" },
