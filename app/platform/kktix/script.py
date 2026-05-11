@@ -6,11 +6,10 @@ from typing import cast
 
 import bs4
 from dateutil.relativedelta import relativedelta
-from rnet import Proxy
+from wreq import Proxy
 
 from app.platform.kktix.parse import KKTixParse
-from helpers.crawler.rnet.helper import RNetAsyncClient
-from helpers.headers_helper import generate_headers
+from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.symbol.venue import VenueType
@@ -30,7 +29,7 @@ class KKTixRunner(RunnerInit):
     use_parse = KKTixParse
     target_url = (
         "https://kktix.com/events?"
-        "utf8=✓"
+        "utf8=%E2%9C%93"
         "&search="
         "&max_price="
         "&min_price="
@@ -52,10 +51,6 @@ class KKTixRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = generate_headers(
-            referer="https://kktix.com/",
-        )
-
         today, today_add_2_months = within_two_months()
         start_at = urllib.parse.quote(today.strftime("%Y/%m/%d"), safe="")
         end_at = urllib.parse.quote(today_add_2_months.strftime("%Y/%m/%d"), safe="")
@@ -64,15 +59,16 @@ class KKTixRunner(RunnerInit):
         proxies = None
         if runtime_settings.PROXY_POOL is not None:
             proxies = [Proxy.all(runtime_settings.PROXY_POOL)]
-        async with RNetAsyncClient(
+        async with WReqAsyncClient(
             proxies=proxies,
         ) as client:
             page = 1
             while True:
                 response = await client.get(
                     self.target_url.format(start_at=start_at, end_at=end_at, page=page),
-                    headers=headers,
                 )
+                if not response.status.is_success():
+                    break
                 this_response_text = await response.text()
                 if (
                     self.translation()
