@@ -1,16 +1,16 @@
-import rnet
+import wreq
 
 
-class RNetAsyncClient:
+class WReqAsyncClient:
     def __init__(self, *args, **kwargs) -> None:
-        self.client = rnet.Client(
+        self.client = wreq.Client(
             *args,
             **kwargs,
-            impersonate=rnet.Impersonate.Chrome137,
+            emulation=wreq.Emulation(profile=wreq.Profile.Firefox149),
             allow_redirects=True,
         )
 
-    async def __aenter__(self) -> rnet.Client:
+    async def __aenter__(self) -> wreq.Client:
         return self.client
 
     async def __aexit__(self, exc_type, exc_val, exc_tb):
