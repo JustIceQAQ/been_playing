@@ -2,6 +2,7 @@ import argparse
 import asyncio
 import orjson
 import logging
+from datetime import datetime, timezone
 from pathlib import Path
 import aiofiles
 import sentry_sdk
@@ -44,8 +45,12 @@ async def generate_venue_meta(information: list["Information"]):
             }
         )
 
+    payload = {
+        "last_update": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "venues": venues,
+    }
     async with aiofiles.open(ROOT_PATH / "data" / "v2" / "_VENUE_META.json", "wb+") as afp:
-        await afp.write(orjson.dumps(venues, default=orjson_default_handler))
+        await afp.write(orjson.dumps(payload, default=orjson_default_handler))
 
 
 async def generate_location(information: list["Information"]):
@@ -85,7 +90,8 @@ async def generate_location(information: list["Information"]):
 
 
 async def main(worker: int | None = None, worker_max: int | None = None):
-    sem = asyncio.Semaphore(10)
+    fetch_sem = asyncio.Semaphore(10)
+    image_sem = asyncio.Semaphore(5)
     runtime_setting = get_settings()
 
     # logging init
@@ -125,7 +131,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
     for RunnerObj in scripts_to_run:
         this_runner = RunnerObj()
         all_script_information.append(this_runner.set_information())
-        named_runners.append((RunnerObj.__name__, RunnerObj().run(disk_cache, image_host, prefix)))
+        named_runners.append((RunnerObj.__name__, RunnerObj().run(disk_cache, image_host, prefix, image_sem)))
 
     total = len(named_runners)
     done_count = 0
@@ -146,7 +152,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
 
         async def tracked_run(name: str, coro):
             nonlocal done_count
-            async with sem:
+            async with fetch_sem:
                 task_id = progress.add_task(f"[yellow]{name}", total=None)
                 try:
                     result = await coro
