@@ -30,7 +30,7 @@ dependencies = [
     "rich>=14.3.2",
     "selectolax>=0.4.7",
     "sentry-sdk==2.58.0",
-    "urllib3>=2.5.0",
+    "urllib3>=2.7.0",
     "pillow>=11.0.0",
     "wreq>=0.11.3",
 ]
