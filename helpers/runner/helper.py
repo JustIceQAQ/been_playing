@@ -107,8 +107,8 @@ class RunnerInit(abc.ABC):
     def exhibition(self):
         return self.exhibition_
 
-    async def cache_image_url(self, item: ExhibitionItem):
-        async with asyncio.Semaphore(10):
+    async def cache_image_url(self, item: ExhibitionItem, sem: asyncio.Semaphore):
+        async with sem:
             hash_source_url = hashlib.sha256(item.source_url.encode("utf-8")).hexdigest()
             cache_figure_url = await self.cache.aget(hash_source_url)
             if cache_figure_url:
@@ -134,7 +134,14 @@ class RunnerInit(abc.ABC):
 
         return hashlib.sha256(content.encode("utf-8")).hexdigest()
 
-    async def run(self, cache: Cache, image, prefix: str | None = None, develop_mode: bool = False):
+    async def run(
+        self,
+        cache: Cache,
+        image,
+        prefix: str | None = None,
+        image_sem: asyncio.Semaphore | None = None,
+        develop_mode: bool = False,
+    ):
         start_time = time.time()
         try:
             self.cache = cache
@@ -161,7 +168,8 @@ class RunnerInit(abc.ABC):
 
             self.exhibition_ = Exhibition(information=self.information_, items=self.items_)
 
-            cache_tasks = [self.cache_image_url(item) for item in self.exhibition_.items]
+            _image_sem = image_sem if image_sem is not None else asyncio.Semaphore(5)
+            cache_tasks = [self.cache_image_url(item, _image_sem) for item in self.exhibition_.items]
             await asyncio.gather(*cache_tasks)
 
             if self.use_suffix_item_from_url_auto:

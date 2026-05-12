@@ -85,7 +85,8 @@ async def generate_location(information: list["Information"]):
 
 
 async def main(worker: int | None = None, worker_max: int | None = None):
-    sem = asyncio.Semaphore(10)
+    fetch_sem = asyncio.Semaphore(10)
+    image_sem = asyncio.Semaphore(5)
     runtime_setting = get_settings()
 
     # logging init
@@ -125,7 +126,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
     for RunnerObj in scripts_to_run:
         this_runner = RunnerObj()
         all_script_information.append(this_runner.set_information())
-        named_runners.append((RunnerObj.__name__, RunnerObj().run(disk_cache, image_host, prefix)))
+        named_runners.append((RunnerObj.__name__, RunnerObj().run(disk_cache, image_host, prefix, image_sem)))
 
     total = len(named_runners)
     done_count = 0
@@ -146,7 +147,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
 
         async def tracked_run(name: str, coro):
             nonlocal done_count
-            async with sem:
+            async with fetch_sem:
                 task_id = progress.add_task(f"[yellow]{name}", total=None)
                 try:
                     result = await coro

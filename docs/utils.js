@@ -1,3 +1,12 @@
+const getContrastYIQ = (hexcolor) => {
+  hexcolor = hexcolor.replace("#", "");
+  const r = parseInt(hexcolor.substr(0, 2), 16);
+  const g = parseInt(hexcolor.substr(2, 2), 16);
+  const b = parseInt(hexcolor.substr(4, 2), 16);
+  const yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+  return yiq >= 128 ? "#000" : "#fff";
+};
+
 const notStartedBadges = (tag = "h2", targetDate = null, countdownOnly = false) => {
   let content;
   if (countdownOnly && targetDate !== null) {
@@ -17,5 +26,5 @@ const inProgressBadges = (tag = "h2", targetDate = null, countdownOnly = false) 
   }
   return `<${tag}><span class="badge bg-success">${content}</span></${tag}>`;
 }
-const finishedBadges = (tag = "h2") => `<${tag}><span class="badge bg-danger" style="color: #3c3d30;">已經結束</span></${tag}>`
+const finishedBadges = (tag = "h2") => `<${tag}><span class="badge bg-danger">已經結束</span></${tag}>`
 const unableBadges = (tag = "h2") => `<${tag}><span class="badge bg-secondary">無法判斷</span></${tag}>`
