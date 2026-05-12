@@ -634,15 +634,23 @@
       runThemeSet();
     });
 
-    // === localStorage 快取（取代 jQuery jalc） ===
-    const fetchWithCache = async (url, ttlHours = 0.5) => {
+    // === localStorage 快取，由 _VENUE_META.json last_update 控制失效 ===
+    // cacheEnabled = false 時（過渡期，舊格式無 last_update）直接 real fetch
+    let cacheEnabled = false;
+
+    const fetchWithCache = async (url) => {
+      if (!cacheEnabled) {
+        const resp = await fetch(url);
+        return await resp.json();
+      }
       const cacheKey = `bbp_cache_${url}`;
-      let cached = null;
-      try { cached = JSON.parse(localStorage.getItem(cacheKey)); } catch {}
-      if (cached && (Date.now() - cached.ts) < ttlHours * 3600 * 1000) return cached.data;
+      try {
+        const cached = JSON.parse(localStorage.getItem(cacheKey));
+        if (cached) return cached;
+      } catch {}
       const resp = await fetch(url);
       const data = await resp.json();
-      try { localStorage.setItem(cacheKey, JSON.stringify({ ts: Date.now(), data })); } catch {}
+      try { localStorage.setItem(cacheKey, JSON.stringify(data)); } catch {}
       return data;
     };
 
@@ -1083,7 +1091,24 @@
       let venueMetaList = [];
       try {
         const resp = await fetch(`${URL_SOURCE}_VENUE_META.json`);
-        venueMetaList = await resp.json();
+        const venueMeta = await resp.json();
+        const isNewFormat = !Array.isArray(venueMeta) && venueMeta.last_update != null;
+        if (isNewFormat) {
+          const lastUpdate = venueMeta.last_update;
+          const VENUE_META_CACHE_KEY = "bbp_venue_meta_last_update";
+          const storedLastUpdate = localStorage.getItem(VENUE_META_CACHE_KEY);
+          if (lastUpdate !== storedLastUpdate) {
+            Object.keys(localStorage)
+              .filter(k => k.startsWith("bbp_cache_"))
+              .forEach(k => localStorage.removeItem(k));
+            localStorage.setItem(VENUE_META_CACHE_KEY, lastUpdate);
+          }
+          cacheEnabled = true;
+          venueMetaList = venueMeta.venues ?? [];
+        } else {
+          // 過渡期：舊格式（純陣列），停用快取直到新機制上線
+          venueMetaList = Array.isArray(venueMeta) ? venueMeta : [];
+        }
       } catch (e) {}
 
       const metaByTopic = Object.fromEntries(venueMetaList.map(v => [v.code_name, v]));

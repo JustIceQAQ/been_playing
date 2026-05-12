@@ -2,6 +2,7 @@ import argparse
 import asyncio
 import orjson
 import logging
+from datetime import datetime, timezone
 from pathlib import Path
 import aiofiles
 import sentry_sdk
@@ -44,8 +45,12 @@ async def generate_venue_meta(information: list["Information"]):
             }
         )
 
+    payload = {
+        "last_update": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "venues": venues,
+    }
     async with aiofiles.open(ROOT_PATH / "data" / "v2" / "_VENUE_META.json", "wb+") as afp:
-        await afp.write(orjson.dumps(venues, default=orjson_default_handler))
+        await afp.write(orjson.dumps(payload, default=orjson_default_handler))
 
 
 async def generate_location(information: list["Information"]):
