@@ -79,6 +79,7 @@
         - [中央研究院-歷史文物陳列館](https://museum.sinica.edu.tw/) `HistorySinica`
         - [華岡博物館](https://hkm.pccu.edu.tw/) `hkm`
         - [北師美術館](https://montue.ntue.edu.tw/) `MoNTUE`
+        - [臺北市立動物園](https://www.zoo.gov.taipei/) `TaipeiZoo`
     - 新北市
         - [新北市美術館](https://ntcart.museum/exhibition) `NtcArtMuseum`
         - [世界宗教博物館](https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070) `Mwr`
