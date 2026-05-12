@@ -70,6 +70,7 @@ from .museums.redhouse import RedHouseRunner
 from .museums.shungyeart.script import ShungYeArtRunner
 from .museums.songshanculturalpark.script import SongShanCulturalParkRunner
 from .museums.taipeiexpopark.script import TaipeiExPoParkRunner
+from .museums.taipeizoo.script import TaipeiZooRunner
 from .museums.tam.script import TAMRunner
 from .museums.tcam.script import TcamRunner
 from .museums.tcm import TcmRunner
@@ -133,6 +134,7 @@ MUSEUMS_RUNNERS = {
     TwTcRunner,
     NTCRIRunner,
     TaipeiExPoParkRunner,
+    TaipeiZooRunner,
     NHRMRunner,
     NTNUArtMuseumRunner,
     BoPiLiaoRunner,
