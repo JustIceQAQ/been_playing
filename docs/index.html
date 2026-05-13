@@ -79,6 +79,11 @@
       crossorigin
     />
 
+    <!-- 提早下載本地 JS 腳本，讓 DOMContentLoaded 後立即可用 -->
+    <link rel="preload" href="index.min.js" as="script" />
+    <link rel="preload" href="dataset.min.js" as="script" />
+    <link rel="preload" href="utils.min.js" as="script" />
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/iconify/3.0.0/iconify.min.js"
       integrity="sha512-EeYPY+3nx/BPm2ZgRlHllRBsaFLIgpYXJYxXjPBJGaxE8RxBhn/X9cI3eG9Z6Iin72om/zZ/TX+aUb4RImKDTQ=="
@@ -89,11 +94,14 @@
 
     <script>document.documentElement.setAttribute("data-bs-theme",window.matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");</script>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" /></noscript>
 
     <link
       rel="stylesheet"
@@ -1104,7 +1112,7 @@
             localStorage.setItem(VENUE_META_CACHE_KEY, lastUpdate);
           }
           cacheEnabled = true;
-          venueMetaList = venueMeta.venues ?? [];
+          venueMetaList = Array.isArray(venueMeta.venues) ? venueMeta.venues : [];
         } else {
           // 過渡期：舊格式（純陣列），停用快取直到新機制上線
           venueMetaList = Array.isArray(venueMeta) ? venueMeta : [];
