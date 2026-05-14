@@ -29,7 +29,7 @@ class NTPCRunner(RunnerInit):
     def set_information(self) -> "Information":
         return Information(
             location_code=Taiwan.new_taipei.yingge_65000080,
-            fullname="鶯歌陶瓷博物館",
+            fullname="新北市立鶯歌陶瓷博物館",
             code_name="NTPC",
             external_link="https://www.ceramics.ntpc.gov.tw/xmdoc?xsmsid=0J148497613881029302",
             branch_coordinates=Coordinate(raw_coordinates="24.949406697655782, 121.3520648774411"),

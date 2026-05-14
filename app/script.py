@@ -53,7 +53,6 @@ from .museums.npm.script import NpmRunner
 from .museums.nrm import NrmRunner
 from .museums.ntaec import NTAECRunner
 from .museums.ntc_art_museum.script import NtcArtMuseumRunner
-from .museums.ntcceramics import NtcCeramicsRunner
 from .museums.ntcri.script import NTCRIRunner
 from .museums.ntm.script import NtmRunner
 from .museums.ntmofa import NtMofaRunner
@@ -168,7 +167,6 @@ MUSEUMS_RUNNERS = {
     NMTHRunner,
     ChiayiMMRunner,
     ChiayiAMRunner,
-    NtcCeramicsRunner,
     NtMofaRunner,
     ChCsEcRunner,
     NhClAcRunner,
