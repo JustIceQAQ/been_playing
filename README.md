@@ -95,6 +95,7 @@
         - [桃園藝文廣場](https://www.afmc.gov.tw/Activity?c3=hall4&c5=performance1) `AfmcHall4`
         - [A8藝文中心](https://www.afmc.gov.tw/Activity?c3=hall5&c5=performance1) `AfmcHall5`
         - [桃園陽光劇場](https://www.afmc.gov.tw/Activity?c3=hall6&c5=performance1) `AfmcHall6`
+        - [中原文創園區](https://cycc.org.tw/zh-hant/events) `Cycc`
     - 新竹市
         - [國立新竹生活美學館](https://www.nhclac.gov.tw/) `nhclac`
         - [新竹市美術館](https://culture.hccg.gov.tw/ch/home.jsp?id=452&parentpath=0,145,154&mcustomize=activity_list.jsp) `HCAM`
