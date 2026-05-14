@@ -89,6 +89,12 @@
         - [朱銘美術館](https://www.juming.org.tw/) `JuMing`
     - 桃園市
         - [桃園市立大溪木藝生態博物館](https://wem.tycg.gov.tw/) `TyCg`
+        - [桃園展演中心](https://www.afmc.gov.tw/Activity?c3=hall1&c5=performance1) `AfmcHall1`
+        - [中壢藝術館](https://www.afmc.gov.tw/Activity?c3=hall2&c5=performance1) `AfmcHall2`
+        - [桃園光影文化館](https://www.afmc.gov.tw/Activity?c3=hall3&c5=performance1) `AfmcHall3`
+        - [桃園藝文廣場](https://www.afmc.gov.tw/Activity?c3=hall4&c5=performance1) `AfmcHall4`
+        - [A8藝文中心](https://www.afmc.gov.tw/Activity?c3=hall5&c5=performance1) `AfmcHall5`
+        - [桃園陽光劇場](https://www.afmc.gov.tw/Activity?c3=hall6&c5=performance1) `AfmcHall6`
     - 新竹市
         - [國立新竹生活美學館](https://www.nhclac.gov.tw/) `nhclac`
         - [新竹市美術館](https://culture.hccg.gov.tw/ch/home.jsp?id=452&parentpath=0,145,154&mcustomize=activity_list.jsp) `HCAM`

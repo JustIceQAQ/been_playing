@@ -7,6 +7,14 @@ from .galleries.sokaart import SoKaArtRunner
 from .galleries.whitestone import WhiteStoneRunner
 from .galleries.xizhitang import XiZhiTangRunner
 from .galleries.yiyun import YiYunRunner
+from .museums.afmc.script import (
+    AfmcHall1Runner,
+    AfmcHall2Runner,
+    AfmcHall3Runner,
+    AfmcHall4Runner,
+    AfmcHall5Runner,
+    AfmcHall6Runner,
+)
 from .museums.aaaarchives import AAAArchivesRunner
 from .museums.alien import AlienRunner
 from .museums.artistvillage import ArtistVillageRunner
@@ -160,6 +168,12 @@ MUSEUMS_RUNNERS = {
     TnamMuseumRunner,
     TnCsEcRunner,
     MoNTUERunner,
+    AfmcHall1Runner,
+    AfmcHall2Runner,
+    AfmcHall3Runner,
+    AfmcHall4Runner,
+    AfmcHall5Runner,
+    AfmcHall6Runner,
     AAAArchivesRunner,
     ArtistVillageRunner,
     KiShuAnRunner,
