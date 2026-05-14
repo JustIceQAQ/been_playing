@@ -1,10 +1,11 @@
 const getContrastYIQ = (hexcolor) => {
-  hexcolor = hexcolor.replace("#", "");
-  const r = parseInt(hexcolor.substr(0, 2), 16);
-  const g = parseInt(hexcolor.substr(2, 2), 16);
-  const b = parseInt(hexcolor.substr(4, 2), 16);
-  const yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
-  return yiq >= 128 ? "#000" : "#fff";
+  const h = hexcolor.replace("#", "");
+  const r = parseInt(h.substr(0, 2), 16) / 255;
+  const g = parseInt(h.substr(2, 2), 16) / 255;
+  const b = parseInt(h.substr(4, 2), 16) / 255;
+  const lin = c => c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+  const L = 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
+  return (1.05 / (L + 0.05)) >= ((L + 0.05) / 0.05) ? "#fff" : "#000";
 };
 
 const notStartedBadges = (tag = "h2", targetDate = null, countdownOnly = false) => {

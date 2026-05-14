@@ -153,10 +153,6 @@
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
       }
 
-      .btn:hover {
-        color: #fff;
-      }
-
       /* 場館選擇器 */
       .venue-selector {
         border: 1px solid var(--bs-border-color);
@@ -261,6 +257,10 @@
         justify-content: center;
       }
 
+      @media (prefers-reduced-motion: reduce) {
+        #venue-selector-mount { animation: none; }
+      }
+
       @media (prefers-reduced-motion: no-preference) {
         @keyframes bbp-fadein {
           from { opacity: 0; transform: translateY(6px); }
@@ -277,6 +277,7 @@
   </head>
 
   <body>
+    <a class="visually-hidden-focusable" href="#main-content">跳至主要內容</a>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe
@@ -308,7 +309,7 @@
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
-              aria-label="Close"
+              aria-label="關閉"
             ></button>
           </div>
           <div class="modal-body">你確定真的要刪除所有已記錄的成就?</div>
@@ -378,7 +379,7 @@
       <div class="offcanvas-header d-flex align-items-center gap-2 flex-wrap">
         <h5 class="offcanvas-title" id="offcanvasAchievementLabel">成就列表</h5>
         <button class="btn btn-success" onclick="exportAchievementsToJSON()" aria-label="匯出成就列表">
-          <i class="bi bi-cloud-download-fill"></i>
+          <i class="bi bi-cloud-download-fill" aria-hidden="true"></i>
         </button>
 
         <button
@@ -386,16 +387,14 @@
           onclick="document.getElementById('importAchievementsInput').click()"
           aria-label="匯入成就列表"
         >
-          <i class="bi bi-cloud-upload-fill"></i>
+          <i class="bi bi-cloud-upload-fill" aria-hidden="true"></i>
         </button>
 
         <input
           type="file"
           id="importAchievementsInput"
           accept=".json"
-          aria-label="匯入成就列表 JSON 檔案"
           style="display: none"
-          aria-hidden="true"
         />
 
         <button
@@ -404,13 +403,13 @@
           data-bs-target="#deleteAllAchievementModal"
           aria-label="刪除所有成就"
         >
-          <i class="bi bi-trash"></i>
+          <i class="bi bi-trash" aria-hidden="true"></i>
         </button>
         <button
           type="button"
           class="btn-close"
           data-bs-dismiss="offcanvas"
-          aria-label="Close"
+          aria-label="關閉"
         ></button>
       </div>
       <div class="offcanvas-body" id="achievementList"></div>
@@ -430,7 +429,7 @@
           type="button"
           class="btn-close me-2 m-auto"
           data-bs-dismiss="toast"
-          aria-label="Close"
+          aria-label="關閉"
         ></button>
       </div>
     </div>
@@ -440,7 +439,7 @@
         <div class="col">
           <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" aria-label="Been Play 首頁"><h1 class="visually-hidden">Been Play</h1></a>
+              <a class="navbar-brand" href="." aria-label="Been Play 首頁"><h1 class="visually-hidden">Been Play</h1></a>
               <button
                 class="btn btn-warning shadow"
                 type="button"
@@ -449,14 +448,14 @@
                 aria-controls="offcanvasAchievement"
                 aria-label="成就列表"
               >
-                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
               </button>
 
               <button
                 id="been_play_dbscan_clusters_map"
                 class="btn btn-primary"
                 type="button"
-                aria-label="展覽地圖分群"
+                aria-label="展覽地圖分群（開新視窗）"
                 onclick="
                   window.open(
                     'https://justiceqaq.github.io/been_playing/been_play_dbscan_clusters_map.html',
@@ -464,7 +463,7 @@
                   )
                 "
               >
-                <i class="bi bi-flask"></i>
+                <i class="bi bi-flask" aria-hidden="true"></i>
               </button>
 
               <a
@@ -472,9 +471,9 @@
                 href="https://tally.so/r/WOlyMQ"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="意見回饋"
+                aria-label="意見回饋（開新視窗）"
               >
-                <i class="bi bi-clipboard2-check"></i>
+                <i class="bi bi-clipboard2-check" aria-hidden="true"></i>
               </a>
 
               <button class="btn shadow" id="btnSwitch" aria-label="切換深色 / 淺色模式">
@@ -490,7 +489,7 @@
           </nav>
         </div>
       </div>
-      <main>
+      <main id="main-content">
       <div class="row">
         <div class="col">
           <div id="venue-selector-mount" aria-hidden="true"></div>
@@ -511,7 +510,7 @@
               <option value="已經結束">已經結束</option>
               <option value="無法判斷">無法判斷</option>
             </select>
-            <small class="text-muted" id="exhibition-count"></small>
+            <small class="text-muted" id="exhibition-count" aria-live="polite" aria-atomic="true"></small>
           </div>
 
           <!-- 載入中 -->
@@ -520,6 +519,8 @@
               <span class="visually-hidden">載入中...</span>
             </div>
           </div>
+
+          <div id="exhibition-status" role="status" class="visually-hidden"></div>
 
           <!-- Card 格狀佈局 -->
           <div id="exhibition-grid" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3"></div>
@@ -686,17 +687,17 @@
         googleMapPlaceId = branch_coordinates[0]?.google_map_place_id;
       }
       const btns = [];
-      if (external_link) btns.push(`<a class="btn btn-secondary btn-sm" href="${external_link}" target="_blank" rel="noopener noreferrer" aria-label="前往官網"><i class="bi bi-box-arrow-up-right"></i></a>`);
-      if (googleMapPlaceId) btns.push(`<a class="btn btn-secondary btn-sm" href="https://www.google.com/maps/search/?api=1&query=${fullname}&query_place_id=${googleMapPlaceId}" target="_blank" rel="noopener noreferrer" aria-label="查看地圖"><i class="bi bi-pin-map"></i></a>`);
-      btns.push(`<button class="btn btn-secondary btn-sm" onclick="copyUrlToClipboard('${window.location.origin}${window.location.pathname}?topic=${code_name}')" aria-label="分享連結"><i class="bi bi-share"></i></button>`);
-      if (has_rss !== false) btns.push(`<a class="btn btn-secondary btn-sm" href="${SOURCE_ROOT_URL}rss/${code_name}.xml" target="_blank" rel="noopener noreferrer" aria-label="RSS 訂閱"><i class="bi bi-rss-fill"></i></a>`);
+      if (external_link) btns.push(`<a class="btn btn-secondary btn-sm" href="${external_link}" target="_blank" rel="noopener noreferrer" aria-label="前往官網（開新視窗）"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>`);
+      if (googleMapPlaceId) btns.push(`<a class="btn btn-secondary btn-sm" href="https://www.google.com/maps/search/?api=1&query=${fullname}&query_place_id=${googleMapPlaceId}" target="_blank" rel="noopener noreferrer" aria-label="查看地圖（開新視窗）"><i class="bi bi-pin-map" aria-hidden="true"></i></a>`);
+      btns.push(`<button class="btn btn-secondary btn-sm" onclick="copyUrlToClipboard('${window.location.origin}${window.location.pathname}?topic=${code_name}')" aria-label="複製分享連結"><i class="bi bi-share" aria-hidden="true"></i></button>`);
+      if (has_rss !== false) btns.push(`<a class="btn btn-secondary btn-sm" href="${SOURCE_ROOT_URL}rss/${code_name}.xml" target="_blank" rel="noopener noreferrer" aria-label="RSS 訂閱（開新視窗）"><i class="bi bi-rss-fill" aria-hidden="true"></i></a>`);
       if (has_ics !== false) {
         const rawUrl = `${SOURCE_ROOT_URL}ics/${code_name}.ics`;
         const webCal = rawUrl.replace("https://", "webcal://");
         const gCal = `https://www.google.com/calendar/render?cid=${webCal}`;
         btns.push(`<div class="btn-group"><button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"><i class="bi bi-calendar-plus"></i> 訂閱</button><ul class="dropdown-menu"><li><a class="dropdown-item" href="${webCal}" target="_blank">Apple 日曆 / Outlook</a></li><li><a class="dropdown-item" href="${gCal}" target="_blank">Google 日曆</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" href="${rawUrl}" target="_blank">下載 .ics 檔案</a></li></ul></div>`);
       }
-      infoHeader.innerHTML = `<h5 class="mb-0 d-flex flex-wrap align-items-center gap-2"><span>《${fullname}》</span>${btns.join("")}</h5>`;
+      infoHeader.innerHTML = `<h2 class="mb-0 fs-5 d-flex flex-wrap align-items-center gap-2"><span>《${fullname}》</span>${btns.join("")}</h2>`;
       const s = VENUE_STYLES[code_name] ?? DEFAULT_STYLE;
       infoCard.style.backgroundColor = s.bg;
       infoCard.style.color = getContrastYIQ(s.bg);
@@ -729,7 +730,7 @@
         ? `<img src="${item.figure}" class="card-img-top" loading="lazy" alt="${item.title}" width="400" height="225">`
         : `<div class="card-img-top bg-secondary-subtle d-flex align-items-center justify-content-center" style="height:200px"><span class="text-muted">無圖片</span></div>`;
       const addrHtml = item.address && item.address !== "-"
-        ? `<p class="card-text text-muted small mb-1"><i class="bi bi-geo-alt"></i> ${item.address}</p>`
+        ? `<p class="card-text text-muted small mb-1"><i class="bi bi-geo-alt" aria-hidden="true"></i> ${item.address}</p>`
         : "";
       const tagsHtml = Array.isArray(item.tags) && item.tags.length > 0
         ? `<div class="d-flex flex-wrap gap-1 mt-1">${item.tags.map(t => `<span class="badge bg-secondary">${t}</span>`).join("")}</div>`
@@ -739,13 +740,13 @@
           <div class="position-relative">${imgHtml}</div>
           <div class="card-body pb-1">
             <div class="d-flex flex-wrap align-items-center gap-1 mb-1">${cityHtml}${statusBadge}</div>
-            <h6 class="card-title mb-1"><a href="${item.source_url}" target="_blank" rel="noopener noreferrer">${item.title}</a></h6>
+            <h3 class="card-title fs-6 mb-1"><a href="${item.source_url}" target="_blank" rel="noopener noreferrer">${item.title}</a></h3>
             <p class="card-text small fw-medium mb-1" style="color:var(--bs-warning-text-emphasis)">${item.date ?? "-"}</p>
             ${addrHtml}${tagsHtml}
           </div>
           <div class="card-footer pt-1">
-            <button class="btn btn-info btn-sm btn-mark-achieved w-100" data-uuid="${item.UUID}" aria-label="標記已去過">
-              <i class="bi bi-check-lg"></i> 去過了
+            <button class="btn btn-info btn-sm btn-mark-achieved w-100" data-uuid="${item.UUID}">
+              <i class="bi bi-check-lg" aria-hidden="true"></i> 去過了
             </button>
           </div>
         </div>`;
@@ -774,6 +775,11 @@
         const btn = document.createElement("button");
         btn.className = "page-link";
         btn.innerHTML = label;
+        if (label === "«") btn.setAttribute("aria-label", "上一頁");
+        else if (label === "»") btn.setAttribute("aria-label", "下一頁");
+        else if (label === "…") { btn.setAttribute("aria-hidden", "true"); btn.tabIndex = -1; }
+        else btn.setAttribute("aria-label", `第 ${page} 頁`);
+        if (active) btn.setAttribute("aria-current", "page");
         if (!disabled && !active) {
           btn.addEventListener("click", () => {
             currentPage = page;
@@ -815,6 +821,8 @@
         pageItems.forEach(item => grid.appendChild(renderCard(item)));
       }
       if (countEl) countEl.textContent = `共 ${total} 筆`;
+      const statusEl = document.getElementById("exhibition-status");
+      if (statusEl && currentVenueMeta?.fullname) statusEl.textContent = `已載入《${currentVenueMeta.fullname}》，共 ${total} 筆展覽`;
       renderPagination(totalPages, pagination);
     };
 
@@ -896,14 +904,16 @@
         const watchBtn = document.createElement("button");
         watchBtn.type = "button";
         watchBtn.className = `btn ${watched ? "btn-warning" : "btn-outline-secondary"}`;
-        watchBtn.innerHTML = `<i class="bi ${watched ? "bi-bell-fill" : "bi-bell"}"></i>`;
-        watchBtn.setAttribute("aria-label", watched ? "取消關注" : "加入關注");
+        watchBtn.innerHTML = `<i class="bi ${watched ? "bi-bell-fill" : "bi-bell"}" aria-hidden="true"></i>`;
+        watchBtn.setAttribute("aria-label", watched ? `取消關注 ${v.fullname}` : `關注 ${v.fullname}`);
+        watchBtn.setAttribute("aria-pressed", watched ? "true" : "false");
         watchBtn.addEventListener("click", (e) => {
           e.stopPropagation();
           const nowWatched = toggleVenueWatch(v.code_name);
           watchBtn.className = `btn ${nowWatched ? "btn-warning" : "btn-outline-secondary"}`;
-          watchBtn.innerHTML = `<i class="bi ${nowWatched ? "bi-bell-fill" : "bi-bell"}"></i>`;
-          watchBtn.setAttribute("aria-label", nowWatched ? "取消關注" : "加入關注");
+          watchBtn.innerHTML = `<i class="bi ${nowWatched ? "bi-bell-fill" : "bi-bell"}" aria-hidden="true"></i>`;
+          watchBtn.setAttribute("aria-label", nowWatched ? `取消關注 ${v.fullname}` : `關注 ${v.fullname}`);
+          watchBtn.setAttribute("aria-pressed", nowWatched ? "true" : "false");
           if (activeCity === "關注清單") renderContent();
         });
         wrapper.appendChild(watchBtn);
@@ -920,8 +930,10 @@
 
       const tabsContainer = document.createElement("div");
       tabsContainer.className = "venue-selector";
-      const cityNav = document.createElement("ul");
+      const cityNav = document.createElement("div");
       cityNav.className = "nav nav-tabs venue-selector-nav";
+      cityNav.setAttribute("role", "tablist");
+      cityNav.setAttribute("aria-label", "選擇城市或地區");
       const typeFilter = document.createElement("div");
       typeFilter.className = "venue-selector-type-filter";
       typeFilter.style.display = "none";
@@ -933,6 +945,8 @@
       filterInput.style.cssText = "border-radius:0; border-left:0; border-right:0;";
       const content = document.createElement("div");
       content.className = "venue-selector-content";
+      content.setAttribute("role", "tabpanel");
+      content.setAttribute("id", "venue-selector-panel");
 
       const renderTypeFilter = () => {
         typeFilter.innerHTML = "";
@@ -950,8 +964,10 @@
         typeFilter.style.display = "";
         const mkPill = (key, label, count) => {
           const pill = document.createElement("button");
-          pill.className = `btn ${activeType === key ? "btn-primary" : "btn-outline-secondary"}`;
+          const isActive = activeType === key;
+          pill.className = `btn ${isActive ? "btn-primary" : "btn-outline-secondary"}`;
           pill.innerHTML = count != null ? `${label} <span class="badge bg-secondary ms-1">${count}</span>` : label;
+          pill.setAttribute("aria-pressed", isActive ? "true" : "false");
           pill.addEventListener("click", () => { activeType = key; renderTypeFilter(); renderContent(); });
           return pill;
         };
@@ -1015,24 +1031,43 @@
           }, {});
           activeType = venueTypeOrder.find(t => byType[t]) || "all";
         }
-        cityNav.querySelectorAll(".nav-link").forEach(l =>
-          l.classList.toggle("active", l.dataset.city === cityName)
-        );
+        cityNav.querySelectorAll("[role='tab']").forEach(l => {
+          const active = l.dataset.city === cityName;
+          l.classList.toggle("active", active);
+          l.setAttribute("aria-selected", active ? "true" : "false");
+          l.tabIndex = active ? 0 : -1;
+        });
+        content.setAttribute("aria-labelledby", `city-tab-${cityName.replace(/[^\w一-鿿]/g, "-")}`);
         renderTypeFilter();
         renderContent();
       };
 
       const addCityTab = (cityKey, label) => {
-        const li = document.createElement("li");
-        li.className = "nav-item";
         const btn = document.createElement("button");
         btn.className = "nav-link";
         btn.dataset.city = cityKey;
+        btn.setAttribute("role", "tab");
+        btn.setAttribute("aria-selected", "false");
+        btn.setAttribute("aria-controls", "venue-selector-panel");
+        btn.setAttribute("id", `city-tab-${cityKey.replace(/[^\w一-鿿]/g, "-")}`);
+        btn.tabIndex = -1;
         btn.innerHTML = label;
         btn.addEventListener("click", () => selectCity(cityKey));
-        li.appendChild(btn);
-        cityNav.appendChild(li);
+        cityNav.appendChild(btn);
       };
+
+      cityNav.addEventListener("keydown", (e) => {
+        if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) return;
+        e.preventDefault();
+        const tabs = [...cityNav.querySelectorAll("[role='tab']")];
+        const idx = tabs.indexOf(document.activeElement);
+        let next;
+        if (e.key === "ArrowRight") next = tabs[(idx + 1) % tabs.length];
+        else if (e.key === "ArrowLeft") next = tabs[(idx - 1 + tabs.length) % tabs.length];
+        else if (e.key === "Home") next = tabs[0];
+        else if (e.key === "End") next = tabs[tabs.length - 1];
+        if (next) { next.focus(); selectCity(next.dataset.city); }
+      });
 
       addCityTab("關注清單", '<i class="bi bi-bell-fill"></i> 關注清單');
       const knownCities = cityDisplayOrder.filter(c => btnsByCityType[c]);
@@ -1043,8 +1078,9 @@
       });
       if (platformVenues.length > 0)
         addCityTab("🎫 票務平台", `🎫 票務平台 <span class="badge bg-secondary ms-1">${platformVenues.length}</span>`);
-      const navBreak = document.createElement("li");
+      const navBreak = document.createElement("div");
       navBreak.className = "venue-selector-nav-break";
+      navBreak.setAttribute("role", "none");
       cityNav.appendChild(navBreak);
       addCityTab("全台", "📍 全台");
 
