@@ -13,9 +13,9 @@ class AAAArchivesParse(ParseInit):
     def get_date(self, *args, **kwargs) -> str | None:
         i_calendar = self.item.css_first("i.i_calendar")
         if i_calendar:
-            raw_date = i_calendar.parent.child
+            raw_date = i_calendar.parent.text(strip=True)
             if raw_date:
-                return raw_date.text(strip=True).replace("/", "-")
+                return raw_date.replace("/", "-")
 
     def get_address(self, *args, **kwargs) -> str | None:
         title = self.item.css_first("a").attributes.get("title").strip()
@@ -32,9 +32,9 @@ class AAAArchivesParse(ParseInit):
     def get_tags(self, *args, **kwargs) -> list[str | None] | None:
         i_man = self.item.css_first("i.i_man")
         if i_man:
-            raw_man = i_man.parent.child
+            raw_man = i_man.parent.text(strip=True)
             if raw_man:
-                return raw_man.text(strip=True).split(",")
+                return raw_man.split(",")
 
     def get_source_url(self, *args, **kwargs) -> str | None:
         return self.item.css_first("a").attributes.get("href")

@@ -7,6 +7,14 @@ from .galleries.sokaart import SoKaArtRunner
 from .galleries.whitestone import WhiteStoneRunner
 from .galleries.xizhitang import XiZhiTangRunner
 from .galleries.yiyun import YiYunRunner
+from .museums.afmc.script import (
+    AfmcHall1Runner,
+    AfmcHall2Runner,
+    AfmcHall3Runner,
+    AfmcHall4Runner,
+    AfmcHall5Runner,
+    AfmcHall6Runner,
+)
 from .museums.aaaarchives import AAAArchivesRunner
 from .museums.alien import AlienRunner
 from .museums.artistvillage import ArtistVillageRunner
@@ -14,6 +22,7 @@ from .museums.as241.script import AS241Runner
 from .museums.bopiliao.script import BoPiLiaoRunner
 from .museums.ccam.script import CCAMRunner
 from .museums.chcsec import ChCsEcRunner
+from .museums.cycc.script import CyccRunner
 from .museums.chiayiam import ChiayiAMRunner
 from .museums.chiayimm import ChiayiMMRunner
 from .museums.chipolin import ChiPoLinRunner
@@ -160,6 +169,12 @@ MUSEUMS_RUNNERS = {
     TnamMuseumRunner,
     TnCsEcRunner,
     MoNTUERunner,
+    AfmcHall1Runner,
+    AfmcHall2Runner,
+    AfmcHall3Runner,
+    AfmcHall4Runner,
+    AfmcHall5Runner,
+    AfmcHall6Runner,
     AAAArchivesRunner,
     ArtistVillageRunner,
     KiShuAnRunner,
@@ -183,6 +198,7 @@ MUSEUMS_RUNNERS = {
     TcamRunner,
     TAMRunner,
     CCAMRunner,
+    CyccRunner,
     ELandAMRunner,
     HCAMRunner,
     AS241Runner,
