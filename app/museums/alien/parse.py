@@ -19,15 +19,13 @@ class AlienParse(ParseInit):
         if tag in "常設展覽":
             return None
 
-        data = tag.split("-")
-        data2 = tag.split("~")
-
         use_data = None
 
-        if len(data) == 2:
-            use_data = data
-        elif len(data2) == 2:
-            use_data = data2
+        for split_code in ["-", "–", "~"]:
+            split_data = tag.split(split_code)
+            if len(split_data) == 2:
+                use_data = split_data
+                break
         else:
             return use_data
 
