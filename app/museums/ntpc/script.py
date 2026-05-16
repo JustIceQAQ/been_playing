@@ -3,7 +3,7 @@ import asyncio
 import bs4
 import httpx
 
-from app.museums.ntpc.parse import NTPCParse, normalize_date_range
+from app.museums.ntpc.parse import NTPCParse
 from helpers.cache import DiskCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
@@ -50,29 +50,24 @@ class NTPCRunner(RunnerInit):
         return parsed.select("div.ListPicText > div.item")
 
     async def suffix_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
-        has_date_cache = await self.cache.aget(f"{item.UUID}-date")
         has_address_cache = await self.cache.aget(f"{item.UUID}-address")
-        if has_date_cache and has_address_cache:
-            item.date = has_date_cache
+        if has_address_cache:
             item.address = has_address_cache
             return
 
         response = await client.get(item.source_url)
         soup = self.translation().translation_to_object(response.text)
-        exhibition_time = None
         exhibition_location = None
-        p_tags = soup.select("div.district p")
-        for p in p_tags:
-            text = p.get_text(strip=True)
-            if text.startswith("展覽時間："):
-                exhibition_time = normalize_date_range(text.replace("展覽時間：", "").strip())
-            elif text.startswith("展覽地點："):
-                exhibition_location = text.replace("展覽地點：", "").strip()
-
-        await self.cache.aset(f"{item.UUID}-date", exhibition_time, month_3())
+        for selector in ("div.district p", "div.district h3"):
+            for tag in soup.select(selector):
+                text = tag.get_text(strip=True)
+                if text.startswith("展覽地點"):
+                    exhibition_location = text.replace("展覽地點", "").replace("：", "").replace("︱", "").strip()
+                    break
+            if exhibition_location:
+                break
         await self.cache.aset(f"{item.UUID}-address", exhibition_location, month_3())
 
-        item.date = exhibition_time
         item.address = exhibition_location
 
     async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):

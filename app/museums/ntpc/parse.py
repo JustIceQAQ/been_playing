@@ -13,7 +13,10 @@ class NTPCParse(ParseInit):
         return self.item.find("a").get("title")
 
     def get_date(self, *args, **kwargs) -> str | None:
-        pass
+        desc = self.item.find("div", class_="desc")
+        if not desc:
+            return None
+        return normalize_date_range(desc.get_text(strip=True).replace("展覽日期：", ""))
 
     def get_address(self, *args, **kwargs) -> str | None:
         pass
@@ -33,11 +36,19 @@ def normalize_date_range(text: str) -> str | None:
         end_date = f"{year}-{int(m2):02d}-{int(d2):02d}"
         return f"{start_date} ~ {end_date}"
 
-    pattern2 = re.match(r"(\d{4})年(\d{1,2})月(\d{1,2})日[~至\-]+(\d{1,2})月(\d{1,2})日", text)
+    pattern2 = re.match(r"(\d{4})年(\d{1,2})月(\d{1,2})日[~至\-]+(\d{4})年(\d{1,2})月(\d{1,2})日", text)
     if pattern2:
-        year, m1, d1, m2, d2 = pattern2.groups()
+        y1, m1, d1, y2, m2, d2 = pattern2.groups()
+        start_date = f"{y1}-{int(m1):02d}-{int(d1):02d}"
+        end_date = f"{y2}-{int(m2):02d}-{int(d2):02d}"
+        return f"{start_date} ~ {end_date}"
+    pattern3 = re.match(r"(\d{4})年(\d{1,2})月(\d{1,2})日[~至\-]+(\d{1,2})月(\d{1,2})日", text)
+    if pattern3:
+        year, m1, d1, m2, d2 = pattern3.groups()
         start_date = f"{year}-{int(m1):02d}-{int(d1):02d}"
         end_date = f"{year}-{int(m2):02d}-{int(d2):02d}"
         return f"{start_date} ~ {end_date}"
+
+    return None
 
     return None
