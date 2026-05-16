@@ -1,0 +1,1407 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>展覽補充資料編輯器</title>
+    <style>
+      :root {
+        --bg: #f2f2f7;
+        --surface: #ffffff;
+        --border: #e0e0e0;
+        --text: #1c1c1e;
+        --text-muted: #8e8e93;
+        --primary: #007aff;
+        --green: #34c759;
+        --red: #ff3b30;
+        --orange: #ff9f0a;
+
+        --null-bg: #fff8e1;
+        --null-border: #ffc107;
+        --null-text: #795600;
+
+        --patched-bg: #e8f5e9;
+        --patched-border: #4caf50;
+        --patched-text: #1b5e20;
+
+        --edited-bg: #e3f2fd;
+        --edited-border: #2196f3;
+        --edited-text: #0d47a1;
+
+        --radius: 10px;
+        --radius-sm: 6px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "PingFang TC", "Microsoft JhengHei", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      /* ─── HEADER ─── */
+      .header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .header-top {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 20px;
+      }
+
+      .app-title {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.3px;
+      }
+
+      .app-subtitle {
+        font-size: 12px;
+        color: var(--text-muted);
+        font-weight: 400;
+        margin-left: 2px;
+      }
+
+      .header-actions {
+        margin-left: auto;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 7px 14px;
+        border: none;
+        border-radius: var(--radius-sm);
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        white-space: nowrap;
+        transition:
+          opacity 0.15s,
+          transform 0.1s;
+        line-height: 1;
+        font-family: inherit;
+      }
+
+      .btn:hover:not(:disabled) {
+        opacity: 0.85;
+      }
+      .btn:active:not(:disabled) {
+        transform: scale(0.97);
+      }
+      .btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+      .btn:focus-visible {
+        outline: 2px solid var(--primary);
+        outline-offset: 2px;
+      }
+
+      .btn-open {
+        background: var(--bg);
+        border: 1px solid var(--border);
+        color: var(--text);
+      }
+      .btn-save {
+        background: var(--green);
+        color: white;
+      }
+      .btn-reload {
+        background: var(--bg);
+        border: 1px solid var(--border);
+        color: var(--text-muted);
+        font-size: 18px;
+        padding: 5px 10px;
+      }
+
+      .unsaved-count {
+        background: var(--orange);
+        color: white;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 1px 7px;
+        border-radius: 10px;
+        display: none;
+      }
+
+      .header-controls {
+        display: none;
+        align-items: center;
+        gap: 12px;
+        padding: 8px 20px 10px;
+        flex-wrap: wrap;
+      }
+
+      .filter-tabs {
+        display: flex;
+        background: var(--bg);
+        border-radius: var(--radius-sm);
+        padding: 2px;
+        gap: 1px;
+      }
+
+      .filter-tab {
+        padding: 5px 12px;
+        border: none;
+        border-radius: 4px;
+        background: transparent;
+        color: var(--text-muted);
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.15s;
+        font-family: inherit;
+      }
+
+      .filter-tab.active {
+        background: var(--surface);
+        color: var(--text);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .filter-tab:focus-visible {
+        outline: 2px solid var(--primary);
+      }
+
+      .search-input {
+        padding: 7px 12px;
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        font-size: 13px;
+        outline: none;
+        width: 220px;
+        background: var(--surface);
+        font-family: inherit;
+      }
+
+      .search-input:focus {
+        border-color: var(--primary);
+      }
+
+      .stats-label {
+        font-size: 12px;
+        color: var(--text-muted);
+        margin-left: auto;
+      }
+
+      .stats-label strong {
+        color: var(--text);
+      }
+
+      /* ─── MAIN ─── */
+      .main {
+        padding: 20px;
+        max-width: 1080px;
+        margin: 0 auto;
+      }
+
+      /* ─── EMPTY / LOADING STATES ─── */
+      .state-screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 60vh;
+        gap: 14px;
+        text-align: center;
+        color: var(--text-muted);
+      }
+
+      .state-icon {
+        font-size: 56px;
+        line-height: 1;
+      }
+
+      .state-screen h2 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--text);
+      }
+
+      .state-screen p {
+        max-width: 320px;
+        font-size: 14px;
+      }
+
+      .spinner {
+        width: 36px;
+        height: 36px;
+        border: 3px solid var(--border);
+        border-top-color: var(--primary);
+        border-radius: 50%;
+        animation: spin 0.7s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* ─── VENUE CARD ─── */
+      .venue-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        margin-bottom: 10px;
+        overflow: hidden;
+      }
+
+      .venue-head {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 13px 16px;
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      .venue-head:hover {
+        background: #fafafa;
+      }
+      .venue-head:focus-visible {
+        outline: 2px solid var(--primary);
+        outline-offset: -2px;
+      }
+
+      .venue-fullname {
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      .venue-code {
+        font-family: "SF Mono", "Consolas", monospace;
+        font-size: 11px;
+        color: var(--text-muted);
+        background: var(--bg);
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+
+      .venue-city {
+        font-size: 12px;
+        color: var(--text-muted);
+      }
+
+      .venue-badge {
+        font-size: 11px;
+        font-weight: 700;
+        padding: 2px 8px;
+        border-radius: 10px;
+      }
+
+      .venue-badge-null {
+        background: var(--null-bg);
+        color: var(--null-text);
+      }
+      .venue-badge-ok {
+        background: var(--patched-bg);
+        color: var(--patched-text);
+      }
+
+      .venue-chevron {
+        margin-left: auto;
+        font-size: 18px;
+        color: var(--text-muted);
+        transition: transform 0.2s;
+        line-height: 1;
+      }
+
+      .venue-chevron.open {
+        transform: rotate(90deg);
+      }
+
+      .venue-body {
+        display: none;
+        border-top: 1px solid var(--border);
+      }
+
+      .venue-body.open {
+        display: block;
+      }
+
+      /* ─── EXHIBITION ROW ─── */
+      .exh-row {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        gap: 14px;
+        padding: 14px 16px;
+        border-bottom: 1px solid #f2f2f7;
+        align-items: start;
+      }
+
+      .exh-row:last-child {
+        border-bottom: none;
+      }
+
+      .exh-thumb {
+        width: 90px;
+        height: 67px;
+        object-fit: cover;
+        border-radius: var(--radius-sm);
+        display: block;
+        background: var(--bg);
+      }
+
+      .exh-thumb-ph {
+        width: 90px;
+        height: 67px;
+        border-radius: var(--radius-sm);
+        background: var(--bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+      }
+
+      .exh-title-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 10px;
+      }
+
+      .exh-title {
+        flex: 1;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .exh-title a {
+        color: var(--text);
+        text-decoration: none;
+      }
+      .exh-title a:hover {
+        color: var(--primary);
+        text-decoration: underline;
+      }
+
+      .exh-uuid {
+        font-family: monospace;
+        font-size: 10px;
+        color: var(--text-muted);
+        background: var(--bg);
+        padding: 2px 5px;
+        border-radius: 3px;
+        white-space: nowrap;
+        margin-top: 2px;
+      }
+
+      .exh-fields {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .field-figure {
+        grid-column: 1 / -1;
+      }
+
+      .field-group {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .field-label {
+        font-size: 10px;
+        font-weight: 700;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .field-pill {
+        font-size: 9px;
+        font-weight: 700;
+        text-transform: none;
+        letter-spacing: 0;
+        padding: 1px 6px;
+        border-radius: 8px;
+      }
+
+      .pill-null {
+        background: var(--null-bg);
+        color: var(--null-text);
+      }
+      .pill-patched {
+        background: var(--patched-bg);
+        color: var(--patched-text);
+      }
+      .pill-edited {
+        background: var(--edited-bg);
+        color: var(--edited-text);
+      }
+      .pill-ok {
+        background: var(--bg);
+        color: var(--text-muted);
+      }
+
+      .field-input {
+        padding: 7px 10px;
+        border: 1.5px solid var(--border);
+        border-radius: var(--radius-sm);
+        font-size: 13px;
+        font-family: inherit;
+        width: 100%;
+        outline: none;
+        transition:
+          border-color 0.15s,
+          background 0.15s;
+        background: var(--surface);
+      }
+
+      .field-input:focus {
+        border-color: var(--primary);
+      }
+      .field-input:focus-visible {
+        outline: 2px solid var(--primary);
+        outline-offset: 0;
+      }
+
+      .field-input.s-null {
+        background: var(--null-bg);
+        border-color: var(--null-border);
+      }
+      .field-input.s-patched {
+        background: var(--patched-bg);
+        border-color: var(--patched-border);
+      }
+      .field-input.s-edited {
+        background: var(--edited-bg);
+        border-color: var(--edited-border);
+      }
+
+      .figure-row {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .figure-preview {
+        width: 54px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 4px;
+        background: var(--bg);
+        flex-shrink: 0;
+        display: block;
+      }
+
+      .figure-ph-sm {
+        width: 54px;
+        height: 40px;
+        border-radius: 4px;
+        background: var(--bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        flex-shrink: 0;
+      }
+
+      .clear-btn {
+        flex-shrink: 0;
+        padding: 5px 9px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        background: transparent;
+        color: var(--text-muted);
+        cursor: pointer;
+        font-size: 12px;
+        font-family: inherit;
+        transition:
+          color 0.15s,
+          border-color 0.15s;
+      }
+
+      .clear-btn:hover {
+        color: var(--red);
+        border-color: var(--red);
+      }
+      .clear-btn:focus-visible {
+        outline: 2px solid var(--primary);
+      }
+
+      /* ─── TOAST ─── */
+      .toast {
+        position: fixed;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%) translateY(10px);
+        background: #1c1c1e;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        pointer-events: none;
+        opacity: 0;
+        transition:
+          opacity 0.25s,
+          transform 0.25s;
+        z-index: 9999;
+        white-space: nowrap;
+      }
+
+      .toast.show {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+
+      /* ─── RESPONSIVE ─── */
+      @media (max-width: 640px) {
+        .exh-row {
+          grid-template-columns: 1fr;
+        }
+        .exh-thumb,
+        .exh-thumb-ph {
+          width: 100%;
+          height: 140px;
+        }
+        .exh-fields {
+          grid-template-columns: 1fr;
+        }
+        .field-figure {
+          grid-column: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <h1 class="app-title">
+          展覽補充資料編輯器<span class="app-subtitle">
+            · suffix_file.json</span
+          >
+        </h1>
+        <div class="header-actions">
+          <button
+            class="btn btn-reload"
+            id="reloadBtn"
+            title="重新載入"
+            style="display: none"
+            aria-label="重新載入"
+          >
+            ↺
+          </button>
+          <button class="btn btn-open" id="openBtn">📂 開啟資料夾</button>
+          <button class="btn btn-save" id="saveBtn" disabled>
+            💾 儲存
+            <span
+              class="unsaved-count"
+              id="unsavedCount"
+              aria-live="polite"
+            ></span>
+          </button>
+        </div>
+      </div>
+      <div
+        class="header-controls"
+        id="headerControls"
+        role="toolbar"
+        aria-label="篩選與搜尋"
+      >
+        <div class="filter-tabs" role="group" aria-label="篩選模式">
+          <button class="filter-tab active" data-filter="null">
+            ⚠ 缺失欄位
+          </button>
+          <button class="filter-tab" data-filter="patched">✓ 已補充</button>
+          <button class="filter-tab" data-filter="all">全部展覽</button>
+        </div>
+        <input
+          type="search"
+          class="search-input"
+          id="searchInput"
+          placeholder="搜尋展覽或場館…"
+          aria-label="搜尋展覽或場館"
+        />
+        <span class="stats-label" id="statsLabel" aria-live="polite"></span>
+      </div>
+    </header>
+
+    <main class="main" id="mainContent" aria-live="polite">
+      <div class="state-screen">
+        <div class="state-icon">📂</div>
+        <h2>選擇專案資料夾</h2>
+        <p>
+          點擊「開啟資料夾」選擇 been_playing 根目錄，程式會讀取 data/v2/ 和
+          fixture/suffix_file.json
+        </p>
+        <button class="btn btn-open" onclick="openDirectory()">
+          📂 開啟資料夾
+        </button>
+      </div>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-atomic="true"></div>
+
+    <script>
+      "use strict";
+
+      // ═══════════════════════════════════════════════════════════
+      //  STATE
+      // ═══════════════════════════════════════════════════════════
+
+      const state = {
+        dirHandle: null,
+        venues: {}, // code_name → { information, items }
+        suffix: {}, // code_name → { UUID → { address?, date?, figure? } }
+        edits: {}, // code_name → { UUID → { field → value | null } }
+        filter: "null",
+        search: "",
+        openVenues: new Set(),
+      };
+
+      const SKIP = new Set([
+        "_ALL_LOCATION.json",
+        "_EXECUTION_STATS.json",
+        "_VENUE_META.json",
+        "last_week_update.json",
+        "cache_file.json",
+      ]);
+
+      const PATCH_FIELDS = ["address", "date", "figure"];
+
+      // ═══════════════════════════════════════════════════════════
+      //  FILE SYSTEM
+      // ═══════════════════════════════════════════════════════════
+
+      async function openDirectory() {
+        try {
+          const handle = await window.showDirectoryPicker({
+            mode: "readwrite",
+            startIn: "documents",
+          });
+          state.dirHandle = handle;
+          await reload();
+        } catch (e) {
+          if (e.name !== "AbortError") toast("❌ " + e.message);
+        }
+      }
+
+      async function reload() {
+        showLoading();
+        try {
+          const dh = state.dirHandle;
+
+          // Navigate to data/v2/ and fixture/
+          let v2Dir, fixtureDir;
+          try {
+            v2Dir = await dh
+              .getDirectoryHandle("data")
+              .then((d) => d.getDirectoryHandle("v2"));
+            fixtureDir = await dh.getDirectoryHandle("fixture");
+          } catch {
+            toast("❌ 找不到 data/v2/ 或 fixture/，請確認是否選擇正確的根目錄");
+            showEmpty();
+            return;
+          }
+
+          // Load suffix_file.json
+          let suffix = {};
+          try {
+            const fh = await fixtureDir.getFileHandle("suffix_file.json");
+            const text = await (await fh.getFile()).text();
+            suffix = JSON.parse(text);
+          } catch {
+            toast("⚠ 無法讀取 suffix_file.json，從空白開始");
+          }
+          state.suffix = suffix;
+
+          // Load venue JSON files in parallel
+          const venues = {};
+          const tasks = [];
+          for await (const [name, handle] of v2Dir.entries()) {
+            if (
+              handle.kind !== "file" ||
+              !name.endsWith(".json") ||
+              SKIP.has(name)
+            )
+              continue;
+            tasks.push(
+              (async () => {
+                try {
+                  const text = await (await handle.getFile()).text();
+                  const data = JSON.parse(text);
+                  if (
+                    data.information?.code_name &&
+                    Array.isArray(data.items) &&
+                    data.items.length > 0
+                  ) {
+                    venues[data.information.code_name] = data;
+                  }
+                } catch {
+                  /* skip bad file */
+                }
+              })(),
+            );
+          }
+          await Promise.all(tasks);
+
+          state.venues = venues;
+          state.edits = {};
+
+          render();
+          updateSaveBtn();
+          document.getElementById("reloadBtn").style.display = "";
+          document.getElementById("headerControls").style.display = "flex";
+          toast(`✅ 已載入 ${Object.keys(venues).length} 個場館`);
+        } catch (e) {
+          toast("❌ 載入失敗：" + e.message);
+          showEmpty();
+        }
+      }
+
+      async function save() {
+        if (!state.dirHandle) return;
+
+        // Merge edits → suffix
+        for (const [code, uuids] of Object.entries(state.edits)) {
+          for (const [uuid, fields] of Object.entries(uuids)) {
+            for (const [field, val] of Object.entries(fields)) {
+              const trimmed = (val ?? "").trim();
+              if (trimmed) {
+                if (!state.suffix[code]) state.suffix[code] = {};
+                if (!state.suffix[code][uuid]) state.suffix[code][uuid] = {};
+                state.suffix[code][uuid][field] = trimmed;
+              } else {
+                // Remove field / clean up empty objects
+                if (state.suffix[code]?.[uuid]) {
+                  delete state.suffix[code][uuid][field];
+                  if (!Object.keys(state.suffix[code][uuid]).length)
+                    delete state.suffix[code][uuid];
+                  if (!Object.keys(state.suffix[code] ?? {}).length)
+                    delete state.suffix[code];
+                }
+              }
+            }
+          }
+        }
+
+        try {
+          const fixtureDir =
+            await state.dirHandle.getDirectoryHandle("fixture");
+          const fh = await fixtureDir.getFileHandle("suffix_file.json", {
+            create: false,
+          });
+          const writable = await fh.createWritable();
+          await writable.write(JSON.stringify(state.suffix, null, 2) + "\n");
+          await writable.close();
+
+          state.edits = {};
+          updateSaveBtn();
+          refreshAllStatuses();
+          toast("✅ 已儲存 suffix_file.json");
+        } catch (e) {
+          toast("❌ 儲存失敗：" + e.message);
+        }
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  DATA HELPERS
+      // ═══════════════════════════════════════════════════════════
+
+      function effectiveField(code, uuid, field, orig) {
+        const editsEntry = state.edits[code]?.[uuid];
+        if (editsEntry && field in editsEntry) {
+          const v = editsEntry[field] ?? "";
+          return v
+            ? { value: v, status: "edited" }
+            : { value: "", status: "null" };
+        }
+        const sv = state.suffix[code]?.[uuid]?.[field];
+        if (sv != null && sv !== "") return { value: sv, status: "patched" };
+        if (orig != null && orig !== "") return { value: orig, status: "ok" };
+        return { value: "", status: "null" };
+      }
+
+      function itemHasNull(code, item) {
+        return PATCH_FIELDS.some(
+          (f) => effectiveField(code, item.UUID, f, item[f]).status === "null",
+        );
+      }
+
+      function itemHasPatch(code, item) {
+        return PATCH_FIELDS.some((f) =>
+          ["patched", "edited"].includes(
+            effectiveField(code, item.UUID, f, item[f]).status,
+          ),
+        );
+      }
+
+      function itemMatchesSearch(code, venue, item) {
+        const q = state.search.toLowerCase();
+        if (!q) return true;
+        return (
+          (venue.information.fullname ?? "").toLowerCase().includes(q) ||
+          code.toLowerCase().includes(q) ||
+          (item.title ?? "").toLowerCase().includes(q)
+        );
+      }
+
+      function filterItem(code, venue, item) {
+        if (!itemMatchesSearch(code, venue, item)) return false;
+        if (state.filter === "null") return itemHasNull(code, item);
+        if (state.filter === "patched") return itemHasPatch(code, item);
+        return true;
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  RENDER
+      // ═══════════════════════════════════════════════════════════
+
+      function render() {
+        const content = document.getElementById("mainContent");
+        content.innerHTML = "";
+
+        const venueList = Object.values(state.venues).sort((a, b) =>
+          a.information.code_name.localeCompare(b.information.code_name),
+        );
+
+        let visVenues = 0,
+          visItems = 0,
+          nullCount = 0;
+        const frag = document.createDocumentFragment();
+
+        for (const venue of venueList) {
+          const code = venue.information.code_name;
+          const items = (venue.items ?? []).filter(
+            (i) => i.UUID && filterItem(code, venue, i),
+          );
+          if (!items.length) continue;
+
+          visVenues++;
+          visItems += items.length;
+          nullCount += items.filter((i) => itemHasNull(code, i)).length;
+
+          frag.appendChild(buildVenueCard(venue, code, items));
+        }
+
+        if (!visVenues) {
+          content.innerHTML = `
+      <div class="state-screen">
+        <div class="state-icon">🔍</div>
+        <h2>找不到符合的展覽</h2>
+        <p>試著切換篩選條件或清空搜尋關鍵字</p>
+      </div>`;
+        } else {
+          content.appendChild(frag);
+        }
+
+        const label = document.getElementById("statsLabel");
+        label.innerHTML =
+          `顯示 <strong>${visVenues}</strong> 個場館，` +
+          `<strong>${visItems}</strong> 個展覽` +
+          (nullCount > 0
+            ? `，<strong style="color:var(--null-text)">${nullCount} 個有缺失</strong>`
+            : "");
+      }
+
+      function buildVenueCard(venue, code, items) {
+        const info = venue.information;
+        const nullCnt = items.filter((i) => itemHasNull(code, i)).length;
+        const city = [
+          info.location_code?.city?.name,
+          info.location_code?.area?.name,
+        ]
+          .filter(Boolean)
+          .join(" · ");
+        const badgeHtml =
+          nullCnt > 0
+            ? `<span class="venue-badge venue-badge-null" aria-label="${nullCnt} 個缺失欄位">⚠ ${nullCnt} 個缺失</span>`
+            : `<span class="venue-badge venue-badge-ok">✓ 完整</span>`;
+
+        const card = document.createElement("div");
+        card.className = "venue-card";
+        card.dataset.code = code;
+        card.innerHTML = `
+    <div class="venue-head" role="button" tabindex="0"
+      aria-expanded="${state.openVenues.has(code)}"
+      aria-controls="vbody-${esc(code)}">
+      <span class="venue-fullname">${esc(info.fullname)}</span>
+      <span class="venue-code">${esc(code)}</span>
+      ${city ? `<span class="venue-city">${esc(city)}</span>` : ""}
+      ${badgeHtml}
+      <span class="venue-chevron${state.openVenues.has(code) ? " open" : ""}" aria-hidden="true">›</span>
+    </div>
+    <div class="venue-body${state.openVenues.has(code) ? " open" : ""}"
+      id="vbody-${esc(code)}"></div>`;
+
+        const head = card.querySelector(".venue-head");
+        const body = card.querySelector(".venue-body");
+        const chevron = card.querySelector(".venue-chevron");
+        let built = false;
+
+        const open = () => {
+          if (!built) {
+            items.forEach((item) =>
+              body.appendChild(buildExhRow(venue, code, item)),
+            );
+            built = true;
+          }
+          body.classList.add("open");
+          chevron.classList.add("open");
+          head.setAttribute("aria-expanded", "true");
+          state.openVenues.add(code);
+        };
+
+        const close = () => {
+          body.classList.remove("open");
+          chevron.classList.remove("open");
+          head.setAttribute("aria-expanded", "false");
+          state.openVenues.delete(code);
+        };
+
+        const toggle = () =>
+          body.classList.contains("open") ? close() : open();
+
+        // Auto-open venues that were open before re-render
+        if (state.openVenues.has(code)) open();
+        // Auto-open when searching
+        if (state.search && !state.openVenues.has(code)) open();
+
+        head.addEventListener("click", toggle);
+        head.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            toggle();
+          }
+        });
+
+        return card;
+      }
+
+      function buildExhRow(venue, code, item) {
+        const uuid = item.UUID;
+        const fig = effectiveField(code, uuid, "figure", item.figure);
+        const addr = effectiveField(code, uuid, "address", item.address);
+        const date = effectiveField(code, uuid, "date", item.date);
+
+        const thumbHtml = fig.value
+          ? `<img class="exh-thumb" src="${esc(fig.value)}" alt="" loading="lazy">`
+          : `<div class="exh-thumb-ph" aria-hidden="true">🖼</div>`;
+
+        const figPreviewHtml = fig.value
+          ? `<img class="figure-preview" src="${esc(fig.value)}" alt="" loading="lazy">`
+          : `<div class="figure-ph-sm" aria-hidden="true">🖼</div>`;
+
+        const showClear = fig.status === "patched" || fig.status === "edited";
+
+        const row = document.createElement("div");
+        row.className = "exh-row";
+        row.dataset.uuid = uuid;
+        row.dataset.code = code;
+
+        row.innerHTML = `
+    <div class="exh-thumb-wrap">${thumbHtml}</div>
+    <div class="exh-content">
+      <div class="exh-title-row">
+        <div class="exh-title">
+          ${
+            item.source_url
+              ? `<a href="${esc(item.source_url)}" target="_blank" rel="noopener noreferrer">${esc(item.title)}</a>`
+              : esc(item.title)
+          }
+        </div>
+        <span class="exh-uuid" title="${esc(uuid)}">${uuid.slice(0, 8)}…</span>
+      </div>
+      <div class="exh-fields">
+
+        <div class="field-group" data-fg="address">
+          <label class="field-label" for="f-addr-${esc(uuid)}">
+            地址
+            ${pill(addr.status)}
+          </label>
+          <input id="f-addr-${esc(uuid)}" type="text" class="field-input ${sClass(addr.status)}"
+            data-field="address" value="${esc(addr.value)}"
+            placeholder="例：國立故宮博物院第一展覽室" autocomplete="off">
+        </div>
+
+        <div class="field-group" data-fg="date">
+          <label class="field-label" for="f-date-${esc(uuid)}">
+            日期
+            ${pill(date.status)}
+          </label>
+          <input id="f-date-${esc(uuid)}" type="text" class="field-input ${sClass(date.status)}"
+            data-field="date" value="${esc(date.value)}"
+            placeholder="YYYY-MM-DD ~ YYYY-MM-DD" autocomplete="off">
+        </div>
+
+        <div class="field-group field-figure" data-fg="figure">
+          <label class="field-label" for="f-fig-${esc(uuid)}">
+            圖片 URL
+            ${pill(fig.status)}
+          </label>
+          <div class="figure-row">
+            ${figPreviewHtml}
+            <input id="f-fig-${esc(uuid)}" type="url" class="field-input ${sClass(fig.status)}"
+              data-field="figure" value="${esc(fig.value)}"
+              placeholder="https://…" autocomplete="off" style="flex:1">
+            ${showClear ? `<button class="clear-btn" data-clear="figure" aria-label="清除圖片 URL">✕</button>` : ""}
+          </div>
+        </div>
+
+      </div>
+    </div>`;
+
+        // ── field input events ──
+        row.querySelectorAll(".field-input").forEach((input) => {
+          const field = input.dataset.field;
+          const origVal = item[field];
+
+          input.addEventListener("input", () => {
+            const val = input.value;
+            setEdit(code, uuid, field, val || null);
+
+            const { status } = effectiveField(code, uuid, field, origVal);
+            input.className = `field-input ${sClass(status)}`;
+            updatePill(row, field, status);
+
+            if (field === "figure") syncFigurePreviews(row, val);
+          });
+        });
+
+        // ── clear button ──
+        row
+          .querySelector('[data-clear="figure"]')
+          ?.addEventListener("click", () => {
+            const inp = row.querySelector('[data-field="figure"]');
+            inp.value = "";
+            inp.dispatchEvent(new Event("input"));
+          });
+
+        return row;
+      }
+
+      // ─── figure sync ───
+      function syncFigurePreviews(row, url) {
+        // Large thumbnail (left)
+        const thumbWrap = row.querySelector(".exh-thumb-wrap");
+        const existThumb = thumbWrap.querySelector(".exh-thumb");
+        const existPh = thumbWrap.querySelector(".exh-thumb-ph");
+        if (url) {
+          if (existThumb) {
+            existThumb.src = url;
+            existThumb.style.display = "";
+          } else {
+            const img = document.createElement("img");
+            img.className = "exh-thumb";
+            img.src = url;
+            img.alt = "";
+            img.loading = "lazy";
+            existPh?.replaceWith(img);
+          }
+        } else {
+          if (existThumb) {
+            const ph = document.createElement("div");
+            ph.className = "exh-thumb-ph";
+            ph.setAttribute("aria-hidden", "true");
+            ph.textContent = "🖼";
+            existThumb.replaceWith(ph);
+          }
+        }
+
+        // Small preview (next to input)
+        const figRow = row.querySelector('[data-fg="figure"] .figure-row');
+        const existPrev = figRow.querySelector(".figure-preview");
+        const existPhSm = figRow.querySelector(".figure-ph-sm");
+
+        if (url) {
+          if (existPrev) {
+            existPrev.src = url;
+          } else if (existPhSm) {
+            const img = document.createElement("img");
+            img.className = "figure-preview";
+            img.src = url;
+            img.alt = "";
+            img.loading = "lazy";
+            existPhSm.replaceWith(img);
+          }
+        } else {
+          if (existPrev) {
+            const ph = document.createElement("div");
+            ph.className = "figure-ph-sm";
+            ph.setAttribute("aria-hidden", "true");
+            ph.textContent = "🖼";
+            existPrev.replaceWith(ph);
+          }
+        }
+
+        // Show / hide clear button
+        const clearBtn = figRow.querySelector(".clear-btn");
+        if (url && !clearBtn) {
+          const btn = document.createElement("button");
+          btn.className = "clear-btn";
+          btn.dataset.clear = "figure";
+          btn.setAttribute("aria-label", "清除圖片 URL");
+          btn.textContent = "✕";
+          btn.addEventListener("click", () => {
+            const inp = figRow.querySelector('[data-field="figure"]');
+            inp.value = "";
+            inp.dispatchEvent(new Event("input"));
+          });
+          figRow.appendChild(btn);
+        } else if (!url && clearBtn) {
+          clearBtn.remove();
+        }
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  EDIT MANAGEMENT
+      // ═══════════════════════════════════════════════════════════
+
+      function setEdit(code, uuid, field, value) {
+        if (!state.edits[code]) state.edits[code] = {};
+        if (!state.edits[code][uuid]) state.edits[code][uuid] = {};
+        state.edits[code][uuid][field] = value;
+        updateSaveBtn();
+      }
+
+      function countEdits() {
+        let n = 0;
+        for (const uuids of Object.values(state.edits))
+          for (const fields of Object.values(uuids))
+            n += Object.keys(fields).length;
+        return n;
+      }
+
+      // 儲存後原地刷新欄位色彩與 badge，不重繪整頁
+      function refreshAllStatuses() {
+        const PILL_LABEL = {
+          null: "缺失",
+          patched: "已補充",
+          edited: "已修改",
+          ok: "✓",
+        };
+        const PILL_CLS = {
+          null: "pill-null",
+          patched: "pill-patched",
+          edited: "pill-edited",
+          ok: "pill-ok",
+        };
+
+        document.querySelectorAll(".exh-row[data-uuid]").forEach((row) => {
+          const uuid = row.dataset.uuid;
+          const code = row.dataset.code;
+          const venue = state.venues[code];
+          if (!venue) return;
+          const item = venue.items.find((i) => i.UUID === uuid);
+          if (!item) return;
+
+          PATCH_FIELDS.forEach((field) => {
+            const input = row.querySelector(`[data-field="${field}"]`);
+            if (!input) return;
+            const { status } = effectiveField(code, uuid, field, item[field]);
+
+            input.className = `field-input ${sClass(status)}`;
+
+            const pillEl = row.querySelector(
+              `[data-fg="${field}"] .field-pill`,
+            );
+            if (pillEl) {
+              pillEl.className = `field-pill ${PILL_CLS[status] ?? "pill-ok"}`;
+              pillEl.textContent = PILL_LABEL[status] ?? "";
+            }
+          });
+        });
+
+        // 更新場館 badge（缺失計數）
+        document.querySelectorAll(".venue-card[data-code]").forEach((card) => {
+          const code = card.dataset.code;
+          const venue = state.venues[code];
+          if (!venue) return;
+          const nullCnt = (venue.items ?? []).filter(
+            (i) => i.UUID && itemHasNull(code, i),
+          ).length;
+          const badge = card.querySelector(".venue-badge");
+          if (!badge) return;
+          badge.className = `venue-badge ${nullCnt > 0 ? "venue-badge-null" : "venue-badge-ok"}`;
+          badge.textContent = nullCnt > 0 ? `⚠ ${nullCnt} 個缺失` : "✓ 完整";
+          badge.setAttribute(
+            "aria-label",
+            nullCnt > 0 ? `${nullCnt} 個缺失欄位` : "所有欄位完整",
+          );
+        });
+
+        // 更新頂端統計數字
+        const statsLabel = document.getElementById("statsLabel");
+        let visVenues = 0,
+          visItems = 0,
+          nullCount = 0;
+        document.querySelectorAll(".venue-card[data-code]").forEach((card) => {
+          const code = card.dataset.code;
+          const venue = state.venues[code];
+          if (!venue) return;
+          visVenues++;
+          const rows = card.querySelectorAll(".exh-row[data-uuid]");
+          visItems += rows.length;
+          rows.forEach((r) => {
+            const item = venue.items.find((i) => i.UUID === r.dataset.uuid);
+            if (item && itemHasNull(code, item)) nullCount++;
+          });
+        });
+        statsLabel.innerHTML =
+          `顯示 <strong>${visVenues}</strong> 個場館，` +
+          `<strong>${visItems}</strong> 個展覽` +
+          (nullCount > 0
+            ? `，<strong style="color:var(--null-text)">${nullCount} 個有缺失</strong>`
+            : "");
+      }
+
+      function updateSaveBtn() {
+        const btn = document.getElementById("saveBtn");
+        const badge = document.getElementById("unsavedCount");
+        const n = countEdits();
+        btn.disabled = n === 0;
+        if (n > 0) {
+          badge.textContent = n;
+          badge.style.display = "";
+        } else badge.style.display = "none";
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  UI UTILITIES
+      // ═══════════════════════════════════════════════════════════
+
+      function pill(status) {
+        const map = {
+          null: ["pill-null", "缺失"],
+          patched: ["pill-patched", "已補充"],
+          edited: ["pill-edited", "已修改"],
+          ok: ["pill-ok", "✓"],
+        };
+        const [cls, label] = map[status] ?? ["pill-ok", ""];
+        return `<span class="field-pill ${cls}">${label}</span>`;
+      }
+
+      function sClass(status) {
+        return (
+          { null: "s-null", patched: "s-patched", edited: "s-edited" }[
+            status
+          ] ?? ""
+        );
+      }
+
+      function updatePill(row, field, status) {
+        const fg = row.querySelector(`[data-fg="${field}"] .field-pill`);
+        if (!fg) return;
+        fg.outerHTML = pill(status); // simple replace — harmless re-create
+        // Re-bind after replace
+        const newPill = row.querySelector(`[data-fg="${field}"] .field-pill`);
+        if (newPill) newPill.outerHTML = pill(status);
+      }
+
+      function showLoading() {
+        document.getElementById("mainContent").innerHTML = `
+    <div class="state-screen">
+      <div class="spinner" role="status" aria-label="載入中"></div>
+      <p>載入中…</p>
+    </div>`;
+      }
+
+      function showEmpty() {
+        document.getElementById("mainContent").innerHTML = `
+    <div class="state-screen">
+      <div class="state-icon">📂</div>
+      <h2>選擇專案資料夾</h2>
+      <p>點擊「開啟資料夾」選擇 been_playing 根目錄</p>
+      <button class="btn btn-open" onclick="openDirectory()">📂 開啟資料夾</button>
+    </div>`;
+      }
+
+      let _toastTimer;
+      function toast(msg, duration = 3200) {
+        const el = document.getElementById("toast");
+        el.textContent = msg;
+        el.classList.add("show");
+        clearTimeout(_toastTimer);
+        _toastTimer = setTimeout(() => el.classList.remove("show"), duration);
+      }
+
+      function esc(s) {
+        return String(s ?? "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      // ═══════════════════════════════════════════════════════════
+      //  EVENT BINDINGS
+      // ═══════════════════════════════════════════════════════════
+
+      document
+        .getElementById("openBtn")
+        .addEventListener("click", openDirectory);
+      document.getElementById("reloadBtn").addEventListener("click", reload);
+      document.getElementById("saveBtn").addEventListener("click", save);
+
+      document.querySelectorAll(".filter-tab").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".filter-tab")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          state.filter = btn.dataset.filter;
+          render();
+        });
+      });
+
+      let _searchTimer;
+      document.getElementById("searchInput").addEventListener("input", (e) => {
+        clearTimeout(_searchTimer);
+        _searchTimer = setTimeout(() => {
+          state.search = e.target.value.trim();
+          render();
+        }, 200);
+      });
+
+      // Ctrl/Cmd + S  →  save
+      document.addEventListener("keydown", (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key === "s") {
+          e.preventDefault();
+          if (!document.getElementById("saveBtn").disabled) save();
+        }
+      });
+
+      // Check File System Access API support
+      if (!("showDirectoryPicker" in window)) {
+        document.getElementById("mainContent").innerHTML = `
+    <div class="state-screen">
+      <div class="state-icon">⚠️</div>
+      <h2>瀏覽器不支援</h2>
+      <p>此工具需要 File System Access API，請使用 Chrome 86+ 或 Edge 86+</p>
+    </div>`;
+      }
+    </script>
+  </body>
+</html>
