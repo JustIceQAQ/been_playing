@@ -85,7 +85,7 @@
         - [世界宗教博物館](https://www.mwr.org.tw/xcpmtexhi?xsmsid=0H305740978429024070) `Mwr`
         - [板橋435藝文特區](https://www.435.culture.ntpc.gov.tw/) `Culture435`
         - [齊柏林空間](https://www.chipolin.org/) `ChiPoLin`
-        - [新北市立鶯歌陶瓷博物館](https://www.ceramics.ntpc.gov.tw/) `NtcCeramics`
+        - [新北市立鶯歌陶瓷博物館](https://www.ceramics.ntpc.gov.tw/) `NTPC`
         - [朱銘美術館](https://www.juming.org.tw/) `JuMing`
     - 桃園市
         - [桃園市立大溪木藝生態博物館](https://wem.tycg.gov.tw/) `TyCg`
