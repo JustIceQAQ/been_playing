@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-17T12:38:17.787786+08:00",
+  "updated": "2026-05-17T18:05:54.916830+08:00",
   "items": [
     {
       "title": "《茶脈流轉：一盞茶的濃・淡・新》",
@@ -16925,6 +16925,86 @@
       "source_url": "https://www.klook.com/zh-TW/activity/117472-kaohsiung-museum-of-fine-art-ticket/",
       "tags": null,
       "UUID": "4f7edc3930795ad6b6e9810a7373b06e"
+    },
+    {
+      "title": "陳柏安個人作品展",
+      "date": "2026-04-01 ~ 2026-09-30",
+      "address": "土城區（新北市）=",
+      "figure": null,
+      "source_url": "http://event.moc.gov.tw/sp.asp?xdurl=ccEvent2016/ccEvent_cp.asp&cuItem=2855369&ctNode=676&mp=1",
+      "tags": [
+        "視覺藝術",
+        "表現技法",
+        "綜合"
+      ],
+      "UUID": "cb81fe4dbd8f5b36aedf68f56065daf7"
+    },
+    {
+      "title": "胡克敏水墨蔬菜長卷特展",
+      "date": "2024-01-01 ~ 2026-12-31",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779012276/gzz5cyuuvo0ygchnq67a.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=297861c0-d774-4714-abee-dc9685db5fa8&PageIndex=10&PageType=1",
+      "tags": null,
+      "UUID": "af691530224b5a8a8cada79729f15180"
+    },
+    {
+      "title": "【新北市立圖書館淡水分館】《115年藝文展覽 : 歷史與文化交融的五樓特展區~大河東去：從滬尾到淡水》",
+      "date": "2026-01-01 ~ 2026-12-30",
+      "address": "新北市立圖書館淡水分館",
+      "figure": null,
+      "source_url": "http://event.moc.gov.tw/sp.asp?xdurl=ccEvent2016/ccEvent_cp.asp&cuItem=2838359&ctNode=676&mp=1",
+      "tags": [
+        "文化資產",
+        "綜合",
+        "不分細類"
+      ],
+      "UUID": "ae23efe17c7d5dec9940f1c590300d65"
+    },
+    {
+      "title": "從Josef Albers到James Turrell，再到積吶虹光：RHS色彩倫理在後影像文明中的知覺轉向",
+      "date": "2026-04-08 ~ 2026-05-19",
+      "address": "屏東美術館 202展覽室",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1778434058/vlgfw8s6dgzkfo5dv3uy.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=be5d06f4-dae7-4b1c-8872-0dee003e4053&PageIndex=6&PageType=1",
+      "tags": null,
+      "UUID": "f7989fd033975884b45fcefb6c6fa700"
+    },
+    {
+      "title": "中心新村｜《永不退場-從軍眷球場到全民的籃球傳奇》特展",
+      "date": "2025-09-26 ~ 2026-08-28",
+      "address": "中心新村",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779012277/qosasrdh7mv6eig9qvlx.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=58fb419c-5af2-4d08-97fc-616db316e0c1&PageIndex=9&PageType=1",
+      "tags": null,
+      "UUID": "fbb612b0de21511b9f195048145274ce"
+    },
+    {
+      "title": "【筆墨之間——大師筆下的情誼與風骨】",
+      "date": "2026-11-04 ~ 2025-12-07",
+      "address": "長流美術館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1778434048/nzv70pboffbht048jo3s.webp",
+      "source_url": "https://artemperor.tw/tidbits/19107",
+      "tags": null,
+      "UUID": "c5c35bea0d3c5379ab1d4405e48aa15b"
+    },
+    {
+      "title": "信福傳情－信箱郵筒郵票特展",
+      "date": "2026-01-17 ~ 2026-07-05",
+      "address": "郵政博物館臺北館特展室",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779012276/l8ecbfwaeeefieefbxw6.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=ef151c53-bded-411d-bcec-b8f112b7923f&PageIndex=8&PageType=1",
+      "tags": null,
+      "UUID": "289d751d20ba50c6a59fa2030fc4d3f3"
+    },
+    {
+      "title": "北美館- 造公園",
+      "date": "2026-03-28 ~ 2026-08-30",
+      "address": "臺北市立美術館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1778434057/cimczmoflxwgvwgp7sji.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=e7855426-6549-4ebb-825a-58e46edafa3b&PageIndex=7&PageType=1",
+      "tags": null,
+      "UUID": "ca6165dab9b5541097aba30286a5cf4c"
     }
   ]
 }
