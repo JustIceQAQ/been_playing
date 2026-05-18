@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-18T20:36:50.868240+08:00",
+  "updated": "2026-05-19T02:56:09.323359+08:00",
   "items": [
     {
       "title": "百達攝影獎：風暴",
@@ -691,6 +691,42 @@
       "source_url": "https://fam.bocach.gov.tw/News_Content.aspx?n=989&s=53710",
       "tags": null,
       "UUID": "65d0524fef3956d9af895d3373292388"
+    },
+    {
+      "title": "諸羅紀：人在・神在・城就在",
+      "date": "2025-12-12 ~ 2026-05-31",
+      "address": "嘉義市立博物館1樓特展廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779128225/vhzu6ub090kspa1dupji.webp",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=a73704a2-fb75-41bb-bbf6-4406ea882f8d&StartDate=2026%2f05%2f19&EndDate=2026%2f05%2f19&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "398c445ab8245558aaac3230b455d5d8"
+    },
+    {
+      "title": "【未定稿】臺東縣立新生國民中學第33屆美術班學習成果美展",
+      "date": "2026-05-19 ~ 2026-05-31",
+      "address": "藝文中心2F展覽室及藝廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779128240/sfcnbpi2fpfgms0kvvj5.webp",
+      "source_url": "https://tm.ccl.ttct.edu.tw/ExhibitionsDetailC004100.php?Cond=51efb6b0-c92c-43c8-9c71-2e60ba546cef&appname=ExhibitionsList4101",
+      "tags": null,
+      "UUID": "a273572d2be15906afd18ac5efcbeb2b"
+    },
+    {
+      "title": "COMPUTEX TAIPEI",
+      "date": "2026-06-02 ~ 2026-06-05",
+      "address": "南港展覽館2館南港展覽館1館世貿一館",
+      "figure": null,
+      "source_url": "http://www.computextaipei.com.tw",
+      "tags": null,
+      "UUID": "093e1056812958899a1c1edf9f5aa670"
+    },
+    {
+      "title": "台北國際食品展",
+      "date": "2026-06-24 ~ 2026-06-27",
+      "address": "南港展覽館2館南港展覽館1館世貿一館",
+      "figure": null,
+      "source_url": "http://www.foodtaipei.com.tw",
+      "tags": null,
+      "UUID": "3cef74b51fcc549cb4dead48b4a912c2"
     }
   ]
 }
