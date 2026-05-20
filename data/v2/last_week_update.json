@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-20T20:06:23.072762+08:00",
+  "updated": "2026-05-21T03:19:01.643564+08:00",
   "items": [
     {
       "title": "百達攝影獎：風暴",
@@ -1980,6 +1980,108 @@
       "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=60773",
       "tags": null,
       "UUID": "1d63d87145465df3872763f6f1b39436"
+    },
+    {
+      "title": "台北國際食品展",
+      "date": "2026-06-24 ~ 2026-06-27",
+      "address": "南港展覽館1館世貿一館南港展覽館2館",
+      "figure": null,
+      "source_url": "http://www.foodtaipei.com.tw",
+      "tags": null,
+      "UUID": "3cef74b51fcc549cb4dead48b4a912c2"
+    },
+    {
+      "title": "世界古文明 沉浸體驗展 高雄站",
+      "date": "2026-06-19 ~ 2026-09-08",
+      "address": "高雄",
+      "figure": "https://res.klook.com/image/upload/klook-1_展演頁面活動首圖_326x460_1_trtgvh.jpg",
+      "source_url": "https://www.klook.com/zh-TW/activity/187273-world-ancient-civilization-immersive-experience-exhibition/",
+      "tags": null,
+      "UUID": "a26c80aa65225561b55389c9e354d86e"
+    },
+    {
+      "title": "木雕修護101",
+      "date": "2026-01-01 ~ 2026-12-31",
+      "address": "朱銘美術館",
+      "figure": null,
+      "source_url": "http://event.moc.gov.tw/sp.asp?xdurl=ccEvent2016/ccEvent_cp.asp&cuItem=2812615&ctNode=676&mp=1",
+      "tags": [
+        "工藝",
+        "雕塑(製作方式有雕刻、塑、堆、貼、焊、敲等。)",
+        "木雕"
+      ],
+      "UUID": "6bde1f74a1c8529686c6d31bb249b24a"
+    },
+    {
+      "title": "COMPUTEX TAIPEI",
+      "date": "2026-06-02 ~ 2026-06-05",
+      "address": "世貿一館南港展覽館2館南港展覽館1館",
+      "figure": null,
+      "source_url": "http://www.computextaipei.com.tw",
+      "tags": null,
+      "UUID": "093e1056812958899a1c1edf9f5aa670"
+    },
+    {
+      "title": "A World of Wonder 奇想世界：Anna & Daniel 特展",
+      "date": "2026-06-19 ~ 2026-09-28",
+      "address": "台北",
+      "figure": "https://res.klook.com/image/upload/展演頁面活動首圖_直式-326x460_nvjbjt.jpg",
+      "source_url": "https://www.klook.com/zh-TW/activity/209115-a-world-of-wonder-world-anna-daniel-exhibition/",
+      "tags": null,
+      "UUID": "de8ff8413f0f59808918b0988c2bb69b"
+    },
+    {
+      "title": "金鷹歸來：隆興閣掌中武林特展",
+      "date": "2026-04-23 ~ 2026-12-31",
+      "address": "新莊文化藝術中心",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1778559137/xftqcdoooyppeixd0jkt.webp",
+      "source_url": "http://event.moc.gov.tw/sp.asp?xdurl=ccEvent2016/ccEvent_cp.asp&cuItem=2859363&ctNode=676&mp=1",
+      "tags": [
+        "戲劇",
+        "偶戲",
+        "布袋戲、掌中戲"
+      ],
+      "UUID": "3b8f25900b39538a9bd43bb8286f976b"
+    },
+    {
+      "title": "諸羅紀：人在・神在・城就在",
+      "date": "2025-12-12 ~ 2026-05-31",
+      "address": "嘉義市立博物館1樓特展廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779302319/mrt2vnres3zd6flen3sy.webp",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=a73704a2-fb75-41bb-bbf6-4406ea882f8d&StartDate=2026%2f05%2f21&EndDate=2026%2f05%2f21&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "2d575c2773b6540b9dda2a3a624c32bd"
+    },
+    {
+      "title": "【新北市立圖書館淡水分館】《115年藝文展覽 : 歷史與文化交融的五樓特展區~大河東去：從滬尾到淡水》",
+      "date": "2026-01-01 ~ 2026-12-30",
+      "address": "新北市立圖書館淡水分館",
+      "figure": null,
+      "source_url": "http://event.moc.gov.tw/sp.asp?xdurl=ccEvent2016/ccEvent_cp.asp&cuItem=2838359&ctNode=676&mp=1",
+      "tags": [
+        "文化資產",
+        "綜合",
+        "不分細類"
+      ],
+      "UUID": "ae23efe17c7d5dec9940f1c590300d65"
+    },
+    {
+      "title": "圓潤的魔法 波特羅特展",
+      "date": "2026-06-19 ~ 2026-10-11",
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779302288/u9roniro5toe4eqyn2ym.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/208522-rounded-magic-botero-exhibition/",
+      "tags": null,
+      "UUID": "d61d8bb5f4d35cddafbb90333e92a410"
+    },
+    {
+      "title": "伊藤潤二展 誘惑 JUNJI ITO EXHIBITION: ENCHANTMENT",
+      "date": "2026-06-19 ~ 2026-09-28",
+      "address": "台北",
+      "figure": "https://res.klook.com/image/upload/展演頁面活動._首圖_326x460_clvfo4.jpg",
+      "source_url": "https://www.klook.com/zh-TW/activity/208839-junji-ito-exhibition-enchantment/",
+      "tags": null,
+      "UUID": "01cfa1f04cc952c3a1857a2c48bb0af6"
     }
   ]
 }
