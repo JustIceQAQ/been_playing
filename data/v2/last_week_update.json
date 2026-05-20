@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-20T13:24:32.423304+08:00",
+  "updated": "2026-05-20T20:06:23.072762+08:00",
   "items": [
     {
       "title": "百達攝影獎：風暴",
@@ -1922,6 +1922,64 @@
       "source_url": "https://www.klook.com/zh-TW/activity/116166-2026-fulong-international-sand-sculpture-art-festival/",
       "tags": null,
       "UUID": "e9c91c5ac1d15b56b72939889054a741"
+    },
+    {
+      "title": "DeKo Fragrance X 未來市",
+      "date": "2026-05-22 ~ 2026-06-25",
+      "address": "中1A館",
+      "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e5%bd%a2%e8%b1%a12W1920_x_H1080_px%20(1).jpg",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26052018222845802",
+      "tags": [
+        "活動"
+      ],
+      "UUID": "a1f45228c4eb59c5857515b37540ead2"
+    },
+    {
+      "title": "【2027 中原文創園區 創意畢業季】徵件啟動！",
+      "date": "2026-05-19 ~ 2026-10-30",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779276315/xxcxisqa365cirzm6dwk.webp",
+      "source_url": "https://cycc.org.tw/zh-hant/node/246",
+      "tags": null,
+      "UUID": "ae28080246105af5976af269ea9df3c6"
+    },
+    {
+      "title": "永續串造 | Sustainability Chain System",
+      "date": "2026-05-12 ~ 2026-05-31",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779276314/c3rdd2pqlcmodsg5mqm6.webp",
+      "source_url": "https://cycc.org.tw/zh-hant/Sustainability_Chain_System",
+      "tags": null,
+      "UUID": "573803252a0e55d49f9fd94560ccbc2b"
+    },
+    {
+      "title": "2026公務人員設計培力課程報名公告",
+      "date": "2026-05-27 ~ 2026-07-02",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779276312/o4hydvnmudivmz2vqz2s.webp",
+      "source_url": "https://cycc.org.tw/zh-hant/node/247",
+      "tags": null,
+      "UUID": "df603d3e590751b78e6b664113321444"
+    },
+    {
+      "title": "馬卡龍腳趾 X 未來市",
+      "date": "2026-05-22 ~ 2026-06-25",
+      "address": "中1A館",
+      "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e6%9c%aa%e4%be%86%e5%b8%82%e8%a6%96%e8%a6%ba_%e8%8f%af%e5%b1%b1%e5%bd%a2%e8%b1%a12_1920x1080%20(1)%20(1).jpg",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26052018322565587",
+      "tags": [
+        "活動"
+      ],
+      "UUID": "b04fde8e98c959eab32e3709b0f85cbb"
+    },
+    {
+      "title": "圓潤的魔法 波特羅特展",
+      "date": "2026-06-19 ~ 2026-10-11",
+      "address": "1展廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779276288/tztrhj1dmu9vksftofm5.webp",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=60773",
+      "tags": null,
+      "UUID": "1d63d87145465df3872763f6f1b39436"
     }
   ]
 }
