@@ -7,6 +7,7 @@ from .galleries.sokaart import SoKaArtRunner
 from .galleries.whitestone import WhiteStoneRunner
 from .galleries.xizhitang import XiZhiTangRunner
 from .galleries.yiyun import YiYunRunner
+from .museums.aaaarchives import AAAArchivesRunner
 from .museums.afmc.script import (
     AfmcHall1Runner,
     AfmcHall2Runner,
@@ -15,20 +16,19 @@ from .museums.afmc.script import (
     AfmcHall5Runner,
     AfmcHall6Runner,
 )
-from .museums.aaaarchives import AAAArchivesRunner
 from .museums.alien import AlienRunner
 from .museums.artistvillage import ArtistVillageRunner
 from .museums.as241.script import AS241Runner
 from .museums.bopiliao.script import BoPiLiaoRunner
 from .museums.ccam.script import CCAMRunner
 from .museums.chcsec import ChCsEcRunner
-from .museums.cycc.script import CyccRunner
 from .museums.chiayiam import ChiayiAMRunner
 from .museums.chiayimm import ChiayiMMRunner
 from .museums.chipolin import ChiPoLinRunner
 from .museums.cksmh.script import CKSMHRunner
 from .museums.clab.script import CLabRunner
 from .museums.culture435 import Culture435Runner
+from .museums.cycc.script import CyccRunner
 from .museums.elandam.script import ELandAMRunner
 from .museums.fubonartmuseum.script import FuBonArtMuseumRunner
 from .museums.hcam.script import HCAMRunner
@@ -48,6 +48,7 @@ from .museums.kmfa import KmFaRunner
 from .museums.kmoa import KmoaRunner
 from .museums.mocataipei.script import MoCaTaipeiRunner
 from .museums.mofia import MofiaRunner
+from .museums.momatainan.script import MoMaTainanRunner
 from .museums.montue import MoNTUERunner
 from .museums.museumpost.script import MuseumPostRunner
 from .museums.mwr.script import MwrRunner
@@ -204,6 +205,7 @@ MUSEUMS_RUNNERS = {
     AS241Runner,
     PT1936Runner,
     PTCAMRunner,
+    MoMaTainanRunner,
 }
 
 GALLERIES_RUNNERS = {
