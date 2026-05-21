@@ -8,6 +8,9 @@
     },
     "57a6d327a42c5fd9b1c5641629322c00": {
       "address": "白色恐怖景美紀念園區-兵舍五"
+    },
+    "3ced9b0b511a50dcb22b2eb8a1efc530": {
+      "address": "國家人權博物館白色恐怖景美紀念園區兵舍1、2、3號"
     }
   },
   "TncMMM": {
@@ -20,6 +23,16 @@
       "address": "臺灣新文化運動紀念館一樓大廳梯間",
       "date": "2025-01-01 ~",
       "figure": "https://www-ws.gov.taipei/001/Upload/681/relpic/0/129639/eef488cc-28b0-4375-aff6-4a52f28e18bd.jpg"
+    },
+    "d9c9f2e07cb15a05abef774d3cd99600": {
+      "address": "本館一樓梯間",
+      "figure": "https://www-ws.gov.taipei/001/Upload/681/relpic/0/136057/6829b9fb-deff-40e5-8f9e-cb880008f2d4.jpg",
+      "date": "2025-09-26 ~ 2026-08-09"
+    },
+    "992e642d054251f59955f0d3dad906b1": {
+      "figure": "https://www-ws.gov.taipei/001/Upload/681/relpic/0/136091/832e93b5-57a9-45b5-b01e-5942319f2676.png",
+      "address": "臺灣新文化運動紀念館2樓",
+      "date": "2025-09-26 ~ 2026-08-09"
     }
   },
   "NTNUArtMuseum": {
@@ -68,6 +81,125 @@
     },
     "7829b4614aa35350b232969237c7c98d": {
       "date": "2026-05-06 ~ 2026-06-14"
+    }
+  },
+  "MoMaTainan": {
+    "c2d81e4ba11d5ae5baa9b555182da039": {
+      "date": "2026-04-02 ~",
+      "address": "2樓兒童藝術中心"
+    }
+  },
+  "RedHouse": {
+    "54ec83dbcca45a9aaef481a11d145d0d": {
+      "date": "2026-05-18 ~ 2026-06-18"
+    },
+    "b78ef6b447465340b110dd2fbef4c8c4": {
+      "date": "2024-07-16 ~ 2024-08-11"
+    }
+  },
+  "ShungYeArt": {
+    "f410dc2132e15d2bbba323e7b127eb42": {
+      "date": "2020-06-17 ~",
+      "address": "林清富先生展覽室"
+    },
+    "b4f8b396e6075e279c0394793a1ffeea": {
+      "address": "順益台灣美術館2樓典藏展"
+    }
+  },
+  "Mwr": {
+    "eec26a8173215bfaaa6351e105b46212": {
+      "address": "世界宗教博物館-商店7F 方寸之間NATURE IN ME"
+    },
+    "6a97b40f498051aca00f21ed92d6b058": {
+      "address": "世界宗教博物館-7F世界宗教建築模型展示區"
+    },
+    "9707dae0141b54928eaca8c5b0f495f3": {
+      "address": "世界宗教博物館-7F朝聖步道、7F輪展櫃、6F消失的密室"
+    },
+    "0eeaf472bea851e1874727db79237958": {
+      "address": "世界宗教博物館-7樓宗博兒童館"
+    },
+    "3c521bbb09e4507e94ad5c5cb35a64ea": {
+      "address": "世界宗教博物館-6樓特展區"
+    },
+    "5177c8fedf465b06bfb994628311648a": {
+      "address": "線上互動展"
+    }
+  },
+  "NTPC": {
+    "67d2fe437ac05ae68092009b3cd5f57d": {
+      "address": "一樓陽光特展室"
+    }
+  },
+  "AS241": {
+    "83ee4d513b2e56a58dc5ea07c4b09ad7": {
+      "figure": "https://culture.hccg.gov.tw/uploaddowndoc?file=activity%2F202603191402060.jpg&flag=pic&filedisplay=%E9%80%99%E5%B0%B1%E6%98%AF%E5%85%89%E5%AE%A3%E5%82%B3%E5%9C%96-01.jpg"
+    },
+    "feb68914ffc7582cb76e9fe1b7df8096": {
+      "figure": "https://culture.hccg.gov.tw/uploaddowndoc?file=activity%2F202605141704400.jpg&flag=pic&filedisplay=A2+%E4%B8%BB%E8%A6%96%E8%A6%BA_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F+1.jpg"
+    }
+  },
+  "Mofia": {
+    "5145e62d35d052188348161dff8173ac": {
+      "address": "1C展廳"
+    },
+    "af45c00c9b295c87a0a0d69f521b3d16": {
+      "address": "一樓大廳"
+    }
+  },
+  "khm": {
+    "42e66c4fc3f755719f8081d5a254cc1c": {
+      "address": "高雄研究文獻中心"
+    },
+    "4ec1173633f05386845cbcb2e8c47dd9": {
+      "address": "本館2樓"
+    },
+    "7a95bc41e4205433a68e1636caa917b4": {
+      "address": "本館101展覽室"
+    },
+    "bb2984251b2358da8babceafc95d2050": {
+      "address": "本館104展覽室"
+    },
+    "c336ce05a00e500094b1669e82b3e964": {
+      "address": "本館103展覽室"
+    },
+    "51357426d63c5f9a9ecef7200679a696": {
+      "address": "本館102展覽室"
+    },
+    "497cf0ca11f653f1b4e408efd48b61c2": {
+      "address": "本館1樓"
+    },
+    "3591f6838b205a23a9c40351dac8e0dd": {
+      "address": "201展覽室"
+    },
+    "f46ec00209b758d29daf97927a3e479e": {
+      "address": "203多功能室"
+    },
+    "92469b1203f1590b9359582c754ded54": {
+      "address": "線上PODCAST節目"
+    }
+  },
+  "PT1936": {
+    "d88d971024a25034af116b20bad2a9be": {
+      "date": "2026-03-12 ~"
+    },
+    "03de31655ebb5643971ddd7409064ee5": {
+      "date": "2026-03-12 ~"
+    },
+    "5086887c367d5fd2a5dcea2562a55519": {
+      "date": "2022-02-19 ~"
+    }
+  },
+  "HcccArt": {
+    "92557ad013d758669a89ba36601fe41b": {
+      "figure": "https://art.hccc.gov.tw/img/8qTLqHlf8ntY3/img.jpg",
+      "address": "花蓮美術館B展廳"
+    },
+    "580c10a5e0e05247a1db21c7f86cc498": {
+      "address": "花蓮美術館D展廳"
+    },
+    "60fb1deb6097551c9b23e80446cab327": {
+      "address": "花蓮美術館C展廳"
     }
   }
 }
