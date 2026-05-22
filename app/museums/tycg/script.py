@@ -6,7 +6,7 @@ from configs.settings import get_settings
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 
@@ -42,7 +42,10 @@ class TyCgRunner(RunnerInit):
             fullname="桃園市立大溪木藝生態博物館",
             code_name="TyCg",
             external_link="https://wem.tycg.gov.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="24.880817497601956, 121.28684365533006"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="24.880817497601956, 121.28684365533006"),
+                raw_coordinates="24.880817497601956, 121.28684365533006",
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

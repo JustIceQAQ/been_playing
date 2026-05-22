@@ -6,7 +6,7 @@ from app.galleries.dac99.parse import Dac99Parse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -29,7 +29,10 @@ class Dac99Runner(RunnerInit):
             fullname="99度藝術中心",
             code_name="Dac99",
             external_link="https://99dac.com/exhibition.php",
-            branch_coordinates=Coordinate(raw_coordinates="25.11649643071741, 121.5053916644182"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.11649643071741, 121.5053916644182"),
+                raw_coordinates="25.11649643071741, 121.5053916644182",
+            ),
             venue_type=VenueType.GALLERY,
         )
 

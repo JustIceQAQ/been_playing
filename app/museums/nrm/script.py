@@ -5,7 +5,7 @@ from app.museums.nrm.parse import NrmParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, ExhibitionItem
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -29,7 +29,10 @@ class NrmRunner(RunnerInit):
             fullname="國家鐵道博物館",
             code_name="Nrm",
             external_link="https://www.nrm.gov.tw/News_actives.aspx?n=3325&sms=13412",
-            branch_coordinates=Coordinate(raw_coordinates="25.04759981549798, 121.56476041209898"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.04759981549798, 121.56476041209898"),
+                raw_coordinates="25.04759981549798, 121.56476041209898",
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

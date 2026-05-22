@@ -5,7 +5,7 @@ from app.museums.redhouse.parse import RedHouseParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -30,7 +30,10 @@ class RedHouseRunner(RunnerInit):
             fullname="西門紅樓",
             code_name="RedHouse",
             external_link="https://www.redhouse.taipei/index.aspx",
-            branch_coordinates=Coordinate(raw_coordinates="25.042286045915937, 121.50683773908234"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.042286045915937, 121.50683773908234"),
+                raw_coordinates="25.042286045915937, 121.50683773908234",
+            ),
             venue_type=VenueType.MEMORIAL,
         )
 

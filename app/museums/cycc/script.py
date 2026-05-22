@@ -8,7 +8,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.taiwan import Taiwan
 from helpers.symbol.venue import VenueType
 from helpers.translation.selectolax import SelectolaxTranslation
@@ -29,7 +29,10 @@ class CyccRunner(RunnerInit):
             fullname="中原文創園區",
             code_name="Cycc",
             external_link=BASE_URL,
-            branch_coordinates=Coordinate(raw_coordinates="24.963707640336903, 121.24146770674547"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="24.963707640336903, 121.24146770674547"),
+                raw_coordinates="24.963707640336903, 121.24146770674547",
+            ),
             location_code=Taiwan.taoyuan.zhongli_68000020,
             venue_type=VenueType.CREATIVE_PARK,
         )

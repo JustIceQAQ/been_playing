@@ -7,7 +7,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.json import JsonTranslation
@@ -26,7 +26,10 @@ class TaipeiZooRunner(RunnerInit):
             fullname="臺北市立動物園",
             code_name="TaipeiZoo",
             external_link="https://www.zoo.gov.taipei/",
-            branch_coordinates=Coordinate(raw_coordinates="24.998626027698112, 121.58097916355628"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="24.998626027698112, 121.58097916355628"),
+                raw_coordinates="24.998626027698112, 121.58097916355628",
+            ),
             location_code=Taiwan.taipei.wenshan_63000080,
             venue_type=VenueType.MUSEUM,
         )

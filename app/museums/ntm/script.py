@@ -10,7 +10,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate, GoogleMaps
+from helpers.storage.coordinate import Coordinate, GoogleMaps, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -37,21 +37,33 @@ class NtmRunner(RunnerInit):
                     google_maps=GoogleMaps(plus_code="2GV8+42 黎明里 臺北市中正區"),
                     name="本館",
                     raw_coordinates="25.042991302660226, 121.5151621120989",
+                    geo_point=GeoPoint(
+                        raw_coordinates="25.042991302660226, 121.5151621120989",
+                    ),
                 ),
                 Coordinate(
                     location_code=Taiwan.taipei.zhongzheng_63000050,
                     name="古生物館",
                     raw_coordinates="25.043788780293, 121.51440168326278",
+                    geo_point=GeoPoint(
+                        raw_coordinates="25.043788780293, 121.51440168326278",
+                    ),
                 ),
                 Coordinate(
                     location_code=Taiwan.taipei.datong_63000060,
                     name="鐵道部園區",
                     raw_coordinates="25.048869075417418, 121.5113360427876",
+                    geo_point=GeoPoint(
+                        raw_coordinates="25.048869075417418, 121.5113360427876",
+                    ),
                 ),
                 Coordinate(
                     location_code=Taiwan.taipei.zhongzheng_63000050,
                     name="南門館",
                     raw_coordinates="25.033613597291687, 121.51583661209861",
+                    geo_point=GeoPoint(
+                        raw_coordinates="25.033613597291687, 121.51583661209861",
+                    ),
                 ),
             ],
             venue_type=VenueType.MUSEUM,

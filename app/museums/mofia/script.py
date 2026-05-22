@@ -5,7 +5,7 @@ from app.museums.mofia.parse import MofiaParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -27,7 +27,10 @@ class MofiaRunner(RunnerInit):
             fullname="臺中市纖維工藝博物館",
             code_name="Mofia",
             external_link="https://mofia.taichung.gov.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="24.100248374856758, 120.68606998009467"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="24.100248374856758, 120.68606998009467"),
+                raw_coordinates="24.100248374856758, 120.68606998009467",
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

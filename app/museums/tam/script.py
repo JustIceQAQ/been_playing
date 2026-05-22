@@ -9,7 +9,7 @@ from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.selectolax import SelectolaxTranslation
@@ -39,7 +39,10 @@ class TAMRunner(RunnerInit):
             fullname="臺東美術館",
             code_name="TAM",
             external_link="https://tm.ccl.ttct.edu.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="22.764445563601402, 121.14989120697749"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="22.764445563601402, 121.14989120697749"),
+                raw_coordinates="22.764445563601402, 121.14989120697749",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

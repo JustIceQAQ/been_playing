@@ -7,7 +7,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -30,7 +30,10 @@ class NHRMRunner(RunnerInit):
             fullname="國家人權博物館",
             code_name="NHRM",
             external_link="https://www.nhrm.gov.tw/w/nhrm/ExhibitionA",
-            branch_coordinates=Coordinate(raw_coordinates="24.987027946019857, 121.53208236236004"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="24.987027946019857, 121.53208236236004"),
+                raw_coordinates="24.987027946019857, 121.53208236236004",
+            ),
             venue_type=VenueType.MEMORIAL,
         )
 

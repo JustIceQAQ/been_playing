@@ -8,7 +8,7 @@ from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.taiwan import Taiwan
 from helpers.symbol.venue import VenueType
 from helpers.translation.selectolax import SelectolaxTranslation
@@ -28,7 +28,10 @@ class CZHRunner(RunnerInit):
             fullname="彰化藝術館",
             code_name="CZH",
             external_link="https://www.bocach.gov.tw/News.aspx?n=1397&sms=10815&_Query=36343dc0-af59-428f-93d4-5eb4382a3baf",
-            branch_coordinates=Coordinate(raw_coordinates="24.079288468869468, 120.54543250906565"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="24.079288468869468, 120.54543250906565"),
+                raw_coordinates="24.079288468869468, 120.54543250906565",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

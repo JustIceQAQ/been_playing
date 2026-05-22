@@ -6,7 +6,7 @@ from app.galleries.mindsetart.parse import MindSetArtParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -30,7 +30,10 @@ class MindSetArtRunner(RunnerInit):
             fullname="安卓藝術",
             code_name="MindSetArt",
             external_link="https://www.art-msac.com/",
-            branch_coordinates=Coordinate(raw_coordinates="25.086444326900594, 121.56138806256338"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.086444326900594, 121.56138806256338"),
+                raw_coordinates="25.086444326900594, 121.56138806256338",
+            ),
             venue_type=VenueType.GALLERY,
         )
 

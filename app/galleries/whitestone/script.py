@@ -6,7 +6,7 @@ from app.galleries.whitestone.parse import WhiteStoneParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -29,7 +29,10 @@ class WhiteStoneRunner(RunnerInit):
             fullname="白石畫廊",
             code_name="WhiteStone",
             external_link="https://www.whitestone-gallery.com/zh-hant",
-            branch_coordinates=Coordinate(raw_coordinates="25.081886335785196, 121.5655333509274"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.081886335785196, 121.5655333509274"),
+                raw_coordinates="25.081886335785196, 121.5655333509274",
+            ),
             venue_type=VenueType.GALLERY,
         )
 

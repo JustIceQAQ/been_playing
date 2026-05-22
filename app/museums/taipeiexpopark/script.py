@@ -8,7 +8,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -29,7 +29,10 @@ class TaipeiExPoParkRunner(RunnerInit):
             fullname="花博公園",
             code_name="TaipeiExPoPark",
             external_link="https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029",
-            branch_coordinates=Coordinate(raw_coordinates="25.069720986746507, 121.52071496978188"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.069720986746507, 121.52071496978188"),
+                raw_coordinates="25.069720986746507, 121.52071496978188",
+            ),
             venue_type=VenueType.CREATIVE_PARK,
         )
 

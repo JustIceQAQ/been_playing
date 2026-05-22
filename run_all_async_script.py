@@ -28,6 +28,7 @@ ROOT_PATH = Path(__file__).parent.absolute()
 
 
 async def generate_venue_meta(information: list["Information"]):
+    console = Console()
     venues = []
     for info in information:
         city_name = None
@@ -40,7 +41,17 @@ async def generate_venue_meta(information: list["Information"]):
                     if info.branch_coordinates.location_code.area.name
                     else None
                 )
+        elif isinstance(info.branch_coordinates, list):
+            this_info = info.branch_coordinates[0]
+            if this_info.branch_coordinates.location_code is not None:
+                city_name = this_info.branch_coordinates.location_code.city.name
+                area_name = (
+                    this_info.branch_coordinates.location_code.area.name
+                    if this_info.branch_coordinates.location_code.area.name
+                    else None
+                )
         elif info.location_code is not None:
+            console.log(f"{info.code_name} not use branch_coordinates location_code")
             city_name = info.location_code.city.name
             area_name = info.location_code.area.name if info.location_code.area else None
         venues.append(
@@ -62,15 +73,17 @@ async def generate_venue_meta(information: list["Information"]):
 
 
 async def generate_location(information: list["Information"]):
+    console = Console()
     ok_centers = []
 
     for location in information:
         fullname = location.fullname
         if isinstance(location.branch_coordinates, Coordinate):
-            if location.branch_coordinates.location_code is not None:
-                latitude = location.branch_coordinates.location_code.latitude
-                longitude = location.branch_coordinates.location_code.longitude
+            if location.branch_coordinates.geo_point is not None:
+                latitude = location.branch_coordinates.geo_point.latitude
+                longitude = location.branch_coordinates.geo_point.longitude
             else:
+                console.log(f"{location.code_name} not use geo_point")
                 latitude = location.branch_coordinates.latitude
                 longitude = location.branch_coordinates.longitude
 
@@ -87,11 +100,18 @@ async def generate_location(information: list["Information"]):
         if isinstance(location.branch_coordinates, list):
             for branch_coordinate in location.branch_coordinates:
                 name = "None" if (this_name := branch_coordinate.name) is None else this_name
+                if branch_coordinate.geo_point is not None:
+                    latitude = branch_coordinate.geo_point.latitude
+                    longitude = branch_coordinate.geo_point.longitude
+                else:
+                    console.log(f"{location.code_name} not use geo_point")
+                    latitude = branch_coordinate.latitude
+                    longitude = branch_coordinate.longitude
                 ok_centers.append(
                     {
                         "fullname": fullname + "-" + name,
-                        "latitude": branch_coordinate.latitude,
-                        "longitude": branch_coordinate.longitude,
+                        "latitude": latitude,
+                        "longitude": longitude,
                         "venue_type": location.venue_type,
                         "external_link": location.external_link,
                     }

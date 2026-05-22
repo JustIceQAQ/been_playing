@@ -6,7 +6,7 @@ from app.museums.ntaec.parse import NTAECParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -29,7 +29,10 @@ class NTAECRunner(RunnerInit):
             fullname="國立台灣藝術教育館",
             code_name="NTAEC",
             external_link="https://www.arte.gov.tw/pro1_exh_nowlist.asp",
-            branch_coordinates=Coordinate(raw_coordinates="25.03249656295196, 121.51211159386773"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.03249656295196, 121.51211159386773"),
+                raw_coordinates="25.03249656295196, 121.51211159386773",
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

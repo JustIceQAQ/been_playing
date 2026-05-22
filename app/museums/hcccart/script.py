@@ -8,7 +8,7 @@ from configs.settings import get_settings
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 
@@ -45,7 +45,10 @@ class HcccArtRunner(RunnerInit):
             fullname="花蓮美術館",
             code_name="HcccArt",
             external_link="https://art.hccc.gov.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="23.99010271299585, 121.62877324046998"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="23.99010271299585, 121.62877324046998"),
+                raw_coordinates="23.99010271299585, 121.62877324046998",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

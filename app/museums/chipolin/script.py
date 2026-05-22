@@ -5,7 +5,7 @@ from app.museums.chipolin.parse import ChiPoLinParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -29,7 +29,10 @@ class ChiPoLinRunner(RunnerInit):
             fullname="齊柏林空間",
             code_name="ChiPoLin",
             external_link="https://www.chipolin.org/exhibition",
-            branch_coordinates=Coordinate(raw_coordinates="25.17294603618085, 121.43711272744605"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.17294603618085, 121.43711272744605"),
+                raw_coordinates="25.17294603618085, 121.43711272744605",
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

@@ -5,7 +5,7 @@ from app.museums.hkm.parse import HKMParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 
@@ -31,7 +31,10 @@ class HKMRunner(RunnerInit):
             fullname="華岡博物館",
             code_name="hkm",
             external_link="https://hkm.pccu.edu.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="25.13827980838548, 121.54058154232688"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.13827980838548, 121.54058154232688"),
+                raw_coordinates="25.13827980838548, 121.54058154232688",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

@@ -9,7 +9,7 @@ from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.taiwan import Taiwan
 from helpers.symbol.venue import VenueType
 from helpers.translation.selectolax import SelectolaxTranslation
@@ -40,7 +40,10 @@ class PT1936Runner(RunnerInit):
             fullname="屏菸1936文化基地",
             code_name="PT1936",
             external_link="https://www.cultural.pthg.gov.tw/pt1936/News9.aspx?n=8E5540CA059309A8&CategorySN=3630",
-            branch_coordinates=Coordinate(raw_coordinates="22.66176638838444, 120.50517003897802"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="22.66176638838444, 120.50517003897802"),
+                raw_coordinates="22.66176638838444, 120.50517003897802",
+            ),
             venue_type=VenueType.CREATIVE_PARK,
         )
 

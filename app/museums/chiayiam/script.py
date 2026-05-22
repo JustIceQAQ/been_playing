@@ -6,7 +6,7 @@ from app.museums.chiayiam.parse import ChiayiAMParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -27,7 +27,10 @@ class ChiayiAMRunner(RunnerInit):
             fullname="嘉義市立美術館",
             code_name="ChiayiAM",
             external_link="https://chiayiartmuseum.chiayi.gov.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="23.476964512470964, 120.44092961904913"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="23.476964512470964, 120.44092961904913"),
+                raw_coordinates="23.476964512470964, 120.44092961904913",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

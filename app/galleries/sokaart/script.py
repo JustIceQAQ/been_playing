@@ -6,7 +6,7 @@ from app.galleries.sokaart.parse import SoKaArtParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -28,7 +28,10 @@ class SoKaArtRunner(RunnerInit):
             fullname="索卡藝術中心",
             code_name="SoKaArt",
             external_link="https://www.soka-art.com/tr",
-            branch_coordinates=Coordinate(raw_coordinates="25.07961383080647, 121.56344961543039"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.07961383080647, 121.56344961543039"),
+                raw_coordinates="25.07961383080647, 121.56344961543039",
+            ),
             venue_type=VenueType.GALLERY,
         )
 

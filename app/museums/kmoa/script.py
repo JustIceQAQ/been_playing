@@ -8,7 +8,7 @@ from app.museums.kmoa.parse import KmoaParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -29,7 +29,10 @@ class KmoaRunner(RunnerInit):
             fullname="基隆美術館",
             code_name="kmoa",
             external_link="https://kmoa.klcg.gov.tw/News_Photo.aspx?n=7484&sms=12489",
-            branch_coordinates=Coordinate(raw_coordinates="25.131248388298207, 121.74399937483508"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.131248388298207, 121.74399937483508"),
+                raw_coordinates="25.131248388298207, 121.74399937483508",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

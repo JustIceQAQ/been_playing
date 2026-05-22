@@ -8,7 +8,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.json import JsonTranslation
@@ -28,7 +28,10 @@ class BoPiLiaoRunner(RunnerInit):
             fullname="剝皮寮歷史街區",
             code_name="BoPiLiao",
             external_link="https://www.bopiliao.taipei/Event_News",
-            branch_coordinates=Coordinate(raw_coordinates="25.03698373119932, 121.50212186318004"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.03698373119932, 121.50212186318004"),
+                raw_coordinates="25.03698373119932, 121.50212186318004",
+            ),
             venue_type=VenueType.MEMORIAL,
         )
 

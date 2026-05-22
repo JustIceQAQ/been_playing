@@ -8,7 +8,7 @@ from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.selectolax import SelectolaxTranslation
@@ -29,7 +29,10 @@ class KiShuAnRunner(RunnerInit):
             fullname="紀州庵文學森林",
             code_name="KiShuAn",
             external_link="https://kishuan.org.tw/activity.htm",
-            branch_coordinates=Coordinate(raw_coordinates="25.021773564949243, 121.5206021625705"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.021773564949243, 121.5206021625705"),
+                raw_coordinates="25.021773564949243, 121.5206021625705",
+            ),
             venue_type=VenueType.MEMORIAL,
         )
 

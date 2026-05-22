@@ -9,7 +9,7 @@ from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.taiwan import Taiwan
 from helpers.symbol.venue import VenueType
 from helpers.translation.selectolax import SelectolaxTranslation
@@ -39,7 +39,10 @@ class PTCAMRunner(RunnerInit):
             fullname="屏東縣立美術館",
             code_name="PTCAM",
             external_link="https://www.cultural.pthg.gov.tw/pt1936/News9.aspx?n=8E5540CA059309A8&CategorySN=3632",
-            branch_coordinates=Coordinate(raw_coordinates="22.66152654026495, 120.50527473558604"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="22.66152654026495, 120.50527473558604"),
+                raw_coordinates="22.66152654026495, 120.50527473558604",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

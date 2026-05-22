@@ -6,7 +6,7 @@ from app.museums.historysinica.parse import HistorySinicaParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 
@@ -32,7 +32,10 @@ class HistorySinicaRunner(RunnerInit):
             fullname="中央研究院-歷史文物陳列館",
             code_name="HistorySinica",
             external_link="https://museum.sinica.edu.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="25.03963971275805, 121.61615175259622"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.03963971275805, 121.61615175259622"),
+                raw_coordinates="25.03963971275805, 121.61615175259622",
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

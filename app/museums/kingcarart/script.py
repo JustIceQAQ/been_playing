@@ -7,7 +7,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -31,11 +31,17 @@ class KingCarArtRunner(RunnerInit):
             branch_coordinates=[
                 Coordinate(
                     name="臺北承德館",
+                    geo_point=GeoPoint(
+                        raw_coordinates="25.067779239946375, 121.51865322216524",
+                    ),
                     raw_coordinates="25.067779239946375, 121.51865322216524",
                     location_code=Taiwan.taipei.zhongzheng_63000050,
                 ),
                 Coordinate(
                     name="臺北南京館",
+                    geo_point=GeoPoint(
+                        raw_coordinates="25.052598382305003, 121.5278585635071",
+                    ),
                     raw_coordinates="25.052598382305003, 121.5278585635071",
                     location_code=Taiwan.taipei.datong_63000060,
                 ),

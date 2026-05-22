@@ -8,7 +8,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -30,7 +30,10 @@ class CLabRunner(RunnerInit):
             fullname="台灣當代文化實驗場 C-Lab",
             code_name="CLab",
             external_link="https://clab.org.tw/events/",
-            branch_coordinates=Coordinate(raw_coordinates="25.039263447268308, 121.53884705257425"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.039263447268308, 121.53884705257425"),
+                raw_coordinates="25.039263447268308, 121.53884705257425",
+            ),
             venue_type=VenueType.ART_VILLAGE,
         )
 

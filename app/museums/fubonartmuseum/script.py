@@ -7,7 +7,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -31,7 +31,10 @@ class FuBonArtMuseumRunner(RunnerInit):
             fullname="富邦美術館",
             code_name="FuBonArtMuseum",
             external_link="https://www.fubonartmuseum.org/Default",
-            branch_coordinates=Coordinate(raw_coordinates="25.039545226356974, 121.57119466791848"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.039545226356974, 121.57119466791848"),
+                raw_coordinates="25.039545226356974, 121.57119466791848",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

@@ -8,7 +8,7 @@ from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.taiwan import Taiwan
 from helpers.symbol.venue import VenueType
 from helpers.translation.selectolax import SelectolaxTranslation
@@ -29,7 +29,10 @@ class MoMaTainanRunner(RunnerInit):
             fullname="臺南國家美術館",
             code_name="MoMaTainan",
             external_link="https://www.momatainan.gov.tw/News2.aspx?n=9532&sms=16214",
-            branch_coordinates=Coordinate(raw_coordinates="22.990673587866652, 120.20223840277899"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="22.990673587866652, 120.20223840277899"),
+                raw_coordinates="22.990673587866652, 120.20223840277899",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

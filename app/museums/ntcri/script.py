@@ -6,7 +6,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.json import JsonTranslation
@@ -38,6 +38,9 @@ class NTCRIRunner(RunnerInit):
                     location_code=Taiwan.taipei.zhongzheng_63000050,
                     name="臺北當代工藝設計分館",
                     raw_coordinates="25.03210292140622, 121.51234399386772",
+                    geo_point=GeoPoint(
+                        raw_coordinates="25.03210292140622, 121.51234399386772",
+                    ),
                 ),
             ],
             venue_type=VenueType.MUSEUM,

@@ -7,7 +7,7 @@ from app.galleries.capitalart.parse import CapitalArtParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -28,7 +28,10 @@ class CapitalArtRunner(RunnerInit):
             fullname="首都藝術中心",
             code_name="CapitalArt",
             external_link="https://capitalart.com.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="25.038294766316984, 121.55372725140036"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.038294766316984, 121.55372725140036"),
+                raw_coordinates="25.038294766316984, 121.55372725140036",
+            ),
             venue_type=VenueType.GALLERY,
         )
 

@@ -7,7 +7,7 @@ from app.museums.montue.parse import MoNTUEParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -31,7 +31,10 @@ class MoNTUERunner(RunnerInit):
             fullname="北師美術館",
             code_name="MoNTUE",
             external_link="https://montue.ntue.edu.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="25.024774854666255, 121.54460696977063"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.024774854666255, 121.54460696977063"),
+                raw_coordinates="25.024774854666255, 121.54460696977063",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

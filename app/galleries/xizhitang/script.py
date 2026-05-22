@@ -6,7 +6,7 @@ from app.galleries.xizhitang.parse import XiZhiTangParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -30,7 +30,10 @@ class XiZhiTangRunner(RunnerInit):
             fullname="羲之堂畫廊",
             code_name="XiZhiTang",
             external_link="https://taipeiartweek.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="25.040329571305197, 121.56247655631785"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.040329571305197, 121.56247655631785"),
+                raw_coordinates="25.040329571305197, 121.56247655631785",
+            ),
             venue_type=VenueType.GALLERY,
         )
 

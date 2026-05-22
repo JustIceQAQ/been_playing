@@ -8,7 +8,7 @@ from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -31,7 +31,10 @@ class KhmRunner(RunnerInit):
             fullname="高雄市立歷史博物館",
             code_name="khm",
             external_link="https://khm.org.tw/tw",
-            branch_coordinates=Coordinate(raw_coordinates="22.62712833389164, 120.28687449855717"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="22.62712833389164, 120.28687449855717"),
+                raw_coordinates="22.62712833389164, 120.28687449855717",
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

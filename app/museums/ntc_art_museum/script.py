@@ -8,7 +8,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.json import JsonTranslation
@@ -29,7 +29,10 @@ class NtcArtMuseumRunner(RunnerInit):
             fullname="新北市美術館",
             code_name="NtcArtMuseum",
             external_link="https://ntcart.museum/exhibition.aspx?kind=today",
-            branch_coordinates=Coordinate(raw_coordinates="24.953654641948525, 121.358269212097"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="24.953654641948525, 121.358269212097"),
+                raw_coordinates="24.953654641948525, 121.358269212097",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

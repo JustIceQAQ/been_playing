@@ -7,7 +7,7 @@ from app.museums.ntmofa.parse import NtMofaParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -29,7 +29,10 @@ class NtMofaRunner(RunnerInit):
             fullname="國立臺灣美術館",
             code_name="NtMofa",
             external_link="https://www.ntmofa.gov.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="24.141372397797248, 120.66338819860081"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="24.141372397797248, 120.66338819860081"),
+                raw_coordinates="24.141372397797248, 120.66338819860081",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

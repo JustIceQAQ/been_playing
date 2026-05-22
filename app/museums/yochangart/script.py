@@ -6,7 +6,7 @@ from app.museums.yochangart.parse import YoChangArtParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -29,7 +29,10 @@ class YoChangArtRunner(RunnerInit):
             fullname="有章藝術博物館",
             code_name="YoChangArt",
             external_link="https://museum.ntua.edu.tw/c001.asp",
-            branch_coordinates=Coordinate(raw_coordinates="25.006981532547897, 121.44882905627831"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.006981532547897, 121.44882905627831"),
+                raw_coordinates="25.006981532547897, 121.44882905627831",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

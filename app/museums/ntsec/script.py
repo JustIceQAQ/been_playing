@@ -11,7 +11,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information, ExhibitionItem
-from helpers.storage.coordinate import Coordinate
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -34,7 +34,10 @@ class NtSecRunner(RunnerInit):
             fullname="國立臺灣科學教育館",
             code_name="NtSec",
             external_link="https://www.ntsec.gov.tw/article/list.aspx?a=25",
-            branch_coordinates=Coordinate(raw_coordinates="25.096328164549, 121.51649185712368"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.096328164549, 121.51649185712368"),
+                raw_coordinates="25.096328164549, 121.51649185712368",
+            ),
             venue_type=VenueType.MUSEUM,
         )
 
