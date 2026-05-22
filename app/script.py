@@ -29,6 +29,7 @@ from .museums.cksmh.script import CKSMHRunner
 from .museums.clab.script import CLabRunner
 from .museums.culture435 import Culture435Runner
 from .museums.cycc.script import CyccRunner
+from .museums.czh.script import CZHRunner
 from .museums.elandam.script import ELandAMRunner
 from .museums.fubonartmuseum.script import FuBonArtMuseumRunner
 from .museums.hcam.script import HCAMRunner
@@ -206,6 +207,7 @@ MUSEUMS_RUNNERS = {
     PT1936Runner,
     PTCAMRunner,
     MoMaTainanRunner,
+    CZHRunner,
 }
 
 GALLERIES_RUNNERS = {
