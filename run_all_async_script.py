@@ -54,6 +54,12 @@ async def generate_venue_meta(information: list["Information"]):
             console.log(f"{info.code_name} not use branch_coordinates location_code")
             city_name = info.location_code.city.name
             area_name = info.location_code.area.name if info.location_code.area else None
+
+        if isinstance(info.branch_coordinates, list):
+            use_info = info.branch_coordinates[0]
+        else:
+            use_info = info.branch_coordinates
+
         venues.append(
             {
                 "code_name": info.code_name,
@@ -61,6 +67,14 @@ async def generate_venue_meta(information: list["Information"]):
                 "venue_type": info.venue_type,
                 "city": city_name,
                 "area": area_name,
+                "check_coordinate": {
+                    "has_location_code": (use_info.location_code is not None) if use_info else False,
+                    "has_address": (use_info.address is not None) if use_info else False,
+                    "has_geo_point": (use_info.geo_point is not None) if use_info else False,
+                    "has_open_street_map": (use_info.open_street_map is not None) if use_info else False,
+                    "has_wiki": (use_info.wiki is not None) if use_info else False,
+                    "has_google_maps": (use_info.google_maps is not None) if use_info else False,
+                },
             }
         )
 
