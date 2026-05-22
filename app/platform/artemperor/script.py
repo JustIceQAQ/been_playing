@@ -12,7 +12,7 @@ from helpers.storage.helper import Information
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.symbol.venue import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import month_3
+from helpers.utils_helper import get_this_date_year, month_3
 
 from typing import cast
 
@@ -39,28 +39,34 @@ class ArtEmperorRunner(RunnerInit):
         )
 
     async def fetch_process(self, client: httpx.AsyncClient, ex_status: ExStatus, *args, **kwargs):
+        all_response = []
         response = await client.get(
             "https://artemperor.tw/tidbits",
             *args,
             **kwargs,
-            params={"sort": ex_status.value, "page": 1},
+            params={"content": ex_status.value, "page": 1, "region": 0, "year": get_this_date_year()},
         )
         response.raise_for_status()
         response_text = response.text
-        list_box_len = len(BeautifulSoupTranslation().translation_to_object(response_text).select("div.list_box"))
-        all_response = []
-        end_page = 1
-        while list_box_len > 1:
-            all_response.append(response_text)
-            end_page += 1
-            response = await client.get(
+
+        all_response.append(response_text)
+        end_page = int(
+            BeautifulSoupTranslation()
+            .translation_to_object(response_text)
+            .select_one("input#PG_size")
+            .attrs.get("value")
+        )
+        tasks = [
+            client.get(
                 "https://artemperor.tw/tidbits",
                 *args,
                 **kwargs,
-                params={"sort": ex_status.value, "page": end_page},
+                params={"content": ex_status.value, "page": page, "region": 0, "year": get_this_date_year()},
             )
-            list_box_len = len(BeautifulSoupTranslation().translation_to_object(response.text).select("div.list_box"))
-            await asyncio.sleep(1)
+            for page in range(2, end_page + 1)
+        ]
+        responses = await asyncio.gather(*tasks)
+        all_response.extend([response.text for response in responses])
         return all_response
 
     async def fetch_response(self):
