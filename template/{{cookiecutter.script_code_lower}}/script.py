@@ -1,10 +1,10 @@
 import asyncio
 
-from typing import cast
+from typing import cast, TYPE_CHECKING
 from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.parse import {{cookiecutter.script_code}}Parse
+from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.information import {{cookiecutter.script_code}}Information
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
 from helpers.storage.coordinate import Coordinate, GoogleMaps, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
@@ -54,7 +54,8 @@ from helpers.translation.json import JsonTranslation
     {% set translation_type = "JsonTranslation" %}
     {% set fetch_parsed_return_type = "dict" %}
 {% endif %}
-
+if TYPE_CHECKING:
+    from helpers.storage.helper import Information
 
 class {{cookiecutter.script_code}}Runner(RunnerInit):
     translation = {{ translation_type }}
@@ -64,26 +65,8 @@ class {{cookiecutter.script_code}}Runner(RunnerInit):
         return month_3()
 
     def set_information(self) -> "Information":
-        {% if cookiecutter.target_sub_directory == "platform" %}
-        return Information(
-            fullname="",
-            code_name="",
-            external_link="",
-            venue_type={{venue_type}},
-        )
-        {% else %}
-        return Information(
-            location_code=Taiwan.taipei,
-            fullname="",
-            code_name="",
-            external_link="",
-            branch_coordinates=Coordinate(
-                google_maps=GoogleMaps(plus_code=None),
-                geo_point=GeoPoint(raw_coordinates=None)
-            ),
-            venue_type={{venue_type}},
-        )
-        {% endif %}
+        return {{cookiecutter.script_code}}Information.get_information()
+
 
 
 
