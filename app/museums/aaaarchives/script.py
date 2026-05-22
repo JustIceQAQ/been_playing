@@ -1,18 +1,19 @@
 import asyncio
 import secrets
-from typing import cast
+from typing import cast, TYPE_CHECKING
 
 from selectolax.lexbor import LexborNode
+
+from app.museums.aaaarchives.information import AAAArchivesInformation
 from app.museums.aaaarchives.parse import AAAArchivesParse
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate, GeoPoint
-from helpers.symbol.venue import VenueType
-from helpers.symbol.taiwan import Taiwan
 from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3
+
+if TYPE_CHECKING:
+    from helpers.storage.helper import Information
 
 
 class AAAArchivesRunner(RunnerInit):
@@ -23,17 +24,7 @@ class AAAArchivesRunner(RunnerInit):
         return month_3()
 
     def set_information(self) -> "Information":
-        return Information(
-            location_code=Taiwan.new_taipei.linkou_65000170,
-            fullname="國家發展委員會檔案管理局",
-            code_name="AAAArchives",
-            external_link="https://aaa.archives.tw/tw/event/306.html",
-            branch_coordinates=Coordinate(
-                geo_point=GeoPoint(raw_coordinates="25.07521442685089, 121.37402598256791"),
-                raw_coordinates="25.07521442685089, 121.37402598256791",
-            ),
-            venue_type=VenueType.MUSEUM,
-        )
+        return AAAArchivesInformation.get_information()
 
     async def fetch_response(self):
         url = "https://aaa.archives.tw/tw/event/306.html"

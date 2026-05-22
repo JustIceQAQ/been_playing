@@ -1,21 +1,28 @@
 import asyncio
 import datetime
-from typing import cast
+from typing import cast, TYPE_CHECKING
 
 from selectolax.lexbor import LexborNode
 
+from app.museums.afmc.information import (
+    AfmcHall1Information,
+    AfmcHall2Information,
+    AfmcHall3Information,
+    AfmcHall6Information,
+    AfmcHall5Information,
+    AfmcHall4Information,
+)
 from app.museums.afmc.parse import AfmcParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate, GeoPoint
-from helpers.symbol.taiwan import Taiwan
-from helpers.symbol.venue import VenueType
 from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3
 
 BASE_URL = "https://www.afmc.gov.tw"
+
+if TYPE_CHECKING:
+    from helpers.storage.helper import Information
 
 
 class AfmcBaseRunner(RunnerInit):
@@ -47,103 +54,43 @@ class AfmcBaseRunner(RunnerInit):
 class AfmcHall1Runner(AfmcBaseRunner):
     hall_code = "hall1"
 
-    def set_information(self) -> Information:
-        return Information(
-            fullname="桃園展演中心",
-            code_name="AfmcHall1",
-            external_link=BASE_URL,
-            branch_coordinates=Coordinate(
-                geo_point=GeoPoint(raw_coordinates="25.017555022836635, 121.29841018064276"),
-                raw_coordinates="25.017555022836635, 121.29841018064276",
-            ),
-            location_code=Taiwan.taoyuan.taoyuan_68000010,
-            venue_type=VenueType.EXPO_CENTER,
-        )
+    def set_information(self) -> "Information":
+        return AfmcHall1Information.get_information()
 
 
 class AfmcHall2Runner(AfmcBaseRunner):
     hall_code = "hall2"
 
-    def set_information(self) -> Information:
-        return Information(
-            fullname="中壢藝術館",
-            code_name="AfmcHall2",
-            external_link=BASE_URL,
-            branch_coordinates=Coordinate(
-                geo_point=GeoPoint(raw_coordinates="24.958508250916836, 121.22748825365926"),
-                raw_coordinates="24.958508250916836, 121.22748825365926",
-            ),
-            location_code=Taiwan.taoyuan.zhongli_68000020,
-            venue_type=VenueType.MUSEUM,
-        )
+    def set_information(self) -> "Information":
+        return AfmcHall2Information.get_information()
 
 
 class AfmcHall3Runner(AfmcBaseRunner):
     hall_code = "hall3"
 
-    def set_information(self) -> Information:
-        return Information(
-            fullname="桃園光影文化館",
-            code_name="AfmcHall3",
-            external_link=BASE_URL,
-            branch_coordinates=Coordinate(
-                geo_point=GeoPoint(raw_coordinates="24.999357351659583, 121.30748928249685"),
-                raw_coordinates="24.999357351659583, 121.30748928249685",
-            ),
-            location_code=Taiwan.taoyuan.taoyuan_68000010,
-            venue_type=VenueType.ART_MUSEUM,
-        )
+    def set_information(self) -> "Information":
+        return AfmcHall3Information.get_information()
 
 
 class AfmcHall4Runner(AfmcBaseRunner):
     hall_code = "hall4"
 
-    def set_information(self) -> Information:
-        return Information(
-            fullname="桃園藝文廣場",
-            code_name="AfmcHall4",
-            external_link=BASE_URL,
-            branch_coordinates=Coordinate(
-                geo_point=GeoPoint(raw_coordinates="25.017657555942453, 121.30002828249722"),
-                raw_coordinates="25.017657555942453, 121.30002828249722",
-            ),
-            location_code=Taiwan.taoyuan.zhongli_68000020,
-            venue_type=VenueType.ART_MUSEUM,
-        )
+    def set_information(self) -> "Information":
+        return AfmcHall4Information.get_information()
 
 
 class AfmcHall5Runner(AfmcBaseRunner):
     hall_code = "hall5"
 
-    def set_information(self) -> Information:
-        return Information(
-            fullname="A8藝文中心",
-            code_name="AfmcHall5",
-            external_link=BASE_URL,
-            branch_coordinates=Coordinate(
-                geo_point=GeoPoint(raw_coordinates="25.06063397917656, 121.36993362482592"),
-                raw_coordinates="25.06063397917656, 121.36993362482592",
-            ),
-            location_code=Taiwan.taoyuan.guishan_68000070,
-            venue_type=VenueType.ART_MUSEUM,
-        )
+    def set_information(self) -> "Information":
+        return AfmcHall5Information.get_information()
 
 
 class AfmcHall6Runner(AfmcBaseRunner):
     hall_code = "hall6"
 
-    def set_information(self) -> Information:
-        return Information(
-            fullname="桃園陽光劇場",
-            code_name="AfmcHall6",
-            external_link=BASE_URL,
-            branch_coordinates=Coordinate(
-                geo_point=GeoPoint(raw_coordinates="25.02441059026342, 121.21753328064304"),
-                raw_coordinates="25.02441059026342, 121.21753328064304",
-            ),
-            location_code=Taiwan.taoyuan.dayuan_68000060,
-            venue_type=VenueType.ART_MUSEUM,
-        )
+    def set_information(self) -> "Information":
+        return AfmcHall6Information.get_information()
 
 
 async def main():
