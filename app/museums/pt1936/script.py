@@ -18,6 +18,7 @@ from helpers.utils_helper import month_3
 class PT1936Runner(RunnerInit):
     translation = SelectolaxTranslation
     use_parse = PT1936Parse
+    use_suffix_item_from_url_auto = True
 
     def set_proxies(self):
         runtime_settings = get_settings()

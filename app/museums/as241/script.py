@@ -17,6 +17,7 @@ from helpers.utils_helper import get_date_format_, get_roc_era_format_date_now, 
 class AS241Runner(RunnerInit):
     translation = SelectolaxTranslation
     use_parse = AS241Parse
+    use_suffix_item_from_url_auto = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()

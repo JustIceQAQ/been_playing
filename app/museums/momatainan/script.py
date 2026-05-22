@@ -17,6 +17,7 @@ from helpers.utils_helper import month_3
 class MoMaTainanRunner(RunnerInit):
     translation = SelectolaxTranslation
     use_parse = MoMaTainanParse
+    use_suffix_item_from_file_func = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()

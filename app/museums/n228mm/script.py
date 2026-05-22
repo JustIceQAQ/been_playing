@@ -20,6 +20,7 @@ class N228MMRunner(RunnerInit):
     use_parse = N228MMParse
     is_sort = False
     is_unique = False
+    use_suffix_item_from_file_func = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()
