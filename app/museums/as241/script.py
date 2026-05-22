@@ -7,7 +7,8 @@ from app.museums.as241.parse import AS241Parse
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Coordinate, Information
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.taiwan import Taiwan
 from helpers.symbol.venue import VenueType
 from helpers.translation.selectolax import SelectolaxTranslation
@@ -28,7 +29,10 @@ class AS241Runner(RunnerInit):
             fullname="新竹241藝術空間",
             code_name="AS241",
             external_link="https://culture.hccg.gov.tw/ch/home.jsp?id=453&parentpath=0,145,155&mcustomize=activity_list.jsp",
-            branch_coordinates=Coordinate(raw_coordinates="24.809865473262477, 120.97641199854829"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="24.809865473262477, 120.97641199854829"),
+                raw_coordinates="24.809865473262477, 120.97641199854829",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

@@ -4,7 +4,8 @@ import bs4
 from app.museums.culture435.parse import Culture435Parse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -28,7 +29,10 @@ class Culture435Runner(RunnerInit):
             fullname="板橋435藝文特區",
             code_name="Culture435",
             external_link="https://www.435.culture.ntpc.gov.tw/xmdoc?xsmsid=0G256373177821958325",
-            branch_coordinates=Coordinate(raw_coordinates="25.024344268554966, 121.45235225442633"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.024344268554966, 121.45235225442633"),
+                raw_coordinates="25.024344268554966, 121.45235225442633",
+            ),
             venue_type=VenueType.CREATIVE_PARK,
         )
 

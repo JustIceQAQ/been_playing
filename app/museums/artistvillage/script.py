@@ -6,7 +6,8 @@ import httpx
 from app.museums.artistvillage.parse import ArtistVillageParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import ExhibitionItem, Information, Coordinate
+from helpers.storage.helper import ExhibitionItem, Information
+from helpers.storage.coordinate import Coordinate
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan

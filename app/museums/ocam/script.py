@@ -6,7 +6,8 @@ from app.museums.ocam.parse import OCAMParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -28,7 +29,10 @@ class OCAMRunner(RunnerInit):
             fullname="陽明海洋文化藝術館",
             code_name="OCAM",
             external_link="https://www.ymculture.org.tw/tw/Exhibition/OCAM#",
-            branch_coordinates=Coordinate(raw_coordinates="25.132752348069353, 121.7400201544287"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.132752348069353, 121.7400201544287"),
+                raw_coordinates="25.132752348069353, 121.7400201544287",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

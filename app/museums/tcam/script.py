@@ -5,7 +5,8 @@ from app.museums.tcam.parse import TcamParse
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Coordinate, Information
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.json import JsonTranslation
@@ -25,7 +26,10 @@ class TcamRunner(RunnerInit):
             fullname="臺中市立美術館",
             code_name="Tcam",
             external_link="https://www.tcam.museum/",
-            branch_coordinates=Coordinate(raw_coordinates="24.193055105364973, 120.65443027094344"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="24.193055105364973, 120.65443027094344"),
+                raw_coordinates="24.193055105364973, 120.65443027094344",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

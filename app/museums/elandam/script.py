@@ -7,7 +7,8 @@ from app.museums.elandam.parse import ELandAMParse
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Coordinate, Information
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.selectolax import SelectolaxTranslation
@@ -27,7 +28,10 @@ class ELandAMRunner(RunnerInit):
             fullname="宜蘭美術館",
             code_name="ELandAM",
             external_link="https://ymoa.e-land.gov.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="24.7550562904822, 121.75175462425617"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="24.7550562904822, 121.75175462425617"),
+                raw_coordinates="24.7550562904822, 121.75175462425617",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

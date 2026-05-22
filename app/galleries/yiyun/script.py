@@ -5,7 +5,8 @@ import bs4
 from app.galleries.yiyun.parse import YiYunParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -31,11 +32,17 @@ class YiYunRunner(RunnerInit):
                 Coordinate(
                     location_code=Taiwan.taipei.daan_63000030,
                     name="青田館",
+                    geo_point=GeoPoint(
+                        raw_coordinates="25.027213880907816, 121.53055350558525",
+                    ),
                     raw_coordinates="25.027213880907816, 121.53055350558525",
                 ),
                 Coordinate(
                     location_code=Taiwan.taipei.daan_63000030,
                     name="金華館",
+                    geo_point=GeoPoint(
+                        raw_coordinates="25.028205131565272, 121.53223852023619",
+                    ),
                     raw_coordinates="25.028205131565272, 121.53223852023619",
                 ),
             ],

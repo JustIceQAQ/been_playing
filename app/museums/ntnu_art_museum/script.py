@@ -6,7 +6,8 @@ from app.museums.ntnu_art_museum.parse import NTNUArtMuseumParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -29,7 +30,10 @@ class NTNUArtMuseumRunner(RunnerInit):
             fullname="師大美術館",
             code_name="NTNUArtMuseum",
             external_link="https://www.artmuse.ntnu.edu.tw/index.php/current_exhibit/",
-            branch_coordinates=Coordinate(raw_coordinates="25.027981327647616, 121.53016316977069"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.027981327647616, 121.53016316977069"),
+                raw_coordinates="25.027981327647616, 121.53016316977069",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

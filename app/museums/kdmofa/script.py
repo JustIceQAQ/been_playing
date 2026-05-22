@@ -4,7 +4,8 @@ import bs4
 from app.museums.kdmofa.parse import KdMoFaParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -27,7 +28,10 @@ class KdMoFaRunner(RunnerInit):
             fullname="關渡美術館",
             code_name="KdMoFa",
             external_link="https://kdmofa.tnua.edu.tw/mod/exhibition/index.php",
-            branch_coordinates=Coordinate(raw_coordinates="25.133800251190085, 121.47158422559258"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.133800251190085, 121.47158422559258"),
+                raw_coordinates="25.133800251190085, 121.47158422559258",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

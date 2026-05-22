@@ -4,7 +4,8 @@ import bs4
 from app.museums.yatsen.parse import YatsenParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -27,7 +28,10 @@ class YatsenRunner(RunnerInit):
             fullname="國立國父紀念館",
             code_name="Yatsen",
             external_link="https://www.yatsen.gov.tw/News_actives.aspx?n=7339&sms=13411",
-            branch_coordinates=Coordinate(raw_coordinates="25.040205545923655, 121.56033102744308"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.040205545923655, 121.56033102744308"),
+                raw_coordinates="25.040205545923655, 121.56033102744308",
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

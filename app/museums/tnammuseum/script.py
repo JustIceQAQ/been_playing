@@ -5,7 +5,8 @@ import bs4
 from app.museums.tnammuseum.parse import TnamMuseumParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -32,11 +33,17 @@ class TnamMuseumRunner(RunnerInit):
                     location_code=Taiwan.tainan.west_central_67000370,
                     name="一館",
                     raw_coordinates="22.99117888093109, 120.20502606285312",
+                    geo_point=GeoPoint(
+                        raw_coordinates="22.99117888093109, 120.20502606285312",
+                    ),
                 ),
                 Coordinate(
                     location_code=Taiwan.tainan.west_central_67000370,
                     name="二館",
                     raw_coordinates="22.99055275877767, 120.20140904089217",
+                    geo_point=GeoPoint(
+                        raw_coordinates="22.99055275877767, 120.20140904089217",
+                    ),
                 ),
             ],
             venue_type=VenueType.ART_MUSEUM,

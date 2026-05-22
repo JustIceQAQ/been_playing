@@ -7,7 +7,8 @@ from app.museums.aaaarchives.parse import AAAArchivesParse
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.selectolax import SelectolaxTranslation
@@ -27,7 +28,10 @@ class AAAArchivesRunner(RunnerInit):
             fullname="國家發展委員會檔案管理局",
             code_name="AAAArchives",
             external_link="https://aaa.archives.tw/tw/event/306.html",
-            branch_coordinates=Coordinate(raw_coordinates="25.07521442685089, 121.37402598256791"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.07521442685089, 121.37402598256791"),
+                raw_coordinates="25.07521442685089, 121.37402598256791",
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

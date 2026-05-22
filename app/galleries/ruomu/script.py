@@ -5,7 +5,8 @@ import bs4
 from app.galleries.ruomu.parse import RuoMuParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -28,7 +29,10 @@ class RuoMuRunner(RunnerInit):
             fullname="若木藝廊",
             code_name="RuoMu",
             external_link="https://www.ruomugallery.com/",
-            branch_coordinates=Coordinate(raw_coordinates="25.033909532791032, 121.52358387976376"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.033909532791032, 121.52358387976376"),
+                raw_coordinates="25.033909532791032, 121.52358387976376",
+            ),
             venue_type=VenueType.GALLERY,
         )
 

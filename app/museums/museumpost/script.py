@@ -7,7 +7,8 @@ from app.museums.museumpost.parse import MuseumPostParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -30,16 +31,25 @@ class MuseumPostRunner(RunnerInit):
             branch_coordinates=[
                 Coordinate(
                     name="本館",
+                    geo_point=GeoPoint(
+                        raw_coordinates="25.032392367745082, 121.5147638567378",
+                    ),
                     raw_coordinates="25.032392367745082, 121.5147638567378",
                     location_code=Taiwan.taipei.zhongzheng_63000050,
                 ),
                 Coordinate(
                     name="臺北館",
+                    geo_point=GeoPoint(
+                        raw_coordinates="25.047556287891062, 121.51158812126322",
+                    ),
                     raw_coordinates="25.047556287891062, 121.51158812126322",
                     location_code=Taiwan.taipei.zhongzheng_63000050,
                 ),
                 Coordinate(
                     name="高雄館",
+                    geo_point=GeoPoint(
+                        raw_coordinates="22.638430558437683, 120.30123181704683",
+                    ),
                     raw_coordinates="22.638430558437683, 120.30123181704683",
                     location_code=Taiwan.kaohsiung.sanmin_64000050,
                 ),

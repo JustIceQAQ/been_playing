@@ -7,7 +7,8 @@ import httpx
 from app.museums.nstm.parse import NsTmParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -30,7 +31,10 @@ class NsTmRunner(RunnerInit):  # TODO: 壞掉中...
             fullname="國立科學工藝博物館",
             code_name="NsTm",
             external_link="https://www.nstm.gov.tw/ExhibitionList.aspx?ExhibitionType=1&Period=1",
-            branch_coordinates=Coordinate(raw_coordinates="22.64161262350391, 120.32253339088527"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="22.64161262350391, 120.32253339088527"),
+                raw_coordinates="22.64161262350391, 120.32253339088527",
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

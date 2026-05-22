@@ -3,7 +3,8 @@ import urllib.parse
 from app.museums.pact.parse import PactParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -27,7 +28,10 @@ class PactRunner(RunnerInit):
             fullname="台北偶戲館",
             code_name="PACT",
             external_link="https://www.pact.taipei/exhibition_list.aspx?p=1&ps=10&t=all",
-            branch_coordinates=Coordinate(raw_coordinates="25.04792075475668, 121.56141474093504"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.04792075475668, 121.56141474093504"),
+                raw_coordinates="25.04792075475668, 121.56141474093504",
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

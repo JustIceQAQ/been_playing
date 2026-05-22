@@ -106,6 +106,7 @@
         - [臺中市纖維工藝博物館](https://mofia.taichung.gov.tw/) `Mofia`
     - 彰化縣
         - [彰化縣立美術館](https://fam.bocach.gov.tw/) `CCAM`
+        - [彰化藝術館](https://www.bocach.gov.tw/News.aspx?n=1397&sms=10815&_Query=36343dc0-af59-428f-93d4-5eb4382a3baf) `CZH`
         - [國立彰化生活美學館](https://www.chcsec.gov.tw/) `chcsec`
     - 嘉義市
         - [嘉義市立博物館](https://museum.chiayi.gov.tw/) `ChiayiMM`

@@ -4,7 +4,8 @@ import bs4
 from app.museums.shungyeart.parse import ShungYeArtParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -28,7 +29,10 @@ class ShungYeArtRunner(RunnerInit):
             fullname="順益台灣美術館",
             code_name="ShungYeArt",
             external_link="https://www.shungye-art.org/show_now.php",
-            branch_coordinates=Coordinate(raw_coordinates="25.046560256806668, 121.51092983908268"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.046560256806668, 121.51092983908268"),
+                raw_coordinates="25.046560256806668, 121.51092983908268",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

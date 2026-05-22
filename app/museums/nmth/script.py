@@ -5,7 +5,8 @@ import bs4
 from app.museums.nmth.parse import NMTHParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -28,7 +29,10 @@ class NMTHRunner(RunnerInit):
             fullname="國立臺灣歷史博物館",
             code_name="NMTH",
             external_link="https://www.nmth.gov.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="23.058163348092073, 120.23516300543494"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="23.058163348092073, 120.23516300543494"),
+                raw_coordinates="23.058163348092073, 120.23516300543494",
+            ),
             venue_type=VenueType.MEMORIAL,
         )
 

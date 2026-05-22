@@ -4,13 +4,13 @@ import re
 import uuid
 from decimal import Decimal
 from pathlib import Path
-from typing import Any
 
 import aiofiles
 from pydantic import BaseModel, Field, model_validator
 from feedgen.feed import FeedGenerator
 from icalendar import Calendar, Event
 from configs.settings import get_settings
+from helpers.storage.coordinate import Coordinate
 from helpers.storage.location import Location
 from helpers.symbol.venue import VenueType
 from helpers.utils_helper import (
@@ -175,39 +175,11 @@ class ExhibitionItem(BaseModel):
         return hash(tuple(values))
 
 
-class Coordinate(BaseModel):
-    location_code: Location | None = Field(default=None, description="ISO 3166/MA")
-    raw_coordinates: str | None = None
-    longitude: Decimal = Field(default=None, description="經度")
-    latitude: Decimal = Field(default=None, description="緯度")
-    google_map_place_id: str | None = Field(default=None, description="Google Map Place ID")
-    name: str | None = Field(default=None, description="名稱, 若為None 則代表該地點沒有分館")
-
-    @model_validator(mode="before")
-    @classmethod
-    def process_coordinates(cls, data: Any) -> Any:
-        if isinstance(data, dict):
-            raw_coords = data.get("raw_coordinates")
-            if raw_coords and isinstance(raw_coords, str):
-                try:
-                    parts = raw_coords.split(", ")
-                    if len(parts) == 2:
-                        lat_str, lon_str = parts
-                        data["latitude"] = lat_str
-                        data["longitude"] = lon_str
-
-                except Exception as e:
-                    print(f"座標解析失敗: {e}")
-                    pass
-
-        return data
-
-
 class Information(BaseModel):
     fullname: str
     code_name: str
     external_link: str
-    branch_coordinates: Coordinate | list[Coordinate] | None = Field(default=None, description="經緯度")
+    branch_coordinates: Coordinate | list[Coordinate] | None = Field(default=None, description="地理資訊")
     location_code: Location | None = Field(default=None)
     venue_type: VenueType | None = Field(default=None, description="場所類型")
     has_rss: bool | None = Field(default=False)

@@ -5,7 +5,8 @@ import bs4
 from app.museums.nhclac.parse import NhClAcParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -28,7 +29,10 @@ class NhClAcRunner(RunnerInit):
             fullname="國立新竹生活美學館",
             code_name="nhclac",
             external_link="https://www.nhclac.gov.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="24.803306982634894, 120.967233726293"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="24.803306982634894, 120.967233726293"),
+                raw_coordinates="24.803306982634894, 120.967233726293",
+            ),
             venue_type=VenueType.EXPO_CENTER,
         )
 

@@ -4,7 +4,8 @@ from typing import cast
 from app.museums.ptam.parse import PTAMParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 
@@ -31,7 +32,10 @@ class PTAMRunner(RunnerInit):
             fullname="屏東美術館",
             code_name="PTAM",
             external_link="https://ptam.ptcg.gov.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="22.674969712813024, 120.48993190095096"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="22.674969712813024, 120.48993190095096"),
+                raw_coordinates="22.674969712813024, 120.48993190095096",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

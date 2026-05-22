@@ -6,7 +6,8 @@ import httpx
 from app.museums.kmfa.parse import KmFaParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -29,7 +30,10 @@ class KmFaRunner(RunnerInit):
             fullname="高雄市立美術館",
             code_name="KmFa",
             external_link="https://www.kmfa.gov.tw/ExhibitionListC001100.aspx?Place=1&SearchDate=1",
-            branch_coordinates=Coordinate(raw_coordinates="22.65687499527212, 120.28659401204955"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="22.65687499527212, 120.28659401204955"),
+                raw_coordinates="22.65687499527212, 120.28659401204955",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

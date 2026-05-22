@@ -9,7 +9,8 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.image_hosting.none.helper import NoneImageHosting
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import ExhibitionItem, Information, Coordinate
+from helpers.storage.helper import ExhibitionItem, Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -32,7 +33,10 @@ class NTPCRunner(RunnerInit):
             fullname="新北市立鶯歌陶瓷博物館",
             code_name="NTPC",
             external_link="https://www.ceramics.ntpc.gov.tw/xmdoc?xsmsid=0J148497613881029302",
-            branch_coordinates=Coordinate(raw_coordinates="24.949406697655782, 121.3520648774411"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="24.949406697655782, 121.3520648774411"),
+                raw_coordinates="24.949406697655782, 121.3520648774411",
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

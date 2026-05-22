@@ -8,7 +8,8 @@ from configs.settings import get_settings
 from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -32,7 +33,10 @@ class HongGahRunner(RunnerInit):
             fullname="鳳甲美術館",
             code_name="HongGah",
             external_link="https://hong-gah.org.tw/exhibitions-zh",
-            branch_coordinates=Coordinate(raw_coordinates="25.125315737958747, 121.49922632559256"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.125315737958747, 121.49922632559256"),
+                raw_coordinates="25.125315737958747, 121.49922632559256",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

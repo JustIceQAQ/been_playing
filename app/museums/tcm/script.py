@@ -6,7 +6,8 @@ import httpx
 from app.museums.tcm.parse import TcmParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -29,7 +30,10 @@ class TcmRunner(RunnerInit):
             fullname="臺南市立博物館",
             code_name="Tcm",
             external_link="https://tcm.tainan.gov.tw/permanent",
-            branch_coordinates=Coordinate(raw_coordinates="22.987586370137066, 120.20828174089186"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="22.987586370137066, 120.20828174089186"),
+                raw_coordinates="22.987586370137066, 120.20828174089186",
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

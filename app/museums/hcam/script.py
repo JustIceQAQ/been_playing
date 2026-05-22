@@ -7,7 +7,8 @@ from app.museums.hcam.parse import HCAMParse
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Coordinate, Information
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.taiwan import Taiwan
 from helpers.symbol.venue import VenueType
 from helpers.translation.selectolax import SelectolaxTranslation
@@ -28,7 +29,10 @@ class HCAMRunner(RunnerInit):
             fullname="新竹市美術館",
             code_name="HCAM",
             external_link="https://culture.hccg.gov.tw/ch/home.jsp?id=452&parentpath=0,145,154&mcustomize=activity_list.jsp",
-            branch_coordinates=Coordinate(raw_coordinates="24.806516978000005, 120.97006803902325"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="24.806516978000005, 120.97006803902325"),
+                raw_coordinates="24.806516978000005, 120.97006803902325",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

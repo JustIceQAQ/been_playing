@@ -6,7 +6,8 @@ from app.museums.nmh.parse import NmhParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -28,7 +29,10 @@ class NmhRunner(RunnerInit):
             fullname="國立歷史博物館",
             code_name="Nmh",
             external_link="https://www.nmh.gov.tw/News_Actives_photo.aspx?n=6983&sms=13323",
-            branch_coordinates=Coordinate(raw_coordinates="25.0317350368833, 121.51118866791836"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.0317350368833, 121.51118866791836"),
+                raw_coordinates="25.0317350368833, 121.51118866791836",
+            ),
             venue_type=VenueType.MEMORIAL,
         )
 

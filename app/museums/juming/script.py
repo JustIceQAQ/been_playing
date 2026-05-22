@@ -5,7 +5,8 @@ from typing import cast
 from app.museums.juming.parse import JuMingParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 
@@ -30,7 +31,10 @@ class JuMingRunner(RunnerInit):
             fullname="朱銘美術館",
             code_name="JuMing",
             external_link="https://www.juming.org.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="25.246492169720533, 121.61118935623358"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.246492169720533, 121.61118935623358"),
+                raw_coordinates="25.246492169720533, 121.61118935623358",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

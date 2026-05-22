@@ -8,5 +8,5 @@ class Name(BaseModel):
 
 
 class Location(BaseModel):
-    city: Name
-    area: Name | None = None
+    city: Name = Field(description="縣/市")
+    area: Name | None = Field(description="區域", default=None)

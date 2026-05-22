@@ -4,7 +4,8 @@ from typing import cast
 from app.museums.ioesinica.parse import IOESinicaParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 
@@ -29,7 +30,10 @@ class IOESinicaRunner(RunnerInit):
             fullname="中央研究院-民族學研究所博物館",
             code_name="IOESinica",
             external_link="https://www.ioe.sinica.edu.tw/",
-            branch_coordinates=Coordinate(raw_coordinates="25.039370042568287, 121.61723912563318"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.039370042568287, 121.61723912563318"),
+                raw_coordinates="25.039370042568287, 121.61723912563318",
+            ),
             venue_type=VenueType.MUSEUM,
         )
 

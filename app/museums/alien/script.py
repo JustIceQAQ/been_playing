@@ -5,7 +5,8 @@ import bs4
 from app.museums.alien.parse import AlienParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -28,7 +29,10 @@ class AlienRunner(RunnerInit):
             fullname="金馬賓館當代美術館",
             code_name="Alien",
             external_link="https://www.alien.com.tw/u/zh-tw/list/exhibitions",
-            branch_coordinates=Coordinate(raw_coordinates="22.627619441196142, 120.278842832973"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="22.627619441196142, 120.278842832973"),
+                raw_coordinates="22.627619441196142, 120.278842832973",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 

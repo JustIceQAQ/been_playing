@@ -5,7 +5,8 @@ from app.museums.tfam.parse import TFamParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.json import JsonTranslation
@@ -25,7 +26,10 @@ class TFamRunner(RunnerInit):
             fullname="臺北市立美術館",
             code_name="TFam",
             external_link="https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw",
-            branch_coordinates=Coordinate(raw_coordinates="25.07240807900826, 121.5244680697716"),
+            branch_coordinates=Coordinate(
+                geo_point=GeoPoint(raw_coordinates="25.07240807900826, 121.5244680697716"),
+                raw_coordinates="25.07240807900826, 121.5244680697716",
+            ),
             venue_type=VenueType.ART_MUSEUM,
         )
 
