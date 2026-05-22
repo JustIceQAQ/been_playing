@@ -15,6 +15,7 @@ from helpers.utils_helper import month_3
 class MofiaRunner(RunnerInit):
     translation = JsonTranslation
     use_parse = MofiaParse
+    use_suffix_item_from_url_auto = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()

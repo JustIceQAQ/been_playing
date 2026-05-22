@@ -23,6 +23,7 @@ from helpers.translation.selectolax import SelectolaxTranslation
 class HcccArtRunner(RunnerInit):
     translation = SelectolaxTranslation
     use_parse = HcccArtParse
+    use_suffix_item_from_url_auto = True
 
     def set_proxies(self):
         runtime_settings = get_settings()

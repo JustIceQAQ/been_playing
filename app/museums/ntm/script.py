@@ -19,6 +19,7 @@ from helpers.utils_helper import month_3
 class NtmRunner(RunnerInit):
     translation = BeautifulSoupTranslation
     use_parse = NtmParse
+    use_suffix_item_from_file_func = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()

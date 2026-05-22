@@ -19,6 +19,7 @@ class MwrRunner(RunnerInit):
 
     translation = BeautifulSoupTranslation
     use_parse = MwrParse
+    use_suffix_item_from_file_func = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()

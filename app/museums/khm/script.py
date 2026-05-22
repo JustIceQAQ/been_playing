@@ -19,6 +19,7 @@ class KhmRunner(RunnerInit):
     translation = BeautifulSoupTranslation
     use_parse = KhmParse
     is_sort = False
+    use_suffix_item_from_url_auto = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()
