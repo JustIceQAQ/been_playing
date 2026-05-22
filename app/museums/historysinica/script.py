@@ -5,7 +5,8 @@ from typing import cast
 from app.museums.historysinica.parse import HistorySinicaParse
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 

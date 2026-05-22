@@ -7,7 +7,8 @@ from app.museums.hcccart.parse import HcccArtParse
 from configs.settings import get_settings
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 

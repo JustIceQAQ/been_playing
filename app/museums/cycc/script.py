@@ -7,7 +7,8 @@ from app.museums.cycc.parse import CyccParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Coordinate, Information
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate
 from helpers.symbol.taiwan import Taiwan
 from helpers.symbol.venue import VenueType
 from helpers.translation.selectolax import SelectolaxTranslation

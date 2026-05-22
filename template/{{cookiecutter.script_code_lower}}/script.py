@@ -4,7 +4,8 @@ from typing import cast
 from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.parse import {{cookiecutter.script_code}}Parse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GoogleMaps, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 
@@ -76,7 +77,10 @@ class {{cookiecutter.script_code}}Runner(RunnerInit):
             fullname="",
             code_name="",
             external_link="",
-            branch_coordinates=Coordinate(raw_coordinates=None),
+            branch_coordinates=Coordinate(
+                google_maps=GoogleMaps(plus_code=None),
+                geo_point=GeoPoint(raw_coordinates=None)
+            ),
             venue_type={{venue_type}},
         )
         {% endif %}

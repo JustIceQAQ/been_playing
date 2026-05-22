@@ -4,7 +4,8 @@ import bs4
 from app.museums.nrm.parse import NrmParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate, ExhibitionItem
+from helpers.storage.helper import Information, ExhibitionItem
+from helpers.storage.coordinate import Coordinate
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient

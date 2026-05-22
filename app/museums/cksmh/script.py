@@ -7,7 +7,8 @@ from app.museums.cksmh.parse import CKSMHParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Coordinate, Information
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GoogleMaps
 from helpers.symbol.taiwan import Taiwan
 from helpers.symbol.venue import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -32,8 +33,8 @@ class CKSMHRunner(RunnerInit):
             code_name="CKSMH",
             external_link="https://www.cksmh.gov.tw/Default.aspx",
             branch_coordinates=Coordinate(
-                google_map_place_id="ChIJTamiuZ2pQjQRsmnfkkID6UM",
                 raw_coordinates="25.035657453594702, 121.52023682270445",
+                google_maps=GoogleMaps(plus_code="2GPC+63 中正區 臺北市"),
             ),
             venue_type=VenueType.MEMORIAL,
         )

@@ -6,7 +6,8 @@ from app.museums.taipeizoo.parse import TaipeiZooParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Coordinate, ExhibitionItem, Information
+from helpers.storage.helper import ExhibitionItem, Information
+from helpers.storage.coordinate import Coordinate
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.json import JsonTranslation

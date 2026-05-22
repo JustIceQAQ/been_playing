@@ -15,11 +15,11 @@ from configs.settings import get_settings
 from helpers.cache import DiskCache, NoneCache
 from helpers.storage.helper import (
     Information,
-    Coordinate,
     orjson_default_handler,
     last_week_update,
     execution_stats,
 )
+from helpers.storage.coordinate import Coordinate
 from helpers.crawler.scraper.helper import available_scraper_async_client
 from helpers.image_hosting.none.helper import NoneImageHosting
 from helpers.image_hosting.cloudinary.helper import CloudinaryImageHosting
@@ -32,7 +32,15 @@ async def generate_venue_meta(information: list["Information"]):
     for info in information:
         city_name = None
         area_name = None
-        if info.location_code is not None:
+        if isinstance(info.branch_coordinates, Coordinate):
+            if info.branch_coordinates.location_code is not None:
+                city_name = info.branch_coordinates.location_code.city.name
+                area_name = (
+                    info.branch_coordinates.location_code.area.name
+                    if info.branch_coordinates.location_code.area.name
+                    else None
+                )
+        elif info.location_code is not None:
             city_name = info.location_code.city.name
             area_name = info.location_code.area.name if info.location_code.area else None
         venues.append(
@@ -59,11 +67,18 @@ async def generate_location(information: list["Information"]):
     for location in information:
         fullname = location.fullname
         if isinstance(location.branch_coordinates, Coordinate):
+            if location.branch_coordinates.location_code is not None:
+                latitude = location.branch_coordinates.location_code.latitude
+                longitude = location.branch_coordinates.location_code.longitude
+            else:
+                latitude = location.branch_coordinates.latitude
+                longitude = location.branch_coordinates.longitude
+
             ok_centers.append(
                 {
                     "fullname": fullname,
-                    "latitude": location.branch_coordinates.latitude,
-                    "longitude": location.branch_coordinates.longitude,
+                    "latitude": latitude,
+                    "longitude": longitude,
                     "venue_type": location.venue_type,
                     "external_link": location.external_link,
                 }

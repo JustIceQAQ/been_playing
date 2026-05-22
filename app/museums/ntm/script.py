@@ -9,7 +9,8 @@ from app.museums.ntm.parse import NtmParse, all_branch
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information, Coordinate
+from helpers.storage.helper import Information
+from helpers.storage.coordinate import Coordinate, GoogleMaps
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -33,7 +34,7 @@ class NtmRunner(RunnerInit):
             branch_coordinates=[
                 Coordinate(
                     location_code=Taiwan.taipei.zhongzheng_63000050,
-                    google_map_place_id="ChIJcRV3WHOpQjQRFpgzTpxZWgo",
+                    google_maps=GoogleMaps(plus_code="2GV8+42 黎明里 臺北市中正區"),
                     name="本館",
                     raw_coordinates="25.042991302660226, 121.5151621120989",
                 ),
