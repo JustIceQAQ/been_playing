@@ -29,7 +29,7 @@ class HKMParse(ParseInit):
         img = self.item.css_first("img")
         return "https://hkm.pccu.edu.tw" + img.attributes.get("data-src")
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

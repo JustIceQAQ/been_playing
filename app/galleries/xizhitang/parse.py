@@ -22,7 +22,7 @@ class XiZhiTangParse(ParseInit):
         style = self.item.find("span", {"class": "bg"}).get("style")
         return style.split(":url(")[1][:-2]
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

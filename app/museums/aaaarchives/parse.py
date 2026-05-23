@@ -29,7 +29,7 @@ class AAAArchivesParse(ParseInit):
             src = img.attributes.get("src")
             return "https://aaa.archives.tw" + src
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         i_man = self.item.css_first("i.i_man")
         if i_man:
             raw_man = i_man.parent.text(strip=True)

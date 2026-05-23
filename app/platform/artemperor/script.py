@@ -12,7 +12,7 @@ from helpers.storage.helper import Information
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.symbol.venue import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import get_this_date_year, month_3
+from helpers.utils_helper import month_3, get_date
 
 from typing import cast
 
@@ -44,7 +44,7 @@ class ArtEmperorRunner(RunnerInit):
             "https://artemperor.tw/tidbits",
             *args,
             **kwargs,
-            params={"content": ex_status.value, "page": 1, "region": 0, "year": get_this_date_year()},
+            params={"content": ex_status.value, "page": 1, "region": 0, "year": get_date.now_year},
         )
         response.raise_for_status()
         response_text = response.text
@@ -61,7 +61,7 @@ class ArtEmperorRunner(RunnerInit):
                 "https://artemperor.tw/tidbits",
                 *args,
                 **kwargs,
-                params={"content": ex_status.value, "page": page, "region": 0, "year": get_this_date_year()},
+                params={"content": ex_status.value, "page": page, "region": 0, "year": get_date.now_year},
             )
             for page in range(2, end_page + 1)
         ]

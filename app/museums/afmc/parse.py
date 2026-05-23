@@ -3,7 +3,7 @@ import re
 from selectolax.lexbor import LexborNode
 
 from helpers.parse_helper import ParseInit
-from helpers.utils_helper import get_roc_era_to_ad, set_date
+from helpers.utils_helper import to_ad_year, set_date
 
 
 class AfmcParse(ParseInit):
@@ -21,7 +21,7 @@ class AfmcParse(ParseInit):
         if len(parts) != 3:
             return None
         try:
-            ad_year = get_roc_era_to_ad(int(parts[0]))
+            ad_year = to_ad_year(int(parts[0]))
             return set_date(ad_year, int(parts[1]), int(parts[2])).isoformat()
         except (ValueError, TypeError):
             return None
@@ -61,7 +61,7 @@ class AfmcParse(ParseInit):
             return src
         return self.BASE_URL + src
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         p = self.item.css_first("p.dtype")
         if p is None:
             return None

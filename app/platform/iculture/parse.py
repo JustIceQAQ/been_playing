@@ -42,7 +42,7 @@ class ICultureParse(ParseInit):
 
         return "https://cloud.culture.tw" + image_url
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         tags = []
         for i in range(1, 4):
             ev_char = self.item.get(f"evChar{i}", None)

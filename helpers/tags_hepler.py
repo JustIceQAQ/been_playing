@@ -22,7 +22,7 @@ ACTION_TAG_FAMILIES: dict[ActionEnum, set[str]] = {
 }
 
 
-def normalize_tag(tag: str) -> ActionEnum | str | None:
+def normalize_tag(tag: str) -> ActionEnum | str:
     normalized = tag.strip()
     for action, synonyms in ACTION_TAG_FAMILIES.items():
         if normalized in synonyms:

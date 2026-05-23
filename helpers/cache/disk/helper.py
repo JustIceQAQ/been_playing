@@ -23,7 +23,7 @@ class DiskCache(Cache):
         self.origin_cache = disk_cache(str(pathlib.Path(__file__).parent.parent.parent.parent.absolute() / "fixture"))
         self.loop = asyncio.get_running_loop()
 
-    def get_datetime_now(self):
+    def _get_datetime_now(self):
         return datetime.datetime.now(tz=self._zoneinfo)
 
     def get(self, key: str) -> Any | None:
@@ -70,7 +70,7 @@ class DiskCache(Cache):
         return expire_seconds
 
     def croniter_str_to_seconds(self, croniter_string: str, from_datetime: datetime.datetime | None = None) -> int:
-        runtime_now = self.get_datetime_now()
+        runtime_now = self._get_datetime_now()
         croniter_iter = croniter(croniter_string, (from_datetime or runtime_now))
         next_time: datetime.datetime = croniter_iter.get_next(datetime.datetime)
         return (next_time - (from_datetime or runtime_now)).seconds

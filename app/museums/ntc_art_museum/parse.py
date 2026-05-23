@@ -47,7 +47,7 @@ class NtcArtMuseumParse(ParseInit):
             return None
         return ex_location_text_tw.split("–")[1].strip()
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         ex_tag_set_text_tw: str | None = self.item.get("ExTagSetTextTW")
         if ex_tag_set_text_tw is None:
             return None

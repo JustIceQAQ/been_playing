@@ -3,7 +3,7 @@ from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 import bs4
 
 from helpers.parse_helper import ParseInit
-from helpers.utils_helper import get_roc_era_to_ad
+from helpers.utils_helper import to_ad_year
 
 
 class NpmRowParse(ParseInit):
@@ -25,7 +25,7 @@ class NpmRowParse(ParseInit):
             raise ValueError("請提供 TARGET_DOMAIN")
         return "{}{}".format(target_domain, self.item.select_one("figure.card-image img")["data-src"])
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         tags = self.item.find("div", {"class": "exhibition-list-date"}).next_sibling.next_sibling
         if tags is None:
             return None
@@ -71,7 +71,7 @@ class NpmColParse(ParseInit):
         u = u._replace(query=urlencode(query, True))
         return urlunparse(u)
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         div = self.item.find("div", {"class": "card-tags"})
         tags = div.get_text(strip=True)
         tags = [t.strip().replace("\u3000", "") for t in tags.split("#") if t.strip()]
@@ -121,7 +121,7 @@ class NpmPreviewParse(ParseInit):
         u = u._replace(query=urlencode(query, True))
         return urlunparse(u)
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         div = self.item.find("div", {"class": "card-tags"})
         tags = div.get_text(strip=True)
         tags = [t.strip().replace("\u3000", "") for t in tags.split("#") if t.strip()]
@@ -140,7 +140,7 @@ class SouthNpmParse(ParseInit):
 
     def t(self, date_str: str) -> str:
         y, m, d = date_str.split("-")
-        n_y = get_roc_era_to_ad(int(y))
+        n_y = to_ad_year(int(y))
         return f"{n_y}-{m}-{d}"
 
     def get_title(self, *args, **kwargs) -> str | None:
@@ -167,7 +167,7 @@ class SouthNpmParse(ParseInit):
             "img",
         ).get("src")
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         tags = self.item.select("div.mg_b-nuit > span")
         return [tag.get_text(strip=True) for tag in tags]
 

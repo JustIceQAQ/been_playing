@@ -1,9 +1,8 @@
-from .galleries.nwac.script import NWACRunner
-
 from .galleries.capitalart import CapitalArtRunner
 from .galleries.cg1839 import CG1839Runner
 from .galleries.dac99 import Dac99Runner
 from .galleries.mindsetart import MindSetArtRunner
+from .galleries.nwac.script import NWACRunner
 from .galleries.ruomu import RuoMuRunner
 from .galleries.sokaart import SoKaArtRunner
 from .galleries.whitestone import WhiteStoneRunner
@@ -86,6 +85,7 @@ from .museums.taipeizoo.script import TaipeiZooRunner
 from .museums.tam.script import TAMRunner
 from .museums.tcam.script import TcamRunner
 from .museums.tcm import TcmRunner
+from .museums.tfai.script import TFAIRunner
 from .museums.tfam.script import TFamRunner
 from .museums.tmc.script import TmcRunner
 from .museums.tnammuseum import TnamMuseumRunner
@@ -210,6 +210,7 @@ MUSEUMS_RUNNERS = {
     PTCAMRunner,
     MoMaTainanRunner,
     CZHRunner,
+    TFAIRunner,
 }
 
 GALLERIES_RUNNERS = {

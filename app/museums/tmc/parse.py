@@ -27,7 +27,7 @@ class TmcParse(ParseInit):
     def get_figure(self, *args, **kwargs) -> str | None:
         return self.item.find("img").get("src")
 
-    def get_tags(self) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         return [self.item.find("span", {"class": "c-tag"}).get_text(strip=True)]
 
     def get_source_url(self, *args, **kwargs) -> str | None:

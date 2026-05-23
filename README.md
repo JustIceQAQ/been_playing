@@ -87,6 +87,7 @@
         - [齊柏林空間](https://www.chipolin.org/) `ChiPoLin`
         - [新北市立鶯歌陶瓷博物館](https://www.ceramics.ntpc.gov.tw/) `NTPC`
         - [朱銘美術館](https://www.juming.org.tw/) `JuMing`
+        - [國家電影及視聽文化中心](https://www.tfai.org.tw/zh/) `TFAI`
     - 桃園市
         - [桃園市立大溪木藝生態博物館](https://wem.tycg.gov.tw/) `TyCg`
         - [桃園展演中心](https://www.afmc.gov.tw/Activity?c3=hall1&c5=performance1) `AfmcHall1`

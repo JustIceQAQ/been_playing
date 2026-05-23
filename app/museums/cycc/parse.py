@@ -50,7 +50,7 @@ class CyccParse(ParseInit):
             return None
         return src if src.startswith("http") else BASE_URL + src
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         return None
 
     def get_source_url(self, *args, **kwargs) -> str | None:

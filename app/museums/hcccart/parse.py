@@ -36,7 +36,7 @@ class HcccArtParse(ParseInit):
         match = re.search(r"url\(['\"]?(.*?)['\"]?\)", style)
         return match.group(1) if match else None
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

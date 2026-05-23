@@ -86,7 +86,7 @@ class TaipeiZooParse(ParseInit):
             return None
         return images[0].get("url")
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         return ["特展"]
 
     def get_source_url(self, *args, **kwargs) -> str | None:

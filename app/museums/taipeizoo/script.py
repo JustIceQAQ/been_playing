@@ -11,7 +11,7 @@ from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.json import JsonTranslation
-from helpers.utils_helper import get_timezone, month_3
+from helpers.utils_helper import month_3, get_date
 
 
 class TaipeiZooRunner(RunnerInit):
@@ -47,7 +47,7 @@ class TaipeiZooRunner(RunnerInit):
 
     async def fetch_items(self, *args, **kwargs) -> list[ExhibitionItem]:
         items = await super().fetch_items(*args, **kwargs)
-        today = datetime.datetime.now(tz=get_timezone()).replace(hour=0, minute=0, second=0, microsecond=0)
+        today = datetime.datetime.now(tz=get_date.timezone).replace(hour=0, minute=0, second=0, microsecond=0)
         two_years_ago = today - datetime.timedelta(days=730)
         result = []
         for item in items:

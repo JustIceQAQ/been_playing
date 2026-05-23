@@ -39,7 +39,7 @@ class MofiaParse(ParseInit):
         if main_icon:
             return "https://mofia.taichung.gov.tw/" + main_icon
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

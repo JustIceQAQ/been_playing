@@ -24,6 +24,7 @@ class OpenStreetMapKeys(BaseModel):
     tourism: str | None = Field(default=None, description="A place or object of specific interest to tourists.")
     museum: str | None = Field(default=None, description="Type of museum classified by topic.")
     air_conditioning: str | None = Field(default=None, description="Indication whether a feature has air-conditioning.")
+    wheelchair: str | None = Field(default=None, description="Indicate if a special place can be used with wheelchairs")
 
     @model_serializer
     def serialize(self) -> dict:

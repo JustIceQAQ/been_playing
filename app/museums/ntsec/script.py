@@ -15,7 +15,7 @@ from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import get_datetime_now, month_3, get_asyncio_rate_limit
+from helpers.utils_helper import month_3, get_asyncio_rate_limit, get_date
 
 from typing import cast
 
@@ -46,7 +46,7 @@ class NtSecRunner(RunnerInit):
 
     async def fetch_response(self):
         headers = self.get_this_headers()
-        s_datetime = get_datetime_now()
+        s_datetime = get_date.time_now
         s_date = s_datetime.strftime("%Y-%m-%d")
         e_datetime = s_datetime + relativedelta(months=2)
         e_date = e_datetime.strftime("%Y-%m-%d")

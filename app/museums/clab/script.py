@@ -12,7 +12,7 @@ from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import month_3, get_current_and_previous_month
+from helpers.utils_helper import month_3, get_date
 
 
 class CLabRunner(RunnerInit):
@@ -38,7 +38,7 @@ class CLabRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        current_period, previous_period = get_current_and_previous_month()
+        current_period, previous_period = get_date.current_and_previous_period
 
         target_url_template = (
             "https://clab.org.tw/events/?" "event_category=" "&filter_year={filter_year}" "&filter_month={filter_month}"

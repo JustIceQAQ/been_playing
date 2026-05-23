@@ -40,7 +40,7 @@ class MindSetArtParse(ParseInit):
         srcs = ast.literal_eval(data_responsive_src)
         return srcs["750"]
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

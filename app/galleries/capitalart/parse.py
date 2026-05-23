@@ -23,7 +23,7 @@ class CapitalArtParse(ParseInit):
         style = self.item.find("div", {"class": "pic"}).get("style")
         return "https://capitalart.com.tw" + style.split("url(")[1][:-2]
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

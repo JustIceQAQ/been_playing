@@ -21,7 +21,7 @@ class KhmParse(ParseInit):
         url = style.split("url(")[1][:-2]
         return url
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

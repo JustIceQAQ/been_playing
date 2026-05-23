@@ -2,7 +2,7 @@ import datetime as dt
 import re
 
 from helpers.parse_helper import ParseInit
-from helpers.utils_helper import get_this_date_year
+from helpers.utils_helper import get_date
 
 
 def chinese_date_format(raw_date_string: str) -> str | None:
@@ -65,7 +65,7 @@ class KLookParse(ParseInit):
         return value
 
     def date_format(self, raw_date_string: str) -> str:
-        this_year = get_this_date_year()
+        this_year = get_date.now_year
         if "日" in raw_date_string:
             if "年" in raw_date_string:
                 re_date_string = raw_date_string
@@ -107,10 +107,10 @@ class KLookParse(ParseInit):
         figure = self.item.get("image_url")
         return figure
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         raw_tags: list[dict[str, str]] | None = self.item.get("tags")
         if raw_tags:
-            return [tag.get("text") for tag in raw_tags if tag.get("text") is not None]
+            return [text for tag in raw_tags if (text := tag.get("text")) is not None]
 
         return None
 

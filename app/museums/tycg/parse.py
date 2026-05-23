@@ -2,7 +2,7 @@ from helpers.parse_helper import ParseInit
 
 from selectolax.lexbor import LexborNode
 
-from helpers.utils_helper import set_date, get_roc_era_to_ad
+from helpers.utils_helper import set_date, to_ad_year
 
 
 class TyCgParse(ParseInit):
@@ -20,8 +20,8 @@ class TyCgParse(ParseInit):
             sy, sm, sd = start_date_str.split("-")
             ey, em, ed = end_date_str.split("-")
 
-            start_date = set_date(get_roc_era_to_ad(int(sy)), int(sm), int(sd)).isoformat()
-            end_date = set_date(get_roc_era_to_ad(int(ey)), int(em), int(ed)).isoformat()
+            start_date = set_date(to_ad_year(int(sy)), int(sm), int(sd)).isoformat()
+            end_date = set_date(to_ad_year(int(ey)), int(em), int(ed)).isoformat()
 
             return f"{start_date} ~ {end_date}"
 
@@ -33,7 +33,7 @@ class TyCgParse(ParseInit):
     def get_figure(self, *args, **kwargs) -> str | None:
         return self.item.css_first("img").attributes.get("src")
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

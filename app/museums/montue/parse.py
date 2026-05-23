@@ -43,7 +43,7 @@ class MoNTUEParse(ParseInit):
         safe_url = urlunparse(parsed_url._replace(path=encoded_path))
         return safe_url
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

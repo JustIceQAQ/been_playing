@@ -1,13 +1,13 @@
 import bs4
 
 from helpers.parse_helper import ParseInit
-from helpers.utils_helper import get_roc_era_to_ad
+from helpers.utils_helper import to_ad_year
 
 
 def roc_era_date_to_ad_date(this_date: str) -> str:
     this_date = this_date.strip()
     roc_era_year, month, day = this_date.split("-")
-    year = get_roc_era_to_ad(int(roc_era_year))
+    year = to_ad_year(int(roc_era_year))
     return f"{year}-{month}-{day}"
 
 
