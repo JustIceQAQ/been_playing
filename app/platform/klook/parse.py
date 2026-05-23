@@ -107,10 +107,10 @@ class KLookParse(ParseInit):
         figure = self.item.get("image_url")
         return figure
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         raw_tags: list[dict[str, str]] | None = self.item.get("tags")
         if raw_tags:
-            return [tag.get("text") for tag in raw_tags if tag.get("text") is not None]
+            return [text for tag in raw_tags if (text := tag.get("text")) is not None]
 
         return None
 

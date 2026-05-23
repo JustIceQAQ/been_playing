@@ -24,8 +24,11 @@ class GaCcParse(ParseInit):
     def get_figure(self, *args, **kwargs) -> str | None:
         return self.item.get("image")
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
-        return [self.item.get("eventCategoryName")]
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
+        event_category_name = self.item.get("eventCategoryName")
+        if event_category_name is None:
+            return None
+        return [event_category_name]
 
     def get_source_url(self, *args, **kwargs) -> str | None:
         url_id = self.item.get("id")

@@ -48,7 +48,7 @@ class CLabParse(ParseInit):
 
         return f"https:{urllib.parse.quote(pc_image[:-3])}"
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         a = self.item.find("a", {"class": "a-base-card__category"})
         return [a.get_text()]
 

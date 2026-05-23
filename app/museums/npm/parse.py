@@ -25,7 +25,7 @@ class NpmRowParse(ParseInit):
             raise ValueError("請提供 TARGET_DOMAIN")
         return "{}{}".format(target_domain, self.item.select_one("figure.card-image img")["data-src"])
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         tags = self.item.find("div", {"class": "exhibition-list-date"}).next_sibling.next_sibling
         if tags is None:
             return None
@@ -71,7 +71,7 @@ class NpmColParse(ParseInit):
         u = u._replace(query=urlencode(query, True))
         return urlunparse(u)
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         div = self.item.find("div", {"class": "card-tags"})
         tags = div.get_text(strip=True)
         tags = [t.strip().replace("\u3000", "") for t in tags.split("#") if t.strip()]
@@ -121,7 +121,7 @@ class NpmPreviewParse(ParseInit):
         u = u._replace(query=urlencode(query, True))
         return urlunparse(u)
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         div = self.item.find("div", {"class": "card-tags"})
         tags = div.get_text(strip=True)
         tags = [t.strip().replace("\u3000", "") for t in tags.split("#") if t.strip()]
@@ -167,7 +167,7 @@ class SouthNpmParse(ParseInit):
             "img",
         ).get("src")
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         tags = self.item.select("div.mg_b-nuit > span")
         return [tag.get_text(strip=True) for tag in tags]
 

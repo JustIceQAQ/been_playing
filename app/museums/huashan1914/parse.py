@@ -65,7 +65,7 @@ class huashan1914Parse(ParseInit):
 
         return url.replace("url(", "")[:-1].replace('"', "") if (url := style["background-image"]) else "-"
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         spans = self.item.select("div.event-list-type > span")
         return [normalize_tag(span.get_text(strip=True)) for span in spans]
 

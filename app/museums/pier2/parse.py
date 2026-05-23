@@ -26,7 +26,7 @@ class Pier2Parse(ParseInit):
         if the_photo is not None:
             return "https://pier2.org/" + the_photo
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

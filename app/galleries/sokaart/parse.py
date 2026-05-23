@@ -37,7 +37,7 @@ class SoKaArtParse(ParseInit):
     def get_figure(self, *args, **kwargs) -> str | None:
         return "https://soka-art.com" + self.item.find("img").get("src")
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

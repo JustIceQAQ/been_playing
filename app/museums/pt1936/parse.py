@@ -58,7 +58,7 @@ class PT1936Parse(ParseInit):
     def get_figure(self, *args, **kwargs) -> str | None:
         return self.item.css_first("meta[property='og:image']").attributes.get("content")
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
 
     def get_source_url(self, *args, **kwargs) -> str | None:

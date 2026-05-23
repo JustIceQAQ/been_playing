@@ -35,7 +35,7 @@ class TcamParse(ParseInit):
 
         return image.get("url")
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         category = self.item.get("category")
         if category is None:
             return None

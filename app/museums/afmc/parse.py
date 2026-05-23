@@ -61,7 +61,7 @@ class AfmcParse(ParseInit):
             return src
         return self.BASE_URL + src
 
-    def get_tags(self, *args, **kwargs) -> list[str | None] | None:
+    def get_tags(self, *args, **kwargs) -> list[str] | None:
         p = self.item.css_first("p.dtype")
         if p is None:
             return None
