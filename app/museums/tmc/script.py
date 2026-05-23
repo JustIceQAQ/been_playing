@@ -7,14 +7,12 @@ from typing import cast
 import bs4
 import httpx
 
+from app.museums.tmc.information import TmcInformation
 from app.museums.tmc.parse import TmcParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate, GeoPoint
-from helpers.symbol.venue import VenueType
-from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -27,17 +25,7 @@ class TmcRunner(RunnerInit):
         return month_3()
 
     def set_information(self) -> "Information":
-        return Information(
-            location_code=Taiwan.taipei.nangang_63000090,
-            fullname="台北流行音樂中心",
-            code_name="Tmc",
-            external_link="https://www.tmc.taipei/tw/blog/show?filter=eyJkaXJlY3Rpb24iOiJsYXN0ZXN0In0=",
-            branch_coordinates=Coordinate(
-                geo_point=GeoPoint(raw_coordinates="25.05181188396233, 121.59745382637806"),
-                raw_coordinates="25.05181188396233, 121.59745382637806",
-            ),
-            venue_type=VenueType.EXPO_CENTER,
-        )
+        return TmcInformation.get_information()
 
     def create_filter_base64_string(self, page_number: int) -> str:
         str_dict = json.dumps(

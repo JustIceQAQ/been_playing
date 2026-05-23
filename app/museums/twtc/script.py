@@ -4,6 +4,7 @@ from typing import cast
 
 import httpx
 
+from app.museums.twtc.information import TwTcInformation
 from app.museums.twtc.parse import TwTcParse
 from app.museums.twtc.schemas import TwTcResponse
 from app.museums.twtc.utils import get_next_element
@@ -11,9 +12,6 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information
-from helpers.storage.coordinate import Coordinate, GeoPoint
-from helpers.symbol.venue import VenueType
-from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3, get_date
 
@@ -26,47 +24,7 @@ class TwTcRunner(RunnerInit):
         return month_3()
 
     def set_information(self) -> "Information":
-        return Information(
-            fullname="台北世貿中心",
-            code_name="TwTc",
-            external_link="https://twtc.com.tw/exhibition?p=home",
-            location_code=Taiwan.taipei.xinyi_63000020,
-            branch_coordinates=[
-                Coordinate(
-                    location_code=Taiwan.taipei.xinyi_63000020,
-                    name="世貿一館",
-                    raw_coordinates="25.03358007614386, 121.56240955530657",
-                    geo_point=GeoPoint(
-                        raw_coordinates="25.03358007614386, 121.56240955530657",
-                    ),
-                ),
-                Coordinate(
-                    location_code=Taiwan.taipei.nangang_63000090,
-                    name="南港展覽館1館",
-                    raw_coordinates="25.056650206854755, 121.61812883883394",
-                    geo_point=GeoPoint(
-                        raw_coordinates="25.056650206854755, 121.61812883883394",
-                    ),
-                ),
-                Coordinate(
-                    location_code=Taiwan.taipei.nangang_63000090,
-                    name="南港展覽館2館",
-                    raw_coordinates="25.05610107423643, 121.61623519926233",
-                    geo_point=GeoPoint(
-                        raw_coordinates="25.05610107423643, 121.61623519926233",
-                    ),
-                ),
-                Coordinate(
-                    location_code=Taiwan.taichung.xitun_66000060,
-                    name="臺中國際會展中心",
-                    raw_coordinates="24.19381567538611, 120.65129562551822",
-                    geo_point=GeoPoint(
-                        raw_coordinates="24.19381567538611, 120.65129562551822",
-                    ),
-                ),
-            ],
-            venue_type=VenueType.EXPO_CENTER,
-        )
+        return TwTcInformation.get_information()
 
     def extract_import(self, response: httpx.Response) -> dict:
         parsed = self.translation().translation_to_object(response.text)
