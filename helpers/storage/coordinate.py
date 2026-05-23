@@ -99,7 +99,7 @@ class Coordinate(BaseModel):
     location_code: Location | None = Field(default=None, description="ISO 3166/MA")
     address: str | None = Field(description="完整地址", default=None)
 
-    raw_coordinates: str | None = Field(default=None, description="原始經緯度字串")
+    raw_coordinates: str | None = Field(default=None, description="原始經緯度字串，準備移除!")
     longitude: Decimal = Field(default=None, description="經度(舊)，準備移除!")
     latitude: Decimal = Field(default=None, description="緯度(舊)，準備移除!")
     geo_point: GeoPoint | None = Field(default=None, description="經緯度座標")
