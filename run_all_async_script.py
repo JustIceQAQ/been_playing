@@ -245,7 +245,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
                 finally:
                     progress.remove_task(task_id)
 
-        # await asyncio.gather(*[tracked_run(name, coro) for name, coro in named_runners])
+        await asyncio.gather(*[tracked_run(name, coro) for name, coro in named_runners])
 
     if failed and is_debug:
         console.print(f"\n[bold red]失敗 ({len(failed)}):[/bold red] {', '.join(failed)}")
