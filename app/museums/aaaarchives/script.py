@@ -6,6 +6,7 @@ from selectolax.lexbor import LexborNode
 
 from app.museums.aaaarchives.information import AAAArchivesInformation
 from app.museums.aaaarchives.parse import AAAArchivesParse
+from app.museums.aaaarchives.social_media import AAAArchivesSocialMedia
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
@@ -14,6 +15,7 @@ from helpers.utils_helper import month_3
 
 if TYPE_CHECKING:
     from helpers.storage.helper import Information
+    from helpers.storage.social_media import SocialMedia
 
 
 class AAAArchivesRunner(RunnerInit):
@@ -25,6 +27,9 @@ class AAAArchivesRunner(RunnerInit):
 
     def set_information(self) -> "Information":
         return AAAArchivesInformation.get_information()
+
+    def set_social_media(self) -> "SocialMedia":
+        return AAAArchivesSocialMedia.get_social_media()
 
     async def fetch_response(self):
         url = "https://aaa.archives.tw/tw/event/306.html"

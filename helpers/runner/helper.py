@@ -3,13 +3,17 @@ import asyncio
 import hashlib
 import json
 import time
-from typing import Any
+from typing import Any, TYPE_CHECKING
 from helpers.parse_helper import ParseInit
 from helpers.storage.helper import Exhibition, ExhibitionItem, Information
+
 from helpers.suffix_helper import suffix_helper
 from helpers.translation.base import TranslationInit
 from helpers.translation.json import JsonTranslation
 from helpers.cache.base import Cache
+
+if TYPE_CHECKING:
+    from helpers.storage.social_media import SocialMedia
 
 
 class RunnerInit(abc.ABC):
@@ -32,6 +36,10 @@ class RunnerInit(abc.ABC):
     @abc.abstractmethod
     def set_information(self) -> "Information":
         raise NotImplementedError
+
+    @abc.abstractmethod
+    def set_social_media(self) -> "SocialMedia":
+        pass
 
     @abc.abstractmethod
     async def fetch_response(self):
@@ -166,7 +174,9 @@ class RunnerInit(abc.ABC):
                     self.parsed_ = await self.fetch_parsed()
                     self.items_ = await self.fetch_items()
 
-            self.exhibition_ = Exhibition(information=self.information_, items=self.items_)
+            self.exhibition_ = Exhibition(
+                information=self.information_, items=self.items_, social_media=self.set_social_media()
+            )
 
             _image_sem = image_sem if image_sem is not None else asyncio.Semaphore(5)
             cache_tasks = [self.cache_image_url(item, _image_sem) for item in self.exhibition_.items]

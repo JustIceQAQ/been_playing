@@ -3,6 +3,7 @@ import asyncio
 from typing import cast, TYPE_CHECKING
 from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.parse import {{cookiecutter.script_code}}Parse
 from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.information import {{cookiecutter.script_code}}Information
+from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.social_media.py import {{cookiecutter.script_code}}SocialMedia
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.utils_helper import month_3
@@ -52,6 +53,7 @@ from helpers.translation.json import JsonTranslation
 {% endif %}
 if TYPE_CHECKING:
     from helpers.storage.helper import Information
+    from helpers.storage.social_media import SocialMedia
 
 class {{cookiecutter.script_code}}Runner(RunnerInit):
     translation = {{ translation_type }}
@@ -63,9 +65,8 @@ class {{cookiecutter.script_code}}Runner(RunnerInit):
     def set_information(self) -> "Information":
         return {{cookiecutter.script_code}}Information.get_information()
 
-
-
-
+    def set_social_media(self)->"SocialMedia":
+        return {{cookiecutter.script_code}}SocialMedia.get_social_media()
 
     async def fetch_response(self):
         headers = generate_headers()
