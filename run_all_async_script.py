@@ -60,23 +60,43 @@ async def generate_venue_meta(information: list["Information"]):
         else:
             use_info = info.branch_coordinates
 
-        venues.append(
-            {
-                "code_name": info.code_name,
-                "fullname": info.fullname,
-                "venue_type": info.venue_type,
-                "city": city_name,
-                "area": area_name,
-                "check_coordinate": {
-                    "has_location_code": (use_info.location_code is not None) if use_info else False,
-                    "has_address": (use_info.address is not None) if use_info else False,
-                    "has_geo_point": (use_info.geo_point is not None) if use_info else False,
-                    "has_open_street_map": (use_info.open_street_map is not None) if use_info else False,
-                    "has_wiki": (use_info.wiki is not None) if use_info else False,
-                    "has_google_maps": (use_info.google_maps is not None) if use_info else False,
-                },
+        has_location_code = (use_info.location_code is not None) if use_info else False
+        has_address = (use_info.address is not None) if use_info else False
+        has_geo_point = (use_info.geo_point is not None) if use_info else False
+        has_open_street_map = (use_info.open_street_map is not None) if use_info else False
+        has_wiki = (use_info.wiki is not None) if use_info else False
+        has_google_maps = (use_info.google_maps is not None) if use_info else False
+
+        result = {
+            "code_name": info.code_name,
+            "fullname": info.fullname,
+            "venue_type": info.venue_type,
+            "city": city_name,
+            "area": area_name,
+        }
+        has_flags = [
+            has_location_code,
+            has_address,
+            has_geo_point,
+            has_open_street_map,
+            has_wiki,
+            has_google_maps,
+        ]
+
+        if not all(has_flags):
+            check_coordinate = {
+                "has_location_code": has_location_code,
+                "has_address": has_address,
+                "has_geo_point": has_geo_point,
+                "has_open_street_map": has_open_street_map,
+                "has_wiki": has_wiki,
+                "has_google_maps": has_google_maps,
             }
-        )
+            failed = {k: v for k, v in check_coordinate.items() if not v}
+            if failed:
+                result["check_coordinate"] = failed
+
+        venues.append(result)
 
     payload = {
         "last_update": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
