@@ -20,6 +20,7 @@ from helpers.storage.helper import (
     execution_stats,
 )
 from helpers.storage.coordinate import Coordinate
+from helpers.symbol.venue import VenueType
 from helpers.crawler.scraper.helper import available_scraper_async_client
 from helpers.image_hosting.none.helper import NoneImageHosting
 from helpers.image_hosting.cloudinary.helper import CloudinaryImageHosting
@@ -28,7 +29,6 @@ ROOT_PATH = Path(__file__).parent.absolute()
 
 
 async def generate_venue_meta(information: list["Information"]):
-    console = Console()
     venues = []
     for info in information:
         city_name = None
@@ -41,17 +41,16 @@ async def generate_venue_meta(information: list["Information"]):
                     if info.branch_coordinates.location_code.area.name
                     else None
                 )
+            else:
+                city_name = info.location_code.city.name
+                area_name = info.location_code.area.name if info.location_code.area else None
+
         elif isinstance(info.branch_coordinates, list):
-            this_info = info.branch_coordinates[0]
-            if this_info.branch_coordinates.location_code is not None:
-                city_name = this_info.branch_coordinates.location_code.city.name
-                area_name = (
-                    this_info.branch_coordinates.location_code.area.name
-                    if this_info.branch_coordinates.location_code.area.name
-                    else None
-                )
+            this_coordinate = info.branch_coordinates[0]
+            if this_coordinate.location_code is not None:
+                city_name = this_coordinate.location_code.city.name
+                area_name = this_coordinate.location_code.area.name if this_coordinate.location_code.area.name else None
         elif info.location_code is not None:
-            console.log(f"{info.code_name} not use branch_coordinates location_code")
             city_name = info.location_code.city.name
             area_name = info.location_code.area.name if info.location_code.area else None
 
@@ -60,13 +59,6 @@ async def generate_venue_meta(information: list["Information"]):
         else:
             use_info = info.branch_coordinates
 
-        has_location_code = (use_info.location_code is not None) if use_info else False
-        has_address = (use_info.address is not None) if use_info else False
-        has_geo_point = (use_info.geo_point is not None) if use_info else False
-        has_open_street_map = (use_info.open_street_map is not None) if use_info else False
-        has_wiki = (use_info.wiki is not None) if use_info else False
-        has_google_maps = (use_info.google_maps is not None) if use_info else False
-
         result = {
             "code_name": info.code_name,
             "fullname": info.fullname,
@@ -74,6 +66,18 @@ async def generate_venue_meta(information: list["Information"]):
             "city": city_name,
             "area": area_name,
         }
+
+        if info.venue_type == VenueType.PLATFORM:
+            venues.append(result)
+            continue
+
+        has_location_code = (use_info.location_code is not None) if use_info else False
+        has_address = (use_info.address is not None) if use_info else False
+        has_geo_point = (use_info.geo_point is not None) if use_info else False
+        has_open_street_map = (use_info.open_street_map is not None) if use_info else False
+        has_wiki = (use_info.wiki is not None) if use_info else False
+        has_google_maps = (use_info.google_maps is not None) if use_info else False
+
         has_flags = [
             has_location_code,
             has_address,
@@ -241,7 +245,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
                 finally:
                     progress.remove_task(task_id)
 
-        await asyncio.gather(*[tracked_run(name, coro) for name, coro in named_runners])
+        # await asyncio.gather(*[tracked_run(name, coro) for name, coro in named_runners])
 
     if failed and is_debug:
         console.print(f"\n[bold red]失敗 ({len(failed)}):[/bold red] {', '.join(failed)}")
