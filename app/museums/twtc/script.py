@@ -15,7 +15,7 @@ from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import get_date_now, month_3
+from helpers.utils_helper import month_3, get_date
 
 
 class TwTcRunner(RunnerInit):
@@ -135,8 +135,10 @@ class TwTcRunner(RunnerInit):
                 exhibition_items.append(data)
 
         ok_items = []
-        now_date = get_date_now()
+        now_date = get_date.now
         for item in exhibition_items:
+            if item.date is None:
+                continue
             end_date_string = item.date.split("~")[-1].strip()
             end_date = datetime.datetime.strptime(end_date_string, "%Y-%m-%d").date()
             if end_date >= now_date:

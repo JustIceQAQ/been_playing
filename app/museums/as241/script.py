@@ -12,7 +12,7 @@ from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.symbol.taiwan import Taiwan
 from helpers.symbol.venue import VenueType
 from helpers.translation.selectolax import SelectolaxTranslation
-from helpers.utils_helper import get_date_format_, get_roc_era_format_date_now, month_3
+from helpers.utils_helper import month_3, get_date
 
 
 class AS241Runner(RunnerInit):
@@ -46,8 +46,8 @@ class AS241Runner(RunnerInit):
                 "id": "453",
                 "parentpath": "0,145,155",
                 "mcustomize": "activity_list.jsp",
-                "qptdatechina": get_roc_era_format_date_now(),
-                "qptdate": get_date_format_(),
+                "qptdatechina": get_date.now_format_to_roc_era_ios,
+                "qptdate": get_date.now_format_to_ios,
                 "keyword": "[展覽][241藝術空間]",
                 "page": "1",
                 "pagesize": "10",

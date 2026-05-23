@@ -8,7 +8,7 @@ from helpers.symbol.venue import VenueType
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.translation.json import JsonTranslation
-from helpers.utils_helper import month_3, get_this_date_year
+from helpers.utils_helper import month_3, get_date
 
 from typing import cast
 
@@ -29,7 +29,7 @@ class NTTRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        year = get_this_date_year()
+        year = get_date.now_year
         headers = generate_headers(
             referer=f"https://newtaipei.travel/zh-tw/calendar/list?year={year}",
             x_requested_with="XMLHttpRequest",

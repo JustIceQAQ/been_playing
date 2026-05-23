@@ -1,7 +1,7 @@
 from selectolax.lexbor import LexborNode
 
 from helpers.parse_helper import ParseInit
-from helpers.utils_helper import get_roc_era_to_ad, set_date
+from helpers.utils_helper import to_ad_year, set_date
 
 
 class CZHParse(ParseInit):
@@ -21,14 +21,14 @@ class CZHParse(ParseInit):
 
         span_start_date = raw_start_date.css_first("span").text(strip=True).split(" ")[0]
         sy, sm, sd = span_start_date.split("-")
-        start_date = set_date(get_roc_era_to_ad(int(sy)), int(sm), int(sd)).isoformat()
+        start_date = set_date(to_ad_year(int(sy)), int(sm), int(sd)).isoformat()
 
         if raw_end_date is None:
             return start_date
 
         span_end_date = raw_end_date.css_first("span").text(strip=True).split(" ")[0]
         ey, em, ed = span_end_date.split("-")
-        end_date = set_date(get_roc_era_to_ad(int(ey)), int(em), int(ed)).isoformat()
+        end_date = set_date(to_ad_year(int(ey)), int(em), int(ed)).isoformat()
 
         return f"{start_date} ~ {end_date}"
 

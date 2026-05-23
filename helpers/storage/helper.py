@@ -14,10 +14,7 @@ from helpers.storage.coordinate import Coordinate
 from helpers.storage.location import Location
 from helpers.symbol.venue import VenueType
 from helpers.utils_helper import (
-    get_datetime_now,
-    get_datetime_now_iso_format,
-    get_timezone,
-    get_timezone_str,
+    get_date,
 )
 
 
@@ -89,7 +86,7 @@ class ExhibitionItem(BaseModel):
         match = re.match(r"(\d{4}-\d{2}-\d{2})", self.date)
         if match:
             try:
-                return datetime.datetime.strptime(match.group(1), "%Y-%m-%d").replace(tzinfo=get_timezone())
+                return datetime.datetime.strptime(match.group(1), "%Y-%m-%d").replace(tzinfo=get_date.timezone)
             except ValueError:
                 return None
         return None
@@ -101,7 +98,7 @@ class ExhibitionItem(BaseModel):
         if match:
             try:
                 this_date = match.group(1)
-                return datetime.datetime.strptime(this_date, "%Y-%m-%d").replace(tzinfo=get_timezone())
+                return datetime.datetime.strptime(this_date, "%Y-%m-%d").replace(tzinfo=get_date.timezone)
             except ValueError:
                 return None
         return None
@@ -122,8 +119,8 @@ class ExhibitionItem(BaseModel):
         )
 
     def _sort_key(self) -> tuple:
-        today = datetime.datetime.now(tz=get_timezone()).replace(hour=0, minute=0, second=0, microsecond=0)
-        MAX_DATE = datetime.datetime(9999, 12, 31, tzinfo=get_timezone())
+        today = get_date.time_now.replace(hour=0, minute=0, second=0, microsecond=0)
+        MAX_DATE = datetime.datetime(9999, 12, 31, tzinfo=get_date.timezone)
 
         start = self.extract_start_date()
         end = self.extract_end_date()
@@ -190,7 +187,7 @@ class Exhibition(BaseModel):
     information: Information
     counts: int = 0
     items: list[ExhibitionItem] = Field(default_factory=list)
-    last_update: str = Field(default_factory=get_datetime_now_iso_format)
+    last_update: str = Field(default_factory=lambda: get_date.now_format_to_ios)
     execution_time: float | None = Field(default=None)
 
     @model_validator(mode="after")
@@ -257,7 +254,7 @@ class Exhibition(BaseModel):
         fg.link(href=self.information.external_link, rel="alternate")
         fg.description(f"收錄來自 {self.information.fullname} 的最新展覽資訊")
         fg.language("zh-TW")
-        fg.lastBuildDate(get_datetime_now())
+        fg.lastBuildDate(get_date.time_now)
 
         for item in self.items:
             fe = fg.add_entry()
@@ -282,7 +279,7 @@ class Exhibition(BaseModel):
 
             start_date = item.extract_start_date()
             if start_date:
-                fe.pubDate(start_date.replace(tzinfo=get_timezone()))
+                fe.pubDate(start_date.replace(tzinfo=get_date.timezone))
 
             if item.figure:
                 fe.enclosure(item.figure, 0, "image/jpeg")
@@ -297,7 +294,7 @@ class Exhibition(BaseModel):
         cal.add("prodid", f"-//Been Been Play Project//{self.information.fullname}//TW")
         cal.add("version", "2.0")
         cal.add("x-wr-calname", f"{self.information.fullname} 展覽時程")
-        cal.add("x-wr-timezone", get_timezone_str())
+        cal.add("x-wr-timezone", get_date.timezone_string)
 
         for item in self.items:
             start_date = item.extract_start_date()
@@ -323,7 +320,7 @@ class Exhibition(BaseModel):
             event.add("description", description)
             if item.address:
                 event.add("location", item.address)
-            event.add("dtstamp", get_datetime_now())
+            event.add("dtstamp", get_date.time_now)
             cal.add_component(event)
         this_folder = Path(__file__).parent.parent.parent.absolute() / "data" / "ics"
         this_folder.mkdir(parents=True, exist_ok=True)
@@ -334,11 +331,11 @@ class Exhibition(BaseModel):
 
 
 class LastWeekUpdateData(BaseModel):
-    updated: datetime.datetime = Field(default_factory=get_datetime_now)
+    updated: datetime.datetime = Field(default_factory=lambda: get_date.time_now)
     items: list[ExhibitionItem] = Field(default_factory=list)
 
     def update_datetime(self):
-        self.updated = get_datetime_now()
+        self.updated = get_date.time_now
 
 
 LAST_WEEK_FILE_PATH = Path(__file__).parent.parent.parent / "data" / "v2" / "last_week_update.json"
@@ -368,7 +365,7 @@ class LastWeekUpdate:
                     data = LastWeekUpdateData.model_validate_json(content)
 
         if data.updated is not None:
-            today = get_datetime_now()
+            today = get_date.time_now
             if today.isocalendar()[:2] != data.updated.isocalendar()[:2]:
                 data = LastWeekUpdateData()
 
@@ -395,7 +392,7 @@ class ExecutionStatsItem(BaseModel):
 
 
 class ExecutionStatsData(BaseModel):
-    generated_at: str = Field(default_factory=get_datetime_now_iso_format)
+    generated_at: str = Field(default_factory=lambda: get_date.now_format_to_ios)
     runners: list[ExecutionStatsItem] = Field(default_factory=list)
     total_runners: int = 0
     total_execution_time: float = 0.0

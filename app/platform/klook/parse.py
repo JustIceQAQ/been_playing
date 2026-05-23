@@ -2,7 +2,7 @@ import datetime as dt
 import re
 
 from helpers.parse_helper import ParseInit
-from helpers.utils_helper import get_this_date_year
+from helpers.utils_helper import get_date
 
 
 def chinese_date_format(raw_date_string: str) -> str | None:
@@ -65,7 +65,7 @@ class KLookParse(ParseInit):
         return value
 
     def date_format(self, raw_date_string: str) -> str:
-        this_year = get_this_date_year()
+        this_year = get_date.now_year
         if "日" in raw_date_string:
             if "年" in raw_date_string:
                 re_date_string = raw_date_string

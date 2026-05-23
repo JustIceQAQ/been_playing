@@ -13,7 +13,7 @@ from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.json import JsonTranslation
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import month_3, get_this_date_year, get_date_format_digit
+from helpers.utils_helper import month_3, get_date
 
 
 class ArtistVillageRunner(RunnerInit):
@@ -48,10 +48,10 @@ class ArtistVillageRunner(RunnerInit):
             "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
         }
         cookies = generate_cookies(need_phpsessid=True)
-        next_year = get_this_date_year() + 1
+        next_year = get_date.now_year + 1
         data = {
             "post_type": "event",
-            "start_date": get_date_format_digit(),
+            "start_date": get_date.now_format_to_digit,
             "end_date": f"{next_year}1231",
             "method": "get_posts_list_month",
         }
