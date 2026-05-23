@@ -1,4 +1,4 @@
-from helpers.storage.coordinate import Coordinate, GeoPoint, OpenStreetMap, Wiki
+from helpers.storage.coordinate import Coordinate, GeoPoint, OpenStreetMap, OpenStreetMapKeys, Wiki
 from helpers.storage.helper import Information
 from helpers.symbol.taiwan import Taiwan
 from helpers.symbol.venue import VenueType
@@ -18,7 +18,9 @@ class AfmcHall1Information:
                 raw_coordinates="25.017555022836635, 121.29841018064276",
                 open_street_map=OpenStreetMap(
                     osm_url="https://www.openstreetmap.org/way/304360932",
-                    amenity="theatre",
+                    keys=OpenStreetMapKeys(
+                        amenity="theatre",
+                    ),
                 ),
                 wiki=Wiki(
                     wikidata="Q11112020",
@@ -43,7 +45,9 @@ class AfmcHall2Information:
                 raw_coordinates="24.958508250916836, 121.22748825365926",
                 open_street_map=OpenStreetMap(
                     osm_url="https://www.openstreetmap.org/way/109846806",
-                    amenity="theatre",
+                    keys=OpenStreetMapKeys(
+                        amenity="theatre",
+                    ),
                 ),
                 wiki=Wiki(
                     wikidata="Q17014888",

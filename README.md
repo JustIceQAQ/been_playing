@@ -123,6 +123,7 @@
         - [高雄市立美術館](https://www.kmfa.gov.tw/) `KmFa`
         - [駁2藝術特區](https://pier2.org/) `Pier2`
         - [金馬賓館當代美術館](https://www.alien.com.tw/) `Alien`
+        - [內惟藝術中心](https://www.nwac.org.tw/tw/) `NWAC`
     - 屏東縣
         - [屏東美術館](https://ptam.ptcg.gov.tw/) `PTAM`
         - [屏菸1936文化基地](https://www.cultural.pthg.gov.tw/pt1936/News9.aspx?n=8E5540CA059309A8&CategorySN=3630) `PT1936`

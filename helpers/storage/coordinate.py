@@ -2,7 +2,7 @@ import re
 from _decimal import Decimal
 from typing import Any, Self
 
-from pydantic import BaseModel, Field, model_validator
+from pydantic import BaseModel, Field, model_serializer, model_validator
 
 from helpers.storage.location import Location
 
@@ -13,18 +13,30 @@ class GoogleMaps(BaseModel):
     plus_code: str | None = Field(default=None, description="Google Maps Plus Code")
 
 
-class OpenStreetMap(BaseModel):
-    """Open Street Map"""
+class OpenStreetMapKeys(BaseModel):
+    """Open Street Map Keys"""
 
-    osm_id: int | None = Field(default=None, description="OSM Node/Way/Relation ID")
-    osm_type: str | None = Field(default=None, description="node / way / relation")
-    osm_url: str | None = Field(default=None, description="完整 OSM URL")
     amenity: str | None = Field(default=None, description="用來描述給住民和訪客使用的重要設施")
     landuse: str | None = Field(
         default=None, description="Mainly used for describing the primary use of areas of land."
     )
     type: str | None = Field(default=None, description="Type of a relation.")
     tourism: str | None = Field(default=None, description="A place or object of specific interest to tourists.")
+    museum: str | None = Field(default=None, description="Type of museum classified by topic.")
+    air_conditioning: str | None = Field(default=None, description="Indication whether a feature has air-conditioning.")
+
+    @model_serializer
+    def serialize(self) -> dict:
+        return {k: v for k, v in self.__dict__.items() if v is not None}
+
+
+class OpenStreetMap(BaseModel):
+    """Open Street Map"""
+
+    osm_id: int | None = Field(default=None, description="OSM Node/Way/Relation ID")
+    osm_type: str | None = Field(default=None, description="node / way / relation")
+    osm_url: str | None = Field(default=None, description="完整 OSM URL")
+    keys: OpenStreetMapKeys | None = Field(default=None, description="OpenStreetMap 設施語意")
 
     @model_validator(mode="after")
     def parse_from_url(self) -> Self:

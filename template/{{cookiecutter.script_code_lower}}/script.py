@@ -5,10 +5,6 @@ from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}
 from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.information import {{cookiecutter.script_code}}Information
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.coordinate import Coordinate, GoogleMaps, GeoPoint
-from helpers.symbol.venue import VenueType
-from helpers.symbol.taiwan import Taiwan
-
 from helpers.utils_helper import month_3
 
 {% set venue_type = "" %}

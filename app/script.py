@@ -1,3 +1,5 @@
+from .galleries.nwac.script import NWACRunner
+
 from .galleries.capitalart import CapitalArtRunner
 from .galleries.cg1839 import CG1839Runner
 from .galleries.dac99 import Dac99Runner
@@ -220,6 +222,7 @@ GALLERIES_RUNNERS = {
     XiZhiTangRunner,
     CG1839Runner,
     SoKaArtRunner,
+    NWACRunner,
 }
 
 ALL_RUNNERS = list(PLATFORM_RUNNERS) + list(MUSEUMS_RUNNERS) + list(GALLERIES_RUNNERS)
