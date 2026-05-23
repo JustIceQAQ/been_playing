@@ -8,7 +8,7 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate, GoogleMaps, OpenStreetMap, Wiki, GeoPoint
+from helpers.storage.coordinate import Coordinate, GoogleMaps, OpenStreetMap, OpenStreetMapKeys, Wiki, GeoPoint
 from helpers.symbol.venue import VenueType
 from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
@@ -36,7 +36,9 @@ class MoCaTaipeiRunner(RunnerInit):
                 google_maps=GoogleMaps(plus_code="3G29+8H 建泰里 臺北市大同區"),
                 open_street_map=OpenStreetMap(
                     osm_url="https://www.openstreetmap.org/way/217690234",
-                    tourism="museum",
+                    keys=OpenStreetMapKeys(
+                        tourism="museum",
+                    ),
                 ),
                 wiki=Wiki(
                     wikidata="Q699040",

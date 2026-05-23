@@ -1,4 +1,4 @@
-from helpers.storage.coordinate import Coordinate, GeoPoint, OpenStreetMap, Wiki
+from helpers.storage.coordinate import Coordinate, GeoPoint, OpenStreetMap, OpenStreetMapKeys, Wiki
 from helpers.storage.helper import Information
 from helpers.symbol.taiwan import Taiwan
 from helpers.symbol.venue import VenueType
@@ -16,7 +16,9 @@ class AAAArchivesInformation:
                 geo_point=GeoPoint(raw_coordinates="25.07521442685089, 121.37402598256791"),
                 open_street_map=OpenStreetMap(
                     osm_url="https://www.openstreetmap.org/way/456206409",
-                    tourism="museum",
+                    keys=OpenStreetMapKeys(
+                        tourism="museum",
+                    ),
                 ),
                 wiki=Wiki(
                     wikidata="Q124259497",
