@@ -12,6 +12,7 @@ from icalendar import Calendar, Event
 from configs.settings import get_settings
 from helpers.storage.coordinate import Coordinate
 from helpers.storage.location import Location
+from helpers.storage.social_media import SocialMedia
 from helpers.symbol.venue import VenueType
 from helpers.utils_helper import (
     get_date,
@@ -173,20 +174,24 @@ class ExhibitionItem(BaseModel):
 
 
 class Information(BaseModel):
-    fullname: str
-    code_name: str
-    external_link: str
+    fullname: str = Field(description="名稱")
+    code_name: str = Field(description="代號")
+    external_link: str = Field(description="外部連結")
+    profile_image_url: str | None = Field(default=None, description="場館形象照")
+
     branch_coordinates: Coordinate | list[Coordinate] | None = Field(default=None, description="地理資訊")
-    location_code: Location | None = Field(default=None)
+    location_code: Location | None = Field(default=None, description="經緯度，(舊)")
     venue_type: VenueType | None = Field(default=None, description="場所類型")
-    has_rss: bool | None = Field(default=False)
-    has_ics: bool | None = Field(default=False)
+
+    has_rss: bool | None = Field(default=False, description="是否有RSS")
+    has_ics: bool | None = Field(default=False, description="是否有ICS")
 
 
 class Exhibition(BaseModel):
     information: Information
     counts: int = 0
     items: list[ExhibitionItem] = Field(default_factory=list)
+    social_media: SocialMedia | None = Field(default=None, description="社群媒體")
     last_update: str = Field(default_factory=lambda: get_date.now_format_to_ios)
     execution_time: float | None = Field(default=None)
 
