@@ -3,7 +3,7 @@ import asyncio
 from typing import cast, TYPE_CHECKING
 from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.parse import {{cookiecutter.script_code}}Parse
 from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.information import {{cookiecutter.script_code}}Information
-from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.social_media.py import {{cookiecutter.script_code}}SocialMedia
+from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.social_media import {{cookiecutter.script_code}}SocialMedia
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.utils_helper import month_3

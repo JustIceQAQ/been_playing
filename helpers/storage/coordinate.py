@@ -100,8 +100,8 @@ class Coordinate(BaseModel):
     address: str | None = Field(description="完整地址", default=None)
 
     raw_coordinates: str | None = Field(default=None, description="原始經緯度字串，準備移除!")
-    longitude: Decimal = Field(default=None, description="經度(舊)，準備移除!")
-    latitude: Decimal = Field(default=None, description="緯度(舊)，準備移除!")
+    longitude: Decimal | None = Field(default=None, description="經度(舊)，準備移除!")
+    latitude: Decimal | None = Field(default=None, description="緯度(舊)，準備移除!")
     geo_point: GeoPoint | None = Field(default=None, description="經緯度座標")
     open_street_map: OpenStreetMap | None = Field(default=None, description="OpenStreetMap(OSM) Information")
     wiki: Wiki | None = Field(default=None, description="WiKi Information")
