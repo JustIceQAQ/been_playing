@@ -1,13 +1,12 @@
 import asyncio
 
 import bs4
+from app.museums.shungyeart.information import ShungYeArtInformation
 from app.museums.shungyeart.parse import ShungYeArtParse
+from app.museums.shungyeart.social_media import ShungYeArtSocialMedia
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate, GeoPoint
-from helpers.symbol.venue import VenueType
-from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
@@ -24,17 +23,10 @@ class ShungYeArtRunner(RunnerInit):
         return month_3()
 
     def set_information(self) -> "Information":
-        return Information(
-            location_code=Taiwan.taipei.zhongzheng_63000050,
-            fullname="順益台灣美術館",
-            code_name="ShungYeArt",
-            external_link="https://www.shungye-art.org/show_now.php",
-            branch_coordinates=Coordinate(
-                geo_point=GeoPoint(raw_coordinates="25.046560256806668, 121.51092983908268"),
-                raw_coordinates="25.046560256806668, 121.51092983908268",
-            ),
-            venue_type=VenueType.ART_MUSEUM,
-        )
+        return ShungYeArtInformation.get_information()
+
+    def set_social_media(self):
+        return ShungYeArtSocialMedia.get_social_media()
 
     async def fetch_response(self):
         url = "https://www.shungye-art.org/show_now.php"
