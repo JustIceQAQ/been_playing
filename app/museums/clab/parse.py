@@ -50,6 +50,8 @@ class CLabParse(ParseInit):
 
     def get_tags(self, *args, **kwargs) -> list[str] | None:
         a = self.item.find("a", {"class": "a-base-card__category"})
+        if a is None:
+            return None
         return [a.get_text()]
 
     def get_source_url(self, *args, **kwargs) -> str | None:

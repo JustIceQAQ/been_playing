@@ -192,7 +192,7 @@ class Exhibition(BaseModel):
     counts: int = 0
     items: list[ExhibitionItem] = Field(default_factory=list)
     social_media: SocialMedia | None = Field(default=None, description="社群媒體")
-    last_update: str = Field(default_factory=lambda: get_date.now_format_to_ios)
+    last_update: str = Field(default_factory=lambda: get_date.time_now_format_to_ios)
     execution_time: float | None = Field(default=None)
 
     @model_validator(mode="after")

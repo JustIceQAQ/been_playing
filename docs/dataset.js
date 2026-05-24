@@ -64,7 +64,6 @@ const VENUE_STYLES = {
     "NtcArtMuseum":         { color: "#fff",    bg: "#000001" },
     "Culture435":           { color: "#fff",    bg: "#e35449" },
     "NTPC":                 { color: "#fff",    bg: "#585656" },
-    "NtcCeramics":          { color: "#fff",    bg: "#585656" },
     "JuMing":               { color: "#fff",    bg: "#8b7355" },
     "YoChangArt":           { color: "#fff",    bg: "#585656" },
     "ChiPoLin":             { color: "#fff",    bg: "#585656" },

@@ -12,6 +12,7 @@ from helpers.crawler.wreq.helper import WReqAsyncClient
 
 _console = Console()
 _MAX_FILE_SIZE = 10 * 1024 * 1024  # Cloudinary 免費方案上限 10MB
+_MAX_PIXELS = 400_000_000
 _WEBP_EXTS = (".jpg", ".jpeg", ".png", ".JPG", ".JPEG", ".PNG")
 _COMPRESS_QUALITIES = (75, 55, 35)
 
@@ -23,6 +24,19 @@ def _compress_image(content: bytes, quality: int) -> bytes:
         buf = io.BytesIO()
         img.save(buf, format="JPEG", quality=quality, optimize=True)
         return buf.getvalue()
+
+
+def _is_oversized_image(content: bytes) -> bool:
+    """在不完整解壓的情況下，快速檢查圖片像素數是否過大。"""
+    try:
+        Image.MAX_IMAGE_PIXELS = None  # 暫時關閉，只為了讀 header
+        with Image.open(io.BytesIO(content)) as img:
+            w, h = img.size
+            return w * h > _MAX_PIXELS
+    except Exception:
+        return False  # 讀不到就讓後面流程處理
+    finally:
+        Image.MAX_IMAGE_PIXELS = 178_956_970
 
 
 class CloudinaryImageHosting:
@@ -57,23 +71,27 @@ class CloudinaryImageHosting:
         if content is None:
             return None
 
-        if len(content) > _MAX_FILE_SIZE:
-            loop = asyncio.get_running_loop()
-            for attempt, quality in enumerate(_COMPRESS_QUALITIES, start=1):
-                compressed = await loop.run_in_executor(None, _compress_image, content, quality)
-                _console.log(
-                    f"[yellow]Cloudinary: 壓縮第 {attempt} 次（quality={quality}），{len(content)} → {len(compressed)} bytes[/yellow]"
-                )
-                content = compressed
-                if len(content) <= _MAX_FILE_SIZE:
-                    break
-            else:
-                _console.log(
-                    f"[red]Cloudinary Error: 圖片過大（{len(content)} bytes），壓縮三次仍超限，略過 {image_url}[/red]"
-                )
-                return None
-
         loop = asyncio.get_running_loop()
+
+        needs_compress = len(content) > _MAX_FILE_SIZE
+        if not needs_compress:
+            needs_compress = await loop.run_in_executor(None, _is_oversized_image, content)
+        if needs_compress:
+            if len(content) > _MAX_FILE_SIZE:
+                for attempt, quality in enumerate(_COMPRESS_QUALITIES, start=1):
+                    compressed = await loop.run_in_executor(None, _compress_image, content, quality)
+                    _console.log(
+                        f"[yellow]Cloudinary: 壓縮第 {attempt} 次（quality={quality}），{len(content)} → {len(compressed)} bytes[/yellow]"
+                    )
+                    content = compressed
+                    if len(content) <= _MAX_FILE_SIZE:
+                        break
+                else:
+                    _console.log(
+                        f"[red]Cloudinary Error: 圖片過大（{len(content)} bytes），壓縮三次仍超限，略過 {image_url}[/red]"
+                    )
+                    return None
+
         try:
             upload_result = await loop.run_in_executor(
                 None,

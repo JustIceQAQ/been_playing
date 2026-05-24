@@ -21,7 +21,7 @@ class AAAArchivesParse(ParseInit):
         title = self.item.css_first("a").attributes.get("title").strip()
         if "行動展" in title:
             return "線上展"
-        return "新北市林口區檔案館路1號 (已洽電詢問，展覽皆在林口區新館)"
+        return "新北市林口區檔案館路1號"
 
     def get_figure(self, *args, **kwargs) -> str | None:
         img = self.item.css_first("img")
