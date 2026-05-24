@@ -36,7 +36,10 @@ class CG1839Parse(ParseInit):
         pass
 
     def get_figure(self, *args, **kwargs) -> str | None:
-        return self.item.find("figure", {"class": "wp-block-image"}).find("img").get("src")
+        figure = self.item.find("figure", {"class": "wp-block-image"})
+        if figure is None:
+            return None
+        return figure.find("img").get("src")
 
     def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
