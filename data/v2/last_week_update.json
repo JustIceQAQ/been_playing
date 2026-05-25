@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-25T20:04:59.732191+08:00",
+  "updated": "2026-05-26T02:08:25.796984+08:00",
   "items": [
     {
       "title": "閱讀城市：多元族群建築與孫中山行旅",
@@ -715,6 +715,82 @@
       "source_url": "https://www.arte.gov.tw/pro1_exh_now.asp?KeyID=4563",
       "tags": null,
       "UUID": "55a0916acfd258b3a92badb779dbf32a"
+    },
+    {
+      "title": "諸羅紀：人在・神在・城就在",
+      "date": "2025-12-12 ~ 2026-05-31",
+      "address": "嘉義市立博物館1樓特展廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779732413/ik7wdxsopi92zv3dmkg8.webp",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=a73704a2-fb75-41bb-bbf6-4406ea882f8d&StartDate=2026%2f05%2f26&EndDate=2026%2f05%2f26&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "68772d209dd65203a4f5bd9b1c923cd6"
+    },
+    {
+      "title": "金鷹歸來：隆興閣掌中武林特展",
+      "date": "2026-04-23 ~ 2026-12-31",
+      "address": "新莊文化藝術中心",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1778559137/xftqcdoooyppeixd0jkt.webp",
+      "source_url": "http://event.moc.gov.tw/sp.asp?xdurl=ccEvent2016/ccEvent_cp.asp&cuItem=2859363&ctNode=676&mp=1",
+      "tags": [
+        "戲劇",
+        "偶戲",
+        "布袋戲、掌中戲"
+      ],
+      "UUID": "3b8f25900b39538a9bd43bb8286f976b"
+    },
+    {
+      "title": "台北國際食品展",
+      "date": "2026-06-24 ~ 2026-06-27",
+      "address": "南港展覽館1館世貿一館南港展覽館2館",
+      "figure": null,
+      "source_url": "http://www.foodtaipei.com.tw",
+      "tags": null,
+      "UUID": "3cef74b51fcc549cb4dead48b4a912c2"
+    },
+    {
+      "title": "《百合——直到觸及我們的情感象限》",
+      "date": "2026-05-26 ~ 2026-08-02",
+      "address": "新竹市美術館",
+      "figure": null,
+      "source_url": "https://culture.hccg.gov.tw/ch/home.jsp?id=452&parentpath=0,145,154&mcustomize=activity_view.jsp&toolsflag=Y&dataserno=202605250001&t=Activity&mserno=201810310008",
+      "tags": null,
+      "UUID": "12f283f727235dbb80ab516a98c1752d"
+    },
+    {
+      "title": "HALLOW",
+      "date": "2026-05-02 ~ 2026-06-06",
+      "address": "也趣藝廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779643814/sb79j5qvubu35bcjy8qf.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=7850bbca-15a0-4e24-8221-9de09f84b3f2&PageIndex=4&PageType=1",
+      "tags": null,
+      "UUID": "965dac061e3e58098f5e8d3ff16237fd"
+    },
+    {
+      "title": "COMPUTEX TAIPEI",
+      "date": "2026-06-02 ~ 2026-06-05",
+      "address": "南港展覽館2館南港展覽館1館世貿一館",
+      "figure": null,
+      "source_url": "http://www.computextaipei.com.tw",
+      "tags": null,
+      "UUID": "093e1056812958899a1c1edf9f5aa670"
+    },
+    {
+      "title": "新藝境 慕夏百年經典特展",
+      "date": "2026-06-26 ~ 2026-09-30",
+      "address": "臺南國家美術館 二樓 E-I展廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779732363/kygtfs5saujfvd1gzfdq.webp",
+      "source_url": "https://tickets.udnfunlife.com/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1AS0TF9",
+      "tags": null,
+      "UUID": "fe49260486b95fb8a65cefd71e01ef3c"
+    },
+    {
+      "title": "【童里5月展覽】躺躺睡 Take a break｜程一心 個展（05.02／05.23／05.30 下午藝術家導覽）",
+      "date": "2026-05-02 ~ 2026-05-31",
+      "address": "童里繪本洋行",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1778559157/ou8jcxfiiiebmm9uxx9y.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=6fe13b1c-9615-4a3b-8887-0e01f8cfd761&PageIndex=3&PageType=1",
+      "tags": null,
+      "UUID": "9e4671c3529155d991b870211c2a677a"
     }
   ]
 }
