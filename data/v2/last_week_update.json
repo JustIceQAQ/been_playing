@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-25T13:01:38.917613+08:00",
+  "updated": "2026-05-25T20:04:59.732191+08:00",
   "items": [
     {
       "title": "閱讀城市：多元族群建築與孫中山行旅",
@@ -625,6 +625,96 @@
       "source_url": "https://cultureexpress.taipei/Event/C000003?ID=5cb73bf6-8291-4c3e-98c1-61119ea49f3b&PageIndex=8&PageType=1",
       "tags": null,
       "UUID": "10d1afa1d9a05783b32a5d683b83ee02"
+    },
+    {
+      "title": "【時代的訊號：傳播技術與民主的擾動】系列活動－策展人導覽",
+      "date": null,
+      "address": "臺博館鐵道部園區一樓特展間",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779710555/muxeetlqmvpq9kyst81h.webp",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60156",
+      "tags": null,
+      "UUID": "3306a24014915b4b82fe978397807547"
+    },
+    {
+      "title": "北美館 X-site計畫 ｜鏡・亭・山：相看兩不厭",
+      "date": "2026-05-16 ~ 2026-07-26",
+      "address": "臺北市立美術館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1778474500/zou6s0p9boykmxsgrup2.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=228d97cc-bd46-4ba2-bc37-5efbc319e3cb&PageIndex=1&PageType=1",
+      "tags": null,
+      "UUID": "3f29d239fa485cf398760ea56416b9ef"
+    },
+    {
+      "title": "《此時此地：當代捷克漫畫》特展",
+      "date": "2026-05-27 ~ 2026-07-31",
+      "address": "B1圖書室",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779710548/tpqmiqix7tpmkju8pfdl.webp",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMTL/Detail.init.ctr?actId=60115",
+      "tags": null,
+      "UUID": "bf8156c8d08157158a86fdb6063b3607"
+    },
+    {
+      "title": "2026第十三屆《綠水賞》全國徵件展暨會員聯展",
+      "date": "2026-06-10 ~ 2026-06-14",
+      "address": "第1、2展覽廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779710574/qikrkmcszsqnsczhrbu5.webp",
+      "source_url": "https://www.arte.gov.tw/pro1_exh_now.asp?KeyID=4561",
+      "tags": null,
+      "UUID": "6e4d147337805e11be210e24bf0c7788"
+    },
+    {
+      "title": "【棲息寓域 Dwelling Forms】動物創作聯展",
+      "date": "2026-06-06 ~ 2026-07-26",
+      "address": "富貴美術館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779710541/snhs6wvzayk9vccydm9s.webp",
+      "source_url": "https://artemperor.tw/tidbits/19904",
+      "tags": null,
+      "UUID": "2d4abbf54d355cc5bc3e80fd6042af58"
+    },
+    {
+      "title": "感知微氣候",
+      "date": "2026-05-30 ~ 2026-06-28",
+      "address": "1館1樓大廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779710569/r8ifrszfymlmnyrqeiin.webp",
+      "source_url": "https://event.culture.tw/mocweb/reg/TNCSEC/Detail.init.ctr?actId=60612",
+      "tags": null,
+      "UUID": "5388692684c852979f267b12bf415bd4"
+    },
+    {
+      "title": "2026全國學生攝影比賽得獎作品展暨中華攝影教育學會會員聯展",
+      "date": "2026-06-17 ~ 2026-06-21",
+      "address": "第1、2展覽廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779710573/yhft3er7kkcsxlroo6sb.webp",
+      "source_url": "https://www.arte.gov.tw/pro1_exh_now.asp?KeyID=4562",
+      "tags": null,
+      "UUID": "3d882120d5f156c6afefac100908f9f8"
+    },
+    {
+      "title": "【左營孔廟東廡畫展】榛漾-潘寀榛油畫創作個展",
+      "date": "2026-05-30 ~ 2026-06-17",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779710548/kqriliojs0tdcwkpkvrm.webp",
+      "source_url": "https://khm.org.tw/tw/exhibition/currentexhibitions/detail/63",
+      "tags": null,
+      "UUID": "6b30d054128157d2a9153b92bf14b26a"
+    },
+    {
+      "title": "生命的底色 - 吳丁賢個展 Life Beneath White - Wu Ting-Hsien Solo Exhibition",
+      "date": "2026-05-16 ~ 2026-07-10",
+      "address": "穎川畫廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1778474500/cjdvifuyl4s8y3obkzvu.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=a61cfb8b-4688-40e3-aae5-11865b7e9a61&PageIndex=2&PageType=1",
+      "tags": null,
+      "UUID": "d56a4644a21f5ec8ba248462386d65f7"
+    },
+    {
+      "title": "科技藝想樂園",
+      "date": "2026-06-30 ~ 2026-09-20",
+      "address": "第1、2展覽廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779710573/szluvmauq2dkptbcocbl.webp",
+      "source_url": "https://www.arte.gov.tw/pro1_exh_now.asp?KeyID=4563",
+      "tags": null,
+      "UUID": "55a0916acfd258b3a92badb779dbf32a"
     }
   ]
 }
