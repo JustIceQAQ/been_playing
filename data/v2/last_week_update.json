@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-26T12:42:52.312543+08:00",
+  "updated": "2026-05-27T02:42:38.706122+08:00",
   "items": [
     {
       "title": "閱讀城市：多元族群建築與孫中山行旅",
@@ -1271,6 +1271,132 @@
         "綜合"
       ],
       "UUID": "b8ca54c57c7853e8a7d94f393debd603"
+    },
+    {
+      "title": "COMPUTEX TAIPEI",
+      "date": "2026-06-02 ~ 2026-06-05",
+      "address": "世貿一館南港展覽館2館南港展覽館1館",
+      "figure": null,
+      "source_url": "http://www.computextaipei.com.tw",
+      "tags": null,
+      "UUID": "093e1056812958899a1c1edf9f5aa670"
+    },
+    {
+      "title": "「綻放的圖層」周楷倫個展",
+      "date": "2026-05-30 ~ 2026-07-03",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779597986/twd9rvhp6qm8n4zk4zle.webp",
+      "source_url": "https://www.art-msac.com/exhibitions/151/overview/",
+      "tags": null,
+      "UUID": "afe6bc321bdd55ed85c2fdef5078c389"
+    },
+    {
+      "title": "小眼睛．大世界——臺灣原創繪本原畫展",
+      "date": null,
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779820834/q8r9h9qhu4yfn2gmveck.webp",
+      "source_url": "https://event.culture.tw/mocweb/reg/TTCSEC/Detail.init.ctr?actId=60139",
+      "tags": null,
+      "UUID": "647e24f671fd5de5a33d61e574917a51"
+    },
+    {
+      "title": "海之召喚海洋生靈祈願旅程",
+      "date": "2026-05-28 ~ 2026-11-27",
+      "address": "VIVELAND高雄棧柒庫館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779820821/zjd6zv4iu8z3ylcywsqp.webp",
+      "source_url": "https://tour.ibon.com.tw/event/6a0d4246de9c1d2053a29da7",
+      "tags": null,
+      "UUID": "9fc26dd310885bd9bc0863c90d1cad8c"
+    },
+    {
+      "title": "2026卡迪那NON-STOP不喊卡街舞賽",
+      "date": "2026-07-11 ~ 2026-07-12",
+      "address": "環形廣場",
+      "figure": "images/event-default.png",
+      "source_url": "https://www.expopark.taipei/News_Photo_Content.aspx?n=247&s=4427",
+      "tags": null,
+      "UUID": "a3d5a78fd2425f9e8c2b894ba0256903"
+    },
+    {
+      "title": "台北國際食品展",
+      "date": "2026-06-24 ~ 2026-06-27",
+      "address": "世貿一館南港展覽館2館南港展覽館1館",
+      "figure": null,
+      "source_url": "http://www.foodtaipei.com.tw",
+      "tags": null,
+      "UUID": "3cef74b51fcc549cb4dead48b4a912c2"
+    },
+    {
+      "title": "2026 ART TAICHUNG 台中國際藝術博覽會",
+      "date": "2026-06-05 ~ 2026-06-07",
+      "address": "台中國際會展中心",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779820836/ongawdvadfkwfxroi1tn.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=709d99c9-5cdb-44ad-af94-22a49accfe63&PageIndex=1&PageType=1",
+      "tags": null,
+      "UUID": "5f3408a19e845037acde51cf3c3e0be6"
+    },
+    {
+      "title": "生命的底色 - 吳丁賢個展 Life Beneath White - Wu Ting-Hsien Solo Exhibition",
+      "date": "2026-05-16 ~ 2026-07-10",
+      "address": "穎川畫廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1778474500/cjdvifuyl4s8y3obkzvu.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=a61cfb8b-4688-40e3-aae5-11865b7e9a61&PageIndex=2&PageType=1",
+      "tags": null,
+      "UUID": "d56a4644a21f5ec8ba248462386d65f7"
+    },
+    {
+      "title": "光影回朔：自由的雜訊 Recalling: Free the Noise(免費入場)",
+      "date": "2026-05-25 ~ 2026-06-10",
+      "address": "中央通廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779820849/ng8kmrtfguruqh4scroy.webp",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=60781",
+      "tags": null,
+      "UUID": "073cd505e585530381821f4fa1f1145b"
+    },
+    {
+      "title": "2026台灣文化創意博覽會、2026臺灣文化創意博覽會「114年文化黑潮之臺灣圖像角色IP品牌發展徵案計畫成果展」",
+      "date": "2026-08-06 ~ 2026-08-12",
+      "address": "南港展覽館1館",
+      "figure": null,
+      "source_url": "http://creativexpo.tw/",
+      "tags": null,
+      "UUID": "7365e83162b95c948446183dc4edb0ad"
+    },
+    {
+      "title": "【Frische 7展位｜VOLTA 當代藝術博覽會 (6.17-6.21.2026)】Frische 7 Booth｜VOLTA Basel (6.17-6.21.2026)",
+      "date": "2026-06-17 ~ 2026-06-21",
+      "address": "多納藝術",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779820821/rhsqf3jbm5yx8iklbiav.webp",
+      "source_url": "https://artemperor.tw/tidbits/19976",
+      "tags": null,
+      "UUID": "4005ce885dc251bba97e70391bf6ae90"
+    },
+    {
+      "title": "諸羅紀：人在・神在・城就在",
+      "date": "2025-12-12 ~ 2026-05-31",
+      "address": "嘉義市立博物館1樓特展廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779820912/jijul9099b1vgqk68qfu.webp",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=a73704a2-fb75-41bb-bbf6-4406ea882f8d&StartDate=2026%2f05%2f27&EndDate=2026%2f05%2f27&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "e0224e58d4ba5645be9d340d535a0323"
+    },
+    {
+      "title": "戲說端午 花創來上菜",
+      "date": "2026-06-06 ~ 2026-06-21",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779820828/hduj1nmybvpjfglyd6fa.webp",
+      "source_url": "https://hualien1913.nat.gov.tw/2026/05/6-6-6-7%e3%80%816-19-6-21-%e6%88%b2%e8%aa%aa%e7%ab%af%e5%8d%88-%e8%8a%b1%e5%89%b5%e4%be%86%e4%b8%8a%e8%8f%9c/",
+      "tags": null,
+      "UUID": "387db9fc217e57b29dbda5e51ee3e36e"
+    },
+    {
+      "title": "【《她的辮子長成一座花園 Her Braid, Becoming a Garden》— 戈羽彤、睡夢頭聯展】一段未曾被實現的童年經驗，成為此次展覽的起點。",
+      "date": "2026-06-06 ~ 2026-07-28",
+      "address": "瑪麗王后藝術空間",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779820821/wrlkoutrehz54bvwuaku.webp",
+      "source_url": "https://artemperor.tw/tidbits/19975",
+      "tags": null,
+      "UUID": "f9c907c794d155acb486a8fbad433b9f"
     }
   ]
 }
