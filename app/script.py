@@ -1,3 +1,5 @@
+from .museums.fuzhong15.script import FuZhong15Runner
+
 from .galleries.capitalart import CapitalArtRunner
 from .galleries.cg1839 import CG1839Runner
 from .galleries.dac99 import Dac99Runner
@@ -215,6 +217,7 @@ MUSEUMS_RUNNERS = {
     TFAIRunner,
     HuaLien1913Runner,
     SSHMRunner,
+    FuZhong15Runner,
 }
 
 GALLERIES_RUNNERS = {
