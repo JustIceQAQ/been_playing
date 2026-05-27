@@ -1,5 +1,3 @@
-from .museums.fuzhong15.script import FuZhong15Runner
-
 from .galleries.capitalart import CapitalArtRunner
 from .galleries.cg1839 import CG1839Runner
 from .galleries.dac99 import Dac99Runner
@@ -35,6 +33,7 @@ from .museums.cycc.script import CyccRunner
 from .museums.czh.script import CZHRunner
 from .museums.elandam.script import ELandAMRunner
 from .museums.fubonartmuseum.script import FuBonArtMuseumRunner
+from .museums.fuzhong15.script import FuZhong15Runner
 from .museums.hcam.script import HCAMRunner
 from .museums.hcccart.script import HcccArtRunner
 from .museums.historysinica import HistorySinicaRunner
@@ -98,6 +97,7 @@ from .museums.tncsec import TnCsEcRunner
 from .museums.ttcsec import TtCsEcRunner
 from .museums.twtc.script import TwTcRunner
 from .museums.tycg import TyCgRunner
+from .museums.xzcac.script import XZCACRunner
 from .museums.yatsen import YatsenRunner
 from .museums.yochangart import YoChangArtRunner
 from .platform.artemperor import ArtEmperorRunner
@@ -218,6 +218,7 @@ MUSEUMS_RUNNERS = {
     HuaLien1913Runner,
     SSHMRunner,
     FuZhong15Runner,
+    XZCACRunner,
 }
 
 GALLERIES_RUNNERS = {
