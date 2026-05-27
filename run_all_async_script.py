@@ -42,8 +42,9 @@ async def generate_venue_meta(information: list["Information"]):
                     else None
                 )
             else:
-                city_name = info.location_code.city.name
-                area_name = info.location_code.area.name if info.location_code.area else None
+                if info.location_code is not None:
+                    city_name = info.location_code.city.name
+                    area_name = info.location_code.area.name if info.location_code.area else None
 
         elif isinstance(info.branch_coordinates, list):
             this_coordinate = info.branch_coordinates[0]
