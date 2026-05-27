@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-27T12:55:50.617215+08:00",
+  "updated": "2026-05-27T19:54:48.320843+08:00",
   "items": [
     {
       "title": "閱讀城市：多元族群建築與孫中山行旅",
@@ -1961,6 +1961,109 @@
         "綜合"
       ],
       "UUID": "02938df1f1645f41bdba5e4d7c0abf4b"
+    },
+    {
+      "title": "《話畫看．心畫家》多元母語繪本閱讀角",
+      "date": "2026-07-11 ~ 2026-08-22",
+      "address": "國立新竹生活美學館-美學堂",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NHCLAC/JpgFile/01/60080/AD/60080_0_0_560108.png",
+      "source_url": "https://event.culture.tw/mocweb/reg/NHCLAC/Detail.init.ctr?actId=60080",
+      "tags": null,
+      "UUID": "5424972c087158b5a0e3f89b80f92d34"
+    },
+    {
+      "title": "《海洋未來式》The Ocean Will…巡迴特展",
+      "date": "2026-05-29",
+      "address": "本館3樓西側特展區",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779882746/iqmswzotzwynnd3swwma.webp",
+      "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=6038",
+      "tags": null,
+      "UUID": "8d59d3d9c99d502899989f4c4519d8f1"
+    },
+    {
+      "title": "新藝境：慕夏百年經典特展",
+      "date": "2026-06-26 ~ 2026-09-30",
+      "address": "臺南國家美術館 二樓 E-I展廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779882739/aqmdn14hfu6d9dnlcfk7.webp",
+      "source_url": "https://tour.ibon.com.tw/event/6a13b67a10faa15f4c0fa0ae",
+      "tags": null,
+      "UUID": "bcd3782268c75995bf5fb5fe17d79a2c"
+    },
+    {
+      "title": "圓潤的魔法 波特羅特展",
+      "date": "2026-06-19 ~ 2026-10-11",
+      "address": "1展廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779276288/tztrhj1dmu9vksftofm5.webp",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=60773",
+      "tags": null,
+      "UUID": "1d63d87145465df3872763f6f1b39436"
+    },
+    {
+      "title": "2026-2027 工藝遶境展【不只是 工藝】",
+      "date": "2026-06-05 ~ 2027-05-09",
+      "address": "國立臺灣工藝研究發展中心 工藝文化館1-3樓",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779882755/hdljjp67gevfrtkcnui6.webp",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTCRI/Detail.init.ctr?actId=60276",
+      "tags": null,
+      "UUID": "90d609fe720b5a10b932b15b6a1c894c"
+    },
+    {
+      "title": "十三行聚落虛擬展示體驗",
+      "date": null,
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779882775/q3kha60hcytsv0k0op9c.webp",
+      "source_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244541084921596757&sid=0L039562202066834903",
+      "tags": null,
+      "UUID": "d45e4e1df0fd53d3befd6abbacef1607"
+    },
+    {
+      "title": "【異雲書屋 YI YUN ART｜E01】2026 ART TAICHUNG 台中國際藝術博覽會",
+      "date": "2026-06-05 ~ 2026-06-07",
+      "address": "異雲書屋 YIYUN ART",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779770425/hjbr0hiepoqcadtdim2i.webp",
+      "source_url": "https://artemperor.tw/tidbits/19973",
+      "tags": null,
+      "UUID": "f27c44dfe4565ad280be64e6209ecda2"
+    },
+    {
+      "title": "【新北市立圖書館石碇分館】115年6月書展-藍色星球",
+      "date": "2026-06-01 ~ 2026-06-30",
+      "address": "新北市立圖書館石碇分館",
+      "figure": null,
+      "source_url": "http://event.moc.gov.tw/sp.asp?xdurl=ccEvent2016/ccEvent_cp.asp&cuItem=2862015&ctNode=676&mp=1",
+      "tags": [
+        "圖書與語文",
+        "圖書(限書展) ",
+        "不分細類"
+      ],
+      "UUID": "e50fe24b01b253df92bf9b6d7a608293"
+    },
+    {
+      "title": "阮ê海海人生-臺韓海洋文化交流特展",
+      "date": null,
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779882776/vrwlql1ybkthzxmmovbo.webp",
+      "source_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244541084921596757&sid=0Q073555972184555288",
+      "tags": null,
+      "UUID": "934ee619df77559894ac9ff78379268b"
+    },
+    {
+      "title": "【假如故鄉 —— 常陵 個展】If My Homeland —— Chang Ling solo exhibition",
+      "date": "2026-05-16 ~ 2026-06-20",
+      "address": "異雲書屋 YIYUN ART",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1778474498/zdfhcxvrq0zgtkyb7wu6.webp",
+      "source_url": "https://artemperor.tw/tidbits/19876",
+      "tags": null,
+      "UUID": "893e571db7755a02a7f7b7d76daf9614"
+    },
+    {
+      "title": "【風中吟遊——李光裕．鄧卜君雙個展】Wandering in the Wind—LEE Kuang-Yu．TENG Pu-Chun Dual Exhibition",
+      "date": "2026-05-30 ~ 2026-07-05",
+      "address": "采泥藝術",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779882741/bbgp40zedoqlrk4rcvpt.webp",
+      "source_url": "https://artemperor.tw/tidbits/19982",
+      "tags": null,
+      "UUID": "0c4a60e89f835005b62bda9a7ae4f462"
     }
   ]
 }
