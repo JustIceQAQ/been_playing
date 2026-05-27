@@ -14,9 +14,6 @@ on:
       - "develop"
     paths:
       - ".github/workflows/update_async_exhibition.yml"
-  push:
-    branches:
-      - "develop"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -26,10 +23,13 @@ jobs:
   run-process:
     runs-on: ubuntu-latest
     steps:
-      - name: set timezone
-        uses: szenius/set-timezone@v1.0
-        with:
-          timezoneLinux: "Asia/Taipei"
+      - name: set timezone with Asia/Taipei
+        run: |
+          sudo ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
+          echo "Asia/Taipei" | sudo tee /etc/timezone
+          sudo dpkg-reconfigure -f noninteractive tzdata
+      - name: check timezone
+        run: timedatectl
 
       - name: checkout repo content
         uses: actions/checkout@v2
@@ -38,26 +38,19 @@ jobs:
 
 
       - name: setup python 3.12 with uv
-        uses: astral-sh/setup-uv@v2
-
-      - name: create virtual environment
-        run: uv venv
-
-      - uses: actions/cache@v3
+        uses: astral-sh/setup-uv@eac588ad8def6316056a12d4907a9d4d84ff7a3b
         with:
-          path: ~/.cache/uv
-          key: ${{ runner.os }}-uv-${{ hashFiles('requirements.txt') }}
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
 
-      - name: install dependencies with uv
-        run: |
-          uv pip install -r requirements.txt
-
+      - name: Install dependencies
+        run: uv sync --no-dev --frozen
       - name: run async script with uv
-        run: |
-          uv run python run_some_async_script.py
+        run: uv run --no-sync python run_some_async_script.py
         env:
-          IMGUR_API_CLIENT_ID: ${{ secrets.IMGUR_API_CLIENT_ID }}
-          IMGUR_API_CLIENT_SECRET: ${{ secrets.IMGUR_API_CLIENT_SECRET }}
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
           SENTRY_SDK_DNS: ${{ secrets.SENTRY_SDK_DNS }}
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
           SCRAPE_DO_API_KEY: ${{ secrets.SCRAPE_DO_API_KEY }}
