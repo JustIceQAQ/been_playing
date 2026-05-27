@@ -5,11 +5,9 @@ from pathlib import Path
 
 import sentry_sdk
 from dotenv import load_dotenv
-
-from app.museums.khm import KhmRunner
+from app.museums.tfai import TFAIRunner
 from configs.settings import get_settings
 from helpers.cache import DiskCache, NoneCache
-from helpers.crawler.scraper.helper import available_scraper_async_client
 from helpers.image_hosting.none.helper import NoneImageHosting
 from helpers.image_hosting.cloudinary.helper import CloudinaryImageHosting
 
@@ -36,7 +34,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         )
 
     disk_cache = NoneCache() if runtime_setting.IS_DEBUG else DiskCache()
-    job = [KhmRunner]
+    job = [TFAIRunner]
     script_total = len(job)
     prefix = None
     if (worker is not None) and (worker_max is not None) and (worker_max > 0):
@@ -47,8 +45,6 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         prefix = f"worker_{worker}"
     else:
         scripts_to_run = job
-
-    await available_scraper_async_client(runtime_setting.SCRAPER_API_KEY)
 
     all_async_script_runners = [
         RunnerObj().run(disk_cache, image_host, prefix, develop_mode=True) for RunnerObj in scripts_to_run
