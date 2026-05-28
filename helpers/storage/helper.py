@@ -207,7 +207,6 @@ class Exhibition(BaseModel):
         self,
         filename: str,
         folder: Path = Path(__file__).parent.parent.parent.absolute() / "data" / "v2",
-        execution_time: float | None = None,
         is_unique: bool | None = True,
         is_sort: bool | None = True,
         prefix: str | None = None,
@@ -220,7 +219,6 @@ class Exhibition(BaseModel):
         if prefix is not None:
             this_folder = Path(__file__).parent.parent.parent.absolute() / "data" / prefix
             this_folder.mkdir(exist_ok=True)
-        self.execution_time = execution_time
 
         this_folder = (
             Path(this_folder)
@@ -241,14 +239,6 @@ class Exhibition(BaseModel):
             await afp.write(self.model_dump_json())
             await afp.truncate()
             last_week_update.set_after_items(self.items)
-
-        if execution_time is not None:
-            execution_stats.record(
-                code_name=self.information.code_name,
-                fullname=self.information.fullname,
-                execution_time=execution_time,
-                last_update=self.last_update,
-            )
 
     async def save_to_rss(self) -> pathlib.Path:
         runtime_setting = get_settings()
