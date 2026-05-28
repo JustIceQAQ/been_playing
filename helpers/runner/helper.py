@@ -148,51 +148,55 @@ class RunnerInit(abc.ABC):
         develop_mode: bool = False,
     ):
         start_time = time.time()
-        try:
-            self.cache = cache
-            self.image = image
-            self.information_ = self.set_information()
+        self.cache = cache
+        self.image = image
+        self.information_ = self.set_information()
 
-            if self.output_rss:
-                self.information_.has_rss = True
-            if self.output_ics:
-                self.information_.has_ics = True
+        if self.output_rss:
+            self.information_.has_rss = True
+        if self.output_ics:
+            self.information_.has_ics = True
 
-            self.response_ = await self.fetch_response()
-            self.parsed_ = await self.fetch_parsed()
-            self.items_ = await self.fetch_items()
+        self.response_ = await self.fetch_response()
+        self.parsed_ = await self.fetch_parsed()
+        self.items_ = await self.fetch_items()
 
-            if self.retry_on_empty:
-                for attempt in range(1, self.retry_times + 1):
-                    if self.items_:
-                        break
-                    await asyncio.sleep(self.retry_interval * attempt)
-                    self.response_ = await self.fetch_response()
-                    self.parsed_ = await self.fetch_parsed()
-                    self.items_ = await self.fetch_items()
-            if hasattr(self, "set_social_media"):
-                social_media = self.set_social_media()
-            else:
-                social_media = None
-            self.exhibition_ = Exhibition(information=self.information_, items=self.items_, social_media=social_media)
+        if self.retry_on_empty:
+            for attempt in range(1, self.retry_times + 1):
+                if self.items_:
+                    break
+                await asyncio.sleep(self.retry_interval * attempt)
+                self.response_ = await self.fetch_response()
+                self.parsed_ = await self.fetch_parsed()
+                self.items_ = await self.fetch_items()
+        if hasattr(self, "set_social_media"):
+            social_media = self.set_social_media()
+        else:
+            social_media = None
+        self.exhibition_ = Exhibition(information=self.information_, items=self.items_, social_media=social_media)
 
-            _image_sem = image_sem if image_sem is not None else asyncio.Semaphore(5)
-            cache_tasks = [self.cache_image_url(item, _image_sem) for item in self.exhibition_.items]
-            await asyncio.gather(*cache_tasks)
+        _image_sem = image_sem if image_sem is not None else asyncio.Semaphore(5)
+        cache_tasks = [self.cache_image_url(item, _image_sem) for item in self.exhibition_.items]
+        await asyncio.gather(*cache_tasks)
 
-            if self.use_suffix_item_from_url_auto:
-                await self.suffix_item_from_url_auto(self.exhibition_.items)
-            if self.use_suffix_item_from_file_func:
-                await self.suffix_item_from_file(self.exhibition_.items)
+        if self.use_suffix_item_from_url_auto:
+            await self.suffix_item_from_url_auto(self.exhibition_.items)
+        if self.use_suffix_item_from_file_func:
+            await self.suffix_item_from_file(self.exhibition_.items)
 
-            end_time = time.time()
-            execution_time = end_time - start_time
+        end_time = time.time()
+        execution_time = end_time - start_time
 
-            await self.items_check()
+        await self.items_check()
 
+        self.exhibition_.execution_time = execution_time
+
+        if develop_mode:
+            print(self.exhibition_)
+
+        else:
             await self.exhibition_.save_to_json(
                 f"{self.information_.code_name}",
-                execution_time=execution_time,
                 is_unique=self.is_unique,
                 is_sort=self.is_sort,
                 prefix=prefix,
@@ -201,9 +205,3 @@ class RunnerInit(abc.ABC):
                 await self.exhibition_.save_to_rss()
             if self.output_ics:
                 await self.exhibition_.save_to_ics()
-            if develop_mode:
-                print(self.exhibition_)
-
-        except Exception as e:  # noqa F841
-            class_name = self.__class__.__name__
-            raise RuntimeError(f"[{class_name}] 執行失敗") from e
