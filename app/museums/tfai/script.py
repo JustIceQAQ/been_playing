@@ -36,10 +36,15 @@ class TFAIRunner(RunnerInit):
         cookies = generate_cookies(need_js_ession_id=True)
         async with NiquestsAsyncSession(headers=headers) as client:
             response = await client.get(
-                "https://www.tfai.org.tw/program/searchAjax?date=&type=Exhibition&location=&topic=&_=1779500269795",
+                "https://www.tfai.org.tw/program/searchAjax?date=&type=Exhibition&location=&topic=",
                 cookies=cookies,
             )
-        return response.json()
+        data = response.json()
+        print(
+            f"[TFAI] status={response.status_code}, data keys={list(data.keys()) if isinstance(data, dict) else type(data)}",
+            flush=True,
+        )
+        return data
 
     async def fetch_parsed(self):
         parsed = cast(dict, await super().fetch_parsed())
