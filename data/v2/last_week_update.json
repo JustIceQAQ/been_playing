@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-29T19:46:28.559564+08:00",
+  "updated": "2026-05-30T03:08:45.425607+08:00",
   "items": [
     {
       "title": "閱讀城市：多元族群建築與孫中山行旅",
@@ -3808,6 +3808,51 @@
       "source_url": "https://cultureexpress.taipei/Event/C000003?ID=a5ad437b-878a-466f-88dd-822836b54642&PageIndex=9&PageType=1",
       "tags": null,
       "UUID": "464910b88c885b079308aaa7d9bff98e"
+    },
+    {
+      "title": "諸羅紀：人在・神在・城就在",
+      "date": "2025-12-12 ~ 2026-05-31",
+      "address": "嘉義市立博物館1樓特展廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1780081563/tbsx05tqofurwqpt9qsc.webp",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=a73704a2-fb75-41bb-bbf6-4406ea882f8d&StartDate=2026%2f05%2f30&EndDate=2026%2f05%2f30&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "f26634e4d2365702aad53289de695462"
+    },
+    {
+      "title": "「綻放的圖層」周楷倫個展",
+      "date": "2026-05-30 ~ 2026-07-03",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779643831/nephm726rpbj55xd4n2f.webp",
+      "source_url": "https://www.art-msac.com/exhibitions/151-chou-kai-lun-layers-in-bloom/overview/",
+      "tags": null,
+      "UUID": "3e84dba7e25c559ab3afe2523c85088d"
+    },
+    {
+      "title": "藝海三人行〜林錦濤 楊企霞 張真彥水墨彩瓷展",
+      "date": "2026-05-16 ~ 2026-05-30",
+      "address": "孟焦畫坊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1780081559/uaagueth9js0n6dbrtnc.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=caf82306-3d9c-49fc-9b90-8f66d49e65a1&PageIndex=3&PageType=1",
+      "tags": null,
+      "UUID": "047d8c10fdac50dfbd9cd75c5f6a31ed"
+    },
+    {
+      "title": "COMPUTEX TAIPEI",
+      "date": "2026-06-02 ~ 2026-06-05",
+      "address": "南港展覽館2館南港展覽館1館世貿一館",
+      "figure": null,
+      "source_url": "http://www.computextaipei.com.tw",
+      "tags": null,
+      "UUID": "093e1056812958899a1c1edf9f5aa670"
+    },
+    {
+      "title": "A House That Finds Its Way",
+      "date": "2026-06-13 ~ 2026-07-25",
+      "address": "也趣藝廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1780081562/iq7xfkzorich9jgfvnkr.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=a1c9fd4c-3aa3-41b4-9620-6b61dad79af8&PageIndex=2&PageType=1",
+      "tags": null,
+      "UUID": "bf08d1c2c61c57498c0e492e2a3a4b6f"
     }
   ]
 }
