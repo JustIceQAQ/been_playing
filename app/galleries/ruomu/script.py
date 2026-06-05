@@ -19,6 +19,7 @@ from typing import cast
 class RuoMuRunner(RunnerInit):
     translation = BeautifulSoupTranslation
     use_parse = RuoMuParse
+    retry_on_empty = False
 
     def set_cache_expire(self) -> int | None:
         return month_3()
