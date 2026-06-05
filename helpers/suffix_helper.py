@@ -20,7 +20,7 @@ class SuffixHelper:
             self.suffixes = json.load(f)
 
     def get_code_name_items(self, code_name: str) -> dict:
-        return self.suffixes[code_name]
+        return self.suffixes.get(code_name, {})
 
 
 suffix_helper = SuffixHelper()
