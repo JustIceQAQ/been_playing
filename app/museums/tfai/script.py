@@ -39,6 +39,7 @@ class TFAIRunner(RunnerInit):
                 "https://www.tfai.org.tw/program/searchAjax?date=&type=Exhibition&location=&topic=",
                 cookies=cookies,
             )
+            response.raise_for_status()
         data = response.json()
         print(
             f"[TFAI] status={response.status_code}, data keys={list(data.keys()) if isinstance(data, dict) else type(data)}",
