@@ -2,7 +2,6 @@ import asyncio
 
 import bs4
 import httpx
-import logging
 from app.museums.montue.parse import MoNTUEParse
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
@@ -60,12 +59,8 @@ class MoNTUERunner(RunnerInit):
                 )
                 for div in divs:
                     all_items_url.append(div.find("a").get("href"))
-            if not all_items_url:
-                logging.error("all_items_url data is %s", bool(all_items_url))
             get_items_context = [self.sub_fetch_response(client, item_url) for item_url in set(all_items_url)]
             get_items_context_results = await asyncio.gather(*get_items_context)
-            if not get_items_context_results:
-                logging.error("get_items_context_results data is %s", bool(all_items_url))
         return get_items_context_results
 
     async def fetch_parsed(self):

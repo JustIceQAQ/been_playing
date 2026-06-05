@@ -187,8 +187,6 @@ class RunnerInit(abc.ABC):
         end_time = time.time()
         execution_time = end_time - start_time
 
-        await self.items_check()
-
         self.exhibition_.execution_time = execution_time
 
         if develop_mode:
