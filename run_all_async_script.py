@@ -164,7 +164,6 @@ async def generate_location(information: list["Information"]):
 
 
 async def main(worker: int | None = None, worker_max: int | None = None):
-    fetch_sem = asyncio.Semaphore(10)
     image_sem = asyncio.Semaphore(5)
     runtime_setting = get_settings()
 
@@ -208,10 +207,13 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         named_runners.append((RunnerObj.__name__, RunnerObj().run(disk_cache, image_host, prefix, image_sem)))
 
     total = len(named_runners)
-    done_count = 0
     is_debug = runtime_setting.IS_DEBUG
     console = Console()
     failed: list[str] = []
+
+    task_queue = asyncio.Queue()
+    for item in named_runners:
+        await task_queue.put(item)
 
     with Progress(
         SpinnerColumn(),
@@ -224,37 +226,43 @@ async def main(worker: int | None = None, worker_max: int | None = None):
     ) as progress:
         overall = progress.add_task("[bold cyan]總進度", total=total)
 
-        async def tracked_run(name: str, coro):
-            nonlocal done_count
-            async with fetch_sem:
+        async def worker_loop():
+            while not task_queue.empty():
+                try:
+                    name, coro = await task_queue.get()
+                except asyncio.QueueEmpty:
+                    break
+
                 task_id = progress.add_task(f"[yellow]{name}", total=None)
                 try:
-                    result = await coro
-                    done_count += 1
+                    await coro
                     progress.update(overall, advance=1)
                     if is_debug:
                         console.log(f"[green]OK [/green] {name}")
-                    return result
                 except Exception as e:
-                    done_count += 1
                     failed.append(name)
                     progress.update(overall, advance=1)
                     cause = e.__cause__ or e
-                    if is_debug:
-                        console.log(f"[red]ERR[/red] {name} — {type(cause).__name__}: {cause}")
-                    return e
+                    # 關鍵：不論是否為 debug 模式，CI 環境失敗了就一定要印出錯誤
+                    console.print(f"[red]ERR[/red] {name} — {type(cause).__name__}: {cause}")
+                    sentry_sdk.capture_exception(e)
                 finally:
                     progress.remove_task(task_id)
+                    task_queue.task_done()
 
-        await asyncio.gather(*[tracked_run(name, coro) for name, coro in named_runners])
+        concurrency_limit = 4
+        workers = [asyncio.create_task(worker_loop()) for _ in range(concurrency_limit)]
 
-    if failed and is_debug:
-        console.print(f"\n[bold red]失敗 ({len(failed)}):[/bold red] {', '.join(failed)}")
+        await task_queue.join()
+        for w in workers:
+            w.cancel()
+
     await generate_location(all_script_information)
     await generate_venue_meta(all_script_information)
-
     await last_week_update.set_last_week_items()
     await execution_stats.save()
+    if failed:
+        console.print(f"\n[bold red]失敗 ({len(failed)}):[/bold red] {', '.join(failed)}")
 
 
 if __name__ == "__main__":
