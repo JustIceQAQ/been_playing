@@ -59,8 +59,8 @@ class CloudinaryImageHosting:
                     _console.log(f"[red]Cloudinary Error: 下載圖片失敗（HTTP {response.status}）{image_url}[/red]")
                     return None
                 return await response.bytes()
-        except Exception as e:
-            _console.log(f"[red]Cloudinary Error: 下載圖片失敗 {image_url} — {e}[/red]")
+        except Exception:
+            # _console.log(f"[red]Cloudinary Error: 下載圖片失敗 {image_url} — {e}[/red]")
             return None
 
     async def upload(self, image_url: str) -> str | None:
@@ -103,8 +103,8 @@ class CloudinaryImageHosting:
                     secure_url = secure_url[: -len(ext)] + ".webp"
                     break
             return secure_url or None
-        except Exception as e:
-            _console.log(f"[red]Cloudinary Error: {e}[/red]")
+        except Exception:
+            # _console.log(f"[red]Cloudinary Error: {e}[/red]")
             return None
 
 
