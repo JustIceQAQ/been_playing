@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-08T20:50:19.592837+08:00",
+  "updated": "2026-06-09T02:45:08.611045+08:00",
   "items": [
     {
       "title": "ART OF MIKU -台北展覽- 第一階段＿限量早鳥票 0807",
@@ -526,6 +526,24 @@
         "表演藝術"
       ],
       "UUID": "edea2939dce35112b566dc1aaa06ae4c"
+    },
+    {
+      "title": "ART OF MIKU -台北展覽- 第一階段＿限量早鳥票 0808",
+      "date": "2026-08-08",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1780944025/jo7zx6peew1wjllupsfp.webp",
+      "source_url": "https://capsule1111.kktix.cc/events/artofmikufirststage0808",
+      "tags": null,
+      "UUID": "69f1e319833a56f5bf961e60186272a9"
+    },
+    {
+      "title": "台北國際食品展",
+      "date": "2026-06-24 ~ 2026-06-27",
+      "address": "世貿一館南港展覽館2館南港展覽館1館",
+      "figure": null,
+      "source_url": "http://www.foodtaipei.com.tw",
+      "tags": null,
+      "UUID": "3cef74b51fcc549cb4dead48b4a912c2"
     }
   ]
 }
