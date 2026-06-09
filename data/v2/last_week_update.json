@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-09T02:45:08.611045+08:00",
+  "updated": "2026-06-09T12:48:16.650106+08:00",
   "items": [
     {
       "title": "ART OF MIKU -台北展覽- 第一階段＿限量早鳥票 0807",
@@ -544,6 +544,263 @@
       "source_url": "http://www.foodtaipei.com.tw",
       "tags": null,
       "UUID": "3cef74b51fcc549cb4dead48b4a912c2"
+    },
+    {
+      "title": "臺灣當代雕塑展《恆形—雕塑作為方法》",
+      "date": "2026-05-09 ~ 2026-12-20",
+      "address": "朱銘美術館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1780683594/djzjv928yajiyykoiow3.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=47e1766a-a110-4e07-96eb-6a7b4a720c95&PageIndex=4&PageType=1",
+      "tags": null,
+      "UUID": "2600b22550385a38ab40f5399a7a6a7d"
+    },
+    {
+      "title": "趣．靜．味〜林美雅、蔡佶辰、蔡尚承聯展",
+      "date": "2026-06-17 ~ 2026-06-30",
+      "address": "孟焦畫坊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1780980159/sm9widzbrkd0didmzidq.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=59ecdfac-7042-47d0-a3a8-a2783675440c&PageIndex=1&PageType=1",
+      "tags": null,
+      "UUID": "c4600710c4ec5c278653304efb5db2fb"
+    },
+    {
+      "title": "【華山論戲】關於戲曲編劇的瘋狂埋梗這檔事",
+      "date": "2026-06-11 ~ 2026-06-11",
+      "address": "烏梅劇院",
+      "figure": "https://media.huashan1914.com/WebUPD/umaytheater/performance/%e5%9c%8b%e5%85%89%e5%8a%87%e5%9c%98_(%e6%a2%85%e7%8e%89%e9%85%8d)%e8%8f%af%e5%b1%b1%e8%ab%96%e6%88%b2_%e5%ae%98%e7%b6%b21920x1080.jpg",
+      "source_url": "https://www.huashan1914.com/w/umaytheater/performance_26060809484000435",
+      "tags": [
+        "講座",
+        "表演藝術"
+      ],
+      "UUID": "0061df5e10535467964d38e2ab25bf5d"
+    },
+    {
+      "title": "藍寶石大歌廳《秀場傳奇》故事展 - 高雄流行音樂中心",
+      "date": "2026-06-11 ~ 2026-12-31",
+      "address": "高雄",
+      "figure": "https://res.klook.com/image/upload/0806_藍寶石故事展_326x460_dk8n5p.png",
+      "source_url": "https://www.klook.com/zh-TW/activity/121910-sapphire-hall-legendary-show-story-exhibition/",
+      "tags": null,
+      "UUID": "370708c677c5587abdb11080e194dc4d"
+    },
+    {
+      "title": "《全島火箭人：誰能登月？》沉浸式體驗競賽",
+      "date": "2026-06-09 ~ 2026-12-31",
+      "address": "嘉義市",
+      "figure": "https://res.klook.com/image/upload/展演頁面活動首圖-326x460_2_p44ezd.jpg",
+      "source_url": "https://www.klook.com/zh-TW/activity/209810-island-rocketman-the-race-to-the-moon/",
+      "tags": null,
+      "UUID": "585b42ddd9cd5e5492f11fce274ff96b"
+    },
+    {
+      "title": "【亞洲首站】愛麗絲夢遊仙境:兔子洞的秘密｜沈浸式互動故事特展",
+      "date": "2026-06-09 ~ 2026-09-13",
+      "address": "台北",
+      "figure": "https://res.klook.com/image/upload/愛麗絲展票_場景版本_ori_展演頁面活動首圖_326x460_1_a2daol.png",
+      "source_url": "https://www.klook.com/zh-TW/activity/200839-2026-alice-in-wonderland-down-the-rabbit-hole/",
+      "tags": null,
+      "UUID": "f809cb4f1db15b2da6519612f9844f29"
+    },
+    {
+      "title": "《三原色 Primary Colors》2026愛上藝廊親子美學展",
+      "date": "2026-07-04 ~ 2026-08-29",
+      "address": "iart 愛上藝廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1780980173/nlziaduiydo55uz30wmb.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=07bcfb88-5d9d-4533-ad03-5ebb7ba4a5b7&PageIndex=3&PageType=1",
+      "tags": null,
+      "UUID": "febee677632754158f79ab8b6952acb6"
+    },
+    {
+      "title": "萬物光譜：順益館藏動物藝術特展",
+      "date": "2026-07-09 ~ 2026-08-30",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1780980250/cbvbjzrceczustapydpw.webp",
+      "source_url": "https://www.shungye-art.org/show_now_detail.php?id=29",
+      "tags": null,
+      "UUID": "2c65a362cc23503fad6ec0ae5a700863"
+    },
+    {
+      "title": "恐龍大復活關渡探險樂園｜關渡碼頭貨櫃市集",
+      "date": "2026-06-09 ~ 2027-02-21",
+      "address": "台北",
+      "figure": "https://res.klook.com/image/upload/截圖_2026-01-24_12.44.45_mauddh.png",
+      "source_url": "https://www.klook.com/zh-TW/activity/188369-dinosaur-resurrection-guandu-adventure-park/",
+      "tags": null,
+      "UUID": "7ec027448b9c5bc8be5440d481897cbd"
+    },
+    {
+      "title": "積吶虹光｜虹心球(RHS)光譜中的我們",
+      "date": "2026-04-30 ~ 2026-06-30",
+      "address": "立法院 文化走廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779604451/jjsb7lklhmzbkycccana.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=3abcc1b0-fb0a-4cd8-bd32-e256d32b6400&PageIndex=5&PageType=1",
+      "tags": null,
+      "UUID": "e9a9502007e75c5aba0f31d181ba087f"
+    },
+    {
+      "title": "2026福隆國際沙雕藝術季門票",
+      "date": "2026-06-09 ~ 2026-10-26",
+      "address": "新北",
+      "figure": "https://res.klook.com/image/upload/2026沙雕季主視覺-326x460_crglli.jpg",
+      "source_url": "https://www.klook.com/zh-TW/activity/116166-2026-fulong-international-sand-sculpture-art-festival/",
+      "tags": null,
+      "UUID": "e9c91c5ac1d15b56b72939889054a741"
+    },
+    {
+      "title": "歐陽羽童 創作個展 【重組自然】",
+      "date": "2026-06-30 ~ 2026-08-16",
+      "address": "臺北承德館, CHENGDE SPACE-TAIPEI",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1780980329/wya9fbbyffcuilw7mwn6.webp",
+      "source_url": "https://www.kingcarart.org.tw/exhibitions-detail/257",
+      "tags": null,
+      "UUID": "8be1edc11d5e5048b256a27c66d3ec01"
+    },
+    {
+      "title": "順益八十週年經典選粹",
+      "date": "2026-06-26 ~ 2027-01-17",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1780980249/hqvtbmstzwrkffpmtadl.webp",
+      "source_url": "https://www.shungye-art.org/show_now_detail.php?id=28",
+      "tags": null,
+      "UUID": "7a5a0c2c28d058ef9267cba29aac6376"
+    },
+    {
+      "title": "唱 我們的歌 流行音樂故事展｜門票｜臺北流行音樂中心",
+      "date": "2026-06-09 ~ 2026-12-05",
+      "address": "台北",
+      "figure": "https://res.klook.com/image/upload/展演頁面活動首圖_qqmx1m.jpg",
+      "source_url": "https://www.klook.com/zh-TW/activity/70429-music-island-stories-pop-music-in-taiwan-taipei/",
+      "tags": null,
+      "UUID": "fee0520506055bceb9f084d90060b098"
+    },
+    {
+      "title": "萬物光譜：順益館藏動物藝術特展",
+      "date": "2026-07-09 ~ 2026-08-30",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1780980250/sbpqgueeygudnkvmbtao.webp",
+      "source_url": "https://www.shungye-art.org/show_now_detail.php?id=29",
+      "tags": null,
+      "UUID": "2c65a362cc23503fad6ec0ae5a700863"
+    },
+    {
+      "title": "【台中・日本超人氣展覽】「人也太好了吧展」&「我看你是沒懂喔展」",
+      "date": "2026-06-09 ~ 2026-06-12",
+      "address": "台中",
+      "figure": "https://res.klook.com/image/upload/展演頁面活動首圖326x460_1_ha76ja.png",
+      "source_url": "https://www.klook.com/zh-TW/activity/213558-i-think-you-dont-get-it-exhibition-the-little-things-that-make-me-happy-exhibition/",
+      "tags": null,
+      "UUID": "ac48ef7a339d585d86acf4e4c9458492"
+    },
+    {
+      "title": "《茶脈流轉：一盞茶的濃・淡・新》",
+      "date": "2026-01-17 ~ 2026-12-31",
+      "address": "新芳春茶行",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779190614/fnezrqesaic8nb4ige0l.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=2411c859-c38c-4913-9d4f-f81f5b637745&PageIndex=7&PageType=1",
+      "tags": null,
+      "UUID": "7c3df709db7650108a44d98766043746"
+    },
+    {
+      "title": "「引光入畫」 ——鳳甲美術館刺繡收藏展",
+      "date": "2026-04-12 ~ 2026-07-05",
+      "address": "大安覺風佛教藝術學苑（大安覺風藝文空間） （台北市大安區大安路一段106巷22號1樓）*捷運忠孝復興站3號出口",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1778512122/qha259rootbh4symvqkl.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=f2afb575-6c18-4564-8e09-aa995828fd69&PageIndex=6&PageType=1",
+      "tags": null,
+      "UUID": "b47c81645b955530afaa0aa6d0dd1266"
+    },
+    {
+      "title": "POP! POP! POP! 流行音樂互動展 - 高雄流行音樂中心",
+      "date": "2026-06-09 ~ 2026-12-05",
+      "address": "高雄",
+      "figure": "https://res.klook.com/image/upload/常設展klook_326x460_frshdr.png",
+      "source_url": "https://www.klook.com/zh-TW/activity/87496-pop-pop-pop-an-interactive-journey/",
+      "tags": null,
+      "UUID": "dcfe5b9b69a35524b492e090c7b08d96"
+    },
+    {
+      "title": "吳德和雕塑創作展",
+      "date": "2026-06-02 ~ 2026-06-14",
+      "address": "孟焦畫坊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779339048/ztqy8xrdq7inm7f38zrz.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=f7bc97f6-29de-4f50-b1ac-6d1dfa254006&PageIndex=2&PageType=1",
+      "tags": null,
+      "UUID": "25a1f88b87645530b5b14dcd6d885467"
+    },
+    {
+      "title": "《名偵探柯南》TV動畫播放30週年紀念展【台北場】",
+      "date": "2026-06-09 ~ 2026-06-21",
+      "address": "台北",
+      "figure": "https://res.klook.com/image/upload/klook_展演首頁-326x460_bjpcxb.jpg",
+      "source_url": "https://www.klook.com/zh-TW/activity/208109-detective-conan-tv-anime-30th-anniversary-exhibition/",
+      "tags": null,
+      "UUID": "f57003b798375a468fa31eb87028e5fe"
+    },
+    {
+      "title": "高雄市立美術館門票",
+      "date": "2026-06-09 ~ 2026-12-05",
+      "address": "高雄",
+      "figure": "https://res.klook.com/image/upload/截圖_2025-12-23_14.56.31_oqzqkc.png",
+      "source_url": "https://www.klook.com/zh-TW/activity/117472-kaohsiung-museum-of-fine-art-ticket/",
+      "tags": null,
+      "UUID": "4f7edc3930795ad6b6e9810a7373b06e"
+    },
+    {
+      "title": "VIS 2026 春季PBL 成果展",
+      "date": "2026-06-13 ~ 2026-06-13",
+      "address": "華山紅磚六合院 西1館, 華山紅磚六合院 西5-1館, 華山紅磚六合院 西5-2館",
+      "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/114-2_PBL%e6%88%90%e6%9e%9c%e5%b1%95%e9%82%80%e8%ab%8b%e5%87%bd.png",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26060911313292516",
+      "tags": [
+        "展覽"
+      ],
+      "UUID": "7f3871c88aba54a09d08b74741b18dd6"
+    },
+    {
+      "title": "中心新村｜常設展《走進中心新村的街談巷語》&實境解謎遊戲〈無人知曉的眷戀〉",
+      "date": "2023-10-01 ~ 2026-08-30",
+      "address": "北投中心新村",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779190629/aamygfn2emxehplvkpkj.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=92e4a9c7-c23d-4f82-a48c-3c12e508befc&PageIndex=9&PageType=1",
+      "tags": null,
+      "UUID": "1fb401a93f73588fbc1034b291801eaf"
+    },
+    {
+      "title": "台中｜勤美術館2026春季展《你缺藝術家嗎？ 先「畫」再說！》",
+      "date": "2026-06-10 ~ 2026-06-28",
+      "address": "台中",
+      "figure": "https://res.klook.com/image/upload/春季展banner_KLOOK_326-460_altxqr.jpg",
+      "source_url": "https://www.klook.com/zh-TW/activity/199027-taichung-chin-art-museum-2026-spring-exhibition-do-you-need-an-artist-let-s-paint-first/",
+      "tags": null,
+      "UUID": "1d94480b7edc5e4dbc2c1ea1fafc85a5"
+    },
+    {
+      "title": "台北XR沉浸玩家｜消失的法老 古夫金字塔 VR 沉浸體驗｜松山文創園區",
+      "date": "2026-06-09 ~ 2026-09-28",
+      "address": "台北",
+      "figure": "https://res.klook.com/image/upload/Khufu_TW_Klook_展期__展演首頁_326x400_zvgjyu.jpg",
+      "source_url": "https://www.klook.com/zh-TW/activity/205368-immersive-journey-in-ancient-egypt/",
+      "tags": null,
+      "UUID": "f597f7b9dbb357cf83d5d36e4d533b50"
+    },
+    {
+      "title": "中心新村｜《心窗-眺望北投風景的回憶之窗》特展",
+      "date": "2025-09-26 ~ 2026-08-28",
+      "address": "中心新村",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779190620/rmbcwshqb6tanjq8u2vm.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=604bcf3b-b266-408b-8e93-4fa5761695ec&PageIndex=8&PageType=1",
+      "tags": null,
+      "UUID": "1001ca22999354cab666c4382836ea0c"
+    },
+    {
+      "title": "順益八十週年經典選粹",
+      "date": "2026-06-26 ~ 2027-01-17",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1780980249/weqjcexbqfj2ozczbrix.webp",
+      "source_url": "https://www.shungye-art.org/show_now_detail.php?id=28",
+      "tags": null,
+      "UUID": "7a5a0c2c28d058ef9267cba29aac6376"
     }
   ]
 }
