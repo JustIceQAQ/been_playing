@@ -20,7 +20,7 @@ dependencies = [
     "httpx>=0.28.1",
     "httpxyz>=0.31.2",
     "icalendar>=7.1.2",
-    "niquests>=3.19.0",
+    "niquests>=3.19.1",
     "orjson>=3.11.9,<4",
     "pydantic==2.13.4",
     "pydantic-settings==2.14.1",
@@ -32,7 +32,7 @@ dependencies = [
     "sentry-sdk==2.61.1",
     "urllib3>=2.7.0",
     "pillow>=11.0.0",
-    "wreq>=0.11.3",
+    "wreq>=0.12.0",
 ]
 
 [dependency-groups]
@@ -40,17 +40,17 @@ dev = [
     "pytest==9.0.3",
     "pytest-asyncio==1.4.0",
     "pytest-xdist==3.8.0",
-    "faker==40.20.0",
+    "faker==40.21.0",
     "click==8.4.1",
     "pre-commit==4.6.0",
     "cookiecutter>=2.6.0",
     "numpy>=2.4.6",
     "pandas>=3.0.3",
-    "scikit-learn>=1.8.0",
+    "scikit-learn>=1.9.0",
     "matplotlib>=3.10.9",
     "folium>=0.20.0",
     "branca>=0.8.2",
-    "skylos>=4.22.1",
+    "skylos>=4.23.1",
 ]
 
 
