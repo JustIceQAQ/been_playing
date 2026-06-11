@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-11T20:29:55.525112+08:00",
+  "updated": "2026-06-12T03:23:54.510310+08:00",
   "items": [
     {
       "title": "ART OF MIKU -台北展覽- 第一階段＿限量早鳥票 0807",
@@ -2938,6 +2938,51 @@
       "source_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J148497613881029302&sid=0Q152509572169758218",
       "tags": null,
       "UUID": "f513c378718e5febab16b5755deb5e4f"
+    },
+    {
+      "title": "台北國際食品展",
+      "date": "2026-06-24 ~ 2026-06-27",
+      "address": "南港展覽館2館世貿一館南港展覽館1館",
+      "figure": null,
+      "source_url": "http://www.foodtaipei.com.tw",
+      "tags": null,
+      "UUID": "3cef74b51fcc549cb4dead48b4a912c2"
+    },
+    {
+      "title": "唱 我們的歌 流行音樂故事展｜門票｜臺北流行音樂中心",
+      "date": "2026-06-12 ~ 2026-12-08",
+      "address": "台北",
+      "figure": "https://res.klook.com/image/upload/展演頁面活動首圖_qqmx1m.jpg",
+      "source_url": "https://www.klook.com/zh-TW/activity/70429-music-island-stories-pop-music-in-taiwan-taipei/",
+      "tags": null,
+      "UUID": "fee0520506055bceb9f084d90060b098"
+    },
+    {
+      "title": "動物王國大探險展-比薩大學自然史博物館",
+      "date": "2026-07-11 ~ 2026-10-11",
+      "address": "台北",
+      "figure": "https://res.klook.com/image/upload/展演頁面活動首圖-326x460_1_lqwpso.jpg",
+      "source_url": "https://www.klook.com/zh-TW/activity/213304-animal-kingdom-adventure-exhibition-natural-history-museum-of-the-university-of-pisa/",
+      "tags": null,
+      "UUID": "2ceb6a6aae05525f93669d580a2284e6"
+    },
+    {
+      "title": "「綻放的圖層」周楷倫個展",
+      "date": "2026-05-30 ~ 2026-07-03",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779597986/twd9rvhp6qm8n4zk4zle.webp",
+      "source_url": "https://www.art-msac.com/exhibitions/151/overview/",
+      "tags": null,
+      "UUID": "afe6bc321bdd55ed85c2fdef5078c389"
+    },
+    {
+      "title": "ART OF MIKU -台北展覽- 第一階段＿限量早鳥票 0811",
+      "date": "2026-08-11",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1781205466/dtn1pimdsjee1u3rrxuv.webp",
+      "source_url": "https://capsule1111.kktix.cc/events/artofmikufirststage0811",
+      "tags": null,
+      "UUID": "ad83bd5e9c895e5d97b8ab0663d53b70"
     }
   ]
 }
