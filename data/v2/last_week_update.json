@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-12T20:02:50.937508+08:00",
+  "updated": "2026-06-13T02:25:22.824527+08:00",
   "items": [
     {
       "title": "ART OF MIKU -台北展覽- 第一階段＿限量早鳥票 0807",
@@ -3830,6 +3830,51 @@
       "source_url": "https://cultureexpress.taipei/Event/C000003?ID=19bacd16-a1a9-421f-90d7-28d558f7eeb5&PageIndex=6&PageType=1",
       "tags": null,
       "UUID": "d52045222a465ebe9df63449b8afc726"
+    },
+    {
+      "title": "ART OF MIKU -台北展覽- 第一階段＿限量早鳥票 0812",
+      "date": "2026-08-12",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1781288543/rqwwsj3yjwdlygb3kdlx.webp",
+      "source_url": "https://capsule1111.kktix.cc/events/artofmikufirststage0812",
+      "tags": null,
+      "UUID": "0971ba606b9e57789d069a84c1e6e04b"
+    },
+    {
+      "title": "台北國際食品展",
+      "date": "2026-06-24 ~ 2026-06-27",
+      "address": "南港展覽館1館世貿一館南港展覽館2館",
+      "figure": null,
+      "source_url": "http://www.foodtaipei.com.tw",
+      "tags": null,
+      "UUID": "3cef74b51fcc549cb4dead48b4a912c2"
+    },
+    {
+      "title": "低語的形體 Forms of Whisper",
+      "date": "2026-06-13 ~ 2026-07-11",
+      "address": "索卡藝術榮幸宣",
+      "figure": "https://soka-art.com/Uploads/Source/Thumbnail/20260605/20260605175223_7650.jpg",
+      "source_url": "https://soka-art.com/tr/exhibition/details/12082",
+      "tags": null,
+      "UUID": "07e237cbafa0566987df196316f535fb"
+    },
+    {
+      "title": "「24/7：：：創作中的反覆與堆疊」兒童藝術教育展",
+      "date": "2025-09-06 ~ 2026-08-30",
+      "address": "臺灣兒童藝術基地 教育展示空間",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1778474548/nze9uyrjmzsqnggw6g2b.webp",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTMOFA/Detail.init.ctr?actId=55022",
+      "tags": null,
+      "UUID": "38c1e28b65675ef5aeedb0c38df825d4"
+    },
+    {
+      "title": "《 定格 ・ 之後 》",
+      "date": "2026-06-13 ~ 2026-07-18",
+      "address": null,
+      "figure": "https://soka-art.com/Uploads/Source/Thumbnail/20260605/20260605165815_8587.jpg",
+      "source_url": "https://soka-art.com/tr/exhibition/details/12052",
+      "tags": null,
+      "UUID": "b493ba421035583883cc21e48caa1886"
     }
   ]
 }
