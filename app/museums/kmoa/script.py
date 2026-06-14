@@ -58,6 +58,7 @@ class KmoaRunner(RunnerInit):
         async with HttpxAsyncClient(headers=headers) as client:
             url = "https://kmoa.klcg.gov.tw/News_Photo.aspx?n=7484&sms=12489"
             response = await client.get(url)
+            response.raise_for_status()
             responses_data = await self.fetch_sub_response(client, response.text, cookies=cookies)
 
         return responses_data
