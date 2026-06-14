@@ -43,6 +43,7 @@ class CZHRunner(RunnerInit):
                 "https://www.bocach.gov.tw/News.aspx?n=1397&sms=10815&_Query=36343dc0-af59-428f-93d4-5eb4382a3baf",
                 cookies=cookies,
             )
+            response.raise_for_status()
         return response.text
 
     async def fetch_parsed(self):
