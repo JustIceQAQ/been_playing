@@ -54,7 +54,7 @@ class ArtEmperorRunner(RunnerInit):
             BeautifulSoupTranslation()
             .translation_to_object(response_text)
             .select_one("input#PG_size")
-            .attrs.get("value")
+            .attrs.get("value", default=10)
         )
         tasks = [
             client.get(
