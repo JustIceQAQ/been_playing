@@ -29,7 +29,7 @@ dependencies = [
     "retry==0.9.2",
     "rich>=15.0.0",
     "selectolax>=0.4.10",
-    "sentry-sdk==2.61.1",
+    "sentry-sdk==2.62.0",
     "urllib3>=2.7.0",
     "pillow>=11.0.0",
     "wreq>=0.12.0",
@@ -37,20 +37,20 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "pytest==9.0.3",
+    "pytest==9.1.0",
     "pytest-asyncio==1.4.0",
     "pytest-xdist==3.8.0",
-    "faker==40.21.0",
+    "faker==40.23.0",
     "click==8.4.1",
     "pre-commit==4.6.0",
     "cookiecutter>=2.6.0",
     "numpy>=2.4.6",
     "pandas>=3.0.3",
     "scikit-learn>=1.9.0",
-    "matplotlib>=3.10.9",
+    "matplotlib>=3.11.0",
     "folium>=0.20.0",
     "branca>=0.8.2",
-    "skylos>=4.23.1",
+    "skylos>=4.24.2",
 ]
 
 
