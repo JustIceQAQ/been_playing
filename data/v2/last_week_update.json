@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17T20:37:10.752709+08:00",
+  "updated": "2026-06-18T02:42:48.051628+08:00",
   "items": [
     {
       "title": "印度「2026國際慶典藝術大賽暨線上展覽」",
@@ -3810,6 +3810,55 @@
       "source_url": "https://pier2.org/exhibition/info/1936/",
       "tags": null,
       "UUID": "f9917c9ab7a8517f8303978c129b7491"
+    },
+    {
+      "title": "銷夏：書畫中的夏日意象",
+      "date": "2026-06-18 ~ 2026-09-28",
+      "address": "南部院區 S203 2F",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1781721655/wgh8onqshegioo9nhkjq.webp",
+      "source_url": "https://south.npm.gov.tw/ExhibitionsDetailC003110.aspx?Cond=2c847c5d-279b-4185-b720-448f815da98c&appname=Exhibition3112&State=0",
+      "tags": [
+        "常設展覽"
+      ],
+      "UUID": "9fedeafb280454dab24add9cd929db27"
+    },
+    {
+      "title": "臺東夜間美術館：《部落酋長》",
+      "date": "2026-06-18 ~ 2026-08-23",
+      "address": "台東美術館藝術大廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1781721588/tljbto67gp6320djrp4m.webp",
+      "source_url": "https://tm.ccl.ttct.edu.tw/ExhibitionsDetailC004100.php?Cond=a5412c6a-dbfe-4882-bc53-19e937fc1d7b&appname=ExhibitionsList4101",
+      "tags": null,
+      "UUID": "9e8e852c5d955d19bd0f5e3c5f3ac61b"
+    },
+    {
+      "title": "台北國際食品展",
+      "date": "2026-06-24 ~ 2026-06-27",
+      "address": "世貿一館南港展覽館2館南港展覽館1館",
+      "figure": null,
+      "source_url": "http://www.foodtaipei.com.tw",
+      "tags": null,
+      "UUID": "3cef74b51fcc549cb4dead48b4a912c2"
+    },
+    {
+      "title": "藥師少女的獨語展 高雄站",
+      "date": "2026-07-17 ~ 2026-09-13",
+      "address": "高雄",
+      "figure": "https://res.klook.com/image/upload/展演頁面活動首圖-01_uzmmjt.jpg",
+      "source_url": "https://www.klook.com/zh-TW/activity/218345-the-apothecary-diaries-exhibition/",
+      "tags": null,
+      "UUID": "1dc6c96a217f57f6962890abf1feb91a"
+    },
+    {
+      "title": "銷夏：書畫中的夏日意象",
+      "date": "2026-06-18 ~ 2026-09-28",
+      "address": "南部院區 S203 2F",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1781721656/un0trtnoiskzhehtxjhv.webp",
+      "source_url": "https://south.npm.gov.tw/ExhibitionsDetailC003110.aspx?Cond=2c847c5d-279b-4185-b720-448f815da98c&appname=Exhibition3112&State=0",
+      "tags": [
+        "常設展覽"
+      ],
+      "UUID": "9fedeafb280454dab24add9cd929db27"
     }
   ]
 }
