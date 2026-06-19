@@ -1,20 +1,19 @@
 import asyncio
 import itertools
 from enum import Enum
+from typing import cast
 
 import bs4
 import httpx
 
 from app.platform.artemperor.parse import ArtEmperorParse
-from helpers.headers_helper import generate_headers, generate_cookies
+from helpers.crawler.httpx.helper import HttpxAsyncClient
+from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.symbol.venue import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import month_3, get_date
-
-from typing import cast
+from helpers.utils_helper import get_date, month_3
 
 
 class ExStatus(int, Enum):
@@ -85,11 +84,15 @@ class ArtEmperorRunner(RunnerInit):
         flattened = list(itertools.chain.from_iterable(tasks))
         return flattened
 
+    def _check_list_box(datas: bs4.ResultSet[bs4.Tag]) -> bool:
+        return len(datas) != 1 and datas[0].find("a").attrs.get("href") != "https://artemperor.tw//"
+
     async def fetch_parsed(self):
         parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         items = []
         for p in parsed:
-            items.extend(p.select("div.list_box"))
+            if self._check_list_box(p.select("div.list_box")):
+                items.extend(p.select("div.list_box"))
 
         return items
 
