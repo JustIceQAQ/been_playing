@@ -85,7 +85,7 @@ class ArtEmperorRunner(RunnerInit):
         return flattened
 
     def _check_list_box(datas: bs4.ResultSet[bs4.Tag]) -> bool:
-        return len(datas) != 1 and datas[0].find("a").attrs.get("href") != "https://artemperor.tw//"
+        return (len(datas) != 1) and (datas[0].find("a").attrs.get("href") != "https://artemperor.tw//")
 
     async def fetch_parsed(self):
         parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
