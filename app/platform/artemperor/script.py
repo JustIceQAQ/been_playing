@@ -50,12 +50,12 @@ class ArtEmperorRunner(RunnerInit):
         response_text = response.text
 
         all_response.append(response_text)
-        end_page = int(
-            BeautifulSoupTranslation()
-            .translation_to_object(response_text)
-            .select_one("input#PG_size")
-            .attrs.get("value", default=10)
-        )
+
+        response_object = BeautifulSoupTranslation().translation_to_object(response_text)
+        if response_object is None:
+            return None
+
+        end_page = int(response_object.select_one("input#PG_size").attrs.get("value", 10))
         tasks = [
             client.get(
                 "https://artemperor.tw/tidbits",
