@@ -6,18 +6,21 @@ class HttpxAsyncClient:
         self,
         timeout: int | None | httpx.Timeout = None,
         follow_redirects: bool | None = True,
+        proxy: dict | None = None,
         *args,
         **kwargs,
     ) -> None:
         self.args = args
         self.kwargs = kwargs
         self.timeout = timeout
+        self.proxy = proxy
         self.follow_redirects = follow_redirects
 
     async def __aenter__(self) -> httpx.AsyncClient:
         self.client = httpx.AsyncClient(
             timeout=self.timeout,
             follow_redirects=self.follow_redirects,
+            proxy=self.proxy,
             *self.args,
             **self.kwargs,
         )
