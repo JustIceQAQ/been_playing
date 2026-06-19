@@ -1,20 +1,18 @@
 import asyncio
 from typing import cast
 
+from selectolax.lexbor import LexborNode
+
 from app.museums.ioesinica.parse import IOESinicaParse
+from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
 from helpers.storage.coordinate import Coordinate, GeoPoint
-from helpers.symbol.venue import VenueType
+from helpers.storage.helper import Information
 from helpers.symbol.taiwan import Taiwan
-
-from helpers.utils_helper import month_3
-
-from helpers.crawler.niquests.helper import NiquestsAsyncSession
-
-from selectolax.lexbor import LexborNode
+from helpers.symbol.venue import VenueType
 from helpers.translation.selectolax import SelectolaxTranslation
+from helpers.utils_helper import month_3
 
 
 class IOESinicaRunner(RunnerInit):
@@ -45,7 +43,11 @@ class IOESinicaRunner(RunnerInit):
                 "Catefilter": "1DE93031-F3C8-4AA0-94D8-EAD4BABD62BA",
                 "SiteID": "416763f8-a1f7-48fd-bfbf-9327913efad7",
             }
-            response = await client.get("https://www.ioe.sinica.edu.tw/ExhibitionCurrent/List", params=params)
+            response = await client.get(
+                "https://www.ioe.sinica.edu.tw/ExhibitionCurrent/List",
+                params=params,
+                proxies=self.get_proxy().to_niquests(),
+            )
         return response.text
 
     async def fetch_parsed(self):

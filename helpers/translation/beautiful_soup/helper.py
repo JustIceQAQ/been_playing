@@ -7,8 +7,10 @@ from helpers.translation.base import TranslationInit
 
 class BeautifulSoupTranslation(TranslationInit):
     def translation_to_object(
-        self, text: str, format_encoding: str | None = "html5lib", *args, **kwargs
-    ) -> BeautifulSoup:
+        self, text: str | None, format_encoding: str | None = "html5lib", *args, **kwargs
+    ) -> BeautifulSoup | None:
+        if text is None:
+            return None
         return BeautifulSoup(text, format_encoding)
 
     def load_file_to_object(self, file: pathlib.Path, format_encoding: str | None = "html5lib") -> BeautifulSoup:

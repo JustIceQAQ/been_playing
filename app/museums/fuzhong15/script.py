@@ -7,7 +7,7 @@ from app.museums.fuzhong15.information import FuZhong15Information
 from app.museums.fuzhong15.parse import FuZhong15Parse
 from app.museums.fuzhong15.social_media import FuZhong15SocialMedia
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
-from helpers.headers_helper import generate_headers, generate_cookies
+from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3
@@ -38,13 +38,21 @@ class FuZhong15Runner(RunnerInit):
                 "https://www.fuzhong15.ntpc.gov.tw/submenu?usein=2&psid=0G253409950556420467", cookies=cookies
             )
             main_parse = SelectolaxTranslation().translation_to_object(main_response.text)
+            if main_parse is None:
+                return None
             target_url = main_parse.css_first("a[title='當期特展']").attributes.get("href")
+            if target_url is None:
+                return None
             response = await client.get(target_url, cookies=cookies)
+            if response.url == "https://www.fuzhong15.ntpc.gov.tw/":
+                return None
 
         return response.text
 
     async def fetch_parsed(self):
-        parsed = cast(LexborNode, await super().fetch_parsed())
+        parsed = cast(LexborNode | None, await super().fetch_parsed())
+        if parsed is None:
+            return []
         return [parsed]
 
 

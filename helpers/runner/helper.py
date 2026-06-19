@@ -7,6 +7,7 @@ from typing import Any
 
 from helpers.cache.base import Cache
 from helpers.parse_helper import ParseInit
+from helpers.proxy_helper import ProxyAdapter
 from helpers.storage.helper import Exhibition, ExhibitionItem, Information
 from helpers.suffix_helper import suffix_helper
 from helpers.translation.base import TranslationInit
@@ -29,7 +30,13 @@ class RunnerInit(abc.ABC):
     retry_interval: int = 10
 
     def set_cache_expire(self) -> int | None:
-        return None
+        return
+
+    def get_proxy(self) -> ProxyAdapter:
+        from configs.settings import get_settings
+
+        runtime_settings = get_settings()
+        return ProxyAdapter(runtime_settings.PROXY_POOL)
 
     @abc.abstractmethod
     def set_information(self) -> "Information":

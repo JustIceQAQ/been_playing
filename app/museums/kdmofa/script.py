@@ -42,8 +42,11 @@ class KdMoFaRunner(RunnerInit):
             need_upgrade_insecure_requests=True,
         )
         cookies = generate_cookies(need_phpsessid=True)
-        async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get("https://kdmofa.tnua.edu.tw/mod/exhibition/index.php", cookies=cookies)
+        async with HttpxAsyncClient(headers=headers, proxy=self.get_proxy().to_httpx()) as client:
+            response = await client.get(
+                "https://kdmofa.tnua.edu.tw/mod/exhibition/index.php",
+                cookies=cookies,
+            )
         return response.text
 
     async def fetch_parsed(self):

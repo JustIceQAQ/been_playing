@@ -2,7 +2,6 @@ import asyncio
 
 from typing import cast
 from app.museums.tycg.parse import TyCgParse
-from configs.settings import get_settings
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
@@ -22,16 +21,6 @@ class TyCgRunner(RunnerInit):
     translation = SelectolaxTranslation
     use_parse = TyCgParse
     is_sort = False
-
-    def set_proxies(self):
-        runtime_settings = get_settings()
-        proxies = None
-        if runtime_settings.PROXY_POOL is not None:
-            proxies = {
-                "http": runtime_settings.PROXY_POOL,
-                "https": runtime_settings.PROXY_POOL,
-            }
-        return proxies
 
     def set_cache_expire(self) -> int | None:
         return month_3()
@@ -58,9 +47,11 @@ class TyCgRunner(RunnerInit):
             },
         )
         async with NiquestsAsyncSession(headers=headers, timeout=None) as client:
-            client.proxies.update(self.set_proxies())
-
-            response = await client.get("https://wem.tycg.gov.tw/News_Photo.aspx?n=9676&sms=13653", cookies=cookies)
+            response = await client.get(
+                "https://wem.tycg.gov.tw/News_Photo.aspx?n=9676&sms=13653",
+                cookies=cookies,
+                proxies=self.get_proxy().to_niquests(),
+            )
         return response.text
 
     async def fetch_parsed(self):

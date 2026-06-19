@@ -7,8 +7,8 @@ from app.museums.czh.parse import CZHParse
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
 from helpers.storage.coordinate import Coordinate, GeoPoint
+from helpers.storage.helper import Information
 from helpers.symbol.taiwan import Taiwan
 from helpers.symbol.venue import VenueType
 from helpers.translation.selectolax import SelectolaxTranslation
@@ -38,10 +38,14 @@ class CZHRunner(RunnerInit):
     async def fetch_response(self):
         headers = generate_headers(host="www.bocach.gov.tw")
         cookies = generate_cookies(need_asp_net_session_id=True)
-        async with NiquestsAsyncSession(headers=headers) as client:
+        async with NiquestsAsyncSession(
+            headers=headers,
+        ) as client:
             response = await client.get(
-                "https://www.bocach.gov.tw/News.aspx?n=1397&sms=10815&_Query=36343dc0-af59-428f-93d4-5eb4382a3baf",
+                "https://www.bocach.gov.tw/News.aspx",
                 cookies=cookies,
+                params={"n": "1397", "sms": "10815", "_Query": "36343dc0-af59-428f-93d4-5eb4382a3baf"},
+                proxies=self.get_proxy().to_niquests(),
             )
             response.raise_for_status()
         return response.text
