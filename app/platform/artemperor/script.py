@@ -55,7 +55,11 @@ class ArtEmperorRunner(RunnerInit):
         if response_object is None:
             return None
 
-        end_page = int(response_object.select_one("input#PG_size").attrs.get("value", 10))
+        page_size = response_object.select_one("input#PG_size")
+        if page_size is None:
+            end_page = 10
+        else:
+            end_page = int(page_size.attrs.get("value", 10))
         tasks = [
             client.get(
                 "https://artemperor.tw/tidbits",
