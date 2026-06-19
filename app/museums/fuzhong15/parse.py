@@ -9,7 +9,10 @@ class FuZhong15Parse(ParseInit):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
-        return self.item.css_first("div.img_bg").next.next.css_first("strong").text(strip=True)
+        title = self.item.css_first("div.img_bg").next.next.css_first("strong")
+        if title is not None:
+            return title.text(strip=True)
+        return self.item.css_first("h2.PageTitle").text(strip=True)
 
     def get_date(self, *args, **kwargs) -> str | None:
         pass
