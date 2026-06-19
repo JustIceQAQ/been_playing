@@ -75,7 +75,10 @@ class XZCACParse(ParseInit):
         pass
 
     def get_figure(self, *args, **kwargs) -> str | None:
-        return self.item.css_first("div.img_bg img").attributes.get("src")
+        target_img = self.item.css_first("div.img_bg img") or self.item.css_first("div.district img")
+        if target_img is None:
+            return None
+        return target_img.attributes.get("src")
 
     def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
