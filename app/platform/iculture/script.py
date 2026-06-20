@@ -32,7 +32,7 @@ class ICultureRunner(RunnerInit):
             host="cloud.culture.tw",
         )
         params = {"page": 0, "size": 100, "sort": "id", "category": "6", "onSale": 0}
-        async with HttpxAsyncClient(headers=headers) as client:
+        async with HttpxAsyncClient(headers=headers, proxy=self.get_proxy().to_httpx()) as client:
             tasks = [
                 client.get(
                     "https://cloud.culture.tw/data/api/frontsite/inquiry/event",
