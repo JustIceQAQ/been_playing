@@ -1,10 +1,11 @@
 import argparse
 import asyncio
-import orjson
 import logging
 from datetime import datetime, timezone
 from pathlib import Path
+
 import aiofiles
+import orjson
 import sentry_sdk
 from dotenv import load_dotenv
 from rich.console import Console
@@ -13,17 +14,17 @@ from rich.progress import BarColumn, MofNCompleteColumn, Progress, SpinnerColumn
 from app.script import ALL_RUNNERS
 from configs.settings import get_settings
 from helpers.cache import DiskCache, NoneCache
+from helpers.crawler.scraper.helper import available_scraper_async_client
+from helpers.image_hosting.cloudinary.helper import CloudinaryImageHosting
+from helpers.image_hosting.none.helper import NoneImageHosting
+from helpers.storage.coordinate import Coordinate
 from helpers.storage.helper import (
     Information,
-    orjson_default_handler,
-    last_week_update,
     execution_stats,
+    last_week_update,
+    orjson_default_handler,
 )
-from helpers.storage.coordinate import Coordinate
 from helpers.symbol.venue import VenueType
-from helpers.crawler.scraper.helper import available_scraper_async_client
-from helpers.image_hosting.none.helper import NoneImageHosting
-from helpers.image_hosting.cloudinary.helper import CloudinaryImageHosting
 
 ROOT_PATH = Path(__file__).parent.absolute()
 
@@ -38,7 +39,7 @@ async def generate_venue_meta(information: list["Information"]):
                 city_name = info.branch_coordinates.location_code.city.name
                 area_name = (
                     info.branch_coordinates.location_code.area.name
-                    if info.branch_coordinates.location_code.area.name
+                    if info.branch_coordinates.location_code.area is not None
                     else None
                 )
             else:
@@ -50,7 +51,9 @@ async def generate_venue_meta(information: list["Information"]):
             this_coordinate = info.branch_coordinates[0]
             if this_coordinate.location_code is not None:
                 city_name = this_coordinate.location_code.city.name
-                area_name = this_coordinate.location_code.area.name if this_coordinate.location_code.area.name else None
+                area_name = (
+                    this_coordinate.location_code.area.name if this_coordinate.location_code.area is not None else None
+                )
         elif info.location_code is not None:
             city_name = info.location_code.city.name
             area_name = info.location_code.area.name if info.location_code.area else None
@@ -200,11 +203,12 @@ async def main(worker: int | None = None, worker_max: int | None = None):
     await available_scraper_async_client(runtime_setting.SCRAPER_API_KEY)
 
     all_script_information: list["Information"] = []
-    named_runners: list[tuple[str, object]] = []
+    named_runners: list[tuple[str, "Information", object]] = []
     for RunnerObj in scripts_to_run:
         this_runner = RunnerObj()
+        info = this_runner.set_information()
         all_script_information.append(this_runner.set_information())
-        named_runners.append((RunnerObj.__name__, RunnerObj().run(disk_cache, image_host, prefix, image_sem)))
+        named_runners.append((RunnerObj.__name__, info, RunnerObj().run(disk_cache, image_host, prefix, image_sem)))
 
     total = len(named_runners)
     is_debug = runtime_setting.IS_DEBUG
@@ -229,13 +233,21 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         async def worker_loop():
             while not task_queue.empty():
                 try:
-                    name, coro = await task_queue.get()
+                    name, info, coro = await task_queue.get()
                 except asyncio.QueueEmpty:
                     break
 
                 task_id = progress.add_task(f"[yellow]{name}", total=None)
+                start_time = asyncio.get_event_loop().time()
                 try:
                     await coro
+                    elapsed = asyncio.get_event_loop().time() - start_time
+                    execution_stats.record(
+                        code_name=info.code_name,
+                        fullname=info.fullname,
+                        execution_time=elapsed,
+                        last_update=datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                    )
                     progress.update(overall, advance=1)
                     if is_debug:
                         console.log(f"[green]OK [/green] {name}")
