@@ -38,10 +38,17 @@ class ShungYeArtRunner(RunnerInit):
         return response.text
 
     async def fetch_parsed(self):
+        now_ex = []
         parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
-        now = parsed.find("a", {"id": "Now"}).find_all_next(class_="indexnews1")
+        now = parsed.find("a", {"id": "Now"})
+        if now is not None:
+            now_ex.extend(now.find_all_next(class_="indexnews1"))
+
         notice = parsed.find("a", {"id": "Notice"}).find_all_next(class_="indexnews1")
-        now_ex = now + notice
+
+        if notice is not None:
+            now_ex.extend(notice.find_all_next(class_="indexnews1"))
+
         return now_ex
 
 
