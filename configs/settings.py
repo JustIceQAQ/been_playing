@@ -16,12 +16,11 @@ class Settings(BaseSettings):
     CLOUDINARY_API_KEY: str | None = Field(default=None)
     CLOUDINARY_API_SECRET: str | None = Field(default=None)
 
+    model_config = SettingsConfigDict(case_sensitive=False)
+
     @property
     def is_cloudinary_available(self) -> bool:
         return all([self.CLOUDINARY_CLOUD_NAME, self.CLOUDINARY_API_KEY, self.CLOUDINARY_API_SECRET])
-
-    class Config:
-        case_sensitive = False
 
 
 class LocalSettings(Settings):
