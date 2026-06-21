@@ -70,11 +70,10 @@ class KKTixRunner(RunnerInit):
                 if not response.status.is_success():
                     break
                 this_response_text = await response.text()
-                if (
-                    self.translation()
-                    .translation_to_object(this_response_text)
-                    .select_one("div[data-react-class='SearchWrapper']")
-                ) is None:
+                translation_data = self.translation().translation_to_object(this_response_text)
+                if (translation_data is None) or (
+                    translation_data.select_one("div[data-react-class='SearchWrapper']") is None
+                ):
                     break
                 responses.append(this_response_text)
                 page += 1
@@ -85,16 +84,18 @@ class KKTixRunner(RunnerInit):
         items = []
         parsers = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         for parsed in parsers:
+            if parsed is None:
+                continue
             data = parsed.select_one("div[data-react-class='SearchWrapper']").get("data-react-props")
             items.extend(json.loads(data).get("data", []))
         return items
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await KKTixRunner().run(NoneCache(), NoneImageHosting())
+    await KKTixRunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

@@ -57,10 +57,10 @@ class TFAIRunner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache import none_cache
+    from helpers.image_hosting import none_image_hosting
 
-    await TFAIRunner().run(NoneCache(), NoneImageHosting())
+    await TFAIRunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

@@ -55,6 +55,8 @@ class CG1839Runner(RunnerInit):
         current_response = await client.get("https://www.1839cg.com/current-exhibition")
         current_response.raise_for_status()
         current_p = BeautifulSoupTranslation().translation_to_object(current_response.text)
+        if current_p is None:
+            return None
         current_responses = await asyncio.gather(
             *[client.get(a.get("href")) for a in current_p.select("p.has-text-align-center a")]
         )
@@ -62,6 +64,8 @@ class CG1839Runner(RunnerInit):
 
     async def get_index_item(self, all_items, client, response):
         p = BeautifulSoupTranslation().translation_to_object(response.text)
+        if p is None:
+            return None
         items_response = p.select("div.entry-content figure.wp-block-image a")[:3]
         responses = await asyncio.gather(*[client.get(item.get("href")) for item in items_response])
         all_items.extend([item_response.text for item_response in responses])
@@ -72,10 +76,10 @@ class CG1839Runner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await CG1839Runner().run(NoneCache(), NoneImageHosting())
+    await CG1839Runner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

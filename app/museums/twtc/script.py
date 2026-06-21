@@ -28,6 +28,8 @@ class TwTcRunner(RunnerInit):
 
     def extract_import(self, response: httpx.Response) -> dict:
         parsed = self.translation().translation_to_object(response.text)
+        if parsed is None:
+            return {}
         view_state = parsed.find("input", attrs={"name": "__VIEWSTATE"})["value"]
         view_state_generator = parsed.find("input", attrs={"name": "__EVENTVALIDATION"})["value"]
         event_validation = parsed.find("input", attrs={"name": "__EVENTVALIDATION"})["value"]
@@ -78,8 +80,12 @@ class TwTcRunner(RunnerInit):
         this_translation = self.translation()
         responses: list[TwTcResponse] = self.response
         for response in responses:
-            response.parsed = this_translation.translation_to_object(response.text)
+            this_translation_data = this_translation.translation_to_object(response.text)
+            if this_translation_data is None:
+                continue
+            response.parsed = this_translation_data
             response.items = response.parsed.select("#home > div > table > tbody > tr")
+
         return responses
 
     async def fetch_items(self, *args, **kwargs):
@@ -105,10 +111,10 @@ class TwTcRunner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await TwTcRunner().run(NoneCache(), NoneImageHosting())
+    await TwTcRunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

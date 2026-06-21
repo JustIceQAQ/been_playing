@@ -73,6 +73,8 @@ class ArtistVillageRunner(RunnerInit):
 
         response = await client.get(item.source_url)
         soup = BeautifulSoupTranslation().translation_to_object(response.text)
+        if soup is None:
+            return None
         exhibition_address = None
         exhibition_figure = None
         a_elements = soup.select("div.date p")
@@ -101,10 +103,10 @@ class ArtistVillageRunner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await ArtistVillageRunner().run(NoneCache(), NoneImageHosting())
+    await ArtistVillageRunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

@@ -92,10 +92,10 @@ class KLookRunner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await KLookRunner().run(NoneCache(), NoneImageHosting())
+    await KLookRunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

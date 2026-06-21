@@ -65,9 +65,10 @@ class TmcRunner(RunnerInit):
             )
             response.raise_for_status()
             responses_text.append(response.text)
-            pagination_len = (
-                len(self.translation().translation_to_object(response.text).select("li.c-pagination-item")) - 2
-            )
+            translation_data = self.translation().translation_to_object(response.text)
+            if translation_data is None:
+                return None
+            pagination_len = len(translation_data.select("li.c-pagination-item")) - 2
             if pagination_len != 1:
                 for n in range(2, pagination_len + 1):
                     sub_response = await client.get(
@@ -89,10 +90,10 @@ class TmcRunner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await TmcRunner().run(NoneCache(), NoneImageHosting())
+    await TmcRunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

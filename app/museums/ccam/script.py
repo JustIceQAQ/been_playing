@@ -56,6 +56,8 @@ class CCAMRunner(RunnerInit):
     ) -> list[LexborNode]:
         response = await client.get(url, cookies=cookies)
         p = SelectolaxTranslation().translation_to_object(response.text)
+        if p is None:
+            return []
         divs = p.css("div.group-list a.div")
         return await asyncio.gather(
             *[
@@ -87,10 +89,10 @@ class CCAMRunner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await CCAMRunner().run(NoneCache(), NoneImageHosting())
+    await CCAMRunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

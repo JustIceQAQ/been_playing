@@ -46,6 +46,8 @@ class Culture435Runner(RunnerInit):
             p = BeautifulSoupTranslation().translation_to_object(
                 first_response.text,
             )
+            if p is None:
+                return None
             conds_s_id = p.find("input", {"id": "CondsSId"}).attrs["value"]
             request_verification_token = p.find("input", {"name": "__RequestVerificationToken"}).attrs["value"]
             url = "https://www.435.culture.ntpc.gov.tw/xmdoc/indexaction"
@@ -77,10 +79,10 @@ class Culture435Runner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await Culture435Runner().run(NoneCache(), NoneImageHosting())
+    await Culture435Runner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

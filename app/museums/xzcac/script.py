@@ -38,6 +38,8 @@ class XZCACRunner(RunnerInit):
                 "https://www.xzcac.ntpc.gov.tw/xmdoc?xsmsid=0G286646220085905951", cookies=cookies
             )
             main_parse = SelectolaxTranslation().translation_to_object(main_response.text)
+            if main_parse is None:
+                return None
             items = main_parse.css("div#PageListContainer div.item a")
             responses = await asyncio.gather(
                 *[
@@ -54,10 +56,10 @@ class XZCACRunner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache import none_cache
+    from helpers.image_hosting import none_image_hosting
 
-    await XZCACRunner().run(NoneCache(), NoneImageHosting())
+    await XZCACRunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

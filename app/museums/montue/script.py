@@ -53,6 +53,8 @@ class MoNTUERunner(RunnerInit):
             get_a_results = await asyncio.gather(*get_a_tasks)
             for result in get_a_results:
                 soup = BeautifulSoupTranslation().translation_to_object(result)
+                if soup is None:
+                    continue
                 divs = soup.find_all(
                     "div",
                     {"class": "ptsc pt-sc sc-slider exhibition-slider hide-title hide-mobile"},
@@ -69,10 +71,10 @@ class MoNTUERunner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await MoNTUERunner().run(NoneCache(), NoneImageHosting())
+    await MoNTUERunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

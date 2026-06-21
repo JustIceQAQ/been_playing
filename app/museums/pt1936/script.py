@@ -62,6 +62,8 @@ class PT1936Runner(RunnerInit):
                 "https://www.cultural.pthg.gov.tw/pt1936/News9.aspx?n=8E5540CA059309A8&CategorySN=3630", cookies=cookies
             )
             response_p = SelectolaxTranslation().translation_to_object(response.text)
+            if response_p is None:
+                return None
             responses = await asyncio.gather(
                 *[
                     self._fetch_sub_response(
@@ -79,10 +81,10 @@ class PT1936Runner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await PT1936Runner().run(NoneCache(), NoneImageHosting())
+    await PT1936Runner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

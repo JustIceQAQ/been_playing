@@ -63,6 +63,8 @@ class KingCarArtRunner(RunnerInit):
             response = await client.get(target_url.format(page=1))
             responses.append(response.text)
             parsed = self.translation().translation_to_object(response.text)
+            if parsed is None:
+                return None
             get_page_number = len(parsed.select("div.pagin-box > div.page-link"))
             for page_flag in range(2, get_page_number + 1):
                 sub_response = await client.get(target_url.format(page=page_flag))
@@ -78,10 +80,10 @@ class KingCarArtRunner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await KingCarArtRunner().run(NoneCache(), NoneImageHosting())
+    await KingCarArtRunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":
