@@ -13,6 +13,15 @@ from helpers.suffix_helper import suffix_helper
 from helpers.translation.base import TranslationInit
 from helpers.translation.json import JsonTranslation
 from helpers.storage.social_media import SocialMedia
+from functools import lru_cache
+
+
+@lru_cache
+def _get_proxy():
+    from configs.settings import get_settings
+
+    runtime_settings = get_settings()
+    return ProxyAdapter(runtime_settings.PROXY_POOL)
 
 
 class RunnerInit(abc.ABC):
@@ -33,10 +42,7 @@ class RunnerInit(abc.ABC):
         return
 
     def get_proxy(self) -> ProxyAdapter:
-        from configs.settings import get_settings
-
-        runtime_settings = get_settings()
-        return ProxyAdapter(runtime_settings.PROXY_POOL)
+        return _get_proxy()
 
     @abc.abstractmethod
     def set_information(self) -> "Information":
