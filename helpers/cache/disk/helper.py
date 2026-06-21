@@ -4,13 +4,13 @@ import functools
 import pathlib
 from typing import Any
 from croniter import croniter
-from diskcache import Cache as disk_cache
+from diskcache import Cache as package_disk_cache
 
-from helpers.cache.base import Cache
+from helpers.cache.base import CacheBase
 from zoneinfo import ZoneInfo
 
 
-class DiskCache(Cache):
+class DiskCache(CacheBase):
     _instance = None
     _zoneinfo = ZoneInfo("Asia/Taipei")
 
@@ -20,7 +20,9 @@ class DiskCache(Cache):
         return cls._instance
 
     def __init__(self):
-        self.origin_cache = disk_cache(str(pathlib.Path(__file__).parent.parent.parent.parent.absolute() / "fixture"))
+        self.origin_cache = package_disk_cache(
+            str(pathlib.Path(__file__).parent.parent.parent.parent.absolute() / "fixture")
+        )
         self.loop = asyncio.get_running_loop()
 
     def _get_datetime_now(self):
@@ -82,3 +84,6 @@ class DiskCache(Cache):
             self.origin_cache.close,
         )
         await future
+
+
+disk_cache = DiskCache()

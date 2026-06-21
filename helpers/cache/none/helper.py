@@ -1,9 +1,9 @@
 import datetime
 from typing import Any
-from helpers.cache.base import Cache
+from helpers.cache.base import CacheBase
 
 
-class NoneCache(Cache):
+class NoneCache(CacheBase):
     _instance = None
 
     def __new__(cls, *args, **kwargs):
@@ -37,3 +37,6 @@ class NoneCache(Cache):
 
     async def close(self):
         pass
+
+
+none_cache = NoneCache()

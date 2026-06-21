@@ -9,10 +9,10 @@ from PIL import Image
 from rich.console import Console
 
 from helpers.crawler.wreq.helper import WReqAsyncClient
+from helpers.image_hosting.base import ImageHostingBase
 
 if TYPE_CHECKING:
     from helpers.proxy_helper import ProxyAdapter
-
 
 _console = Console()
 _MAX_FILE_SIZE = 10 * 1024 * 1024  # Cloudinary 免費方案上限 10MB
@@ -43,7 +43,7 @@ def _is_oversized_image(content: bytes) -> bool:
         Image.MAX_IMAGE_PIXELS = 178_956_970
 
 
-class CloudinaryImageHosting:
+class CloudinaryImageHosting(ImageHostingBase):
     def __init__(self, cloud_name: str, api_key: str, api_secret: str):
         self.cloudinary = cloudinary
         self.cloudinary.config(
@@ -68,9 +68,13 @@ class CloudinaryImageHosting:
         except RuntimeError:
             return asyncio.get_event_loop()
 
-    async def _download(self, image_url: str, proxies: "ProxyAdapter") -> bytes | None:
+    async def _download(self, image_url: str, proxies: "ProxyAdapter | None") -> bytes | None:
         try:
-            async with WReqAsyncClient(proxies=proxies.to_wreq()) as client:
+            if proxies is None:
+                use_proxies = None
+            else:
+                use_proxies = proxies.to_wreq()
+            async with WReqAsyncClient(proxies=use_proxies) as client:
                 response = await client.get(image_url)
                 if not response.status.is_success():
                     self._log("下載圖片失敗(HTTP {response.status}){image_url}", level="error")
@@ -87,7 +91,9 @@ class CloudinaryImageHosting:
                 return secure_url[: -len(ext)] + ".webp"
         return secure_url
 
-    async def upload(self, image_url: str, proxies: "ProxyAdapter", public_id: str | None = None) -> str | None:
+    async def upload(
+        self, image_url: str, proxies: ProxyAdapter | None = None, public_id: str | None = None, *args, **kwargs
+    ) -> str | None:
         if not image_url:
             return None
         try:

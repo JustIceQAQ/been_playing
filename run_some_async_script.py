@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 from app.museums.tfai import TFAIRunner
 from configs.settings import get_settings
 from helpers.cache import DiskCache, NoneCache
-from helpers.image_hosting.none.helper import NoneImageHosting
+from helpers.image_hosting.none.helper import none_image_hosting
 from helpers.image_hosting.cloudinary.helper import CloudinaryImageHosting
 
 
@@ -22,7 +22,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         datefmt="%Y-%m-%d %H:%M",
     )
 
-    image_host = NoneImageHosting()
+    image_host = none_image_hosting
     if (not runtime_setting.IS_DEBUG) and (runtime_setting.is_cloudinary_available):
         assert runtime_setting.CLOUDINARY_CLOUD_NAME is not None
         assert runtime_setting.CLOUDINARY_API_KEY is not None
