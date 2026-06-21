@@ -80,9 +80,9 @@ class {{cookiecutter.script_code}}Runner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
-    await {{cookiecutter.script_code}}Runner().run(NoneCache(), NoneImageHosting(), develop_mode=True)
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
+    await {{cookiecutter.script_code}}Runner().run(none_cache, none_image_hosting, develop_mode=True)
 
 
 if __name__ == '__main__':
