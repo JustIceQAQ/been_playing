@@ -44,7 +44,7 @@ class ShungYeArtRunner(RunnerInit):
         if now is not None:
             now_ex.extend(now.find_all_next(class_="indexnews1"))
 
-        notice = parsed.find("a", {"id": "Notice"}).find_all_next(class_="indexnews1")
+        notice = parsed.find("a", {"id": "Notice"})
 
         if notice is not None:
             now_ex.extend(notice.find_all_next(class_="indexnews1"))
