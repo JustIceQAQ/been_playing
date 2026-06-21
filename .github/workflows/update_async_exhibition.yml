@@ -36,12 +36,8 @@ jobs:
           ref: "auto/data-update"
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: skip if recent push
-        if: steps.check_push.outputs.skip == 'true'
-        run: echo "⏭️ Skip execution due to recent push"
-
       - name: setup python 3.12 with uv
-        uses: astral-sh/setup-uv@eac588ad8def6316056a12d4907a9d4d84ff7a3b
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b
         with:
           enable-cache: true
           cache-dependency-glob: "uv.lock"

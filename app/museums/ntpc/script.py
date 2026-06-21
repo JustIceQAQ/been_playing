@@ -4,10 +4,9 @@ import bs4
 import httpx
 
 from app.museums.ntpc.parse import NTPCParse
-from helpers.cache import DiskCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
-from helpers.image_hosting.none.helper import none_image_hosting
+
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information
 from helpers.storage.coordinate import Coordinate, GeoPoint
@@ -84,7 +83,10 @@ class NTPCRunner(RunnerInit):
 
 
 async def main():
-    await NTPCRunner().run(DiskCache(), none_image_hosting)
+    from helpers.image_hosting import none_image_hosting
+    from helpers.cache import none_cache
+
+    await NTPCRunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

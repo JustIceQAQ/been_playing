@@ -7,7 +7,7 @@ import sentry_sdk
 from dotenv import load_dotenv
 from app.museums.tfai import TFAIRunner
 from configs.settings import get_settings
-from helpers.cache import DiskCache, NoneCache
+from helpers.cache import disk_cache, none_cache
 from helpers.image_hosting.none.helper import none_image_hosting
 from helpers.image_hosting.cloudinary.helper import CloudinaryImageHosting
 
@@ -33,7 +33,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
             runtime_setting.CLOUDINARY_API_SECRET,
         )
 
-    disk_cache = NoneCache() if runtime_setting.IS_DEBUG else DiskCache()
+    use_cache = none_cache if runtime_setting.IS_DEBUG else disk_cache
     job = [TFAIRunner]
     script_total = len(job)
     prefix = None
@@ -47,7 +47,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         scripts_to_run = job
 
     all_async_script_runners = [
-        RunnerObj().run(disk_cache, image_host, prefix, develop_mode=True) for RunnerObj in scripts_to_run
+        RunnerObj().run(use_cache, image_host, prefix, develop_mode=True) for RunnerObj in scripts_to_run
     ]
     await asyncio.gather(*all_async_script_runners, return_exceptions=True)
 
