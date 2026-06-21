@@ -84,6 +84,8 @@ class HuaShan1914Runner(RunnerInit):
             return
         response = await client.get(item.source_url)
         soup = self.translation().translation_to_object(response.text)
+        if soup is None:
+            return None
         exhibition_location = None
         a_elements = soup.select("div.address a")
         if a_elements:
@@ -100,10 +102,10 @@ class HuaShan1914Runner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await HuaShan1914Runner().run(NoneCache(), NoneImageHosting())
+    await HuaShan1914Runner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

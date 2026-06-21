@@ -38,6 +38,8 @@ class KmoaRunner(RunnerInit):
 
     async def fetch_sub_response(self, client: httpx.AsyncClient, context: str, *args, **kwargs) -> list[str]:
         p = BeautifulSoupTranslation().translation_to_object(context)
+        if p is None:
+            return []
         div = p.find("div", {"class": "group-list page-block PhotoList"})
         if div is None:
             return []
@@ -69,10 +71,10 @@ class KmoaRunner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await KmoaRunner().run(NoneCache(), NoneImageHosting())
+    await KmoaRunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

@@ -1,10 +1,16 @@
-class NoneImageHosting:
-    _instance = None
+from typing import TYPE_CHECKING
 
-    def __new__(cls, *args, **kwargs):
-        if cls._instance is None:
-            cls._instance = super().__new__(cls)
-        return cls._instance
+from helpers.image_hosting.base import ImageHostingBase
 
-    async def upload(self, image_url: str) -> str | None:
+if TYPE_CHECKING:
+    from helpers.proxy_helper import ProxyAdapter
+
+
+class NoneImageHosting(ImageHostingBase):
+    async def upload(
+        self, image_url: str, proxies: ProxyAdapter | None = None, public_id: str | None = None, *args, **kwargs
+    ) -> str | None:
         return image_url
+
+
+none_image_hosting = NoneImageHosting()

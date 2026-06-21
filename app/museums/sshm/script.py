@@ -42,10 +42,14 @@ class SSHMRunner(RunnerInit):
                 "https://www.sshm.ntpc.gov.tw/submenu?usein=2&psid=0G244574557570145140", cookies=cookies
             )
             main_parse = SelectolaxTranslation().translation_to_object(main_response.text)
+            if main_parse is None:
+                return None
 
             target_url = main_parse.css_first("a[title='當期展覽']").attributes.get("href")
             response = await client.get(target_url, cookies=cookies)
             response_parse = SelectolaxTranslation().translation_to_object(response.text)
+            if response_parse is None:
+                return None
             items = response_parse.css("table.ListTable tbody tr td.title a")
             responses = await asyncio.gather(
                 *[
@@ -61,10 +65,10 @@ class SSHMRunner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache import none_cache
+    from helpers.image_hosting import none_image_hosting
 
-    await SSHMRunner().run(NoneCache(), NoneImageHosting())
+    await SSHMRunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

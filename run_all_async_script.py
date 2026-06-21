@@ -13,10 +13,9 @@ from rich.progress import BarColumn, MofNCompleteColumn, Progress, SpinnerColumn
 
 from app.script import ALL_RUNNERS
 from configs.settings import get_settings
-from helpers.cache import DiskCache, NoneCache
+from helpers.cache import disk_cache, none_cache
 from helpers.crawler.scraper.helper import available_scraper_async_client
-from helpers.image_hosting.cloudinary.helper import CloudinaryImageHosting
-from helpers.image_hosting.none.helper import NoneImageHosting
+from helpers.image_hosting import none_image_hosting, get_initialized_cloudinary_image_hosting
 from helpers.storage.coordinate import Coordinate
 from helpers.storage.helper import (
     Information,
@@ -176,18 +175,15 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         format="%(asctime)s %(levelname)s %(message)s",
         datefmt="%Y-%m-%d %H:%M",
     )
-    image_host = NoneImageHosting()
+    use_image_host = none_image_hosting
     if (not runtime_setting.IS_DEBUG) and (runtime_setting.is_cloudinary_available):
-        assert runtime_setting.CLOUDINARY_CLOUD_NAME is not None
-        assert runtime_setting.CLOUDINARY_API_KEY is not None
-        assert runtime_setting.CLOUDINARY_API_SECRET is not None
-        image_host = CloudinaryImageHosting(
+        use_image_host = get_initialized_cloudinary_image_hosting(
             runtime_setting.CLOUDINARY_CLOUD_NAME,
             runtime_setting.CLOUDINARY_API_KEY,
             runtime_setting.CLOUDINARY_API_SECRET,
         )
 
-    disk_cache = NoneCache() if runtime_setting.IS_DEBUG else DiskCache()
+    use_cache = none_cache if runtime_setting.IS_DEBUG else disk_cache
     job = list(ALL_RUNNERS)
     script_total = len(job)
     prefix = None
@@ -208,7 +204,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         this_runner = RunnerObj()
         info = this_runner.set_information()
         all_script_information.append(this_runner.set_information())
-        named_runners.append((RunnerObj.__name__, info, RunnerObj().run(disk_cache, image_host, prefix, image_sem)))
+        named_runners.append((RunnerObj.__name__, info, RunnerObj().run(use_cache, use_image_host, prefix, image_sem)))
 
     total = len(named_runners)
     is_debug = runtime_setting.IS_DEBUG

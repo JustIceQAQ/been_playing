@@ -3,7 +3,7 @@ import datetime
 from typing import Any
 
 
-class Cache(abc.ABC):
+class CacheBase(abc.ABC):
     _instance = None
 
     def __new__(cls, *args, **kwargs):

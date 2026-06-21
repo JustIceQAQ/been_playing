@@ -5,7 +5,8 @@ import json
 import time
 from typing import Any
 
-from helpers.cache.base import Cache
+from helpers.cache.base import CacheBase
+from helpers.image_hosting.base import ImageHostingBase
 from helpers.parse_helper import ParseInit
 from helpers.proxy_helper import ProxyAdapter
 from helpers.storage.helper import Exhibition, ExhibitionItem, Information
@@ -13,6 +14,15 @@ from helpers.suffix_helper import suffix_helper
 from helpers.translation.base import TranslationInit
 from helpers.translation.json import JsonTranslation
 from helpers.storage.social_media import SocialMedia
+from functools import lru_cache
+
+
+@lru_cache
+def _get_proxy():
+    from configs.settings import get_settings
+
+    runtime_settings = get_settings()
+    return ProxyAdapter(runtime_settings.PROXY_POOL)
 
 
 class RunnerInit(abc.ABC):
@@ -33,10 +43,7 @@ class RunnerInit(abc.ABC):
         return
 
     def get_proxy(self) -> ProxyAdapter:
-        from configs.settings import get_settings
-
-        runtime_settings = get_settings()
-        return ProxyAdapter(runtime_settings.PROXY_POOL)
+        return _get_proxy()
 
     @abc.abstractmethod
     def set_information(self) -> "Information":
@@ -127,7 +134,7 @@ class RunnerInit(abc.ABC):
                 item.figure = cache_figure_url
             else:
                 if item.figure:
-                    result = await self.image.upload(item.figure)
+                    result = await self.image.upload(item.figure, proxies=self.get_proxy())
                     if result:
                         await self.cache.aset(
                             hash_source_url,
@@ -148,8 +155,8 @@ class RunnerInit(abc.ABC):
 
     async def run(
         self,
-        cache: Cache,
-        image,
+        cache: CacheBase,
+        image: ImageHostingBase,
         prefix: str | None = None,
         image_sem: asyncio.Semaphore | None = None,
         develop_mode: bool = False,

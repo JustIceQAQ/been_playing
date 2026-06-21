@@ -52,6 +52,8 @@ class BooksTicketsRunner(RunnerInit):
         parsers = [self.translation().translation_to_object(response.text) for response in responses]
 
         for parsed, item in zip(parsers, items):
+            if parsed is None:
+                continue
             lis = parsed.select("ul.prd002 > li")
             for li in lis:
                 if li.find("span") is None:
@@ -76,10 +78,10 @@ class BooksTicketsRunner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await BooksTicketsRunner().run(NoneCache(), NoneImageHosting())
+    await BooksTicketsRunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

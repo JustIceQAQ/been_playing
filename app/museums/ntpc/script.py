@@ -7,7 +7,7 @@ from app.museums.ntpc.parse import NTPCParse
 from helpers.cache import DiskCache
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
-from helpers.image_hosting.none.helper import NoneImageHosting
+from helpers.image_hosting.none.helper import none_image_hosting
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information
 from helpers.storage.coordinate import Coordinate, GeoPoint
@@ -61,6 +61,8 @@ class NTPCRunner(RunnerInit):
 
         response = await client.get(item.source_url)
         soup = self.translation().translation_to_object(response.text)
+        if soup is None:
+            return None
         exhibition_location = None
         for selector in ("div.district p", "div.district h3"):
             for tag in soup.select(selector):
@@ -82,7 +84,7 @@ class NTPCRunner(RunnerInit):
 
 
 async def main():
-    await NTPCRunner().run(DiskCache(), NoneImageHosting())
+    await NTPCRunner().run(DiskCache(), none_image_hosting)
 
 
 if __name__ == "__main__":

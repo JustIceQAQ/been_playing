@@ -65,7 +65,10 @@ class MuseumPostRunner(RunnerInit):
             responses = []
             page = 1
             response = await client.get(target_url.format(to_page=page), cookies=cookies)
-            while self.translation().translation_to_object(response.text).select("ul.part_list > li"):
+            translation_data = self.translation().translation_to_object(response.text)
+            if translation_data is None:
+                return None
+            while translation_data.select("ul.part_list > li"):
                 responses.append(response.text)
                 page += 1
                 response = await client.get(target_url.format(to_page=page), cookies=cookies)
@@ -81,10 +84,10 @@ class MuseumPostRunner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await MuseumPostRunner().run(NoneCache(), NoneImageHosting())
+    await MuseumPostRunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":

@@ -150,6 +150,8 @@ class KKDayRunner(RunnerInit):
             first_context = await first_response.text()
             responses.append(first_context)
             first_soup = self.translation().translation_to_object(first_context, format_encoding="html.parser")
+            if first_soup is None:
+                return None
             if self._has_sold_out_divider(first_soup):
                 return responses
             _, product_count = self._format_init_state(first_soup)
@@ -162,6 +164,8 @@ class KKDayRunner(RunnerInit):
                     if sub_response.status.is_success():
                         responses.append(sub_context)
                         sub_soup = self.translation().translation_to_object(sub_context, format_encoding="html.parser")
+                        if sub_soup is None:
+                            return None
                         if self._has_sold_out_divider(sub_soup):
                             break
             return responses
@@ -180,10 +184,10 @@ class KKDayRunner(RunnerInit):
 
 
 async def main():
-    from helpers.cache.none.helper import NoneCache
-    from helpers.image_hosting.none.helper import NoneImageHosting
+    from helpers.cache.none.helper import none_cache
+    from helpers.image_hosting.none.helper import none_image_hosting
 
-    await KKDayRunner().run(NoneCache(), NoneImageHosting())
+    await KKDayRunner().run(none_cache, none_image_hosting)
 
 
 if __name__ == "__main__":
