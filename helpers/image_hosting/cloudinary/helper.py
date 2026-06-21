@@ -92,7 +92,7 @@ class CloudinaryImageHosting(ImageHostingBase):
         return secure_url
 
     async def upload(
-        self, image_url: str, proxies: ProxyAdapter | None = None, public_id: str | None = None, *args, **kwargs
+        self, image_url: str, proxies: "ProxyAdapter | None" = None, public_id: str | None = None, *args, **kwargs
     ) -> str | None:
         if not image_url:
             return None
