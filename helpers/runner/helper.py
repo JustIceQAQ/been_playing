@@ -5,7 +5,8 @@ import json
 import time
 from typing import Any
 
-from helpers.cache.base import Cache
+from helpers.cache.base import CacheBase
+from helpers.image_hosting.base import ImageHostingBase
 from helpers.parse_helper import ParseInit
 from helpers.proxy_helper import ProxyAdapter
 from helpers.storage.helper import Exhibition, ExhibitionItem, Information
@@ -133,7 +134,7 @@ class RunnerInit(abc.ABC):
                 item.figure = cache_figure_url
             else:
                 if item.figure:
-                    result = await self.image.upload(item.figure)
+                    result = await self.image.upload(item.figure, proxies=self.get_proxy())
                     if result:
                         await self.cache.aset(
                             hash_source_url,
@@ -154,8 +155,8 @@ class RunnerInit(abc.ABC):
 
     async def run(
         self,
-        cache: Cache,
-        image,
+        cache: CacheBase,
+        image: ImageHostingBase,
         prefix: str | None = None,
         image_sem: asyncio.Semaphore | None = None,
         develop_mode: bool = False,
