@@ -41,12 +41,10 @@ class CG1839Runner(RunnerInit):
         headers = generate_headers()
         all_items = []
 
-        async with HttpxAsyncClient(headers=headers) as client:
+        async with HttpxAsyncClient(headers=headers, proxy=self.get_proxy().to_httpx()) as client:
             response = await client.get("https://www.1839cg.com/")
             response.raise_for_status()
-
             await self.get_index_item(all_items, client, response)
-
             await self.get_current_item(all_items, client)
 
         return all_items
