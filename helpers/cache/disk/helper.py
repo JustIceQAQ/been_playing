@@ -23,7 +23,13 @@ class DiskCache(CacheBase):
         self.origin_cache = package_disk_cache(
             str(pathlib.Path(__file__).parent.parent.parent.parent.absolute() / "fixture")
         )
-        self.loop = asyncio.get_running_loop()
+
+    @property
+    def loop(self):
+        try:
+            return asyncio.get_running_loop()
+        except RuntimeError:
+            return asyncio.get_event_loop()
 
     def _get_datetime_now(self):
         return datetime.datetime.now(tz=self._zoneinfo)
@@ -32,8 +38,7 @@ class DiskCache(CacheBase):
         return self.origin_cache.get(key)
 
     async def aget(self, key: str) -> Any | None:
-        loop = asyncio.get_running_loop()
-        future = loop.run_in_executor(None, self.get, key)
+        future = self.loop.run_in_executor(None, self.get, key)
         result = await future
         return result
 
@@ -44,8 +49,7 @@ class DiskCache(CacheBase):
         expire: int | str | None = None,
         from_datetime: datetime.datetime | None = None,
     ) -> bool | None:
-        loop = asyncio.get_running_loop()
-        future = loop.run_in_executor(
+        future = self.loop.run_in_executor(
             None,
             functools.partial(self.set, key, value, expire=expire, from_datetime=from_datetime),
         )
@@ -78,8 +82,7 @@ class DiskCache(CacheBase):
         return (next_time - (from_datetime or runtime_now)).seconds
 
     async def close(self):
-        loop = asyncio.get_running_loop()
-        future = loop.run_in_executor(
+        future = self.loop.run_in_executor(
             None,
             self.origin_cache.close,
         )
