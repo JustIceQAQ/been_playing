@@ -8,7 +8,7 @@ if TYPE_CHECKING:
 
 class NoneImageHosting(ImageHostingBase):
     async def upload(
-        self, image_url: str, proxies: ProxyAdapter | None = None, public_id: str | None = None, *args, **kwargs
+        self, image_url: str, proxies: "ProxyAdapter | None" = None, public_id: str | None = None, *args, **kwargs
     ) -> str | None:
         return image_url
 
