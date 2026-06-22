@@ -171,7 +171,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
 
     # logging init
     logging.basicConfig(
-        level=logging.DEBUG if runtime_setting.IS_DEBUG else logging.WARNING,
+        level=logging.WARNING if runtime_setting.IS_DEBUG else logging.ERROR,
         format="%(asctime)s %(levelname)s %(message)s",
         datefmt="%Y-%m-%d %H:%M",
     )
