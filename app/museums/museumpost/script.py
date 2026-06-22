@@ -72,6 +72,9 @@ class MuseumPostRunner(RunnerInit):
                 responses.append(response.text)
                 page += 1
                 response = await client.get(target_url.format(to_page=page), cookies=cookies)
+                translation_data = self.translation().translation_to_object(response.text)
+                if translation_data is None:
+                    break
 
             return responses
 
