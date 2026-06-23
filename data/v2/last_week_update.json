@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T12:41:46.896326+08:00",
+  "updated": "2026-06-23T19:40:32.816460+08:00",
   "items": [
     {
       "title": "伊藤潤二展 誘惑 JUNJI ITO EXHIBITION: ENCHANTMENT",
@@ -3801,6 +3801,372 @@
         "綜合"
       ],
       "UUID": "2ee8f1be5796585aa17e0c12523afa1d"
+    },
+    {
+      "title": "永續好日子 3.0",
+      "date": "2026-07-18 ~ 2026-07-19",
+      "address": "松山文創園區 2、3 號倉庫",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214717/zsj0fca6fkkvul5trfdr.webp",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/adfee998-e803-4743-8be6-9d075cb61ccc",
+      "tags": null,
+      "UUID": "5a3ca129fe885125a58b7d92923dacee"
+    },
+    {
+      "title": "【2026華山親子表藝節】重磅拾年，初心未眠",
+      "date": "2026-08-01 ~ 2026-08-30",
+      "address": "台灣文創發展股份有限公司",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1780922649/amd6zq5nluccid3pcqmm.webp",
+      "source_url": "https://artemperor.tw/tidbits/20013",
+      "tags": null,
+      "UUID": "588a1f2413605d2995fd19e271e30f44"
+    },
+    {
+      "title": "角落裡的慢時區 A Corner, A World",
+      "date": "2026-05-23 ~ 2026-06-28",
+      "address": "現代畫廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214563/eptpzgcontx6z3wf28ws.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=f2773900-9b95-4d50-8e85-9a165576cc9e&PageIndex=5&PageType=1",
+      "tags": null,
+      "UUID": "ddb5540597e555259dda443b26e777bf"
+    },
+    {
+      "title": "【慢物：墨痕與器溫】-羅青、沈東寧",
+      "date": "2026-05-09 ~ 2026-07-31",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1778474578/amvjvrhopm4cwip7pzks.webp",
+      "source_url": "https://99dac.com/exhibition-detail.php?id=248",
+      "tags": null,
+      "UUID": "d1909032d3d552cd967c63aa526c5724"
+    },
+    {
+      "title": "「脈品：切診點畫」",
+      "date": "2026-07-11 ~ 2026-08-22",
+      "address": "安卓藝術",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214541/gq4jmbqn1mxfjmhxpocq.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=a3e2ab02-dd97-4b05-98f5-87327dd455da&PageIndex=3&PageType=1",
+      "tags": null,
+      "UUID": "3c6a05e5a673577abba15f8f1290acb0"
+    },
+    {
+      "title": "彩影 第23屆國際身心障礙者藝術巔峰創作聯展(免費參觀)",
+      "date": "2026-06-27 ~ 2026-07-08",
+      "address": "4展廳、三樓藝廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782137571/muxtyeptq5wzd8rhelne.webp",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=60952",
+      "tags": null,
+      "UUID": "82646f9bbff356d8a1dc42038181ddaf"
+    },
+    {
+      "title": "《一個地方，作為萬物之中的一物》蘿拉・萊廷斯基 個展",
+      "date": "2026-07-11 ~ 2026-09-05",
+      "address": "新竹",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214522/hkfra7rrod0ykuwvqytl.webp",
+      "source_url": "https://www.klook.com/zh-TW/event-detail/101031005-2026-as-a-thing-among-things/",
+      "tags": [
+        "免費"
+      ],
+      "UUID": "a055428a8ff559b1a40261430ae1ae06"
+    },
+    {
+      "title": "古蹟探祕—勸業銀行舊廈古蹟修復常設展",
+      "date": "2021-11-15 ~ 2026-12-31",
+      "address": "臺博館古生物館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779165545/fisive6mw6jgyu8exsn9.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=c30b5c88-a6bb-4571-a20f-61ef20da2a69&PageIndex=10&PageType=1",
+      "tags": null,
+      "UUID": "d289dce269055dbeb893debe27b93547"
+    },
+    {
+      "title": "《山水之間：三境對話》-詹金水、陳慶坤、李政垣三人聯展",
+      "date": "2026-06-30 ~ 2026-07-31",
+      "address": "99°藝術中心",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214541/n2cstc1b5fk20oznmm37.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=40ade6f5-efa4-4c57-9227-6f211d3fe400&PageIndex=1&PageType=1",
+      "tags": null,
+      "UUID": "b6f5fc0b54d9524a8935674d2b2e963e"
+    },
+    {
+      "title": "「鶯歌工商進修部廣設科畢業成果展」(第24屆)",
+      "date": "2026-06-01 ~ 2026-07-31",
+      "address": "新北市鶯歌區公所行政大樓",
+      "figure": null,
+      "source_url": "http://event.moc.gov.tw/sp.asp?xdurl=ccEvent2016/ccEvent_cp.asp&cuItem=2864817&ctNode=676&mp=1",
+      "tags": [
+        "設計",
+        "平面視覺",
+        "不分細類"
+      ],
+      "UUID": "2fe99b886c4450f581c3e55108824905"
+    },
+    {
+      "title": "【山吹色流淌— 歐靜雲個展】Flowing Ochre: Solo Exhibition of OU Jing-Yun",
+      "date": "2026-06-27 ~ 2026-07-18",
+      "address": "LIN ART PROJECTS 潮時藝術",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214528/yhkjlaaslwu48wtfhomq.webp",
+      "source_url": "https://artemperor.tw/tidbits/20077",
+      "tags": null,
+      "UUID": "da7358d8c5f8539e9b5083d4fedb0ca0"
+    },
+    {
+      "title": "大圖書館員—龍顏藝術創作獎二十年",
+      "date": "2026-07-03 ~ 2026-09-27",
+      "address": "1F 展覽廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214762/wrddhsqqvbfzp15snebr.webp",
+      "source_url": "https://kdmofa.tnua.edu.tw/mod/exhibition/index.php?REQUEST_ID=e1626ae68798853bcff9a390f902a9dfba4fbfa094efe4fe640b9db20b991a95",
+      "tags": null,
+      "UUID": "ef753f450d1e52e6b411d1912d2e025c"
+    },
+    {
+      "title": "【慢物墨痕與器溫-羅青、沈東寧 】Slow Objects: Traces of Ink and the Warmth of Ware – Lo Ching, Shen DongNing",
+      "date": "2026-05-09 ~ 2026-07-31",
+      "address": "99°藝術中心",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779510868/ne6rqwhrmfrk7jjinowl.webp",
+      "source_url": "https://artemperor.tw/tidbits/19894",
+      "tags": null,
+      "UUID": "0acfdec6b2c455f9b59b49b0f15868a5"
+    },
+    {
+      "title": "積吶虹光｜虹心球(RHS)光譜中的我們",
+      "date": "2026-04-30 ~ 2026-06-30",
+      "address": "立法院 文化走廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214550/e1ifkk73vm7jotszepqm.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=bf159bb2-1dc6-4256-9a44-f75d3d544fd1&PageIndex=7&PageType=1",
+      "tags": null,
+      "UUID": "396a266a31805338bf999ba3fd149b9d"
+    },
+    {
+      "title": "逐光夜航：空服員工會紀念特展",
+      "date": "2026-07-04 ~ 2026-07-26",
+      "address": "松山文創園區 南向製菸工廠",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214718/adzhrlhebjlh4ey4gktu.webp",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/d4da0a58-e6c5-40bb-be56-6fddcd50ce3b",
+      "tags": null,
+      "UUID": "9b10879267d95909adbdd8e50dc5f64c"
+    },
+    {
+      "title": "2026【慢物：墨痕與器溫】-羅青、沈東寧",
+      "date": "2026-05-09 ~ 2026-07-31",
+      "address": "99°藝術中心",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214549/lian3sbd8dof1si4y8v8.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=48647d0a-9150-4b70-9d4d-63b078c07a45&PageIndex=6&PageType=1",
+      "tags": null,
+      "UUID": "8aca15b46f4c52f88d4404282b08ac0f"
+    },
+    {
+      "title": "台北・台中・高雄|台灣同人誌販售會",
+      "date": "",
+      "address": "",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214536/lfqsk1cbmnedc1ww3xpi.webp",
+      "source_url": "https://www.kkday.com/zh-tw/product/526080",
+      "tags": null,
+      "UUID": "31d10f6878e456d6907091b4fc552677"
+    },
+    {
+      "title": "《2026 NTSO華山論樂》場次二 陳漢金主講「鐘聲與音樂」",
+      "date": "2026-06-25 ~ 2026-06-25",
+      "address": "拱廳, 華山1914文創園區",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214731/mrl70pffyjuzzjdjsrxm.webp",
+      "source_url": "https://www.huashan1914.com/w/umaytheater/performance_26062315571414467",
+      "tags": [
+        "講座",
+        "表演藝術"
+      ],
+      "UUID": "721c4a655ef45a85a04e0658f6879bbe"
+    },
+    {
+      "title": "信福傳情－信箱郵筒郵票特展",
+      "date": "2026-01-17 ~ 2026-07-05",
+      "address": "郵政博物館臺北館特展室",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779012276/l8ecbfwaeeefieefbxw6.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=ef151c53-bded-411d-bcec-b8f112b7923f&PageIndex=8&PageType=1",
+      "tags": null,
+      "UUID": "289d751d20ba50c6a59fa2030fc4d3f3"
+    },
+    {
+      "title": "【童里6月展覽】映画設｜靠！被電影設計了 Designed by the film.",
+      "date": "2026-06-06 ~ 2026-06-30",
+      "address": "童里書店",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214543/lsuhymboosoxzyz10svk.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=ae8d1e30-5797-4334-8f15-52cf27165214&PageIndex=4&PageType=1",
+      "tags": null,
+      "UUID": "38fe9c8c95cc59588f8b434f7960b657"
+    },
+    {
+      "title": "敦煌壁畫常設展",
+      "date": "2023-05-20 ~ 2026-12-31",
+      "address": "胡克敏紀念館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779105463/jpjtmpl7qx5xquy4ji09.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=04ec255a-45da-4c4f-a5ba-003f06fe90aa&PageIndex=10&PageType=1",
+      "tags": null,
+      "UUID": "6db12b1b7dcf5be5bccd468ee0ceccff"
+    },
+    {
+      "title": "積吶虹光｜青天白日滿地虹：RHS｜沒有敵人的幾何",
+      "date": "2026-06-06 ~ 2026-07-12",
+      "address": "臺中市港區藝術中心",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214542/wzbufgsvtssjxvpzodxf.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=c6a4c68b-c9ef-4d9d-a570-e4ff41db14da&PageIndex=4&PageType=1",
+      "tags": null,
+      "UUID": "ca883847a3935af3b673cc53b9ea1d0d"
+    },
+    {
+      "title": "親近國寶──大理石梟形小立雕",
+      "date": "2026-01-10 ~ 2026-07-12",
+      "address": "歷史文物陳列館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779039071/cmkfjojr3yyhvre43pog.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=6d326b02-1c97-44d8-bea9-46c663b5720c&PageIndex=8&PageType=1",
+      "tags": null,
+      "UUID": "896ea04bc1035c0b9e1bdbd395284d53"
+    },
+    {
+      "title": "北美館 - 超現實主義：對話中的世界",
+      "date": "2026-04-25 ~ 2026-08-30",
+      "address": "臺北市立美術館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1781784225/csopgx3v9afm1a56wdqy.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=18824f49-1714-4c9f-b729-08ecf9dd40e8&PageIndex=7&PageType=1",
+      "tags": null,
+      "UUID": "51621471583d5d7ea806fdcd713ec4e4"
+    },
+    {
+      "title": "餐桌上的博物館 – 食物的隱形魔法",
+      "date": "2026-05-08 ~ 2026-08-31",
+      "address": "里仁誠食市集",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1781784223/vflcj4a1jymm7dim8c4z.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=5b25577a-bdbe-4b06-9d55-41c7c2392728&PageIndex=6&PageType=1",
+      "tags": null,
+      "UUID": "7451064025d15cf9909ceb743fb41ebe"
+    },
+    {
+      "title": "不廢不棄·木義診",
+      "date": "2026-06-27 ~ 2026-06-28",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214686/abtcwqrpohfbfn6p6vhv.webp",
+      "source_url": "https://www.bopiliao.taipei/Event_News/Detail/759",
+      "tags": null,
+      "UUID": "a078590f4f065690850718d107ac2251"
+    },
+    {
+      "title": "Tell Me a Bedtime Story —菅 祐子 Yuko Kan 1st solo exhibition in Taiwan",
+      "date": "2026-06-06 ~ 2026-07-19",
+      "address": "雄獅星空Linklion",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214542/ndyz76wu5zg7u62psefw.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=ad5082f6-3f20-416a-bcc1-10b739429b56&PageIndex=3&PageType=1",
+      "tags": null,
+      "UUID": "dae4868aa16759e6aa59485137e77518"
+    },
+    {
+      "title": "葉顯壯水彩展-廟宇風華",
+      "date": "2026-06-15 ~ 2026-07-20",
+      "address": "金牌藝廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214544/hcm2bi3zlnj5pf4s2uy2.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=e784a15f-f589-4c0c-8798-2c82ebc0b703&PageIndex=2&PageType=1",
+      "tags": null,
+      "UUID": "817c65999c0c53a6adf9e73111cb82af"
+    },
+    {
+      "title": "【山吹色流淌— 歐靜雲個展】Flowing Ochre: Solo Exhibition of OU Jing-Yun",
+      "date": "2026-06-27 ~ 2026-07-18",
+      "address": "LIN ART PROJECTS 潮時藝術",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214528/iomsntgx2imjgtqafesu.webp",
+      "source_url": "https://artemperor.tw/tidbits/20078",
+      "tags": null,
+      "UUID": "42c5b291be1a53269391ec3eb4fcce7c"
+    },
+    {
+      "title": "生命的底色 - 吳丁賢創作個展 Life Beneath White - Wu Ting-Hsien Solo Exhibition",
+      "date": "2026-05-16 ~ 2026-07-10",
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214522/dzn74fqlupdawbewrtjb.webp",
+      "source_url": "https://www.klook.com/zh-TW/event-detail/101030960-2026-life-beneath-white/",
+      "tags": [
+        "免費"
+      ],
+      "UUID": "85387491e332571e919dad560e4150d3"
+    },
+    {
+      "title": "《大地瑰寶》礦物常設展",
+      "date": "2025-09-17 ~ 2045-12-31",
+      "address": "國立自然科學博物館 地球環境廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779039071/s9nbgwt9uwzpqtblzzhi.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=880ec087-2147-46e5-bcc5-029f342ab41a&PageIndex=9&PageType=1",
+      "tags": null,
+      "UUID": "bbce91d5e325533f92cacdedb5f20990"
+    },
+    {
+      "title": "中心新村｜《永不退場-從軍眷球場到全民的籃球傳奇》特展",
+      "date": "2025-09-26 ~ 2026-08-28",
+      "address": "中心新村",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779012277/qosasrdh7mv6eig9qvlx.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=58fb419c-5af2-4d08-97fc-616db316e0c1&PageIndex=9&PageType=1",
+      "tags": null,
+      "UUID": "fbb612b0de21511b9f195048145274ce"
+    },
+    {
+      "title": "【一座博物館的誕生】藝術化世十年探索與實踐",
+      "date": "2026-08-04 ~ 2027-05-23",
+      "address": "中台世界博物館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214529/jr2rlqwmm95axwxfrsih.webp",
+      "source_url": "https://artemperor.tw/tidbits/20066",
+      "tags": null,
+      "UUID": "b0a52e856c0e54c299cc1929b5b132db"
+    },
+    {
+      "title": "Knock、Knock－T School 第三屆成果展",
+      "date": "2026-06-27 ~ 2026-06-28",
+      "address": "松山文創園區 男澡堂",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214718/qftiewpryyhfwand3lrj.webp",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/10482dae-bd0e-4fd3-aa5e-f3e61d0e28bc",
+      "tags": null,
+      "UUID": "6958349d438f50b2b0548a0566fcfcd7"
+    },
+    {
+      "title": "仲夏夜之夢．行草篇 孟焦雅集特展",
+      "date": "2026-07-02 ~ 2026-07-05",
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214522/hap0wqkvbiidqr36eciq.webp",
+      "source_url": "https://www.klook.com/zh-TW/event-detail/101031006-2026-midsummer-nights-dream/",
+      "tags": [
+        "免費"
+      ],
+      "UUID": "dcc03f31197556c9a50ae71307af610a"
+    },
+    {
+      "title": "【《Musée de la solitude孤獨 就這樣從巴黎運過來》】｜旅法藝術家戴伶智古典水墨與當代插畫的跨界對話｜",
+      "date": "2026-07-10 ~ 2026-08-18",
+      "address": "財團法人英才文教基金會",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214528/aekyoy4suw80mdv6mbmu.webp",
+      "source_url": "https://artemperor.tw/tidbits/20044",
+      "tags": null,
+      "UUID": "29fb6380e4775e349d4cbe1453dc2943"
+    },
+    {
+      "title": "【《山水之間三境對話》-詹金水、陳慶坤、李政垣三人聯展 】《Between Landscapes: A Dialogue of Three Realms》–Jan JinShui, Chen QingKun, Lee JeongWon",
+      "date": "2026-06-30 ~ 2026-07-31",
+      "address": "99°藝術中心",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214528/sjnorchjwkbegbs0qv9c.webp",
+      "source_url": "https://artemperor.tw/tidbits/20073",
+      "tags": null,
+      "UUID": "0098fa8a04385941b309788d8f9a314e"
+    },
+    {
+      "title": "台灣好樂園暑假聯合行銷記者會【再回遊樂園 歡樂同學會】",
+      "date": "2026-06-24 ~ 2026-06-24",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214730/ks5yn4lhgpz9vxserhye.webp",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26062313450761555",
+      "tags": [
+        "展覽"
+      ],
+      "UUID": "0a08fa64e3945afa9eb1e0d288ac1a83"
+    },
+    {
+      "title": "光影重構萬象-許坤成油畫暨大漆個展",
+      "date": "2026-05-22 ~ 2026-07-31",
+      "address": "聯邦藝術中心",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214546/g2an7w0igp8ppfmifbjo.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=95befb62-43eb-4f84-8cf3-8a541abb08e9&PageIndex=5&PageType=1",
+      "tags": null,
+      "UUID": "509b73e1eaf85a0aa4feda8cb8b9eb1c"
     }
   ]
 }
