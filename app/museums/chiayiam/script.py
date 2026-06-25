@@ -39,7 +39,7 @@ class ChiayiAMRunner(RunnerInit):
             host="chiayiartmuseum.chiayi.gov.tw",
             referer="https://chiayiartmuseum.chiayi.gov.tw/ExhibitionsListC003100.aspx?appname=Exhibition3120",
         )
-        async with HttpxAsyncClient(headers=headers) as client:
+        async with HttpxAsyncClient(headers=headers, proxy=self.get_proxy().to_httpx()) as client:
             urls = [
                 "https://chiayiartmuseum.chiayi.gov.tw/ExhibitionsListC003100.aspx?appname=Exhibition3110",
                 "https://chiayiartmuseum.chiayi.gov.tw/ExhibitionsListC003100.aspx?appname=Exhibition3120",
