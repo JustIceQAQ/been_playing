@@ -42,8 +42,14 @@ class HistorySinicaRunner(RunnerInit):
     async def fetch_response(self):
         headers = generate_headers(host="museum.sinica.edu.tw")
         cookies = generate_cookies(other_cookies={"__Secure-PHPSESSID": secrets.token_hex(13)})
-        async with NiquestsAsyncSession(headers=headers) as client:
-            response = await client.get("https://museum.sinica.edu.tw/exhibitions-events/", cookies=cookies)
+        async with NiquestsAsyncSession(
+            headers=headers,
+        ) as client:
+            response = await client.get(
+                "https://museum.sinica.edu.tw/exhibitions-events/",
+                cookies=cookies,
+                proxies=self.get_proxy().to_niquests(),
+            )
         return response.text
 
     async def fetch_parsed(self):
