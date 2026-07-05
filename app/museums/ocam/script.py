@@ -37,7 +37,19 @@ class OCAMRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = generate_headers(referer="https://www.ymculture.org.tw/tw/Exhibition/OCAM#")
+        headers = generate_headers(
+            referer="https://www.ymculture.org.tw/tw/Exhibition/OCAM",
+            need_upgrade_insecure_requests=True,
+            other_headers={
+                "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                "accept-encoding": "gzip, deflate, br",
+                "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+                "cache-control": "no-cache",
+                "dnt": "1",
+                "pragma": "no-cache",
+                "priority": "u=0, i",
+            },
+        )
         cookies = generate_cookies(need_phpsessid=True)
         url = "https://www.ymculture.org.tw/tw/Exhibition/OCAM#"
         async with HttpxAsyncClient(headers=headers) as client:

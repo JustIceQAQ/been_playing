@@ -59,6 +59,8 @@ class HongGahRunner(RunnerInit):
     async def fetch_parsed(self):
         parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         project = parsed.find("div", {"class": "portfolio-grid"})
+        if project is None:
+            return []
         items = project.find_all("div", {"class": "ohio-project-item"})
         return items
 

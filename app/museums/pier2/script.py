@@ -46,7 +46,7 @@ class Pier2Runner(RunnerInit):
             "date": f"{datetime.date.today():%Y-%m-%d}",
         }
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.get("https://pier2.org/api/eventList.php", params=params, cookies=cookies)
+            response = await client.post("https://pier2.org/api/eventList.php", params=params, cookies=cookies)
         return response.json()
 
     async def fetch_parsed(self):
