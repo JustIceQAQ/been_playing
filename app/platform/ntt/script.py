@@ -1,4 +1,5 @@
 import asyncio
+import uuid
 
 from app.platform.ntt.parse import NTTParse
 from helpers.headers_helper import generate_headers
@@ -36,9 +37,9 @@ class NTTRunner(RunnerInit):
             origin="https://newtaipei.travel",
         )
         data = {"year": year}
-        cookies = {}
+        cookies = {"visitor": str(uuid.uuid4())}
         async with HttpxAsyncClient(headers=headers) as client:
-            html_response = await client.get("https://newtaipei.travel/zh-tw/calendar/list")
+            html_response = await client.get("https://newtaipei.travel/zh-tw/calendar/list", cookies=cookies)
             html_response.raise_for_status()
             html_p = BeautifulSoupTranslation().translation_to_object(html_response.text)
             if html_p is None:
