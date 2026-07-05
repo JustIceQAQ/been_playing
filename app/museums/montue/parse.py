@@ -32,9 +32,15 @@ class MoNTUEParse(ParseInit):
         strong_tag = self.item.find("strong", string="地點")
         if strong_tag:
             next_content = strong_tag.next_sibling
-            if next_content:
-                result = next_content.strip()
-                return result.replace("｜", "").strip()
+            if next_content and hasattr(next_content, "text"):
+                result = next_content.text.strip()
+            elif next_content:
+                result = str(next_content).strip()
+            else:
+                result = None
+            if result == "｜":
+                return None
+            return result
 
     def get_figure(self, *args, **kwargs) -> str | None:
         original_url = self.item.find("meta", {"name": "twitter:image"}).get("content")
