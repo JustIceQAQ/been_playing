@@ -11,6 +11,9 @@
     },
     "3ced9b0b511a50dcb22b2eb8a1efc530": {
       "address": "國家人權博物館白色恐怖景美紀念園區兵舍1、2、3號"
+    },
+    "e633edcb404252daacdbc6b18f701fc0": {
+      "address": "兵舍六"
     }
   },
   "TncMMM": {
@@ -33,6 +36,10 @@
       "figure": "https://www-ws.gov.taipei/001/Upload/681/relpic/0/136091/832e93b5-57a9-45b5-b01e-5942319f2676.png",
       "address": "臺灣新文化運動紀念館2樓",
       "date": "2025-09-26 ~ 2026-08-09"
+    },
+    "49ac89ed95995c068a2893a798eac5a4": {
+      "figure": "https://www-ws.gov.taipei/001/Upload/681/relpic/0/142157/6d0bff45-09e6-43d7-8ea1-aa82bf049be5.jpg",
+      "address": "渭水驛站"
     }
   },
   "NTNUArtMuseum": {
@@ -145,6 +152,9 @@
     },
     "af45c00c9b295c87a0a0d69f521b3d16": {
       "address": "一樓大廳"
+    },
+    "db1f83161d7e58b2bed87a32696a2ec3": {
+      "address": "2樓常設展"
     }
   },
   "khm": {
@@ -177,6 +187,12 @@
     },
     "92469b1203f1590b9359582c754ded54": {
       "address": "線上PODCAST節目"
+    },
+    "6355fe3a0cd85b8d9712263045dfab03": {
+      "address": "左營孔廟東廡展覽室"
+    },
+    "3bdb88a199ba590e85e1b82b8ccd5535": {
+      "address": "左營孔廟東廡展覽室"
     }
   },
   "PT1936": {
@@ -188,6 +204,9 @@
     },
     "5086887c367d5fd2a5dcea2562a55519": {
       "date": "2022-02-19 ~"
+    },
+    "780bd30c4a48570785495c1d230ed638": {
+      "address": "屏菸1936文化基地"
     }
   },
   "HcccArt": {
@@ -200,6 +219,127 @@
     },
     "60fb1deb6097551c9b23e80446cab327": {
       "address": "花蓮美術館C展廳"
+    }
+  },
+  "BoPiLiao": {
+    "d6fc4d1864225a9f8b3a1d1a56654e53": {
+      "address": "廣州街147號、149號展場"
+    },
+    "2033b5999a2655f6b38f83b6bb029a50": {
+      "address": "廣州街153&155號"
+    },
+    "9c312fc67a245ee59083fb1df8d67a29": {
+      "address": "剝皮寮歷史街區 173-27號展間"
+    },
+    "9af45e58675553aca90b95aeb70d7302": {
+      "address": "剝皮寮歷史街區 土炭市"
+    },
+    "86206f87b4f65c5dbd6ab6816154d779": {
+      "address": "剝皮寮歷史街區 29號、31號展間"
+    },
+    "00f0ea123cfd551c9db488ee339036a0": {
+      "address": "剝皮寮歷史街區 129&131號展間"
+    }
+  },
+  "TFam": {
+    "309ada47c3c754168ee81b5c7a971413": {
+      "address": "線上展"
+    }
+  },
+  "CG1839": {
+    "081e998b4d83581d895ae6bec93ea29c": {
+      "date": "2026-05-22 ~ 2026-06-28"
+    },
+    "79c570d35ab15248a88b9463bc13a338": {
+      "figure": "https://www.jps.gr.jp/wp-content/uploads/2026/05/koushi-matsumoto_202606_1.jpg"
+    }
+  },
+  "FuZhong15": {
+    "1b91e06715915da29d67e453a7f2b231": {
+      "address": "府中15 3f-5f展覽室、1f直播室",
+      "date": "2026-06-29 ~  2026-08-30"
+    }
+  },
+  "KmFa": {
+    "18c4e674be8254318d0603c1dbc0206e": {
+      "address": "本館 B1 KSpace"
+    },
+    "8025f955e7355efcb10658fd8de0ae08": {
+      "address": "本館 404-405展覽室"
+    },
+    "dbad72835a045cd6a1da658ca3377bf6": {
+      "address": "本館 101-103展覽室"
+    },
+    "e27e9cee48315efa887dbd05ba146fce": {
+      "address": "本館 104-105展覽室"
+    },
+    "50e26f1d03365ec9837ab5c8f91d6cdd": {
+      "address": "本館 2樓展覽室"
+    },
+    "b1cefc4d802855cfb25ddc8c86a6148b": {
+      "address": "本館 301, 302, 303, 304, 305展覽室│401, 402展覽室"
+    },
+    "2a8d41b5d7b75a32b30d04d4cf58aba6": {
+      "address": "本館 2樓美哉高雄長廊"
+    },
+    "b75155688bb85026b554cfe6d8920954": {
+      "address": "本館 映所Resonance Hub 思維藏美共振基地"
+    }
+  },
+  "YoChangArt": {
+    "03acbab63cf9589b826fdc92474acf04": {
+      "address": "教學研究大樓B2 (大觀及真善美藝廊)"
+    }
+  },
+  "XZCAC": {
+    "067ec13d6f6d586fb2b0daaa721f319f": {
+      "address": "新莊文化藝術中心藝術廳"
+    }
+  },
+  "ttcsec": {
+    "59fcb10d2a3850e28aa18ea345e0a5b3": {
+      "date": "2026-07-04 ~ 2026-09-28",
+      "address": "臺東桂田喜來登酒店三樓"
+    },
+    "6ac803c630ba59c189fb926f18bba952": {
+      "address": "國立臺東生活美學館",
+      "date": "2026-07-02 ~ 2026-08-08"
+    },
+    "647e24f671fd5de5a33d61e574917a51": {
+      "address": "國立臺東生活美學館"
+    }
+  },
+  "Tmc": {
+    "a05e0636ba2d5f1085d827a36bdbb709": {
+      "address": "臺北流行音樂中心"
+    }
+  },
+  "TFAI": {
+    "39c03243c7f557bfb338a9ec646979b5": {
+      "address": "國家電影及視聽文化中心場館1F、2F",
+      "date": "2022-02-04～2022-04-24"
+    }
+  },
+  "OCAM": {
+    "a768a33ec00d536988b97702598628a2": {
+      "address": "陽明海洋文化藝術館3F"
+    }
+  },
+  "NtSec": {
+    "22f502ad738d5637847e869d46c2b1dc": {
+      "date": "2026-06-11 ~ 2026-08-30"
+    },
+    "a79e654c05125bd78478d3e0dc1824cf": {
+      "date": "2026-06-26 ~ 2026-10-11"
+    },
+    "8bc22de64cda57c88391c1bafd14ea56": {
+      "date": "2026-06-19 ~ 2026-09-28",
+      "address": "7樓東側特展區"
+    }
+  },
+  "NMTL": {
+    "5f1ce13f26a05e9eb2cd70a9661f3ceb": {
+      "address": "展覽室A、B"
     }
   }
 }
