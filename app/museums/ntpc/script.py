@@ -3,15 +3,14 @@ import asyncio
 import bs4
 import httpx
 
+from app.museums.ntpc.information import NTPCInformation
 from app.museums.ntpc.parse import NTPCParse
+from app.museums.ntpc.social_media import NTPCSocialMedia
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information
-from helpers.storage.coordinate import Coordinate, GeoPoint
-from helpers.symbol.venue import VenueType
-from helpers.symbol.taiwan import Taiwan
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3, get_asyncio_rate_limit
 
@@ -27,17 +26,10 @@ class NTPCRunner(RunnerInit):
         return month_3()
 
     def set_information(self) -> "Information":
-        return Information(
-            location_code=Taiwan.new_taipei.yingge_65000080,
-            fullname="新北市立鶯歌陶瓷博物館",
-            code_name="NTPC",
-            external_link="https://www.ceramics.ntpc.gov.tw/xmdoc?xsmsid=0J148497613881029302",
-            branch_coordinates=Coordinate(
-                geo_point=GeoPoint(raw_coordinates="24.949406697655782, 121.3520648774411"),
-                raw_coordinates="24.949406697655782, 121.3520648774411",
-            ),
-            venue_type=VenueType.MUSEUM,
-        )
+        return NTPCInformation.get_information()
+
+    def set_social_media(self):
+        return NTPCSocialMedia.get_social_media()
 
     def get_this_header(self):
         return generate_headers(host="www.ceramics.ntpc.gov.tw", need_upgrade_insecure_requests=True)
