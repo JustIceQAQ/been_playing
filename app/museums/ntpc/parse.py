@@ -25,7 +25,10 @@ class NTPCParse(ParseInit):
         return self.item.find("img").get("src")
 
     def get_source_url(self, *args, **kwargs) -> str | None:
-        return "https://www.ceramics.ntpc.gov.tw" + self.item.find("a").get("href")
+        href = self.item.find("a").get("href")
+        if "https://" in href:
+            return href
+        return "https://www.ceramics.ntpc.gov.tw" + href
 
 
 def normalize_date_range(text: str) -> str | None:
@@ -48,7 +51,5 @@ def normalize_date_range(text: str) -> str | None:
         start_date = f"{year}-{int(m1):02d}-{int(d1):02d}"
         end_date = f"{year}-{int(m2):02d}-{int(d2):02d}"
         return f"{start_date} ~ {end_date}"
-
-    return None
 
     return None
