@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09T19:26:44.669337+08:00",
+  "updated": "2026-07-10T02:18:42.236120+08:00",
   "items": [
     {
       "title": "觀心儀．Inward Gaze 張仲禹陶藝創作展",
@@ -3385,6 +3385,45 @@
       "source_url": "https://cultureexpress.taipei/Event/C000003?ID=e2ce2a39-2a17-4327-ac3b-29232a667f11&PageIndex=5&PageType=1",
       "tags": null,
       "UUID": "7c88b09db08f5c92b04a8f8ee57a0356"
+    },
+    {
+      "title": "ART OF MIKU -台北展覽- 第二階段＿限量早鳥票 0909",
+      "date": "2026-09-09",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1783620893/algphi4prpqvk9jpzrmx.webp",
+      "source_url": "https://capsule1111.kktix.cc/events/artofmikufirststage0909",
+      "tags": null,
+      "UUID": "1176cd2d8ebf5d60ad0d3b2a2acf7c53"
+    },
+    {
+      "title": "《未來海洋：化石裡的生態暗號》",
+      "date": "2026-07-07 ~ 2026-09-06",
+      "address": "嘉義市立博物館1樓簡報室前廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1783620985/lpm7c3i1al7glcskrbjj.webp",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=e57f69d7-83f4-4a16-805a-b5807b523b3f&StartDate=2026%2f07%2f10&EndDate=2026%2f07%2f10&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "1555440e9f945ff8bad0854b5fd6a6f6"
+    },
+    {
+      "title": "騁技與運動－書畫中的技藝與體能活動",
+      "date": "2026-07-10 ~ 2026-09-16",
+      "address": "北部院區 第一展覽館 202,204,206,208,210,212",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1783620960/jxulghikdl3utf2ldoqe.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014555&l=1&type=1&cat=",
+      "tags": [
+        "書法",
+        "繪畫"
+      ],
+      "UUID": "88384e9b73e65eb6aff610846d807c7b"
+    },
+    {
+      "title": "CWT-73《台北場》台灣同⼈誌販售會",
+      "date": "2026-08-08 ~ 2026-08-09",
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1783620895/xk4mmdcsuq5jhwqadda3.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/82096-cwt-taipei/",
+      "tags": null,
+      "UUID": "74eedd4817cf5d9c9173e23bee47018a"
     }
   ]
 }
