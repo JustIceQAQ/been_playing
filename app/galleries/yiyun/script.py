@@ -60,7 +60,8 @@ class YiYunRunner(RunnerInit):
         current = parsed.find("div", {"id": "current"})
         following = parsed.find("div", {"id": "following"})
         followings = following.find_all("a", {"class": "exhibition-list"})
-        followings.append(current)
+        if current is not None:
+            followings.append(current)
         return followings
 
 
@@ -68,7 +69,7 @@ async def main():
     from helpers.cache.none.helper import none_cache
     from helpers.image_hosting.none.helper import none_image_hosting
 
-    await YiYunRunner().run(none_cache, none_image_hosting)
+    await YiYunRunner().run(none_cache, none_image_hosting, develop_mode=True)
 
 
 if __name__ == "__main__":
