@@ -6,10 +6,10 @@ dependencies = [
     "aiofile==3.11.1",
     "aiofiles>=25.1.0",
     "aiolimiter==1.2.1",
-    "anyio>=4.14.1",
+    "anyio>=4.14.2",
     "bs4==0.0.2",
     "cloudinary>=1.45.0",
-    "croniter==6.2.3",
+    "croniter==6.2.4",
     "cssutils==2.15.0",
     "dill==0.4.1",
     "diskcache==5.6.3",
@@ -20,7 +20,7 @@ dependencies = [
     "httpx>=0.28.1",
     "httpxyz>=0.31.2",
     "icalendar>=7.2.0",
-    "niquests>=3.20.0",
+    "niquests>=3.20.1",
     "orjson>=3.11.9,<4",
     "pydantic==2.13.4",
     "pydantic-settings==2.14.2",
@@ -32,7 +32,7 @@ dependencies = [
     "sentry-sdk==2.64.0",
     "urllib3>=2.7.0",
     "pillow>=12.3.0",
-    "wreq>=0.12.0",
+    "wreq>=0.12.1",
 ]
 
 [dependency-groups]
@@ -50,7 +50,7 @@ dev = [
     "matplotlib>=3.11.0",
     "folium>=0.20.0",
     "branca>=0.8.2",
-    "skylos>=4.28.0",
+    "skylos>=4.29.0",
 ]
 
 
