@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T18:22:01.264876+08:00",
+  "updated": "2026-07-16T01:46:43.737206+08:00",
   "items": [
     {
       "title": "《未來海洋：化石裡的生態暗號》",
@@ -1897,6 +1897,62 @@
       "source_url": "https://newtaipei.travel/zh-tw/calendar/detail/3947",
       "tags": null,
       "UUID": "71a299321abf5f31a1847b894b25c078"
+    },
+    {
+      "title": "雲在兩千米",
+      "date": "2026-07-25 ~ 2026-10-11",
+      "address": "｜MoNTUE 北師美術館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1783272990/ucylgs1moz4iehbwkrrh.webp",
+      "source_url": "https://montue.ntue.edu.tw/%e9%9b%b2%e5%9c%a8%e5%85%a9%e5%8d%83%e7%b1%b3/",
+      "tags": null,
+      "UUID": "9f298cff2f8e5b70a03efebe950fd0d2"
+    },
+    {
+      "title": "《未來海洋：化石裡的生態暗號》",
+      "date": "2026-07-07 ~ 2026-09-06",
+      "address": "嘉義市立博物館1樓簡報室前廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1784137506/opwkt6mvijgivgcm8wk0.webp",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=e57f69d7-83f4-4a16-805a-b5807b523b3f&StartDate=2026%2f07%2f16&EndDate=2026%2f07%2f16&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "c3d7e22e7e265d67a2355cd168898ced"
+    },
+    {
+      "title": "比利 Billy、呂威 Taetare、曼曼《It’s Okay》專場",
+      "date": "2026-08-02",
+      "address": "Live House D",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1784137413/sen4ygsecrzyu6g8kiik.webp",
+      "source_url": "https://www.tmc.taipei/tw/blog/show/2026OpenLab/ItsOkay",
+      "tags": [
+        "活動及講座"
+      ],
+      "UUID": "f17c049cd79654e98a3f2364db6fde2e"
+    },
+    {
+      "title": "古典光影大師: 林布蘭到哥雅─托雷多美術館珍藏展 I Old Masters from Rembrandt to Goya: Treasures from the Toledo Museum of Art I",
+      "date": "2026-07-18 ~ 2026-10-19",
+      "address": "富邦美術館-1樓 水景展廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104065/xrzxkhlpjhtwyd35os2v.webp",
+      "source_url": "https://www.fubonartmuseum.org/ExhibitionDetail?PKNO=X008B01L",
+      "tags": null,
+      "UUID": "13efb6be5c65590ca8ec49a04119ddd9"
+    },
+    {
+      "title": "新世紀福音戰士展：線",
+      "date": "2026-08-14 ~ 2026-10-04",
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1784137409/b0v5s2asbktnjlcxmvjw.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/85151-lines-of-evangelion/",
+      "tags": null,
+      "UUID": "3f3315b8623355e2810beb93806f7f46"
+    },
+    {
+      "title": "ART OF MIKU -台北展覽- 第二階段＿限量早鳥票 0915",
+      "date": "2026-09-15",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1784137398/wr0rvgqgok5jewxd9cah.webp",
+      "source_url": "https://capsule1111.kktix.cc/events/artofmikufirststage0915",
+      "tags": null,
+      "UUID": "b56ec1dfee5c5766a6485873f9014432"
     }
   ]
 }
