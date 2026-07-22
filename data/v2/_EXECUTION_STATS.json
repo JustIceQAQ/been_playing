@@ -2,675 +2,675 @@
   "generated_at": "2026-07-22",
   "runners": [
     {
+      "code_name": "CLab",
+      "fullname": "台灣當代文化實驗場 C-Lab",
+      "execution_time": 271.9165,
+      "last_update": "2026-07-22T04:00:03Z"
+    },
+    {
       "code_name": "ChiayiAM",
       "fullname": "嘉義市立美術館",
-      "execution_time": 66.8078,
-      "last_update": "2026-07-21T17:53:25Z"
+      "execution_time": 68.7937,
+      "last_update": "2026-07-22T03:57:10Z"
     },
     {
       "code_name": "HuaLien1913",
       "fullname": "花蓮文化創意產業園區",
-      "execution_time": 64.4759,
-      "last_update": "2026-07-21T17:52:01Z"
+      "execution_time": 64.8082,
+      "last_update": "2026-07-22T04:00:35Z"
     },
     {
       "code_name": "PTAM",
       "fullname": "屏東美術館",
-      "execution_time": 64.142,
-      "last_update": "2026-07-21T17:51:37Z"
-    },
-    {
-      "code_name": "MindSetArt",
-      "fullname": "安卓藝術",
-      "execution_time": 63.3143,
-      "last_update": "2026-07-21T17:54:08Z"
-    },
-    {
-      "code_name": "ShungYeArt",
-      "fullname": "順益台灣美術館",
-      "execution_time": 63.2282,
-      "last_update": "2026-07-21T17:52:47Z"
-    },
-    {
-      "code_name": "khm",
-      "fullname": "高雄市立歷史博物館",
-      "execution_time": 63.0532,
-      "last_update": "2026-07-21T17:52:57Z"
-    },
-    {
-      "code_name": "ArtistVillage",
-      "fullname": "寶藏巖國際藝術村",
-      "execution_time": 62.9525,
-      "last_update": "2026-07-21T17:50:45Z"
-    },
-    {
-      "code_name": "MoNTUE",
-      "fullname": "北師美術館",
-      "execution_time": 62.6935,
-      "last_update": "2026-07-21T17:50:52Z"
+      "execution_time": 64.5506,
+      "last_update": "2026-07-22T04:00:08Z"
     },
     {
       "code_name": "CapitalArt",
       "fullname": "首都藝術中心",
-      "execution_time": 62.6639,
-      "last_update": "2026-07-21T17:55:05Z"
+      "execution_time": 64.2262,
+      "last_update": "2026-07-22T04:01:43Z"
     },
     {
-      "code_name": "YiYun",
-      "fullname": "異雲書屋",
-      "execution_time": 61.5474,
-      "last_update": "2026-07-21T17:54:28Z"
+      "code_name": "khm",
+      "fullname": "高雄市立歷史博物館",
+      "execution_time": 64.1665,
+      "last_update": "2026-07-22T03:56:12Z"
+    },
+    {
+      "code_name": "ShungYeArt",
+      "fullname": "順益台灣美術館",
+      "execution_time": 64.0907,
+      "last_update": "2026-07-22T03:55:54Z"
+    },
+    {
+      "code_name": "MoNTUE",
+      "fullname": "北師美術館",
+      "execution_time": 63.8325,
+      "last_update": "2026-07-22T03:58:24Z"
+    },
+    {
+      "code_name": "MindSetArt",
+      "fullname": "安卓藝術",
+      "execution_time": 63.2601,
+      "last_update": "2026-07-22T04:01:06Z"
+    },
+    {
+      "code_name": "ArtistVillage",
+      "fullname": "寶藏巖國際藝術村",
+      "execution_time": 63.1722,
+      "last_update": "2026-07-22T03:58:19Z"
     },
     {
       "code_name": "WhiteStone",
       "fullname": "白石畫廊",
-      "execution_time": 61.0042,
-      "last_update": "2026-07-21T17:54:00Z"
+      "execution_time": 61.0806,
+      "last_update": "2026-07-22T04:01:03Z"
+    },
+    {
+      "code_name": "YiYun",
+      "fullname": "異雲書屋",
+      "execution_time": 60.7125,
+      "last_update": "2026-07-22T04:01:12Z"
     },
     {
       "code_name": "BooksTickets",
       "fullname": "博客來售票網",
-      "execution_time": 60.6731,
-      "last_update": "2026-07-21T17:50:29Z"
+      "execution_time": 60.6071,
+      "last_update": "2026-07-22T03:55:36Z"
     },
     {
       "code_name": "AS241",
       "fullname": "新竹241藝術空間",
-      "execution_time": 60.2323,
-      "last_update": "2026-07-21T17:53:54Z"
-    },
-    {
-      "code_name": "XZCAC",
-      "fullname": "新莊文化藝術中心",
-      "execution_time": 34.3774,
-      "last_update": "2026-07-21T17:51:42Z"
-    },
-    {
-      "code_name": "NTPC",
-      "fullname": "新北市立鶯歌陶瓷博物館",
-      "execution_time": 27.9207,
-      "last_update": "2026-07-21T17:51:27Z"
-    },
-    {
-      "code_name": "CultureExpress",
-      "fullname": "文化快遞",
-      "execution_time": 16.6269,
-      "last_update": "2026-07-21T17:49:49Z"
-    },
-    {
-      "code_name": "PT1936",
-      "fullname": "屏菸1936文化基地",
-      "execution_time": 14.7283,
-      "last_update": "2026-07-21T17:53:05Z"
-    },
-    {
-      "code_name": "kmoa",
-      "fullname": "基隆美術館",
-      "execution_time": 12.6345,
-      "last_update": "2026-07-21T17:50:32Z"
-    },
-    {
-      "code_name": "ChiayiMM",
-      "fullname": "嘉義市立博物館",
-      "execution_time": 11.9512,
-      "last_update": "2026-07-21T17:49:47Z"
-    },
-    {
-      "code_name": "PTCAM",
-      "fullname": "屏東縣立美術館",
-      "execution_time": 9.7892,
-      "last_update": "2026-07-21T17:50:54Z"
-    },
-    {
-      "code_name": "iCulture",
-      "fullname": "iCulture 藝文資源資訊平台",
-      "execution_time": 8.3647,
-      "last_update": "2026-07-21T17:49:33Z"
-    },
-    {
-      "code_name": "NtSec",
-      "fullname": "國立臺灣科學教育館",
-      "execution_time": 8.2759,
-      "last_update": "2026-07-21T17:51:51Z"
-    },
-    {
-      "code_name": "CCAM",
-      "fullname": "彰化縣立美術館",
-      "execution_time": 7.9448,
-      "last_update": "2026-07-21T17:52:11Z"
-    },
-    {
-      "code_name": "CG1839",
-      "fullname": "1839 當代藝廊",
-      "execution_time": 6.8779,
-      "last_update": "2026-07-21T17:54:01Z"
-    },
-    {
-      "code_name": "KKTix",
-      "fullname": "KKTix",
-      "execution_time": 6.2235,
-      "last_update": "2026-07-21T17:49:30Z"
-    },
-    {
-      "code_name": "KKDay",
-      "fullname": "KKDay",
-      "execution_time": 5.7569,
-      "last_update": "2026-07-21T17:49:29Z"
-    },
-    {
-      "code_name": "NTAEC",
-      "fullname": "國立台灣藝術教育館",
-      "execution_time": 5.2135,
-      "last_update": "2026-07-21T17:51:36Z"
-    },
-    {
-      "code_name": "HuaShan1914",
-      "fullname": "華山1914文化創意產業園區",
-      "execution_time": 4.8557,
-      "last_update": "2026-07-21T17:50:59Z"
-    },
-    {
-      "code_name": "ArtEmperor",
-      "fullname": "非池中藝術網",
-      "execution_time": 4.616,
-      "last_update": "2026-07-21T17:49:28Z"
-    },
-    {
-      "code_name": "ELandAM",
-      "fullname": "宜蘭美術館",
-      "execution_time": 4.1471,
-      "last_update": "2026-07-21T17:52:06Z"
-    },
-    {
-      "code_name": "Ntm",
-      "fullname": "國立臺灣博物館",
-      "execution_time": 4.0079,
-      "last_update": "2026-07-21T17:52:01Z"
-    },
-    {
-      "code_name": "NCPI",
-      "fullname": "國家攝影文化中心",
-      "execution_time": 3.8344,
-      "last_update": "2026-07-21T17:51:51Z"
-    },
-    {
-      "code_name": "CZH",
-      "fullname": "彰化藝術館",
-      "execution_time": 3.7151,
-      "last_update": "2026-07-21T17:51:57Z"
-    },
-    {
-      "code_name": "Culture435",
-      "fullname": "板橋435藝文特區",
-      "execution_time": 3.5913,
-      "last_update": "2026-07-21T17:49:59Z"
-    },
-    {
-      "code_name": "MoMaTainan",
-      "fullname": "臺南國家美術館",
-      "execution_time": 3.164,
-      "last_update": "2026-07-21T17:51:06Z"
-    },
-    {
-      "code_name": "GaCc",
-      "fullname": "中華文化總會",
-      "execution_time": 2.8504,
-      "last_update": "2026-07-21T17:49:32Z"
-    },
-    {
-      "code_name": "HongGah",
-      "fullname": "鳳甲美術館",
-      "execution_time": 2.8261,
-      "last_update": "2026-07-21T17:50:08Z"
-    },
-    {
-      "code_name": "Npm",
-      "fullname": "國立故宮博物院",
-      "execution_time": 2.8085,
-      "last_update": "2026-07-21T17:49:36Z"
-    },
-    {
-      "code_name": "CLab",
-      "fullname": "台灣當代文化實驗場 C-Lab",
-      "execution_time": 2.7043,
-      "last_update": "2026-07-21T17:52:08Z"
-    },
-    {
-      "code_name": "TAM",
-      "fullname": "臺東美術館",
-      "execution_time": 2.6671,
-      "last_update": "2026-07-21T17:51:44Z"
-    },
-    {
-      "code_name": "TwTc",
-      "fullname": "台北世貿中心",
-      "execution_time": 2.6645,
-      "last_update": "2026-07-21T17:49:53Z"
-    },
-    {
-      "code_name": "TnamMuseum",
-      "fullname": "臺南市美術館",
-      "execution_time": 2.6417,
-      "last_update": "2026-07-21T17:52:13Z"
-    },
-    {
-      "code_name": "TaipeiExPoPark",
-      "fullname": "花博公園",
-      "execution_time": 2.5973,
-      "last_update": "2026-07-21T17:50:13Z"
-    },
-    {
-      "code_name": "NtMofa",
-      "fullname": "國立臺灣美術館",
-      "execution_time": 2.5537,
-      "last_update": "2026-07-21T17:49:49Z"
-    },
-    {
-      "code_name": "Yatsen",
-      "fullname": "國立國父紀念館",
-      "execution_time": 2.4897,
-      "last_update": "2026-07-21T17:52:59Z"
-    },
-    {
-      "code_name": "FuZhong15",
-      "fullname": "府中15",
-      "execution_time": 2.4469,
-      "last_update": "2026-07-21T17:51:54Z"
-    },
-    {
-      "code_name": "Nmh",
-      "fullname": "國立歷史博物館",
-      "execution_time": 2.4465,
-      "last_update": "2026-07-21T17:51:42Z"
-    },
-    {
-      "code_name": "nhclac",
-      "fullname": "國立新竹生活美學館",
-      "execution_time": 2.4222,
-      "last_update": "2026-07-21T17:52:50Z"
-    },
-    {
-      "code_name": "HcccArt",
-      "fullname": "花蓮美術館",
-      "execution_time": 2.3831,
-      "last_update": "2026-07-21T17:51:44Z"
-    },
-    {
-      "code_name": "chcsec",
-      "fullname": "國立彰化生活美學館",
-      "execution_time": 2.2842,
-      "last_update": "2026-07-21T17:52:16Z"
-    },
-    {
-      "code_name": "ttcsec",
-      "fullname": "國立臺東生活美學館",
-      "execution_time": 2.2427,
-      "last_update": "2026-07-21T17:50:01Z"
-    },
-    {
-      "code_name": "tncsec",
-      "fullname": "國立臺南生活美學館",
-      "execution_time": 2.2308,
-      "last_update": "2026-07-21T17:51:40Z"
-    },
-    {
-      "code_name": "NTT",
-      "fullname": "新北市觀光旅遊網",
-      "execution_time": 2.1661,
-      "last_update": "2026-07-21T17:49:35Z"
-    },
-    {
-      "code_name": "JuMing",
-      "fullname": "朱銘美術館",
-      "execution_time": 2.1276,
-      "last_update": "2026-07-21T17:51:42Z"
-    },
-    {
-      "code_name": "NHRM",
-      "fullname": "國家人權博物館",
-      "execution_time": 2.1109,
-      "last_update": "2026-07-21T17:50:15Z"
-    },
-    {
-      "code_name": "hkm",
-      "fullname": "華岡博物館",
-      "execution_time": 1.9605,
-      "last_update": "2026-07-21T17:51:29Z"
-    },
-    {
-      "code_name": "SoKaArt",
-      "fullname": "索卡藝術中心",
-      "execution_time": 1.9199,
-      "last_update": "2026-07-21T17:54:02Z"
-    },
-    {
-      "code_name": "NTNUArtMuseum",
-      "fullname": "師大美術館",
-      "execution_time": 1.8756,
-      "last_update": "2026-07-21T17:51:47Z"
-    },
-    {
-      "code_name": "OCAM",
-      "fullname": "陽明海洋文化藝術館",
-      "execution_time": 1.8348,
-      "last_update": "2026-07-21T17:50:54Z"
-    },
-    {
-      "code_name": "MuseumPost",
-      "fullname": "郵政博物館",
-      "execution_time": 1.8139,
-      "last_update": "2026-07-21T17:51:53Z"
-    },
-    {
-      "code_name": "KmFa",
-      "fullname": "高雄市立美術館",
-      "execution_time": 1.719,
-      "last_update": "2026-07-21T17:51:03Z"
-    },
-    {
-      "code_name": "AfmcHall2",
-      "fullname": "中壢藝術館",
-      "execution_time": 1.6484,
-      "last_update": "2026-07-21T17:50:56Z"
-    },
-    {
-      "code_name": "HistorySinica",
-      "fullname": "中央研究院-歷史文物陳列館",
-      "execution_time": 1.6328,
-      "last_update": "2026-07-21T17:49:39Z"
-    },
-    {
-      "code_name": "AAAArchives",
-      "fullname": "國家發展委員會檔案管理局",
-      "execution_time": 1.6234,
-      "last_update": "2026-07-21T17:49:55Z"
-    },
-    {
-      "code_name": "NTCRI",
-      "fullname": "國立台灣工藝研究發展中心",
-      "execution_time": 1.5586,
-      "last_update": "2026-07-21T17:51:31Z"
-    },
-    {
-      "code_name": "PACT",
-      "fullname": "台北偶戲館",
-      "execution_time": 1.5112,
-      "last_update": "2026-07-21T17:52:15Z"
-    },
-    {
-      "code_name": "Tmc",
-      "fullname": "台北流行音樂中心",
-      "execution_time": 1.4832,
-      "last_update": "2026-07-21T17:52:18Z"
-    },
-    {
-      "code_name": "RuoMu",
-      "fullname": "若木藝廊",
-      "execution_time": 1.4788,
-      "last_update": "2026-07-21T17:54:02Z"
-    },
-    {
-      "code_name": "CKSMH",
-      "fullname": "中正紀念堂",
-      "execution_time": 1.4756,
-      "last_update": "2026-07-21T17:52:03Z"
-    },
-    {
-      "code_name": "Tcm",
-      "fullname": "臺南市立博物館",
-      "execution_time": 1.4496,
-      "last_update": "2026-07-21T17:49:37Z"
-    },
-    {
-      "code_name": "TaiwanHistorica",
-      "fullname": "國史館臺灣文獻館",
-      "execution_time": 1.4476,
-      "last_update": "2026-07-21T17:52:14Z"
-    },
-    {
-      "code_name": "TFAI",
-      "fullname": "國家電影及視聽文化中心",
-      "execution_time": 1.387,
-      "last_update": "2026-07-21T17:49:40Z"
-    },
-    {
-      "code_name": "AfmcHall5",
-      "fullname": "A8藝文中心",
-      "execution_time": 1.3533,
-      "last_update": "2026-07-21T17:49:42Z"
-    },
-    {
-      "code_name": "Tcam",
-      "fullname": "臺中市立美術館",
-      "execution_time": 1.3491,
-      "last_update": "2026-07-21T17:51:37Z"
-    },
-    {
-      "code_name": "IOESinica",
-      "fullname": "中央研究院-民族學研究所博物館",
-      "execution_time": 1.3408,
-      "last_update": "2026-07-21T17:52:12Z"
-    },
-    {
-      "code_name": "KLook",
-      "fullname": "KLook 客路",
-      "execution_time": 1.3232,
-      "last_update": "2026-07-21T17:49:32Z"
-    },
-    {
-      "code_name": "IBon",
-      "fullname": "IBon 售票",
-      "execution_time": 1.3129,
-      "last_update": "2026-07-21T17:49:31Z"
+      "execution_time": 60.3969,
+      "last_update": "2026-07-22T03:57:14Z"
     },
     {
       "code_name": "NMTL",
       "fullname": "國立臺灣文學館",
-      "execution_time": 1.2685,
-      "last_update": "2026-07-21T17:50:18Z"
+      "execution_time": 25.0698,
+      "last_update": "2026-07-22T03:59:09Z"
     },
     {
-      "code_name": "AfmcHall1",
-      "fullname": "桃園展演中心",
-      "execution_time": 1.2495,
-      "last_update": "2026-07-21T17:51:07Z"
+      "code_name": "CultureExpress",
+      "fullname": "文化快遞",
+      "execution_time": 24.1839,
+      "last_update": "2026-07-22T03:55:02Z"
     },
     {
-      "code_name": "NMTH",
-      "fullname": "國立臺灣歷史博物館",
-      "execution_time": 1.2345,
-      "last_update": "2026-07-21T17:50:05Z"
+      "code_name": "HuaShan1914",
+      "fullname": "華山1914文化創意產業園區",
+      "execution_time": 19.2068,
+      "last_update": "2026-07-22T03:59:41Z"
     },
     {
-      "code_name": "Nrm",
-      "fullname": "國家鐵道博物館",
-      "execution_time": 1.2042,
-      "last_update": "2026-07-21T17:50:03Z"
+      "code_name": "NHRM",
+      "fullname": "國家人權博物館",
+      "execution_time": 16.1748,
+      "last_update": "2026-07-22T03:58:55Z"
     },
     {
-      "code_name": "AfmcHall4",
-      "fullname": "桃園藝文廣場",
-      "execution_time": 1.186,
-      "last_update": "2026-07-21T17:52:09Z"
+      "code_name": "kmoa",
+      "fullname": "基隆美術館",
+      "execution_time": 15.4478,
+      "last_update": "2026-07-22T03:59:02Z"
     },
     {
-      "code_name": "AfmcHall6",
-      "fullname": "桃園陽光劇場",
-      "execution_time": 1.1669,
-      "last_update": "2026-07-21T17:50:17Z"
-    },
-    {
-      "code_name": "ChiPoLin",
-      "fullname": "齊柏林空間",
-      "execution_time": 1.1414,
-      "last_update": "2026-07-21T17:51:38Z"
-    },
-    {
-      "code_name": "AfmcHall3",
-      "fullname": "桃園光影文化館",
-      "execution_time": 1.1373,
-      "last_update": "2026-07-21T17:51:43Z"
-    },
-    {
-      "code_name": "MoCaTaipei",
-      "fullname": "台北當代藝術館",
-      "execution_time": 1.124,
-      "last_update": "2026-07-21T17:50:33Z"
-    },
-    {
-      "code_name": "Jam",
-      "fullname": "忠泰美術館",
-      "execution_time": 1.0357,
-      "last_update": "2026-07-21T17:51:45Z"
-    },
-    {
-      "code_name": "KiShuAn",
-      "fullname": "紀州庵文學森林",
-      "execution_time": 0.9926,
-      "last_update": "2026-07-21T17:51:39Z"
-    },
-    {
-      "code_name": "Pier2",
-      "fullname": "駁二藝術特區",
-      "execution_time": 0.9907,
-      "last_update": "2026-07-21T17:52:17Z"
-    },
-    {
-      "code_name": "Mofia",
-      "fullname": "臺中市纖維工藝博物館",
-      "execution_time": 0.971,
-      "last_update": "2026-07-21T17:52:16Z"
-    },
-    {
-      "code_name": "UdnFunLife",
-      "fullname": "udn售票網",
-      "execution_time": 0.9146,
-      "last_update": "2026-07-21T17:49:33Z"
-    },
-    {
-      "code_name": "YoChangArt",
-      "fullname": "有章藝術博物館",
-      "execution_time": 0.9025,
-      "last_update": "2026-07-21T17:50:06Z"
-    },
-    {
-      "code_name": "NtcArtMuseum",
-      "fullname": "新北市美術館",
-      "execution_time": 0.8879,
-      "last_update": "2026-07-21T17:52:17Z"
-    },
-    {
-      "code_name": "Mwr",
-      "fullname": "世界宗教博物館",
-      "execution_time": 0.8697,
-      "last_update": "2026-07-21T17:50:57Z"
-    },
-    {
-      "code_name": "Cycc",
-      "fullname": "中原文創園區",
-      "execution_time": 0.8607,
-      "last_update": "2026-07-21T17:52:10Z"
-    },
-    {
-      "code_name": "KingCarArt",
-      "fullname": "金車文藝中心",
-      "execution_time": 0.8555,
-      "last_update": "2026-07-21T17:50:10Z"
-    },
-    {
-      "code_name": "RedHouse",
-      "fullname": "西門紅樓",
-      "execution_time": 0.8518,
-      "last_update": "2026-07-21T17:50:02Z"
-    },
-    {
-      "code_name": "Alien",
-      "fullname": "金馬賓館當代美術館",
-      "execution_time": 0.8462,
-      "last_update": "2026-07-21T17:49:54Z"
-    },
-    {
-      "code_name": "FuBonArtMuseum",
-      "fullname": "富邦美術館",
-      "execution_time": 0.8418,
-      "last_update": "2026-07-21T17:49:50Z"
-    },
-    {
-      "code_name": "SongShanCulturalPark",
-      "fullname": "松山文創園區",
-      "execution_time": 0.8029,
-      "last_update": "2026-07-21T17:51:54Z"
-    },
-    {
-      "code_name": "OpenTix",
-      "fullname": "兩廳院生活文化",
-      "execution_time": 0.7883,
-      "last_update": "2026-07-21T17:49:24Z"
-    },
-    {
-      "code_name": "KdMoFa",
-      "fullname": "關渡美術館",
-      "execution_time": 0.7822,
-      "last_update": "2026-07-21T17:50:53Z"
+      "code_name": "PT1936",
+      "fullname": "屏菸1936文化基地",
+      "execution_time": 15.1115,
+      "last_update": "2026-07-22T03:56:27Z"
     },
     {
       "code_name": "TaipeiZoo",
       "fullname": "臺北市立動物園",
-      "execution_time": 0.7498,
-      "last_update": "2026-07-21T17:50:09Z"
+      "execution_time": 11.2214,
+      "last_update": "2026-07-22T03:58:42Z"
     },
     {
-      "code_name": "TFam",
-      "fullname": "臺北市立美術館",
-      "execution_time": 0.7401,
-      "last_update": "2026-07-21T17:50:11Z"
+      "code_name": "SSHM",
+      "fullname": "新北市立十三行博物館",
+      "execution_time": 9.8067,
+      "last_update": "2026-07-22T03:56:11Z"
     },
     {
-      "code_name": "BoPiLiao",
-      "fullname": "剝皮寮歷史街區",
-      "execution_time": 0.6569,
-      "last_update": "2026-07-21T17:50:19Z"
+      "code_name": "PTCAM",
+      "fullname": "屏東縣立美術館",
+      "execution_time": 8.809,
+      "last_update": "2026-07-22T03:59:17Z"
     },
     {
-      "code_name": "XiZhiTang",
-      "fullname": "羲之堂畫廊",
-      "execution_time": 0.635,
-      "last_update": "2026-07-21T17:53:27Z"
+      "code_name": "iCulture",
+      "fullname": "iCulture 藝文資源資訊平台",
+      "execution_time": 8.7455,
+      "last_update": "2026-07-22T03:54:38Z"
     },
     {
-      "code_name": "TncMMM",
-      "fullname": "臺灣新文化運動紀念館",
-      "execution_time": 0.625,
-      "last_update": "2026-07-21T17:50:19Z"
+      "code_name": "Jam",
+      "fullname": "忠泰美術館",
+      "execution_time": 8.2855,
+      "last_update": "2026-07-22T03:55:02Z"
     },
     {
-      "code_name": "NWAC",
-      "fullname": "內惟藝術中心",
-      "execution_time": 0.6132,
-      "last_update": "2026-07-21T17:53:26Z"
+      "code_name": "CG1839",
+      "fullname": "1839 當代藝廊",
+      "execution_time": 8.2799,
+      "last_update": "2026-07-22T04:01:11Z"
     },
     {
-      "code_name": "Dac99",
-      "fullname": "99度藝術中心",
-      "execution_time": 0.505,
-      "last_update": "2026-07-21T17:53:26Z"
+      "code_name": "TnamMuseum",
+      "fullname": "臺南市美術館",
+      "execution_time": 7.7752,
+      "last_update": "2026-07-22T03:55:52Z"
+    },
+    {
+      "code_name": "KKDay",
+      "fullname": "KKDay",
+      "execution_time": 6.5419,
+      "last_update": "2026-07-22T03:54:36Z"
+    },
+    {
+      "code_name": "CCAM",
+      "fullname": "彰化縣立美術館",
+      "execution_time": 6.0257,
+      "last_update": "2026-07-22T03:55:31Z"
+    },
+    {
+      "code_name": "KKTix",
+      "fullname": "KKTix",
+      "execution_time": 5.7832,
+      "last_update": "2026-07-22T03:54:35Z"
+    },
+    {
+      "code_name": "ArtEmperor",
+      "fullname": "非池中藝術網",
+      "execution_time": 5.4072,
+      "last_update": "2026-07-22T03:54:35Z"
+    },
+    {
+      "code_name": "chcsec",
+      "fullname": "國立彰化生活美學館",
+      "execution_time": 5.3382,
+      "last_update": "2026-07-22T03:55:59Z"
+    },
+    {
+      "code_name": "Ntm",
+      "fullname": "國立臺灣博物館",
+      "execution_time": 5.2348,
+      "last_update": "2026-07-22T03:55:18Z"
+    },
+    {
+      "code_name": "ELandAM",
+      "fullname": "宜蘭美術館",
+      "execution_time": 4.9005,
+      "last_update": "2026-07-22T03:55:25Z"
+    },
+    {
+      "code_name": "NtSec",
+      "fullname": "國立臺灣科學教育館",
+      "execution_time": 4.7222,
+      "last_update": "2026-07-22T03:54:53Z"
+    },
+    {
+      "code_name": "NCPI",
+      "fullname": "國家攝影文化中心",
+      "execution_time": 4.4693,
+      "last_update": "2026-07-22T03:55:07Z"
+    },
+    {
+      "code_name": "NTPC",
+      "fullname": "新北市立鶯歌陶瓷博物館",
+      "execution_time": 4.3581,
+      "last_update": "2026-07-22T03:59:46Z"
+    },
+    {
+      "code_name": "Cycc",
+      "fullname": "中原文創園區",
+      "execution_time": 4.2476,
+      "last_update": "2026-07-22T03:55:41Z"
+    },
+    {
+      "code_name": "CZH",
+      "fullname": "彰化藝術館",
+      "execution_time": 4.1472,
+      "last_update": "2026-07-22T03:55:13Z"
+    },
+    {
+      "code_name": "HongGah",
+      "fullname": "鳳甲美術館",
+      "execution_time": 3.7429,
+      "last_update": "2026-07-22T03:58:34Z"
+    },
+    {
+      "code_name": "TAM",
+      "fullname": "臺東美術館",
+      "execution_time": 3.3706,
+      "last_update": "2026-07-22T03:54:50Z"
+    },
+    {
+      "code_name": "Yatsen",
+      "fullname": "國立國父紀念館",
+      "execution_time": 3.2902,
+      "last_update": "2026-07-22T03:56:30Z"
+    },
+    {
+      "code_name": "FuZhong15",
+      "fullname": "府中15",
+      "execution_time": 3.2865,
+      "last_update": "2026-07-22T03:55:09Z"
+    },
+    {
+      "code_name": "XZCAC",
+      "fullname": "新莊文化藝術中心",
+      "execution_time": 3.1379,
+      "last_update": "2026-07-22T03:59:55Z"
+    },
+    {
+      "code_name": "NtMofa",
+      "fullname": "國立臺灣美術館",
+      "execution_time": 3.0455,
+      "last_update": "2026-07-22T03:57:20Z"
+    },
+    {
+      "code_name": "JuMing",
+      "fullname": "朱銘美術館",
+      "execution_time": 3.0281,
+      "last_update": "2026-07-22T03:54:47Z"
+    },
+    {
+      "code_name": "nhclac",
+      "fullname": "國立新竹生活美學館",
+      "execution_time": 2.8823,
+      "last_update": "2026-07-22T03:56:13Z"
+    },
+    {
+      "code_name": "Nrm",
+      "fullname": "國家鐵道博物館",
+      "execution_time": 2.701,
+      "last_update": "2026-07-22T03:58:30Z"
+    },
+    {
+      "code_name": "TaipeiExPoPark",
+      "fullname": "花博公園",
+      "execution_time": 2.6781,
+      "last_update": "2026-07-22T03:58:39Z"
+    },
+    {
+      "code_name": "MoMaTainan",
+      "fullname": "臺南國家美術館",
+      "execution_time": 2.6722,
+      "last_update": "2026-07-22T03:59:51Z"
+    },
+    {
+      "code_name": "hkm",
+      "fullname": "華岡博物館",
+      "execution_time": 2.6589,
+      "last_update": "2026-07-22T03:59:58Z"
     },
     {
       "code_name": "n228mm",
       "fullname": "二二八國家紀念館",
-      "execution_time": 0.4828,
-      "last_update": "2026-07-21T17:52:11Z"
+      "execution_time": 2.612,
+      "last_update": "2026-07-22T03:55:44Z"
+    },
+    {
+      "code_name": "TwTc",
+      "fullname": "台北世貿中心",
+      "execution_time": 2.5796,
+      "last_update": "2026-07-22T03:58:23Z"
+    },
+    {
+      "code_name": "NTT",
+      "fullname": "新北市觀光旅遊網",
+      "execution_time": 2.5777,
+      "last_update": "2026-07-22T03:54:41Z"
+    },
+    {
+      "code_name": "SoKaArt",
+      "fullname": "索卡藝術中心",
+      "execution_time": 2.5692,
+      "last_update": "2026-07-22T04:00:37Z"
+    },
+    {
+      "code_name": "Culture435",
+      "fullname": "板橋435藝文特區",
+      "execution_time": 2.5498,
+      "last_update": "2026-07-22T03:58:27Z"
+    },
+    {
+      "code_name": "ttcsec",
+      "fullname": "國立臺東生活美學館",
+      "execution_time": 2.4667,
+      "last_update": "2026-07-22T03:58:28Z"
+    },
+    {
+      "code_name": "ChiayiMM",
+      "fullname": "嘉義市立博物館",
+      "execution_time": 2.438,
+      "last_update": "2026-07-22T03:57:12Z"
+    },
+    {
+      "code_name": "Tcm",
+      "fullname": "臺南市立博物館",
+      "execution_time": 2.3645,
+      "last_update": "2026-07-22T03:57:14Z"
+    },
+    {
+      "code_name": "KmFa",
+      "fullname": "高雄市立美術館",
+      "execution_time": 2.1971,
+      "last_update": "2026-07-22T03:59:48Z"
+    },
+    {
+      "code_name": "tncsec",
+      "fullname": "國立臺南生活美學館",
+      "execution_time": 2.1894,
+      "last_update": "2026-07-22T03:54:43Z"
+    },
+    {
+      "code_name": "HcccArt",
+      "fullname": "花蓮美術館",
+      "execution_time": 2.1569,
+      "last_update": "2026-07-22T03:54:49Z"
+    },
+    {
+      "code_name": "NTAEC",
+      "fullname": "國立台灣藝術教育館",
+      "execution_time": 2.0961,
+      "last_update": "2026-07-22T04:00:02Z"
+    },
+    {
+      "code_name": "Tcam",
+      "fullname": "臺中市立美術館",
+      "execution_time": 2.0715,
+      "last_update": "2026-07-22T03:54:41Z"
+    },
+    {
+      "code_name": "OCAM",
+      "fullname": "陽明海洋文化藝術館",
+      "execution_time": 2.0319,
+      "last_update": "2026-07-22T03:59:21Z"
+    },
+    {
+      "code_name": "MuseumPost",
+      "fullname": "郵政博物館",
+      "execution_time": 1.9945,
+      "last_update": "2026-07-22T03:55:06Z"
+    },
+    {
+      "code_name": "AAAArchives",
+      "fullname": "國家發展委員會檔案管理局",
+      "execution_time": 1.8544,
+      "last_update": "2026-07-22T03:58:26Z"
+    },
+    {
+      "code_name": "NTNUArtMuseum",
+      "fullname": "師大美術館",
+      "execution_time": 1.8303,
+      "last_update": "2026-07-22T03:55:04Z"
+    },
+    {
+      "code_name": "CKSMH",
+      "fullname": "中正紀念堂",
+      "execution_time": 1.7701,
+      "last_update": "2026-07-22T03:55:20Z"
+    },
+    {
+      "code_name": "IBon",
+      "fullname": "IBon 售票",
+      "execution_time": 1.7454,
+      "last_update": "2026-07-22T03:54:38Z"
+    },
+    {
+      "code_name": "KLook",
+      "fullname": "KLook 客路",
+      "execution_time": 1.7364,
+      "last_update": "2026-07-22T03:54:38Z"
+    },
+    {
+      "code_name": "Nmh",
+      "fullname": "國立歷史博物館",
+      "execution_time": 1.706,
+      "last_update": "2026-07-22T03:54:45Z"
+    },
+    {
+      "code_name": "IOESinica",
+      "fullname": "中央研究院-民族學研究所博物館",
+      "execution_time": 1.7039,
+      "last_update": "2026-07-22T03:55:53Z"
+    },
+    {
+      "code_name": "AfmcHall2",
+      "fullname": "中壢藝術館",
+      "execution_time": 1.7037,
+      "last_update": "2026-07-22T03:59:22Z"
+    },
+    {
+      "code_name": "TaiwanHistorica",
+      "fullname": "國史館臺灣文獻館",
+      "execution_time": 1.6656,
+      "last_update": "2026-07-22T03:55:55Z"
+    },
+    {
+      "code_name": "NMTH",
+      "fullname": "國立臺灣歷史博物館",
+      "execution_time": 1.645,
+      "last_update": "2026-07-22T03:58:30Z"
+    },
+    {
+      "code_name": "TFAI",
+      "fullname": "國家電影及視聽文化中心",
+      "execution_time": 1.6398,
+      "last_update": "2026-07-22T03:57:16Z"
+    },
+    {
+      "code_name": "PACT",
+      "fullname": "台北偶戲館",
+      "execution_time": 1.6191,
+      "last_update": "2026-07-22T03:55:57Z"
+    },
+    {
+      "code_name": "AfmcHall1",
+      "fullname": "桃園展演中心",
+      "execution_time": 1.606,
+      "last_update": "2026-07-22T03:59:52Z"
+    },
+    {
+      "code_name": "UdnFunLife",
+      "fullname": "udn售票網",
+      "execution_time": 1.5663,
+      "last_update": "2026-07-22T03:54:39Z"
+    },
+    {
+      "code_name": "AfmcHall5",
+      "fullname": "A8藝文中心",
+      "execution_time": 1.5551,
+      "last_update": "2026-07-22T03:57:17Z"
+    },
+    {
+      "code_name": "MoCaTaipei",
+      "fullname": "台北當代藝術館",
+      "execution_time": 1.5541,
+      "last_update": "2026-07-22T03:59:03Z"
+    },
+    {
+      "code_name": "NTCRI",
+      "fullname": "國立台灣工藝研究發展中心",
+      "execution_time": 1.5444,
+      "last_update": "2026-07-22T04:00:00Z"
+    },
+    {
+      "code_name": "Pier2",
+      "fullname": "駁二藝術特區",
+      "execution_time": 1.5277,
+      "last_update": "2026-07-22T03:56:01Z"
+    },
+    {
+      "code_name": "ChiPoLin",
+      "fullname": "齊柏林空間",
+      "execution_time": 1.5092,
+      "last_update": "2026-07-22T03:54:42Z"
+    },
+    {
+      "code_name": "Tmc",
+      "fullname": "台北流行音樂中心",
+      "execution_time": 1.5013,
+      "last_update": "2026-07-22T03:56:01Z"
+    },
+    {
+      "code_name": "Mwr",
+      "fullname": "世界宗教博物館",
+      "execution_time": 1.4907,
+      "last_update": "2026-07-22T03:59:30Z"
+    },
+    {
+      "code_name": "RuoMu",
+      "fullname": "若木藝廊",
+      "execution_time": 1.4239,
+      "last_update": "2026-07-22T04:00:39Z"
+    },
+    {
+      "code_name": "TFam",
+      "fullname": "臺北市立美術館",
+      "execution_time": 1.4236,
+      "last_update": "2026-07-22T03:58:37Z"
+    },
+    {
+      "code_name": "KiShuAn",
+      "fullname": "紀州庵文學森林",
+      "execution_time": 1.4232,
+      "last_update": "2026-07-22T03:54:43Z"
+    },
+    {
+      "code_name": "HistorySinica",
+      "fullname": "中央研究院-歷史文物陳列館",
+      "execution_time": 1.4022,
+      "last_update": "2026-07-22T03:57:15Z"
+    },
+    {
+      "code_name": "AfmcHall3",
+      "fullname": "桃園光影文化館",
+      "execution_time": 1.3872,
+      "last_update": "2026-07-22T03:54:46Z"
+    },
+    {
+      "code_name": "Mofia",
+      "fullname": "臺中市纖維工藝博物館",
+      "execution_time": 1.3691,
+      "last_update": "2026-07-22T03:55:58Z"
+    },
+    {
+      "code_name": "AfmcHall6",
+      "fullname": "桃園陽光劇場",
+      "execution_time": 1.3648,
+      "last_update": "2026-07-22T03:58:44Z"
+    },
+    {
+      "code_name": "AfmcHall4",
+      "fullname": "桃園藝文廣場",
+      "execution_time": 1.3512,
+      "last_update": "2026-07-22T03:55:37Z"
+    },
+    {
+      "code_name": "NtcArtMuseum",
+      "fullname": "新北市美術館",
+      "execution_time": 1.3214,
+      "last_update": "2026-07-22T03:55:59Z"
+    },
+    {
+      "code_name": "YoChangArt",
+      "fullname": "有章藝術博物館",
+      "execution_time": 1.3009,
+      "last_update": "2026-07-22T03:58:31Z"
+    },
+    {
+      "code_name": "NWAC",
+      "fullname": "內惟藝術中心",
+      "execution_time": 1.2729,
+      "last_update": "2026-07-22T04:00:09Z"
+    },
+    {
+      "code_name": "SongShanCulturalPark",
+      "fullname": "松山文創園區",
+      "execution_time": 1.204,
+      "last_update": "2026-07-22T03:55:08Z"
+    },
+    {
+      "code_name": "OpenTix",
+      "fullname": "兩廳院生活文化",
+      "execution_time": 1.1806,
+      "last_update": "2026-07-22T03:54:36Z"
+    },
+    {
+      "code_name": "Alien",
+      "fullname": "金馬賓館當代美術館",
+      "execution_time": 1.176,
+      "last_update": "2026-07-22T03:58:24Z"
+    },
+    {
+      "code_name": "FuBonArtMuseum",
+      "fullname": "富邦美術館",
+      "execution_time": 1.1738,
+      "last_update": "2026-07-22T03:58:20Z"
+    },
+    {
+      "code_name": "KdMoFa",
+      "fullname": "關渡美術館",
+      "execution_time": 1.1041,
+      "last_update": "2026-07-22T03:59:19Z"
+    },
+    {
+      "code_name": "KingCarArt",
+      "fullname": "金車文藝中心",
+      "execution_time": 1.0715,
+      "last_update": "2026-07-22T03:58:35Z"
+    },
+    {
+      "code_name": "BoPiLiao",
+      "fullname": "剝皮寮歷史街區",
+      "execution_time": 1.0577,
+      "last_update": "2026-07-22T03:58:46Z"
+    },
+    {
+      "code_name": "TncMMM",
+      "fullname": "臺灣新文化運動紀念館",
+      "execution_time": 1.0021,
+      "last_update": "2026-07-22T03:58:45Z"
+    },
+    {
+      "code_name": "RedHouse",
+      "fullname": "西門紅樓",
+      "execution_time": 0.9493,
+      "last_update": "2026-07-22T03:58:28Z"
+    },
+    {
+      "code_name": "XiZhiTang",
+      "fullname": "羲之堂畫廊",
+      "execution_time": 0.9345,
+      "last_update": "2026-07-22T04:00:11Z"
+    },
+    {
+      "code_name": "Dac99",
+      "fullname": "99度藝術中心",
+      "execution_time": 0.7316,
+      "last_update": "2026-07-22T04:00:10Z"
+    },
+    {
+      "code_name": "GaCc",
+      "fullname": "中華文化總會",
+      "execution_time": 0.5025,
+      "last_update": "2026-07-22T03:54:36Z"
     },
     {
       "code_name": "HCAM",
       "fullname": "新竹市美術館",
-      "execution_time": 0.252,
-      "last_update": "2026-07-21T17:50:01Z"
+      "execution_time": 0.0407,
+      "last_update": "2026-07-22T03:58:27Z"
     }
   ],
   "total_runners": 111,
-  "total_execution_time": 1139.7349,
-  "avg_execution_time": 10.2679,
-  "max_execution_time": 66.8078,
-  "min_execution_time": 0.252
+  "total_execution_time": 1467.9404,
+  "avg_execution_time": 13.2247,
+  "max_execution_time": 271.9165,
+  "min_execution_time": 0.0407
 }
