@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28T19:00:07.846610+08:00",
+  "updated": "2026-07-29T01:52:40.209747+08:00",
   "items": [
     {
       "title": "紀州庵2026高中校刊競賽 成績公布",
@@ -2100,6 +2100,80 @@
       "source_url": "https://ptam.ptcg.gov.tw/period2.php?no=2268",
       "tags": null,
       "UUID": "9f375fe0495f53c5915914d57b7814f8"
+    },
+    {
+      "title": "劉默霖個展 《墨日重生》",
+      "date": "2026-08-08 ~ 2026-09-12",
+      "address": "阿波羅畫廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1785000456/smkqvveno5ityqnlxfok.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=dbe6952f-2b1e-45ad-8a16-db39295d24c1&PageIndex=1&PageType=1",
+      "tags": null,
+      "UUID": "ea9e25007a6c5d5281dcaf7279350d91"
+    },
+    {
+      "title": "「來自遠古的花束A Bouquet from Antiquity－夏愛華個展」",
+      "date": "2026-07-11 ~ 2026-08-22",
+      "address": "月臨畫廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1783076797/nqbhu2qw5ptuihxxfqmw.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=b5484b9a-72d2-4d95-a22a-4dae8001193d&PageIndex=2&PageType=1",
+      "tags": null,
+      "UUID": "f283ebf110d951b58bfe86c7704e4e09"
+    },
+    {
+      "title": "《未來海洋：化石裡的生態暗號》",
+      "date": "2026-07-07 ~ 2026-09-06",
+      "address": "嘉義市立博物館1樓簡報室前廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1785260951/qzmbpbop7av16rcouece.webp",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=e57f69d7-83f4-4a16-805a-b5807b523b3f&StartDate=2026%2f07%2f29&EndDate=2026%2f07%2f29&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "4d6b62527f255084b633a36490a8698e"
+    },
+    {
+      "title": "極米 JĊANG 的失眠練習-《深度失眠》專場",
+      "date": "2026-08-16",
+      "address": "Live House D",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1785260941/feiwnmolmz1rp0mvno2h.webp",
+      "source_url": "https://www.tmc.taipei/tw/blog/show/2026OpenLab/JCANG",
+      "tags": [
+        "活動及講座"
+      ],
+      "UUID": "2025bf9dfef85b18ba26c3c8f394f87f"
+    },
+    {
+      "title": "115年文化志工招募",
+      "date": "2025-12-12 ~ 2026-12-31",
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1785261082/rkvrcflvkt1kzcspknah.webp",
+      "source_url": "https://event.culture.tw/mocweb/reg/NHCLAC/Detail.init.ctr?actId=50124",
+      "tags": null,
+      "UUID": "b5c6a918d4d951548628fd4163463c2f"
+    },
+    {
+      "title": "「脈品：切診點畫」",
+      "date": "2026-07-11 ~ 2026-08-22",
+      "address": "安卓藝術",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782214541/gq4jmbqn1mxfjmhxpocq.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=a3e2ab02-dd97-4b05-98f5-87327dd455da&PageIndex=3&PageType=1",
+      "tags": null,
+      "UUID": "3c6a05e5a673577abba15f8f1290acb0"
+    },
+    {
+      "title": "朴劭妍創作個展",
+      "date": "2026-08-08 ~ 2026-08-29",
+      "address": "99°藝術中心",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1784803060/fnwodhooiegaf2cugu4h.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=c9dc47f9-277a-41b5-8d90-8d0ef9c97230&PageIndex=2&PageType=1",
+      "tags": null,
+      "UUID": "4cbde0a10fc25a81a7ef6b2352d03d03"
+    },
+    {
+      "title": "ART OF MIKU -Taipei Exhibition-",
+      "date": "第一階段：2026-08-01 ~ 第一階段：2026-08-23",
+      "address": "台北空間",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1784803194/qc3nb00vep3bscqqrjjx.webp",
+      "source_url": "https://www.whitestone-gallery.com/zh-hant/blogs/gallery-exhibitions/art-of-miku-taipei-exhibition",
+      "tags": null,
+      "UUID": "12a3636461b256748b6c3cae11d72d17"
     }
   ]
 }
