@@ -7,7 +7,7 @@ class WReqAsyncClient:
             *args,
             **kwargs,
             emulation=wreq.Emulation(profile=wreq.Profile.Firefox149),
-            allow_redirects=True,
+            redirect=wreq.redirect.Policy.limited(10),
         )
 
     async def __aenter__(self) -> wreq.Client:
