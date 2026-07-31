@@ -8,19 +8,22 @@ class ChiayiAMParse(ParseInit):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
-        return self.item.find("div", {"class": "kf-title"}).get_text(strip=True)
+        title = self.item.attrs.get("title")
+        if title:
+            return title
+        return None
 
     def get_date(self, *args, **kwargs) -> str | None:
-        spans = self.item.select("div.exh-date span")
+        spans = self.item.select("div.date span")
         if not spans:
             return None
         return " ~ ".join([span.get_text(strip=True).replace("-", "").replace("／", "-") for span in spans])
 
     def get_address(self, *args, **kwargs) -> str | None:
-        return self.item.find("div", {"class": "exh-map"}).get_text(strip=True)
+        return self.item.find("div", {"class": "place"}).find("span").get_text(strip=True)
 
     def get_figure(self, *args, **kwargs) -> str | None:
-        return "https://chiayiartmuseum.chiayi.gov.tw/" + self.item.find("img").get("src")
+        return self.item.find("img").get("src")
 
     def get_tags(self, *args, **kwargs) -> list[str] | None:
         pass
