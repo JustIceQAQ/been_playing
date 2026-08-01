@@ -37,12 +37,12 @@ class ChiayiAMRunner(RunnerInit):
     async def fetch_response(self):
         headers = generate_headers(
             host="chiayiartmuseum.chiayi.gov.tw",
-            referer="https://chiayiartmuseum.chiayi.gov.tw/ExhibitionsListC003100.aspx?appname=Exhibition3120",
+            referer="https://chiayiartmuseum.chiayi.gov.tw/News_Photo.aspx?n=13589&sms=14831",
         )
         async with HttpxAsyncClient(headers=headers, proxy=self.get_proxy().to_httpx()) as client:
             urls = [
-                "https://chiayiartmuseum.chiayi.gov.tw/ExhibitionsListC003100.aspx?appname=Exhibition3110",
-                "https://chiayiartmuseum.chiayi.gov.tw/ExhibitionsListC003100.aspx?appname=Exhibition3120",
+                "https://chiayiartmuseum.chiayi.gov.tw/News_Photo.aspx?n=13589&sms=14831",
+                "https://chiayiartmuseum.chiayi.gov.tw/News_Photo.aspx?n=13590&sms=14831",
             ]
             responses = await asyncio.gather(*[client.get(url) for url in urls])
         return [response.text for response in responses]
@@ -51,7 +51,7 @@ class ChiayiAMRunner(RunnerInit):
         parsed = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
         items = []
         for p in parsed:
-            items.extend(p.select("div.kf-diagramtext-col a.kf-item"))
+            items.extend(p.select("#CCMS_Content div.area-essay a.div"))
         return items
 
 
