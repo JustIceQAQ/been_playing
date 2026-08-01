@@ -17,8 +17,6 @@ dependencies = [
     "feedgen>=1.0.0",
     "h11>=0.16.0",
     "html5lib==1.1",
-    "httpx>=0.28.1",
-    "httpxyz>=0.31.2",
     "icalendar>=7.2.2",
     "niquests>=3.20.1",
     "orjson>=3.11.9,<4",
@@ -33,6 +31,7 @@ dependencies = [
     "urllib3>=2.7.0",
     "pillow>=12.3.0",
     "wreq>=0.12.1",
+    "httpx2>=2.9.1",
 ]
 
 [dependency-groups]

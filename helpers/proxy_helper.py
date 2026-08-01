@@ -1,4 +1,4 @@
-import httpxyz as httpx
+import httpx2 as httpx
 from wreq import Proxy
 
 
