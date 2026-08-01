@@ -14,7 +14,6 @@ from rich.progress import BarColumn, MofNCompleteColumn, Progress, SpinnerColumn
 from app.script import ALL_RUNNERS
 from configs.settings import get_settings
 from helpers.cache import disk_cache, none_cache
-from helpers.crawler.scraper.helper import available_scraper_async_client
 from helpers.image_hosting import none_image_hosting, get_initialized_cloudinary_image_hosting
 from helpers.storage.coordinate import Coordinate
 from helpers.storage.helper import (
@@ -195,8 +194,6 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         prefix = f"worker_{worker}"
     else:
         scripts_to_run = job
-
-    await available_scraper_async_client(runtime_setting.SCRAPER_API_KEY)
 
     all_script_information: list["Information"] = []
     named_runners: list[tuple[str, "Information", object]] = []
