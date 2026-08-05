@@ -55,13 +55,24 @@ dev = [
 
 [tool.ruff]
 line-length = 120
-lint.ignore = [
-  "COM812", # conflicts with formatter
-  "CPY",    # no copyright
-  "D",      # pydocstyle: enable later for public APIs if publishing a library
-  "ISC001", # conflicts with formatter
-]
-exclude = [".tox", ".git", "*/migrations/*", "*/static/CACHE/*", "docs", "node_modules", "venv"]
 
-[tool.ty.rules]
-too-many-positional-arguments = "ignore"
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle errors
+    "W", # pycodestyle warnings
+    "F", # pyflakes
+    "I", # isort
+    "B", # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "UP", # pyupgrade
+]
+ignore = [
+    "E501", # line too long, handled by black
+    "B008", # do not perform function calls in argument defaults
+    "C901", # too complex
+    "E402",
+]
+
+[tool.ruff.lint.pyupgrade]
+# Preserve types, even if a file imports `from __future__ import annotations`.
+keep-runtime-typing = true
