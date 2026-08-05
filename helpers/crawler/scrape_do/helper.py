@@ -1,7 +1,7 @@
 import asyncio
 from urllib.parse import urlencode
 
-import httpx
+import httpx2 as httpx
 
 from .schemas import Response, ScrapeDoResponse
 

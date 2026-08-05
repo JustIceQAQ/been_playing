@@ -2,7 +2,6 @@ import asyncio
 from typing import cast
 
 import bs4
-import httpx
 
 from app.museums.songshanculturalpark.parse import SongShanCulturalParkParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -53,7 +52,7 @@ class SongShanCulturalParkRunner(RunnerInit):
         items = await super().fetch_items(target_domain="https://www.songshanculturalpark.org")
         return items
 
-    async def _get_item_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
+    async def _get_item_data(self, client, item: ExhibitionItem):
         has_address_cache = await self.cache.aget(f"{item.UUID}-address")
         if has_address_cache:
             item.address = has_address_cache
@@ -72,7 +71,7 @@ class SongShanCulturalParkRunner(RunnerInit):
     async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):
         asyncio_limit = get_asyncio_rate_limit(3, 30)
         headers = generate_headers()
-        async with httpx.AsyncClient(headers=headers) as client, asyncio_limit:
+        async with HttpxAsyncClient(headers=headers) as client, asyncio_limit:
             tasks = [self._get_item_data(client, item) for item in items]
             await asyncio.gather(*tasks)
 

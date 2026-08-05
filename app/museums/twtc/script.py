@@ -2,8 +2,6 @@ import asyncio
 import datetime
 from typing import cast
 
-import httpx
-
 from app.museums.twtc.information import TwTcInformation
 from app.museums.twtc.parse import TwTcParse
 from app.museums.twtc.schemas import TwTcResponse
@@ -26,7 +24,7 @@ class TwTcRunner(RunnerInit):
     def set_information(self) -> "Information":
         return TwTcInformation.get_information()
 
-    def extract_import(self, response: httpx.Response) -> dict:
+    def extract_import(self, response) -> dict:
         parsed = self.translation().translation_to_object(response.text)
         if parsed is None:
             return {}

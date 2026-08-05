@@ -4,7 +4,6 @@ from enum import Enum
 from typing import cast
 
 import bs4
-import httpx
 
 from app.platform.artemperor.parse import ArtEmperorParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -37,7 +36,7 @@ class ArtEmperorRunner(RunnerInit):
             venue_type=VenueType.PLATFORM,
         )
 
-    async def fetch_process(self, client: httpx.AsyncClient, ex_status: ExStatus, *args, **kwargs):
+    async def fetch_process(self, client, ex_status: ExStatus, *args, **kwargs):
         all_response = []
         response = await client.get(
             "https://artemperor.tw/tidbits",

@@ -8,7 +8,7 @@ import secrets
 from pathlib import Path
 
 import dill
-import httpx
+import httpx2 as httpx
 import sentry_sdk
 from bs4 import BeautifulSoup, Tag
 from dotenv import load_dotenv

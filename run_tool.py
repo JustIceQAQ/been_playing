@@ -3,7 +3,7 @@ import pathlib
 from typing import TYPE_CHECKING
 
 import aiofiles
-import httpx
+import httpx2 as httpx
 
 from app.script import ALL_RUNNERS
 

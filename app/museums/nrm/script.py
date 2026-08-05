@@ -2,7 +2,6 @@ import asyncio
 from typing import cast
 
 import bs4
-import httpx
 
 from app.museums.nrm.parse import NrmParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -47,7 +46,7 @@ class NrmRunner(RunnerInit):
         parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.find_all("a", {"class": "div-activity"})
 
-    async def _get_item_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
+    async def _get_item_data(self, client, item: ExhibitionItem):
         has_address_cache = await self.cache.aget(f"{item.UUID}-address")
         if has_address_cache:
             item.address = has_address_cache

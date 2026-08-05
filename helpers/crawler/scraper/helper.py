@@ -2,7 +2,7 @@ import asyncio
 import http
 import random
 
-import httpx
+import httpx2 as httpx
 
 from helpers.crawler.scraper.schemas import ScraperJobsResponse
 

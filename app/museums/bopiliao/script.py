@@ -1,7 +1,4 @@
 import asyncio
-from typing import cast
-
-import httpx
 
 from app.museums.bopiliao.parse import BoPiLiaoParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -35,7 +32,7 @@ class BoPiLiaoRunner(RunnerInit):
             venue_type=VenueType.MEMORIAL,
         )
 
-    async def _fetch_url(self, client: httpx.AsyncClient, url: str, params: dict) -> httpx.Response:
+    async def _fetch_url(self, client, url: str, params: dict):
         return await client.get(url, params=params)
 
     async def fetch_response(self):
@@ -59,7 +56,7 @@ class BoPiLiaoRunner(RunnerInit):
 
     async def fetch_parsed(self):
         items = []
-        parsed = cast(list[httpx.Response], await super().fetch_parsed())
+        parsed = await super().fetch_parsed()
         for item in parsed:
             items.extend(item.json()["items"])
         return items
