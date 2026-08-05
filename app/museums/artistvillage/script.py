@@ -1,18 +1,16 @@
 import asyncio
 from typing import cast
 
-import httpx
-
 from app.museums.artistvillage.parse import ArtistVillageParse
+from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers, generate_cookies
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import ExhibitionItem, Information
 from helpers.storage.coordinate import Coordinate
-from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.symbol.venue import VenueType
+from helpers.storage.helper import ExhibitionItem, Information
 from helpers.symbol.taiwan import Taiwan
-from helpers.translation.json import JsonTranslation
+from helpers.symbol.venue import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
+from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3, get_date
 
 
@@ -37,21 +35,15 @@ class ArtistVillageRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = generate_headers() | {
-            "x-requested-with": "XMLHttpRequest",
-            "referer": "https://www.artistvillage.org/event.php",
-            "origin": "https://www.artistvillage.org",
-            "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-            "dnt": "1",
-            "accept": "application/json, text/javascript, */*; q=0.01",
-            "accept-encoding": "gzip, deflate, br, zstd",
-            "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
-        }
+        headers = generate_headers(
+            x_requested_with="XMLHttpRequest",
+            referer="https://www.artistvillage.org/event.php",
+            origin="https://www.artistvillage.org",
+        )
         cookies = generate_cookies(need_phpsessid=True)
         next_year = get_date.now_year + 1
         data = {
             "post_type": "event",
-            "start_date": get_date.now_format_to_digit,
             "end_date": f"{next_year}1231",
             "method": "get_posts_list_month",
         }
@@ -63,7 +55,7 @@ class ArtistVillageRunner(RunnerInit):
         parsed = cast(list[dict], await super().fetch_parsed())
         return parsed
 
-    async def _get_item_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
+    async def _get_item_data(self, client, item: ExhibitionItem):
         has_address_cache = await self.cache.aget(f"{item.UUID}-address")
         has_figure_cache = await self.cache.aget(f"{item.UUID}-figure")
         if has_address_cache and has_figure_cache:
