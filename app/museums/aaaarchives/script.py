@@ -1,6 +1,6 @@
 import asyncio
 import secrets
-from typing import cast, TYPE_CHECKING
+from typing import TYPE_CHECKING, cast
 
 from selectolax.lexbor import LexborNode
 
@@ -8,7 +8,7 @@ from app.museums.aaaarchives.information import AAAArchivesInformation
 from app.museums.aaaarchives.parse import AAAArchivesParse
 from app.museums.aaaarchives.social_media import AAAArchivesSocialMedia
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
-from helpers.headers_helper import generate_headers, generate_cookies
+from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3

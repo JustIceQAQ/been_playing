@@ -1,5 +1,6 @@
 import asyncio
 import datetime
+from typing import cast
 
 import bs4
 
@@ -10,9 +11,7 @@ from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information
 from helpers.symbol.venue import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import month_3, get_asyncio_rate_limit
-
-from typing import cast
+from helpers.utils_helper import get_asyncio_rate_limit, month_3
 
 
 class BooksTicketsRunner(RunnerInit):
@@ -51,7 +50,7 @@ class BooksTicketsRunner(RunnerInit):
 
         parsers = [self.translation().translation_to_object(response.text) for response in responses]
 
-        for parsed, item in zip(parsers, items):
+        for parsed, item in zip(parsers, items, strict=True):
             if parsed is None:
                 continue
             lis = parsed.select("ul.prd002 > li")

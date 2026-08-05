@@ -5,10 +5,10 @@ from app.museums.ntcri.parse import NTCRIParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
 from helpers.storage.coordinate import Coordinate, GeoPoint
-from helpers.symbol.venue import VenueType
+from helpers.storage.helper import Information
 from helpers.symbol.taiwan import Taiwan
+from helpers.symbol.venue import VenueType
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
 
@@ -25,12 +25,7 @@ class NTCRIRunner(RunnerInit):
             fullname="國立台灣工藝研究發展中心",
             code_name="NTCRI",
             external_link=(
-                "https://tcdbdata.ntcri.gov.tw/api/cms/exhibition?"
-                "limit=50"
-                "&offset=0"
-                "&query=null"
-                "&sort=sort"
-                "&order=asc"
+                "https://tcdbdata.ntcri.gov.tw/api/cms/exhibition?limit=50&offset=0&query=null&sort=sort&order=asc"
             ),
             location_code=Taiwan.taipei.zhongzheng_63000050,
             branch_coordinates=[

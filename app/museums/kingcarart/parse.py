@@ -40,7 +40,7 @@ class KingCarArtParse(ParseInit):
         else:
             first_date = parse_date(f"{first_date_raw} {second_date_year}")
 
-        return f'{first_date.strftime("%Y-%m-%d")} ~ {second_date.strftime("%Y-%m-%d")}'
+        return f"{first_date.strftime('%Y-%m-%d')} ~ {second_date.strftime('%Y-%m-%d')}"
 
     def get_address(self, *args, **kwargs) -> str | None:
         return ", ".join(span.get_text().strip() if span else "" for span in self.item.select("div.ex-location > span"))

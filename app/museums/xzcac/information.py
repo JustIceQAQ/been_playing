@@ -1,4 +1,4 @@
-from helpers.storage.coordinate import Coordinate, GeoPoint, OpenStreetMap, GoogleMaps
+from helpers.storage.coordinate import Coordinate, GeoPoint, GoogleMaps, OpenStreetMap
 from helpers.storage.helper import Information
 from helpers.symbol.taiwan import Taiwan
 from helpers.symbol.venue import VenueType

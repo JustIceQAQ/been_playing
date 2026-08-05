@@ -1,17 +1,16 @@
 import asyncio
 import uuid
+from typing import cast
 
 from app.platform.ntt.parse import NTTParse
+from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.symbol.venue import VenueType
-from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.translation.json import JsonTranslation
-from helpers.utils_helper import month_3, get_date
-
-from typing import cast
+from helpers.utils_helper import get_date, month_3
 
 
 class NTTRunner(RunnerInit):

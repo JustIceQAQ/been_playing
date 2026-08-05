@@ -14,7 +14,6 @@ class SuffixHelper:
         root_path = pathlib.Path(__file__).parent.parent.absolute()
         with open(
             root_path / pathlib.Path("fixture") / pathlib.Path("suffix_file.json"),
-            "r",
             encoding="utf-8",
         ) as f:
             self.suffixes = json.load(f)

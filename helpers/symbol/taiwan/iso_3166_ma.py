@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import StrEnum
 
 
-class ISO3166Ma(str, Enum):
+class ISO3166Ma(StrEnum):
     # 縣 (Counties) - 代碼多源於 ISO 3166/MA
     CHANGHUA_COUNTY = "TW-CHA"  # 彰化縣 (Changhua County) - 來源: ISO 3166/MA
     CHIAYI_COUNTY = "TW-CYQ"  # 嘉義縣 (Chiayi County) - 來源: ISO 3166/MA

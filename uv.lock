@@ -155,6 +155,7 @@ dev = [
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "pandas" },
+    { name = "pandas-stubs" },
     { name = "pre-commit" },
     { name = "pytest" },
     { name = "pytest-asyncio" },
@@ -181,7 +182,7 @@ requires-dist = [
     { name = "html5lib", specifier = "==1.1" },
     { name = "httpx2", specifier = ">=2.9.1" },
     { name = "icalendar", specifier = ">=7.2.2" },
-    { name = "niquests", specifier = ">=3.20.1" },
+    { name = "niquests", specifier = ">=3.21.0" },
     { name = "orjson", specifier = ">=3.11.9,<4" },
     { name = "pillow", specifier = ">=12.3.0" },
     { name = "pydantic", specifier = "==2.13.4" },
@@ -206,12 +207,13 @@ dev = [
     { name = "matplotlib", specifier = ">=3.11.1" },
     { name = "numpy", specifier = ">=2.5.1" },
     { name = "pandas", specifier = ">=3.0.5" },
+    { name = "pandas-stubs", specifier = ">=3.0.5.260730" },
     { name = "pre-commit", specifier = "==4.6.1" },
     { name = "pytest", specifier = "==9.1.1" },
     { name = "pytest-asyncio", specifier = "==1.4.0" },
     { name = "pytest-xdist", specifier = "==3.8.0" },
     { name = "scikit-learn", specifier = ">=1.9.0" },
-    { name = "skylos", specifier = ">=4.31.0" },
+    { name = "skylos", specifier = ">=4.32.0" },
 ]
 
 [[package]]
@@ -1552,16 +1554,16 @@ wheels = [
 
 [[package]]
 name = "niquests"
-version = "3.20.1"
+version = "3.21.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "charset-normalizer" },
     { name = "urllib3-future" },
     { name = "wassima", marker = "sys_platform != 'emscripten'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f2/6f/c2310e0c0d09ef1c22d235ef82d2d5d16f6b04b3a3702ebe1bc8d1dfbd6c/niquests-3.20.1.tar.gz", hash = "sha256:55951812cf997963bfef8e4f797ff0460ca571e53ec184039b010e12152c0e41", size = 1039594, upload-time = "2026-07-09T06:18:39.488Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/03/1c/836ad34fb18fac781722019100e2bffd81eb9a0011d7a91c434a7094460d/niquests-3.21.0.tar.gz", hash = "sha256:5b7d10a05f4c7ed08cede0af74f492ae7a8a5a71291833d029e23365fc3ea80a", size = 1070211, upload-time = "2026-07-29T10:26:24.993Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/23/25/8c5412b047ab545ac59b59712a840e2d1ce91759aec1afdf47b85c12c748/niquests-3.20.1-py3-none-any.whl", hash = "sha256:71062880739c94d67aead1f8b7972baad3236b97a55a490493729789d1639fc4", size = 213889, upload-time = "2026-07-09T06:18:37.969Z" },
+    { url = "https://files.pythonhosted.org/packages/23/9b/c08403f905f9aaffc74b483fbb0ad4cc372d1da22cccb4ca771a3e65a185/niquests-3.21.0-py3-none-any.whl", hash = "sha256:dbea441b9e9d5d755e02caa2b57b94cdb97b23d754ead21b80a4ac18ef66805f", size = 230382, upload-time = "2026-07-29T10:26:23.194Z" },
 ]
 
 [[package]]
@@ -1730,6 +1732,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/fe/be/d448af7d657d82e1888dd8551f79c6d6fb161080b5b9752d84d910ec2319/pandas-3.0.5-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:b58b1b39d46a5862e3fb18f50d1a201398619d16a0f9f73f57eea5583cf0e63c", size = 11925105, upload-time = "2026-07-22T22:19:21.515Z" },
     { url = "https://files.pythonhosted.org/packages/29/c1/ccb4238212c8c4f496c584f3044d94e0c030ed8e1d68999db46c91c2242f/pandas-3.0.5-cp314-cp314t-win_amd64.whl", hash = "sha256:1c10461f6eeb35d8f05b6184c65c8b9991663b66c46b1d559b682cb34ae7c6ea", size = 10387612, upload-time = "2026-07-22T22:19:24.257Z" },
     { url = "https://files.pythonhosted.org/packages/d2/cf/6a51b2c38980e04c279fd2fa908a1b0982064e860444acfca4ec2e2c8359/pandas-3.0.5-cp314-cp314t-win_arm64.whl", hash = "sha256:3c5015fd1730fbf883647e88068176c839c102cea883ba1769a6f4593bfc1f8c", size = 9509776, upload-time = "2026-07-22T22:19:26.694Z" },
+]
+
+[[package]]
+name = "pandas-stubs"
+version = "3.0.5.260730"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c2/d2/dea4a3a56b7b5f69c5fbca9f14625fcf28e1a39a657e9833d4a10bcac593/pandas_stubs-3.0.5.260730.tar.gz", hash = "sha256:f70a232c57d93a5a2c81f8a53953e10891a5374bc92652277deb325e2e4d0ff3", size = 114631, upload-time = "2026-07-30T14:31:42.271Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/60/c2/959caec5c46f484b5f8bb6def4b0cf7a45ba6acda26f12b75142d98cc5ae/pandas_stubs-3.0.5.260730-py3-none-any.whl", hash = "sha256:60e90e3e1eda6937e337e243cbe6217e151c11137cd7eddf832af537c7310bfd", size = 174807, upload-time = "2026-07-30T14:31:41.17Z" },
 ]
 
 [[package]]
@@ -2573,7 +2587,7 @@ wheels = [
 
 [[package]]
 name = "skylos"
-version = "4.31.0"
+version = "4.32.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ca9" },
@@ -2595,9 +2609,9 @@ dependencies = [
     { name = "tree-sitter-rust" },
     { name = "tree-sitter-typescript" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/73/4c/ae687f7271cf31ce5d380085f053c2b356b785b2ba41ef4fe841da57b788/skylos-4.31.0.tar.gz", hash = "sha256:14bf2a97d3c2279d47dbf59ad7e293624c76d36cab4a42c92251f8c152093ab0", size = 1696962, upload-time = "2026-07-27T06:39:37.063Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/65/0e/3abe725dbe162409d7c46491b10f161d67ef68eb03123c83467dfc4f809f/skylos-4.32.0.tar.gz", hash = "sha256:35857fa3eef6f7da51498f1025aecef10465afe95761f59c63a7697a6a7ea6cd", size = 1719570, upload-time = "2026-07-30T16:23:39.518Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5c/d6/c30bed67fcd74096e25f0d8eaf5bc29a311879f952288a567c066866247c/skylos-4.31.0-py3-none-any.whl", hash = "sha256:3a74a7476af7aee6256d5befe3f7cb5f5712be477fb7306ae5f077e9b4a7b46f", size = 1351149, upload-time = "2026-07-27T06:39:35.113Z" },
+    { url = "https://files.pythonhosted.org/packages/11/49/b7c3d57f5ea981b3fcc68edbba092dba1a36b6faedda091a0c83a90d42d6/skylos-4.32.0-py3-none-any.whl", hash = "sha256:5c2af880944a89dfd38d88e958b446b374c7425aefe34bbd2f236ead9a63b920", size = 1363427, upload-time = "2026-07-30T16:23:38.05Z" },
 ]
 
 [[package]]

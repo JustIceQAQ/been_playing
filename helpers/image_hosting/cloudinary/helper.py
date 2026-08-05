@@ -117,7 +117,7 @@ class CloudinaryImageHosting(ImageHostingBase):
                 for attempt, quality in enumerate(_COMPRESS_QUALITIES, start=1):
                     compressed = await self.loop.run_in_executor(None, _compress_image, content, quality)
                     self._log(
-                        "壓縮第{attempt}次(quality={quality}), {len(content)} → {len(compressed)} bytes",
+                        f"壓縮第{attempt}次(quality={quality}), {len(content)} → {len(compressed)} bytes",
                         level="warning",
                     )
                     content = compressed

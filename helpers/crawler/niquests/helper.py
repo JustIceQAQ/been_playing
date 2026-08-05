@@ -19,7 +19,7 @@ class NiquestsAsyncSession(niquests.AsyncSession):
         *args,
         **kwargs,
     ) -> None:
-        super().__init__(timeout=timeout, *args, **kwargs)
+        super().__init__(*args, timeout=timeout, **kwargs)
         self.passed_args = args
         self.passed_kwargs = kwargs
 

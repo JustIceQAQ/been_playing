@@ -1,6 +1,6 @@
 import asyncio
 import datetime
-from typing import cast, TYPE_CHECKING
+from typing import TYPE_CHECKING, cast
 
 from selectolax.lexbor import LexborNode
 
@@ -8,9 +8,9 @@ from app.museums.afmc.information import (
     AfmcHall1Information,
     AfmcHall2Information,
     AfmcHall3Information,
-    AfmcHall6Information,
-    AfmcHall5Information,
     AfmcHall4Information,
+    AfmcHall5Information,
+    AfmcHall6Information,
 )
 from app.museums.afmc.parse import AfmcParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient

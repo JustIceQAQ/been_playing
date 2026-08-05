@@ -32,4 +32,4 @@ class Pier2Parse(ParseInit):
     def get_source_url(self, *args, **kwargs) -> str | None:
         info_code = self.item.get("id")
         if info_code:
-            return "https://pier2.org/exhibition/info/{info_code}/".format(info_code=info_code)
+            return f"https://pier2.org/exhibition/info/{info_code}/"

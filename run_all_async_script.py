@@ -1,7 +1,7 @@
 import argparse
 import asyncio
 import logging
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import aiofiles
@@ -14,7 +14,7 @@ from rich.progress import BarColumn, MofNCompleteColumn, Progress, SpinnerColumn
 from app.script import ALL_RUNNERS
 from configs.settings import get_settings
 from helpers.cache import disk_cache, none_cache
-from helpers.image_hosting import none_image_hosting, get_initialized_cloudinary_image_hosting
+from helpers.image_hosting import get_initialized_cloudinary_image_hosting, none_image_hosting
 from helpers.storage.coordinate import Coordinate
 from helpers.storage.helper import (
     Information,
@@ -105,7 +105,7 @@ async def generate_venue_meta(information: list["Information"]):
         venues.append(result)
 
     payload = {
-        "last_update": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "last_update": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "venues": venues,
     }
     async with aiofiles.open(ROOT_PATH / "data" / "v2" / "_VENUE_META.json", "wb+") as afp:
@@ -195,8 +195,8 @@ async def main(worker: int | None = None, worker_max: int | None = None):
     else:
         scripts_to_run = job
 
-    all_script_information: list["Information"] = []
-    named_runners: list[tuple[str, "Information", object]] = []
+    all_script_information: list[Information] = []
+    named_runners: list[tuple[str, Information, object]] = []
     for RunnerObj in scripts_to_run:
         this_runner = RunnerObj()
         info = this_runner.set_information()
@@ -239,7 +239,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
                         code_name=info.code_name,
                         fullname=info.fullname,
                         execution_time=elapsed,
-                        last_update=datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                        last_update=datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
                     )
                     progress.update(overall, advance=1)
                     if is_debug:

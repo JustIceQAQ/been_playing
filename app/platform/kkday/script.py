@@ -3,7 +3,7 @@ import copy
 import json
 import re
 import urllib.parse
-from typing import cast, TypedDict
+from typing import TypedDict, cast
 
 import bs4
 from wreq import Proxy
@@ -17,7 +17,7 @@ from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.symbol.venue import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import month_3, get_date
+from helpers.utils_helper import get_date, month_3
 
 
 class KKDayQueryParameter(TypedDict):

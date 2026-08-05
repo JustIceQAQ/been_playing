@@ -88,7 +88,7 @@ class GeoPoint(BaseModel):
                 else:
                     raise ValueError(f"格式錯誤，預期「緯度, 經度」：{self.raw_coordinates}")
             except Exception as e:
-                raise ValueError(f"座標解析失敗: {e}")
+                raise ValueError(f"座標解析失敗: {e}") from e
         return self
 
 

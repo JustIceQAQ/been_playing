@@ -18,7 +18,7 @@ dependencies = [
     "h11>=0.16.0",
     "html5lib==1.1",
     "icalendar>=7.2.2",
-    "niquests>=3.20.1",
+    "niquests>=3.21.0",
     "orjson>=3.11.9,<4",
     "pydantic==2.13.4",
     "pydantic-settings==2.14.2",
@@ -49,19 +49,31 @@ dev = [
     "matplotlib>=3.11.1",
     "folium>=0.20.0",
     "branca>=0.8.2",
-    "skylos>=4.31.0",
+    "skylos>=4.32.0",
+    "pandas-stubs>=3.0.5.260730",
 ]
 
 
 [tool.ruff]
 line-length = 120
-lint.ignore = [
-  "COM812", # conflicts with formatter
-  "CPY",    # no copyright
-  "D",      # pydocstyle: enable later for public APIs if publishing a library
-  "ISC001", # conflicts with formatter
-]
-exclude = [".tox", ".git", "*/migrations/*", "*/static/CACHE/*", "docs", "node_modules", "venv"]
 
-[tool.ty.rules]
-too-many-positional-arguments = "ignore"
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle errors
+    "W", # pycodestyle warnings
+    "F", # pyflakes
+    "I", # isort
+    "B", # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "UP", # pyupgrade
+]
+ignore = [
+    "E501", # line too long, handled by black
+    "B008", # do not perform function calls in argument defaults
+    "C901", # too complex
+    "E402",
+]
+
+[tool.ruff.lint.pyupgrade]
+# Preserve types, even if a file imports `from __future__ import annotations`.
+keep-runtime-typing = true

@@ -1,15 +1,15 @@
+import asyncio
 import json
+import pathlib
 
-import pandas as pd
+import aiofiles
+import branca.element as be
+import folium
+import matplotlib.colors as mcolors
 import numpy as np
+import pandas as pd
 from sklearn.cluster import DBSCAN
 from sklearn.metrics.pairwise import haversine_distances
-import aiofiles
-import asyncio
-import folium
-import pathlib
-import branca.element as be
-import matplotlib.colors as mcolors
 
 ROOT_PATH = pathlib.Path(__file__).parent.parent.parent.parent.absolute()
 DATA_PATH = ROOT_PATH / "data" / "v2"
@@ -21,7 +21,7 @@ MIN_SAMPLES = 2  # 最小點數
 
 
 async def get_json_files(json_file: pathlib.Path):
-    async with aiofiles.open(json_file, mode="r") as f:
+    async with aiofiles.open(json_file) as f:
         json_content = await f.read()
     return json.loads(json_content)
 
@@ -91,7 +91,7 @@ def dbscan(df: pd.DataFrame):
         attr=f"Been Play 地點位置分析({EPS_KM=}, {MIN_SAMPLES=})",
         # tiles=f'Been Play 地點位置分析({EPS_KM=}, {MIN_SAMPLES=})'
     )
-    for idx, row in df.iterrows():
+    for _, row in df.iterrows():
         cluster_id = row["Cluster_ID"]
         lat = row["latitude"]
         lon = row["longitude"]

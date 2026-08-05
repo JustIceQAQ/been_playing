@@ -3,6 +3,7 @@ import asyncio
 import hashlib
 import json
 import time
+from functools import lru_cache
 from typing import Any
 
 from helpers.cache.base import CacheBase
@@ -10,11 +11,10 @@ from helpers.image_hosting.base import ImageHostingBase
 from helpers.parse_helper import ParseInit
 from helpers.proxy_helper import ProxyAdapter
 from helpers.storage.helper import Exhibition, ExhibitionItem, Information
+from helpers.storage.social_media import SocialMedia
 from helpers.suffix_helper import suffix_helper
 from helpers.translation.base import TranslationInit
 from helpers.translation.json import JsonTranslation
-from helpers.storage.social_media import SocialMedia
-from functools import lru_cache
 
 
 @lru_cache
@@ -92,7 +92,7 @@ class RunnerInit(abc.ABC):
         return exhibition_items
 
     async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):
-        pass
+        return items
 
     async def suffix_item_from_file(self, items: list[ExhibitionItem]):
         information = self.set_information()

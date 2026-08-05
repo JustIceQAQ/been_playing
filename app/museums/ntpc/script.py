@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 import httpx
@@ -8,13 +9,10 @@ from app.museums.ntpc.parse import NTPCParse
 from app.museums.ntpc.social_media import NTPCSocialMedia
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
-
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import month_3, get_asyncio_rate_limit
-
-from typing import cast
+from helpers.utils_helper import get_asyncio_rate_limit, month_3
 
 
 class NTPCRunner(RunnerInit):
@@ -75,8 +73,8 @@ class NTPCRunner(RunnerInit):
 
 
 async def main():
-    from helpers.image_hosting import none_image_hosting
     from helpers.cache import none_cache
+    from helpers.image_hosting import none_image_hosting
 
     await NTPCRunner().run(none_cache, none_image_hosting)
 

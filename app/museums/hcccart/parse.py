@@ -1,9 +1,8 @@
 import re
 
-from helpers.parse_helper import ParseInit
-
-
 from selectolax.lexbor import LexborNode
+
+from helpers.parse_helper import ParseInit
 
 
 class HcccArtParse(ParseInit):
