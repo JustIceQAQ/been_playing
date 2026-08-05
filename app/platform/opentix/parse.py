@@ -36,4 +36,4 @@ class OpenTixParse(ParseInit):
         target_domain = kwargs.get("target_domain", None)
         if target_domain is None:
             raise ValueError("請提供 TARGET_DOMAIN")
-        return f'{target_domain}{self.item.get("source", {}).get("id", "")}'
+        return f"{target_domain}{self.item.get('source', {}).get('id', '')}"

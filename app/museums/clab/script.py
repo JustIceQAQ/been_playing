@@ -7,12 +7,12 @@ from app.museums.clab.parse import CLabParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
 from helpers.storage.coordinate import Coordinate, GeoPoint
-from helpers.symbol.venue import VenueType
+from helpers.storage.helper import Information
 from helpers.symbol.taiwan import Taiwan
+from helpers.symbol.venue import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import month_3, get_date
+from helpers.utils_helper import get_date, month_3
 
 
 class CLabRunner(RunnerInit):
@@ -41,7 +41,7 @@ class CLabRunner(RunnerInit):
         current_period, previous_period = get_date.current_and_previous_period
 
         target_url_template = (
-            "https://clab.org.tw/events/?" "event_category=" "&filter_year={filter_year}" "&filter_month={filter_month}"
+            "https://clab.org.tw/events/?event_category=&filter_year={filter_year}&filter_month={filter_month}"
         )
         headers = generate_headers()
 

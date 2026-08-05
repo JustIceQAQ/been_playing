@@ -1,6 +1,6 @@
 from enum import Enum
 
-from helpers.storage.location import Name, Location
+from helpers.storage.location import Location, Name
 from helpers.symbol.taiwan.iso_3166_ma import ISO3166Ma
 
 

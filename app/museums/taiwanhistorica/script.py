@@ -1,7 +1,6 @@
 import asyncio
 from typing import TYPE_CHECKING, cast
 
-
 from app.museums.taiwanhistorica.information import TaiwanHistoricaInformation
 from app.museums.taiwanhistorica.parse import TaiwanHistoricaParse
 from app.museums.taiwanhistorica.social_media import TaiwanHistoricaSocialMedia

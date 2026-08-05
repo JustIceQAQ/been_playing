@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import StrEnum
 
 
-class ActionEnum(str, Enum):
+class ActionEnum(StrEnum):
     Exhibition = "展覽"
     Lecture = "講座"
     Workshop = "工作坊"

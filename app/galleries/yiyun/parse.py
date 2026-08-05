@@ -1,5 +1,7 @@
-import bs4
 import datetime
+
+import bs4
+
 from helpers.parse_helper import ParseInit
 
 

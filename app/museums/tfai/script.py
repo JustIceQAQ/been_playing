@@ -1,19 +1,16 @@
 import asyncio
-
-from typing import cast, TYPE_CHECKING
+from typing import TYPE_CHECKING, cast
 
 from wreq import Proxy
-from app.museums.tfai.parse import TFAIParse
+
 from app.museums.tfai.information import TFAIInformation
+from app.museums.tfai.parse import TFAIParse
 from configs.settings import get_settings
 from helpers.crawler.wreq.helper import WReqAsyncClient
-from helpers.headers_helper import generate_headers, generate_cookies
+from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
-from helpers.utils_helper import month_3
-
-
 from helpers.translation.json import JsonTranslation
-
+from helpers.utils_helper import month_3
 
 if TYPE_CHECKING:
     from helpers.storage.helper import Information

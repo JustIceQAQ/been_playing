@@ -1,9 +1,9 @@
 import re
+from urllib.parse import quote, urlparse, urlunparse
 
 import bs4
 
 from helpers.parse_helper import ParseInit
-from urllib.parse import urlparse, urlunparse, quote
 
 
 class MoNTUEParse(ParseInit):

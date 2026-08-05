@@ -1,7 +1,9 @@
-import re
-import datetime
-import bs4
 import ast
+import datetime
+import re
+
+import bs4
+
 from helpers.parse_helper import ParseInit
 
 
@@ -22,8 +24,8 @@ def convert_date_range(date_str):
             try:
                 dt = datetime.datetime.strptime(full_date_str, "%b %d %Y")
                 results.append(dt.strftime("%Y-%m-%d"))
-            except Exception:  # noqa
-                raise ValueError(f"Invalid date string: {date_str}")
+            except Exception as e:  # noqa
+                raise ValueError(f"Invalid date string: {date_str}") from e
 
     return results
 

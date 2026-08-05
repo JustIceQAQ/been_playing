@@ -1,4 +1,4 @@
-from enum import Enum
+from enum import StrEnum
 
 from pydantic import BaseModel, Field, model_validator
 
@@ -9,7 +9,7 @@ class RealResponse(BaseModel):
     status_code: int = Field(alias="statusCode")
 
 
-class JobStatus(str, Enum):
+class JobStatus(StrEnum):
     Running = "running"
     Finished = "finished"
 

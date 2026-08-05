@@ -1,8 +1,7 @@
 import bs4
+from pydantic import BaseModel, Field
 
 from helpers.parse_helper import ParseInit
-
-from pydantic import BaseModel, Field
 
 
 class PathQuery(BaseModel):

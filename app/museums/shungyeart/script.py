@@ -1,17 +1,17 @@
 import asyncio
+from typing import cast
 
 import bs4
+
 from app.museums.shungyeart.information import ShungYeArtInformation
 from app.museums.shungyeart.parse import ShungYeArtParse
 from app.museums.shungyeart.social_media import ShungYeArtSocialMedia
-from helpers.headers_helper import generate_headers, generate_cookies
+from helpers.crawler.httpx.helper import HttpxAsyncClient
+from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
-
-from typing import cast
 
 
 class ShungYeArtRunner(RunnerInit):

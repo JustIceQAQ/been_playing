@@ -3,7 +3,6 @@ import re
 
 from helpers.parse_helper import ParseInit
 
-
 _MIN_ROC_YEAR = 95  # ROC 95 = 2006，避免誤抓內文中的非展期年份數字
 
 

@@ -34,8 +34,8 @@ def format_date_ranges(raw_text: str) -> str | None:
         # 單一日期，例如 '2026.06.13'
         try:
             return parse_date(line)
-        except ValueError:
-            raise ValueError(f"無法解析的日期格式: {line}")
+        except ValueError as e:
+            raise ValueError(f"無法解析的日期格式: {line}") from e
 
     # 有 '-'，嘗試切割為 start / end
     parts = line.split("-")

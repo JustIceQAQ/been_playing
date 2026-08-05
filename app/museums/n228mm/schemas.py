@@ -1,8 +1,8 @@
 import base64
 import json
+from urllib.parse import quote
 
 from pydantic import BaseModel
-from urllib.parse import quote
 
 
 class CommonConfig(BaseModel):

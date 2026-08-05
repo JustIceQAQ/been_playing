@@ -2,10 +2,10 @@ import asyncio
 from typing import cast
 
 from app.platform.gacc.parse import GaCcParse
+from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
-from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.symbol.venue import VenueType
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3

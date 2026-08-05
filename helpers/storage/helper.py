@@ -6,9 +6,10 @@ from decimal import Decimal
 from pathlib import Path
 
 import aiofiles
-from pydantic import BaseModel, Field, model_validator
 from feedgen.feed import FeedGenerator
 from icalendar import Calendar, Event
+from pydantic import BaseModel, Field, model_validator
+
 from configs.settings import get_settings
 from helpers.storage.coordinate import Coordinate
 from helpers.storage.location import Location
@@ -162,7 +163,7 @@ class ExhibitionItem(BaseModel):
 
     def __hash__(self):
         values = []
-        for field, value in self.model_fields.items():
+        for field, _ in self.model_fields.items():
             val = getattr(self, field)
             try:
                 hash(val)  # 測試是否可 hash
@@ -338,8 +339,8 @@ LAST_WEEK_FILE_PATH = Path(__file__).parent.parent.parent / "data" / "v2" / "las
 
 class LastWeekUpdate:
     def __init__(self):
-        self.before_items: list["ExhibitionItem"] = []
-        self.after_items: list["ExhibitionItem"] = []
+        self.before_items: list[ExhibitionItem] = []
+        self.after_items: list[ExhibitionItem] = []
 
     def set_before_items(self, items: list["ExhibitionItem"]):
         self.before_items.extend(items)
@@ -354,7 +355,7 @@ class LastWeekUpdate:
         data = LastWeekUpdateData()
 
         if LAST_WEEK_FILE_PATH.exists():
-            async with aiofiles.open(LAST_WEEK_FILE_PATH, "r") as afp:
+            async with aiofiles.open(LAST_WEEK_FILE_PATH) as afp:
                 content = await afp.read()
                 if content:
                     data = LastWeekUpdateData.model_validate_json(content)

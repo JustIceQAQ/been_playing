@@ -5,13 +5,13 @@ import bs4
 import httpx
 
 from app.museums.kmoa.parse import KmoaParse
-from helpers.headers_helper import generate_headers, generate_cookies
-from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import Information
-from helpers.storage.coordinate import Coordinate, GeoPoint
-from helpers.symbol.venue import VenueType
-from helpers.symbol.taiwan import Taiwan
 from helpers.crawler.httpx.helper import HttpxAsyncClient
+from helpers.headers_helper import generate_cookies, generate_headers
+from helpers.runner.helper import RunnerInit
+from helpers.storage.coordinate import Coordinate, GeoPoint
+from helpers.storage.helper import Information
+from helpers.symbol.taiwan import Taiwan
+from helpers.symbol.venue import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
@@ -48,8 +48,8 @@ class KmoaRunner(RunnerInit):
         responses = await asyncio.gather(*tasks)
         responses_text = [response.text for response in responses]
         ok_responses_text = []
-        for a, response_text in zip(lis, responses_text):
-            response_text += f"<source_url>{"https://kmoa.klcg.gov.tw/" + a["href"]}</source_url>"
+        for a, response_text in zip(lis, responses_text, strict=True):
+            response_text += f"<source_url>{'https://kmoa.klcg.gov.tw/' + a.attrs.get('href')}</source_url>"
             ok_responses_text.append(response_text)
 
         return ok_responses_text

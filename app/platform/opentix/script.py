@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 from app.platform.opentix.parse import OpenTixParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -8,8 +9,6 @@ from helpers.storage.helper import Information
 from helpers.symbol.venue import VenueType
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3
-
-from typing import cast
 
 
 class OpenTixRunner(RunnerInit):

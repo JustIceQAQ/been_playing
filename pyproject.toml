@@ -50,6 +50,7 @@ dev = [
     "folium>=0.20.0",
     "branca>=0.8.2",
     "skylos>=4.32.0",
+    "pandas-stubs>=3.0.5.260730",
 ]
 
 

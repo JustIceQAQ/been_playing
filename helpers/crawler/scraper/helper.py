@@ -14,7 +14,7 @@ class ScraperAsyncClient:
     def __init__(self, api_key: str, timeout: int | None = None, *args, **kwargs) -> None:
         self.args = args
         self.kwargs = kwargs
-        self.client = httpx.AsyncClient(timeout=timeout, *args, **kwargs)
+        self.client = httpx.AsyncClient(*args, timeout=timeout, **kwargs)
         self.api_path = "https://async.scraperapi.com/jobs"
         self.api_key = api_key
         self.job_status_url = None

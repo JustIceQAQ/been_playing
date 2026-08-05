@@ -4,7 +4,7 @@ from typing import cast
 
 from app.museums.pier2.parse import Pier2Parse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_headers, generate_cookies
+from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.sniff_error import safe_json
 from helpers.storage.coordinate import Coordinate, GeoPoint

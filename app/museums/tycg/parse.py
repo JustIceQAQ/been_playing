@@ -1,7 +1,6 @@
-from helpers.parse_helper import ParseInit
-
 from selectolax.lexbor import LexborNode
 
+from helpers.parse_helper import ParseInit
 from helpers.utils_helper import set_date, to_ad_year
 
 

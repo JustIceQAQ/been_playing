@@ -1,11 +1,10 @@
 import datetime
 import re
 
+from selectolax.lexbor import LexborNode
+
 from helpers.parse_helper import ParseInit
 from helpers.utils_helper import get_date as get_the_date
-
-
-from selectolax.lexbor import LexborNode
 
 
 class XZCACParse(ParseInit):

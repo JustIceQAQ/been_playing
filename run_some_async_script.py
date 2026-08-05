@@ -5,11 +5,12 @@ from pathlib import Path
 
 import sentry_sdk
 from dotenv import load_dotenv
+
 from app.museums.tfai import TFAIRunner
 from configs.settings import get_settings
 from helpers.cache import disk_cache, none_cache
-from helpers.image_hosting.none.helper import none_image_hosting
 from helpers.image_hosting.cloudinary.helper import CloudinaryImageHosting
+from helpers.image_hosting.none.helper import none_image_hosting
 
 
 async def main(worker: int | None = None, worker_max: int | None = None):

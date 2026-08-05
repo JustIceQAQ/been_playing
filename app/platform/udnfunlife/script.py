@@ -1,4 +1,5 @@
 import asyncio
+from typing import cast
 
 import bs4
 
@@ -10,7 +11,6 @@ from helpers.storage.helper import Information
 from helpers.symbol.venue import VenueType
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
-from typing import cast
 
 
 class UdnFunLifeRunner(RunnerInit):
