@@ -3,7 +3,7 @@ import secrets
 from typing import cast
 
 import bs4
-import httpx
+import httpx2
 
 from app.museums.nstm.parse import NsTmParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -37,7 +37,7 @@ class NsTmRunner(RunnerInit):  # TODO: 壞掉中...
             venue_type=VenueType.MUSEUM,
         )
 
-    async def sub_fetch_response(self, client: httpx.AsyncClient, url: str) -> list[str]:
+    async def sub_fetch_response(self, client, url: str) -> list[str]:
         sub_response = []
         for p_index in range(0, 2, 1):
             response = await client.get(url, params={"Pindex": p_index, "ExhibitionType": "1", "Period": "1"})
@@ -50,8 +50,8 @@ class NsTmRunner(RunnerInit):  # TODO: 壞掉中...
 
     async def fetch_response(self):
         semaphore = asyncio.Semaphore(1)
-        limits = httpx.Limits(max_connections=5, max_keepalive_connections=2)
-        timeout = httpx.Timeout(10.0, connect=5.0)
+        limits = httpx2.Limits(max_connections=5, max_keepalive_connections=2)
+        timeout = httpx2.Timeout(10.0, connect=5.0)
         headers = generate_headers(
             referer="https://www.nstm.gov.tw/ExhibitionList.aspx?appname=Exhibition",
             need_upgrade_insecure_requests=True,
@@ -62,7 +62,7 @@ class NsTmRunner(RunnerInit):  # TODO: 壞掉中...
                 "Cache-Control": "no-cache",
             },
         )
-        cookies = httpx.Cookies()
+        cookies = httpx2.Cookies()
         cookies.set("ASP.NET_SessionId", secrets.token_hex(16), domain="www.nstm.gov.tw")
         cookies.set("CONSENT", "YES+", domain="www.nstm.gov.tw")
         urls = [

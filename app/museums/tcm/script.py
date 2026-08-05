@@ -2,7 +2,6 @@ import asyncio
 from typing import cast
 
 import bs4
-import httpx
 
 from app.museums.tcm.parse import TcmParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -36,7 +35,7 @@ class TcmRunner(RunnerInit):
             venue_type=VenueType.MUSEUM,
         )
 
-    async def sub_client(self, client: httpx.AsyncClient, url: str):
+    async def sub_client(self, client, url: str):
         response = await client.get(url)
         response.raise_for_status()
         return response.text

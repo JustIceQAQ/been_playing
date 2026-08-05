@@ -2,7 +2,6 @@ import asyncio
 from typing import cast
 
 import bs4
-import httpx
 
 from app.museums.montue.parse import MoNTUEParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -37,7 +36,7 @@ class MoNTUERunner(RunnerInit):
             venue_type=VenueType.ART_MUSEUM,
         )
 
-    async def sub_fetch_response(self, client: httpx.AsyncClient, url: str) -> str:
+    async def sub_fetch_response(self, client, url: str) -> str:
         response = await client.get(url)
         return response.text
 

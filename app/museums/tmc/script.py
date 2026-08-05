@@ -5,7 +5,7 @@ import secrets
 from typing import cast
 
 import bs4
-import httpx
+import httpx2
 
 from app.museums.tmc.information import TmcInformation
 from app.museums.tmc.parse import TmcParse
@@ -53,7 +53,7 @@ class TmcRunner(RunnerInit):
                 "application/signed-exchange;v=b3;q=0.7",
             },
         )
-        cookie_jar = httpx.Cookies()
+        cookie_jar = httpx2.Cookies()
         cookie_jar.set("ci_session", secrets.token_hex(8), domain="www.tmc.taipei")
         target_url = "https://www.tmc.taipei/tw/blog/show"
         responses_text = []

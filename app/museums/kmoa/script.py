@@ -2,7 +2,6 @@ import asyncio
 from typing import cast
 
 import bs4
-import httpx
 
 from app.museums.kmoa.parse import KmoaParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -36,7 +35,7 @@ class KmoaRunner(RunnerInit):
             venue_type=VenueType.ART_MUSEUM,
         )
 
-    async def fetch_sub_response(self, client: httpx.AsyncClient, context: str, *args, **kwargs) -> list[str]:
+    async def fetch_sub_response(self, client, context: str, *args, **kwargs) -> list[str]:
         p = BeautifulSoupTranslation().translation_to_object(context)
         if p is None:
             return []

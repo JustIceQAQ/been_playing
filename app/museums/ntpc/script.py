@@ -2,7 +2,6 @@ import asyncio
 from typing import cast
 
 import bs4
-import httpx
 
 from app.museums.ntpc.information import NTPCInformation
 from app.museums.ntpc.parse import NTPCParse
@@ -42,7 +41,7 @@ class NTPCRunner(RunnerInit):
         parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         return parsed.select("div.ListPicText > div.item")
 
-    async def suffix_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
+    async def suffix_data(self, client, item: ExhibitionItem):
         has_address_cache = await self.cache.aget(f"{item.UUID}-address")
         if has_address_cache:
             item.address = has_address_cache

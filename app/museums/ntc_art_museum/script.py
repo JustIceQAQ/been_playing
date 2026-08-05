@@ -1,8 +1,6 @@
 import asyncio
 from typing import cast
 
-import httpx
-
 from app.museums.ntc_art_museum.parse import NtcArtMuseumParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.headers_helper import generate_headers
@@ -36,7 +34,7 @@ class NtcArtMuseumRunner(RunnerInit):
             venue_type=VenueType.ART_MUSEUM,
         )
 
-    async def sub_fetch_response(self, client: httpx.AsyncClient, kind: str) -> httpx.Response:
+    async def sub_fetch_response(self, client, kind: str):
         return await client.post(
             "https://ntcart.museum/exhibition.aspx",
             data={

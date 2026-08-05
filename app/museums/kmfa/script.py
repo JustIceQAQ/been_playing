@@ -2,7 +2,6 @@ import asyncio
 from typing import cast
 
 import bs4
-import httpx
 
 from app.museums.kmfa.parse import KmFaParse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -36,7 +35,7 @@ class KmFaRunner(RunnerInit):
             venue_type=VenueType.ART_MUSEUM,
         )
 
-    async def sub_response(self, client: httpx.AsyncClient, url: str, *args, **kwargs) -> str:
+    async def sub_response(self, client, url: str, *args, **kwargs) -> str:
         response = await client.get(url, *args, **kwargs)
         response.raise_for_status()
         return response.text

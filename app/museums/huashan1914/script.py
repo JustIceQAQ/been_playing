@@ -2,7 +2,6 @@ import asyncio
 from typing import cast
 
 import bs4
-import httpx
 
 from app.museums.huashan1914.parse import huashan1914Parse
 from helpers.crawler.httpx.helper import HttpxAsyncClient
@@ -77,7 +76,7 @@ class HuaShan1914Runner(RunnerInit):
     async def fetch_items(self, *args, **kwargs):
         return await super().fetch_items(target_domain="https://www.huashan1914.com")
 
-    async def _get_item_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
+    async def _get_item_data(self, client, item: ExhibitionItem):
         has_address_cache = await self.cache.aget(f"{item.UUID}-address")
         if has_address_cache:
             item.address = has_address_cache

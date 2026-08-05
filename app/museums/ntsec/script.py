@@ -2,7 +2,6 @@ import asyncio
 from typing import cast
 
 import bs4
-import httpx
 from dateutil.relativedelta import relativedelta
 
 from app.museums.ntsec.format.address import get_page_address
@@ -61,7 +60,7 @@ class NtSecRunner(RunnerInit):
     async def fetch_items(self, *args, **kwargs):
         return await super().fetch_items(target_domain="https://www.ntsec.gov.tw")
 
-    async def suffix_data(self, client: httpx.AsyncClient, item: ExhibitionItem):
+    async def suffix_data(self, client, item: ExhibitionItem):
         has_address_cache = await self.cache.aget(f"{item.UUID}-address")
         has_date_cache = await self.cache.aget(f"{item.UUID}-date")
         if has_address_cache and has_date_cache:
