@@ -3,6 +3,7 @@ import inspect
 from json import JSONDecodeError
 
 import sentry_sdk
+from wreq import DecodingError
 
 
 async def safe_json(response, code: str, max_chars: int = 2000) -> dict:
@@ -11,7 +12,7 @@ async def safe_json(response, code: str, max_chars: int = 2000) -> dict:
         if inspect.iscoroutine(get_json_result) or asyncio.iscoroutine(get_json_result):
             get_json_result = await get_json_result
         return get_json_result
-    except JSONDecodeError as e:
+    except (JSONDecodeError, DecodingError) as e:
         with sentry_sdk.new_scope() as scope:
             scope.set_context(
                 "HTTP Response Details",
