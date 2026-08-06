@@ -1,11 +1,16 @@
+import asyncio
+import inspect
 from json import JSONDecodeError
 
 import sentry_sdk
 
 
-def safe_json(response, code: str, max_chars: int = 2000) -> dict:
+async def safe_json(response, code: str, max_chars: int = 2000) -> dict:
     try:
-        return response.json()
+        get_json_result = response.json()
+        if inspect.iscoroutine(get_json_result) or asyncio.iscoroutine(get_json_result):
+            get_json_result = await get_json_result
+        return get_json_result
     except JSONDecodeError as e:
         with sentry_sdk.new_scope() as scope:
             scope.set_context(
@@ -19,4 +24,4 @@ def safe_json(response, code: str, max_chars: int = 2000) -> dict:
                 },
             )
             sentry_sdk.capture_exception(e)
-        raise
+        return {}
