@@ -4,8 +4,8 @@ from typing import TYPE_CHECKING, cast
 from app.museums.taiwanhistorica.information import TaiwanHistoricaInformation
 from app.museums.taiwanhistorica.parse import TaiwanHistoricaParse
 from app.museums.taiwanhistorica.social_media import TaiwanHistoricaSocialMedia
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3

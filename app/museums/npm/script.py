@@ -7,8 +7,8 @@ from app.museums.npm.parse import (
     NpmRowParse,
     SouthNpmParse,
 )
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.storage.helper import ExhibitionItem, Information
@@ -59,7 +59,7 @@ class NpmRunner(RunnerInit):
             need_upgrade_insecure_requests=True,
             host="south.npm.gov.tw",
         )
-        async with HttpxAsyncClient(headers=this_header) as client:
+        async with HttpxAsyncClient(headers=this_header, use_proxy=True) as client:
             results = await asyncio.gather(
                 *[
                     client.get(

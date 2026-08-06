@@ -196,21 +196,20 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         scripts_to_run = job
 
     all_script_information: list[Information] = []
-    named_runners: list[tuple[str, Information, object]] = []
+    runner_items: list[tuple[type, Information]] = []
     for RunnerObj in scripts_to_run:
-        this_runner = RunnerObj()
-        info = this_runner.set_information()
-        all_script_information.append(this_runner.set_information())
-        named_runners.append((RunnerObj.__name__, info, RunnerObj().run(use_cache, use_image_host, prefix, image_sem)))
+        runner_instance = RunnerObj()
+        info = runner_instance.set_information()
+        all_script_information.append(info)
+        runner_items.append((RunnerObj, info))
 
-    total = len(named_runners)
+    total = len(runner_items)
     is_debug = runtime_setting.IS_DEBUG
     console = Console()
     failed: list[str] = []
 
-    task_queue = asyncio.Queue()
-    for item in named_runners:
-        await task_queue.put(item)
+    concurrency_limit = 4
+    sem = asyncio.Semaphore(concurrency_limit)
 
     with Progress(
         SpinnerColumn(),
@@ -223,17 +222,16 @@ async def main(worker: int | None = None, worker_max: int | None = None):
     ) as progress:
         overall = progress.add_task("[bold cyan]總進度", total=total)
 
-        async def worker_loop():
-            while not task_queue.empty():
-                try:
-                    name, info, coro = await task_queue.get()
-                except asyncio.QueueEmpty:
-                    break
-
+        async def run_single_runner(RunnerObj: type, info: Information):
+            async with sem:
+                name = RunnerObj.__name__
                 task_id = progress.add_task(f"[yellow]{name}", total=None)
                 start_time = asyncio.get_event_loop().time()
                 try:
-                    await coro
+                    # 延後到此處才實例化並執行 run()
+                    runner_instance = RunnerObj()
+                    await runner_instance.run(use_cache, use_image_host, prefix, image_sem)
+
                     elapsed = asyncio.get_event_loop().time() - start_time
                     execution_stats.record(
                         code_name=info.code_name,
@@ -241,26 +239,29 @@ async def main(worker: int | None = None, worker_max: int | None = None):
                         execution_time=elapsed,
                         last_update=datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
                     )
-                    progress.update(overall, advance=1)
                     if is_debug:
                         console.log(f"[green]OK [/green] {name}")
                 except Exception as e:
                     failed.append(name)
-                    progress.update(overall, advance=1)
                     cause = e.__cause__ or e
-                    # 關鍵：不論是否為 debug 模式，CI 環境失敗了就一定要印出錯誤
-                    console.print(f"[red]ERR[/red] {name} — {type(cause).__name__}: {cause}")
-                    sentry_sdk.capture_exception(e)
+                    # 避免 console 或 sentry 拋出二次例外導致外層潰散
+                    try:
+                        console.print(f"[red]ERR[/red] {name} — {type(cause).__name__}: {cause}")
+                        sentry_sdk.capture_exception(e)
+                    except Exception as inner_e:
+                        logging.error(f"Error handling failure for {name}: {inner_e}")
+                except BaseException as e:
+                    # 攔截 CancelledError / SystemExit 以外的嚴重例外
+                    if isinstance(e, (asyncio.CancelledError, KeyboardInterrupt)):
+                        raise
+                    failed.append(name)
+                    console.print(f"[red]CRITICAL ERR[/red] {name} — {type(e).__name__}: {e}")
                 finally:
+                    progress.update(overall, advance=1)
                     progress.remove_task(task_id)
-                    task_queue.task_done()
 
-        concurrency_limit = 4
-        workers = [asyncio.create_task(worker_loop()) for _ in range(concurrency_limit)]
-
-        await task_queue.join()
-        for w in workers:
-            w.cancel()
+        tasks = [run_single_runner(RunnerObj, info) for RunnerObj, info in runner_items]
+        await asyncio.gather(*tasks, return_exceptions=True)
 
     await generate_location(all_script_information)
     await generate_venue_meta(all_script_information)

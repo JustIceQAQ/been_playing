@@ -4,8 +4,8 @@ from typing import cast
 import bs4
 
 from app.galleries.cg1839.parse import CG1839Parse
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.storage.helper import Information
@@ -40,7 +40,7 @@ class CG1839Runner(RunnerInit):
         headers = generate_headers()
         all_items = []
 
-        async with HttpxAsyncClient(headers=headers, proxy=self.get_proxy().to_httpx()) as client:
+        async with HttpxAsyncClient(headers=headers, use_proxy=True) as client:
             response = await client.get("https://www.1839cg.com/")
             response.raise_for_status()
             await self.get_index_item(all_items, client, response)

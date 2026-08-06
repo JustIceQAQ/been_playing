@@ -1,7 +1,7 @@
 import pytest
 
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_headers
 
 
 @pytest.mark.asyncio

@@ -4,8 +4,7 @@ from typing import cast, TYPE_CHECKING
 from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.parse import {{cookiecutter.script_code}}Parse
 from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.information import {{cookiecutter.script_code}}Information
 from app.{{cookiecutter.target_sub_directory}}.{{cookiecutter.script_code_lower}}.social_media import {{cookiecutter.script_code}}SocialMedia
-from helpers.headers_helper import generate_headers
-from helpers.runner.helper import RunnerInit
+from helpers.crawler.headers_helper import generate_headers
 from helpers.utils_helper import month_3
 
 {% set venue_type = "" %}
@@ -21,10 +20,8 @@ from helpers.utils_helper import month_3
 
 {%  set crawler_fetch_type = "" %}
 {% if cookiecutter.crawler == "niquests" %}
-from helpers.crawler.niquests.helper import NiquestsAsyncSession
 {% set crawler_fetch_type = "NiquestsAsyncSession" %}
 {% elif cookiecutter.crawler == "httpx" %}
-from helpers.crawler.httpx.helper import HttpxAsyncClient
 {% set crawler_fetch_type = "HttpxAsyncClient" %}
 {% endif %}
 
@@ -36,19 +33,14 @@ from helpers.crawler.httpx.helper import HttpxAsyncClient
 {% set fetch_parsed_return_type = "" %}
 
 {% if cookiecutter.translation == "Selectolax" %}
-from selectolax.lexbor import LexborNode
-from helpers.translation.selectolax import SelectolaxTranslation
 {% set translation_type = "SelectolaxTranslation" %}
 {% set fetch_parsed_return_type = "LexborNode" %}
 
 {% elif cookiecutter.translation == "BeautifulSoup4" %}
-from bs4 import BeautifulSoup
-from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-    {% set translation_type = "BeautifulSoupTranslation" %}
+{% set translation_type = "BeautifulSoupTranslation" %}
     {% set fetch_parsed_return_type = "BeautifulSoup" %}
 {% elif cookiecutter.translation == "Json" %}
-from helpers.translation.json import JsonTranslation
-    {% set translation_type = "JsonTranslation" %}
+{% set translation_type = "JsonTranslation" %}
     {% set fetch_parsed_return_type = "dict" %}
 {% endif %}
 if TYPE_CHECKING:

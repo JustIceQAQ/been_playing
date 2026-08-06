@@ -4,8 +4,8 @@ from typing import cast
 import bs4
 
 from app.museums.chiayiam.parse import ChiayiAMParse
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.storage.helper import Information
@@ -40,7 +40,7 @@ class ChiayiAMRunner(RunnerInit):
             host="chiayiartmuseum.chiayi.gov.tw",
             referer="https://chiayiartmuseum.chiayi.gov.tw/News_Photo.aspx?n=13589&sms=14831",
         )
-        async with HttpxAsyncClient(headers=headers, proxy=self.get_proxy().to_httpx()) as client:
+        async with HttpxAsyncClient(headers=headers, use_proxy=True) as client:
             urls = [
                 "https://chiayiartmuseum.chiayi.gov.tw/News_Photo.aspx?n=13589&sms=14831",
                 "https://chiayiartmuseum.chiayi.gov.tw/News_Photo.aspx?n=13590&sms=14831",

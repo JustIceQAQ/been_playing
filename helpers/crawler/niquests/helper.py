@@ -2,6 +2,8 @@ import niquests
 from niquests.adapters import AsyncHTTPAdapter
 from urllib3.util import Retry
 
+from helpers.crawler.proxy_helper import get_proxy_adapter
+
 _RETRY_STRATEGY = Retry(
     read=3,
     connect=3,
@@ -15,14 +17,18 @@ _RETRY_STRATEGY = Retry(
 class NiquestsAsyncSession(niquests.AsyncSession):
     def __init__(
         self,
-        timeout: int | None | niquests.Timeout = 30,
         *args,
+        timeout: int | None | niquests.Timeout = None,
+        use_proxy: bool = False,
         **kwargs,
     ) -> None:
-        super().__init__(*args, timeout=timeout, **kwargs)
+        runtime_kwargs = {}
+        if use_proxy:
+            runtime_kwargs["proxies"] = get_proxy_adapter().to_niquests()
+
+        super().__init__(*args, timeout=timeout, **runtime_kwargs, **kwargs)
         self.passed_args = args
         self.passed_kwargs = kwargs
-
         adapter = AsyncHTTPAdapter(max_retries=_RETRY_STRATEGY)
         self.mount("https://", adapter)
         self.mount("http://", adapter)

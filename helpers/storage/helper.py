@@ -388,7 +388,7 @@ class ExecutionStatsItem(BaseModel):
 
 
 class ExecutionStatsData(BaseModel):
-    generated_at: str = Field(default_factory=lambda: get_date.now_format_to_ios)
+    generated_at: str = Field(default_factory=lambda: get_date.time_now_format_to_ios)
     runners: list[ExecutionStatsItem] = Field(default_factory=list)
     total_runners: int = 0
     total_execution_time: float = 0.0

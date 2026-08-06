@@ -6,8 +6,8 @@ from app.museums.twtc.information import TwTcInformation
 from app.museums.twtc.parse import TwTcParse
 from app.museums.twtc.schemas import TwTcResponse
 from app.museums.twtc.utils import get_next_element
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation

@@ -4,8 +4,8 @@ from typing import cast
 import bs4
 
 from app.museums.chiayimm.parse import ChiayiMMParse
+from helpers.crawler.headers_helper import generate_cookies, generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.storage.helper import Information
@@ -41,7 +41,7 @@ class ChiayiMMRunner(RunnerInit):
             host="museum.chiayi.gov.tw",
         )
         cookies = generate_cookies(need_asp_net_session_id=True)
-        async with HttpxAsyncClient(headers=headers) as client:
+        async with HttpxAsyncClient(headers=headers, use_proxy=True) as client:
             urls = [
                 "https://museum.chiayi.gov.tw/ExhibitionListC003310.aspx?appname=ExhibitionListC003310&SearchAdvanced=true",
                 "https://museum.chiayi.gov.tw/ExhibitionListC003310.aspx?appname=ExhibitionListC003320&SearchAdvanced=true",

@@ -4,8 +4,8 @@ from typing import cast
 import bs4
 
 from app.museums.kdmofa.parse import KdMoFaParse
+from helpers.crawler.headers_helper import generate_cookies, generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.storage.helper import Information
@@ -42,7 +42,7 @@ class KdMoFaRunner(RunnerInit):
             need_upgrade_insecure_requests=True,
         )
         cookies = generate_cookies(need_phpsessid=True)
-        async with HttpxAsyncClient(headers=headers, proxy=self.get_proxy().to_httpx()) as client:
+        async with HttpxAsyncClient(headers=headers, use_proxy=True) as client:
             response = await client.get(
                 "https://kdmofa.tnua.edu.tw/mod/exhibition/index.php",
                 cookies=cookies,

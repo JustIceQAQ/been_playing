@@ -3,10 +3,10 @@ import datetime
 from typing import cast
 
 from app.museums.pier2.parse import Pier2Parse
-from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_cookies, generate_headers
+from helpers.crawler.headers_helper import generate_cookies, generate_headers
+from helpers.crawler.sniff_error import safe_json
+from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.runner.helper import RunnerInit
-from helpers.sniff_error import safe_json
 from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.storage.helper import Information
 from helpers.symbol.taiwan import Taiwan
@@ -46,9 +46,9 @@ class Pier2Runner(RunnerInit):
             "type": "exhibition",
             "date": f"{datetime.date.today():%Y-%m-%d}",
         }
-        async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.post("https://pier2.org/api/eventList.php", params=params, cookies=cookies)
-        return safe_json(response, "Pier2")
+        async with WReqAsyncClient(headers=headers, use_proxies=True) as client:
+            response = await client.post("https://pier2.org/api/eventList.php", query=params, cookies=cookies)
+        return await safe_json(response, "Pier2")
 
     async def fetch_parsed(self):
         parsed = cast(dict, await super().fetch_parsed())

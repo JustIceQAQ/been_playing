@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING
 from helpers.image_hosting.base import ImageHostingBase
 
 if TYPE_CHECKING:
-    from helpers.proxy_helper import ProxyAdapter
+    from helpers.crawler.proxy_helper import ProxyAdapter
 
 
 class NoneImageHosting(ImageHostingBase):

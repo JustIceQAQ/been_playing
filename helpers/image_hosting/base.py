@@ -2,7 +2,7 @@ import abc
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from helpers.proxy_helper import ProxyAdapter
+    from helpers.crawler.proxy_helper import ProxyAdapter
 
 
 class ImageHostingBase(abc.ABC):

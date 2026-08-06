@@ -5,8 +5,8 @@ from selectolax.lexbor import LexborNode
 
 from app.galleries.nwac.information import NWACInformation
 from app.galleries.nwac.parse import NWACParse
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3

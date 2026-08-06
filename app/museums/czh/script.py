@@ -4,8 +4,8 @@ from typing import cast
 from selectolax.lexbor import LexborNode
 
 from app.museums.czh.parse import CZHParse
+from helpers.crawler.headers_helper import generate_cookies, generate_headers
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
-from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.storage.helper import Information
@@ -40,12 +40,12 @@ class CZHRunner(RunnerInit):
         cookies = generate_cookies(need_asp_net_session_id=True)
         async with NiquestsAsyncSession(
             headers=headers,
+            use_proxy=True,
         ) as client:
             response = await client.get(
                 "https://www.bocach.gov.tw/News.aspx",
                 cookies=cookies,
                 params={"n": "1397", "sms": "10815", "_Query": "36343dc0-af59-428f-93d4-5eb4382a3baf"},
-                proxies=self.get_proxy().to_niquests(),
             )
             response.raise_for_status()
         return response.text

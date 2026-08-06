@@ -12,7 +12,7 @@ from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.image_hosting.base import ImageHostingBase
 
 if TYPE_CHECKING:
-    from helpers.proxy_helper import ProxyAdapter
+    from helpers.crawler.proxy_helper import ProxyAdapter
 
 _console = Console()
 _MAX_FILE_SIZE = 10 * 1024 * 1024  # Cloudinary 免費方案上限 10MB

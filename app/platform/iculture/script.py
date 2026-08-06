@@ -2,8 +2,8 @@ import asyncio
 from typing import cast
 
 from app.platform.iculture.parse import ICultureParse
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.symbol.venue import VenueType
@@ -32,7 +32,7 @@ class ICultureRunner(RunnerInit):
             host="cloud.culture.tw",
         )
         params = {"page": 0, "size": 100, "sort": "id", "category": "6", "onSale": 0}
-        async with HttpxAsyncClient(headers=headers, proxy=self.get_proxy().to_httpx()) as client:
+        async with HttpxAsyncClient(headers=headers, use_proxy=True) as client:
             tasks = [
                 client.get(
                     "https://cloud.culture.tw/data/api/frontsite/inquiry/event",
