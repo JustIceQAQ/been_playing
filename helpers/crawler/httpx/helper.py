@@ -21,7 +21,7 @@ class HttpxAsyncClient:
     async def __aenter__(self) -> httpx.AsyncClient:
         runtime_kwargs = {}
         if self.use_proxy:
-            runtime_kwargs["proxies"] = get_proxy_adapter().to_httpx()
+            runtime_kwargs["proxy"] = get_proxy_adapter().to_httpx()
 
         self.client = httpx.AsyncClient(
             *self.args,
