@@ -7,8 +7,8 @@ from selectolax.lexbor import LexborNode
 from app.museums.aaaarchives.information import AAAArchivesInformation
 from app.museums.aaaarchives.parse import AAAArchivesParse
 from app.museums.aaaarchives.social_media import AAAArchivesSocialMedia
+from helpers.crawler.headers_helper import generate_cookies, generate_headers
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
-from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3

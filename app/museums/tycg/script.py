@@ -4,8 +4,8 @@ from typing import cast
 from selectolax.lexbor import LexborNode
 
 from app.museums.tycg.parse import TyCgParse
+from helpers.crawler.headers_helper import generate_cookies, generate_headers
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
-from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.storage.helper import Information
@@ -44,11 +44,10 @@ class TyCgRunner(RunnerInit):
                 "font-size-": "medium",
             },
         )
-        async with NiquestsAsyncSession(headers=headers, timeout=None) as client:
+        async with NiquestsAsyncSession(headers=headers, use_proxy=True) as client:
             response = await client.get(
                 "https://wem.tycg.gov.tw/News_Photo.aspx?n=9676&sms=13653",
                 cookies=cookies,
-                proxies=self.get_proxy().to_niquests(),
             )
         return response.text
 

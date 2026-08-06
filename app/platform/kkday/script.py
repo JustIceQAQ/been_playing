@@ -11,8 +11,8 @@ from wreq import Proxy
 from app.platform.kkday.parse import KKDayParse
 from app.platform.kkday.utils import parse_list
 from configs.settings import get_settings
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.wreq.helper import WReqAsyncClient
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.symbol.venue import VenueType

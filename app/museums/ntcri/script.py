@@ -2,8 +2,8 @@ import asyncio
 from typing import Any, cast
 
 from app.museums.ntcri.parse import NTCRIParse
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.storage.helper import Information

@@ -3,26 +3,16 @@ import asyncio
 import hashlib
 import json
 import time
-from functools import lru_cache
 from typing import Any
 
 from helpers.cache.base import CacheBase
 from helpers.image_hosting.base import ImageHostingBase
 from helpers.parse_helper import ParseInit
-from helpers.proxy_helper import ProxyAdapter
 from helpers.storage.helper import Exhibition, ExhibitionItem, Information
 from helpers.storage.social_media import SocialMedia
 from helpers.suffix_helper import suffix_helper
 from helpers.translation.base import TranslationInit
 from helpers.translation.json import JsonTranslation
-
-
-@lru_cache
-def _get_proxy():
-    from configs.settings import get_settings
-
-    runtime_settings = get_settings()
-    return ProxyAdapter(runtime_settings.PROXY_POOL)
 
 
 class RunnerInit(abc.ABC):
@@ -41,9 +31,6 @@ class RunnerInit(abc.ABC):
 
     def set_cache_expire(self) -> int | None:
         return
-
-    def get_proxy(self) -> ProxyAdapter:
-        return _get_proxy()
 
     @abc.abstractmethod
     def set_information(self) -> "Information":
@@ -134,7 +121,7 @@ class RunnerInit(abc.ABC):
                 item.figure = cache_figure_url
             else:
                 if item.figure:
-                    result = await self.image.upload(item.figure, proxies=self.get_proxy())
+                    result = await self.image.upload(item.figure)
                     if result:
                         await self.cache.aset(
                             hash_source_url,

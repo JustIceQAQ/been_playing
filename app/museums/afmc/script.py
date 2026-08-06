@@ -13,8 +13,8 @@ from app.museums.afmc.information import (
     AfmcHall6Information,
 )
 from app.museums.afmc.parse import AfmcParse
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3

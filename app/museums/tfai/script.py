@@ -6,8 +6,8 @@ from wreq import Proxy
 from app.museums.tfai.information import TFAIInformation
 from app.museums.tfai.parse import TFAIParse
 from configs.settings import get_settings
+from helpers.crawler.headers_helper import generate_cookies, generate_headers
 from helpers.crawler.wreq.helper import WReqAsyncClient
-from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.translation.json import JsonTranslation
 from helpers.utils_helper import month_3

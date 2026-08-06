@@ -6,8 +6,8 @@ from selectolax.lexbor import LexborNode
 from app.museums.fuzhong15.information import FuZhong15Information
 from app.museums.fuzhong15.parse import FuZhong15Parse
 from app.museums.fuzhong15.social_media import FuZhong15SocialMedia
+from helpers.crawler.headers_helper import generate_cookies, generate_headers
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
-from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3

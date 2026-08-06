@@ -6,8 +6,8 @@ from wreq import Client, Proxy
 
 from app.museums.khm.parse import KhmParse
 from configs.settings import get_settings
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.wreq.helper import WReqAsyncClient
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.storage.helper import Information

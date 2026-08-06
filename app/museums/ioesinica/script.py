@@ -4,8 +4,8 @@ from typing import cast
 from selectolax.lexbor import LexborNode
 
 from app.museums.ioesinica.parse import IOESinicaParse
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.storage.helper import Information
@@ -37,7 +37,7 @@ class IOESinicaRunner(RunnerInit):
 
     async def fetch_response(self):
         headers = generate_headers(host="www.ioe.sinica.edu.tw")
-        async with NiquestsAsyncSession(headers=headers) as client:
+        async with NiquestsAsyncSession(headers=headers, use_proxy=True) as client:
             params = {
                 "filter": "352FF7AE-29BF-4A29-B877-C871A001856C",
                 "Catefilter": "1DE93031-F3C8-4AA0-94D8-EAD4BABD62BA",
@@ -46,7 +46,6 @@ class IOESinicaRunner(RunnerInit):
             response = await client.get(
                 "https://www.ioe.sinica.edu.tw/ExhibitionCurrent/List",
                 params=params,
-                proxies=self.get_proxy().to_niquests(),
             )
         return response.text
 

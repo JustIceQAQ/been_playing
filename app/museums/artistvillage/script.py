@@ -2,8 +2,8 @@ import asyncio
 from typing import cast
 
 from app.museums.artistvillage.parse import ArtistVillageParse
+from helpers.crawler.headers_helper import generate_cookies, generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.coordinate import Coordinate
 from helpers.storage.helper import ExhibitionItem, Information

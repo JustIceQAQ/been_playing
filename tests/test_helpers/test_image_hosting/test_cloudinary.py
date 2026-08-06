@@ -1,8 +1,8 @@
 import pytest
 
+from helpers.crawler.proxy_helper import get_proxy_adapter
 from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.image_hosting.cloudinary.helper import get_initialized_cloudinary_image_hosting
-from helpers.proxy_helper import _get_proxy
 
 
 def test_import_class():
@@ -63,7 +63,7 @@ async def test_upload_from_url(initialized_cloudinary, image_but_not_exts, publi
 
 @pytest.mark.asyncio
 async def test_upload_from_file(initialized_cloudinary, image_but_not_exts, public_id):
-    proxies = _get_proxy()
+    proxies = get_proxy_adapter()
     image_url = image_but_not_exts
     async with WReqAsyncClient(proxies=proxies.to_wreq()) as client:
         response = await client.get(image_url)
@@ -80,7 +80,7 @@ async def test_upload_from_file(initialized_cloudinary, image_but_not_exts, publ
 
 @pytest.mark.asyncio
 async def test_upload_from_huge_file(initialized_cloudinary, huge_image, public_id):
-    proxies = _get_proxy()
+    proxies = get_proxy_adapter()
     image_url = huge_image
 
     await initialized_cloudinary.upload(

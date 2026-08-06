@@ -6,8 +6,8 @@ from typing import cast
 import bs4
 
 from app.platform.artemperor.parse import ArtEmperorParse
+from helpers.crawler.headers_helper import generate_cookies, generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.symbol.venue import VenueType

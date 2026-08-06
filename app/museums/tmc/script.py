@@ -9,8 +9,8 @@ import httpx2
 
 from app.museums.tmc.information import TmcInformation
 from app.museums.tmc.parse import TmcParse
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation

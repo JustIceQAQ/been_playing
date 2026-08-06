@@ -6,8 +6,8 @@ from selectolax.lexbor import LexborNode
 from app.museums.sshm.information import SSHMInformation
 from app.museums.sshm.parse import SSHMParse
 from app.museums.sshm.social_media import SSHMSocialMedia
+from helpers.crawler.headers_helper import generate_cookies, generate_headers
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
-from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.translation.selectolax import SelectolaxTranslation
 from helpers.utils_helper import month_3

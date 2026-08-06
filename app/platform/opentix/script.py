@@ -2,8 +2,8 @@ import asyncio
 from typing import cast
 
 from app.platform.opentix.parse import OpenTixParse
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.symbol.venue import VenueType

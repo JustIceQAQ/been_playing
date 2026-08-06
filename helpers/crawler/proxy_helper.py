@@ -21,7 +21,7 @@ class ProxyAdapter:
 
 
 @lru_cache
-def _get_proxy():
+def get_proxy_adapter() -> ProxyAdapter:
     from configs.settings import get_settings
 
     runtime_settings = get_settings()

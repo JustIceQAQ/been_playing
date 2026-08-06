@@ -6,8 +6,8 @@ import bs4
 from app.museums.ntpc.information import NTPCInformation
 from app.museums.ntpc.parse import NTPCParse
 from app.museums.ntpc.social_media import NTPCSocialMedia
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import ExhibitionItem, Information
 from helpers.translation.beautiful_soup import BeautifulSoupTranslation

@@ -7,8 +7,8 @@ from dateutil.relativedelta import relativedelta
 from app.museums.ntsec.format.address import get_page_address
 from app.museums.ntsec.format.date import get_page_date
 from app.museums.ntsec.parse import NtSecParse
+from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
-from helpers.headers_helper import generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.storage.helper import ExhibitionItem, Information

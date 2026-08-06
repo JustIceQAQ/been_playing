@@ -5,8 +5,8 @@ from typing import cast
 from selectolax.lexbor import LexborNode
 
 from app.museums.historysinica.parse import HistorySinicaParse
+from helpers.crawler.headers_helper import generate_cookies, generate_headers
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
-from helpers.headers_helper import generate_cookies, generate_headers
 from helpers.runner.helper import RunnerInit
 from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.storage.helper import Information
@@ -40,13 +40,10 @@ class HistorySinicaRunner(RunnerInit):
     async def fetch_response(self):
         headers = generate_headers(host="museum.sinica.edu.tw")
         cookies = generate_cookies(other_cookies={"__Secure-PHPSESSID": secrets.token_hex(13)})
-        async with NiquestsAsyncSession(
-            headers=headers,
-        ) as client:
+        async with NiquestsAsyncSession(headers=headers, use_proxy=True) as client:
             response = await client.get(
                 "https://museum.sinica.edu.tw/exhibitions-events/",
                 cookies=cookies,
-                proxies=self.get_proxy().to_niquests(),
             )
         return response.text
 
