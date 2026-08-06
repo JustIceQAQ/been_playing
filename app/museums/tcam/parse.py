@@ -23,7 +23,11 @@ class TcamParse(ParseInit):
         location = self.item.get("location")
         if location is None:
             return None
-        return location.split("｜")[1].strip()
+        if "｜" in location:
+            return location.split("｜")[1].strip()
+        if " " in location:
+            return location.split(" ")[1].strip()
+        return location.strip()
 
     def get_figure(self, *args, **kwargs) -> str | None:
         image = self.item.get("image")
