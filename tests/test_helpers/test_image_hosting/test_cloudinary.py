@@ -2,7 +2,7 @@ import pytest
 
 from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.image_hosting.cloudinary.helper import get_initialized_cloudinary_image_hosting
-from helpers.runner.helper import _get_proxy
+from helpers.proxy_helper import _get_proxy
 
 
 def test_import_class():
