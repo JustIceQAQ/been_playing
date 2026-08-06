@@ -41,7 +41,7 @@ class ChiayiMMRunner(RunnerInit):
             host="museum.chiayi.gov.tw",
         )
         cookies = generate_cookies(need_asp_net_session_id=True)
-        async with HttpxAsyncClient(headers=headers) as client:
+        async with HttpxAsyncClient(headers=headers, use_proxy=True) as client:
             urls = [
                 "https://museum.chiayi.gov.tw/ExhibitionListC003310.aspx?appname=ExhibitionListC003310&SearchAdvanced=true",
                 "https://museum.chiayi.gov.tw/ExhibitionListC003310.aspx?appname=ExhibitionListC003320&SearchAdvanced=true",
