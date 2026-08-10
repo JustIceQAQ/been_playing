@@ -4,6 +4,7 @@ from typing import cast
 from app.platform.iculture.parse import ICultureParse
 from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
+from helpers.crawler.sniff_error import safe_json
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
 from helpers.symbol.venue import VenueType
@@ -41,7 +42,8 @@ class ICultureRunner(RunnerInit):
                 for city_name in ["臺北市", "新北市"]
             ]
             responses = await asyncio.gather(*tasks)
-        return [response.json() for response in responses]
+
+        return await asyncio.gather(*[safe_json(response, "iCulture") for response in responses])
 
     async def fetch_parsed(self):
         parsed = cast(list[dict], await super().fetch_parsed())
