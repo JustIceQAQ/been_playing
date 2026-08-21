@@ -49,7 +49,7 @@ class ChCsEcRunner(RunnerInit):
         parsed = cast(bs4.BeautifulSoup, await super().fetch_parsed())
         items = parsed.find("div", {"class": "group-list message"})
         if items is None:
-            return None
+            return []
         return items.find_all("a", {"class": "div-activity"})
 
 
