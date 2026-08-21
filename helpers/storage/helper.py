@@ -3,6 +3,7 @@ import pathlib
 import re
 import uuid
 from decimal import Decimal
+from enum import IntEnum
 from pathlib import Path
 
 import aiofiles
@@ -47,14 +48,74 @@ def hex_uuid5(value: str) -> str:
     return uuid.uuid5(uuid.UUID("00000000-0000-0000-0000-000000000000"), value).hex
 
 
+class DateType(IntEnum):
+    RANGE = 0  # 有開始與結束日期（範圍型）
+    SINGLE = 1  # 只有單一天日期
+    UNKNOWN = 2  # 無法判斷日期（None 或其他不明格式）
+    PERMANENT = 3  # 開始日期為永久展（只有起始無結束）
+
+
+class DateInfo(BaseModel):
+    start: datetime.date | None = Field(default=None, description="開始日期")
+    end: datetime.date | None = Field(default=None, description="結束日期")
+    type: DateType = Field(default=DateType.UNKNOWN, description="展期狀態")
+
+    @classmethod
+    def from_str(cls, date_str: str | None) -> "DateInfo":
+        """工廠方法：傳入原始字串，自動解析並回傳 DateInfo"""
+        if not date_str:
+            return cls(type=DateType.UNKNOWN)
+
+        date_str = date_str.strip()
+
+        m_range = re.match(r"^(\d{4}-\d{2}-\d{2})\s*~\s*(\d{4}-\d{2}-\d{2})$", date_str)
+        if m_range:
+            try:
+                s = datetime.date.fromisoformat(m_range.group(1))
+                e = datetime.date.fromisoformat(m_range.group(2))
+                return cls(start=s, end=e, type=DateType.RANGE)
+            except ValueError:
+                return cls(type=DateType.UNKNOWN)
+
+        # 2. 永久展型：2026-08-21 ~
+        m_perm = re.match(r"^(\d{4}-\d{2}-\d{2})\s*~\s*$", date_str)
+        if m_perm:
+            try:
+                s = datetime.date.fromisoformat(m_perm.group(1))
+                return cls(start=s, end=None, type=DateType.PERMANENT)
+            except ValueError:
+                return cls(type=DateType.UNKNOWN)
+
+        # 3. 單日型：2026-08-21
+        m_single = re.match(r"^(\d{4}-\d{2}-\d{2})$", date_str)
+        if m_single:
+            try:
+                s = datetime.date.fromisoformat(m_single.group(1))
+                return cls(start=s, end=s, type=DateType.SINGLE)
+            except ValueError:
+                return cls(type=DateType.UNKNOWN)
+
+        return cls(type=DateType.UNKNOWN)
+
+
 class ExhibitionItem(BaseModel):
     title: str | None = None
     date: str | None = None
+    date_info: DateInfo = Field(default_factory=DateInfo)
     address: str | None = None
     figure: str | None = None
     source_url: str
     tags: list[str] | None = Field(default_factory=list)
     UUID: str | None = None
+
+    @model_validator(mode="before")
+    @classmethod
+    def parse_date_info(cls, data: dict) -> dict:
+        if isinstance(data, dict):
+            raw_date = data.get("date")
+            if "date_info" not in data or data["date_info"] is None:
+                data["date_info"] = DateInfo.from_str(raw_date)
+        return data
 
     @model_validator(mode="after")
     def generate_uuid(cls, values):
@@ -121,36 +182,33 @@ class ExhibitionItem(BaseModel):
         )
 
     def _sort_key(self) -> tuple:
-        today = get_date.time_now.replace(hour=0, minute=0, second=0, microsecond=0)
-        MAX_DATE = datetime.datetime(9999, 12, 31, tzinfo=get_date.timezone)
+        today = datetime.date.today()
+        MAX_DATE = datetime.date(9999, 12, 31)
+        info = self.date_info
 
-        start = self.extract_start_date()
-        end = self.extract_end_date()
-        date_type = self.extract_date_type()
+        # 永久展
+        if info.type == DateType.PERMANENT:
+            return (0, 1, info.start or MAX_DATE)
 
-        # 進行中（無結束日期）
-        if date_type == 3:
-            return (0, 1, start or MAX_DATE)
-
-        # 進行中 / 尚未開始 / 已結束（有完整範圍）
-        if date_type == 0 and start and end:
-            if start <= today <= end:
-                return (0, 0, end)  # 進行中，以結束日期 asc 排序
-            elif start > today:
-                return (1, 0, start)  # 尚未開始（範圍型），以開始日期 asc 排序
+        # 範圍展
+        if info.type == DateType.RANGE and info.start and info.end:
+            if info.start <= today <= info.end:
+                return 0, 0, info.end
+            elif info.start > today:
+                return 1, 0, info.start
             else:
-                return (3, 0, end)  # 已結束
+                return (3, 0, info.end)
 
-        # 尚未開始 / 已結束（單一日期）
-        if date_type == 1 and start:
-            if start > today:
-                return (1, 1, start)  # 尚未開始（單一日期）
-            elif today > start:
-                return (3, 1, start)  # 已結束（單一日期）
+        # 單日展
+        if info.type == DateType.SINGLE and info.start:
+            if info.start > today:
+                return (1, 1, info.start)
+            elif info.start < today:
+                return (3, 1, info.start)
             else:
-                return (0, 1, MAX_DATE)  # 今天即為展期
+                return (0, 1, MAX_DATE)
 
-        # 無法判斷
+        # 未知或解析失敗
         return (2, self.count_none_fields(), MAX_DATE)
 
     def __lt__(self, other: "ExhibitionItem") -> bool:
@@ -375,7 +433,6 @@ class LastWeekUpdate:
 
 
 last_week_update = LastWeekUpdate()
-
 
 EXECUTION_STATS_FILE_PATH = Path(__file__).parent.parent.parent / "data" / "v2" / "_EXECUTION_STATS.json"
 
