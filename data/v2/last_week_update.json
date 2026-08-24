@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24T00:52:15.262910+08:00",
+  "updated": "2026-08-24T10:08:50.287700+08:00",
   "items": [
     {
       "title": "「相繫之縷……」魯伊・米蓋爾・萊陶・費雷拉",
@@ -238,6 +238,681 @@
       "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c5c7e237-cb4a-4c43-af9e-9a37131613cb",
       "tags": null,
       "UUID": "14680a5b6f0d550eb04910c76a01ee22"
+    },
+    {
+      "title": "POP! POP! POP! 流行音樂互動展 - 高雄流行音樂中心",
+      "date": "2026-08-24 ~ 2027-02-19",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2027-02-19",
+        "type": 0
+      },
+      "address": "高雄",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104047/rclpf25ykj1jlqgt797a.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/87496-pop-pop-pop-an-interactive-journey/",
+      "tags": null,
+      "UUID": "dcfe5b9b69a35524b492e090c7b08d96"
+    },
+    {
+      "title": "動物王國大探險展-比薩大學自然史博物館",
+      "date": "2026-08-24 ~ 2026-10-11",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-10-11",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104046/p6z13xsdmbagjffrhkac.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/213304-animal-kingdom-adventure-exhibition-natural-history-museum-of-the-university-of-pisa/",
+      "tags": null,
+      "UUID": "2ceb6a6aae05525f93669d580a2284e6"
+    },
+    {
+      "title": "獵人實境解謎遊戲－貪婪之島篇 高雄站",
+      "date": "2026-08-24 ~ 2026-09-06",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-09-06",
+        "type": 0
+      },
+      "address": "高雄",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104045/hl068uxt4gcje5cvztan.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/203906-hunter-x-hunter-game-in-kaohsiung/",
+      "tags": null,
+      "UUID": "e02a80d9a2895c27978ceb02253e5415"
+    },
+    {
+      "title": "慶祝佛光山「傳燈六十 百年仰望」紀念特展(1967-2026)",
+      "date": "2026-08-08 ~ 2026-09-27",
+      "date_info": {
+        "start": "2026-08-08",
+        "end": "2026-09-27",
+        "type": 0
+      },
+      "address": "佛光緣美術館台北館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1783915660/ppsp0zgvoraw97zwncda.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=ca29ebb5-7192-40f1-9fcd-7775f58acfaf&PageIndex=3&PageType=1",
+      "tags": null,
+      "UUID": "d246c33493165bd7afc9cc6b8e9d81e2"
+    },
+    {
+      "title": "台北｜大稻埕葉晋發商號｜展覽導覽",
+      "date": "2026-08-26 ~ 2026-12-31",
+      "date_info": {
+        "start": "2026-08-26",
+        "end": "2026-12-31",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104047/qttgqqm9koxsimwso37c.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/148490-taipei-dadaocheng-ye-jinfa-store-exhibition-tour/",
+      "tags": null,
+      "UUID": "6dc97f15ef6a5c4a9d3439f4632fce19"
+    },
+    {
+      "title": "《三原色 Primary Colors》2026愛上藝廊親子美學展",
+      "date": "2026-07-04 ~ 2026-08-29",
+      "date_info": {
+        "start": "2026-07-04",
+        "end": "2026-08-29",
+        "type": 0
+      },
+      "address": "iart 愛上藝廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787191027/hdmyqwnn525qlcwsc4uz.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=07bcfb88-5d9d-4533-ad03-5ebb7ba4a5b7&PageIndex=6&PageType=1",
+      "tags": null,
+      "UUID": "de837ebd2d8e5e90915f42f4a94faec2"
+    },
+    {
+      "title": "屏東｜蠟筆小新《玩轉！時空大冒險》互動體驗展",
+      "date": "2026-08-24 ~ 2026-10-11",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-10-11",
+        "type": 0
+      },
+      "address": "屏東",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104046/dvgjl8tdbiwcxkkbp6yk.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/213557-crayon-shin-chan-play-on-the-great-time-space-adventure-exhibition/",
+      "tags": null,
+      "UUID": "979c30cddaa4568a84bc80b93fa5e6e0"
+    },
+    {
+      "title": "新藝境 慕夏百年經典特展",
+      "date": "2026-06-26 ~ 2026-09-30",
+      "date_info": {
+        "start": "2026-06-26",
+        "end": "2026-09-30",
+        "type": 0
+      },
+      "address": "臺南國家美術館 二樓 E-I展廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787537002/zdcrwqnsqne9hwayklcc.webp",
+      "source_url": "https://tickets.udnfunlife.com/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1AS0TF9",
+      "tags": null,
+      "UUID": "fe49260486b95fb8a65cefd71e01ef3c"
+    },
+    {
+      "title": "伊藤潤二展 誘惑 JUNJI ITO EXHIBITION: ENCHANTMENT",
+      "date": "2026-08-24 ~ 2026-09-28",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-09-28",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104046/yjkq62xz6tlq963fjrmq.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/208839-junji-ito-exhibition-enchantment/",
+      "tags": null,
+      "UUID": "01cfa1f04cc952c3a1857a2c48bb0af6"
+    },
+    {
+      "title": "台北XR沉浸玩家｜消失的法老 古夫金字塔 VR 沉浸體驗｜松山文創園區",
+      "date": "2026-08-24 ~ 2026-09-28",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-09-28",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104046/bqhhyopmkocmhfswydmn.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/205368-immersive-journey-in-ancient-egypt/",
+      "tags": null,
+      "UUID": "f597f7b9dbb357cf83d5d36e4d533b50"
+    },
+    {
+      "title": "朴劭妍創作個展",
+      "date": "2026-08-08 ~ 2026-08-29",
+      "date_info": {
+        "start": "2026-08-08",
+        "end": "2026-08-29",
+        "type": 0
+      },
+      "address": "99°藝術中心",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1784803060/fnwodhooiegaf2cugu4h.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=c9dc47f9-277a-41b5-8d90-8d0ef9c97230&PageIndex=2&PageType=1",
+      "tags": null,
+      "UUID": "4cbde0a10fc25a81a7ef6b2352d03d03"
+    },
+    {
+      "title": "勤美術館2026夏季展《美術館便利商店計畫》",
+      "date": "2026-08-25 ~ 2026-10-25",
+      "date_info": {
+        "start": "2026-08-25",
+        "end": "2026-10-25",
+        "type": 0
+      },
+      "address": "台中",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1786426757/qwsygloiaez8thogmkkz.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/228784-2026-summer-exhibition-museum-convenience-store-project-at-qin-art-museum/",
+      "tags": null,
+      "UUID": "813ae6b49f575c24916613da441b803e"
+    },
+    {
+      "title": "《圓潤的魔法波特羅特展》｜中正紀念堂",
+      "date": "2026-08-24 ~ 2026-10-11",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-10-11",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787104658/dkb1dlhsagr2rynjbf2l.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/208522-rounded-magic-botero-exhibition/",
+      "tags": null,
+      "UUID": "d61d8bb5f4d35cddafbb90333e92a410"
+    },
+    {
+      "title": "波隆那世界插畫大獎展",
+      "date": "2026-08-24 ~ 2026-09-28",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-09-28",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104046/kdcyrwsvje96rwncqqkm.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/114371-bologna-illustration-exhibition/",
+      "tags": null,
+      "UUID": "303dd1348f2e5b5590bd22fb23bccc50"
+    },
+    {
+      "title": "《 在 枝 葉 之 下 Beneath The Leaves 》",
+      "date": "2026-08-01 ~ 2026-10-17",
+      "date_info": {
+        "start": "2026-08-01",
+        "end": "2026-10-17",
+        "type": 0
+      },
+      "address": "THE 201 ART 順天建築 • 文化 • 藝術中心",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787537017/u3s5niv4kctnbvqhjhbi.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=b202657f-4c2b-4757-909d-d08b2bb275e1&PageIndex=4&PageType=1",
+      "tags": null,
+      "UUID": "85e05117eb945dfc84ce3709d9eb4a75"
+    },
+    {
+      "title": "2026福隆國際沙雕藝術季門票",
+      "date": "2026-08-24 ~ 2026-10-26",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-10-26",
+        "type": 0
+      },
+      "address": "新北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104047/qjdatut5sydzgb0bke16.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/116166-2026-fulong-international-sand-sculpture-art-festival/",
+      "tags": null,
+      "UUID": "e9c91c5ac1d15b56b72939889054a741"
+    },
+    {
+      "title": "未安之地 Unsettled Territories",
+      "date": "2026-07-03 ~ 2026-09-27",
+      "date_info": {
+        "start": "2026-07-03",
+        "end": "2026-09-27",
+        "type": 0
+      },
+      "address": "關渡美術館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1786613864/xqghlxhron3wwbrzcjet.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=ad7d3ba8-d168-47e0-9557-fad3271d7048&PageIndex=5&PageType=1",
+      "tags": null,
+      "UUID": "01387a1f14a8581e8aea9bb9933cf79f"
+    },
+    {
+      "title": "Hello Kitty展 -當我改變時，Kitty也跟著蛻變- 【高雄場】",
+      "date": "2026-08-24 ~ 2026-08-30",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-08-30",
+        "type": 0
+      },
+      "address": "高雄",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104044/rnrthdopeuhermjvvzv6.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/216111-hello-kitty-exhibition-as-i-change-kitty-transforms-too-kaohsiung/",
+      "tags": null,
+      "UUID": "bfb623527cd256d8bb0ca35a91516aa5"
+    },
+    {
+      "title": "Baby Shark 守護海洋大冒險｜高雄駁二P2倉庫",
+      "date": "2026-08-24 ~ 2026-09-06",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-09-06",
+        "type": 0
+      },
+      "address": "高雄",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782643069/ykyegn2tiejl8drcuqpe.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/211348-baby-shark-save-the-ocean-adventure-kaohsiung-pier-2-warehouse-p2/",
+      "tags": null,
+      "UUID": "0f4d4088fb925adab9ebb18eb946eb82"
+    },
+    {
+      "title": "恐龍大復活關渡探險樂園｜關渡碼頭貨櫃市集",
+      "date": "2026-08-24 ~ 2027-02-21",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2027-02-21",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104047/mlnryzbdp4pzb7rca1mb.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/188369-dinosaur-resurrection-guandu-adventure-park/",
+      "tags": null,
+      "UUID": "7ec027448b9c5bc8be5440d481897cbd"
+    },
+    {
+      "title": "《全島火箭人：誰能登月？》沉浸式體驗競賽",
+      "date": "2026-08-24 ~ 2026-12-31",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-12-31",
+        "type": 0
+      },
+      "address": "嘉義市",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104047/n2nj5vpekkohefwuqgk7.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/209810-island-rocketman-the-race-to-the-moon/",
+      "tags": null,
+      "UUID": "585b42ddd9cd5e5492f11fce274ff96b"
+    },
+    {
+      "title": "OSAMU GOODS 50週年展：原田治的 OSAMU GOODS STYLE",
+      "date": "2026-08-24 ~ 2026-09-13",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-09-13",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104045/uk73wc8t7mdhl6r0yxml.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/209715-osamu-goods-50-years-exhibition/",
+      "tags": null,
+      "UUID": "3995d87b1af75020bf31a0d61232503f"
+    },
+    {
+      "title": "世界古文明沉浸體驗展 高雄站",
+      "date": "2026-08-24 ~ 2026-09-08",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-09-08",
+        "type": 0
+      },
+      "address": "高雄",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104046/mqbxgw9ntd3bhfs9e9jt.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/187273-world-ancient-civilization-immersive-experience-exhibition/",
+      "tags": null,
+      "UUID": "a26c80aa65225561b55389c9e354d86e"
+    },
+    {
+      "title": "《 page. 》李秉璈 個展 LI Bing-Ao Solo Exhibition",
+      "date": "2026-09-04 ~ 2026-10-24",
+      "date_info": {
+        "start": "2026-09-04",
+        "end": "2026-10-24",
+        "type": 0
+      },
+      "address": "當代一畫廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787537013/u51wpzjslk2kjyhjo63e.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=9aa1336a-1f8f-4f3c-8bc6-b380726db379&PageIndex=1&PageType=1",
+      "tags": null,
+      "UUID": "41905e93eae459b3bf079404a292839b"
+    },
+    {
+      "title": "古典光影大師：林布蘭到哥雅-托雷多美術館珍藏展",
+      "date": "2026-08-24 ~ 2026-10-19",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-10-19",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104046/z6pqmjafgfmxupxx8mla.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/214765-masters-of-light-rembrandt-to-goya-toledo-museum-of-art/",
+      "tags": null,
+      "UUID": "83eaf3094a5251759d7ab0c07efe14d8"
+    },
+    {
+      "title": "《2026 NTSO華山論樂》場次四：車炎江主講「舞曲詠唱調：探索歌劇音樂世界的獨特存在」",
+      "date": "2026-08-27 ~ 2026-08-27",
+      "date_info": {
+        "start": "2026-08-27",
+        "end": "2026-08-27",
+        "type": 0
+      },
+      "address": "拱廳, 華山1914文創園區",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787537083/g98oyy0c1mllxkcezhkz.webp",
+      "source_url": "https://www.huashan1914.com/w/umaytheater/performance_26082409312699004",
+      "tags": [
+        "講座",
+        "表演藝術"
+      ],
+      "UUID": "f373895925d55bc4b9c1553050d56ec9"
+    },
+    {
+      "title": "忠泰美術館當期展覽《藤本壯介建築展：原初．未來．森》",
+      "date": "2026-08-25 ~ 2027-01-03",
+      "date_info": {
+        "start": "2026-08-25",
+        "end": "2027-01-03",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1785152822/vnmjvgemoormocf7jvxy.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/223624-jut-art-museum-current-exhibition-the-architecture-of-sou-fujimoto-primordial-future-forest/",
+      "tags": null,
+      "UUID": "faa4a6221ecb5437b0e740ab4f9cc027"
+    },
+    {
+      "title": "2026匠心傳承工藝聯展—師徒之間：技藝流轉與新生",
+      "date": "2026-07-23 ~ 2026-08-23",
+      "date_info": {
+        "start": "2026-07-23",
+        "end": "2026-08-23",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1784024180/d992vlsl52lrb97vcwvy.webp",
+      "source_url": "https://event.culture.tw/mocweb/reg/CHCSEC/Detail.init.ctr?actId=60396",
+      "tags": null,
+      "UUID": "ba4240aa1a055b68b21cbf23eb43ebd1"
+    },
+    {
+      "title": "「瞬時之眼」桃園機場文化櫥窗特展",
+      "date": "2026-09-02 ~ 2027-02-27",
+      "date_info": {
+        "start": "2026-09-02",
+        "end": "2027-02-27",
+        "type": 0
+      },
+      "address": "桃園國際機場第二航廈 入境區二樓疫檢區及驗照區",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787537181/tkrgd4nxpto29nopc8cy.webp",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTMOFA/Detail.init.ctr?actId=60142",
+      "tags": null,
+      "UUID": "0b10a1a6ebb45fb69b06b0c25b990374"
+    },
+    {
+      "title": "高雄市立美術館門票",
+      "date": "2026-08-24 ~ 2027-02-19",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2027-02-19",
+        "type": 0
+      },
+      "address": "高雄",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104047/fdibn86obbmic5jk9roc.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/117472-kaohsiung-museum-of-fine-art-ticket/",
+      "tags": null,
+      "UUID": "4f7edc3930795ad6b6e9810a7373b06e"
+    },
+    {
+      "title": "九井諒子展 及 《迷宮飯》迷宮探索展 台灣站",
+      "date": "2026-08-24 ~ 2026-09-28",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-09-28",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1781553585/tt6rukusp2gypzolispr.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/208029-ryoko-kui-exhibition-and-delicious-in-dungeon-labyrinth-exploration-exhibition-in-taiwan/",
+      "tags": null,
+      "UUID": "604541dead8a5fcda98082d0d147002c"
+    },
+    {
+      "title": "唱 我們的歌 流行音樂故事展｜門票｜臺北流行音樂中心",
+      "date": "2026-08-29 ~ 2027-02-19",
+      "date_info": {
+        "start": "2026-08-29",
+        "end": "2027-02-19",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104047/ros23tnkdrq6bqi6ekhy.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/70429-music-island-stories-pop-music-in-taiwan-taipei/",
+      "tags": null,
+      "UUID": "fee0520506055bceb9f084d90060b098"
+    },
+    {
+      "title": "智慧之竹-湯明煦/Bamboo Wisdom-Tamás SZVET",
+      "date": "2026-08-13 ~ 2026-09-05",
+      "date_info": {
+        "start": "2026-08-13",
+        "end": "2026-09-05",
+        "type": 0
+      },
+      "address": "藝站 One Station",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1786026433/nitvpjd9rjvua45tyjm3.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=5e6f3371-c4b7-4abb-84ca-27f967bbad76&PageIndex=2&PageType=1",
+      "tags": null,
+      "UUID": "8d222b0c1514541990a9f855b47df46b"
+    },
+    {
+      "title": "A World of Wonder 奇想世界：Anna & Daniel 特展",
+      "date": "2026-08-24 ~ 2026-09-28",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-09-28",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104046/u6mzegvsbltfsblkxs0l.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/209115-a-world-of-wonder-world-anna-daniel-exhibition/",
+      "tags": null,
+      "UUID": "de8ff8413f0f59808918b0988c2bb69b"
+    },
+    {
+      "title": "【Into the Fern Glow｜拜訪暉蕨之森】",
+      "date": "2026-08-15 ~ 2026-10-03",
+      "date_info": {
+        "start": "2026-08-15",
+        "end": "2026-10-03",
+        "type": 0
+      },
+      "address": "大河美術 RIVER ART GALLERY",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787331476/eank5extlhrsvsnf4xbr.webp",
+      "source_url": "https://artemperor.tw/tidbits/20336",
+      "tags": null,
+      "UUID": "900b98c3ad4b50619e3eee780cba9bc9"
+    },
+    {
+      "title": "慶祝佛光山「傳燈六十 百年仰望」紀念特展(1967-2026)",
+      "date": "2026-08-08 ~ 2026-09-27",
+      "date_info": {
+        "start": "2026-08-08",
+        "end": "2026-09-27",
+        "type": 0
+      },
+      "address": "佛光緣美術館台北館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787450855/scdphih7jsmyaspoybqq.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=2f1fb99c-1a07-4eeb-bd95-4a6664e3e6a7&PageIndex=3&PageType=1",
+      "tags": null,
+      "UUID": "70393df75aa051c5ba049dfe2bc5ed44"
+    },
+    {
+      "title": "小梅的奇幻冒險：尋回心意之書",
+      "date": "2026-08-28 ~ 2026-08-30",
+      "date_info": {
+        "start": "2026-08-28",
+        "end": "2026-08-30",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104044/qnbiup1h3cyag6ndyugm.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/184829-meis-fantastic-adventure-the-quest-for-the-book-of-heartfelt-wishes/",
+      "tags": null,
+      "UUID": "4aa68b640a9e57b88f30641a98d6027b"
+    },
+    {
+      "title": "新世紀福音戰士展：線",
+      "date": "2026-08-24 ~ 2026-10-04",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-10-04",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1784137409/b0v5s2asbktnjlcxmvjw.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/85151-lines-of-evangelion/",
+      "tags": null,
+      "UUID": "3f3315b8623355e2810beb93806f7f46"
+    },
+    {
+      "title": "藥師少女的獨語展 高雄站",
+      "date": "2026-08-24 ~ 2026-09-13",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-09-13",
+        "type": 0
+      },
+      "address": "高雄",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104045/cr8efuzeqml6tr6xlk3d.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/218345-the-apothecary-diaries-exhibition/",
+      "tags": null,
+      "UUID": "1dc6c96a217f57f6962890abf1feb91a"
+    },
+    {
+      "title": "新藝境：慕夏百年經典特展",
+      "date": "2026-08-24 ~ 2026-09-30",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-09-30",
+        "type": 0
+      },
+      "address": "台南",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1779907044/wum1wl1sy1wczndcuo4v.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/213408-new-art-horizons-mucha-centennial-classic-exhibition/",
+      "tags": null,
+      "UUID": "7d6ee72649ed5f10bf9aa55b50401dc3"
+    },
+    {
+      "title": "新北市美術館 托馬斯．薩拉切諾：共織宇宙",
+      "date": "2026-08-24 ~ 2026-09-06",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-09-06",
+        "type": 0
+      },
+      "address": "新北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1781265408/vql1tcptu5sbijxm0abw.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/219331-tomas-saraceno-interwoven/",
+      "tags": null,
+      "UUID": "cc9935031f345e8d8c83932209b83f54"
+    },
+    {
+      "title": "高雄駁二｜還是先躺一下再說？Lay Down【門票】",
+      "date": "2026-08-24 ~ 2027-03-01",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2027-03-01",
+        "type": 0
+      },
+      "address": "高雄",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104047/fsexbwx78drxrm7pt5zv.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/217835-kaohsiung-pier-2-lay-down-ticket/",
+      "tags": null,
+      "UUID": "831c22b6df4f5627826c70cb346e9dbc"
+    },
+    {
+      "title": "星球樂園 —全境式沈浸互動體驗遊樂園",
+      "date": "2026-08-28 ~ 2026-08-30",
+      "date_info": {
+        "start": "2026-08-28",
+        "end": "2026-08-30",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.klook.com/image/upload/星球樂園_fpwydp.png",
+      "source_url": "https://www.klook.com/zh-TW/activity/127363-planet-park-immersive-interactive-playground/",
+      "tags": null,
+      "UUID": "b4255ad07acf56fc8c4a2abf7301c227"
+    },
+    {
+      "title": "【羅青─筆墨的再發現】",
+      "date": "2026-08-08 ~ 2026-08-29",
+      "date_info": {
+        "start": "2026-08-08",
+        "end": "2026-08-29",
+        "type": 0
+      },
+      "address": "99°藝術中心",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1786426791/nmzlafalm6fclggr25qx.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=90c6a886-6dfe-42fd-a1a7-21772aab0176&PageIndex=2&PageType=1",
+      "tags": null,
+      "UUID": "308effdd4e4a549eb6467e4279c0376f"
+    },
+    {
+      "title": "《埃及木乃伊-永生傳說》｜國立歷史博物館",
+      "date": "2026-08-24 ~ 2026-09-28",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-09-28",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104045/mbjvawpspfwbpa5wk1ue.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/211342-egyptian-mummies-the-legend-of-immortality/",
+      "tags": null,
+      "UUID": "56248701145c50b39ab9e704a14cbb6d"
+    },
+    {
+      "title": "【亞洲首站】愛麗絲夢遊仙境:兔子洞的秘密｜沈浸式互動故事特展",
+      "date": "2026-08-24 ~ 2026-09-13",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-09-13",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1782104045/l2qweckbangsqoevvih6.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/200839-2026-alice-in-wonderland-down-the-rabbit-hole/",
+      "tags": null,
+      "UUID": "f809cb4f1db15b2da6519612f9844f29"
+    },
+    {
+      "title": "觀心儀．Inward Gaze 張仲禹陶藝創作展",
+      "date": "2026-08-01 ~ 2026-08-30",
+      "date_info": {
+        "start": "2026-08-01",
+        "end": "2026-08-30",
+        "type": 0
+      },
+      "address": "若水藏館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1783313295/b2wpayqzmyzaglry49tz.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=d5dc35e6-cae7-45fb-93b9-c20437bcb2fb&PageIndex=3&PageType=1",
+      "tags": null,
+      "UUID": "b887da74a5e152e29808cdac43532432"
+    },
+    {
+      "title": "【櫻桃小丸子原作40週年】特展",
+      "date": "2026-08-24 ~ 2026-09-28",
+      "date_info": {
+        "start": "2026-08-24",
+        "end": "2026-09-28",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787018139/zqf8xoks8qyq896snf44.webp",
+      "source_url": "https://www.klook.com/zh-TW/activity/208969-chibi-maruko-chan-40th-anniversary-special-exhibition/",
+      "tags": null,
+      "UUID": "9eb9581879ec51b18ef0b2b57fed9f22"
     }
   ]
 }
