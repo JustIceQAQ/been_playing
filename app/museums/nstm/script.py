@@ -17,7 +17,8 @@ from helpers.translation.beautiful_soup import BeautifulSoupTranslation
 from helpers.utils_helper import month_3
 
 
-class NsTmRunner(RunnerInit):  # TODO: 壞掉中...
+class NsTmRunner(RunnerInit):
+    is_enable = False  # TODO: 壞掉中...
     translation = BeautifulSoupTranslation
     use_parse = NsTmParse
 

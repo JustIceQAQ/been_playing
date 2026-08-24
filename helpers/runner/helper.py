@@ -16,6 +16,7 @@ from helpers.translation.json import JsonTranslation
 
 
 class RunnerInit(abc.ABC):
+    is_enable: bool = True
     translation: type[TranslationInit] = JsonTranslation
     use_parse: type[ParseInit]
     use_suffix_item_from_file_func: bool = False
@@ -148,6 +149,8 @@ class RunnerInit(abc.ABC):
         image_sem: asyncio.Semaphore | None = None,
         develop_mode: bool = False,
     ):
+        if not self.is_enable:
+            return
         start_time = time.time()
         self.cache = cache
         self.image = image

@@ -16,6 +16,7 @@ from helpers.utils_helper import month_3
 
 
 class TcmRunner(RunnerInit):
+    is_enable = False
     translation = BeautifulSoupTranslation
     use_parse = TcmParse
 
