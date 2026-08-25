@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-25T17:11:04.324992+08:00",
+  "updated": "2026-08-26T01:07:10.559444+08:00",
   "items": [
     {
       "title": "「相繫之縷……」魯伊・米蓋爾・萊陶・費雷拉",
@@ -2597,6 +2597,233 @@
       "source_url": "https://cultureexpress.taipei/Event/C000003?ID=2f1fb99c-1a07-4eeb-bd95-4a6664e3e6a7&PageIndex=3&PageType=1",
       "tags": null,
       "UUID": "70393df75aa051c5ba049dfe2bc5ed44"
+    },
+    {
+      "title": "新藝境：慕夏百年經典特展",
+      "date": "2026-06-26 ~ 2026-09-30",
+      "date_info": {
+        "start": "2026-06-26",
+        "end": "2026-09-30",
+        "type": 0
+      },
+      "address": "臺南國家美術館 二樓 E-I展廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787677376/yewnjhycakzvwmaqm4jc.webp",
+      "source_url": "https://tour.ibon.com.tw/event/6a13b67a10faa15f4c0fa0ae",
+      "tags": null,
+      "UUID": "bcd3782268c75995bf5fb5fe17d79a2c"
+    },
+    {
+      "title": "2026-2027 工藝遶境展【不只是 工藝】",
+      "date": "2026-06-05 ~ 2027-05-09",
+      "date_info": {
+        "start": "2026-06-05",
+        "end": "2027-05-09",
+        "type": 0
+      },
+      "address": "國立臺灣工藝研究發展中心 工藝文化館1-3樓",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787677399/ucp4cin1gtdbcqwiwygb.webp",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTCRI/Detail.init.ctr?actId=60276",
+      "tags": null,
+      "UUID": "90d609fe720b5a10b932b15b6a1c894c"
+    },
+    {
+      "title": "《咦?城市是怎麼長出來的?》兒童城市建築共創展",
+      "date": "2026-07-31 ~ 2026-09-30",
+      "date_info": {
+        "start": "2026-07-31",
+        "end": "2026-09-30",
+        "type": 0
+      },
+      "address": "嘉義市立博物館1樓特展廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787677395/jnmwpevj0go3umcdwrhv.webp",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=21fe9f0c-245e-43b2-b48d-167a666fbbe3&StartDate=2026%2f08%2f26&EndDate=2026%2f08%2f26&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "c26fd959e006544b8ed9fdc141fc7787"
+    },
+    {
+      "title": "阮ê海海人生-臺韓海洋文化交流特展",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": null,
+      "figure": "https://www.sshm.ntpc.gov.tw/files/file_pool/4/0Q224410315639896893/%E4%B8%BB%E8%A6%96%E8%A6%BA-A_V2_1-%E4%BF%AE.jpg",
+      "source_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244541084921596757&sid=0Q073555972184555288",
+      "tags": null,
+      "UUID": "934ee619df77559894ac9ff78379268b"
+    },
+    {
+      "title": "真鍋大度個展「關係時態」－ 超越模擬的生命形式",
+      "date": "2026-10-03 ~ 2027-01-03",
+      "date_info": {
+        "start": "2026-10-03",
+        "end": "2027-01-03",
+        "type": 0
+      },
+      "address": "展覽室A、B、C",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787677426/oewksihitxwlbxejawei.webp",
+      "source_url": "https://www.tcam.museum/zh/exhibition/%e7%9c%9f%e9%8d%8b%e5%a4%a7%e5%ba%a6%e5%80%8b%e5%b1%95%e3%80%8c%e9%97%9c%e4%bf%82%e6%99%82%e6%85%8b%e3%80%8d%ef%bc%8d-%e8%b6%85%e8%b6%8a%e6%a8%a1%e6%93%ac%e7%9a%84%e7%94%9f%e5%91%bd%e5%bd%a2%e5%bc%8f",
+      "tags": [
+        "數位新媒體",
+        "跨域創作"
+      ],
+      "UUID": "4e6d61d11b6e56fe8803409a170f04cd"
+    },
+    {
+      "title": "十三行聚落虛擬展示體驗",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": null,
+      "figure": "https://www.sshm.ntpc.gov.tw/files/file_pool/4/0L039570267354471474/%E5%8D%81%E4%B8%89%E8%A1%8C%E8%81%9A%E8%90%BD%E8%99%9B%E6%93%AC%E5%B1%95%E7%A4%BA01.jpg",
+      "source_url": "https://www.sshm.ntpc.gov.tw/xmdoc/cont?xsmsid=0G244541084921596757&sid=0L039562202066834903",
+      "tags": null,
+      "UUID": "d45e4e1df0fd53d3befd6abbacef1607"
+    },
+    {
+      "title": "《未來海洋：化石裡的生態暗號》",
+      "date": "2026-07-07 ~ 2026-09-06",
+      "date_info": {
+        "start": "2026-07-07",
+        "end": "2026-09-06",
+        "type": 0
+      },
+      "address": "嘉義市立博物館1樓簡報室前廳",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787677392/zg3rg6oytayk5qhnm3or.webp",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=e57f69d7-83f4-4a16-805a-b5807b523b3f&StartDate=2026%2f08%2f26&EndDate=2026%2f08%2f26&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "8ab01a5110e25459820827c46d0d11f5"
+    },
+    {
+      "title": "「相繫之縷……」魯伊・米蓋爾・萊陶・費雷拉",
+      "date": "2026-08-29 ~ 2026-10-08",
+      "date_info": {
+        "start": "2026-08-29",
+        "end": "2026-10-08",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787503872/p2e1df3ds0r25khbntil.webp",
+      "source_url": "https://www.art-msac.com/exhibitions/154/overview/",
+      "tags": null,
+      "UUID": "8917e28d4fc7573a9554052107ad54c9"
+    },
+    {
+      "title": "《海洋未來式》The Ocean Will…巡迴特展",
+      "date": "2026-05-29",
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "本館3樓西側特展區",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787677453/wo5i42s800stsihgayqj.webp",
+      "source_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=6038",
+      "tags": null,
+      "UUID": "8d59d3d9c99d502899989f4c4519d8f1"
+    },
+    {
+      "title": "【凝神】薛翔之 個展",
+      "date": "2026-08-04 ~ 2026-10-03",
+      "date_info": {
+        "start": "2026-08-04",
+        "end": "2026-10-03",
+        "type": 0
+      },
+      "address": "加沃文行 +wò Cultural Practice",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787677385/natabwjebv75jsa1ee4c.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=dc1a025c-fb5e-4445-ad77-b08a74188419&PageIndex=4&PageType=1",
+      "tags": null,
+      "UUID": "a94c738d0e6d56198c0ef36ec7aff6c3"
+    },
+    {
+      "title": "慶祝佛光山「傳燈六十 百年仰望」紀念特展(1967-2026)",
+      "date": "2026-08-08 ~ 2026-09-27",
+      "date_info": {
+        "start": "2026-08-08",
+        "end": "2026-09-27",
+        "type": 0
+      },
+      "address": "佛光緣美術館台北館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1786845719/q1s3dydclrzctydch6ip.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=2f1fb99c-1a07-4eeb-bd95-4a6664e3e6a7&PageIndex=2&PageType=1",
+      "tags": null,
+      "UUID": "41959586eb1a52f48b71f1b7d842cf5d"
+    },
+    {
+      "title": "【映光拾境 光影與風景的詩意凝望】 林祺珖粉彩創作展",
+      "date": "2026-09-06 ~ 2026-09-27",
+      "date_info": {
+        "start": "2026-09-06",
+        "end": "2026-09-27",
+        "type": 0
+      },
+      "address": "藤藝廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787677370/e01pgposrwewuqjmcrja.webp",
+      "source_url": "https://artemperor.tw/tidbits/20345",
+      "tags": null,
+      "UUID": "850bae5cb2e053149d213f393ac66b2a"
+    },
+    {
+      "title": "「十日談」藝術聯展",
+      "date": "2026-09-16 ~ 2026-10-04",
+      "date_info": {
+        "start": "2026-09-16",
+        "end": "2026-10-04",
+        "type": 0
+      },
+      "address": "桃園市展演中心1樓",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787590959/ygdcbpevv9cwjsauqvq2.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=73eccfee-32f5-4726-bdec-3f2f80aacbc2&PageIndex=3&PageType=1",
+      "tags": null,
+      "UUID": "7675930d1c5b597eb01e0965ebdd205b"
+    },
+    {
+      "title": "【重鑄的繁花 : 工業廢料中的生命循環－林佑森個展】",
+      "date": "2026-08-08 ~ 2026-09-26",
+      "date_info": {
+        "start": "2026-08-08",
+        "end": "2026-09-26",
+        "type": 0
+      },
+      "address": "秋刀魚藝術中心",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787677370/kltoh67fibwpzk8jzijr.webp",
+      "source_url": "https://artemperor.tw/tidbits/20353",
+      "tags": null,
+      "UUID": "87407d8871c35aa1a741e91870b1f3f5"
+    },
+    {
+      "title": "劉默霖個展 《墨日重生》",
+      "date": "2026-08-08 ~ 2026-09-12",
+      "date_info": {
+        "start": "2026-08-08",
+        "end": "2026-09-12",
+        "type": 0
+      },
+      "address": "阿波羅畫廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1784283336/znpk6f7t0czwufkwfopn.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=dbe6952f-2b1e-45ad-8a16-db39295d24c1&PageIndex=3&PageType=1",
+      "tags": null,
+      "UUID": "ffb8f6cb1ffd591dbc527bacac8ae186"
+    },
+    {
+      "title": "「雲在兩千米」｜北師美術館",
+      "date": "2026-08-26 ~ 2026-10-11",
+      "date_info": {
+        "start": "2026-08-26",
+        "end": "2026-10-11",
+        "type": 0
+      },
+      "address": "北師美術館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1783313277/jthrzumbbmewxsudx80b.webp",
+      "source_url": "https://www.opentix.life/event/2064614366007234561",
+      "tags": null,
+      "UUID": "3a739cce397050e297c8d190ddfb91fa"
     }
   ]
 }
