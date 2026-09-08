@@ -27,6 +27,11 @@ jobs:
           sudo ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
           echo "Asia/Taipei" | sudo tee /etc/timezone
           sudo dpkg-reconfigure -f noninteractive tzdata
+      - name: Install and update CA certificates
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ca-certificates
+          sudo update-ca-certificates
       - name: check timezone
         run: timedatectl
 
