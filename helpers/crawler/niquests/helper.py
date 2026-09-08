@@ -20,6 +20,9 @@ class NiquestsAsyncSession(niquests.AsyncSession):
         *args,
         timeout: int | None | niquests.Timeout = None,
         use_proxy: bool = False,
+        disable_ipv6: bool = False,
+        disable_http2: bool = False,
+        disable_http3: bool = False,
         **kwargs,
     ) -> None:
         runtime_kwargs = {}
@@ -29,7 +32,12 @@ class NiquestsAsyncSession(niquests.AsyncSession):
         super().__init__(*args, timeout=timeout, **runtime_kwargs, **kwargs)
         self.passed_args = args
         self.passed_kwargs = kwargs
-        adapter = AsyncHTTPAdapter(max_retries=_RETRY_STRATEGY)
+        adapter = AsyncHTTPAdapter(
+            max_retries=_RETRY_STRATEGY,
+            disable_ipv6=disable_ipv6,
+            disable_http2=disable_http2,
+            disable_http3=disable_http3,
+        )
         self.mount("https://", adapter)
         self.mount("http://", adapter)
 
