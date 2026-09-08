@@ -44,7 +44,9 @@ class TyCgRunner(RunnerInit):
                 "font-size-": "medium",
             },
         )
-        async with NiquestsAsyncSession(headers=headers, use_proxy=True) as client:
+        async with NiquestsAsyncSession(
+            headers=headers, use_proxy=True, disable_ipv6=True, disable_http2=True
+        ) as client:
             response = await client.get(
                 "https://wem.tycg.gov.tw/News_Photo.aspx?n=9676&sms=13653",
                 cookies=cookies,

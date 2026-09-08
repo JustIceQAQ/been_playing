@@ -18,9 +18,11 @@ class CultureExpressParse(ParseInit):
 
     def get_date(self, *args, **kwargs) -> str | None:
         p = self.item.find("p", class_="card-date")
-        text_nodes = [t.strip() for t in p.contents if t.name is None and t.strip()]
+        text_nodes = [t.strip() for t in p.contents if (t.name is None) and (t.strip()) and ("/" in t.strip())]
         if len(text_nodes) == 2:
             return roc_to_ad(text_nodes[0]) + " ~ " + roc_to_ad(text_nodes[1])
+        elif len(text_nodes) == 1:
+            return roc_to_ad(text_nodes[0])
 
     def get_address(self, *args, **kwargs) -> str | None:
         card_text_list = self.item.select("ul.card-text-list li")
