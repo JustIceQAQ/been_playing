@@ -32,6 +32,7 @@ dependencies = [
     "pillow>=12.3.0",
     "wreq>=0.12.1",
     "httpx2>=2.12.0",
+    "certifi>=2026.4.22",
 ]
 
 [dependency-groups]
