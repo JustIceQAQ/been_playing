@@ -81,7 +81,7 @@ class NpmRunner(RunnerInit):
             need_upgrade_insecure_requests=True,
             host="www.npm.gov.tw",
         )
-        async with HttpxAsyncClient(headers=this_header) as client:
+        async with HttpxAsyncClient(headers=this_header, use_proxy=True) as client:
             results = await asyncio.gather(
                 *[
                     client.get(
