@@ -1,6 +1,7 @@
 import httpx2 as httpx
 
 from helpers.crawler.proxy_helper import get_proxy_adapter
+from helpers.crawler.ssl_helper import SSL_CONTEXT
 
 
 class HttpxAsyncClient:
@@ -27,6 +28,7 @@ class HttpxAsyncClient:
             *self.args,
             timeout=self.timeout,
             follow_redirects=self.follow_redirects,
+            verify=SSL_CONTEXT,
             **runtime_kwargs,
             **self.kwargs,
         )
