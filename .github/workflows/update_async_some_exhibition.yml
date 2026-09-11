@@ -45,6 +45,15 @@ jobs:
 
       - name: Install dependencies
         run: uv sync --no-dev --frozen
+
+      - name: debug curl connection
+        run: |
+          echo "== runner outbound IP =="
+          curl -s https://ipinfo.io || true
+          echo ""
+          echo "== curl -v to npm.gov.tw =="
+          curl -v https://www.npm.gov.tw/ || true
+
       - name: run async script with uv
         run: uv run --no-sync python run_some_async_script.py
         env:
