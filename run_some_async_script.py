@@ -6,7 +6,7 @@ from pathlib import Path
 import sentry_sdk
 from dotenv import load_dotenv
 
-from app.museums.tfai import TFAIRunner
+from app.museums.npm.script import NpmRunner
 from configs.settings import get_settings
 from helpers.cache import disk_cache, none_cache
 from helpers.image_hosting.cloudinary.helper import CloudinaryImageHosting
@@ -35,7 +35,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         )
 
     use_cache = none_cache if runtime_setting.IS_DEBUG else disk_cache
-    job = [TFAIRunner]
+    job = [NpmRunner]
     script_total = len(job)
     prefix = None
     if (worker is not None) and (worker_max is not None) and (worker_max > 0):
