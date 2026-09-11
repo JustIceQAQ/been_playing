@@ -33,6 +33,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
             runtime_setting.CLOUDINARY_API_KEY,
             runtime_setting.CLOUDINARY_API_SECRET,
         )
+        image_host = none_image_hosting
 
     use_cache = none_cache if runtime_setting.IS_DEBUG else disk_cache
     job = [NpmRunner]
@@ -50,7 +51,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
     all_async_script_runners = [
         RunnerObj().run(use_cache, image_host, prefix, develop_mode=True) for RunnerObj in scripts_to_run
     ]
-    await asyncio.gather(*all_async_script_runners, return_exceptions=True)
+    await asyncio.gather(*all_async_script_runners)
 
 
 if __name__ == "__main__":
