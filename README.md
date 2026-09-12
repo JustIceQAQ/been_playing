@@ -3,7 +3,16 @@
 [![update-async-exhibition](https://github.com/JustIceQAQ/been_playing/actions/workflows/update_async_exhibition.yml/badge.svg?branch=deploy)](https://github.com/JustIceQAQ/been_playing/actions/workflows/update_async_exhibition.yml)
 [![CodeQL Analysis](https://github.com/JustIceQAQ/been_playing/actions/workflows/codeql_analysis.yaml/badge.svg)](https://github.com/JustIceQAQ/been_playing/actions/workflows/codeql_analysis.yaml)
 
-- Northern Taiwan Exhibition Crawlers
+
+## 中繼憑證管理
+
+- `/fixture/twca_intermediate.pem`
+    - 下載來源
+        - SSL伺服器CA憑證
+            - `[https://sslserver.twca.com.tw/sslserver/Securessl_revoke_sha2_2023G3](https://www.twca.com.tw/repository#:~:text=%E4%B8%8B%E8%BC%89%E6%AA%94%E6%A1%88-,SSL%E4%BC%BA%E6%9C%8D%E5%99%A8CA%E6%86%91%E8%AD%89,-SSL%E4%BC%BA%E6%9C%8D%E5%99%A8CA)`
+
+
+- Taiwan Exhibition Crawlers
 
 ## Target Including But Not Limited to
 

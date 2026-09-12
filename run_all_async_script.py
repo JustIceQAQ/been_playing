@@ -181,6 +181,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
             runtime_setting.CLOUDINARY_API_KEY,
             runtime_setting.CLOUDINARY_API_SECRET,
         )
+        use_image_host = none_image_hosting
 
     use_cache = none_cache if runtime_setting.IS_DEBUG else disk_cache
     job = list(ALL_RUNNERS)

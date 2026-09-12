@@ -1,0 +1,65 @@
+name: check-twca-cert-expiry
+
+on:
+  schedule:
+    - cron: "0 1 1 * *"
+  workflow_dispatch:
+
+jobs:
+  check-expiry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2
+
+      - name: check twca intermediate cert expiry
+        id: check_expiry
+        run: |
+          CERT_PATH="fixture/twca_intermediate.pem"
+          END_DATE=$(openssl x509 -enddate -noout -in "$CERT_PATH" | cut -d= -f2)
+          END_EPOCH=$(date -d "$END_DATE" +%s)
+          NOW_EPOCH=$(date +%s)
+          DAYS_LEFT=$(( (END_EPOCH - NOW_EPOCH) / 86400 ))
+          echo "憑證到期日: $END_DATE"
+          echo "剩餘天數: $DAYS_LEFT"
+          echo "days_left=$DAYS_LEFT" >> "$GITHUB_OUTPUT"
+          echo "end_date=$END_DATE" >> "$GITHUB_OUTPUT"
+
+      - name: check for existing open reminder issue
+        id: check_existing_issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              labels: "twca-cert-expiry",
+            });
+            core.setOutput("has_open_issue", issues.data.length > 0 ? "true" : "false");
+
+      - name: create issue if within 90 days and no existing reminder
+        if: steps.check_expiry.outputs.days_left <= 90 && steps.check_existing_issue.outputs.has_open_issue == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const daysLeft = "${{ steps.check_expiry.outputs.days_left }}";
+            const endDate = "${{ steps.check_expiry.outputs.end_date }}";
+
+            const body = `## TWCA 中繼憑證即將到期
+
+            - 檔案位置: \`fixture/twca_intermediate.pem\`
+            - 到期日: ${endDate}
+            - 剩餘天數: ${daysLeft} 天
+
+            請至 TWCA 官網下載最新版中繼憑證，核對指紋與到期日無誤後，更新此檔案並提交 PR。
+
+            此 issue 建立後，在關閉前不會重複提醒，請確認更新完成後手動關閉。`;
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `⚠️ TWCA 中繼憑證即將到期 (剩餘 ${daysLeft} 天)`,
+              body: body,
+              labels: ["twca-cert-expiry", "maintenance"],
+            });
