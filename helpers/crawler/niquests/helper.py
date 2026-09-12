@@ -3,6 +3,7 @@ from niquests.adapters import AsyncHTTPAdapter
 from urllib3.util import Retry
 
 from helpers.crawler.proxy_helper import get_proxy_adapter
+from helpers.crawler.ssl_helper import get_ssl_context
 
 _RETRY_STRATEGY = Retry(
     read=3,
@@ -23,11 +24,15 @@ class NiquestsAsyncSession(niquests.AsyncSession):
         disable_ipv6: bool = False,
         disable_http2: bool = False,
         disable_http3: bool = False,
+        use_certifi_support: bool = False,
         **kwargs,
     ) -> None:
         runtime_kwargs = {}
         if use_proxy:
             runtime_kwargs["proxies"] = get_proxy_adapter().to_niquests()
+
+        if use_certifi_support:
+            runtime_kwargs["verify"] = get_ssl_context().to_niquests()
 
         super().__init__(*args, timeout=timeout, **runtime_kwargs, **kwargs)
         self.passed_args = args
