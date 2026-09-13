@@ -5,7 +5,6 @@ import niquests
 from selectolax.lexbor import LexborNode
 
 from app.museums.ccam.parse import CCAMParse
-from configs.settings import get_settings
 from helpers.crawler.headers_helper import generate_cookies, generate_headers
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.runner.helper import RunnerInit
@@ -20,16 +19,6 @@ from helpers.utils_helper import month_3
 class CCAMRunner(RunnerInit):
     translation = SelectolaxTranslation
     use_parse = CCAMParse
-
-    def set_proxies(self):
-        runtime_settings = get_settings()
-        proxies = None
-        if runtime_settings.PROXY_POOL is not None:
-            proxies = {
-                "http": runtime_settings.PROXY_POOL,
-                "https": runtime_settings.PROXY_POOL,
-            }
-        return proxies
 
     def set_cache_expire(self) -> int | None:
         return month_3()
@@ -74,8 +63,7 @@ class CCAMRunner(RunnerInit):
         )
         cookies = generate_cookies(need_asp_net_session_id=True)
 
-        async with NiquestsAsyncSession(headers=headers) as client:
-            client.proxies.update(self.set_proxies())
+        async with NiquestsAsyncSession(headers=headers, use_certifi_support=True) as client:
             urls = [
                 "https://fam.bocach.gov.tw/News2.aspx?n=990&sms=10480",
                 "https://fam.bocach.gov.tw/News2.aspx?n=989&sms=10480",
