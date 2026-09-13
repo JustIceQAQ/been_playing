@@ -4,7 +4,6 @@ from typing import cast
 from selectolax.lexbor import LexborNode
 
 from app.museums.pt1936.parse import PT1936Parse
-from configs.settings import get_settings
 from helpers.crawler.headers_helper import generate_cookies, generate_headers
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.runner.helper import RunnerInit
@@ -20,16 +19,6 @@ class PT1936Runner(RunnerInit):
     translation = SelectolaxTranslation
     use_parse = PT1936Parse
     use_suffix_item_from_url_auto = True
-
-    def set_proxies(self):
-        runtime_settings = get_settings()
-        proxies = None
-        if runtime_settings.PROXY_POOL is not None:
-            proxies = {
-                "http": runtime_settings.PROXY_POOL,
-                "https": runtime_settings.PROXY_POOL,
-            }
-        return proxies
 
     def set_cache_expire(self) -> int | None:
         return month_3()
@@ -56,8 +45,7 @@ class PT1936Runner(RunnerInit):
             host="www.cultural.pthg.gov.tw",
         )
         cookies = generate_cookies(need_asp_net_session_id=True)
-        async with NiquestsAsyncSession(headers=headers) as client:
-            client.proxies.update(self.set_proxies())
+        async with NiquestsAsyncSession(headers=headers, use_certifi_support=True) as client:
             response = await client.get(
                 "https://www.cultural.pthg.gov.tw/pt1936/News9.aspx?n=8E5540CA059309A8&CategorySN=3630", cookies=cookies
             )

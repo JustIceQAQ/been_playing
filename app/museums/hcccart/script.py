@@ -6,7 +6,6 @@ from typing import cast
 from selectolax.lexbor import LexborNode
 
 from app.museums.hcccart.parse import HcccArtParse
-from configs.settings import get_settings
 from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.niquests.helper import NiquestsAsyncSession
 from helpers.runner.helper import RunnerInit
@@ -22,16 +21,6 @@ class HcccArtRunner(RunnerInit):
     translation = SelectolaxTranslation
     use_parse = HcccArtParse
     use_suffix_item_from_url_auto = True
-
-    def set_proxies(self):
-        runtime_settings = get_settings()
-        proxies = None
-        if runtime_settings.PROXY_POOL is not None:
-            proxies = {
-                "http": runtime_settings.PROXY_POOL,
-                "https": runtime_settings.PROXY_POOL,
-            }
-        return proxies
 
     def set_cache_expire(self) -> int | None:
         return month_3()
@@ -55,8 +44,7 @@ class HcccArtRunner(RunnerInit):
             "locale": "tw",
             "art": "".join(secrets.choice(string.ascii_letters + string.digits) for _ in range(40)),
         }
-        async with NiquestsAsyncSession(headers=headers) as client:
-            client.proxies.update(self.set_proxies())
+        async with NiquestsAsyncSession(headers=headers, use_certifi_support=True) as client:
             response = await client.get(
                 "https://art.hccc.gov.tw/%E5%B1%95%E8%A6%BD/%E7%95%B6%E6%9C%9F%E5%B1%95%E8%A6%BD", cookies=cookies
             )
