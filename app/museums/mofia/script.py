@@ -36,17 +36,30 @@ class MofiaRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = generate_headers()
+        headers = generate_headers(
+            origin="https://mofia.taichung.gov.tw",
+            referer="https://mofia.taichung.gov.tw/ExhibitMain/Current",
+            x_requested_with="XMLHttpRequest",
+        )
         async with HttpxAsyncClient(headers=headers) as client:
-            response = await client.post(
-                "https://mofia.taichung.gov.tw/Exhibit/InitExhibit",
-                json={"lang": "1", "type": "Current"},
-            )
-        return safe_json(response, "Mofia")
+            responses_tasks = [
+                client.post(
+                    "https://mofia.taichung.gov.tw/Exhibit/InitExhibit",
+                    json={"lang": "1", "type": type},
+                )
+                for type in ["Notice", "Current"]
+            ]
+            responses = await asyncio.gather(*responses_tasks)
+        safe_json_tasks = [safe_json(response, "Mofia") for response in responses]
+        ok_json = await asyncio.gather(*safe_json_tasks)
+        return ok_json
 
     async def fetch_parsed(self):
-        parsed = cast(dict, await super().fetch_parsed())
-        return parsed.get("data")
+        parsed = cast(list[dict], await super().fetch_parsed())
+        datasets = []
+        for p in parsed:
+            datasets.extend(p.get("data"))
+        return datasets
 
 
 async def main():
