@@ -26,49 +26,57 @@ class XZCACParse(ParseInit):
         if not title:
             return None
         title = title.strip()
-        pattern = r"(\d{1,2}/\d{1,2})"
+
+        # 同時比對「Y/M/D」(民國年，通常 3 碼) 與「M/D」兩種格式
+        # 順序很重要：先比對三段式，避免被兩段式規則搶先誤判
+        pattern = r"(\d{1,3}/\d{1,2}/\d{1,2}|\d{1,2}/\d{1,2})"
         matches = re.findall(pattern, title)
 
         if not matches:
             return None
 
-        base_year = get_the_date.now_year  # 資料基準年
+        base_year = get_the_date.now_year  # 資料基準年（西元）
 
-        def parse_md(s):
-            """將 'M/D' 拆成 (month, day)"""
-            m, d = s.split("/")
-            return int(m), int(d)
-
-        def resolve_year(month, ref_year, ref_month=None, is_end=False):
+        def parse_token(token: str):
             """
-            決定年份：
-            - 若是結束日期且月份 < 開始月份，視為跨年（+1 → 不對，需反過來）
-            實際上：資料基準是 2026，若開始月份 > 結束月份，
-            代表開始在前一年。
+            將擷取到的字串解析為 (year_or_None, month, day)。
+            若是三段式，年份視為民國年，轉換成西元年（民國年 + 1911）。
             """
-            return ref_year
+            parts = token.split("/")
+            if len(parts) == 3:
+                roc_year, m, d = parts
+                year = int(roc_year) + 1911
+                return year, int(m), int(d)
+            else:
+                m, d = parts
+                return None, int(m), int(d)
 
         if len(matches) == 1:
-            # 單日
-            m, d = parse_md(matches[0])
-            return datetime.date(base_year, m, d).strftime("%Y-%m-%d")
-        else:
-            start_str = matches[0]
-            end_str = matches[-1]
+            year, m, d = parse_token(matches[0])
+            year = year or base_year
+            return datetime.date(year, m, d).strftime("%Y-%m-%d")
 
-            sm, sd = parse_md(start_str)
-            em, ed = parse_md(end_str)
+        start_year, sm, sd = parse_token(matches[0])
+        end_year, em, ed = parse_token(matches[-1])
+
+        if start_year is None and end_year is None:
+            # 都沒有明確年份，沿用原本「結束月 < 開始月 -> 跨年」的假設
             if em < sm:
-                start_year = base_year - 1
-                end_year = base_year
+                start_year, end_year = base_year - 1, base_year
             else:
-                start_year = base_year
-                end_year = base_year
+                start_year = end_year = base_year
+        elif start_year is None:
+            # 只有結束日期帶年份（例如你截圖那筆資料的情況）
+            start_year = end_year - 1 if em < sm else end_year
+        elif end_year is None:
+            # 只有開始日期帶年份
+            end_year = start_year + 1 if em < sm else start_year
+        # 若兩者皆有明確年份，則直接使用，不做額外推算
 
-            start_date = datetime.date(start_year, sm, sd).strftime("%Y-%m-%d")
-            end_date = datetime.date(end_year, em, ed).strftime("%Y-%m-%d")
+        start_date = datetime.date(start_year, sm, sd).strftime("%Y-%m-%d")
+        end_date = datetime.date(end_year, em, ed).strftime("%Y-%m-%d")
 
-            return f"{start_date} ~ {end_date}"
+        return f"{start_date} ~ {end_date}"
 
     def get_address(self, *args, **kwargs) -> str | None:
         pass
