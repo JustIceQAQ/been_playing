@@ -4,6 +4,7 @@ from typing import cast
 from app.museums.mofia.parse import MofiaParse
 from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
+from helpers.crawler.sniff_error import safe_json
 from helpers.runner.helper import RunnerInit
 from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.storage.helper import Information
@@ -41,7 +42,7 @@ class MofiaRunner(RunnerInit):
                 "https://mofia.taichung.gov.tw/Exhibit/InitExhibit",
                 json={"lang": "1", "type": "Current"},
             )
-        return response.json()
+        return safe_json(response, "Mofia")
 
     async def fetch_parsed(self):
         parsed = cast(dict, await super().fetch_parsed())
