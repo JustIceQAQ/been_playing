@@ -44,7 +44,7 @@ class PTCAMRunner(RunnerInit):
             host="www.cultural.pthg.gov.tw",
         )
         cookies = generate_cookies(need_asp_net_session_id=True)
-        async with NiquestsAsyncSession(headers=headers, use_certifi_support=True, disable_ipv6=True) as client:
+        async with NiquestsAsyncSession(headers=headers, use_proxy=True, disable_ipv6=True) as client:
             response = await client.get(
                 "https://www.cultural.pthg.gov.tw/pt1936/News9.aspx?n=8E5540CA059309A8&CategorySN=3632", cookies=cookies
             )
