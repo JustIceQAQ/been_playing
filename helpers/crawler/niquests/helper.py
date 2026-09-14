@@ -22,7 +22,7 @@ class NiquestsAsyncSession(niquests.AsyncSession):
         timeout: int | None | niquests.Timeout = None,
         use_proxy: bool = False,
         disable_ipv4: bool = False,
-        disable_ipv6: bool = False,
+        disable_ipv6: bool = True,
         disable_http2: bool = False,
         disable_http3: bool = False,
         use_certifi_support: bool = False,
