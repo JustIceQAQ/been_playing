@@ -21,6 +21,7 @@ class NiquestsAsyncSession(niquests.AsyncSession):
         *args,
         timeout: int | None | niquests.Timeout = None,
         use_proxy: bool = False,
+        disable_ipv4: bool = False,
         disable_ipv6: bool = False,
         disable_http2: bool = False,
         disable_http3: bool = False,
@@ -39,6 +40,7 @@ class NiquestsAsyncSession(niquests.AsyncSession):
         self.passed_kwargs = kwargs
         adapter = AsyncHTTPAdapter(
             max_retries=_RETRY_STRATEGY,
+            disable_ipv4=disable_ipv4,
             disable_ipv6=disable_ipv6,
             disable_http2=disable_http2,
             disable_http3=disable_http3,
