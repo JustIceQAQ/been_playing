@@ -48,7 +48,7 @@ jobs:
 
       - name: debug network / IPv4 vs IPv6 connectivity
         run: |
-          TARGET_HOST="tm.ccl.ttct.edu.tw"
+          TARGET_HOST="www.art-msac.com"
 
           echo "== kernel IPv6 support =="
           [ -f /proc/net/if_inet6 ] && echo "IPv6 ready" || echo "No IPv6 support"
