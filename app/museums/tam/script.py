@@ -38,7 +38,7 @@ class TAMRunner(RunnerInit):
     async def fetch_response(self):
         headers = generate_headers()
         appsname = ["ExhibitionsList4102", "ExhibitionsList4101"]
-        async with NiquestsAsyncSession(headers=headers, use_certifi_support=True) as client:
+        async with NiquestsAsyncSession(headers=headers, disable_ipv6=True, use_proxy=True) as client:
             responses = await asyncio.gather(
                 *[
                     client.get("https://tm.ccl.ttct.edu.tw/ExhibitionsListC004100.php", params={"appname": appname})

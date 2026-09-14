@@ -6,7 +6,7 @@ from pathlib import Path
 import sentry_sdk
 from dotenv import load_dotenv
 
-from app.museums.npm.script import NpmRunner
+from app.museums.tam import TAMRunner
 from configs.settings import get_settings
 from helpers.cache import disk_cache, none_cache
 from helpers.image_hosting.cloudinary.helper import CloudinaryImageHosting
@@ -36,7 +36,7 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         image_host = none_image_hosting
 
     use_cache = none_cache if runtime_setting.IS_DEBUG else disk_cache
-    job = [NpmRunner]
+    job = [TAMRunner]
     script_total = len(job)
     prefix = None
     if (worker is not None) and (worker_max is not None) and (worker_max > 0):

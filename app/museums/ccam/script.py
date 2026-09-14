@@ -63,7 +63,7 @@ class CCAMRunner(RunnerInit):
         )
         cookies = generate_cookies(need_asp_net_session_id=True)
 
-        async with NiquestsAsyncSession(headers=headers, use_certifi_support=True) as client:
+        async with NiquestsAsyncSession(headers=headers, disable_ipv6=True, use_proxy=True) as client:
             urls = [
                 "https://fam.bocach.gov.tw/News2.aspx?n=990&sms=10480",
                 "https://fam.bocach.gov.tw/News2.aspx?n=989&sms=10480",
