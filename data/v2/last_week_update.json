@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19T20:39:58.677654+08:00",
+  "updated": "2026-09-20T02:44:09.055112+08:00",
   "items": [
     {
       "title": "她的足跡—大稻埕女性的自主之路",
@@ -9847,6 +9847,48 @@
       "source_url": "https://cultureexpress.taipei/Event/C000003?ID=f457eeb5-dc05-43ef-89b5-44d615aee746&PageIndex=1&PageType=1",
       "tags": null,
       "UUID": "6f420275a253506c9ea069d33185cb11"
+    },
+    {
+      "title": "10月我們的文學夢：石德華",
+      "date": "2026-10-02 ~ 2026-10-02",
+      "date_info": {
+        "start": "2026-10-02",
+        "end": "2026-10-02",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1788324549/doxcsruridmpgqhk47tw.webp",
+      "source_url": "https://kishuan.org.tw/activity_detail1900.htm",
+      "tags": null,
+      "UUID": "5f109da84cc15e8baa4a646fec30cecc"
+    },
+    {
+      "title": "《咦?城市是怎麼長出來的?》兒童城市建築共創展",
+      "date": "2026-07-31 ~ 2026-09-30",
+      "date_info": {
+        "start": "2026-07-31",
+        "end": "2026-09-30",
+        "type": 0
+      },
+      "address": "嘉義市立博物館1樓特展廳",
+      "figure": "https://museum.chiayi.gov.tw/FileDownload/Exhibitions/2026080516242714558.jpg",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=21fe9f0c-245e-43b2-b48d-167a666fbbe3&StartDate=2026%2f09%2f20&EndDate=2026%2f09%2f20&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "1d3ee33d7fc6527cbae5345b9495a463"
+    },
+    {
+      "title": "《石猴有名─郭秋松石猴典藏作品展》一件作品、一個名字、一段屬於嘉義的故事。",
+      "date": "2026-09-01 ~ 2026-09-30",
+      "date_info": {
+        "start": "2026-09-01",
+        "end": "2026-09-30",
+        "type": 0
+      },
+      "address": "嘉義市立博物館1樓大廳",
+      "figure": "https://museum.chiayi.gov.tw/FileDownload/Exhibitions/20260826093507920597.jpg",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=a2de9272-d909-496e-bdb8-0f550800b296&StartDate=2026%2f09%2f20&EndDate=2026%2f09%2f20&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "3b6ceea6d06f5168946609ec3f7cacc3"
     }
   ]
 }
