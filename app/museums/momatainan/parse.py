@@ -29,7 +29,7 @@ class MoMaTainanParse(ParseInit):
         if "地點｜" in p:
             raw_address = (
                 p.split("地點｜")[1].split("&")[0].split("／")[0].split("\xa0")[0].replace("臺南國家美術館", "")
-            )
+            ).split("展間")[0] + " 展間"
             return raw_address
 
     def get_figure(self, *args, **kwargs) -> str | None:
