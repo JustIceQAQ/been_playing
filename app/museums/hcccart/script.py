@@ -39,7 +39,7 @@ class HcccArtRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = generate_headers(host="art.hccc.gov.tw")
+        headers = generate_headers(host="art.hccc.gov.tw", referer="https://art.hccc.gov.tw/%E5%B1%95%E8%A6%BD")
         cookies = {
             "locale": "tw",
             "art": "".join(secrets.choice(string.ascii_letters + string.digits) for _ in range(40)),
@@ -52,7 +52,7 @@ class HcccArtRunner(RunnerInit):
 
     async def fetch_parsed(self):
         parsed = cast(LexborNode, await super().fetch_parsed())
-        return parsed.css("#content div.ham-card-expo")
+        return parsed.css(".ham-card-expo")
 
 
 async def main():
