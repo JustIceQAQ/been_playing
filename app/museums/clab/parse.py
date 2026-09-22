@@ -1,6 +1,3 @@
-import urllib.parse
-
-import bs4
 from bs4 import Tag
 
 from helpers.parse_helper import ParseInit
@@ -14,45 +11,46 @@ def clean_date(value: Tag) -> str:
 
 
 class CLabParse(ParseInit):
-    def __init__(self, item: bs4.element.Tag):
+    def __init__(self, item: dict):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
-        return self.item.find("p", {"class": "a-base-card__title"}).get_text().strip()
+        return self.item.get("title")
 
     def get_date(self, *args, **kwargs) -> str | None:
-        date_raw = self.item.find("div", {"class": "a-dateTime__wrapper"})
-        dates = date_raw.find_all("div")
-        result_date = "-"
-        if len(dates) == 2:
-            start_date, end_date = dates
-            result_date = f"{clean_date(start_date)} ~ {clean_date(end_date)}"
-        elif len(dates) == 1:
-            once_day = dates[0]
-            result_date = f"{clean_date(once_day)}"
-        else:
-            pass
-        return result_date
+        single_event = self.item.get("singleEvent")
+        if single_event is None:
+            return None
+        raw_date = single_event.get("date")
+        if raw_date is None:
+            return None
+        start = raw_date.get("start").split("T")[0]
+        end = raw_date.get("end").split("T")[0]
+        if start == end:
+            return start
+        return f"{start} ~ {end}"
 
     def get_address(self, *args, **kwargs) -> str | None:
-        address = self.item.find("p", {"class": "a-base-card__location"})
-        if address is not None:
-            return address.get_text(strip=True)
+        single_event = self.item.get("singleEvent")
+        if single_event is None:
+            return None
+        return single_event.get("location")
 
     def get_figure(self, *args, **kwargs) -> str | None:
-        div = self.item.find("div", {"class": "a-base-card__thumbnail"})
-        if div is None:
+        featured_image = self.item.get("featuredImage")
+        if featured_image is None:
             return None
-        dev_style = div.attrs.get(":style")
-        pc_image = dev_style.split(":")[-1]
-
-        return f"https:{urllib.parse.quote(pc_image[:-3])}"
+        return featured_image.get("node").get("sourceUrl")
 
     def get_tags(self, *args, **kwargs) -> list[str] | None:
-        a = self.item.find("a", {"class": "a-base-card__category"})
-        if a is None:
+        tags = self.item.get("tags")
+        if tags is None:
             return None
-        return [a.get_text()]
+        node = tags.get("node")
+        if node is None:
+            return None
+        return [tag.get("name") for tag in node]
 
     def get_source_url(self, *args, **kwargs) -> str | None:
-        return self.item.find("a", {"class": "a-base-card__media"})["href"]
+        slug = self.item.get("slug")
+        return f"https://clab.org.tw/zh/events/{slug}"
