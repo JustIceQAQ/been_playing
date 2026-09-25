@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25T13:12:36.941906+08:00",
+  "updated": "2026-09-25T22:05:13.889347+08:00",
   "items": [
     {
       "title": "【11/14 卡牌展覽入場票】第二屆 TCE 台灣卡牌展覽會",
@@ -6713,6 +6713,330 @@
         "不分細類"
       ],
       "UUID": "fad0d1df2a365f93af639fd3cb4f39eb"
+    },
+    {
+      "title": "台灣滿枝枒_芬芳美麗",
+      "date": "2026-06-23 ~ 2026-12-08",
+      "date_info": {
+        "start": "2026-06-23",
+        "end": "2026-12-08",
+        "type": 0
+      },
+      "address": "東1A館",
+      "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e8%8f%af%e5%b1%b1_1920x1080_25080713452709942.jpg",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_25080713483312043",
+      "tags": [
+        "期間限定"
+      ],
+      "UUID": "5b4fec8d9e99500fb58a0e1e5cac8a15"
+    },
+    {
+      "title": "愛手創國際手作設計節 靈感午茶會",
+      "date": "2026-10-16 ~ 2026-10-18",
+      "date_info": {
+        "start": "2026-10-16",
+        "end": "2026-10-18",
+        "type": 0
+      },
+      "address": "東2A館, 東2B館, 東2C館, 東2D館",
+      "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e8%8f%af%e5%b1%b1_1920x1080px.jpg",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26092213095201002",
+      "tags": [
+        "活動"
+      ],
+      "UUID": "6d01b64770ca5fd7a7d8689cdd9e0f99"
+    },
+    {
+      "title": "ZENLET Pop-up Store",
+      "date": "2026-08-26 ~ 2026-10-27",
+      "date_info": {
+        "start": "2026-08-26",
+        "end": "2026-10-27",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787475326/af2zqzjxq06hiiprnahz.webp",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26082316003280620",
+      "tags": [
+        "期間限定"
+      ],
+      "UUID": "86251207af2a5b7d856ddc67360730b9"
+    },
+    {
+      "title": "【府中15】VR特展《全能元神宮改造王》",
+      "date": "2026-09-26 ~ 2026-11-22",
+      "date_info": {
+        "start": "2026-09-26",
+        "end": "2026-11-22",
+        "type": 0
+      },
+      "address": "府中15 5F展覽室",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787948176/bqqqirunoc1tg4fqkhms.webp",
+      "source_url": "https://www.opentix.life/event/2084488881764413441",
+      "tags": null,
+      "UUID": "8987dd9b7f1f5cc29b44d83073927ccd"
+    },
+    {
+      "title": "牡蠣寶寶主題養殖中心快閃店",
+      "date": "2026-09-25 ~ 2026-10-18",
+      "date_info": {
+        "start": "2026-09-25",
+        "end": "2026-10-18",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/BOF_TPE_POSM_MainPoster_%e8%8f%af%e5%b1%b1%e5%ae%98%e7%b6%b2%e6%b4%bb%e5%8b%95_1920(W)_x_1080(H)_px.jpg",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26092211324344670",
+      "tags": [
+        "期間限定"
+      ],
+      "UUID": "d7f3325bfc0f5c16a2b8e22bbebb6b8d"
+    },
+    {
+      "title": "2026台灣卓越印刷設計展 | 一片銀杏森林 the Present Moment",
+      "date": "2026-10-01 ~ 2026-10-04",
+      "date_info": {
+        "start": "2026-10-01",
+        "end": "2026-10-04",
+        "type": 0
+      },
+      "address": "蓬萊區B4倉庫",
+      "figure": "https://pier2.org/upload/event/OCFUOIBX566660.jpeg",
+      "source_url": "https://pier2.org/exhibition/info/1986/",
+      "tags": null,
+      "UUID": "77724a2c94ec5087b6c323dab63dbcee"
+    },
+    {
+      "title": "「雲在兩千米」｜北師美術館",
+      "date": "2026-09-26 ~ 2026-10-11",
+      "date_info": {
+        "start": "2026-09-26",
+        "end": "2026-10-11",
+        "type": 0
+      },
+      "address": "北師美術館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1783313277/jthrzumbbmewxsudx80b.webp",
+      "source_url": "https://www.opentix.life/event/2064614366007234561",
+      "tags": null,
+      "UUID": "3a739cce397050e297c8d190ddfb91fa"
+    },
+    {
+      "title": "SIF in Taipei 首爾插畫展 台北站",
+      "date": "2026-10-23 ~ 2026-10-26",
+      "date_info": {
+        "start": "2026-10-23",
+        "end": "2026-10-26",
+        "type": 0
+      },
+      "address": "東2A館, 東2B館, 東2C館, 東2D館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1788843443/xfksk4a3lftu6b2ygi4q.webp",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26090811570516858",
+      "tags": [
+        "展覽"
+      ],
+      "UUID": "5223600f78f3561f9ac5164895f6bfde"
+    },
+    {
+      "title": "《問．華山》2026年度系列講座十月場「不只是個博物館? 」",
+      "date": "2026-10-07 ~ 2026-10-07",
+      "date_info": {
+        "start": "2026-10-07",
+        "end": "2026-10-07",
+        "type": 0
+      },
+      "address": "拱廳, 華山1914文創園區",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1788843444/uagyv59jsz8n2dz7zehu.webp",
+      "source_url": "https://www.huashan1914.com/w/umaytheater/performance_26090810084874505",
+      "tags": [
+        "講座",
+        "表演藝術"
+      ],
+      "UUID": "83d8d69a66275e1ab1bca4d647ccd9a5"
+    },
+    {
+      "title": "2026 TTXC｜高雄電影節 ✖ XR DREAMLAND",
+      "date": "2026-10-09 ~ 2026-10-26",
+      "date_info": {
+        "start": "2026-10-09",
+        "end": "2026-10-26",
+        "type": 0
+      },
+      "address": "大勇區P3倉庫、自行車倉庫、大義區C9 VR體感劇院",
+      "figure": "https://pier2.org/upload/event/ZXTEMGFJ230301.jpeg",
+      "source_url": "https://pier2.org/exhibition/info/1983/",
+      "tags": null,
+      "UUID": "9d8f0db0e9885f71b37451afae176622"
+    },
+    {
+      "title": "【府中15】VR特展《寂靜》",
+      "date": "2026-09-26 ~ 2026-11-22",
+      "date_info": {
+        "start": "2026-09-26",
+        "end": "2026-11-22",
+        "type": 0
+      },
+      "address": "府中15 4F展覽室",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787948176/nfxak43d9o9gxhrpevhv.webp",
+      "source_url": "https://www.opentix.life/event/2084492015442714625",
+      "tags": null,
+      "UUID": "af2c3a85927554ca8841f74fb7072ae5"
+    },
+    {
+      "title": "李亭香",
+      "date": "2026-07-28 ~ 2027-05-31",
+      "date_info": {
+        "start": "2026-07-28",
+        "end": "2027-05-31",
+        "type": 0
+      },
+      "address": "中4B館1F-3.4(芳釀所)",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1785236272/kkwusfeadxvi33xhirbt.webp",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26072515232688455",
+      "tags": [
+        "期間限定"
+      ],
+      "UUID": "a8b64f45a74b5124ab7ba344363cad0d"
+    },
+    {
+      "title": "大春煉皂 華山限定特展",
+      "date": "2026-09-07 ~ 2027-01-04",
+      "date_info": {
+        "start": "2026-09-07",
+        "end": "2027-01-04",
+        "type": 0
+      },
+      "address": "中4B館1F-3.4(芳釀所)",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1788155497/ttauuvpzhlaeuk1rpvol.webp",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26083110515386973",
+      "tags": [
+        "期間限定"
+      ],
+      "UUID": "6feb96373c0e58eca2166c778df5c681"
+    },
+    {
+      "title": "時空任意門",
+      "date": "2026-10-09 ~ 2026-10-26",
+      "date_info": {
+        "start": "2026-10-09",
+        "end": "2026-10-26",
+        "type": 0
+      },
+      "address": "大勇區自行車倉庫",
+      "figure": "https://pier2.org/upload/event/BAWJOCFM133457.jpeg",
+      "source_url": "https://pier2.org/exhibition/info/1982/",
+      "tags": null,
+      "UUID": "e3982c2f3b1d5d77964e1482464a1db6"
+    },
+    {
+      "title": "2026 放影展",
+      "date": "2026-10-03 ~ 2026-10-04",
+      "date_info": {
+        "start": "2026-10-03",
+        "end": "2026-10-04",
+        "type": 0
+      },
+      "address": "烏梅劇院",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1788440109/pwuxuovgj1xedvzm855t.webp",
+      "source_url": "https://www.huashan1914.com/w/umaytheater/performance_26090315322832275",
+      "tags": [
+        "講座",
+        "表演藝術"
+      ],
+      "UUID": "fc3559f1ee3259079cceefe0ba87ed75"
+    },
+    {
+      "title": "MUFFIN CORNER 快閃店",
+      "date": "2026-09-19 ~ 2026-10-12",
+      "date_info": {
+        "start": "2026-09-19",
+        "end": "2026-10-12",
+        "type": 0
+      },
+      "address": "中5B館 鍋爐室",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1789131281/fhgkxlp1it2ksqrworot.webp",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26091117133323155",
+      "tags": [
+        "期間限定"
+      ],
+      "UUID": "e5cf2f06550c576db516bf2ca3fa5fd1"
+    },
+    {
+      "title": "方舟玩具大交流會DX",
+      "date": "2026-10-08 ~ 2026-10-11",
+      "date_info": {
+        "start": "2026-10-08",
+        "end": "2026-10-11",
+        "type": 0
+      },
+      "address": "華山紅磚六合院 西1館",
+      "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/820360_M.jpg",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26092513524731326",
+      "tags": [
+        "活動"
+      ],
+      "UUID": "9ad5812e50295c1690878ddcac6152e5"
+    },
+    {
+      "title": "【府中15】VR特展《女海盜》VR系列作",
+      "date": "2026-09-26 ~ 2026-11-22",
+      "date_info": {
+        "start": "2026-09-26",
+        "end": "2026-11-22",
+        "type": 0
+      },
+      "address": "府中15 3F展覽室",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787948176/xblr46yqmb3cpbarfov2.webp",
+      "source_url": "https://www.opentix.life/event/2083093985552293888",
+      "tags": null,
+      "UUID": "2c5a7c73003655da9df88122c9d81ca8"
+    },
+    {
+      "title": "林貞粿行",
+      "date": "2026-09-15 ~ 2026-10-28",
+      "date_info": {
+        "start": "2026-09-15",
+        "end": "2026-10-28",
+        "type": 0
+      },
+      "address": "小確幸前廣場",
+      "figure": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/LOGO_26091812230374203.jpg",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26091812275110654",
+      "tags": [
+        "期間限定"
+      ],
+      "UUID": "c5abd0fef8b95f9f9658467324431b34"
+    },
+    {
+      "title": "JNP 紀念品 by plain-me 快閃店",
+      "date": "2026-08-13 ~ 2026-10-12",
+      "date_info": {
+        "start": "2026-08-13",
+        "end": "2026-10-12",
+        "type": 0
+      },
+      "address": "中4E館 配電室",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1786095000/tzkgrezqqafcwqmbhbaj.webp",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26080712070005557",
+      "tags": [
+        "期間限定"
+      ],
+      "UUID": "175af1d08b5951a383af106df83cd800"
+    },
+    {
+      "title": "PUPPET SUNSUN POP UP SHOP Fruits Party",
+      "date": "2026-09-19 ~ 2026-10-12",
+      "date_info": {
+        "start": "2026-09-19",
+        "end": "2026-10-12",
+        "type": 0
+      },
+      "address": "中5B館 鍋爐室",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1789131281/b4u1vsqykr3wsbmvchab.webp",
+      "source_url": "https://www.huashan1914.com/w/huashan1914/exhibition_26091117100427184",
+      "tags": [
+        "期間限定"
+      ],
+      "UUID": "b299a9608a2e50adb1d74142fa091543"
     }
   ]
 }
