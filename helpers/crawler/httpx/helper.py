@@ -11,7 +11,7 @@ class HttpxAsyncClient:
         follow_redirects: bool = True,
         use_proxy: bool = False,
         use_certifi_support: bool = False,
-        disable_ipv6: bool = False,
+        disable_ipv6: bool = True,
         *args,
         **kwargs,
     ) -> None:
