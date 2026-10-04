@@ -4,80 +4,11 @@ PRODID:-//Been Been Play Project//松山文創園區//TW
 X-WR-CALNAME:松山文創園區 展覽時程
 X-WR-TIMEZONE:Asia/Taipei
 BEGIN:VEVENT
-SUMMARY:[松山文創園區] 臨時公共空間的臨時展覽
-DTSTART;VALUE=DATE:20260811
-DTEND;VALUE=DATE:20261004
-DTSTAMP:20261004T141256Z
-UID:f26dddc8e519552da536bc398fada79a
-DESCRIPTION:展覽日期：2026-08-11 ~ 2026-10-04\n地點：松山文創
- 園區・台灣設計館 01 展間\n原始連結：https://www.songshancul
- turalpark.org/exhibition/activity/78965588-eee7-4b24-bf52-a785dfefe102\n
-LOCATION:松山文創園區・台灣設計館 01 展間
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[松山文創園區] 2026 原創服裝大賞頒獎典禮系列活
- 動
-DTSTART;VALUE=DATE:20261002
-DTEND;VALUE=DATE:20261004
-DTSTAMP:20261004T141256Z
-UID:45e0321505b55dcc97914fe6e51b231a
-DESCRIPTION:展覽日期：2026-10-02 ~ 2026-10-04\n地點：松山文創
- 園區 1 號倉庫\n原始連結：https://www.songshanculturalpark.org/ex
- hibition/activity/b57ef955-2d9a-4e67-81bc-f99af969f954\n
-LOCATION:松山文創園區 1 號倉庫
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[松山文創園區] 「哈根達斯」慢享濃郁，品味解密
-DTSTART;VALUE=DATE:20261002
-DTEND;VALUE=DATE:20261004
-DTSTAMP:20261004T141256Z
-UID:a92c62791b9b571ca5c051ff144d8955
-DESCRIPTION:展覽日期：2026-10-02 ~ 2026-10-04\n地點：松山文創
- 園區 男澡堂\n原始連結：https://www.songshanculturalpark.org/exhi
- bition/activity/dee051cd-d199-4fad-9a34-a96b75094f27\n
-LOCATION:松山文創園區 男澡堂
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[松山文創園區] 2026 留學公會 國際留遊學秋季教育
- 展
-DTSTART;VALUE=DATE:20261003
-DTEND;VALUE=DATE:20261004
-DTSTAMP:20261004T141256Z
-UID:4b0a4980b6205acead79db47abc6f56e
-DESCRIPTION:展覽日期：2026-10-03 ~ 2026-10-04\n地點：松山文創
- 園區 5 號倉庫\n原始連結：https://www.songshanculturalpark.org/ex
- hibition/activity/2a4649b9-676c-415b-a934-b196b4d4f253\n
-LOCATION:松山文創園區 5 號倉庫
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[松山文創園區] 《墨的形狀》2026 合木兒童書法展
-DTSTART;VALUE=DATE:20261002
-DTEND;VALUE=DATE:20261004
-DTSTAMP:20261004T141256Z
-UID:8a68c251917256e2858166676ba3bc87
-DESCRIPTION:展覽日期：2026-10-02 ~ 2026-10-04\n地點：松山文創
- 園區 藝異空間\n原始連結：https://www.songshanculturalpark.org/e
- xhibition/activity/c0d45bbe-6e4c-471c-bc42-4f2e56848149\n
-LOCATION:松山文創園區 藝異空間
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[松山文創園區] 假的藝術書展：為了改變的小誌 Th
- e Fake Art Book Fair
-DTSTART;VALUE=DATE:20261003
-DTEND;VALUE=DATE:20261004
-DTSTAMP:20261004T141256Z
-UID:434e2604abd55faeb64ca5a5b6a68b56
-DESCRIPTION:展覽日期：2026-10-03 ~ 2026-10-04\n地點：松山文創
- 園區 創意空間\n原始連結：https://www.songshanculturalpark.org/e
- xhibition/activity/c9f26590-957e-47f1-8d0a-4fb5ac391d2b\n
-LOCATION:松山文創園區 創意空間
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[松山文創園區] 小熊維尼—友你相繪 100 週年限定
  快閃店
 DTSTART;VALUE=DATE:20260710
 DTEND;VALUE=DATE:20261011
-DTSTAMP:20261004T141256Z
+DTSTAMP:20261004T194351Z
 UID:90f34597292958b4b6cb263be02e2512
 DESCRIPTION:展覽日期：2026-07-10 ~ 2026-10-11\n地點：松山文創
  園區 北向製菸工廠\n原始連結：https://www.songshanculturalpark
@@ -89,7 +20,7 @@ SUMMARY:[松山文創園區] 璞石策展系列 Vol.1《Living Minerals｜
  礦物生活美學特展》
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20261011
-DTSTAMP:20261004T141256Z
+DTSTAMP:20261004T194351Z
 UID:126c88d5af985491964838ce809856be
 DESCRIPTION:展覽日期：2026-09-22 ~ 2026-10-11\n地點：松山文創
  園區 檢查室\n原始連結：https://www.songshanculturalpark.org/exhi
@@ -100,7 +31,7 @@ BEGIN:VEVENT
 SUMMARY:[松山文創園區] 100% 哆啦 A 夢櫻花節 in 台北
 DTSTART;VALUE=DATE:20260710
 DTEND;VALUE=DATE:20261011
-DTSTAMP:20261004T141256Z
+DTSTAMP:20261004T194351Z
 UID:0a59e1911d0b5147a3565aed349b33fc
 DESCRIPTION:展覽日期：2026-07-10 ~ 2026-10-11\n地點：松山文創
  園區 北向製菸工廠一樓 東側\n原始連結：https://www.songsha
@@ -113,7 +44,7 @@ SUMMARY:[松山文創園區] 瓦奇菲爾德皮革工房 50 週年特展
  快閃店
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261013
-DTSTAMP:20261004T141256Z
+DTSTAMP:20261004T194351Z
 UID:c3f11846ad0955128538153c9ed71ee7
 DESCRIPTION:展覽日期：2026-10-03 ~ 2026-10-13\n地點：松山文創
  園區 藝思空間\n原始連結：https://www.songshanculturalpark.org/e
@@ -124,7 +55,7 @@ BEGIN:VEVENT
 SUMMARY:[松山文創園區] 松山文創園區- 10月展演攻略
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261031
-DTSTAMP:20261004T141256Z
+DTSTAMP:20261004T194351Z
 UID:7fe6fa99e54c5e7d96654f6bf4344946
 DESCRIPTION:展覽日期：2026-10-01 ~ 2026-10-31\n地點：松山文創
  園區\n原始連結：https://www.songshanculturalpark.org/exhibition/act
@@ -136,7 +67,7 @@ SUMMARY:[松山文創園區] 松菸夜光花園 光影展 THE LUMINOUS GAR
  DEN
 DTSTART;VALUE=DATE:20260131
 DTEND;VALUE=DATE:20261231
-DTSTAMP:20261004T141256Z
+DTSTAMP:20261004T194351Z
 UID:75eb82fe93285202bf85af258fdf48f8
 DESCRIPTION:展覽日期：2026-01-31 ~ 2026-12-31\n地點：松山文創
  園區 巴洛克花園 Songshan Cultural and Creative Park︱Baroque Garde
@@ -146,10 +77,24 @@ LOCATION:松山文創園區 巴洛克花園 Songshan Cultural and Creative
   Park︱Baroque Garden
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[松山文創園區] 粹 · 本質 | 2026 年 iF 設計獎獲獎
+ 作品展 (V)
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261031
+DTSTAMP:20261004T194351Z
+UID:6f1ef3ed64585b859fa69f2a69acb585
+DESCRIPTION:展覽日期：2026-10-06 ~ 2026-10-31\n地點：iF 台北設
+ 計沙龍 松山文創園區 西向製菸工廠二樓 A7 W207\n原始連
+ 結：https://www.songshanculturalpark.org/exhibition/activity/16e1c9b4-21
+ c0-4c7d-814f-06e0569a8ae2\n
+LOCATION:iF 台北設計沙龍 松山文創園區 西向製菸工廠二樓
+  A7 W207
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[松山文創園區] 島礦祭 Mineral Island Festa 2026
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261011
-DTSTAMP:20261004T141256Z
+DTSTAMP:20261004T194351Z
 UID:73133a64f21155d09961b9d44f076bac
 DESCRIPTION:展覽日期：2026-10-09 ~ 2026-10-11\n地點：松山文創
  園區  南向製菸工廠\n原始連結：https://www.songshanculturalpar
@@ -160,7 +105,7 @@ BEGIN:VEVENT
 SUMMARY:[松山文創園區] 2026 史上最強球鞋與潮流展會
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
-DTSTAMP:20261004T141256Z
+DTSTAMP:20261004T194351Z
 UID:6a0e0f6f409152b0a53659df38eac5d9
 DESCRIPTION:展覽日期：2026-10-10 ~ 2026-10-11\n地點：松山文創
  園區 1 號倉庫\n原始連結：https://www.songshanculturalpark.org/ex
@@ -168,15 +113,72 @@ DESCRIPTION:展覽日期：2026-10-10 ~ 2026-10-11\n地點：松山文創
 LOCATION:松山文創園區 1 號倉庫
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[松山文創園區] 福爾摩沙永續保育國際論壇暨福爾
- 摩沙山海之島特展
+SUMMARY:[松山文創園區] 臨時公共空間的臨時展覽
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20261004
+DTSTAMP:20261004T194351Z
+UID:f26dddc8e519552da536bc398fada79a
+DESCRIPTION:展覽日期：2026-08-11 ~ 2026-10-04\n地點：松山文創
+ 園區・台灣設計館 01 展間\n原始連結：https://www.songshancul
+ turalpark.org/exhibition/activity/78965588-eee7-4b24-bf52-a785dfefe102\n
+LOCATION:松山文創園區・台灣設計館 01 展間
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[松山文創園區] 2026 原創服裝大賞頒獎典禮系列活
+ 動
 DTSTART;VALUE=DATE:20261002
-DTEND;VALUE=DATE:20261003
-DTSTAMP:20261004T141256Z
-UID:6f89064bea785b34beed6e6f7ea3f4bb
-DESCRIPTION:展覽日期：2026-10-02 ~ 2026-10-03\n地點：松山文創
- 園區 2、3 號倉庫\n原始連結：https://www.songshanculturalpark.or
- g/exhibition/activity/1cf58a38-da45-4cbf-8641-a200e1e7a769\n
-LOCATION:松山文創園區 2、3 號倉庫
+DTEND;VALUE=DATE:20261004
+DTSTAMP:20261004T194351Z
+UID:45e0321505b55dcc97914fe6e51b231a
+DESCRIPTION:展覽日期：2026-10-02 ~ 2026-10-04\n地點：松山文創
+ 園區 1 號倉庫\n原始連結：https://www.songshanculturalpark.org/ex
+ hibition/activity/b57ef955-2d9a-4e67-81bc-f99af969f954\n
+LOCATION:松山文創園區 1 號倉庫
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[松山文創園區] 「哈根達斯」慢享濃郁，品味解密
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261004
+DTSTAMP:20261004T194351Z
+UID:a92c62791b9b571ca5c051ff144d8955
+DESCRIPTION:展覽日期：2026-10-02 ~ 2026-10-04\n地點：松山文創
+ 園區 男澡堂\n原始連結：https://www.songshanculturalpark.org/exhi
+ bition/activity/dee051cd-d199-4fad-9a34-a96b75094f27\n
+LOCATION:松山文創園區 男澡堂
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[松山文創園區] 2026 留學公會 國際留遊學秋季教育
+ 展
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+DTSTAMP:20261004T194351Z
+UID:4b0a4980b6205acead79db47abc6f56e
+DESCRIPTION:展覽日期：2026-10-03 ~ 2026-10-04\n地點：松山文創
+ 園區 5 號倉庫\n原始連結：https://www.songshanculturalpark.org/ex
+ hibition/activity/2a4649b9-676c-415b-a934-b196b4d4f253\n
+LOCATION:松山文創園區 5 號倉庫
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[松山文創園區] 《墨的形狀》2026 合木兒童書法展
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261004
+DTSTAMP:20261004T194351Z
+UID:8a68c251917256e2858166676ba3bc87
+DESCRIPTION:展覽日期：2026-10-02 ~ 2026-10-04\n地點：松山文創
+ 園區 藝異空間\n原始連結：https://www.songshanculturalpark.org/e
+ xhibition/activity/c0d45bbe-6e4c-471c-bc42-4f2e56848149\n
+LOCATION:松山文創園區 藝異空間
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[松山文創園區] 假的藝術書展：為了改變的小誌 Th
+ e Fake Art Book Fair
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+DTSTAMP:20261004T194351Z
+UID:434e2604abd55faeb64ca5a5b6a68b56
+DESCRIPTION:展覽日期：2026-10-03 ~ 2026-10-04\n地點：松山文創
+ 園區 創意空間\n原始連結：https://www.songshanculturalpark.org/e
+ xhibition/activity/c9f26590-957e-47f1-8d0a-4fb5ac391d2b\n
+LOCATION:松山文創園區 創意空間
 END:VEVENT
 END:VCALENDAR
