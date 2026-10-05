@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T14:02:20.686837+08:00",
+  "updated": "2026-10-06T01:19:35.015540+08:00",
   "items": [
     {
       "title": "星球樂園 —全境式沈浸互動體驗遊樂園",
@@ -1046,6 +1046,316 @@
       "source_url": "https://www.opentix.life/program/2047597722530205696",
       "tags": null,
       "UUID": "4a037e990f9751118a4650e9a8d726c4"
+    },
+    {
+      "title": "《音樂怪博士 - 陳志遠特展》線上特展",
+      "date": "2026-10-01 ~ 2027-09-23",
+      "date_info": {
+        "start": "2026-10-01",
+        "end": "2027-09-23",
+        "type": 0
+      },
+      "address": "其他",
+      "figure": "https://www.tmc.taipei/files/1791178474E9u8pAkLFx.jpg",
+      "source_url": "https://www.tmc.taipei/tw/blog/show/ProdigyOfTheGeneration",
+      "tags": [
+        "展覽"
+      ],
+      "UUID": "af8bce906c825a5193c696ecd8a35ff1"
+    },
+    {
+      "title": "「忘記的那一刻」黃冠鈞",
+      "date": "2026-08-29 ~ 2026-10-08",
+      "date_info": {
+        "start": "2026-08-29",
+        "end": "2026-10-08",
+        "type": 0
+      },
+      "address": "安卓藝術",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB01zqytBWNNfIdCbTWHU9v2Q7qaykHvL7qaHb9Y9p4J%2BUI3bhTHV4db1QnUhiFWyoco%2FTxSnIEtea8cYBNVNUEE9M%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=aa38168d-0218-43b4-bd9f-26989d29e887&PageIndex=5&PageType=1",
+      "tags": null,
+      "UUID": "cd52103bfaf953a1975ed507d922fda4"
+    },
+    {
+      "title": "墨旅微探－宏揚藝術群創作聯展",
+      "date": "2026-10-03 ~ 2026-11-22",
+      "date_info": {
+        "start": "2026-10-03",
+        "end": "2026-11-22",
+        "type": 0
+      },
+      "address": "佛光緣美術館台北館",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB01wlyoycPdRoH9IvV3zMayJBm97gFRqhfc0XZQ5fLXiQKc4AFwOg%2FFBKhgWKCriZQLjdiqAEIxayYzcydyzRojHA%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=19edad06-f53a-4140-98a5-c01def19ff25&PageIndex=1&PageType=1",
+      "tags": null,
+      "UUID": "6ffd34899172597297460f30f75db638"
+    },
+    {
+      "title": "2026 KDIAF 關渡國際動畫節",
+      "date": "2026-10-25 ~ 2026-10-31",
+      "date_info": {
+        "start": "2026-10-25",
+        "end": "2026-10-31",
+        "type": 0
+      },
+      "address": "臺北藝術大學 藝文生態館",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB011OMr4pGHW%2Bv3%2BUsAU07MhwxLpz%2FzVedMoTNF%2F1oopKvPVsp17g0v1xRy3PN4nIuSwDa3pPTSY7YsIlwBxOk9xE%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=07d90489-e231-47ba-836d-ffbfa4d80704&PageIndex=3&PageType=1",
+      "tags": null,
+      "UUID": "f5aaf2a6ac705004910a93a999823a1a"
+    },
+    {
+      "title": "2026 台灣國際珍稀茶葉博覽會",
+      "date": "2026-10-23 ~ 2026-10-26",
+      "date_info": {
+        "start": "2026-10-23",
+        "end": "2026-10-26",
+        "type": 0
+      },
+      "address": "松山文創園區 1 號倉庫",
+      "figure": "https://www.songshanculturalpark.org/gallery/1789956605_32b4ffa75fab7b09c9c5.jpg",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/ca3efca9-30a4-44e7-b701-c57a33bce080",
+      "tags": null,
+      "UUID": "08912b53e41a5071ae31c75f90dce584"
+    },
+    {
+      "title": "2026 李奉 —「境」",
+      "date": "2026-09-05 ~ 2026-11-29",
+      "date_info": {
+        "start": "2026-09-05",
+        "end": "2026-11-29",
+        "type": 0
+      },
+      "address": "帝門藝術中心",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB01xD%2Ba3FWoidP1ijN%2B2fAeN1r8ZHarZTfN8z88GpB%2BHWmaLi93QD0Fbc789Fjy3%2FVs36wVk68V21e5CSwz9BZRyE%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=7df549c8-b747-4d44-9cfd-df47a60bce0b&PageIndex=4&PageType=1",
+      "tags": null,
+      "UUID": "37881e4ea3e9587bae067e25bf581416"
+    },
+    {
+      "title": "胡克敏水墨蔬菜長卷特展",
+      "date": "2024-01-01 ~ 2026-12-31",
+      "date_info": {
+        "start": "2024-01-01",
+        "end": "2026-12-31",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1788097952/pseglxmxph3seafjqizz.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=297861c0-d774-4714-abee-dc9685db5fa8&PageIndex=8&PageType=1",
+      "tags": null,
+      "UUID": "0923b3842cd15c72ae78a0d714984460"
+    },
+    {
+      "title": "「相繫之縷……」魯伊・米蓋爾・萊陶・費雷拉",
+      "date": "2026-08-29 ~ 2026-10-08",
+      "date_info": {
+        "start": "2026-08-29",
+        "end": "2026-10-08",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787475453/hro1sb5pmqblvcyv0wkf.webp",
+      "source_url": "https://www.art-msac.com/exhibitions/154-rui-miguel-leitao-ferreira-the-binding-strand-of/overview/",
+      "tags": null,
+      "UUID": "e706ce17a5ee5f5b8c2871a404a461e4"
+    },
+    {
+      "title": "【《被迫拙劣的濁黃們》A sordid, muddy yellow】木易艸夫的個展 YANG FU solo exhibition",
+      "date": "2026-09-30 ~ 2026-11-01",
+      "date_info": {
+        "start": "2026-09-30",
+        "end": "2026-11-01",
+        "type": 0
+      },
+      "address": "众藝術",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1789045154/g0ryv8nkelkiqzptemzo.webp",
+      "source_url": "https://artemperor.tw/tidbits/20398",
+      "tags": null,
+      "UUID": "bbe0b50570bc57d798aa424ab37d0f2c"
+    },
+    {
+      "title": "從前從前－繪說童話郵票特展",
+      "date": "2026-07-11 ~ 2027-01-03",
+      "date_info": {
+        "start": "2026-07-11",
+        "end": "2027-01-03",
+        "type": 0
+      },
+      "address": "郵政博物館臺北館特展室",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB01%2F119%2FnAy7Gzn%2FOZ5jc%2B4SCcBb9KN1%2FoIcIMg1XMDh3koaVRF66l85FUVA2BaqsUoCreBLuHSvEygyCcMh409Uc%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=e424932f-b763-4ff6-9aae-bb1488d2a1cb&PageIndex=6&PageType=1",
+      "tags": null,
+      "UUID": "2a226d4a93955a9689287f7f76075ff4"
+    },
+    {
+      "title": "松山文創園區藝術窗框計畫",
+      "date": "2026-08-01 ~ 2026-11-01",
+      "date_info": {
+        "start": "2026-08-01",
+        "end": "2026-11-01",
+        "type": 0
+      },
+      "address": "松山文創園區 文創大街、北向製菸工廠窗框",
+      "figure": "https://www.songshanculturalpark.org/gallery/1785218226_33ed26ddecfd23b0414c.jpg",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/8edf6d1e-37fb-41ed-bb12-6b86f30fd6d0",
+      "tags": null,
+      "UUID": "3acd0cba5f355b7bb33cad2b48182b13"
+    },
+    {
+      "title": "ELLE Weekend 穿條紋，享受法式鬆弛好週末",
+      "date": "2026-10-31 ~ 2026-11-01",
+      "date_info": {
+        "start": "2026-10-31",
+        "end": "2026-11-01",
+        "type": 0
+      },
+      "address": "松山文創園區 巴洛克花園、南向製菸工廠",
+      "figure": "https://www.songshanculturalpark.org/gallery/1790135209_ede2d14c4771a30d6485.jpg",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/276c0a6c-1a8a-4884-a4f4-31e4dabb0982",
+      "tags": null,
+      "UUID": "49e8274359b95b188147bca32b415a18"
+    },
+    {
+      "title": "《茶脈流轉：一盞茶的濃・淡・新》",
+      "date": "2026-01-17 ~ 2026-12-31",
+      "date_info": {
+        "start": "2026-01-17",
+        "end": "2026-12-31",
+        "type": 0
+      },
+      "address": "新芳春茶行",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1788097939/oouu4o6ttmonozyy29op.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=2411c859-c38c-4913-9d4f-f81f5b637745&PageIndex=7&PageType=1",
+      "tags": null,
+      "UUID": "7c3df709db7650108a44d98766043746"
+    },
+    {
+      "title": "台灣鄉土風情～2026林和杉油畫展",
+      "date": "2026-10-16 ~ 2026-10-25",
+      "date_info": {
+        "start": "2026-10-16",
+        "end": "2026-10-25",
+        "type": 0
+      },
+      "address": "孟焦畫坊",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB019vO0k712WGMgC3iPGGMKzfcfngMVLY4jjb3Llp5mm4onZzbJT4PVMNjSBwbBCldKkcRP9o4fXlnqiNpAwMI8SM%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=fc805a22-fb2e-420d-8a29-098156fd4e20&PageIndex=2&PageType=1",
+      "tags": null,
+      "UUID": "c862263e1b9351b7a2a4749b51fa891e"
+    },
+    {
+      "title": "《AHA 原來如此！教科書設計展》",
+      "date": "2026-10-14 ~ 2026-11-08",
+      "date_info": {
+        "start": "2026-10-14",
+        "end": "2026-11-08",
+        "type": 0
+      },
+      "address": "台灣設計館 01 展間",
+      "figure": "https://www.songshanculturalpark.org/gallery/1790841217_5ab77bd9184f8e3ed383.jpg",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/429e79b0-fed3-46f6-850e-47fa04b2ea86",
+      "tags": null,
+      "UUID": "31fd9ab6a26457c1afeb428acf5e6909"
+    },
+    {
+      "title": "【《當代主義狗李兆起個展》（Contemporarist DogLijhaoci Solo Exhibition）】",
+      "date": "2026-10-16 ~ 2027-01-10",
+      "date_info": {
+        "start": "2026-10-16",
+        "end": "2027-01-10",
+        "type": 0
+      },
+      "address": "國立臺北藝術大學關渡美術館",
+      "figure": "https://d2onjhd726mt7c.cloudfront.net/images/datas/000/128/642/e4ebpqvs2qrkz5dmglakq0jb7927djtc_800x420^.jpg",
+      "source_url": "https://artemperor.tw/tidbits/20485",
+      "tags": null,
+      "UUID": "a7b105f8f31456459ac734da18a46355"
+    },
+    {
+      "title": "毛孩藝術生活節 FURever Art Festival : IM”PAW”SIBLE",
+      "date": "2026-12-18 ~ 2026-12-20",
+      "date_info": {
+        "start": "2026-12-18",
+        "end": "2026-12-20",
+        "type": 0
+      },
+      "address": "松山文創園區 2 號倉庫",
+      "figure": "https://www.songshanculturalpark.org/gallery/1787192363_36f29568018f9e26a2ca.jpg",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c738025c-425f-4fdb-b7f0-79fcf49c7dc1",
+      "tags": null,
+      "UUID": "8b59bd8ea6025d2d992fab717315bfad"
+    },
+    {
+      "title": "「迴圈．超展開」2026第一屆臺南藝術雙年展",
+      "date": "2026-10-31 ~ 2027-03-01",
+      "date_info": {
+        "start": "2026-10-31",
+        "end": "2027-03-01",
+        "type": 0
+      },
+      "address": "臺南市美術館",
+      "figure": "https://tour.ibon.com.tw/allticket-prod/media/3dd4f0e2-90f0-41d4-8c47-29c1c334ec3b.jpg",
+      "source_url": "https://tour.ibon.com.tw/event/6a44d69e8a02446f77fc7531",
+      "tags": null,
+      "UUID": "af155eb707dc5f81bc192245fd521ccb"
+    },
+    {
+      "title": "迴圈．超展開：第一屆臺南藝術雙年展 ╱ Unfolding Circuits: 1st Tainan Art Biennale 2026",
+      "date": "2026-10-31 ~ 2027-03-01",
+      "date_info": {
+        "start": "2026-10-31",
+        "end": "2027-03-01",
+        "type": 0
+      },
+      "address": "16 核心展館 + 16 衛星展館╱16 Main Venues + 16 Satellite Venues",
+      "figure": "https://www.tnam.museum/images/filesys/images/ch/exhibition/2026_Biennale/1920_1080.jpg",
+      "source_url": "https://www.tnam.museum/exhibition/detail/726",
+      "tags": null,
+      "UUID": "9a35052c125b5b4e9a620c2829731788"
+    },
+    {
+      "title": "【安娜史塔希亞 · 薩莫伊洛娃: 影像的氣候】",
+      "date": "2026-10-16 ~ 2027-01-10",
+      "date_info": {
+        "start": "2026-10-16",
+        "end": "2027-01-10",
+        "type": 0
+      },
+      "address": "關渡美術館",
+      "figure": "https://d2onjhd726mt7c.cloudfront.net/images/datas/000/128/685/qtmc1p7h3uw11lvf6ao2sfre530wqza0_800x420^.jpg",
+      "source_url": "https://artemperor.tw/tidbits/20496",
+      "tags": null,
+      "UUID": "6ebf0e30abcd57859ca7566280db3854"
+    },
+    {
+      "title": "【展覽預告｜2026 米豆藝術空間「漂流圖書館」年度計劃共鳴】",
+      "date": "2026-10-03 ~ 2026-10-31",
+      "date_info": {
+        "start": "2026-10-03",
+        "end": "2026-10-31",
+        "type": 0
+      },
+      "address": "米豆藝術空間",
+      "figure": "https://d2onjhd726mt7c.cloudfront.net/images/datas/000/128/615/q1fkn135l7bn06tyxyvmazq3hqng98j6_800x420^.jpg",
+      "source_url": "https://artemperor.tw/tidbits/20477",
+      "tags": null,
+      "UUID": "7465440ed0c45dc2b3b8f589b3a9e415"
+    },
+    {
+      "title": "2026 臺北設計獎入圍作品展",
+      "date": "2026-10-09 ~ 2026-10-11",
+      "date_info": {
+        "start": "2026-10-09",
+        "end": "2026-10-11",
+        "type": 0
+      },
+      "address": "台灣設計館 03、04 展間",
+      "figure": "https://www.songshanculturalpark.org/gallery/1790750344_4c115a11d3b506cc9711.jpg",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/612f10c3-3123-4ca6-9556-016217eb0ce2",
+      "tags": null,
+      "UUID": "37e7e5428618555d9770caebb25e5fd2"
     }
   ]
 }
