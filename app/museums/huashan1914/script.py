@@ -5,20 +5,19 @@ import bs4
 
 from app.museums.huashan1914.information import HuaShan1914Information
 from app.museums.huashan1914.parse import huashan1914Parse
+from app.museums.huashan1914.utils import find_exhibition_list, get_event_category_data, get_event_venue_data
 from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
 from helpers.runner.helper import RunnerInit
-from helpers.storage.helper import ExhibitionItem, Information
-from helpers.translation.beautiful_soup import BeautifulSoupTranslation
-from helpers.utils_helper import get_asyncio_rate_limit, month_3
+from helpers.storage.helper import Information
+from helpers.translation.json.helper import DevalueToJsonTranslation, JsonTranslation
+from helpers.utils_helper import month_3
 
 
 class HuaShan1914Runner(RunnerInit):
-    translation = BeautifulSoupTranslation
+    translation = JsonTranslation
     use_parse = huashan1914Parse
-    use_suffix_item_from_url_auto = True
-    use_suffix_item_from_file_func = True
-    output_rss = True
+    temp = {"event_category_data": {}, "event_venue_data": {}}
 
     def set_cache_expire(self) -> int | None:
         return month_3()
@@ -32,11 +31,15 @@ class HuaShan1914Runner(RunnerInit):
         async with HttpxAsyncClient(headers=generate_headers()) as client:
             while True:
                 response = await client.get(
-                    f"https://www.huashan1914.com/w/huashan1914/exhibition?index={index}",
+                    f"https://www.huashan1914.com/exhibition?page={index}",
                 )
-                dataset = bs4.BeautifulSoup(response.text, "html5lib").select("ul#event-ul li")
+                parsed = bs4.BeautifulSoup(response.text, "html5lib").find("script", id="__NUXT_DATA__").string
+                r = DevalueToJsonTranslation().translation_to_object(parsed)
+                dataset = find_exhibition_list(r)
                 if dataset:
-                    datasets.append(response.text)
+                    datasets.append(dataset)
+                    self.temp["event_category_data"] |= get_event_category_data(r)
+                    self.temp["event_venue_data"] |= get_event_venue_data(r)
                     index = index + 1
                 else:
                     break
@@ -44,37 +47,13 @@ class HuaShan1914Runner(RunnerInit):
 
     async def fetch_parsed(self):
         items = []
-        parsers = cast(list[bs4.BeautifulSoup], await super().fetch_parsed())
+        parsers = cast(list[dict], await super().fetch_parsed())
         for parsed in parsers:
-            sub_items = parsed.select("ul#event-ul li")
-            items.extend(sub_items)
+            items.extend(parsed)
         return items
 
     async def fetch_items(self, *args, **kwargs):
-        return await super().fetch_items(target_domain="https://www.huashan1914.com")
-
-    async def _get_item_data(self, client, item: ExhibitionItem):
-        has_address_cache = await self.cache.aget(f"{item.UUID}-address")
-        if has_address_cache:
-            item.address = has_address_cache
-            return
-        response = await client.get(item.source_url)
-        soup = self.translation().translation_to_object(response.text)
-        if soup is None:
-            return None
-        exhibition_location = None
-        a_elements = soup.select("div.address a")
-        if a_elements:
-            exhibition_location = ", ".join([a_element.get_text(strip=True) for a_element in a_elements])
-        await self.cache.aset(f"{item.UUID}-address", exhibition_location, month_3())
-        item.address = exhibition_location
-
-    async def suffix_item_from_url_auto(self, items: list[ExhibitionItem]):
-        asyncio_limit = get_asyncio_rate_limit(3, 30)
-        headers = generate_headers()
-        async with HttpxAsyncClient(headers=headers) as client, asyncio_limit:
-            tasks = [self._get_item_data(client, item) for item in items]
-            await asyncio.gather(*tasks)
+        return await super().fetch_items(target_domain="https://www.huashan1914.com", **self.temp)
 
 
 async def main():

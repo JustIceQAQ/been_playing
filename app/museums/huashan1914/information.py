@@ -11,7 +11,7 @@ class HuaShan1914Information:
             location_code=Taiwan.taipei.zhongzheng_63000050,
             fullname="華山1914文化創意產業園區",
             code_name="HuaShan1914",
-            external_link="https://www.huashan1914.com/w/huashan1914/exhibition",
+            external_link="https://www.huashan1914.com/exhibition",
             branch_coordinates=Coordinate(
                 google_maps=GoogleMaps(plus_code="2GVH+JP 梅花里 臺北市中正區"),
                 open_street_map=OpenStreetMap(
