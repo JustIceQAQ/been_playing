@@ -1,76 +1,40 @@
-import datetime
-import re
-
-import bs4
-import cssutils
-
 from helpers.parse_helper import ParseInit
-from helpers.tags_hepler import normalize_tag
 
 
 class huashan1914Parse(ParseInit):
-    def __init__(self, item: bs4.element.Tag):
+    def __init__(self, item: dict):
         self.item = item
 
     def get_title(self, *args, **kwargs) -> str | None:
-        return self.item.select_one("li > a > div > div > div.card-text > div.card-text-name").get_text()
+        return self.item["article"]["default"]["title"]
 
     def get_date(self, *args, **kwargs) -> str | None:
-        raw_string = self.item.select_one("li > a > div > div > div.card-text > div.event-date").get_text()
-        if "-" in raw_string:
-            row_start_date, row_end_date = raw_string.split(" - ")
-            regulated_start_date = re.search(r"((?P<year>\d{4})\.(?P<month>\d{2})\.(?P<day>\d{2}))", row_start_date)
-            if regulated_start_date is None:
-                return None
-            start_date = datetime.date(
-                int(regulated_start_date.group("year")),
-                int(regulated_start_date.group("month")),
-                int(regulated_start_date.group("day")),
-            )
-            regulated_end_date = re.search(r"((?P<year>\d{4})?\.?(?P<month>\d{2})\.(?P<day>\d{2}))", row_end_date)
-            if regulated_end_date is None:
-                return start_date.isoformat()
-            end_date = datetime.date(
-                int(year if (year := regulated_end_date.group("year")) else start_date.year),
-                int(regulated_end_date.group("month")),
-                int(regulated_end_date.group("day")),
-            )
-
-            cooked_string = f"{start_date.isoformat()} ~ {end_date.isoformat()}"
-        else:
-            # one day case
-            regulated = re.search(r"((?P<year>\d{4})\.(?P<month>\d{2})\.(?P<day>\d{2}))", raw_string)
-            if regulated is None:
-                return None
-            start_date = datetime.date(
-                int(regulated.group("year")),
-                int(regulated.group("month")),
-                int(regulated.group("day")),
-            ).isoformat()
-            end_date = start_date
-            cooked_string = f"{start_date} ~ {end_date}"
-        return cooked_string
+        event_time = self.item["article"]["event_time"]
+        start_date = event_time["start_date"].split("T")[0]
+        end_date = event_time["end_date"].split("T")[0]
+        return f"{start_date} ~ {end_date}"
 
     def get_address(self, *args, **kwargs) -> str | None:
-        return None
+        aside = self.item["aside"]
+        this_category_event_venues = aside["category_event_venue"]
+        event_venue_data = kwargs.get("event_venue_data", {})
+        return "/".join(
+            event_venue_data[this_category_event_venue] for this_category_event_venue in this_category_event_venues
+        )
 
     def get_figure(self, *args, **kwargs) -> str | None:
-        if self.item is None:
-            return None
-        dev_style = self.item.select_one("li > a > div > div > div.card-img.wide")
-        if dev_style is None:
-            return None
-        dev_style = dev_style["style"]
-        style = cssutils.parseStyle(dev_style)
-
-        return url.replace("url(", "")[:-1].replace('"', "") if (url := style["background-image"]) else "-"
+        event_content = self.item["article"]["event_content"]
+        return event_content["hero_img"][0]["thumbnail_path"]
 
     def get_tags(self, *args, **kwargs) -> list[str] | None:
-        spans = self.item.select("div.event-list-type > span")
-        return [normalize_tag(span.get_text(strip=True)) for span in spans]
+        aside = self.item["aside"]
+        this_category_event_categories = aside["category_event_category"]
+        event_category_data = kwargs.get("event_category_data", {})
+        return [
+            event_category_data[this_category_event_category]
+            for this_category_event_category in this_category_event_categories
+        ]
 
     def get_source_url(self, *args, **kwargs) -> str | None:
-        target_domain = kwargs.get("target_domain", None)
-        if target_domain is None:
-            raise ValueError("請提供 TARGET_DOMAIN")
-        return "{}{}".format(target_domain, self.item.select_one("li > a")["href"])
+        slug = self.item["article"]["default"]["slug"]
+        return "{}{}".format("https://www.huashan1914.com/exhibition/", slug)
