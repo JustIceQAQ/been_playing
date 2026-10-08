@@ -108,7 +108,9 @@ async def generate_venue_meta(information: list["Information"]):
         "last_update": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "venues": venues,
     }
-    async with aiofiles.open(ROOT_PATH / "data" / "v2" / "_VENUE_META.json", "wb+") as afp:
+    venue_meta_json_file_path = ROOT_PATH / "data" / "v2" / "_VENUE_META.json"
+    venue_meta_json_file_path.mkdir(parents=True, exist_ok=True)
+    async with aiofiles.open(venue_meta_json_file_path, "wb+") as afp:
         await afp.write(orjson.dumps(payload, default=orjson_default_handler))
 
 
@@ -159,8 +161,9 @@ async def generate_location(information: list["Information"]):
             continue
         if location.branch_coordinates is None:
             pass
-
-    async with aiofiles.open(ROOT_PATH / "data" / "v2" / "_ALL_LOCATION.json", "wb+") as afp:
+    all_location_json_file_path = ROOT_PATH / "data" / "v2" / "_ALL_LOCATION.json"
+    all_location_json_file_path.mkdir(parents=True, exist_ok=True)
+    async with aiofiles.open(all_location_json_file_path, "wb+") as afp:
         await afp.write(orjson.dumps(ok_centers, default=orjson_default_handler))
 
 
