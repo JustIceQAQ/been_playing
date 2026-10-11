@@ -33,7 +33,7 @@ class SSHMRunner(RunnerInit):
     async def fetch_response(self):
         headers = generate_headers(host="www.sshm.ntpc.gov.tw")
         cookies = generate_cookies(need_asp_net_session_id=True)
-        async with NiquestsAsyncSession(headers=headers) as client:
+        async with NiquestsAsyncSession(headers=headers, use_proxy=True) as client:
             main_response = await client.get(
                 "https://www.sshm.ntpc.gov.tw/submenu?usein=2&psid=0G244574557570145140", cookies=cookies
             )
@@ -64,7 +64,7 @@ async def main():
     from helpers.cache import none_cache
     from helpers.image_hosting import none_image_hosting
 
-    await SSHMRunner().run(none_cache, none_image_hosting)
+    await SSHMRunner().run(none_cache, none_image_hosting, develop_mode=True)
 
 
 if __name__ == "__main__":
