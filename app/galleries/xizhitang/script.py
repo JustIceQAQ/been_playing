@@ -6,6 +6,7 @@ import bs4
 from app.galleries.xizhitang.parse import XiZhiTangParse
 from helpers.crawler.headers_helper import generate_cookies, generate_headers
 from helpers.crawler.httpx.helper import HttpxAsyncClient
+from helpers.crawler.ssl_helper import should_skip_verify
 from helpers.runner.helper import RunnerInit
 from helpers.storage.coordinate import Coordinate, GeoPoint
 from helpers.storage.helper import Information
@@ -37,9 +38,13 @@ class XiZhiTangRunner(RunnerInit):
         )
 
     async def fetch_response(self):
-        headers = generate_headers(host="www.xizhitang.com.tw")
+        host = "www.xizhitang.com.tw"
+        skip_verify = await should_skip_verify(
+            host, {"c67a4f586ed4c2f01ea19e0da7ad50b4e8f13de4af14026dfc13c574bdebcfcc"}
+        )
+        headers = generate_headers(host=host)
         cookies = generate_cookies(need_phpsessid=True)
-        async with HttpxAsyncClient(headers=headers) as client:
+        async with HttpxAsyncClient(headers=headers, verify=(not skip_verify)) as client:
             response = await client.get("https://www.xizhitang.com.tw/tidbits", cookies=cookies)
         return response.text
 
