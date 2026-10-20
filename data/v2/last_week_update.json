@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T21:46:48.736104+08:00",
+  "updated": "2026-10-21T04:07:01.642611+08:00",
   "items": [
     {
       "title": "《盛夏．飛越》 海南寫生采風創作展",
@@ -3032,6 +3032,76 @@
         "布袋戲、掌中戲"
       ],
       "UUID": "5d140daa3cdf5f2e87ebba0d304687b4"
+    },
+    {
+      "title": "2026福隆國際沙雕藝術季門票",
+      "date": "2026-10-21 ~ 2026-10-26",
+      "date_info": {
+        "start": "2026-10-21",
+        "end": "2026-10-26",
+        "type": 0
+      },
+      "address": "新北",
+      "figure": "https://res.klook.com/image/upload/2026沙雕季主視覺-326x460_crglli.jpg",
+      "source_url": "https://www.klook.com/zh-TW/activity/116166-2026-fulong-international-sand-sculpture-art-festival/",
+      "tags": null,
+      "UUID": "e9c91c5ac1d15b56b72939889054a741"
+    },
+    {
+      "title": "2026 TECA第47屆台北國際音響大展｜超越雙11最大音響週年慶",
+      "date": "2026-11-19 ~ 2026-11-22",
+      "date_info": {
+        "start": "2026-11-19",
+        "end": "2026-11-22",
+        "type": 0
+      },
+      "address": "台北",
+      "figure": "https://res.klook.com/image/upload/1119台北圓山音響展KLOOK_BN_326x460_1_wi5bae.jpg",
+      "source_url": "https://www.klook.com/zh-TW/activity/97385-taipei-international-audio-show/",
+      "tags": null,
+      "UUID": "88983c4c7faf5a46900a1b493c7a4e26"
+    },
+    {
+      "title": "POP! POP! POP! 流行音樂互動展 - 高雄流行音樂中心",
+      "date": "2026-10-21 ~ 2027-04-18",
+      "date_info": {
+        "start": "2026-10-21",
+        "end": "2027-04-18",
+        "type": 0
+      },
+      "address": "高雄",
+      "figure": "https://res.klook.com/image/upload/常設展klook_326x460_frshdr.png",
+      "source_url": "https://www.klook.com/zh-TW/activity/87496-pop-pop-pop-an-interactive-journey/",
+      "tags": null,
+      "UUID": "dcfe5b9b69a35524b492e090c7b08d96"
+    },
+    {
+      "title": "藍寶石大歌廳《秀場傳奇》故事展 - 高雄流行音樂中心",
+      "date": "2026-10-22 ~ 2026-12-31",
+      "date_info": {
+        "start": "2026-10-22",
+        "end": "2026-12-31",
+        "type": 0
+      },
+      "address": "高雄",
+      "figure": "https://res.klook.com/image/upload/0806_藍寶石故事展_326x460_dk8n5p.png",
+      "source_url": "https://www.klook.com/zh-TW/activity/121910-sapphire-hall-legendary-show-story-exhibition/",
+      "tags": null,
+      "UUID": "370708c677c5587abdb11080e194dc4d"
+    },
+    {
+      "title": "傳奇葉王200紀念展-國寶交趾陶大師",
+      "date": "2026-10-24 ~ 2027-04-25",
+      "date_info": {
+        "start": "2026-10-24",
+        "end": "2027-04-25",
+        "type": 0
+      },
+      "address": "嘉義市立博物館1樓特展廳",
+      "figure": "https://museum.chiayi.gov.tw/FileDownload/Exhibitions/20261016100520240309.jpg",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=624277e2-8969-4b46-985d-f49b43dbee0b&StartDate=2026%2f10%2f22&Page=1&appname=ExhibitionListC003320&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "302e874d06625356a336d4c0a3029cd3"
     }
   ]
 }
