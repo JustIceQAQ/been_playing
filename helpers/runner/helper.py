@@ -194,7 +194,7 @@ class RunnerInit(abc.ABC):
         self.exhibition_.execution_time = execution_time
 
         if develop_mode:
-            print(self.exhibition_)
+            print(self.exhibition_.model_dump_json(indent=2))
 
         else:
             await self.exhibition_.save_to_json(
