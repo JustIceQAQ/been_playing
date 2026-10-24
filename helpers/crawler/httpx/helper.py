@@ -24,22 +24,26 @@ class HttpxAsyncClient:
         self.disable_ipv6 = disable_ipv6
 
     async def __aenter__(self) -> httpx.AsyncClient:
+        kwargs = dict(self.kwargs)
+        verify = kwargs.pop("verify", None)
+
+        if verify is None and self.use_certifi_support:
+            verify = get_ssl_context().to_httpx()
+
         runtime_kwargs = {
             "timeout": self.timeout,
             "follow_redirects": self.follow_redirects,
         }
-        if self.use_certifi_support:
-            runtime_kwargs["verify"] = get_ssl_context().to_httpx()
+        if verify is not None:
+            runtime_kwargs["verify"] = verify
         if self.use_proxy:
             runtime_kwargs["proxy"] = get_proxy_adapter().to_httpx()
         if self.disable_ipv6:
-            runtime_kwargs["transport"] = httpx.AsyncHTTPTransport(local_address="0.0.0.0")
-        self.client = httpx.AsyncClient(
-            *self.args,
-            **runtime_kwargs,
-            **self.kwargs,
-        )
-
+            transport_kwargs = {"local_address": "0.0.0.0"}
+            if verify is not None:
+                transport_kwargs["verify"] = verify
+            runtime_kwargs["transport"] = httpx.AsyncHTTPTransport(**transport_kwargs)
+        self.client = httpx.AsyncClient(*self.args, **runtime_kwargs, **kwargs)
         await self.client.__aenter__()
         return self.client
 

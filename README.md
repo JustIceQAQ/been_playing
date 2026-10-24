@@ -131,6 +131,7 @@
         - [國立臺南生活美學館](https://www.tncsec.gov.tw) `tncsec`
         - [國立臺灣文學館](https://www.nmtl.gov.tw/) `NMTL`
         - [國立臺灣歷史博物館](https://www.nmth.gov.tw/) `NMTH`
+        - [司法博物館](https://www.judicial.gov.tw/) `Judicial`
     - 高雄市
         - [高雄市立歷史博物館](https://khm.org.tw/tw) `khm`
         - [高雄市立美術館](https://www.kmfa.gov.tw/) `KmFa`
