@@ -43,6 +43,7 @@ from .museums.hualien1913.script import HuaLien1913Runner
 from .museums.huashan1914.script import HuaShan1914Runner
 from .museums.ioesinica import IOESinicaRunner
 from .museums.jam.script import JamRunner
+from .museums.judicial import JudicialRunner
 from .museums.juming import JuMingRunner
 from .museums.kdmofa.script import KdMoFaRunner
 from .museums.khm import KhmRunner
@@ -221,6 +222,7 @@ MUSEUMS_RUNNERS = {
     FuZhong15Runner,
     XZCACRunner,
     TaiwanHistoricaRunner,
+    JudicialRunner,
 }
 
 GALLERIES_RUNNERS = {
