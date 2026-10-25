@@ -32,7 +32,7 @@ dependencies = [
     "pillow>=13.0.0",
     "wreq>=0.13.0",
     "httpx2>=2.13.1",
-    "certifi>=2026.7.22",
+    "certifi>=2026.10.19",
 ]
 
 [dependency-groups]
