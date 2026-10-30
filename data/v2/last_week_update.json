@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T05:20:16.568002+08:00",
+  "updated": "2026-10-30T14:17:56.010783+08:00",
   "items": [
     {
       "title": "傳奇葉王200紀念展-國寶交趾陶大師",
@@ -4696,6 +4696,90 @@
       "source_url": "https://www.klook.com/zh-TW/activity/87496-pop-pop-pop-an-interactive-journey/",
       "tags": null,
       "UUID": "dcfe5b9b69a35524b492e090c7b08d96"
+    },
+    {
+      "title": "2026幻旅林園",
+      "date": "2026-11-14 ~ 2026-12-13",
+      "date_info": {
+        "start": "2026-11-14",
+        "end": "2026-12-13",
+        "type": 0
+      },
+      "address": "220 新北市板橋區國定古蹟林本源園邸",
+      "figure": "https://newtaipei.travel/content/images/articles/73796/480x360_articles-image-fjn_suxjye66boy25x5w_q.png",
+      "source_url": "https://newtaipei.travel/zh-tw/calendar/detail/4082",
+      "tags": null,
+      "UUID": "709f8873f0435a83a9a3b479c6ee70af"
+    },
+    {
+      "title": "2026 新北城市展",
+      "date": "2026-10-30 ~ 2026-12-27",
+      "date_info": {
+        "start": "2026-10-30",
+        "end": "2026-12-27",
+        "type": 0
+      },
+      "address": "241 新北市三重區安芯路1號(三重安芯中心)",
+      "figure": "https://newtaipei.travel/content/images/articles/73797/480x360_articles-image-5_dhm0stneigwfst9cziuq.jpg",
+      "source_url": "https://newtaipei.travel/zh-tw/calendar/detail/4083",
+      "tags": null,
+      "UUID": "b1ea95fe34475893bab87f50613031e4"
+    },
+    {
+      "title": "流光藝境",
+      "date": "2027-01-30 ~ 2027-04-18",
+      "date_info": {
+        "start": "2027-01-30",
+        "end": "2027-04-18",
+        "type": 0
+      },
+      "address": "松山文創園區 1號倉庫",
+      "figure": "https://s3.resource.opentix.life/upload/program/1792504164616WFUNnB2hW3.jpeg",
+      "source_url": "https://www.opentix.life/event/2112542232877936641",
+      "tags": null,
+      "UUID": "aa17b50ca88055ad9455dcfb7b67d843"
+    },
+    {
+      "title": "2026草嶺古道芒花季",
+      "date": "2026-11-14 ~ 2026-12-13",
+      "date_info": {
+        "start": "2026-11-14",
+        "end": "2026-12-13",
+        "type": 0
+      },
+      "address": "228 新北市貢寮區草嶺古道沿線、福隆遊客中心至大里遊客中心及其周邊景點",
+      "figure": "https://newtaipei.travel/content/images/articles/73794/480x360_articles-image-2cejq88_ckgsbnggvsaoog.jpg",
+      "source_url": "https://newtaipei.travel/zh-tw/calendar/detail/4080",
+      "tags": null,
+      "UUID": "64624af93d80511796214a83001e20f1"
+    },
+    {
+      "title": "2026新北市林口子弟戲文化節暨樂林園百年大慶",
+      "date": "2026-11-15",
+      "date_info": {
+        "start": "2026-11-15",
+        "end": "2026-11-15",
+        "type": 1
+      },
+      "address": "244 新北市林口區竹林山觀音寺",
+      "figure": "https://newtaipei.travel/content/images/articles/73795/480x360_articles-image-f37d4cq_lec8uaelnd6rga.jpg",
+      "source_url": "https://newtaipei.travel/zh-tw/calendar/detail/4081",
+      "tags": null,
+      "UUID": "7ba13c9f1dfb5d4b9f3bd0d0f39852b4"
+    },
+    {
+      "title": "迴圈．遶境 百虎尋福七路徑",
+      "date": "2026-11-15 ~ 2027-02-14",
+      "date_info": {
+        "start": "2026-11-15",
+        "end": "2027-02-14",
+        "type": 0
+      },
+      "address": "集合地點/走讀路線依網頁說明為主",
+      "figure": "https://tour.ibon.com.tw/allticket-prod/media/3a57cd60-d0c4-4740-9bed-96eb773902bf.jpg",
+      "source_url": "https://tour.ibon.com.tw/event/6ae1699766c9937463dee7bc",
+      "tags": null,
+      "UUID": "c8a4a51bb4be530f96c5f735f0245f4c"
     }
   ]
 }
