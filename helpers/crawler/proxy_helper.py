@@ -20,9 +20,23 @@ class ProxyAdapter:
         return proxies
 
 
+class NoneAdapter:
+    def __init__(self, proxy_url: str):
+        self.proxy_url = proxy_url
+
+    def to_httpx(self) -> Httpx2Proxy | None:
+        return None
+
+    def to_niquests(self) -> dict | None:
+        return None
+
+    def to_wreq(self) -> list[WreqProxy] | None:
+        return None
+
+
 @lru_cache
-def get_proxy_adapter() -> ProxyAdapter:
+def get_proxy_adapter() -> NoneAdapter:
     from configs.settings import get_settings
 
     runtime_settings = get_settings()
-    return ProxyAdapter(runtime_settings.PROXY_POOL)
+    return NoneAdapter(runtime_settings.PROXY_POOL)
