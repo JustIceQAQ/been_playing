@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T22:43:51.322559+08:00",
+  "updated": "2026-11-01T04:13:58.844447+08:00",
   "items": [
     {
       "title": "傳奇葉王200紀念展-國寶交趾陶大師",
@@ -6070,6 +6070,146 @@
         "古物、古董"
       ],
       "UUID": "f47562b3864b57fe8f27ece7ab4b600b"
+    },
+    {
+      "title": "2026 我們的文學夢",
+      "date": "2026-01-01 ~ 2026-12-31",
+      "date_info": {
+        "start": "2026-01-01",
+        "end": "2026-12-31",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://kishuan.org.tw/Upload/paper_202512101008537.png",
+      "source_url": "https://kishuan.org.tw/activity_detail1816.htm",
+      "tags": null,
+      "UUID": "4ff8bc6b308352a39f8643ddba0c7e98"
+    },
+    {
+      "title": "「藝趣蟾蜍山」創齡藝術共融成果展",
+      "date": "2026-01-01 ~ 2026-12-31",
+      "date_info": {
+        "start": "2026-01-01",
+        "end": "2026-12-31",
+        "type": 0
+      },
+      "address": "蟾蜍山大客廳（週一固定休館）",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1788097937/nz3od3tbuu3lj11fet5k.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=fc9c95f1-61f8-4467-bcbf-99532349e74d&PageIndex=7&PageType=1",
+      "tags": null,
+      "UUID": "1595464853e459d2b61e10db7b0c96e7"
+    },
+    {
+      "title": "《微光寄旅：第九屆科學攝影》特展",
+      "date": "2026-06-18 ~ 2027-03-28",
+      "date_info": {
+        "start": "2026-06-18",
+        "end": "2027-03-28",
+        "type": 0
+      },
+      "address": "國立自然科學博物館 人類文化廳迴廊",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1787158399/py4csqhdhot4n3zrshwj.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=9e731e77-fad3-461b-9b8a-f33294dfb5f3&PageIndex=6&PageType=1",
+      "tags": null,
+      "UUID": "2e6d6309a6e85ec38e07869c716cf10e"
+    },
+    {
+      "title": "「闊土興地．珍檔鑫傳」土地銀行行史展",
+      "date": "2019-11-05 ~ 2026-12-31",
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "國立臺灣博物館-古生物館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1786266714/z3vjb7zplfydoub9ncxg.webp",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=90082",
+      "tags": null,
+      "UUID": "dbe46c42a2fb5d1f85fe943edecef1be"
+    },
+    {
+      "title": "古蹟探祕—勸業銀行舊廈古蹟修復常設展",
+      "date": "2021-11-15 ~ 2026-12-31",
+      "date_info": {
+        "start": "2021-11-15",
+        "end": "2026-12-31",
+        "type": 0
+      },
+      "address": "臺博館古生物館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1788097953/ueb5xlgwfahxmdvwf1m1.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=c30b5c88-a6bb-4571-a20f-61ef20da2a69&PageIndex=8&PageType=1",
+      "tags": null,
+      "UUID": "3ea6633de671560e9b36c98718239019"
+    },
+    {
+      "title": "《茶脈流轉：一盞茶的濃・淡・新》",
+      "date": "2026-01-17 ~ 2026-12-31",
+      "date_info": {
+        "start": "2026-01-17",
+        "end": "2026-12-31",
+        "type": 0
+      },
+      "address": "新芳春茶行",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1788097939/oouu4o6ttmonozyy29op.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=2411c859-c38c-4913-9d4f-f81f5b637745&PageIndex=7&PageType=1",
+      "tags": null,
+      "UUID": "7c3df709db7650108a44d98766043746"
+    },
+    {
+      "title": "傳奇葉王200紀念展-國寶交趾陶大師",
+      "date": "2026-10-24 ~ 2027-04-25",
+      "date_info": {
+        "start": "2026-10-24",
+        "end": "2027-04-25",
+        "type": 0
+      },
+      "address": "嘉義市立博物館1樓特展廳",
+      "figure": "https://museum.chiayi.gov.tw/FileDownload/Exhibitions/20261016100520240309.jpg",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=624277e2-8969-4b46-985d-f49b43dbee0b&StartDate=2026%2f11%2f01&EndDate=2026%2f11%2f01&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "0173fe40a26459989cd8935eda819f35"
+    },
+    {
+      "title": "敦煌壁畫常設展",
+      "date": "2023-05-20 ~ 2026-12-31",
+      "date_info": {
+        "start": "2023-05-20",
+        "end": "2026-12-31",
+        "type": 0
+      },
+      "address": "胡克敏紀念館",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1788097954/dkb9ijhzzqvkfmsqaox2.webp",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=04ec255a-45da-4c4f-a5ba-003f06fe90aa&PageIndex=8&PageType=1",
+      "tags": null,
+      "UUID": "9d7b1c4b325e52f2a8dd2d372e70c019"
+    },
+    {
+      "title": "排球少年!!動畫10週年紀念展IMMERSIVE EXHIBITION",
+      "date": "2026-12-25 ~ 2027-03-28",
+      "date_info": {
+        "start": "2026-12-25",
+        "end": "2027-03-28",
+        "type": 0
+      },
+      "address": "松山文創園區 多功能展演廳",
+      "figure": "https://tour.ibon.com.tw/allticket-prod/media/5bd7c993-12ac-4faf-804e-58de0afb2de2.jpg",
+      "source_url": "https://tour.ibon.com.tw/event/6acde3ec24345e364c2dc7d2",
+      "tags": null,
+      "UUID": "4e78ca84e5c35bf68c5e9f63500c95d3"
+    },
+    {
+      "title": "從前從前－繪說童話郵票特展",
+      "date": "2026-07-11 ~ 2027-01-03",
+      "date_info": {
+        "start": "2026-07-11",
+        "end": "2027-01-03",
+        "type": 0
+      },
+      "address": "郵政博物館臺北館特展室",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB01%2F119%2FnAy7Gzn%2FOZ5jc%2B4SCcBb9KN1%2FoIcIMg1XMDh3koaVRF66l85FUVA2BaqsUoCreBLuHSvEygyCcMh409Uc%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=e424932f-b763-4ff6-9aae-bb1488d2a1cb&PageIndex=6&PageType=1",
+      "tags": null,
+      "UUID": "2a226d4a93955a9689287f7f76075ff4"
     }
   ]
 }
