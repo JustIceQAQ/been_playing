@@ -38,6 +38,8 @@ class NiquestsAsyncSession(niquests.AsyncSession):
         super().__init__(*args, timeout=timeout, **runtime_kwargs, **kwargs)
         self.passed_args = args
         self.passed_kwargs = kwargs
+
+        niquests.AsyncSession()
         adapter = AsyncHTTPAdapter(
             max_retries=_RETRY_STRATEGY,
             disable_ipv4=disable_ipv4,
