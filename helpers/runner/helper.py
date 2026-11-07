@@ -6,6 +6,7 @@ import time
 from typing import Any
 
 from helpers.cache.base import CacheBase
+from helpers.crawler.retry_helper import call_with_retry
 from helpers.image_hosting.base import ImageHostingBase
 from helpers.parse_helper import ParseInit
 from helpers.storage.helper import Exhibition, ExhibitionItem, Information
@@ -27,6 +28,7 @@ class RunnerInit(abc.ABC):
     output_ics: bool = False
 
     retry_on_empty: bool = True
+    retry_on_error: bool = True
     retry_times: int = 3
     retry_interval: int = 10
 
@@ -43,6 +45,16 @@ class RunnerInit(abc.ABC):
     @abc.abstractmethod
     async def fetch_response(self):
         raise NotImplementedError
+
+    async def fetch_response_with_retry(self):
+        if not self.retry_on_error:
+            return await self.fetch_response()
+        return await call_with_retry(
+            self.fetch_response,
+            retries=self.retry_times,
+            interval=self.retry_interval,
+            name=self.__class__.__name__,
+        )
 
     async def items_check(self):
         if not self.items_:
@@ -161,7 +173,7 @@ class RunnerInit(abc.ABC):
         if self.output_ics:
             self.information_.has_ics = True
 
-        self.response_ = await self.fetch_response()
+        self.response_ = await self.fetch_response_with_retry()
         self.parsed_ = await self.fetch_parsed()
         self.items_ = await self.fetch_items()
 
@@ -170,7 +182,7 @@ class RunnerInit(abc.ABC):
                 if self.items_:
                     break
                 await asyncio.sleep(self.retry_interval * attempt)
-                self.response_ = await self.fetch_response()
+                self.response_ = await self.fetch_response_with_retry()
                 self.parsed_ = await self.fetch_parsed()
                 self.items_ = await self.fetch_items()
         if hasattr(self, "set_social_media"):
@@ -195,7 +207,6 @@ class RunnerInit(abc.ABC):
 
         if develop_mode:
             print(self.exhibition_.model_dump_json(indent=2))
-
         else:
             await self.exhibition_.save_to_json(
                 f"{self.information_.code_name}",
