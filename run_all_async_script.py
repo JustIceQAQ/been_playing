@@ -1,6 +1,7 @@
 import argparse
 import asyncio
 import logging
+import os
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -25,6 +26,8 @@ from helpers.storage.helper import (
 from helpers.symbol.venue import VenueType
 
 ROOT_PATH = Path(__file__).parent.absolute()
+sentry_sdk.set_tag("github_run_id", os.environ.get("GITHUB_RUN_ID"))
+sentry_sdk.set_tag("github_run_attempt", os.environ.get("GITHUB_RUN_ATTEMPT"))
 
 
 async def generate_venue_meta(information: list["Information"]):
