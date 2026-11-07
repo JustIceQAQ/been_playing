@@ -2,10 +2,8 @@ import asyncio
 from typing import cast
 
 import bs4
-from wreq import Proxy
 
 from app.museums.hong_gah.parse import HongGahParse
-from configs.settings import get_settings
 from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.runner.helper import RunnerInit
@@ -45,12 +43,9 @@ class HongGahRunner(RunnerInit):
             referer="https://hong-gah.org.tw/exhibitions-zh",
             x_requested_with="XMLHttpRequest",
         )
-        runtime_settings = get_settings()
-        proxies = None if runtime_settings.PROXY_POOL is None else [Proxy.all(runtime_settings.PROXY_POOL)]
         async with WReqAsyncClient(
             headers=headers,
             follow_redirects=True,
-            proxies=proxies,
         ) as client:
             response = await client.get("https://hong-gah.org.tw/exhibitions-zh")
         return await response.text()

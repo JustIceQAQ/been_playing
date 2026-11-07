@@ -1,10 +1,7 @@
 import asyncio
 from typing import cast
 
-from wreq import Proxy
-
 from app.platform.klook.parse import KLookParse
-from configs.settings import get_settings
 from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.runner.helper import RunnerInit
@@ -57,11 +54,7 @@ class KLookRunner(RunnerInit):
                 "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
             },
         )
-        runtime_settings = get_settings()
-        proxies = None if runtime_settings.PROXY_POOL is None else [Proxy.all(runtime_settings.PROXY_POOL)]
-        async with WReqAsyncClient(
-            proxies=proxies,
-        ) as client:
+        async with WReqAsyncClient() as client:
             response = await client.get(self.target_url.format(page_num=1), headers=headers)
             if not response.status.is_success():
                 return responses

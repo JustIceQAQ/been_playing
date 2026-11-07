@@ -6,10 +6,8 @@ from typing import cast
 
 import bs4
 from dateutil.relativedelta import relativedelta
-from wreq import Proxy
 
 from app.platform.kktix.parse import KKTixParse
-from configs.settings import get_settings
 from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.runner.helper import RunnerInit
 from helpers.storage.helper import Information
@@ -55,13 +53,7 @@ class KKTixRunner(RunnerInit):
         start_at = urllib.parse.quote(today.strftime("%Y/%m/%d"), safe="")
         end_at = urllib.parse.quote(today_add_2_months.strftime("%Y/%m/%d"), safe="")
         responses = []
-        runtime_settings = get_settings()
-        proxies = None
-        if runtime_settings.PROXY_POOL is not None:
-            proxies = [Proxy.all(runtime_settings.PROXY_POOL)]
-        async with WReqAsyncClient(
-            proxies=proxies,
-        ) as client:
+        async with WReqAsyncClient() as client:
             page = 1
             while True:
                 response = await client.get(

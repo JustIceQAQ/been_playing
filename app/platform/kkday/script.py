@@ -6,11 +6,9 @@ import urllib.parse
 from typing import TypedDict, cast
 
 import bs4
-from wreq import Proxy
 
 from app.platform.kkday.parse import KKDayParse
 from app.platform.kkday.utils import parse_list
-from configs.settings import get_settings
 from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.runner.helper import RunnerInit
@@ -139,11 +137,7 @@ class KKDayRunner(RunnerInit):
                 "Accept-Language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
             },
         )
-        runtime_settings = get_settings()
-        proxies = None if runtime_settings.PROXY_POOL is None else [Proxy.all(runtime_settings.PROXY_POOL)]
-        async with WReqAsyncClient(
-            proxies=proxies,
-        ) as client:
+        async with WReqAsyncClient() as client:
             first_response = await client.get(self._get_this_url(), headers=headers)
             if not first_response.status.is_success():
                 return []
