@@ -15,7 +15,8 @@ from rich.progress import BarColumn, MofNCompleteColumn, Progress, SpinnerColumn
 from app.script import ALL_RUNNERS
 from configs.settings import get_settings
 from helpers.cache import disk_cache, none_cache
-from helpers.image_hosting import get_initialized_cloudinary_image_hosting, none_image_hosting
+from helpers.image_hosting import none_image_hosting
+from helpers.image_hosting.cloudinary.depends import get_initialized_cloudinary_image_hosting_depends
 from helpers.storage.coordinate import Coordinate
 from helpers.storage.helper import (
     Information,
@@ -183,13 +184,8 @@ async def main(worker: int | None = None, worker_max: int | None = None):
         datefmt="%Y-%m-%d %H:%M",
     )
     use_image_host = none_image_hosting
-    if (not runtime_setting.IS_DEBUG) and (runtime_setting.is_cloudinary_available):
-        use_image_host = get_initialized_cloudinary_image_hosting(
-            runtime_setting.CLOUDINARY_CLOUD_NAME,
-            runtime_setting.CLOUDINARY_API_KEY,
-            runtime_setting.CLOUDINARY_API_SECRET,
-        )
-        use_image_host = none_image_hosting
+    if runtime_setting.is_cloudinary_available:
+        use_image_host = get_initialized_cloudinary_image_hosting_depends()
 
     use_cache = none_cache if runtime_setting.IS_DEBUG else disk_cache
     job = list(ALL_RUNNERS)

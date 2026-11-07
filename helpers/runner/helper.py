@@ -32,6 +32,8 @@ class RunnerInit(abc.ABC):
     retry_times: int = 3
     retry_interval: int = 10
 
+    image_save_to_hosting: bool = False
+
     def set_cache_expire(self) -> int | None:
         return
 
@@ -192,8 +194,9 @@ class RunnerInit(abc.ABC):
         self.exhibition_ = Exhibition(information=self.information_, items=self.items_, social_media=social_media)
 
         _image_sem = image_sem if image_sem is not None else asyncio.Semaphore(5)
-        cache_tasks = [self.cache_image_url(item, _image_sem) for item in self.exhibition_.items]
-        await asyncio.gather(*cache_tasks)
+        if self.image_save_to_hosting:
+            cache_tasks = [self.cache_image_url(item, _image_sem) for item in self.exhibition_.items]
+            await asyncio.gather(*cache_tasks)
 
         if self.use_suffix_item_from_url_auto:
             await self.suffix_item_from_url_auto(self.exhibition_.items)
