@@ -23,6 +23,7 @@ class NpmRunner(RunnerInit):
     is_sort = False
     output_ics = True
     output_rss = True
+    image_save_to_hosting = True
 
     def set_cache_expire(self) -> int | None:
         return month_6()
@@ -77,7 +78,7 @@ class NpmRunner(RunnerInit):
 
     async def fetch_north_response(self):
         this_header = generate_headers(
-            referer="https://www.npm.gov.tw/",
+            referer="https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1",
             need_upgrade_insecure_requests=True,
             host="www.npm.gov.tw",
         )
@@ -193,6 +194,7 @@ async def main():
     from helpers.cache.none.helper import none_cache
     from helpers.image_hosting.none.helper import none_image_hosting
 
+    # from helpers.image_hosting.cloudinary.depends import get_initialized_cloudinary_image_hosting_depends
     await NpmRunner().run(none_cache, none_image_hosting, develop_mode=True)
 
 
