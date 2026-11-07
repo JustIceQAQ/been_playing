@@ -1,11 +1,8 @@
 import asyncio
 from typing import TYPE_CHECKING, cast
 
-from wreq import Proxy
-
 from app.museums.tfai.information import TFAIInformation
 from app.museums.tfai.parse import TFAIParse
-from configs.settings import get_settings
 from helpers.crawler.headers_helper import generate_cookies, generate_headers
 from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.runner.helper import RunnerInit
@@ -33,13 +30,9 @@ class TFAIRunner(RunnerInit):
         )
         cookies = generate_cookies(need_js_ession_id=True)
 
-        runtime_settings = get_settings()
-        proxies = None if runtime_settings.PROXY_POOL is None else [Proxy.all(runtime_settings.PROXY_POOL)]
-
         async with WReqAsyncClient(
             headers=headers,
             follow_redirects=True,
-            proxies=proxies,
         ) as client:
             response = await client.get(
                 "https://www.tfai.org.tw/program/searchAjax?date=&type=Exhibition&location=&topic=",

@@ -125,12 +125,13 @@ class NpmRunner(RunnerInit):
         if south_parsed is None and south_parsed_dataset_1 is None:
             return []
         south_parsed_list = []
-        if south_parsed is not None:
-            datasets_row = south_parsed.select("div.card_wrap > div.kf_imglist")
-            south_parsed_list.extend(datasets_row)
-        if south_parsed_dataset_1 is not None:
-            datasets_row = south_parsed.select("div.card_wrap > div.kf_imglist")
-            south_parsed_list.extend(datasets_row)
+
+        for parsed_obj in (
+            south_parsed,
+            south_parsed_dataset_1,
+        ):
+            if parsed_obj is not None:
+                south_parsed_list.extend(parsed_obj.select("div.card_wrap > div.kf_imglist"))
 
         return south_parsed_list
 
@@ -192,7 +193,7 @@ async def main():
     from helpers.cache.none.helper import none_cache
     from helpers.image_hosting.none.helper import none_image_hosting
 
-    await NpmRunner().run(none_cache, none_image_hosting)
+    await NpmRunner().run(none_cache, none_image_hosting, develop_mode=True)
 
 
 if __name__ == "__main__":

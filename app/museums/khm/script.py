@@ -2,10 +2,9 @@ import asyncio
 from typing import cast
 
 import bs4
-from wreq import Client, Proxy
+from wreq import Client
 
 from app.museums.khm.parse import KhmParse
-from configs.settings import get_settings
 from helpers.crawler.headers_helper import generate_headers
 from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.runner.helper import RunnerInit
@@ -47,10 +46,7 @@ class KhmRunner(RunnerInit):
         current_exhibitions_url = "https://khm.org.tw/tw/exhibition/currentexhibitions"
         permanent_exhibitions = "https://khm.org.tw/tw/exhibition/permanentexhibitions"
         headers = generate_headers(referer=current_exhibitions_url, not_use_user_agent=True)
-        runtime_settings = get_settings()
-        proxies = None if runtime_settings.PROXY_POOL is None else [Proxy.all(runtime_settings.PROXY_POOL)]
         async with WReqAsyncClient(
-            proxies=proxies,
             headers=headers,
         ) as client:
             responses = await asyncio.gather(
