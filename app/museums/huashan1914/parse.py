@@ -18,9 +18,14 @@ class huashan1914Parse(ParseInit):
         aside = self.item["aside"]
         this_category_event_venues = aside["category_event_venue"]
         event_venue_data = kwargs.get("event_venue_data", {})
-        return "/".join(
-            event_venue_data[this_category_event_venue] for this_category_event_venue in this_category_event_venues
-        )
+        address_list = []
+        for this_category_event_venue in this_category_event_venues:
+            if has_value := event_venue_data.get(this_category_event_venue):
+                address_list.append(has_value)
+
+        if address_list:
+            return "/".join(address_list)
+        return None
 
     def get_figure(self, *args, **kwargs) -> str | None:
         event_content = self.item["article"]["event_content"]
@@ -30,9 +35,11 @@ class huashan1914Parse(ParseInit):
         aside = self.item["aside"]
         this_category_event_categories = aside["category_event_category"]
         event_category_data = kwargs.get("event_category_data", {})
+
         return [
-            event_category_data[this_category_event_category]
+            event_category_data.get(this_category_event_category)
             for this_category_event_category in this_category_event_categories
+            if event_category_data.get(this_category_event_category)
         ]
 
     def get_source_url(self, *args, **kwargs) -> str | None:
