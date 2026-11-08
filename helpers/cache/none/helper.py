@@ -21,6 +21,7 @@ class NoneCache(CacheBase):
         value: Any,
         expire: int | str | None = None,
         from_datetime: datetime.datetime | None = None,
+        tag: str | None = None,
     ):
         pass
 
@@ -33,6 +34,7 @@ class NoneCache(CacheBase):
         value: Any,
         expire: int | str | None = None,
         from_datetime: datetime.datetime | None = None,
+        tag: str | None = None,
     ):
         pass
 

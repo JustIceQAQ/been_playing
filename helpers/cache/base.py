@@ -22,6 +22,7 @@ class CacheBase(abc.ABC):
         value: Any,
         expire: int | str | None = None,
         from_datetime: datetime.datetime | None = None,
+        tag: str | None = None,
     ):
         raise NotImplementedError
 
@@ -36,6 +37,7 @@ class CacheBase(abc.ABC):
         value: Any,
         expire: int | str | None = None,
         from_datetime: datetime.datetime | None = None,
+        tag: str | None = None,
     ):
         raise NotImplementedError
 
