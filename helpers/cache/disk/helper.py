@@ -49,10 +49,11 @@ class DiskCache(CacheBase):
         value: Any,
         expire: int | str | None = None,
         from_datetime: datetime.datetime | None = None,
+        tag: str | None = None,
     ) -> bool | None:
         future = self.loop.run_in_executor(
             None,
-            functools.partial(self.set, key, value, expire=expire, from_datetime=from_datetime),
+            functools.partial(self.set, key, value, expire=expire, from_datetime=from_datetime, tag=tag),
         )
         result = await future
         return result
@@ -63,9 +64,10 @@ class DiskCache(CacheBase):
         value: Any,
         expire: int | str | None = None,
         from_datetime: datetime.datetime | None = None,
+        tag: str | None = None,
     ):
         expire_seconds = self.get_expire_seconds(expire, from_datetime)
-        return self.origin_cache.set(key, value, expire=expire_seconds)
+        return self.origin_cache.set(key, value, expire=expire_seconds, tag=tag)
 
     def get_expire_seconds(self, expire, from_datetime):
         if isinstance(expire, str) and croniter.is_valid(expire):

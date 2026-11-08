@@ -39,7 +39,7 @@ class TcamRunner(RunnerInit):
             "upcoming",
             "current",
         ]
-        async with NiquestsAsyncSession(headers=headers) as client:
+        async with NiquestsAsyncSession(headers=headers, use_certifi_support=True) as client:
             responses = await asyncio.gather(
                 *[
                     client.get(
@@ -63,7 +63,7 @@ async def main():
     from helpers.cache.none.helper import none_cache
     from helpers.image_hosting.none.helper import none_image_hosting
 
-    await TcamRunner().run(none_cache, none_image_hosting)
+    await TcamRunner().run(none_cache, none_image_hosting, develop_mode=True)
 
 
 if __name__ == "__main__":

@@ -21,8 +21,6 @@ from helpers.utils_helper import month_6
 class NpmRunner(RunnerInit):
     translation = BeautifulSoupTranslation
     is_sort = False
-    output_ics = True
-    output_rss = True
     image_save_to_hosting = True
 
     def set_cache_expire(self) -> int | None:
