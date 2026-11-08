@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Diagnose TCP
+      - name: Diagnose IPv4 only
         run: |
-          for h in fam.bocach.gov.tw www.cultural.pthg.gov.tw github.com; do
+          for h in fam.bocach.gov.tw www.cultural.pthg.gov.tw www.bocach.gov.tw github.com; do
             echo "== $h =="
-            timeout 10 bash -c "cat < /dev/null > /dev/tcp/$h/443" && echo OPEN || echo "BLOCKED/TIMEOUT"
+            curl -4 -sS -o /dev/null -w "http=%{http_code} connect=%{time_connect}s\n" --connect-timeout 10 "https://$h/" || true
           done
