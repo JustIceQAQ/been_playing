@@ -16,8 +16,10 @@ from helpers.utils_helper import month_3
 
 
 class PTCAMRunner(RunnerInit):
+    # TODO: 檔海外IP ??
     translation = SelectolaxTranslation
     use_parse = PTCAMParse
+    is_enable = False
 
     def set_cache_expire(self) -> int | None:
         return month_3()
