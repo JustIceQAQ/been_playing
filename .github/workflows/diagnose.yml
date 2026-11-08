@@ -1,0 +1,20 @@
+name: diagnose
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Diagnose TCP
+        run: |
+          for h in fam.bocach.gov.tw www.cultural.pthg.gov.tw github.com; do
+            echo "== $h =="
+            timeout 10 bash -c "cat < /dev/null > /dev/tcp/$h/443" && echo OPEN || echo "BLOCKED/TIMEOUT"
+          done
