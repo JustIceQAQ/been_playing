@@ -1,0 +1,20 @@
+name: diagnose
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Diagnose IPv4 only
+        run: |
+          for h in fam.bocach.gov.tw www.cultural.pthg.gov.tw www.bocach.gov.tw github.com; do
+            echo "== $h =="
+            curl -4 -sS -o /dev/null -w "http=%{http_code} connect=%{time_connect}s\n" --connect-timeout 10 "https://$h/" || true
+          done
