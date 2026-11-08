@@ -1,4 +1,4 @@
-name: diagnose-npm-south
+name: diagnose
 
 on:
   workflow_dispatch:
@@ -6,96 +6,17 @@ on:
 permissions:
   contents: read
 
-env:
-  SOUTH_HOME: "https://south.npm.gov.tw/"
-  SOUTH_URL_1: "https://south.npm.gov.tw/ExhibitionsListC003110.aspx?appname=Exhibition3112"
-  SOUTH_URL_2: "https://south.npm.gov.tw/ExhibitionsListC003110.aspx?appname=Exhibition3111"
-  NORTH_URL: "https://www.npm.gov.tw/Exhibition-Current.aspx?sno=03000060&l=1&type=1"
 
 jobs:
   diagnose:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Show runner public IP
+      - name: Diagnose connectivity
         run: |
-          curl -4 -s --max-time 15 https://api.ipify.org || echo "IPv4 lookup failed"
-          echo
-          curl -6 -s --max-time 15 https://api64.ipify.org || echo "IPv6 lookup failed (runner may have no IPv6)"
-          echo
-
-      - name: DNS lookup
-        run: |
-          echo "=== south.npm.gov.tw ==="
-          nslookup south.npm.gov.tw || true
-          echo
-          echo "=== www.npm.gov.tw (comparison) ==="
-          nslookup www.npm.gov.tw || true
-
-      - name: curl south over IPv4
-        run: |
-          curl -4 -v --max-time 20 -I "$SOUTH_URL_1" || echo "exit code: $?"
-
-      - name: curl south over IPv6
-        run: |
-          curl -6 -v --max-time 20 -I "$SOUTH_HOME" || echo "exit code: $?"
-
-      - name: curl south (second URL, default stack)
-        run: |
-          curl -v --max-time 20 -I "$SOUTH_URL_2" || echo "exit code: $?"
-
-      - name: curl north over IPv4 (comparison)
-        run: |
-          curl -4 -v --max-time 20 -I "$NORTH_URL" || echo "exit code: $?"
-
-      - name: TCP port 443 reachability
-        run: |
-          for host in south.npm.gov.tw www.npm.gov.tw; do
-            echo "=== $host:443 ==="
-            timeout 10 bash -c "cat < /dev/null > /dev/tcp/$host/443" \
-              && echo "TCP connect OK" || echo "TCP connect FAILED"
-          done
-
-      # 以下用「與專案相同的 httpx 設定」重現問題,
-      # 可分辨是網路層封鎖,還是 disable_ipv6 / local_address 綁定造成。
-      - name: checkout repo content
-        uses: actions/checkout@v6.0.2
-
-      - name: setup uv
-        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b
-        with:
-          enable-cache: true
-          cache-dependency-glob: "uv.lock"
-
-      - name: Install dependencies
-        run: uv sync --no-dev --frozen
-
-      - name: Python httpx test (disable_ipv6 True vs False)
-        continue-on-error: true
-        run: |
-          cat > /tmp/diag.py <<'EOF'
-          import asyncio
-          import httpx2 as httpx
-
-          from helpers.crawler.httpx.helper import HttpxAsyncClient
-
-          URL = "https://south.npm.gov.tw/ExhibitionsListC003110.aspx?appname=Exhibition3112"
-
-          async def attempt(label, **kw):
-              try:
-                  async with HttpxAsyncClient(
-                      timeout=httpx.Timeout(20, connect=10), **kw
-                  ) as client:
-                      r = await client.get(URL)
-                      print(f"[{label}] status={r.status_code} bytes={len(r.content)}")
-              except Exception as e:
-                  print(f"[{label}] FAILED: {type(e).__name__}: {e}")
-
-          async def main():
-              await attempt("disable_ipv6=True,  certifi=True ", disable_ipv6=True, use_certifi_support=True)
-              await attempt("disable_ipv6=False, certifi=True ", disable_ipv6=False, use_certifi_support=True)
-              await attempt("disable_ipv6=False, certifi=False", disable_ipv6=False, use_certifi_support=False)
-
-          asyncio.run(main())
-          EOF
-          PYTHONPATH=. uv run --no-sync python /tmp/diag.py
+          URL="https://fam.bocach.gov.tw/News2.aspx?n=990&sms=10480"
+          echo "== runner IP =="; curl -s https://api.ipify.org; echo
+          echo "== default =="; curl -sS -o /dev/null -w "%{http_code}\n" --max-time 20 "$URL" || true
+          echo "== tls1.2 only =="; curl -sS -o /dev/null -w "%{http_code}\n" --max-time 20 --tlsv1.2 --tls-max 1.2 "$URL" || true
+          echo "== openssl =="; echo | openssl s_client -connect fam.bocach.gov.tw:443 -servername fam.bocach.gov.tw 2>&1 | head -20 || true
+          openssl version
