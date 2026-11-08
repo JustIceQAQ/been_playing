@@ -2,6 +2,7 @@ import asyncio
 from typing import cast
 
 import niquests
+from niquests.packages.urllib3.contrib.anytls import ssl
 from selectolax.lexbor import LexborNode
 
 from app.museums.ccam.parse import CCAMParse
@@ -63,7 +64,15 @@ class CCAMRunner(RunnerInit):
         )
         cookies = generate_cookies(need_asp_net_session_id=True)
 
-        async with NiquestsAsyncSession(headers=headers, disable_ipv6=True, use_certifi_support=True) as client:
+        tls_config = niquests.TLSConfiguration(
+            backend="ssl",
+            max_version=ssl.TLSVersion.TLSv1_2,
+        )
+
+        async with NiquestsAsyncSession(
+            headers=headers,
+            tls_configuration=tls_config,
+        ) as client:
             urls = [
                 "https://fam.bocach.gov.tw/News2.aspx?n=990&sms=10480",
                 "https://fam.bocach.gov.tw/News2.aspx?n=989&sms=10480",
