@@ -13,7 +13,7 @@ jobs:
 
       - name: Check IPs
         env:
-          PROXY_URL: ${{ secrets.PROXY_POOL }}
+          PROXY_POOL: ${{ secrets.PROXY_POOL }}
         run: |
           tailscale status || true
           echo "direct:"
