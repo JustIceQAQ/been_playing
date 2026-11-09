@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.12"
 resolution-markers = [
     "python_full_version >= '3.14' and sys_platform == 'win32'",
@@ -63,15 +63,15 @@ wheels = [
 
 [[package]]
 name = "anyio"
-version = "4.15.1"
+version = "4.16.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "idna" },
     { name = "typing-extensions", marker = "python_full_version < '3.15'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a9/d2/f4d173e22df740bc37b1db102b386ba719b66e95b0f0d751f556b387e6d2/anyio-4.15.1.tar.gz", hash = "sha256:9f28306018cbd6d329e64a36d58256edff76dd996fe423bc957326e578b82a94", size = 276966, upload-time = "2026-09-05T10:42:39.44Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a1/98/7e457a3b014976887a050561955c0b76e1e7e2d6e27b78ecef2ef80518f2/anyio-4.16.0.tar.gz", hash = "sha256:59bb03251907983d1603d27c3087ddb1e93299ea2163adcdba37899a4fb12ffb", size = 310971, upload-time = "2026-11-01T11:20:07.282Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/12/b8/4bd346e22b28902df4d651910f5242c28d84e4a5c2435ca5c3f797ed7e2e/anyio-4.15.1-py3-none-any.whl", hash = "sha256:6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101", size = 132079, upload-time = "2026-09-05T10:42:37.923Z" },
+    { url = "https://files.pythonhosted.org/packages/a9/16/7757fb84c819accc7d7e9af5291b261e4abb8627ee040f99e7d35ef2457a/anyio-4.16.0-py3-none-any.whl", hash = "sha256:c66ae634e0b8228396b801741beb3294326d4b6102f7bba4041c0dfb58c29026", size = 134521, upload-time = "2026-11-01T11:20:05.59Z" },
 ]
 
 [[package]]
@@ -170,7 +170,7 @@ requires-dist = [
     { name = "aiofile", specifier = "==3.12.3" },
     { name = "aiofiles", specifier = ">=25.1.0" },
     { name = "aiolimiter", specifier = "==1.3.0" },
-    { name = "anyio", specifier = ">=4.15.1" },
+    { name = "anyio", specifier = ">=4.16.0" },
     { name = "bs4", specifier = "==0.0.2" },
     { name = "certifi", specifier = ">=2026.10.23" },
     { name = "cloudinary", specifier = ">=1.46.3" },
@@ -189,7 +189,7 @@ requires-dist = [
     { name = "pillow", specifier = ">=13.0.0" },
     { name = "pydantic", specifier = "==2.14.2" },
     { name = "pydantic-settings", specifier = "==2.16.2" },
-    { name = "python-dateutil", specifier = "==3.0.0" },
+    { name = "python-dateutil", specifier = "==4.0.0" },
     { name = "python-dotenv", specifier = "==1.2.4" },
     { name = "retry", specifier = "==0.9.2" },
     { name = "rich", specifier = ">=15.0.0" },
@@ -212,10 +212,10 @@ dev = [
     { name = "pandas-stubs", specifier = ">=3.1.0.261029" },
     { name = "pre-commit", specifier = "==4.7.0" },
     { name = "pytest", specifier = "==9.2.0" },
-    { name = "pytest-asyncio", specifier = "==1.4.1" },
+    { name = "pytest-asyncio", specifier = "==1.4.1.post1" },
     { name = "pytest-xdist", specifier = "==3.8.0" },
     { name = "scikit-learn", specifier = ">=1.9.1" },
-    { name = "skylos", specifier = ">=5.2.0" },
+    { name = "skylos", specifier = ">=5.3.0" },
 ]
 
 [[package]]
@@ -858,8 +858,8 @@ name = "httpcore2"
 version = "2.16.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "h11", marker = "sys_platform != 'emscripten'" },
-    { name = "truststore", marker = "sys_platform != 'emscripten'" },
+    { name = "h11" },
+    { name = "truststore" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/c0/61/afa9d6b7452f9eca73f73d45324eb0bb52f098fd5e6049bf6b8263be9b4e/httpcore2-2.16.0.tar.gz", hash = "sha256:c72cd0413563b17e1cd8354677dff887466f8ec2551679759e93126534428643", size = 69886, upload-time = "2026-10-21T07:09:45.31Z" }
 wheels = [
@@ -1084,7 +1084,7 @@ name = "jinxed"
 version = "1.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "ansicon", marker = "sys_platform == 'win32'" },
+    { name = "ansicon" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/20/d0/59b2b80e7a52d255f9e0ad040d2e826342d05580c4b1d7d7747cfb8db731/jinxed-1.3.0.tar.gz", hash = "sha256:1593124b18a41b7a3da3b078471442e51dbad3d77b4d4f2b0c26ab6f7d660dbf", size = 80981, upload-time = "2024-07-31T22:39:18.854Z" }
 wheels = [
@@ -2124,15 +2124,15 @@ wheels = [
 
 [[package]]
 name = "pytest-asyncio"
-version = "1.4.1"
+version = "1.4.1.post1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pytest" },
     { name = "typing-extensions", marker = "python_full_version < '3.13'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f8/9a/887535e477847f5159377ab35303923644840b13c0ca03c0a467f84d4680/pytest_asyncio-1.4.1.tar.gz", hash = "sha256:e8266eb094e5ee9ffdb2068c9836f33e209ea77a970eb846933d416b5602669b", size = 145237, upload-time = "2026-10-25T21:05:37.135Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/73/7f/c60a4338420b33453d4f814ac0c930abd399f162b9bdd21af4b9e363037f/pytest_asyncio-1.4.1.post1.tar.gz", hash = "sha256:f582d9ea4a1c082195abe8bd29a1fe106aeb1cd435e3dad2d3bc2749935c36a2", size = 145360, upload-time = "2026-11-01T18:26:03.732Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/46/d7/cd9e2708afdbf059658adaf08bdb0792ca52489871051d6ce7d498b51277/pytest_asyncio-1.4.1-py3-none-any.whl", hash = "sha256:507afa78ec77c6661164ef1a2368bc7820383fd1a14b2a7f813de8b5a92949cc", size = 17061, upload-time = "2026-10-25T21:05:35.473Z" },
+    { url = "https://files.pythonhosted.org/packages/e3/de/adbc7578959cfab07e5e7c05cf6d54224a51e7667ea2c07458b6bc571e75/pytest_asyncio-1.4.1.post1-py3-none-any.whl", hash = "sha256:0755e488cc0a2b9bd2eab7292cc6390d4cbb8390f1020745647bae5a708e0165", size = 17140, upload-time = "2026-11-01T18:26:02.168Z" },
 ]
 
 [[package]]
@@ -2150,15 +2150,14 @@ wheels = [
 
 [[package]]
 name = "python-dateutil"
-version = "3.0.0"
+version = "4.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "six" },
     { name = "tzdata" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0e/df/f15f80383f152452d8985b36d95cb8751f901a3e0ff4cd27f7e118f168e2/python_dateutil-3.0.0.tar.gz", hash = "sha256:7ebcb3c29a92f3ceafe79a7a48a5c45677e9e004bbeec5742ac0bbb00560b7a2", size = 271066, upload-time = "2026-10-21T23:41:45.075Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/18/39/b3927f3616f6223832f9b760e4208e8a7c7e1dea2b4d9ad7d32a5d214c3a/python_dateutil-4.0.0.tar.gz", hash = "sha256:d7295ff14fdc0f92f662100bfb6c551d160ca090f2939f1ec5b9794265c03f06", size = 250419, upload-time = "2026-11-01T07:02:42.426Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5a/17/cebee01d1c0c1441174cf0456ddc91b280d79acb65340c05e41d77866ee8/python_dateutil-3.0.0-py2.py3-none-any.whl", hash = "sha256:3c79630202e4152c6add678446984236efe4f57e84d8e892aab0637bab82e9fd", size = 94659, upload-time = "2026-10-21T23:41:43.431Z" },
+    { url = "https://files.pythonhosted.org/packages/2f/a9/52b89563d154433d79b51ed1eb4842bf7334cb2696891a7fe135618853d7/python_dateutil-4.0.0-py3-none-any.whl", hash = "sha256:a5e246f79eb80475e691bf93862cead98decd8a498cf53ba0516fcdc0f50dc1c", size = 92853, upload-time = "2026-11-01T07:02:40.797Z" },
 ]
 
 [[package]]
@@ -2628,8 +2627,8 @@ name = "secretstorage"
 version = "3.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "cryptography", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
-    { name = "jeepney", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
+    { name = "cryptography" },
+    { name = "jeepney" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/1c/03/e834bcd866f2f8a49a85eaff47340affa3bfa391ee9912a952a1faa68c7b/secretstorage-3.5.0.tar.gz", hash = "sha256:f04b8e4689cbce351744d5537bf6b1329c6fc68f91fa666f60a380edddcd11be", size = 19884, upload-time = "2025-11-23T19:02:53.191Z" }
 wheels = [
@@ -2722,7 +2721,7 @@ wheels = [
 
 [[package]]
 name = "skylos"
-version = "5.2.0"
+version = "5.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ca9" },
@@ -2745,15 +2744,15 @@ dependencies = [
     { name = "tree-sitter-rust" },
     { name = "tree-sitter-typescript" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/fc/db/2bc56f11ba4b8f78fbae63221176a9a24fb7d1ffa6b7c56d0e1b15bad8ce/skylos-5.2.0.tar.gz", hash = "sha256:0d95d483188e7f4aac368b3451d1dea1d8fa25712d7d5be16aa0253263a2043d", size = 5840144, upload-time = "2026-10-29T14:07:05.857Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a5/76/ae579973106d33f73eb1f36c44ea71b71ece4a39e132c8bca87b07a7d16e/skylos-5.3.0.tar.gz", hash = "sha256:2e1c1d3947883747786a91ed81cfa7e667777f6f0784586c596a692a0aeb5fb7", size = 5955568, upload-time = "2026-10-31T12:21:45.107Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/4d/6e/d5bcbc70fc58fc8f645629a011322d5c59b5372242ffe19fae1ff902f722/skylos-5.2.0-py3-none-any.whl", hash = "sha256:0f4b851e89eaa3f514c1f52adfbcb5d20a86bcfb47406757ab96cc45740667b6", size = 3964740, upload-time = "2026-10-29T14:06:51.631Z" },
-    { url = "https://files.pythonhosted.org/packages/1a/cd/54402b90dab49b930207e2ccb6eb09ad301eb87bc2280d11ef8e1f8f5ac1/skylos-5.2.0-py3-none-macosx_10_15_x86_64.whl", hash = "sha256:96c060671eddf06b04ee1a7ecd988f1dc8dfbce274247a7772d1238650597dc8", size = 5979830, upload-time = "2026-10-29T14:06:53.74Z" },
-    { url = "https://files.pythonhosted.org/packages/1a/f1/51e700e3a9acab4f2313e8c639e8d6cbcf731f22a0f06309828716bbab28/skylos-5.2.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:8775bdcd5ca6216f95e2ae093829bf3e06f10c38aa1628c4107b47b5bb729336", size = 5848763, upload-time = "2026-10-29T14:06:55.74Z" },
-    { url = "https://files.pythonhosted.org/packages/9e/2f/00e4013c62eb4bedfa74a222b8b1fb2441435aaf2383db856ef1698d2b38/skylos-5.2.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl", hash = "sha256:dc788b669848f8fcb491ab6724e7d33e7fa07e06c39e81fdcadd9bfb65517966", size = 5792532, upload-time = "2026-10-29T14:06:57.945Z" },
-    { url = "https://files.pythonhosted.org/packages/ca/28/968fb42f3784080650c152874fd025550a967a789e1b6f469499f68702b9/skylos-5.2.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.musllinux_1_1_x86_64.whl", hash = "sha256:2d440bbd3b39dc1f4ab40e3d2fa954d7dfc7a1dc10006f965b7176a5dc844e9b", size = 5961030, upload-time = "2026-10-29T14:06:59.997Z" },
-    { url = "https://files.pythonhosted.org/packages/d8/57/8d3d68e655ddd73b9030646cc820cf78844b2cf28e8bc3d54b5b23f66758/skylos-5.2.0-py3-none-win_amd64.whl", hash = "sha256:7523df1c50caa17e6f37a4dcf8b52ad34f5c737c1cbf8fc6bd54430b8569c25b", size = 6026064, upload-time = "2026-10-29T14:07:02.058Z" },
-    { url = "https://files.pythonhosted.org/packages/3c/5d/fb80ce6b35f503a8babd7f82ec1acef0dea26fb1b13d9788c5b57c6fbf00/skylos-5.2.0-py3-none-win_arm64.whl", hash = "sha256:8b647d9153adb63c233ffbce51194a5cf1d61450421146f78e8728583aedd08e", size = 5830282, upload-time = "2026-10-29T14:07:03.838Z" },
+    { url = "https://files.pythonhosted.org/packages/03/51/39531f736726d74e1f74bdb99bd5cb2ec27a880f16324fea63d096d8efe4/skylos-5.3.0-py3-none-any.whl", hash = "sha256:bdb24784f002eb2595c1f7d71656a1823442eda18c5243c6afe56a3c16093423", size = 4037883, upload-time = "2026-10-31T12:21:31.706Z" },
+    { url = "https://files.pythonhosted.org/packages/13/77/4270d93de8b9c2d1f8cddd503f413c76a4c73f891af2dc342c45bda6b679/skylos-5.3.0-py3-none-macosx_10_15_x86_64.whl", hash = "sha256:27dfb6243a962782696ff24ca60ee2e388709ad7895b3da213d10bbdd5f57e96", size = 6052974, upload-time = "2026-10-31T12:21:33.649Z" },
+    { url = "https://files.pythonhosted.org/packages/b6/a4/cb91e520fd1f3baf3e3e626dbe1e6a8b65f048066c1a5baf9ca8379f3d88/skylos-5.3.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:00e94abe8fc111c486fdc0cb3f415e6571a9b7e2ca52a836fc78a4fe1f11bac4", size = 5921906, upload-time = "2026-10-31T12:21:35.571Z" },
+    { url = "https://files.pythonhosted.org/packages/93/23/cffab4a975901a54cf8fb5adef7272da801318a8041fe1ba48ea2c43502f/skylos-5.3.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl", hash = "sha256:977c578c4ba04090476dc12f7be96e974d5a15d84da78242a54b54aba989e10a", size = 5865675, upload-time = "2026-10-31T12:21:37.485Z" },
+    { url = "https://files.pythonhosted.org/packages/e4/6e/c14164448a4fa0caa244828fc253ab05559d56367ae35c5eda240f6ad245/skylos-5.3.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.musllinux_1_1_x86_64.whl", hash = "sha256:5260c3af4a5af8d1cd31eb10be93f3c2550c5cd01759a1ca34c25cfa6868f5c2", size = 6034173, upload-time = "2026-10-31T12:21:39.268Z" },
+    { url = "https://files.pythonhosted.org/packages/6b/42/d6b72a22e47c2004de2e0683076bdf53087f64fd2fd086b2aa8879a1b4d1/skylos-5.3.0-py3-none-win_amd64.whl", hash = "sha256:453bd042d62cf9a611afa80889602838a173aeeda1e12280debe501900d0f5d4", size = 6099208, upload-time = "2026-10-31T12:21:41.398Z" },
+    { url = "https://files.pythonhosted.org/packages/6a/2c/caf985e30706a61a31ae5d825f4b97c214bf56bd4305f448dabef381160f/skylos-5.3.0-py3-none-win_arm64.whl", hash = "sha256:43c5a82d1e43376f0add4396014aaf3d0090c6ba7a28fadbed06cd54b38c97a0", size = 5903428, upload-time = "2026-10-31T12:21:43.31Z" },
 ]
 
 [[package]]
@@ -3022,8 +3021,8 @@ name = "uvicorn"
 version = "0.41.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "click", marker = "sys_platform != 'emscripten'" },
-    { name = "h11", marker = "sys_platform != 'emscripten'" },
+    { name = "click" },
+    { name = "h11" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/32/ce/eeb58ae4ac36fe09e3842eb02e0eb676bf2c53ae062b98f1b2531673efdd/uvicorn-0.41.0.tar.gz", hash = "sha256:09d11cf7008da33113824ee5a1c6422d89fbc2ff476540d69a34c87fab8b571a", size = 82633, upload-time = "2026-02-16T23:07:24.1Z" }
 wheels = [
