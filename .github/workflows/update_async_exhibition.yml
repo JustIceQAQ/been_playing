@@ -35,6 +35,12 @@ jobs:
       - name: check timezone
         run: timedatectl
 
+      - name: Tailscale
+        uses: tailscale/github-action@v4
+        with:
+          authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
+          tags: tag:ci
+
       - name: checkout repo content
         uses: actions/checkout@v6.0.2
         with:
