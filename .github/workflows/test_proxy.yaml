@@ -13,11 +13,11 @@ jobs:
 
       - name: Check IPs
         env:
-          PROXY_URL: ${{ secrets.PROXY_URL }}
+          PROXY_URL: ${{ secrets.PROXY_POOL }}
         run: |
           tailscale status || true
           echo "direct:"
           curl -sS --max-time 20 https://api.ipify.org || echo "FAILED"
           echo
           echo "proxied:"
-          curl -sS --max-time 20 -x "$PROXY_URL" https://api.ipify.org || echo "FAILED"
+          curl -sS --max-time 20 -x "PROXY_POOL" https://api.ipify.org || echo "FAILED"
