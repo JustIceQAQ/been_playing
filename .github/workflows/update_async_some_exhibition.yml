@@ -42,7 +42,6 @@ jobs:
         with:
           ref: "develop"
 
-
       - name: setup python 3.12 with uv
         uses: astral-sh/setup-uv@eac588ad8def6316056a12d4907a9d4d84ff7a3b
         with:
@@ -51,40 +50,6 @@ jobs:
 
       - name: Install dependencies
         run: uv sync --no-dev --frozen
-
-      - name: debug network / IPv4 vs IPv6 connectivity
-        run: |
-          TARGET_HOST="www.art-msac.com"
-
-          echo "== kernel IPv6 support =="
-          [ -f /proc/net/if_inet6 ] && echo "IPv6 ready" || echo "No IPv6 support"
-          echo ""
-
-          echo "== network interfaces / routes =="
-          ip addr show || true
-          echo "--- ipv4 routes ---"
-          ip -4 route show || true
-          echo "--- ipv6 routes ---"
-          ip -6 route show || true
-          echo ""
-
-          echo "== DNS resolution for ${TARGET_HOST} (A + AAAA) =="
-          getent ahosts "${TARGET_HOST}" || true
-          echo ""
-
-          echo "== runner outbound IPv4 =="
-          curl -4 -s https://ipinfo.io || true
-          echo ""
-          echo "== runner outbound IPv6 (expected to fail if no IPv6 egress) =="
-          curl -6 -s --max-time 8 https://ipinfo.io || echo "IPv6 outbound check failed (exit code $?)"
-          echo ""
-
-          echo "== curl -4 (force IPv4) to ${TARGET_HOST} =="
-          curl -4 -v --max-time 15 "https://${TARGET_HOST}/" -o /dev/null || echo "IPv4 request failed (exit code $?)"
-          echo ""
-          echo "== curl -6 (force IPv6) to ${TARGET_HOST} =="
-          curl -6 -v --max-time 15 "https://${TARGET_HOST}/" -o /dev/null || echo "IPv6 request failed (exit code $?)"
-
 
       - name: run async script with uv
         run: uv run --no-sync python run_some_async_script.py
