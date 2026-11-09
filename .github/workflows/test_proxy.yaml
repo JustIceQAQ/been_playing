@@ -1,0 +1,23 @@
+name: test-proxy
+on:
+  workflow_dispatch:
+jobs:
+  run-process:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tailscale
+        uses: tailscale/github-action@v4
+        with:
+          authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
+          tags: tag:ci
+
+      - name: Check IPs
+        env:
+          PROXY_URL: ${{ secrets.PROXY_URL }}
+        run: |
+          tailscale status || true
+          echo "direct:"
+          curl -sS --max-time 20 https://api.ipify.org || echo "FAILED"
+          echo
+          echo "proxied:"
+          curl -sS --max-time 20 -x "$PROXY_URL" https://api.ipify.org || echo "FAILED"
