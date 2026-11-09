@@ -39,7 +39,7 @@ class TcamRunner(RunnerInit):
             "upcoming",
             "current",
         ]
-        async with NiquestsAsyncSession(headers=headers, use_certifi_support=True) as client:
+        async with NiquestsAsyncSession(headers=headers, use_proxy=True) as client:
             responses = await asyncio.gather(
                 *[
                     client.get(

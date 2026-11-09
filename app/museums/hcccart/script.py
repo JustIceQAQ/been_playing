@@ -44,7 +44,7 @@ class HcccArtRunner(RunnerInit):
             "locale": "tw",
             "art": "".join(secrets.choice(string.ascii_letters + string.digits) for _ in range(40)),
         }
-        async with NiquestsAsyncSession(headers=headers, use_certifi_support=True) as client:
+        async with NiquestsAsyncSession(headers=headers, use_proxy=True) as client:
             response = await client.get(
                 "https://art.hccc.gov.tw/%E5%B1%95%E8%A6%BD/%E7%95%B6%E6%9C%9F%E5%B1%95%E8%A6%BD", cookies=cookies
             )

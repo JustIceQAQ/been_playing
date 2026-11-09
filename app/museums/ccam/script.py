@@ -71,6 +71,7 @@ class CCAMRunner(RunnerInit):
 
         async with NiquestsAsyncSession(
             headers=headers,
+            use_proxy=True,
             tls_configuration=tls_config,
         ) as client:
             urls = [

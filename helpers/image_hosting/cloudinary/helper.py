@@ -12,7 +12,7 @@ from helpers.crawler.wreq.helper import WReqAsyncClient
 from helpers.image_hosting.base import ImageHostingBase
 
 if TYPE_CHECKING:
-    from helpers.crawler.proxy_helper import ProxyAdapter
+    from helpers.crawler.proxy_helper import TinyProxyAdapter
 
 _console = Console()
 _MAX_FILE_SIZE = 10 * 1024 * 1024  # Cloudinary 免費方案上限 10MB
@@ -68,7 +68,7 @@ class CloudinaryImageHosting(ImageHostingBase):
         except RuntimeError:
             return asyncio.get_event_loop()
 
-    async def _download(self, image_url: str, proxies: "ProxyAdapter | None") -> bytes | None:
+    async def _download(self, image_url: str, proxies: "TinyProxyAdapter | None") -> bytes | None:
         try:
             if proxies is None:
                 use_proxies = None
@@ -92,7 +92,7 @@ class CloudinaryImageHosting(ImageHostingBase):
         return secure_url
 
     async def upload(
-        self, image_url: str, proxies: "ProxyAdapter | None" = None, public_id: str | None = None, *args, **kwargs
+        self, image_url: str, proxies: "TinyProxyAdapter | None" = None, public_id: str | None = None, *args, **kwargs
     ) -> str | None:
         if not image_url:
             return None
