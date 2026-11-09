@@ -35,8 +35,8 @@ class NoneAdapter:
 
 
 @lru_cache
-def get_proxy_adapter() -> NoneAdapter:
+def get_proxy_adapter() -> ProxyAdapter:
     from configs.settings import get_settings
 
     runtime_settings = get_settings()
-    return NoneAdapter(runtime_settings.PROXY_POOL)
+    return ProxyAdapter(runtime_settings.PROXY_POOL)
