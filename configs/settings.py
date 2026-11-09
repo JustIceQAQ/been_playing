@@ -1,6 +1,7 @@
 import os
 import pathlib
 from functools import lru_cache
+from typing import Literal
 
 from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -14,6 +15,7 @@ class Settings(BaseSettings):
     SCRAPE_DO_API_KEY: str | None = Field(default=None)
     SENTRY_SDK_DNS: str | None = Field(default=None)
     PROXY_POOL: str | None = Field(default=None)
+    PROXY_DEFAULT: Literal["TinyProxyAdapter", "NoneAdapter"] | None = Field(default="TinyProxyAdapter")
     CLOUDINARY_CLOUD_NAME: str | None = Field(default=None)
     CLOUDINARY_API_KEY: str | None = Field(default=None)
     CLOUDINARY_API_SECRET: str | None = Field(default=None)

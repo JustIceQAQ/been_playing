@@ -8,6 +8,7 @@ from typing import Any
 from helpers.cache.base import CacheBase
 from helpers.crawler.retry_helper import call_with_retry
 from helpers.image_hosting.base import ImageHostingBase
+from helpers.logs import log
 from helpers.parse_helper import ParseInit
 from helpers.storage.helper import Exhibition, ExhibitionItem, Information
 from helpers.storage.social_media import SocialMedia
@@ -208,7 +209,7 @@ class RunnerInit(abc.ABC):
         self.exhibition_.execution_time = execution_time
 
         if develop_mode:
-            print(self.exhibition_.model_dump_json(indent=2))
+            log.info(self.exhibition_.model_dump_json(indent=2))
         else:
             await self.exhibition_.save_to_json(
                 f"{self.information_.code_name}",

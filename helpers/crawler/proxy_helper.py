@@ -1,10 +1,25 @@
+import abc
 from functools import lru_cache
 
 from httpx2 import Proxy as Httpx2Proxy
 from wreq import Proxy as WreqProxy
 
 
-class ProxyAdapter:
+class AdapterBase(abc.ABC):
+    @abc.abstractmethod
+    def to_httpx(self) -> Httpx2Proxy | None:
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def to_niquests(self) -> dict | None:
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def to_wreq(self) -> list[WreqProxy] | None:
+        raise NotImplementedError
+
+
+class TinyProxyAdapter(AdapterBase):
     def __init__(self, proxy_url: str):
         self.proxy_url = proxy_url
 
@@ -20,7 +35,7 @@ class ProxyAdapter:
         return proxies
 
 
-class NoneAdapter:
+class NoneAdapter(AdapterBase):
     def __init__(self, proxy_url: str):
         self.proxy_url = proxy_url
 
@@ -35,8 +50,10 @@ class NoneAdapter:
 
 
 @lru_cache
-def get_proxy_adapter() -> ProxyAdapter:
+def get_proxy_adapter() -> AdapterBase:
     from configs.settings import get_settings
 
     runtime_settings = get_settings()
-    return ProxyAdapter(runtime_settings.PROXY_POOL)
+    if runtime_settings.PROXY_DEFAULT == "TinyProxyAdapter":
+        return TinyProxyAdapter(runtime_settings.PROXY_POOL)
+    return NoneAdapter(runtime_settings.PROXY_POOL)
