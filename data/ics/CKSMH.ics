@@ -8,7 +8,7 @@ SUMMARY:[中正紀念堂] 工藝公益．點亮臺灣—第17屆身障者
  與收容人藝術創作大展(免費參觀)
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261115
-DTSTAMP:20261111T065259Z
+DTSTAMP:20261111T162838Z
 UID:42902a403fca54b182f4e69e98798418
 DESCRIPTION:展覽日期：2026-10-15 ~ 2026-11-15\n地點：三樓藝廊
  \n原始連結：https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr
@@ -20,7 +20,7 @@ SUMMARY:[中正紀念堂] 相揪迺夜市－2026罕見疾病基金會文
  創成果展(免費參觀)
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261125
-DTSTAMP:20261111T065259Z
+DTSTAMP:20261111T162838Z
 UID:68b2b3d95a96555e957f124d2464888f
 DESCRIPTION:展覽日期：2026-10-17 ~ 2026-11-25\n地點：3展廳\n原
  始連結：https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actI
@@ -28,45 +28,11 @@ DESCRIPTION:展覽日期：2026-10-17 ~ 2026-11-25\n地點：3展廳\n原
 LOCATION:3展廳
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[中正紀念堂] 「有這樣的宿舍，你幾點回家？」新
- 宿舍運動展(免費參觀)
-DTSTART;VALUE=DATE:20261110
-DTEND;VALUE=DATE:20270131
-DTSTAMP:20261111T065259Z
-UID:14948ee786c45dcb91cf6edcaabc4ecd
-DESCRIPTION:展覽日期：2026-11-10 ~ 2027-01-31\n地點：中央通廊
- \n原始連結：https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr
- ?actId=61180\n
-LOCATION:中央通廊
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[中正紀念堂] 自由花蕊(免費參觀)
-DTSTART;VALUE=DATE:20251124
-DTEND;VALUE=DATE:20301231
-DTSTAMP:20261111T065259Z
-UID:fef92812a89a5ec8ade76602489f5ceb
-DESCRIPTION:展覽日期：2025-11-24 ~ 2030-12-31\n地點：常設展廳
- \n原始連結：https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr
- ?actId=51331\n
-LOCATION:常設展廳
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[中正紀念堂] 她的民主路(免費參觀)
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20301231
-DTSTAMP:20261111T065259Z
-UID:091dfc767f23548c9f34efa5577ec16c
-DESCRIPTION:展覽日期：2026-11-05 ~ 2030-12-31\n地點：三樓多媒
- 體人權展區\n原始連結：https://event.culture.tw/mocweb/reg/CKSMH/
- Detail.init.ctr?actId=61182\n
-LOCATION:三樓多媒體人權展區
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[中正紀念堂] 佳山藝境．北投文物館采風展 台灣
  藝術學會會員聯展 (免費參觀)
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261125
-DTSTAMP:20261111T065259Z
+DTSTAMP:20261111T162838Z
 UID:0ba575910d1953ef8e89dc63b2492735
 DESCRIPTION:展覽日期：2026-11-12 ~ 2026-11-25\n地點：2展廳\n原
  始連結：https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actI
@@ -78,7 +44,7 @@ SUMMARY:[中正紀念堂] 2026台灣美術展暨第十四屆美術獎徵
  選展(免費參觀)
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261125
-DTSTAMP:20261111T065259Z
+DTSTAMP:20261111T162838Z
 UID:891c8523309655a2839a8bbde3a1ee56
 DESCRIPTION:展覽日期：2026-11-12 ~ 2026-11-25\n地點：一樓藝廊
  \n原始連結：https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr
@@ -86,11 +52,45 @@ DESCRIPTION:展覽日期：2026-11-12 ~ 2026-11-25\n地點：一樓藝廊
 LOCATION:一樓藝廊
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[中正紀念堂] 「有這樣的宿舍，你幾點回家？」新
+ 宿舍運動展(免費參觀)
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20270131
+DTSTAMP:20261111T162838Z
+UID:14948ee786c45dcb91cf6edcaabc4ecd
+DESCRIPTION:展覽日期：2026-11-10 ~ 2027-01-31\n地點：中央通廊
+ \n原始連結：https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr
+ ?actId=61180\n
+LOCATION:中央通廊
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[中正紀念堂] 自由花蕊(免費參觀)
+DTSTART;VALUE=DATE:20251124
+DTEND;VALUE=DATE:20301231
+DTSTAMP:20261111T162838Z
+UID:fef92812a89a5ec8ade76602489f5ceb
+DESCRIPTION:展覽日期：2025-11-24 ~ 2030-12-31\n地點：常設展廳
+ \n原始連結：https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr
+ ?actId=51331\n
+LOCATION:常設展廳
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[中正紀念堂] 她的民主路(免費參觀)
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20301231
+DTSTAMP:20261111T162838Z
+UID:091dfc767f23548c9f34efa5577ec16c
+DESCRIPTION:展覽日期：2026-11-05 ~ 2030-12-31\n地點：三樓多媒
+ 體人權展區\n原始連結：https://event.culture.tw/mocweb/reg/CKSMH/
+ Detail.init.ctr?actId=61182\n
+LOCATION:三樓多媒體人權展區
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[中正紀念堂] 默墨觀心．勇渡迷津—書藝頑皮豹王
  志揚V.S.兩岸多藝唐寶寶曾恩通 感通聯展(免費參觀)
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261125
-DTSTAMP:20261111T065259Z
+DTSTAMP:20261111T162838Z
 UID:afcd75ec4cde5752a26deaf135a376b1
 DESCRIPTION:展覽日期：2026-11-13 ~ 2026-11-25\n地點：4展廳\n原
  始連結：https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actI
@@ -102,7 +102,7 @@ SUMMARY:[中正紀念堂] 第十一屆全國學藝競賽孩子的藝想世
  界公益畫展(免費參觀)
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261221
-DTSTAMP:20261111T065259Z
+DTSTAMP:20261111T162838Z
 UID:9ff6e69c6196571da83b919ba073235a
 DESCRIPTION:展覽日期：2026-11-20 ~ 2026-12-21\n地點：三樓藝廊
  \n原始連結：https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr
