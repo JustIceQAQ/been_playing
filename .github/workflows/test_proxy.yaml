@@ -24,7 +24,7 @@ jobs:
 
       - name: Test Exhibition URl
         run: |
-          targetUrl="https://tm.ccl.ttct.edu.tw/ExhibitionsListC004100.php"
+          targetUrl="https://www.judicial.gov.tw/tw/lp-2441-6.html"
           
           curl -v "$targetUrl"
           
@@ -32,5 +32,4 @@ jobs:
           domain=$(echo "$parsed_host" | cut -d: -f1)
           port=$(echo "$parsed_host" | grep -q ':' && echo "$parsed_host" | cut -d: -f2 || echo "443")
           
-          $targetURl=https://tm.ccl.ttct.edu.tw/ExhibitionsListC004100.php
           openssl s_client -connect "${domain}:${port}" -servername "$domain" -showcerts </dev/null
