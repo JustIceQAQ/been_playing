@@ -32,7 +32,7 @@ class JudicialRunner(RunnerInit):
 
     async def fetch_response(self):
         headers = generate_headers(referer="https://www.judicial.gov.tw/tw/mp-6.html", host="www.judicial.gov.tw")
-        async with NiquestsAsyncSession(headers=headers) as client:
+        async with NiquestsAsyncSession(headers=headers, use_proxy=True) as client:
             response = await client.get("https://www.judicial.gov.tw/tw/lp-2441-6.html")
         return response.text
 
