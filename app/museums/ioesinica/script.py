@@ -18,6 +18,7 @@ from helpers.utils_helper import month_3
 class IOESinicaRunner(RunnerInit):
     translation = SelectolaxTranslation
     use_parse = IOESinicaParse
+    image_save_to_hosting = True
 
     def set_cache_expire(self) -> int | None:
         return month_3()
