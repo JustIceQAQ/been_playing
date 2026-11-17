@@ -38,6 +38,7 @@ class TFAIRunner(RunnerInit):
                 "https://www.tfai.org.tw/program/searchAjax?date=&type=Exhibition&location=&topic=",
                 cookies=cookies,
             )
+            response.raise_for_status()
         data = await response.json()
         return data
 
@@ -50,7 +51,7 @@ async def main():
     from helpers.cache import none_cache
     from helpers.image_hosting import none_image_hosting
 
-    await TFAIRunner().run(none_cache, none_image_hosting)
+    await TFAIRunner().run(none_cache, none_image_hosting, develop_mode=True)
 
 
 if __name__ == "__main__":
