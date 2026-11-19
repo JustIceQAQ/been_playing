@@ -39,14 +39,18 @@ class NtmParse(ParseInit):
         return self.item.select_one("div.caption > span").get_text()
 
     def get_date(self, *args, **kwargs) -> str | None:
-        if (result := self.safe_get_text(self.item.select_one("p.activity-time"))) is not None:
-            return result.replace("日期：", "").strip()
-        return None
+        result = self.item.select_one("p.activity-time")
+        if result is None:
+            return None
+        result_text = result.get_text()
+        return result_text.replace("日期：", "").strip()
 
     def get_address(self, *args, **kwargs) -> str | None:
-        if (result := self.safe_get_text(self.item.select_one("p.activity-season"))) is not None:
-            return result.replace("地點：", "").strip()
-        return None
+        result = self.item.select_one("p.activity-season")
+        if result is None:
+            return None
+        result_text = result.get_text()
+        return result_text.replace("地點：", "").strip()
 
     def get_figure(self, *args, **kwargs) -> str | None:
         return self.item.select_one("img")["src"]

@@ -116,7 +116,7 @@ async def main():
     from helpers.cache.none.helper import none_cache
     from helpers.image_hosting.none.helper import none_image_hosting
 
-    await NtmRunner().run(none_cache, none_image_hosting)
+    await NtmRunner().run(none_cache, none_image_hosting, develop_mode=True)
 
 
 if __name__ == "__main__":
