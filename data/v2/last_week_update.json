@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T00:20:15.042335+08:00",
+  "updated": "2026-11-22T05:48:40.225745+08:00",
   "items": [
     {
       "title": "浮生 Floating Realities：小澤香奈子個展",
@@ -6817,6 +6817,38 @@
       "source_url": "https://www.opentix.life/program/2107772014162726913",
       "tags": null,
       "UUID": "9aa8752088775d01aa41dd63f08d04a5"
+    },
+    {
+      "title": "Mr.Donothing in 華山 1914",
+      "date": "2026-10-29 ~ 2027-01-04",
+      "date_info": {
+        "start": "2026-10-29",
+        "end": "2027-01-04",
+        "type": 0
+      },
+      "address": "中3B 1F 玻璃屋",
+      "figure": "https://files.huashan1914.com/thumbnails/mrdonothing_huashan_list-card_1920x1080_1.jpg",
+      "source_url": "https://www.huashan1914.com/exhibition/MrDonothingin華山1914",
+      "tags": [
+        "快閃店"
+      ],
+      "UUID": "ad10935ddffb5e1d9299ab9220e9f9b2"
+    },
+    {
+      "title": "星球樂園 PLANET PARK",
+      "date": "2026-10-31 ~ 2026-11-29",
+      "date_info": {
+        "start": "2026-10-31",
+        "end": "2026-11-29",
+        "type": 0
+      },
+      "address": "東3A館",
+      "figure": "https://files.huashan1914.com/thumbnails/Planet park1920x1080_1.jpg",
+      "source_url": "https://www.huashan1914.com/exhibition/ 星球樂園 PLANET PARK",
+      "tags": [
+        "展覽"
+      ],
+      "UUID": "11d136720fda5d67b32ea99fc4573754"
     }
   ]
 }
