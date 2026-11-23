@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T16:00:45.406541+08:00",
+  "updated": "2026-11-24T04:32:05.534096+08:00",
   "items": [
     {
       "title": "High Street Italia Taipei 巧有義思",
@@ -1436,6 +1436,654 @@
       "source_url": "https://www.opentix.life/program/2115274531652624385",
       "tags": null,
       "UUID": "12e2be0e57375015a1a03668bc7c9056"
+    },
+    {
+      "title": "移至 數理乾坤：故宮古籍中的數學 (I)",
+      "date": "2026-11-25 ~ 2027-02-28",
+      "date_info": {
+        "start": "2026-11-25",
+        "end": "2027-02-28",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 104",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151739/z9gxtaoaou1ihsmdxjsl.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014685&l=1&q=&s_date=&e_date=&type=&cat=",
+      "tags": [],
+      "UUID": "1d0589482a7b54a0a071f207dbba34e6"
+    },
+    {
+      "title": "兒童學藝中心",
+      "date": "2020-07-01 ~",
+      "date_info": {
+        "start": "2020-07-01",
+        "end": null,
+        "type": 3
+      },
+      "address": "北部院區 第一展覽館 B1",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151733/s4klsqsji5dnokltx8r8.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013724&l=1&type=1&cat=",
+      "tags": [
+        "繪畫",
+        "數位新媒體",
+        "器物"
+      ],
+      "UUID": "aa809864bcbe56fe9c7a470f24b4394a"
+    },
+    {
+      "title": "陳厚誠山水畫展",
+      "date": "2026-11-17 ~ 2026-11-29",
+      "date_info": {
+        "start": "2026-11-17",
+        "end": "2026-11-29",
+        "type": 0
+      },
+      "address": "彰化縣立美術館五樓展示室A",
+      "figure": "https://ws.bocach.gov.tw/001/Upload/5/relpic/10480/54947/7a63b6d9-e522-4687-bcfd-d0b44f319666@710x470.jpg",
+      "source_url": "https://fam.bocach.gov.tw/News_Content.aspx?n=989&s=54947",
+      "tags": null,
+      "UUID": "66e45817d361551c9f4667fef8fc0c27"
+    },
+    {
+      "title": "養心：巨幅名作展",
+      "date": "2026-09-22 ~ 2026-12-27",
+      "date_info": {
+        "start": "2026-09-22",
+        "end": "2026-12-27",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 202",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151731/f8nidnjv040f6qwaovto.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014551&l=1&type=1&cat=",
+      "tags": [
+        "書法",
+        "繪畫"
+      ],
+      "UUID": "f2d0e3eadd8c5d2ea8d11bf5077e14d4"
+    },
+    {
+      "title": "華麗魔法屋─故宮的洛可可珍藏",
+      "date": "2021-12-24 ~",
+      "date_info": {
+        "start": "2021-12-24",
+        "end": null,
+        "type": 3
+      },
+      "address": "北部院區 第一展覽館 300,301",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151732/rh4wlc2gavkcu7r5dtuf.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04012832&l=1&type=1&cat=",
+      "tags": [
+        "器物"
+      ],
+      "UUID": "a858e3263f595857a29594367d1baddf"
+    },
+    {
+      "title": "融 · 全球 | 2026 年 iF 設計獎獲獎作品展（VI）",
+      "date": "2026-11-06 ~ 2026-12-02",
+      "date_info": {
+        "start": "2026-11-06",
+        "end": "2026-12-02",
+        "type": 0
+      },
+      "address": "iF 台北設計沙龍 松山文創園區 西向製菸工廠二樓 A7 W207",
+      "figure": "https://www.songshanculturalpark.org/gallery/1793865085_e2e052beba49985c0500.jpg",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/b2735b74-e7db-41e2-911b-004e857f8d29",
+      "tags": null,
+      "UUID": "b4daac9aed1e50fab95fece95a69a6dc"
+    },
+    {
+      "title": "看得見的紅樓夢",
+      "date": "2024-05-17 ~ 2027-08-15",
+      "date_info": {
+        "start": "2024-05-17",
+        "end": "2027-08-15",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 203",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151732/fpq6x4fg1ykf6dsu12di.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013668&l=1&type=1&cat=",
+      "tags": [
+        "陶瓷",
+        "玉器",
+        "珍玩",
+        "圖書文獻",
+        "器物"
+      ],
+      "UUID": "e0e1817baf105edc9ce425d51962dd3b"
+    },
+    {
+      "title": "匯流1950：新入藏文物風華",
+      "date": "2026-09-11 ~ 2028-09-10",
+      "date_info": {
+        "start": "2026-09-11",
+        "end": "2028-09-10",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 304",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151732/nvgdgrvtxy1gdqkzuser.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014553&l=1&type=1&cat=",
+      "tags": [
+        "圖書文獻",
+        "器物"
+      ],
+      "UUID": "6bf28090bf0358a9b73b42e67724ec06"
+    },
+    {
+      "title": "移至 國寶聚焦 2027-II",
+      "date": "2027-04-17 ~ 2027-06-27",
+      "date_info": {
+        "start": "2027-04-17",
+        "end": "2027-06-27",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 208",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151739/eicuswbnlxzm1upa4664.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014695&l=1&q=&s_date=&e_date=&type=&cat=",
+      "tags": [
+        "書法"
+      ],
+      "UUID": "32498d01e10751cbb6846cbf08ba7e71"
+    },
+    {
+      "title": "第三屆東亞藝術交流展",
+      "date": "2026-11-04 ~ 2026-11-29",
+      "date_info": {
+        "start": "2026-11-04",
+        "end": "2026-11-29",
+        "type": 0
+      },
+      "address": "彰化縣立美術館1樓",
+      "figure": "https://ws.bocach.gov.tw/001/Upload/5/relpic/10480/55065/75638304-caeb-4d21-8c46-2acb25706d08@710x470.png",
+      "source_url": "https://fam.bocach.gov.tw/News_Content.aspx?n=989&s=55065",
+      "tags": null,
+      "UUID": "0b9b0df347975e78aa401ad754c10e6c"
+    },
+    {
+      "title": "有無之間：形的流動與生成-楊逸雪個展",
+      "date": "2026-11-20 ~ 2026-12-20",
+      "date_info": {
+        "start": "2026-11-20",
+        "end": "2026-12-20",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://www.ceramics.ntpc.gov.tw/files/file_pool/1/0q323515715934800145/%e7%95%b6%e6%9c%9f-%e5%b1%95%e8%a6%bd-%e6%a5%8a%e9%80%b8%e9%9b%aa.jpg",
+      "source_url": "https://www.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0J148497613881029302&sid=0Q218346582180038351",
+      "tags": null,
+      "UUID": "2d9b8825773a5dc191fbf815e5dc68fd"
+    },
+    {
+      "title": "愛硯成痴特展",
+      "date": "2023-09-28 ~ 2027-05-25",
+      "date_info": {
+        "start": "2023-09-28",
+        "end": "2027-05-25",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 303",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151732/etdaasmaqxph7o1zzuco.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04013438&l=1&type=1&cat=",
+      "tags": [
+        "陶瓷",
+        "玉器",
+        "珍玩",
+        "圖書文獻",
+        "器物"
+      ],
+      "UUID": "291e28489385563c9f8741441d95d289"
+    },
+    {
+      "title": "獨具慧眼：美感原則與繪畫欣賞",
+      "date": "2026-10-09 ~ 2026-12-27",
+      "date_info": {
+        "start": "2026-10-09",
+        "end": "2026-12-27",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 210,212",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151731/zvbxcowzboshdnapxxch.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014550&l=1&type=1&cat=",
+      "tags": [
+        "繪畫"
+      ],
+      "UUID": "6be93d7a39e25e729981a78c83b50a00"
+    },
+    {
+      "title": "吉金耀采—院藏銅器精華展",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "北部院區 第一展覽館305,307",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151734/nceyxttjr7axoovroh4f.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04000576&l=1&type=1&cat=",
+      "tags": [
+        "銅器"
+      ],
+      "UUID": "6006ddb47e005bc3bb2f46636079579f"
+    },
+    {
+      "title": "2026北流金舞台 圓夢大歌廳",
+      "date": "2026-12-05",
+      "date_info": {
+        "start": "2026-12-05",
+        "end": "2026-12-05",
+        "type": 1
+      },
+      "address": "其他",
+      "figure": "https://www.tmc.taipei/files/1795231185L48zG8vfxF.png",
+      "source_url": "https://www.tmc.taipei/tw/blog/show/2026TMCGoldenVoiceContestConcert",
+      "tags": [
+        "中心自辦"
+      ],
+      "UUID": "2780930644e05569a526508257534d3a"
+    },
+    {
+      "title": "經典之美—新媒體藝術展",
+      "date": "2021-11-02 ~",
+      "date_info": {
+        "start": "2021-11-02",
+        "end": null,
+        "type": 3
+      },
+      "address": "北部院區 第一展覽館 210",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151733/x9rgqxyxbqjkal9kxulu.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011058&l=1&type=1&cat=",
+      "tags": [
+        "數位新媒體"
+      ],
+      "UUID": "e7c93f6cb2a85b848c68c8307bdbaa1e"
+    },
+    {
+      "title": "梯航星集—大清國的涉外關係",
+      "date": "2026-11-21 ~ 2027-02-21",
+      "date_info": {
+        "start": "2026-11-21",
+        "end": "2027-02-21",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 103",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1795465725/d0gowzkywvwpyadep2ey.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014656&l=1&type=1&cat=",
+      "tags": [
+        "圖書文獻"
+      ],
+      "UUID": "07fd3e35861156c6bf91144371bdec71"
+    },
+    {
+      "title": "移至 我要上疏",
+      "date": "2027-01-01 ~ 2027-03-28",
+      "date_info": {
+        "start": "2027-01-01",
+        "end": "2027-03-28",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 204,206",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151736/rgms52gojrpnzjuuzd6g.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014698&l=1&q=&s_date=&e_date=&type=&cat=",
+      "tags": [
+        "書法"
+      ],
+      "UUID": "9d2dc7b4f4655526a16c20dc4b416743"
+    },
+    {
+      "title": "移至 筆下有神",
+      "date": "2027-01-12 ~ 2027-04-11",
+      "date_info": {
+        "start": "2027-01-12",
+        "end": "2027-04-11",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 212",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151737/xpsoyf2pmotneg2cpspm.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014700&l=1&q=&s_date=&e_date=&type=&cat=",
+      "tags": [
+        "繪畫"
+      ],
+      "UUID": "dced06da1f1553608fa23aab2c5c8666"
+    },
+    {
+      "title": "真知灼見：美感原則與書法欣賞",
+      "date": "2026-09-25 ~ 2026-12-27",
+      "date_info": {
+        "start": "2026-09-25",
+        "end": "2026-12-27",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 204,206",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151730/dozo9jsmgeejit3dytij.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014549&l=1&type=1&cat=",
+      "tags": [
+        "書法"
+      ],
+      "UUID": "4c9830452c85593dacbaa46799a7289f"
+    },
+    {
+      "title": "移至 此處有鬚",
+      "date": "2027-01-12 ~ 2027-04-11",
+      "date_info": {
+        "start": "2027-01-12",
+        "end": "2027-04-11",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 210",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151737/p76qjedjhzcen2hryhax.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014699&l=1&q=&s_date=&e_date=&type=&cat=",
+      "tags": [
+        "繪畫"
+      ],
+      "UUID": "ab85d0e34e905f30b4aeaed4287880a6"
+    },
+    {
+      "title": "移至 故宮之最",
+      "date": "2026-12-29 ~ 2027-03-28",
+      "date_info": {
+        "start": "2026-12-29",
+        "end": "2027-03-28",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 202",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151736/xjzuwzucvvl0uc1088hk.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014697&l=1&q=&s_date=&e_date=&type=&cat=",
+      "tags": [
+        "繪畫"
+      ],
+      "UUID": "17140a3bf18a5e9cbbc8b9f72bfb7afa"
+    },
+    {
+      "title": "移至 文武赤壁——赤壁圖繪的類型與繁衍",
+      "date": "2027-04-17 ~ 2027-07-11",
+      "date_info": {
+        "start": "2027-04-17",
+        "end": "2027-07-11",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 210,212",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151742/cro8lcym7h3q12dombii.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014696&l=1&q=&s_date=&e_date=&type=&cat=",
+      "tags": [
+        "繪畫"
+      ],
+      "UUID": "fbfe0410bee254ebb65031042c25ef73"
+    },
+    {
+      "title": "物華再現：文物保存修復",
+      "date": "2026-10-08 ~ 2027-01-03",
+      "date_info": {
+        "start": "2026-10-08",
+        "end": "2027-01-03",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 105,107",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151730/m1roy7rhs3vcvkx00wle.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014556&l=1&type=1&cat=",
+      "tags": [],
+      "UUID": "a37c8806f0ba585891632a2e2a6237f2"
+    },
+    {
+      "title": "移至 國寶聚焦2027-I—明沈周化鬚疏",
+      "date": "2027-01-12 ~ 2027-04-11",
+      "date_info": {
+        "start": "2027-01-12",
+        "end": "2027-04-11",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 208",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151737/hisc3oykeyvqwndimorp.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014692&l=1&q=&s_date=&e_date=&type=&cat=",
+      "tags": [
+        "書法"
+      ],
+      "UUID": "81bd7b24ef81560f9b00bc6a08fd847c"
+    },
+    {
+      "title": "設計影像【一堂關於設計師的攝影課】",
+      "date": "2026-12-04 ~",
+      "date_info": {
+        "start": "2026-12-04",
+        "end": null,
+        "type": 3
+      },
+      "address": "松山文創園區 西向製菸工廠二樓 A7 W207",
+      "figure": "https://www.songshanculturalpark.org/gallery/1794379434_48c68610fe1126817b2e.jpg",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/f2570c15-42d0-4204-9918-9164ddf5891e",
+      "tags": null,
+      "UUID": "cce7d7a48d805e0090cd9d639ff044d1"
+    },
+    {
+      "title": "集瓊藻—院藏珍玩精華展",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "北部院區 第一展覽館106",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151736/pbvdzrz6srtbh9jhxixa.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04005700&l=1&type=1&cat=",
+      "tags": [
+        "珍玩"
+      ],
+      "UUID": "cbe3e5f4d90351f6b524d0ae09a6c394"
+    },
+    {
+      "title": "摶泥幻化—院藏陶瓷精華展",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "北部院區 第一展覽館201,205,207",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151735/kdfmzodtuzlkpizpqtwc.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04000569&l=1&type=1&cat=",
+      "tags": [
+        "陶瓷"
+      ],
+      "UUID": "e9be1163cd50577ebaf7f468d345a56a"
+    },
+    {
+      "title": "學美 CONNECTING",
+      "date": "2026-11-10 ~ 2027-02-14",
+      "date_info": {
+        "start": "2026-11-10",
+        "end": "2027-02-14",
+        "type": 0
+      },
+      "address": "台灣設計館 03 展間",
+      "figure": "https://www.songshanculturalpark.org/gallery/1793241312_a0d2b8265d67fcf24db5.jpg",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/c6a5baf4-98fe-46b0-afac-9b7d9b3474be",
+      "tags": null,
+      "UUID": "7e9413085c825507ac20ff62c9738c33"
+    },
+    {
+      "title": "移至 宋元法書選萃",
+      "date": "2027-04-03 ~ 2027-06-27",
+      "date_info": {
+        "start": "2027-04-03",
+        "end": "2027-06-27",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 204,206",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151738/bbtyqqszdy1mtos1ptuz.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014694&l=1&q=&s_date=&e_date=&type=&cat=",
+      "tags": [
+        "書法"
+      ],
+      "UUID": "95636b3d05a75231987392b19f3c56ef"
+    },
+    {
+      "title": "移至 歷年捐贈文物精粹",
+      "date": "2027-02-04 ~ 2027-05-02",
+      "date_info": {
+        "start": "2027-02-04",
+        "end": "2027-05-02",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 105",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151737/ak2ugbeuayrtzibaxnsp.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014690&l=1&q=&s_date=&e_date=&type=&cat=",
+      "tags": [
+        "書法",
+        "繪畫",
+        "器物"
+      ],
+      "UUID": "e2dfb9aa70c051aeae792a4969a4a72a"
+    },
+    {
+      "title": "移至 天后很忙—從文獻到四方的媽祖",
+      "date": "2027-03-20 ~ 2027-06-20",
+      "date_info": {
+        "start": "2027-03-20",
+        "end": "2027-06-20",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 103",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151738/htlaxgvsrczegrhuqpun.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014686&l=1&q=&s_date=&e_date=&type=&cat=",
+      "tags": [],
+      "UUID": "4a2a45a385da5f389c57d46f314d7832"
+    },
+    {
+      "title": "逸境飛揚～台南市藝術家協會會員聯展",
+      "date": "2026-11-17 ~ 2026-11-29",
+      "date_info": {
+        "start": "2026-11-17",
+        "end": "2026-11-29",
+        "type": 0
+      },
+      "address": "彰化縣立美術館三樓展示室及藝廊",
+      "figure": "https://ws.bocach.gov.tw/001/Upload/5/relpic/10480/55130/e3275b27-ab3e-43d4-b757-2f3bb61e3746@710x470.jpg",
+      "source_url": "https://fam.bocach.gov.tw/News_Content.aspx?n=989&s=55130",
+      "tags": null,
+      "UUID": "d19e6618784853648dbc193d03e49d6a"
+    },
+    {
+      "title": "敬天格物—院藏玉器精華展",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "北部院區 第一展覽館306,308",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151734/wehg9nn2yq8f0vnzbqjv.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04000590&l=1&type=1&cat=",
+      "tags": [
+        "玉器"
+      ],
+      "UUID": "4a8808d8f62e59d49ec7377832aab549"
+    },
+    {
+      "title": "傳奇葉王200紀念展-國寶交趾陶大師",
+      "date": "2026-10-24 ~ 2027-04-25",
+      "date_info": {
+        "start": "2026-10-24",
+        "end": "2027-04-25",
+        "type": 0
+      },
+      "address": "嘉義市立博物館1樓特展廳",
+      "figure": "https://museum.chiayi.gov.tw/FileDownload/Exhibitions/20261016100520240309.jpg",
+      "source_url": "https://museum.chiayi.gov.tw/ExhibitionDetailC003310.aspx?Cond=624277e2-8969-4b46-985d-f49b43dbee0b&StartDate=2026%2f11%2f24&EndDate=2026%2f11%2f24&Page=1&appname=ExhibitionListC003310&SearchAdvanced=True",
+      "tags": null,
+      "UUID": "65b18d9a5fa855a1a02ed9472d4d9193"
+    },
+    {
+      "title": "慈悲與智慧—宗教雕塑藝術",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "北部院區 第一展覽館101",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151734/bbgp9kqpk0ntfdru1wyv.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04000459&l=1&type=1&cat=",
+      "tags": [
+        "銅器"
+      ],
+      "UUID": "8adb90cc50d658a79932ec9ec05d35f2"
+    },
+    {
+      "title": "貴冑榮華─清代宮廷的日常風景",
+      "date": "2020-05-01 ~",
+      "date_info": {
+        "start": "2020-05-01",
+        "end": null,
+        "type": 3
+      },
+      "address": "北部院區 第一展覽館 108",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151733/pazxld2epwqbxzqbd3xg.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04011291&l=1&type=1&cat=",
+      "tags": [
+        "珍玩",
+        "器物"
+      ],
+      "UUID": "45fd8f36086f562c9acc957d17cbade8"
+    },
+    {
+      "title": "移至 巨幅名作",
+      "date": "2027-03-30 ~ 2027-06-27",
+      "date_info": {
+        "start": "2027-03-30",
+        "end": "2027-06-27",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 202",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151739/gm4elfvrgzvzmurpuiap.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014693&l=1&q=&s_date=&e_date=&type=&cat=",
+      "tags": [
+        "書法",
+        "繪畫"
+      ],
+      "UUID": "87aa3ba0ca91501d8e81b56575c40208"
+    },
+    {
+      "title": "愚凡墨緣-黃老居書法紀念展",
+      "date": "2026-11-17 ~ 2026-11-29",
+      "date_info": {
+        "start": "2026-11-17",
+        "end": "2026-11-29",
+        "type": 0
+      },
+      "address": "彰化縣立美術館五樓展示室B及城市藝廊",
+      "figure": "https://ws.bocach.gov.tw/001/Upload/5/relpic/10480/55033/0efe28f6-8c9c-431b-9ead-7d6f4c1f7766@710x470.jpeg",
+      "source_url": "https://fam.bocach.gov.tw/News_Content.aspx?n=989&s=55033",
+      "tags": null,
+      "UUID": "5fac4750999958b7ace213e3327ba7e7"
+    },
+    {
+      "title": "國寶聚焦 2026-III",
+      "date": "2026-10-09 ~ 2026-12-27",
+      "date_info": {
+        "start": "2026-10-09",
+        "end": "2026-12-27",
+        "type": 0
+      },
+      "address": "北部院區 第一展覽館 208",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151731/sp7ybrpmpi6fetv72lcg.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04014552&l=1&type=1&cat=",
+      "tags": [
+        "繪畫"
+      ],
+      "UUID": "b48ed6e062bb550a84950378e82a1d35"
+    },
+    {
+      "title": "南北故宮 國寶薈萃",
+      "date": "2017-11-02 ~",
+      "date_info": {
+        "start": "2017-11-02",
+        "end": null,
+        "type": 3
+      },
+      "address": "北部院區 第一展覽館 302",
+      "figure": "https://res.cloudinary.com/dpoo988ui/image/upload/v1794151733/ylijfxeptqv5q7bdsmuq.webp",
+      "source_url": "https://www.npm.gov.tw/Exhibition-Content.aspx?sno=04009612&l=1&type=1&cat=",
+      "tags": [
+        "珍玩"
+      ],
+      "UUID": "dab53fc62a04544b94f1ebaed897a86a"
     }
   ]
 }
