@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T04:32:05.534096+08:00",
+  "updated": "2026-11-24T18:14:11.922887+08:00",
   "items": [
     {
       "title": "High Street Italia Taipei 巧有義思",
@@ -2084,6 +2084,1494 @@
         "珍玩"
       ],
       "UUID": "dab53fc62a04544b94f1ebaed897a86a"
+    },
+    {
+      "title": "臺博數位導覽服務（Web版）-智慧導覽．一掃即行",
+      "date": "2025-12-15",
+      "date_info": {
+        "start": "2025-12-15",
+        "end": "2025-12-15",
+        "type": 1
+      },
+      "address": "線上",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/50157/AD/50157_0_0_175907.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50157",
+      "tags": null,
+      "UUID": "a61860459a025903a63b6255a4f880ef"
+    },
+    {
+      "title": "《寫生實驗所 Sketching Lab》",
+      "date": "2026-04-02 ~",
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "2樓兒童藝術中心",
+      "figure": "https://file.moc.gov.tw/001/Upload/559/relpic/16214/253154/0287c0be-8b2a-4736-8788-513a61bfec4f@710x470.jpg",
+      "source_url": "https://www.momatainan.gov.tw/News_Content.aspx?n=9532&s=253154",
+      "tags": null,
+      "UUID": "c2d81e4ba11d5ae5baa9b555182da039"
+    },
+    {
+      "title": "圖書室作家文庫主題書展「噤聲後的微光．臺灣人權書寫特展」",
+      "date": "2026-08-04 ~ 2027-02-21",
+      "date_info": {
+        "start": "2026-08-04",
+        "end": "2027-02-21",
+        "type": 0
+      },
+      "address": "B1圖書室",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMTL/JpgFile/01/60154/AD/60154_0_0_818979.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMTL/Detail.init.ctr?actId=60154",
+      "tags": null,
+      "UUID": "4980209d08e55e6e8ef8923254a92816"
+    },
+    {
+      "title": "兒童展：蒸汽夢工廠",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": null,
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/00037/00037.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=00037",
+      "tags": null,
+      "UUID": "bbfce499538856d88066296775df8ef0"
+    },
+    {
+      "title": "越境的詩心──台灣人的短歌、俳句文學捐贈展",
+      "date": "2026-09-30 ~ 2027-05-30",
+      "date_info": {
+        "start": "2026-09-30",
+        "end": "2027-05-30",
+        "type": 0
+      },
+      "address": "展覽室E",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMTL/JpgFile/01/60182/AD/60182_0_0_951940.JPG",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMTL/Detail.init.ctr?actId=60182",
+      "tags": null,
+      "UUID": "058d5be88b5155b9be44dfd880064377"
+    },
+    {
+      "title": "印度「2026國際慶典藝術大賽暨線上展覽」",
+      "date": "2025-10-01 ~ 2026-12-31",
+      "date_info": {
+        "start": "2025-10-01",
+        "end": "2026-12-31",
+        "type": 0
+      },
+      "address": "Bindaas artist group, India",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB01ykGWbXX0inQ89MCIREGvkhLMHU4N6NTjgmx55fleP%2BH3d%2F7MjgweaAuN4HQ%2FAC7xdXwE9v4ZqyV7TigsI1TJLI%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=43af833d-fe33-4b35-bc5c-3b1253700293&PageIndex=8&PageType=1",
+      "tags": null,
+      "UUID": "8539f0760af957a699b28978a57eeee3"
+    },
+    {
+      "title": "《大地瑰寶》礦物常設展",
+      "date": "2025-09-17 ~ 2045-12-31",
+      "date_info": {
+        "start": "2025-09-17",
+        "end": "2045-12-31",
+        "type": 0
+      },
+      "address": "國立自然科學博物館 地球環境廳",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB016iRVTFG8ndFqcRoDtxAUu9c2UidddwYijcCNWV%2F8szLWqcghA15ETeQ2WQ2yHXxWaUk40ccvaWiiA1q0KPOgTU%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=880ec087-2147-46e5-bcc5-029f342ab41a&PageIndex=8&PageType=1",
+      "tags": null,
+      "UUID": "dc31192674e65a10a98d73c8cc76b98e"
+    },
+    {
+      "title": "發現臺灣-重訪臺灣博物學與博物學家的年代",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "國立臺灣博物館本館3樓",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/90084/90084.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=90084",
+      "tags": null,
+      "UUID": "2933fb6136e754268eedaa1b4f11f43a"
+    },
+    {
+      "title": "走進海港山城－陳寶琳基隆攝影紀事展",
+      "date": "2026-11-14 ~ 2026-11-29",
+      "date_info": {
+        "start": "2026-11-14",
+        "end": "2026-11-29",
+        "type": 0
+      },
+      "address": "路角蕨概念店",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB014CGE7IwVwG2IkaQeQGDoGZTz5f33%2F%2BBDTpvDXhgxycR%2FC%2BRW7LOm%2Fu%2FY9KSe148n76c8Jc9mLcqnJwlo4fyU4Y%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=58a25b28-9b8c-4e3b-8cbb-dbdff3cfb12c&PageIndex=2&PageType=1",
+      "tags": null,
+      "UUID": "dd8090e5e8725bd090c4a889355b69dc"
+    },
+    {
+      "title": "邊界之外‧島嶼之中：當代臺灣非公民的故事特展",
+      "date": "2026-09-15 ~ 2027-04-11",
+      "date_info": {
+        "start": "2026-09-15",
+        "end": "2027-04-11",
+        "type": 0
+      },
+      "address": "展示教育大樓4樓第3特展室",
+      "figure": "https://file.moc.gov.tw/001/Upload/528/relpic/13791/261717/8d9f983e-e66a-4afd-8946-c06fc7883cec@710x470.jpg",
+      "source_url": "https://www.nmth.gov.tw/News_Content2.aspx?n=4105&s=261717",
+      "tags": null,
+      "UUID": "edcf9e41594657d6a29e2266d1bbcd7d"
+    },
+    {
+      "title": "2026年生活美學主題展(7月至12月)",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": null,
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/CHCSEC/JpgFile/01/60394/AD/60394_0_0_40891.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/CHCSEC/Detail.init.ctr?actId=60394",
+      "tags": null,
+      "UUID": "88f40852744a509695f89cd1873a9cf3"
+    },
+    {
+      "title": "文學力─書寫LÁN臺灣 常設展",
+      "date": "2020-11-07",
+      "date_info": {
+        "start": "2020-11-07",
+        "end": "2020-11-07",
+        "type": 1
+      },
+      "address": null,
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMTL/JpgFile/01/00060/00060.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMTL/Detail.init.ctr?actId=00060",
+      "tags": null,
+      "UUID": "5f1ce13f26a05e9eb2cd70a9661f3ceb"
+    },
+    {
+      "title": "【時代的訊號：傳播技術與民主的擾動】系列活動－穿越時光的說書人：一起用紙芝居來說故事！",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "鐵道部廳舍1F中央樓梯",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/60176/AD/60176_0_0_367985.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60176",
+      "tags": null,
+      "UUID": "94704b3fb5c45b82bcd89f94d49d51be"
+    },
+    {
+      "title": "《一河兩岸‧月之門系列》簡俊吉個展",
+      "date": "2026-10-29 ~ 2026-11-25",
+      "date_info": {
+        "start": "2026-10-29",
+        "end": "2026-11-25",
+        "type": 0
+      },
+      "address": "中國科技大學藝文中心",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB012NbwD%2F8brTJKads%2Bn0SZTr5GvT57sg79Qn6Wu8pq13d7XRrV02i0LH9n9Wykn%2BRBS27siKMaeNm0RGvEXZzBe0%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=64ebf03f-0a53-48df-bd7b-4893d82b903b&PageIndex=4&PageType=1",
+      "tags": null,
+      "UUID": "b5fe1b8842d458acac6822dfe4030cec"
+    },
+    {
+      "title": "蔽 • 隱現-洪郁喜｜陳廷彰聯展",
+      "date": "2026-11-07 ~ 2026-12-09",
+      "date_info": {
+        "start": "2026-11-07",
+        "end": "2026-12-09",
+        "type": 0
+      },
+      "address": "穎川畫廊",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB015uBMF%2FvtZ0jrZbysYPWkS0S6q7W6S5ubt6hR1DAAHP1uM0dJ7gqkSdlgvyBWFohVjlVjY3q56ESjL3mD3bfpsk%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=4a920ee6-9617-4250-a4d0-a4a5b329b5b8&PageIndex=3&PageType=1",
+      "tags": null,
+      "UUID": "76457e6c8d31546598cbbc49434ca4f3"
+    },
+    {
+      "title": "藝想N次方─臺中市原生畫會會員創作展",
+      "date": "2026-11-04 ~ 2026-11-29",
+      "date_info": {
+        "start": "2026-11-04",
+        "end": "2026-11-29",
+        "type": 0
+      },
+      "address": "第三展覽室",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/CHCSEC/JpgFile/01/60463/AD/60463_0_0_487097.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/CHCSEC/Detail.init.ctr?actId=60463",
+      "tags": null,
+      "UUID": "e23354f7e4ed5b5f91b204513e924271"
+    },
+    {
+      "title": "THE ZODIAC｜十二生肖展",
+      "date": "2026-11-26 ~ 2027-01-31",
+      "date_info": {
+        "start": "2026-11-26",
+        "end": "2027-01-31",
+        "type": 0
+      },
+      "address": "松山文創園區 藝思空間",
+      "figure": "https://www.songshanculturalpark.org/gallery/1795510645_abb242499947facfee0e.jpg",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/0615ab13-a65d-4c72-974b-5b378a184a8d",
+      "tags": null,
+      "UUID": "f1d7795f8e9555c194043dc1dd8bf614"
+    },
+    {
+      "title": "相揪迺夜市－2026罕見疾病基金會文創成果展(免費參觀)",
+      "date": "2026-10-17 ~ 2026-11-25",
+      "date_info": {
+        "start": "2026-10-17",
+        "end": "2026-11-25",
+        "type": 0
+      },
+      "address": "3展廳",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/61027/AD/61027_0_0_650962.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=61027",
+      "tags": null,
+      "UUID": "68b2b3d95a96555e957f124d2464888f"
+    },
+    {
+      "title": "北美館 - 王雅慧：旅行者",
+      "date": "2026-09-12 ~ 2027-01-03",
+      "date_info": {
+        "start": "2026-09-12",
+        "end": "2027-01-03",
+        "type": 0
+      },
+      "address": "臺北市立美術館",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB01%2BVAWFB2potwqekgHcyE835l28qVLMhhiQ%2F%2BlKSn%2BEEfMfW4e3MFQYXtSkMJwfHkvQ%3D%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=bea75be3-079d-4902-9140-8771a9bfff19&PageIndex=6&PageType=1",
+      "tags": null,
+      "UUID": "f2862eeee0ef588ea4342a188c990222"
+    },
+    {
+      "title": "她的民主路(免費參觀)",
+      "date": "2026-11-05 ~ 2030-12-31",
+      "date_info": {
+        "start": "2026-11-05",
+        "end": "2030-12-31",
+        "type": 0
+      },
+      "address": "三樓多媒體人權展區",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/61182/AD/61182_0_0_218110.png",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=61182",
+      "tags": null,
+      "UUID": "091dfc767f23548c9f34efa5577ec16c"
+    },
+    {
+      "title": "真月洋子《 a priori》攝影展",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": null,
+      "figure": "https://www.1839cg.com/wp-content/uploads/2026/11/Yoko-Mazuki_DM_design700x400-1280x731.jpg",
+      "source_url": "https://www.1839cg.com/archives/8551",
+      "tags": null,
+      "UUID": "052f57af00fa5904a11993b9c5515a41"
+    },
+    {
+      "title": "排球少年!!動畫10週年紀念展 IMMERSIVE EXHIBITION",
+      "date": "2026-12-25 ~ 2027-03-28",
+      "date_info": {
+        "start": "2026-12-25",
+        "end": "2027-03-28",
+        "type": 0
+      },
+      "address": "松山文創園區多功能展演廳",
+      "figure": null,
+      "source_url": "https://www.opentix.life/program/2114976362824007681",
+      "tags": null,
+      "UUID": "7418b9c0a0715bf6889b037bdc605a9e"
+    },
+    {
+      "title": "特展 第六次大滅絕？命運還是機會",
+      "date": "2025-12-02 ~ 2026-11-01",
+      "date_info": {
+        "start": "2025-12-02",
+        "end": "2026-11-01",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/50149/AD/50149_0_0_786578.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=50149",
+      "tags": null,
+      "UUID": "79c88782d3f753edb9bfcd420fef33b6"
+    },
+    {
+      "title": "花創繪本故事屋 1 歲了！週年慶活動總覽",
+      "date": "2026-12-05 ~ 2026-12-13",
+      "date_info": {
+        "start": "2026-12-05",
+        "end": "2026-12-13",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://hualien1913.nat.gov.tw/media/2026/11/BANNER1124_0-845x592.png",
+      "source_url": "https://hualien1913.nat.gov.tw/2026/11/12-5-12-13-%e8%8a%b1%e5%89%b5%e7%b9%aa%e6%9c%ac%e6%95%85%e4%ba%8b%e5%b1%8b-1-%e6%ad%b2%e4%ba%86%ef%bc%81%e9%80%b1%e5%b9%b4%e6%85%b6%e6%b4%bb%e5%8b%95%e7%b8%bd%e8%a6%bd/",
+      "tags": null,
+      "UUID": "09cb840d08745c8dbe44caad321b69b6"
+    },
+    {
+      "title": "菩提心起—國立歷史博物館典藏佛像特展",
+      "date": "2026-08-22 ~ 2027-02-28",
+      "date_info": {
+        "start": "2026-08-22",
+        "end": "2027-02-28",
+        "type": 0
+      },
+      "address": "佛光山佛陀紀念館第二展廳",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMH/JpgFile/01/60055/AD/60055_0_0_201418.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMH/Detail.init.ctr?actId=60055",
+      "tags": null,
+      "UUID": "adcc96abe69c59ec87f511ffe99ef5ba"
+    },
+    {
+      "title": "玩家登入：兒童文學特展",
+      "date": "2026-04-01 ~ 2026-11-15",
+      "date_info": {
+        "start": "2026-04-01",
+        "end": "2026-11-15",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMTL/JpgFile/01/60084/AD/60084_0_0_381650.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMTL/Detail.init.ctr?actId=60084",
+      "tags": null,
+      "UUID": "93fc6cd52edd5bb9bb1f135be860c0c6"
+    },
+    {
+      "title": "〈文化中的臺灣鐵道史〉特展",
+      "date": "2025-07-18 ~ 2026-12-31",
+      "date_info": {
+        "start": "2025-07-18",
+        "end": "2026-12-31",
+        "type": 0
+      },
+      "address": "總辦公室第三展間",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/TRW/JpgFile/01/50006/AD/50006_0_0_412554.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/TRW/Detail.init.ctr?actId=50006",
+      "tags": null,
+      "UUID": "69f4f6289305591fa1bbb08669ceb588"
+    },
+    {
+      "title": "風動有時-周伸芳個展",
+      "date": "2026-11-29 ~ 2026-12-26",
+      "date_info": {
+        "start": "2026-11-29",
+        "end": "2026-12-26",
+        "type": 0
+      },
+      "address": "藝站 One Station",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB017Yj%2FgoRZdWXifoJfja%2B8nOvUxS2P4OyJyui48oGsYWwCzMpcf064oIriWXNgHPzVkC5wUfOlFVbJpZmNDUm7WM%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=ff2e515e-48c4-4034-95c0-ad243cdc49c3&PageIndex=1&PageType=1",
+      "tags": null,
+      "UUID": "b8e15013d6c75ca9bf4be98abb95d4f9"
+    },
+    {
+      "title": "聲築幻影．臺灣：以眼傾聽，以耳凝視─比爾．豐塔納",
+      "date": "2026-11-14 ~ 2027-02-14",
+      "date_info": {
+        "start": "2026-11-14",
+        "end": "2027-02-14",
+        "type": 0
+      },
+      "address": "U 108 SPACE",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTMOFA/JpgFile/01/60168/AD/60168_0_0_474376.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTMOFA/Detail.init.ctr?actId=60168",
+      "tags": null,
+      "UUID": "479f587761ff5b10aa70cfc701b1e29d"
+    },
+    {
+      "title": "萬相天后：臺灣媽祖信仰文化特展",
+      "date": "2026-10-13 ~ 2027-05-16",
+      "date_info": {
+        "start": "2026-10-13",
+        "end": "2027-05-16",
+        "type": 0
+      },
+      "address": "展示教育大樓4樓第1特展室",
+      "figure": "https://file.moc.gov.tw/001/Upload/528/relpic/13791/263037/ab8535aa-477b-4448-a779-2c0d4865c15a@710x470.png",
+      "source_url": "https://www.nmth.gov.tw/News_Content2.aspx?n=4105&s=263037",
+      "tags": null,
+      "UUID": "303707b472bd5d4dbd2b132aac022ee7"
+    },
+    {
+      "title": "【展覽預告】紙上征途：吉訶德大人的文學冒險",
+      "date": "2026-12-15 ~ 2027-03-21",
+      "date_info": {
+        "start": "2026-12-15",
+        "end": "2027-03-21",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMTL/JpgFile/01/60192/AD/60192_0_0_47882.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMTL/Detail.init.ctr?actId=60192",
+      "tags": null,
+      "UUID": "78cde6665d7e5482a6cc21112897f2b8"
+    },
+    {
+      "title": "第五回台江流域學習故事展「環境守護者」",
+      "date": "2026-11-06 ~ 2027-01-10",
+      "date_info": {
+        "start": "2026-11-06",
+        "end": "2027-01-10",
+        "type": 0
+      },
+      "address": "展示教育大樓1樓窩空間",
+      "figure": "https://file.moc.gov.tw/001/Upload/528/relpic/13791/264943/435ff9cf-10b4-41c2-9979-838d24be31c3@710x470.jpg",
+      "source_url": "https://www.nmth.gov.tw/News_Content2.aspx?n=4105&s=264943",
+      "tags": null,
+      "UUID": "ddc9a7e9a3065df9bd453beb79abf709"
+    },
+    {
+      "title": "糖分與鹽分文學賞——臺南文學滋味",
+      "date": "2024-01-01 ~ 2026-12-31",
+      "date_info": {
+        "start": "2024-01-01",
+        "end": "2026-12-31",
+        "type": 0
+      },
+      "address": "文學步道",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMTL/JpgFile/01/30102/AD/30102_0_0_393525.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMTL/Detail.init.ctr?actId=30102",
+      "tags": null,
+      "UUID": "955aa1439b4f5335831de0199348827d"
+    },
+    {
+      "title": "現代藝術百年：莫內到馬諦斯-托雷多美術館珍藏展II",
+      "date": "2026-12-12 ~ 2027-04-13",
+      "date_info": {
+        "start": "2026-12-12",
+        "end": "2027-04-13",
+        "type": 0
+      },
+      "address": "富邦美術館1樓",
+      "figure": null,
+      "source_url": "https://www.opentix.life/program/2107772014162726913",
+      "tags": null,
+      "UUID": "9aa8752088775d01aa41dd63f08d04a5"
+    },
+    {
+      "title": "跨‧交‧通：從「大阪商船株式會社臺北支店」到「國家攝影文化中心臺北館」",
+      "date": "2021-03-25 ~",
+      "date_info": {
+        "start": "2021-03-25",
+        "end": null,
+        "type": 3
+      },
+      "address": "臺北 國家攝影文化中心臺北館204展覽室",
+      "figure": "https://file.moc.gov.tw/001/upload/oldfiles/webupd/1exhibition/9429e0ea-c0f5-4e31-8755-69eb51892155.jpg",
+      "source_url": "https://ncpi.ntmofa.gov.tw/News_Content_OnlineExhibitionPic.aspx?n=8006&s=210014",
+      "tags": null,
+      "UUID": "e226a8d3c0b3566e99f8df38838d2601"
+    },
+    {
+      "title": "古生物大展－生命的史詩與演化共舞",
+      "date": "2022-07-12 ~ 2026-12-31",
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "臺博館古生物館",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/90081/90081.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=90081",
+      "tags": null,
+      "UUID": "0359bd9bc0ca58e1a0215c95c2f9ea5e"
+    },
+    {
+      "title": "流光藝境",
+      "date": "2027-01-30 ~ 2027-04-18",
+      "date_info": {
+        "start": "2027-01-30",
+        "end": "2027-04-18",
+        "type": 0
+      },
+      "address": "松山文創園區 1號倉庫",
+      "figure": null,
+      "source_url": "https://www.opentix.life/program/2112542232877936641",
+      "tags": null,
+      "UUID": "2194b64668035cf7b34c100635672d6f"
+    },
+    {
+      "title": "自由花蕊(免費參觀)",
+      "date": "2025-11-24 ~ 2030-12-31",
+      "date_info": {
+        "start": "2025-11-24",
+        "end": "2030-12-31",
+        "type": 0
+      },
+      "address": "常設展廳",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/51331/AD/51331_0_0_597284.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=51331",
+      "tags": null,
+      "UUID": "fef92812a89a5ec8ade76602489f5ceb"
+    },
+    {
+      "title": "「闊土興地•珍檔鑫傳」土銀行史展",
+      "date": "2019-11-05 ~ 2026-12-31",
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "國立臺灣博物館-古生物館",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/90082/AD/90082_0_0_983435.png",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=90082",
+      "tags": null,
+      "UUID": "dbe46c42a2fb5d1f85fe943edecef1be"
+    },
+    {
+      "title": "2026台灣美術展暨第十四屆美術獎徵選展(免費參觀)",
+      "date": "2026-11-12 ~ 2026-11-25",
+      "date_info": {
+        "start": "2026-11-12",
+        "end": "2026-11-25",
+        "type": 0
+      },
+      "address": "一樓藝廊",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/61177/AD/61177_0_0_359755.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=61177",
+      "tags": null,
+      "UUID": "891c8523309655a2839a8bbde3a1ee56"
+    },
+    {
+      "title": "白色恐怖歷史現場：白色恐怖景美紀念園區主題展",
+      "date": "2021-07-27 ~ 2030-12-31",
+      "date_info": {
+        "start": "2021-07-27",
+        "end": "2030-12-31",
+        "type": 0
+      },
+      "address": "國家人權博物館白色恐怖景美紀念園區兵舍1、2、3號",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NHRM/JpgFile/01/10013/10013.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NHRM/Detail.init.ctr?actId=10013",
+      "tags": null,
+      "UUID": "3ced9b0b511a50dcb22b2eb8a1efc530"
+    },
+    {
+      "title": "《書房裡的心靈伴侶》 葉東進個展",
+      "date": "2026-10-15 ~ 2026-12-27",
+      "date_info": {
+        "start": "2026-10-15",
+        "end": "2026-12-27",
+        "type": 0
+      },
+      "address": "山屋口口",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB01%2BvMuR8ZxK6IA0UTmxg65iF3Q4s0E0Yl2%2BYb3zuH9fhfe6COwb3Wscqhhv2wK9GPe4G9%2B6300WyPj%2Bm4Yz9lop0%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=b2c656cc-d1cb-4ed4-92a7-3244534e12b6&PageIndex=5&PageType=1",
+      "tags": null,
+      "UUID": "0f91f44285045053901c1cecb2128483"
+    },
+    {
+      "title": "《讓愛被看見｜SEE LOVE》國際公益視覺設計邀請展",
+      "date": "2026-12-01 ~ 2026-12-10",
+      "date_info": {
+        "start": "2026-12-01",
+        "end": "2026-12-10",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://hkm.pccu.edu.tw/sites/default/files/styles/crop_exhibit_preview_270_380/public/exhibition/2026-11/%E8%AE%93%E6%84%9B%E8%A2%AB%E7%9C%8B%E8%A6%8B%EF%BD%9CSEE%20LOVE%20%E6%B5%B7%E5%A0%B1%E6%AA%94.jpg?h=28cd0448&itok=WzmvTnl4",
+      "source_url": "https://hkm.pccu.edu.tw/exhibition/779",
+      "tags": null,
+      "UUID": "171609ba3fb95a17bdc7bdab57f779b4"
+    },
+    {
+      "title": "博物臺灣 常設展 Exploring Taiwan",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": null,
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/12140/12140.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=12140",
+      "tags": null,
+      "UUID": "bdb71bc07ea65c96a744b4258f1044f9"
+    },
+    {
+      "title": "鐵道部園區歷史暨古蹟修復常設展",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": null,
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/00038/00038.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=00038",
+      "tags": null,
+      "UUID": "b2fb9ba354d952f394265d15799f6c0c"
+    },
+    {
+      "title": "特展 時代的訊號：傳播技術與民主的攪動",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "臺博館鐵道部園區",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/60164/AD/60164_0_0_552158.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60164",
+      "tags": null,
+      "UUID": "c049ff15d6af51c4bb8894de2dc8b289"
+    },
+    {
+      "title": "【文學糧倉】渡口之間：臺灣文學數位轉譯整合計畫成果展（臺北）",
+      "date": "2026-11-27 ~ 2026-12-13",
+      "date_info": {
+        "start": "2026-11-27",
+        "end": "2026-12-13",
+        "type": 0
+      },
+      "address": "文學糧倉",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMTL/JpgFile/01/60206/AD/60206_0_0_158885.jpeg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMTL/Detail.init.ctr?actId=60206",
+      "tags": null,
+      "UUID": "628de46dcad9573eaca08ceb4d82eb5f"
+    },
+    {
+      "title": "藝群人-筆觸裡的相遇",
+      "date": "2026-11-27 ~ 2026-12-15",
+      "date_info": {
+        "start": "2026-11-27",
+        "end": "2026-12-15",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://www.435.culture.ntpc.gov.tw/files/file_pool/4/0q328372412773778160/%e8%97%9d%e7%be%a4%e4%ba%ba%e6%b5%b7%e5%a0%b1%e9%82%80%e6%b8%85.jpg",
+      "source_url": "https://www.435.culture.ntpc.gov.tw/xmdoc/cont?xsmsid=0G256373177821958325&sid=0Q328369934359062141",
+      "tags": null,
+      "UUID": "cce1f887d1155f938ad9cdfe06849afc"
+    },
+    {
+      "title": "無主之歌──在廢墟與體系之間",
+      "date": "2026-12-19 ~ 2027-03-21",
+      "date_info": {
+        "start": "2026-12-19",
+        "end": "2027-03-21",
+        "type": 0
+      },
+      "address": "3A、3B、4A、4B展覽室",
+      "figure": "https://ntcart.museum/retrieve/exhibition/20261124114954.jpg",
+      "source_url": "https://ntcart.museum/exhibition_content.aspx?id=H2611002",
+      "tags": null,
+      "UUID": "701375681b665ac4b78d280e174225f8"
+    },
+    {
+      "title": "《一天、一年與一輩子：許蒼澤的鹿城拾影》特展",
+      "date": "2026-06-10 ~ 2027-05-02",
+      "date_info": {
+        "start": "2026-06-10",
+        "end": "2027-05-02",
+        "type": 0
+      },
+      "address": "國立自然科學博物館 第三特展室",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB01z%2F4vcU%2Bou6okEzeYW7Wa%2FBpoLeMDN01%2BQJ5BsVWHva0Vwgt7RnwHzSGOwzETkhuPL8TxmKlJv7rC781l6Rn6mg%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=e3b707dd-1a45-4ae3-963b-e6f2e655d9ea&PageIndex=7&PageType=1",
+      "tags": null,
+      "UUID": "44fa45663c025c5cbe47ca33ac506640"
+    },
+    {
+      "title": "【1839當代】 [ a priori ] 真月洋子 攝影展",
+      "date": "2026-11-28 ~ 2026-12-31",
+      "date_info": {
+        "start": "2026-11-28",
+        "end": "2026-12-31",
+        "type": 0
+      },
+      "address": "1839當代藝廊",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB01wAT%2BPc5CYpG%2BThmnmRGXXimEwn5fG08XLhWesU7JR1OrG385n%2FHdRN%2BV%2BPVmKuiIPKAQqJjWmAqP6t3XldyMLs%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=f24b8070-9433-446d-8694-f2882e2cd60a&PageIndex=1&PageType=1",
+      "tags": null,
+      "UUID": "bb7a8d924a595c408bdda5c792bf8ff3"
+    },
+    {
+      "title": "〈鐵道詩人錦連特展：從《守夜的壁虎》到「吝嗇的蜘蛛」〉特展",
+      "date": "2026-06-23 ~ 2026-12-13",
+      "date_info": {
+        "start": "2026-06-23",
+        "end": "2026-12-13",
+        "type": 0
+      },
+      "address": "材料試驗所1樓 多功能展廳",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/TRW/JpgFile/01/60008/AD/60008_0_0_623353.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/TRW/Detail.init.ctr?actId=60008",
+      "tags": null,
+      "UUID": "3ae3726442275bf2b5a5a6b0e73501e9"
+    },
+    {
+      "title": "留美旅法畫家李萬全畫展",
+      "date": "2026-12-12 ~ 2026-12-27",
+      "date_info": {
+        "start": "2026-12-12",
+        "end": "2026-12-27",
+        "type": 0
+      },
+      "address": "千活藝術中心",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB01zHT2oDtUYgN3ug4STZy%2BvR7CGgngjCfJzJ4v5ZDZaKp%2FcRlE8ZA69HOAr7lJb970H1xhjVAgIydJZtfO7ofOGU%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=9e0b42e0-86aa-4afe-a8f7-5b49276e0405&PageIndex=2&PageType=1",
+      "tags": null,
+      "UUID": "7dea821e0d81509192a3526c35b7734a"
+    },
+    {
+      "title": "2026 李奉 —「境」",
+      "date": "2026-09-05 ~ 2026-11-29",
+      "date_info": {
+        "start": "2026-09-05",
+        "end": "2026-11-29",
+        "type": 0
+      },
+      "address": "帝門藝術中心",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB01xD%2Ba3FWoidP1ijN%2B2fAeN1r8ZHarZTfN8z88GpB%2BHWmaLi93QD0Fbc789Fjy3%2FVs36wVk68V21e5CSwz9BZRyE%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=7df549c8-b747-4d44-9cfd-df47a60bce0b&PageIndex=6&PageType=1",
+      "tags": null,
+      "UUID": "a31070b3bdde5b8ca7bd7cbc31bf0aa8"
+    },
+    {
+      "title": "時尚流聲：穿在身上的語言－身上的風景",
+      "date": "2026-11-11 ~ 2027-03-14",
+      "date_info": {
+        "start": "2026-11-11",
+        "end": "2027-03-14",
+        "type": 0
+      },
+      "address": "臺北 國家攝影文化中心201-203 展覽室",
+      "figure": "https://file.moc.gov.tw/001/Upload/552/relpic/15632/263486/ae2fbccd-12c8-4d03-8d70-a5ba314e5be8.png",
+      "source_url": "https://ncpi.ntmofa.gov.tw/News_Content_OnlineExhibitionPic.aspx?n=8006&s=263486",
+      "tags": null,
+      "UUID": "e6bf6c7cdc005803bbd9bf447d2b8512"
+    },
+    {
+      "title": "本館戶外展覽",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "國立臺灣博物館本館",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/90086/90086.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=90086",
+      "tags": null,
+      "UUID": "722ea0d5b1ef596499293c2ad587ee7c"
+    },
+    {
+      "title": "在這裡，與大家相遇—國立歷史博物館常設展",
+      "date": "2024-02-21 ~",
+      "date_info": {
+        "start": "2024-02-21",
+        "end": null,
+        "type": 3
+      },
+      "address": "國立歷史博物館3樓",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMH/JpgFile/01/40015/AD/40015_0_0_968890.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMH/Detail.init.ctr?actId=40015",
+      "tags": null,
+      "UUID": "049623a62e2b559f8a902a9b7dd30249"
+    },
+    {
+      "title": "",
+      "date": "2026-12-02 ~ 2027-05-30",
+      "date_info": {
+        "start": "2026-12-02",
+        "end": "2027-05-30",
+        "type": 0
+      },
+      "address": "藝師館",
+      "figure": "https://ws.tycg.gov.tw/001/Upload/86/relpic/13653/1972620/d7e1bc66-a34e-4d3c-bb9f-306c1789d430@710x470.jpg",
+      "source_url": "https://wem.tycg.gov.tw/Photo_News_Content_Museums.aspx?n=9676&s=1972620",
+      "tags": null,
+      "UUID": "091d51ba703f5b719fa3a49e7bf9ff49"
+    },
+    {
+      "title": "林玉山臺灣寫生地圖與足跡-線上互動展",
+      "date": "2024-01-29 ~ 2030-12-31",
+      "date_info": {
+        "start": "2024-01-29",
+        "end": "2030-12-31",
+        "type": 0
+      },
+      "address": "線上展覽",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTMOFA/JpgFile/01/40013/AD/40013_0_0_822024.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTMOFA/Detail.init.ctr?actId=40013",
+      "tags": null,
+      "UUID": "7b86715aec9e58c29fbbc0fef05f813e"
+    },
+    {
+      "title": "隱身到現身──史博典藏的她們",
+      "date": "2026-10-16 ~ 2027-01-17",
+      "date_info": {
+        "start": "2026-10-16",
+        "end": "2027-01-17",
+        "type": 0
+      },
+      "address": "國立歷史博物館1樓",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMH/JpgFile/01/60060/AD/60060_0_0_670564.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMH/Detail.init.ctr?actId=60060",
+      "tags": null,
+      "UUID": "045b71fc00e45a24b9367c079943481c"
+    },
+    {
+      "title": "第十一屆全國學藝競賽孩子的藝想世界公益畫展(免費參觀)",
+      "date": "2026-11-20 ~ 2026-12-21",
+      "date_info": {
+        "start": "2026-11-20",
+        "end": "2026-12-21",
+        "type": 0
+      },
+      "address": "三樓藝廊",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/61186/AD/61186_0_0_777312.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=61186",
+      "tags": null,
+      "UUID": "9ff6e69c6196571da83b919ba073235a"
+    },
+    {
+      "title": "【2026第九屆「古漕新韻」海峽兩岸青年文化藝術匯】",
+      "date": "2026-11-30 ~ 2026-12-13",
+      "date_info": {
+        "start": "2026-11-30",
+        "end": "2026-12-13",
+        "type": 0
+      },
+      "address": "國立臺灣藝術大學有章藝術博物館",
+      "figure": "https://d2onjhd726mt7c.cloudfront.net/images/datas/000/129/912/mk1zalckv7swggbusp39ojtq9x1sjm5u_800x420^.jpg",
+      "source_url": "https://artemperor.tw/tidbits/20706",
+      "tags": null,
+      "UUID": "568c65f1839e550a943a924ec8aa03f2"
+    },
+    {
+      "title": "神馳──臺灣女書法家學會第五屆國際書藝交流展(免費參觀)",
+      "date": "2026-11-28 ~ 2026-12-13",
+      "date_info": {
+        "start": "2026-11-28",
+        "end": "2026-12-13",
+        "type": 0
+      },
+      "address": "3展廳",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/61189/AD/61189_0_0_849738.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=61189",
+      "tags": null,
+      "UUID": "ff1f52069ffc5026b55d744247793f50"
+    },
+    {
+      "title": "特展 Tnunan 循物而返，相繫共生：30+臺博藏品串起的南澳泰雅人群像",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "宜蘭縣南澳鄉泰雅文化館2樓特展室",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/60207/AD/60207_0_0_246013.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60207",
+      "tags": null,
+      "UUID": "f53f410aa86253d4a1d19bce3bec47d3"
+    },
+    {
+      "title": "鐵道文化常設展",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": null,
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/00035/00035.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=00035",
+      "tags": null,
+      "UUID": "bcdd401929cf5025a7fa37f63fd6741e"
+    },
+    {
+      "title": "時尚流聲：穿在身上的語言",
+      "date": "2026-10-27 ~ 2027-03-14",
+      "date_info": {
+        "start": "2026-10-27",
+        "end": "2027-03-14",
+        "type": 0
+      },
+      "address": "國家攝影文化中心 臺北館",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTMOFA/JpgFile/01/60152/AD/60152_0_0_957569.png",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTMOFA/Detail.init.ctr?actId=60152",
+      "tags": null,
+      "UUID": "2d54924c937d53688d7a16f766ddaa6c"
+    },
+    {
+      "title": "佳山藝境．北投文物館采風展 台灣藝術學會會員聯展 (免費參觀)",
+      "date": "2026-11-12 ~ 2026-11-25",
+      "date_info": {
+        "start": "2026-11-12",
+        "end": "2026-11-25",
+        "type": 0
+      },
+      "address": "2展廳",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/61181/AD/61181_0_0_585587.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=61181",
+      "tags": null,
+      "UUID": "0ba575910d1953ef8e89dc63b2492735"
+    },
+    {
+      "title": "且行且走—柳嘉淵書藝展",
+      "date": "2026-12-02 ~ 2026-12-27",
+      "date_info": {
+        "start": "2026-12-02",
+        "end": "2026-12-27",
+        "type": 0
+      },
+      "address": "第三展覽室",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/CHCSEC/JpgFile/01/60466/AD/60466_0_0_22067.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/CHCSEC/Detail.init.ctr?actId=60466",
+      "tags": null,
+      "UUID": "3ea52a45cc5c5520a3841cb998387fa3"
+    },
+    {
+      "title": "【時代的訊號：傳播技術與民主的擾動】系列活動－策展人導覽",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": null,
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/60156/AD/60156_0_0_453532.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60156",
+      "tags": null,
+      "UUID": "3306a24014915b4b82fe978397807547"
+    },
+    {
+      "title": "反抗者—辜寬敏與他們的革命時代",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": null,
+      "figure": "https://static.wixstatic.com/media/323b85_008ff2ca93e4424cb6042bc5d512f973~mv2.png/v1/fill/w_436,h_262,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/323b85_008ff2ca93e4424cb6042bc5d512f973~mv2.png",
+      "source_url": "https://www.228.org.tw/exhibitions/topbottom/2026-10-15",
+      "tags": null,
+      "UUID": "f81f8449b4425721a491e6a031965a1a"
+    },
+    {
+      "title": "時尚流聲：穿在身上的語言－身上的語言",
+      "date": "2026-10-27 ~ 2027-03-10",
+      "date_info": {
+        "start": "2026-10-27",
+        "end": "2027-03-10",
+        "type": 0
+      },
+      "address": "臺北 國家攝影文化中心301-303, 305展覽間",
+      "figure": "https://file.moc.gov.tw/001/Upload/552/relpic/15632/262437/b0229276-48d0-49aa-883b-53b7c57e4ec8.png",
+      "source_url": "https://ncpi.ntmofa.gov.tw/News_Content_OnlineExhibitionPic.aspx?n=8006&s=262437",
+      "tags": null,
+      "UUID": "0002a397784c50aea63ddb56405a7104"
+    },
+    {
+      "title": "「瞬時之眼」桃園機場文化櫥窗特展",
+      "date": "2026-09-02 ~ 2027-02-27",
+      "date_info": {
+        "start": "2026-09-02",
+        "end": "2027-02-27",
+        "type": 0
+      },
+      "address": "桃園國際機場第二航廈 入境區二樓疫檢區及驗照區",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTMOFA/JpgFile/01/60142/AD/60142_0_0_119023.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTMOFA/Detail.init.ctr?actId=60142",
+      "tags": null,
+      "UUID": "0b10a1a6ebb45fb69b06b0c25b990374"
+    },
+    {
+      "title": "「有這樣的宿舍，你幾點回家？」新宿舍運動展(免費參觀)",
+      "date": "2026-11-10 ~ 2027-01-31",
+      "date_info": {
+        "start": "2026-11-10",
+        "end": "2027-01-31",
+        "type": 0
+      },
+      "address": "中央通廊",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/61180/AD/61180_0_0_311332.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=61180",
+      "tags": null,
+      "UUID": "14948ee786c45dcb91cf6edcaabc4ecd"
+    },
+    {
+      "title": "「文字跑進作品裡了!」2026藝術教育展",
+      "date": "2026-09-29 ~ 2027-08-29",
+      "date_info": {
+        "start": "2026-09-29",
+        "end": "2027-08-29",
+        "type": 0
+      },
+      "address": "B1 教育展示空間(Educational Exhibition Space)",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTMOFA/JpgFile/01/60146/AD/60146_0_0_893158.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTMOFA/Detail.init.ctr?actId=60146",
+      "tags": null,
+      "UUID": "50e04cb237a6540cbac10b82596f193e"
+    },
+    {
+      "title": "2026 GAMFORCE 電競嘉年華",
+      "date": "2026-12-09 ~ 2026-12-12",
+      "date_info": {
+        "start": "2026-12-09",
+        "end": "2026-12-12",
+        "type": 0
+      },
+      "address": "東2A館/東2B館/東2C館/東2D館",
+      "figure": "https://files.huashan1914.com/thumbnails/GF2026_華山banner_1920x1080.jpg",
+      "source_url": "https://www.huashan1914.com/exhibition/2026 GAMFORCE",
+      "tags": [
+        "展覽",
+        "活動",
+        "市集"
+      ],
+      "UUID": "da986ba226cd50119def9b97a3a6b6f4"
+    },
+    {
+      "title": "特展 方寸福田—謝碧蓮女士捐贈吉祥玉飾",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": "臺博館本館",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/60174/AD/60174_0_0_663063.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=60174",
+      "tags": null,
+      "UUID": "6c30e37e2d0e5b1da6217fb0fc3c5b39"
+    },
+    {
+      "title": "煎熬時代：樟腦、鴉片產業及南門工場常設展",
+      "date": "2023-10-24",
+      "date_info": {
+        "start": "2023-10-24",
+        "end": "2023-10-24",
+        "type": 1
+      },
+      "address": null,
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/90088/AD/90088_0_0_286523.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=90088",
+      "tags": null,
+      "UUID": "ba795b34d8835141805dbdbd1e9b8b29"
+    },
+    {
+      "title": "膽大黨 Animation Works展",
+      "date": "2026-12-25 ~ 2027-04-06",
+      "date_info": {
+        "start": "2026-12-25",
+        "end": "2027-04-06",
+        "type": 0
+      },
+      "address": "華山1914文創園區 東2A、東2B館",
+      "figure": null,
+      "source_url": "https://www.opentix.life/program/2117081547899428865",
+      "tags": null,
+      "UUID": "b751b633c1cb5d13aa5025b22a79066d"
+    },
+    {
+      "title": "搜查記：警察異能館 Investigation Chronicles: The Police Expo",
+      "date": "2026-06-30 ~ 2027-03-28",
+      "date_info": {
+        "start": "2026-06-30",
+        "end": "2027-03-28",
+        "type": 0
+      },
+      "address": "1館1樓展覽室A",
+      "figure": "https://www.tnam.museum/images/filesys/images/ch/exhibition/2026_PoliceEXPO/1120--kv-S2-final-01S2.jpg",
+      "source_url": "https://www.tnam.museum/exhibition/detail/718",
+      "tags": null,
+      "UUID": "91b9997a224e5c44a29e86e2eeab465f"
+    },
+    {
+      "title": "《最強台灣媽——媽祖文化展》",
+      "date": "2027-01-01 ~ 2027-04-06",
+      "date_info": {
+        "start": "2027-01-01",
+        "end": "2027-04-06",
+        "type": 0
+      },
+      "address": "臺北花博公園流行館",
+      "figure": null,
+      "source_url": "https://www.opentix.life/program/2115274531652624385",
+      "tags": null,
+      "UUID": "12e2be0e57375015a1a03668bc7c9056"
+    },
+    {
+      "title": "國立中正紀念堂管理處「她的民主路」常設展",
+      "date": "2026-11-05 ~ 2029-10-31",
+      "date_info": {
+        "start": "2026-11-05",
+        "end": "2029-10-31",
+        "type": 0
+      },
+      "address": "國立中正紀念堂 三樓 多媒體人權展區",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB0180%2BpwwRYpd%2BqSOlqR3JIsTbCdZ7oCVT4c5%2FICnvWgs2W%2BXRUEC7RE2aRE2KsCKg8d8Y6%2BR%2FRauGrAsOngwlq20%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=e33183f7-48d7-49e5-aff4-44cb39f2e584&PageIndex=3&PageType=1",
+      "tags": null,
+      "UUID": "102b0d927eb25d21b5c9348361d9b006"
+    },
+    {
+      "title": "｢國美典藏數位博物館：我腦海中的地方，會真的存在」",
+      "date": "2024-01-29 ~ 2030-12-31",
+      "date_info": {
+        "start": "2024-01-29",
+        "end": "2030-12-31",
+        "type": 0
+      },
+      "address": "線上展覽",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTMOFA/JpgFile/01/40009/AD/40009_0_0_887229.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTMOFA/Detail.init.ctr?actId=40009",
+      "tags": null,
+      "UUID": "0e8e03461cec59b78cc1b6d472bf327c"
+    },
+    {
+      "title": "太陽國度的故事大冒險──西班牙主題書展",
+      "date": "2026-11-24 ~ 2027-03-21",
+      "date_info": {
+        "start": "2026-11-24",
+        "end": "2027-03-21",
+        "type": 0
+      },
+      "address": "B1文學樂園",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMTL/JpgFile/01/60211/AD/60211_0_0_619677.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMTL/Detail.init.ctr?actId=60211",
+      "tags": null,
+      "UUID": "9aacb86b6bf05a3bb4e18b98687d57c3"
+    },
+    {
+      "title": "《碳鎖未來：碳捕捉、應用與封存》特展",
+      "date": "2026-06-04 ~ 2027-04-06",
+      "date_info": {
+        "start": "2026-06-04",
+        "end": "2027-04-06",
+        "type": 0
+      },
+      "address": "國立自然科學博物館 第一微型特展室、第二微型特展室",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB016XlKrm6g5pgdKxXV7PPCeZ5YEPYZLcOcH83iK2S12OaERanOqhH3Y%2FppZcDEhFeUTfKamNrqbsBUpJjb6m33jU%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=49021230-fcb8-42f2-a824-721b86bb6fb1&PageIndex=7&PageType=1",
+      "tags": null,
+      "UUID": "c5e9c8d9a6135cf7bc553df955ef0601"
+    },
+    {
+      "title": "默墨觀心．勇渡迷津—書藝頑皮豹王志揚V.S.兩岸多藝唐寶寶曾恩通 感通聯展(免費參觀)",
+      "date": "2026-11-13 ~ 2026-11-25",
+      "date_info": {
+        "start": "2026-11-13",
+        "end": "2026-11-25",
+        "type": 0
+      },
+      "address": "4展廳",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/CKSMH/JpgFile/01/61179/AD/61179_0_0_600188.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/CKSMH/Detail.init.ctr?actId=61179",
+      "tags": null,
+      "UUID": "afcd75ec4cde5752a26deaf135a376b1"
+    },
+    {
+      "title": "古蹟探祕—勸業銀行舊廈古蹟修復常設展",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": null,
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/12242/12242.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=12242",
+      "tags": null,
+      "UUID": "499cb4dbea50516e9f127696848e83b3"
+    },
+    {
+      "title": "【臺文基地、文學糧倉】「在別人的故事裡，看見愛：臺灣文學的愛情書寫」特展（臺北）",
+      "date": "2026-06-03 ~ 2027-01-17",
+      "date_info": {
+        "start": "2026-06-03",
+        "end": "2027-01-17",
+        "type": 0
+      },
+      "address": "臺文基地、文學糧倉",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMTL/JpgFile/01/60126/AD/60126_0_0_475997.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMTL/Detail.init.ctr?actId=60126",
+      "tags": null,
+      "UUID": "d545d259ce125fea920e54de24199794"
+    },
+    {
+      "title": "【2026駐館藝術家開放工作室】「PRE-Remains」展覽導覽",
+      "date": "2026-12-05 ~ 2026-12-06",
+      "date_info": {
+        "start": "2026-12-05",
+        "end": "2026-12-06",
+        "type": 0
+      },
+      "address": "國家音樂廳排練室一",
+      "figure": null,
+      "source_url": "https://www.opentix.life/program/2112454717336662016",
+      "tags": null,
+      "UUID": "018d2305a85157babeb5ea7236f381e5"
+    },
+    {
+      "title": "被消逝的臺灣美術與設計",
+      "date": "2026-10-31 ~ 2027-05-02",
+      "date_info": {
+        "start": "2026-10-31",
+        "end": "2027-05-02",
+        "type": 0
+      },
+      "address": "3樓 M、N、P 展間",
+      "figure": "https://file.moc.gov.tw/001/Upload/559/relpic/16214/263401/54bb1dfd-2c32-4f21-9209-8f4118fa4948@710x470.jpg",
+      "source_url": "https://www.momatainan.gov.tw/News_Content.aspx?n=9532&s=263401",
+      "tags": null,
+      "UUID": "8a122ab17cf457d58be134d82e8dcc68"
+    },
+    {
+      "title": "時代印記：國美典藏常設展",
+      "date": "2026-09-12 ~ 2027-04-25",
+      "date_info": {
+        "start": "2026-09-12",
+        "end": "2027-04-25",
+        "type": 0
+      },
+      "address": "301-302展覽室、201展覽室",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTMOFA/JpgFile/01/60150/AD/60150_0_0_873429.png",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTMOFA/Detail.init.ctr?actId=60150",
+      "tags": null,
+      "UUID": "8ae1ee686aa65010b4c0474d975b2606"
+    },
+    {
+      "title": "筆態春秋—沈哲哉百週年回顧展",
+      "date": "2026-11-05 ~ 2027-04-18",
+      "date_info": {
+        "start": "2026-11-05",
+        "end": "2027-04-18",
+        "type": 0
+      },
+      "address": "2樓 E、F、G、H、I展廳策展人｜郭博州、石小墨任何一個人，一個姿勢也許不一定美，但表現出來的一定是和當時的心情狀態有關，你看得出來，那就是藝術。問我下輩子做什麼？我八歲開始畫畫，畫了一輩子看到這個世界的藝術，人生中有趣味的事情... 展間",
+      "figure": "https://file.moc.gov.tw/001/Upload/559/relpic/16214/264223/89546ad7-34a0-4a33-a4db-d7bd18b7bae2@710x470.png",
+      "source_url": "https://www.momatainan.gov.tw/News_Content.aspx?n=9532&s=264223",
+      "tags": null,
+      "UUID": "545ea19278b955c399414f941614447b"
+    },
+    {
+      "title": "共流－台灣 ‧ 金澤工藝展 CONFLUENCE: Craft Exchange between Taiwan and Kanazawa",
+      "date": "2026-11-13 ~ 2027-02-21",
+      "date_info": {
+        "start": "2026-11-13",
+        "end": "2027-02-21",
+        "type": 0
+      },
+      "address": "MoNTUE 北師美術館",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB011e8mlhDQYmrqd%2BtNCu03NAEmGasY4zVpdbZ9iqt4kAexEdtsogADs0P2bAL0HJgZlVlxDPLxarlQZV7ZHb3tz4%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=5bbd67c0-fdb1-4677-b0fc-9657b2a51e8e&PageIndex=2&PageType=1",
+      "tags": null,
+      "UUID": "3d440016c8ea54049a20ccea1e89d99a"
+    },
+    {
+      "title": "字遊，自在：旅行文學展",
+      "date": "2025-11-13 ~ 2027-01-03",
+      "date_info": {
+        "start": "2025-11-13",
+        "end": "2027-01-03",
+        "type": 0
+      },
+      "address": "展覽室C",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMTL/JpgFile/01/50194/AD/50194_0_0_283776.jpeg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMTL/Detail.init.ctr?actId=50194",
+      "tags": null,
+      "UUID": "779152c872da527b9448777dc96c92ec"
+    },
+    {
+      "title": "埋藏與浮現 | 張凱鈞",
+      "date": "2026-10-10 ~ 2026-12-30",
+      "date_info": {
+        "start": "2026-10-10",
+        "end": "2026-12-30",
+        "type": 0
+      },
+      "address": "谷公館 (台北市敦化南路一段21號4樓之2)",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB017Y%2B8f%2BIC8UPwHw8o2LV1TMDfgQytCz7KkYEXYbV28FMJB8bki3XEjEEwkw3uBNxqO73skhQzyig6yd%2B10L2PgY%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=db6995f5-7102-4bc2-b9dc-30466b5c87f9&PageIndex=5&PageType=1",
+      "tags": null,
+      "UUID": "18045c135eb5597eaef49ed5d5bab317"
+    },
+    {
+      "title": "華山綠意~聖誕氛圍的自然物創作",
+      "date": "2026-12-04 ~ 2026-12-04",
+      "date_info": {
+        "start": "2026-12-04",
+        "end": "2026-12-04",
+        "type": 0
+      },
+      "address": null,
+      "figure": "https://files.huashan1914.com/thumbnails/1205文宣.jpg",
+      "source_url": "https://www.huashan1914.com/exhibition/Christmas_wreath",
+      "tags": [],
+      "UUID": "ac7462d889995107a5fbdbf668ca9265"
+    },
+    {
+      "title": "藝術品修護任務：尋找消逝的色彩-線上展覽",
+      "date": "2025-11-19 ~ 2030-12-31",
+      "date_info": {
+        "start": "2025-11-19",
+        "end": "2030-12-31",
+        "type": 0
+      },
+      "address": "線上展覽",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTMOFA/JpgFile/01/55058/AD/55058_0_0_356228.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTMOFA/Detail.init.ctr?actId=55058",
+      "tags": null,
+      "UUID": "0436eda9d8b45d0d81606fa67371081f"
+    },
+    {
+      "title": "【童里11月展覽】Dear Luna — 若凡 新書×插畫展",
+      "date": "2026-11-07 ~ 2026-11-29",
+      "date_info": {
+        "start": "2026-11-07",
+        "end": "2026-11-29",
+        "type": 0
+      },
+      "address": "童里繪本洋行",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB010YP73bO4cyahGtc86KWR8uQ3h8n3UfDzl1Qr3cIeQqgbbTjqSavb8%2Bnp%2F1XDI%2BajuGA%2BBHR7zqT7rx0QOz3Y%2Bc%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=9d11c2f7-e5d9-4a23-8024-57e555c73787&PageIndex=3&PageType=1",
+      "tags": null,
+      "UUID": "614b2865d21c52feb298bf41a3ce14d2"
+    },
+    {
+      "title": "異想物語—館藏動物圖樣的沉浸旅程",
+      "date": "2026-10-08 ~ 2027-03-21",
+      "date_info": {
+        "start": "2026-10-08",
+        "end": "2027-03-21",
+        "type": 0
+      },
+      "address": "國立歷史博物館5樓",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMH/JpgFile/01/60061/AD/60061_0_0_246574.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMH/Detail.init.ctr?actId=60061",
+      "tags": null,
+      "UUID": "e6943323aaec5327ac42562036e1c24a"
+    },
+    {
+      "title": "寶可夢 × 工藝展：美與匠心的綺趣相遇",
+      "date": "2027-02-08 ~ 2027-05-02",
+      "date_info": {
+        "start": "2027-02-08",
+        "end": "2027-05-02",
+        "type": 0
+      },
+      "address": "松山文創園區 5號倉庫",
+      "figure": null,
+      "source_url": "https://www.opentix.life/program/2105226400121249793",
+      "tags": null,
+      "UUID": "2fcc16f2c7905212955fac6c80bed040"
+    },
+    {
+      "title": "2026【唱 我們的歌 流行音樂故事展】",
+      "date": "2026-01-01 ~ 2030-12-31",
+      "date_info": {
+        "start": "2026-01-01",
+        "end": "2030-12-31",
+        "type": 0
+      },
+      "address": "臺北流行音樂中心文化館",
+      "figure": null,
+      "source_url": "https://www.opentix.life/program/1997861121855938561",
+      "tags": null,
+      "UUID": "80fe171a95a95369855fb391b73a99c0"
+    },
+    {
+      "title": "臺灣．我的家-兒童探索展",
+      "date": null,
+      "date_info": {
+        "start": null,
+        "end": null,
+        "type": 2
+      },
+      "address": null,
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NTM/JpgFile/01/00101/00101.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NTM/Detail.init.ctr?actId=00101",
+      "tags": null,
+      "UUID": "8e769ae3fdd45336bddeab1d3a07a87e"
+    },
+    {
+      "title": "排球少年!!動畫 10 週年紀念展 IMMERSIVE EXHIBITION",
+      "date": "2026-12-25 ~ 2027-03-28",
+      "date_info": {
+        "start": "2026-12-25",
+        "end": "2027-03-28",
+        "type": 0
+      },
+      "address": "松山文創園區 多功能展演廳",
+      "figure": "https://www.songshanculturalpark.org/gallery/1795509354_20474918b59ad1b345df.jpg",
+      "source_url": "https://www.songshanculturalpark.org/exhibition/activity/643e7202-39bd-4162-b058-4154bf9aeebc",
+      "tags": null,
+      "UUID": "2b5a93fb9d55500f83673bca31802616"
+    },
+    {
+      "title": "北美館 - 2026臺北美術獎",
+      "date": "2026-10-24 ~ 2027-02-14",
+      "date_info": {
+        "start": "2026-10-24",
+        "end": "2027-02-14",
+        "type": 0
+      },
+      "address": "臺北市立美術館",
+      "figure": "https://cultureexpress.taipei/UploadPlugin?file=%2Fw6lriPeTD4Ry1335WB01zJpomMmtmERSdrL1SqpONrxnG1RUyxSZmS%2FaqXPDXStOtvlQ94bnCk1bLTTfwhXPQ%3D%3D",
+      "source_url": "https://cultureexpress.taipei/Event/C000003?ID=c4385943-b689-4bb6-a9c9-579da751189a&PageIndex=4&PageType=1",
+      "tags": null,
+      "UUID": "ab92917abb5a57f79c1a43c5bf676174"
+    },
+    {
+      "title": "B1兒童創意共學空間",
+      "date": "2024-02-21 ~",
+      "date_info": {
+        "start": "2024-02-21",
+        "end": null,
+        "type": 3
+      },
+      "address": "國立歷史博物館",
+      "figure": "https://event.culture.tw/mocweb/reg/userFiles/NMH/JpgFile/01/40050/AD/40050_0_0_13546.jpg",
+      "source_url": "https://event.culture.tw/mocweb/reg/NMH/Detail.init.ctr?actId=40050",
+      "tags": null,
+      "UUID": "19f637b8c86c50b49d7cd0b00989e5ab"
+    },
+    {
+      "title": "San－X 90週年紀念展 in 台灣．高雄場",
+      "date": "2026-12-28 ~ 2027-02-21",
+      "date_info": {
+        "start": "2026-12-28",
+        "end": "2027-02-21",
+        "type": 0
+      },
+      "address": "夢時代購物中心8F時代會館",
+      "figure": "https://tour.ibon.com.tw/allticket-prod/media/cea06764-3435-4b7a-9fa6-fff989ffd393.jpg",
+      "source_url": "https://tour.ibon.com.tw/event/6b03e5cf9a48825434f8a7b4",
+      "tags": null,
+      "UUID": "f1231e5f64e8581e988d754a92e389b8"
+    },
+    {
+      "title": "臺灣光譜",
+      "date": "2026-10-08 ~ 2027-01-10",
+      "date_info": {
+        "start": "2026-10-08",
+        "end": "2027-01-10",
+        "type": 0
+      },
+      "address": "1樓展廳A-D2025年，「We TAIWAN 臺灣文化 in 大阪・關西世博」前進日本，呈現《臺灣光譜》與世界展開對話；2026年，《臺灣光譜》回臺，將視角落回島嶼自身，「臺灣」成為持續被探索、書寫與詮釋的創作命題。臺灣位處海洋... 展間",
+      "figure": "https://file.moc.gov.tw/001/Upload/559/relpic/16214/262539/4fc8c50f-8378-4be4-a2e9-9c28ad82caeb@710x470.png",
+      "source_url": "https://www.momatainan.gov.tw/News_Content.aspx?n=9532&s=262539",
+      "tags": null,
+      "UUID": "454ab26c4ec0547681f3a0563b98272a"
     }
   ]
 }
